@@ -237,6 +237,7 @@
       },
       "entities": {
         "custom_name": "[!![str(self.unit_info.custom_name)]!!]",
+        "unknown_name": "[!!Ūņĸņơŵņ!!]",
         "item_categories": {
           "food": "[!!Ƒōōď!!]",
           "resources": "[!!Ŗėŝŏůŕĉėŝ!!]",
@@ -570,7 +571,9 @@
       },
       "zones_mode": {
         "farm": {
-          "choose_crop": "[!!Ĉħŏŏŝȇ á Ĉŗŏƿ!!]"
+          "choose_crop": "[!!Ĉħŏŏŝȇ á Ĉŗŏƿ!!]",
+          "fallow_name": "[!!Ƒāļļőŵ!!]",
+          "fallow_description": "[!!Ƥłąňŧ ňō ćřōƥ ąňď łėŧ ŧĥė śōıł řėňėŵ ıŧśėłƒ.!!]"
         },
         "mining": {
           "help": "[!!Mĭƞĭƞģ ȃľľơŵš ɏơų ŧơ čřėȃŧė ųƞđėřģřơųƞđ řơơmš ȃƞđ čơřřĭđơřš. Ƴơų čȃƞ ȃľšơ đĭščơvėř řėšơųřčėš ŵħĭľė đĭģģĭƞģ.!!]",
@@ -971,6 +974,16 @@
           "description": "[!!Ƥŕōţēćţ ŷōũŕ ţōŵń ƒŕōm ŕàıďēŕś àńď màķē ŷōũŕ ćıţıźēńś ƒēēł śàƒē ƀŷ àśśıĝńıńĝ ĝũàŕďś.!!]",
           "town_description": "[!!Ĥōŵ ŷōũŕ ćįţįźęńś ƒęęŀ àƀōũţ ţĥę ţōŵń'ś śęćũŕįţŷ. Įś ţĥę ţōŵń ŵęŀŀ ƥŕōţęćţęď ōŕ ĝęţţįńĝ ƥįŀŀàĝęď ƀŷ ĝōƀŀįńś?!!]"
         }
+      },
+      "constants": {
+        "food_meat_raw_name": "[!!Ŕąŵ Mĕąŧ!!]",
+        "stone_resource_name": "[!!Ŝŧŏƞȅ!!]",
+        "pelt_resource_name": "[!!Ƒŭř Ƥĕŀŧ!!]",
+        "cloth_resource_name": "[!!Ɓŏŀť ŏƒ Ĉŀŏťħ!!]",
+        "wood_resource_name": "[!!Ŵōōď Ŀōĝ!!]",
+        "thread_resource_name": "[!!Ţĥŕȇāď!!]",
+        "leather_resource_name": "[!!ʙơĺţ ơƒ Ĺĕãţħĕŕ!!]",
+        "fiber_resource_name": "[!!ʙůŉđĺĕ ơƒ ƑĩƄĕŕ!!]"
       }
     }
   },
