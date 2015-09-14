@@ -689,7 +689,7 @@
         "title": "[!!Ťŏŵņ Ŏvȇŗvįȇŵ!!]",
         "journal": {
           "default_message": "[!!Ŋơ Ĵơųřƞȃŀ ėƞŧřįėš ɏėŧ!!!]",
-          "_entry_format": "<p class=\"logEntry\"><span class=\"logTitle\">[str(entry.title)]</span></br>[str(entry.text)]</br><span class=\"signature\">--[name(entry.person)]</span></p>",
+          "signature": "[!!--[name(entry.person)]!!]",
           "today": "[!!Ŧŏđåƴ!!]",
           "town_log": "[!!Ŧōŵň Ŀōĝ!!]",
           "praises": "[!!Ƥŗăĭšēš!!]",
