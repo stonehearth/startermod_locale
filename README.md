@@ -41,7 +41,9 @@ Example:
 
 
 Here, the string that needs to be translated is "chasing [name(data.target)]"
-Note, do not translate the "[name(data.target)]" portion as this is a special string replacement. The name of the target will replace "[name(data.target)]" in the game.
+Note, DO NOT translate the "[name(data.target)]" portion as this is a special string replacement. The name of the target will replace "[name(data.target)]" in the game.
+The replacement is character sensitive, so do not change whether the string is upper or lower case, and do not replace any of the string with a different key. It is best
+to copy and past the special portion into your translated text.
 You can move "[name(data.target)]" around to different locations within the string.
 
 The japanese translated file might show something like this:
