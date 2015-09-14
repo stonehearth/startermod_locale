@@ -1,0 +1,9 @@
+{
+   "info" : {
+      "name" : "Example mod for adding languages.", 
+      "version" : 1
+   },
+   "mixintos" : {
+      "stonehearth/locales/supported_languages.json" : "file(added_languages.json)"
+   }
+}
