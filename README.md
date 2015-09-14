@@ -27,3 +27,31 @@ How it works:
 3) The file that is pointed to "path" is the en-XA.json file under the translations folder. This is the file that contains all the translated strings.
 
 Note that this mod is only for adding additional languages to the main stonehearth game. Other mods cannot use this method to add additional languages.
+
+How to translate en.json:
+Only translate strings that come after a : in the json file. You can more easily view the json on a website such as http://codebeautify.org/jsonviewer
+Do not modify the strings that come on the left side of a ':'
+Also, do not modify strings that are surrounded by '['  ']'
+
+Example:
+  "ai": {
+   "actions": {
+      "status_text": {
+         "chase_entity": "chasing [name(data.target)]",
+
+
+Here, the string that needs to be translated is "chasing [name(data.target)]"
+Note, do not translate the "[name(data.target)]" portion as this is a special string replacement. The name of the target will replace "[name(data.target)]" in the game.
+You can move "[name(data.target)]" around to different locations within the string.
+
+The japanese translated file might show something like this:
+  "ai": {
+   "actions": {
+      "status_text": {
+         "chase_entity": "[name(data.target)]を追う",
+
+The Chinese file might look like:
+  "ai": {
+   "actions": {
+      "status_text": {
+         "chase_entity": "追逐[name(data.target)]",
