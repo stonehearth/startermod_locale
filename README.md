@@ -24,7 +24,8 @@ How it works:
    path is the path to the .json file that contains the translations. Note you have to specify the mod as the first portion of the path.
    the name "en-XA" is the language code of the translation. See: http://www.science.co.il/Language/Locale-codes.asp
    Most languages and language variants have a language code. In this case, en means English and the XA is a made up name for the pseudolocale.
-   The German translation will be de.json, and the Chinese Mandarin translation will be zh-CN.json
+   The German translation will be de-DE.json, and the Chinese Mandarin translation will be zh-CN.json
+   Note: If you have a region specific translation, the last 2 letters of the translation MUST be capitalized!
 3) The file that is pointed to "path" is the en-XA.json file under the translations folder. This is the file that contains all the translated strings.
 
 Note that this mod is only for adding additional languages to the main stonehearth game. Other mods cannot use this method to add additional languages to their custom mod.
