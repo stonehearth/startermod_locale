@@ -2170,7 +2170,7 @@
                      "003": "I had a Dream where a Giant Dragon approached me! But when she opened her mouth, only kitten noises came out. Adorable!",
                      "004": "I had a dream where I all the forest creatures and I were having a picnic, but the raccoon stole all the honey so we had nothing to put on our bread and butter.",
                      "005": "I dreamt that everyone was jeering at me. I ran home and didn't move. Ever again.",
-                     "006": "I dreamt of a word of lush forests, and clear rivers, surrounded by friends. I woke and it was real!",
+                     "006": "I dreamt of a world of lush forests, and clear rivers, surrounded by friends. I woke and it was real!",
                      "007": "I dreamt about doing all my chores. Now I've woken I have to do them all over again..."
                   },
                   "psychopathic_misanthrope": {
@@ -2321,10 +2321,10 @@
                      "005": "I really, really wish I had a bed to call my own.",
                      "006": "I was too exhausted to find a proper bed, and now I'm really paying for it. Ow.",
                      "007": "Slept on the ground again. Neck super sore. Everything looks slanted.",
+                     "008": "I counted beds to go to sleep. BEDS!",
                      "teacher": {
                         "000": "Though [str(entry.teacher)] slept on the ground during their pilgrimage, I wish I didn't have to."
-                     },
-                     "008": "I counted beds to go to sleep. BEDS!"
+                     }
                   }
                }
             }
@@ -3002,7 +3002,7 @@
          },
          "wolf": {
             "display_name": "A wolf",
-            "description": "Om nom nom"
+            "description": "Grrr! Rwar!"
          }
       },
       "crops": {
