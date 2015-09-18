@@ -2187,7 +2187,7 @@
                      "003": "I dreamed about a creature with a bill of a duck and the tail of a beaver.",
                      "004": "I dreamed that it was night time and outside of our village, there were some loud noises. Upon investigation of the fields to the south, I saw a large, black object with two circles and a bunch of dancing animals!",
                      "005": "I dreamed my friends left me on the roof of a newly constructed building.",
-                     "006": "I dreamed I was at a lake and a luminous rabbit appeared out of the water and told me some great advice. \"If you build it they will come.\"",
+                     "006": "I dreamed I was at a lake and a luminous rabbit appeared out of the water and told me some great advice. &quot;If you build it they will come.&quot;",
                      "007": "I dreamed my hammer was running after me",
                      "008": "I dreamed we were racing the sheep. Something to try tomorrow?",
                      "009": "I dreamed I couldn't stop filling my backpack with all the items littered on the ground.",
@@ -2250,7 +2250,7 @@
                      "066": "Last night I dreamed that someone was reading my diary. Creepy.",
                      "067": "I dreamed of creatures of immeasurable power surrounding us. They were actually poyo.",
                      "068": "I dreamed my sword would glow blue when there were goblins nearby.",
-                     "069": "I dreamed that we fried up strips of fatty, salted meat from a tusked animal we hunted in the forest. It was the most delicious thing I ever ate! I think I'll call it ... \"bacon\".",
+                     "069": "I dreamed that we fried up strips of fatty, salted meat from a tusked animal we hunted in the forest. It was the most delicious thing I ever ate! I think I'll call it ... &quot;bacon&quot;.",
                      "070": "I dreamed I had a pretty little poyo whom I loved very much. I made it a little bonnet to wear on its head!",
                      "071": "I had a dream in which ground shook and rumbled. The earth swallowed all our poyo.",
                      "072": "I dreamed a squirrel chopped our house down to build its tree.",
@@ -2272,7 +2272,7 @@
                      "088": "I had the craziest dream! There was a man, who was able to raise magma out of the earth! That's not possible, right!?",
                      "089": "I had a dream where everything was made of paper and wood! We had to use sticks to prop ourselves up.",
                      "090": "I had a dream in which a sheep bit me, and turned me into a sheep! But I could still talk. It was weird.",
-                     "091": "I had a dream in which I was tiny, and a portly man said he was going to \"Boil em, mash em, stick em in a stew!\" Although I awoke before anything else could happen, I assumed he was talking about me.",
+                     "091": "I had a dream in which I was tiny, and a portly man said he was going to &quot;Boil em, mash em, stick em in a stew!&quot; Although I awoke before anything else could happen, I assumed he was talking about me.",
                      "092": "I dreamed about catching a giant fish! From a puddle!",
                      "093": "I had a dream where the tree I was chopping trasformed into a giant and attacked me!",
                      "094": "I had a dream where I was bullying a poyo and then a swarm of poyo's started attacking me! ... I am now a changed Hearthling",
@@ -4319,6 +4319,12 @@
                "description": "It radiates a mysterious aura"
             }
          },
+         "joshua_tree": {
+            "large_joshua_tree": {
+               "display_name": "Large Joshua Tree",
+               "description": "A curious tree"
+            }
+         },
          "pine_tree": {
             "large_pine_tree": {
                "display_name": "Large Pine Tree",
@@ -5418,7 +5424,7 @@
       "trapper": {
          "trapper_description": {
             "display_name": "Trapper",
-            "description": "The Trapper's snares capture and (ahem) \"harvest\" small critters for a reliable source of food and supplies.",
+            "description": "The Trapper's snares capture and (ahem) &quot;harvest&quot; small critters for a reliable source of food and supplies.",
             "requirements": "Trapper's Knife, forged by the Blacksmith",
             "level_1_data": {
                "title": "Journeyman Trapper",
@@ -5705,7 +5711,7 @@
          "description": "Citizen of your town",
          "job": {
             "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_title": "Level [str(level_number)] [str(job_name)]",
+            "default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
             "general_description_desc": "Max health increased!",
             "attribute_up_desc": "All attributes increased!"
@@ -5729,9 +5735,9 @@
       },
       "monster": {
          "job": {
-            "starting_level_title": "Apprentice [str(job_name)] ",
-            "default_level_title": "Level [str(level_number)] [str(job_name)]",
-            "default_level_announcement": "[str(name)] has achieved [str(job_name)] Level [str(level_number)]!",
+            "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
             "general_description_desc": "Max Health increased!",
             "attribute_up_desc": "All attributes increased!"
          }
