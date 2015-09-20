@@ -52,24 +52,24 @@
       "game": {
          "game_speed": {
             "pause_title": "Pause",
-            "pause_description": "Pause the game",
-            "play_title": "Play",
-            "play_description": "Run the game at normal speed",
-            "ff_title": "Fast Forward",
-            "ff_description": "Run the game at 2x speed",
-            "speedThree_title": "Super Speed",
-            "speedThree_description": "Run the game at high speed",
-            "pause_overlay": "Paused"
+            "pause_description": "Met en pause le jeu",
+            "play_title": "Démarre",
+            "play_description": "Démarre le jeu à la vitesse normal",
+            "ff_title": "Jeu rapide",
+            "ff_description": "Double la vitesse du jeu",
+            "speedThree_title": "Super vitesse",
+            "speedThree_description": "Lance le jeu à haute vitesse",
+            "pause_overlay": "En pause"
          },
          "visions": {
-            "building_vision": "Building vision",
-            "building_vision_description": "Changes the visibility of walls, allowing you to see inside buildings.",
-            "terrain_slice_vision": "Terrain slice vision",
-            "terrain_slice_vision_icon_name": "slice",
-            "terrain_slice_vision_description": "Slice the terrain, allowing you to see underground structures. Change the elevation to see different slices.",
-            "terrain_xray_vision_icon_name": "x-ray",
-            "terrain_xray_vision": "Terrain x-ray vision",
-            "terrain_xray_vision_description": "See through the terrain. Change between full and flat view to show underground walls."
+            "building_vision": "Vue bâtimentaire",
+            "building_vision_description": "Change la visibilité des murs, vous permettant de voir à l'intérieur des bâtiments.",
+            "terrain_slice_vision": "Vue géologique en couche",
+            "terrain_slice_vision_icon_name": "couche",
+            "terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l'élévation pour voir différentes couches.",
+            "terrain_xray_vision_icon_name": "Rayon X",
+            "terrain_xray_vision": "Vue Rayon X",
+            "terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains."
          },
          "promotion_tree": {
             "title": "Choose a Job",
