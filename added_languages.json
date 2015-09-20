@@ -7,6 +7,10 @@
       "en-DEV": {
          "display_name": "English(Dev)",
          "path": "/startermod_locale/translations/en-DEV.json"
+      },
+      "fr-DEV": {
+         "display_name": "Français(Dev)",
+         "path": "/startermod_locale/translations/fr-DEV.json"
       }
    }
 }
