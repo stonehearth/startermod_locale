@@ -105,10 +105,10 @@
             "journal": "Journal",
             "attributes": "Attributs",
             "equipment": "Équipement",
-            "abilities": "Compétences de job", //Je préfère laisser le mot job en anglais je trouve que ça rend mieux
+            "abilities": "Compétences de job", 
             "morale_title": "Moral",
             "overall_morale": "Moral Général",
-            "morale_food": "Nourriture", //Pour ces 3 traductions je suis pas convaincu  
+            "morale_food": "Nourriture", 
             "morale_shelter": "Protection",
             "morale_safety": "Sécurité",
             "attack_abbreviation": "Atq",
@@ -190,7 +190,6 @@
             "attack_banner_button_help": "Envois le groupe attaquer une position",
             "defend_banner_button": "Ralliement & Ordre de Defense",
             "defend_banner_button_help": "Envois le groupe rallier une zone quand le Mode de Defense de la Ville est activé",
-",
             "default_name": "Groupe No.[str(party.ord)]"
          },
          "unit_frame": {
@@ -201,7 +200,7 @@
             "title": "Citoyens"
          },
          "create_camp": {
-            "new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",//Pour town c'est plus colonie ou village?
+            "new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
             "click_banner_tip": "Click the banner to choose your settlement's location",
             "select_camp_tip": "Now click somewhere in the world",
             "name_camp_title": "Name your settlement",
@@ -260,7 +259,7 @@
                "plants": "Plantes",
                "weapons": "Armes",
                "tools": "Outils",
-               "wealth": "Fortune",//Ou richesse je sais pas
+               "wealth": "Fortune",
                "refined": "Raffiné",
                "uncategorized": "Non classé",
                "workshops" : "Ateliers",
