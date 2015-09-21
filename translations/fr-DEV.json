@@ -93,11 +93,11 @@
             "page2_subtitle2": "Click and drag on the ground to place the stockpile"
          },
          "citizen_character_sheet": {
-            "title": "Informations du personnage",
+            "title": "Informations personnel",
             "health": "santé",
             "morale": "moral",
             "experience": "expérience",
-            "max_level": "Niveau Max!!!",
+            "max_level": "Niveau max!!!",
             "level_text": "Niveau ",
             "level_abbreviation": "Niv",
             "locked_status": " (Verouillé)",
@@ -105,17 +105,17 @@
             "journal": "Journal",
             "attributes": "Attributs",
             "equipment": "Équipement",
-            "abilities": "Compétences de job", 
+            "abilities": "Compétences", 
             "morale_title": "Moral",
-            "overall_morale": "Moral Général",
+            "overall_morale": "Moral général",
             "morale_food": "Nourriture", 
             "morale_shelter": "Protection",
             "morale_safety": "Sécurité",
             "attack_abbreviation": "Atq",
-            "defense_abbreviation": "Def",
+            "defense_abbreviation": "Déf",
             "backpack_tab_name": "Sac à dos",
-            "journal_no_entries": "no entries",
-            "retired": "Retired at:"
+            "journal_no_entries": "Aucune note",
+            "retired": "Mort le :"
          },
          "pet_character_sheet": {
             "title": "Informations du famillier",
@@ -170,7 +170,7 @@
             "accept": "Accepter",
             "decline": "Refuser",
             "next": "Suivant",
-            "hotkey": "touche: ",
+            "hotkey": "touche : ",
             "remove": "Retirer",
             "input_text_tooltip": "Cliquer pour modifier"
          },
@@ -265,28 +265,28 @@
                "workshops" : "Ateliers",
                "none": "Aucune"
             },
-            "tooltip_combat_base_damage": "Atq:",
-            "tooltip_combat_base_damage_reduction": "Def:",
+            "tooltip_combat_base_damage": "Atq :",
+            "tooltip_combat_base_damage_reduction": "Déf :",
             "death_notification": "[name(i18n_data.entity)] est mort."
          },
          "menu": {
             "town_menu": {
-               "display_name": "Town Info",
-               "description": "General information about your town, how your hearthlings are feeling, and the wealth you've accumulated!"
+               "display_name": "Information du village",
+               "description": "Information générale à propos de votre village, comment se sentent vos hearthlings, et les richesses que vous avais accumulée !"
             },
             "citizen_manager": {
-               "display_name": "Citizens",
-               "description": "Manage your hearthlings and promote them to new jobs."
+               "display_name": "Hearthlings",
+               "description": "Managez vos hearthlings et changez leur professions."
             },
             "harvest_menu": {
-               "display_name": "Harvest",
-               "description": "Harvest resources or mine into the earth.",
+               "display_name": "Ressource naturelle",
+               "description": "Récupérer les ressources ou miner les sols.",
                "items": {
                   "harvest": {
-                     "display_name": "Gather",
-                     "description": "Gather trees, plants, and stones from the surface of the land",
-                     "tip_title": "Click and drag to harvest resources",
-                     "tip_description": "Right click to exit this mode"
+                     "display_name": "Récolte",
+                     "description": "Récoltez arbres, plantes et pierres en surface du territoire",
+                     "tip_title": "Click and drag pour récolter les ressources",
+                     "tip_description": "Bouton droit pour quitter ce mode"
                   },
                   "mining_ui": {
                      "display_name": "Mine Tunnel",
@@ -612,7 +612,7 @@
                "contents": "Contents",
                "filter": "Filter",
                "help": "Click the icons to choose what to store in this stockpile.",
-               "used_space": "Used space:",
+               "used_space": "Espace utilisé :",
                "filters": {
                   "all": "All",
                   "none": "None",
@@ -660,15 +660,15 @@
             "craft_number_right": "right now.",
             "craft_up_to_left": "Maintain",
             "craft_up_to_right": "in inventory.",
-            "craft_ingredients": "Ingredients:",
-            "craft_requirements": "Requirements:",
-            "unlock_text": "To Unlock:",
-            "crafting_status": "crafting...",
-            "crafting_status_queued": "Queued",
-            "workshop_paused_status": "paused...",
-            "workshop_remove_confirm": "Remove?",
-            "workshop_open": "Open!",
-            "workshop_closed": "Closed",
+            "craft_ingredients": "Ingrédients :",
+            "craft_requirements": "Eléments requis :",
+            "unlock_text": "À débloquer :",
+            "crafting_status": "fabrication en cours...",
+            "crafting_status_queued": "Dans la file",
+            "workshop_paused_status": "en pause...",
+            "workshop_remove_confirm": "Supprimer ?",
+            "workshop_open": "Ouvert !",
+            "workshop_closed": "Fermé",
             "maintain_option_disabled": "Build a stockpile or place a crate to unlock more crafting options!",
             "craft": "Craft!",
             "craftable_locked": "Unlocked at Level: [str(level)]",
