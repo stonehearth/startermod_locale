@@ -3980,19 +3980,19 @@
       "pets": {
          "collie": {
             "display_name": "Collie",
-            "description": "So brave!"
+            "description": "Si brave!"
          },
          "dragon_whelp": {
-            "display_name": "Rabbit",
+            "display_name": "Lapin",
             "description": "Om nom nom"
          },
          "kitten": {
-            "display_name": "Kitten",
-            "description": "He's so cute!"
+            "display_name": "Chaton",
+            "description": "Il est si mignon!"
          },
          "mammoth": {
-            "display_name": "Baby Mammoth",
-            "description": "So furry!"
+            "display_name": "Bébé mamouth",
+            "description": "Si poilu!"
          }
       },
       "plants": {
@@ -4058,59 +4058,59 @@
       "rabbit": {
          "lantern_relic": {
             "lantern_relic_ghost": {
-               "display_name": "Ancient Relic",
-               "description": "Crumbling with age"
+               "display_name": "Relique ancienne",
+               "description": "S'effrite avec l'âge"
             }
          },
          "rabbit_statue": {
-            "display_name": "An Ancient Monument",
-            "description": "Mossy, but the stone is still good..."
+            "display_name": "Un ancien monument",
+            "description": "Moussu, mais la pierre est encore bonne..."
          }
       },
       "refined": {
          "bronze_ingot": {
-            "display_name": "Bronze Ingot",
-            "description": "A bar of pure bronze."
+            "display_name": "Lingot de bronze",
+            "description": "Une barre de bronze pur."
          },
          "cloth_bolt": {
-            "display_name": "Bolt of Cloth",
-            "description": "Soft and comforting."
+            "display_name": "Rouleau d'étoffe",
+            "description": "Doux et réconfortant."
          },
          "copper_ingot": {
-            "display_name": "Copper Ingot",
-            "description": "A bar of pure copper.  "
+            "display_name": "Lingot de cuivre",
+            "description": "Une barre de bronze pur."
          },
          "gold_ingot": {
-            "display_name": "Gold Ingot",
-            "description": "A bar of pure gold. A suitable material for crafted goods."
+            "display_name": "Lingot d'or",
+            "description": "Une barre d'or pur. Un matériau adapté pour la création de biens."
          },
          "iron_ingot": {
-            "display_name": "Iron Ingot",
-            "description": "A bar of pure iron."
+            "display_name": "Lingot de fer",
+            "description": "Une barre de fer pur."
          },
          "leather_bolt": {
-            "display_name": "Bolt of Leather",
-            "description": "Supple but durable."
+            "display_name": "Rouleau de cuir",
+            "description": "Souple mais durable."
          },
          "silver_ingot": {
-            "display_name": "Silver Ingot",
+            "display_name": "Lingot d'argent",
             "description": "A bar of pure silver."
          },
          "steel_ingot": {
             "display_name": "Steel Ingot",
-            "description": "A bar of pure steel."
+            "description": "Une barre de bronze pur."
          },
          "stone_bricks": {
-            "display_name": "Stack of Stone Bricks",
-            "description": "A key component of stone buildings"
+            "display_name": "Pile de briques en pierre",
+            "description": "n élément clé pour les constructions en pierre."
          },
          "thread": {
-            "display_name": "Spool of Thread",
-            "description": "Nobody would ever think this started with a sheep. Or a plant."
+            "display_name": "Bobine de fil",
+            "description": "Personne ne pensera jamais que cela a commencé avec un mouton. Ou une plante."
          },
          "tin_ingot": {
-            "display_name": "Tin Ingot",
-            "description": "A bar of pure tin.  "
+            "display_name": "Lingot d'étain",
+            "description": "Une barre d'étain pur."
          }
       },
       "resources": {
