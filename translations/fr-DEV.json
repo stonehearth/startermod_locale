@@ -88,7 +88,7 @@
             "title": "Construire l'atelier",
             "requirements": "Prérequis",
             "create_stockpile": "Réserve des artisans",
-            "create_stockpile_description": "Les artisans vont stocker leur produits dans cette réserve.<p>Vous souhaiterais sans doute le placer à proximité d'une table de travail, mais bon, la décision vous reviens.",
+            "create_stockpile_description": "Les artisans vont stocker leur produits dans cette réserve.<p>Vous souhaiterez sans doute le placer à proximité d'une table de travail, mais bon, la décision vous reviens.",
             "page1_subtitle2": "Cliquer sur le sol pour placer l'atelier",
             "page2_subtitle2": "Click and drag on the ground to place the stockpile"
          },
@@ -2748,115 +2748,115 @@
    "entities": {
       "armor": {
          "basic_shield": {
-            "display_name": "Trusty Shield",
-            "description": "Portable armor!",
+            "display_name": "Bouclier fidèle",
+            "description": "Armure portative !",
             "basic_shield_iconic": {
-               "display_name": "Trusty Shield",
-               "description": "Portable armor!"
+               "display_name": "Bouclier fidèle",
+               "description": "Armure portative !"
             }
          },
          "iron_shield": {
-            "display_name": "Heavy Iron Shield",
-            "description": "Ooof. Heavy.",
+            "display_name": "Bouclier lourd en fer",
+            "description": "Ouuf. Lourd.",
             "iron_shield_iconic": {
-               "display_name": "Heavy Iron Shield",
-               "description": "Ooof. Heavy."
+               "display_name": "Bouclier lourd en fer",
+               "description": "Ouuf. Lourd."
             }
          },
          "bronze_breastplate": {
-            "display_name": "Bronze Breastplate",
-            "description": "Armor",
+            "display_name": "Cuirasse en bronze",
+            "description": "Armure",
             "bronze_breastplate_iconic": {
-               "display_name": "Bronze Breastplate",
-               "description": "Armor"
+               "display_name": "Cuirasse en bronze",
+               "description": "Armure"
             }
          },
          "cloth_padded_vest": {
-            "display_name": "Padded Vest",
-            "description": "Provides light protection in a fight.",
+            "display_name": "Gilet rembourré",
+            "description": "Procure une légère protection en combat.",
             "cloth_padded_vest_iconic": {
-               "display_name": "Padded Vest",
-               "description": "Provides light protection in a fight. Every little bit helps!"
+               "display_name": "Gilet rembourré",
+               "description": "Procure une légère protection en combat. Chaque petit geste compte!"
             }
          },
          "iron_mail": {
-            "display_name": "Iron Mail",
-            "description": "A full suit of iron armor",
+            "display_name": "Cuirasse en fer",
+            "description": "Une armure complète en fer",
             "iron_mail_iconic": {
-               "display_name": "Iron Mail",
-               "description": "A full suit of iron armor"
+               "display_name": "Cuirasse en fer",
+               "description": "Une armure complète en fer"
             }
          },
          "leather_vest": {
-            "display_name": "Thick Leather Vest",
-            "description": "Hardened leather provides sturdy protection.",
+            "display_name": "Gilet de cuir épais",
+            "description": "Le cuir durci offre une meilleur protection.",
             "leather_vest_iconic": {
-               "display_name": "Thick Leather Vest",
-               "description": "Hardened leather provides study protection."
+               "display_name": "Gilet de cuir épais",
+               "description": "Le cuir durci offre une meilleur protection."
             }
          },
          "steel_mail": {
-            "display_name": "Full Platemail",
-            "description": "A full suit of steel armor",
+            "display_name": "Armure de plates",
+            "description": "Une armure complète en acier",
             "steel_mail_iconic": {
-               "display_name": "Full Platemail",
-               "description": "A full suit of steel armor"
+               "display_name": "Armure de plates",
+               "description": "Une armure complète en acier"
             }
          },
          "studded_leather_helmet": {
-            "display_name": "Studded Leather Helmet",
-            "description": "Protects your head"
+            "display_name": "Casque clouté en cuir",
+            "description": "Protège votre tête"
          },
          "wooden_shield": {
-            "display_name": "Rough Wooden Buckler",
-            "description": "Crude and basic",
+            "display_name": "Bouclier en bois brut",
+            "description": "Brut et basique",
             "wooden_shield_iconic": {
-               "display_name": "Rough Wooden Buckler",
-               "description": "Crude and basic"
+               "display_name": "Bouclier en bois brut",
+               "description": "Brut et basique"
             }
          }
       },
       "boulders": {
          "large_boulder": {
             "large_boulder_1": {
-               "display_name": "Huge Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Énorme rocher",
+               "description": "Exploitable pour de la pierre"
             },
             "large_boulder_2": {
-               "display_name": "Huge Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Énorme rocher",
+               "description": "Exploitable pour de la pierre"
             }
          },
          "medium_boulder": {
             "medium_boulder_1": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Rocher moyen",
+               "description": "Exploitable pour de la pierre"
             },
             "medium_boulder_2": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Rocher moyen",
+               "description": "Exploitable pour de la pierre"
             },
             "medium_boulder_3": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Rocher moyen",
+               "description": "Exploitable pour de la pierre"
             }
          },
          "small_boulder": {
-            "display_name": "Small Boulder",
-            "description": "Harvestable for stone"
+            "display_name": "Petit rocher",
+            "description": "Exploitable pour de la pierre"
          }
       },
       "construction": {
          "cobblestone_fence": {
             "cobblestone_fence_ghost": {
-               "display_name": "Cobblestone Fence",
-               "description": "A rustic, sturdy wall segment."
+               "display_name": "Clôture en pierre",
+               "description": "Un rustique, mais solide segment de mur."
             }
          },
          "cobblestone_fence_gate": {
             "cobblestone_fence_gate_ghost": {
-               "display_name": "Cobblestone Fence Gate",
-               "description": "It's thick stone walls grant a sense of security."
+               "display_name": "Portail de clôture en pierre",
+               "description": "Ces épais murs de pierre confièrent un sentimIt's thick stone walls grant a sense of security."
             }
          },
          "crafting": {
