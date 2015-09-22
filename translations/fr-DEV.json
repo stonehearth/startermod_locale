@@ -72,23 +72,23 @@
             "terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains."
          },
          "promotion_tree": {
-            "title": "Choose a Job",
-            "promotion_title": "Promotion to [str(job_name)]", 
-            "text_1": "In honor of steadfast efforts and resilience, we hereby advance",
-            "choose": "choose a hearthling...",
+            "title": "Choisir une profession",
+            "promotion_title": "Promouvoir en [str(job_name)]", 
+            "text_1": "En l'honneur de vos efforts inébranlables et de votre rigueur, nous vous annonçons par la présente",
+            "choose": "Choisissez un hearthling...",
             "text_2": "en ce jour du, [str(date)]",
             "approve": "APPROUVER",
             "approved": "APPROUVÉ",
             "denied": "REFUSÉ! Éxigences non remplies",
             "stamper_top_text": "CLIQUER POUR",
             "stamper_bottom_text": "APPROUVER",
-            "requires": "Requires"
+            "requires": "Prérequis"
          },
          "build_workshop": {
             "title": "Construire l'atelier",
-            "requirements": "Éxigences",
-            "create_stockpile": "Crafter's Stockpile",
-            "create_stockpile_description": "The crafter will store crafted goods in this stockpile.<p>You probably want to place it near the workbench, but hey, it's your decision.",
+            "requirements": "Prérequis",
+            "create_stockpile": "Réserve des artisans",
+            "create_stockpile_description": "Les artisans vont stocker leur produits dans cette réserve.<p>Vous souhaiterais sans doute le placer à proximité d'une table de travail, mais bon, la décision vous reviens.",
             "page1_subtitle2": "Cliquer sur le sol pour placer l'atelier",
             "page2_subtitle2": "Click and drag on the ground to place the stockpile"
          },
