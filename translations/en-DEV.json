@@ -904,7 +904,13 @@
             "new_game": "New Game",
             "load_game": "Load Game",
             "quick_start": "Quick Start",
-            "patch_notes": "Show Patch Notes"
+            "patch_notes": "Show Patch Notes",
+            "alpha_welcome_dialog": {
+               "title": "Welcome to Stonehearth!",
+               "message" : "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
+               "accept": "Yes, send crash reports",
+               "cancel": "Nope"
+            }
          },
          "embark": {
             "title": "Prepare to set out for adventure",
@@ -1559,6 +1565,57 @@
                         }
                      }
                   }
+               },
+               "arcs": {
+                  "challenge": {
+                     "forward_scouts": {
+                        "encounters": {
+                           "create_scout_camp": {
+                              "campfire": {
+                                 "campfire": {
+                                    "display_name": "Hypnotic Campfire",
+                                    "Description": "But... what makes it green?"
+                                 }
+                              },
+                              "goblin_tent": {
+                                 "tent": {
+                                    "display_name": "Wolf Trainer Tent",
+                                    "Description": "Full of improbable makeshift devices."
+                                 }
+                              },
+                              "wolf_cage": {
+                                 "wolf_cage": {
+                                    "display_name": "Wolf Cage",
+                                    "Description": "Property of Ogo Skullbonker"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  },
+                  "climax": {
+                     "encounters": {
+                        "create_camp": {
+                           "ogo_tent": {
+                              "ogo_tent": {
+                                 "display_name": "Ogo's Tent"
+                              }
+                           },
+                           "ogo_throne": {
+                              "ogo_throne": {
+                                 "display_name": "Ogo's Throne",
+                                 "Description": "Decorated with Mountain's Baby Tusks"
+                              }
+                           },
+                           "wolf_kennel": {
+                              "wolf_cage": {
+                                 "display_name": "Wolf Cage",
+                                 "Description": "Property of Ogo Skullbonker"
+                              }
+                           }
+                        }
+                     }
+                  }
                }
             },
             "ambient_threats": {
@@ -1672,6 +1729,22 @@
                   "mission": {
                      "sighted_bulletin": {
                         "title": "Invaders sighted!"
+                     }
+                  }
+               },
+               "arcs": {
+                  "trigger": {
+                     "ambient_threats": {
+                        "encounters": {
+                           "create_thief_camp": {
+                              "thief_campfire": {
+                                 "campfire": {
+                                    "display_name": "Hypnotic Campfire",
+                                    "Description": "But... what makes it green?"
+                                 }
+                              }
+                           }
+                        }
                      }
                   }
                }
@@ -2274,7 +2347,7 @@
                      "090": "I had a dream in which a sheep bit me, and turned me into a sheep! But I could still talk. It was weird.",
                      "091": "I had a dream in which I was tiny, and a portly man said he was going to &quot;Boil em, mash em, stick em in a stew!&quot; Although I awoke before anything else could happen, I assumed he was talking about me.",
                      "092": "I dreamed about catching a giant fish! From a puddle!",
-                     "093": "I had a dream where the tree I was chopping trasformed into a giant and attacked me!",
+                     "093": "I had a dream where the tree I was chopping transformed into a giant and attacked me!",
                      "094": "I had a dream where I was bullying a poyo and then a swarm of poyo's started attacking me! ... I am now a changed Hearthling",
                      "095": "I had a dream, in which I was peacefully dosing off. The version of myself in that dream was also having a dream about me peacefully dosing off. This went on and on until I woke up.",
                      "096": "I had a dream where I ate so much food I literally transformed into a planet.",
