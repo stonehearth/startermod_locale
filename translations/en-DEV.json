@@ -262,7 +262,7 @@
                "wealth": "Wealth",
                "refined": "Refined",
                "uncategorized": "Uncategorized",
-               "workshops" : "Workshops",
+               "workshops": "Workshops",
                "none": "None"
             },
             "tooltip_combat_base_damage": "Atk:",
@@ -3891,7 +3891,7 @@
             },
             "goblin_chief_hut": {
                "goblin_tent": {
-                  "display_name": "A Tent",
+                  "display_name": "Goblin Tent",
                   "description": "Made from crudely-sewn animal hides"
                }
             },
@@ -3910,8 +3910,8 @@
                }
             },
             "goblin_hut": {
-               "display_name": "A Tent",
-               "description": "Made from crudely-sewn animal hides"
+               "display_name": "Goblin Tent",
+               "description": "Made from coarsely chopped wodden boards"
             },
             "goblin_large_totem": {
                "display_name": "Large totem"
@@ -3940,12 +3940,12 @@
                "description": "Bred to inspire terror"
             },
             "orc": {
-               "display_name": "A Zombie",
-               "description": "It yearns for flesh",
+               "display_name": "An Orc",
+               "description": "Orc crush puny hearthling!",
                "male": {
                   "zombie_male": {
-                     "display_name": "A Zombie",
-                     "description": "It yearns for flesh"
+                     "display_name": "An Orc",
+                     "description": "Orc crush puny hearthling!"
                   }
                }
             },
@@ -4226,7 +4226,28 @@
          },
          "tilled_dirt": {
             "display_name": "Tilled Earth",
-            "description": "Dirty, in the purest sense."
+            "description": "Dirty, in the purest sense.",
+            "model_variant": {
+               "dirt_1": {
+                  "display_name": "Poor Dirt",
+                  "description": "Can barely sustain life."
+               },
+               "furrow": {
+                  "display_name": "Field Furrow"
+               },
+               "dirt_2": {
+                  "display_name": "Fair Dirt",
+                  "description": "Meh. It's dirt."
+               },
+               "dirt_3": {
+                  "display_name": "Good Dirt",
+                  "description": "Home to well-behaved earthworms."
+               },
+               "dirt_4": {
+                  "display_name": "Rich Dirt",
+                  "description": "Thick and loamy."
+               }
+            }
          },
          "ui": {
             "coal_block": {
@@ -4538,10 +4559,6 @@
             "display_name": "Blacksmith",
             "description": "The Blacksmith refines raw ore into metal bars, then uses those bars to craft weapons, armor, and building parts like gates.",
             "requirements": "Blacksmith's Hammer, crafted by the Mason",
-            "workshop": {
-               "name": "Backsmith's Workshop",
-               "long_description": "The Blacksmith refines raw ore into metal bars, then uses those bars to craft weapons, armor, and building parts like gates."
-            },
             "level_6_data": {
                "title": "Master Blacksmith",
                "perk_000_name": "The Armory",
@@ -4579,7 +4596,7 @@
             },
             "blacksmith_hammer_talisman": {
                "display_name": "Blacksmith's Hammer",
-               "description": "Tools of the trade for a blacksmith."
+               "description": "Required to promote a hearthling to a blacksmith."
             }
          },
          "blacksmith_outfit": {
@@ -4600,7 +4617,7 @@
             },
             "iron_shield_recipe": {
                "description": "Heavy, but effective.",
-               "flavor" : "'Buck up, recruit! Better the shield dent than you!' -Thredd, Man at Arms", 
+               "flavor": "'Buck up, recruit! Better the shield dent than you!' -Thredd, Man at Arms",
                "recipe_name": "Iron Shield"
             },
             "bronze_breastplate_recipe": {
@@ -4719,11 +4736,6 @@
             "display_name": "Carpenter",
             "description": "The carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
             "requirements": "Carpenter's saw, crafted by the Blacksmith.",
-            "workshop": {
-               "name": "Carpenter's Workshop",
-               "description": "insert description here",
-               "long_description": "The carpenter makes things from wood. Things you will need...quite a lot.<p>So honestly, you should really make this guy first."
-            },
             "level_6_data": {
                "title": "Master Carpenter",
                "perk_000_name": "10,000 Hours (not implemented)",
@@ -4976,10 +4988,6 @@
             "display_name": "Cook",
             "description": "The cook makes delicious, hearty meals from base vegetables and meats.",
             "requirements": "2 levels of Farmer and a Stoneware Spoon, crafted by the Mason.",
-            "workshop": {
-               "name": "Stone Cauldron",
-               "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
-            },
             "level_6_data": {
                "title": "Master cook",
                "perk_000_name": "10,000 Hours (not implemented)",
@@ -4995,7 +5003,7 @@
             },
             "level_1_data": {
                "perk_000_name": "Camp Cooking -- XXX TOM, REVISIT THE COOK PERKS!!!!!!",
-               "perk_000_description": "The cook can make basic, nutritious recipes." 
+               "perk_000_description": "The cook can make basic, nutritious recipes."
             },
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
@@ -5219,11 +5227,6 @@
             "display_name": "Mason",
             "description": "The Mason crafts building materials and decorative items from stone.",
             "requirements": "Mason's Mallet and Chisel, crafted by the carpenter.",
-            "workshop": {
-               "name": "Mason's Workshop",
-               "description": "insert description here",
-               "long_description": "The Mason crafts building materials and decorative items from stone."
-            },
             "level_6_data": {
                "title": "Master mason",
                "perk_000_name": "10,000 Hours (not implemented)",
@@ -5511,10 +5514,6 @@
             "display_name": "Weaver",
             "description": "The Weaver makes thread, fabrics and hangings from fiber and dye.",
             "requirements": "Weaver's Spindle, crafted by the Carpenter.",
-            "workshop": {
-               "name": "Weaver's Workshop",
-               "long_description": "Makes thread and cloth!  Can't really have a respectable civilization without one!"
-            },
             "level_6_data": {
                "title": "Master Weaver",
                "perk_000_name": "10,000 Hours (not implemented)",
