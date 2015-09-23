@@ -175,6 +175,7 @@
             "input_text_tooltip": "Click to edit"
          },
          "party": {
+            "title": "Parties",
             "create_party": "Create Party",
             "edit_party": "Edit",
             "add_party_member": "Add Member",
