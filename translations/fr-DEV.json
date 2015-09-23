@@ -2922,87 +2922,87 @@
          "large_crate": {
             "large_crate_ghost": {
                "display_name": "Grande caisse",
-               "description": "Boîte de rangement"
+               "description": "Boîte de rangement."
             }
          },
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
                "display_name": "Coffre en cuir lié",
-               "description": "Boîte de rangement"
+               "description": "Boîte de rangement."
             }
          },
          "small_crate": {
             "small_crate_ghost": {
                "display_name": "Petite caisse",
-               "description": "Boîte de rangement"
+               "description": "Boîte de rangement."
             }
          },
          "barrel": {
             "barrel_ghost": {
                "display_name": "Coffre en cuir lié",
-               "description": "Boîte de rangement"
+               "description": "Boîte de rangement."
             }
          }
       },
       "crafting": {
          "workshop_outbox": {
             "display_name": "Boîte d'envoi d'artisan",
-            "description": "Stocke les fabrications terminées"
+            "description": "Stocke les fabrications terminées."
          }
       },
       "critters": {
          "poyo": {
-            "display_name": "A Poyo",
-            "description": "Plump and tasty wild fowl",
+            "display_name": "Un Poyo",
+            "description": "Oiseaux sauvages dodus et savoureux.",
             "poyo_egg": {
-               "display_name": "Fertilized Poyo Egg",
-               "description": "Is it hatching yet?"
+               "display_name": "Oeuf de poyo fécondé.",
+               "description": "Est-il en train d'éclore?"
             },
             "young": {
-               "display_name": "Poyo Chick",
-               "description": "Peep Peep!"
+               "display_name": "Poussin poyo",
+               "description": "Piou piou !"
             }
          },
          "rabbit": {
-            "display_name": "Rabbit",
+            "display_name": "Lapin",
             "description": "Om nom nom",
             "rabbit_jerky": {
-               "display_name": "Rabbit jerky"
+               "display_name": "Lapin séché"
             }
          },
          "racoon": {
-            "display_name": "Racoon",
-            "description": "Small forest creature",
+            "display_name": "Raton laveur",
+            "description": "Petite créature de la forêt.",
             "racoon_jerky": {
-               "display_name": "Racoon jerky"
+               "display_name": "Raton laveur séché"
             }
          },
          "red_fox": {
-            "display_name": "Fox",
-            "description": "Small forest creature",
+            "display_name": "Renard",
+            "description": "Petite créature de la forêt.",
             "red_fox_jerky": {
-               "display_name": "Fox jerky"
+               "display_name": "Renard séché"
             }
          },
          "sheep": {
-            "display_name": "A sheep",
-            "description": "So fluffy!",
-            "unripe_description": "This sheep is still quite naked.",
+            "display_name": "Un mouton",
+            "description": "Ssi moelleux !",
+            "unripe_description": "Ce mouton est encore tout nu.",
             "sheep_young": {
-               "display_name": "A Lamb",
-               "description": "Awww!"
+               "display_name": "Un agneau",
+               "description": "Awww !"
             }
          },
          "squirrel": {
-            "display_name": "Squirrel",
-            "description": "Small forest creature",
+            "display_name": "Écureuil",
+            "description": "Petite créature de la forêt",
             "squirrel_jerky": {
-               "display_name": "Squirrel jerky"
+               "display_name": "Écureuil séché"
             }
          },
          "wolf": {
-            "display_name": "A wolf",
-            "description": "Grrr! Rwar!"
+            "display_name": "Un loup",
+            "description": "Grrr ! Rwar !"
          }
       },
       "crops": {
@@ -3348,183 +3348,183 @@
       "decoration": {
          "banner_wall_big": {
             "banner_wall_big_ghost": {
-               "display_name": "Big Wall-Mounted Banner",
-               "description": "Show your town pride with this banner."
+               "display_name": "Grande bannière murale",
+               "description": "Affichez votre sentiment de fierté envers votre ville avec cette bannière."
             }
          },
          "banner_wall_small": {
             "banner_wall_small_ghost": {
-               "display_name": "Small Wall-Mounted Banner",
-               "description": "Show your town pride with this banner."
+               "display_name": "Petite bannière murale",
+               "description": "Affichez votre sentiment de fierté envers votre ville avec cette bannière."
             }
          },
          "bird_bath": {
             "bird_bath_ghost": {
-               "display_name": "Bird Bath",
-               "description": "Tranquil."
+               "display_name": "Bassin à oiseau",
+               "description": "Tranquille."
             }
          },
          "brightbell": {
             "brightbell_ghost": {
-               "display_name": "Brightbell Flower",
-               "description": "Just a flower."
+               "display_name": "Hémérocalle",
+               "description": "Juste une fleur."
             }
          },
          "crate": {
-            "display_name": "A crate"
+            "display_name": "Une caisse"
          },
          "curtains": {
             "curtains_ghost": {
-               "display_name": "Curtains",
-               "description": "Dresses up a window."
+               "display_name": "Rideau",
+               "description": "Habille une fenêtre."
             }
          },
          "firepit": {
             "firepit_ghost": {
-               "display_name": "Fire Pit",
-               "description": "Provides warmth and light"
+               "display_name": "Feu de camp",
+               "description": "Fournit chaleur et la lumière"
             }
          },
          "firepit_skulls": {
             "firepit_skulls_ghost": {
-               "display_name": "Wicked Fire Pit",
+               "display_name": "Méchant feu de camp",
                "description": "Are those....ew."
             }
          },
          "frostsnap": {
             "frostsnap_ghost": {
-               "display_name": "Frostsnap Flower",
-               "description": "It's chill to the touch!"
+               "display_name": "Perçe-neige",
+               "description": "C'est froid au toucher !"
             }
          },
          "fur_rug": {
             "fur_rug_ghost": {
-               "display_name": "Fur Rug",
-               "description": "Made from animal pelts."
+               "display_name": "Tapis de fourrure",
+               "description": "Fabriqué à partir de peaux d'animaux."
             }
          },
          "gargoyle": {
             "gargoyle_ghost": {
-               "display_name": "Wall Mounted Decorative Gargoyle",
-               "description": "Gothic-style carving to decorate your walls."
+               "display_name": "Gargouille décorative murale",
+               "description": "Une sculpture de style gothique pour décorer vos murs."
             }
          },
          "gilded_crimson_rug": {
             "gilded_crimson_rug_ghost": {
-               "display_name": "Gilded Crimson Rug",
-               "description": "So regal"
+               "display_name": "Tapis doré cramoisie",
+               "description": "Si royale"
             }
          },
          "loot_chest": {
-            "display_name": "A big chest",
-            "description": "It holds loot!"
+            "display_name": "Un grand coffre",
+            "description": "Il contient du butin !"
          },
          "stone_brazier": {
             "stone_brazier_ghost": {
-               "display_name": "Stone Brazier",
-               "description": "Provides warm and cozy fire at night"
+               "display_name": "Brasero en pierre",
+               "description": "Fournit un feu chaleureux et confortable la nuit"
             }
          },
          "stone_garden_lantern": {
             "stone_garden_lantern_ghost": {
-               "display_name": "Stone Garden Lantern",
-               "description": "An ancient-looking lantern with great ambiance."
+               "display_name": "Lanterne de jardin en pierre",
+               "description": "Une lanterne à l'ancienne donnant une bonne mabiance."
             }
          },
          "stone_wall_lantern": {
             "stone_wall_lantern_ghost": {
-               "display_name": "Stone Wall-mounted Lantern",
-               "description": "Easily attached to walls"
+               "display_name": "Lanterne murale en pierre",
+               "description": "Se fixe facilement aux murs"
             }
          },
          "tapestry_wall": {
             "tapestry_wall_ghost": {
-               "display_name": "Wall-Mounted Tapestry",
-               "description": "A decorative scene, woven in colored thread and cord."
+               "display_name": "Tapisserie murale",
+               "description": "Une scène décorative, tissé en fil et cordon colorés."
             }
          },
          "throw_rug": {
             "throw_rug_ghost": {
-               "display_name": "Decorative Throw Rug",
-               "description": "Brightens up that old dusty floor."
+               "display_name": "Tapis décoratif",
+               "description": "Illumine ce vieux sol poussiéreux."
             }
          },
          "tower_brazier": {
             "tower_brazier_ghost": {
-               "display_name": "Tower Brazier",
-               "description": "Provides warm and cozy fire at night"
+               "display_name": "Tour brazero",
+               "description": "Fournit un feu chaleureux et confortable la nuit"
             }
          },
          "wall_crest": {
             "wall_crest_ghost": {
-               "display_name": "Wall Crest",
-               "description": "Just for show."
+               "display_name": "Écussion mural",
+               "description": "Juste pour le spectacle."
             }
          },
          "window_box_brightbell": {
             "window_box_brightbell_ghost": {
-               "display_name": "Brightbell planter",
-               "description": "A tidy home for the plant."
+               "display_name": "Jardinière d'hémérocalle",
+               "description": "Un foyer coquet pour la plante."
             }
          },
          "window_box_frostsnap": {
             "window_box_frostsnap_ghost": {
-               "display_name": "Frostsnap planter",
-               "description": "A tidy home for the plant."
+               "display_name": "Jardinière de perçe-neige",
+               "description": "Un foyer coquet pour la plante."
             }
          },
          "wooden_garden_lantern": {
             "wooden_garden_lantern_ghost": {
-               "display_name": "Wooden Garden Lantern",
-               "description": "A compact source of light"
+               "display_name": "Lanterne de jardin en bois",
+               "description": "Une source de lumière compacte."
             }
          },
          "wooden_garden_lantern_fine": {
             "wooden_garden_lantern_fine_ghost": {
-               "display_name": "Fine Garden Lantern",
-               "description": "A compact source of light"
+               "display_name": "Belle lanterne de jardin",
+               "description": "Une source de lumière compacte."
             }
          },
          "wooden_sign": {
             "wooden_sign_ghost": {
-               "display_name": "Wooden Wall-Mounted Sign",
-               "description": "An expression of future intent."
+               "display_name": "Enseigne murale en bois",
+               "description": "L'expression d'une intention future."
             }
          },
          "wooden_sign_blacksmith": {
             "wooden_sign_blacksmith_ghost": {
-               "display_name": "Blacksmith's Wall-Mounted Sign",
-               "description": "A sign with the mark of the blacksmith."
+               "display_name": "Enseigne murale de forgeron",
+               "description": "Une enseigne avec la marque du forgeron."
             }
          },
          "wooden_sign_carpenter": {
             "wooden_sign_carpenter_ghost": {
-               "display_name": "Carpenter's Wall-Mounted Sign",
-               "description": "A sign with the mark of the Carpenter."
+               "display_name": "Enseigne murale de menuisier",
+               "description": "Une enseigne avec la marque du menuisier."
             }
          },
          "wooden_sign_mason": {
             "wooden_sign_mason_ghost": {
-               "display_name": "Mason's Wall-Mounted Sign",
-               "description": "A sign with the mark of the Mason."
+               "display_name": "Enseigne murale de maçon",
+               "description": "Une enseigne avec la marque du maçon."
             }
          },
          "wooden_sign_weaver": {
             "wooden_sign_weaver_ghost": {
-               "display_name": "Weaver's Wall-Mounted Sign",
-               "description": "A sign with the mark of the Weaver."
+               "display_name": "Enseigne murale de tisserand",
+               "description": "Une enseigne avec la marque du tisserand."
             }
          },
          "wooden_wall_lantern": {
             "wooden_wall_lantern_ghost": {
-               "display_name": "Wooden Wall-mounted Lantern",
-               "description": "Easily attached to walls"
+               "display_name": "Lanterne murale en bois",
+               "description": "Se fixe facilement aux murs"
             }
          },
          "wooden_wall_lantern_fine": {
             "wooden_wall_lantern_fine_ghost": {
-               "display_name": "Fine Wall-mounted Lantern",
-               "description": "Easily attached to walls"
+               "display_name": "Belle lanterne murale en bois",
+               "description": "Se fixe facilement aux murs"
             }
          }
       },
