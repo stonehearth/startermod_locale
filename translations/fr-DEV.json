@@ -2861,93 +2861,93 @@
          },
          "crafting": {
             "workshop_outbox": {
-               "display_name": "Crafter Outbox",
-               "description": "Stores finished craftables"
+               "display_name": "Boîte d'envoi d'atelier",
+               "description": "Stocke les fabrications terminées"
             }
          },
          "picket_fence": {
             "picket_fence_ghost": {
-               "display_name": "Picket Fence",
-               "description": "If it's not white, is our life unfulfilled?"
+               "display_name": "Palissade",
+               "description": "Si elle n'est pas blanche, c'est que notre vie est incomplète?"
             }
          },
          "picket_fence_gate": {
             "picket_fence_gate_ghost": {
-               "display_name": "Picket Fence Gate",
-               "description": "Don't like your neighbors? Don't install."
+               "display_name": "Portail de palissade",
+               "description": "VOus n'aimez pas vos voisins? Ne pas installer."
             }
          },
          "stockpile": {
-            "display_name": "Stockpile",
-            "description": "For storing things"
+            "display_name": "Réserve",
+            "description": "Pour stocker des choses"
          },
          "wooden_diamond_window": {
             "wooden_diamond_window_ghost": {
-               "display_name": "Diamond Window Frame",
-               "description": "So much for privacy..."
+               "display_name": "Cardre de fenêtre diamant",
+               "description": "Tant pis pour la vie privée..."
             }
          },
          "wooden_door": {
             "wooden_door_ghost": {
-               "display_name": "Wooden Door",
-               "description": "Privacy at last!"
+               "display_name": "Porte en bois",
+               "description": "Enfin un peu de vide privée !"
             }
          },
          "wooden_door_2": {
             "wooden_door_2_ghost": {
-               "display_name": "Reinforced Wooden Door",
-               "description": "Sturdier than your average door."
+               "display_name": "Porte en bois renforcée",
+               "description": "Plus robuste que votre porte classique."
             }
          },
          "wooden_door_4x4": {
             "wooden_door_ghost": {
-               "display_name": "Wooden Door",
-               "description": "Privacy at last!"
+               "display_name": "Porte en bois",
+               "description": "Enfin un peu de vide privée !"
             }
          },
          "wooden_double_door": {
             "wooden_double_door_ghost": {
-               "display_name": "Wooden Double Door",
-               "description": "A larger door. It makes quite an impression."
+               "display_name": "Double porte en bois",
+               "description": "Une grande porte. Ça fait forte impression."
             }
          },
          "wooden_window_frame": {
             "wooden_window_frame_ghost": {
-               "display_name": "Wooden Window Frame",
-               "description": "So much for privacy..."
+               "display_name": "Cadre de fenêtre en bois",
+               "description": "Tant pis pour la vie privée..."
             }
          }
       },
       "containers": {
          "large_crate": {
             "large_crate_ghost": {
-               "display_name": "Large Crate",
-               "description": "Storage container"
+               "display_name": "Grande caisse",
+               "description": "Boîte de rangement"
             }
          },
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
-               "display_name": "Leather Bound Chest",
-               "description": "Storage container"
+               "display_name": "Coffre en cuir lié",
+               "description": "Boîte de rangement"
             }
          },
          "small_crate": {
             "small_crate_ghost": {
-               "display_name": "Small Crate",
-               "description": "Storage container"
+               "display_name": "Petite caisse",
+               "description": "Boîte de rangement"
             }
          },
          "barrel": {
             "barrel_ghost": {
-               "display_name": "Leather Bound Chest",
-               "description": "Storage container"
+               "display_name": "Coffre en cuir lié",
+               "description": "Boîte de rangement"
             }
          }
       },
       "crafting": {
          "workshop_outbox": {
-            "display_name": "Crafter Outbox",
-            "description": "Stores finished craftables"
+            "display_name": "Boîte d'envoi d'artisan",
+            "description": "Stocke les fabrications terminées"
          }
       },
       "critters": {
