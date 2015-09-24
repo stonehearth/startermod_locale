@@ -2764,10 +2764,10 @@
             }
          },
          "bronze_breastplate": {
-            "display_name": "Cuirasse en bronze",
+            "display_name": "Plastron en bronze",
             "description": "Armure",
             "bronze_breastplate_iconic": {
-               "display_name": "Cuirasse en bronze",
+               "display_name": "Plastron en bronze",
                "description": "Armure"
             }
          },
@@ -2856,12 +2856,12 @@
          "cobblestone_fence_gate": {
             "cobblestone_fence_gate_ghost": {
                "display_name": "Portail de clôture en pierre",
-               "description": "Ces épais murs de pierre confièrent un sentimIt's thick stone walls grant a sense of security."
+               "description": "Ces épais murs de pierre confèrent un sentiment de sécurité."
             }
          },
          "crafting": {
             "workshop_outbox": {
-               "display_name": "Boîte d'envoi d'atelier",
+               "display_name": "Boîte de produit fini",
                "description": "Stocke les fabrications terminées"
             }
          },
@@ -2946,7 +2946,7 @@
       },
       "crafting": {
          "workshop_outbox": {
-            "display_name": "Boîte d'envoi d'artisan",
+            "display_name": "Boîte de produit fini",
             "description": "Stocke les fabrications terminées."
          }
       },
