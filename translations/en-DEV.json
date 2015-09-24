@@ -3011,6 +3011,12 @@
                "description": "Storage container"
             }
          },
+         "stone_chest": {
+            "stone_chest_ghost": {
+               "display_name": "Stone Chest",
+               "description": "Storage container"
+            }
+         },
          "barrel": {
             "barrel_ghost": {
                "display_name": "Leather Bound Chest",
@@ -5383,6 +5389,7 @@
                "flavor": "Remnants of the servants of Brelor, Crownless King."
             },
             "tools_name": "Tools",
+            "storage_name" : "Storage", 
             "signage_decoration_name": "Signage & Decoration",
             "building_parts_name": "Building Parts",
             "weapons_name": "Weapons",
@@ -5406,6 +5413,11 @@
                "description": "Not horribly comforable, but a symbol of status.",
                "recipe_name": "Stone Chair",
                "flavor": "Outdoorsy!"
+            },
+            "stone_chest_recipe": {
+               "description": "Imposing place to put things.",
+               "recipe_name": "Stone Chest",
+               "flavor": "'Listen up, kid. All the chests in Hemgorir-Under-Mountain looked like this.'--Edolf, Wandering Bard"
             },
             "stone_garden_lantern_recipe": {
                "description": "An ancient-looking lantern with great ambiance.",
