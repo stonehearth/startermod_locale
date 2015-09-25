@@ -90,7 +90,7 @@
             "create_stockpile": "Réserve des artisans",
             "create_stockpile_description": "Les artisans vont stocker leur produits dans cette réserve.<p>Vous souhaiterez sans doute le placer à proximité d'une table de travail, mais bon, la décision vous reviens.",
             "page1_subtitle2": "Cliquer sur le sol pour placer l'atelier",
-            "page2_subtitle2": "Click and drag on the ground to place the stockpile"
+            "page2_subtitle2": "Cliquer sur le sol pour placer le stockage"
          },
          "citizen_character_sheet": {
             "title": "Informations personnel",
@@ -201,29 +201,29 @@
          },
          "create_camp": {
             "new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
-            "click_banner_tip": "Click the banner to choose your settlement's location",
+            "click_banner_tip": "Cliquez sur la baniière pour choisir l'emplacement de votre colonie",
             "select_camp_tip": "Now click somewhere in the world",
             "name_camp_title": "Name your settlement",
             "name_camp_prompt": "Type a name for your settlement!"
          },
          "calendar": {
             "months": {
-               "1": "Bittermun",
-               "2": "Deepmun",
-               "3": "Dewmun",
-               "4": "Rainmun",
-               "5": "Growmun",
-               "6": "Goldmun",
-               "7": "Feastmun",
-               "8": "Warmun",
-               "9": "Newmun",
-               "10": "Azuremun",
-               "11": "Hearthmun",
-               "12": "Northmun"
+               "1": "moiamer", 
+               "2": "moiprofond", 
+               "3": "moirosée", 
+               "4": "moimouillé", 
+               "5": "moigrand", 
+               "6": "moidor", 
+               "7": "moifestin", 
+               "8": "moiguerre", 
+               "9": "moinouveau", 
+               "10": "moiazure", 
+               "11": "moimaison", 
+               "12": "moinord" 
             },
             "month_format": "i18n(stonehearth:ui.game.calendar.months.[str(date.month)])",
-            "date_format_long": "Day [str(date.day)] of i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
-            "date_time_long_format": "Day [str(date.day)] of i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]"
+            "date_format_long": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
+            "date_time_long_format": "Jour [str(date.day)] of i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]"
          },
          "esc_menu": {
             "title": "Stonehearth",
@@ -248,10 +248,10 @@
          },
          "entities": {
             "custom_name": "[str(self.unit_info.custom_name)]",
-            "unknown_name": "Unknown",
+            "unknown_name": "Inconnu",
             "item_categories": {
                "food": "Nourriture",
-               "resources": "Resources",
+               "resources": "Ressources",
                "furniture": "Mobilier",
                "armor": "Armure",
                "decoration": "Décoration",
@@ -289,65 +289,65 @@
                      "tip_description": "Bouton droit pour quitter ce mode"
                   },
                   "mining_ui": {
-                     "display_name": "Mine Tunnel",
-                     "description": "Mine out tunnels and caves",
-                     "tip_title": "Click and drag to dig downward",
-                     "tip_description": "Right click to exit"
+                     "display_name": "Creuser un tunnel",
+                     "description": "Creuse des tunnels et des grottes",
+                     "tip_title": "Cliquez et relachez pour creuser dans une direction",
+                     "tip_description": "Bouton droite pour sortir"
                   },
                   "mine_block": {
-                     "display_name": "Mine Block",
-                     "description": "Mine individual blocks",
-                     "tip_title": "Click and drag to dig downward",
-                     "tip_description": "Right click to exit"
+                     "display_name": "Creuser un bloc",
+                     "description": "Creuse des blocs individuels",
+                     "tip_title": "Cliquez et relachez pour creuser dans une direction",
+                     "tip_description": "Bouton droite pour sortir"
                   },
                   "cancel_task": {
-                     "display_name": "Cancel Task",
-                     "description": "Cancel tasks on this object",
-                     "tip_title": "Click and drag to remove various commands",
-                     "tip_description": "Right click to exit this mode"
+                     "display_name": "Annuler une tâche",
+                     "description": "Annule les tâches sur des objets",
+                     "tip_title": "Cliquez et relachez pour retirer différentes instructions",
+                     "tip_description": "Bouton droite pour sortir de ce mode"
                   },
                   "clear_item": {
-                     "display_name": "Clear",
-                     "description": "Clear items out of the world",
-                     "tip_title": "Click and drag to permanently clear items from the world",
-                     "tip_description": "Right click to exit this mode",
-                     "confirm_title": "Are you really sure you want to clear these items?",
-                     "confirm_message": "Usable items in the area will be permanently destroyed",
-                     "confirm_clear": "Yes, destroy!",
-                     "confirm_clear_no": "No! I need that stuff!"
+                     "display_name": "Effacer",
+                     "description": "Fait disparaitre des éléments de la surface du globe",
+                     "tip_title": "Cliquez et relachez pour supprimer définitivement des éléments",
+                     "tip_description": "Bouton droite pour sortir de ce mode",
+                     "confirm_title": "Êtes-vous sur d'effacer ces élements ?",
+                     "confirm_message": "Les objets utilisables dans cette zone vont être détruit définitivement",
+                     "confirm_clear": "Oui, détruit !",
+                     "confirm_clear_no": "Non ! J'en ai besoin !"
                   }
                }
             },
             "zone_menu": {
-               "display_name": "Designate Zones",
-               "description": "Designate areas of the ground for storage, farming, etc.",
+               "display_name": "Désignation des zones",
+               "description": "Désigne les zones sur le sol pour le stockage, l'agriculture, etc...",
                "items": {
                   "create_stockpile": {
-                     "display_name": "Stockpile",
-                     "description": "Place a stockpile for storing resources.",
-                     "tip_title": "Click and drag to create your stockpile",
-                     "tip_description": "Right click to exit this mode"
+                     "display_name": "Stock",
+                     "description": "Place une zone pour stocker des ressources.",
+                     "tip_title": "Cliquez et relachez pour créer un stock",
+                     "tip_description": "Bouton droite pour sortir ce mode"
                   },
                   "create_farm": {
-                     "display_name": "Farm",
-                     "description": "Place a farm on the terrain.",
-                     "required_job_text": "Requires a farmer",
-                     "tip_title": "Click and drag to designate a new field",
-                     "tip_description": "Farmers will break ground and plant crops here"
+                     "display_name": "Ferme",
+                     "description": "Place une ferme sur le sol.",
+                     "required_job_text": "Nécessite un fermier",
+                     "tip_title": "Cliquez et relachez pour créer un nouveau champs",
+                     "tip_description": "Les fermiers vont retourner la terre et semer ici"
                   },
                   "create_trapping_grounds": {
-                     "display_name": "Trapping Ground",
-                     "description": "Place traps to capture small critters.",
-                     "required_job_text": "Requires a trapper",
-                     "tip_title": "Click and drag to create trapping grounds",
-                     "tip_description": "Trappers catch critters for food and resources in this zone"
+                     "display_name": "Zone piégé",
+                     "description": "Place des pièges pour capturer des petites bestioles.",
+                     "required_job_text": "Nécessite un trappeur",
+                     "tip_title": "Cliquez et relachez pour une zone piégé",
+                     "tip_description": "Les trappeurs capturent des bestioles pour leur nourriture et leur ressources dans cette zone"
                   },
                   "create_pasture": {
-                     "display_name": "Animal Pasture",
-                     "description": "The shepherd will bring animals here to graze.",
-                     "required_job_text": "Requires a shepherd",
-                     "tip_title": "Click and drag to create an animal pasture",
-                     "tip_description": "Shepherds bring animals to this region and tend to their needs here."
+                     "display_name": "Pâturage",
+                     "description": "Le berger va mener ses animaux ici pour paître.",
+                     "required_job_text": "Nécessite un berger",
+                     "tip_title": "Cliquez et relachez pour créer un pâturage",
+                     "tip_description": "Le berger mène les animaux ici pour subvenir à leur besoin."
                   }
                }
             },
