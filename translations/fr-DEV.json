@@ -197,7 +197,7 @@
             "focus_camera": "Centrer la caméra sur cette unité"
          },
          "citizens": {
-            "title": "Citoyens"
+            "title": "Hearthlings"
          },
          "create_camp": {
             "new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
@@ -794,30 +794,30 @@
             "peaceful_game": "Jeu tranquille",
             "normal_game_description": "L'aventure démarre dans un monde plein de dangers. Votre ville subira des assauts ennemies.",
             "peaceful_game_description": "Un mode bac à sable, où vous êtes libre de construire votre ville sans vous soucier d'un quelconque envahisseur.",
-            "temperate_biome": "Temperate",
-            "desert_biome": "Desert",
-            "arctic_biome": "Arctic",
-            "swamp_biome": "Swamp",
-            "temperate_biome_description": "Default biome type, with lots of greenery",
-            "desert_biome_description": "Dry and sandy, with chunky hills and sparse vegetation",
-            "arctic_biome_description": "Snowy, with tall mountains and large water bodies",
-            "swamp_biome_description": "Temperate biome, with low mountains and a lot of water",
-            "create_game": "Create Game"
+            "temperate_biome": "Tempéré",
+            "desert_biome": "Désertique",
+            "arctic_biome": "Arctique",
+            "swamp_biome": "Marécageux",
+            "temperate_biome_description": "Type de biome par défaut, avec beaucoup de verdure",
+            "desert_biome_description": "Sec et sablonneux, avec des grosses collines et une végétation clairsemée",
+            "arctic_biome_description": "Neigeux, avec de hautes montagnes et de grands plans d'eau",
+            "swamp_biome_description": "Biome tempéré, avec des montagnes basses et beaucoup d'eau",
+            "create_game": "Créer un jeu"
          },
          "select_settlement": {
-            "title": "Click the map to choose your settlement's location",
-            "loading": "Loading...",
-            "settle_at_this_location": "Settle here!",
-            "clear_selection": "Choose another location",
-            "regenerate_map": "Roll new map",
-            "world_seed": "World Seed: ",
+            "title": "Cliquez sur la carte pour choisir l'emplacement de votre colonie",
+            "loading": "Chargement...",
+            "settle_at_this_location": "S'installer ici!",
+            "clear_selection": "Choisissez un autre emplacement",
+            "regenerate_map": "Générer une nouvelle carte",
+            "world_seed": "Graine du monde : ",
             "terrain_stats": {
-               "trees_and_plants_title": "Trees & Plants",
-               "trees_and_plants_description": "Wood is a primary building resource. You will need some in order to build your buildings and craft items like beds, tables, and chairs.",
-               "wildlife_title": "Wildlife",
-               "wildlife_description": "Local wildlife can be hunted for food and raw crafting materials.",
-               "minerals_title": "Minerals",
-               "minerals_description": "You will need minerals if you plan on building things from stone or metal."
+               "trees_and_plants_title": "Arbres et plantes",
+               "trees_and_plants_description": "Le bois est la ressource principal pour la construction. Vous aurez besoin afin de construire vos bâtiments et vos objets artisanals comme les lits, les tables et les chaises.",
+               "wildlife_title": "Vie animal",
+               "wildlife_description": "La faune locale peut être chassé pour la nourriture et les matériaux d'artisanat.",
+               "minerals_title": "Minéraux",
+               "minerals_description": "Vous aurez besoin de minéraux si vous envisagez de construire des choses de pierre ou de métal."
             },
             "terrain_codes": {
                "water": "Eau",
@@ -909,7 +909,7 @@
          "embark": {
             "title": "Préparez-vous à partir pour l'aventure",
             "citizen_info": "Liste d'expédition",
-            "reroll_citizens": "Générer de nouveaux citoyens",
+            "reroll_citizens": "Générer de nouveaux hearthlings",
             "shop_title": "Magasin du voyageur",
             "shop_gold_label": "Or",
             "shop_sold": "VENDU!",
@@ -4484,15 +4484,15 @@
             }
          },
          "wooden_sword": {
-            "display_name": "Wooden Sword",
-            "description": "Thacks thine enemies with oaken might",
+            "display_name": "Épée en bois",
+            "description": "Tranche tes enemies avec la force du chêne",
             "wooden_sword_iconic": {
-               "display_name": "Wooden Sword",
-               "description": "Basic wooden sword."
+               "display_name": "Épée en bois",
+               "description": "Épée basique en bois."
             },
             "wooden_sword_talisman": {
-               "display_name": "Wooden Sword",
-               "description": "Required to promote a hearthling into a Footman."
+               "display_name": "Épée en bois",
+               "description": "Nécessaire pour promouvoir un hearthling en Footman."
             }
          }
       }
@@ -5147,24 +5147,24 @@
             }
          },
          "farmer_hoe": {
-            "display_name": "Farmer's Hoe",
-            "description": "Used to till fields.",
+            "display_name": "Houe de fermier",
+            "description": "Utilisée pour labourer les champs.",
             "farmer_hoe_iconic": {
-               "display_name": "Farmer's Hoe",
-               "description": "Required to promote a hearthling into a Farmer."
+               "display_name": "Houe de fermier",
+               "description": "Requis pour promouvoir un hearthling en fermier."
             },
             "farmer_hoe_talisman": {
-               "display_name": "Farmer's Hoe",
-               "description": "Required to promote a hearthling into a Farmer."
+               "display_name": "Houe de fermier",
+               "description": "Requis pour promouvoir un hearthling en fermier."
             }
          },
          "farmer_outfit": {
-            "display_name": "Farmer Smock",
-            "description": "Standard dress for all farmers"
+            "display_name": "Blouse de fermier",
+            "description": "Tenue standard pour tous les agriculteurs"
          },
          "field": {
-            "display_name": "Farm plot",
-            "description": "For growing crops"
+            "display_name": "Parcelle agricole",
+            "description": "Pour les cultures"
          }
       },
       "footman": {
@@ -5474,8 +5474,8 @@
             }
          },
          "trapper_knife": {
-            "display_name": "Trapper's Knife",
-            "description": "A trapper's knife",
+            "display_name": "Couteau de trappeur",
+            "description": "Un couteau de trapper",
             "trapper_knife_iconic": {
                "display_name": "Trapper's Knife",
                "description": "Basic trapper's knife."
