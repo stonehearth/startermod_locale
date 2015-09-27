@@ -808,12 +808,12 @@
 			"title": "Cliquez sur la carte pour choisir l'emplacement de votre colonie",
 			"loading": "Chargement...",
 			"settle_at_this_location": "S'installer ici!",
-			"clear_selection": "Choisissez un autre emplacement",
-			"regenerate_map": "Générer une nouvelle carte",
+			"clear_selection": "Choisir un autre emplacement",
+			"regenerate_map": "Générer la carte",
 			"world_seed": "Graine du monde : ",
 			"terrain_stats": {
 			   "trees_and_plants_title": "Arbres et plantes",
-			   "trees_and_plants_description": "Le bois est la ressource principal pour la construction. Vous aurez besoin afin de construire vos bâtiments et vos objets artisanals comme les lits, les tables et les chaises.",
+			   "trees_and_plants_description": "Le bois est la ressource principal pour la construction. Vous en aurez besoin afin de construire vos bâtiments et vos objets artisanaux.",
 			   "wildlife_title": "Vie animal",
 			   "wildlife_description": "La faune locale peut être chassé pour la nourriture et les matériaux d'artisanat.",
 			   "minerals_title": "Minéraux",
@@ -909,14 +909,14 @@
 		 "embark": {
 			"title": "Préparez-vous à partir pour l'aventure",
 			"citizen_info": "Liste d'expédition",
-			"reroll_citizens": "Générer de nouveaux hearthlings",
+			"reroll_citizens": "Générer des hearthlings",
 			"shop_title": "Magasin du voyageur",
 			"shop_gold_label": "Or",
 			"shop_sold": "VENDU !",
 			"shop_reset_button": "Réinitialiser",
-			"finished": "Enbarquer !",
+			"finished": "Embarquer !",
 			"no_talisman_confirm_dialog": {
-			   "title": "Enbarquer",
+			   "title": "Embarquer",
 			   "message": "Etes-vous sûr que vous voulez embarquer sans choisir un outil de la boutique? Comme toujours, vous obtiendrez une scie de charpentier.",
 			   "accept": "Oui, à la dure !",
 			   "cancel": "Attendez !"
@@ -5423,12 +5423,12 @@
 	  },
 	  "trapper": {
 		 "trapper_description": {
-			"display_name": "Trapper",
-			"description": "The Trapper's snares capture and (ahem) &quot;harvest&quot; small critters for a reliable source of food and supplies.",
-			"requirements": "Trapper's Knife, forged by the Blacksmith",
+			"display_name": "Trappeur",
+			"description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fournitures.",
+			"requirements": "Couteau de trappeur, fabriqué par le forgeron.",
 			"level_1_data": {
 			   "title": "Journeyman Trapper",
-			   "perk_000_name": "Speed Up 10%",
+			   "perk_000_name": "Gain de vitesse 10%",
 			   "perk_000_description": "Long walks have increased the trapper's foot speed."
 			},
 			"level_3_data": {
