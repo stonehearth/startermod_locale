@@ -201,10 +201,10 @@
 		 },
 		 "create_camp": {
 			"new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
-			"click_banner_tip": "Cliquez sur la baniière pour choisir l'emplacement de votre colonie",
-			"select_camp_tip": "Now click somewhere in the world",
-			"name_camp_title": "Name your settlement",
-			"name_camp_prompt": "Type a name for your settlement!"
+			"click_banner_tip": "Cliquez sur la banière pour choisir l'emplacement de votre colonie",
+			"select_camp_tip": "Maintenant cliquez quelque part dans le monde",
+			"name_camp_title": "Nommez votre colonie",
+			"name_camp_prompt": "Entrez un nom pour votre colonie!"
 		 },
 		 "calendar": {
 			"months": {
@@ -352,8 +352,8 @@
 			   }
 			},
 			"build_menu": {
-			   "display_name": "Build & Design",
-			   "description": "Build structures like houses and city walls.",
+			   "display_name": "Bâtiment et design",
+			   "description": "Construisez des structures comme des maisons et des murs de ville.",
 			   "items": {
 				  "building_templates": {
 					 "display_name": "Place Building",
@@ -5641,66 +5641,66 @@
 		 },
 		 "weaver_loom": {
 			"weaver_loom_ghost": {
-			   "display_name": "Loom",
-			   "description": "A skilled Weaver uses this to weave thread into cloth."
+			   "display_name": "Métier à tisser",
+			   "description": "Un tisserand qualifié l'utilise pour tisser le fil en habit."
 			}
 		 },
 		 "weaver_outfit": {
-			"display_name": "Weaver Outfit",
-			"description": "Uniform for all weavers"
+			"display_name": "Habit de tisserand",
+			"description": "Une tenue pour tous les tisserands"
 		 },
 		 "weaver_spindle": {
-			"display_name": "The Spindle",
-			"description": "For spinning fiber into thread",
+			"display_name": "Fuseau de tisserand",
+			"description": "Pour le filage de fibres en fil",
 			"weaver_spindle_iconic": {
-			   "display_name": "The Spindle",
-			   "description": "For spinning fiber into thread"
+			   "display_name": "Fuseau de tisserand",
+			   "description": "Pour le filage de fibres en fil"
 			},
 			"weaver_spindle_talisman": {
-			   "display_name": "The Spindle",
-			   "description": "For spinning fiber into thread"
+			   "display_name": "Fuseau de tisserand",
+			   "description": "Pour le filage de fibres en fil"
 			}
 		 },
 		 "weaver_spinning_wheel": {
 			"weaver_spinning_wheel_ghost": {
-			   "display_name": "Spinning Wheel",
-			   "description": "A skilled Weaver uses this to spin fiber into thread."
+			   "display_name": "Rouet de tisserand",
+			   "description": "Un tisserand qualifié l'utilise pour filer les fibres en fil."
 			}
 		 },
 		 "weaver_workbench": {
 			"weaver_workbench_ghost": {
-			   "display_name": "Weaver Workbench",
-			   "description": "Used by the Weaver for crafting."
+			   "display_name": "Banc de tisserand",
+			   "description": "Utilisé par le tisserand pour travailler."
 			}
 		 }
 	  },
 	  "worker": {
 		 "worker_description": {
-			"display_name": "Worker",
-			"description": "Workers perform basic tasks like harvesting resources, hauling stuff around, and constructing buildings.",
-			"requirements": "None, just hard work and guts.",
+			"display_name": "Travailleur",
+			"description": "Les travailleurs effectuent des tâches diverses comme la récolte des ressources, la logistique, et la construction de bâtiments.",
+			"requirements": "Aucun, seulement du travail et des tripes.",
 			"level_0_data": {
-			   "title": "Worker"
+			   "title": "Travailleur"
 			}
 		 },
 		 "winter_worker_outfit": {
-			"display_name": "Winter Worker Outfit",
-			"description": "A heavy wool coat, for cold winter nights",
+			"display_name": "Habit d'hiver de travailleur",
+			"description": "Un manteau de laine épaisses, pour les froides nuits d'hiver",
 			"winter_worker_outfit_iconic": {
-			   "display_name": "Winter Worker Outfit",
-			   "description": "So warm..."
+			   "display_name": "Habit d'hiver de travailleur",
+			   "description": "Si chaud..."
 			}
 		 },
 		 "worker_outfit": {
-			"display_name": "Worker Outfit",
-			"description": "Uniform for all workers"
+			"display_name": "Habit de travailleur",
+			"description": "Uniforme pour tous les travailleurs"
 		 },
 		 "worker_outfit_2": {
-			"display_name": "Upgraded Worker Outfit",
-			"description": "Reinforced construction improves worker efficiency!",
+			"display_name": "Habit amélioré de travailleur",
+			"description": "Des coutures renforcées améliorent l'efficacité des travailleurs !",
 			"worker_outfit_2_iconic": {
-			   "display_name": "Upgraded Worker Outfit",
-			   "description": "Sturdy construction increases workers' productivity"
+			   "display_name": "Habit amélioré de travailleur",
+			   "description": "Des coutures renforcées augmentent la productivité des travailleurs"
 			}
 		 }
 	  }
@@ -5708,29 +5708,29 @@
    "stonehearth_mixins": {
 	  "base_human": {
 		 "display_name": "[str(self.unit_info.custom_name)]",
-		 "description": "Citizen of your town",
+		 "description": "Hearthling",
 		 "job": {
-			"starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
-			"default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
-			"default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
-			"general_description_desc": "Max health increased!",
-			"attribute_up_desc": "All attributes increased!"
+			"starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
+			"default_level_title": "Niveau [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
+			"default_level_announcement": "[name(i18n_data.entity)] a terminé [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
+			"general_description_desc": "Santé max. augmenté !",
+			"attribute_up_desc": "Tous les attributs augmenté !"
 		 }
 	  },
 	  "food": {
 		 "food_decay": {
 			"food_decay": {
 			   "decay_1": {
-				  "description": "Starting to Rot. Better eat it fast."
+				  "description": "À commencer à pourrir. Il vaut mieux le manger rapidement."
 			   },
 			   "decay_2": {
-				  "description": "Rotten. Ew."
+				  "description": "Pourri. Beurk."
 			   }
 			}
 		 },
 		 "jerky": {
-			"display_name": "Jerky",
-			"description": "Stringy, but nutritious!"
+			"display_name": "Viande séché",
+			"description": "Filandreuse, mais nourrissante !"
 		 }
 	  },
 	  "monster": {
