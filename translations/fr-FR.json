@@ -912,14 +912,14 @@
 			"reroll_citizens": "Générer de nouveaux hearthlings",
 			"shop_title": "Magasin du voyageur",
 			"shop_gold_label": "Or",
-			"shop_sold": "VENDU!",
+			"shop_sold": "VENDU !",
 			"shop_reset_button": "Réinitialiser",
-			"finished": "Enbarquer!",
+			"finished": "Enbarquer !",
 			"no_talisman_confirm_dialog": {
 			   "title": "Enbarquer",
 			   "message": "Etes-vous sûr que vous voulez embarquer sans choisir un outil de la boutique? Comme toujours, vous obtiendrez une scie de charpentier.",
-			   "accept": "Oui, à la dure!",
-			   "cancel": "Attendez!"
+			   "accept": "Oui, à la dure !",
+			   "cancel": "Attendez !"
 			}
 		 }
 	  },
