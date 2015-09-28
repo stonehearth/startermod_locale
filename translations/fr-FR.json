@@ -2,7 +2,7 @@
    "ai": {
 	  "actions": {
 		 "status_text": { 
-			"chase_entity": "chasing [name(data.target)]",
+            "chase_entity": "poursuit [name(data.target)]",
 			"eat_item": "mange [name(data.target)]",
 			"fill_storage": "rempli [name(data.target)]",
 			"restock_stockpile": "range [name(data.target)]",
@@ -16,7 +16,7 @@
 			"resting_by_fire": "se repose prêt du feu",
 			"claiming_animal": "apprivoise un animal",
 			"looking_for_animals": "cherche des animaux",
-			"collect_ingredient": "collecte des ingrédients",
+			"collect_ingredient": "rassemble des ingrédients",
 			"build_workshop": "construit un atelier",
 			"death": "se meurt",
 			"eat": "cherche à manger",
