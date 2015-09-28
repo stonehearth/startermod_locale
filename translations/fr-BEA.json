@@ -16,16 +16,16 @@
             "resting_by_fire": "se repose prés du feu",
             "claiming_animal": "apprivoise un animal",
             "looking_for_animals": "cherche des animaux",
-            "collect_ingredient": "rassemble des ingredients",
+            "collect_ingredient": "rassemble des ingrédients",
             "build_workshop": "construit un atelier",
             "death": "se meurt",
-            "eat": "va chercher à manger",
+            "eat": "cherche de quoi manger",
             "find_stray_animal": "cherche des animaux errants",
             "harvest_field": "récolte un champ",
-            "idle": "Se tourne les pouces",
-            "patrol": "Patrouille",
-            "plant_crop": "Plante des graines",
-            "return_animals": "Retourne au pâturage",
+            "idle": "se tourne les pouces",
+            "patrol": "patrouille",
+            "plant_crop": "plante des graines",
+            "return_animals": "retourne au pâturage",
             "combat": "en combat !",
             "cower": "se planque",
             "flee": "s'enfuit",
@@ -74,7 +74,7 @@
          "promotion_tree": {
             "title": "Choisir un métier",
             "promotion_title": "Promouvoir en [str(job_name)]",
-            "text_1": "En l'honneur de la résilience et des efforts soutenus, par la présente nous promouvons",
+            "text_1": "En l'honneur de ses efforts inébranlables et de sa rigueur, par la présente nous promouvons",
             "choose": "choisissez un citoyen...",
             "text_2": "ce jour de, [str(date)]",
             "approve": "APPROUVE",
@@ -147,7 +147,7 @@
             "confirm_delete_message": "Voulez-vous vraiment supprimer cette sauvegarde ?",
             "confim_overwrite_title": "Confirmez l'écrasement de la sauvegarde",
             "confirm_overwrite_message": "Voulez vous vraiment écraser de manière définitive cette sauvegarde ?",
-            "save_autosave": "Sauvegarder automatiquement de manière périodique",
+            "save_autosave": "Sauvegarder automatiquement et de manière périodique",
             "auto_save_prefix": "Sauvegarde automatique : ",
             "save_in_progress": "Sauvegarde...",
             "opt_title": "Aidez-nous à rendre Stonehearth encore meilleur !",
@@ -611,7 +611,7 @@
             },
             "stockpile": {
                "default_stockpile_name": "Réserve n°[str(self.unit_info.custom_name)]",
-               "contents": "Contient",
+               "contents": "Contenu",
                "filter": "Filtre",
                "help": "Cliquez sur les icônes pour choisir quoi stocker",
                "used_space": "Espace utilisé :",
@@ -643,12 +643,12 @@
                   "tooltip_light_armor": "Armures légères",
                   "tooltip_heavy_armor": "Armures lourdes",
                   "tooltip_exotic_gear": "Objets étranges",
-                  "tooltip_drink": "Brevages délicieux",
+                  "tooltip_drink": "Breuvages délicieux",
                   "tooltip_gold": "Or",
                   "tooltip_gem": "Gemmes et trophés",
-                  "tooltip_food_containers": "Stockage de nourriture",
+                  "tooltip_food_containers": "Fruits et légumes",
                   "tooltip_refined": "Plats cuisinés",
-                  "tooltip_ingredients": "Ingredients de base"
+                  "tooltip_ingredients": "Viandes"
                }
             }
          },
@@ -1132,7 +1132,7 @@
                },
                "tannery_shop": {
                   "shop_info": {
-                     "name": "Tannerie de Jess Vexed. Marchandises des contrés sauvages",
+                     "name": "Tannerie de Jess Vexed.<br>Marchandises des contrés sauvages",
                      "title": "Une robuste survivaliste est descendue en ville avec ses marchandises"
                   }
                },
@@ -3137,11 +3137,11 @@
          },
          "corn_crop": {
             "display_name": "Maïs",
-            "description": "Slow-growning, but super nutritious crop.",
+            "description": "Pousse lente mais super nutritif.",
             "growth_stage": {
                "003": {
                   "name": "Ripe Corn",
-                  "description": "Eat me ! Eat Me !"
+                  "description": "Manger moi ! Manger moi !"
                },
                "002": {
                   "name": "Green Corn",
@@ -3149,7 +3149,7 @@
                },
                "001": {
                   "name": "Corn Sprout",
-                  "description": "Not edible yet!"
+                  "description": "Pas encore consommable !"
                },
                "000": {
                   "name": "Corn Seedling",
@@ -3188,7 +3188,7 @@
             }
          },
          "frostsnap_crop": {
-            "display_name": "Frostsnap Flower",
+            "display_name": "Perce-neige",
             "description": "It's chill to the touch.",
             "growth_stage": {
                "001": {
@@ -3612,62 +3612,62 @@
       "food": {
          "berries": {
             "berry_basket": {
-               "display_name": "Basket of Berries",
-               "description": "Creme of the caveman diet."
+               "display_name": "Panier de baies",
+               "description": "Le summum du régime de l'homme des cavernes."
             },
             "berry_serving": {
-               "display_name": "Plate of berries",
-               "description": "Todo: Invent whipped cream."
+               "display_name": "Assiette de baies",
+               "description": "A faire : inventer la chantilly."
             }
          },
          "corn": {
             "amazing_corn_basket": {
-               "display_name": "Amazing Basket of Maize",
-               "description": "Super nutritous corn."
+               "display_name": "Panier de Maïs extraordinaire",
+               "description": "Epis super nourrissants."
             },
             "amazing_corn_serving": {
-               "display_name": "Amazing Maize",
-               "description": "Heavenly nutritious."
+               "display_name": "Maïs extraordinaire",
+               "description": "Divinement nourrissant."
             },
             "corn_basket": {
-               "display_name": "Basket of Corn",
-               "description": "Sweet and crunchy."
+               "display_name": "Panier de Maïs",
+               "description": "Doux et croquant."
             },
             "corn_serving": {
-               "display_name": "Corn Cob",
-               "description": "Crunch and spray."
+               "display_name": "Epi de maïs",
+               "description": "Gicle sous la dent."
             }
          },
          "flour": {
-            "display_name": "Sack of Flour",
-            "description": "Perfect for making bread"
+            "display_name": "Sac de farine",
+            "description": "Parfait pour faire du pain."
          },
          "meat_stew": {
             "meat_stew": {
-               "display_name": "Savory Meat Stew",
-               "description": "Warm and delicious"
+               "display_name": "Savoureux ragoût de viande",
+               "description": "Chaud et délicieux."
             },
             "meat_stew_serving": {
-               "display_name": "Bowl of Savory Meat Stew"
+               "display_name": "Bol de savoureux ragoût de viande"
             }
          },
          "peasant_bread": {
             "peasant_bread": {
-               "display_name": "Peasant Bread",
-               "description": "A crusty, basic bread."
+               "display_name": "Pain campagnard",
+               "description": "Un pain simple et croustillant."
             },
             "peasant_bread_serving": {
-               "display_name": "Slice of Peasant Bread"
+               "display_name": "Tranche de pain campagnard"
             }
          },
          "pumpkin": {
             "pumpkin_basket": {
-               "display_name": "Pumpkin Basket",
-               "description": "Ready for eating"
+               "display_name": "Panier de citrouilles",
+               "description": "Prêtes à être mangée."
             },
             "pumpkin_serving": {
-               "display_name": "Pumpkin Mush",
-               "description": "Delicious. Really..."
+               "display_name": "Purée de citrouille",
+               "description": "C'est un délice, vraiment..."
             }
          },
          "sheep_jerky": {
@@ -3675,20 +3675,20 @@
          },
          "veggie_stew": {
             "veggie_stew": {
-               "display_name": "Vegetable Stew",
-               "description": "Warm and delicious"
+               "display_name": "Soupe de légumes",
+               "description": "Chaude et délicieuse."
             },
             "veggie_stew_serving": {
-               "display_name": "Bowl of Veggie Stew",
-               "description": "Delicious!"
+               "display_name": "Bol de soupe de légumes",
+               "description": "Trop bon !"
             }
          },
          "wheat_bale": {
-            "display_name": "Bale of Wheat",
-            "description": "Ready for use"
+            "display_name": "Gerbe de blé",
+            "description": "Prête à l'emploi"
          },
          "egg": {
-            "display_name": "An Egg",
+            "display_name": "Un oeuf",
             "description": "An eggcellent ingredient for cooking."
          },
          "corn_bread": {
@@ -3772,62 +3772,62 @@
       "furniture": {
          "arch_backed_chair": {
             "arch_backed_chair_ghost": {
-               "display_name": "Cathedral-Arch Chair",
-               "description": "Classy like piety."
+               "display_name": "Chaise en ogive de cathédrale !x!",
+               "description": "Aussi classieuse que la piété. !x!"
             }
          },
          "arch_backed_chair_fine": {
             "arch_backed_chair_fine_ghost": {
-               "display_name": "Fine Cathedral-Arch Chair",
-               "description": "Classy like piety."
+               "display_name": "Chaise en ogive de cathédrale !x!",
+               "description": "Aussi classieuse que la piété. !x!"
             }
          },
          "comfy_bed": {
             "comfy_bed_ghost": {
-               "display_name": "Comfy Bed",
-               "description": "I dreamed... of flying sheep."
+               "display_name": "Lit confortable",
+               "description": "J'ai révé... de moutons sauteurs."
             }
          },
          "comfy_bed_fine": {
             "comfy_bed_fine_ghost": {
-               "display_name": "Fine Comfy Bed",
-               "description": "I dreamed... of flying sheep."
+               "display_name": "Lit confortable de luxe",
+               "description": "J'ai révé... de moutons volants."
             }
          },
          "comfy_chair": {
             "comfy_chair_ghost": {
-               "display_name": "Comfy Chair",
-               "description": "For sitting!"
+               "display_name": "Chaise confortable",
+               "description": "Pour s'assoir !"
             }
          },
          "comfy_chair_fine": {
             "comfy_chair_fine_ghost": {
-               "display_name": "Fine Comfy Chair",
-               "description": "For sitting!"
+               "display_name": "Chaise confortable de luxe",
+               "description": "Pour s'assoir luxueusement !"
             }
          },
          "dining_table": {
             "dining_table_ghost": {
-               "display_name": "Dining Table",
-               "description": "Sitting down to eat is a sign of civilization."
+               "display_name": "Table à manger",
+               "description": "S'assoir pour manger est un signe de civilisation."
             }
          },
          "dining_table_fine": {
             "dining_table_fine_ghost": {
-               "display_name": "Fine Dining Table",
-               "description": "Sitting down to eat is a sign of civilization."
+               "display_name": "Table à manger de luxe",
+               "description": "S'assoir pour manger est un signe de civilisation.<br>Encore plus sur cette version !"
             }
          },
          "dresser": {
             "dresser_ghost": {
-               "display_name": "Wooden Dresser",
-               "description": "Decorative in the absence of belongings."
+               "display_name": "Commode de bois",
+               "description": "Décorative en l'abscence de propriétaire."
             }
          },
          "dresser_fine": {
             "dresser_fine_ghost": {
-               "display_name": "Fine Dresser",
-               "description": "Decorative in the absence of belongings."
+               "display_name": "Commode de luxe",
+               "description": "Encore plus décorative en l'abscence de propriétaire."
             }
          },
          "not_much_of_a_bed": {
@@ -3838,97 +3838,97 @@
          },
          "park_bench": {
             "park_bench_ghost": {
-               "display_name": "Wooden Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "display_name": "Banc de parc en bois",
+               "description": "Siège d'extérieur pour des moments de détente."
             }
          },
          "park_bench_fine": {
             "park_bench_fine_ghost": {
-               "display_name": "Fine Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "display_name": "Banc de parc de luxe",
+               "description": "Siège d'extérieur pour des moments de détente."
             }
          },
          "simple_wooden_chair": {
             "simple_wooden_chair_ghost": {
-               "display_name": "Simple Wooden Chair",
-               "description": "For sitting"
+               "display_name": "Chaise simple de bois",
+               "description": "Pour s'assoir."
             }
          },
          "simple_wooden_chair_fine": {
             "simple_wooden_chair_fine_ghost": {
-               "display_name": "Fine Wooden Chair",
-               "description": "For sitting"
+               "display_name": "Chaise en bois de luxe",
+               "description": "Pour s'assoir tout en frimant."
             }
          },
          "stone_bench": {
             "stone_bench_ghost": {
-               "display_name": "Stone Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "display_name": "Banc de pierre",
+               "description": "Siège d'extérieur pour des moments de détente."
             }
          },
          "stone_chair": {
             "stone_chair_ghost": {
-               "display_name": "Stone Chair",
-               "description": "For sitting"
+               "display_name": "Chaise de pierre",
+               "description": "Pour s'assoir."
             }
          },
          "stone_table": {
             "stone_table_ghost": {
-               "display_name": "Stone Table",
-               "description": "Its weight adds a sense of gravitas."
+               "display_name": "Table de pierre",
+               "description": "Son imposance ajoute à l'impression de lourdeur."
             }
          },
          "table_for_one": {
             "table_for_one_ghost": {
-               "display_name": "Table for One",
-               "description": "Dining furniture for introverts."
+               "display_name": "Table pour célibataire",
+               "description": "Mobilier dinatoire pour introvertis."
             }
          },
          "table_for_one_fine": {
             "table_for_one_fine_ghost": {
-               "display_name": "Fine Table for One",
-               "description": "Dining furniture for introverts."
+               "display_name": "Table de luxe pour célibataire.",
+               "description": "On peut frimer même seul !"
             }
          },
          "tombstone": {
             "tombstone_ghost": {
                "display_name": "R.I.P. [str(self.unit_info.custom_name)]",
-               "description": "[str(self.unit_info.custom_name)] will always be remembered."
+               "description": "[str(self.unit_info.custom_name)] sera toujours dans nos coeurs."
             }
          },
          "writing_desk": {
             "writing_desk_ghost": {
-               "display_name": "Writing Desk",
-               "description": "Furniture"
+               "display_name": "Bureau",
+               "description": "Un meuble pour écrire. En général."
             }
          },
          "writing_desk_fine": {
             "writing_desk_fine_ghost": {
-               "display_name": "Fine Writing Desk",
-               "description": "Furniture"
+               "display_name": "Bureau de luxe",
+               "description": "Un meuble pour écrire. Beaucoup."
             }
          }
       },
       "generic": {
          "default_object": {
-            "display_name": "Default object",
-            "description": "Mysterious"
+            "display_name": "Objet par défault",
+            "description": "Mystérieux"
          }
       },
       "gizmos": {
          "camp_standard": {
             "camp_standard_ghost": {
-               "display_name": "Camp Standard",
-               "description": "Use to mark territory, civilizedly."
+               "display_name": "Bannière de ralliement",
+               "description": "Utilisée pour marquer un territoire de manière civilisée."
             }
          },
          "control_attack_banner": {
-            "display_name": "Attack Banner",
-            "description": "Attack!!!!"
+            "display_name": "Attaquer la bannière",
+            "description": "Attaquer !!!"
          },
          "control_defend_banner": {
-            "display_name": "Defend Banner",
-            "description": "Hold this ground in Town Defense mode"
+            "display_name": "Défendre la bannière",
+            "description": "Garder cette position en mode de défense de la ville."
          }
       },
       "loot": {
@@ -3941,7 +3941,7 @@
          "forest": {
             "ent": {
                "display_name": "Ent",
-               "description": "Guardian of the forest"
+               "description": "Guardien de la forêt."
             }
          },
          "goblins": {
@@ -4587,10 +4587,10 @@
          },
          "wooden_sword": {
             "display_name": "Epée de bois",
-            "description": "Tranche tes enemies avec la force du chêne",
+            "description": "Tranche les enemies avec la force du chêne.",
             "wooden_sword_iconic": {
                "display_name": "Epée de bois",
-               "description": "Epée de bois basique"
+               "description": "Epée de bois basique."
             },
             "wooden_sword_talisman": {
                "display_name": "Epée de bois",
@@ -4665,11 +4665,11 @@
          "blacksmith_forge": {
             "blacksmith_forge_ghost": {
                "display_name": "Forge",
-               "description": "A sturdy, stone oven for heating metal"
+               "description": "Un four lourd en pire pour manger le métal"
             }
          },
          "blacksmith_hammer": {
-            "display_name": "Blacksmith's Hammer",
+            "display_name": "Marteau de forgeron",
             "description": "Tools of the trade for a blacksmith.",
             "blacksmith_hammer_iconic": {
                "display_name": "Blacksmith's Hammer",
@@ -4686,35 +4686,35 @@
          },
          "blacksmith_workbench": {
             "blacksmith_workbench_ghost": {
-               "display_name": "Blacksmith Anvil",
-               "description": "Used by the Blacksmith for crafting."
+               "display_name": "Enclume de forgeron",
+               "description": "Utilisée par le forgeron pour le forgeage."
             }
          },
          "recipes": {
             "basic_shield_recipe": {
                "description": "Grants the ability to completely block attacks.",
                "flavor": "Incredibly protective. Small children play turtle underneath.",
-               "recipe_name": "Trusty Shield"
+               "recipe_name": "Bouclier fidèle"
             },
             "iron_shield_recipe": {
-               "description": "Heavy, but effective.",
+               "description": "Lourd mais efficace.",
                "flavor": "'Buck up, recruit! Better the shield dent than you!' -Thredd, Man at Arms",
-               "recipe_name": "Iron Shield"
+               "recipe_name": "Bouclier de fer"
             },
             "bronze_breastplate_recipe": {
                "description": "Partial but sturdy coverage against blunt and edged weapons.",
-               "recipe_name": "Bronze Breastplate",
+               "recipe_name": "Cuirasse de bronze",
                "flavor": "Design reminiscent of the Phoenix's Legions."
             },
             "bronze_ingot_recipe": {
-               "description": "A bar of pure bronze. A suitable material for crafted goods.",
-               "recipe_name": "Bronze Ingot",
+               "description": "Une barre de bronze pur. Un matériel adapté à la fabrication d'objets.",
+               "recipe_name": "Lingot de bronze",
                "flavor": "The masters of old considered its production, evidence of our triumph over the earth."
             },
             "bronze_mace_recipe": {
                "description": "Heavy, it packs a whallop.",
-               "recipe_name": "Bronze Mace",
-               "flavor": "The good news: there is no pointy end."
+               "recipe_name": "Mace en bronze",
+               "flavor": "La bonne nouvelle : il n'y pas de pointe au bout."
             },
             "bronze_sword_recipe": {
                "description": "Basic, but better than fighting with a sharpened stick!",
@@ -5545,8 +5545,8 @@
             }
          },
          "snare_trap": {
-            "display_name": "Snare Trap",
-            "description": "Safely immobilizes its prey",
+            "display_name": "Piège cage",
+            "description": "Immobilise de manière sûre sa proie.",
             "commands": {
                "harvest_trapped_beast": {
                   "display_name": "Harvest Beast",
@@ -5667,16 +5667,16 @@
             "leather_vest_recipe": {
                "description": "Hardened leather provides study protection against light weapons.",
                "recipe_name": "Thick Leather Vest",
-               "flavor": "Insults bounce right off too!"
+               "flavor": "Les insultes rebondissent dessus aussi !"
             },
             "plushie_toy_rabbit_recipe": {
-               "description": "A toy... for children of course.",
-               "recipe_name": "Plushie Toy Rabbit",
+               "description": "Un jouet... pour enfant évidement.",
+               "recipe_name": "Peluche de lapin",
                "flavor": "She loves you!"
             },
-            "clothing_armor_name": "Clothing & Armor",
-            "toys_name": "Toys",
-            "decorations_name": "Decorations",
+            "clothing_armor_name": "Vêtements & Armures",
+            "toys_name": "Jouets",
+            "decorations_name": "Décorations",
             "crafting_materials_name": "Crafting Materials",
             "spool_of_thread_recipe": {
                "description": "Needed for cloth. Warm and fluffy",
@@ -5696,33 +5696,33 @@
             "throw_rug_recipe": {
                "description": "Brightens up that old dusty floor.",
                "recipe_name": "Decorative Throw Rug",
-               "flavor": "Too beautiful to step on."
+               "flavor": "Trop beau pour y marcher."
             },
             "worker_outfit_2_recipe": {
                "description": "Double stiching and strategically placed padding improves the worker's efficiency. The worker who dons this upgrade outfit will move 10% faster.",
-               "recipe_name": "Upgraded Worker Outfit",
-               "flavor": "Your town loves you!"
+               "recipe_name": "Habit amélioré de travailleur",
+               "flavor": "Votre ville vous aime !"
             },
             "worker_outfit_winter_recipe": {
                "description": "A heavy wool coat, for cold winter nights. The worker who dons this upgrade outfit will move 10% faster.",
-               "recipe_name": "Winter Worker Outfit",
-               "flavor": "Winter is coming!"
+               "recipe_name": "Habit d'hiver de travailleur",
+               "flavor": "L'hivers arrive !"
             },
-            "workbenches_name": "Workbenches",
+            "workbenches_name": "Ateliers",
             "weaver_loom_recipe": {
-               "description": "Add thread to thread till cloth results.",
-               "recipe_name": "Loom",
+               "description": "Assemble des fils à d'autres fils jusqu'à l'obtention d'un tissu.",
+               "recipe_name": "Métier à tisser",
                "flavor": "Patient Spider, weaver, writer, draws the tapestry of fate tighter. --Rayya's Rhyme"
             },
             "weaver_spinning_wheel_recipe": {
-               "description": "Spins prickly, scratchy, chaos into thread.",
-               "recipe_name": "Spinning Wheel",
+               "description": "Transforme ce qui est emmélé en fil.",
+               "recipe_name": "Rouet de tisserand",
                "flavor": "Spider smiles; all eight eyes glitter, 'Something from nothing, some sweet and some bitter.'"
             },
             "weaver_workbench_recipe": {
-               "description": "Used to make complex crafts of thread and fabric.",
-               "recipe_name": "Weaver Workbench",
-               "flavor": "In the beginning there was nothing, and then there was Spider."
+               "description": "Utilisé pour des confections compliquées à partir de fil est et de tissus.",
+               "recipe_name": "Banc de tisserand",
+               "flavor": "Au commencement il n'y avait rien et puis il y eu l'araignée."
             }
          },
          "weaver_loom": {
