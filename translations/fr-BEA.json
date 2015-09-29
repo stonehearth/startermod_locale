@@ -1754,8 +1754,8 @@
          }
       },
       "buffs": {
-         "buff_duration_days": "[str(jours)]j",
-         "buff_duration_hours": "[str(heures)]h",
+         "buff_duration_days": "[str(days)]j",
+         "buff_duration_hours": "[str(hours)]h",
          "buff_duration_minutes": "[str(minutes)]m",
          "carrying": {
             "carrying_buff": {
@@ -3693,79 +3693,79 @@
          },
          "corn_bread": {
             "corn_bread": {
-               "display_name": "Corn Bread",
-               "description": "Toasty and golden brown."
+               "display_name": "Pain de maïs",
+               "description": "Bien cuit et bien doré."
             },
             "corn_bread_serving": {
-               "display_name": "Piece of Corn Bread"
+               "display_name": "Morceau de pain au maïs."
             }
          },
          "poyo_meat": {
-            "display_name": "Raw Poyo Meat",
+            "display_name": "Viande de poulet crue",
             "description": "I hear it takes like poyo."
          },
          "poyo_pot_pie": {
             "poyo_pot_pie": {
-               "display_name": "Poyo Pot Pie",
-               "description": "Warm and delicious."
+               "display_name": "Chausson au paté de poyo",
+               "description": "On en bave."
             },
             "poyo_pot_pie_serving": {
-               "display_name": "Slice of Poyo Pot Pie",
-               "description": "Mmm ... pie."
+               "display_name": "Tranche de chausson de paté de poyo",
+               "description": "Mmm ... trop bon."
             }
          },
          "omelette": {
             "omelette": {
                "display_name": "Omelette",
-               "description": "Delicious egg wrapped meat and veggies"
+               "description": "Délicieuse viande, succulants légumes, le tout enrobé d'oeuf."
             },
             "omelette_serving": {
-               "display_name": "Serving of Omelette",
-               "description": "But why would you share?"
+               "display_name": "Assiette d'omelette",
+               "description": "Mais pourquoi voudriez-vous partager ?"
             }
          },
          "roast_poyo": {
             "roast_poyo": {
-               "display_name": "Roast Poyo",
-               "description": "Nice and juicy."
+               "display_name": "Poyo roti",
+               "description": "Magnifiquement juteux"
             },
             "roast_poyo_serving": {
-               "display_name": "Serving of Roast Poyo"
+               "display_name": "Assiette de poyo roti"
             }
          },
          "fried_eggs": {
             "fried_eggs": {
-               "display_name": "Fried Eggs",
-               "description": "Fried and delicious"
+               "display_name": "Oeufs frits",
+               "description": "Frits et bien sûr délicieux."
             },
             "fried_eggs_serving": {
-               "display_name": "Serving of Fried Eggs"
+               "display_name": "Assiette d'oeufs frits"
             }
          },
          "sheep_feed": {
-            "display_name": "Sheep Feed",
-            "description": "Give to sheep for a supplement to grazing.",
+            "display_name": "Nourriture pour mouton",
+            "description": "Pour les moutons en complément du pâturage",
             "sheep_feed_ground": {
-               "display_name": "Sheep Feed",
-               "description": "Food for sheep"
+               "display_name": "Nourriture pour mouton",
+               "description": "Que rajouter ?"
             }
          },
          "poyo_feed": {
             "poyo_feed": {
-               "display_name": "Poyo Feed",
-               "description": "For feeding poyos."
+               "display_name": "Nourriture pour poyo",
+               "description": "Pour nourrir les poyos."
             },
             "poyo_feed_ground": {
-               "display_name": "Poyo Feed",
-               "description": "Poyos love to eat this stuff."
+               "display_name": "Nourriture pour poyo",
+               "description": "Les poyos adorent ce machin !"
             }
          },
          "rabbit_feed": {
-            "display_name": "Rabbit Feed",
-            "description": "For rabbits",
+            "display_name": "Nourriture pour lapin",
+            "description": "Seulement pour les lapins",
             "rabbit_feed_ground": {
-               "display_name": "Rabbit Feed",
-               "description": "Food for rabbits"
+               "display_name": "Nourriture pour lapin",
+               "description": "Sans provenance contrôlée."
             }
          }
       },
