@@ -65,7 +65,7 @@
             "building_vision": "Filtre de construction",
             "building_vision_description": "Change la visibilité des murs ce qui<br>permet de voir l'intérieur des<br>constructions",
             "terrain_slice_vision": "Affichage du terrain<br>par strate.",
-            "terrain_slice_vision_icon_name": "Strate",
+            "terrain_slice_vision_icon_name": "Terrain",
             "terrain_slice_vision_description": "Permet de voir les structures souterraines.<br>Changez l'élévation pour voir les différentes<br>strates.",
             "terrain_xray_vision_icon_name": "Rayon-X",
             "terrain_xray_vision": "Affichage du terrain<br>en mode rayon-X",
@@ -105,7 +105,7 @@
             "journal": "Journal",
             "attributes": "Attributs",
             "equipment": "Equipement",
-            "abilities": "Capacités de travail",
+            "abilities": "Compétences",
             "morale_title": "Moral",
             "overall_morale": "Moral général",
             "morale_food": "Nourriture",
@@ -354,7 +354,7 @@
                }
             },
             "build_menu": {
-               "display_name": "Construction & Conception",
+               "display_name": "Construction et conception",
                "description": "Construisez des structures comme<br>une maison ou des remparts.",
                "items": {
                   "building_templates": {
@@ -419,7 +419,7 @@
                   "farming": "Cultiver",
                   "harvesting": "Récolter",
                   "mining": "Miner",
-                  "trapping": "Braconner"
+                  "trapping": "Chasser"
                },
                "percent_full": "[str(percent)] Percent Full",
                "active": "active",
@@ -429,10 +429,10 @@
          "bulletin": {
             "bulletin_list_title": "Notifications",
             "shop": {
-               "buy_1": "Acheter 1",
-               "buy_10": "Acheter 10",
-               "sell_1": "Vendre 1",
-               "sell_10": "Vendre 10",
+               "buy_1": "Acheter x1",
+               "buy_10": "Acheter x10",
+               "sell_1": "Vendre x1",
+               "sell_10": "Vendre x10",
                "buy_tab": "Acheter",
                "sell_tab": "Vendre",
                "not_enough_gold_tooltip": "Pas assez d'or !"
@@ -463,7 +463,7 @@
                "voxel_paint": "Colorer un voxel",
                "voxel_remove": "Supprimer un voxel",
                "selection": "Sélection",
-               "delete": "Sapprimer",
+               "delete": "Supprimer",
                "undo": "Annuler",
                "draw_slab_tool": "Blocs",
                "draw_floor_tool": "Fondations",
@@ -620,7 +620,7 @@
                   "none": "Rien",
                   "resources": "Ressources",
                   "construction": "Construction",
-                  "goods": "Outils & marchandises",
+                  "goods": "Outils et marchandises",
                   "gear": "Armes et Armures",
                   "food_and_drink": "Nourriture et boisson",
                   "wealth": "Richesse",
@@ -661,7 +661,7 @@
             "craft_number_left": "Fabriquer",
             "craft_number_right": "de suite.",
             "craft_up_to_left": "Maintenir",
-            "craft_up_to_right": "en inventaire.",
+            "craft_up_to_right": "en stock.",
             "craft_ingredients": "Ingrédients :",
             "craft_requirements": "Pré-requis :",
             "unlock_text": "Pour dévérouiller :",
@@ -776,18 +776,18 @@
                "029": "regulating hairbobs..."
             },
             "tips": {
-               "000": "If your workers get stuck in a mine, you can build a ladder to get them out !",
-               "001": "Your settlers will get a better night's sleep if you provide beds for them.",
-               "002": "Build pens around your pastures to make sure shepherded animals stay put.",
-               "003": "Stockpiles can be changed to hold specific kinds of items.",
-               "004": "You can farm silkweed for a steady supply of thread fiber.",
-               "005": "A well fed town is a happy town.",
-               "006": "Use the . and , keys to rotate an item or building before placing it.",
-               "007": "Your hearthlings move faster on roads.",
-               "008": "The weaver can craft new uniforms that increases the effectiveness of your workers.",
-               "009": "Sitting during a meal helps with digestion. Build tables and chairs for your hearthlings.",
-               "010": "Shepherds will automatically find sheep to fill a pasture.",
-               "011": "If you want a higher net worth, try selling your items to a merchant for gold"
+               "000": "Si vos mineurs restent bloqués dans un puit, construisez une échelle pour les en sortir !",
+               "001": "Vos citoyens feront de meilleures nuits si vous leurs offrez des lits.",
+               "002": "Construisez un enclos autour des pâturages pour être sur que les animaux ne s'enfuient pas.",
+               "003": "Les réserves peuvent être modifiées pour acceuillir des objets spécifiques.",
+               "004": "Vous pouvez cultiver des plantes à soie pour avoir une source régulière de fibres végétales.",
+               "005": "Une ville bien nourrit est une ville heureuse.",
+               "006": "Utlisiez les touches . ou , pour faire tourner un objet ou un batiment avant de le placer.",
+               "007": "Vos citoyens se déplacent plus vite sur les routes.",
+               "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
+               "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos citoyens.",
+               "010": "Les bergers trouveront d'eux-même les moutons ou atres animaux pour remplir les pâturages.",
+               "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands."
             }
          },
          "new_game": {
@@ -1092,7 +1092,7 @@
                            "choice_000": "Merci mon Dieu !",
                            "bulletin_message": {
                               "000": "Soyez les bienvenus en ces lieux ! Boudiou, vous semblez affamés les gars ! Prenez ceci pour vous aider :",
-                              "001": "Just celebrated Embarcation Day, eh? Buck up! You look like you'd really benefit from something tasty. How about I give you:",
+                              "001": "Alors, on célèbre le jour du départ ? Courage ! On dirait que quelque chose de gouteux vous ferait de bien. Et si je vous donnais ceci :",
                               "002": "Embarkees! Praise Cid. Here's something to get you started.",
                               "003": "Le voyage à travers les montagnes à été long, hein ? Et bien vous êtes à un endroit sur maintenant. Voici un petit coup de pouce :",
                               "004": "Welcome to the area, Embarkees!! Here's a gift to get you started!"
@@ -3701,7 +3701,7 @@
             }
          },
          "poyo_meat": {
-            "display_name": "Viande de poulet crue",
+            "display_name": "Viande de poyo crue",
             "description": "I hear it takes like poyo."
          },
          "poyo_pot_pie": {
@@ -4209,8 +4209,8 @@
          },
          "fiber": {
             "silkweed_bundle": {
-               "display_name": "Silkweed Bundle",
-               "description": "Spinnable into thread"
+               "display_name": "Paquet de fibres végétales",
+               "description": "A filer."
             },
             "wool_bundle": {
                "display_name": "Sac de laine",
@@ -4665,7 +4665,7 @@
          "blacksmith_forge": {
             "blacksmith_forge_ghost": {
                "display_name": "Forge",
-               "description": "Un four lourd en pire pour manger le métal"
+               "description": "Un four lourd de pierre pour manger le métal"
             }
          },
          "blacksmith_hammer": {
@@ -5674,7 +5674,7 @@
                "recipe_name": "Peluche de lapin",
                "flavor": "She loves you!"
             },
-            "clothing_armor_name": "Vêtements & Armures",
+            "clothing_armor_name": "Vêtements et armures",
             "toys_name": "Jouets",
             "decorations_name": "Décorations",
             "crafting_materials_name": "Crafting Materials",
