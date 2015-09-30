@@ -69,7 +69,9 @@
             "terrain_slice_vision_description": "Permet de voir les structures souterraines.<br>Changez l'élévation pour voir les différentes<br>strates.",
             "terrain_xray_vision_icon_name": "Rayon-X",
             "terrain_xray_vision": "Affichage du terrain<br>en mode rayon-X",
-            "terrain_xray_vision_description": "Permet de voir à travers le terrain.<br>Alternez entre les vues complète ou<br>tronqués pour voir les murs souterrains."
+            "terrain_xray_vision_description": "Permet de voir à travers le terrain.<br>Alternez entre les vues complète ou<br>tronqués pour voir les murs souterrains.",
+            "terrain_xray_vision_flat": "Tronqué",
+            "terrain_xray_vision_full": "Complet"
          },
          "promotion_tree": {
             "title": "Choisir un métier",
@@ -342,7 +344,7 @@
                      "description": "Placez des pièges pour capturer<br>de petits animaux.",
                      "required_job_text": "Nécessite un trappeur",
                      "tip_title": "Cliquez et tirez pour créer une zone de braconnage",
-                     "tip_description": "Dans cette zone, les braconniers<br>attrapent des animaux pour de<br>la nourriture ou des ressources."
+                     "tip_description": "Dans cette zone, les trappeurs<br>capturent des animaux pour de<br>la nourriture ou des ressources."
                   },
                   "create_pasture": {
                      "display_name": "Pâturage",
@@ -398,6 +400,37 @@
                      "description": "Pillez les biens des ennemis.",
                      "tip_title": "Cliquez et tirez pour piller les objets au sol.",
                      "tip_description": "Click droit pour sortir de ce mode"
+                  }
+               }
+            },
+            "crafter_menu": {
+               "display_name": "Artisans",
+               "description": "Construisez et gérez les ateliers.",
+               "items": {
+                  "carpenter": {
+                     "display_name": "Menuisier",
+                     "description": "Pour construire des meubles<br>et des éléments de décor.",
+                     "required_job_text": "Nécessite un menuisier"
+                  },
+                  "weaver": {
+                     "display_name": "Tisserand",
+                     "description": "Pour confectionner des tissus,<br>vêtements ou élements de décor.",
+                     "required_job_text": "Nécessite un tisserand"
+                  },
+                  "mason": {
+                     "display_name": "Tailleur de pierre",
+                     "description": "Pour tailler des armes, des meubles<br>et des décorations de pierre.",
+                     "required_job_text": "Nécessite un tailleur de pierre"
+                  },
+                  "blacksmith": {
+                     "display_name": "Forgeron",
+                     "description": "Pour fondre des minerais puis fabriquer<br>des armes et des armures.",
+                     "required_job_text": "Nécessite un forgeron"
+                  },
+                  "cook": {
+                     "display_name": "Cuisinier",
+                     "description": "Pour que la nourriture soit meilleure<br>et se conserve mieux.",
+                     "required_job_text": "Nécessite un cuisinier"
                   }
                }
             },
@@ -939,6 +972,19 @@
             "file_bug_step_2": "Vérifiez la liste de sujets actifs at si votre bug n'a pas encore été remonté, créez un nouveau sujet",
             "file_bug_step_3": "Quand vous remontez un bug, incluez s'il vous plait une capture d'écran de l'erreur affichée",
             "file_bug_step_4": "Si vous remontez un crash, ajoutez votre identifiant unique d'utilisateur"
+         },
+         "error_browser": {
+            "title": "Erreur de moteur",
+            "filename_label": "Nom ",
+            "close_permanently_button": "Fermer définitivement",
+            "prev_button": "Suivant",
+            "next_button": "Précédent",
+            "copy_button": "Copier dans le presse-papier"
+         },
+         "error_dialog_js": {
+            "title": "Erreur d'IU",
+            "reset_hint": "Pressez F5 pour relancer l'IU",
+            "copy_button": "Copier dans le presse-papier"
          }
       },
       "data": {
@@ -1048,7 +1094,7 @@
             "food_meat_raw_name": "Viande fraiche",
             "stone_resource_name": "Pierre",
             "pelt_resource_name": "Peau",
-            "cloth_resource_name": "Bobine de tissu",
+            "cloth_resource_name": "Rouleau de tissu",
             "wood_resource_name": "Bûche",
             "thread_resource_name": "Fil",
             "leather_resource_name": "Cuir en rouleau",
@@ -2847,10 +2893,10 @@
             }
          },
          "cloth_padded_vest": {
-            "display_name": "Veste rembourré",
-            "description": "Procure une protection légère au combat. C'est mieux que rien !",
+            "display_name": "Veste rembourrée",
+            "description": "Procure une protection légère au combat.",
             "cloth_padded_vest_iconic": {
-               "display_name": "Veste rembourré",
+               "display_name": "Veste rembourrée",
                "description": "Procure une protection légère au combat. C'est mieux que rien !"
             }
          },
@@ -4170,7 +4216,7 @@
             "description": "Une barre de fer pur."
          },
          "leather_bolt": {
-            "display_name": "Rouleau de cuir",
+            "display_name": "Cuir en rouleau",
             "description": "Souple mais solide."
          },
          "silver_ingot": {
@@ -4909,8 +4955,8 @@
                "flavor": "Like the one my granda had!"
             },
             "mason_chisel_recipe": {
-               "description": "Required to promote a hearthling into a Mason.",
-               "recipe_name": "Mason's Hammer & Chisel"
+               "description": "Requis pour promouvoir un citoyen en tailleur de pierre.",
+               "recipe_name": "Marteau et ciseau de tailleur de pierre"
             },
             "not_much_of_a_bed_recipe": {
                "description": "Slightly more comfortable than sleeping on a board.",
@@ -4960,7 +5006,7 @@
             },
             "weaver_spindle_recipe": {
                "description": "Required to promote a hearthling into a Weaver.",
-               "recipe_name": "Weaver's Spindle",
+               "recipe_name": "Fuseau de tisserand",
                "flavor": "From fiber, thread, from thread, fabric, from fabric, civilization."
             },
             "window_box_brightbell_recipe": {
@@ -5071,7 +5117,7 @@
             "requirements": "2 levels of Farmer and a Stoneware Spoon, crafted by the Mason.",
             "level_6_data": {
                "title": "Master cook",
-               "perk_000_name": "10,000 Hours (not implemented)",
+               "perk_000_name": "10 000 Heures (à venir)",
                "perk_000_description": "The cook's dishes are now so good for you they have unexpected effects."
             },
             "level_2_data": {
@@ -5305,12 +5351,12 @@
       },
       "mason": {
          "mason_description": {
-            "display_name": "Mason",
-            "description": "The Mason crafts building materials and decorative items from stone.",
-            "requirements": "Mason's Mallet and Chisel, crafted by the carpenter.",
+            "display_name": "Tailleur de pierre",
+            "description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
+            "requirements": "Marteau et ciseau de tailleur de pierre, fabriqués par le menuisier.",
             "level_6_data": {
-               "title": "Master mason",
-               "perk_000_name": "10,000 Hours (not implemented)",
+               "title": "Maître tailleur",
+               "perk_000_name": "10 000 Heures (à venir)",
                "perk_000_description": "The mason's mastery of his trade allows him to come up with completely new ways of using wood."
             },
             "level_2_data": {
@@ -5545,7 +5591,7 @@
             }
          },
          "snare_trap": {
-            "display_name": "Piège cage",
+            "display_name": "Piège en cage",
             "description": "Immobilise de manière sûre sa proie.",
             "commands": {
                "harvest_trapped_beast": {
@@ -5565,22 +5611,22 @@
          },
          "trapper_knife": {
             "display_name": "Couteau de trappeur",
-            "description": "Un couteau de trappeur",
+            "description": "Un couteau de trappeur.",
             "trapper_knife_iconic": {
                "display_name": "Couteau de trappeur",
-               "description": "Basic trapper's knife."
+               "description": "Couteau de base du trappeur."
             },
             "trapper_knife_talisman": {
                "display_name": "Couteau de trappeur",
-               "description": "Required to promote a hearthling into a Trapper."
+               "description": "Requis pour promouvoir un citoyen en trappeur."
             }
          },
          "trapper_outfit": {
-            "display_name": "Trapper Oufit"
+            "display_name": "Habit de trappeur"
          },
          "trapping_grounds": {
             "display_name": "Zone de chasse",
-            "description": "Trappers catch critters for food and resources in this zone."
+            "description": "Dans cette zone, les trappeurs capturent des animaux pour de la nourriture ou des ressources."
          }
       },
       "treasure_hunter": {
@@ -5600,111 +5646,111 @@
          "weaver_description": {
             "display_name": "Tisserand",
             "description": "Le tisserand fabrique du fil et des vêtements avec des fibres naturelles et des colorants.",
-            "requirements": "Weaver's Spindle, crafted by the Carpenter.",
+            "requirements": "Fuseau de tisserand, fabriqué par le menuisier.",
             "level_6_data": {
-               "title": "Master Weaver",
-               "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The weaver's mastery of his trade allows him to come up with completely new ways of using wood."
+               "title": "Maître tisserand",
+               "perk_000_name": "10 000 Heures (à venir)",
+               "perk_000_description": "La maîtrise de son Art permet au tisserand de réinventer la manière d'utiliser le tissu."
             },
             "level_2_data": {
-               "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The weaver is now skillful enough to use materials created by other crafters."
+               "perk_000_name": "Perspicacité collaborative",
+               "perk_000_description": "Le tisserand à maintenant assez de maîtrise pour utiliser des ressources provenant d'autres artisans."
             },
             "level_4_data": {
-               "perk_000_name": "Ingenuity Enhancements (not implemented)",
-               "perk_000_description": "The weaver adds new levels of functionality to classic recipes."
+               "perk_000_name": "Amélioration de l'ingéniosité (à venir)",
+               "perk_000_description": "Le tisserand améliore les recettes de bases en y ajoutant plus de fonctionalités."
             },
             "level_1_data": {
-               "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The weaver can now make basic hangings and decor."
+               "perk_000_name": "Catalogue standard",
+               "perk_000_description": "Le tisserand peut maintenant confectionner des vêtements et des éléments de décor basiques."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the weaver may embellish his works in unexpected ways."
+               "perk_000_name": "Inspiration artistique",
+               "perk_000_description": "Quand l'inspiration frappe, le tisserand est capable d'obtenir des résultats surprenant."
             }
          },
          "recipes": {
             "banner_wall_big_recipe": {
-               "description": "Show your town pride with this decorative banner.",
-               "recipe_name": "Big Wall-Mounted Banner",
-               "flavor": "Also a sign of affluence."
+               "description": "Affichez votre sentiment de fierté envers votre ville avec cette bannière décorative.",
+               "recipe_name": "Grande bannière murale",
+               "flavor": "C'est aussi un signe de prospérité."
             },
             "banner_wall_small_recipe": {
-               "description": "Show your town pride with this small banner.",
-               "recipe_name": "Small Wall-Mounted Banner",
-               "flavor": "Quality craftsmanship at fine resolutions."
+               "description": "Affichez votre sentiment de fierté envers votre ville avec cette petite bannière.",
+               "recipe_name": "Petite bannière murale",
+               "flavor": "La qualité artisanale dans tout sont expression."
             },
             "bolt_of_cloth_recipe": {
-               "description": "Used to create more comfortable furniture.",
-               "recipe_name": "Basic Bolt of Cloth",
-               "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
+               "description": "Utilisé pour rendre certains meubles plus confortables.",
+               "recipe_name": "Rouleau de tissu basique",
+               "flavor": "Pour rendre plus large de l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
             },
             "cloth_bolt_recipe": {
-               "description": "Used to create more comfortable furniture.",
-               "recipe_name": "Bolt of Cloth",
-               "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
+               "description": "Utilisé pour rendre certains meubles plus confortables.",
+               "recipe_name": "Rouleau de tissu",
+               "flavor": "Pour rendre plus large de l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
             },
             "cloth_padded_vest_recipe": {
-               "description": "This triple-quilted vest provides more protection to your combat units than mere clothing. Not a lot more, but every little bit helps, right?",
-               "recipe_name": "Padded Vest",
-               "flavor": "Needs... thicker... padding!"
+               "description": "Cette veste triplement matelassée protège mieux vos combattants que de simple habits. Bon, pas tellement mieux, mais c'est toujours ça !",
+               "recipe_name": "Veste rembourrée",
+               "flavor": "Nécessite... plus... de rembourrage!"
             },
             "curtains_recipe": {
-               "description": "Dresses up an otherwise ordinary window.",
-               "recipe_name": "Pretty Curtains",
-               "flavor": "Light-blocking technology encourages sleeping-in."
+               "description": "Habille ce qui serait autrement une fenêtre ordinaire.",
+               "recipe_name": "Jolis rideaux",
+               "flavor": "Technologie anti-lumière qui encourage la sieste."
             },
             "fur_rug_recipe": {
-               "description": "A warm and cozy rug, sewn from various animal pelts.",
-               "recipe_name": "Fur Rug",
-               "flavor": "Perfect for an evening by the fire."
+               "description": "Un tapis de fourrure chaud et confortable confectionné à l'aide de différentes peaux.",
+               "recipe_name": "Tapis de fourrure",
+               "flavor": "Parfait pour les soirée prés du feu."
             },
             "leather_bolt_recipe": {
-               "description": "Prepared sheets of leather, ready to be put to good use.",
-               "recipe_name": "Bolt of Leather",
-               "flavor": "You can hardly see the individual sources."
+               "description": "Des peaux tannées prêtes à l'usage.",
+               "recipe_name": "Cuir en rouleau",
+               "flavor": "Difficile de distinguer l'origine de chaque pièces."
             },
             "leather_vest_recipe": {
-               "description": "Hardened leather provides study protection against light weapons.",
-               "recipe_name": "Thick Leather Vest",
+               "description": "Le cuir durci offre une solide protection contre les armes légères.",
+               "recipe_name": "Gilet de cuir laminé",
                "flavor": "Les insultes rebondissent dessus aussi !"
             },
             "plushie_toy_rabbit_recipe": {
                "description": "Un jouet... pour enfant évidement.",
                "recipe_name": "Peluche de lapin",
-               "flavor": "She loves you!"
+               "flavor": "Il vous aime !"
             },
             "clothing_armor_name": "Vêtements et armures",
             "toys_name": "Jouets",
             "decorations_name": "Décorations",
-            "crafting_materials_name": "Crafting Materials",
+            "crafting_materials_name": "Ressources pour artisans",
             "spool_of_thread_recipe": {
-               "description": "Needed for cloth. Warm and fluffy",
-               "recipe_name": "Spool of Thread",
-               "flavor": "Each gram of fiber yearns to become a sweater."
+               "description": "Fil tout doux, nécessaire aux étoffes",
+               "recipe_name": "Bobine de fil",
+               "flavor": "Chaque gramme de fibre ne tend qu'à devenir un gilet."
             },
             "tapestry_wall_recipe": {
-               "description": "A decorative scene, woven in colored thread and cord.",
-               "recipe_name": "Wall-Mounted Tapestry",
+               "description": "Une scène décorative, tissée en fils et cordons colorés.",
+               "recipe_name": "Tapisserie murale",
                "flavor": "What you see in its knotted depths tells you something about yourself."
             },
             "thread_recipe": {
-               "description": "Needed for cloth. Warm and fluffy",
-               "recipe_name": "Spool of Thread",
-               "flavor": "Each gram of fiber yearns to become a sweater."
+               "description": "Tout doux et totelement nécessaire à la fabrication du tissu.",
+               "recipe_name": "Bobine de fil",
+               "flavor": "Chaque gramme de fibre ne tend qu'à devenir un gilet."
             },
             "throw_rug_recipe": {
-               "description": "Brightens up that old dusty floor.",
-               "recipe_name": "Decorative Throw Rug",
-               "flavor": "Trop beau pour y marcher."
+               "description": "Enjolive ce vieux sol poussiéreux",
+               "recipe_name": "Une capette décorative",
+               "flavor": "Trop belle pour y marcher."
             },
             "worker_outfit_2_recipe": {
-               "description": "Double stiching and strategically placed padding improves the worker's efficiency. The worker who dons this upgrade outfit will move 10% faster.",
+               "description": "Coutures doubles et rembourrages placés stratégiquement augmentent la productivité des travailleurs. Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
                "recipe_name": "Habit amélioré de travailleur",
                "flavor": "Votre ville vous aime !"
             },
             "worker_outfit_winter_recipe": {
-               "description": "A heavy wool coat, for cold winter nights. The worker who dons this upgrade outfit will move 10% faster.",
+               "description": "Un lourd manteau de laine pour les froides nuits d'hivers.<br>Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
                "recipe_name": "Habit d'hiver de travailleur",
                "flavor": "L'hivers arrive !"
             },
@@ -5783,10 +5829,10 @@
          },
          "worker_outfit_2": {
             "display_name": "Habit amélioré de travailleur",
-            "description": "Des coutures renforcées augmentent la productivité des travailleurs!",
+            "description": "Des coutures renforcées augmentent la productivité des travailleurs !",
             "worker_outfit_2_iconic": {
                "display_name": "Habit amélioré de travailleur",
-               "description": "Des coutures renforcées augmentent la productivité des travailleurs!"
+               "description": "Des coutures renforcées augmentent la productivité des travailleurs !"
             }
          }
       }
