@@ -21,10 +21,10 @@
 			"death": "se meurt",
 			"eat": "cherche à manger",
 			"find_stray_animal": "cherche des animaux errants",
-			"harvest_field": "récolte un champs",
-			"idle": "unoccupied",
+			"harvest_field": "récolte un champ",
+			"idle": "inoccupé",
 			"patrol": "patrouille",
-			"plant_crop": "ensemence un champs",
+			"plant_crop": "ensemence un champ",
 			"return_animals": "retourne au pâturage",
 			"combat": "engagé en combat",
 			"cower": "est tétanisé",
@@ -34,16 +34,16 @@
 			"sleep_in_bed": "dort",
 			"sleep_on_ground": "dort par terre",
 			"check_bait_trap": "vérifie ses pièges",
-			"set_bait_trap": "fabrique des pièges",
-			"survey_trapping_grounds": "surveille ses pièges",
+			"set_bait_trap": "pose des pièges",
+			"survey_trapping_grounds": "surveille la zone de chasse",
 			"steal_bait": "vole un appât",
 			"build_ladder": "construit une échelle",
-			"promote": "change de carrière",
+			"promote": "change de métier",
 			"move_item_to_storage": "enmène un objet au stockage",
-			"teardown_ladder": "retire une échelle",
+			"teardown_ladder": "démonte une échelle",
 			"drop_item_near_workshop": "retire un atelier",
 			"fabricate_structure": "construit",
-			"teardown_structure": "démolit une structure",
+			"teardown_structure": "démonte des structures",
 			"feed_pasture_animals": "nourrit les animaux"
 		 }
 	  }
@@ -52,17 +52,17 @@
 	  "game": {
 		 "game_speed": {
 			"pause_title": "Pause",
-			"pause_description": "Met en pause le jeu",
-			"play_title": "Démarre",
-			"play_description": "Démarre le jeu à la vitesse normal",
+			"pause_description": "Met le jeu en pause",
+			"play_title": "Jouer",
+			"play_description": "Vitesse normale",
 			"ff_title": "Jeu rapide",
 			"ff_description": "Double la vitesse du jeu",
-			"speedThree_title": "Super vitesse",
-			"speedThree_description": "Lance le jeu à haute vitesse",
-			"pause_overlay": "En pause"
+			"speedThree_title": "Vitesse maximum",
+			"speedThree_description": "Jouer en vitesse maximum",
+			"pause_overlay": "Pause"
 		 },
 		 "visions": {
-			"building_vision": "Vue bâtimentaire",
+			"building_vision": "Vue intra-bâtimentaire",
 			"building_vision_description": "Change la visibilité des murs, vous permettant de voir à l'intérieur des bâtiments.",
 			"terrain_slice_vision": "Vue géologique en couche",
 			"terrain_slice_vision_icon_name": "Terrain",
@@ -72,9 +72,9 @@
 			"terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains."
 		 },
 		 "promotion_tree": {
-			"title": "Choisir une profession",
+			"title": "Choisir une métier",
 			"promotion_title": "Promouvoir en [str(job_name)]", 
-			"text_1": "En l'honneur de vos efforts inébranlables et de votre rigueur, nous vous annonçons par la présente",
+			"text_1": "En l'honneur de ses efforts inébranlables et de votre rigueur, nous vous annonçons par la présente",
 			"choose": "Choisissez un hearthling...",
 			"text_2": "en ce jour du, [str(date)]",
 			"approve": "APPROUVER",
