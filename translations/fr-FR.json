@@ -401,7 +401,7 @@
 			},
 			"bulletin_manager": {
 			   "display_name": "Bulletins",
-			   "description": "Important notifications about the world and your town"
+			   "description": "Notifications importantes à propos du monde et de votre ville"
 			},
 			"tasks_manager": {
 			   "display_name": "Manage Tasks",
@@ -410,14 +410,14 @@
 			   "pause_stockpile": "Pause",
 			   "resume_stockpile": "Resume",
 			   "group": {
-				  "stockpiles": "Stockpiles",
-				  "building": "Building",
+				  "stockpiles": "Stockage",
+				  "building": "Construction",
 				  "placement": "Placed Items",
 				  "maintenance": "General Maintenance",
-				  "farming": "Farming",
-				  "harvesting": "Harvesting",
-				  "mining": "Mining",
-				  "trapping": "Trapping"
+				  "farming": "Agriculture",
+				  "harvesting": "Récolte",
+				  "mining": "Minage",
+				  "trapping": "Chasse"
 			   },
 			   "percent_full": "[str(percent)] Percent Full",
 			   "active": "active",
@@ -427,35 +427,35 @@
 		 "bulletin": {
 			"bulletin_list_title": "Notifications",
 			"shop": {
-			   "buy_1": "Buy 1",
-			   "buy_10": "Buy 10",
-			   "sell_1": "Sell 1",
-			   "sell_10": "Sell 10",
-			   "buy_tab": "Buy",
-			   "sell_tab": "Sell",
-			   "not_enough_gold_tooltip": "Not enough gold"
+			   "buy_1": "Acheter 1",
+			   "buy_10": "Acheter 10",
+			   "sell_1": "Vendre 1",
+			   "sell_10": "Vendre 10",
+			   "buy_tab": "Acheter",
+			   "sell_tab": "Vendre",
+			   "not_enough_gold_tooltip": "Plus d'or !"
 			},
 			"quest_bulletin": {
-			   "title": "New Message"
+			   "title": "Nouveau message"
 			},
 			"level_up_bulletin": {
-			   "title": "[name(i18n_data.entity)] has Leveled Up!",
+			   "title": "[name(i18n_data.entity)] a gagné un niveau !",
 			   "show_char_sheet": "Character Sheet"
 			},
 			"immigration_report": {
-			   "title": "Daily Update",
-			   "immigration_report_title": "Immigration Report",
+			   "title": "Bulletin quotidien",
+			   "immigration_report_title": "Rapport d'immigration",
 			   "population_label": "population",
 			   "next_requirements_label": "Next hearthling requirements..."
 			},
 			"collection_quest": {
-			   "pay": "Here you go!",
-			   "cancel": "I've changed my mind"
+			   "pay": "Et voilà !",
+			   "cancel": "J'ai changé d'avis"
 			}
 		 },
 		 "build_mode": {
 			"tooltips": {
-			   "building_tools": "Building Tools",
+			   "building_tools": "Outils de constructions",
 			   "voxel_tools": "Voxel Tools",
 			   "voxel_add": "Add Voxel",
 			   "voxel_paint": "Paint Voxel",
@@ -583,51 +583,51 @@
 		 },
 		 "zones_mode": {
 			"farm": {
-			   "choose_crop": "Choose a Crop",
-			   "fallow_name": "Fallow",
-			   "fallow_description": "Plant no crop and let the soil renew itself."
+			   "choose_crop": "Choisir une culture",
+			   "fallow_name": "Jachère",
+			   "fallow_description": "Le sol est préparé à la culture mais rien n'y est planté."
 			},
 			"mining": {
-			   "help": "Mining allows you to create underground rooms and corridors. You can also discover resources while digging.",
-			   "disable": "Suspend Mining",
-			   "enable": "Resume Mining"
+			   "help": "Le minage permet de creuser le sol et les montagnes et ainsis de trouver des resources spécifiques.",
+			   "disable": "Supendre le minage",
+			   "enable": "Reprendrende le minage"
 			},
 			"trapping_grounds": {
-			   "help": "Trappers will place traps in a trapping grounds and will periodically check to see if anything has been caught.",
-			   "disable": "Suspend Trapping",
-			   "enable": "Resume Trapping"
+			   "help": "Les chasseurs disposeront des pièges dans leurs zones affectés afin de capture du gibier.",
+			   "disable": "Suspendre la chasse",
+			   "enable": "Reprendre la chasse"
 			},
 			"pasture": {
-			   "help": "Shepherds bring animals to this region and tend to their needs here.",
+			   "help": "Les bergers élèvent des animaux pour en retirer des resources très intéressantes !",
 			   "choose_pasture_type": "Choose Pasture Type",
-			   "sheep_pasture_name": "Sheep Pasture",
-			   "rabbit_pasture_name": "Rabbit Pen",
-			   "poyo_pasture_name": "Poyo Coop",
-			   "sheep_pasture_description": "Sheep produce wool and can be a source of meat.",
-			   "rabbit_pasture_description": "Rabbits can be a source of jerky.",
-			   "poyo_pasture_description": "Poyos produce eggs, a valuable cooking ingredient."
+			   "sheep_pasture_name": "Moutons",
+			   "rabbit_pasture_name": "Lapins",
+			   "poyo_pasture_name": "Poulettes",
+			   "sheep_pasture_description": "Les moutons produisent de la laine et sont une source de viande.",
+			   "rabbit_pasture_description": "Les lapins sont une source de viande.",
+			   "poyo_pasture_description": "Les poulettes produisent des oeufs, un ingrédiant de cuisine très utilisé !"
 			},
 			"stockpile": {
-			   "default_stockpile_name": "Stockpile No.[str(self.unit_info.custom_name)]",
-			   "contents": "Contents",
-			   "filter": "Filter",
-			   "help": "Click the icons to choose what to store in this stockpile.",
+			   "default_stockpile_name": "Stockage N°[str(self.unit_info.custom_name)]",
+			   "contents": "Contenu",
+			   "filter": "Filtre",
+			   "help": "cliquer sur l'icone pour choisir ce qui y sera stocké.",
 			   "used_space": "Espace utilisé :",
 			   "filters": {
-				  "all": "All",
-				  "none": "None",
+				  "all": "Tout",
+				  "none": "Rien",
 				  "resources": "Resources",
 				  "construction": "Construction",
-				  "goods": "Tools & Goods",
-				  "gear": "Weapons & Armor",
-				  "food_and_drink": "Food & Drink",
+				  "goods": "Outils et Biens",
+				  "gear": "Armes et armures",
+				  "food_and_drink": "Nourritures et boissons",
 				  "wealth": "Wealth",
 				  "tooltip_tools": "Tools",
 				  "tooltip_wood": "wood",
 				  "tooltip_stone": "stone",
-				  "tooltip_ore": "ore",
+				  "tooltip_ore": "Minérais",
 				  "tooltip_animal_part": "animal parts",
-				  "tooltip_plant": "plants",
+				  "tooltip_plant": "Plantes",
 				  "tooltip_portal": "doors & windows",
 				  "tooltip_furniture": "furniture",
 				  "tooltip_defense": "defenses",
@@ -657,9 +657,9 @@
 			"unclaimed_workshop_description": "Unclaimed",
 			"workshop_entity_claimed_description": "Owned by [name(self.stonehearth:workshop.crafter)]",
 			"craft_number_left": "Craft",
-			"craft_number_right": "right now.",
-			"craft_up_to_left": "Maintain",
-			"craft_up_to_right": "in inventory.",
+			"craft_number_right": "tout de suite.",
+			"craft_up_to_left": "Toujours avoir",
+			"craft_up_to_right": "en inventaire.",
 			"craft_ingredients": "Ingrédients :",
 			"craft_requirements": "Eléments requis :",
 			"unlock_text": "À débloquer :",
@@ -682,19 +682,19 @@
 			"too_many_symbol": "lots",
 			"requirements_unmet_general": "Craft Requirements Unmet!",
 			"queue_anyway": "Queue Order Anyway",
-			"recipe_tab": "Recipes",
-			"orders_tab": "Orders",
-			"missing_ingredients": "Missing ingredients: "
+			"recipe_tab": "Recettes",
+			"orders_tab": "Ordres",
+			"missing_ingredients": "Ingrédients manquants : "
 		 },
 		 "town_overview": {
 			"title": "Town Overview",
 			"journal": {
 			   "default_message": "No journal entries yet!",
 			   "signature": "--[name(entry.person)]",
-			   "today": "Today",
+			   "today": "aujourd'hui",
 			   "town_log": "Town Log",
-			   "praises": "Praises",
-			   "gripes": "Gripes",
+			   "praises": "Eloges",
+			   "gripes": "Critiques",
 			   "praise_empty": "Nothing praiseworthy happened today.",
 			   "gripe_empty": "Whoa. I guess nobody has anything to gripe about."
 			},
@@ -711,21 +711,21 @@
 				  "empire": "Empire"
 			   },
 			   "morale_descriptor": {
-				  "0": "Wretched",
+				  "0": "Pitoyable",
 				  "1": "Miserable",
-				  "2": "Dejected",
-				  "3": "Listless",
-				  "4": "Fair",
-				  "5": "Good",
-				  "6": "Contented",
-				  "7": "Merry",
-				  "8": "Joyous",
-				  "9": "Buoyant",
-				  "10": "Incandescent"
+				  "2": "Abattu",
+				  "3": "Indiférrent",
+				  "4": "Juste",
+				  "5": "Bien",
+				  "6": "Content",
+				  "7": "Gai",
+				  "8": "Joyeux",
+				  "9": "Dynamique",
+				  "10": "Incroyable"
 			   }
 			},
 			"score": {
-			   "net_worth": "Net worth",
+			   "net_worth": "Profit",
 			   "edibles": "Edibles",
 			   "overall_morale": "Overall Morale",
 			   "food": "Food",
@@ -734,7 +734,7 @@
 			},
 			"tab": {
 			   "town_overview": "Town Overview",
-			   "inventory": "Inventory",
+			   "inventory": "Inventaire",
 			   "journal": "Journal"
 			}
 		 }
@@ -743,9 +743,9 @@
 		 "loading_screen": {
 			"initial_load_map_text": "Generating World",
 			"loading_map_flavor_text": {
-			   "001": "sharpening right angles...",
-			   "002": "decompressing voxels...",
-			   "003": "synthesizing fauna...",
+			   "001": "calcul des angles...",
+			   "002": "decompression des voxels...",
+			   "003": "synthetisation de la faune...",
 			   "004": "redistubuting redistrubutables...",
 			   "005": "terracing terrain...",
 			   "006": "stocking piles...",
@@ -774,14 +774,14 @@
 			   "029": "regulating hairbobs..."
 			},
 			"tips": {
-			   "000": "If your workers get stuck in a mine, you can build a ladder to get them out!",
-			   "001": "Your settlers will get a better night's sleep if you provide beds for them.",
+			   "000": "Si un travailleur est bloqué, construire une échelle lui permettrait de l'en sortir !",
+			   "001": "Les habitants passeront une meilleur nuit en la passant dans un lit !",
 			   "002": "Build pens around your pastures to make sure shepherded animals stay put.",
 			   "003": "Stockpiles can be changed to hold specific kinds of items.",
 			   "004": "You can farm silkweed for a steady supply of thread fiber.",
 			   "005": "A well fed town is a happy town.",
 			   "006": "Use the . and , keys to rotate an item or building before placing it.",
-			   "007": "Your hearthlings move faster on roads.",
+			   "007": "Les routes permettent à vos habitants de se déplacer plus vites !",
 			   "008": "The weaver can craft new uniforms that increases the effectiveness of your workers.",
 			   "009": "Sitting during a meal helps with digestion. Build tables and chairs for your hearthlings.",
 			   "010": "Shepherds will automatically find sheep to fill a pasture.",
@@ -909,7 +909,7 @@
 		 "embark": {
 			"title": "Préparez-vous à partir pour l'aventure",
 			"citizen_info": "Liste d'expédition",
-			"reroll_citizens": "Générer des hearthlings",
+			"reroll_citizens": "Générer la liste d'expédition",
 			"shop_title": "Magasin du voyageur",
 			"shop_gold_label": "Or",
 			"shop_sold": "VENDU !",
@@ -1054,7 +1054,7 @@
 		 "campaigns": {
 			"encounters": {
 			   "daily_report_encounter": {
-				  "title": "A traveller approaches your town.",
+				  "title": "Un voyageur approche de votre ville",
 				  "update_title": "Daily Update",
 				  "sub_title": "Immigration Report",
 				  "food_label": "Food ",
@@ -1140,17 +1140,17 @@
 				  "dialog_tree_info": {
 					 "dialog_nodes": {
 						"erdene_appears": {
-						   "choice_000": "No way!",
-						   "choice_001": "Well... yes.",
+						   "choice_000": "Pas question !",
+						   "choice_001": "bon... D'accord.",
 						   "bulletin_message": {
-							  "000": "Are you afraid, valiant town? Ogo so-called-chief will be here soon. For you."
+							  "000": "Avez-vous peurs, vaillants citoyens ? Ogo soi-disant chef sera bientôt là. Pour vous."
 						   },
-						   "bulletin_title": "A figure with a sibilant voice appears beside your fire",
+						   "bulletin_title": "Une voix sifflante se fait entendre à côté de votre feu de camp",
 						   "dialog_title": "???"
 						},
 						"erdenes_help": {
-						   "choice_000": "Uh... okay?",
-						   "choice_001": "Confused. Sorry.",
+						   "choice_000": "Euh... Okay ?",
+						   "choice_001": "Désolé.",
 						   "bulletin_message": {
 							  "000": "To borrow strength to rise means to fall when strength fails. Ogo borrows his power not from his so-called-sayer, but from the babe he stole."
 						   },
@@ -1158,8 +1158,8 @@
 						   "dialog_title": "???"
 						},
 						"erdene_description": {
-						   "choice_000": "Cool!",
-						   "choice_001": "Sounds ominous.",
+						   "choice_000": "Super !",
+						   "choice_001": "Ca pue.",
 						   "bulletin_message": {
 							  "000": "Me? I am the one who watches. You. Him. For the star. For fate.",
 							  "001": "I? I am of the Red Kiln. We would have been your saviours, but your Cid parlayed hard in your stead. So now we watch. And wait for the day when your star rises.",
