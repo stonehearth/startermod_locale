@@ -1671,7 +1671,7 @@
 			   "undead_raid": {
 				  "mission": {
 					 "sighted_bulletin": {
-						"title": "Invaders sighted!"
+						"title": "Intrus repérés !"
 					 }
 				  }
 			   }
@@ -1679,18 +1679,18 @@
 		 }
 	  },
 	  "buffs": {
-		 "buff_duration_days": "[str(days)]d",
+		 "buff_duration_days": "[str(days)]j",
 		 "buff_duration_hours": "[str(hours)]h",
 		 "buff_duration_minutes": "[str(minutes)]m",
 		 "carrying": {
 			"carrying_buff": {
-			   "display_name": "So Heavy!",
-			   "description": "Carrying heavy things naturally causes people to move more slowly"
+			   "display_name": "Si lourd !",
+			   "description": "Équiper les heartlings de choses lourdes va naturellement les faire se déplacer plus lentement"
 			}
 		 },
 		 "combat_basics": {
-			"display_name": "Basic Combat Training",
-			"description": "Increased courage through hours of combat training"
+			"display_name": "Entrainement au combat de base",
+			"description": "Augmente le courage au fil des nombreuses heures d'entrainement"
 		 },
 		 "defender": {
 			"defender_buff": {
@@ -1757,141 +1757,141 @@
 	  "build": {
 		 "prototypes": {
 			"building": {
-			   "display_name": "Building No.[str(self.unit_info.custom_name)]",
-			   "description": "A building.  woot!!"
+               "display_name": "Construction n°[str(self.unit_info.custom_name)]",
+			   "description": "Un bâtiment. Whouhaou !!"
 			},
 			"column": {
-			   "display_name": "Wooden Column",
-			   "description": "Provides wall support"
+               "display_name": "Colonne de bois",
+               "description": "Supporte les murs"
 			},
 			"floor": {
-			   "display_name": "Floor",
-			   "description": "Keeps feet clean"
+               "display_name": "Plancher",
+               "description": "Garde les pieds au propre"
 			},
 			"ladder": {
-			   "display_name": "Ladder",
-			   "description": "Used to reach high places"
+               "display_name": "Échelle",
+               "description": "Utile pour atteindre les endroits élevés"
 			},
 			"patch_wall": {
-			   "display_name": "Wall",
-			   "description": "Keeps roofs up"
+               "display_name": "Mur",
+               "description": "Garde le toit en l'air"
 			},
 			"road": {
-			   "display_name": "Road",
-			   "description": "For speedier travel"
+			   "display_name": "Route",
+			   "description": "Pour voyager plus vite"
 			},
 			"roof": {
-			   "display_name": "Roof",
-			   "description": "Keeps the rain out"
+               "display_name": "Toit",
+               "description": "Garde la pluie dehors"
 			},
 			"scaffolding": {
-			   "display_name": "Scaffolding",
-			   "description": "Construction support structure"
+               "display_name": "Échafaudage",
+               "description": "Structure de soutient pour construction"
 			},
 			"wall": {
-			   "display_name": "Wall",
-			   "description": "Keeps roofs up"
+               "display_name": "Mur",
+               "description": "Garde le toit en l'air"
 			}
 		 }
 	  },
 	  "commands": {
 		 "build_workshop": {
-			"display_name": "Build Workshop",
-			"description": "Create a place for productivity!"
+            "display_name": "Construire un atelier",
+            "description": "Créez un endroit propice à la productivité !"
 		 },
 		 "chop_tree": {
-			"display_name": "Harvest",
-			"description": "Harvest for lumber, or just to get it out of the way."
+			"display_name": "Récolter",
+			"description": "Récoltez du bois, ou juste pour les enlever du passage."
 		 },
 		 "destroy_entity": {
-			"display_name": "Destroy",
-			"description": "Irrevocably remove this item from the world!"
+			"display_name": "Détruire",
+			"description": "Supprimer de manière irrévocable cet objet de ce monde !"
 		 },
 		 "harvest_berries": {
-			"display_name": "Gather Berries",
-			"description": "This bush produces berries that can be gathered to feed your settlers.",
-			"disabled_description": "The berries on this bush aren't ripe yet!"
+			"display_name": "Ramasser des baies",
+			"description": "Ce buisson produit des baies qui peuvent nourrir vos hearthlings.",
+			"disabled_description": "Les baies sur ce buisson ne sont pas encore mûres !"
 		 },
 		 "harvest_planted": {
-			"display_name": "Harvest",
-			"description": "Reap whatever's available."
+            "display_name": "Récolter",
+            "description": "Ramasser tout ce qui traine."
 		 },
 		 "loot_item": {
-			"display_name": "Loot item",
-			"description": "Claim this item for your town."
+            "display_name": "Piller un objet",
+            "description": "Revendiquer cet objet pour votre ville."
 		 },
 		 "move_item": {
-			"display_name": "Move item",
-			"description": "Move this thing somewhere else in the world.",
-			"disabled_description": "This item is in use. Try moving it later."
+			"display_name": "Déplace un objet",
+			"description": "Déplacer cette chose quelques par ailleurs dans le monde.",
+			"disabled_description": "Cet objet est utilisé. Essayé de le bouger plus tard."
 		 },
 		 "place_item": {
-			"display_name": "Place item",
-			"description": "Place this item in the world."
+            "display_name": "Placer un objet",
+            "description": "Placez cet objet dans le monde."
 		 },
 		 "plant_crop": {
 			"plant_corn": {
-			   "display_name": "Plant Corn!",
-			   "description": "Edible Gold."
+               "display_name": "Planter du maïs !",
+               "description": "Or comestible."
 			},
-			"display_name": "Plant a crop!",
-			"description": "Plant something in this square.",
+			"display_name": "Créer une culture !",
+			"description": "Plantez quelques choses dans ce carré.",
 			"plant_turnip": {
-			   "display_name": "Plant a Turnip!",
-			   "description": "Plant a turnip in this square."
+               "display_name": "Planter un navets !",
+               "description": "Plantez un navet dans ce carré."
 			}
 		 },
 		 "promote_to_job": {
-			"display_name": "Change Jobs",
-			"description": "Give this hearthling a new job."
+            "display_name": "Changer de métier",
+            "description": "Donne à ce hearthling une nouvelle activité"
 		 },
 		 "raze_crop": {
-			"display_name": "Clear Ground",
-			"description": "Clear or harvest the contents of this plot."
+            "display_name": "Nettoyer la parcelle",
+            "description": "Récoltez ou nettoyez cette zone."
 		 },
 		 "release_pet": {
-			"display_name": "Release Pet",
-			"description": "Tell this pet you don't want it anymore."
+            "display_name": "Libérer le familier",
+            "description": "Informez ce familier que vous ne voulez plus de lui."
 		 },
 		 "remove_ladder": {
-			"display_name": "Remove",
-			"description": "Remove this ladder."
+            "display_name": "Démonter",
+            "description": "Fait disparaitre cette échelle."
 		 },
 		 "shear_sheep": {
-			"display_name": "Shear Sheep",
-			"description": "Harvest the wool from this sheep. Don't worry, it doesn't hurt...much.",
-			"disabled_description": "You'll be able to harvest this sheep again once its wool has grown back."
+            "display_name": "Tondre le mouton",
+            "description": "Récolter la laine de ce mouton. Ne vous tracassez pas, ça ne fait pas mal... enfin pas trop.",
+            "disabled_description": "Vous pourrez à nouveau tondre ce mouton quand sa laine aura repoussée."
 		 },
 		 "show_workshop": {
-			"display_name": "Show Workshop",
-			"description": "Your crafter uses the workshop to construct useful items for your settlement.",
-			"disabled_description": "Your crafter uses the workshop to construct useful items for your settlement. Before you can craft you need to assign a crafter to this workshop."
+            "display_name": "Ouvrir l'atelier",
+            "description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement.",
+            "disabled_description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement. Avant la fabrication, vous devez assigner à un artisan son atelier. "
 		 },
 		 "show_workshop_from_crafter": {
-			"display_name": "Show Workshop",
-			"description": "Your crafter uses the workshop to construct useful items for your settlement.",
-			"disabled_description": "Your crafter uses the workshop to construct useful items for your settlement. Before you can craft you need to assign a crafter to this workshop."
+            "display_name": "Ouvrir l'atelier",
+            "description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement.",
+            "disabled_description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement. Avant la fabrication, vous devez assigner à un artisan son atelier. "
 		 },
 		 "slaughter": {
-			"display_name": "Harvest for Meat",
-			"description": "Harvest this animal for its meat.",
-			"disabled_description": "This animal is so malnourished that it has no meat. It's just skin and bones."
+            "display_name": "Sacrifier pour de la viande",
+            "description": "Sacrifie cet animal pour sa viande.",
+            "disabled_description": "Cet animal à été si mal nouris qu'il n'a pas de viande. C'est juste un sac d'os."
 		 },
 		 "undeploy_item": {
-			"display_name": "Undeploy",
-			"description": "Undeploy this item and return it to a stockpile",
-			"disabled_description": "This item is in use. Try undeploying it later."
+            "display_name": "Ranger",
+            "description": "Ranger cet objet dans une réserve.",
+            "disabled_description": "Cet objet est utilisé. Essayez de le ranger un peu plus tard."
 		 },
 		 "unit_control": {
 			"abilities": {
 			   "snare_trap": {
-				  "display_name": "Snare Trap",
-				  "description": "Spring a weighted net to capture small game like rabbits and squirrels."
+				  "display_name": "Collet",
+				  "description": "Fixe un fil solide pour capturer les petits animaux comme les lapins ou les écureuils."
 			   }
 			},
 			"move_unit": {
-			   "display_name": "Move",
-			   "description": "Tell this character to move somewhere else"
+			   "display_name": "Se déplacer",
+			   "description": "Dites à ce hearthling d'aller ailleurs"
 			},
 			"unload_inventory": {
 			   "display_name": "Unload Bags",
@@ -1899,8 +1899,8 @@
 			}
 		 },
 		 "plant_tree": {
-			"display_name": "Plant Tree",
-			"description": "Plant this tree in some dirt."
+            "display_name": "Planter un arbre.",
+            "description": "Plantez cet arbre dans un peu de terre."
 		 }
 	  },
 	  "personality": {

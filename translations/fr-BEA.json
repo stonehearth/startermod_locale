@@ -1981,7 +1981,7 @@
          "shear_sheep": {
             "display_name": "Tondre le mouton",
             "description": "Récolter la laine de ce mouton. Ne vous tracassez pas, ça ne fait pas mal... enfin pas trop.",
-            "disabled_description": "Vous pourrez à nouveau tondre ce mouton quand sa laine aura repoussé."
+            "disabled_description": "Vous pourrez à nouveau tondre ce mouton quand sa laine aura repoussée."
          },
          "show_workshop": {
             "display_name": "Ouvrir l'atelier",
@@ -1995,8 +1995,8 @@
          },
          "slaughter": {
             "display_name": "Sacrifier pour de la viande",
-            "description": "Envoyer ad patres cet animal pour récupérer sa viande.",
-            "disabled_description": "Cet animal à été si mal nouris qu'il n'a pas de viande, c'est jsute un sac d'os..."
+            "description": "Sacrifie cet animal pour sa viande.",
+            "disabled_description": "Cet animal à été si mal nouris qu'il n'a pas de viande. C'est juste un sac d'os."
          },
          "undeploy_item": {
             "display_name": "Ranger",
