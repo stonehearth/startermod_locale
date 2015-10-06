@@ -620,33 +620,33 @@
 			"farm": {
 			   "choose_crop": "Choisir une culture",
 			   "fallow_name": "Jachère",
-			   "fallow_description": "Le sol est préparé à la culture mais rien n'y est planté."
+			   "fallow_description": "Ne rien semer et laisser le sol se régénérer seul."
 			},
 			"mining": {
-			   "help": "Le minage permet de creuser le sol et les montagnes et ainsis de trouver des resources spécifiques.",
-			   "disable": "Supendre le minage",
-			   "enable": "Reprendrende le minage"
+			   "help": "L'extraction minière permet de creuser le sol et les montagnes et ainsis de trouver des resources spécifiques.",
+			   "disable": "Suspendre l'extraction",
+			   "enable": "Reprendre l'extraction"
 			},
 			"trapping_grounds": {
 			   "help": "Les chasseurs disposeront des pièges dans leurs zones affectés afin de capture du gibier.",
-			   "disable": "Suspendre la chasse",
-			   "enable": "Reprendre la chasse"
+			   "disable": "Suspendre la pose de piège",
+			   "enable": "Reprendre la pose de piège"
 			},
 			"pasture": {
-			   "help": "Les bergers élèvent des animaux pour en retirer des resources très intéressantes !",
+			   "help": "Les bergers ménent leur animaux dans ce lieu et s'occupent d'eux ici même.",
 			   "choose_pasture_type": "Choose Pasture Type",
-			   "sheep_pasture_name": "Moutons",
-			   "rabbit_pasture_name": "Lapins",
-			   "poyo_pasture_name": "Poulettes",
-			   "sheep_pasture_description": "Les moutons produisent de la laine et sont une source de viande.",
-			   "rabbit_pasture_description": "Les lapins sont une source de viande.",
-			   "poyo_pasture_description": "Les poulettes produisent des oeufs, un ingrédiant de cuisine très utilisé !"
+			   "sheep_pasture_name": "Pâturage de moutons",
+			   "rabbit_pasture_name": "Enclos de lapin",
+			   "poyo_pasture_name": "Poulailler de poyo",
+			   "sheep_pasture_description": "Les moutons produisent de la laine et peuvent être une source de viande.",
+			   "rabbit_pasture_description": "Les lapins peuvent être une source de viande.",
+			   "poyo_pasture_description": "Les poyos produisent des oeufs, un ingrédient de cuisine précieux !"
 			},
 			"stockpile": {
-			   "default_stockpile_name": "Stockage N°[str(self.unit_info.custom_name)]",
+			   "default_stockpile_name": "Stockage n°[str(self.unit_info.custom_name)]",
 			   "contents": "Contenu",
 			   "filter": "Filtre",
-			   "help": "cliquer sur l'icone pour choisir ce qui y sera stocké.",
+			   "help": "cliquer sur l'îcone pour choisir ce qui y sera stocké.",
 			   "used_space": "Espace utilisé :",
 			   "filters": {
 				  "all": "Tout",
@@ -2870,7 +2870,7 @@
 					 "000": "You want me to be the weaver? Everything I know about weaving: jab the pointy end into the other person. This should be interesting."
 				  },
 				  "hopeless_optimist": {
-					 "000": "Woo! Now that I'm the weaver, I live to make comfy beds for everyone!"
+					 "000": "Wooaw ! Maintenant que je suis un tisserand, je vie pour faire des lits confortables pour tous !"
 				  },
 				  "insufferable_academic": {
 					 "000": "There is a meditative grace in fine knotwork. Stare, my friends, stare until your souls belong to meeeeee."
@@ -3827,8 +3827,8 @@
 		 },
 		 "poyo_feed": {
 			"poyo_feed": {
-			   "display_name": "Poyo Feed",
-			   "description": "For feeding poyos."
+			   "display_name": "Nourriture pour poyo",
+			   "description": "Pour nourrire les poyos."
 			},
 			"poyo_feed_ground": {
 			   "display_name": "Poyo Feed",
@@ -3859,25 +3859,25 @@
 		 },
 		 "comfy_bed": {
 			"comfy_bed_ghost": {
-			   "display_name": "Comfy Bed",
+			   "display_name": "Lit confortable",
 			   "description": "I dreamed... of flying sheep."
 			}
 		 },
 		 "comfy_bed_fine": {
 			"comfy_bed_fine_ghost": {
-			   "display_name": "Fine Comfy Bed",
+			   "display_name": "Lit confortable stylisé",
 			   "description": "I dreamed... of flying sheep."
 			}
 		 },
 		 "comfy_chair": {
 			"comfy_chair_ghost": {
-			   "display_name": "Comfy Chair",
+			   "display_name": "Chaise confortable",
 			   "description": "For sitting!"
 			}
 		 },
 		 "comfy_chair_fine": {
 			"comfy_chair_fine_ghost": {
-			   "display_name": "Fine Comfy Chair",
+			   "display_name": "Chaise confortable stylisé",
 			   "description": "For sitting!"
 			}
 		 },
@@ -3907,7 +3907,7 @@
 		 },
 		 "not_much_of_a_bed": {
 			"not_much_of_a_bed_ghost": {
-			   "display_name": "Mean Bed",
+			   "display_name": "Lit minable",
 			   "description": "Mean as in poor, not cruel. Though it's that too."
 			}
 		 },
@@ -4895,12 +4895,12 @@
 	  },
 	  "carpenter": {
 		 "carpenter_description": {
-			"display_name": "Carpenter",
+			"display_name": "Menuisier",
 			"description": "The carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
 			"requirements": "Carpenter's saw, crafted by the Blacksmith.",
 			"level_6_data": {
 			   "title": "Master Carpenter",
-			   "perk_000_name": "10,000 Hours (not implemented)",
+			   "perk_000_name": "10.000 heures (à venir)",
 			   "perk_000_description": "The carpenter's mastery of his trade allows him to come up with completely new ways of using wood."
 			},
 			"level_2_data": {
@@ -4955,8 +4955,8 @@
 			   "flavor": "Design favored by the Church of Plenty."
 			},
 			"comfy_bed_recipe": {
-			   "description": "Eight hours will leave you as refreshed as the day you were born.",
-			   "recipe_name": "Comfy Bed",
+			   "description": "Huit heures vont vous laissé aussi frais que le jour de votre naissance.",
+			   "recipe_name": "Lit confortable",
 			   "flavor": "Nobody ever wants to get out. It makes emergency evacuations awkward."
 			},
 			"comfy_chair_recipe": {
@@ -5152,7 +5152,7 @@
 			"requirements": "2 levels of Farmer and a Stoneware Spoon, crafted by the Mason.",
 			"level_6_data": {
 			   "title": "Master cook",
-			   "perk_000_name": "10,000 Hours (not implemented)",
+			   "perk_000_name": "10.000 heures (à venir)",
 			   "perk_000_description": "The cook's dishes are now so good for you they have unexpected effects."
 			},
 			"level_2_data": {
@@ -5160,7 +5160,7 @@
 			   "perk_000_description": "The cook has learned to make slightly fancier recipes."
 			},
 			"level_4_data": {
-			   "perk_000_name": "Ingenuity Enhancements (not implemented)",
+			   "perk_000_name": "Ingenuity Enhancements (à venir)",
 			   "perk_000_description": "The cook adds new levels of functionality to classic recipes."
 			},
 			"level_1_data": {
@@ -5291,15 +5291,15 @@
 	  },
 	  "farmer": {
 		 "farmer_description": {
-			"display_name": "Farmer",
+			"display_name": "Agriculteur",
 			"description": "Farmers till fields and harvest crops, providing a consistent food supply and raw materials for baked goods.",
 			"requirements": "Farmer's Hoe, crafted by the Carpenter.",
 			"level_6_data": {
-			   "perk_000_name": "Nature's Surprise (not implemented)",
+			   "perk_000_name": "Nature's Surprise (à venir)",
 			   "perk_000_description": "Occasionally, the farmer's special touch yields... special results."
 			},
 			"level_1_data": {
-			   "perk_000_name": "Speed Up 10%",
+			   "perk_000_name": "Gain de vitesse 10%",
 			   "perk_000_description": "Running fresh food from field to table has increased the farmer's footspeed."
 			},
 			"level_2_data": {
@@ -5339,7 +5339,7 @@
 	  },
 	  "footman": {
 		 "footman_description": {
-			"display_name": "Footman",
+			"display_name": "Fantassin",
 			"description": "The Footman is a melee fighter. A good choice for the backbone of your town's defense.",
 			"requirements": "Wooden Practice Sword, crafted by the Carpenter.",
 			"level_4_data": {
@@ -5357,13 +5357,13 @@
 		 },
 		 "footman_buffs": {
 			"damage_1_buff": {
-			   "description": "At Level 1, the footman attacks with increased ferocity"
+			   "description": "Au niveau 1, les attaques du fantassin vont améliorer sa férocité"
 			},
 			"damage_2_buff": {
-			   "description": "At Level 1, the footman attacks with increased ferocity"
+			   "description": "Au niveau 1, les attaques du fantassin vont améliorer sa férocité"
 			},
 			"damage_3_buff": {
-			   "description": "At Level 1, the footman attacks with increased ferocity"
+			   "description": "Au niveau 1, les attaques du fantassin vont améliorer sa férocité"
 			}
 		 },
 		 "footman_outfit": {
@@ -5548,7 +5548,7 @@
 	  },
 	  "shepherd": {
 		 "shepherd_description": {
-			"display_name": "Shepherd",
+			"display_name": "Berger",
 			"description": "Domesticates wild animals and harvests them for food and materials.",
 			"requirements": "2 levels of Trapper and a Shepherd's Crook, crafted by the Carpenter.",
 			"level_4_data": {
@@ -5556,7 +5556,7 @@
 			   "perk_000_description": "Wild animals are more likely to appear whenever the shepherd is looking for them."
 			},
 			"level_1_data": {
-			   "perk_000_name": "Speed Up 10%",
+			   "perk_000_name": "Gain de vitesse 10%",
 			   "perk_000_description": "The shepherd is now more adept at getting the flock to walk a tiny bit faster."
 			},
 			"level_3_data": {
@@ -5679,12 +5679,12 @@
 	  },
 	  "weaver": {
 		 "weaver_description": {
-			"display_name": "Weaver",
-			"description": "The Weaver makes thread, fabrics and hangings from fiber and dye.",
-			"requirements": "Weaver's Spindle, crafted by the Carpenter.",
+			"display_name": "Tisserand",
+			"description": "Le tisserand makes thread, fabrics and hangings from fiber and dye.",
+			"requirements": "Weaver's Spindle, crafted by the menuisier.",
 			"level_6_data": {
-			   "title": "Master Weaver",
-			   "perk_000_name": "10,000 Hours (not implemented)",
+			   "title": "Maître tisserand",
+			   "perk_000_name": "10.000 heures (à venir)",
 			   "perk_000_description": "The weaver's mastery of his trade allows him to come up with completely new ways of using wood."
 			},
 			"level_2_data": {
@@ -5692,7 +5692,7 @@
 			   "perk_000_description": "The weaver is now skillful enough to use materials created by other crafters."
 			},
 			"level_4_data": {
-			   "perk_000_name": "Ingenuity Enhancements (not implemented)",
+			   "perk_000_name": "Ingenuity Enhancements (à venir)",
 			   "perk_000_description": "The weaver adds new levels of functionality to classic recipes."
 			},
 			"level_1_data": {
@@ -5802,7 +5802,7 @@
 			},
 			"weaver_workbench_recipe": {
 			   "description": "Used to make complex crafts of thread and fabric.",
-			   "recipe_name": "Weaver Workbench",
+			   "recipe_name": "Atelier de tisserand",
 			   "flavor": "In the beginning there was nothing, and then there was Spider."
 			}
 		 },
