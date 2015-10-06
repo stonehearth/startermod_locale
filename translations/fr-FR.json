@@ -5878,10 +5878,10 @@
 		 "description": "Hearthling",
 		 "job": {
 			"starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
-			"default_level_title": "Niveau [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
-			"default_level_announcement": "[name(i18n_data.entity)] a terminé [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
-			"general_description_desc": "Santé max. augmenté !",
-			"attribute_up_desc": "Tous les attributs augmenté !"
+			"default_level_title": "[str(self.stonehearth:job.curr_job_name)] niveau [str(self.stonehearth:job.curr_job_level)]",
+			"default_level_announcement": "[name(i18n_data.entity)] est passé [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
+			"general_description_desc": "Santé max. augmentée !",
+			"attribute_up_desc": "Tous les attributs augmentés !"
 		 }
 	  },
 	  "food": {
