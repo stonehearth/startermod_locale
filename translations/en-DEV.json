@@ -5,7 +5,6 @@
             "chase_entity": "chasing [name(data.target)]",
             "eat_item": "eating [name(data.target)]",
             "fill_storage": "filling [name(data.target)]",
-            "restock_stockpile": "restocking [name(data.target)]",
             "harvest_crop": "harvesting [name(data.target)]",
             "harvest_resource": "harvesting [name(data.target)]",
             "harvest_resource_node": "harvesting [name(data.target)]",
@@ -29,7 +28,7 @@
             "combat": "engaged in combat",
             "cower": "cowering",
             "flee": "fleeing",
-            "panick": "panicking",
+            "panic": "panicking",
             "mine": "mining",
             "sleep_in_bed": "sleeping",
             "sleep_on_ground": "sleeping on the ground",
@@ -44,7 +43,8 @@
             "drop_item_near_workshop": "clearing workshop",
             "fabricate_structure": "building",
             "teardown_structure": "tearing down structures",
-            "feed_pasture_animals": "feeding animals"
+            "feed_pasture_animals": "feeding animals",
+            "restock": "restocking items"
          }
       }
    },
@@ -69,7 +69,9 @@
             "terrain_slice_vision_description": "Slice the terrain, allowing you to see underground structures. Change the elevation to see different slices.",
             "terrain_xray_vision_icon_name": "x-ray",
             "terrain_xray_vision": "Terrain x-ray vision",
-            "terrain_xray_vision_description": "See through the terrain. Change between full and flat view to show underground walls."
+            "terrain_xray_vision_description": "See through the terrain. Change between full and flat view to show underground walls.",
+            "terrain_xray_vision_flat": "flat",
+            "terrain_xray_vision_full": "full"
          },
          "promotion_tree": {
             "title": "Choose a Job",
@@ -268,6 +270,7 @@
             },
             "tooltip_combat_base_damage": "Atk:",
             "tooltip_combat_base_damage_reduction": "Def:",
+            "tooltip_num_undeployed": "Undeployed: [str(num_undeployed)]",
             "death_notification": "[name(i18n_data.entity)] has died."
          },
          "menu": {
@@ -397,6 +400,37 @@
                      "description": "Steal items from another player.",
                      "tip_title": "Click and drag to loot items from the world",
                      "tip_description": "Right click to exit this mode"
+                  }
+               }
+            },
+            "crafter_menu": {
+               "display_name": "Crafters",
+               "description": "Build and manage crafting workshops",
+               "items": {
+                  "carpenter": {
+                     "display_name": "Carpenter Craft Menu",
+                     "description": "Build wooden furniture and decor.",
+                     "required_job_text": "Requires a carpenter"
+                  },
+                  "weaver": {
+                     "display_name": "Weaver Craft Menu",
+                     "description": "Create clothes, fabrics, and decor.",
+                     "required_job_text": "Requires a weaver"
+                  },
+                  "mason": {
+                     "display_name": "Mason Craft Menu",
+                     "description": "Chisel stone weapons and furniture.",
+                     "required_job_text": "Requires a mason"
+                  },
+                  "blacksmith": {
+                     "display_name": "Blacksmith Craft Menu",
+                     "description": "Smelt ore for weapons and armor.",
+                     "required_job_text": "Requires a blacksmith"
+                  },
+                  "cook": {
+                     "display_name": "Cook Craft Menu",
+                     "description": "Makes food taste better and last longer.",
+                     "required_job_text": "Requires a cook"
                   }
                }
             },
@@ -887,14 +921,20 @@
             "enable_lua_jit": "Use Lua JIT (Requires Restart)",
             "send_anon_data": "Send anonymous feedback to help improve Stonehearth!",
             "language_select": "Language",
-            "enable_speed_3": "Enable Speed 3 (Requires UI Refresh)",
-            "enable_speed_3_note": "Game performance might be slow with larger towns on speed 3. Use at your own risk.",
-            "difficulty": "Difficulty",
-            "difficult_description_0": "Normal",
-            "difficult_description_1": "Medium",
-            "difficult_description_2": "Hard",
-            "difficult_description_3": "Extreme",
-            "default_storage_filter_none": "Storage filter defaults to None"
+            "gameplay_tab": {
+               "title": "Gameplay",
+               "experimental": "Experimental",
+               "experimental_description": "These settings are still under development and may not be stable! Enable at your own risk!",
+               "enable_speed_3": "Enable Game Speed 3 (Requires UI Refresh)",
+               "enable_speed_3_note": "Note: Game performance might be slow with larger towns on speed 3. Be warned!",
+               "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
+               "default_storage_filter_none": "Storage filter defaults to None",
+               "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
+               "enable_cpp_ai": "Enable CPP Ai",
+               "enable_cpp_ai_description": "Use the new ai system that is written in C++. This should be faster than the old ai system and should handle large towns better.",
+               "enable_subspace_pathfinder": "Enable Subspace Pathfinder",
+               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!"
+            }
          },
          "title_screen": {
             "exit": "exit",
@@ -908,7 +948,7 @@
             "patch_notes": "Show Patch Notes",
             "alpha_welcome_dialog": {
                "title": "Welcome to Stonehearth!",
-               "message" : "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
+               "message": "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
                "accept": "Yes, send crash reports",
                "cancel": "Nope"
             }
@@ -938,6 +978,19 @@
             "file_bug_step_2": "Check the list of active topics, and if your bug hasn't already been reported, create a new topic",
             "file_bug_step_3": "When filing bugs, please include screenshots of the error",
             "file_bug_step_4": "If you're reporting a crash bug, include your unique user id"
+         },
+         "error_browser": {
+            "title": "Engine Error",
+            "filename_label": "filename",
+            "close_permanently_button": "Close Permanently",
+            "prev_button": "Prev",
+            "next_button": "Next",
+            "copy_button": "Copy to Clipboard"
+         },
+         "error_dialog_js": {
+            "title": "UI Error",
+            "reset_hint": "Press F5 to Reset the UI.",
+            "copy_button": "Copy to Clipboard"
          }
       },
       "data": {
@@ -1575,19 +1628,28 @@
                               "campfire": {
                                  "campfire": {
                                     "display_name": "Hypnotic Campfire",
-                                    "Description": "But... what makes it green?"
+                                    "description": "But... what makes it green?"
+                                 },
+                                 "workers": {
+                                    "description": "Firekeeper"
                                  }
                               },
                               "goblin_tent": {
                                  "tent": {
                                     "display_name": "Wolf Trainer Tent",
-                                    "Description": "Full of improbable makeshift devices."
+                                    "description": "Full of improbable makeshift devices."
                                  }
                               },
                               "wolf_cage": {
                                  "wolf_cage": {
                                     "display_name": "Wolf Cage",
-                                    "Description": "Property of Ogo Skullbonker"
+                                    "description": "Property of Ogo Skullbonker"
+                                 },
+                                 "trainer": {
+                                    "description": "Whips the wolves into a dangerous frenzy"
+                                 },
+                                 "tame_wolf": {
+                                    "description": "Terrifyingly ferocious"
                                  }
                               }
                            }
@@ -1599,19 +1661,24 @@
                         "create_camp": {
                            "ogo_tent": {
                               "ogo_tent": {
-                                 "display_name": "Ogo's Tent"
+                                 "display_name": "Ogo's Tent",
+                                 "description": "Made from bleached pelts."
+                              },
+                              "ogo": {
+                                 "description": "Soothsayer say, Ogo Chosen One, Ogo Cycle-Breaker",
+                                 "display_name": "Ogo Skullbonker"
                               }
                            },
                            "ogo_throne": {
                               "ogo_throne": {
                                  "display_name": "Ogo's Throne",
-                                 "Description": "Decorated with Mountain's Baby Tusks"
+                                 "description": "Decorated with Mountain's Baby Tusks"
                               }
                            },
                            "wolf_kennel": {
                               "wolf_cage": {
                                  "display_name": "Wolf Cage",
-                                 "Description": "Property of Ogo Skullbonker"
+                                 "description": "Property of Ogo Skullbonker"
                               }
                            }
                         }
@@ -1741,7 +1808,10 @@
                               "thief_campfire": {
                                  "campfire": {
                                     "display_name": "Hypnotic Campfire",
-                                    "Description": "But... what makes it green?"
+                                    "description": "But... what makes it green?"
+                                 },
+                                 "workers": {
+                                    "description": "Designated hearth-tender"
                                  }
                               }
                            }
@@ -3021,6 +3091,12 @@
             "barrel_ghost": {
                "display_name": "Leather Bound Chest",
                "description": "Storage container"
+            }
+         },
+         "vault": {
+            "vault_ghost": {
+               "display_name": "The Vault",
+               "description": "Massive storage"
             }
          }
       },
@@ -4808,7 +4884,13 @@
                "recipe_name": "Blacksmith's Anvil",
                "flavor": "It is no coincidence that the metaphors of good character descend from work of the smith. -Lucan Varius, Artifex Ignis"
             },
-            "workbenches_name": "Workbenches"
+            "workbenches_name": "Workbenches",
+            "storage_name": "Storage",
+            "vault_recipe": {
+               "description": "Massive storage for 256 items!",
+               "recipe_name": "Vault",
+               "flavor": "Conceived by the brilliant Arci, Survivor of Chaat"
+            }
          }
       },
       "carpenter": {
@@ -5389,7 +5471,7 @@
                "flavor": "Remnants of the servants of Brelor, Crownless King."
             },
             "tools_name": "Tools",
-            "storage_name" : "Storage", 
+            "storage_name": "Storage",
             "signage_decoration_name": "Signage & Decoration",
             "building_parts_name": "Building Parts",
             "weapons_name": "Weapons",
