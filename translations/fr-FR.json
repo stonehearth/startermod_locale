@@ -29,7 +29,7 @@
 			"combat": "engagé en combat",
 			"cower": "est tétanisé",
 			"flee": "s'enfuit",
-			"panick": "panique",
+			"panic": "panique",
 			"mine": "mine",
 			"sleep_in_bed": "dort",
 			"sleep_on_ground": "dort par terre",
@@ -44,7 +44,8 @@
 			"drop_item_near_workshop": "retire un atelier",
 			"fabricate_structure": "construit",
 			"teardown_structure": "démonte des structures",
-			"feed_pasture_animals": "nourrit les animaux"
+			"feed_pasture_animals": "nourrit les animaux",
+			"restock": "restocking items"
 		 }
 	  }
    },
@@ -69,7 +70,9 @@
 			"terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l'élévation pour voir différentes couches.",
 			"terrain_xray_vision_icon_name": "Rayon X",
 			"terrain_xray_vision": "Vue Rayon X",
-			"terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains."
+			"terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains.",
+            "terrain_xray_vision_flat": "flat",
+            "terrain_xray_vision_full": "full"
 		 },
 		 "promotion_tree": {
 			"title": "Choisir une métier",
@@ -267,6 +270,7 @@
 			},
 			"tooltip_combat_base_damage": "Atq :",
 			"tooltip_combat_base_damage_reduction": "Déf :",
+			"tooltip_num_undeployed": "Undeployed: [str(num_undeployed)]",
 			"death_notification": "[name(i18n_data.entity)] est mort."
 		 },
 		 "menu": {
@@ -399,6 +403,37 @@
 				  }
 			   }
 			},
+            "crafter_menu": {
+               "display_name": "Crafters",
+               "description": "Build and manage crafting workshops",
+               "items": {
+                  "carpenter": {
+                     "display_name": "Carpenter Craft Menu",
+                     "description": "Build wooden furniture and decor.",
+                     "required_job_text": "Requires a carpenter"
+                  },
+                  "weaver": {
+                     "display_name": "Weaver Craft Menu",
+                     "description": "Create clothes, fabrics, and decor.",
+                     "required_job_text": "Requires a weaver"
+                  },
+                  "mason": {
+                     "display_name": "Mason Craft Menu",
+                     "description": "Chisel stone weapons and furniture.",
+                     "required_job_text": "Requires a mason"
+                  },
+                  "blacksmith": {
+                     "display_name": "Blacksmith Craft Menu",
+                     "description": "Smelt ore for weapons and armor.",
+                     "required_job_text": "Requires a blacksmith"
+                  },
+                  "cook": {
+                     "display_name": "Cook Craft Menu",
+                     "description": "Makes food taste better and last longer.",
+                     "required_job_text": "Requires a cook"
+                  }
+               }
+            },
 			"bulletin_manager": {
 			   "display_name": "Bulletins",
 			   "description": "Notifications importantes à propos du monde et de votre ville"
@@ -691,7 +726,7 @@
 			"journal": {
 			   "default_message": "No journal entries yet!",
 			   "signature": "--[name(entry.person)]",
-			   "today": "aujourd'hui",
+			   "today": "Aujourd'hui",
 			   "town_log": "Town Log",
 			   "praises": "Eloges",
 			   "gripes": "Critiques",
@@ -886,25 +921,37 @@
 			"enable_lua_jit": "Utiliser Lua JIT (Redémarrage requis)",
 			"send_anon_data": "Envoyer des donnees anonymes pour améliorer Stonehearth!",
 			"language_select": "Language",
-			"enable_speed_3": "Activer la vitesse x3 (Demande un rafraîchissement de l'interface)",
-			"enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. Utilisez là à vos risques et périls.",
-			"difficulty": "Difficulté",
-			"difficult_description_0": "Normal",
-			"difficult_description_1": "Moyenne",
-			"difficult_description_2": "Difficile",
-			"difficult_description_3": "Extrême",
-			"default_storage_filter_none": "Désactiver les filtres de stockage par défaut"
+            "gameplay_tab": {
+               "title": "Gameplay",
+               "experimental": "Experimental",
+               "experimental_description": "These settings are still under development and may not be stable! Enable at your own risk!",
+               "enable_speed_3": "Activer la vitesse x3 (Demande un rafraîchissement de l'interface)",
+               "enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. Soyez en averti !",
+               "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
+               "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
+               "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
+               "enable_cpp_ai": "Enable CPP Ai",
+               "enable_cpp_ai_description": "Utiliser le nouveau système d'IA codé en C++. Il devrait être plus rapide que l'ancien système en Lua et devrais mieux supporter les grands villages.",
+               "enable_subspace_pathfinder": "Activer le pathfinder du sub-espace",
+               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!"
+            }
 		 },
 		 "title_screen": {
-			"exit": "quitter",
-			"settings": "paramètres",
-			"credits": "crédits",
-			"kingdom_of": "Le royaume de",
-			"continue_game": "Continuer",
-			"new_game": "Nouveau jeu",
-			"load_game": "Charger une partie",
-			"quick_start": "Démarrage rapide",
-			"patch_notes": "Afficher les notes de mise à jour"
+            "exit": "quitter",
+            "settings": "paramètres",
+            "credits": "crédits",
+            "kingdom_of": "Le royaume de",
+            "continue_game": "Continuer",
+            "new_game": "Nouveau jeu",
+            "load_game": "Charger une partie",
+            "quick_start": "Démarrage rapide",
+            "patch_notes": "Afficher les notes de mise à jour",
+            "alpha_welcome_dialog": {
+               "title": "Bienvneue dans to Stonehearth !",
+               "message": "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
+               "accept": "Oui, envoyer les rapports d'erreurs",
+               "cancel": "Nan"
+            }
 		 },
 		 "embark": {
 			"title": "Préparez-vous à partir pour l'aventure",
@@ -931,6 +978,19 @@
 			"file_bug_step_2": "Check the list of active topics, and if your bug hasn't already been reported, create a new topic",
 			"file_bug_step_3": "When filing bugs, please include screenshots of the error",
 			"file_bug_step_4": "If you're reporting a crash bug, include your unique user id"
+         },
+         "error_browser": {
+            "title": "Engine Error",
+            "filename_label": "filename",
+            "close_permanently_button": "Close Permanently",
+            "prev_button": "Prev",
+            "next_button": "Next",
+            "copy_button": "Copy to Clipboard"
+         },
+         "error_dialog_js": {
+            "title": "UI Error",
+            "reset_hint": "Press F5 to Reset the UI.",
+            "copy_button": "Copy to Clipboard"
 		 }
 	  },
 	  "data": {
@@ -1141,16 +1201,16 @@
 					 "dialog_nodes": {
 						"erdene_appears": {
 						   "choice_000": "Pas question !",
-						   "choice_001": "bon... D'accord.",
+						   "choice_001": "Bon ... d'accord.",
 						   "bulletin_message": {
-							  "000": "Avez-vous peurs, vaillants citoyens ? Ogo soi-disant chef sera bientôt là. Pour vous."
+							  "000": "Avez-vous peurs, vaillants citoyens ? Ogo soi-disant-chef sera bientôt là. Pour vous."
 						   },
 						   "bulletin_title": "Une voix sifflante se fait entendre à côté de votre feu de camp",
 						   "dialog_title": "???"
 						},
 						"erdenes_help": {
-						   "choice_000": "Euh... Okay ?",
-						   "choice_001": "Désolé.",
+						   "choice_000": "Euh ... Okay ?",
+						   "choice_001": "Pardon. Désolé.",
 						   "bulletin_message": {
 							  "000": "To borrow strength to rise means to fall when strength fails. Ogo borrows his power not from his so-called-sayer, but from the babe he stole."
 						   },
@@ -1559,6 +1619,71 @@
 						}
 					 }
 				  }
+               },
+               "arcs": {
+                  "challenge": {
+                     "forward_scouts": {
+                        "encounters": {
+                           "create_scout_camp": {
+                              "campfire": {
+                                 "campfire": {
+                                    "display_name": "Hypnotic Campfire",
+                                    "description": "But... what makes it green?"
+                                 },
+                                 "workers": {
+                                    "description": "Firekeeper"
+                                 }
+                              },
+                              "goblin_tent": {
+                                 "tent": {
+                                    "display_name": "Wolf Trainer Tent",
+                                    "description": "Full of improbable makeshift devices."
+                                 }
+                              },
+                              "wolf_cage": {
+                                 "wolf_cage": {
+                                    "display_name": "Wolf Cage",
+                                    "description": "Property of Ogo Skullbonker"
+                                 },
+                                 "trainer": {
+                                    "description": "Whips the wolves into a dangerous frenzy"
+                                 },
+                                 "tame_wolf": {
+                                    "description": "Terrifyingly ferocious"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  },
+                  "climax": {
+                     "encounters": {
+                        "create_camp": {
+                           "ogo_tent": {
+                              "ogo_tent": {
+                                 "display_name": "Ogo's Tent",
+                                 "description": "Made from bleached pelts."
+                              },
+                              "ogo": {
+                                 "description": "Soothsayer say, Ogo Chosen One, Ogo Cycle-Breaker",
+                                 "display_name": "Ogo Skullbonker"
+                              }
+                           },
+                           "ogo_throne": {
+                              "ogo_throne": {
+                                 "display_name": "Ogo's Throne",
+                                 "description": "Decorated with Mountain's Baby Tusks"
+                              }
+                           },
+                           "wolf_kennel": {
+                              "wolf_cage": {
+                                 "display_name": "Wolf Cage",
+                                 "description": "Property of Ogo Skullbonker"
+                              }
+                           }
+                        }
+                     }
+                  }
 			   }
 			},
 			"ambient_threats": {
@@ -1671,7 +1796,26 @@
 			   "undead_raid": {
 				  "mission": {
 					 "sighted_bulletin": {
-						"title": "Intrus repérés !"
+                        "title": "Intrus repérés !"
+                     }
+                  }
+               },
+               "arcs": {
+                  "trigger": {
+                     "ambient_threats": {
+                        "encounters": {
+                           "create_thief_camp": {
+                              "thief_campfire": {
+                                 "campfire": {
+                                    "display_name": "Hypnotic Campfire",
+                                    "description": "But... what makes it green?"
+                                 },
+                                 "workers": {
+                                    "description": "Designated hearth-tender"
+                                 }
+                              }
+                           }
+                        }
 					 }
 				  }
 			   }
@@ -2933,14 +3077,26 @@
 		 },
 		 "small_crate": {
 			"small_crate_ghost": {
-			   "display_name": "Petite caisse",
+              "display_name": "Petite caisse",
 			   "description": "Boîte de rangement."
+            }
+         },
+         "stone_chest": {
+            "stone_chest_ghost": {
+               "display_name": "Stone Chest",
+               "description": "Storage container"
 			}
 		 },
 		 "barrel": {
 			"barrel_ghost": {
-			   "display_name": "Coffre en cuir lié",
+               "display_name": "Coffre en cuir lié",
 			   "description": "Boîte de rangement."
+            }
+         },
+         "vault": {
+            "vault_ghost": {
+               "display_name": "The Vault",
+               "description": "Massive storage"
 			}
 		 }
 	  },
@@ -2953,10 +3109,10 @@
 	  "critters": {
 		 "poyo": {
 			"display_name": "Un Poyo",
-			"description": "Oiseaux sauvages dodus et savoureux.",
+			"description": "Oiseaux sauvages dodus et savoureux",
 			"poyo_egg": {
 			   "display_name": "Oeuf de poyo fécondé.",
-			   "description": "Est-il en train d'éclore?"
+			   "description": "Est-il en train d'éclore ?"
 			},
 			"young": {
 			   "display_name": "Poussin poyo",
@@ -2972,14 +3128,14 @@
 		 },
 		 "racoon": {
 			"display_name": "Raton laveur",
-			"description": "Petite créature de la forêt.",
+			"description": "Petite créature de la forêt",
 			"racoon_jerky": {
 			   "display_name": "Raton laveur séché"
 			}
 		 },
 		 "red_fox": {
 			"display_name": "Renard",
-			"description": "Petite créature de la forêt.",
+			"description": "Petite créature de la forêt",
 			"red_fox_jerky": {
 			   "display_name": "Renard séché"
 			}
@@ -2990,7 +3146,7 @@
 			"unripe_description": "Ce mouton est encore tout nu.",
 			"sheep_young": {
 			   "display_name": "Un agneau",
-			   "description": "Awww !"
+			   "description": "Bêêê !"
 			}
 		 },
 		 "squirrel": {
@@ -3940,12 +4096,12 @@
 			   "description": "Bred to inspire terror"
 			},
 			"orc": {
-			   "display_name": "A Zombie",
-			   "description": "It yearns for flesh",
+               "display_name": "An Orc",
+               "description": "Orc crush puny hearthling!",
 			   "male": {
 				  "zombie_male": {
-					 "display_name": "A Zombie",
-					 "description": "It yearns for flesh"
+                     "display_name": "An Orc",
+                     "description": "Orc crush puny hearthling!"
 				  }
 			   }
 			},
@@ -3984,7 +4140,7 @@
 		 },
 		 "dragon_whelp": {
 			"display_name": "Lapin",
-			"description": "Om nom nom"
+			"description": "Tap-tap-tap !"
 		 },
 		 "kitten": {
 			"display_name": "Chaton",
@@ -4226,7 +4382,28 @@
 		 },
 		 "tilled_dirt": {
 			"display_name": "Tilled Earth",
-			"description": "Dirty, in the purest sense."
+            "description": "Dirty, in the purest sense.",
+            "model_variant": {
+               "dirt_1": {
+                  "display_name": "Poor Dirt",
+                  "description": "Can barely sustain life."
+               },
+               "furrow": {
+                  "display_name": "Field Furrow"
+               },
+               "dirt_2": {
+                  "display_name": "Fair Dirt",
+                  "description": "Meh. It's dirt."
+               },
+               "dirt_3": {
+                  "display_name": "Good Dirt",
+                  "description": "Home to well-behaved earthworms."
+               },
+               "dirt_4": {
+                  "display_name": "Rich Dirt",
+                  "description": "Thick and loamy."
+               }
+            }
 		 },
 		 "ui": {
 			"coal_block": {
@@ -4538,10 +4715,6 @@
 			"display_name": "Blacksmith",
 			"description": "The Blacksmith refines raw ore into metal bars, then uses those bars to craft weapons, armor, and building parts like gates.",
 			"requirements": "Blacksmith's Hammer, crafted by the Mason",
-			"workshop": {
-			   "name": "Backsmith's Workshop",
-			   "long_description": "The Blacksmith refines raw ore into metal bars, then uses those bars to craft weapons, armor, and building parts like gates."
-			},
 			"level_6_data": {
 			   "title": "Master Blacksmith",
 			   "perk_000_name": "The Armory",
@@ -4711,7 +4884,13 @@
 			   "recipe_name": "Blacksmith's Anvil",
 			   "flavor": "It is no coincidence that the metaphors of good character descend from work of the smith. -Lucan Varius, Artifex Ignis"
 			},
-			"workbenches_name": "Workbenches"
+            "workbenches_name": "Workbenches",
+            "storage_name": "Storage",
+            "vault_recipe": {
+               "description": "Massive storage for 256 items!",
+               "recipe_name": "Vault",
+               "flavor": "Conceived by the brilliant Arci, Survivor of Chaat"
+            }
 		 }
 	  },
 	  "carpenter": {
@@ -4719,11 +4898,6 @@
 			"display_name": "Carpenter",
 			"description": "The carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
 			"requirements": "Carpenter's saw, crafted by the Blacksmith.",
-			"workshop": {
-			   "name": "Carpenter's Workshop",
-			   "description": "insert description here",
-			   "long_description": "The carpenter makes things from wood. Things you will need...quite a lot.<p>So honestly, you should really make this guy first."
-			},
 			"level_6_data": {
 			   "title": "Master Carpenter",
 			   "perk_000_name": "10,000 Hours (not implemented)",
@@ -4976,10 +5150,6 @@
 			"display_name": "Cook",
 			"description": "The cook makes delicious, hearty meals from base vegetables and meats.",
 			"requirements": "2 levels of Farmer and a Stoneware Spoon, crafted by the Mason.",
-			"workshop": {
-			   "name": "Stone Cauldron",
-			   "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
-			},
 			"level_6_data": {
 			   "title": "Master cook",
 			   "perk_000_name": "10,000 Hours (not implemented)",
@@ -5216,14 +5386,9 @@
 	  },
 	  "mason": {
 		 "mason_description": {
-			"display_name": "Tailleur de pierre",
-			"description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
-			"requirements": "Maillet et ciseaux de tailleur de pierre, fabriqués par le menuisier.",
-			"workshop": {
-			   "name": "Mason's Workshop",
-			   "description": "insert description here",
-			   "long_description": "The Mason crafts building materials and decorative items from stone."
-			},
+            "display_name": "Tailleur de pierre",
+            "description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
+            "requirements": "Maillet et ciseaux de tailleur de pierre, fabriqués par le menuisier.",
 			"level_6_data": {
 			   "title": "Maître tailleur",
 			   "perk_000_name": "10 000 Heures (à venir)",
@@ -5306,6 +5471,7 @@
 			   "flavor": "Remnants of the servants of Brelor, Crownless King."
 			},
 			"tools_name": "Tools",
+            "storage_name": "Storage",
 			"signage_decoration_name": "Signage & Decoration",
 			"building_parts_name": "Building Parts",
 			"weapons_name": "Weapons",
@@ -5330,6 +5496,11 @@
 			   "recipe_name": "Stone Chair",
 			   "flavor": "Outdoorsy!"
 			},
+            "stone_chest_recipe": {
+               "description": "Imposing place to put things.",
+               "recipe_name": "Stone Chest",
+               "flavor": "'Listen up, kid. All the chests in Hemgorir-Under-Mountain looked like this.'--Edolf, Wandering Bard"
+            },
 			"stone_garden_lantern_recipe": {
 			   "description": "An ancient-looking lantern with great ambiance.",
 			   "recipe_name": "Stone Garden Lantern",
@@ -5511,10 +5682,6 @@
 			"display_name": "Weaver",
 			"description": "The Weaver makes thread, fabrics and hangings from fiber and dye.",
 			"requirements": "Weaver's Spindle, crafted by the Carpenter.",
-			"workshop": {
-			   "name": "Weaver's Workshop",
-			   "long_description": "Makes thread and cloth!  Can't really have a respectable civilization without one!"
-			},
 			"level_6_data": {
 			   "title": "Master Weaver",
 			   "perk_000_name": "10,000 Hours (not implemented)",
