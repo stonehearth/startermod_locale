@@ -4941,7 +4941,7 @@
             },
             "hoe_recipe": {
                "description": "Required to promote a hearthling into a Farmer.",
-               "recipe_name": "Houe de d'agriculteur",
+               "recipe_name": "Houe d'agriculteur",
                "flavor": "Hoedown time!!!!"
             },
             "large_crate_recipe": {
@@ -5353,7 +5353,7 @@
          "mason_description": {
             "display_name": "Tailleur de pierre",
             "description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
-            "requirements": "Marteau et ciseau de tailleur de pierre, fabriqués par le menuisier.",
+            "requirements": "Marteau et ciseaux de tailleur de pierre, fabriqués par le menuisier.",
             "level_6_data": {
                "title": "Maître tailleur",
                "perk_000_name": "10 000 Heures (à venir)",

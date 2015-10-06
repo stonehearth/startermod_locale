@@ -5147,19 +5147,19 @@
 			}
 		 },
 		 "farmer_hoe": {
-			"display_name": "Houe de fermier",
+            "display_name": "Houe d'agriculteur",
 			"description": "Utilisée pour labourer les champs.",
 			"farmer_hoe_iconic": {
-			   "display_name": "Houe de fermier",
-			   "description": "Requis pour promouvoir un hearthling en fermier."
+			   "display_name": "Houe d'agriculteur",
+			   "description": "Requis pour promouvoir un hearthling en agriculteur."
 			},
 			"farmer_hoe_talisman": {
-			   "display_name": "Houe de fermier",
-			   "description": "Requis pour promouvoir un hearthling en fermier."
+               "display_name": "Houe d'agriculteur",
+               "description": "Requis pour promouvoir un hearthling en agriculteur."
 			}
 		 },
 		 "farmer_outfit": {
-			"display_name": "Blouse de fermier",
+			"display_name": "Blouse d'agriculteur",
 			"description": "Tenue standard pour tous les agriculteurs"
 		 },
 		 "field": {
@@ -5216,17 +5216,17 @@
 	  },
 	  "mason": {
 		 "mason_description": {
-			"display_name": "Mason",
-			"description": "The Mason crafts building materials and decorative items from stone.",
-			"requirements": "Mason's Mallet and Chisel, crafted by the carpenter.",
+			"display_name": "Tailleur de pierre",
+			"description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
+			"requirements": "Maillet et ciseaux de tailleur de pierre, fabriqués par le menuisier.",
 			"workshop": {
 			   "name": "Mason's Workshop",
 			   "description": "insert description here",
 			   "long_description": "The Mason crafts building materials and decorative items from stone."
 			},
 			"level_6_data": {
-			   "title": "Master mason",
-			   "perk_000_name": "10,000 Hours (not implemented)",
+			   "title": "Maître tailleur",
+			   "perk_000_name": "10 000 Heures (à venir)",
 			   "perk_000_description": "The mason's mastery of his trade allows him to come up with completely new ways of using wood."
 			},
 			"level_2_data": {
