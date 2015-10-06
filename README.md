@@ -28,7 +28,11 @@ How it works:
    Note: If you have a region specific translation, the last 2 letters of the translation MUST be capitalized!
 3) The file that is pointed to "path" is the en-XA.json file under the translations folder. This is the file that contains all the translated strings.
 
-Note that this mod is only for adding additional languages to the main stonehearth game. Other mods cannot use this method to add additional languages to their custom mod.
+Note: This mod (startermod_locale) is only meant for translators who are looking to translate the main stonehearth game!
+For modders looking to create their own mods (ex: a Cafe Mod), do not use this mod as an example.
+Explanation:
+Internationalization works with all mods. It is currently necessary to include all translation files with the mod. So it's currently not possible to install mod A that only comes with English and then install a German translation for mod A with mod B. To get German support for mod A, the creator of mod A needs to include that German translation with the files for mod A.
+The main stonehearth game is the only one that supports installing a mod that grants it additional languages. In the future, we could add support for mod B to grant mod A additional languages. It's just not implemented yet.
 
 How to translate en.json:
 Only translate strings that come after a ':'' in the json file. You can more easily view the json on a website such as http://codebeautify.org/jsonviewer
