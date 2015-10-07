@@ -360,77 +360,77 @@
 			   "description": "Construisez des structures comme des maisons et des murs de ville.",
 			   "items": {
 				  "building_templates": {
-					 "display_name": "Place Building",
-					 "description": "Choose to construct a building from a pre-designed template"
+                     "display_name": "Placer un batiment",
+                     "description": "Choisissez de construire un batiment<br>d'après un plan archivé."
 				  },
 				  "custom_building": {
-					 "display_name": "Design Building",
-					 "description": "Design your own one-of-a-kind building"
+                     "display_name": "Concevoir un batiment",
+                     "description": "Concevez vos propres batiments"
 				  },
 				  "place_item": {
-					 "display_name": "Place Item",
-					 "description": "Place items like furniture and decoration",
-					 "tip_title": "Click to place this item",
-					 "tip_description": "Rotate with , and . keys"
+                     "display_name": "Placer un objet",
+                     "description": "Placez un objet comme un meuble<br>ou une décoration.",
+                     "tip_title": "Cliquez pour placer cet objet",
+                     "tip_description": "Faire une rotation avec les touches , et ."
 				  },
 				  "build_ladder": {
-					 "display_name": "Construct Ladder",
-					 "description": "Build a ladder to access hard to reach places",
-					 "tip_title": "Click on a wall to build ladders",
-					 "tip_description": "Click to manually place a ladder to access hard to reach areas.<br><br>Right click to exit"
+                     "display_name": "Construire une échelle",
+                     "description": "Construisez une échelle pour atteindre<br>les endroits hors de portée.",
+                     "tip_title": "Cliquez sur un mur pour construire une échelle",
+                     "tip_description": "Cliquez pour placer manuellement une échelle pour atteindre un endroit hors de portée<br><br>Click droit pour sortir"
 				  }
 			   }
 			},
 			"fight_menu": {
-			   "display_name": "Fight & Defend",
-			   "description": "Manage your combat forces",
+               "display_name": "Attaque et Défense",
+               "description": "Gérez vos troupes.",
 			   "items": {
 				  "party_manager": {
-					 "display_name": "Parties",
-					 "description": "Organize your troops into groups"
+                     "display_name": "Groupes",
+                     "description": "Organisez vos troupes en groupes."
 				  },
 				  "town_defense": {
-					 "display_name": "Town Defense Mode!",
-					 "description": "Rally your hearthlings to defend the town!",
-					 "activated_title": "Town Defense Mode Activated!",
-					 "activated_text": "Your workers have stopped their jobs and are vigilantly watching for intruduers."
+                     "display_name": "Mode Défense de la ville !",
+                     "description": "Rassemblez vos citoyens pour défendre la ville.",
+                     "activated_title": "Mode Défense de la ville activé !",
+                     "activated_text": "Les citoyens ont cessés leurs ativités et recherchent des intrus."
 				  },
 				  "loot_item": {
-					 "display_name": "Loot",
-					 "description": "Steal items from another player.",
-					 "tip_title": "Click and drag to loot items from the world",
-					 "tip_description": "Right click to exit this mode"
+                     "display_name": "Butin",
+                     "description": "Pillez les biens des ennemis.",
+                     "tip_title": "Cliquez et tirez pour piller les objets au sol.",
+                     "tip_description": "Click droit pour sortir de ce mode"
 				  }
 			   }
 			},
             "crafter_menu": {
-               "display_name": "Crafters",
-               "description": "Build and manage crafting workshops",
+               "display_name": "Artisans",
+               "description": "Construisez et gérez les ateliers.",
                "items": {
                   "carpenter": {
-                     "display_name": "Carpenter Craft Menu",
-                     "description": "Build wooden furniture and decor.",
-                     "required_job_text": "Requires a carpenter"
+                     "display_name": "Menuisier",
+                     "description": "Pour construire des meubles<br>et des éléments de décor.",
+                     "required_job_text": "Nécessite un menuisier"
                   },
                   "weaver": {
-                     "display_name": "Weaver Craft Menu",
-                     "description": "Create clothes, fabrics, and decor.",
-                     "required_job_text": "Requires a weaver"
+                     "display_name": "Tisserand",
+                     "description": "Pour confectionner des tissus,<br>vêtements ou élements de décor.",
+                     "required_job_text": "Nécessite un tisserand"
                   },
                   "mason": {
-                     "display_name": "Mason Craft Menu",
-                     "description": "Chisel stone weapons and furniture.",
-                     "required_job_text": "Requires a mason"
+                     "display_name": "Tailleur de pierre",
+                     "description": "Pour tailler des armes, des meubles<br>et des décorations de pierre.",
+                     "required_job_text": "Nécessite un tailleur de pierre"
                   },
                   "blacksmith": {
-                     "display_name": "Blacksmith Craft Menu",
-                     "description": "Smelt ore for weapons and armor.",
-                     "required_job_text": "Requires a blacksmith"
+                     "display_name": "Forgeron",
+                     "description": "Pour fondre des minerais puis fabriquer<br>des armes et des armures.",
+                     "required_job_text": "Nécessite un forgeron"
                   },
                   "cook": {
-                     "display_name": "Cook Craft Menu",
-                     "description": "Makes food taste better and last longer.",
-                     "required_job_text": "Requires a cook"
+                     "display_name": "Cuisinier",
+                     "description": "Pour que la nourriture soit meilleure<br>et se conserve mieux.",
+                     "required_job_text": "Nécessite un cuisinier"
                   }
                }
             },
@@ -439,16 +439,16 @@
 			   "description": "Notifications importantes à propos du monde et de votre ville"
 			},
 			"tasks_manager": {
-			   "display_name": "Manage Tasks",
-			   "description": "Do task stuff.",
-			   "remove_stockpile": "Remove Stockpile",
+               "display_name": "Gestion des tâches",
+               "description": "Gèrez les tâches en cours.",
+               "remove_stockpile": "Supprimer une réserve",
 			   "pause_stockpile": "Pause",
-			   "resume_stockpile": "Resume",
+               "resume_stockpile": "Reprendre",
 			   "group": {
 				  "stockpiles": "Stockage",
 				  "building": "Construction",
-				  "placement": "Placed Items",
-				  "maintenance": "General Maintenance",
+				  "placement": "Objets en place",
+				  "maintenance": "Maintenance générale",
 				  "farming": "Agriculture",
 				  "harvesting": "Récolte",
 				  "mining": "Minage",
@@ -456,7 +456,7 @@
 			   },
 			   "percent_full": "[str(percent)] Percent Full",
 			   "active": "active",
-			   "paused": "paused"
+               "paused": "en pause"
 			}
 		 },
 		 "bulletin": {
@@ -468,20 +468,20 @@
 			   "sell_10": "Vendre 10",
 			   "buy_tab": "Acheter",
 			   "sell_tab": "Vendre",
-			   "not_enough_gold_tooltip": "Plus d'or !"
+               "not_enough_gold_tooltip": "Pas assez d'or !"
 			},
 			"quest_bulletin": {
 			   "title": "Nouveau message"
 			},
 			"level_up_bulletin": {
 			   "title": "[name(i18n_data.entity)] a gagné un niveau !",
-			   "show_char_sheet": "Character Sheet"
+               "show_char_sheet": "Feuille de personnage"
 			},
 			"immigration_report": {
 			   "title": "Bulletin quotidien",
 			   "immigration_report_title": "Rapport d'immigration",
-			   "population_label": "population",
-			   "next_requirements_label": "Next hearthling requirements..."
+               "population_label": "Population",
+               "next_requirements_label": "Prérequis pour l'arrivé d'un nouveau citoyen"
 			},
 			"collection_quest": {
 			   "pay": "Et voilà !",
@@ -490,130 +490,130 @@
 		 },
 		 "build_mode": {
 			"tooltips": {
-			   "building_tools": "Outils de constructions",
-			   "voxel_tools": "Voxel Tools",
-			   "voxel_add": "Add Voxel",
-			   "voxel_paint": "Paint Voxel",
-			   "voxel_remove": "Remove Voxel",
-			   "selection": "Selection",
-			   "delete": "Delete",
-			   "undo": "Undo",
-			   "draw_slab_tool": "Slabs",
-			   "draw_floor_tool": "Foundations",
-			   "grow_floor_tool": "Floors",
-			   "grow_roof_tool": "Roofs",
-			   "draw_door_tool": "Doors",
-			   "draw_window_tool": "Windows",
-			   "grow_wall_tool": "Walls",
-			   "draw_wall_tool": "Free Standing Walls",
-			   "draw_road_tool": "Roads",
-			   "place_furniture_tool": "Furniture",
-			   "place_decoration_tool": "Decorations"
+               "building_tools": "Outils de construction",
+               "voxel_tools": "Outils Voxel",
+               "voxel_add": "Ajouter un voxel",
+               "voxel_paint": "Colorer un voxel",
+               "voxel_remove": "Supprimer un voxel",
+               "selection": "Sélection",
+               "delete": "Supprimer",
+               "undo": "Annuler",
+               "draw_slab_tool": "Blocs",
+               "draw_floor_tool": "Fondations",
+               "grow_floor_tool": "Planchers",
+               "grow_roof_tool": "Toitures",
+               "draw_door_tool": "Portes",
+               "draw_window_tool": "Fenêtres",
+               "grow_wall_tool": "Murs",
+               "draw_wall_tool": "Murs libres",
+               "draw_road_tool": "Routes",
+               "place_furniture_tool": "Meubles",
+               "place_decoration_tool": "Décorations"
 			},
 			"overhead_tips": {
-			   "wall_segment_tip_title": "Click to place freestanding wall segments",
-			   "wall_segment_tip_description": "Hold down SHIFT while clicking to draw connected walls",
-			   "build_title_building_designer": "Building Designer",
-			   "build_floor_tip_title": "Click and drag to place floor tiles",
-			   "build_floor_tip_description": "Right click to exit",
-			   "build_slab_tip_title": "Click and drag to build a slab",
-			   "build_slab_tip_description": "Right click to exit",
-			   "erase_structure_tip_title": "Click to erase items. Click and drag to erase floor",
-			   "erase_structure_tip_description": "Right click to exit",
-			   "roof_tip_title": "Click a walled floorplan to place the roof",
-			   "roof_tip_description": "Right click to exit",
-			   "raise_walls_tip_title": "Click a floorplan to add walls",
-			   "raise_walls_tip_description": "Right click to exit",
-			   "doodad_tip_title": "Click a wall to place the door or window",
-			   "doodad_tip_description": "Right click to exit",
-			   "draw_template_title": "Click to build template",
-			   "draw_template_description": "Rotate with , and . keys",
-			   "build_road_tip_title": "Click and drag to build road",
-			   "build_road_tip_description": "Right click to exit"
+               "wall_segment_tip_title": "Cliquez pour placer des segments de murs libres",
+               "wall_segment_tip_description": "Gardez SHIFT pressé tout en cliquant pour placer des murs connectés",
+               "build_title_building_designer": "Concepteur de batiment",
+               "build_floor_tip_title": "Cliquez et tirez pour placer des dalles de planchers",
+               "build_floor_tip_description": "Click droit pour sortir",
+               "build_slab_tip_title": "Cliquez et tirez pour construire des blocs",
+               "build_slab_tip_description": "Click droit pour sortir",
+               "erase_structure_tip_title": "Cliquez pour supprimer. Cliquez et tirez pour supprimer un plancher",
+               "erase_structure_tip_description": "Click droit pour sortir",
+               "roof_tip_title": "Cliquez un sol entouré de murs pour placer une toiture.",
+               "roof_tip_description": "Click droit pour sortir",
+               "raise_walls_tip_title": "Cliquez un sol pour ajouter des murs.",
+               "raise_walls_tip_description": "Click droit pour sortir",
+               "doodad_tip_title": "Cliquez sur un mur pour placer une fnêtre.",
+               "doodad_tip_description": "Click droit pour sortir",
+               "draw_template_title": "Cliquez pour positionner un plan.",
+               "draw_template_description": "Faire une rotation avec les touches , et .",
+               "build_road_tip_title": "Cliquez et tirez pour construire une route.",
+               "build_road_tip_description": "Click droit pour sortir"
 			},
 			"building_cost": {
-			   "required_item": "Required Item",
-			   "count": "Num"
+               "required_item": "Eléments nécessaires",
+               "count": "Qt"
 			},
 			"overview": {
-			   "title": "Building Designer - [str(building_name)]",
-			   "building_name": "Building Name",
-			   "building_cost": "Building Cost",
-			   "start_building": "Build!",
-			   "pause_building": "Pause building",
-			   "save_building_template": "Save",
-			   "finished_editing": "Finished Editing",
-			   "start_editing": "Edit"
+               "title": "Conception - [str(building_name)]",
+               "building_name": "Désignation de la construction",
+               "building_cost": "Coût de fabrication",
+               "start_building": "Construire !",
+               "pause_building": "Suspendre la construction",
+               "save_building_template": "Sauvegarder",
+               "finished_editing": "Terminer l'édition",
+               "start_editing": "Editer"
 			},
 			"roof_shape": {
-			   "title": "Slope, Direction, & Size",
-			   "max_height": "Max Height",
-			   "rise_slope": "Rise Slope"
+               "title": "Pentes, directions et tailles",
+               "max_height": "Hauteur maximum",
+               "rise_slope": "Augmenter la pente"
 			},
 			"building_templates": {
-			   "title": "Building Templates",
-			   "design_custom_building": "Design Custom Building",
+               "title": "Bibliothèque de plans",
+               "design_custom_building": "Dessinez vos propres batiments",
 			   "template_names": {
-				  "tiny_cottage": "Tiny Cottage",
-				  "cottage_for_two": "Cottage for Two",
-				  "shared_sleeping_quarters": "Shared Sleeping Quaters",
-				  "dining_hall": "Dining Hall"
-			   },
-			   "set_template_name_title": "Template Name",
-			   "template_default_name": "My new building template",
-			   "set_template_name_prompt": "Enter a name for this template"
+                  "tiny_cottage": "Petite maison",
+                  "cottage_for_two": "Maisonette pour deux",
+                  "shared_sleeping_quarters": "Dortoir",
+                  "dining_hall": "Salle de banquet"
+               },
+               "set_template_name_title": "Nom du plan",
+               "template_default_name": "Mon dernier plan",
+               "set_template_name_prompt": "Saisissez un nom pour ce plan"
 			},
 			"place_item": {
-			   "title": "Place an Item"
+               "title": "Placer un objet"
 			},
 			"materials": {
 			   "wall": {
-				  "material": "Wall Material",
-				  "wood_resource": "Wooden Wall",
-				  "stone_resource": "Stone Wall"
+                  "material": "Matériaux pour murs",
+                  "wood_resource": "Murs de bois",
+                  "stone_resource": "Murs de pierre"
 			   },
 			   "floor": {
-				  "material": "Floor Material",
-				  "wood_resource": "Wooden Floor",
-				  "stone_resource": "Stone Floor"
+                  "material": "Matériaux pour sols",
+                  "wood_resource": "Plancher de bois",
+                  "stone_resource": "Sol de pierre"
 			   },
 			   "roof": {
-				  "material": "Roof Material",
-				  "wood_resource": "Wooden Roof",
-				  "stone_resource": "Stone Roof"
+                  "material": "Matériaux de toitures",
+                  "wood_resource": "Tuiles de bois",
+                  "stone_resource": "Tuiles de pierre"
 			   },
 			   "column": {
-				  "material": "Column Material",
-				  "wood_resource": "Wooden Column",
-				  "stone_resource": "Stone Column"
+                  "material": "Matériaux pour colonnes",
+                  "wood_resource": "Colonnes de bois",
+                  "stone_resource": "Colonnes de pierre"
 			   },
 			   "road": {
-				  "material": "Road Material",
-				  "wood_resource": "Wooden Road",
-				  "stone_resource": "Stone Road"
+                  "material": "Matériaux pour routes",
+                  "wood_resource": "Pavés de bois",
+                  "stone_resource": "Pavés de pierre"
 			   },
 			   "doors": {
-				  "material": "Door Material",
-				  "wood_resource": "Wooden Door",
-				  "stone_resource": "Stone Door"
+                  "material": "Matériaux pour portes",
+                  "wood_resource": "Portes en bois",
+                  "stone_resource": "Portes en pierre"
 			   },
 			   "windows": {
-				  "material": "Window Material",
-				  "wood_resource": "Wooden Window",
-				  "stone_resource": "Stone Window"
+                  "material": "Matériaux pour fenêtres",
+                  "wood_resource": "Fenêtres en bois",
+                  "stone_resource": "Fenêtres en pierre"
 			   }
 			},
 			"start_building_confirm": {
-			   "title": "Really start building?",
-			   "message": "Once you begin building this structure it cannot be edited. Are you sure you want to build now?",
-			   "yes": "Yes, start building!",
-			   "no": "Not yet"
+               "title": "Commencer la construction ?",
+               "message": "Une fois les traveaux commencé, le plan ne peux plus être modifié. Êtes-vous sûr de vouloir construire tout de suite ?",
+               "yes": "Oui, commencer la construction !",
+               "no": "Pas encore"
 			},
 			"remove_building_confirm": {
-			   "title": "Really remove this building",
-			   "message": "Are you sure you want to remove this entire building?",
-			   "keep_building": "Keep this building",
-			   "remove_building": "Remove this building"
+               "title": "Supprimer ce batiment ?",
+               "message": "Êtes-vous sûr de vouloir supprimer de batiment ?",
+               "keep_building": "Garder ce batiment",
+               "remove_building": "Supprimer ce batiment"
 			}
 		 },
 		 "zones_mode": {
@@ -704,45 +704,45 @@
 			"workshop_remove_confirm": "Supprimer ?",
 			"workshop_open": "Ouvert !",
 			"workshop_closed": "Fermé",
-			"maintain_option_disabled": "Build a stockpile or place a crate to unlock more crafting options!",
-			"craft": "Craft!",
-			"craftable_locked": "Unlocked at Level: [str(level)]",
-			"workshop_requirement_title": "Workshop",
-			"workshop_none_required": "None required!",
-			"workshop_required": "Requires a placed ",
-			"level_requirement_title": "Level Requirement",
-			"level_requirement_none": "None Required!",
-			"level_requirement_needed": "Requires a ",
-			"level_requirement_level": " of Level ",
+            "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d'options de fabrication !",
+            "craft": "Fabriquer !",
+            "craftable_locked": "Dévérouillé au niveau [str(level)]",
+            "workshop_requirement_title": "Atelier",
+            "workshop_none_required": "Aucun pré-requis !",
+            "workshop_required": "Nécessite de placer ",
+            "level_requirement_title": "Niveau requis",
+            "level_requirement_none": "Aucun pré-requis !",
+            "level_requirement_needed": "Nécessite un ",
+            "level_requirement_level": " de niveau ",
 			"too_many_symbol": "lots",
-			"requirements_unmet_general": "Craft Requirements Unmet!",
-			"queue_anyway": "Queue Order Anyway",
+            "requirements_unmet_general": "Pré-requis non respectés !",
+            "queue_anyway": "Mettre en attente tout de même",
 			"recipe_tab": "Recettes",
 			"orders_tab": "Ordres",
 			"missing_ingredients": "Ingrédients manquants : "
 		 },
 		 "town_overview": {
-			"title": "Town Overview",
+            "title": "Rapport sur la ville",
 			"journal": {
-			   "default_message": "No journal entries yet!",
+               "default_message": "Pas encore d'entrée !",
 			   "signature": "--[name(entry.person)]",
 			   "today": "Aujourd'hui",
-			   "town_log": "Town Log",
-			   "praises": "Eloges",
-			   "gripes": "Critiques",
-			   "praise_empty": "Nothing praiseworthy happened today.",
-			   "gripe_empty": "Whoa. I guess nobody has anything to gripe about."
+               "town_log": "Rapport de la ville ",
+               "praises": "Louanges",
+               "gripes": "Griefs",
+               "praise_empty": "Il n'y a pas eu d'évènement particulièrement positif aujourd'hui",
+               "gripe_empty": "Whaow, je suppose que personne n'a rien eu à redire."
 			},
 			"networth": {
-			   "town_description": "The [str(descriptor)] [str(noun)] of [str(town_name)]",
+               "town_description": "Le [str(descriptor)] [str(noun)] de [str(town_name)]",
 			   "size": {
-				  "camp": "Camp",
-				  "settlement": "Settlement",
-				  "hamlet": "Hamlet",
+                  "camp": "Campement",
+                  "settlement": "Hammeau",
+                  "hamlet": "Bourgade",
 				  "village": "Village",
-				  "town": "Town",
-				  "county": "County",
-				  "kingdom": "Kingdom",
+                  "town": "Ville",
+                  "county": "Conté",
+                  "kingdom": "Royaume",
 				  "empire": "Empire"
 			   },
 			   "morale_descriptor": {
@@ -760,15 +760,15 @@
 			   }
 			},
 			"score": {
-			   "net_worth": "Profit",
-			   "edibles": "Edibles",
-			   "overall_morale": "Overall Morale",
-			   "food": "Food",
-			   "shelter": "Shelter",
-			   "safety": "Safety"
+               "net_worth": "Richesse",
+               "edibles": "Comestibles",
+               "overall_morale": "Moral général",
+               "food": "Nourriture",
+               "shelter": "Habitat",
+               "safety": "Sécurité"
 			},
 			"tab": {
-			   "town_overview": "Town Overview",
+               "town_overview": "Rapport",
 			   "inventory": "Inventaire",
 			   "journal": "Journal"
 			}
@@ -809,50 +809,50 @@
 			   "029": "régularise les dreadlocks ..."
 			},
 			"tips": {
-			   "000": "Si un travailleur est bloqué, construire une échelle lui permettrait de l'en sortir !",
-			   "001": "Les habitants passeront une meilleur nuit en la passant dans un lit !",
-			   "002": "Construire des enclos autour de vos pâturages pour vous assurer que les animaux restent ensemble.",
-			   "003": "Les stocks peuvent être modifiés pour ne contenur que certaines sortes d'éléments spécifiques.",
-			   "004": "Vous pouvez cultiver du fil-de-soie pour un approvisionnement régulier de la fibre de fil.",
-			   "005": "A well fed town is a happy town.",
-			   "006": "Use the . and , keys to rotate an item or building before placing it.",
-			   "007": "Les routes permettent à vos habitants de se déplacer plus vites !",
-			   "008": "The weaver can craft new uniforms that increases the effectiveness of your workers.",
-			   "009": "Sitting during a meal helps with digestion. Build tables and chairs for your hearthlings.",
-			   "010": "Shepherds will automatically find sheep to fill a pasture.",
-			   "011": "If you want a higher net worth, try selling your items to a merchant for gold"
+               "000": "Si vos mineurs restent bloqués dans un puit, construisez une échelle pour les en sortir !",
+               "001": "Vos citoyens feront de meilleures nuits si vous leurs offrez des lits.",
+               "002": "Construisez un enclos autour des pâturages pour être sur que les animaux ne s'enfuient pas.",
+               "003": "Les réserves peuvent être modifiées pour acceuillir des objets spécifiques.",
+               "004": "Vous pouvez cultiver des plantes à soie pour avoir une source régulière de fibres végétales.",
+               "005": "Une ville bien nourrit est une ville heureuse.",
+               "006": "Utlisiez les touches . ou , pour faire tourner un objet ou un batiment avant de le placer.",
+               "007": "Vos citoyens se déplacent plus vite sur les routes.",
+			   "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
+               "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos citoyens.",
+               "010": "Les bergers trouveront d'eux-même les moutons ou atres animaux pour remplir les pâturages.",
+               "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands."
 			}
 		 },
 		 "new_game": {
-			"title": "Nouveau jeu",
-			"normal_game": "Jeu normal",
-			"peaceful_game": "Jeu tranquille",
-			"normal_game_description": "L'aventure démarre dans un monde plein de dangers. Votre ville subira des assauts ennemies.",
-			"peaceful_game_description": "Un mode bac à sable, où vous êtes libre de construire votre ville sans vous soucier d'un quelconque envahisseur.",
+			"title": "Nouvelle partie",
+			"normal_game": "Mode normal",
+			"peaceful_game": "Mode pacifique",
+			"normal_game_description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette aux raids des ennemis.",
+			"peaceful_game_description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier des envahisseurs.",
 			"temperate_biome": "Tempéré",
 			"desert_biome": "Désertique",
 			"arctic_biome": "Arctique",
 			"swamp_biome": "Marécageux",
-			"temperate_biome_description": "Type de biome par défaut, avec beaucoup de verdure",
+			"temperate_biome_description": "Biome par défaut, avec beaucoup de verdure",
 			"desert_biome_description": "Sec et sablonneux, avec des grosses collines et une végétation clairsemée",
 			"arctic_biome_description": "Neigeux, avec de hautes montagnes et de grands plans d'eau",
-			"swamp_biome_description": "Biome tempéré, avec des montagnes basses et beaucoup d'eau",
-			"create_game": "Créer un jeu"
+			"swamp_biome_description": "Biome tempéré, avec beaucoup de marais et quelques montagnes basses",
+			"create_game": "Créer une partie"
 		 },
 		 "select_settlement": {
-			"title": "Cliquez sur la carte pour choisir l'emplacement de votre colonie",
+            "title": "Cliquez sur la carte pour choisir un emplacement",
 			"loading": "Chargement...",
 			"settle_at_this_location": "S'installer ici!",
 			"clear_selection": "Choisir un autre emplacement",
-			"regenerate_map": "Générer la carte",
-			"world_seed": "Graine du monde : ",
+			"regenerate_map": "Nouvelle carte",
+			"world_seed": "Carte n° : ",
 			"terrain_stats": {
 			   "trees_and_plants_title": "Arbres et plantes",
 			   "trees_and_plants_description": "Le bois est la ressource principal pour la construction. Vous en aurez besoin afin de construire vos bâtiments et vos objets artisanaux.",
-			   "wildlife_title": "Vie animal",
+			   "wildlife_title": "Faune",
 			   "wildlife_description": "La faune locale peut être chassé pour la nourriture et les matériaux d'artisanat.",
-			   "minerals_title": "Minéraux",
-			   "minerals_description": "Vous aurez besoin de minéraux si vous envisagez de construire des choses de pierre ou de métal."
+			   "minerals_title": "Minerais",
+			   "minerals_description": "Vous aurez besoin de minerais pour fabriquer des objets de pierre ou de métal."
 			},
 			"terrain_codes": {
 			   "water": "Eau",
@@ -874,53 +874,53 @@
 			   "vegetation_2": "Moyenne",
 			   "vegetation_3": "Dense",
 			   "vegetation_4": "Luxuriante",
-			   "wildlife_0": "Desolé",
+               "wildlife_0": "Désolée",
 			   "wildlife_1": "Rare",
-			   "wildlife_2": "Commun",
-			   "wildlife_3": "Fourni",
-			   "wildlife_4": "Abondant",
+			   "wildlife_2": "Commune",
+			   "wildlife_3": "Abondante",
+			   "wildlife_4": "Envahissante !",
 			   "mineral_0": "Aucun",
-			   "mineral_1": "Clairsemé",
+               "mineral_1": "Trés rare",
 			   "mineral_2": "Peu fréquent",
 			   "mineral_3": "Commun",
-			   "mineral_4": "Généreux"
+			   "mineral_4": "Abondant"
 			}
 		 },
 		 "settings": {
-			"title": "Paramètres",
+			"title": "Préférences",
 			"graphics": "Graphismes",
 			"gameplay": "Jouabilité",
-			"card": "Affichage: ",
+			"card": "Carte graphique : ",
 			"gfx_cardinfo": "[str(gpuRenderer)] ([str(gpuDriver)])",
 			"gfx_enable_shadows": "Activer les ombres",
 			"gfx_enable_vsync": "Activer la synchronisation verticale",
-			"gfx_enable_fullscreen": "Plein écran (Redemarrage requis))",
-			"gfx_msaa": "Niveau de l'Anticrénelage",
-			"gfx_shadows": "Detail des ombres",
-			"gfx_max_lights": "Nombre maximum de lumières",
+			"gfx_enable_fullscreen": "Plein écran (redémarrage requis))",
+			"gfx_msaa": "Niveau de l'anticrénelage",
+			"gfx_shadows": "Qualité des ombres",
+            "gfx_max_lights": "Nombre maximum de sources lumineuses",
 			"gfx_drawdistance": "Distance d'affichage",
-			"gfx_enable_ssao": "Activer l'occlusion ambiente",
-			"gfx_use_high_quality": "Activer les graphismes de haute qualité",
-			"shadow_0": "Désactiver",
+			"gfx_enable_ssao": "Activer l'occlusion ambiante",
+			"gfx_use_high_quality": "AActiver les graphismes en haute qualité",
+			"shadow_0": "Sans",
 			"shadow_1": "juste un peu",
 			"shadow_2": "Un peu",
 			"shadow_3": "Un peu plus",
 			"shadow_4": "Beaucoup",
 			"shadow_5": "Énormément!",
-			"aa_slider_0": "Désactiver",
+			"aa_slider_0": "Sans",
 			"aa_slider_1": "Un peu",
 			"aa_slider_2": "Un peu plus",
 			"aa_slider_3": "Beaucoup",
 			"aa_slider_4": "Énormément!",
 			"sound": "Audio",
 			"background_music_volume": "Volume de la musique",
-			"effects_volume": "Volume des effets",
+            "effects_volume": "Volume des effets sonores",
 			"system": "Système",
-			"force_32_bit": "* Forcer le mode 32-bit (Redémarrage requis)",
+			"force_32_bit": "* Forcer le mode 32-bit (redémarrage requis)",
 			"force_32_bit_note": "* Forcer le mode 32-bit seulement si c'est absolument nécéssaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
-			"enable_lua_jit": "Utiliser Lua JIT (Redémarrage requis)",
-			"send_anon_data": "Envoyer des donnees anonymes pour améliorer Stonehearth!",
-			"language_select": "Language",
+			"enable_lua_jit": "Utiliser Lua JIT (redémarrage requis)",
+			"send_anon_data": "Envoyer des données anonymes pour améliorer Stonehearth!",
+			"language_select": "Langue",
             "gameplay_tab": {
                "title": "Gameplay",
                "experimental": "Experimental",
@@ -937,24 +937,24 @@
             }
 		 },
 		 "title_screen": {
-            "exit": "quitter",
-            "settings": "paramètres",
-            "credits": "crédits",
+            "exit": "Quitter",
+            "settings": "Préférences",
+            "credits": "Crédits",
             "kingdom_of": "Le royaume de",
             "continue_game": "Continuer",
-            "new_game": "Nouveau jeu",
+            "new_game": "Nouvelle partie",
             "load_game": "Charger une partie",
             "quick_start": "Démarrage rapide",
             "patch_notes": "Afficher les notes de mise à jour",
             "alpha_welcome_dialog": {
-               "title": "Bienvneue dans to Stonehearth !",
+               "title": "Bienvenue dans Stonehearth !",
                "message": "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
                "accept": "Oui, envoyer les rapports d'erreurs",
-               "cancel": "Nan"
+               "cancel": "Nope"
             }
 		 },
 		 "embark": {
-			"title": "Préparez-vous à partir pour l'aventure",
+			"title": "Préparez vous pour l'aventure !",
 			"citizen_info": "Liste d'expédition",
 			"reroll_citizens": "Générer la liste d'expédition",
 			"shop_title": "Magasin du voyageur",
@@ -964,7 +964,7 @@
 			"finished": "Embarquer !",
 			"no_talisman_confirm_dialog": {
 			   "title": "Embarquer",
-			   "message": "Etes-vous sûr que vous voulez embarquer sans choisir un outil de la boutique? Comme toujours, vous obtiendrez une scie de charpentier.",
+			   "message": "Etes-vous sûr de vouloir embarquer sans choisir un outil de la boutique? Comme toujours, vous obtiendrez une scie de charpentier.",
 			   "accept": "Oui, à la dure !",
 			   "cancel": "Attendez !"
 			}
@@ -972,140 +972,140 @@
 	  },
 	  "debug": {
 		 "post_bug": {
-			"title": "Filing bugs",
-			"message": "Thanks for participating in the Stonehearth Alpha! Here's how you can file a bug.",
-			"file_bug_step_1": "Go to http://discourse.stonehearth.net/c/support/active-bug",
-			"file_bug_step_2": "Check the list of active topics, and if your bug hasn't already been reported, create a new topic",
-			"file_bug_step_3": "When filing bugs, please include screenshots of the error",
-			"file_bug_step_4": "If you're reporting a crash bug, include your unique user id"
+            "title": "Rapport de bug",
+            "message": "Merci de participer à la version Alpha de Stonehearth ! Voici comment remonter un bug :",
+            "file_bug_step_1": "active-bug",
+            "file_bug_step_2": "Vérifiez la liste de sujets actifs at si votre bug n'a pas encore été remonté, créez un nouveau sujet",
+            "file_bug_step_3": "Quand vous remontez un bug, incluez s'il vous plait une capture d'écran de l'erreur affichée",
+            "file_bug_step_4": "Si vous remontez un crash, ajoutez votre identifiant unique d'utilisateur"
          },
          "error_browser": {
-            "title": "Engine Error",
-            "filename_label": "filename",
-            "close_permanently_button": "Close Permanently",
-            "prev_button": "Prev",
-            "next_button": "Next",
-            "copy_button": "Copy to Clipboard"
+            "title": "Erreur du moteur",
+            "filename_label": "Nom ",
+            "close_permanently_button": "Fermer définitivement",
+            "prev_button": "Suivant",
+            "next_button": "Précédent",
+            "copy_button": "Copier dans le presse-papier"
          },
          "error_dialog_js": {
-            "title": "UI Error",
-            "reset_hint": "Press F5 to Reset the UI.",
-            "copy_button": "Copy to Clipboard"
+            "title": "Erreur d'IU",
+            "reset_hint": "Pressez F5 pour relancer l'IU",
+            "copy_button": "Copier dans le presse-papier"
 		 }
 	  },
 	  "data": {
 		 "tooltips": {
 			"stamina": {
-			   "display_name": "Stamina",
-			   "description": "How long this hearthling can work before needing rest.",
+               "display_name": "Endurance",
+               "description": "Durée de travail avant que le hearthling ai besoin de dormir",
 			   "bullet_points": {
-				  "000": "Determines sleep duration"
+                  "000": "Détermine la durée du repos"
 			   }
 			},
 			"inventiveness": {
-			   "display_name": "Inventiveness",
-			   "description": "How good this hearthling is at creating things. Good inventors are more likely to create fine craftables.",
+               "display_name": "Créativité",
+               "description": "Trait qui définit la facilité à fabriquer des objets. Un bon inventeur aura plus de chance de produire des objets de qualité",
 			   "bullet_points": {
-				  "000": "Improves chance to craft fine items"
+                  "000": "Augmente les chance de fabriquer des objets de qualité"
 			   }
 			},
 			"shelter": {
-			   "display_name": "Shelter",
-			   "description": "Make sure your hearthlings have a comfortable bed to sleep in.",
-			   "town_description": "How your citizens feel about their lodging situation. Are there beds to sleep in?"
+               "display_name": "Habitat",
+               "description": "Soyez sur que vos hearthlings aient de confortable lits pour se reposer.",
+               "town_description": "L'avis des hearthlings sur le confort des logements. Y-a-t-il des lits ou dormir ?"
 			},
 			"compassion": {
 			   "display_name": "Compassion",
-			   "description": "How likely this hearthling will help out a fellow villager or befriend others.",
+               "description": "Dans quelle mesure le citoyen aidera et sera apprécié par ses compatriotes",
 			   "bullet_points": {
-				  "000": "Determines maxiumum trapper pet count",
-				  "001": "Increases shepherd animal happiness"
+                  "000": "Détermine le nombre maximum de famillier qu'un braconnier peut apprivoiser",
+                  "001": "Augmente l'acceptation du berger par les animaux"
 			   }
 			},
 			"food": {
-			   "display_name": "Food",
-			   "description": "Make sure foods of different variety and quality are available. Cooked foods are more liked than raw foods.",
-			   "town_description": "How your citizens feel about the town's food situation. Is there enough to eat? Try to obtain a variety of foods!"
+               "display_name": "Nourriture",
+               "description": "Assurez vous de la disponibilité de nourriture varié. Les plats cuisinés sont plus appréciés que la nourriture de base.",
+               "town_description": "Ce que pense l'opinion des la nourriture en ville. Y-a-t-il assez à manger ? Essayez d'obtenir une plus grande variété de nourriture !"
 			},
 			"diligence": {
-			   "display_name": "Diligence",
-			   "description": "This hearthling's concentration. Diligent workers complete long tasks without getting distracted.",
+               "display_name": "Concentration",
+               "description": "Une forte concentration permet d'exécuter de longues taches sans se faire distraire.",
 			   "bullet_points": {
-				  "000": "Increases crafting speed"
+                  "000": "Augmente la vitesse de fabrication"
 			   }
 			},
 			"willpower": {
-			   "display_name": "Willpower",
-			   "description": "How likely this hearthling is to resist enemy charms."
+               "display_name": "Volonté",
+               "description": "Capacité du citoyen à résister aux sorts de l'ennemis."
 			},
 			"net_worth": {
-			   "display_name": "Net Worth",
-			   "description": "A score based on the value of everything in the town's inventory.",
-			   "town_description": "The gold value of everything in the town's inventory."
+               "display_name": "Richesse",
+               "description": "Un total basé sur la valeur du contenu de l'inventaire de la ville.",
+               "town_description": "La valeur en or du contenu de l'inventaire de la ville."
 			},
 			"courage": {
 			   "display_name": "Courage",
-			   "description": "How brave this hearthling is in the face of combat.",
+               "description": "Bravour du citoyen face au combat.",
 			   "bullet_points": {
-				  "000": "Determines chance to flee in combat"
+                  "000": "Détermine les chances de fuite pendant le combat"
 			   }
 			},
 			"muscle": {
-			   "display_name": "Muscle",
-			   "description": "This hearthling's brawn.",
+               "display_name": "Force",
+               "description": "C'est la force du citoyen",
 			   "bullet_points": {
-				  "000": "Every 10 muscle increases weapon damage by 1"
+                  "000": "Tous les 10 points de Constitution augmentent les domages de 1"
 			   }
 			},
 			"happiness": {
-			   "display_name": "Overall Moral",
-			   "description": "This hearthling's overall happiness based on food, shelter, and safety.",
-			   "town_description": "How happy your citizens are overall. Aim for a value of 10 for ultimate happiness!"
+               "display_name": "Moral général",
+               "description": "La satisfaction générale des citoyens basée sur la nourriture, l'habitat et la sécurité.",
+               "town_description": "La satisfaction générale des citoyens. Visez un score de 10 qui correspond à la satisfaction maximale."
 			},
 			"speed": {
-			   "display_name": "Speed",
-			   "description": "How fast this hearthling moves."
+               "display_name": "Vitesse",
+               "description": "Définit la vitesse du citoyen"
 			},
 			"body": {
-			   "display_name": "Body",
-			   "description": "Competence at physical activities. Hearthlings with a high Body stat will move faster. Influences Muscle, Speed, Stamina."
+               "display_name": "Physique",
+               "description": "Influence les activités physiques. Avec un indice physique haut, les citoyens se déplacent plus vite. Influence la force, la vitesse et l'endurance."
 			},
 			"edibles": {
-			   "display_name": "Edibles",
-			   "description": "The gold value of all the food in the town's inventory.",
-			   "town_description": "The gold value of all the food in the town's inventory"
+               "display_name": "Comestibles",
+               "description": "La valeur en or de la nourriture contenue de l'inventaire de la ville.",
+               "town_description": "La valeur en or de la nourriture contenue de l'inventaire de la ville."
 			},
 			"mind": {
-			   "display_name": "Mind",
-			   "description": "The ability to think intelligently. A high Mind stat allows a hearthling to exceed in complex mental tasks. Influences Diligence, Curiosity, Inventiveness."
+               "display_name": "Esprit",
+               "description": "Faculté à raisonner brillament. Un esprit de qualité permettra au citoyen d'exceller dans des tâches mentales complexes. Influence la concentration, la curiosité et la créativité"
 			},
 			"curiosity": {
-			   "display_name": "Curiosity",
-			   "description": "How much this hearthling enjoys new experiences.",
+               "display_name": "Curiosité",
+               "description": "Propension du citoyen à aprécier de nouvelles expériences.",
 			   "bullet_points": {
-				  "000": "Improves experience gain when crafting new items"
+                  "000": "Améliore l'expérience accumulée lors de la fabrication d'objets."
 			   }
 			},
 			"spirit": {
-			   "display_name": "Spirit",
-			   "description": "Faith in other people. A high Spirit hearthling will easily befriend others and stand strong against enemies. Influences Courage, Willpower, Compassion."
+               "display_name": "Ame",
+               "description": "Foie dans le prochain. Un citoyen d'une grande Ame sera apprécié par les tiens et sera un rempart contre l'ennemi. Influence le courage, la volonté et la compassion"
 			},
 			"safety": {
-			   "display_name": "Safety",
-			   "description": "Protect your town from raiders and make your citizens feel safe by assigning guards.",
-			   "town_description": "How your citizens feel about the town's security. Is the town well protected or getting pillaged by goblins?"
+               "display_name": "Sécurité",
+               "description": "Protégez votre ville des pilleurs et faites que vos citoyens se sentent en sécurité en formant des gardes.",
+               "town_description": "Ce que pense vos citoyens de la sécurité de la ville. Sommes nous bien protégés ou des gobelins nous pillent régulièrement ?"
 			}
 		 },
 		 "constants": {
-			"food_meat_raw_name": "Raw Meat",
-			"stone_resource_name": "Stone",
-			"pelt_resource_name": "Fur Pelt",
-			"cloth_resource_name": "Bolt of Cloth",
-			"wood_resource_name": "Wood Log",
-			"thread_resource_name": "Thread",
-			"leather_resource_name": "Bolt of Leather",
-			"fiber_resource_name": "Bundle of Fiber",
-			"ingot_resource_name": "Metal Ingot"
+            "food_meat_raw_name": "Viande fraiche",
+            "stone_resource_name": "Pierre",
+            "pelt_resource_name": "Peau",
+            "cloth_resource_name": "Rouleau de tissu",
+            "wood_resource_name": "Bûche",
+            "thread_resource_name": "Fil",
+            "leather_resource_name": "Cuir en rouleau",
+            "fiber_resource_name": "Lot de fibres",
+            "ingot_resource_name": "Lingot de métal"
 		 }
 	  }
    },
@@ -1114,84 +1114,84 @@
 		 "campaigns": {
 			"encounters": {
 			   "daily_report_encounter": {
-				  "title": "Un voyageur approche de votre ville",
-				  "update_title": "Daily Update",
-				  "sub_title": "Immigration Report",
-				  "food_label": "Food ",
-				  "morale_label": "Morale ",
-				  "net_worth_label": "Net Worth ",
-				  "conclusion_positive": "A new settler would like to join your town!",
-				  "conclusion_negative": "The road remains empty. Maybe tomorrow!",
-				  "success_title": "[name(i18n_data.citizen)] has joined [str(i18n_data.town_name)]!",
+                  "title": "Un voyageur approche de votre ville",
+                  "update_title": "Rapport journalier",
+                  "sub_title": "Rapport d'immigration",
+                  "food_label": "Nourriture",
+                  "morale_label": "Moral",
+                  "net_worth_label": "Richesse",
+                  "conclusion_positive": "Un nouveau venu aimerait rejoindre votre ville !",
+                  "conclusion_negative": "La route est réstée vide. Peut-être demain !",
+                  "success_title": "[name(i18n_data.citizen)] à rejoint [str(i18n_data.town_name)] !",
 				  "messages": {
-					 "000": "I've heard a lot about your town!",
-					 "001": "I'd like to join your town.",
-					 "002": "You guys really look like you could use a hand!",
-					 "003": "Wow! What a town! Let me help out!"
+                     "000": "J'ai beaucoup entendu parler de votre ville !",
+                     "001": "J'aimerais vous rejoindre.",
+                     "002": "Il semble que vous pourriez avoir besoin de plus de mains !",
+                     "003": "Whaow! Mais quelle ville ! Laissez moi vous aider !"
 				  },
-				  "outcome_statement": " A [str(i18n_data.job)] would like to join [str(i18n_data.town_name)]!"
+                  "outcome_statement": "Un [str(i18n_data.job)] aimerait rejoindre [str(i18n_data.town_name)] !"
 			   }
 			},
 			"trader": {
 			   "simple_caravan_encounter": {
-				  "message": "Hello [str(i18n_data.town_name)]! I come bearing goods for trade. Would you like to give me [str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s) in exchange for [str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s)?",
-				  "title": "A caravan approaches!"
+                  "message": "Salutation [str(i18n_data.town_name)] ! Je viens faire du troc. Seriez vous interrésé par [str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s) en échange de [str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s) ?",
+                  "title": "Une caravane approche !"
 			   },
 			   "starting_food_donation": {
 				  "donation_dialog_info": {
 					 "dialog_nodes": {
 						"simple_message": {
-						   "choice_000": "Thank goodness!",
+                           "choice_000": "Merci mon Dieu !",
 						   "bulletin_message": {
-							  "000": "Welcome to the area, folks! Goodness, you people look starved. Here's something to help:",
-							  "001": "Just celebrated Embarcation Day, eh? Buck up! You look like you'd really benefit from something tasty. How about I give you:",
+                              "000": "Soyez les bienvenus en ces lieux ! Boudiou, vous semblez affamés les gars ! Prenez ceci pour vous aider :",
+                              "001": "Alors, on célèbre le jour du départ ? Courage ! On dirait que quelque chose de gouteux vous ferait de bien. Et si je vous donnais ceci :",
 							  "002": "Embarkees! Praise Cid. Here's something to get you started.",
-							  "003": "Long journey over the mountains, eh? Well you're in a good place now. Here's a little something to get you started!",
+                              "003": "Le voyage à travers les montagnes à été long, hein ? Et bien vous êtes à un endroit sur maintenant. Voici un petit coup de pouce :",
 							  "004": "Welcome to the area, Embarkees!! Here's a gift to get you started!"
 						   },
-						   "bulletin_title": "A grizzled traveller approaches.",
+                           "bulletin_title": "Un voyageur tout courbé s'approche.",
 						   "dialog_title": "Mer Burlyhands"
 						}
 					 }
 				  }
 			   },
 			   "returning_trader_encounter": {
-				  "title": "A trader approaches your town.",
-				  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Sound good?",
-				  "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] hours!",
-				  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] hours to give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
-				  "return_title": "The trader returns!",
-				  "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Still sounds good?",
-				  "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
+                  "title": "Un négociant approche de la ville.",
+                  "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m'avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)](s),  je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange. Qu'en dites vous ?",
+                  "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] heures !",
+                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] heures pour vous échanger [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) contre [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) !",
+                  "return_title": "Le négociant est de retour !",
+                  "return_greetings_positive": "Me re voilà! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
+                  "return_greetings_negative": "Je suis de retour mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
 			   },
 			   "food_shop": {
 				  "shop_info": {
-					 "name": "A simple food cart",
-					 "title": "A simple food cart rolls into town"
+                     "name": "Un simple chariot ambulant de nourriture",
+                     "title": "Un chariot ambulant de nourriture est de passage en ville"
 				  }
 			   },
 			   "rugs_shop": {
 				  "shop_info": {
-					 "name": "Havaad's Fine Rugs and Garments",
-					 "title": "A simple merchant has arrived with wares to sell"
+                     "name": "Chez Havaad, vêtements fins et tapis de qualité !",
+                     "title": "Un simple marchand est arrivé pour vendre quelques babioles"
 				  }
 			   },
 			   "stonecutter_shop": {
 				  "shop_info": {
-					 "name": "Rufus Garrow's Stonecutter Shop",
-					 "title": "Rufus Garrow has arrived with wares to sell"
+                     "name": "Rufus Garrow - Tailleur de pierre depuis 962",
+                     "title": "Rufus Garrow arrive pour vendre son stock"
 				  }
 			   },
 			   "tannery_shop": {
 				  "shop_info": {
-					 "name": "Jess Vexed's Tannery and Wilderness Supplies",
-					 "title": "A rugged survivalist stops by with her wares"
+                     "name": "Tannerie de Jess Vexed.<br>Marchandises des contrés sauvages",
+                     "title": "Une robuste survivaliste est descendue en ville avec ses marchandises"
 				  }
 			   },
 			   "woodcutter_shop": {
 				  "shop_info": {
-					 "name": "Norm Windriser's Woodcutter Shop",
-					 "title": "Norm Windriser has arrived with wares to sell"
+                     "name": "Ebénisterie Norm Windriser",
+                     "title": "Norm Windriser est de passage avec quelques meubles à vendre"
 				  }
 			   }
 			},
@@ -1203,7 +1203,7 @@
 						   "choice_000": "Pas question !",
 						   "choice_001": "Bon ... d'accord.",
 						   "bulletin_message": {
-							  "000": "Avez-vous peurs, vaillants citoyens ? Ogo soi-disant-chef sera bientôt là. Pour vous."
+							  "000": "Avez-vous peurs, vaillants hearthlings ? Ogo soi-disant-chef sera bientôt là. Pour vous."
 						   },
 						   "bulletin_title": "Une voix sifflante se fait entendre à côté de votre feu de camp",
 						   "dialog_title": "???"
