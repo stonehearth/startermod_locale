@@ -5416,7 +5416,7 @@
             "description": "L'outil maître pour un tailleur de pierre.",
 			"mason_chisel_talisman": {
                "display_name": "Ciseau de tailleur de pierre",
-               "description": "Requis pour promouvoir un citoyen en tailleur de pierre."
+               "description": "Requis pour promouvoir un hearthling en tailleur de pierre."
 			}
 		 },
 		 "mason_hammer": {
@@ -5446,7 +5446,7 @@
                "flavor": "Ce n'est pas une chaise !"
 			},
 			"blacksmith_hammer_recipe": {
-               "description": "Requis pour promouvoir un citoyen en forgeron.",
+               "description": "Requis pour promouvoir un hearthling en forgeron.",
                "recipe_name": "Marteau de forgeron",
                "flavor": "Tiré du dragon qui vit dans la forge, armes et armures, défense et conquête."
 			},
