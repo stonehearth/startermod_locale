@@ -391,9 +391,9 @@
 				  },
 				  "town_defense": {
                      "display_name": "Mode Défense de la ville !",
-                     "description": "Rassemblez vos citoyens pour défendre la ville.",
+                     "description": "Rassemblez vos hearthlings pour défendre la ville.",
                      "activated_title": "Mode Défense de la ville activé !",
-                     "activated_text": "Les citoyens ont cessés leurs ativités et recherchent des intrus."
+                     "activated_text": "Les hearthlings ont cessés leurs ativités et recherchent des intrus."
 				  },
 				  "loot_item": {
                      "display_name": "Butin",
@@ -481,7 +481,7 @@
 			   "title": "Bulletin quotidien",
 			   "immigration_report_title": "Rapport d'immigration",
                "population_label": "Population",
-               "next_requirements_label": "Prérequis pour l'arrivé d'un nouveau citoyen"
+               "next_requirements_label": "Prérequis pour l'arrivé d'un nouveau hearthling"
 			},
 			"collection_quest": {
 			   "pay": "Et voilà !",
@@ -810,15 +810,15 @@
 			},
 			"tips": {
                "000": "Si vos mineurs restent bloqués dans un puit, construisez une échelle pour les en sortir !",
-               "001": "Vos citoyens feront de meilleures nuits si vous leurs offrez des lits.",
+               "001": "Vos hearthlings feront de meilleures nuits si vous leurs offrez des lits.",
                "002": "Construisez un enclos autour des pâturages pour être sur que les animaux ne s'enfuient pas.",
                "003": "Les réserves peuvent être modifiées pour acceuillir des objets spécifiques.",
                "004": "Vous pouvez cultiver des plantes à soie pour avoir une source régulière de fibres végétales.",
                "005": "Une ville bien nourrit est une ville heureuse.",
                "006": "Utlisiez les touches . ou , pour faire tourner un objet ou un batiment avant de le placer.",
-               "007": "Vos citoyens se déplacent plus vite sur les routes.",
+               "007": "Vos hearthlings se déplacent plus vite sur les routes.",
 			   "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
-               "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos citoyens.",
+               "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
                "010": "Les bergers trouveront d'eux-même les moutons ou atres animaux pour remplir les pâturages.",
                "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands."
 			}
@@ -1016,7 +1016,7 @@
 			},
 			"compassion": {
 			   "display_name": "Compassion",
-               "description": "Dans quelle mesure le citoyen aidera et sera apprécié par ses compatriotes",
+               "description": "Dans quelle mesure le hearthling aidera et sera apprécié par ses compatriotes",
 			   "bullet_points": {
                   "000": "Détermine le nombre maximum de famillier qu'un braconnier peut apprivoiser",
                   "001": "Augmente l'acceptation du berger par les animaux"
@@ -1036,7 +1036,7 @@
 			},
 			"willpower": {
                "display_name": "Volonté",
-               "description": "Capacité du citoyen à résister aux sorts de l'ennemis."
+               "description": "Capacité du hearthling à résister aux sorts de l'ennemis."
 			},
 			"net_worth": {
                "display_name": "Richesse",
@@ -1045,30 +1045,30 @@
 			},
 			"courage": {
 			   "display_name": "Courage",
-               "description": "Bravour du citoyen face au combat.",
+               "description": "Bravour du hearthling face au combat.",
 			   "bullet_points": {
                   "000": "Détermine les chances de fuite pendant le combat"
 			   }
 			},
 			"muscle": {
                "display_name": "Force",
-               "description": "C'est la force du citoyen",
+               "description": "C'est la force du hearthling",
 			   "bullet_points": {
                   "000": "Tous les 10 points de Constitution augmentent les domages de 1"
 			   }
 			},
 			"happiness": {
                "display_name": "Moral général",
-               "description": "La satisfaction générale des citoyens basée sur la nourriture, l'habitat et la sécurité.",
-               "town_description": "La satisfaction générale des citoyens. Visez un score de 10 qui correspond à la satisfaction maximale."
+               "description": "La satisfaction générale des hearthlings basée sur la nourriture, l'habitat et la sécurité.",
+               "town_description": "La satisfaction générale des hearthlings. Visez un score de 10 qui correspond à la satisfaction maximale."
 			},
 			"speed": {
                "display_name": "Vitesse",
-               "description": "Définit la vitesse du citoyen"
+               "description": "Définit la vitesse du hearthling"
 			},
 			"body": {
                "display_name": "Physique",
-               "description": "Influence les activités physiques. Avec un indice physique haut, les citoyens se déplacent plus vite. Influence la force, la vitesse et l'endurance."
+               "description": "Influence les activités physiques. Avec un indice physique haut, les hearthlings se déplacent plus vite. Influence la force, la vitesse et l'endurance."
 			},
 			"edibles": {
                "display_name": "Comestibles",
@@ -1077,23 +1077,23 @@
 			},
 			"mind": {
                "display_name": "Esprit",
-               "description": "Faculté à raisonner brillament. Un esprit de qualité permettra au citoyen d'exceller dans des tâches mentales complexes. Influence la concentration, la curiosité et la créativité"
+               "description": "Faculté à raisonner brillament. Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes. Influence la concentration, la curiosité et la créativité"
 			},
 			"curiosity": {
                "display_name": "Curiosité",
-               "description": "Propension du citoyen à aprécier de nouvelles expériences.",
+               "description": "Propension du hearthling à aprécier de nouvelles expériences.",
 			   "bullet_points": {
                   "000": "Améliore l'expérience accumulée lors de la fabrication d'objets."
 			   }
 			},
 			"spirit": {
                "display_name": "Ame",
-               "description": "Foie dans le prochain. Un citoyen d'une grande Ame sera apprécié par les tiens et sera un rempart contre l'ennemi. Influence le courage, la volonté et la compassion"
+               "description": "Foie dans le prochain. Un hearthling d'une grande Ame sera apprécié par les tiens et sera un rempart contre l'ennemi. Influence le courage, la volonté et la compassion"
 			},
 			"safety": {
                "display_name": "Sécurité",
-               "description": "Protégez votre ville des pilleurs et faites que vos citoyens se sentent en sécurité en formant des gardes.",
-               "town_description": "Ce que pense vos citoyens de la sécurité de la ville. Sommes nous bien protégés ou des gobelins nous pillent régulièrement ?"
+               "description": "Protégez votre ville des pilleurs et faites que vos hearthlings se sentent en sécurité en formant des gardes.",
+               "town_description": "Ce que pense vos hearthlings de la sécurité de la ville. Sommes nous bien protégés ou des gobelins nous pillent régulièrement ?"
 			}
 		 },
 		 "constants": {
@@ -4752,7 +4752,7 @@
 			},
 			"blacksmith_hammer_talisman": {
 			   "display_name": "Blacksmith's Hammer",
-               "description": "Requis pour promouvoir un citoyen en forgeron."
+               "description": "Requis pour promouvoir un hearthling en forgeron."
 			}
 		 },
 		 "blacksmith_outfit": {
@@ -4990,7 +4990,7 @@
 			   "flavor": "Like the one my granda had!"
 			},
 			"mason_chisel_recipe": {
-               "description": "Requis pour promouvoir un citoyen en tailleur de pierre.",
+               "description": "Requis pour promouvoir un hearthling en tailleur de pierre.",
                "recipe_name": "Marteau et ciseau de tailleur de pierre"
 			},
 			"not_much_of_a_bed_recipe": {
@@ -5020,7 +5020,7 @@
 			"furniture_name": "Furniture",
 			"workbench_name": "Workbenches",
 			"shepherds_crook_recipe": {
-               "description": "Requis pour promouvoir un citoyen en berger",
+               "description": "Requis pour promouvoir un hearthling en berger",
                "recipe_name": "Bâton de berger",
 			   "flavor": "Can you tell me another story about The Shepard?"
 			},
@@ -5181,11 +5181,11 @@
             "description": "L'outil du cuisinier",
 			"cook_spoon_iconic": {
                "display_name": "Cuillère de cuisinier",
-               "description": "Requise pour promouvoir un citoyen en cuisinier."
+               "description": "Requise pour promouvoir un hearthling en cuisinier."
 			},
 			"cook_spoon_talisman": {
                "display_name": "Cuillère de cuisinier",
-               "description": "Requise pour promouvoir un citoyen en cuisinier."
+               "description": "Requise pour promouvoir un hearthling en cuisinier."
 			}
 		 },
 		 "cook_workbench": {
@@ -5569,11 +5569,11 @@
             "description": "Utile pour rassembler le troupeau",
 			"shepherd_crook_iconic": {
                "display_name": "Bâton de berger",
-               "description": "Requis pour promouvoir un citoyen en berger"
+               "description": "Requis pour promouvoir un hearthling en berger"
 			},
 			"shepherd_crook_talisman": {
                "display_name": "Bâton de berger",
-               "description": "Requis pour promouvoir un citoyen en berger"
+               "description": "Requis pour promouvoir un hearthling en berger"
 			}
 		 },
 		 "shepherd_outfit": {
@@ -5653,7 +5653,7 @@
 			},
 			"trapper_knife_talisman": {
                "display_name": "Couteau de trappeur",
-               "description": "Requis pour promouvoir un citoyen en trappeur."
+               "description": "Requis pour promouvoir un hearthling en trappeur."
 			}
 		 },
 		 "trapper_outfit": {
