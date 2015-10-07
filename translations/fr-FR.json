@@ -3005,7 +3005,7 @@
 		 },
 		 "crafting": {
 			"workshop_outbox": {
-			   "display_name": "Boîte de produit fini",
+			   "display_name": "Coffre de produits finis",
 			   "description": "Stocke les fabrications terminées"
 			}
 		 },
@@ -3018,7 +3018,7 @@
 		 "picket_fence_gate": {
 			"picket_fence_gate_ghost": {
 			   "display_name": "Portail de palissade",
-			   "description": "VOus n'aimez pas vos voisins? Ne pas installer."
+			   "description": "Vous n'aimez pas vos voisins? Ne pas installer."
 			}
 		 },
 		 "stockpile": {
@@ -3066,43 +3066,43 @@
 		 "large_crate": {
 			"large_crate_ghost": {
 			   "display_name": "Grande caisse",
-			   "description": "Boîte de rangement."
+			   "description": "Boîte de rangement"
 			}
 		 },
 		 "leather_bound_chest": {
 			"leather_bound_chest_ghost": {
 			   "display_name": "Coffre en cuir lié",
-			   "description": "Boîte de rangement."
+			   "description": "Boîte de rangement"
 			}
 		 },
 		 "small_crate": {
 			"small_crate_ghost": {
               "display_name": "Petite caisse",
-			   "description": "Boîte de rangement."
+			   "description": "Boîte de rangement"
             }
          },
          "stone_chest": {
             "stone_chest_ghost": {
                "display_name": "Coffre de pierre",
-               "description": "Storage container"
+               "description": "Boîte de rangement"
 			}
 		 },
 		 "barrel": {
 			"barrel_ghost": {
                "display_name": "Coffre en cuir lié",
-			   "description": "Boîte de rangement."
+			   "description": "Boîte de rangement"
             }
          },
          "vault": {
             "vault_ghost": {
-               "display_name": "The Vault",
-               "description": "Massive storage"
+               "display_name": "L'Abris",
+               "description": "Magasin massif"
 			}
 		 }
 	  },
 	  "crafting": {
 		 "workshop_outbox": {
-			"display_name": "Boîte de produit fini",
+			"display_name": "Boîte de produits finis",
 			"description": "Stocke les fabrications terminées."
 		 }
 	  },
@@ -3185,7 +3185,7 @@
 			}
 		 },
 		 "carrot_crop": {
-			"display_name": "Carrot",
+			"display_name": "Carotte",
 			"description": "Fast-growning, but pretty bland on its own.",
 			"growth_stage": {
 			   "003": {
@@ -3211,12 +3211,12 @@
 			}
 		 },
 		 "corn_crop": {
-			"display_name": "Corn",
-			"description": "Slow-growning, but super nutritious crop.",
+			"display_name": "Maïs",
+			"description": "Pousse lente mais super nutritif.",
 			"growth_stage": {
 			   "003": {
 				  "name": "Ripe Corn",
-				  "description": "Eat me! Eat Me!"
+                  "description": "Manger moi ! Manger moi !"
 			   },
 			   "002": {
 				  "name": "Green Corn",
@@ -3224,7 +3224,7 @@
 			   },
 			   "001": {
 				  "name": "Corn Sprout",
-				  "description": "Not edible yet!"
+                  "description": "Pas encore consommable !"
 			   },
 			   "000": {
 				  "name": "Corn Seedling",
@@ -3263,29 +3263,29 @@
 			}
 		 },
 		 "frostsnap_crop": {
-			"display_name": "Frostsnap Flower",
+            "display_name": "Perce-neige",
 			"description": "It's chill to the touch.",
 			"growth_stage": {
 			   "001": {
-				  "name": "Frostsnap Sprout",
+				  "name": "Perce-neige Sprout",
 				  "description": "Stubby."
 			   },
 			   "003": {
-				  "name": "Frostsnap",
+                  "name": "Perce-neige",
 				  "description": "Mysteriously cool."
 			   },
 			   "000": {
-				  "name": "Frostsnap Seedling",
+				  "name": "Perce-neige Seedling",
 				  "description": "Full of potential."
 			   },
 			   "002": {
-				  "name": "Frostsnap Bud",
+				  "name": "Perce-neige Bud",
 				  "description": "Like a baby snowflake."
 			   }
 			}
 		 },
 		 "gingercap_crop": {
-			"display_name": "Turnip",
+			"display_name": "Navet",
 			"description": "Fast-growing staple crop, but not particularly nutritious nor delicious.",
 			"growth_stage": {
 			   "003": {
@@ -3311,7 +3311,7 @@
 			}
 		 },
 		 "pumpkin_crop": {
-			"display_name": "Pumpkin",
+			"display_name": "Citrouille",
 			"description": "Big, round, and fast-growing, but tasty it is not.",
 			"growth_stage": {
 			   "003": {
@@ -3427,7 +3427,7 @@
 			}
 		 },
 		 "turnip_crop": {
-			"display_name": "Turnip",
+            "display_name": "Navet",
 			"description": "Fast-growing staple crop, but not particularly nutritious nor delicious.",
 			"growth_stage": {
 			   "003": {
@@ -3453,7 +3453,7 @@
 			}
 		 },
 		 "wheat_crop": {
-			"display_name": "Wheat",
+            "display_name": "Blé",
 			"description": "Amber wave of grain.",
 			"growth_stage": {
 			   "003": {
@@ -3479,7 +3479,7 @@
 			}
 		 },
 		 "oak_tree_crop": {
-			"display_name": "Oak Tree Sapling",
+            "display_name": "Plants de chêne",
 			"description": "Out of trees? Get ready to participate in reforestation.",
 			"growth_stage": {
 			   "001": {
@@ -3516,7 +3516,7 @@
 		 },
 		 "bird_bath": {
 			"bird_bath_ghost": {
-			   "display_name": "Bassin à oiseau",
+               "display_name": "Bassin pour oiseaux",
 			   "description": "Tranquille."
 			}
 		 },
@@ -3531,20 +3531,20 @@
 		 },
 		 "curtains": {
 			"curtains_ghost": {
-			   "display_name": "Rideau",
+               "display_name": "Rideaux",
 			   "description": "Habille une fenêtre."
 			}
 		 },
 		 "firepit": {
 			"firepit_ghost": {
 			   "display_name": "Feu de camp",
-			   "description": "Fournit chaleur et la lumiére"
+               "description": "Fournit chaleur et lumiére."
 			}
 		 },
 		 "firepit_skulls": {
 			"firepit_skulls_ghost": {
-			   "display_name": "Méchant feu de camp",
-			   "description": "Are those....ew."
+               "display_name": "Feu de camp maléfique",
+               "description": "Serait-ce des ... Euuh."
 			}
 		 },
 		 "frostsnap": {
@@ -3568,7 +3568,7 @@
 		 "gilded_crimson_rug": {
 			"gilded_crimson_rug_ghost": {
 			   "display_name": "Tapis doré cramoisie",
-			   "description": "Si royale"
+			   "description": "Si royal"
 			}
 		 },
 		 "loot_chest": {
@@ -3583,8 +3583,8 @@
 		 },
 		 "stone_garden_lantern": {
 			"stone_garden_lantern_ghost": {
-			   "display_name": "Lanterne de jardin en pierre",
-			   "description": "Une lanterne à l'ancienne donnant une bonne mabiance."
+               "display_name": "Lanterne d'extérieur en pierre",
+               "description": "Une lanterne à l'ancienne donnant une bonne ambiance."
 			}
 		 },
 		 "stone_wall_lantern": {
@@ -3596,7 +3596,7 @@
 		 "tapestry_wall": {
 			"tapestry_wall_ghost": {
 			   "display_name": "Tapisserie murale",
-			   "description": "Une scène décorative, tissé en fil et cordon colorés."
+               "description": "Une scène décorative, tissée en fils et cordons colorés."
 			}
 		 },
 		 "throw_rug": {
@@ -3607,13 +3607,13 @@
 		 },
 		 "tower_brazier": {
 			"tower_brazier_ghost": {
-			   "display_name": "Tour brazero",
-			   "description": "Fournit un feu chaleureux et confortable la nuit"
+               "display_name": "Brazero sur pied",
+               "description": "Fournit un feu chaleureux et confortable la nuit."
 			}
 		 },
 		 "wall_crest": {
 			"wall_crest_ghost": {
-			   "display_name": "Écussion mural",
+               "display_name": "Écusson mural",
 			   "description": "Juste pour le spectacle."
 			}
 		 },
@@ -3631,13 +3631,13 @@
 		 },
 		 "wooden_garden_lantern": {
 			"wooden_garden_lantern_ghost": {
-			   "display_name": "Lanterne de jardin en bois",
+               "display_name": "Lanterne d'extérieur en bois",
 			   "description": "Une source de lumière compacte."
 			}
 		 },
 		 "wooden_garden_lantern_fine": {
 			"wooden_garden_lantern_fine_ghost": {
-			   "display_name": "Belle lanterne de jardin",
+               "display_name": "Belle lanterne d'extérieur",
 			   "description": "Une source de lumière compacte."
 			}
 		 },
@@ -3650,25 +3650,25 @@
 		 "wooden_sign_blacksmith": {
 			"wooden_sign_blacksmith_ghost": {
 			   "display_name": "Enseigne murale de forgeron",
-			   "description": "Une enseigne avec la marque du forgeron."
+			   "description": "Enseigne avec le symbol du forgeron."
 			}
 		 },
 		 "wooden_sign_carpenter": {
 			"wooden_sign_carpenter_ghost": {
 			   "display_name": "Enseigne murale de menuisier",
-			   "description": "Une enseigne avec la marque du menuisier."
+			   "description": "Enseigne avec le symbol du menuisier."
 			}
 		 },
 		 "wooden_sign_mason": {
 			"wooden_sign_mason_ghost": {
-			   "display_name": "Enseigne murale de maçon",
-			   "description": "Une enseigne avec la marque du maçon."
+			   "display_name": "Enseigne murale de tailleur de pierre",
+			   "description": "Enseigne avec le symbol du maçon."
 			}
 		 },
 		 "wooden_sign_weaver": {
 			"wooden_sign_weaver_ghost": {
 			   "display_name": "Enseigne murale de tisserand",
-			   "description": "Une enseigne avec la marque du tisserand."
+			   "description": "Enseigne avec le symbol du tisserand."
 			}
 		 },
 		 "wooden_wall_lantern": {
@@ -3687,62 +3687,62 @@
 	  "food": {
 		 "berries": {
 			"berry_basket": {
-			   "display_name": "Basket of Berries",
-			   "description": "Creme of the caveman diet."
+               "display_name": "Panier de baies",
+               "description": "Le summum du régime de l'homme des cavernes."
 			},
 			"berry_serving": {
-			   "display_name": "Plate of berries",
-			   "description": "Todo: Invent whipped cream."
+               "display_name": "Assiette de baies",
+               "description": "A faire : inventer la chantilly."
 			}
 		 },
 		 "corn": {
 			"amazing_corn_basket": {
-			   "display_name": "Amazing Basket of Maize",
-			   "description": "Super nutritous corn."
+               "display_name": "Panier de maïs extraordinaire",
+               "description": "Epis super nourrissants."
 			},
 			"amazing_corn_serving": {
-			   "display_name": "Amazing Maize",
-			   "description": "Heavenly nutritious."
+               "display_name": "Maïs extraordinaire",
+               "description": "Divinement nourrissant."
 			},
 			"corn_basket": {
-			   "display_name": "Basket of Corn",
-			   "description": "Sweet and crunchy."
+               "display_name": "Panier de Maïs",
+               "description": "Doux et croquant."
 			},
 			"corn_serving": {
-			   "display_name": "Corn Cob",
-			   "description": "Crunch and spray."
+               "display_name": "Epi de maïs",
+               "description": "Gicle sous la dent."
 			}
 		 },
 		 "flour": {
-			"display_name": "Sack of Flour",
-			"description": "Perfect for making bread"
+            "display_name": "Sac de farine",
+            "description": "Parfait pour faire du pain."
 		 },
 		 "meat_stew": {
 			"meat_stew": {
-			   "display_name": "Savory Meat Stew",
-			   "description": "Warm and delicious"
+               "display_name": "Savoureux ragoût de viande",
+               "description": "Chaud et délicieux."
 			},
 			"meat_stew_serving": {
-			   "display_name": "Bowl of Savory Meat Stew"
+               "display_name": "Bol de savoureux ragoût de viande"
 			}
 		 },
 		 "peasant_bread": {
 			"peasant_bread": {
-			   "display_name": "Peasant Bread",
-			   "description": "A crusty, basic bread."
+               "display_name": "Pain campagnard",
+               "description": "Un pain simple et croustillant."
 			},
 			"peasant_bread_serving": {
-			   "display_name": "Slice of Peasant Bread"
+               "display_name": "Tranche de pain campagnard"
 			}
 		 },
 		 "pumpkin": {
 			"pumpkin_basket": {
-			   "display_name": "Pumpkin Basket",
-			   "description": "Ready for eating"
+               "display_name": "Panier de citrouilles",
+               "description": "Prêtes à être mangée."
 			},
 			"pumpkin_serving": {
-			   "display_name": "Pumpkin Mush",
-			   "description": "Delicious. Really..."
+               "display_name": "Purée de citrouille",
+               "description": "C'est un délice, vraiment..."
 			}
 		 },
 		 "sheep_jerky": {
@@ -3750,105 +3750,105 @@
 		 },
 		 "veggie_stew": {
 			"veggie_stew": {
-			   "display_name": "Vegetable Stew",
-			   "description": "Warm and delicious"
+               "display_name": "Soupe de légumes",
+               "description": "Chaude et délicieuse."
 			},
 			"veggie_stew_serving": {
-			   "display_name": "Bowl of Veggie Stew",
-			   "description": "Delicious!"
+               "display_name": "Bol de soupe de légumes",
+               "description": "Trop bon !"
 			}
 		 },
 		 "wheat_bale": {
-			"display_name": "Bale of Wheat",
-			"description": "Ready for use"
+            "display_name": "Gerbe de blé",
+            "description": "Prête à l'emploi"
 		 },
 		 "egg": {
-			"display_name": "An Egg",
+            "display_name": "Un oeuf",
 			"description": "An eggcellent ingredient for cooking."
 		 },
 		 "corn_bread": {
 			"corn_bread": {
-			   "display_name": "Corn Bread",
-			   "description": "Toasty and golden brown."
+               "display_name": "Pain de maïs",
+               "description": "Bien cuit et bien doré."
 			},
 			"corn_bread_serving": {
-			   "display_name": "Piece of Corn Bread"
+               "display_name": "Morceau de pain au maïs"
 			}
 		 },
 		 "poyo_meat": {
-			"display_name": "Raw Poyo Meat",
+            "display_name": "Viande de poyo crue",
 			"description": "I hear it takes like poyo."
 		 },
 		 "poyo_pot_pie": {
 			"poyo_pot_pie": {
-			   "display_name": "Poyo Pot Pie",
-			   "description": "Warm and delicious."
+               "display_name": "Chausson au paté de poyo",
+               "description": "On en bave."
 			},
 			"poyo_pot_pie_serving": {
-			   "display_name": "Slice of Poyo Pot Pie",
-			   "description": "Mmm ... pie."
+               "display_name": "Tranche de chausson de paté de poyo",
+               "description": "Mmm ... trop bon."
 			}
 		 },
 		 "omelette": {
 			"omelette": {
 			   "display_name": "Omelette",
-			   "description": "Delicious egg wrapped meat and veggies"
+               "description": "Délicieuse viande, succulants légumes, le tout enrobé d'oeuf."
 			},
 			"omelette_serving": {
-			   "display_name": "Serving of Omelette",
-			   "description": "But why would you share?"
+               "display_name": "Assiette d'omelette",
+               "description": "Mais pourquoi voudriez-vous partager ?"
 			}
 		 },
 		 "roast_poyo": {
 			"roast_poyo": {
-			   "display_name": "Roast Poyo",
-			   "description": "Nice and juicy."
+               "display_name": "Poyo roti",
+               "description": "Magnifiquement juteux"
 			},
 			"roast_poyo_serving": {
-			   "display_name": "Serving of Roast Poyo"
+               "display_name": "Assiette de poyo roti"
 			}
 		 },
 		 "fried_eggs": {
 			"fried_eggs": {
-			   "display_name": "Fried Eggs",
-			   "description": "Fried and delicious"
+               "display_name": "Oeufs frits",
+               "description": "Frits et bien sûr délicieux."
 			},
 			"fried_eggs_serving": {
-			   "display_name": "Serving of Fried Eggs"
+               "display_name": "Assiette d'oeufs frits"
 			}
 		 },
 		 "sheep_feed": {
-			"display_name": "Sheep Feed",
-			"description": "Give to sheep for a supplement to grazing.",
+            "display_name": "Nourriture pour mouton",
+            "description": "Pour les moutons en complément du pâturage",
 			"sheep_feed_ground": {
-			   "display_name": "Sheep Feed",
-			   "description": "Food for sheep"
+               "display_name": "Nourriture pour mouton",
+               "description": "Que rajouter ?"
 			}
 		 },
 		 "poyo_feed": {
 			"poyo_feed": {
 			   "display_name": "Nourriture pour poyo",
-			   "description": "Pour nourrire les poyos."
+               "description": "Pour nourrir les poyos."
 			},
 			"poyo_feed_ground": {
-			   "display_name": "Poyo Feed",
-			   "description": "Poyos love to eat this stuff."
+               "display_name": "Nourriture pour poyo",
+               "description": "Les poyos adorent ce machin !"
 			}
 		 },
 		 "rabbit_feed": {
-			"display_name": "Rabbit Feed",
-			"description": "For rabbits",
+            "display_name": "Nourriture pour lapin",
+            "description": "Seulement pour les lapins",
 			"rabbit_feed_ground": {
-			   "display_name": "Rabbit Feed",
-			   "description": "Food for rabbits"
+               "display_name": "Nourriture pour lapin",
+               "description": "Sans provenance contrôlée."
 			}
 		 }
 	  },
 	  "furniture": {
 		 "arch_backed_chair": {
 			"arch_backed_chair_ghost": {
-			   "display_name": "Cathedral-Arch Chair",
-			   "description": "Classy like piety."
+               "display_name": "Chaise en ogive de cathédrale",
+               "description": "Aussi classieuse que la piété."
 			}
 		 },
 		 "arch_backed_chair_fine": {
@@ -3860,49 +3860,49 @@
 		 "comfy_bed": {
 			"comfy_bed_ghost": {
 			   "display_name": "Lit confortable",
-			   "description": "I dreamed... of flying sheep."
+               "description": "J'ai révé... de moutons sauteurs."
 			}
 		 },
 		 "comfy_bed_fine": {
 			"comfy_bed_fine_ghost": {
 			   "display_name": "Lit confortable stylisé",
-			   "description": "I dreamed... of flying sheep."
+			   "description": "J'ai révé... de moutons volants."
 			}
 		 },
 		 "comfy_chair": {
 			"comfy_chair_ghost": {
 			   "display_name": "Chaise confortable",
-			   "description": "For sitting!"
+               "description": "Pour s'assoir !"
 			}
 		 },
 		 "comfy_chair_fine": {
 			"comfy_chair_fine_ghost": {
 			   "display_name": "Chaise confortable stylisé",
-			   "description": "For sitting!"
+			   "description": "Pour s'assoir luxueusement !"
 			}
 		 },
 		 "dining_table": {
 			"dining_table_ghost": {
-			   "display_name": "Dining Table",
-			   "description": "Sitting down to eat is a sign of civilization."
+               "display_name": "Table à manger",
+               "description": "S'assoir pour manger est un signe de civilisation."
 			}
 		 },
 		 "dining_table_fine": {
 			"dining_table_fine_ghost": {
-			   "display_name": "Fine Dining Table",
-			   "description": "Sitting down to eat is a sign of civilization."
+               "display_name": "Table à manger stylisé",
+               "description": "S'assoir pour manger est un signe de civilisation.<br>Encore plus sur cette version !"
 			}
 		 },
 		 "dresser": {
 			"dresser_ghost": {
-			   "display_name": "Wooden Dresser",
-			   "description": "Decorative in the absence of belongings."
+               "display_name": "Commode de bois",
+               "description": "Décorative en l'abscence de propriétaire."
 			}
 		 },
 		 "dresser_fine": {
 			"dresser_fine_ghost": {
-			   "display_name": "Fine Dresser",
-			   "description": "Decorative in the absence of belongings."
+               "display_name": "Commode stylisé",
+               "description": "Encore plus décorative en l'abscence de propriétaire."
 			}
 		 },
 		 "not_much_of_a_bed": {
@@ -3913,116 +3913,116 @@
 		 },
 		 "park_bench": {
 			"park_bench_ghost": {
-			   "display_name": "Wooden Park Bench",
-			   "description": "Outdoor seating for moments of relaxation"
+               "display_name": "Banc de parc en bois",
+               "description": "Siège d'extérieur pour des moments de détente."
 			}
 		 },
 		 "park_bench_fine": {
 			"park_bench_fine_ghost": {
-			   "display_name": "Fine Park Bench",
-			   "description": "Outdoor seating for moments of relaxation"
+               "display_name": "Banc de parc de luxe",
+               "description": "Siège d'extérieur pour des moments de détente."
 			}
 		 },
 		 "simple_wooden_chair": {
 			"simple_wooden_chair_ghost": {
-			   "display_name": "Simple Wooden Chair",
-			   "description": "For sitting"
+               "display_name": "Chaise simple de bois",
+               "description": "Pour s'assoir."
 			}
 		 },
 		 "simple_wooden_chair_fine": {
 			"simple_wooden_chair_fine_ghost": {
-			   "display_name": "Fine Wooden Chair",
-			   "description": "For sitting"
+               "display_name": "Chaise en bois de luxe",
+               "description": "Pour s'assoir tout en frimant."
 			}
 		 },
 		 "stone_bench": {
 			"stone_bench_ghost": {
-			   "display_name": "Stone Bench",
-			   "description": "Outdoor seating for moments of relaxation"
+               "display_name": "Banc de pierre",
+               "description": "Siège d'extérieur pour des moments de détente."
 			}
 		 },
 		 "stone_chair": {
 			"stone_chair_ghost": {
-			   "display_name": "Stone Chair",
-			   "description": "For sitting"
+               "display_name": "Chaise de pierre",
+               "description": "Pour s'assoir."
 			}
 		 },
 		 "stone_table": {
 			"stone_table_ghost": {
-			   "display_name": "Stone Table",
-			   "description": "Its weight adds a sense of gravitas."
+               "display_name": "Table de pierre",
+               "description": "Son imposance ajoute à l'impression de lourdeur."
 			}
 		 },
 		 "table_for_one": {
 			"table_for_one_ghost": {
-			   "display_name": "Table for One",
-			   "description": "Dining furniture for introverts."
+               "display_name": "Table pour célibataire",
+               "description": "Mobilier dinatoire pour introvertis."
 			}
 		 },
 		 "table_for_one_fine": {
 			"table_for_one_fine_ghost": {
-			   "display_name": "Fine Table for One",
-			   "description": "Dining furniture for introverts."
+               "display_name": "Table stylisé pour célibataire.",
+               "description": "On peut frimer même seul !"
 			}
 		 },
 		 "tombstone": {
 			"tombstone_ghost": {
 			   "display_name": "R.I.P. [str(self.unit_info.custom_name)]",
-			   "description": "[str(self.unit_info.custom_name)] will always be remembered."
+               "description": "[str(self.unit_info.custom_name)] sera toujours dans nos coeurs."
 			}
 		 },
 		 "writing_desk": {
 			"writing_desk_ghost": {
-			   "display_name": "Writing Desk",
-			   "description": "Furniture"
+               "display_name": "Bureau",
+               "description": "Un meuble pour écrire. En général."
 			}
 		 },
 		 "writing_desk_fine": {
 			"writing_desk_fine_ghost": {
-			   "display_name": "Fine Writing Desk",
-			   "description": "Furniture"
+               "display_name": "Bureau de luxe",
+               "description": "Un meuble pour écrire. Beaucoup."
 			}
 		 }
 	  },
 	  "generic": {
 		 "default_object": {
-			"display_name": "Default object",
-			"description": "Mysterious"
+            "display_name": "Objet par défault",
+            "description": "Mystérieux"
 		 }
 	  },
 	  "gizmos": {
 		 "camp_standard": {
 			"camp_standard_ghost": {
-			   "display_name": "Camp Standard",
-			   "description": "Use to mark territory, civilizedly."
+               "display_name": "Bannière de ralliement",
+               "description": "Utilisée pour marquer un territoire de manière civilisée."
 			}
 		 },
 		 "control_attack_banner": {
-			"display_name": "Attack Banner",
-			"description": "Attack!!!!"
+            "display_name": "Attaquer la bannière",
+            "description": "Attaquer !!!"
 		 },
 		 "control_defend_banner": {
-			"display_name": "Defend Banner",
-			"description": "Hold this ground in Town Defense mode"
+            "display_name": "Défendre la bannière",
+            "description": "Garder cette position en mode de défense de la ville."
 		 }
 	  },
 	  "loot": {
 		 "gold": {
-			"display_name": "Chest of Gold Coins",
-			"description": "It's [str(self.item.stacks)] coins!"
+            "display_name": "Coffre de pièces d'or",
+            "description": "C'est [str(self.item.stacks)] pièces!"
 		 }
 	  },
 	  "monsters": {
 		 "forest": {
 			"ent": {
 			   "display_name": "Ent",
-			   "description": "Guardian of the forest"
+               "description": "Gardien de la forêt."
 			}
 		 },
 		 "goblins": {
 			"decoration": {
 			   "banner": {
-				  "display_name": "A banner"
+				  "display_name": "Une bannière"
 			   },
 			   "skull_stake": {
 				  "display_name": "A stake"
@@ -4047,7 +4047,7 @@
 			},
 			"goblin_chief_hut": {
 			   "goblin_tent": {
-				  "display_name": "A Tent",
+                  "display_name": "Tente de gobelin",
 				  "description": "Made from crudely-sewn animal hides"
 			   }
 			},
@@ -4066,8 +4066,8 @@
 			   }
 			},
 			"goblin_hut": {
-			   "display_name": "A Tent",
-			   "description": "Made from crudely-sewn animal hides"
+               "display_name": "Tente de gobelin",
+               "description": "Faite de bouts de bois mal taillés."
 			},
 			"goblin_large_totem": {
 			   "display_name": "Large totem"
@@ -4096,12 +4096,12 @@
 			   "description": "Bred to inspire terror"
 			},
 			"orc": {
-               "display_name": "An Orc",
-               "description": "Orc crush puny hearthling!",
+               "display_name": "Un orc",
+               "description": "Les orcs, ça broie les hearthling !",
 			   "male": {
 				  "zombie_male": {
-                     "display_name": "An Orc",
-                     "description": "Orc crush puny hearthling!"
+                     "display_name": "Un orc",
+                     "description": "Les orcs, ça broie les hearthling !"
 				  }
 			   }
 			},
@@ -4122,12 +4122,12 @@
 			   "description": "It yearns for flesh"
 			},
 			"zombie": {
-			   "display_name": "A Zombie",
-			   "description": "It yearns for flesh",
+               "display_name": "Un zombie",
+               "description": "Il cherche de la chair fraiche",
 			   "male": {
 				  "zombie_male": {
-					 "display_name": "A Zombie",
-					 "description": "It yearns for flesh"
+                     "display_name": "Un zombie",
+                     "description": "Il cherche de la chair fraiche"
 				  }
 			   }
 			}
@@ -4163,16 +4163,16 @@
 		 },
 		 "carrot": {
 			"carrot_basket": {
-			   "display_name": "Basket of Carrots",
-			   "description": "Lined up in neat rows."
+               "display_name": "Panier de carottes",
+               "description": "Alignées en belles rangés"
 			},
 			"carrot_serving": {
-			   "display_name": "A carrot",
-			   "description": "Tiny. Bitter."
+               "display_name": "Une carotte",
+               "description": "Petite. Amère."
 			}
 		 },
 		 "frostsnap_plant": {
-			"display_name": "Wild Frost Snap",
+			"display_name": "Perce-neige sauvage",
 			"description": "A harvestable wild flower"
 		 },
 		 "silkweed": {
@@ -4194,12 +4194,12 @@
 		 },
 		 "turnip": {
 			"turnip_basket": {
-			   "display_name": "Basket of Turnips",
-			   "description": "Juicy and exciting!"
+               "display_name": "Panier de navets",
+               "description": "Bien rose et rond."
 			},
 			"turnip_serving": {
-			   "display_name": "A Turnip",
-			   "description": "Tiny. Bitter."
+               "display_name": "Un navet",
+               "description": "Petit navet perdu..."
 			}
 		 },
 		 "cactus_plant": {
@@ -4214,13 +4214,13 @@
 	  "rabbit": {
 		 "lantern_relic": {
 			"lantern_relic_ghost": {
-			   "display_name": "Relique ancienne",
-			   "description": "S'effrite avec l'âge"
+               "display_name": "Ruine ancienne",
+               "description": "S'écroule avec l'âge"
 			}
 		 },
 		 "rabbit_statue": {
-			"display_name": "Un ancien monument",
-			"description": "Moussu, mais la pierre est encore bonne..."
+			"display_name": "Un monument des anciens",
+			"description": "Moussu, mais la pierre est encore bonne ..."
 		 }
 	  },
 	  "refined": {
@@ -4229,12 +4229,12 @@
 			"description": "Une barre de bronze pur."
 		 },
 		 "cloth_bolt": {
-			"display_name": "Rouleau d'étoffe",
+            "display_name": "Rouleau de tissu",
 			"description": "Doux et réconfortant."
 		 },
 		 "copper_ingot": {
 			"display_name": "Lingot de cuivre",
-			"description": "Une barre de bronze pur."
+            "description": "Une barre de cuivre pur."
 		 },
 		 "gold_ingot": {
 			"display_name": "Lingot d'or",
@@ -4245,129 +4245,129 @@
 			"description": "Une barre de fer pur."
 		 },
 		 "leather_bolt": {
-			"display_name": "Rouleau de cuir",
-			"description": "Souple mais durable."
+            "display_name": "Cuir en rouleau",
+            "description": "Souple mais solide."
 		 },
 		 "silver_ingot": {
 			"display_name": "Lingot d'argent",
-			"description": "A bar of pure silver."
+            "description": "Une barre d'argent pur."
 		 },
 		 "steel_ingot": {
-			"display_name": "Steel Ingot",
-			"description": "Une barre de bronze pur."
+            "display_name": "Lingot d'acier",
+            "description": "Une barre d'acier pur."
 		 },
 		 "stone_bricks": {
-			"display_name": "Pile de briques en pierre",
-			"description": "Élément clé pour les constructions en pierre."
+			"display_name": "Pile de briques de pierre",
+			"description": "Une élément clé pour les constructions en pierre."
 		 },
 		 "thread": {
 			"display_name": "Bobine de fil",
-			"description": "Personne ne pensera jamais que cela a commencé avec un mouton. Ou une plante."
+            "description": "Personne n'aurait pu imaginer que cela a commencé par un mouton. Ou une plante."
 		 },
 		 "tin_ingot": {
 			"display_name": "Lingot d'étain",
-			"description": "Une barre d'étain pur."
+            "description": "Une barre d'étain pur."
 		 }
 	  },
 	  "resources": {
 		 "coal": {
 			"lump_of_coal": {
-			   "display_name": "Lump 'o Coal",
-			   "description": "A sizable chunk of solid coal."
+               "display_name": "Charbon",
+               "description": "Un beau morceau de charbon solide."
 			}
 		 },
 		 "copper": {
 			"copper_ore": {
-			   "display_name": "Copper Ore",
-			   "description": "A chunk of raw copper"
+               "display_name": "Minerai de cuivre",
+               "description": "Un bloc de cuivre natif"
 			}
 		 },
 		 "fiber": {
 			"silkweed_bundle": {
-			   "display_name": "Bobine de fil-de-soie",
-			   "description": "Spinnable into thread"
+			   "display_name": "Paquet de fil-de-soie",
+			   "description": "Transformable en fil."
 			},
 			"wool_bundle": {
-			   "display_name": "Bundle of Wool",
-			   "description": "Spinnable into thread"
+			   "display_name": "Sac de laine",
+			   "description": "Transformable en fil."
 			}
 		 },
 		 "gold": {
 			"gold_ore": {
-			   "display_name": "Gold Ore",
-			   "description": "A chunk of raw gold"
+               "display_name": "Minerai d'or",
+               "description": "Un bloc d'or natif"
 			}
 		 },
 		 "iron": {
 			"iron_ore": {
-			   "display_name": "Iron Ore",
-			   "description": "A chunk of raw iron"
+               "display_name": "Minerai de fer",
+               "description": "Un bloc de fer natif"
 			}
 		 },
 		 "pelt": {
 			"rabbit_pelt": {
-			   "display_name": "Rabbit Pelt",
-			   "description": "Soft, supple, and quite dead."
+               "display_name": "Peau de lapin",
+               "description": "Douce, souple mais bien morte."
 			},
 			"racoon_pelt": {
-			   "display_name": "Racoon pelt",
-			   "description": "Soft, supple, and quite dead"
+               "display_name": "Peau de raton laveur",
+               "description": "Douce, souple mais bien morte."
 			},
 			"red_fox_pelt": {
-			   "display_name": "Fox pelt",
-			   "description": "Soft, supple, and quite dead"
+               "display_name": "Peau de renard",
+               "description": "Douce, souple mais bien morte."
 			},
 			"squirrel_pelt": {
-			   "display_name": "Squirrel pelt",
-			   "description": "Soft, supple, and quite dead"
+               "display_name": "Peau d'écureil",
+               "description": "Douce, souple mais bien morte."
 			},
 			"wolf_pelt": {
-			   "display_name": "Wolf pelt",
-			   "description": "From the hide of a terrifying creature"
+               "display_name": "Peau de loup",
+               "description": "Prélevée sur une créature terrifiante."
 			}
 		 },
 		 "silver": {
 			"silver_ore": {
-			   "display_name": "Silver Ore",
-			   "description": "A chunk of raw silver"
+               "display_name": "Minerai d'argent",
+               "description": "Un bloc d'argent natif"
 			}
 		 },
 		 "stone": {
 			"hunk_of_stone": {
-			   "display_name": "Hunk 'o Stone",
-			   "description": "A heavy, ordinary rock."
+               "display_name": "Pierre brute",
+               "description": "Une pierre banale et bien lourde."
 			}
 		 },
 		 "tin": {
 			"tin_ore": {
-			   "display_name": "Tin Ore",
-			   "description": "A chunk of raw tin"
+               "display_name": "Mainerai d'étain",
+               "description": "Un bloc d'étain natif"
 			}
 		 },
 		 "wood": {
 			"juniper_log": {
-			   "display_name": "Juniper Log",
-			   "description": "A log. Made of wood."
+               "display_name": "Bûche de genévrier",
+               "description": "Une bûche. Faite de bois."
 			},
 			"oak_log": {
-			   "display_name": "Oak Log",
-			   "description": "A log. Made of wood."
+               "display_name": "Bûche de chêne",
+               "description": "Une bûche. Faite de bois."
 			},
 			"pine_log": {
-			   "display_name": "Pine Log",
-			   "description": "A log. Made of wood."
+               "display_name": "Bûche de pin",
+               "description": "Une bûche. Faite de bois."
 			},
 			"cactus_log": {
-			   "display_name": "Cactus Log",
-			   "description": "A log. Made of wood."
+               "display_name": "Bûche de cactus",
+               "description": "Une bûche. Faite de bois."
 			},
 			"palm_log": {
-			   "display_name": "Palm Log",
-			   "description": "A log. Made of wood."
+               "display_name": "Bûche de palmier",
+               "description": "Une bûche. Faite de bois."
 			},
 			"acacia_log": {
-			   "display_name": "Acacia Log",
-			   "description": "A log. Made of wood."
+               "display_name": "Bûche d'acacia",
+               "description": "Une bûche. Faite de bois."
 			}
 		 }
 	  },
@@ -5050,8 +5050,8 @@
 			   "flavor": "A brightbell a day keeps the Ogres away!"
 			},
 			"window_box_frostsnap_recipe": {
-			   "description": "A planter box full of Frostsnap flowers, built to be placed below window frames.",
-			   "recipe_name": "Frostsnap Window Box",
+			   "description": "A planter box pleine de Perce-neige, built to be placed below window frames.",
+			   "recipe_name": "Perce-neige Window Box",
 			   "flavor": "The capstone of an civilized dwelling."
 			},
 			"wooden_buckler_recipe": {

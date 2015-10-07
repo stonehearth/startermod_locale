@@ -3987,7 +3987,7 @@
          "forest": {
             "ent": {
                "display_name": "Ent",
-               "description": "Guardien de la forêt."
+               "description": "Gardien de la forêt."
             }
          },
          "goblins": {
@@ -4209,7 +4209,7 @@
          },
          "gold_ingot": {
             "display_name": "Lingot d'or",
-            "description": "Une barre d'or pur. Ideal pour la fabrication d'objet de valeur."
+            "description": "Une barre d'or pur. Idéal pour la fabrication d'objet de valeur."
          },
          "iron_ingot": {
             "display_name": "Lingot de fer",
