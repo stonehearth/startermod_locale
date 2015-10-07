@@ -4752,7 +4752,7 @@
 			},
 			"blacksmith_hammer_talisman": {
                "display_name": "Marteau de forgeron",
-               "description": "Requis pour promouvoir un citoyen en forgeron."
+               "description": "Requis pour promouvoir un hearthling en forgeron."
 			}
 		 },
 		 "blacksmith_outfit": {
@@ -4797,7 +4797,7 @@
 			   "flavor": "Made in the shape of Braun's own blade."
 			},
 			"carpenter_saw_recipe": {
-               "description": "Requis pour promouvoir un citoyen en menuisier",
+               "description": "Requis pour promouvoir un hearthling en menuisier",
                "recipe_name": "Scie du menuisier",
 			   "flavor": "Now the circle can begin anew."
 			},
@@ -4866,7 +4866,7 @@
                "flavor": "Etape 1 : battre trés fin. Etape 2 : utilisez pour couvrir le toit de l'hôtel de ville."
 			},
 			"trapper_knife_recipe": {
-               "description": "Requis pour promouvoir un citoyen en trappeur.",
+               "description": "Requis pour promouvoir un hearthling en trappeur.",
                "recipe_name": "Couteau de trappeur",
 			   "flavor": "Keep your edge whisker sharp, boy, and cut quick. --Willard Foxghost"
 			},
@@ -4933,7 +4933,7 @@
 			},
 			"carpenter_saw_talisman": {
                "display_name": "Scie de menuisier",
-               "description": "Requis pour promouvoir un citoyen en menuisier."
+               "description": "Requis pour promouvoir un hearthling en menuisier."
 			}
 		 },
 		 "carpenter_workbench": {
