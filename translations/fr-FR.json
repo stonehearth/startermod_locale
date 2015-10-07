@@ -211,18 +211,18 @@
 		 },
 		 "calendar": {
 			"months": {
-			   "1": "moiamer", 
-			   "2": "moiprofond", 
-			   "3": "moirosée", 
-			   "4": "moimouillé", 
-			   "5": "moigrand", 
-			   "6": "moidor", 
-			   "7": "moifestin", 
-			   "8": "moiguerre", 
-			   "9": "moinouveau", 
-			   "10": "moiazure", 
-			   "11": "moimaison", 
-			   "12": "moinord" 
+			   "1": "Amerum", 
+			   "2": "Profondum", 
+			   "3": "Roséemum", 
+			   "4": "Mouilléum", 
+			   "5": "Grandum", 
+			   "6": "Dormum", 
+			   "7": "Festinum", 
+			   "8": "Guerreum", 
+			   "9": "Nouveaum", 
+			   "10": "Azuréum", 
+			   "11": "Maisonum", 
+			   "12": "Nordum" 
 			},
 			"month_format": "i18n(stonehearth:ui.game.calendar.months.[str(date.month)])",
 			"date_format_long": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
@@ -478,7 +478,7 @@
                "show_char_sheet": "Feuille de personnage"
 			},
 			"immigration_report": {
-			   "title": "Bulletin quotidien",
+               "title": "Résumé quotidien",
 			   "immigration_report_title": "Rapport d'immigration",
                "population_label": "Population",
                "next_requirements_label": "Prérequis pour l'arrivé d'un nouveau hearthling"
@@ -646,12 +646,12 @@
 			   "default_stockpile_name": "Stockage n°[str(self.unit_info.custom_name)]",
 			   "contents": "Contenu",
 			   "filter": "Filtre",
-			   "help": "cliquer sur l'îcone pour choisir ce qui y sera stocké.",
+			   "help": "Cliquez sur les icônes pour choisir quoi stocker",
 			   "used_space": "Espace utilisé :",
 			   "filters": {
 				  "all": "Tout",
 				  "none": "Rien",
-				  "resources": "Resources",
+                  "resources": "Ressources",
 				  "construction": "Construction",
                   "goods": "Outils et marchandises",
                   "gear": "Armes et armures",
@@ -714,7 +714,7 @@
             "level_requirement_none": "Aucun pré-requis !",
             "level_requirement_needed": "Nécessite un ",
             "level_requirement_level": " de niveau ",
-			"too_many_symbol": "lots",
+            "too_many_symbol": "trop",
             "requirements_unmet_general": "Pré-requis non respectés !",
             "queue_anyway": "Mettre en attente tout de même",
 			"recipe_tab": "Recettes",
@@ -4745,19 +4745,19 @@
 		 },
 		 "blacksmith_hammer": {
             "display_name": "Marteau de forgeron",
-			"description": "Tools of the trade for a blacksmith.",
+            "description": "L'outil par excellence du forgeron.",
 			"blacksmith_hammer_iconic": {
-			   "display_name": "Blacksmith's Hammer",
-			   "description": "Tools of the trade for a blacksmith."
+               "display_name": "Marteau de forgeron",
+               "description": "L'outil par excellence du forgeron."
 			},
 			"blacksmith_hammer_talisman": {
-			   "display_name": "Blacksmith's Hammer",
-               "description": "Requis pour promouvoir un hearthling en forgeron."
+               "display_name": "Marteau de forgeron",
+               "description": "Requis pour promouvoir un citoyen en forgeron."
 			}
 		 },
 		 "blacksmith_outfit": {
-			"display_name": "Blacksmith Overalls",
-			"description": "Uniform for all blacksmiths"
+            "display_name": "Tenu de forgeron",
+            "description": "L'uniforme des forgerons"
 		 },
 		 "blacksmith_workbench": {
 			"blacksmith_workbench_ghost": {
@@ -4767,8 +4767,8 @@
 		 },
 		 "recipes": {
 			"basic_shield_recipe": {
-			   "description": "Grants the ability to completely block attacks.",
-			   "flavor": "Incredibly protective. Small children play turtle underneath.",
+			"description": "Permet de bloquer complètement les attaques.",
+               "flavor": "Protection incroyable. les enfants peuvent jouer à la tortue dessous.",
                "recipe_name": "Bouclier fidèle"
 			},
 			"iron_shield_recipe": {
@@ -4793,27 +4793,27 @@
 			},
 			"bronze_sword_recipe": {
 			   "description": "Basic, but better than fighting with a sharpened stick!",
-			   "recipe_name": "Bronze Sword",
+               "recipe_name": "Epée de bronze",
 			   "flavor": "Made in the shape of Braun's own blade."
 			},
 			"carpenter_saw_recipe": {
-			   "description": "Required to promote a hearthling into a Carpenter.",
-			   "recipe_name": "Carpenter's Saw",
+               "description": "Requis pour promouvoir un citoyen en menuisier",
+               "recipe_name": "Scie du menuisier",
 			   "flavor": "Now the circle can begin anew."
 			},
 			"copper_ingot_recipe": {
-			   "description": "A bar of pure copper. A suitable material for crafted goods.",
-			   "recipe_name": "Copper Ingot",
+               "description": "Une barre de cuivre pur. Un matériau adapté à la fabrication d'objets artisanaux.",
+               "recipe_name": "Lingot de cuivre",
 			   "flavor": "Smooth and silky to the touch"
 			},
 			"gold_ingot_recipe": {
-			   "description": "A bar of pure gold. A suitable material for crafted goods.",
-			   "recipe_name": "Gold Ingot",
+               "description": "Une barre d'or pur. Un matériau adapté à la fabrication d'objets artisanaux.",
+               "recipe_name": "Lingot d'or",
 			   "flavor": "The most expensive bludgeon ever."
 			},
 			"iron_ingot_recipe": {
-			   "description": "A bar of pure Iron. A suitable material for crafted goods.",
-			   "recipe_name": "Iron Ingot",
+               "description": "Une barre de fer pur. Un matériau adapté à la fabrication d'objets artisanaux.",
+               "recipe_name": "Lingot de fer",
 			   "flavor": "To both swords and plowshares, what an egg is to a chicken."
 			},
 			"iron_mace_recipe": {
@@ -4836,10 +4836,10 @@
 			   "recipe_name": "Long Sword",
 			   "flavor": "'Hah! The only weapon worthy of specialization. --Lady Giest"
 			},
-			"weapons_name": "Weapons",
-			"smelt_name": "Smelting",
-			"armor_name": "Armor",
-			"tools_name": "Tools",
+            "weapons_name": "Armes",
+            "smelt_name": "Alliages",
+            "armor_name": "Armures",
+            "tools_name": "Outils",
 			"short_sword_recipe": {
 			   "description": "Stubby, but its steel blade keeps an edge.",
 			   "recipe_name": "Short Sword",
@@ -4847,12 +4847,12 @@
 			},
 			"silver_ingot_recipe": {
 			   "description": "A bar of pure silver. A suitable material for crafted goods.",
-			   "recipe_name": "Silver Ingot",
+               "recipe_name": "Lingot d'argent",
 			   "flavor": "A pair of silver shoes once started a Phoenix war over currency."
 			},
 			"steel_ingot_recipe": {
 			   "description": "A bar of pure steel. A suitable material for crafted goods.",
-			   "recipe_name": "Steel Ingot",
+               "recipe_name": "Lingot d'acier",
 			   "flavor": "The beginning of the modern age."
 			},
 			"steel_mail_recipe": {
@@ -4861,12 +4861,12 @@
 			   "flavor": "Full Metal Jacket"
 			},
 			"tin_ingot_recipe": {
-			   "description": "A bar of pure tin. A suitable material for crafted goods.",
-			   "recipe_name": "Tin Ingot",
-			   "flavor": "Step 1: Beat thin. Step 2: Use to cover roof of town hall."
+               "description": "Une barre d'étain pur. Un matériau adapté à la fabrication d'objets artisanaux.",
+               "recipe_name": "Lingot d'étain",
+               "flavor": "Etape 1 : battre trés fin. Etape 2 : utilisez pour couvrir le toit de l'hôtel de ville."
 			},
 			"trapper_knife_recipe": {
-			   "description": "Required to promote a hearthling into a Trapper.",
+               "description": "Requis pour promouvoir un citoyen en trappeur.",
                "recipe_name": "Couteau de trappeur",
 			   "flavor": "Keep your edge whisker sharp, boy, and cut quick. --Willard Foxghost"
 			},
@@ -4875,21 +4875,21 @@
 			   "recipe_name": "Two Handed Sword"
 			},
 			"blacksmith_forge_recipe": {
-			   "description": "Smelt metals into ingots.",
-			   "recipe_name": "Blacksmith's Forge",
-			   "flavor": "In flame, purity, in purity, strength. -Lucan Varius, Artifex Ignis"
+               "description": "Permet de couler le métal en lingots.",
+               "recipe_name": "Forge",
+               "flavor": "Dans le feu, la pureté; dans la pureté, la force. -Lucan Varius, Artifex Ignis"
 			},
 			"blacksmith_workbench_recipe": {
-			   "description": "Used to create weapons and armor out of ingots.",
-			   "recipe_name": "Blacksmith's Anvil",
+               "description": "Utilisé pour forger armes et armures à partir des lingots.",
+               "recipe_name": "Enclume",
 			   "flavor": "It is no coincidence that the metaphors of good character descend from work of the smith. -Lucan Varius, Artifex Ignis"
 			},
-            "workbenches_name": "Workbenches",
-            "storage_name": "Storage",
+            "workbenches_name": "Ateliers",
+            "storage_name": "Rangement",
             "vault_recipe": {
-               "description": "Massive storage for 256 items!",
-               "recipe_name": "Vault",
-               "flavor": "Conceived by the brilliant Arci, Survivor of Chaat"
+               "description": "Un rangement massif pour 256 objets !",
+               "recipe_name": "Le coffre",
+               "flavor": "Conçu par Arci le brillant, survivant du Chaat"
             }
 		 }
 	  },
@@ -4916,24 +4916,24 @@
 			   "perk_000_description": "The carpenter can now make a solid array of basic furniture."
 			},
 			"level_3_data": {
-			   "perk_000_name": "Artistic Inspiration",
-			   "perk_000_description": "When inspiration strikes, the carpenter may embellish his works in unexpected ways."
+               "perk_000_name": "Inspiration artistique",
+               "perk_000_description": "Quand l'inspiration frappe, le menuisier est capable d'obtenir des résultats surprenant."
 			}
 		 },
 		 "carpenter_outfit": {
-			"display_name": "Carpenter Overalls",
-			"description": "Uniform for all carpenters"
+            "display_name": "Habit de menuisier",
+            "description": "L'uniforme des menuisiers."
 		 },
 		 "carpenter_saw": {
-			"display_name": "Carpenter's Saw",
-			"description": "Tools of the trade for a Carpenter.",
+            "display_name": "Scie de menuisier",
+            "description": "L'outils de l'excellence du menuisier.",
 			"carpenter_saw_iconic": {
-			   "display_name": "Carpenter's Saw",
+               "display_name": "Scie de menuisier",
 			   "description": "Basic level carpenter's saw."
 			},
 			"carpenter_saw_talisman": {
-			   "display_name": "Carpenter's Saw",
-			   "description": "Required to promote a hearthling into a Carpenter."
+               "display_name": "Scie de menuisier",
+               "description": "Requis pour promouvoir un citoyen en menuisier."
 			}
 		 },
 		 "carpenter_workbench": {
@@ -4944,7 +4944,7 @@
 		 },
 		 "carpenter_toolbench": {
 			"carpenter_toolbench_ghost": {
-			   "display_name": "Carpenter Toolbench",
+               "display_name": "Etabli de menuisier",
 			   "description": "Used to make fancier kinds of furniture."
 			}
 		 },
@@ -5013,12 +5013,12 @@
 			   "recipe_name": "Picket Fence",
 			   "flavor": "If it's not white, is our life unfulfilled?"
 			},
-			"tools_weapons_name": "Tools & Weapons",
-			"storage_name": "Storage",
-			"building_parts_name": "Building Parts",
-			"armor_name": "Armor",
-			"furniture_name": "Furniture",
-			"workbench_name": "Workbenches",
+            "tools_weapons_name": "Outils et armes",
+            "storage_name": "Rangement",
+            "building_parts_name": "Elements de construction",
+            "armor_name": "Armures",
+            "furniture_name": "Meubles",
+            "workbench_name": "Ateliers",
 			"shepherds_crook_recipe": {
                "description": "Requis pour promouvoir un hearthling en berger",
                "recipe_name": "Bâton de berger",
@@ -5147,20 +5147,20 @@
 	  },
 	  "cook": {
 		 "cook_description": {
-			"display_name": "Cook",
+            "display_name": "Cuisinier",
 			"description": "The cook makes delicious, hearty meals from base vegetables and meats.",
 			"requirements": "2 levels of Farmer and a Stoneware Spoon, crafted by the Mason.",
 			"level_6_data": {
-			   "title": "Master cook",
-			   "perk_000_name": "10.000 heures (à venir)",
-			   "perk_000_description": "The cook's dishes are now so good for you they have unexpected effects."
+               "title": "Grand chef",
+               "perk_000_name": "10 000 Heures (à venir)",
+               "perk_000_description": "Les plats du cuisinier sont si incroyables qu'ils ont des effets inattendus."
 			},
 			"level_2_data": {
-			   "perk_000_name": "Kitchen Chemistry",
+               "perk_000_name": "Chimie culinaire",
 			   "perk_000_description": "The cook has learned to make slightly fancier recipes."
 			},
 			"level_4_data": {
-			   "perk_000_name": "Ingenuity Enhancements (à venir)",
+               "perk_000_name": "Ingenuity Enhancements (not implemented)",
 			   "perk_000_description": "The cook adds new levels of functionality to classic recipes."
 			},
 			"level_1_data": {
@@ -5168,8 +5168,8 @@
 			   "perk_000_description": "The cook can make basic, nutritious recipes." 
 			},
 			"level_3_data": {
-			   "perk_000_name": "Artistic Inspiration",
-			   "perk_000_description": "When inspiration strikes, the cook may embellish his works in unexpected ways."
+               "perk_000_name": "Inspiration artistique",
+               "perk_000_description": "Quand l'inspiration frappe, le cuisinier est capable d'obtenir des résultats surprenant."
 			}
 		 },
 		 "cook_outfit": {
@@ -5196,20 +5196,20 @@
 		 },
 		 "recipes": {
 			"flour_recipe": {
-			   "description": "A necessary ingredient for all kinds of bread.",
-			   "recipe_name": "Sack of Flour"
+               "description": "Un ingrédient primordial pour toutes sortes de pains.",
+               "recipe_name": "Sac de farine"
 			},
 			"meat_stew_recipe": {
 			   "description": "Hearty, satisfying, and perfect to ease the passing of a cold night.",
-			   "recipe_name": "Savory Meat Stew",
-			   "flavor": "Before you ask, it's an assortment of meats."
+               "recipe_name": "Savoureux ragoût de viande",
+               "flavor": "Avant que vous demandiez, c'est un assortiment de viandes."
 			},
 			"peasant_bread_recipe": {
-			   "description": "A crusty, basic bread.",
-			   "recipe_name": "Peasant Bread"
+               "description": "Un pain simple mais croustillant.",
+               "recipe_name": "Pain paysan"
 			},
-			"food_name": "Food",
-			"ingredients_name": "Ingredients",
+            "food_name": "Nourriture",
+            "ingredients_name": "Ingrédients",
 			"veggie_stew_recipe": {
 			   "description": "A warm, savory broth, fortified with braised pumpkin!",
 			   "recipe_name": "Tasty Vegetable Stew",
@@ -5217,68 +5217,68 @@
 			},
 			"corn_bread_recipe": {
 			   "description": "A bread made from cornmeal.",
-			   "recipe_name": "Corn Bread",
-			   "flavor": "Like Ma used to make."
+               "recipe_name": "Pain de maïs",
+               "flavor": "Comme m'an le faisait."
 			},
 			"poyo_pot_pie_recipe": {
 			   "description": "A tasty meat and veggie pie.",
-			   "recipe_name": "Poyo Pot Pie",
+               "recipe_name": "Chausson au paté de poyo",
 			   "flavor": "Pie is always good."
 			},
 			"omelette_recipe": {
-			   "description": "Veggies and meat wrapped in egg.",
+               "description": "Viande et légumes battus dans des oeufs.",
 			   "recipe_name": "Omelette",
-			   "flavor": "Part of a hearty breakfast"
+               "flavor": "Elément d'un petit déjeuné sain."
 			},
 			"roast_poyo_recipe": {
-			   "description": "Slow roasted poyo meat",
-			   "recipe_name": "Roast Poyo",
-			   "flavor": "Put 'nother poyo on the barby."
+               "description": "Poyo délicatement rôti.",
+               "recipe_name": "Poyo rôti",
+               "flavor": "Aller hop, un autre poyo sur le barbeuc !"
 			},
 			"fried_eggs_recipe": {
-			   "description": "Eggs fried to order.",
-			   "recipe_name": "Fried Eggs",
-			   "flavor": "Do you like yours sunnyside up?"
+               "description": "Oeufs frits en commande !",
+               "recipe_name": "Oeufs frits",
+               "flavor": "Vous préférez les jaunes vers le haut?"
 			},
-			"animal_feed_name": "Animal Feed",
+            "animal_feed_name": "Nourriture pour animaux",
 			"sheep_feed_recipe": {
-			   "description": "A supplement for a healthy sheep diet",
-			   "recipe_name": "Sheep Feed"
+               "description": "Un supplément pour le régime des moutons.",
+               "recipe_name": "Nourriture pour moutons"
 			},
 			"poyo_feed_recipe": {
-			   "description": "For feeding one's poyos",
-			   "recipe_name": "Poyo Feed",
-			   "flavor": "Cluck cluck!"
+               "description": "Pour nourrir ses propres poyos.",
+               "recipe_name": "Nourriture pour Poyos",
+               "flavor": "Cot cot !"
 			},
 			"rabbit_feed_recipe": {
-			   "description": "Food for rabbits",
-			   "recipe_name": "Rabbit Feed"
+               "description": "A base de carrottes.",
+               "recipe_name": "Nourriture pour lapin"
 			},
-			"workbenches_name": "Workbenches",
+            "workbenches_name": "Ateliers",
 			"cook_workbench_recipe": {
-			   "description": "Use to cook nutritions soups and stews.",
-			   "recipe_name": "Stone Cauldron",
-			   "flavor": "Stone, to keep the food hot for a long time."
+               "description": "Utilisé pour mitonner des soupes et des ragoûts bien calorifiques.",
+               "recipe_name": "Chaudron de pierre",
+               "flavor": "En pierre, pour garder les aliments chaud trés longtemps."
 			},
 			"cook_mill_recipe": {
-			   "description": "For grinding grains into flour",
-			   "recipe_name": "Stone Mill Grinder"
+               "description": "Utilisée par le cuisinier pour moudre le grain en farine.",
+               "recipe_name": "Meule de pierre"
 			},
 			"cook_oven_recipe": {
-			   "description": "Great for roasting",
-			   "recipe_name": "Stone Oven"
+               "description": "Super pour le rôtissage.",
+               "recipe_name": "Four à bois"
 			}
 		 },
 		 "cook_mill": {
 			"cook_mill_ghost": {
-			   "display_name": "Stone Mill Grinder",
-			   "description": "Used by the cook to grind grains into flour."
+               "display_name": "Meule de pierre",
+               "description": "Utilisée par le cuisinier pour moudre le grain en farine."
 			}
 		 },
 		 "cook_oven": {
 			"cook_oven_ghost": {
-			   "display_name": "Stone Oven",
-			   "description": "Great for roasting"
+               "display_name": "Four à bois",
+               "description": "Super pour le rôtissage."
 			}
 		 }
 	  },
@@ -5296,24 +5296,24 @@
             "requirements": "Houe d'agriculteur, fabriquée par le menuisier.",
 			"level_6_data": {
 			   "perk_000_name": "Nature's Surprise (à venir)",
-			   "perk_000_description": "Occasionally, the farmer's special touch yields... special results."
+			   "perk_000_description": "De temps en temps, le doigté spécial de l'agriculteur à des effets... spéciaux."
 			},
 			"level_1_data": {
-			   "perk_000_name": "Gain de vitesse 10%",
-			   "perk_000_description": "Running fresh food from field to table has increased the farmer's footspeed."
+               "perk_000_name":  "Gain de vitesse 10%",
+               "perk_000_description": "Transporter les produits frais des champs à la table a finit par augmenter la vitesse de l'agriculteur."
 			},
 			"level_2_data": {
-			   "perk_000_name": "Job Opportunities",
-			   "perk_000_description": "Exposure to fresh food has given the farmer ideas about cooked food. See the promotion menu for details."
+               "perk_000_name": "Opportunité de travail",
+               "perk_000_description": "L'exposition aux produits frais à donné des idées de plats cuisinés à l'agriculteur. Voir l'arbre de promotion pour plus de détail."
 			},
 			"level_3_data": {
-			   "perk_000_name": "Bountiful Harvest",
-			   "perk_000_description": "The farmer coaxes greater yield from each plant."
+               "perk_000_name": "Récolte généreuse",
+               "perk_000_description": "L'agriculteur obtient un meilleur rendement de chaque plante."
 			}
 		 },
 		 "farmer_buffs": {
 			"speed_1_buff": {
-			   "description": "Running fresh food from field to table has increased the farmer's footspeed."
+               "description": "Transporter les produits frais des champs à la table a finit par augmenter la vitesse de l'agriculteur."
 			}
 		 },
 		 "farmer_hoe": {
@@ -5407,20 +5407,20 @@
 			   "perk_000_description": "The mason can now make a solid array of basic furniture."
 			},
 			"level_3_data": {
-			   "perk_000_name": "Artistic Inspiration",
-			   "perk_000_description": "When inspiration strikes, the mason may embellish his works in unexpected ways."
+               "perk_000_name": "Inspiration artistique",
+               "perk_000_description": "Quand l'inspiration frappe, le tailleur de pierre est capable d'obtenir des résultats surprenant."
 			}
 		 },
 		 "mason_chisel": {
-			"display_name": "Mason's Chisel",
+            "display_name": "Ciseau de tailleur de pierre",
 			"description": "Tools of the trade for a mason.",
 			"mason_chisel_talisman": {
-			   "display_name": "Mason's Chisel",
+               "display_name": "Ciseau de tailleur de pierre",
 			   "description": "Required to promote a hearthling into a mason."
 			}
 		 },
 		 "mason_hammer": {
-			"display_name": "Mason's Hammer",
+            "display_name": "Marteau de tailleur de pierre",
 			"description": "Tools of the trade for a mason."
 		 },
 		 "mason_outfit": {
@@ -5462,7 +5462,7 @@
 			},
 			"cook_spoon_recipe": {
 			   "description": "Required to promote a hearthling into a Cook.",
-			   "recipe_name": "Cook's Spoon",
+               "recipe_name": "Cuillère de cuisinier",
 			   "flavor": "COOKED FOOOOOOOOD!!!!!! --Alton The Bard"
 			},
 			"gargoyle_recipe": {
@@ -5470,30 +5470,30 @@
 			   "recipe_name": "Wall Mounted Decorative Gargoyle",
 			   "flavor": "Remnants of the servants of Brelor, Crownless King."
 			},
-			"tools_name": "Tools",
-            "storage_name": "Storage",
-			"signage_decoration_name": "Signage & Decoration",
-			"building_parts_name": "Building Parts",
-			"weapons_name": "Weapons",
-			"furniture_name": "Furniture",
+            "tools_name": "Outils",
+            "storage_name": "Rangement",
+            "signage_decoration_name": "Signalétique et décoration",
+            "building_parts_name": "Eléments de construction",
+            "weapons_name": "Armes",
+            "furniture_name": "Meubles",
 			"stone_bench_recipe": {
 			   "description": "Outdoor seating for moments of relaxation.",
-			   "recipe_name": "Stone Bench",
-			   "flavor": "Pretty and functional. Matches the tombstones."
+               "recipe_name": "Banc de pierre",
+               "flavor": "Esthétique et fonctionnel. S'accorde avec les pierres tombales."
 			},
 			"stone_brazier_recipe": {
 			   "description": "A small fire pit that provides comfort and warmth at night.",
-			   "recipe_name": "Stone Brazier",
+               "recipe_name": "Brazero de pierre",
 			   "flavor": "Warning: Do not drop anything in while it's lit."
 			},
 			"stone_bricks_recipe": {
-			   "description": "A key component of stone structures like castles and roads.",
-			   "recipe_name": "Stack of Stone Bricks",
+               "description": "Un composant clef pour les structures de pierre comme les châteaux et les routes.",
+               "recipe_name": "Tas de bloc de pierre",
 			   "flavor": "Tis a lucky thing, boy, that the square is the natural shape within most rocks. --Garen Knapper"
 			},
 			"stone_chair_recipe": {
-			   "description": "Not horribly comforable, but a symbol of status.",
-			   "recipe_name": "Stone Chair",
+               "description": "Pas super confortable mais un signe de statut social.",
+               "recipe_name": "Chaise de pierre",
 			   "flavor": "Outdoorsy!"
 			},
             "stone_chest_recipe": {
@@ -5502,41 +5502,41 @@
                "flavor": "'Ecoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.'--Edolf, barde ambulant"
             },
 			"stone_garden_lantern_recipe": {
-			   "description": "An ancient-looking lantern with great ambiance.",
-			   "recipe_name": "Stone Garden Lantern",
+               "description": "Une lanterne au look antique qui donne une super ambiance.",
+               "recipe_name": "Lanterne d'extérieur en pierre",
 			   "flavor": "Only slightly ominous looking."
 			},
 			"stone_maul_recipe": {
-			   "description": "The perfect tool for bludgeoning",
-			   "recipe_name": "Stone Maul",
-			   "flavor": "A modern adaptation of an ancient weapon."
+               "description": "L'outil idéal pour tout écraser.",
+               "recipe_name": "Masse de pierre",
+               "flavor": "Une adaptation moderne d'une arme ancienne."
 			},
 			"stone_table_recipe": {
-			   "description": "It's considerable weight gives it a sense of gravitas. For serious business only.",
-			   "recipe_name": "Stone Table",
-			   "flavor": "No lions were harmed in its construction."
+               "description": "Son poids considérable donne du sens à la gravité. Seulement pour les affaires sérieuses.",
+               "recipe_name": "Table de pierre",
+               "flavor": "Aucun lion n'a été blessé lors que sa fabrication."
 			},
 			"stone_wall_lantern_recipe": {
-			   "description": "Attaches to the walls of buildings, providing light",
-			   "recipe_name": "Stone Wall-mounted Lantern",
-			   "flavor": "Cons: Heavy. Pros: Unlikely to burn itself down."
+               "description": "Suspendue aux murs des bâtiments et produit de la lumière.",
+               "recipe_name": "Lanterne murale en pierre",
+               "flavor": "Contre : lourd. Pour : aucune chance de s'auto-enflammer."
 			},
 			"tower_brazier_recipe": {
-			   "description": "Fashioned after a castle tower, it provides a strong beacon at night.",
-			   "recipe_name": "Tower Brazier",
-			   "flavor": "Great for lining garden paths and intimidating guests."
+               "description": "Inspiré par une tour de château, il devient un signal lumineux puissant la nuit.",
+               "recipe_name": "Brazero sur colonne",
+               "flavor": "Super pour illuminer les allées de jardin et intimider les invités."
 			},
 			"mason_workbench_recipe": {
-			   "description": "Required to produce most of the Mason's recipes.",
-			   "recipe_name": "Mason Workbench",
+               "description": "Indispensable à la fabrication de la plupart des produits du tailleur de pierre.",
+               "recipe_name": "Table de tailleur de pierre",
 			   "flavor": "Tappety-tap; Make the earth sing, Raise Brelor's ghost, Watch the mountain take wing."
 			},
 			"mason_pedestal_recipe": {
 			   "description": "A well lit place for creating stone artwork.",
-			   "recipe_name": "Mason's Pedestal",
+               "recipe_name": "Autel de tailleur de pierre",
 			   "flavor": "Snap and spark, hiss of coal, light the way, transmute the earth whole."
 			},
-			"workbenches_name": "Workbenches"
+            "workbenches_name": "Ateliers"
 		 }
 	  },
 	  "miner": {
@@ -5550,18 +5550,18 @@
 		 "shepherd_description": {
 			"display_name": "Berger",
             "description": "Domestique les animaux sauvages pour des ressources et de la nourriture.",
-			"requirements": "2 levels of Trapper and a Shepherd's Crook, crafted by the Carpenter.",
+            "requirements": "Trappeur niv2 et un bâton de berger sculpté par le menuisier.",
 			"level_4_data": {
-			   "perk_000_name": "Animal Magnetism",
-			   "perk_000_description": "Wild animals are more likely to appear whenever the shepherd is looking for them."
+               "perk_000_name": "Magnétisme animal",
+               "perk_000_description": "Le berger a plus de chance de trouver des animaux sauvages quand il en cherche."
 			},
 			"level_1_data": {
-			   "perk_000_name": "Gain de vitesse 10%",
-			   "perk_000_description": "The shepherd is now more adept at getting the flock to walk a tiny bit faster."
+               "perk_000_name": "Gain de vitesse 10%",
+               "perk_000_description": "Grace au berger le troupeau se déplace un peu plus vite."
 			},
 			"level_3_data": {
-			   "perk_000_name": "Extra Bonuses",
-			   "perk_000_description": "The shepherd's skill produces greater yields in animal products."
+               "perk_000_name": "Bonus supplémentaires",
+               "perk_000_description": "Les compétences du berger permettent d'obtenir un meilleur rendement en produits animaux."
 			}
 		 },
 		 "shepherd_crook": {
@@ -5577,8 +5577,8 @@
 			}
 		 },
 		 "shepherd_outfit": {
-			"display_name": "Shepherd Outfit",
-			"description": "Uniform for all shepherds"
+            "display_name": "Habit de berger",
+            "description": "L'uniforme traditionnel des bergers."
 		 },
 		 "shepherd_pasture": {
             "display_name": "Pâturage",
@@ -5598,31 +5598,31 @@
 			"description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fournitures.",
 			"requirements": "Couteau de trappeur, fabriqué par le forgeron.",
 			"level_1_data": {
-			   "title": "Journeyman Trapper",
+			   "title": "Compagnon trappeur",
 			   "perk_000_name": "Gain de vitesse 10%",
 			   "perk_000_description": "Long walks have increased the trapper's foot speed."
 			},
 			"level_3_data": {
-			   "perk_000_name": "Efficient Cuts",
-			   "perk_000_description": "Long practice helps the trapper salvage more from each animal."
+               "perk_000_name": "Dépeçage efficace",
+               "perk_000_description": "Une longue pratique permet au trappeur de récupérer des ressources de chaque animal."
 			},
 			"level_2_data": {
-			   "perk_000_name": "Charm Pet",
-			   "perk_001_name": "Job Opportunities",
-			   "perk_000_description": "The trapper will occasionally choose to turn a particulary fine animal into a pet!",
-			   "perk_001_description": "The trapper now qualifies for advanced jobs. Click the promote command for details."
+               "perk_000_name": "Charmer des familliers",
+               "perk_001_name": "Opportunité de travail",
+               "perk_000_description": "De temps à autre, le trappeur choisira d'apprivoiser un animal particulièrement beau.",
+               "perk_001_description": "Le trappeur est maintenant qualifié pour un travail plus avancé.<br>Voir l'arbre de promotion pour plus de détails"
 			},
 			"level_6_data": {
-			   "perk_000_name": "The Deadliest Catch (Not Implemented!)",
-			   "perk_000_description": "Lay special trapping zones to 'deter' acquisitive neighbors."
+               "perk_000_name": "Le coup le-plus-mortel (à venir)",
+               "perk_000_description": "Une zone de chasse spéciale qui dissuade les voisins envieux."
 			},
 			"level_5_data": {
-			   "perk_000_name": "Toothier Traps (Not implemented!)",
-			   "perk_000_description": "Traps now lure in and hold larger prey."
+               "perk_000_name": "Piège à dents (à venir)",
+               "perk_000_description": "Ce piège attire et capture de plus grosses proies."
 			},
 			"level_4_data": {
-			   "perk_000_name": "Backpack Size +8",
-			   "perk_000_description": "The trapper has become more efficient at packing in the loot."
+               "perk_000_name": "Super sac-à-dos",
+               "perk_000_description": "Le trappeur est devenu un maître du packetage. +8 à l'espace de son sac-à-dos."
 			}
 		 },
 		 "snare_trap": {
@@ -5630,18 +5630,18 @@
             "description": "Immobilise de manière sûre sa proie.",
 			"commands": {
 			   "harvest_trapped_beast": {
-				  "display_name": "Harvest Beast",
-				  "description": "Slay the trapped beast and harvest him for materials!"
+                  "display_name": "Braconnage",
+                  "description": "Ou comment bien sacrifier l'animal capturé pour ses ressources."
 			   },
 			   "tame_trapped_beast": {
-				  "display_name": "Tame Beast",
-				  "description": "Make friends! Befriend the trapped beast and make it your pet."
+                  "display_name": "Apprivoiser",
+                  "description": "Méthode pour se faire des amis! Faites de la bête capturée une peluche vivante."
 			   }
 			}
 		 },
 		 "trapper_buffs": {
 			"speed_1_buff": {
-			   "description": "Long walks have increased the trapper's foot speed."
+               "description": "Les longues marches ont finis par améliorer la vitesse du trappeur."
 			}
 		 },
 		 "trapper_knife": {
@@ -5767,7 +5767,7 @@
 			"tapestry_wall_recipe": {
                "description": "Une scène décorative, tissée en fils et cordons colorés.",
                "recipe_name": "Tapisserie murale",
-			   "flavor": "What you see in its knotted depths tells you something about yourself."
+               "flavor": "Ce que vous voyez dans la profondeur de ses noeux vous renvoi à vous-même."
 			},
 			"thread_recipe": {
                "description": "Tout doux et totelement nécessaire à la fabrication du tissu.",
