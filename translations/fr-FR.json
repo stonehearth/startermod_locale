@@ -6,9 +6,9 @@
 			"eat_item": "mange [name(data.target)]",
 			"fill_storage": "rempli [name(data.target)]",
 			"restock_stockpile": "range [name(data.target)]",
-			"harvest_crop": "collecte [name(data.target)]",
-			"harvest_resource": "collecte [name(data.target)]",
-			"harvest_resource_node": "collecte [name(data.target)]",
+            "harvest_crop": "récolte [name(data.target)]",
+            "harvest_resource": "récolte [name(data.target)]",
+            "harvest_resource_node": "récolte [name(data.target)]",
 			"light_firepit": "allume [name(data.target)]",
 			"place_item_on_structure": "place [name(data.target)]",
 			"work_at_workshop": "fabrique [str(data.craftable_name)]",
@@ -19,14 +19,14 @@
 			"collect_ingredient": "rassemble des ingrédients",
 			"build_workshop": "construit un atelier",
 			"death": "se meurt",
-			"eat": "cherche à manger",
+			"eat": "cherche de quoi manger",
 			"find_stray_animal": "cherche des animaux errants",
 			"harvest_field": "récolte un champ",
 			"idle": "inoccupé",
 			"patrol": "patrouille",
 			"plant_crop": "ensemence un champ",
 			"return_animals": "retourne au pâturage",
-			"combat": "engagé en combat",
+			"combat": "est engagé en combat",
 			"cower": "est tétanisé",
 			"flee": "s'enfuit",
 			"panic": "panique",
@@ -39,7 +39,7 @@
 			"steal_bait": "vole un appât",
 			"build_ladder": "construit une échelle",
 			"promote": "change de métier",
-			"move_item_to_storage": "enmène un objet au stockage",
+			"move_item_to_storage": "enmène un objet en réserve",
 			"teardown_ladder": "démonte une échelle",
 			"drop_item_near_workshop": "retire un atelier",
 			"fabricate_structure": "construit",
@@ -69,10 +69,10 @@
 			"terrain_slice_vision_icon_name": "Terrain",
 			"terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l'élévation pour voir différentes couches.",
 			"terrain_xray_vision_icon_name": "Rayon X",
-			"terrain_xray_vision": "Vue Rayon X",
+			"terrain_xray_vision": "Affichage du terrain<br>en mode rayon-X",
 			"terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains.",
-            "terrain_xray_vision_flat": "flat",
-            "terrain_xray_vision_full": "full"
+            "terrain_xray_vision_flat": "Tronqué",
+            "terrain_xray_vision_full": "Complet"
 		 },
 		 "promotion_tree": {
 			"title": "Choisir une métier",
@@ -1661,7 +1661,7 @@
                         "create_camp": {
                            "ogo_tent": {
                               "ogo_tent": {
-                                 "display_name": "Ogo's Tent",
+                                 "display_name": "La tente d'Ogo",
                                  "description": "Made from bleached pelts."
                               },
                               "ogo": {
@@ -1671,14 +1671,14 @@
                            },
                            "ogo_throne": {
                               "ogo_throne": {
-                                 "display_name": "Ogo's Throne",
+                                 "display_name": "Trône d'Ogo",
                                  "description": "Decorated with Mountain's Baby Tusks"
                               }
                            },
                            "wolf_kennel": {
                               "wolf_cage": {
-                                 "display_name": "Wolf Cage",
-                                 "description": "Property of Ogo Skullbonker"
+                                 "display_name": "Cage de loup",
+                                 "description": "Propriété d'Ogo Cognecrâne"
                               }
                            }
                         }
@@ -1721,14 +1721,14 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "A stray goblin wolf!",
-						   "message": "He wants to eat you."
+						   "title": "Un loup gobelin errant !",
+						   "message": "Il veut vous manger."
 						}
 					 }
 				  },
 				  "raid_stockpiles": {
 					 "goblin_wolf": {
-						"description": "Terrifyingly ferocious"
+						"description": "Férocement terrifiant"
 					 }
 				  }
 			   },
@@ -1736,17 +1736,17 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "A goblin!",
-						   "message": "He wants your stuff"
+						   "title": "Un gobelin !",
+						   "message": "Il veut vos biens"
 						}
 					 }
 				  },
 				  "raid_stockpiles": {
 					 "thiefs": {
-						"description": "Cowardly but covetous"
+						"description": "Froussard mais avide de convoitise"
 					 },
 					 "escorts": {
-						"description": "Covetous and armed!"
+						"description": "Avide de convoitise et armé !"
 					 }
 				  }
 			   },
@@ -1754,8 +1754,8 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "A dangerous goblin!",
-						   "message": "He wants your stuff"
+						   "title": "Un gobelin dangereux !",
+						   "message": "Il veut vos biens"
 						}
 					 }
 				  }
@@ -1764,14 +1764,14 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "A goblin sneaks into camp!",
-						   "message": "He's into stealth"
+						   "title": "Un gobelin se faufile dans le camp !",
+						   "message": "Il est furtif"
 						}
 					 }
 				  },
 				  "raid_stockpiles": {
 					 "thiefs": {
-						"description": "Into black pajamas."
+						"description": "En pyjama noir."
 					 }
 				  }
 			   },
@@ -1779,17 +1779,17 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "A thief approaches!",
-						   "message": "He wants your stuff!!!."
+						   "title": "Un voleur se rapproche !",
+						   "message": "Il veut vos biens !!!."
 						}
 					 }
 				  },
 				  "raid_stockpiles": {
 					 "thiefs": {
-						"description": "Into black pajamas."
+						"description": "En pyjama noir."
 					 },
 					 "goblin_wolf": {
-						"description": "Terrifyingly ferocious"
+						"description": "Férocement terrifiant"
 					 }
 				  }
 			   },
@@ -1838,19 +1838,19 @@
 		 },
 		 "defender": {
 			"defender_buff": {
-			   "display_name": "Defender",
-			   "description": "Increased courage!"
+			   "display_name": "Défenseur",
+			   "description": "Augmente le courage !"
 			}
 		 },
 		 "devoted": {
 			"devoted_buff": {
-			   "display_name": "Devoted",
-			   "description": "Devoted"
+			   "display_name": "Consacré",
+			   "description": "Consacré"
 			}
 		 },
 		 "groggy": {
 			"groggy_buff": {
-			   "display_name": "Groggy",
+			   "display_name": "Chancelant",
 			   "description": "A hard night's sleep on the ground lowers speed by 25%. A bed would be much better!"
 			}
 		 },
@@ -1870,31 +1870,31 @@
 		 },
 		 "sleeping": {
 			"sleeping_buff": {
-			   "display_name": "Sleeping",
-			   "description": "Sleeping...",
-			   "short_description": "Sleeping..."
+			   "display_name": "Sommeil",
+			   "description": "En train de dormir...",
+			   "short_description": "En train de dormir..."
 			}
 		 },
 		 "snared": {
 			"snared_buff": {
-			   "display_name": "Snared!",
-			   "description": "Trapped by a snare and unable to move"
+			   "display_name": "Enlacés!",
+			   "description": "Piégés et incapables de se déplacer"
 			}
 		 },
 		 "starving": {
 			"starving_buff": {
-			   "display_name": "Starving",
-			   "description": "Starving hearthling needs food badly!"
+			   "display_name": "Affamé",
+			   "description": "Un hearthling affamé a gravement besoin de nourriture !"
 			},
 			"starving_animal_buff": {
-			   "display_name": "Starving",
-			   "description": "This animal needs food badly! It will not produce resources while starving."
+			   "display_name": "Affamé",
+			   "description": "Cet animal a gravement besoin de nourriture ! Il ne vaudra rien tant qu'il sera affamé."
 			}
 		 },
 		 "stopped": {
 			"stopped_buff": {
-			   "display_name": "Stopped",
-			   "description": "Put this buff on someone who needs to stop, right now."
+			   "display_name": "Arrêté",
+			   "description": "Mettez ce buff sur quelqu'un qui a besoin de s'arrêter, dès maintenant."
 			}
 		 }
 	  },
@@ -2075,10 +2075,10 @@
 		 },
 		 "chopping_wood": {
 			"chopping_logs": {
-			   "text": "On Chopping Wood:",
+			   "text": "En couppant du bois :",
 			   "logs": {
 				  "beleaguered_leader": {
-					 "000": "Today, we're chopping trees for wood. I'm already sick of the wood jokes.",
+					 "000": "Aujourd'hui, nous allons couper des arbres pour le bois. Je suis déjà malade de cette mauvaise farce.",
 					 "001": "Timbeerrrrr!!! I could get used to saying that.",
 					 "002": "The gang's keeping track of who's chopped down the most trees. It's me but in the time it would take to correct their math I'd rather just add another tree to my total.",
 					 "003": "Thought I saw a hornet's nest while we were logging. Luckily, everyone got out of the way in time.",
@@ -2171,7 +2171,7 @@
 			   "text": "On Tranquility",
 			   "logs": {
 				  "generic": {
-					 "000": "Feels good to be alive!",
+					 "000": "Ça fait du bien d'être en vie !",
 					 "001": "Another awesome day in town.",
 					 "002": "Peaceful!",
 					 "003": "This seems like a pretty sheltered spot.",
@@ -2215,13 +2215,13 @@
 			"generic_panic": {
 			   "logs": {
 				  "diligent_sweetheart": {
-					 "000": "Oh no! Monsters!",
-					 "001": "Everyone, save yourselves!",
-					 "002": "AAAGH! MONSTERS!!!",
-					 "003": "AAAA! Please don't hurt us!!!",
-					 "004": "If I can't see it, maybe it can't see me?",
+					 "000": "Oh non ! Des monstres !",
+					 "001": "Tout le monde, sauve-qui-peut !",
+					 "002": "AAAH! DES MONSTRES !!!",
+					 "003": "AAAAH! S'il vous plaît ne nous faite pas de mal !!!",
+					 "004": "Si je ne peux pas le voir, peut-être il ne peut pas me voir ?",
 					 "teacher": {
-						"000": "[str(entry.teacher)] SAVE US!!!"
+						"000": "[str(entry.teacher)] SAUVEZ-NOUS !!!"
 					 }
 				  },
 				  "insufferable_academic": {
@@ -2601,7 +2601,7 @@
 		 },
 		 "eat_once_per_day": {
 			"eat_once_daily": {
-			   "text": "On Eating:",
+			   "text": "A propos des repas :",
 			   "logs": {
 				  "generic": {
 					 "000": "Food! The [str(entry.recent_food)] tastes surprisingly good today.",
@@ -2627,7 +2627,7 @@
 		 },
 		 "embarking": {
 			"embarking": {
-			   "text": "On Arriving:",
+               "text": "Sur l'arrivée :",
 			   "logs": {
 				  "insufferable_academic": {
 					 "000": "Three days have passed since I had a decent philosophical conversation. Trying not to panic. Failing. Trying to keep it in. Succeeding. Mostly."
@@ -2761,7 +2761,7 @@
 		 },
 		 "no_food_all_day": {
 			"foodless": {
-			   "text": "On Having No Food:",
+               "text": "Sur le manque de nourriture :",
 			   "logs": {
 				  "insufferable_academic": {
 					 "000": "Fasting for a day merely offers an opportunity to observe the wailings of my monkey mind.",
@@ -2893,25 +2893,25 @@
 	  "armor": {
 		 "basic_shield": {
 			"display_name": "Bouclier fidèle",
-			"description": "Armure portative !",
+            "description": "Armure portable !",
 			"basic_shield_iconic": {
 			   "display_name": "Bouclier fidèle",
-			   "description": "Armure portative !"
+               "description": "Armure portable !"
 			}
 		 },
 		 "iron_shield": {
-			"display_name": "Bouclier lourd en fer",
+			"display_name": "Bouclier lourd de fer",
 			"description": "Ouuf. Lourd.",
 			"iron_shield_iconic": {
-			   "display_name": "Bouclier lourd en fer",
+			   "display_name": "Bouclier lourd de fer",
 			   "description": "Ouuf. Lourd."
 			}
 		 },
 		 "bronze_breastplate": {
-			"display_name": "Plastron en bronze",
+			"display_name": "Plastron de bronze",
 			"description": "Armure",
 			"bronze_breastplate_iconic": {
-			   "display_name": "Plastron en bronze",
+			   "display_name": "Plastron de bronze",
 			   "description": "Armure"
 			}
 		 },
@@ -2924,11 +2924,11 @@
 			}
 		 },
 		 "iron_mail": {
-			"display_name": "Cuirasse en fer",
-			"description": "Une armure complète en fer",
+			"display_name": "Côte de maille en fer",
+			"description": "Un ensemble complet de maille de fer",
 			"iron_mail_iconic": {
-			   "display_name": "Cuirasse en fer",
-			   "description": "Une armure complète en fer"
+			   "display_name": "Côte de maille en fer",
+			   "description": "Un ensemble complet de maille de fer"
 			}
 		 },
 		 "leather_vest": {
