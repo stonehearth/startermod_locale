@@ -333,17 +333,17 @@
 					 "tip_description": "Bouton droite pour sortir ce mode"
 				  },
 				  "create_farm": {
-					 "display_name": "Ferme",
-					 "description": "Place une ferme sur le sol.",
+					 "display_name": "Champ",
+					 "description": "Place une parcelle de terre cultivable sur le sol.",
 					 "required_job_text": "Nécessite un fermier",
-					 "tip_title": "Cliquez et relachez pour créer un nouveau champs",
+					 "tip_title": "Cliquez et relachez pour créer un nouveau champ",
 					 "tip_description": "Les fermiers vont retourner la terre et semer ici"
 				  },
 				  "create_trapping_grounds": {
 					 "display_name": "Zone piégé",
 					 "description": "Place des pièges pour capturer des petites bestioles.",
 					 "required_job_text": "Nécessite un trappeur",
-					 "tip_title": "Cliquez et relachez pour une zone piégé",
+					 "tip_title": "Cliquez et relachez pour créer une zone piégé",
 					 "tip_description": "Les trappeurs capturent des bestioles pour leur nourriture et leur ressources dans cette zone"
 				  },
 				  "create_pasture": {
@@ -776,44 +776,44 @@
 	  },
 	  "shell": {
 		 "loading_screen": {
-			"initial_load_map_text": "Generating World",
+			"initial_load_map_text": "Génération du monde",
 			"loading_map_flavor_text": {
-			   "001": "calcul des angles...",
-			   "002": "decompression des voxels...",
-			   "003": "synthetisation de la faune...",
-			   "004": "redistubuting redistrubutables...",
-			   "005": "terracing terrain...",
-			   "006": "stocking piles...",
-			   "007": "inflating trees...",
-			   "008": "rising sun...",
-			   "009": "floating clouds...",
-			   "010": "burlying hands...",
-			   "011": "bushing berries...",
-			   "012": "confabulating childhood...",
-			   "013": "resolving determinism...",
-			   "014": "cubulating companionship...",
-			   "015": "existentializing dilemmas...",
-			   "016": "improvising morals...",
-			   "017": "splining reticulators..",
-			   "018": "diversifying gender...",
-			   "019": "homogenizing motivation...",
-			   "020": "deriving history...",
-			   "021": "indexing bugs...",
-			   "022": "compiling truth...",
-			   "023": "recollecting marbles...",
-			   "024": "effecting mass...",
-			   "025": "experiencing higher math...",
-			   "026": "proliferating flowers...",
-			   "027": "escaping realism...",
-			   "028": "positioning plushies...",
-			   "029": "regulating hairbobs..."
+			   "001": "calcul des angles ...",
+			   "002": "décompression des voxels ...",
+			   "003": "synthétisation de la faune ...",
+			   "004": "disperse et remue ...",
+			   "005": "terrassement du terrain ...",
+			   "006": "range le désordre ...",
+			   "007": "gonfle les arbres ...",
+			   "008": "lève le soleil ...",
+			   "009": "fait flotter les nuages ...",
+			   "010": "malmène de petite choses ...",
+			   "011": "plante les baies ...",
+			   "012": "converse avec son enfance ...",
+			   "013": "résout le déterminisme ...",
+			   "014": "calibre la camaraderie ...",
+			   "015": "existentialisme les dilemmes ...",
+			   "016": "improvise la morale ...",
+			   "017": "forme plusieurs réseaux tridimensionnels ...",
+			   "018": "diversification des sexes ...",
+			   "019": "homogénéisation de la motivation ...",
+			   "020": "faire dévier l'histoire ...",
+			   "021": "indexation des microbes ...",
+			   "022": "compile la vérité ...",
+			   "023": "réassemble le marbres ...",
+			   "024": "affecter les foules ...",
+			   "025": "apprendre les mathématique avancé ...",
+			   "026": "faire proliférer les fleurs ...",
+			   "027": "s'écarter de la réalité ...",
+			   "028": "positionnement des peluches ...",
+			   "029": "régularise les dreadlocks ..."
 			},
 			"tips": {
 			   "000": "Si un travailleur est bloqué, construire une échelle lui permettrait de l'en sortir !",
 			   "001": "Les habitants passeront une meilleur nuit en la passant dans un lit !",
-			   "002": "Build pens around your pastures to make sure shepherded animals stay put.",
-			   "003": "Stockpiles can be changed to hold specific kinds of items.",
-			   "004": "You can farm silkweed for a steady supply of thread fiber.",
+			   "002": "Construire des enclos autour de vos pâturages pour vous assurer que les animaux restent ensemble.",
+			   "003": "Les stocks peuvent être modifiés pour ne contenur que certaines sortes d'éléments spécifiques.",
+			   "004": "Vous pouvez cultiver du fil-de-soie pour un approvisionnement régulier de la fibre de fil.",
 			   "005": "A well fed town is a happy town.",
 			   "006": "Use the . and , keys to rotate an item or building before placing it.",
 			   "007": "Les routes permettent à vos habitants de se déplacer plus vites !",
@@ -3238,26 +3238,26 @@
 		 },
 		 "foo_truffle": {
 			"silkweed_crop": {
-			   "display_name": "Silkweed",
+			   "display_name": "Fil-de-soie",
 			   "description": "This plant's fiber can be spun into thread",
 			   "growth_stage": {
 				  "004": {
-					 "name": "Mature silkweed"
+					 "name": "Fil-de-soie mature"
 				  },
 				  "001": {
-					 "name": "Silkweed sprout"
+					 "name": "Pousse de fil-de-soie"
 				  },
 				  "000": {
-					 "name": "Silkweed seedling"
+					 "name": "Semis de fil-de-soie"
 				  },
 				  "019": {
-					 "name": "Rotten silkweed"
+					 "name": "Fil-de-soie pourri"
 				  },
 				  "003": {
-					 "name": "Immature silkweed"
+					 "name": "Fil-de-soie immature"
 				  },
 				  "002": {
-					 "name": "Stubby silkweed"
+					 "name": "Fil-de-soie trapu"
 				  }
 			   }
 			}
@@ -3337,26 +3337,26 @@
 			}
 		 },
 		 "silkweed_crop": {
-			"display_name": "Silkweed",
+			"display_name": "Fil-de-soie",
 			"description": "This plant's fiber can be spun into thread",
 			"growth_stage": {
 			   "004": {
-				  "name": "Mature silkweed"
+				  "name": "Fil-de-soie mature"
 			   },
 			   "001": {
-				  "name": "Silkweed sprout"
+				  "name": "Pousse de fil-de-soie"
 			   },
 			   "000": {
-				  "name": "Silkweed seedling"
+				  "name": "Semis de fil-de-soie"
 			   },
 			   "019": {
-				  "name": "Rotten silkweed"
+				  "name": "Fil-de-soie pourri"
 			   },
 			   "003": {
-				  "name": "Immature silkweed"
+				  "name": "Fil-de-soie immature"
 			   },
 			   "002": {
-				  "name": "Stubby silkweed"
+				  "name": "Fil-de-soie trapu"
 			   }
 			}
 		 },
@@ -3403,26 +3403,26 @@
 			}
 		 },
 		 "tester_silkweed_crop": {
-			"display_name": "Tester Silkweed",
+			"display_name": "Fil-de-soie (test)",
 			"description": "This plant's fiber can be spun into thread",
 			"growth_stage": {
 			   "004": {
-				  "name": "Mature silkweed"
+				  "name": "Fil-de-soie mature"
 			   },
 			   "001": {
-				  "name": "Silkweed sprout"
+				  "name": "Pousse de fil-de-soie"
 			   },
 			   "000": {
-				  "name": "Silkweed seedling"
+				  "name": "Semis de fil-de-soie"
 			   },
 			   "019": {
-				  "name": "Rotten silkweed"
+				  "name": "Fil-de-soie pourri"
 			   },
 			   "003": {
-				  "name": "Immature silkweed"
+				  "name": "Fil-de-soie immature"
 			   },
 			   "002": {
-				  "name": "Stubby silkweed"
+				  "name": "Fil-de-soie trapu"
 			   }
 			}
 		 },
@@ -4177,7 +4177,7 @@
 		 },
 		 "silkweed": {
 			"silkweed": {
-			   "display_name": "Wild silkweed",
+			   "display_name": "Fil-de-soie sauvage",
 			   "description": "This plant's fiber can be spun into thread.",
 			   "unripe_description": "This plant has been harvested and hasn't grown back yet."
 			}
@@ -4284,7 +4284,7 @@
 		 },
 		 "fiber": {
 			"silkweed_bundle": {
-			   "display_name": "Silkweed Bundle",
+			   "display_name": "Bobine de fil-de-soie",
 			   "description": "Spinnable into thread"
 			},
 			"wool_bundle": {
