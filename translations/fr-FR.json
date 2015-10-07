@@ -1627,8 +1627,8 @@
                            "create_scout_camp": {
                               "campfire": {
                                  "campfire": {
-                                    "display_name": "Hypnotic Campfire",
-                                    "description": "But... what makes it green?"
+                                    "display_name": "Feu de camp hypnotique",
+                                    "description": "Mais ... pourquoi il est vert ?"
                                  },
                                  "workers": {
                                     "description": "Firekeeper"
@@ -1807,8 +1807,8 @@
                            "create_thief_camp": {
                               "thief_campfire": {
                                  "campfire": {
-                                    "display_name": "Hypnotic Campfire",
-                                    "description": "But... what makes it green?"
+                                    "display_name": "Feu de camp hypnotique",
+                                    "description": "Mais ... pourquoi il est vert ?"
                                  },
                                  "workers": {
                                     "description": "Designated hearth-tender"
@@ -3027,26 +3027,26 @@
 		 },
 		 "wooden_diamond_window": {
 			"wooden_diamond_window_ghost": {
-			   "display_name": "Cardre de fenêtre diamant",
-			   "description": "Tant pis pour la vie privée..."
+               "display_name": "Cardre de fenêtre en losange",
+               "description": "Bien mieux pour la vie privée..."
 			}
 		 },
 		 "wooden_door": {
 			"wooden_door_ghost": {
 			   "display_name": "Porte en bois",
-			   "description": "Enfin un peu de vide privée !"
+               "description": "Enfin un peu de vie privée !"
 			}
 		 },
 		 "wooden_door_2": {
 			"wooden_door_2_ghost": {
 			   "display_name": "Porte en bois renforcée",
-			   "description": "Plus robuste que votre porte classique."
+               "description": "Plus robuste qu'une porte classique."
 			}
 		 },
 		 "wooden_door_4x4": {
 			"wooden_door_ghost": {
 			   "display_name": "Porte en bois",
-			   "description": "Enfin un peu de vide privée !"
+			   "description": "Enfin un peu de vie privée !"
 			}
 		 },
 		 "wooden_double_door": {
@@ -3058,7 +3058,7 @@
 		 "wooden_window_frame": {
 			"wooden_window_frame_ghost": {
 			   "display_name": "Cadre de fenêtre en bois",
-			   "description": "Tant pis pour la vie privée..."
+               "description": "Bien mieux pour la vie privée..."
 			}
 		 }
 	  },
@@ -3083,7 +3083,7 @@
          },
          "stone_chest": {
             "stone_chest_ghost": {
-               "display_name": "Stone Chest",
+               "display_name": "Coffre de pierre",
                "description": "Storage container"
 			}
 		 },
@@ -3108,8 +3108,8 @@
 	  },
 	  "critters": {
 		 "poyo": {
-			"display_name": "Un Poyo",
-			"description": "Oiseaux sauvages dodus et savoureux",
+			"display_name": "Un poyo",
+			"description": "Oiseau sauvage dodu et savoureux",
 			"poyo_egg": {
 			   "display_name": "Oeuf de poyo fécondé.",
 			   "description": "Est-il en train d'éclore ?"
@@ -3163,23 +3163,23 @@
 	  },
 	  "crops": {
 		 "brightbell_crop": {
-			"display_name": "Brightbell Flower",
-			"description": "Just a flower.",
+			"display_name": "Jacinthe rose",
+			"description": "Juste une fleur.",
 			"growth_stage": {
 			   "001": {
-				  "name": "Brightbell Sprout",
+				  "name": "Pousse de jacinthe rose",
 				  "description": "Stubby."
 			   },
 			   "003": {
-				  "name": "Brightbell",
+				  "name": "Jacinthe rose",
 				  "description": "Beauty is its own reward."
 			   },
 			   "000": {
-				  "name": "Brightbell Seedling",
+				  "name": "Semis de Jacinthe rose",
 				  "description": "Full of potential."
 			   },
 			   "002": {
-				  "name": "Brightbell Bud",
+				  "name": "Bourgeon de Jacinthe rose",
 				  "description": "Awkward, gangly stage."
 			   }
 			}
@@ -3522,7 +3522,7 @@
 		 },
 		 "brightbell": {
 			"brightbell_ghost": {
-			   "display_name": "Hémérocalle",
+			   "display_name": "Jacinthe rose",
 			   "description": "Juste une fleur."
 			}
 		 },
@@ -3619,7 +3619,7 @@
 		 },
 		 "window_box_brightbell": {
 			"window_box_brightbell_ghost": {
-			   "display_name": "Jardinière d'hémérocalle",
+			   "display_name": "Jardinière de jacinthe rose",
 			   "description": "Un foyer coquet pour la plante."
 			}
 		 },
@@ -4158,7 +4158,7 @@
 			"unripe_description": "Not yet ripe for harvest."
 		 },
 		 "brightbell_plant": {
-			"display_name": "Wild Brightbell",
+			"display_name": "Jacinthe sauvage",
 			"description": "A harvestable wild flower"
 		 },
 		 "carrot": {
@@ -5045,7 +5045,7 @@
 			   "flavor": "From fiber, thread, from thread, fabric, from fabric, civilization."
 			},
 			"window_box_brightbell_recipe": {
-			   "description": "A planter box full of brightbell flowers, built to be placed below window frames.",
+			   "description": "A planter box pleine de jacinthe rose, built to be placed below window frames.",
 			   "recipe_name": "Brightbell Window Box",
 			   "flavor": "A brightbell a day keeps the Ogres away!"
 			},
