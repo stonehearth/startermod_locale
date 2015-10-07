@@ -654,7 +654,7 @@
                   "resources": "Ressources",
                   "construction": "Construction",
                   "goods": "Outils et marchandises",
-                  "gear": "Armes et Armures",
+                  "gear": "Armes et armures",
                   "food_and_drink": "Nourriture et boisson",
                   "wealth": "Richesse",
                   "tooltip_tools": "Outils",
@@ -681,7 +681,7 @@
                   "tooltip_gem": "Gemmes et trophés",
                   "tooltip_food_containers": "Fruits et légumes",
                   "tooltip_refined": "Plats cuisinés",
-                  "tooltip_ingredients": "Viandes"
+                  "tooltip_ingredients": "Matières premières"
                }
             }
          },

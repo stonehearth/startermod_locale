@@ -653,20 +653,20 @@
 				  "none": "Rien",
 				  "resources": "Resources",
 				  "construction": "Construction",
-				  "goods": "Outils et Biens",
-				  "gear": "Armes et armures",
-				  "food_and_drink": "Nourritures et boissons",
+                  "goods": "Outils et marchandises",
+                  "gear": "Armes et armures",
+                  "food_and_drink": "Nourriture et boisson",
 				  "wealth": "Richesse",
 				  "tooltip_tools": "Outils",
 				  "tooltip_wood": "Bois",
 				  "tooltip_stone": "Pierre",
-				  "tooltip_ore": "Minérais",
-				  "tooltip_animal_part": "animal parts",
+                  "tooltip_ore": "Minerais",
+				  "tooltip_animal_part": "Ressources animales",
 				  "tooltip_plant": "Plantes",
 				  "tooltip_portal": "Portes et fenêtres",
-				  "tooltip_furniture": "Fournitures",
+                  "tooltip_furniture": "Meubles",
 				  "tooltip_defense": "Défenses",
-				  "tooltip_light": "Torches et lampes",
+                  "tooltip_light": "Torches et éclairages",
 				  "tooltip_decoration": "Décorations",
 				  "tooltip_refined_cloth": "Fils et habits",
 				  "tooltip_refined_animal_part": "Biens fabriqués à partir d'animaux",
@@ -678,22 +678,22 @@
 				  "tooltip_exotic_gear": "Équipement exotique",
 				  "tooltip_drink": "Boissons savoureuses",
 				  "tooltip_gold": "Or",
-				  "tooltip_gem": "Gemmes et trophées",
+				  "tooltip_gem": "Gemmes et trophés",
 				  "tooltip_food_containers": "Récipients pour aliments",
-				  "tooltip_refined": "Aliments cuits",
+				  "tooltip_refined": "Plats cuisinés",
 				  "tooltip_ingredients": "Matières premières"
 			   }
 			}
 		 },
 		 "show_workshop": {
-			"workshop_title": "Crafting Orders",
-			"placeholder": "Type to search",
-			"show_workshop_description": "Owned by [name(owner)]",
-			"unclaimed_workshop_description": "Unclaimed",
-			"workshop_entity_claimed_description": "Owned by [name(self.stonehearth:workshop.crafter)]",
-			"craft_number_left": "Craft",
+			"workshop_title": "- Ordres de travail",
+            "placeholder": "Saisissez du texte pour rechercher",
+            "show_workshop_description": "Appartient à [name(owner)]",
+            "unclaimed_workshop_description": "Sans propriétaire",
+            "workshop_entity_claimed_description": "Appartient à [name(self.stonehearth:workshop.crafter)]",
+			"craft_number_left": "Fabriquer",
 			"craft_number_right": "tout de suite.",
-			"craft_up_to_left": "Toujours avoir",
+			"craft_up_to_left": "Maintenir",
 			"craft_up_to_right": "en inventaire.",
 			"craft_ingredients": "Ingrédients :",
 			"craft_requirements": "Eléments requis :",
@@ -747,7 +747,7 @@
 			   },
 			   "morale_descriptor": {
 				  "0": "Pitoyable",
-				  "1": "Miserable",
+				  "1": "Misérable",
 				  "2": "Abattu",
 				  "3": "Indiférrent",
 				  "4": "Juste",
@@ -900,7 +900,7 @@
             "gfx_max_lights": "Nombre maximum de sources lumineuses",
 			"gfx_drawdistance": "Distance d'affichage",
 			"gfx_enable_ssao": "Activer l'occlusion ambiante",
-			"gfx_use_high_quality": "AActiver les graphismes en haute qualité",
+			"gfx_use_high_quality": "Activer les graphismes en haute qualité",
 			"shadow_0": "Sans",
 			"shadow_1": "juste un peu",
 			"shadow_2": "Un peu",
@@ -4373,259 +4373,259 @@
 	  },
 	  "terrain": {
 		 "mining_zone": {
-			"display_name": "Mining Zone",
-			"description": "This terrain is designated for removal."
+            "display_name": "Zone d'extraction minière",
+            "description": "Ce terrain va être creusé."
 		 },
 		 "tall_grass": {
-			"display_name": "Tall Grass",
-			"description": "Harvestable for thatch"
+            "display_name": "Herbe haute",
+            "description": "Récoltable pour le chaume"
 		 },
 		 "tilled_dirt": {
-			"display_name": "Tilled Earth",
-            "description": "Dirty, in the purest sense.",
+            "display_name": "Terre en bloc",
+            "description": "De la terre, banale.",
             "model_variant": {
                "dirt_1": {
-                  "display_name": "Poor Dirt",
-                  "description": "Can barely sustain life."
+                  "display_name": "Substrat trés pauvre",
+                  "description": "Ne pourra pas donner grand chose."
                },
                "furrow": {
-                  "display_name": "Field Furrow"
+                  "display_name": "Sol retourné"
                },
                "dirt_2": {
-                  "display_name": "Fair Dirt",
-                  "description": "Meh. It's dirt."
+                  "display_name": "Terreau",
+                  "description": "Bon, c'est du terreau."
                },
                "dirt_3": {
-                  "display_name": "Good Dirt",
-                  "description": "Home to well-behaved earthworms."
+                  "display_name": "Umus",
+                  "description": "L'habitat des bien-heureux vers de terre !"
                },
                "dirt_4": {
-                  "display_name": "Rich Dirt",
-                  "description": "Thick and loamy."
+                  "display_name": "Umus riche",
+                  "description": "Bien épais et gras."
                }
             }
 		 },
 		 "ui": {
 			"coal_block": {
-			   "display_name": "Coal Vein",
-			   "description": "Provides coal when mined."
+               "display_name": "Veine de charbon",
+               "description": "Une bonne source de charbon."
 			},
 			"copper_block": {
-			   "display_name": "Copper Vein",
-			   "description": "Provides copper ore when mined."
+               "display_name": "Veine de cuivre",
+               "description": "Source de cuivre qand on mine juste ici."
 			},
 			"gold_block": {
-			   "display_name": "Gold Vein",
-			   "description": "Provides gold ore when mined."
+               "display_name": "Veine d'or",
+               "description": "Bingo !"
 			},
 			"iron_block": {
-			   "display_name": "Iron Vein",
-			   "description": "Provides iron ore when mined."
+               "display_name": "Veine de fer",
+               "description": "Du fer à profusion."
 			},
 			"ore_block": {
-			   "display_name": "Ore block",
-			   "description": "Mine to get ore"
+               "display_name": "Block de minerai",
+               "description": "Minez pour en obtenir."
 			},
 			"silver_block": {
-			   "display_name": "Silver Vein",
-			   "description": "Provides silver ore when mined."
+               "display_name": "Veine d'argent",
+               "description": "Une filon à l'éclat blanc, surement une belle quantité."
 			},
 			"tin_block": {
-			   "display_name": "Tin Vein",
-			   "description": "Provides tin ore when mined."
+               "display_name": "Veine d'étain",
+               "description": "Un filon prométeur..."
 			}
 		 }
 	  },
 	  "tools": {
 		 "mining_pick": {
-			"display_name": "Mining Pick",
-			"description": "For mining and picking"
+            "display_name": "Pique de mine",
+            "description": "Pour miner et piquer."
 		 },
 		 "worker_axe": {
-			"display_name": "Worker's Axe",
+            "display_name": "Hache commune",
 			"description": "..."
 		 },
 		 "worker_hammer": {
-			"display_name": "Worker's Hammer",
-			"description": "Everything looks like a nail when all you have is a hammer"
+            "display_name": "Marteau",
+            "description": "Le monde entier essemble à un clou lorsque vous n'avez qu'un marteau."
 		 }
 	  },
 	  "toys": {
 		 "ball": {
-			"display_name": "Leather ball"
+            "display_name": "Balle de cuir"
 		 },
 		 "plushie_toy_rabbit": {
 			"plushie_toy_rabbit_ghost": {
-			   "display_name": "Plushie Toy Rabbit",
-			   "description": "A toy... for children of course."
+               "display_name": "Peluche de lapin",
+               "description": "Un jouet... pour les enfants assurément."
 			}
 		 }
 	  },
 	  "trees": {
 		 "juniper_tree": {
 			"ancient_juniper_tree": {
-			   "display_name": "Ancient Juniper Tree",
-			   "description": "It radiates a mysterious aura"
+               "display_name": "Genévrier antique",
+               "description": "Une mystérieuse aura l'entoure."
 			},
 			"large_juniper_tree": {
-			   "display_name": "Large Juniper Tree",
-			   "description": "An impressive specimen."
+               "display_name": "Grand genévrier",
+               "description": "Un specimen impressionant."
 			},
 			"medium_juniper_tree": {
-			   "display_name": "Juniper Tree",
-			   "description": "Strong and tall."
+               "display_name": "Genévrier",
+               "description": "Fort et haut."
 			},
 			"small_juniper_tree": {
-			   "display_name": "Small Juniper Tree",
-			   "description": "Just a sapling."
+               "display_name": "Petit genévrier",
+               "description": "Juste un arbrisseau."
 			}
 		 },
 		 "palm_tree": {
 			"large_palm_tree": {
-			   "display_name": "Large Palm Tree",
-			   "description": "An impressive specimen."
+               "display_name": "Grand palmier",
+               "description": "Un specimen impressionant."
 			},
 			"small_palm_tree": {
-			   "display_name": "Small Palm Tree",
-			   "description": "Just a sapling."
+               "display_name": "Petit palmier",
+               "description": "Juste un arbrisseau."
 			}
 		 },
 		 "acacia_tree": {
 			"large_acacia_tree": {
-			   "display_name": "Large Acacia Tree",
-			   "description": "It radiates a mysterious aura"
+               "display_name": "Grand acacia",
+               "description": "Une mystérieuse aura l'entoure."
 			}
 		 },
 		 "joshua_tree": {
 			"large_joshua_tree": {
-			   "display_name": "Large Joshua Tree",
-			   "description": "A curious tree"
+               "display_name": "Grand arbre de Josué",
+               "description": "C'est un arbre étrange."
 			}
 		 },
 		 "pine_tree": {
 			"large_pine_tree": {
-			   "display_name": "Large Pine Tree",
-			   "description": "100's of years old. Too bad..."
+               "display_name": "Grand pin",
+               "description": "Plus de 100 ans. Dommage..."
 			},
 			"medium_pine_tree": {
-			   "display_name": "Medium Pine Tree",
-			   "description": "Sturdy, in the prime of life."
+               "display_name": "Pin moyen",
+               "description": "Robuste, en pleine croissance."
 			},
 			"small_pine_tree": {
-			   "display_name": "Small Pine Tree",
-			   "description": "Just a sapling."
+               "display_name": "Petit pin",
+               "description": "Juste un arbrisseau."
 			}
 		 },
 		 "cactus_tree": {
 			"large_cactus_tree": {
-			   "display_name": "Large Cactus",
-			   "description": "An impressive specimen."
+               "display_name": "Grand cactus",
+               "description": "Un specimen impressionant."
 			},
 			"small_cactus_tree": {
-			   "display_name": "Small Cactus",
-			   "description": "Small and prickly."
+               "display_name": "Petit cactus",
+               "description": "Petit et piquant."
 			}
 		 },
 		 "oak_tree": {
 			"ancient_oak_tree": {
-			   "display_name": "Ancient Oak Tree",
-			   "description": "It radiates a mysterious aura"
+               "display_name": "Chêne antique",
+               "description": "Une mystérieuse aura l'entoure."
 			},
 			"large_oak_tree": {
-			   "display_name": "Large Oak Tree",
-			   "description": "100's of years old. Too bad..."
+               "display_name": "Grand chêne",
+               "description": "Plus de 100 ans. Dommage..."
 			},
 			"medium_oak_tree": {
-			   "display_name": "Medium Oak Tree",
-			   "description": "Sturdy, in the prime of life."
+               "display_name": "Chêne moyen",
+               "description": "Robuste, en pleine croissance."
 			},
 			"small_oak_tree": {
-			   "display_name": "Small Oak Tree",
-			   "description": "Slightly larger than a sapling."
+               "display_name": "Petit chêne",
+               "description": "A peine plus grand qu'un arbrisseau."
 			},
 			"sapling_oak_tree": {
-			   "description": "Plant it in the earth and watch it grow.",
+               "description": "Plantez le en terre et regardez le pousser.",
 			   "sapling_oak_tree_ghost": {
-				  "display_name": "Oak Tree Sapling",
-				  "description": "Plant it in the earth and watch it grow."
+                  "display_name": "Pouce de chêne",
+                  "description": "Plantez le en terre et regardez le pousser."
 			   },
 			   "sapling_oak_tree_iconic": {
-				  "description": "Plant it in the earth and watch it grow."
+                  "description": "Plantez le en terre et regardez le pousser."
 			   }
 			}
 		 }
 	  },
 	  "weapons": {
 		 "bronze_mace": {
-			"display_name": "Bronze Mace",
-			"description": "Precisely engineered for maximum bashing.",
+            "display_name": "Mace en bronze",
+            "description": "Précisement ciselée pour faire un maximum de dégats",
 			"bronze_mace_iconic": {
-			   "display_name": "Bronze Mace",
-			   "description": "For flattening faces"
+               "display_name": "Mace de bronze",
+               "description": "Pour applanir les faces."
 			}
 		 },
 		 "bronze_sword": {
-			"display_name": "Bronze Short Sword",
-			"description": "Basic, but better than fighting with a sharpened stick!",
+            "display_name": "Epée courte de bronze",
+            "description": "C'est mieux que de se battre avec un cure dent !",
 			"bronze_sword_iconic": {
-			   "display_name": "Bronze Sword",
-			   "description": "Pointy. Shiny."
+               "display_name": "Epée de bronze",
+               "description": "Pointue. Brillante."
 			}
 		 },
 		 "dagger": {
-			"display_name": "Dagger",
-			"description": "Pointy. Dangerous.",
+            "display_name": "Dague",
+            "description": "Pointue. Dangereuse.",
 			"dagger_iconic": {
-			   "display_name": "Dagger",
-			   "description": "Pointy. Dangerous."
+               "display_name": "Dague",
+               "description": "Pointue. Dangereuse."
 			}
 		 },
 		 "giant_bone_axe": {
-			"display_name": "Giant Bone Axe",
-			"description": "Carved from the clavical of some great beast.",
+            "display_name": "Hache géante d'os",
+            "description": "Taillée dans la clavicule d'une bête énorme.",
 			"giant_bone_axe_iconic": {
-			   "display_name": "Giant Bone Axe",
-			   "description": "Carved from the clavical of some great beast."
+               "display_name": "Hache géante d'os",
+               "description": "Taillée dans la clavicule d'une bête énorme."
 			}
 		 },
 		 "giant_bone_mace": {
-			"display_name": "Giant Bone Mace",
-			"description": "Heavy, it packs a whallop.",
+            "display_name": "Mace géante d'os",
+            "description": "Lourde, elle cogne dur",
 			"giant_bone_mace_iconic": {
-			   "display_name": "Giant Bone Mace",
-			   "description": "For flattening faces"
+               "display_name": "Mace géante d'os",
+               "description": "Pour applanir les faces."
 			}
 		 },
 		 "iron_mace": {
-			"display_name": "Iron Mace",
-			"description": "Heavy, it packs a whallop.",
+            "display_name": "Mace de far",
+            "description": "Lourde, elle défonce sec.",
 			"iron_mace_iconic": {
-			   "display_name": "Iron Mace",
-			   "description": "For flattening faces"
+               "display_name": "Mace de far",
+               "description": "Pour applanir les faces."
 			}
 		 },
 		 "iron_pike": {
-			"display_name": "Iron Pike",
-			"description": "Sharp. Long. Pointy.",
+            "display_name": "Lance de fer",
+            "description": "Aiguisée. Longue. Pointue.",
 			"iron_pike_iconic": {
-			   "display_name": "Iron pike",
-			   "description": "Sharp. Long. Pointy."
+               "display_name": "Lance de fer",
+               "description": "Aiguisée. Longue. Pointue."
 			}
 		 },
 		 "jagged_cleaver": {
-			"display_name": "Jagged Cleaver",
-			"description": "A crude, ineffective weapon",
+            "display_name": "Couperet émoucé",
+            "description": "Une vielle arme plus trés efficace.",
 			"jagged_cleaver_iconic": {
-			   "display_name": "Jagged Cleaver",
-			   "description": "A crude, ineffective weapon"
+               "display_name": "Couperet émoucé",
+               "description": "Une vielle arme plus trés efficace."
 			}
 		 },
 		 "long_sword": {
-			"display_name": "Long Sword",
-			"description": "Sharp, with extra reach. A faithful weapon.",
+            "display_name": "Epée longue",
+            "description": "Aiguisée avec plus de portée. Une arme de confiance.",
 			"long_sword_iconic": {
-			   "display_name": "Long Sword",
-			   "description": "Pointy. Shiny."
+               "display_name": "Epée longue",
+               "description": "Pointue. Brillante."
 			}
 		 },
 		 "npc_animal_prod": {
@@ -4633,43 +4633,43 @@
 			"description": "Keeps the fuzzies in line"
 		 },
 		 "short_sword": {
-			"display_name": "Short Sword",
-			"description": "Stubby, but its steel blade keeps an edge.",
+            "display_name": "Epée courte",
+            "description": "Pas trés grande mais sa lame d'acier reste efficace.",
 			"short_sword_iconic": {
-			   "display_name": "short Sword",
-			   "description": "Pointy. Shiny."
+               "display_name": "Epée courte",
+               "description": "Pointue. Brillante."
 			}
 		 },
 		 "spiked_wooden_mace": {
-			"display_name": "Spiked Wooden Mace",
-			"description": "Nasty, pointy spikes"
+            "display_name": "Mace de bois cloutée",
+            "description": "Oh les vilaines pointes !"
 		 },
 		 "stone_maul": {
-			"display_name": "Stone Maul",
-			"description": "The perfect tool for bludgeoning",
+            "display_name": "Marteau de pierre",
+            "description": "L'outil parfait pour écraser.",
 			"stone_maul_iconic": {
-			   "display_name": "Stone Maul",
-			   "description": "For flattening faces"
+               "display_name": "Marteau de pierre",
+               "description": "Pour applanir les faces."
 			}
 		 },
 		 "two_handed_sword": {
-			"display_name": "Two Handed Sword",
-			"description": "Double the hands, double the trouble.",
+            "display_name": "Epée à deux mains",
+            "description": "Double les mains, double les problêmes.",
 			"two_handed_sword_iconic": {
-			   "display_name": "Two Handed Sword",
-			   "description": "Double the hands, double the trouble."
+               "display_name": "Epée à deux mains",
+               "description": "Double les mains, double les problêmes."
 			}
 		 },
 		 "wooden_sword": {
-			"display_name": "Épée en bois",
+			"display_name": "Épée de bois",
 			"description": "Tranche tes enemies avec la force du chêne",
 			"wooden_sword_iconic": {
-			   "display_name": "Épée en bois",
-			   "description": "Épée basique en bois."
+			   "display_name": "Épée de bois",
+			   "description": "Épée basique de bois."
 			},
 			"wooden_sword_talisman": {
-			   "display_name": "Épée en bois",
-			   "description": "Nécessaire pour promouvoir un hearthling en Footman."
+			   "display_name": "Épée de bois",
+			   "description": "Nécessaire pour promouvoir un hearthling en fantassin."
 			}
 		 }
 	  }
@@ -4712,11 +4712,11 @@
 	  },
 	  "blacksmith": {
 		 "blacksmith_description": {
-			"display_name": "Blacksmith",
-			"description": "The Blacksmith refines raw ore into metal bars, then uses those bars to craft weapons, armor, and building parts like gates.",
-			"requirements": "Blacksmith's Hammer, crafted by the Mason",
+            "display_name": "Forgeron",
+            "description": "Le forgeron raffine le minerai en barre de métal pour les utiliser dans la fabrication d'armes et d'armures.",
+            "requirements": "Un marteau de forgeron, fabriqué par le tailleur de pierre.",
 			"level_6_data": {
-			   "title": "Master Blacksmith",
+               "title": "Maître forgeron",
 			   "perk_000_name": "The Armory",
 			   "perk_000_description": "The blacksmith's mastery of his trade allows him to create the finest weapons and armors seen since the forgotten Phoenix Empire."
 			},
@@ -4740,11 +4740,11 @@
 		 "blacksmith_forge": {
 			"blacksmith_forge_ghost": {
 			   "display_name": "Forge",
-			   "description": "A sturdy, stone oven for heating metal"
+               "description": "Un four lourd de pierre pour manger le métal"
 			}
 		 },
 		 "blacksmith_hammer": {
-			"display_name": "Blacksmith's Hammer",
+            "display_name": "Marteau de forgeron",
 			"description": "Tools of the trade for a blacksmith.",
 			"blacksmith_hammer_iconic": {
 			   "display_name": "Blacksmith's Hammer",
@@ -4752,7 +4752,7 @@
 			},
 			"blacksmith_hammer_talisman": {
 			   "display_name": "Blacksmith's Hammer",
-			   "description": "Tools of the trade for a blacksmith."
+               "description": "Requis pour promouvoir un citoyen en forgeron."
 			}
 		 },
 		 "blacksmith_outfit": {
@@ -4761,35 +4761,35 @@
 		 },
 		 "blacksmith_workbench": {
 			"blacksmith_workbench_ghost": {
-			   "display_name": "Blacksmith Anvil",
-			   "description": "Used by the Blacksmith for crafting."
+               "display_name": "Enclume de forgeron",
+               "description": "Utilisée par le forgeron pour le forgeage."
 			}
 		 },
 		 "recipes": {
 			"basic_shield_recipe": {
 			   "description": "Grants the ability to completely block attacks.",
 			   "flavor": "Incredibly protective. Small children play turtle underneath.",
-			   "recipe_name": "Trusty Shield"
+               "recipe_name": "Bouclier fidèle"
 			},
 			"iron_shield_recipe": {
-			   "description": "Heavy, but effective.",
+               "description": "Lourd mais efficace.",
 			   "flavor" : "'Buck up, recruit! Better the shield dent than you!' -Thredd, Man at Arms", 
-			   "recipe_name": "Iron Shield"
+               "recipe_name": "Bouclier de fer"
 			},
 			"bronze_breastplate_recipe": {
 			   "description": "Partial but sturdy coverage against blunt and edged weapons.",
-			   "recipe_name": "Bronze Breastplate",
+               "recipe_name": "Cuirasse de bronze",
 			   "flavor": "Design reminiscent of the Phoenix's Legions."
 			},
 			"bronze_ingot_recipe": {
-			   "description": "A bar of pure bronze. A suitable material for crafted goods.",
-			   "recipe_name": "Bronze Ingot",
+               "description": "Une barre de bronze pur. Un matériel adapté à la fabrication d'objets.",
+               "recipe_name": "Lingot de bronze",
 			   "flavor": "The masters of old considered its production, evidence of our triumph over the earth."
 			},
 			"bronze_mace_recipe": {
 			   "description": "Heavy, it packs a whallop.",
-			   "recipe_name": "Bronze Mace",
-			   "flavor": "The good news: there is no pointy end."
+               "recipe_name": "Mace en bronze",
+               "flavor": "La bonne nouvelle : il n'y pas de pointe au bout."
 			},
 			"bronze_sword_recipe": {
 			   "description": "Basic, but better than fighting with a sharpened stick!",
@@ -4867,7 +4867,7 @@
 			},
 			"trapper_knife_recipe": {
 			   "description": "Required to promote a hearthling into a Trapper.",
-			   "recipe_name": "Trapper's Knife",
+               "recipe_name": "Couteau de trappeur",
 			   "flavor": "Keep your edge whisker sharp, boy, and cut quick. --Willard Foxghost"
 			},
 			"two_handed_sword_recipe": {
@@ -4896,11 +4896,11 @@
 	  "carpenter": {
 		 "carpenter_description": {
 			"display_name": "Menuisier",
-			"description": "The carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
-			"requirements": "Carpenter's saw, crafted by the Blacksmith.",
+            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu'il fabrique permettent de dévérouiller d'autres métiers.",
+            "requirements": "Scie de menuisier. Fabriquée par le forgeron.",
 			"level_6_data": {
-			   "title": "Master Carpenter",
-			   "perk_000_name": "10.000 heures (à venir)",
+               "title": "Maître menuisier",
+               "perk_000_name": "10,000 Heures (à venir)",
 			   "perk_000_description": "The carpenter's mastery of his trade allows him to come up with completely new ways of using wood."
 			},
 			"level_2_data": {
@@ -4976,12 +4976,12 @@
 			},
 			"hoe_recipe": {
 			   "description": "Required to promote a hearthling into a Farmer.",
-			   "recipe_name": "Farmer's Hoe",
+               "recipe_name": "Houe d'agriculteur",
 			   "flavor": "Hoedown time!!!!"
 			},
 			"large_crate_recipe": {
-			   "description": "For compactly storing up to 32 items",
-			   "recipe_name": "Large Crate",
+               "description": "Pour stocker jusqu'à 32 objets.",
+               "recipe_name": "Grande caisse",
 			   "flavor": "Does the crate that stores all the things that do not store themselves, store itself?"
 			},
 			"leather_bound_chest_recipe": {
@@ -4990,8 +4990,8 @@
 			   "flavor": "Like the one my granda had!"
 			},
 			"mason_chisel_recipe": {
-			   "description": "Required to promote a hearthling into a Mason.",
-			   "recipe_name": "Mason's Hammer & Chisel"
+               "description": "Requis pour promouvoir un citoyen en tailleur de pierre.",
+               "recipe_name": "Marteau et ciseau de tailleur de pierre"
 			},
 			"not_much_of_a_bed_recipe": {
 			   "description": "Slightly more comfortable than sleeping on a board.",
@@ -5020,8 +5020,8 @@
 			"furniture_name": "Furniture",
 			"workbench_name": "Workbenches",
 			"shepherds_crook_recipe": {
-			   "description": "Required to promote a hearthling into a Shepherd.",
-			   "recipe_name": "Shepherd's Crook",
+               "description": "Requis pour promouvoir un citoyen en berger",
+               "recipe_name": "Bâton de berger",
 			   "flavor": "Can you tell me another story about The Shepard?"
 			},
 			"simple_wooden_chair_recipe": {
@@ -5041,7 +5041,7 @@
 			},
 			"weaver_spindle_recipe": {
 			   "description": "Required to promote a hearthling into a Weaver.",
-			   "recipe_name": "Weaver's Spindle",
+               "recipe_name": "Fuseau de tisserand",
 			   "flavor": "From fiber, thread, from thread, fabric, from fabric, civilization."
 			},
 			"window_box_brightbell_recipe": {
@@ -5173,25 +5173,25 @@
 			}
 		 },
 		 "cook_outfit": {
-			"display_name": "Cook Outfit",
-			"description": "Uniform for all cooks"
+            "display_name": "Tablier de cuisinier",
+            "description": "L'uniforme de tous les cuistots."
 		 },
 		 "cook_spoon": {
-			"display_name": "Cook's Spoon",
-			"description": "Used by the cook",
+            "display_name": "Cuillère de cuisinier",
+            "description": "L'outil du cuisinier",
 			"cook_spoon_iconic": {
-			   "display_name": "Cook's Spoon",
-			   "description": "Required to promote a hearthling into a Cook."
+               "display_name": "Cuillère de cuisinier",
+               "description": "Requise pour promouvoir un citoyen en cuisinier."
 			},
 			"cook_spoon_talisman": {
-			   "display_name": "Cook's Spoon",
-			   "description": "Required to promote a hearthling into a Cook."
+               "display_name": "Cuillère de cuisinier",
+               "description": "Requise pour promouvoir un citoyen en cuisinier."
 			}
 		 },
 		 "cook_workbench": {
 			"cook_workbench_ghost": {
-			   "display_name": "Stone Cauldron",
-			   "description": "Used by the Cook for delicious recipes."
+               "display_name": "Chaudron de pierre",
+               "description": "Utilisé par le cuisinier pour réaliser de délieuses recettes."
 			}
 		 },
 		 "recipes": {
@@ -5292,8 +5292,8 @@
 	  "farmer": {
 		 "farmer_description": {
 			"display_name": "Agriculteur",
-			"description": "Farmers till fields and harvest crops, providing a consistent food supply and raw materials for baked goods.",
-			"requirements": "Farmer's Hoe, crafted by the Carpenter.",
+            "description": "Les agriculteurs travaillent la terre et cultivent les champs pour avoir une nourriture consistante et des ingrédients pour la cuisine.",
+            "requirements": "Houe d'agriculteur, fabriquée par le menuisier.",
 			"level_6_data": {
 			   "perk_000_name": "Nature's Surprise (à venir)",
 			   "perk_000_description": "Occasionally, the farmer's special touch yields... special results."
@@ -5340,7 +5340,7 @@
 	  "footman": {
 		 "footman_description": {
 			"display_name": "Fantassin",
-			"description": "The Footman is a melee fighter. A good choice for the backbone of your town's defense.",
+            "description": "Le fantassin est un combatant de mélée. Un bon choix pour la base de la défense de votre ville.",
 			"requirements": "Wooden Practice Sword, crafted by the Carpenter.",
 			"level_4_data": {
 			   "perk_000_name": "Damage Up 40%",
@@ -5498,8 +5498,8 @@
 			},
             "stone_chest_recipe": {
                "description": "Imposing place to put things.",
-               "recipe_name": "Stone Chest",
-               "flavor": "'Listen up, kid. All the chests in Hemgorir-Under-Mountain looked like this.'--Edolf, Wandering Bard"
+               "recipe_name": "Coffre de pierre",
+               "flavor": "'Ecoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.'--Edolf, barde ambulant"
             },
 			"stone_garden_lantern_recipe": {
 			   "description": "An ancient-looking lantern with great ambiance.",
@@ -5549,7 +5549,7 @@
 	  "shepherd": {
 		 "shepherd_description": {
 			"display_name": "Berger",
-			"description": "Domesticates wild animals and harvests them for food and materials.",
+            "description": "Domestique les animaux sauvages pour des ressources et de la nourriture.",
 			"requirements": "2 levels of Trapper and a Shepherd's Crook, crafted by the Carpenter.",
 			"level_4_data": {
 			   "perk_000_name": "Animal Magnetism",
@@ -5565,15 +5565,15 @@
 			}
 		 },
 		 "shepherd_crook": {
-			"display_name": "Shepherd's Crook",
-			"description": "Used to corral the flock",
+            "display_name": "Bâton de berger",
+            "description": "Utile pour rassembler le troupeau",
 			"shepherd_crook_iconic": {
-			   "display_name": "Shepherd's Crook",
-			   "description": "Required to promote a hearthling into a Shepherd."
+               "display_name": "Bâton de berger",
+               "description": "Requis pour promouvoir un citoyen en berger"
 			},
 			"shepherd_crook_talisman": {
-			   "display_name": "Shepherd's Crook",
-			   "description": "Required to promote a hearthling into a Shepherd."
+               "display_name": "Bâton de berger",
+               "description": "Requis pour promouvoir un citoyen en berger"
 			}
 		 },
 		 "shepherd_outfit": {
@@ -5581,8 +5581,8 @@
 			"description": "Uniform for all shepherds"
 		 },
 		 "shepherd_pasture": {
-			"display_name": "Animal Pasture",
-			"description": "Shepherds bring animals to these locations and tend to them here."
+            "display_name": "Pâturage",
+            "description": "Le berger amènera les animaux ici pour subvenir à leurs besoins."
 		 }
 	  },
 	  "shield_bearer": {
@@ -5626,8 +5626,8 @@
 			}
 		 },
 		 "snare_trap": {
-			"display_name": "Snare Trap",
-			"description": "Safely immobilizes its prey",
+            "display_name": "Piège en cage",
+            "description": "Immobilise de manière sûre sa proie.",
 			"commands": {
 			   "harvest_trapped_beast": {
 				  "display_name": "Harvest Beast",
@@ -5648,20 +5648,20 @@
 			"display_name": "Couteau de trappeur",
 			"description": "Un couteau de trapper",
 			"trapper_knife_iconic": {
-			   "display_name": "Trapper's Knife",
-			   "description": "Basic trapper's knife."
+               "display_name": "Couteau de trappeur",
+               "description": "Couteau de base du trappeur."
 			},
 			"trapper_knife_talisman": {
-			   "display_name": "Trapper's Knife",
-			   "description": "Required to promote a hearthling into a Trapper."
+               "display_name": "Couteau de trappeur",
+               "description": "Requis pour promouvoir un citoyen en trappeur."
 			}
 		 },
 		 "trapper_outfit": {
-			"display_name": "Trapper Oufit"
+            "display_name": "Habit de trappeur"
 		 },
 		 "trapping_grounds": {
-			"display_name": "Trapping Grounds",
-			"description": "Trappers catch critters for food and resources in this zone."
+            "display_name": "Zone de chasse",
+            "description": "Dans cette zone, les trappeurs capturent des animaux pour de la nourriture ou des ressources."
 		 }
 	  },
 	  "treasure_hunter": {
@@ -5680,130 +5680,130 @@
 	  "weaver": {
 		 "weaver_description": {
 			"display_name": "Tisserand",
-			"description": "Le tisserand makes thread, fabrics and hangings from fiber and dye.",
-			"requirements": "Weaver's Spindle, crafted by the menuisier.",
+            "description": "Le tisserand fabrique du fil et des vêtements avec des fibres naturelles et des colorants.",
+            "requirements": "Fuseau de tisserand, fabriqué par le menuisier.",
 			"level_6_data": {
 			   "title": "Maître tisserand",
 			   "perk_000_name": "10.000 heures (à venir)",
-			   "perk_000_description": "The weaver's mastery of his trade allows him to come up with completely new ways of using wood."
+			   "perk_000_description": "La maîtrise de son Art permet au tisserand de réinventer la manière d'utiliser le tissu."
 			},
 			"level_2_data": {
-			   "perk_000_name": "Collaborative Insight",
-			   "perk_000_description": "The weaver is now skillful enough to use materials created by other crafters."
+               "perk_000_name": "Perspicacité collaborative",
+               "perk_000_description": "Le tisserand à maintenant assez de maîtrise pour utiliser des ressources provenant d'autres artisans."
 			},
 			"level_4_data": {
-			   "perk_000_name": "Ingenuity Enhancements (à venir)",
-			   "perk_000_description": "The weaver adds new levels of functionality to classic recipes."
+               "perk_000_name": "Amélioration de l'ingéniosité (à venir)",
+               "perk_000_description": "Le tisserand améliore les recettes de bases en y ajoutant plus de fonctionalités."
 			},
 			"level_1_data": {
-			   "perk_000_name": "Standard Catalog",
-			   "perk_000_description": "The weaver can now make basic hangings and decor."
+               "perk_000_name": "Catalogue standard",
+               "perk_000_description": "Le tisserand peut maintenant confectionner des vêtements et des éléments de décor basiques."
 			},
 			"level_3_data": {
-			   "perk_000_name": "Artistic Inspiration",
-			   "perk_000_description": "When inspiration strikes, the weaver may embellish his works in unexpected ways."
+               "perk_000_name": "Inspiration artistique",
+               "perk_000_description": "Quand l'inspiration frappe, le tisserand est capable d'obtenir des résultats surprenant."
 			}
 		 },
 		 "recipes": {
 			"banner_wall_big_recipe": {
-			   "description": "Show your town pride with this decorative banner.",
-			   "recipe_name": "Big Wall-Mounted Banner",
-			   "flavor": "Also a sign of affluence."
+               "description": "Affichez votre sentiment de fierté envers votre ville avec cette bannière décorative.",
+               "recipe_name": "Grande bannière murale",
+               "flavor": "C'est aussi un signe de prospérité."
 			},
 			"banner_wall_small_recipe": {
-			   "description": "Show your town pride with this small banner.",
-			   "recipe_name": "Small Wall-Mounted Banner",
-			   "flavor": "Quality craftsmanship at fine resolutions."
+               "description": "Affichez votre sentiment de fierté envers votre ville avec cette petite bannière.",
+               "recipe_name": "Petite bannière murale",
+               "flavor": "La qualité artisanale dans tout sont expression."
 			},
 			"bolt_of_cloth_recipe": {
-			   "description": "Used to create more comfortable furniture.",
-			   "recipe_name": "Basic Bolt of Cloth",
-			   "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
+               "description": "Utilisé pour rendre certains meubles plus confortables.",
+               "recipe_name": "Rouleau de tissu basique",
+               "flavor": "Pour rendre plus large de l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
 			},
 			"cloth_bolt_recipe": {
-			   "description": "Used to create more comfortable furniture.",
-			   "recipe_name": "Bolt of Cloth",
-			   "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
+               "description": "Utilisé pour rendre certains meubles plus confortables.",
+               "recipe_name": "Rouleau de tissu",
+               "flavor": "Pour rendre plus large de l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
 			},
 			"cloth_padded_vest_recipe": {
-			   "description": "This triple-quilted vest provides more protection to your combat units than mere clothing. Not a lot more, but every little bit helps, right?",
-			   "recipe_name": "Padded Vest",
-			   "flavor": "Needs... thicker... padding!"
+               "description": "Cette veste triplement matelassée protège mieux vos combattants que de simple habits. Bon, pas tellement mieux, mais c'est toujours ça !",
+               "recipe_name": "Veste rembourrée",
+               "flavor": "Nécessite... plus... de rembourrage!"
 			},
 			"curtains_recipe": {
-			   "description": "Dresses up an otherwise ordinary window.",
-			   "recipe_name": "Pretty Curtains",
-			   "flavor": "Light-blocking technology encourages sleeping-in."
+               "description": "Habille ce qui serait autrement une fenêtre ordinaire.",
+               "recipe_name": "Jolis rideaux",
+               "flavor": "Technologie anti-lumière qui encourage la sieste."
 			},
 			"fur_rug_recipe": {
-			   "description": "A warm and cozy rug, sewn from various animal pelts.",
-			   "recipe_name": "Fur Rug",
-			   "flavor": "Perfect for an evening by the fire."
+               "description": "Un tapis de fourrure chaud et confortable confectionné à l'aide de différentes peaux.",
+               "recipe_name": "Tapis de fourrure",
+               "flavor": "Parfait pour les soirée prés du feu."
 			},
 			"leather_bolt_recipe": {
-			   "description": "Prepared sheets of leather, ready to be put to good use.",
-			   "recipe_name": "Bolt of Leather",
-			   "flavor": "You can hardly see the individual sources."
+               "description": "Des peaux tannées prêtes à l'usage.",
+               "recipe_name": "Cuir en rouleau",
+               "flavor": "Difficile de distinguer l'origine de chaque pièces."
 			},
 			"leather_vest_recipe": {
-			   "description": "Hardened leather provides study protection against light weapons.",
-			   "recipe_name": "Thick Leather Vest",
-			   "flavor": "Insults bounce right off too!"
+               "description": "Le cuir durci offre une solide protection contre les armes légères.",
+               "recipe_name": "Gilet de cuir laminé",
+               "flavor": "Les insultes rebondissent dessus aussi !"
 			},
 			"plushie_toy_rabbit_recipe": {
-			   "description": "A toy... for children of course.",
-			   "recipe_name": "Plushie Toy Rabbit",
-			   "flavor": "She loves you!"
-			},
-			"clothing_armor_name": "Clothing & Armor",
-			"toys_name": "Toys",
-			"decorations_name": "Decorations",
-			"crafting_materials_name": "Crafting Materials",
+               "description": "Un jouet... pour enfant évidement.",
+               "recipe_name": "Peluche de lapin",
+               "flavor": "Il vous aime !"
+            },
+            "clothing_armor_name": "Vêtements et armures",
+            "toys_name": "Jouets",
+            "decorations_name": "Décorations",
+            "crafting_materials_name": "Ressources pour artisans",
 			"spool_of_thread_recipe": {
-			   "description": "Needed for cloth. Warm and fluffy",
-			   "recipe_name": "Spool of Thread",
-			   "flavor": "Each gram of fiber yearns to become a sweater."
+               "description": "Fil tout doux, nécessaire aux étoffes",
+               "recipe_name": "Bobine de fil",
+               "flavor": "Chaque gramme de fibre ne tend qu'à devenir un gilet."
 			},
 			"tapestry_wall_recipe": {
-			   "description": "A decorative scene, woven in colored thread and cord.",
-			   "recipe_name": "Wall-Mounted Tapestry",
+               "description": "Une scène décorative, tissée en fils et cordons colorés.",
+               "recipe_name": "Tapisserie murale",
 			   "flavor": "What you see in its knotted depths tells you something about yourself."
 			},
 			"thread_recipe": {
-			   "description": "Needed for cloth. Warm and fluffy",
-			   "recipe_name": "Spool of Thread",
-			   "flavor": "Each gram of fiber yearns to become a sweater."
+               "description": "Tout doux et totelement nécessaire à la fabrication du tissu.",
+               "recipe_name": "Bobine de fil",
+               "flavor": "Chaque gramme de fibre ne tend qu'à devenir un gilet."
 			},
 			"throw_rug_recipe": {
-			   "description": "Brightens up that old dusty floor.",
-			   "recipe_name": "Decorative Throw Rug",
-			   "flavor": "Too beautiful to step on."
+               "description": "Enjolive ce vieux sol poussiéreux",
+               "recipe_name": "Une capette décorative",
+               "flavor": "Trop belle pour y marcher."
 			},
 			"worker_outfit_2_recipe": {
-			   "description": "Double stiching and strategically placed padding improves the worker's efficiency. The worker who dons this upgrade outfit will move 10% faster.",
-			   "recipe_name": "Upgraded Worker Outfit",
-			   "flavor": "Your town loves you!"
+               "description": "Coutures doubles et rembourrages placés stratégiquement augmentent la productivité des travailleurs. Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
+               "recipe_name": "Habit amélioré de travailleur",
+               "flavor": "Votre ville vous aime !"
 			},
 			"worker_outfit_winter_recipe": {
-			   "description": "A heavy wool coat, for cold winter nights. The worker who dons this upgrade outfit will move 10% faster.",
-			   "recipe_name": "Winter Worker Outfit",
-			   "flavor": "Winter is coming!"
+               "description": "Un lourd manteau de laine pour les froides nuits d'hivers.<br>Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
+               "recipe_name": "Habit d'hiver de travailleur",
+               "flavor": "L'hivers arrive !"
 			},
-			"workbenches_name": "Workbenches",
+            "workbenches_name": "Ateliers",
 			"weaver_loom_recipe": {
-			   "description": "Add thread to thread till cloth results.",
-			   "recipe_name": "Loom",
+               "description": "Assemble des fils à d'autres fils jusqu'à l'obtention d'un tissu.",
+               "recipe_name": "Métier à tisser",
 			   "flavor": "Patient Spider, weaver, writer, draws the tapestry of fate tighter. --Rayya's Rhyme"
 			},
 			"weaver_spinning_wheel_recipe": {
-			   "description": "Spins prickly, scratchy, chaos into thread.",
-			   "recipe_name": "Spinning Wheel",
+               "description": "Transforme ce qui est emmélé en fil.",
+               "recipe_name": "Rouet de tisserand",
 			   "flavor": "Spider smiles; all eight eyes glitter, 'Something from nothing, some sweet and some bitter.'"
 			},
 			"weaver_workbench_recipe": {
-			   "description": "Used to make complex crafts of thread and fabric.",
-			   "recipe_name": "Atelier de tisserand",
-			   "flavor": "In the beginning there was nothing, and then there was Spider."
+               "description": "Utilisé pour des confections compliquées à partir de fil est et de tissus.",
+               "recipe_name": "Banc de tisserand",
+               "flavor": "Au commencement il n'y avait rien et puis il y eu l'araignée."
 			}
 		 },
 		 "weaver_loom": {
@@ -5875,7 +5875,7 @@
    "stonehearth_mixins": {
 	  "base_human": {
 		 "display_name": "[str(self.unit_info.custom_name)]",
-		 "description": "Hearthling",
+		 "description": "Hearthlings",
 		 "job": {
 			"starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
 			"default_level_title": "[str(self.stonehearth:job.curr_job_name)] niveau [str(self.stonehearth:job.curr_job_level)]",
@@ -5902,17 +5902,17 @@
 	  },
 	  "monster": {
 		 "job": {
-			"starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
-			"default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
-			"default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
-			"general_description_desc": "Max Health increased!",
-			"attribute_up_desc": "All attributes increased!"
+            "starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_title": "[str(self.stonehearth:job.curr_job_name)] niveau [str(self.stonehearth:job.curr_job_level)]",
+            "default_level_announcement": "[name(i18n_data.entity)] à atteint [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
+            "general_description_desc": "Santé maximum augmentée !",
+            "attribute_up_desc": "Tous les attributs augmenté !"
 		 }
 	  },
 	  "resources": {
 		 "fur_pelt": {
-			"display_name": "Fur pelt",
-			"description": "Soft, supple, and quite dead"
+            "display_name": "Peau",
+            "description": "Douce, souple mais bien morte."
 		 }
 	  }
    }
