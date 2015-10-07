@@ -38,7 +38,7 @@
 			"survey_trapping_grounds": "surveille la zone de chasse",
 			"steal_bait": "vole un appât",
 			"build_ladder": "construit une échelle",
-			"promote": "change de métier",
+			"promote": "change de profession",
 			"move_item_to_storage": "enmène un objet en réserve",
 			"teardown_ladder": "démonte une échelle",
 			"drop_item_near_workshop": "retire un atelier",
@@ -69,13 +69,13 @@
 			"terrain_slice_vision_icon_name": "Terrain",
 			"terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l'élévation pour voir différentes couches.",
 			"terrain_xray_vision_icon_name": "Rayon X",
-			"terrain_xray_vision": "Affichage du terrain<br>en mode rayon-X",
+			"terrain_xray_vision": "Affichage du terrain<br>en mode rayon X",
 			"terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains.",
             "terrain_xray_vision_flat": "Tronqué",
             "terrain_xray_vision_full": "Complet"
 		 },
 		 "promotion_tree": {
-			"title": "Choisir une métier",
+			"title": "Choisir une profession",
 			"promotion_title": "Promouvoir en [str(job_name)]", 
 			"text_1": "En l'honneur de ses efforts inébranlables et de votre rigueur, nous vous annonçons par la présente",
 			"choose": "Choisissez un hearthling...",
@@ -1145,11 +1145,11 @@
 						   "bulletin_message": {
                               "000": "Soyez les bienvenus en ces lieux ! Boudiou, vous semblez affamés les gars ! Prenez ceci pour vous aider :",
                               "001": "Alors, on célèbre le jour du départ ? Courage ! On dirait que quelque chose de gouteux vous ferait de bien. Et si je vous donnais ceci :",
-							  "002": "Embarkees! Praise Cid. Here's something to get you started.",
+                              "002": "Aventuriers ! Remerciez Cid. Voici de quoi bien commencer.",
                               "003": "Le voyage à travers les montagnes à été long, hein ? Et bien vous êtes à un endroit sur maintenant. Voici un petit coup de pouce :",
-							  "004": "Welcome to the area, Embarkees!! Here's a gift to get you started!"
+                              "004": "Bienvenue dans la région, aventuriers ! Voici un cadeau pour vous donner un p'tit coup de pouce !"
 						   },
-                           "bulletin_title": "Un voyageur tout courbé s'approche.",
+                           "bulletin_title": "Un voyageur grisonnant s'approche.",
 						   "dialog_title": "Mer Burlyhands"
 						}
 					 }
@@ -1424,8 +1424,8 @@
 							  "003": "Little human camp: search out your enemy while they yet sleep.",
 							  "004": "Goblin wolves are trained to attack on command. Free them before that command is issued, and you will sleep easy tonight."
 						   },
-						   "bulletin_title": "A message on an arrow appears on your banner",
-						   "dialog_title": "Mysterious Message"
+                           "bulletin_title": "Une flèche avec un message se plante sur votre bannière",
+                           "dialog_title": "Message mystérieux"
 						}
 					 }
 				  }
@@ -1435,14 +1435,14 @@
 					 "dialog_nodes": {
 						"msg1": {
 						   "bulletin_message": {
-							  "000": "There are wolves in the woods! Run away while you still can!",
-							  "001": "Can't you hear the howling? There are goblin wolves in the woods!",
-							  "002": "Our group was just attacked by goblins! Flee!",
-							  "003": "Those goblin wolves aren't like normal wolves--they're fast and viscious and unafraid! Run while you can!",
-							  "004": "You have goblins in your woods! Bunker down somewhere safe before they attack!"
+                              "000": "Il ya des loups dans les bois ! Fuyez pendant que vous le pouvez encore !",
+                              "001": "Entendez vous les hurlements? Il y a des goblins avec des loups dans les bois !",
+                              "002": "Notre groupe vient juste de se faire attaquer par des gobelins ! Fuyez !",
+                              "003": "Ces loups gobelins ne sont pas comme des loups normaux - ils sont rapides, vicieux et sans peur ! Courez pendant que vous le pouvez!",
+                              "004": "Vous avez des gobelins dans vos bois ! Enfermez-vous dans un endroit sûr avant qu'ils attaquent !"
 						   },
-						   "bulletin_title": "Panting refugees appear on the horizon",
-						   "dialog_title": "Refugee"
+                           "bulletin_title": "Des réfugiés épuisés apparaissent à l'horizon",
+                           "dialog_title": "Un réfugié"
 						}
 					 }
 				  }
@@ -1452,23 +1452,23 @@
 					 "dialog_nodes": {
 						"msg2": {
 						   "bulletin_message": {
-							  "00": "Congratulations are in order, if that's the sort of thing you care about. I've been up and down the area and it seems you've taken care of the bulk of the goblins around these parts! Not saying you won't see a straggler or two come to harass you, but good job, all in all."
+                              "00": "Des félicitations s'imposent, si c'est le genre de chose auquel vous tenez. J'ai fait le tour de la région et il semble que vous nous ayez débarassé de la majeur partie des goblins de la zone ! Je ne dis pas que vous ne croiserez pas un ou deux traînards mais dans l'ensemble c'est du bon travail."
 						   },
-						   "bulletin_title": "Mer Burlyhands shakes his head",
+                           "bulletin_title": "Mer Burlyhands secoue la tête",
 						   "dialog_title": "Mer Burlyhands"
 						},
 						"msg3": {
 						   "bulletin_message": {
-							  "00": "Here's a gift I've collected from some neighboring towns. Everyone's sleeping easier tonight because of you."
+                              "00": "Voici un cadeau que j'ai collecté des villes voisines. Grace à vous, tout le monde dormira bien mieux ce soir !"
 						   },
-						   "bulletin_title": "Mer Burlyhands nods firmly",
+                           "bulletin_title": "Mer Burlyhands hoche la tête fermement",
 						   "dialog_title": "Mer Burlyhands"
 						},
 						"msg1": {
 						   "bulletin_message": {
-							  "00": "Hello there? Anyone still home?"
+                              "00": "Bonjour, bonjour !? Il reste quelqu'un à la maison ?"
 						   },
-						   "bulletin_title": "Mer Burlyhands Reappears",
+                           "bulletin_title": "Mer Burlyhands réaparrait",
 						   "dialog_title": "Mer Burlyhands"
 						}
 					 }
@@ -1986,7 +1986,7 @@
 			}
 		 },
 		 "promote_to_job": {
-            "display_name": "Changer de métier",
+            "display_name": "Changer de profession",
             "description": "Donne à ce hearthling une nouvelle activité"
 		 },
 		 "raze_crop": {
@@ -2145,7 +2145,7 @@
 		 },
 		 "combat": {
 			"hurt_badly": {
-			   "text": "On Serious Injury:",
+               "text": "Sur une grave blessure :",
 			   "logs": {
 				  "generic": {
 					 "000": "Ow! That really hurt!",
@@ -2168,7 +2168,7 @@
 			   }
 			},
 			"peaceful_day": {
-			   "text": "On Tranquility",
+               "text": "Sur le calme :",
 			   "logs": {
 				  "generic": {
 					 "000": "Ça fait du bien d'être en vie !",
@@ -2189,7 +2189,7 @@
 			   }
 			},
 			"villager_death": {
-			   "text": "On Mortality:",
+               "text": "Sur la mort :",
 			   "logs": {
 				  "generic": {
 					 "dead_friend_and_teacher": {
@@ -3168,18 +3168,18 @@
 			"growth_stage": {
 			   "001": {
 				  "name": "Pousse de jacinthe rose",
-				  "description": "Stubby."
+				  "description": "Minuscule."
 			   },
 			   "003": {
 				  "name": "Jacinthe rose",
-				  "description": "Beauty is its own reward."
+				  "description": "La beauté est sa propre récompense."
 			   },
 			   "000": {
-				  "name": "Semis de Jacinthe rose",
-				  "description": "Full of potential."
+				  "name": "Semis de jacinthe rose",
+				  "description": "Plein de potentiel."
 			   },
 			   "002": {
-				  "name": "Bourgeon de Jacinthe rose",
+				  "name": "Bourgeon de jacinthe rose",
 				  "description": "Awkward, gangly stage."
 			   }
 			}
@@ -3189,24 +3189,24 @@
 			"description": "Fast-growning, but pretty bland on its own.",
 			"growth_stage": {
 			   "003": {
-				  "name": "Ripe Carrot",
+                  "name": "Carotte mûre",
 				  "description": "Delicious!"
 			   },
 			   "002": {
-				  "name": "Baby Carrot",
-				  "description": "Small. Bitter."
+                  "name": "Bébé carotte",
+                  "description": "Petite, douce."
 			   },
 			   "001": {
-				  "name": "Carrot Sprout",
-				  "description": "Not edible yet!"
+                  "name": "Pousse de carotte",
+				  "description": "Pas encore comestible !"
 			   },
 			   "000": {
-				  "name": "Carrot Seedling",
-				  "description": "A unrealized carrot."
+                  "name": "Semis de carotte",
+                  "description": "Une carotte pas encore faite."
 			   },
 			   "011": {
-				  "name": "Rotten Carrot",
-				  "description": "Moldy and disgusting."
+                  "name": "Carotte pourrie",
+                  "description": "Moisie et dégoutante."
 			   }
 			}
 		 },
@@ -3215,7 +3215,7 @@
 			"description": "Pousse lente mais super nutritif.",
 			"growth_stage": {
 			   "003": {
-				  "name": "Ripe Corn",
+                  "name": "Maïs bien mûr",
                   "description": "Manger moi ! Manger moi !"
 			   },
 			   "002": {
@@ -3224,7 +3224,7 @@
 			   },
 			   "001": {
 				  "name": "Corn Sprout",
-                  "description": "Pas encore consommable !"
+                  "description": "Pas encore comestible !"
 			   },
 			   "000": {
 				  "name": "Corn Seedling",
@@ -3267,7 +3267,7 @@
 			"description": "It's chill to the touch.",
 			"growth_stage": {
 			   "001": {
-				  "name": "Perce-neige Sprout",
+				  "name": "Pousse de perce-neige",
 				  "description": "Stubby."
 			   },
 			   "003": {
@@ -3275,11 +3275,11 @@
 				  "description": "Mysteriously cool."
 			   },
 			   "000": {
-				  "name": "Perce-neige Seedling",
+				  "name": "Semis de perce-neige",
 				  "description": "Full of potential."
 			   },
 			   "002": {
-				  "name": "Perce-neige Bud",
+				  "name": "Bourgeon de perce-neige",
 				  "description": "Like a baby snowflake."
 			   }
 			}
@@ -3746,7 +3746,7 @@
 			}
 		 },
 		 "sheep_jerky": {
-			"display_name": "Rack of Mutton"
+            "display_name": "Carré d'agneau"
 		 },
 		 "veggie_stew": {
 			"veggie_stew": {
@@ -4153,13 +4153,13 @@
 	  },
 	  "plants": {
 		 "berry_bush": {
-			"display_name": "Berry Bush",
-			"description": "Harvestable for a meager food supply.",
-			"unripe_description": "Not yet ripe for harvest."
+            "display_name": "Buisson à baies",
+            "description": "Récoltable pour une source de nourriture frugale.",
+            "unripe_description": "Pas assez mûrs pour la récolte."
 		 },
 		 "brightbell_plant": {
 			"display_name": "Jacinthe sauvage",
-			"description": "A harvestable wild flower"
+			"description": "Une fleur sauvage récoltable."
 		 },
 		 "carrot": {
 			"carrot_basket": {
@@ -4173,13 +4173,13 @@
 		 },
 		 "frostsnap_plant": {
 			"display_name": "Perce-neige sauvage",
-			"description": "A harvestable wild flower"
+			"description": "Une fleur sauvage récoltable."
 		 },
 		 "silkweed": {
 			"silkweed": {
-			   "display_name": "Fil-de-soie sauvage",
-			   "description": "This plant's fiber can be spun into thread.",
-			   "unripe_description": "This plant has been harvested and hasn't grown back yet."
+               "display_name": "Fil-de-soie sauvage",
+               "description": "Les fibres de cette plantes peuvent être filées.",
+               "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé."
 			}
 		 },
 		 "tester": {
@@ -4195,7 +4195,7 @@
 		 "turnip": {
 			"turnip_basket": {
                "display_name": "Panier de navets",
-               "description": "Bien rose et rond."
+               "description": "Bien violets et ronds."
 			},
 			"turnip_serving": {
                "display_name": "Un navet",
@@ -4896,7 +4896,7 @@
 	  "carpenter": {
 		 "carpenter_description": {
 			"display_name": "Menuisier",
-            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu'il fabrique permettent de dévérouiller d'autres métiers.",
+            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu'il fabrique permettent de dévérouiller d'autres professions.",
             "requirements": "Scie de menuisier. Fabriquée par le forgeron.",
 			"level_6_data": {
                "title": "Maître menuisier",
@@ -5200,7 +5200,7 @@
                "recipe_name": "Sac de farine"
 			},
 			"meat_stew_recipe": {
-			   "description": "Hearty, satisfying, and perfect to ease the passing of a cold night.",
+               "description": "Copieux, satisfaisant et parfait pour aider à supporter une nuit froide.",
                "recipe_name": "Savoureux ragoût de viande",
                "flavor": "Avant que vous demandiez, c'est un assortiment de viandes."
 			},
@@ -5211,19 +5211,19 @@
             "food_name": "Nourriture",
             "ingredients_name": "Ingrédients",
 			"veggie_stew_recipe": {
-			   "description": "A warm, savory broth, fortified with braised pumpkin!",
-			   "recipe_name": "Tasty Vegetable Stew",
-			   "flavor": "Afterwards, you feel satisfied, but not heavy."
+               "description": "Un savoureux bouillon chaud agrémenté de citrouille braisé !",
+               "recipe_name": "Succulent ragoût de légumes",
+               "flavor": "Aprés, vous vous sentez satisfait mais pas lourd."
 			},
 			"corn_bread_recipe": {
-			   "description": "A bread made from cornmeal.",
+               "description": "Un pain à base de farine de maïs.",
                "recipe_name": "Pain de maïs",
                "flavor": "Comme m'an le faisait."
 			},
 			"poyo_pot_pie_recipe": {
-			   "description": "A tasty meat and veggie pie.",
-               "recipe_name": "Chausson au paté de poyo",
-			   "flavor": "Pie is always good."
+               "description": "Une tourte légumes et viandes.",
+               "recipe_name": "Tourte au paté de poyo",
+               "flavor": "Les tourtes, c'est toujours bon."
 			},
 			"omelette_recipe": {
                "description": "Viande et légumes battus dans des oeufs.",
@@ -5295,7 +5295,7 @@
             "description": "Les agriculteurs travaillent la terre et cultivent les champs pour avoir une nourriture consistante et des ingrédients pour la cuisine.",
             "requirements": "Houe d'agriculteur, fabriquée par le menuisier.",
 			"level_6_data": {
-			   "perk_000_name": "Nature's Surprise (à venir)",
+               "perk_000_name": "Surprise de la nature (à venir)",
 			   "perk_000_description": "De temps en temps, le doigté spécial de l'agriculteur à des effets... spéciaux."
 			},
 			"level_1_data": {
@@ -5341,34 +5341,34 @@
 		 "footman_description": {
 			"display_name": "Fantassin",
             "description": "Le fantassin est un combatant de mélée. Un bon choix pour la base de la défense de votre ville.",
-			"requirements": "Wooden Practice Sword, crafted by the Carpenter.",
+            "requirements": "Epée d'entrainement de bois, fabriquée par le menuisier",
 			"level_4_data": {
-			   "perk_000_name": "Damage Up 40%",
-			   "perk_000_description": "The footman is now practiced at optimizing the effect of each blow."
+               "perk_000_name": "40% de dommages supplémentaires",
+               "perk_000_description": "Le fantassin est maintenant entrainé à optimiser les effets de chaque coups."
 			},
 			"level_1_data": {
-			   "perk_000_name": "Damage Up 20%",
-			   "perk_000_description": "The footman knows that all combats may have mortal consequences, and attacks with renewed determination."
+               "perk_000_name": "20% de dommages supplémentaires",
+               "perk_000_description": "Sachant que tout combat peut avoir des conséquences mortelles, le fantassin attaque avec une détermination accrue."
 			},
 			"level_3_data": {
-			   "perk_000_name": "Power Spike",
-			   "perk_000_description": "This powerful, overhead swing deals double damage."
+               "perk_000_name": "Frappe puissante",
+               "perk_000_description": "Ce puissant coup, porté par dessus la tête, double les dommages."
 			}
 		 },
 		 "footman_buffs": {
 			"damage_1_buff": {
-			   "description": "Au niveau 1, les attaques du fantassin vont améliorer sa férocité"
+			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces"
 			},
 			"damage_2_buff": {
-			   "description": "Au niveau 1, les attaques du fantassin vont améliorer sa férocité"
+			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces"
 			},
 			"damage_3_buff": {
-			   "description": "Au niveau 1, les attaques du fantassin vont améliorer sa férocité"
+			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces"
 			}
 		 },
 		 "footman_outfit": {
-			"display_name": "Military Uniform",
-			"description": "Standard issue gear for all soldiers"
+            "display_name": "Tenu militaire",
+            "description": "L'unifomre standard des fantassins."
 		 }
 	  },
 	  "geomancer": {
@@ -5392,19 +5392,19 @@
 			"level_6_data": {
 			   "title": "Maître tailleur",
 			   "perk_000_name": "10 000 Heures (à venir)",
-			   "perk_000_description": "The mason's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_description": "La maîtrise de son Art permet au tailleur de pierre d'inventer de nouveaux moyens d'exploiter la rôche."
 			},
 			"level_2_data": {
-			   "perk_000_name": "Fancy Rocks",
-			   "perk_000_description": "The mason can now make more elaborate items froms stone."
+               "perk_000_name": "Pierre de luxe",
+               "perk_000_description": "Le tailleur peut maintenant faire sortir de roche des articles plus élaborés."
 			},
 			"level_4_data": {
-			   "perk_000_name": "Extended Catalog",
-			   "perk_000_description": "The mason ventures from the realm of the functional into... art."
+               "perk_000_name": "Catalogue étendu",
+               "perk_000_description": "Le tailleur s'aventure de la sphère fonctionelle à.. l'Art."
 			},
 			"level_1_data": {
-			   "perk_000_name": "Standard Catalog",
-			   "perk_000_description": "The mason can now make a solid array of basic furniture."
+               "perk_000_name": "Catalogue standard",
+               "perk_000_description": "Le tailleur a maintenant une gamme solide de meubles à son catalogue."
 			},
 			"level_3_data": {
                "perk_000_name": "Inspiration artistique",
@@ -5413,62 +5413,62 @@
 		 },
 		 "mason_chisel": {
             "display_name": "Ciseau de tailleur de pierre",
-			"description": "Tools of the trade for a mason.",
+            "description": "L'outil maître pour un tailleur de pierre.",
 			"mason_chisel_talisman": {
                "display_name": "Ciseau de tailleur de pierre",
-			   "description": "Required to promote a hearthling into a mason."
+               "description": "Requis pour promouvoir un citoyen en tailleur de pierre."
 			}
 		 },
 		 "mason_hammer": {
             "display_name": "Marteau de tailleur de pierre",
-			"description": "Tools of the trade for a mason."
+            "description": "L'outil maître pour un tailleur de pierre."
 		 },
 		 "mason_outfit": {
-			"display_name": "Mason Smock",
-			"description": "Uniform for all masons"
+            "display_name": "Blouse de tailleur de pierre",
+            "description": "L'uniforme de tous les tailleurs de pierre."
 		 },
 		 "mason_workbench": {
 			"mason_workbench_ghost": {
-			   "display_name": "Mason Workbench",
-			   "description": "Used by the Mason for crafting."
+               "display_name": "Etabli de tailleur de pierre",
+               "description": "Utilisé par les tailleurs de pierre pour leur artisanat."
 			}
 		 },
 		 "mason_pedestal": {
 			"mason_pedestal_ghost": {
-			   "display_name": "Mason Pedestal",
-			   "description": "Craft in a well-lit space."
+               "display_name": "Piédestal de tailleur de pierre",
+               "description": "Créez dans un espace bien éclairé."
 			}
 		 },
 		 "recipes": {
 			"bird_bath_recipe": {
-			   "description": "A decorative stone vase with water for the birdies.",
-			   "recipe_name": "Bird Bath",
-			   "flavor": "Not a chair."
+               "description": "Une vasque de pierre décorative avec de l'eau pour les oiseaux.",
+               "recipe_name": "Bain pour oiseaux",
+               "flavor": "Ce n'est pas une chaise !"
 			},
 			"blacksmith_hammer_recipe": {
-			   "description": "Required to promote a hearthling into a Blacksmith.",
-			   "recipe_name": "Blacksmith's Hammer",
-			   "flavor": "From the dragon that lives in the forge, weapons and armor, defense and conquest."
+               "description": "Requis pour promouvoir un citoyen en forgeron.",
+               "recipe_name": "Marteau de forgeron",
+               "flavor": "Tiré du dragon qui vit dans la forge, armes et armures, défense et conquête."
 			},
 			"cobblestone_fence_gate_recipe": {
-			   "description": "It's thick stone walls grant a sense of security.",
-			   "recipe_name": "Cobblestone Fence Gate",
-			   "flavor": "Sheep go in, but can't get out!"
+               "description": "Cet épais mur de pierre confère un sentiment de sécurité.",
+               "recipe_name": "Portail de clôture de pierre",
+               "flavor": "Les moutons peuvent y entrer mais pas en sortir !"
 			},
 			"cobblestone_fence_recipe": {
-			   "description": "A rustic, sturdy wall segment.",
-			   "recipe_name": "Cobblestone Fence",
-			   "flavor": "Use the earth itself to form the walls of the pasture? Genius!"
+               "description": "Un segment de mur rustique et solide.",
+               "recipe_name": "Clôture de pierre",
+               "flavor": "Utiliser la terre elle-même pour réaliser les murs des pâturages ? Génial !"
 			},
 			"cook_spoon_recipe": {
-			   "description": "Required to promote a hearthling into a Cook.",
+               "description": "Requis pour promouvoir un citoyen en cuisinier.",
                "recipe_name": "Cuillère de cuisinier",
-			   "flavor": "COOKED FOOOOOOOOD!!!!!! --Alton The Bard"
+               "flavor": "PLAAATS CUISINNNNNES!!!!!! --Alton le barde"
 			},
 			"gargoyle_recipe": {
-			   "description": "Gothic-style carving to decorate your walls.",
-			   "recipe_name": "Wall Mounted Decorative Gargoyle",
-			   "flavor": "Remnants of the servants of Brelor, Crownless King."
+               "description": "Une sculpture de style gothique pour décorer vos murs.",
+               "recipe_name": "Gargouille murale décorative.",
+               "flavor": "Restes des serviteurs de Brelor, Roi Sans-couronne."
 			},
             "tools_name": "Outils",
             "storage_name": "Rangement",
@@ -5477,34 +5477,34 @@
             "weapons_name": "Armes",
             "furniture_name": "Meubles",
 			"stone_bench_recipe": {
-			   "description": "Outdoor seating for moments of relaxation.",
+               "description": "Siège d'extérieur pour des moments de détente.",
                "recipe_name": "Banc de pierre",
                "flavor": "Esthétique et fonctionnel. S'accorde avec les pierres tombales."
 			},
 			"stone_brazier_recipe": {
-			   "description": "A small fire pit that provides comfort and warmth at night.",
+               "description": "Un petit feu de camp qui offre confort et chaleur pendant la nuit .",
                "recipe_name": "Brazero de pierre",
-			   "flavor": "Warning: Do not drop anything in while it's lit."
+               "flavor": "Attention :  Ne rien verser dedans pendant qu'il est allumé."
 			},
 			"stone_bricks_recipe": {
                "description": "Un composant clef pour les structures de pierre comme les châteaux et les routes.",
                "recipe_name": "Tas de bloc de pierre",
-			   "flavor": "Tis a lucky thing, boy, that the square is the natural shape within most rocks. --Garen Knapper"
+               "flavor": "C'est une chance, mon garçon, que le cube soit la structure naturelle de la plupart des roches. --Garen Knapper"
 			},
 			"stone_chair_recipe": {
                "description": "Pas super confortable mais un signe de statut social.",
                "recipe_name": "Chaise de pierre",
-			   "flavor": "Outdoorsy!"
+               "flavor": "D'extérieur !"
 			},
             "stone_chest_recipe": {
-               "description": "Imposing place to put things.",
+               "description": "Un endroit imposant ou ranger les choses.",
                "recipe_name": "Coffre de pierre",
                "flavor": "'Ecoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.'--Edolf, barde ambulant"
             },
 			"stone_garden_lantern_recipe": {
                "description": "Une lanterne au look antique qui donne une super ambiance.",
                "recipe_name": "Lanterne d'extérieur en pierre",
-			   "flavor": "Only slightly ominous looking."
+               "flavor": "Seulement d'apparence un peu menaçante."
 			},
 			"stone_maul_recipe": {
                "description": "L'outil idéal pour tout écraser.",
@@ -5532,9 +5532,9 @@
 			   "flavor": "Tappety-tap; Make the earth sing, Raise Brelor's ghost, Watch the mountain take wing."
 			},
 			"mason_pedestal_recipe": {
-			   "description": "A well lit place for creating stone artwork.",
+               "description": "Une zone de travail bien éclairée pour créer des sculptures de pierre.",
                "recipe_name": "Autel de tailleur de pierre",
-			   "flavor": "Snap and spark, hiss of coal, light the way, transmute the earth whole."
+               "flavor": "Crépitements et étincelles, sifflement du charbon, éclaire la voie, transmute la terre complète."
 			},
             "workbenches_name": "Ateliers"
 		 }
@@ -5793,12 +5793,12 @@
 			"weaver_loom_recipe": {
                "description": "Assemble des fils à d'autres fils jusqu'à l'obtention d'un tissu.",
                "recipe_name": "Métier à tisser",
-			   "flavor": "Patient Spider, weaver, writer, draws the tapestry of fate tighter. --Rayya's Rhyme"
+               "flavor": "Patiente araignée, tisserand, poête, reserre encore la trame du destin --Rayya's Rhyme"
 			},
 			"weaver_spinning_wheel_recipe": {
                "description": "Transforme ce qui est emmélé en fil.",
                "recipe_name": "Rouet de tisserand",
-			   "flavor": "Spider smiles; all eight eyes glitter, 'Something from nothing, some sweet and some bitter.'"
+               "flavor": "L'araignée sourit; ses huit yeux brillent. 'Quelque chose pour rien, certains sont doux et d'autres amers.'"
 			},
 			"weaver_workbench_recipe": {
                "description": "Utilisé pour des confections compliquées à partir de fil est et de tissus.",
@@ -5896,7 +5896,7 @@
 			}
 		 },
 		 "jerky": {
-			"display_name": "Viande séché",
+			"display_name": "Viande séchée",
 			"description": "Filandreuse, mais nourrissante !"
 		 }
 	  },
