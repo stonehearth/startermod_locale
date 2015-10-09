@@ -569,28 +569,28 @@
 			"materials": {
 			   "wall": {
                   "material": "Matériaux pour murs",
-                  "wood_resource": "Murs de bois",
-                  "stone_resource": "Murs de pierre"
+                  "wood_resource": "Murs en bois",
+                  "stone_resource": "Murs en pierre"
 			   },
 			   "floor": {
                   "material": "Matériaux pour sols",
-                  "wood_resource": "Plancher de bois",
-                  "stone_resource": "Sol de pierre"
+                  "wood_resource": "Plancher en bois",
+                  "stone_resource": "Sol en pierre"
 			   },
 			   "roof": {
                   "material": "Matériaux de toitures",
-                  "wood_resource": "Tuiles de bois",
-                  "stone_resource": "Tuiles de pierre"
+                  "wood_resource": "Tuiles en bois",
+                  "stone_resource": "Tuiles en pierre"
 			   },
 			   "column": {
                   "material": "Matériaux pour colonnes",
-                  "wood_resource": "Colonnes de bois",
-                  "stone_resource": "Colonnes de pierre"
+                  "wood_resource": "Colonnes en bois",
+                  "stone_resource": "Colonnes en pierre"
 			   },
 			   "road": {
                   "material": "Matériaux pour routes",
-                  "wood_resource": "Pavés de bois",
-                  "stone_resource": "Pavés de pierre"
+                  "wood_resource": "Pavés en bois",
+                  "stone_resource": "Pavés en pierre"
 			   },
 			   "doors": {
                   "material": "Matériaux pour portes",
@@ -852,7 +852,7 @@
 			   "wildlife_title": "Faune",
 			   "wildlife_description": "La faune locale peut être chassé pour la nourriture et les matériaux d'artisanat.",
 			   "minerals_title": "Minerais",
-			   "minerals_description": "Vous aurez besoin de minerais pour fabriquer des objets de pierre ou de métal."
+			   "minerals_description": "Vous aurez besoin de minerais pour fabriquer des objets en pierre ou en métal."
 			},
 			"terrain_codes": {
 			   "water": "Eau",
@@ -1166,14 +1166,14 @@
 			   },
 			   "food_shop": {
 				  "shop_info": {
-                     "name": "Un simple chariot ambulant de nourriture",
+                     "name": "Un chariot ambulant de nourriture",
                      "title": "Un chariot ambulant de nourriture est de passage en ville"
 				  }
 			   },
 			   "rugs_shop": {
 				  "shop_info": {
                      "name": "Chez Havaad, vêtements fins et tapis de qualité !",
-                     "title": "Un simple marchand est arrivé pour vendre quelques babioles"
+                     "title": "Un marchand est arrivé pour vendre quelques babioles"
 				  }
 			   },
 			   "stonecutter_shop": {
@@ -1185,7 +1185,7 @@
 			   "tannery_shop": {
 				  "shop_info": {
                      "name": "Tannerie de Jess Vexed.<br>Marchandises des contrés sauvages",
-                     "title": "Une robuste survivaliste est descendue en ville avec ses marchandises"
+                     "title": "Une trappeuse est descendue en ville avec ses marchandises"
 				  }
 			   },
 			   "woodcutter_shop": {
@@ -1418,11 +1418,11 @@
 						},
 						"msg1": {
 						   "bulletin_message": {
-							  "000": "If you want to finish the wolves before they finish you, strike first.",
-							  "001": "There are wolves in the forest. Goblin wolves. Get them before they get you.",
-							  "002": "Ogo's forces are on the move. There are wolves in your woods.",
-							  "003": "Little human camp: search out your enemy while they yet sleep.",
-							  "004": "Goblin wolves are trained to attack on command. Free them before that command is issued, and you will sleep easy tonight."
+							  "000": "Si vous voulez tuer les loups avant qu'ils ne vous finissent, attapez les en premier.",
+							  "001": "Ils y a des loups dans la fôret. Des loups gobelins. Chassez les avant qu'ils ne vous chassent.",
+							  "002": "Les forces d'Ogo sont en mouvement. Ils y a des loups dans vos bois.",
+							  "003": "Petit campement humain : rechercher vos ennemis pendant qu'ils dorments.",
+							  "004": "Les loups gobelins sont entrainés pour attaqués sur commande. Libérez les avant que cet ordre n'arrive, et vous dormiez tranquillement cette nuit."
 						   },
                            "bulletin_title": "Une flèche avec un message se plante sur votre bannière",
                            "dialog_title": "Message mystérieux"
@@ -1905,7 +1905,7 @@
 			   "description": "Un bâtiment. Whouhaou !!"
 			},
 			"column": {
-               "display_name": "Colonne de bois",
+               "display_name": "Colonne en bois",
                "description": "Supporte les murs"
 			},
 			"floor": {
@@ -3000,7 +3000,7 @@
 		 "cobblestone_fence_gate": {
 			"cobblestone_fence_gate_ghost": {
 			   "display_name": "Portail de clôture en pierre",
-			   "description": "Ces épais murs de pierre confèrent un sentiment de sécurité."
+			   "description": "Ces épais murs en pierre confèrent un sentiment de sécurité."
 			}
 		 },
 		 "crafting": {
@@ -3083,7 +3083,7 @@
          },
          "stone_chest": {
             "stone_chest_ghost": {
-               "display_name": "Coffre de pierre",
+               "display_name": "Coffre en pierre",
                "description": "Boîte de rangement"
 			}
 		 },
@@ -3847,13 +3847,13 @@
 	  "furniture": {
 		 "arch_backed_chair": {
 			"arch_backed_chair_ghost": {
-               "display_name": "Chaise en ogive de cathédrale",
+               "display_name": "Chaise cathédrale",
                "description": "Aussi classieuse que la piété."
 			}
 		 },
 		 "arch_backed_chair_fine": {
 			"arch_backed_chair_fine_ghost": {
-			   "display_name": "Fine Cathedral-Arch Chair",
+			   "display_name": "Chaise cathédrale stylisé",
 			   "description": "Classy like piety."
 			}
 		 },
@@ -3895,7 +3895,7 @@
 		 },
 		 "dresser": {
 			"dresser_ghost": {
-               "display_name": "Commode de bois",
+               "display_name": "Commode",
                "description": "Décorative en l'abscence de propriétaire."
 			}
 		 },
@@ -3907,7 +3907,7 @@
 		 },
 		 "not_much_of_a_bed": {
 			"not_much_of_a_bed_ghost": {
-			   "display_name": "Lit minable",
+			   "display_name": "Lit miteux",
 			   "description": "Mean as in poor, not cruel. Though it's that too."
 			}
 		 },
@@ -3925,43 +3925,43 @@
 		 },
 		 "simple_wooden_chair": {
 			"simple_wooden_chair_ghost": {
-               "display_name": "Chaise simple de bois",
+               "display_name": "Chaise en bois",
                "description": "Pour s'assoir."
 			}
 		 },
 		 "simple_wooden_chair_fine": {
 			"simple_wooden_chair_fine_ghost": {
-               "display_name": "Chaise en bois de luxe",
+               "display_name": "Chaise en bois stylisé",
                "description": "Pour s'assoir tout en frimant."
 			}
 		 },
 		 "stone_bench": {
 			"stone_bench_ghost": {
-               "display_name": "Banc de pierre",
+               "display_name": "Banc en pierre",
                "description": "Siège d'extérieur pour des moments de détente."
 			}
 		 },
 		 "stone_chair": {
 			"stone_chair_ghost": {
-               "display_name": "Chaise de pierre",
+               "display_name": "Chaise en pierre",
                "description": "Pour s'assoir."
 			}
 		 },
 		 "stone_table": {
 			"stone_table_ghost": {
-               "display_name": "Table de pierre",
+               "display_name": "Table en pierre",
                "description": "Son imposance ajoute à l'impression de lourdeur."
 			}
 		 },
 		 "table_for_one": {
 			"table_for_one_ghost": {
-               "display_name": "Table pour célibataire",
+               "display_name": "Petite table",
                "description": "Mobilier dinatoire pour introvertis."
 			}
 		 },
 		 "table_for_one_fine": {
 			"table_for_one_fine_ghost": {
-               "display_name": "Table stylisé pour célibataire.",
+               "display_name": "Petite table stylisé",
                "description": "On peut frimer même seul !"
 			}
 		 },
@@ -4257,7 +4257,7 @@
             "description": "Une barre d'acier pur."
 		 },
 		 "stone_bricks": {
-			"display_name": "Pile de briques de pierre",
+			"display_name": "Pile de briques",
 			"description": "Une élément clé pour les constructions en pierre."
 		 },
 		 "thread": {
@@ -4347,27 +4347,27 @@
 		 "wood": {
 			"juniper_log": {
                "display_name": "Bûche de genévrier",
-               "description": "Une bûche. Faite de bois."
+               "description": "Une bûche."
 			},
 			"oak_log": {
                "display_name": "Bûche de chêne",
-               "description": "Une bûche. Faite de bois."
+               "description": "Une bûche."
 			},
 			"pine_log": {
                "display_name": "Bûche de pin",
-               "description": "Une bûche. Faite de bois."
+               "description": "Une bûche.."
 			},
 			"cactus_log": {
                "display_name": "Bûche de cactus",
-               "description": "Une bûche. Faite de bois."
+               "description": "Une bûche."
 			},
 			"palm_log": {
                "display_name": "Bûche de palmier",
-               "description": "Une bûche. Faite de bois."
+               "description": "Une bûche."
 			},
 			"acacia_log": {
                "display_name": "Bûche d'acacia",
-               "description": "Une bûche. Faite de bois."
+               "description": "Une bûche."
 			}
 		 }
 	  },
@@ -4641,14 +4641,14 @@
 			}
 		 },
 		 "spiked_wooden_mace": {
-            "display_name": "Mace de bois cloutée",
+            "display_name": "Mace en bois cloutée",
             "description": "Oh les vilaines pointes !"
 		 },
 		 "stone_maul": {
-            "display_name": "Marteau de pierre",
+            "display_name": "Marteau en pierre",
             "description": "L'outil parfait pour écraser.",
 			"stone_maul_iconic": {
-               "display_name": "Marteau de pierre",
+               "display_name": "Marteau en pierre",
                "description": "Pour applanir les faces."
 			}
 		 },
@@ -4661,14 +4661,14 @@
 			}
 		 },
 		 "wooden_sword": {
-			"display_name": "Épée de bois",
+			"display_name": "Épée en bois",
 			"description": "Tranche tes enemies avec la force du chêne",
 			"wooden_sword_iconic": {
-			   "display_name": "Épée de bois",
-			   "description": "Épée basique de bois."
+			   "display_name": "Épée en bois",
+			   "description": "Épée basique en bois."
 			},
 			"wooden_sword_talisman": {
-			   "display_name": "Épée de bois",
+			   "display_name": "Épée en bois",
 			   "description": "Nécessaire pour promouvoir un hearthling en fantassin."
 			}
 		 }
@@ -4740,7 +4740,7 @@
 		 "blacksmith_forge": {
 			"blacksmith_forge_ghost": {
 			   "display_name": "Forge",
-               "description": "Un four lourd de pierre pour manger le métal"
+               "description": "Un four lourd en pierre pour manger le métal"
 			}
 		 },
 		 "blacksmith_hammer": {
@@ -4951,27 +4951,27 @@
 		 "recipes": {
 			"arch_backed_chair_recipe": {
 			   "description": "Just like a normal chair, except it impresses your neighbors. When sitting, food is 20% more satisfying.",
-			   "recipe_name": "Cathedral-Arch Chair",
+               "recipe_name": "Chaise cathédrale stylisé",
 			   "flavor": "Design favored by the Church of Plenty."
 			},
 			"comfy_bed_recipe": {
-			   "description": "Huit heures vont vous laissé aussi frais que le jour de votre naissance.",
+               "description": "Eight hours will leave you as refreshed as the day you were born.",
 			   "recipe_name": "Lit confortable",
 			   "flavor": "Nobody ever wants to get out. It makes emergency evacuations awkward."
 			},
 			"comfy_chair_recipe": {
 			   "description": "Its padded seat guarantees a 98% reducion in awkward splinters!",
-			   "recipe_name": "Comfy Chair",
+               "recipe_name": "Chaise confortable",
 			   "flavor": "If pillows are good for the head, surely they're even better for the butt and back!"
 			},
 			"dining_table_recipe": {
 			   "description": "Allows a group of people to all eat together. Like grown ups.",
-			   "recipe_name": "Dining Table",
+               "recipe_name": "Table à manger",
 			   "flavor": "Sitting down to eat is a sign of civilization."
 			},
 			"dresser_recipe": {
 			   "description": "A chest of drawers for storing clothing and personal possessions.",
-			   "recipe_name": "Wooden Dresser",
+               "recipe_name": "Commode",
 			   "flavor": "Step 2: acquire personal possessions..."
 			},
 			"hoe_recipe": {
@@ -4995,22 +4995,22 @@
 			},
 			"not_much_of_a_bed_recipe": {
 			   "description": "Slightly more comfortable than sleeping on a board.",
-			   "recipe_name": "Mean Bed",
+               "recipe_name": "Lit miteux",
 			   "flavor": "Mean as in poor, not cruel. Though it's that too."
 			},
 			"park_bench_recipe": {
 			   "description": "Outdoor seating for moments of relaxation.",
-			   "recipe_name": "Wooden Park Bench",
+               "recipe_name": "Banc de parc en bois",
 			   "flavor": "Life is like a plate of berries."
 			},
 			"picket_fence_gate_recipe": {
 			   "description": "Lets people through your picket fence.",
-			   "recipe_name": "Picket Fence Gate",
+               "recipe_name": "Portail de clôture",
 			   "flavor": "Hope you like your neighbors!"
 			},
 			"picket_fence_recipe": {
 			   "description": "Keeps people off your property.",
-			   "recipe_name": "Picket Fence",
+               "recipe_name": "Clôture",
 			   "flavor": "If it's not white, is our life unfulfilled?"
 			},
             "tools_weapons_name": "Outils et armes",
@@ -5026,17 +5026,17 @@
 			},
 			"simple_wooden_chair_recipe": {
 			   "description": "When sitting, food is 20% more satisfying.",
-			   "recipe_name": "Simple Wooden Chair",
+               "recipe_name": "Chaise en bois",
 			   "flavor": "Ten thousand years of reseach culminated in this four-legged design."
 			},
 			"small_crate_recipe": {
 			   "description": "For compactly storing up to 8 items",
-			   "recipe_name": "Small Crate",
+               "recipe_name": "Petite caisse",
 			   "flavor": "Does the crate that stores all the things that do not store themselves, store itself?"
 			},
 			"table_for_one_recipe": {
 			   "description": "Better than eating standing up. Unless you're watching your weight.",
-			   "recipe_name": "Table for One",
+               "recipe_name": "Petite table",
 			   "flavor": "Dining furniture for introverts."
 			},
 			"weaver_spindle_recipe": {
@@ -5046,17 +5046,17 @@
 			},
 			"window_box_brightbell_recipe": {
 			   "description": "A planter box pleine de jacinthe rose, built to be placed below window frames.",
-			   "recipe_name": "Brightbell Window Box",
+			   "recipe_name": "Jardinière de jacinthe rose",
 			   "flavor": "A brightbell a day keeps the Ogres away!"
 			},
 			"window_box_frostsnap_recipe": {
 			   "description": "A planter box pleine de Perce-neige, built to be placed below window frames.",
-			   "recipe_name": "Perce-neige Window Box",
+			   "recipe_name": "Jardinière de perce-neige",
 			   "flavor": "The capstone of an civilized dwelling."
 			},
 			"wooden_buckler_recipe": {
 			   "description": "Toughen up your foot soldiers... when you can actually equip them in a future alpha!",
-			   "recipe_name": "Wooden Buckler"
+               "recipe_name": "Bouclier en bois"
 			},
 			"wooden_diamond_window_recipe": {
 			   "description": "A more stylish window.",
@@ -5065,91 +5065,91 @@
 			},
 			"wooden_door_2_recipe": {
 			   "description": "Stronger than your average door.",
-			   "recipe_name": "Reinforced Wooden Door",
+               "recipe_name": "Porte en bois renforcée",
 			   "flavor": "This here pattern, I learned from the Squarefolk."
 			},
 			"wooden_door_recipe": {
 			   "description": "Minor obstacle for intruders.",
-			   "recipe_name": "Wooden Door",
+               "recipe_name": "Porte en bois",
 			   "flavor": "Privacy at last!"
 			},
 			"wooden_double_door_recipe": {
 			   "description": "Two doors are better than one",
-			   "recipe_name": "Wooden Double Door",
+               "recipe_name": "Double porte en bois",
 			   "flavor": "Some people want to make an entrance... every day."
 			},
 			"wooden_garden_lantern_recipe": {
 			   "description": "A small lantern that's placed on the ground. Suitable for lighting paths or small gardens.",
-			   "recipe_name": "Wooden Garden Lantern",
+               "recipe_name": "Lanterne d'extérieur en bois",
 			   "flavor": "Practical and romantic!"
 			},
 			"wooden_shield_recipe": {
 			   "description": "Crude and basic, but allows the holder to occasionally block attacks.",
-			   "recipe_name": "Rough Wooden Shield",
+               "recipe_name": "Bouclier en bois",
 			   "flavor": "Better than an improvized wooden branch!"
 			},
 			"wooden_sign_blacksmith_recipe": {
 			   "description": "A sign with the mark of the blacksmith, to be placed on buildings.",
-			   "recipe_name": "Blacksmith's Wall-Mounted Sign",
+               "recipe_name": "Enseigne murale de forgeron",
 			   "flavor": "Specializing in heavy, pointy, dense things!"
 			},
 			"wooden_sign_carpenter_recipe": {
 			   "description": "A sign with the mark of the Carpenter, to be placed on buildings.",
-			   "recipe_name": "Carpenter's Wall-Mounted Sign",
+               "recipe_name": "Enseigne murale de menuisier",
 			   "flavor": "Get your wooden things right here!"
 			},
 			"wooden_sign_mason_recipe": {
 			   "description": "A sign with the mark of the Mason, to be placed on buildings.",
-			   "recipe_name": "Mason's Wall-Mounted Sign",
+               "recipe_name": "Enseigne murale de tailleur de pierre",
 			   "flavor": "Dense beautiful things that sometimes contain things that burn."
 			},
 			"wooden_sign_recipe": {
 			   "description": "A generic sign, to identify your buildings",
-			   "recipe_name": "Wooden Wall-Mounted Sign",
+               "recipe_name": "Enseigne murale en bois",
 			   "flavor": "But if it's *generic*, how will...? NM. (-sdee)"
 			},
 			"wooden_sign_weaver_recipe": {
 			   "description": "A sign with the mark of the Weaver, to be placed on buildings.",
-			   "recipe_name": "Weaver's Wall-Mounted Sign",
+               "recipe_name": "Enseigne murale de tisserand",
 			   "flavor": "Artisinally crafted fabrics and plushies!"
 			},
 			"wooden_sword_recipe": {
 			   "description": "Required to promote a hearthling into a Footman.",
-			   "recipe_name": "Wooden Practice Sword",
+               "recipe_name": "Epée en bois d'entrainement",
 			   "flavor": "Just pointy enough to get the job done."
 			},
 			"wooden_wall_lantern_recipe": {
 			   "description": "A simple lantern. Place on buildings to provide light at night.",
-			   "recipe_name": "Wooden Wall-mounted Lantern",
+               "recipe_name": "Lanterne murale en bois",
 			   "flavor": "So comfortinzzzzzzzz..."
 			},
 			"wooden_window_frame_recipe": {
 			   "description": "Lets light into the room.",
-			   "recipe_name": "Wooden Window Frame",
+               "recipe_name": "Encadrement de fenêtre en bois",
 			   "flavor": "So much for privacy..."
 			},
 			"writing_desk_recipe": {
 			   "description": "Not at all like a raven.",
-			   "recipe_name": "Writing Desk",
+               "recipe_name": "Bureau",
 			   "flavor": "...Except it can produce a few notes, tho they are very flat."
 			},
 			"carpenter_workbench_recipe": {
-			   "description": "Required to produce most of the Carpenter's recipes.",
+               "description": "Nécessaire au menuisier pour la plupart de ses créations.",
 			   "recipe_name": "Carpenter Workbench",
 			   "flavor": "A sturdy, well-organized place for tools and crafts."
 			},
 			"carpenter_toolbench_recipe": {
-			   "description": "Fancier tools allow the carpenter to work with cloth and other civilized ingredients.",
+               "description": "Des outils plus performants permettent au menuisier de travailler aussi avec du tissu et autres ressources avancées.",
 			   "recipe_name": "Carpenter Toolbench",
-			   "flavor": "A more elegant workstation, modeled on a more civilized time."
+			   "flavor": "Un établi plus élégant, réalisé en des temps plus civilisé."
 			}
 		 }
 	  },
 	  "cook": {
 		 "cook_description": {
             "display_name": "Cuisinier",
-			"description": "The cook makes delicious, hearty meals from base vegetables and meats.",
-			"requirements": "2 levels of Farmer and a Stoneware Spoon, crafted by the Mason.",
+            "description": "Avec les légumes et la viande de base, le cuisinier mitonne de délicieux repas trés copieux.",
+            "requirements": "Agriculteur niv2 et une cuillère de cuisinier, fabriquée par le tailleur de pierre.",
 			"level_6_data": {
                "title": "Grand chef",
                "perk_000_name": "10 000 Heures (à venir)",
@@ -5157,15 +5157,15 @@
 			},
 			"level_2_data": {
                "perk_000_name": "Chimie culinaire",
-			   "perk_000_description": "The cook has learned to make slightly fancier recipes."
+               "perk_000_description": "Le cuisinier développe plus de fantaisie dans ses recettes."
 			},
 			"level_4_data": {
-               "perk_000_name": "Ingenuity Enhancements (not implemented)",
-			   "perk_000_description": "The cook adds new levels of functionality to classic recipes."
+               "perk_000_name": "Amélioration de l'ingéniosité (à venir)",
+               "perk_000_description": "Le cuisinier améliore les recettes classiques."
 			},
 			"level_1_data": {
 			   "perk_000_name": "Camp Cooking -- XXX TOM, REVISIT THE COOK PERKS!!!!!!",
-			   "perk_000_description": "The cook can make basic, nutritious recipes." 
+			   "perk_000_description": "Le cuisiner peut faire des choses basique, bien nutritive." 
 			},
 			"level_3_data": {
                "perk_000_name": "Inspiration artistique",
@@ -5190,7 +5190,7 @@
 		 },
 		 "cook_workbench": {
 			"cook_workbench_ghost": {
-               "display_name": "Chaudron de pierre",
+               "display_name": "Chaudron en pierre",
                "description": "Utilisé par le cuisinier pour réaliser de délieuses recettes."
 			}
 		 },
@@ -5257,12 +5257,12 @@
             "workbenches_name": "Ateliers",
 			"cook_workbench_recipe": {
                "description": "Utilisé pour mitonner des soupes et des ragoûts bien calorifiques.",
-               "recipe_name": "Chaudron de pierre",
+               "recipe_name": "Chaudron en pierre",
                "flavor": "En pierre, pour garder les aliments chaud trés longtemps."
 			},
 			"cook_mill_recipe": {
                "description": "Utilisée par le cuisinier pour moudre le grain en farine.",
-               "recipe_name": "Meule de pierre"
+               "recipe_name": "Meule en pierre"
 			},
 			"cook_oven_recipe": {
                "description": "Super pour le rôtissage.",
@@ -5271,7 +5271,7 @@
 		 },
 		 "cook_mill": {
 			"cook_mill_ghost": {
-               "display_name": "Meule de pierre",
+               "display_name": "Meule en pierre",
                "description": "Utilisée par le cuisinier pour moudre le grain en farine."
 			}
 		 },
@@ -5341,7 +5341,7 @@
 		 "footman_description": {
 			"display_name": "Fantassin",
             "description": "Le fantassin est un combatant de mélée. Un bon choix pour la base de la défense de votre ville.",
-            "requirements": "Epée d'entrainement de bois, fabriquée par le menuisier",
+            "requirements": "Epée d'entrainement en bois, fabriquée par le menuisier",
 			"level_4_data": {
                "perk_000_name": "40% de dommages supplémentaires",
                "perk_000_description": "Le fantassin est maintenant entrainé à optimiser les effets de chaque coups."
@@ -5441,7 +5441,7 @@
 		 },
 		 "recipes": {
 			"bird_bath_recipe": {
-               "description": "Une vasque de pierre décorative avec de l'eau pour les oiseaux.",
+               "description": "Une vasque décorative avec de l'eau pour les oiseaux.",
                "recipe_name": "Bain pour oiseaux",
                "flavor": "Ce n'est pas une chaise !"
 			},
@@ -5451,13 +5451,13 @@
                "flavor": "Tiré du dragon qui vit dans la forge, armes et armures, défense et conquête."
 			},
 			"cobblestone_fence_gate_recipe": {
-               "description": "Cet épais mur de pierre confère un sentiment de sécurité.",
-               "recipe_name": "Portail de clôture de pierre",
+               "description": "Cet épais mur en pierre confère un sentiment de sécurité.",
+               "recipe_name": "Portail de clôture en pierre",
                "flavor": "Les moutons peuvent y entrer mais pas en sortir !"
 			},
 			"cobblestone_fence_recipe": {
                "description": "Un segment de mur rustique et solide.",
-               "recipe_name": "Clôture de pierre",
+               "recipe_name": "Clôture en pierre",
                "flavor": "Utiliser la terre elle-même pour réaliser les murs des pâturages ? Génial !"
 			},
 			"cook_spoon_recipe": {
@@ -5478,27 +5478,27 @@
             "furniture_name": "Meubles",
 			"stone_bench_recipe": {
                "description": "Siège d'extérieur pour des moments de détente.",
-               "recipe_name": "Banc de pierre",
+               "recipe_name": "Banc en pierre",
                "flavor": "Esthétique et fonctionnel. S'accorde avec les pierres tombales."
 			},
 			"stone_brazier_recipe": {
                "description": "Un petit feu de camp qui offre confort et chaleur pendant la nuit .",
-               "recipe_name": "Brazero de pierre",
+               "recipe_name": "Brazero en pierre",
                "flavor": "Attention :  Ne rien verser dedans pendant qu'il est allumé."
 			},
 			"stone_bricks_recipe": {
-               "description": "Un composant clef pour les structures de pierre comme les châteaux et les routes.",
-               "recipe_name": "Tas de bloc de pierre",
+               "description": "Un composant clef pour les structures en pierre comme les châteaux et les routes.",
+               "recipe_name": "Tas de briques",
                "flavor": "C'est une chance, mon garçon, que le cube soit la structure naturelle de la plupart des roches. --Garen Knapper"
 			},
 			"stone_chair_recipe": {
                "description": "Pas super confortable mais un signe de statut social.",
-               "recipe_name": "Chaise de pierre",
+               "recipe_name": "Chaise en pierre",
                "flavor": "D'extérieur !"
 			},
             "stone_chest_recipe": {
                "description": "Un endroit imposant ou ranger les choses.",
-               "recipe_name": "Coffre de pierre",
+               "recipe_name": "Coffre en pierre",
                "flavor": "'Ecoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.'--Edolf, barde ambulant"
             },
 			"stone_garden_lantern_recipe": {
@@ -5508,12 +5508,12 @@
 			},
 			"stone_maul_recipe": {
                "description": "L'outil idéal pour tout écraser.",
-               "recipe_name": "Masse de pierre",
+               "recipe_name": "Masse en pierre",
                "flavor": "Une adaptation moderne d'une arme ancienne."
 			},
 			"stone_table_recipe": {
                "description": "Son poids considérable donne du sens à la gravité. Seulement pour les affaires sérieuses.",
-               "recipe_name": "Table de pierre",
+               "recipe_name": "Table en pierre",
                "flavor": "Aucun lion n'a été blessé lors que sa fabrication."
 			},
 			"stone_wall_lantern_recipe": {
@@ -5532,7 +5532,7 @@
 			   "flavor": "Tappety-tap; Make the earth sing, Raise Brelor's ghost, Watch the mountain take wing."
 			},
 			"mason_pedestal_recipe": {
-               "description": "Une zone de travail bien éclairée pour créer des sculptures de pierre.",
+               "description": "Une zone de travail bien éclairée pour créer des sculptures en pierre.",
                "recipe_name": "Autel de tailleur de pierre",
                "flavor": "Crépitements et étincelles, sifflement du charbon, éclaire la voie, transmute la terre complète."
 			},
