@@ -45,7 +45,7 @@
 			"fabricate_structure": "construit",
 			"teardown_structure": "démonte des structures",
 			"feed_pasture_animals": "nourrit les animaux",
-			"restock": "restocking items"
+			"restock": "range des objets"
 		 }
 	  }
    },
@@ -69,7 +69,7 @@
 			"terrain_slice_vision_icon_name": "Terrain",
 			"terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l'élévation pour voir différentes couches.",
 			"terrain_xray_vision_icon_name": "Rayon X",
-			"terrain_xray_vision": "Affichage du terrain<br>en mode rayon X",
+			"terrain_xray_vision": "Vision rayon X",
 			"terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains.",
             "terrain_xray_vision_flat": "Tronqué",
             "terrain_xray_vision_full": "Complet"
@@ -186,9 +186,9 @@
 			"done_adding_members": "Fini",
 			"add_party_member_button": "Ajouter",
 			"remove_party_member_button": "Retirer",
-			"not_in_party": "Aucun groupe attribué",
+			"not_in_party": "sans groupe",
 			"party_help": "Les membres du groupe peuvent se déplacer ensembles et êtres dirigés sur le champ de bataille.",
-			"party_editor_help": "Utilisez cet écran pour ajouter des hearthiens au groupe.",
+			"party_editor_help": "Utilisez cet écran pour ajouter des hearthlings aux groupes.",
 			"attack_banner_button": "Ordre d'attaque",
 			"attack_banner_button_help": "Envois le groupe attaquer une position",
 			"defend_banner_button": "Ralliement & Ordre de Defense",
@@ -827,8 +827,8 @@
 			"title": "Nouvelle partie",
 			"normal_game": "Mode normal",
 			"peaceful_game": "Mode pacifique",
-			"normal_game_description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette aux raids des ennemis.",
-			"peaceful_game_description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier des envahisseurs.",
+			"normal_game_description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette à des raids hostiles.",
+			"peaceful_game_description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier d'envahisseurs.",
 			"temperate_biome": "Tempéré",
 			"desert_biome": "Désertique",
 			"arctic_biome": "Arctique",
