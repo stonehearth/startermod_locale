@@ -28,7 +28,7 @@
 			"return_animals": "retourne au pâturage",
 			"combat": "est engagé en combat",
 			"cower": "est tétanisé",
-			"flee": "s`enfuit",
+			"flee": "s'enfuit",
 			"panic": "panique",
 			"mine": "mine",
 			"sleep_in_bed": "dort",
@@ -64,10 +64,10 @@
 		 },
 		 "visions": {
 			"building_vision": "Vue intra-bâtimentaire",
-			"building_vision_description": "Change la visibilité des murs, vous permettant de voir à l`intérieur des bâtiments.",
+			"building_vision_description": "Change la visibilité des murs, vous permettant de voir à l'intérieur des bâtiments.",
 			"terrain_slice_vision": "Vue géologique en couche",
 			"terrain_slice_vision_icon_name": "Terrain",
-			"terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l`élévation pour voir différentes couches.",
+			"terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l'élévation pour voir différentes couches.",
 			"terrain_xray_vision_icon_name": "Rayon X",
 			"terrain_xray_vision": "Vision rayon X",
 			"terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains.",
@@ -77,7 +77,7 @@
 		 "promotion_tree": {
 			"title": "Choisir une profession",
 			"promotion_title": "Promouvoir en [str(job_name)]", 
-			"text_1": "En l`honneur de ses efforts inébranlables et de votre rigueur, nous vous annonçons par la présente",
+			"text_1": "En l'honneur de ses efforts inébranlables et de votre rigueur, nous vous annonçons par la présente",
 			"choose": "Choisissez un hearthling...",
 			"text_2": "en ce jour du, [str(date)]",
 			"approve": "APPROUVER",
@@ -88,11 +88,11 @@
 			"requires": "Prérequis"
 		 },
 		 "build_workshop": {
-			"title": "Construire l`atelier",
+			"title": "Construire l'atelier",
 			"requirements": "Prérequis",
 			"create_stockpile": "Réserve des artisans",
-			"create_stockpile_description": "Les artisans vont stocker leur produits dans cette réserve.<p>Vous souhaiterez sans doute le placer à proximité d`une table de travail, mais bon, la décision vous reviens.",
-			"page1_subtitle2": "Cliquer sur le sol pour placer l`atelier",
+			"create_stockpile_description": "Les artisans vont stocker leur produits dans cette réserve.<p>Vous souhaiterez sans doute le placer à proximité d'une table de travail, mais bon, la décision vous reviens.",
+			"page1_subtitle2": "Cliquer sur le sol pour placer l'atelier",
 			"page2_subtitle2": "Cliquer sur le sol pour placer le stockage"
 		 },
 		 "citizen_character_sheet": {
@@ -128,7 +128,7 @@
 			   "accept": "Je ne veux plus de ce famillier.",
 			   "cancel": "Attendez!"
 			},
-			"befriended_pet_description": "Est l`ami de [name(self.stonehearth:pet.owner)]"
+			"befriended_pet_description": "Est l'ami de [name(self.stonehearth:pet.owner)]"
 		 },
 		 "tutorials": {
 			"camera": {
@@ -189,7 +189,7 @@
 			"not_in_party": "sans groupe",
 			"party_help": "Les membres du groupe peuvent se déplacer ensembles et êtres dirigés sur le champ de bataille.",
 			"party_editor_help": "Utilisez cet écran pour ajouter des hearthlings aux groupes.",
-			"attack_banner_button": "Ordre d`attaque",
+			"attack_banner_button": "Ordre d'attaque",
 			"attack_banner_button_help": "Envois le groupe attaquer une position",
 			"defend_banner_button": "Ralliement & Ordre de Defense",
 			"defend_banner_button_help": "Envois le groupe rallier une zone quand le Mode de Defense de la Ville est activé",
@@ -204,7 +204,7 @@
 		 },
 		 "create_camp": {
 			"new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
-			"click_banner_tip": "Cliquez sur la banière pour choisir l`emplacement de votre colonie",
+			"click_banner_tip": "Cliquez sur la banière pour choisir l'emplacement de votre colonie",
 			"select_camp_tip": "Maintenant cliquez quelque part dans le monde",
 			"name_camp_title": "Nommez votre colonie",
 			"name_camp_prompt": "Entrez un nom pour votre colonie!"
@@ -315,16 +315,16 @@
 					 "description": "Fait disparaitre des éléments de la surface du globe",
 					 "tip_title": "Cliquez et relachez pour supprimer définitivement des éléments",
 					 "tip_description": "Bouton droite pour sortir de ce mode",
-					 "confirm_title": "Êtes-vous sur d`effacer ces élements ?",
+					 "confirm_title": "Êtes-vous sur d'effacer ces élements ?",
 					 "confirm_message": "Les objets utilisables dans cette zone vont être détruit définitivement",
 					 "confirm_clear": "Oui, détruit !",
-					 "confirm_clear_no": "Non ! J`en ai besoin !"
+					 "confirm_clear_no": "Non ! J'en ai besoin !"
 				  }
 			   }
 			},
 			"zone_menu": {
 			   "display_name": "Désignation des zones",
-			   "description": "Désigne les zones sur le sol pour le stockage, l`agriculture, etc...",
+			   "description": "Désigne les zones sur le sol pour le stockage, l'agriculture, etc...",
 			   "items": {
 				  "create_stockpile": {
 					 "display_name": "Stock",
@@ -361,7 +361,7 @@
 			   "items": {
 				  "building_templates": {
                      "display_name": "Placer un batiment",
-                     "description": "Choisissez de construire un batiment<br>d`après un plan archivé."
+                     "description": "Choisissez de construire un batiment<br>d'après un plan archivé."
 				  },
 				  "custom_building": {
                      "display_name": "Concevoir un batiment",
@@ -468,7 +468,7 @@
 			   "sell_10": "Vendre 10",
 			   "buy_tab": "Acheter",
 			   "sell_tab": "Vendre",
-               "not_enough_gold_tooltip": "Pas assez d`or !"
+               "not_enough_gold_tooltip": "Pas assez d'or !"
 			},
 			"quest_bulletin": {
 			   "title": "Nouveau message"
@@ -479,13 +479,13 @@
 			},
 			"immigration_report": {
                "title": "Résumé quotidien",
-			   "immigration_report_title": "Rapport d`immigration",
+			   "immigration_report_title": "Rapport d'immigration",
                "population_label": "Population",
-               "next_requirements_label": "Prérequis pour l`arrivé d`un nouveau hearthling"
+               "next_requirements_label": "Prérequis pour l'arrivé d'un nouveau hearthling"
 			},
 			"collection_quest": {
 			   "pay": "Et voilà !",
-			   "cancel": "J`ai changé d`avis"
+			   "cancel": "J'ai changé d'avis"
 			}
 		 },
 		 "build_mode": {
@@ -542,7 +542,7 @@
                "start_building": "Construire !",
                "pause_building": "Suspendre la construction",
                "save_building_template": "Sauvegarder",
-               "finished_editing": "Terminer l`édition",
+               "finished_editing": "Terminer l'édition",
                "start_editing": "Editer"
 			},
 			"roof_shape": {
@@ -623,9 +623,9 @@
 			   "fallow_description": "Ne rien semer et laisser le sol se régénérer seul."
 			},
 			"mining": {
-			   "help": "L`extraction minière permet de creuser le sol et les montagnes et ainsis de trouver des resources spécifiques.",
-			   "disable": "Suspendre l`extraction",
-			   "enable": "Reprendre l`extraction"
+			   "help": "L'extraction minière permet de creuser le sol et les montagnes et ainsis de trouver des resources spécifiques.",
+			   "disable": "Suspendre l'extraction",
+			   "enable": "Reprendre l'extraction"
 			},
 			"trapping_grounds": {
 			   "help": "Les chasseurs disposeront des pièges dans leurs zones affectés afin de capture du gibier.",
@@ -633,7 +633,7 @@
 			   "enable": "Reprendre la pose de piège"
 			},
 			"pasture": {
-			   "help": "Les bergers ménent leur animaux dans ce lieu et s`occupent d`eux ici même.",
+			   "help": "Les bergers ménent leur animaux dans ce lieu et s'occupent d'eux ici même.",
 			   "choose_pasture_type": "Choose Pasture Type",
 			   "sheep_pasture_name": "Pâturage de moutons",
 			   "rabbit_pasture_name": "Enclos de lapin",
@@ -669,7 +669,7 @@
                   "tooltip_light": "Torches et éclairages",
 				  "tooltip_decoration": "Décorations",
 				  "tooltip_refined_cloth": "Fils et habits",
-				  "tooltip_refined_animal_part": "Biens fabriqués à partir d`animaux",
+				  "tooltip_refined_animal_part": "Biens fabriqués à partir d'animaux",
 				  "tooltip_refined_ore": "Barres de métal",
 				  "tooltip_melee_weapon": "Armes de mélée",
 				  "tooltip_ranged_weapon": "Armes à distance",
@@ -704,7 +704,7 @@
 			"workshop_remove_confirm": "Retirer&nbsp;?",
 			"workshop_open": "Ouvert !",
 			"workshop_closed": "Fermé",
-            "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d`options de fabrication !",
+            "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d'options de fabrication !",
             "craft": "Fabriquer !",
             "craftable_locked": "Dévérouillé au niveau [str(level)]",
             "workshop_requirement_title": "Atelier",
@@ -724,14 +724,14 @@
 		 "town_overview": {
             "title": "Rapport sur la ville",
 			"journal": {
-               "default_message": "Pas encore d`entrée !",
+               "default_message": "Pas encore d'entrée !",
 			   "signature": "--[name(entry.person)]",
-			   "today": "Aujourd`hui",
+			   "today": "Aujourd'hui",
                "town_log": "Rapport de la ville ",
                "praises": "Louanges",
                "gripes": "Griefs",
-               "praise_empty": "Il n`y a pas eu d`évènement particulièrement positif aujourd`hui",
-               "gripe_empty": "Whaow, je suppose que personne n`a rien eu à redire."
+               "praise_empty": "Il n'y a pas eu d'évènement particulièrement positif aujourd'hui",
+               "gripe_empty": "Whaow, je suppose que personne n'a rien eu à redire."
 			},
 			"networth": {
                "town_description": "Le [str(descriptor)] [str(noun)] de [str(town_name)]",
@@ -797,29 +797,29 @@
 			   "017": "forme plusieurs réseaux tridimensionnels ...",
 			   "018": "diversification des sexes ...",
 			   "019": "homogénéisation de la motivation ...",
-			   "020": "faire dévier l`histoire ...",
+			   "020": "faire dévier l'histoire ...",
 			   "021": "indexation des microbes ...",
 			   "022": "compile la vérité ...",
 			   "023": "réassemble le marbres ...",
 			   "024": "affecter les foules ...",
 			   "025": "apprendre les mathématique avancé ...",
 			   "026": "faire proliférer les fleurs ...",
-			   "027": "s`écarter de la réalité ...",
+			   "027": "s'écarter de la réalité ...",
 			   "028": "positionnement des peluches ...",
 			   "029": "régularise les dreadlocks ..."
 			},
 			"tips": {
                "000": "Si vos mineurs restent bloqués dans un puit, construisez une échelle pour les en sortir !",
                "001": "Vos hearthlings feront de meilleures nuits si vous leurs offrez des lits.",
-               "002": "Construisez un enclos autour des pâturages pour être sur que les animaux ne s`enfuient pas.",
+               "002": "Construisez un enclos autour des pâturages pour être sur que les animaux ne s'enfuient pas.",
                "003": "Les réserves peuvent être modifiées pour acceuillir des objets spécifiques.",
                "004": "Vous pouvez cultiver des plantes à soie pour avoir une source régulière de fibres végétales.",
                "005": "Une ville bien nourrit est une ville heureuse.",
                "006": "Utlisiez les touches . ou , pour faire tourner un objet ou un batiment avant de le placer.",
                "007": "Vos hearthlings se déplacent plus vite sur les routes.",
-			   "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l`efficacité de vos travailleurs.",
-               "009": "S`assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
-               "010": "Les bergers trouveront d`eux-même les moutons ou atres animaux pour remplir les pâturages.",
+			   "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
+               "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
+               "010": "Les bergers trouveront d'eux-même les moutons ou atres animaux pour remplir les pâturages.",
                "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands."
 			}
 		 },
@@ -827,22 +827,22 @@
 			"title": "Nouvelle partie",
 			"normal_game": "Mode normal",
 			"peaceful_game": "Mode pacifique",
-			"normal_game_description": "L`aventure se déroule dans un monde rempli de danger. Votre ville sera sujette à des raids hostiles.",
-			"peaceful_game_description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier d`envahisseurs.",
+			"normal_game_description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette à des raids hostiles.",
+			"peaceful_game_description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier d'envahisseurs.",
 			"temperate_biome": "Tempéré",
 			"desert_biome": "Désertique",
 			"arctic_biome": "Arctique",
 			"swamp_biome": "Marécageux",
 			"temperate_biome_description": "Biome par défaut, avec beaucoup de verdure",
 			"desert_biome_description": "Sec et sablonneux, avec des grosses collines et une végétation clairsemée",
-			"arctic_biome_description": "Neigeux, avec de hautes montagnes et de grands plans d`eau",
+			"arctic_biome_description": "Neigeux, avec de hautes montagnes et de grands plans d'eau",
 			"swamp_biome_description": "Biome tempéré, avec beaucoup de marais et quelques montagnes basses",
 			"create_game": "Créer une partie"
 		 },
 		 "select_settlement": {
             "title": "Cliquez sur la carte pour choisir un emplacement",
 			"loading": "Chargement...",
-			"settle_at_this_location": "S`installer ici!",
+			"settle_at_this_location": "S'installer ici!",
 			"clear_selection": "Choisir un autre emplacement",
 			"regenerate_map": "Nouvelle carte",
             "world_seed": "Carte n°",
@@ -850,7 +850,7 @@
 			   "trees_and_plants_title": "Arbres et plantes",
 			   "trees_and_plants_description": "Le bois est la ressource principal pour la construction. Vous en aurez besoin afin de construire vos bâtiments et vos objets artisanaux.",
 			   "wildlife_title": "Faune",
-			   "wildlife_description": "La faune locale peut être chassé pour la nourriture et les matériaux d`artisanat.",
+			   "wildlife_description": "La faune locale peut être chassé pour la nourriture et les matériaux d'artisanat.",
 			   "minerals_title": "Minerais",
 			   "minerals_description": "Vous aurez besoin de minerais pour fabriquer des objets en pierre ou en métal."
 			},
@@ -895,11 +895,11 @@
 			"gfx_enable_shadows": "Activer les ombres",
 			"gfx_enable_vsync": "Activer la synchronisation verticale",
 			"gfx_enable_fullscreen": "Plein écran (redémarrage requis))",
-			"gfx_msaa": "Niveau de l`anticrénelage",
+			"gfx_msaa": "Niveau de l'anticrénelage",
 			"gfx_shadows": "Qualité des ombres",
             "gfx_max_lights": "Nombre maximum de sources lumineuses",
-			"gfx_drawdistance": "Distance d`affichage",
-			"gfx_enable_ssao": "Activer l`occlusion ambiante",
+			"gfx_drawdistance": "Distance d'affichage",
+			"gfx_enable_ssao": "Activer l'occlusion ambiante",
 			"gfx_use_high_quality": "Activer les graphismes en haute qualité",
 			"shadow_0": "Sans",
 			"shadow_1": "juste un peu",
@@ -917,7 +917,7 @@
             "effects_volume": "Volume des effets sonores",
 			"system": "Système",
 			"force_32_bit": "* Forcer le mode 32-bit (redémarrage requis)",
-			"force_32_bit_note": "* Forcer le mode 32-bit seulement si c`est absolument nécéssaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
+			"force_32_bit_note": "* Forcer le mode 32-bit seulement si c'est absolument nécéssaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
 			"enable_lua_jit": "Utiliser Lua JIT (redémarrage requis)",
 			"send_anon_data": "Envoyer des données anonymes pour améliorer Stonehearth!",
 			"language_select": "Langue",
@@ -925,13 +925,13 @@
                "title": "Gameplay",
                "experimental": "Experimental",
                "experimental_description": "These settings are still under development and may not be stable! Enable at your own risk!",
-               "enable_speed_3": "Activer la vitesse x3 (Demande un rafraîchissement de l`interface)",
+               "enable_speed_3": "Activer la vitesse x3 (Demande un rafraîchissement de l'interface)",
                "enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. Soyez en averti !",
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
-               "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to `None` instead of `All`",
+               "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
                "enable_cpp_ai": "Enable CPP Ai",
-               "enable_cpp_ai_description": "Utiliser le nouveau système d`IA codé en C++. Il devrait être plus rapide que l`ancien système en Lua et devrais mieux supporter les grands villages.",
+               "enable_cpp_ai_description": "Utiliser le nouveau système d'IA codé en C++. Il devrait être plus rapide que l'ancien système en Lua et devrais mieux supporter les grands villages.",
                "enable_subspace_pathfinder": "Activer le pathfinder du sub-espace",
                "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!"
             }
@@ -948,15 +948,15 @@
             "patch_notes": "Afficher les notes de mise à jour",
             "alpha_welcome_dialog": {
                "title": "Bienvenue dans Stonehearth !",
-               "message": "Warning: this is Alpha quality software. It`s missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
-               "accept": "Oui, envoyer les rapports d`erreurs",
+               "message": "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
+               "accept": "Oui, envoyer les rapports d'erreurs",
                "cancel": "Nope"
             }
 		 },
 		 "embark": {
-			"title": "Préparez vous pour l`aventure !",
-			"citizen_info": "Liste d`expédition",
-			"reroll_citizens": "Générer la liste d`expédition",
+			"title": "Préparez vous pour l'aventure !",
+			"citizen_info": "Liste d'expédition",
+			"reroll_citizens": "Générer la liste d'expédition",
 			"shop_title": "Magasin du voyageur",
 			"shop_gold_label": "Or",
 			"shop_sold": "VENDU !",
@@ -975,9 +975,9 @@
             "title": "Rapport de bug",
             "message": "Merci de participer à la version Alpha de Stonehearth ! Voici comment remonter un bug :",
             "file_bug_step_1": "active-bug",
-            "file_bug_step_2": "Vérifiez la liste de sujets actifs at si votre bug n`a pas encore été remonté, créez un nouveau sujet",
-            "file_bug_step_3": "Quand vous remontez un bug, incluez s`il vous plait une capture d`écran de l`erreur affichée",
-            "file_bug_step_4": "Si vous remontez un crash, ajoutez votre identifiant unique d`utilisateur"
+            "file_bug_step_2": "Vérifiez la liste de sujets actifs at si votre bug n'a pas encore été remonté, créez un nouveau sujet",
+            "file_bug_step_3": "Quand vous remontez un bug, incluez s'il vous plait une capture d'écran de l'erreur affichée",
+            "file_bug_step_4": "Si vous remontez un crash, ajoutez votre identifiant unique d'utilisateur"
          },
          "error_browser": {
             "title": "Erreur du moteur",
@@ -988,8 +988,8 @@
             "copy_button": "Copier dans le presse-papier"
          },
          "error_dialog_js": {
-            "title": "Erreur d`IU",
-            "reset_hint": "Pressez F5 pour relancer l`IU",
+            "title": "Erreur d'IU",
+            "reset_hint": "Pressez F5 pour relancer l'IU",
             "copy_button": "Copier dans le presse-papier"
 		 }
 	  },
@@ -1012,36 +1012,36 @@
 			"shelter": {
                "display_name": "Habitat",
                "description": "Soyez sur que vos hearthlings aient de confortable lits pour se reposer.",
-               "town_description": "L`avis des hearthlings sur le confort des logements. Y-a-t-il des lits ou dormir ?"
+               "town_description": "L'avis des hearthlings sur le confort des logements. Y-a-t-il des lits ou dormir ?"
 			},
 			"compassion": {
 			   "display_name": "Compassion",
                "description": "Dans quelle mesure le hearthling aidera et sera apprécié par ses compatriotes",
 			   "bullet_points": {
-                  "000": "Détermine le nombre maximum de famillier qu`un braconnier peut apprivoiser",
-                  "001": "Augmente l`acceptation du berger par les animaux"
+                  "000": "Détermine le nombre maximum de famillier qu'un braconnier peut apprivoiser",
+                  "001": "Augmente l'acceptation du berger par les animaux"
 			   }
 			},
 			"food": {
                "display_name": "Nourriture",
                "description": "Assurez vous de la disponibilité de nourriture varié. Les plats cuisinés sont plus appréciés que la nourriture de base.",
-               "town_description": "Ce que pense l`opinion des la nourriture en ville. Y-a-t-il assez à manger ? Essayez d`obtenir une plus grande variété de nourriture !"
+               "town_description": "Ce que pense l'opinion des la nourriture en ville. Y-a-t-il assez à manger ? Essayez d'obtenir une plus grande variété de nourriture !"
 			},
 			"diligence": {
                "display_name": "Concentration",
-               "description": "Une forte concentration permet d`exécuter de longues taches sans se faire distraire.",
+               "description": "Une forte concentration permet d'exécuter de longues taches sans se faire distraire.",
 			   "bullet_points": {
                   "000": "Augmente la vitesse de fabrication"
 			   }
 			},
 			"willpower": {
                "display_name": "Volonté",
-               "description": "Capacité du hearthling à résister aux sorts de l`ennemis."
+               "description": "Capacité du hearthling à résister aux sorts de l'ennemis."
 			},
 			"net_worth": {
                "display_name": "Richesse",
-               "description": "Un total basé sur la valeur du contenu de l`inventaire de la ville.",
-               "town_description": "La valeur en or du contenu de l`inventaire de la ville."
+               "description": "Un total basé sur la valeur du contenu de l'inventaire de la ville.",
+               "town_description": "La valeur en or du contenu de l'inventaire de la ville."
 			},
 			"courage": {
 			   "display_name": "Courage",
@@ -1052,14 +1052,14 @@
 			},
 			"muscle": {
                "display_name": "Force",
-               "description": "C`est la force du hearthling",
+               "description": "C'est la force du hearthling",
 			   "bullet_points": {
                   "000": "Tous les 10 points de Constitution augmentent les domages de 1"
 			   }
 			},
 			"happiness": {
                "display_name": "Moral général",
-               "description": "La satisfaction générale des hearthlings basée sur la nourriture, l`habitat et la sécurité.",
+               "description": "La satisfaction générale des hearthlings basée sur la nourriture, l'habitat et la sécurité.",
                "town_description": "La satisfaction générale des hearthlings. Visez un score de 10 qui correspond à la satisfaction maximale."
 			},
 			"speed": {
@@ -1068,27 +1068,27 @@
 			},
 			"body": {
                "display_name": "Physique",
-               "description": "Influence les activités physiques. Avec un indice physique haut, les hearthlings se déplacent plus vite. Influence la force, la vitesse et l`endurance."
+               "description": "Influence les activités physiques. Avec un indice physique haut, les hearthlings se déplacent plus vite. Influence la force, la vitesse et l'endurance."
 			},
 			"edibles": {
                "display_name": "Comestibles",
-               "description": "La valeur en or de la nourriture contenue de l`inventaire de la ville.",
-               "town_description": "La valeur en or de la nourriture contenue de l`inventaire de la ville."
+               "description": "La valeur en or de la nourriture contenue de l'inventaire de la ville.",
+               "town_description": "La valeur en or de la nourriture contenue de l'inventaire de la ville."
 			},
 			"mind": {
                "display_name": "Esprit",
-               "description": "Faculté à raisonner brillament. Un esprit de qualité permettra au hearthling d`exceller dans des tâches mentales complexes. Influence la concentration, la curiosité et la créativité"
+               "description": "Faculté à raisonner brillament. Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes. Influence la concentration, la curiosité et la créativité"
 			},
 			"curiosity": {
                "display_name": "Curiosité",
                "description": "Propension du hearthling à aprécier de nouvelles expériences.",
 			   "bullet_points": {
-                  "000": "Améliore l`expérience accumulée lors de la fabrication d`objets."
+                  "000": "Améliore l'expérience accumulée lors de la fabrication d'objets."
 			   }
 			},
 			"spirit": {
                "display_name": "Ame",
-               "description": "Foie dans le prochain. Un hearthling d`une grande Ame sera apprécié par les tiens et sera un rempart contre l`ennemi. Influence le courage, la volonté et la compassion"
+               "description": "Foie dans le prochain. Un hearthling d'une grande Ame sera apprécié par les tiens et sera un rempart contre l'ennemi. Influence le courage, la volonté et la compassion"
 			},
 			"safety": {
                "display_name": "Sécurité",
@@ -1116,7 +1116,7 @@
 			   "daily_report_encounter": {
                   "title": "Un voyageur approche de votre ville",
                   "update_title": "Rapport journalier",
-                  "sub_title": "Rapport d`immigration",
+                  "sub_title": "Rapport d'immigration",
                   "food_label": "Nourriture",
                   "morale_label": "Moral",
                   "net_worth_label": "Richesse",
@@ -1124,8 +1124,8 @@
                   "conclusion_negative": "La route est réstée vide. Peut-être demain !",
                   "success_title": "[name(i18n_data.citizen)] à rejoint [str(i18n_data.town_name)] !",
 				  "messages": {
-                     "000": "J`ai beaucoup entendu parler de votre ville !",
-                     "001": "J`aimerais vous rejoindre.",
+                     "000": "J'ai beaucoup entendu parler de votre ville !",
+                     "001": "J'aimerais vous rejoindre.",
                      "002": "Il semble que vous pourriez avoir besoin de plus de mains !",
                      "003": "Whaow! Mais quelle ville ! Laissez moi vous aider !"
 				  },
@@ -1147,9 +1147,9 @@
                               "001": "Alors, on célèbre le jour du départ ? Courage ! On dirait que quelque chose de gouteux vous ferait de bien. Et si je vous donnais ceci :",
                               "002": "Aventuriers ! Remerciez Cid. Voici de quoi bien commencer.",
                               "003": "Le voyage à travers les montagnes à été long, hein ? Et bien vous êtes à un endroit sur maintenant. Voici un petit coup de pouce :",
-                              "004": "Bienvenue dans la région, aventuriers ! Voici un cadeau pour vous donner un p`tit coup de pouce !"
+                              "004": "Bienvenue dans la région, aventuriers ! Voici un cadeau pour vous donner un p'tit coup de pouce !"
 						   },
-                           "bulletin_title": "Un voyageur grisonnant s`approche.",
+                           "bulletin_title": "Un voyageur grisonnant s'approche.",
 						   "dialog_title": "Mer Burlyhands"
 						}
 					 }
@@ -1157,12 +1157,12 @@
 			   },
 			   "returning_trader_encounter": {
                   "title": "Un négociant approche de la ville.",
-                  "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m`avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)](s),  je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange. Qu`en dites vous ?",
+                  "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m'avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)](s),  je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange. Qu'en dites vous ?",
                   "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] heures !",
                   "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] heures pour vous échanger [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) contre [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) !",
                   "return_title": "Le négociant est de retour !",
-                  "return_greetings_positive": "Me re voilà! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J`ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
-                  "return_greetings_negative": "Je suis de retour mais je vois que n`avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
+                  "return_greetings_positive": "Me re voilà! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
+                  "return_greetings_negative": "Je suis de retour mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
 			   },
 			   "food_shop": {
 				  "shop_info": {
@@ -1201,7 +1201,7 @@
 					 "dialog_nodes": {
 						"erdene_appears": {
 						   "choice_000": "Pas question !",
-						   "choice_001": "Bon ... d`accord.",
+						   "choice_001": "Bon ... d'accord.",
 						   "bulletin_message": {
 							  "000": "Avez-vous peurs, vaillants hearthlings ? Ogo soi-disant-chef sera bientôt là. Pour vous."
 						   },
@@ -1223,7 +1223,7 @@
 						   "bulletin_message": {
 							  "000": "Me? I am the one who watches. You. Him. For the star. For fate.",
 							  "001": "I? I am of the Red Kiln. We would have been your saviours, but your Cid parlayed hard in your stead. So now we watch. And wait for the day when your star rises.",
-							  "002": "Me! I suppose you`ve earned your bit. I am an ember in the forge, a spark in the air. I watch, so that I may know when it is time for the fire to engulf us all.",
+							  "002": "Me! I suppose you've earned your bit. I am an ember in the forge, a spark in the air. I watch, so that I may know when it is time for the fire to engulf us all.",
 							  "003": "Me? Today, it matters not. Tomorrow, if you still live, you may call me Erdene, of the Red Kiln."
 						   },
 						   "bulletin_title": "She smiles with a glint of teeth",
@@ -1242,7 +1242,7 @@
 						   "choice_000": "Ça sonne juste !",
 						   "choice_001": "Non. Merci.",
 						   "bulletin_message": {
-							  "000": "Upon this paper, vous devriez trouver le lullabye to sooth the Mountain`s soul. Find a stolen flute. Bid your wood-worker pitch it to this melody. Grant it to your bravest sheep-singer, set him at Ogo`s great mammoth, and watch self-importance meet it`s just reward."
+							  "000": "Upon this paper, vous devriez trouver le lullabye to sooth the Mountain's soul. Find a stolen flute. Bid your wood-worker pitch it to this melody. Grant it to your bravest sheep-singer, set him at Ogo's great mammoth, and watch self-importance meet it's just reward."
 						   },
 						   "bulletin_title": "She offers a scrap of paper",
 						   "dialog_title": "???"
@@ -1268,8 +1268,8 @@
 							  "001": "Soothsayer old, old snake. Speaks out with bones and scales. Sees future! Sees cycle ending, ending forever. Not sure what he mean, but good for Ogo!",
 							  "002": "Soothsayer goblin, obviously! Goblin who can see future! He say old ones dying away, new star rising. Good for Ogo, bad for everyone else, you included!"
 						   },
-						   "bulletin_title": "The goblin`s eyes grow round",
-						   "dialog_title": "Ogo`s Bannerman"
+						   "bulletin_title": "The goblin's eyes grow round",
+						   "dialog_title": "Ogo's Bannerman"
 						},
 						"snooty_introduction": {
 						   "choice_000": "Huh.",
@@ -1280,7 +1280,7 @@
 							  "002": "Muahahahahah! This? This your town? I laugh till I cry!"
 						   },
 						   "bulletin_title": "A goblin with a officious smirk slithers into town",
-						   "dialog_title": "Ogo`s Bannerman"
+						   "dialog_title": "Ogo's Bannerman"
 						},
 						"ogo_introduction": {
 						   "choice_000": "Ogo who?",
@@ -1290,10 +1290,10 @@
 							  "001": "I envoy of Ogo Skullbonker, tamer of Mountains! Ogo demand many thing from all, include you, include your gold!",
 							  "002": "My Chief-of-Chiefs, Ogo Skullbonker, soon rule take Glittering Army and rule all of Red Kiln! You next of many conquests. You become our goldfarmers!",
 							  "003": "I am Bannergoblin of Ogo Skullbonker, rider of Mountain! My master demand you tribute, in form of all you have! You give everything! Or you pay!",
-							  "004": "I bannergoblin of Ogo Skullbonker! When you bested the small chiefs, you bring Ogo`s Eye upon you! And Ogo`s Eye know all! You will give tribute, or eye will see your end!"
+							  "004": "I bannergoblin of Ogo Skullbonker! When you bested the small chiefs, you bring Ogo's Eye upon you! And Ogo's Eye know all! You will give tribute, or eye will see your end!"
 						   },
 						   "bulletin_title": "The goblin straightens",
-						   "dialog_title": "Ogo`s Bannerman"
+						   "dialog_title": "Ogo's Bannerman"
 						},
 						"ogo_description": {
 						   "choice_000": "Soothsayer?",
@@ -1304,8 +1304,8 @@
 							  "002": "Goblins long be shunned and forgotten. Soothsayer say that Ogo Skullbonker, my LittleChief, will soon change everything! For that, he need gold and labor!",
 							  "003": "Ogo Skullbonker, Master of Masters, have great destiny, to rule over all! Soothsayer say so; soothsayer never wrong. Soothsayer say, you will help!"
 						   },
-						   "bulletin_title": "The goblin`s eyes glow with zeal",
-						   "dialog_title": "Ogo`s Bannerman"
+						   "bulletin_title": "The goblin's eyes glow with zeal",
+						   "dialog_title": "Ogo's Bannerman"
 						},
 						"conclusion": {
 						   "bulletin_message": {
@@ -1314,8 +1314,8 @@
 							  "002": "Oh, you say something? No matter, we return soon! Collect all your things so will be easy for us to move!",
 							  "003": "Anyway, time to go iron my banner. Be back soon! Be ready, yes? New life under goblin rule awaits!"
 						   },
-						   "bulletin_title": "The goblin`s eyes narrow",
-						   "dialog_title": "Ogo`s Bannerman"
+						   "bulletin_title": "The goblin's eyes narrow",
+						   "dialog_title": "Ogo's Bannerman"
 						}
 					 }
 				  }
@@ -1384,14 +1384,14 @@
 					 "dialog_nodes": {
 						"msg2": {
 						   "bulletin_message": {
-							  "00": "It`s been pretty quiet, but you know...? It`s a bad sign when the birds stop singing."
+							  "00": "It's been pretty quiet, but you know...? It's a bad sign when the birds stop singing."
 						   },
 						   "bulletin_title": "Mer Burlyhands scratches his ear",
 						   "dialog_title": "Mer Burlyhands"
 						},
 						"msg3": {
 						   "bulletin_message": {
-							  "00": "My guess is wolves. Goblin wolves. Watch your borders. You don`t want to fight them after their trainer`s got them in a lather, you hear? Bunker down, if you need to. Or run. Runnin`s good! No shame in surviving another day."
+							  "00": "My guess is wolves. Goblin wolves. Watch your borders. You don't want to fight them after their trainer's got them in a lather, you hear? Bunker down, if you need to. Or run. Runnin's good! No shame in surviving another day."
 						   },
 						   "bulletin_title": "Mer Burlyhands nods firmly",
 						   "dialog_title": "Mer Burlyhands"
@@ -1418,11 +1418,11 @@
 						},
 						"msg1": {
 						   "bulletin_message": {
-							  "000": "Si vous voulez tuer les loups avant qu`ils ne vous finissent, attapez les en premier.",
-							  "001": "Ils y a des loups dans la fôret. Des loups gobelins. Chassez les avant qu`ils ne vous chassent.",
-							  "002": "Les forces d`Ogo sont en mouvement. Ils y a des loups dans vos bois.",
-							  "003": "Petit campement humain : rechercher vos ennemis pendant qu`ils dorments.",
-							  "004": "Les loups gobelins sont entrainés pour attaqués sur commande. Libérez les avant que cet ordre n`arrive, et vous dormiez tranquillement cette nuit."
+							  "000": "Si vous voulez tuer les loups avant qu'ils ne vous finissent, attapez les en premier.",
+							  "001": "Ils y a des loups dans la fôret. Des loups gobelins. Chassez les avant qu'ils ne vous chassent.",
+							  "002": "Les forces d'Ogo sont en mouvement. Ils y a des loups dans vos bois.",
+							  "003": "Petit campement humain : rechercher vos ennemis pendant qu'ils dorments.",
+							  "004": "Les loups gobelins sont entrainés pour attaqués sur commande. Libérez les avant que cet ordre n'arrive, et vous dormiez tranquillement cette nuit."
 						   },
                            "bulletin_title": "Une flèche avec un message se plante sur votre bannière",
                            "dialog_title": "Message mystérieux"
@@ -1439,9 +1439,9 @@
                               "001": "Entendez vous les hurlements? Il y a des goblins avec des loups dans les bois !",
                               "002": "Notre groupe vient juste de se faire attaquer par des gobelins ! Fuyez !",
                               "003": "Ces loups gobelins ne sont pas comme des loups normaux - ils sont rapides, vicieux et sans peur ! Courez pendant que vous le pouvez!",
-                              "004": "Vous avez des gobelins dans vos bois ! Enfermez-vous dans un endroit sûr avant qu`ils attaquent !"
+                              "004": "Vous avez des gobelins dans vos bois ! Enfermez-vous dans un endroit sûr avant qu'ils attaquent !"
 						   },
-                           "bulletin_title": "Des réfugiés épuisés apparaissent à l`horizon",
+                           "bulletin_title": "Des réfugiés épuisés apparaissent à l'horizon",
                            "dialog_title": "Un réfugié"
 						}
 					 }
@@ -1452,21 +1452,21 @@
 					 "dialog_nodes": {
 						"msg2": {
 						   "bulletin_message": {
-                              "00": "Des félicitations s`imposent, si c`est le genre de chose auquel vous tenez. J`ai fait le tour de la région et il semble que vous nous ayez débarassé de la majeur partie des goblins de la zone ! Je ne dis pas que vous ne croiserez pas un ou deux traînards mais dans l`ensemble c`est du bon travail."
+                              "00": "Des félicitations s'imposent, si c'est le genre de chose auquel vous tenez. J'ai fait le tour de la région et il semble que vous nous ayez débarassé de la majeur partie des goblins de la zone ! Je ne dis pas que vous ne croiserez pas un ou deux traînards mais dans l'ensemble c'est du bon travail."
 						   },
                            "bulletin_title": "Mer Burlyhands secoue la tête",
 						   "dialog_title": "Mer Burlyhands"
 						},
 						"msg3": {
 						   "bulletin_message": {
-                              "00": "Voici un cadeau que j`ai collecté des villes voisines. Grace à vous, tout le monde dormira bien mieux ce soir !"
+                              "00": "Voici un cadeau que j'ai collecté des villes voisines. Grace à vous, tout le monde dormira bien mieux ce soir !"
 						   },
                            "bulletin_title": "Mer Burlyhands hoche la tête fermement",
 						   "dialog_title": "Mer Burlyhands"
 						},
 						"msg1": {
 						   "bulletin_message": {
-                              "00": "Bonjour, bonjour !? Il reste quelqu`un à la maison ?"
+                              "00": "Bonjour, bonjour !? Il reste quelqu'un à la maison ?"
 						   },
                            "bulletin_title": "Mer Burlyhands réaparrait",
 						   "dialog_title": "Mer Burlyhands"
@@ -1552,12 +1552,12 @@
 							  "002": "What? You no have my stuff? BLOOD, STABBITY, AND VEN-JENCE!",
 							  "003": "Me want to be good chieftan. Me want to be friends! But you no listen. No. You no worthy. Me must kill you, then go home. Cry for could-have-been. You cry too, except you dead."
 						   },
-						   "bulletin_title": "The goblin frowns so hard you can`t see his eyes",
+						   "bulletin_title": "The goblin frowns so hard you can't see his eyes",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"collection_success": {
 						   "bulletin_message": {
-							  "000": "That`s right. You cooperate, we get along just fine.",
+							  "000": "That's right. You cooperate, we get along just fine.",
 							  "001": "You actually have stuff? I never--I mean, yes. You give me due.",
 							  "002": "You got supplies? We take; we good!",
 							  "003": "For me?! You bestest of best peons!",
@@ -1579,7 +1579,7 @@
 						"shakedown_refused": {
 						   "bulletin_message": {
 							  "000": "What? You say no? Then we take! TAKE ALL THINGS!!!!",
-							  "001": "No no no. You supposed to say `Yes.` You supposed to feel grateful! Try again? No? Bad! Me fix badness!",
+							  "001": "No no no. You supposed to say 'Yes.' You supposed to feel grateful! Try again? No? Bad! Me fix badness!",
 							  "002": "No? Me brain breaking!! Me break you!",
 							  "003": "What? Cannot believe?! Must kill!!!",
 							  "004": "You no understand. Alternative: Death. Deeeaaaattth. DEAAATTTTTHHH!!!"
@@ -1605,7 +1605,7 @@
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
 						   "title": "A thief!",
-						   "message": "Shhhh, you`re not supposed to be able to see him."
+						   "message": "Shhhh, you're not supposed to be able to see him."
 						}
 					 }
 				  }
@@ -1661,7 +1661,7 @@
                         "create_camp": {
                            "ogo_tent": {
                               "ogo_tent": {
-                                 "display_name": "La tente d`Ogo",
+                                 "display_name": "La tente d'Ogo",
                                  "description": "Made from bleached pelts."
                               },
                               "ogo": {
@@ -1671,14 +1671,14 @@
                            },
                            "ogo_throne": {
                               "ogo_throne": {
-                                 "display_name": "Trône d`Ogo",
-                                 "description": "Decorated with Mountain`s Baby Tusks"
+                                 "display_name": "Trône d'Ogo",
+                                 "description": "Decorated with Mountain's Baby Tusks"
                               }
                            },
                            "wolf_kennel": {
                               "wolf_cage": {
                                  "display_name": "Cage de loup",
-                                 "description": "Propriété d`Ogo Cognecrâne"
+                                 "description": "Propriété d'Ogo Cognecrâne"
                               }
                            }
                         }
@@ -1834,7 +1834,7 @@
 		 },
 		 "combat_basics": {
 			"display_name": "Entrainement au combat de base",
-			"description": "Augmente le courage au fil des nombreuses heures d`entrainement"
+			"description": "Augmente le courage au fil des nombreuses heures d'entrainement"
 		 },
 		 "defender": {
 			"defender_buff": {
@@ -1851,7 +1851,7 @@
 		 "groggy": {
 			"groggy_buff": {
 			   "display_name": "Chancelant",
-			   "description": "A hard night`s sleep on the ground lowers speed by 25%. A bed would be much better!"
+			   "description": "A hard night's sleep on the ground lowers speed by 25%. A bed would be much better!"
 			}
 		 },
 		 "shepherding": {
@@ -1865,7 +1865,7 @@
 			},
 			"stenched_shepherd_buff": {
 			   "display_name": "Stenched",
-			   "description": "Animals can smell that this shepherd has slaughtered something recently. This shepherd won`t be able to find new wild animals until the stench fades."
+			   "description": "Animals can smell that this shepherd has slaughtered something recently. This shepherd won't be able to find new wild animals until the stench fades."
 			}
 		 },
 		 "sleeping": {
@@ -1888,13 +1888,13 @@
 			},
 			"starving_animal_buff": {
 			   "display_name": "Affamé",
-			   "description": "Cet animal a gravement besoin de nourriture ! Il ne vaudra rien tant qu`il sera affamé."
+			   "description": "Cet animal a gravement besoin de nourriture ! Il ne vaudra rien tant qu'il sera affamé."
 			}
 		 },
 		 "stopped": {
 			"stopped_buff": {
 			   "display_name": "Arrêté",
-			   "description": "Mettez ce buff sur quelqu`un qui a besoin de s`arrêter, dès maintenant."
+			   "description": "Mettez ce buff sur quelqu'un qui a besoin de s'arrêter, dès maintenant."
 			}
 		 }
 	  },
@@ -1918,7 +1918,7 @@
 			},
 			"patch_wall": {
                "display_name": "Mur",
-               "description": "Garde le toit en l`air"
+               "description": "Garde le toit en l'air"
 			},
 			"road": {
 			   "display_name": "Route",
@@ -1934,7 +1934,7 @@
 			},
 			"wall": {
                "display_name": "Mur",
-               "description": "Garde le toit en l`air"
+               "description": "Garde le toit en l'air"
 			}
 		 }
 	  },
@@ -2007,19 +2007,19 @@
             "disabled_description": "Vous pourrez à nouveau tondre ce mouton quand sa laine aura repoussée."
 		 },
 		 "show_workshop": {
-            "display_name": "Ouvrir l`atelier",
+            "display_name": "Ouvrir l'atelier",
             "description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement.",
             "disabled_description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement. Avant la fabrication, vous devez assigner à un artisan son atelier. "
 		 },
 		 "show_workshop_from_crafter": {
-            "display_name": "Ouvrir l`atelier",
+            "display_name": "Ouvrir l'atelier",
             "description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement.",
             "disabled_description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement. Avant la fabrication, vous devez assigner à un artisan son atelier. "
 		 },
 		 "slaughter": {
             "display_name": "Sacrifier pour de la viande",
             "description": "Sacrifie cet animal pour sa viande.",
-            "disabled_description": "Cet animal à été si mal nouris qu`il n`a pas de viande. C`est juste un sac d`os."
+            "disabled_description": "Cet animal à été si mal nouris qu'il n'a pas de viande. C'est juste un sac d'os."
 		 },
 		 "undeploy_item": {
             "display_name": "Ranger",
@@ -2035,7 +2035,7 @@
 			},
 			"move_unit": {
 			   "display_name": "Se déplacer",
-			   "description": "Dites à ce hearthling d`aller ailleurs"
+			   "description": "Dites à ce hearthling d'aller ailleurs"
 			},
 			"unload_inventory": {
 			   "display_name": "Unload Bags",
@@ -2056,7 +2056,7 @@
 					 "000": "You want me to be the carpenter? Can I... sell the stuff I make? Or is this communal property?"
 				  },
 				  "diligent_sweetheart": {
-					 "000": "Me? You want me to be the carpenter? Ok, I`ll do my best!"
+					 "000": "Me? You want me to be the carpenter? Ok, I'll do my best!"
 				  },
 				  "psychopathic_misanthrope": {
 					 "000": "The Saw? Where some people see a tool, I see a serrated weapon. Saw, you are my new best friend."
@@ -2065,7 +2065,7 @@
 					 "000": "I shall endeavor to bring the music of the cubes to our furniture."
 				  },
 				  "hopeless_optimist": {
-					 "000": "Me, Carpenter? YES!! I`ve always wanted to make minature chairs!!!"
+					 "000": "Me, Carpenter? YES!! I've always wanted to make minature chairs!!!"
 				  },
 				  "beleaguered_leader": {
 					 "000": "It is my turn to wield the saw. Too bad mom always said I was bad with power."
@@ -2078,17 +2078,17 @@
 			   "text": "En couppant du bois :",
 			   "logs": {
 				  "beleaguered_leader": {
-					 "000": "Aujourd`hui, nous allons couper des arbres pour le bois. Je suis déjà malade de cette mauvaise farce.",
+					 "000": "Aujourd'hui, nous allons couper des arbres pour le bois. Je suis déjà malade de cette mauvaise farce.",
 					 "001": "Timbeerrrrr!!! I could get used to saying that.",
-					 "002": "The gang`s keeping track of who`s chopped down the most trees. It`s me but in the time it would take to correct their math I`d rather just add another tree to my total.",
-					 "003": "Thought I saw a hornet`s nest while we were logging. Luckily, everyone got out of the way in time.",
+					 "002": "The gang's keeping track of who's chopped down the most trees. It's me but in the time it would take to correct their math I'd rather just add another tree to my total.",
+					 "003": "Thought I saw a hornet's nest while we were logging. Luckily, everyone got out of the way in time.",
 					 "004": "Wood: our eternal taskmaster. Got to keep our eye on the goal.",
 					 "005": "Everyone chop together! Chop! Chop! Chop! Yes, hurry too!",
-					 "006": "Ok gang, breaktime`s over. Back to chopping!",
-					 "007": "Every time I swing this axe, I visualize my dream house and exactly how I`m going to build it. Side effect of all this chopping: the floorplan`s getting smaller.",
+					 "006": "Ok gang, breaktime's over. Back to chopping!",
+					 "007": "Every time I swing this axe, I visualize my dream house and exactly how I'm going to build it. Side effect of all this chopping: the floorplan's getting smaller.",
 					 "008": "Falling wood! Run, people! RUN!",
 					 "teacher": {
-						"000": "Attacked more trees today. By [str(entry.teacher)] there`s a lot of trees out here."
+						"000": "Attacked more trees today. By [str(entry.teacher)] there's a lot of trees out here."
 					 }
 				  },
 				  "lovable_rogue": {
@@ -2096,31 +2096,31 @@
 					 "001": "I would be more excited to chop trees if they had a discernable anatomy. Or if I could get combat advantage! Or if they could be flanked. Or if they even just had facing, so I could backstab! Not that I ever heard of anyone felling a tree with a backstab.",
 					 "002": "My hands are getting rough from all this chopping.",
 					 "003": "Top reason chopping trees is fun: perfecting the swing of the axe. May be useful one day!",
-					 "004": "Top reason carrying wood is fun: can`t think of one.",
+					 "004": "Top reason carrying wood is fun: can't think of one.",
 					 "005": "I wonder how much I could sell this wood for back home. ...Nothing, probably.",
-					 "006": "I wonder if I could get out of chopping wood by pretending to have a splinter? Oh right, it woudln`t be pretending.",
-					 "007": "Ow! Blister! Why am I doing this to myself? An at-will employment contract is pretty much beside the point when you`re OUT IN THE MIDDLE OF NOWHERE.",
+					 "006": "I wonder if I could get out of chopping wood by pretending to have a splinter? Oh right, it woudln't be pretending.",
+					 "007": "Ow! Blister! Why am I doing this to myself? An at-will employment contract is pretty much beside the point when you're OUT IN THE MIDDLE OF NOWHERE.",
 					 "008": "Splinters! Everywhere! Ok, calming breath. Calming breath. Anyone got tweezers?"
 				  },
 				  "psychopathic_misanthrope": {
 					 "000": "Heeeaaaahhhhrrrghhh!!!",
 					 "001": "Raaaarrrrrrghhhhh!",
 					 "002": "Spork those trees, you know? Just spork them all!",
-					 "003": "I`ve chopped about a billion trees today. Call me axe murderer!!!",
+					 "003": "I've chopped about a billion trees today. Call me axe murderer!!!",
 					 "004": "People say I have deep-seated aggression problems, but nobody complains about all the wood I produce",
 					 "005": "Is anyone else chopping these trees? It it just me?",
-					 "006": "Glad I`m doing something so physical. Sitting and knitting all day would drive me crazy."
+					 "006": "Glad I'm doing something so physical. Sitting and knitting all day would drive me crazy."
 				  },
 				  "hopeless_optimist": {
-					 "000": "Chop chop chop! If you say it over and over, it`s almost like a song!",
-					 "001": "Chopping wood builds muscles! Note to self: see if anyone`s noticed.",
-					 "002": "We`re sorry Mr. Tree, but we have to cut you down so we can live inside of you. But we won`t ever forget that we`re warm and safe thanks to your sacrifice.",
-					 "003": "There`s something really satisfying about cutting down something so much bigger than me!",
-					 "004": "I`m Paul Revere! I mean, Bunyon!",
+					 "000": "Chop chop chop! If you say it over and over, it's almost like a song!",
+					 "001": "Chopping wood builds muscles! Note to self: see if anyone's noticed.",
+					 "002": "We're sorry Mr. Tree, but we have to cut you down so we can live inside of you. But we won't ever forget that we're warm and safe thanks to your sacrifice.",
+					 "003": "There's something really satisfying about cutting down something so much bigger than me!",
+					 "004": "I'm Paul Revere! I mean, Bunyon!",
 					 "005": "How much wood would a woodchuck chuck, if a woodchuck could chuck wood? Well if my name were Woodchuck, the answer would be: lots! Note to self: find out later what a woodchuck looks like.",
-					 "006": "Lumber lumber lumber, must be lumber, in a woodman`s world. Ah-aaaa, all the things I could do, if I had a little lumber, it`s a woodman`s worrrllld. Ahhh-AAAAAIIEEE---FALLING TREEEE!!!!!",
-					 "007": "I hear I`m not supposed to sing anymore when I`m chopping trees. Whatever!",
-					 "008": " Oh no! Mr. Squirrel! I`m so sorry. I didn`t mean to cut down your house. Tell you what--move in with me! Nuts are on the house. Oh. I probably shouldn`t have mentioned the house..."
+					 "006": "Lumber lumber lumber, must be lumber, in a woodman's world. Ah-aaaa, all the things I could do, if I had a little lumber, it's a woodman's worrrllld. Ahhh-AAAAAIIEEE---FALLING TREEEE!!!!!",
+					 "007": "I hear I'm not supposed to sing anymore when I'm chopping trees. Whatever!",
+					 "008": " Oh no! Mr. Squirrel! I'm so sorry. I didn't mean to cut down your house. Tell you what--move in with me! Nuts are on the house. Oh. I probably shouldn't have mentioned the house..."
 				  },
 				  "insufferable_academic": {
 					 "000": "This is an appalling underutilization of my keen mental faculties.",
@@ -2128,16 +2128,16 @@
 					 "002": "This might almost be worth the effort if only the lumber were destined for a paper mill.",
 					 "003": "Is there no one else who could engage in such menial labor?",
 					 "004": "I have perfected a mathematically ideal chopping motion. Alas, there are no peer-reviewed journals here in which I might publish my findings.",
-					 "005": "I cannot help but feel the necessity to mention the alarming rate at which we are deforesting the entire region... What? No, of course I`m not trying to avoid lumber duties!"
+					 "005": "I cannot help but feel the necessity to mention the alarming rate at which we are deforesting the entire region... What? No, of course I'm not trying to avoid lumber duties!"
 				  },
 				  "diligent_sweetheart": {
-					 "000": "I guess I can learn to chop down trees if that`s what needs to be done.",
-					 "001": "I`m going to put a little splinter beside the campfire for every tree I`ve cut down, separated by day. That way I can tell if I`m getting better at it!",
+					 "000": "I guess I can learn to chop down trees if that's what needs to be done.",
+					 "001": "I'm going to put a little splinter beside the campfire for every tree I've cut down, separated by day. That way I can tell if I'm getting better at it!",
 					 "002": "I hope people think callouses on the palms of the hands are attractive.",
 					 "003": "I hear suffering builds character!",
-					 "004": "Chopping is kind of soothing, if you just don`t worry too much about the tree falling on you.",
-					 "005": "I hope we`re not disturbing anyone`s home. Imagine what it would be like to have your home cut down around you to use to make someone else`s home!",
-					 "006": "I hope trees don`t have nerves. This would hurt a lot if they did. If they`re screaming for us to stop, it must be on a different frequency.",
+					 "004": "Chopping is kind of soothing, if you just don't worry too much about the tree falling on you.",
+					 "005": "I hope we're not disturbing anyone's home. Imagine what it would be like to have your home cut down around you to use to make someone else's home!",
+					 "006": "I hope trees don't have nerves. This would hurt a lot if they did. If they're screaming for us to stop, it must be on a different frequency.",
 					 "007": "I was holding my axe today and I realized I could do some real harm if I ever used it on a person, instead of on a tree."
 				  }
 			   }
@@ -2149,19 +2149,19 @@
 			   "logs": {
 				  "generic": {
 					 "000": "Ow! That really hurt!",
-					 "001": "I`m in danger!",
+					 "001": "I'm in danger!",
 					 "002": "Pain!",
 					 "003": "Hurts! Must... keep going!",
 					 "004": "Things are looking bad!",
-					 "005": "Can`t take much more of this!",
-					 "006": "My life`s starting to flash before my eyes.",
+					 "005": "Can't take much more of this!",
+					 "006": "My life's starting to flash before my eyes.",
 					 "007": "Should I be worried?",
 					 "008": "I should have written my mom more letters.",
-					 "009": "If I get out of this alive, I`m going to write Grandma and tell her I love her.",
+					 "009": "If I get out of this alive, I'm going to write Grandma and tell her I love her.",
 					 "010": "I could use some help here!",
 					 "011": "Need to keep going!!!",
 					 "012": "Raagh, take that!",
-					 "013": "If I`m going down you`re coming with me!",
+					 "013": "If I'm going down you're coming with me!",
 					 "014": "For my friends! For my village!",
 					 "015": "I make my last stand here!"
 				  }
@@ -2171,16 +2171,16 @@
                "text": "Sur le calme :",
 			   "logs": {
 				  "generic": {
-					 "000": "Ça fait du bien d`être en vie !",
+					 "000": "Ça fait du bien d'être en vie !",
 					 "001": "Another awesome day in town.",
 					 "002": "Peaceful!",
 					 "003": "This seems like a pretty sheltered spot.",
 					 "004": "I was amazingly productive today!",
 					 "005": "Nothing much to do today but enjoy life!",
 					 "006": "Nature sure is beautiful!",
-					 "007": "It`s great being here with friends and family.",
+					 "007": "It's great being here with friends and family.",
 					 "008": "Settling here was a great idea.",
-					 "009": "Feeling happy with a good day`s work!",
+					 "009": "Feeling happy with a good day's work!",
 					 "010": "This really feels like a spot where we can build something great.",
 					 "011": "Uninterrupted bliss! I love days like this.",
 					 "012": "24 hours of pure tranquility.",
@@ -2201,12 +2201,12 @@
 						"002": "[name(entry.dead_friend)]!!! Nooooooo!!!",
 						"003": "Goodbye, [name(entry.dead_friend)]. I hope we meet again someday.",
 						"004": "[name(entry.dead_friend)]? But... what will I tell your dad, when I next write home?",
-						"005": "We can`t let [name(entry.dead_friend)]`s death be in vain, people!",
-						"006": "Goodbye, [name(entry.dead_friend)]. We`ll miss you.",
-						"007": "Don`t worry, [name(entry.dead_friend)]. We`ll avenge you!",
-						"008": "I can`t believe [name(entry.dead_friend)] is really gone.",
-						"009": "[name(entry.dead_friend)]? Gone? Suddenly this whole thing seems like it wasn`t worth it, somehow.",
-						"010": "Gee, now I really wish I hadn`t talked [name(entry.dead_friend)] into this adventure.",
+						"005": "We can't let [name(entry.dead_friend)]'s death be in vain, people!",
+						"006": "Goodbye, [name(entry.dead_friend)]. We'll miss you.",
+						"007": "Don't worry, [name(entry.dead_friend)]. We'll avenge you!",
+						"008": "I can't believe [name(entry.dead_friend)] is really gone.",
+						"009": "[name(entry.dead_friend)]? Gone? Suddenly this whole thing seems like it wasn't worth it, somehow.",
+						"010": "Gee, now I really wish I hadn't talked [name(entry.dead_friend)] into this adventure.",
 						"011": "[name(entry.dead_friend)]!!"
 					 }
 				  }
@@ -2218,7 +2218,7 @@
 					 "000": "Oh non ! Des monstres !",
 					 "001": "Tout le monde, sauve-qui-peut !",
 					 "002": "AAAH! DES MONSTRES !!!",
-					 "003": "AAAAH! S`il vous plaît ne nous faite pas de mal !!!",
+					 "003": "AAAAH! S'il vous plaît ne nous faite pas de mal !!!",
 					 "004": "Si je ne peux pas le voir, peut-être il ne peut pas me voir ?",
 					 "teacher": {
 						"000": "[str(entry.teacher)] SAUVEZ-NOUS !!!"
@@ -2239,7 +2239,7 @@
 					 "000": "Tactical retreat! Tactical retreat!!!",
 					 "001": "Everyone make for the hills!",
 					 "002": "Drop everything and move, people!!!",
-					 "003": "They`re too strong for us! Scatter, everyone!!",
+					 "003": "They're too strong for us! Scatter, everyone!!",
 					 "004": "Run purposefully towards the exits!!!"
 				  },
 				  "generic": {
@@ -2251,12 +2251,12 @@
 				  },
 				  "hopeless_optimist": {
 					 "000": "Aaagh! It looks so mean!!!!",
-					 "001": "I can`t see you!! I can`t see you!!!",
+					 "001": "I can't see you!! I can't see you!!!",
 					 "002": "Monsters!!!!!",
-					 "003": "Auugh! Can`t we just be friends??",
+					 "003": "Auugh! Can't we just be friends??",
 					 "004": "Running away so tomorrow can be another daaaaaayyy!!!",
 					 "005": "Run, run, run away from the scary monsters!!!",
-					 "006": "I don`t think it wants to be frieeendss!!!"
+					 "006": "I don't think it wants to be frieeendss!!!"
 				  },
 				  "psychopathic_misanthrope": {
 					 "000": "RRAAAAGGGHH!!",
@@ -2266,9 +2266,9 @@
 				  },
 				  "lovable_rogue": {
 					 "000": "Grab the goods and head for the hills!",
-					 "001": "Please, I don`t want to die!",
+					 "001": "Please, I don't want to die!",
 					 "002": "I have so many more things I need to do!!!!",
-					 "003": "I can`t die here!!!",
+					 "003": "I can't die here!!!",
 					 "004": "Must... escape!!!",
 					 "005": "Every villager for themselves!!!"
 				  }
@@ -2295,27 +2295,27 @@
 					 "003": "In my dream last night, I turned everything--and everyone--I touched, into gold. Oops.",
 					 "004": "I dreamed that I ate all our food supplies. Best try to avoid doing that today.",
 					 "teacher": {
-						"000": "I had the dream about fragile ladders again. I wish I knew what was at the top. I`m sure [str(entry.teacher)] is trying to tell me something."
+						"000": "I had the dream about fragile ladders again. I wish I knew what was at the top. I'm sure [str(entry.teacher)] is trying to tell me something."
 					 }
 				  },
 				  "hopeless_optimist": {
 					 "000": "Wolves! All night I dreamed I was being chased by wolves!",
 					 "001": "Rabbits! All night I dreamed I was being chased by rabbits!",
 					 "002": "I love dreams about flying. Tonight I flew by soft clouds and over dense trees. Watch out, birds!",
-					 "003": "I dreamed I was a goblin. Don`t tell anyone, but stealing from the town was a lot of fun! (Does that make me a bad person?)",
-					 "004": "I dreamed I was cooking soup for everyone but I ran out of salt. Salt`s a rock, right? Can you substitute rocks for salt? ",
-					 "005": "I dreamt a little bird alighted upon my shoulder and told me that today was going to be a great day. I can`t wait!",
+					 "003": "I dreamed I was a goblin. Don't tell anyone, but stealing from the town was a lot of fun! (Does that make me a bad person?)",
+					 "004": "I dreamed I was cooking soup for everyone but I ran out of salt. Salt's a rock, right? Can you substitute rocks for salt? ",
+					 "005": "I dreamt a little bird alighted upon my shoulder and told me that today was going to be a great day. I can't wait!",
 					 "006": "I had a dream that in the distant future, the sons of goblins and the sons of hearthlings sat down together at the table of berries."
 				  },
 				  "diligent_sweetheart": {
 					 "000": "Whoa! I was out for a while! Do we still have all our hammers?",
-					 "001": "Oops! I must`ve fallen asleep! Do we still have all our trees?",
+					 "001": "Oops! I must've fallen asleep! Do we still have all our trees?",
 					 "002": "I dreamed I fell asleep for a thousand years. Luckily, someone made me a shiny glass coffin with a hatch on the inside for opening. Weird.",
 					 "003": "I had a Dream where a Giant Dragon approached me! But when she opened her mouth, only kitten noises came out. Adorable!",
 					 "004": "I had a dream where I all the forest creatures and I were having a picnic, but the raccoon stole all the honey so we had nothing to put on our bread and butter.",
-					 "005": "I dreamt that everyone was jeering at me. I ran home and didn`t move. Ever again.",
+					 "005": "I dreamt that everyone was jeering at me. I ran home and didn't move. Ever again.",
 					 "006": "I dreamt of a world of lush forests, and clear rivers, surrounded by friends. I woke and it was real!",
-					 "007": "I dreamt about doing all my chores. Now I`ve woken I have to do them all over again..."
+					 "007": "I dreamt about doing all my chores. Now I've woken I have to do them all over again..."
 				  },
 				  "psychopathic_misanthrope": {
 					 "000": "Went to sleep hungry again last night and dreamed for ten consecutivie hours about poyo pot pie! Raaargh! Fear my devouring mouth!",
@@ -2334,9 +2334,9 @@
 					 "006": "I dreamed I was at a lake and a luminous rabbit appeared out of the water and told me some great advice. &quot;If you build it they will come.&quot;",
 					 "007": "I dreamed my hammer was running after me",
 					 "008": "I dreamed we were racing the sheep. Something to try tomorrow?",
-					 "009": "I dreamed I couldn`t stop filling my backpack with all the items littered on the ground.",
+					 "009": "I dreamed I couldn't stop filling my backpack with all the items littered on the ground.",
 					 "010": "Last night I had this dream where I was attacked by a swarm of poyos.",
-					 "011": "I had a dream that everyone could only collect berries. There weren`t even trees to chop or blocks of stone to mine.",
+					 "011": "I had a dream that everyone could only collect berries. There weren't even trees to chop or blocks of stone to mine.",
 					 "012": "I dreamed I ate berries until I turned purple and then rolled away into a pond.",
 					 "013": "I dreamed that I was at the mercy of a sickness that turned me into a Zombie. The worst part: I could only walk very very slowly.",
 					 "014": "Last night I dreamed I was stranded in a hole all night and no one would build a ladder for me to climb up.",
@@ -2351,7 +2351,7 @@
 					 "023": "I dreamed the trees could talk.",
 					 "024": "I dreamed I spoke to a rock, but it was stone cold towards me.",
 					 "025": "I dreamed that one of the ancient trees came alive and attacked our town! It was horrible.",
-					 "026": "I dreamed about a time where houses didn`t have roofs. It was very cold.",
+					 "026": "I dreamed about a time where houses didn't have roofs. It was very cold.",
 					 "027": "I dreamed that I walked across a vast treeless plain and all I could hear was the sounds of the wind in my ears. Bones of some large horned animal dotted the landscape. I felt so alone.",
 					 "028": "I dreamed that I could walk underwater without holding my breath.",
 					 "029": "I dreamed I was stuck in a maze. I had to run through it with the others.",
@@ -2363,14 +2363,14 @@
 					 "035": "I had a dream where I found an ancient sword in a deep crypt. When I reached out to touch it, it faded away and a mournful bell sounded. All went dark.",
 					 "036": "I had a dream that a wizard came to my door and asked me to join them on a journey! ",
 					 "037": "I had a dream that I was next in line to become a farmer.",
-					 "038": "I dreamed a giant pumpkin was rolling toward me and I couldn`t move.",
+					 "038": "I dreamed a giant pumpkin was rolling toward me and I couldn't move.",
 					 "039": "I dreamed about creating an apple coated with gold.",
 					 "040": "I dreamed we lived in a giant castle and I needed to clean it. I prefer to live in the woods!",
 					 "041": "I dreamed that I caught a fish the size of a titan!",
-					 "042": "I dreamed I encountered a were-sheep. It didn`t end well.",
+					 "042": "I dreamed I encountered a were-sheep. It didn't end well.",
 					 "043": "I had a dream about riding a dragon. Aspirational!",
 					 "044": "I dreamed about a land that was lower than the sea yet it was still dry.",
-					 "045": "I dreamed of meeting nomads who spoke a foreign tongue. I couldn`t understand a word they said.",
+					 "045": "I dreamed of meeting nomads who spoke a foreign tongue. I couldn't understand a word they said.",
 					 "046": "I dreamed I had no arms.",
 					 "047": "I dreamed that I battered some poyo meat and put it in oil. Poyo nuggets they called it!",
 					 "048": "I dreamed that cloth could be a color other than blue",
@@ -2382,8 +2382,8 @@
 					 "054": "I dreamed that the moon was smiling at us.",
 					 "055": "I dreamed that I had to catch all the critters in the land.",
 					 "056": "I dreamed about buildings as high as the sky itself.",
-					 "057": "I dreamed it was dangerous to go into the woods alone. I`d better take a sword.",
-					 "058": "I once dreamed I held a magnificent sword. Though once I firmly grasped it`s handle, it turned to sand.",
+					 "057": "I dreamed it was dangerous to go into the woods alone. I'd better take a sword.",
+					 "058": "I once dreamed I held a magnificent sword. Though once I firmly grasped it's handle, it turned to sand.",
 					 "059": "I dreamed I ate bread; I woke up to eat my pillow.",
 					 "060": "I dreamed I became king after pulling a sword out of a rock.",
 					 "061": "I dreamed about a man with a box who could travel in time and space. It was bigger on the inside.",
@@ -2394,7 +2394,7 @@
 					 "066": "Last night I dreamed that someone was reading my diary. Creepy.",
 					 "067": "I dreamed of creatures of immeasurable power surrounding us. They were actually poyo.",
 					 "068": "I dreamed my sword would glow blue when there were goblins nearby.",
-					 "069": "I dreamed that we fried up strips of fatty, salted meat from a tusked animal we hunted in the forest. It was the most delicious thing I ever ate! I think I`ll call it ... &quot;bacon&quot;.",
+					 "069": "I dreamed that we fried up strips of fatty, salted meat from a tusked animal we hunted in the forest. It was the most delicious thing I ever ate! I think I'll call it ... &quot;bacon&quot;.",
 					 "070": "I dreamed I had a pretty little poyo whom I loved very much. I made it a little bonnet to wear on its head!",
 					 "071": "I had a dream in which ground shook and rumbled. The earth swallowed all our poyo.",
 					 "072": "I dreamed a squirrel chopped our house down to build its tree.",
@@ -2410,16 +2410,16 @@
 					 "082": "In my dream from last night, all the jerky in the stockpile became a monster. It was a jerk to everyone.",
 					 "083": "I had a dream in which I was able to make flour at a cauldron by weaving my hand together as if though I were knitting.",
 					 "084": "I had a dream in which we had to import all our corn from some far-flung and distant land.",
-					 "085": "I had a dream I was a wolf hunting Poyo`s! When I awoke I had a feather in my mouth. Weird!",
+					 "085": "I had a dream I was a wolf hunting Poyo's! When I awoke I had a feather in my mouth. Weird!",
 					 "086": "I had a dream about a city of gold! ",
 					 "087": "I had a dream about a magic bean that could be brewed into a potion, known as coffee, and had the ability to, seemingly, raise the dead back to life.",
-					 "088": "I had the craziest dream! There was a man, who was able to raise magma out of the earth! That`s not possible, right!?",
+					 "088": "I had the craziest dream! There was a man, who was able to raise magma out of the earth! That's not possible, right!?",
 					 "089": "I had a dream where everything was made of paper and wood! We had to use sticks to prop ourselves up.",
 					 "090": "I had a dream in which a sheep bit me, and turned me into a sheep! But I could still talk. It was weird.",
 					 "091": "I had a dream in which I was tiny, and a portly man said he was going to &quot;Boil em, mash em, stick em in a stew!&quot; Although I awoke before anything else could happen, I assumed he was talking about me.",
 					 "092": "I dreamed about catching a giant fish! From a puddle!",
 					 "093": "I had a dream where the tree I was chopping trasformed into a giant and attacked me!",
-					 "094": "I had a dream where I was bullying a poyo and then a swarm of poyo`s started attacking me! ... I am now a changed Hearthling",
+					 "094": "I had a dream where I was bullying a poyo and then a swarm of poyo's started attacking me! ... I am now a changed Hearthling",
 					 "095": "I had a dream, in which I was peacefully dosing off. The version of myself in that dream was also having a dream about me peacefully dosing off. This went on and on until I woke up.",
 					 "096": "I had a dream where I ate so much food I literally transformed into a planet.",
 					 "teacher": {
@@ -2432,7 +2432,7 @@
 					 "001": "I had a dream where I saw myself standing in some kind of sun-god robes on a pyramid. I had a thousand hearthlings as subjects, but they were all screaming and throwing radishes at me.",
 					 "002": "I dreamed that me and my friends lived to build a mighty empire of our own!",
 					 "003": "I dreamed that I pushed an immense boulder up a hill. When I reached the top of the hill I watched the boulder roll back down to the bottom. I then started pushing the boulder back up the hill. This happened all night long...",
-					 "004": "I had a horrible dream! I had a dream, where there were 6 other people, and we were all stuck in the- oh, wait.... that wasn`t a dream.",
+					 "004": "I had a horrible dream! I had a dream, where there were 6 other people, and we were all stuck in the- oh, wait.... that wasn't a dream.",
 					 "teacher_dreams": {
 						"000": "First, I dreamed that the trees grew arms and legs and began to sing. Then, [str(entry.teacher)] asked me to sing in front of a large audience."
 					 }
@@ -2446,7 +2446,7 @@
 					 "000": "It feels good to have my own bed.",
 					 "001": "Sleeping in a bed is a ton cooler than sleeping on the floor!",
 					 "002": "Beds are the best invention since regulation log sizes.",
-					 "003": "I`m never going to get tired of sleeping in a bed.",
+					 "003": "I'm never going to get tired of sleeping in a bed.",
 					 "004": "Yes! This bed is mine! M-I-N-E!",
 					 "005": "Being in my bed makes me feel so sheltered and cozy.",
 					 "006": "Home is where your bed is."
@@ -2463,11 +2463,11 @@
 					 "003": "I wish I could sleep in a real bed.",
 					 "004": "Any kind of bed would be better than sleeping on the ground",
 					 "005": "I really, really wish I had a bed to call my own.",
-					 "006": "I was too exhausted to find a proper bed, and now I`m really paying for it. Ow.",
+					 "006": "I was too exhausted to find a proper bed, and now I'm really paying for it. Ow.",
 					 "007": "Slept on the ground again. Neck super sore. Everything looks slanted.",
 					 "008": "I counted beds to go to sleep. BEDS!",
 					 "teacher": {
-						"000": "Though [str(entry.teacher)] slept on the ground during their pilgrimage, I wish I didn`t have to."
+						"000": "Though [str(entry.teacher)] slept on the ground during their pilgrimage, I wish I didn't have to."
 					 }
 				  }
 			   }
@@ -2478,26 +2478,26 @@
 			   "text": "On Eating Berries:",
 			   "logs": {
 				  "psychopathic_misanthrope": {
-					 "000": "Huh. These berries are actually kind of growing on me. They`ve got that fresh, non-manured taste.",
-					 "001": "I`m not sure. These berries me feel kind of... light inside. I don`t like where this is going.",
+					 "000": "Huh. These berries are actually kind of growing on me. They've got that fresh, non-manured taste.",
+					 "001": "I'm not sure. These berries me feel kind of... light inside. I don't like where this is going.",
 					 "002": "Now I know why hippies are vegetarian. Screw this."
 				  },
 				  "insufferable_academic": {
 					 "000": "Dark colored berries are full of antioxidants. Which are good for you."
 				  },
 				  "hopeless_optimist": {
-					 "000": "Wow! I get to eat all the fresh berries I want! I`ll never go hungry again!",
+					 "000": "Wow! I get to eat all the fresh berries I want! I'll never go hungry again!",
 					 "001": "I love how they make my mouth blue. And my tongue. And my insides. And--",
 					 "002": "Every berry tastes a little different. Like snowflakes, but for the mouth!",
-					 "003": "I`m getting really good at telling which berries are the crunchiest."
+					 "003": "I'm getting really good at telling which berries are the crunchiest."
 				  },
 				  "beleaguered_leader": {
 					 "000": "Mmm, berries! Part of a healthy, regular diet.",
-					 "001": "Berries again! Which is good, because they`re healthy for you.",
+					 "001": "Berries again! Which is good, because they're healthy for you.",
 					 "002": "Berries! They taste better than starving.",
-					 "003": "Have you eaten your berries today? I know I`ve eaten mine!",
-					 "004": "I wonder what`s for dinner? I know--BERRIES!",
-					 "005": "Everyone`s been pretty good about eating so many berries. I try to set a good example."
+					 "003": "Have you eaten your berries today? I know I've eaten mine!",
+					 "004": "I wonder what's for dinner? I know--BERRIES!",
+					 "005": "Everyone's been pretty good about eating so many berries. I try to set a good example."
 				  },
 				  "lovable_rogue": {
 					 "000": "I should really stop trying to sneak these berries into my pockets. If I keep it up somebody might notice the large purple stains in my pants.",
@@ -2533,19 +2533,19 @@
 					 "003": "[str(entry.recent_food)] again? I can feel the revolt coming."
 				  },
 				  "psychopathic_misanthrope": {
-					 "000": "There`s nothing to eat but [str(entry.recent_food)]? 10 days till I kill someone for their meat.",
-					 "001": "I`ve eaten so much of this food I can taste it in my sleep.",
+					 "000": "There's nothing to eat but [str(entry.recent_food)]? 10 days till I kill someone for their meat.",
+					 "001": "I've eaten so much of this food I can taste it in my sleep.",
 					 "002": "If I have to eat one more [str(entry.recent_food)] I swear I will start to foam at the mouth."
 				  },
 				  "diligent_sweetheart": {
 					 "000": "More [str(entry.recent_food)]? Maybe we can dry some of it to eat later?",
-					 "001": "I don`t mean to complain, but all I`ve eaten recently is food like this [str(entry.recent_food)]. It`s starting to hurt my mouth.",
+					 "001": "I don't mean to complain, but all I've eaten recently is food like this [str(entry.recent_food)]. It's starting to hurt my mouth.",
 					 "002": "[str(entry.recent_food)]! Must... keep... chewing....!"
 				  },
 				  "hopeless_optimist": {
-					 "000": "Maybe if I eat enough of this food, I`ll turn into it!",
+					 "000": "Maybe if I eat enough of this food, I'll turn into it!",
 					 "001": "[str(entry.recent_food)] again? My jaws hurt.",
-					 "002": "It`s okay, tongue! Just pretend you can`t taste the [str(entry.recent_food)]."
+					 "002": "It's okay, tongue! Just pretend you can't taste the [str(entry.recent_food)]."
 				  },
 				  "lovable_rogue": {
 					 "000": "[str(entry.recent_food)]. Great.",
@@ -2561,7 +2561,7 @@
 					 "000": "Mmm, I love diversity in my diet.",
 					 "001": "Eating [str(entry.recent_food)] was a nice change of pace.",
 					 "002": "Having different things at mealtimes really synergizes the flavors!",
-					 "003": "[str(entry.recent_food)] tastes better when I haven`t had it for a while.",
+					 "003": "[str(entry.recent_food)] tastes better when I haven't had it for a while.",
 					 "teacher": {
 						"000": "Praise [str(entry.teacher)]! Diversity in food makes me happy."
 					 }
@@ -2573,8 +2573,8 @@
 			   "logs": {
 				  "lovable_rogue": {
 					 "000": "Wow, who knew [str(entry.recent_food)] was so incredibly slimming?",
-					 "001": "This [str(entry.recent_food)] is the best thing I`ve eaten in a long time.",
-					 "002": "I bet there`s a market for food this good. Unless I should keep it all to myself?",
+					 "001": "This [str(entry.recent_food)] is the best thing I've eaten in a long time.",
+					 "002": "I bet there's a market for food this good. Unless I should keep it all to myself?",
 					 "teacher": {
 						"000": "This was an amazing [str(entry.recent_food)]. Praise [str(entry.teacher)] and the Church of Plenty!"
 					 }
@@ -2585,7 +2585,7 @@
 					 "002": "Grow grow grow, grow more of this [str(entry.recent_food)]."
 				  },
 				  "beleaguered_leader": {
-					 "000": "Wow. Who`d have guessed that [str(entry.recent_food)] was a superfood?",
+					 "000": "Wow. Who'd have guessed that [str(entry.recent_food)] was a superfood?",
 					 "001": "That was a surprisngly satisfying [str(entry.recent_food)].",
 					 "002": "That [str(entry.recent_food)] was so good I should really prioritize eating more of it.",
 					 "003": "Arr! Now I feel like a superhero!"
@@ -2594,7 +2594,7 @@
 					 "000": "Wow! That [str(entry.recent_food)] made me feel super healthy!",
 					 "001": "That [str(entry.recent_food)] was surprisingly satisfying!",
 					 "002": "[str(entry.recent_food)]? Super filling!",
-					 "003": "This [str(entry.recent_food)] is going to fuel today`s great works!"
+					 "003": "This [str(entry.recent_food)] is going to fuel today's great works!"
 				  }
 			   }
 			}
@@ -2609,14 +2609,14 @@
 					 "002": "Being fed is much, much, much cooler than being hungry.",
 					 "003": "Oh boy! [str(entry.recent_food)]. Tastes good in the tummy.",
 					 "with_reaction": {
-						"000": "Dear Diary. Today I`m eating: [str(entry.recent_food)]. Mmm!",
-						"001": "Dear Diary. Today I`m eating: [str(entry.recent_food)]. Food is good.",
-						"002": "Dear Diary. Today I`m eating: [str(entry.recent_food)]. Wooo!",
-						"003": "Dear Diary. Today I`m eating: [str(entry.recent_food)]. Happiness.",
-						"004": "Dear Diary. Today I`m eating: [str(entry.recent_food)]. Joy.",
-						"005": "Dear Diary. Today I`m eating: [str(entry.recent_food)]. Oh boy!",
-						"006": "Dear Diary. Today I`m eating: [str(entry.recent_food)]. Delicious",
-						"007": "Dear Diary. Today I`m eating: [str(entry.recent_food)]. Better than starving!"
+						"000": "Dear Diary. Today I'm eating: [str(entry.recent_food)]. Mmm!",
+						"001": "Dear Diary. Today I'm eating: [str(entry.recent_food)]. Food is good.",
+						"002": "Dear Diary. Today I'm eating: [str(entry.recent_food)]. Wooo!",
+						"003": "Dear Diary. Today I'm eating: [str(entry.recent_food)]. Happiness.",
+						"004": "Dear Diary. Today I'm eating: [str(entry.recent_food)]. Joy.",
+						"005": "Dear Diary. Today I'm eating: [str(entry.recent_food)]. Oh boy!",
+						"006": "Dear Diary. Today I'm eating: [str(entry.recent_food)]. Delicious",
+						"007": "Dear Diary. Today I'm eating: [str(entry.recent_food)]. Better than starving!"
 					 },
 					 "teacher": {
 						"000": "[str(entry.teacher)], thank you for this [str(entry.recent_food)]."
@@ -2627,7 +2627,7 @@
 		 },
 		 "embarking": {
 			"embarking": {
-               "text": "Sur l`arrivée :",
+               "text": "Sur l'arrivée :",
 			   "logs": {
 				  "insufferable_academic": {
 					 "000": "Three days have passed since I had a decent philosophical conversation. Trying not to panic. Failing. Trying to keep it in. Succeeding. Mostly."
@@ -2640,19 +2640,19 @@
 				  },
 				  "lovable_rogue": {
 					 "000": "Well, here we are, I guess. A million miles away from civilization. Great.",
-					 "001": "Mom was right. We`re all going to get eaten by bears."
+					 "001": "Mom was right. We're all going to get eaten by bears."
 				  },
 				  "hopeless_optimist": {
-					 "000": "I`m so psyched to be here, I could polka with joy!!!",
-					 "001": "I`m so psyched to be here, I could yowl with joy!!!",
-					 "002": "I`m so psyched to be here, I could cartwheel with joy!!!",
-					 "003": "I`m so psyched to be here, I could dance with joy!!!",
-					 "004": "I`m so psyched to be here, I could jump with joy!!!",
-					 "005": "I`m so psyched to be here, I could skip with joy!!!",
-					 "006": "I`m so psyched to be here, I could backflip with joy!!!"
+					 "000": "I'm so psyched to be here, I could polka with joy!!!",
+					 "001": "I'm so psyched to be here, I could yowl with joy!!!",
+					 "002": "I'm so psyched to be here, I could cartwheel with joy!!!",
+					 "003": "I'm so psyched to be here, I could dance with joy!!!",
+					 "004": "I'm so psyched to be here, I could jump with joy!!!",
+					 "005": "I'm so psyched to be here, I could skip with joy!!!",
+					 "006": "I'm so psyched to be here, I could backflip with joy!!!"
 				  },
 				  "psychopathic_misanthrope": {
-					 "000": "At the time, wilderness seemed better than jailtime, but I`m starting to wonder.",
+					 "000": "At the time, wilderness seemed better than jailtime, but I'm starting to wonder.",
 					 "001": "Walk a thousand miles to get away from people and... there are still people. Spork."
 				  }
 			   }
@@ -2664,86 +2664,86 @@
 			   "logs": {
 				  "generic": {
 					 "000": "Whoa. [str(entry.gather_target)]. Here goes!",
-					 "001": "Yup. Today I`ll be gathering a [str(entry.gather_target)]! Good stuff to have on hand.",
+					 "001": "Yup. Today I'll be gathering a [str(entry.gather_target)]! Good stuff to have on hand.",
 					 "002": "Yup. Time to get a [str(entry.gather_target)]! Here goes!",
 					 "003": "Whoa. Another [str(entry.gather_target)]! Yaaay?",
 					 "004": "Uh huh. [str(entry.gather_target)].  ",
 					 "005": "Uh huh. Another [str(entry.gather_target)]!  ",
-					 "006": "Whoa. Today I`ll be gathering a [str(entry.gather_target)]! I guess I`ll try not to make a mess.",
-					 "007": "Ok! Another [str(entry.gather_target)]! I guess I`ll try not to make a mess.",
+					 "006": "Whoa. Today I'll be gathering a [str(entry.gather_target)]! I guess I'll try not to make a mess.",
+					 "007": "Ok! Another [str(entry.gather_target)]! I guess I'll try not to make a mess.",
 					 "008": "Ok! Time to get a [str(entry.gather_target)]! Here goes!",
 					 "009": "Ok! Time to get a [str(entry.gather_target)]! Here goes!",
 					 "010": "Yup. Another [str(entry.gather_target)]!  ",
 					 "011": "Uh huh. [str(entry.gather_target)]. Here goes!",
 					 "012": "Uh huh. Another [str(entry.gather_target)]!  ",
-					 "013": "Ok! Today I`ll be gathering a [str(entry.gather_target)]! Here goes!",
-					 "014": "Ok! [str(entry.gather_target)]. I guess I`ll try not to make a mess.",
+					 "013": "Ok! Today I'll be gathering a [str(entry.gather_target)]! Here goes!",
+					 "014": "Ok! [str(entry.gather_target)]. I guess I'll try not to make a mess.",
 					 "015": "Uh huh. [str(entry.gather_target)]. Off to work!",
 					 "016": "Yup. [str(entry.gather_target)].  ",
 					 "017": "Yup. Time to get a [str(entry.gather_target)]! Off to work!",
-					 "018": "Whoa. Today I`ll be gathering a [str(entry.gather_target)]! Yaaay?",
+					 "018": "Whoa. Today I'll be gathering a [str(entry.gather_target)]! Yaaay?",
 					 "019": "Ok! [str(entry.gather_target)]. Good stuff to have on hand.",
-					 "020": "Uh huh. Today I`ll be gathering a [str(entry.gather_target)]! Yaaay!",
+					 "020": "Uh huh. Today I'll be gathering a [str(entry.gather_target)]! Yaaay!",
 					 "021": "Yup. Another [str(entry.gather_target)]! Good stuff to have on hand.",
-					 "022": "Yup. Time to get a [str(entry.gather_target)]! I guess I`ll try not to make a mess.",
-					 "023": "Uh huh. Today I`ll be gathering a [str(entry.gather_target)]! Yaaay?",
-					 "024": "Yup. Today I`ll be gathering a [str(entry.gather_target)]! Yaaay?",
+					 "022": "Yup. Time to get a [str(entry.gather_target)]! I guess I'll try not to make a mess.",
+					 "023": "Uh huh. Today I'll be gathering a [str(entry.gather_target)]! Yaaay?",
+					 "024": "Yup. Today I'll be gathering a [str(entry.gather_target)]! Yaaay?",
 					 "025": "Uh huh. Time to get a [str(entry.gather_target)]!  ",
-					 "026": "Uh huh. Today I`ll be gathering a [str(entry.gather_target)]! Off to work!",
-					 "027": "Ok! Today I`ll be gathering a [str(entry.gather_target)]! Here goes!",
+					 "026": "Uh huh. Today I'll be gathering a [str(entry.gather_target)]! Off to work!",
+					 "027": "Ok! Today I'll be gathering a [str(entry.gather_target)]! Here goes!",
 					 "028": "Uh huh. Time to get a [str(entry.gather_target)]! Good stuff to have on hand.",
 					 "029": "Whoa. [str(entry.gather_target)]. Yaaay!",
-					 "030": "Uh huh. Another [str(entry.gather_target)]! I guess I`ll try not to make a mess.",
-					 "031": "Ok! Today I`ll be gathering a [str(entry.gather_target)]! Here goes!",
-					 "032": "Uh huh. Today I`ll be gathering a [str(entry.gather_target)]! Here goes!"
+					 "030": "Uh huh. Another [str(entry.gather_target)]! I guess I'll try not to make a mess.",
+					 "031": "Ok! Today I'll be gathering a [str(entry.gather_target)]! Here goes!",
+					 "032": "Uh huh. Today I'll be gathering a [str(entry.gather_target)]! Here goes!"
 				  },
 				  "hopeless_optimist": {
-					 "000": "Oooh! [str(entry.gather_target)]. Who would`t love this?",
+					 "000": "Oooh! [str(entry.gather_target)]. Who would't love this?",
 					 "001": "Oooh! Another [str(entry.gather_target)]! Everyone look!",
 					 "002": "Oooh! Another [str(entry.gather_target)]! Forward!",
 					 "003": "Oooh! Time to get a [str(entry.gather_target)]! Everyone look!",
 					 "004": "Oooh! Time to get a [str(entry.gather_target)]! Forward!",
-					 "005": "Oooh! Time to get a [str(entry.gather_target)]! Who would`t love this?",
-					 "006": "Oooh! Today I`ll be gathering a [str(entry.gather_target)]! Everyone look!",
-					 "007": "Oooh! Today I`ll be gathering a [str(entry.gather_target)]! Forward!",
-					 "008": "So excited!! [str(entry.gather_target)]. Who would`t love this?",
+					 "005": "Oooh! Time to get a [str(entry.gather_target)]! Who would't love this?",
+					 "006": "Oooh! Today I'll be gathering a [str(entry.gather_target)]! Everyone look!",
+					 "007": "Oooh! Today I'll be gathering a [str(entry.gather_target)]! Forward!",
+					 "008": "So excited!! [str(entry.gather_target)]. Who would't love this?",
 					 "009": "So excited!! Another [str(entry.gather_target)]! Everyone look!",
 					 "010": "So excited!! Another [str(entry.gather_target)]! Forward!",
-					 "011": "So excited!! Another [str(entry.gather_target)]! Who would`t love this?",
+					 "011": "So excited!! Another [str(entry.gather_target)]! Who would't love this?",
 					 "012": "So excited!! Time to get a [str(entry.gather_target)]! Everyone look!",
 					 "013": "So excited!! Time to get a [str(entry.gather_target)]! Forward!",
 					 "014": "Woo!!! [str(entry.gather_target)]. Everyone look!",
-					 "015": "Woo!!! [str(entry.gather_target)]. Who would`t love this?",
+					 "015": "Woo!!! [str(entry.gather_target)]. Who would't love this?",
 					 "016": "Woo!!! Another [str(entry.gather_target)]! Forward!",
-					 "017": "Woo!!! Another [str(entry.gather_target)]! Who would`t love this?",
+					 "017": "Woo!!! Another [str(entry.gather_target)]! Who would't love this?",
 					 "018": "Woo!!! Time to get a [str(entry.gather_target)]! Everyone look!",
 					 "019": "Woo!!! Time to get a [str(entry.gather_target)]! Forward!",
-					 "020": "Woo!!! Today I`ll be gathering a [str(entry.gather_target)]! Everyone look!",
-					 "021": "Woo!!! Today I`ll be gathering a [str(entry.gather_target)]! Who would`t love this?"
+					 "020": "Woo!!! Today I'll be gathering a [str(entry.gather_target)]! Everyone look!",
+					 "021": "Woo!!! Today I'll be gathering a [str(entry.gather_target)]! Who would't love this?"
 				  },
 				  "beleaguered_leader": {
 					 "000": "Taking one for the team... Another [str(entry.gather_target)]! Remember: I chose to be here.",
 					 "001": "Leading the charge: [str(entry.gather_target)]. Joy.",
 					 "002": "Gear up, everyone! Another [str(entry.gather_target)]! Time to get to work!",
 					 "003": "Gear up, everyone! Another [str(entry.gather_target)]! Remember: I chose to be here.",
-					 "004": "Leading the charge: Today I`ll be gathering a [str(entry.gather_target)]! Time to get to work!",
+					 "004": "Leading the charge: Today I'll be gathering a [str(entry.gather_target)]! Time to get to work!",
 					 "005": "Taking one for the team... Time to get a [str(entry.gather_target)]! Remember: I chose to be here.",
-					 "006": "Taking one for the team... Today I`ll be gathering a [str(entry.gather_target)]! Time to get to work!",
+					 "006": "Taking one for the team... Today I'll be gathering a [str(entry.gather_target)]! Time to get to work!",
 					 "007": "Taking one for the team... Another [str(entry.gather_target)]! Remember: I chose to be here.",
 					 "008": "Leading the charge: Another [str(entry.gather_target)]! Hi ho!",
 					 "009": "Leading the charge: Time to get a [str(entry.gather_target)]! Hi ho!",
 					 "010": "Leading the charge: Another [str(entry.gather_target)]! Joy.",
 					 "011": "Taking one for the team... Time to get a [str(entry.gather_target)]! Remember: I chose to be here.",
-					 "012": "Gear up, everyone! Today I`ll be gathering a [str(entry.gather_target)]! Hi ho!",
+					 "012": "Gear up, everyone! Today I'll be gathering a [str(entry.gather_target)]! Hi ho!",
 					 "013": "Listen up, everyone! Another [str(entry.gather_target)]! Time to get to work!",
 					 "014": "Leading the charge: Another [str(entry.gather_target)]! Time to get to work!",
 					 "015": "Leading the charge: Time to get a [str(entry.gather_target)]! Remember: I chose to be here.",
 					 "016": "Gear up, everyone! Another [str(entry.gather_target)]! Hi ho!",
-					 "017": "Gear up, everyone! Today I`ll be gathering a [str(entry.gather_target)]! Time to get to work!",
+					 "017": "Gear up, everyone! Today I'll be gathering a [str(entry.gather_target)]! Time to get to work!",
 					 "018": "Taking one for the team... Another [str(entry.gather_target)]! Joy.",
 					 "019": "Gear up, everyone! Another [str(entry.gather_target)]! Hi ho!",
-					 "020": "Taking one for the team... Today I`ll be gathering a [str(entry.gather_target)]! Remember: I chose to be here.",
-					 "021": "Leading the charge: Today I`ll be gathering a [str(entry.gather_target)]! Joy.",
+					 "020": "Taking one for the team... Today I'll be gathering a [str(entry.gather_target)]! Remember: I chose to be here.",
+					 "021": "Leading the charge: Today I'll be gathering a [str(entry.gather_target)]! Joy.",
 					 "022": "Listen up, everyone! Time to get a [str(entry.gather_target)]! Joy.",
 					 "023": "Leading the charge: Time to get a [str(entry.gather_target)]! Time to get to work!",
 					 "024": "Gear up, everyone! Another [str(entry.gather_target)]! Hi ho!",
@@ -2751,7 +2751,7 @@
 					 "026": "Listen up, everyone! [str(entry.gather_target)]. Joy.",
 					 "027": "Listen up, everyone! Time to get a [str(entry.gather_target)]! Joy.",
 					 "028": "Taking one for the team... Another [str(entry.gather_target)]! Joy.",
-					 "029": "Leading the charge: Today I`ll be gathering a [str(entry.gather_target)]! Remember: I chose to be here.",
+					 "029": "Leading the charge: Today I'll be gathering a [str(entry.gather_target)]! Remember: I chose to be here.",
 					 "030": "Leading the charge: Another [str(entry.gather_target)]! Remember: I chose to be here.",
 					 "031": "Leading the charge: Time to get a [str(entry.gather_target)]! Joy.",
 					 "032": "Taking one for the team... Time to get a [str(entry.gather_target)]! Time to get to work!"
@@ -2771,18 +2771,18 @@
 				  "hopeless_optimist": {
 					 "000": "Wow, I went a whole 24 hours without food!",
 					 "001": "No food by midnight? Maybe I can drink moonlight.",
-					 "002": "So hungry... maybe tomorrow we`ll find more berries."
+					 "002": "So hungry... maybe tomorrow we'll find more berries."
 				  },
 				  "beleaguered_leader": {
-					 "000": "It`s just 24 hours without food. Don`t panic.",
+					 "000": "It's just 24 hours without food. Don't panic.",
 					 "001": "Hunger is good for discipline.",
-					 "002": "I`m going to dream about food tonight.",
-					 "003": "A whole day without food? Musn`t complain; got to set a good example."
+					 "002": "I'm going to dream about food tonight.",
+					 "003": "A whole day without food? Musn't complain; got to set a good example."
 				  },
 				  "psychopathic_misanthrope": {
 					 "000": "A whole day without food? My stomach is going to start eating itself.",
-					 "001": "Went a whole day without eating a single thing. Tomorrow, my `friends` had better watch out.",
-					 "002": "I may not have eaten all day today, but I`m still a badass.",
+					 "001": "Went a whole day without eating a single thing. Tomorrow, my 'friends' had better watch out.",
+					 "002": "I may not have eaten all day today, but I'm still a badass.",
 					 "003": "No food in camp today, huh? Maybe I can find something in the forest to kill tomorrow."
 				  },
 				  "generic": {
@@ -2791,15 +2791,15 @@
 					 "002": "Going a who day without food makes me so, so sad."
 				  },
 				  "diligent_sweetheart": {
-					 "000": "It`s okay, I don`t need to eat every day.",
+					 "000": "It's okay, I don't need to eat every day.",
 					 "001": "By the precepts of the Church of Plenty, we should eat at least once a day.",
 					 "teacher": {
 						"000": "A day without food? At home we used to go a whole week for the festival of [str(entry.teacher)]!"
 					 }
 				  },
 				  "lovable_rogue": {
-					 "000": "24 hours without food? I`m sure I could find an opportunity here, if I weren`t so hungry.",
-					 "001": "Nobody`s eaten in a while. I could make a killing if I just had one of mom`s apple pies.",
+					 "000": "24 hours without food? I'm sure I could find an opportunity here, if I weren't so hungry.",
+					 "001": "Nobody's eaten in a while. I could make a killing if I just had one of mom's apple pies.",
 					 "002": "Going without food for a whole day is surprisingly hard."
 				  }
 			   }
@@ -2810,7 +2810,7 @@
 			   "text": "On Starvation:",
 			   "logs": {
 				  "beleaguered_leader": {
-					 "000": "I don`t know how long we can last without food.",
+					 "000": "I don't know how long we can last without food.",
 					 "001": "Has anyone found any animals to eat yet?",
 					 "002": "Keep on the lookout for berry bushes, or something!",
 					 "003": "Got... to... keep... going....",
@@ -2820,21 +2820,21 @@
 					 "000": "Is there anyone around here I can eat?",
 					 "001": "I need to kill something small and furry.",
 					 "002": "I hate eating moss.",
-					 "003": "Cannibalism. It`s what`s for dinner."
+					 "003": "Cannibalism. It's what's for dinner."
 				  },
 				  "diligent_sweetheart": {
-					 "000": "I`m so hungry... Step 1: Learn carpentry!",
-					 "001": "It`s okay, I didn`t really need to eat today.",
+					 "000": "I'm so hungry... Step 1: Learn carpentry!",
+					 "001": "It's okay, I didn't really need to eat today.",
 					 "002": "I wish I could bake a cheesecake.",
-					 "003": "If we huddle around the fire at night, that`s almost as good as eating, right?",
-					 "004": "I really don`t want to die here.",
+					 "003": "If we huddle around the fire at night, that's almost as good as eating, right?",
+					 "004": "I really don't want to die here.",
 					 "teacher": {
-						"000": "[str(entry.teacher)], even if I don`t make it, keep my friends safe, okay?"
+						"000": "[str(entry.teacher)], even if I don't make it, keep my friends safe, okay?"
 					 }
 				  },
 				  "lovable_rogue": {
 					 "000": "In retrospect, I really should have hoarded those berries.",
-					 "001": "It`s a pity you can`t eat silver and gold.",
+					 "001": "It's a pity you can't eat silver and gold.",
 					 "002": "That wood is starting to look like chocolate...",
 					 "teacher": {
 						"000": "As [str(entry.teacher)] is my witness, I will never go hungry again!"
@@ -2849,15 +2849,15 @@
 					 "005": "According to my research, people need to consume at least twenty four units of energy each day to mantain proper function."
 				  },
 				  "hopeless_optimist": {
-					 "000": "Oh, great! Another day without food... That`s exactly that little push I needed for starting my diet!",
+					 "000": "Oh, great! Another day without food... That's exactly that little push I needed for starting my diet!",
 					 "001": "Hunger really sharpens the colors in the world!",
-					 "002": "I think there`s a hole in my stomach.",
+					 "002": "I think there's a hole in my stomach.",
 					 "003": "Am I invisible yet?"
 				  },
 				  "generic": {
-					 "000": "I`m so hungry it hurts.",
+					 "000": "I'm so hungry it hurts.",
 					 "001": "If I could just get some food, maybe my stomach would feel better.",
-					 "002": "I don`t know how much longer I can go without food."
+					 "002": "I don't know how much longer I can go without food."
 				  }
 			   }
 			}
@@ -2876,13 +2876,13 @@
 					 "000": "There is a meditative grace in fine knotwork. Stare, my friends, stare until your souls belong to meeeeee."
 				  },
 				  "beleaguered_leader": {
-					 "000": "I don`t know... I always expected a more epic role in life. Well, this will probably be good for my blood pressure."
+					 "000": "I don't know... I always expected a more epic role in life. Well, this will probably be good for my blood pressure."
 				  },
 				  "lovable_rogue": {
 					 "000": "Hmm... if a spider is a weaver, is a weaver like a spider? Everyone shall sleep safe in my webs. ...Was that too creepy?"
 				  },
 				  "diligent_sweetheart": {
-					 "000": "Oh! First thing`s first--time to make everyone a new winter scarf!"
+					 "000": "Oh! First thing's first--time to make everyone a new winter scarf!"
 				  }
 			   }
 			}
@@ -3012,13 +3012,13 @@
 		 "picket_fence": {
 			"picket_fence_ghost": {
 			   "display_name": "Palissade",
-			   "description": "Si elle n`est pas blanche, c`est que notre vie est incomplète?"
+			   "description": "Si elle n'est pas blanche, c'est que notre vie est incomplète?"
 			}
 		 },
 		 "picket_fence_gate": {
 			"picket_fence_gate_ghost": {
 			   "display_name": "Portail de palissade",
-			   "description": "Vous n`aimez pas vos voisins? Ne pas installer."
+			   "description": "Vous n'aimez pas vos voisins? Ne pas installer."
 			}
 		 },
 		 "stockpile": {
@@ -3040,7 +3040,7 @@
 		 "wooden_door_2": {
 			"wooden_door_2_ghost": {
 			   "display_name": "Porte en bois renforcée",
-               "description": "Plus robuste qu`une porte classique."
+               "description": "Plus robuste qu'une porte classique."
 			}
 		 },
 		 "wooden_door_4x4": {
@@ -3095,7 +3095,7 @@
          },
          "vault": {
             "vault_ghost": {
-               "display_name": "L`Abris",
+               "display_name": "L'Abris",
                "description": "Magasin massif"
 			}
 		 }
@@ -3112,7 +3112,7 @@
 			"description": "Oiseau sauvage dodu et savoureux",
 			"poyo_egg": {
 			   "display_name": "Oeuf de poyo fécondé.",
-			   "description": "Est-il en train d`éclore ?"
+			   "description": "Est-il en train d'éclore ?"
 			},
 			"young": {
 			   "display_name": "Poussin poyo",
@@ -3232,14 +3232,14 @@
 			   },
 			   "011": {
 				  "name": "Corn Husk",
-				  "description": "It`s dead."
+				  "description": "It's dead."
 			   }
 			}
 		 },
 		 "foo_truffle": {
 			"silkweed_crop": {
 			   "display_name": "Fil-de-soie",
-			   "description": "This plant`s fiber can be spun into thread",
+			   "description": "This plant's fiber can be spun into thread",
 			   "growth_stage": {
 				  "004": {
 					 "name": "Fil-de-soie mature"
@@ -3264,7 +3264,7 @@
 		 },
 		 "frostsnap_crop": {
             "display_name": "Perce-neige",
-			"description": "It`s chill to the touch.",
+			"description": "It's chill to the touch.",
 			"growth_stage": {
 			   "001": {
 				  "name": "Pousse de perce-neige",
@@ -3338,7 +3338,7 @@
 		 },
 		 "silkweed_crop": {
 			"display_name": "Fil-de-soie",
-			"description": "This plant`s fiber can be spun into thread",
+			"description": "This plant's fiber can be spun into thread",
 			"growth_stage": {
 			   "004": {
 				  "name": "Fil-de-soie mature"
@@ -3404,7 +3404,7 @@
 		 },
 		 "tester_silkweed_crop": {
 			"display_name": "Fil-de-soie (test)",
-			"description": "This plant`s fiber can be spun into thread",
+			"description": "This plant's fiber can be spun into thread",
 			"growth_stage": {
 			   "004": {
 				  "name": "Fil-de-soie mature"
@@ -3474,7 +3474,7 @@
 			   },
 			   "011": {
 				  "name": "Wheat Husk",
-				  "description": "It`s dead."
+				  "description": "It's dead."
 			   }
 			}
 		 },
@@ -3484,7 +3484,7 @@
 			"growth_stage": {
 			   "001": {
 				  "name": "Oak Tree Seedling",
-				  "description": "It`s just getting started."
+				  "description": "It's just getting started."
 			   },
 			   "003": {
 				  "name": "Oak Tree Sapling",
@@ -3550,13 +3550,13 @@
 		 "frostsnap": {
 			"frostsnap_ghost": {
 			   "display_name": "Perçe-neige",
-			   "description": "C`est froid au toucher !"
+			   "description": "C'est froid au toucher !"
 			}
 		 },
 		 "fur_rug": {
 			"fur_rug_ghost": {
 			   "display_name": "Tapis de fourrure",
-			   "description": "Fabriqué à partir de peaux d`animaux."
+			   "description": "Fabriqué à partir de peaux d'animaux."
 			}
 		 },
 		 "gargoyle": {
@@ -3583,8 +3583,8 @@
 		 },
 		 "stone_garden_lantern": {
 			"stone_garden_lantern_ghost": {
-               "display_name": "Lanterne d`extérieur en pierre",
-               "description": "Une lanterne à l`ancienne donnant une bonne ambiance."
+               "display_name": "Lanterne d'extérieur en pierre",
+               "description": "Une lanterne à l'ancienne donnant une bonne ambiance."
 			}
 		 },
 		 "stone_wall_lantern": {
@@ -3631,20 +3631,20 @@
 		 },
 		 "wooden_garden_lantern": {
 			"wooden_garden_lantern_ghost": {
-               "display_name": "Lanterne d`extérieur en bois",
+               "display_name": "Lanterne d'extérieur en bois",
 			   "description": "Une source de lumière compacte."
 			}
 		 },
 		 "wooden_garden_lantern_fine": {
 			"wooden_garden_lantern_fine_ghost": {
-               "display_name": "Belle lanterne d`extérieur",
+               "display_name": "Belle lanterne d'extérieur",
 			   "description": "Une source de lumière compacte."
 			}
 		 },
 		 "wooden_sign": {
 			"wooden_sign_ghost": {
 			   "display_name": "Enseigne murale en bois",
-			   "description": "L`expression d`une intention future."
+			   "description": "L'expression d'une intention future."
 			}
 		 },
 		 "wooden_sign_blacksmith": {
@@ -3688,7 +3688,7 @@
 		 "berries": {
 			"berry_basket": {
                "display_name": "Panier de baies",
-               "description": "Le summum du régime de l`homme des cavernes."
+               "description": "Le summum du régime de l'homme des cavernes."
 			},
 			"berry_serving": {
                "display_name": "Assiette de baies",
@@ -3742,11 +3742,11 @@
 			},
 			"pumpkin_serving": {
                "display_name": "Purée de citrouille",
-               "description": "C`est un délice, vraiment..."
+               "description": "C'est un délice, vraiment..."
 			}
 		 },
 		 "sheep_jerky": {
-            "display_name": "Carré d`agneau"
+            "display_name": "Carré d'agneau"
 		 },
 		 "veggie_stew": {
 			"veggie_stew": {
@@ -3760,7 +3760,7 @@
 		 },
 		 "wheat_bale": {
             "display_name": "Gerbe de blé",
-            "description": "Prête à l`emploi"
+            "description": "Prête à l'emploi"
 		 },
 		 "egg": {
             "display_name": "Un oeuf",
@@ -3792,10 +3792,10 @@
 		 "omelette": {
 			"omelette": {
 			   "display_name": "Omelette",
-               "description": "Délicieuse viande, succulants légumes, le tout enrobé d`oeuf."
+               "description": "Délicieuse viande, succulants légumes, le tout enrobé d'oeuf."
 			},
 			"omelette_serving": {
-               "display_name": "Assiette d`omelette",
+               "display_name": "Assiette d'omelette",
                "description": "Mais pourquoi voudriez-vous partager ?"
 			}
 		 },
@@ -3814,7 +3814,7 @@
                "description": "Frits et bien sûr délicieux."
 			},
 			"fried_eggs_serving": {
-               "display_name": "Assiette d`oeufs frits"
+               "display_name": "Assiette d'oeufs frits"
 			}
 		 },
 		 "sheep_feed": {
@@ -3860,97 +3860,97 @@
 		 "comfy_bed": {
 			"comfy_bed_ghost": {
 			   "display_name": "Lit confortable",
-               "description": "J`ai révé... de moutons sauteurs."
+               "description": "J'ai révé... de moutons sauteurs."
 			}
 		 },
 		 "comfy_bed_fine": {
 			"comfy_bed_fine_ghost": {
 			   "display_name": "Lit confortable stylisé",
-			   "description": "J`ai révé... de moutons volants."
+			   "description": "J'ai révé... de moutons volants."
 			}
 		 },
 		 "comfy_chair": {
 			"comfy_chair_ghost": {
 			   "display_name": "Chaise confortable",
-               "description": "Pour s`assoir !"
+               "description": "Pour s'assoir !"
 			}
 		 },
 		 "comfy_chair_fine": {
 			"comfy_chair_fine_ghost": {
 			   "display_name": "Chaise confortable stylisé",
-			   "description": "Pour s`assoir luxueusement !"
+			   "description": "Pour s'assoir luxueusement !"
 			}
 		 },
 		 "dining_table": {
 			"dining_table_ghost": {
                "display_name": "Table à manger",
-               "description": "S`assoir pour manger est un signe de civilisation."
+               "description": "S'assoir pour manger est un signe de civilisation."
 			}
 		 },
 		 "dining_table_fine": {
 			"dining_table_fine_ghost": {
                "display_name": "Table à manger stylisé",
-               "description": "S`assoir pour manger est un signe de civilisation.<br>Encore plus sur cette version !"
+               "description": "S'assoir pour manger est un signe de civilisation.<br>Encore plus sur cette version !"
 			}
 		 },
 		 "dresser": {
 			"dresser_ghost": {
                "display_name": "Commode",
-               "description": "Décorative en l`abscence de propriétaire."
+               "description": "Décorative en l'abscence de propriétaire."
 			}
 		 },
 		 "dresser_fine": {
 			"dresser_fine_ghost": {
                "display_name": "Commode stylisé",
-               "description": "Encore plus décorative en l`abscence de propriétaire."
+               "description": "Encore plus décorative en l'abscence de propriétaire."
 			}
 		 },
 		 "not_much_of_a_bed": {
 			"not_much_of_a_bed_ghost": {
 			   "display_name": "Lit miteux",
-			   "description": "Mean as in poor, not cruel. Though it`s that too."
+			   "description": "Mean as in poor, not cruel. Though it's that too."
 			}
 		 },
 		 "park_bench": {
 			"park_bench_ghost": {
                "display_name": "Banc de parc en bois",
-               "description": "Siège d`extérieur pour des moments de détente."
+               "description": "Siège d'extérieur pour des moments de détente."
 			}
 		 },
 		 "park_bench_fine": {
 			"park_bench_fine_ghost": {
                "display_name": "Banc de parc de luxe",
-               "description": "Siège d`extérieur pour des moments de détente."
+               "description": "Siège d'extérieur pour des moments de détente."
 			}
 		 },
 		 "simple_wooden_chair": {
 			"simple_wooden_chair_ghost": {
                "display_name": "Chaise en bois",
-               "description": "Pour s`assoir."
+               "description": "Pour s'assoir."
 			}
 		 },
 		 "simple_wooden_chair_fine": {
 			"simple_wooden_chair_fine_ghost": {
                "display_name": "Chaise en bois stylisé",
-               "description": "Pour s`assoir tout en frimant."
+               "description": "Pour s'assoir tout en frimant."
 			}
 		 },
 		 "stone_bench": {
 			"stone_bench_ghost": {
                "display_name": "Banc en pierre",
-               "description": "Siège d`extérieur pour des moments de détente."
+               "description": "Siège d'extérieur pour des moments de détente."
 			}
 		 },
 		 "stone_chair": {
 			"stone_chair_ghost": {
                "display_name": "Chaise en pierre",
-               "description": "Pour s`assoir."
+               "description": "Pour s'assoir."
 			}
 		 },
 		 "stone_table": {
 			"stone_table_ghost": {
                "display_name": "Table en pierre",
-               "description": "Son imposance ajoute à l`impression de lourdeur."
+               "description": "Son imposance ajoute à l'impression de lourdeur."
 			}
 		 },
 		 "table_for_one": {
@@ -4008,8 +4008,8 @@
 	  },
 	  "loot": {
 		 "gold": {
-            "display_name": "Coffre de pièces d`or",
-            "description": "C`est [str(self.item.stacks)] pièces!"
+            "display_name": "Coffre de pièces d'or",
+            "description": "C'est [str(self.item.stacks)] pièces!"
 		 }
 	  },
 	  "monsters": {
@@ -4037,7 +4037,7 @@
 			},
 			"goblin_boss_banner": {
 			   "goblin_boss_banner_ghost": {
-				  "display_name": "Ogo Skullbonker`s Standard",
+				  "display_name": "Ogo Skullbonker's Standard",
 				  "description": "Clearly indicates goblin-boss-status"
 			   }
 			},
@@ -4057,12 +4057,12 @@
 				  "description": "Produces pathetically wheezy wailing."
 			   },
 			   "mountains_flute": {
-				  "display_name": "Mountain`s Lullabye Flute",
-				  "description": "Pitched to soothe Mountain`s soul."
+				  "display_name": "Mountain's Lullabye Flute",
+				  "description": "Pitched to soothe Mountain's soul."
 			   },
 			   "mountains_flute_iconic": {
-				  "display_name": "Mountain`s Lullabye Flute",
-				  "description": "Pitched to soothe Mountain`s soul."
+				  "display_name": "Mountain's Lullabye Flute",
+				  "description": "Pitched to soothe Mountain's soul."
 			   }
 			},
 			"goblin_hut": {
@@ -4080,7 +4080,7 @@
 			   "description": "Gobble, gobble, gobble..."
 			},
 			"goblin_soothsayer_tent": {
-			   "display_name": "The Soothsayer`s Tent",
+			   "display_name": "The Soothsayer's Tent",
 			   "description": "Cobbled together out of luxurious scraps"
 			},
 			"goblin_tent": {
@@ -4179,7 +4179,7 @@
 			"silkweed": {
                "display_name": "Fil-de-soie sauvage",
                "description": "Les fibres de cette plantes peuvent être filées.",
-               "unripe_description": "Cette plante a été récoltée et n`a pas encore repoussé."
+               "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé."
 			}
 		 },
 		 "tester": {
@@ -4208,14 +4208,14 @@
 		 },
 		 "tumbleweed": {
 			"display_name": "Tumbleweed",
-			"description": "Doesn`t do anything"
+			"description": "Doesn't do anything"
 		 }
 	  },
 	  "rabbit": {
 		 "lantern_relic": {
 			"lantern_relic_ghost": {
                "display_name": "Ruine ancienne",
-               "description": "S`écroule avec l`âge"
+               "description": "S'écroule avec l'âge"
 			}
 		 },
 		 "rabbit_statue": {
@@ -4237,8 +4237,8 @@
             "description": "Une barre de cuivre pur."
 		 },
 		 "gold_ingot": {
-			"display_name": "Lingot d`or",
-			"description": "Une barre d`or pur. Un matériau adapté pour la création de biens."
+			"display_name": "Lingot d'or",
+			"description": "Une barre d'or pur. Un matériau adapté pour la création de biens."
 		 },
 		 "iron_ingot": {
 			"display_name": "Lingot de fer",
@@ -4249,12 +4249,12 @@
             "description": "Souple mais solide."
 		 },
 		 "silver_ingot": {
-			"display_name": "Lingot d`argent",
-            "description": "Une barre d`argent pur."
+			"display_name": "Lingot d'argent",
+            "description": "Une barre d'argent pur."
 		 },
 		 "steel_ingot": {
-            "display_name": "Lingot d`acier",
-            "description": "Une barre d`acier pur."
+            "display_name": "Lingot d'acier",
+            "description": "Une barre d'acier pur."
 		 },
 		 "stone_bricks": {
 			"display_name": "Pile de briques",
@@ -4262,11 +4262,11 @@
 		 },
 		 "thread": {
 			"display_name": "Bobine de fil",
-            "description": "Personne n`aurait pu imaginer que cela a commencé par un mouton. Ou une plante."
+            "description": "Personne n'aurait pu imaginer que cela a commencé par un mouton. Ou une plante."
 		 },
 		 "tin_ingot": {
-			"display_name": "Lingot d`étain",
-            "description": "Une barre d`étain pur."
+			"display_name": "Lingot d'étain",
+            "description": "Une barre d'étain pur."
 		 }
 	  },
 	  "resources": {
@@ -4294,8 +4294,8 @@
 		 },
 		 "gold": {
 			"gold_ore": {
-               "display_name": "Minerai d`or",
-               "description": "Un bloc d`or natif"
+               "display_name": "Minerai d'or",
+               "description": "Un bloc d'or natif"
 			}
 		 },
 		 "iron": {
@@ -4318,7 +4318,7 @@
                "description": "Douce, souple mais bien morte."
 			},
 			"squirrel_pelt": {
-               "display_name": "Peau d`écureil",
+               "display_name": "Peau d'écureil",
                "description": "Douce, souple mais bien morte."
 			},
 			"wolf_pelt": {
@@ -4328,8 +4328,8 @@
 		 },
 		 "silver": {
 			"silver_ore": {
-               "display_name": "Minerai d`argent",
-               "description": "Un bloc d`argent natif"
+               "display_name": "Minerai d'argent",
+               "description": "Un bloc d'argent natif"
 			}
 		 },
 		 "stone": {
@@ -4340,8 +4340,8 @@
 		 },
 		 "tin": {
 			"tin_ore": {
-               "display_name": "Mainerai d`étain",
-               "description": "Un bloc d`étain natif"
+               "display_name": "Mainerai d'étain",
+               "description": "Un bloc d'étain natif"
 			}
 		 },
 		 "wood": {
@@ -4366,14 +4366,14 @@
                "description": "Une bûche."
 			},
 			"acacia_log": {
-               "display_name": "Bûche d`acacia",
+               "display_name": "Bûche d'acacia",
                "description": "Une bûche."
 			}
 		 }
 	  },
 	  "terrain": {
 		 "mining_zone": {
-            "display_name": "Zone d`extraction minière",
+            "display_name": "Zone d'extraction minière",
             "description": "Ce terrain va être creusé."
 		 },
 		 "tall_grass": {
@@ -4393,11 +4393,11 @@
                },
                "dirt_2": {
                   "display_name": "Terreau",
-                  "description": "Bon, c`est du terreau."
+                  "description": "Bon, c'est du terreau."
                },
                "dirt_3": {
                   "display_name": "Umus",
-                  "description": "L`habitat des bien-heureux vers de terre !"
+                  "description": "L'habitat des bien-heureux vers de terre !"
                },
                "dirt_4": {
                   "display_name": "Umus riche",
@@ -4415,7 +4415,7 @@
                "description": "Source de cuivre qand on mine juste ici."
 			},
 			"gold_block": {
-               "display_name": "Veine d`or",
+               "display_name": "Veine d'or",
                "description": "Bingo !"
 			},
 			"iron_block": {
@@ -4427,11 +4427,11 @@
                "description": "Minez pour en obtenir."
 			},
 			"silver_block": {
-               "display_name": "Veine d`argent",
-               "description": "Une filon à l`éclat blanc, surement une belle quantité."
+               "display_name": "Veine d'argent",
+               "description": "Une filon à l'éclat blanc, surement une belle quantité."
 			},
 			"tin_block": {
-               "display_name": "Veine d`étain",
+               "display_name": "Veine d'étain",
                "description": "Un filon prométeur..."
 			}
 		 }
@@ -4447,7 +4447,7 @@
 		 },
 		 "worker_hammer": {
             "display_name": "Marteau",
-            "description": "Le monde entier essemble à un clou lorsque vous n`avez qu`un marteau."
+            "description": "Le monde entier essemble à un clou lorsque vous n'avez qu'un marteau."
 		 }
 	  },
 	  "toys": {
@@ -4465,7 +4465,7 @@
 		 "juniper_tree": {
 			"ancient_juniper_tree": {
                "display_name": "Genévrier antique",
-               "description": "Une mystérieuse aura l`entoure."
+               "description": "Une mystérieuse aura l'entoure."
 			},
 			"large_juniper_tree": {
                "display_name": "Grand genévrier",
@@ -4493,13 +4493,13 @@
 		 "acacia_tree": {
 			"large_acacia_tree": {
                "display_name": "Grand acacia",
-               "description": "Une mystérieuse aura l`entoure."
+               "description": "Une mystérieuse aura l'entoure."
 			}
 		 },
 		 "joshua_tree": {
 			"large_joshua_tree": {
                "display_name": "Grand arbre de Josué",
-               "description": "C`est un arbre étrange."
+               "description": "C'est un arbre étrange."
 			}
 		 },
 		 "pine_tree": {
@@ -4529,7 +4529,7 @@
 		 "oak_tree": {
 			"ancient_oak_tree": {
                "display_name": "Chêne antique",
-               "description": "Une mystérieuse aura l`entoure."
+               "description": "Une mystérieuse aura l'entoure."
 			},
 			"large_oak_tree": {
                "display_name": "Grand chêne",
@@ -4541,7 +4541,7 @@
 			},
 			"small_oak_tree": {
                "display_name": "Petit chêne",
-               "description": "A peine plus grand qu`un arbrisseau."
+               "description": "A peine plus grand qu'un arbrisseau."
 			},
 			"sapling_oak_tree": {
                "description": "Plantez le en terre et regardez le pousser.",
@@ -4566,7 +4566,7 @@
 		 },
 		 "bronze_sword": {
             "display_name": "Epée courte de bronze",
-            "description": "C`est mieux que de se battre avec un cure dent !",
+            "description": "C'est mieux que de se battre avec un cure dent !",
 			"bronze_sword_iconic": {
                "display_name": "Epée de bronze",
                "description": "Pointue. Brillante."
@@ -4581,18 +4581,18 @@
 			}
 		 },
 		 "giant_bone_axe": {
-            "display_name": "Hache géante d`os",
-            "description": "Taillée dans la clavicule d`une bête énorme.",
+            "display_name": "Hache géante d'os",
+            "description": "Taillée dans la clavicule d'une bête énorme.",
 			"giant_bone_axe_iconic": {
-               "display_name": "Hache géante d`os",
-               "description": "Taillée dans la clavicule d`une bête énorme."
+               "display_name": "Hache géante d'os",
+               "description": "Taillée dans la clavicule d'une bête énorme."
 			}
 		 },
 		 "giant_bone_mace": {
-            "display_name": "Mace géante d`os",
+            "display_name": "Mace géante d'os",
             "description": "Lourde, elle cogne dur",
 			"giant_bone_mace_iconic": {
-               "display_name": "Mace géante d`os",
+               "display_name": "Mace géante d'os",
                "description": "Pour applanir les faces."
 			}
 		 },
@@ -4634,7 +4634,7 @@
 		 },
 		 "short_sword": {
             "display_name": "Epée courte",
-            "description": "Pas trés grande mais sa lame d`acier reste efficace.",
+            "description": "Pas trés grande mais sa lame d'acier reste efficace.",
 			"short_sword_iconic": {
                "display_name": "Epée courte",
                "description": "Pointue. Brillante."
@@ -4646,7 +4646,7 @@
 		 },
 		 "stone_maul": {
             "display_name": "Marteau en pierre",
-            "description": "L`outil parfait pour écraser.",
+            "description": "L'outil parfait pour écraser.",
 			"stone_maul_iconic": {
                "display_name": "Marteau en pierre",
                "description": "Pour applanir les faces."
@@ -4713,12 +4713,12 @@
 	  "blacksmith": {
 		 "blacksmith_description": {
             "display_name": "Forgeron",
-            "description": "Le forgeron raffine le minerai en barre de métal pour les utiliser dans la fabrication d`armes et d`armures.",
+            "description": "Le forgeron raffine le minerai en barre de métal pour les utiliser dans la fabrication d'armes et d'armures.",
             "requirements": "Un marteau de forgeron, fabriqué par le tailleur de pierre.",
 			"level_6_data": {
                "title": "Maître forgeron",
 			   "perk_000_name": "The Armory",
-			   "perk_000_description": "The blacksmith`s mastery of his trade allows him to create the finest weapons and armors seen since the forgotten Phoenix Empire."
+			   "perk_000_description": "The blacksmith's mastery of his trade allows him to create the finest weapons and armors seen since the forgotten Phoenix Empire."
 			},
 			"level_2_data": {
 			   "perk_000_name": "Iron Age!",
@@ -4745,10 +4745,10 @@
 		 },
 		 "blacksmith_hammer": {
             "display_name": "Marteau de forgeron",
-            "description": "L`outil par excellence du forgeron.",
+            "description": "L'outil par excellence du forgeron.",
 			"blacksmith_hammer_iconic": {
                "display_name": "Marteau de forgeron",
-               "description": "L`outil par excellence du forgeron."
+               "description": "L'outil par excellence du forgeron."
 			},
 			"blacksmith_hammer_talisman": {
                "display_name": "Marteau de forgeron",
@@ -4757,7 +4757,7 @@
 		 },
 		 "blacksmith_outfit": {
             "display_name": "Tenu de forgeron",
-            "description": "L`uniforme des forgerons"
+            "description": "L'uniforme des forgerons"
 		 },
 		 "blacksmith_workbench": {
 			"blacksmith_workbench_ghost": {
@@ -4773,28 +4773,28 @@
 			},
 			"iron_shield_recipe": {
                "description": "Lourd mais efficace.",
-			   "flavor" : "`Buck up, recruit! Better the shield dent than you!` -Thredd, Man at Arms", 
+			   "flavor" : "'Buck up, recruit! Better the shield dent than you!' -Thredd, Man at Arms", 
                "recipe_name": "Bouclier de fer"
 			},
 			"bronze_breastplate_recipe": {
 			   "description": "Partial but sturdy coverage against blunt and edged weapons.",
                "recipe_name": "Cuirasse de bronze",
-			   "flavor": "Design reminiscent of the Phoenix`s Legions."
+			   "flavor": "Design reminiscent of the Phoenix's Legions."
 			},
 			"bronze_ingot_recipe": {
-               "description": "Une barre de bronze pur. Un matériel adapté à la fabrication d`objets.",
+               "description": "Une barre de bronze pur. Un matériel adapté à la fabrication d'objets.",
                "recipe_name": "Lingot de bronze",
 			   "flavor": "The masters of old considered its production, evidence of our triumph over the earth."
 			},
 			"bronze_mace_recipe": {
 			   "description": "Heavy, it packs a whallop.",
                "recipe_name": "Mace en bronze",
-               "flavor": "La bonne nouvelle : il n`y pas de pointe au bout."
+               "flavor": "La bonne nouvelle : il n'y pas de pointe au bout."
 			},
 			"bronze_sword_recipe": {
 			   "description": "Basic, but better than fighting with a sharpened stick!",
                "recipe_name": "Epée de bronze",
-			   "flavor": "Made in the shape of Braun`s own blade."
+			   "flavor": "Made in the shape of Braun's own blade."
 			},
 			"carpenter_saw_recipe": {
                "description": "Requis pour promouvoir un hearthling en menuisier",
@@ -4802,17 +4802,17 @@
 			   "flavor": "Now the circle can begin anew."
 			},
 			"copper_ingot_recipe": {
-               "description": "Une barre de cuivre pur. Un matériau adapté à la fabrication d`objets artisanaux.",
+               "description": "Une barre de cuivre pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot de cuivre",
 			   "flavor": "Smooth and silky to the touch"
 			},
 			"gold_ingot_recipe": {
-               "description": "Une barre d`or pur. Un matériau adapté à la fabrication d`objets artisanaux.",
-               "recipe_name": "Lingot d`or",
+               "description": "Une barre d'or pur. Un matériau adapté à la fabrication d'objets artisanaux.",
+               "recipe_name": "Lingot d'or",
 			   "flavor": "The most expensive bludgeon ever."
 			},
 			"iron_ingot_recipe": {
-               "description": "Une barre de fer pur. Un matériau adapté à la fabrication d`objets artisanaux.",
+               "description": "Une barre de fer pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot de fer",
 			   "flavor": "To both swords and plowshares, what an egg is to a chicken."
 			},
@@ -4824,17 +4824,17 @@
 			"iron_mail_recipe": {
 			   "description": "A full suit of heavy, durable iron armor.",
 			   "recipe_name": "Iron Mail",
-			   "flavor": "But he`d hidden his heart in an iron fortress, and no fey could touch it. --Songs of Evermarth"
+			   "flavor": "But he'd hidden his heart in an iron fortress, and no fey could touch it. --Songs of Evermarth"
 			},
 			"iron_pike_recipe": {
 			   "description": "Sharp. Long. Pointy.",
 			   "recipe_name": "Iron pike",
-			   "flavor": "`Coward,` Elden spat. `Face me blade to blade, or no knight be you.`"
+			   "flavor": "'Coward,' Elden spat. 'Face me blade to blade, or no knight be you.'"
 			},
 			"long_sword_recipe": {
 			   "description": "Sharp, with extra reach. A faithful weapon.",
 			   "recipe_name": "Long Sword",
-			   "flavor": "`Hah! The only weapon worthy of specialization. --Lady Giest"
+			   "flavor": "'Hah! The only weapon worthy of specialization. --Lady Giest"
 			},
             "weapons_name": "Armes",
             "smelt_name": "Alliages",
@@ -4847,12 +4847,12 @@
 			},
 			"silver_ingot_recipe": {
 			   "description": "A bar of pure silver. A suitable material for crafted goods.",
-               "recipe_name": "Lingot d`argent",
+               "recipe_name": "Lingot d'argent",
 			   "flavor": "A pair of silver shoes once started a Phoenix war over currency."
 			},
 			"steel_ingot_recipe": {
 			   "description": "A bar of pure steel. A suitable material for crafted goods.",
-               "recipe_name": "Lingot d`acier",
+               "recipe_name": "Lingot d'acier",
 			   "flavor": "The beginning of the modern age."
 			},
 			"steel_mail_recipe": {
@@ -4861,9 +4861,9 @@
 			   "flavor": "Full Metal Jacket"
 			},
 			"tin_ingot_recipe": {
-               "description": "Une barre d`étain pur. Un matériau adapté à la fabrication d`objets artisanaux.",
-               "recipe_name": "Lingot d`étain",
-               "flavor": "Etape 1 : battre trés fin. Etape 2 : utilisez pour couvrir le toit de l`hôtel de ville."
+               "description": "Une barre d'étain pur. Un matériau adapté à la fabrication d'objets artisanaux.",
+               "recipe_name": "Lingot d'étain",
+               "flavor": "Etape 1 : battre trés fin. Etape 2 : utilisez pour couvrir le toit de l'hôtel de ville."
 			},
 			"trapper_knife_recipe": {
                "description": "Requis pour promouvoir un hearthling en trappeur.",
@@ -4896,12 +4896,12 @@
 	  "carpenter": {
 		 "carpenter_description": {
 			"display_name": "Menuisier",
-            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu`il fabrique permettent de dévérouiller d`autres professions.",
+            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu'il fabrique permettent de dévérouiller d'autres professions.",
             "requirements": "Scie de menuisier. Fabriquée par le forgeron.",
 			"level_6_data": {
                "title": "Maître menuisier",
                "perk_000_name": "10,000 Heures (à venir)",
-			   "perk_000_description": "The carpenter`s mastery of his trade allows him to come up with completely new ways of using wood."
+			   "perk_000_description": "The carpenter's mastery of his trade allows him to come up with completely new ways of using wood."
 			},
 			"level_2_data": {
 			   "perk_000_name": "Collaborative Insight",
@@ -4917,16 +4917,16 @@
 			},
 			"level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l`inspiration frappe, le menuisier est capable d`obtenir des résultats surprenant."
+               "perk_000_description": "Quand l'inspiration frappe, le menuisier est capable d'obtenir des résultats surprenant."
 			}
 		 },
 		 "carpenter_outfit": {
             "display_name": "Habit de menuisier",
-            "description": "L`uniforme des menuisiers."
+            "description": "L'uniforme des menuisiers."
 		 },
 		 "carpenter_saw": {
             "display_name": "Scie de menuisier",
-            "description": "L`outils de l`excellence du menuisier.",
+            "description": "L'outils de l'excellence du menuisier.",
 			"carpenter_saw_iconic": {
                "display_name": "Scie de menuisier",
                "description": "Scie de base pour menuisier."
@@ -4976,11 +4976,11 @@
 			},
 			"hoe_recipe": {
 			   "description": "Requis pour promouvoir un hearthling en agriculteur.",
-               "recipe_name": "Houe d`agriculteur",
+               "recipe_name": "Houe d'agriculteur",
 			   "flavor": "Hoedown time!!!!"
 			},
 			"large_crate_recipe": {
-               "description": "Pour stocker jusqu`à 32 objets.",
+               "description": "Pour stocker jusqu'à 32 objets.",
                "recipe_name": "Grande caisse",
                "flavor": "Est-ce que la caisse qui stocke tout ce qui ne peut se stocker soi-même se stoke-t-elle elle-même?"
 			},
@@ -4996,12 +4996,12 @@
 			"not_much_of_a_bed_recipe": {
 			   "description": "Un poil plus confortable que de dormir sur une planche.",
                "recipe_name": "Lit miteux",
-			   "flavor": "Mean as in poor, not cruel. Though it`s that too."
+			   "flavor": "Mean as in poor, not cruel. Though it's that too."
 			},
 			"park_bench_recipe": {
-               "description": "Siège d`extérieur pour des moments de relaxation.",
+               "description": "Siège d'extérieur pour des moments de relaxation.",
                "recipe_name": "Banc de parc en bois",
-               "flavor": "La vie c`est comme une assiette de baies."
+               "flavor": "La vie c'est comme une assiette de baies."
 			},
 			"picket_fence_gate_recipe": {
                "description": "Permet aux gens de traverser votre clôture.",
@@ -5011,7 +5011,7 @@
 			"picket_fence_recipe": {
                "description": "Garde les gens en dehors de votre propriété.",
                "recipe_name": "Clôture",
-			   "flavor": "Si elle n'est pas blanche, cela manquera t`il à votre vie ?"
+			   "flavor": "Si elle n'est pas blanche, cela manquera t'il à votre vie ?"
 			},
             "tools_weapons_name": "Outils et armes",
             "storage_name": "Rangement",
@@ -5061,7 +5061,7 @@
 			"wooden_diamond_window_recipe": {
 			   "description": "Une fenêtre qui a plus de style.",
 			   "recipe_name": "Fenêtre de bois en losange",
-			   "flavor": "L`inclinaison à 45 degrés donne une touche sophistiquée."
+			   "flavor": "L'inclinaison à 45 degrés donne une touche sophistiquée."
 			},
 			"wooden_door_2_recipe": {
                "description": "Plus solide que les portes classiques.",
@@ -5115,7 +5115,7 @@
 			},
 			"wooden_sword_recipe": {
                "description": "Requise pour promouvoir un hearthling en fantassin.",
-               "recipe_name": "Epée en bois d`entrainement",
+               "recipe_name": "Epée en bois d'entrainement",
                "flavor": "Juste assez pointue pour letravail à faire."
 			},
 			"wooden_wall_lantern_recipe": {
@@ -5153,14 +5153,14 @@
 			"level_6_data": {
                "title": "Grand chef",
                "perk_000_name": "10 000 Heures (à venir)",
-               "perk_000_description": "Les plats du cuisinier sont si incroyables qu`ils ont des effets inattendus."
+               "perk_000_description": "Les plats du cuisinier sont si incroyables qu'ils ont des effets inattendus."
 			},
 			"level_2_data": {
                "perk_000_name": "Chimie culinaire",
                "perk_000_description": "Le cuisinier développe plus de fantaisie dans ses recettes."
 			},
 			"level_4_data": {
-               "perk_000_name": "Amélioration de l`ingéniosité (à venir)",
+               "perk_000_name": "Amélioration de l'ingéniosité (à venir)",
                "perk_000_description": "Le cuisinier améliore les recettes classiques."
 			},
 			"level_1_data": {
@@ -5169,16 +5169,16 @@
 			},
 			"level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l`inspiration frappe, le cuisinier est capable d`obtenir des résultats surprenant."
+               "perk_000_description": "Quand l'inspiration frappe, le cuisinier est capable d'obtenir des résultats surprenant."
 			}
 		 },
 		 "cook_outfit": {
             "display_name": "Tablier de cuisinier",
-            "description": "L`uniforme de tous les cuistots."
+            "description": "L'uniforme de tous les cuistots."
 		 },
 		 "cook_spoon": {
             "display_name": "Cuillère de cuisinier",
-            "description": "L`outil du cuisinier",
+            "description": "L'outil du cuisinier",
 			"cook_spoon_iconic": {
                "display_name": "Cuillère de cuisinier",
                "description": "Requise pour promouvoir un hearthling en cuisinier."
@@ -5202,7 +5202,7 @@
 			"meat_stew_recipe": {
                "description": "Copieux, satisfaisant et parfait pour aider à supporter une nuit froide.",
                "recipe_name": "Savoureux ragoût de viande",
-               "flavor": "Avant que vous demandiez, c`est un assortiment de viandes."
+               "flavor": "Avant que vous demandiez, c'est un assortiment de viandes."
 			},
 			"peasant_bread_recipe": {
                "description": "Un pain simple mais croustillant.",
@@ -5218,17 +5218,17 @@
 			"corn_bread_recipe": {
                "description": "Un pain à base de farine de maïs.",
                "recipe_name": "Pain de maïs",
-               "flavor": "Comme m`an le faisait."
+               "flavor": "Comme m'an le faisait."
 			},
 			"poyo_pot_pie_recipe": {
                "description": "Une tourte légumes et viandes.",
                "recipe_name": "Tourte au paté de poyo",
-               "flavor": "Les tourtes, c`est toujours bon."
+               "flavor": "Les tourtes, c'est toujours bon."
 			},
 			"omelette_recipe": {
                "description": "Viande et légumes battus dans des oeufs.",
 			   "recipe_name": "Omelette",
-               "flavor": "Elément d`un petit déjeuné sain."
+               "flavor": "Elément d'un petit déjeuné sain."
 			},
 			"roast_poyo_recipe": {
                "description": "Poyo délicatement rôti.",
@@ -5293,43 +5293,43 @@
 		 "farmer_description": {
 			"display_name": "Agriculteur",
             "description": "Les agriculteurs travaillent la terre et cultivent les champs pour avoir une nourriture consistante et des ingrédients pour la cuisine.",
-            "requirements": "Houe d`agriculteur, fabriquée par le menuisier.",
+            "requirements": "Houe d'agriculteur, fabriquée par le menuisier.",
 			"level_6_data": {
                "perk_000_name": "Surprise de la nature (à venir)",
-			   "perk_000_description": "De temps en temps, le doigté spécial de l`agriculteur à des effets... spéciaux."
+			   "perk_000_description": "De temps en temps, le doigté spécial de l'agriculteur à des effets... spéciaux."
 			},
 			"level_1_data": {
                "perk_000_name":  "Gain de vitesse 10%",
-               "perk_000_description": "Transporter les produits frais des champs à la table a finit par augmenter la vitesse de l`agriculteur."
+               "perk_000_description": "Transporter les produits frais des champs à la table a finit par augmenter la vitesse de l'agriculteur."
 			},
 			"level_2_data": {
                "perk_000_name": "Opportunité de travail",
-               "perk_000_description": "L`exposition aux produits frais à donné des idées de plats cuisinés à l`agriculteur. Voir l`arbre de promotion pour plus de détail."
+               "perk_000_description": "L'exposition aux produits frais à donné des idées de plats cuisinés à l'agriculteur. Voir l'arbre de promotion pour plus de détail."
 			},
 			"level_3_data": {
                "perk_000_name": "Récolte généreuse",
-               "perk_000_description": "L`agriculteur obtient un meilleur rendement de chaque plante."
+               "perk_000_description": "L'agriculteur obtient un meilleur rendement de chaque plante."
 			}
 		 },
 		 "farmer_buffs": {
 			"speed_1_buff": {
-               "description": "Transporter les produits frais des champs à la table a finit par augmenter la vitesse de l`agriculteur."
+               "description": "Transporter les produits frais des champs à la table a finit par augmenter la vitesse de l'agriculteur."
 			}
 		 },
 		 "farmer_hoe": {
-            "display_name": "Houe d`agriculteur",
+            "display_name": "Houe d'agriculteur",
 			"description": "Utilisée pour labourer les champs.",
 			"farmer_hoe_iconic": {
-			   "display_name": "Houe d`agriculteur",
+			   "display_name": "Houe d'agriculteur",
 			   "description": "Requis pour promouvoir un hearthling en agriculteur."
 			},
 			"farmer_hoe_talisman": {
-               "display_name": "Houe d`agriculteur",
+               "display_name": "Houe d'agriculteur",
                "description": "Requis pour promouvoir un hearthling en agriculteur."
 			}
 		 },
 		 "farmer_outfit": {
-			"display_name": "Blouse d`agriculteur",
+			"display_name": "Blouse d'agriculteur",
 			"description": "Tenue standard pour tous les agriculteurs"
 		 },
 		 "field": {
@@ -5341,7 +5341,7 @@
 		 "footman_description": {
 			"display_name": "Fantassin",
             "description": "Le fantassin est un combatant de mélée. Un bon choix pour la base de la défense de votre ville.",
-            "requirements": "Epée d`entrainement en bois, fabriquée par le menuisier",
+            "requirements": "Epée d'entrainement en bois, fabriquée par le menuisier",
 			"level_4_data": {
                "perk_000_name": "40% de dommages supplémentaires",
                "perk_000_description": "Le fantassin est maintenant entrainé à optimiser les effets de chaque coups."
@@ -5368,7 +5368,7 @@
 		 },
 		 "footman_outfit": {
             "display_name": "Tenu militaire",
-            "description": "L`unifomre standard des fantassins."
+            "description": "L'unifomre standard des fantassins."
 		 }
 	  },
 	  "geomancer": {
@@ -5392,7 +5392,7 @@
 			"level_6_data": {
 			   "title": "Maître tailleur",
 			   "perk_000_name": "10 000 Heures (à venir)",
-               "perk_000_description": "La maîtrise de son Art permet au tailleur de pierre d`inventer de nouveaux moyens d`exploiter la rôche."
+               "perk_000_description": "La maîtrise de son Art permet au tailleur de pierre d'inventer de nouveaux moyens d'exploiter la rôche."
 			},
 			"level_2_data": {
                "perk_000_name": "Pierre de luxe",
@@ -5400,7 +5400,7 @@
 			},
 			"level_4_data": {
                "perk_000_name": "Catalogue étendu",
-               "perk_000_description": "Le tailleur s`aventure de la sphère fonctionelle à.. l`Art."
+               "perk_000_description": "Le tailleur s'aventure de la sphère fonctionelle à.. l'Art."
 			},
 			"level_1_data": {
                "perk_000_name": "Catalogue standard",
@@ -5408,12 +5408,12 @@
 			},
 			"level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l`inspiration frappe, le tailleur de pierre est capable d`obtenir des résultats surprenant."
+               "perk_000_description": "Quand l'inspiration frappe, le tailleur de pierre est capable d'obtenir des résultats surprenant."
 			}
 		 },
 		 "mason_chisel": {
             "display_name": "Ciseau de tailleur de pierre",
-            "description": "L`outil maître pour un tailleur de pierre.",
+            "description": "L'outil maître pour un tailleur de pierre.",
 			"mason_chisel_talisman": {
                "display_name": "Ciseau de tailleur de pierre",
                "description": "Requis pour promouvoir un hearthling en tailleur de pierre."
@@ -5421,11 +5421,11 @@
 		 },
 		 "mason_hammer": {
             "display_name": "Marteau de tailleur de pierre",
-            "description": "L`outil maître pour un tailleur de pierre."
+            "description": "L'outil maître pour un tailleur de pierre."
 		 },
 		 "mason_outfit": {
             "display_name": "Blouse de tailleur de pierre",
-            "description": "L`uniforme de tous les tailleurs de pierre."
+            "description": "L'uniforme de tous les tailleurs de pierre."
 		 },
 		 "mason_workbench": {
 			"mason_workbench_ghost": {
@@ -5441,9 +5441,9 @@
 		 },
 		 "recipes": {
 			"bird_bath_recipe": {
-               "description": "Une vasque décorative avec de l`eau pour les oiseaux.",
+               "description": "Une vasque décorative avec de l'eau pour les oiseaux.",
                "recipe_name": "Bain pour oiseaux",
-               "flavor": "Ce n`est pas une chaise !"
+               "flavor": "Ce n'est pas une chaise !"
 			},
 			"blacksmith_hammer_recipe": {
                "description": "Requis pour promouvoir un hearthling en forgeron.",
@@ -5477,49 +5477,49 @@
             "weapons_name": "Armes",
             "furniture_name": "Meubles",
 			"stone_bench_recipe": {
-               "description": "Siège d`extérieur pour des moments de détente.",
+               "description": "Siège d'extérieur pour des moments de détente.",
                "recipe_name": "Banc en pierre",
-               "flavor": "Esthétique et fonctionnel. S`accorde avec les pierres tombales."
+               "flavor": "Esthétique et fonctionnel. S'accorde avec les pierres tombales."
 			},
 			"stone_brazier_recipe": {
                "description": "Un petit feu de camp qui offre confort et chaleur pendant la nuit .",
                "recipe_name": "Brazero en pierre",
-               "flavor": "Attention :  Ne rien verser dedans pendant qu`il est allumé."
+               "flavor": "Attention :  Ne rien verser dedans pendant qu'il est allumé."
 			},
 			"stone_bricks_recipe": {
                "description": "Un composant clef pour les structures en pierre comme les châteaux et les routes.",
                "recipe_name": "Tas de briques",
-               "flavor": "C`est une chance, mon garçon, que le cube soit la structure naturelle de la plupart des roches. --Garen Knapper"
+               "flavor": "C'est une chance, mon garçon, que le cube soit la structure naturelle de la plupart des roches. --Garen Knapper"
 			},
 			"stone_chair_recipe": {
                "description": "Pas super confortable mais un signe de statut social.",
                "recipe_name": "Chaise en pierre",
-               "flavor": "D`extérieur !"
+               "flavor": "D'extérieur !"
 			},
             "stone_chest_recipe": {
                "description": "Un endroit imposant ou ranger les choses.",
                "recipe_name": "Coffre en pierre",
-               "flavor": "`Ecoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.`--Edolf, barde ambulant"
+               "flavor": "'Ecoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.'--Edolf, barde ambulant"
             },
 			"stone_garden_lantern_recipe": {
                "description": "Une lanterne au look antique qui donne une super ambiance.",
-               "recipe_name": "Lanterne d`extérieur en pierre",
-               "flavor": "Seulement d`apparence un peu menaçante."
+               "recipe_name": "Lanterne d'extérieur en pierre",
+               "flavor": "Seulement d'apparence un peu menaçante."
 			},
 			"stone_maul_recipe": {
-               "description": "L`outil idéal pour tout écraser.",
+               "description": "L'outil idéal pour tout écraser.",
                "recipe_name": "Masse en pierre",
-               "flavor": "Une adaptation moderne d`une arme ancienne."
+               "flavor": "Une adaptation moderne d'une arme ancienne."
 			},
 			"stone_table_recipe": {
                "description": "Son poids considérable donne du sens à la gravité. Seulement pour les affaires sérieuses.",
                "recipe_name": "Table en pierre",
-               "flavor": "Aucun lion n`a été blessé lors que sa fabrication."
+               "flavor": "Aucun lion n'a été blessé lors que sa fabrication."
 			},
 			"stone_wall_lantern_recipe": {
                "description": "Suspendue aux murs des bâtiments et produit de la lumière.",
                "recipe_name": "Lanterne murale en pierre",
-               "flavor": "Contre : lourd. Pour : aucune chance de s`auto-enflammer."
+               "flavor": "Contre : lourd. Pour : aucune chance de s'auto-enflammer."
 			},
 			"tower_brazier_recipe": {
                "description": "Inspiré par une tour de château, il devient un signal lumineux puissant la nuit.",
@@ -5529,7 +5529,7 @@
 			"mason_workbench_recipe": {
                "description": "Indispensable à la fabrication de la plupart des produits du tailleur de pierre.",
                "recipe_name": "Table de tailleur de pierre",
-			   "flavor": "Tappety-tap; Make the earth sing, Raise Brelor`s ghost, Watch the mountain take wing."
+			   "flavor": "Tappety-tap; Make the earth sing, Raise Brelor's ghost, Watch the mountain take wing."
 			},
 			"mason_pedestal_recipe": {
                "description": "Une zone de travail bien éclairée pour créer des sculptures en pierre.",
@@ -5561,7 +5561,7 @@
 			},
 			"level_3_data": {
                "perk_000_name": "Bonus supplémentaires",
-               "perk_000_description": "Les compétences du berger permettent d`obtenir un meilleur rendement en produits animaux."
+               "perk_000_description": "Les compétences du berger permettent d'obtenir un meilleur rendement en produits animaux."
 			}
 		 },
 		 "shepherd_crook": {
@@ -5578,7 +5578,7 @@
 		 },
 		 "shepherd_outfit": {
             "display_name": "Habit de berger",
-            "description": "L`uniforme traditionnel des bergers."
+            "description": "L'uniforme traditionnel des bergers."
 		 },
 		 "shepherd_pasture": {
             "display_name": "Pâturage",
@@ -5595,12 +5595,12 @@
 	  "trapper": {
 		 "trapper_description": {
 			"display_name": "Trappeur",
-			"description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C`est un apport fiable de nourriture et de fournitures.",
+			"description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fournitures.",
 			"requirements": "Couteau de trappeur, fabriqué par le forgeron.",
 			"level_1_data": {
 			   "title": "Compagnon trappeur",
 			   "perk_000_name": "Gain de vitesse 10%",
-			   "perk_000_description": "Long walks have increased the trapper`s foot speed."
+			   "perk_000_description": "Long walks have increased the trapper's foot speed."
 			},
 			"level_3_data": {
                "perk_000_name": "Dépeçage efficace",
@@ -5609,8 +5609,8 @@
 			"level_2_data": {
                "perk_000_name": "Charmer des familliers",
                "perk_001_name": "Opportunité de travail",
-               "perk_000_description": "De temps à autre, le trappeur choisira d`apprivoiser un animal particulièrement beau.",
-               "perk_001_description": "Le trappeur est maintenant qualifié pour un travail plus avancé.<br>Voir l`arbre de promotion pour plus de détails"
+               "perk_000_description": "De temps à autre, le trappeur choisira d'apprivoiser un animal particulièrement beau.",
+               "perk_001_description": "Le trappeur est maintenant qualifié pour un travail plus avancé.<br>Voir l'arbre de promotion pour plus de détails"
 			},
 			"level_6_data": {
                "perk_000_name": "Le coup le-plus-mortel (à venir)",
@@ -5622,7 +5622,7 @@
 			},
 			"level_4_data": {
                "perk_000_name": "Super sac-à-dos",
-               "perk_000_description": "Le trappeur est devenu un maître du packetage. +8 à l`espace de son sac-à-dos."
+               "perk_000_description": "Le trappeur est devenu un maître du packetage. +8 à l'espace de son sac-à-dos."
 			}
 		 },
 		 "snare_trap": {
@@ -5631,7 +5631,7 @@
 			"commands": {
 			   "harvest_trapped_beast": {
                   "display_name": "Braconnage",
-                  "description": "Ou comment bien sacrifier l`animal capturé pour ses ressources."
+                  "description": "Ou comment bien sacrifier l'animal capturé pour ses ressources."
 			   },
 			   "tame_trapped_beast": {
                   "display_name": "Apprivoiser",
@@ -5685,14 +5685,14 @@
 			"level_6_data": {
 			   "title": "Maître tisserand",
 			   "perk_000_name": "10.000 heures (à venir)",
-			   "perk_000_description": "La maîtrise de son Art permet au tisserand de réinventer la manière d`utiliser le tissu."
+			   "perk_000_description": "La maîtrise de son Art permet au tisserand de réinventer la manière d'utiliser le tissu."
 			},
 			"level_2_data": {
                "perk_000_name": "Perspicacité collaborative",
-               "perk_000_description": "Le tisserand à maintenant assez de maîtrise pour utiliser des ressources provenant d`autres artisans."
+               "perk_000_description": "Le tisserand à maintenant assez de maîtrise pour utiliser des ressources provenant d'autres artisans."
 			},
 			"level_4_data": {
-               "perk_000_name": "Amélioration de l`ingéniosité (à venir)",
+               "perk_000_name": "Amélioration de l'ingéniosité (à venir)",
                "perk_000_description": "Le tisserand améliore les recettes de bases en y ajoutant plus de fonctionalités."
 			},
 			"level_1_data": {
@@ -5701,14 +5701,14 @@
 			},
 			"level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l`inspiration frappe, le tisserand est capable d`obtenir des résultats surprenant."
+               "perk_000_description": "Quand l'inspiration frappe, le tisserand est capable d'obtenir des résultats surprenant."
 			}
 		 },
 		 "recipes": {
 			"banner_wall_big_recipe": {
                "description": "Affichez votre sentiment de fierté envers votre ville avec cette bannière décorative.",
                "recipe_name": "Grande bannière murale",
-               "flavor": "C`est aussi un signe de prospérité."
+               "flavor": "C'est aussi un signe de prospérité."
 			},
 			"banner_wall_small_recipe": {
                "description": "Affichez votre sentiment de fierté envers votre ville avec cette petite bannière.",
@@ -5718,15 +5718,15 @@
 			"bolt_of_cloth_recipe": {
                "description": "Utilisé pour rendre certains meubles plus confortables.",
                "recipe_name": "Rouleau de tissu basique",
-               "flavor": "Pour rendre plus large de l`épaisseur d`un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
+               "flavor": "Pour rendre plus large de l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
 			},
 			"cloth_bolt_recipe": {
                "description": "Utilisé pour rendre certains meubles plus confortables.",
                "recipe_name": "Rouleau de tissu",
-               "flavor": "Pour rendre plus large de l`épaisseur d`un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
+               "flavor": "Pour rendre plus large de l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
 			},
 			"cloth_padded_vest_recipe": {
-               "description": "Cette veste triplement matelassée protège mieux vos combattants que de simple habits. Bon, pas tellement mieux, mais c`est toujours ça !",
+               "description": "Cette veste triplement matelassée protège mieux vos combattants que de simple habits. Bon, pas tellement mieux, mais c'est toujours ça !",
                "recipe_name": "Veste rembourrée",
                "flavor": "Nécessite... plus... de rembourrage!"
 			},
@@ -5736,14 +5736,14 @@
                "flavor": "Technologie anti-lumière qui encourage la sieste."
 			},
 			"fur_rug_recipe": {
-               "description": "Un tapis de fourrure chaud et confortable confectionné à l`aide de différentes peaux.",
+               "description": "Un tapis de fourrure chaud et confortable confectionné à l'aide de différentes peaux.",
                "recipe_name": "Tapis de fourrure",
                "flavor": "Parfait pour les soirée prés du feu."
 			},
 			"leather_bolt_recipe": {
-               "description": "Des peaux tannées prêtes à l`usage.",
+               "description": "Des peaux tannées prêtes à l'usage.",
                "recipe_name": "Cuir en rouleau",
-               "flavor": "Difficile de distinguer l`origine de chaque pièces."
+               "flavor": "Difficile de distinguer l'origine de chaque pièces."
 			},
 			"leather_vest_recipe": {
                "description": "Le cuir durci offre une solide protection contre les armes légères.",
@@ -5762,7 +5762,7 @@
 			"spool_of_thread_recipe": {
                "description": "Fil tout doux, nécessaire aux étoffes",
                "recipe_name": "Bobine de fil",
-               "flavor": "Chaque gramme de fibre ne tend qu`à devenir un gilet."
+               "flavor": "Chaque gramme de fibre ne tend qu'à devenir un gilet."
 			},
 			"tapestry_wall_recipe": {
                "description": "Une scène décorative, tissée en fils et cordons colorés.",
@@ -5772,7 +5772,7 @@
 			"thread_recipe": {
                "description": "Tout doux et totelement nécessaire à la fabrication du tissu.",
                "recipe_name": "Bobine de fil",
-               "flavor": "Chaque gramme de fibre ne tend qu`à devenir un gilet."
+               "flavor": "Chaque gramme de fibre ne tend qu'à devenir un gilet."
 			},
 			"throw_rug_recipe": {
                "description": "Enjolive ce vieux sol poussiéreux",
@@ -5785,31 +5785,31 @@
                "flavor": "Votre ville vous aime !"
 			},
 			"worker_outfit_winter_recipe": {
-               "description": "Un lourd manteau de laine pour les froides nuits d`hivers.<br>Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
-               "recipe_name": "Habit d`hiver de travailleur",
-               "flavor": "L`hivers arrive !"
+               "description": "Un lourd manteau de laine pour les froides nuits d'hivers.<br>Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
+               "recipe_name": "Habit d'hiver de travailleur",
+               "flavor": "L'hivers arrive !"
 			},
             "workbenches_name": "Ateliers",
 			"weaver_loom_recipe": {
-               "description": "Assemble des fils à d`autres fils jusqu`à l`obtention d`un tissu.",
+               "description": "Assemble des fils à d'autres fils jusqu'à l'obtention d'un tissu.",
                "recipe_name": "Métier à tisser",
-               "flavor": "Patiente araignée, tisserand, poête, reserre encore la trame du destin --Rayya`s Rhyme"
+               "flavor": "Patiente araignée, tisserand, poête, reserre encore la trame du destin --Rayya's Rhyme"
 			},
 			"weaver_spinning_wheel_recipe": {
                "description": "Transforme ce qui est emmélé en fil.",
                "recipe_name": "Rouet de tisserand",
-               "flavor": "L`araignée sourit; ses huit yeux brillent. `Quelque chose pour rien, certains sont doux et d`autres amers.`"
+               "flavor": "L'araignée sourit; ses huit yeux brillent. 'Quelque chose pour rien, certains sont doux et d'autres amers.'"
 			},
 			"weaver_workbench_recipe": {
                "description": "Utilisé pour des confections compliquées à partir de fil est et de tissus.",
                "recipe_name": "Banc de tisserand",
-               "flavor": "Au commencement il n`y avait rien et puis il y eu l`araignée."
+               "flavor": "Au commencement il n'y avait rien et puis il y eu l'araignée."
 			}
 		 },
 		 "weaver_loom": {
 			"weaver_loom_ghost": {
 			   "display_name": "Métier à tisser",
-			   "description": "Un tisserand qualifié l`utilise pour tisser le fil en habit."
+			   "description": "Un tisserand qualifié l'utilise pour tisser le fil en habit."
 			}
 		 },
 		 "weaver_outfit": {
@@ -5831,7 +5831,7 @@
 		 "weaver_spinning_wheel": {
 			"weaver_spinning_wheel_ghost": {
 			   "display_name": "Rouet de tisserand",
-			   "description": "Un tisserand qualifié l`utilise pour filer les fibres en fil."
+			   "description": "Un tisserand qualifié l'utilise pour filer les fibres en fil."
 			}
 		 },
 		 "weaver_workbench": {
@@ -5851,10 +5851,10 @@
 			}
 		 },
 		 "winter_worker_outfit": {
-			"display_name": "Habit d`hiver de travailleur",
-			"description": "Un manteau de laine épaisses, pour les froides nuits d`hiver",
+			"display_name": "Habit d'hiver de travailleur",
+			"description": "Un manteau de laine épaisses, pour les froides nuits d'hiver",
 			"winter_worker_outfit_iconic": {
-			   "display_name": "Habit d`hiver de travailleur",
+			   "display_name": "Habit d'hiver de travailleur",
 			   "description": "Si chaud..."
 			}
 		 },
@@ -5864,7 +5864,7 @@
 		 },
 		 "worker_outfit_2": {
 			"display_name": "Habit amélioré de travailleur",
-			"description": "Des coutures renforcées améliorent l`efficacité des travailleurs !",
+			"description": "Des coutures renforcées améliorent l'efficacité des travailleurs !",
 			"worker_outfit_2_iconic": {
 			   "display_name": "Habit amélioré de travailleur",
 			   "description": "Des coutures renforcées augmentent la productivité des travailleurs"
