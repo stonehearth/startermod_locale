@@ -39,7 +39,7 @@
 			"steal_bait": "vole un appât",
 			"build_ladder": "construit une échelle",
 			"promote": "change de profession",
-			"move_item_to_storage": "enmène un objet en réserve",
+			"move_item_to_storage": "emmène un objet en réserve",
 			"teardown_ladder": "démonte une échelle",
 			"drop_item_near_workshop": "retire un atelier",
 			"fabricate_structure": "construit",
@@ -121,11 +121,11 @@
 			"retired": "Mort le :"
 		 },
 		 "pet_character_sheet": {
-			"title": "Informations du famillier",
+			"title": "Informations du familier",
 			"release_pet_confirm_dialog": {
-			   "title": "Relâcher le famillier",
+			   "title": "Relâcher le familier",
 			   "message": "Êtes-vous sûr de vouloir relâcher ce familier dans la nature ? Vous ne pourrez plus le récupérer.",
-			   "accept": "Je ne veux plus de ce famillier.",
+			   "accept": "Je ne veux plus de ce familier.",
 			   "cancel": "Attendez!"
 			},
 			"befriended_pet_description": "Est l'ami de [name(self.stonehearth:pet.owner)]"
@@ -316,7 +316,7 @@
 					 "description": "Fait disparaitre des éléments de la surface du globe",
 					 "tip_title": "Cliquez et relachez pour supprimer définitivement des éléments",
 					 "tip_description": "Bouton droite pour sortir de ce mode",
-					 "confirm_title": "Êtes-vous sur d'effacer ces élements ?",
+					 "confirm_title": "Êtes-vous sur d'effacer ces éléments ?",
 					 "confirm_message": "Les objets utilisables dans cette zone vont être détruit définitivement",
 					 "confirm_clear": "Oui, détruit !",
 					 "confirm_clear_no": "Non ! J'en ai besoin !"
@@ -361,12 +361,12 @@
 			   "description": "Construisez des structures comme des maisons et des murs de ville.",
 			   "items": {
 				  "building_templates": {
-                     "display_name": "Placer un batiment",
-                     "description": "Choisissez de construire un batiment<br>d'après un plan archivé."
+                     "display_name": "Placer un bâtiment",
+                     "description": "Choisissez de construire un bâtiment<br>d'après un plan archivé."
 				  },
 				  "custom_building": {
-                     "display_name": "Concevoir un batiment",
-                     "description": "Concevez vos propres batiments"
+                     "display_name": "Concevoir un bâtiment",
+                     "description": "Concevez vos propres bâtiments"
 				  },
 				  "place_item": {
                      "display_name": "Placer un objet",
@@ -383,7 +383,7 @@
 			   }
 			},
 			"fight_menu": {
-               "display_name": "Attaque et Défense",
+               "display_name": "Attaque et défense",
                "description": "Gérez vos troupes.",
 			   "items": {
 				  "party_manager": {
@@ -391,10 +391,10 @@
                      "description": "Organisez vos troupes en groupes."
 				  },
 				  "town_defense": {
-                     "display_name": "Mode Défense de la ville !",
+                     "display_name": "Mode défense de la ville !",
                      "description": "Rassemblez vos hearthlings pour défendre la ville.",
-                     "activated_title": "Mode Défense de la ville activé !",
-                     "activated_text": "Les hearthlings ont cessés leurs ativités et recherchent des intrus."
+                     "activated_title": "Mode défense de la ville activé !",
+                     "activated_text": "Les hearthlings ont cessés leurs activités et recherchent des intrus."
 				  },
 				  "loot_item": {
                      "display_name": "Butin",
@@ -415,7 +415,7 @@
                   },
                   "weaver": {
                      "display_name": "Tisserand",
-                     "description": "Pour confectionner des tissus,<br>vêtements ou élements de décor.",
+                     "description": "Pour confectionner des tissus,<br>vêtements ou éléments de décor.",
                      "required_job_text": "Nécessite un tisserand"
                   },
                   "mason": {
@@ -441,7 +441,7 @@
 			},
 			"tasks_manager": {
                "display_name": "Gestion des tâches",
-               "description": "Gèrez les tâches en cours.",
+               "description": "Gérez les tâches en cours.",
                "remove_stockpile": "Supprimer une réserve",
 			   "pause_stockpile": "Pause",
                "resume_stockpile": "Reprendre",
@@ -514,7 +514,7 @@
 			"overhead_tips": {
                "wall_segment_tip_title": "Cliquez pour placer des segments de murs libres",
                "wall_segment_tip_description": "Gardez SHIFT pressé tout en cliquant pour placer des murs connectés",
-               "build_title_building_designer": "Concepteur de batiment",
+               "build_title_building_designer": "Concepteur de bâtiment",
                "build_floor_tip_title": "Cliquez et tirez pour placer des dalles de planchers",
                "build_floor_tip_description": "Click droit pour sortir",
                "build_slab_tip_title": "Cliquez et tirez pour construire des blocs",
@@ -525,7 +525,7 @@
                "roof_tip_description": "Click droit pour sortir",
                "raise_walls_tip_title": "Cliquez un sol pour ajouter des murs.",
                "raise_walls_tip_description": "Click droit pour sortir",
-               "doodad_tip_title": "Cliquez sur un mur pour placer une fnêtre.",
+               "doodad_tip_title": "Cliquez sur un mur pour placer une fenêtre.",
                "doodad_tip_description": "Click droit pour sortir",
                "draw_template_title": "Cliquez pour positionner un plan.",
                "draw_template_description": "Faire une rotation avec les touches , et .",
@@ -553,7 +553,7 @@
 			},
 			"building_templates": {
                "title": "Bibliothèque de plans",
-               "design_custom_building": "Dessinez vos propres batiments",
+               "design_custom_building": "Dessinez vos propres bâtiments",
 			   "template_names": {
                   "tiny_cottage": "Petite maison",
                   "cottage_for_two": "Maisonette pour deux",
@@ -613,15 +613,15 @@
 			},
 			"start_building_confirm": {
                "title": "Commencer la construction ?",
-               "message": "Une fois les traveaux commencé, le plan ne peux plus être modifié. Êtes-vous sûr de vouloir construire tout de suite ?",
+               "message": "Une fois les travaux commencé, le plan ne peux plus être modifié. Êtes-vous sûr de vouloir construire tout de suite ?",
                "yes": "Oui, commencer la construction !",
                "no": "Pas encore"
 			},
 			"remove_building_confirm": {
-               "title": "Supprimer ce batiment ?",
-               "message": "Êtes-vous sûr de vouloir supprimer de batiment ?",
-               "keep_building": "Garder ce batiment",
-               "remove_building": "Supprimer ce batiment"
+               "title": "Supprimer ce bâtiment ?",
+               "message": "Êtes-vous sûr de vouloir supprimer de bâtiment ?",
+               "keep_building": "Garder ce bâtiment",
+               "remove_building": "Supprimer ce bâtiment"
 			}
 		 },
 		 "zones_mode": {
@@ -680,7 +680,7 @@
 				  "tooltip_refined_cloth": "Fils et habits",
 				  "tooltip_refined_animal_part": "Biens fabriqués à partir d'animaux",
 				  "tooltip_refined_ore": "Barres de métal",
-				  "tooltip_melee_weapon": "Armes de mélée",
+				  "tooltip_melee_weapon": "Armes de mêlée",
 				  "tooltip_ranged_weapon": "Armes à distance",
 				  "tooltip_light_armor": "Armure légère",
 				  "tooltip_heavy_armor": "Armure lourde",
@@ -715,7 +715,7 @@
 			"workshop_closed": "Fermé",
             "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d'options de fabrication !",
             "craft": "Fabriquer&nbsp;!",
-            "craftable_locked": "Dévérouillé au niveau [str(level)]",
+            "craftable_locked": "Déverouillé au niveau [str(level)]",
             "workshop_requirement_title": "Atelier",
             "workshop_none_required": "Aucun pré-requis&nbsp;!",
             "workshop_required": "Nécessite de placer ",
@@ -824,7 +824,7 @@
                "003": "Les réserves peuvent être modifiées pour acceuillir des objets spécifiques.",
                "004": "Vous pouvez cultiver des plantes à soie pour avoir une source régulière de fibres végétales.",
                "005": "Une ville bien nourrit est une ville heureuse.",
-               "006": "Utlisiez les touches . ou , pour faire tourner un objet ou un batiment avant de le placer.",
+               "006": "Utilisez les touches . ou , pour faire tourner un objet ou un bâtiment avant de le placer.",
                "007": "Vos hearthlings se déplacent plus vite sur les routes.",
 			   "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
                "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
@@ -889,7 +889,7 @@
 			   "wildlife_3": "Abondante",
 			   "wildlife_4": "Envahissante !",
 			   "mineral_0": "Aucun",
-               "mineral_1": "Trés rare",
+               "mineral_1": "Très rare",
 			   "mineral_2": "Peu fréquent",
 			   "mineral_3": "Commun",
 			   "mineral_4": "Abondant"
@@ -1048,7 +1048,7 @@
 			   "display_name": "Compassion",
                "description": "Dans quelle mesure le hearthling aidera et sera apprécié par ses compatriotes",
 			   "bullet_points": {
-                  "000": "Détermine le nombre maximum de famillier qu'un braconnier peut apprivoiser",
+                  "000": "Détermine le nombre maximum de familier qu'un braconnier peut apprivoiser",
                   "001": "Augmente l'acceptation du berger par les animaux"
 			   }
 			},
@@ -1107,11 +1107,11 @@
 			},
 			"mind": {
                "display_name": "Esprit",
-               "description": "Faculté à raisonner brillament. Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes. Influence la concentration, la curiosité et la créativité"
+               "description": "Faculté à raisonner brillamment. Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes. Influence la concentration, la curiosité et la créativité"
 			},
 			"curiosity": {
                "display_name": "Curiosité",
-               "description": "Propension du hearthling à aprécier de nouvelles expériences.",
+               "description": "Propension du hearthling à apprécier de nouvelles expériences.",
 			   "bullet_points": {
                   "000": "Améliore l'expérience accumulée lors de la fabrication d'objets."
 			   }
@@ -1152,7 +1152,7 @@
                   "morale_label": "Moral",
                   "net_worth_label": "Richesse",
                   "conclusion_positive": "Un nouveau venu aimerait rejoindre votre ville !",
-                  "conclusion_negative": "La route est réstée vide. Peut-être demain !",
+                  "conclusion_negative": "La route est restée vide. Peut-être demain !",
                   "success_title": "[name(i18n_data.citizen)] à rejoint [str(i18n_data.town_name)] !",
 				  "messages": {
                      "000": "J'ai beaucoup entendu parler de votre ville !",
@@ -1165,7 +1165,7 @@
 			},
 			"trader": {
 			   "simple_caravan_encounter": {
-                  "message": "Salutation [str(i18n_data.town_name)] ! Je viens faire du troc. Seriez vous interrésé par [str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s) en échange de [str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s) ?",
+                  "message": "Salutation [str(i18n_data.town_name)] ! Je viens faire du troc. Seriez vous intéressé par [str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s) en échange de [str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s) ?",
                   "title": "Une caravane approche !"
 			   },
 			   "starting_food_donation": {
@@ -1483,7 +1483,7 @@
 					 "dialog_nodes": {
 						"msg2": {
 						   "bulletin_message": {
-                              "00": "Des félicitations s'imposent, si c'est le genre de chose auquel vous tenez. J'ai fait le tour de la région et il semble que vous nous ayez débarassé de la majeur partie des goblins de la zone ! Je ne dis pas que vous ne croiserez pas un ou deux traînards mais dans l'ensemble c'est du bon travail."
+                              "00": "Des félicitations s'imposent, si c'est le genre de chose auquel vous tenez. J'ai fait le tour de la région et il semble que vous nous ayez débarrassé de la majeur partie des goblins de la zone ! Je ne dis pas que vous ne croiserez pas un ou deux traînards mais dans l'ensemble c'est du bon travail."
 						   },
                            "bulletin_title": "Mer Burlyhands secoue la tête",
 						   "dialog_title": "Mer Burlyhands"
@@ -3058,7 +3058,7 @@
 		 },
 		 "wooden_diamond_window": {
 			"wooden_diamond_window_ghost": {
-               "display_name": "Cardre de fenêtre en losange",
+               "display_name": "Cadre de fenêtre en losange",
                "description": "Bien mieux pour la vie privée..."
 			}
 		 },
@@ -3581,7 +3581,7 @@
 		 "firepit": {
 			"firepit_ghost": {
 			   "display_name": "Feu de camp",
-               "description": "Fournit chaleur et lumiére."
+               "description": "Fournit chaleur et lumière."
 			}
 		 },
 		 "firepit_skulls": {
@@ -3650,7 +3650,7 @@
 		 },
 		 "tower_brazier": {
 			"tower_brazier_ghost": {
-               "display_name": "Brazero sur pied",
+               "display_name": "Brasero sur pied",
                "description": "Fournit un feu chaleureux et confortable la nuit."
 			}
 		 },
@@ -3831,7 +3831,7 @@
 		 },
 		 "egg": {
             "display_name": "Un oeuf",
-			"description": "An eggcellent ingredient for cooking."
+			"description": "Qui vole un oeuf vole un poyo."
 		 },
 		 "corn_bread": {
 			"corn_bread": {
@@ -3859,7 +3859,7 @@
 		 "omelette": {
 			"omelette": {
 			   "display_name": "Omelette",
-               "description": "Délicieuse viande, succulants légumes, le tout enrobé d'oeuf."
+               "description": "Délicieuse viande, succulents légumes, le tout enrobé d'oeuf."
 			},
 			"omelette_serving": {
                "display_name": "Assiette d'omelette",
@@ -3921,19 +3921,19 @@
 		 "arch_backed_chair_fine": {
 			"arch_backed_chair_fine_ghost": {
 			   "display_name": "Chaise cathédrale stylisé",
-			   "description": "Classy like piety."
+			   "description": "Aussi classe que la piété."
 			}
 		 },
 		 "comfy_bed": {
 			"comfy_bed_ghost": {
 			   "display_name": "Lit confortable",
-               "description": "J'ai révé... de moutons sauteurs."
+               "description": "J'ai rêvé... de moutons sauteurs."
 			}
 		 },
 		 "comfy_bed_fine": {
 			"comfy_bed_fine_ghost": {
 			   "display_name": "Lit confortable stylisé",
-			   "description": "J'ai révé... de moutons volants."
+			   "description": "J'ai rêvé... de moutons volants."
 			}
 		 },
 		 "comfy_chair": {
@@ -3963,13 +3963,13 @@
 		 "dresser": {
 			"dresser_ghost": {
                "display_name": "Commode",
-               "description": "Décorative en l'abscence de propriétaire."
+               "description": "Décorative en l'absence de propriétaire."
 			}
 		 },
 		 "dresser_fine": {
 			"dresser_fine_ghost": {
                "display_name": "Commode stylisé",
-               "description": "Encore plus décorative en l'abscence de propriétaire."
+               "description": "Encore plus décorative en l'absence de propriétaire."
 			}
 		 },
 		 "not_much_of_a_bed": {
@@ -4053,7 +4053,7 @@
 	  },
 	  "generic": {
 		 "default_object": {
-            "display_name": "Objet par défault",
+            "display_name": "Objet par défaul",
             "description": "Mystérieux"
 		 }
 	  },
@@ -4385,7 +4385,7 @@
                "description": "Douce, souple mais bien morte."
 			},
 			"squirrel_pelt": {
-               "display_name": "Peau d'écureil",
+               "display_name": "Peau d'écureuil",
                "description": "Douce, souple mais bien morte."
 			},
 			"wolf_pelt": {
@@ -4458,7 +4458,7 @@
             "description": "De la terre, banale.",
             "model_variant": {
                "dirt_1": {
-                  "display_name": "Substrat trés pauvre",
+                  "display_name": "Substrat très pauvre",
                   "description": "Ne pourra pas donner grand chose."
                },
                "furrow": {
@@ -4469,11 +4469,11 @@
                   "description": "Bon, c'est du terreau."
                },
                "dirt_3": {
-                  "display_name": "Umus",
+                  "display_name": "Humus",
                   "description": "L'habitat des bien-heureux vers de terre !"
                },
                "dirt_4": {
-                  "display_name": "Umus riche",
+                  "display_name": "Humus riche",
                   "description": "Bien épais et gras."
                }
             }
@@ -4485,7 +4485,7 @@
 			},
 			"copper_block": {
                "display_name": "Veine de cuivre",
-               "description": "Source de cuivre qand on mine juste ici."
+               "description": "Source de cuivre quand on mine juste ici."
 			},
 			"gold_block": {
                "display_name": "Veine d'or",
@@ -4505,7 +4505,7 @@
 			},
 			"tin_block": {
                "display_name": "Veine d'étain",
-               "description": "Un filon prométeur..."
+               "description": "Un filon prometteur..."
 			}
 		 }
 	  },
@@ -4520,7 +4520,7 @@
 		 },
 		 "worker_hammer": {
             "display_name": "Marteau",
-            "description": "Le monde entier essemble à un clou lorsque vous n'avez qu'un marteau."
+            "description": "Tout ressemble à un clou lorsque vous avez un marteau."
 		 }
 	  },
 	  "toys": {
@@ -4631,10 +4631,10 @@
 	  "weapons": {
 		 "bronze_mace": {
             "display_name": "Mace en bronze",
-            "description": "Précisement ciselée pour faire un maximum de dégats",
+            "description": "Précisément ciselée pour faire un maximum de dégats",
 			"bronze_mace_iconic": {
                "display_name": "Mace de bronze",
-               "description": "Pour applanir les faces."
+               "description": "Pour applatir les faces."
 			}
 		 },
 		 "bronze_sword": {
@@ -4686,11 +4686,11 @@
 			}
 		 },
 		 "jagged_cleaver": {
-            "display_name": "Couperet émoucé",
-            "description": "Une vielle arme plus trés efficace.",
+            "display_name": "Couperet émoussé",
+            "description": "Une vielle arme plus très efficace.",
 			"jagged_cleaver_iconic": {
-               "display_name": "Couperet émoucé",
-               "description": "Une vielle arme plus trés efficace."
+               "display_name": "Couperet émoussé",
+               "description": "Une vielle arme plus très efficace."
 			}
 		 },
 		 "long_sword": {
@@ -4707,7 +4707,7 @@
 		 },
 		 "short_sword": {
             "display_name": "Epée courte",
-            "description": "Pas trés grande mais sa lame d'acier reste efficace.",
+            "description": "Pas très grande mais sa lame d'acier reste efficace.",
 			"short_sword_iconic": {
                "display_name": "Epée courte",
                "description": "Pointue. Brillante."
@@ -4727,10 +4727,10 @@
 		 },
 		 "two_handed_sword": {
             "display_name": "Epée à deux mains",
-            "description": "Double les mains, double les problêmes.",
+            "description": "Double mains, double problèmes.",
 			"two_handed_sword_iconic": {
                "display_name": "Epée à deux mains",
-               "description": "Double les mains, double les problêmes."
+               "description": "Double mains, double problèmes."
 			}
 		 },
 		 "wooden_sword": {
@@ -4841,7 +4841,7 @@
 		 "recipes": {
 			"basic_shield_recipe": {
 			"description": "Permet de bloquer complètement les attaques.",
-               "flavor": "Protection incroyable. les enfants peuvent jouer à la tortue dessous.",
+               "flavor": "Protection incroyable. Les enfants peuvent jouer à la tortue dessous.",
                "recipe_name": "Bouclier fidèle"
 			},
 			"iron_shield_recipe": {
@@ -4882,7 +4882,7 @@
 			"gold_ingot_recipe": {
                "description": "Une barre d'or pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot d'or",
-			   "flavor": "The most expensive bludgeon ever."
+			   "flavor": "La matraque la plus chère de tous les temps."
 			},
 			"iron_ingot_recipe": {
                "description": "Une barre de fer pur. Un matériau adapté à la fabrication d'objets artisanaux.",
@@ -4891,42 +4891,42 @@
 			},
 			"iron_mace_recipe": {
 			   "description": "Heavy, it packs a whallop.",
-			   "recipe_name": "Iron Mace",
+               "recipe_name": "Mace de fer",
 			   "flavor": "And Erin rested her forehead upon it, and the iron stole away enchantment and memory, together."
 			},
 			"iron_mail_recipe": {
-			   "description": "A full suit of heavy, durable iron armor.",
-			   "recipe_name": "Iron Mail",
+               "description": "Un ensemble complet de lourdes et solides mailles de fer.",
+               "recipe_name": "Côte de maille en fer",
 			   "flavor": "But he'd hidden his heart in an iron fortress, and no fey could touch it. --Songs of Evermarth"
 			},
 			"iron_pike_recipe": {
-			   "description": "Sharp. Long. Pointy.",
-			   "recipe_name": "Iron pike",
-			   "flavor": "'Coward,' Elden spat. 'Face me blade to blade, or no knight be you.'"
+               "description": "Pointue, aiguisée et longue.",
+               "recipe_name": "Lance de fer",
+               "flavor": "'Lâche !' cria Elden. 'Affronte moi à l'épée, ou chevalier tu ne seras.'"
 			},
 			"long_sword_recipe": {
-			   "description": "Sharp, with extra reach. A faithful weapon.",
-			   "recipe_name": "Long Sword",
-			   "flavor": "'Hah! The only weapon worthy of specialization. --Lady Giest"
+               "description": "Aiguisée et offrant une plus grande portée. Une arme de valeur.",
+               "recipe_name": "Epée longue",
+               "flavor": "'Ah ! La seule arme qui vaille la peine d'une spécialisation.' --Lady Giest"
 			},
             "weapons_name": "Armes",
             "smelt_name": "Alliages",
             "armor_name": "Armures",
             "tools_name": "Outils",
 			"short_sword_recipe": {
-			   "description": "Stubby, but its steel blade keeps an edge.",
-			   "recipe_name": "Short Sword",
-			   "flavor": "But, does it glow when orcs are near?"
+               "description": "Courtaude, mais sa lame d'acier reste tranchante.",
+               "recipe_name": "Epée courte",
+               "flavor": "Mais, brille-t-elle quand les Orcs sont proches ?"
 			},
 			"silver_ingot_recipe": {
-			   "description": "A bar of pure silver. A suitable material for crafted goods.",
+               "description": "Une barre d'argent pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot d'argent",
 			   "flavor": "A pair of silver shoes once started a Phoenix war over currency."
 			},
 			"steel_ingot_recipe": {
-			   "description": "A bar of pure steel. A suitable material for crafted goods.",
+               "description": "Une barre d'acier pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot d'acier",
-			   "flavor": "The beginning of the modern age."
+               "flavor": "Le début de l'age moderne."
 			},
 			"steel_mail_recipe": {
 			   "description": "A full suit of heavy, durable steel armor.",
@@ -4936,16 +4936,16 @@
 			"tin_ingot_recipe": {
                "description": "Une barre d'étain pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot d'étain",
-               "flavor": "Etape 1 : battre trés fin. Etape 2 : utilisez pour couvrir le toit de l'hôtel de ville."
+               "flavor": "Etape 1 : battre très fin. Etape 2 : utilisez pour couvrir le toit de l'hôtel de ville."
 			},
 			"trapper_knife_recipe": {
                "description": "Requis pour promouvoir un hearthling en trappeur.",
                "recipe_name": "Couteau de trappeur",
-			   "flavor": "Keep your edge whisker sharp, boy, and cut quick. --Willard Foxghost"
+               "flavor": "'Garde les pointes de ta moustaches éfilées, garçon et coupe franchementt.' --Willard Foxghost"
 			},
 			"two_handed_sword_recipe": {
-			   "description": "Double the hands, double the trouble.",
-			   "recipe_name": "Two Handed Sword"
+               "description": "Double mains, doubles bobos.",
+               "recipe_name": "Epée à deux mains"
 			},
 			"blacksmith_forge_recipe": {
                "description": "Permet de couler le métal en lingots.",
@@ -4955,7 +4955,7 @@
 			"blacksmith_workbench_recipe": {
                "description": "Utilisé pour forger armes et armures à partir des lingots.",
                "recipe_name": "Enclume",
-			   "flavor": "It is no coincidence that the metaphors of good character descend from work of the smith. -Lucan Varius, Artifex Ignis"
+               "flavor": "'Ce n'est pas une coincidence si les métaphores d'un bon personnage viennnet toute de l'Art de la forge.' --Lucan Varius, Artifex Ignis"
 			},
             "workbenches_name": "Ateliers",
             "storage_name": "Rangement",
@@ -4969,24 +4969,24 @@
 	  "carpenter": {
 		 "carpenter_description": {
 			"display_name": "Menuisier",
-            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu'il fabrique permettent de dévérouiller d'autres professions.",
+            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu'il fabrique permettent de déverouiller d'autres professions.",
             "requirements": "Scie de menuisier. Fabriquée par le forgeron.",
 			"level_6_data": {
                "title": "Maître menuisier",
                "perk_000_name": "10,000 Heures (à venir)",
-			   "perk_000_description": "The carpenter's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_description": "La maîtrise de son Art permet au menuisier d'inventer de nouveaux moyens d'exploiter le bois."
 			},
 			"level_2_data": {
-			   "perk_000_name": "Collaborative Insight",
-			   "perk_000_description": "The carpenter is now skillful enough to use materials created by other crafters."
+               "perk_000_name": "Perspicacité collaborative",
+               "perk_000_description": "Le menuisier est maintenant assez habile pour utiliser des matériaux provenants d'autres artisans."
 			},
 			"level_4_data": {
-			   "perk_000_name": "Extended Catalog",
-			   "perk_000_description": "The carpenter now has the courage to try more elaborate projects."
+               "perk_000_name": "Catalogue étendu",
+               "perk_000_description": "Le menuisier a maintenant le courage de se lancer dans des projets plus élaborés."
 			},
 			"level_1_data": {
-			   "perk_000_name": "Standard Catalog",
-			   "perk_000_description": "The carpenter can now make a solid array of basic furniture."
+               "perk_000_name": "Catalogue standard",
+               "perk_000_description": "Le menuisier a maintenant une gamme solide de mobilier de base."
 			},
 			"level_3_data": {
                "perk_000_name": "Inspiration artistique",
@@ -5012,25 +5012,25 @@
 		 "carpenter_workbench": {
 			"carpenter_workbench_ghost": {
                "display_name": "Billot de menuisier",
-			   "description": "Used by the Carpenter for crafting."
+               "description": "Utilisé par le menuisier pour ses fabrications."
 			}
 		 },
 		 "carpenter_toolbench": {
 			"carpenter_toolbench_ghost": {
                "display_name": "Etabli de menuisier",
-			   "description": "Used to make fancier kinds of furniture."
+               "description": "Idéal pour fabriquer des meubles plus sophistiqués."
 			}
 		 },
 		 "recipes": {
 			"arch_backed_chair_recipe": {
-			   "description": "Just like a normal chair, except it impresses your neighbors. When sitting, food is 20% more satisfying.",
+			   "description": "Comme une chaise normale sauf qu'elle impressionne les voisins. Gain de satiété de 20%.",
                "recipe_name": "Chaise cathédrale stylisé",
-			   "flavor": "Design favored by the Church of Plenty."
+			   "flavor": "Conception approuvée par l'Eglise de l'Abondance."
 			},
 			"comfy_bed_recipe": {
                "description": "Huit heures et vous serez aussi frais que le jour de votre naissance.",
 			   "recipe_name": "Lit confortable",
-               "flavor": "Personne ne veut plus en sortir. Embettant pour les évacuations d'urgence."
+               "flavor": "Personne ne veut plus en sortir. Embêtant pour les évacuations d'urgence."
 			},
 			"comfy_chair_recipe": {
                "description": "Son rembourrage garanti une réduction de 98% d'échardes mal placées.",
@@ -5043,22 +5043,22 @@
                "flavor": "S'asseoir pour manger est un signe de civilisation."
 			},
 			"dresser_recipe": {
-               "description": "Un coffre à tirroirs pour ranger les vêtements et autres effets personnels.",
+               "description": "Un coffre à tiroirs pour ranger les vêtements et autres effets personnels.",
                "recipe_name": "Commode en bois",
                "flavor": "Etape 2 : acheter des effets personnels..."
 			},
 			"hoe_recipe": {
 			   "description": "Requis pour promouvoir un hearthling en agriculteur.",
                "recipe_name": "Houe d'agriculteur",
-			   "flavor": "Hoedown time!!!!"
+			   "flavor": "Temps des labours !!!"
 			},
 			"large_crate_recipe": {
                "description": "Pour stocker jusqu'à 32 objets.",
                "recipe_name": "Grande caisse",
-               "flavor": "Est-ce que la caisse qui stocke tout ce qui ne peut se stocker soi-même se stoke-t-elle elle-même?"
+               "flavor": "Est-ce que la caisse qui stocke tout ce qui ne peut se stocker soi-même se stocke-t-elle elle-même?"
 			},
 			"leather_bound_chest_recipe": {
-               "description": "Stylishly stores up to 64 items.",
+               "description": "Stockage stylisé qui peut contenir jusqu'à 64 objets.",
                "recipe_name": "Coffre à lanières de cuir",
                "flavor": "Comme celui de Papy !"
 			},
@@ -5113,7 +5113,7 @@
 			   "flavor": "Matériel de repas pour introvertis."
 			},
 			"weaver_spindle_recipe": {
-               "description": "Requis pour promouvoir un citoyen en tisserand.",
+               "description": "Requis pour promouvoir un hearthling en tisserand.",
                "recipe_name": "Fuseau de tisserand",
                "flavor": "De la fibre, le fil. Du fil, le tissu. Du tissu, la civilisation."
 			},
@@ -5128,7 +5128,7 @@
                "flavor": "La pierre angulaire d'une habitation civilisée."
 			},
 			"wooden_buckler_recipe": {
-			   "description": "Toughen up your foot soldiers... when you can actually equip them in a future alpha!",
+               "description": "Augmente la défense de vos fantassins.",
                "recipe_name": "Bouclier en bois"
 			},
 			"wooden_diamond_window_recipe": {
@@ -5157,7 +5157,7 @@
                "flavor": "Pratique et romantique !"
 			},
 			"wooden_shield_recipe": {
-               "description": "Trés basique mais permet quelque fois à son porteur de bloquer des coups.",
+               "description": "Très basique mais permet quelque fois à son porteur de bloquer des coups.",
                "recipe_name": "Bouclier en bois",
                "flavor": "Mieux qu'improviser avec une branche."
 			},
@@ -5221,7 +5221,7 @@
 	  "cook": {
 		 "cook_description": {
             "display_name": "Cuisinier",
-            "description": "Avec les légumes et la viande de base, le cuisinier mitonne de délicieux repas trés copieux.",
+            "description": "Avec les légumes et la viande de base, le cuisinier mitonne de délicieux repas très copieux.",
             "requirements": "Agriculteur niveau 2 et une cuillère de cuisinier, fabriquée par le tailleur de pierre.",
             "workshop": {
                "name": "Chaudron en pierre",
@@ -5268,7 +5268,7 @@
 		 "cook_workbench": {
 			"cook_workbench_ghost": {
                "display_name": "Chaudron en pierre",
-               "description": "Utilisé par le cuisinier pour réaliser de délieuses recettes."
+               "description": "Utilisé par le cuisinier pour réaliser de délicieuses recettes."
 			}
 		 },
 		 "recipes": {
@@ -5290,7 +5290,7 @@
 			"veggie_stew_recipe": {
                "description": "Un savoureux bouillon chaud agrémenté de citrouille braisé !",
                "recipe_name": "Succulent ragoût de légumes",
-               "flavor": "Aprés, vous vous sentez satisfait mais pas lourd."
+               "flavor": "Après, vous vous sentez satisfait mais pas lourd."
 			},
 			"corn_bread_recipe": {
                "description": "Un pain à base de farine de maïs.",
@@ -5328,14 +5328,14 @@
                "flavor": "Cot cot !"
 			},
 			"rabbit_feed_recipe": {
-               "description": "A base de carrottes.",
+               "description": "A base de carottes.",
                "recipe_name": "Nourriture pour lapin"
 			},
             "workbenches_name": "Ateliers",
 			"cook_workbench_recipe": {
                "description": "Utilisé pour mitonner des soupes et des ragoûts bien calorifiques.",
                "recipe_name": "Chaudron en pierre",
-               "flavor": "En pierre, pour garder les aliments chaud trés longtemps."
+               "flavor": "En pierre, pour garder les aliments chaud très longtemps."
 			},
 			"cook_mill_recipe": {
                "description": "Utilisée par le cuisinier pour moudre le grain en farine.",
@@ -5417,7 +5417,7 @@
 	  "footman": {
 		 "footman_description": {
 			"display_name": "Fantassin",
-            "description": "Le fantassin est un combatant de mélée. Un bon choix pour la base de la défense de votre ville.",
+            "description": "Le fantassin est un combatant de mêlée. Un bon choix pour la base de la défense de votre ville.",
             "requirements": "Epée d'entrainement en bois, fabriquée par le menuisier",
 			"level_4_data": {
                "perk_000_name": "40% de dommages supplémentaires",
@@ -5445,7 +5445,7 @@
 		 },
 		 "footman_outfit": {
             "display_name": "Tenu militaire",
-            "description": "L'unifomre standard des fantassins."
+            "description": "L'uniforme standard des fantassins."
 		 }
 	  },
 	  "geomancer": {
@@ -5474,7 +5474,7 @@
 			"level_6_data": {
 			   "title": "Maître tailleur",
 			   "perk_000_name": "10 000 Heures (à venir)",
-               "perk_000_description": "La maîtrise de son Art permet au tailleur de pierre d'inventer de nouveaux moyens d'exploiter la rôche."
+               "perk_000_description": "La maîtrise de son Art permet au tailleur de pierre d'inventer de nouveaux moyens d'exploiter la roche."
 			},
 			"level_2_data": {
                "perk_000_name": "Pierre de luxe",
@@ -5482,7 +5482,7 @@
 			},
 			"level_4_data": {
                "perk_000_name": "Catalogue étendu",
-               "perk_000_description": "Le tailleur s'aventure de la sphère fonctionelle à.. l'Art."
+               "perk_000_description": "Le tailleur s'aventure de la sphère fonctionnelle à.. l'Art."
 			},
 			"level_1_data": {
                "perk_000_name": "Catalogue standard",
@@ -5543,7 +5543,7 @@
                "flavor": "Utiliser la terre elle-même pour réaliser les murs des pâturages ? Génial !"
 			},
 			"cook_spoon_recipe": {
-               "description": "Requis pour promouvoir un citoyen en cuisinier.",
+               "description": "Requis pour promouvoir un hearthling en cuisinier.",
                "recipe_name": "Cuillère de cuisinier",
                "flavor": "PLAAATS CUISINNNNNES!!!!!! --Alton le barde"
 			},
@@ -5630,59 +5630,59 @@
 	  },
       "potter": {
          "potter_description": {
-            "display_name": "Potter",
-            "description": "Makes useful goods from clay. Upgradeable to the Mason",
-            "requirements": "A level 4 Mason and a Potter's Cutter, crafted by the Carpenter",
+            "display_name": "Potier",
+            "description": "Fabrique des objets utiles avec de l'argile. Evolution du tailleur de pierre.",
+            "requirements": "Un tailleur de pierre niv4 et une spatule de potier fabriquée par le menuisier",
             "workshop": {
-               "name": "Potter's Wheel",
-               "description": "insert description here",
-               "long_description": "The Potter crafts useful goods and decorative items from clay."
+               "name": "Tour de potier",
+               "description": "Atelier pour fabriquer des objets d'argile.",
+               "long_description": "Le potier fabrique des objets et des décorations à partir d'argile."
             }
          },
          "recipes": {
             "small_urn_recipe": {
-               "description": "For compactly storing up to 8 items",
-               "recipe_name": "Small Urn",
-               "flavor": "Mischevious kids break these pots all the time, looking for treasure."
+               "description": "Pour ranger jusqu'à 8 objets.",
+               "recipe_name": "Petite urne",
+               "flavor": "Les garnements à la recherche de trésors cassent des pots tout le temps."
             },
-            "storage_name": "Storage",
+            "storage_name": "Rangement",
             "large_urn_recipe": {
-               "description": "For compactly storing up to 32 items",
-               "recipe_name": "Large Urn",
-               "flavor": "Once we put things in, how will we get them out? Don't think about it too much"
+               "description": "Pour ranger jusqu'à 32 objets.",
+               "recipe_name": "Grande urne",
+               "flavor": "Une fois que l'on a mis des choses dedans, comment on les en sort ? Ne demandez pas !"
             },
             "clay_lamp_recipe": {
-               "description": "Its flame brings a warm glow at night.",
-               "recipe_name": "Clay Oil Lamp"
+               "description": "Sa flamme donne une lumière chaude la nuit.",
+               "recipe_name": "Lampe à huile d'argile"
             },
             "clay_wall_lamp_recipe": {
-               "description": "Its flame brings a warm glow at night.",
-               "recipe_name": "Wall Mounted Clay Oil Lamp"
+               "description": "Sa flamme donne une lumière chaude la nuit.",
+               "recipe_name": "Lampe à huile murale d'argile"
             },
             "garden_gnome_recipe": {
-               "description": "Fashioned after mythical forest spirits.",
-               "recipe_name": "Tiny Garden Guardian",
-               "flavor": "Designed by Grandmaster crafter The_M"
+               "description": "Inspiré par les esprits mythiques de la forêt.",
+               "recipe_name": "Petit gardien des jardins",
+               "flavor": "Conception par The_M, Grand Maître Artisan."
             },
-            "decoration_name": "Decoration"
+            "decoration_name": "Décoration"
          },
          "potter_workbench": {
             "potter_workbench_ghost": {
-               "display_name": "Pottery Wheel",
-               "description": "Workshop for making clay goods"
+               "display_name": "Tour de potier",
+               "description": "Atelier pour fabriquer des objets d'argile."
             }
          },
          "potter_cutter": {
-            "display_name": "Potter's Cutter",
-            "description": "Used to form civilization from dirt!",
+            "display_name": "Spatule du potier",
+            "description": "Utilisé pour modeler la civilisation depuis la terre !",
             "potter_cutter_talisman": {
-               "display_name": "Potter's Cutter",
-               "description": "Promotes a hearthling into a Potter."
+               "display_name": "Spatule du potier",
+               "description": "Requis pour promouvoir un hearthling en potier."
             }
          },
          "potter_outfit": {
-            "display_name": "Potter's Outfit",
-            "description": "Earth sploches are part of it's intense style."
+            "display_name": "Blouse de potier",
+            "description": "Les tâches de terres font partis de son sytle... particulier."
          }
       },
 	  "shepherd": {
@@ -5761,7 +5761,7 @@
 			},
 			"level_4_data": {
                "perk_000_name": "Super sac-à-dos",
-               "perk_000_description": "Le trappeur est devenu un maître du packetage. +8 à l'espace de son sac-à-dos."
+               "perk_000_description": "Le trappeur est devenu un maître du paquetage. +8 à l'espace de son sac-à-dos."
 			}
 		 },
 		 "snare_trap": {
@@ -5832,7 +5832,7 @@
 			},
 			"level_4_data": {
                "perk_000_name": "Amélioration de l'ingéniosité (à venir)",
-               "perk_000_description": "Le tisserand améliore les recettes de bases en y ajoutant plus de fonctionalités."
+               "perk_000_description": "Le tisserand améliore les recettes de bases en y ajoutant plus de fonctionnalités."
 			},
 			"level_1_data": {
                "perk_000_name": "Catalogue standard",
@@ -5909,7 +5909,7 @@
                "flavor": "Ce que vous voyez dans la profondeur de ses noeux vous renvoi à vous-même."
 			},
 			"thread_recipe": {
-               "description": "Tout doux et totelement nécessaire à la fabrication du tissu.",
+               "description": "Tout doux et totalement nécessaire à la fabrication du tissu.",
                "recipe_name": "Bobine de fil",
                "flavor": "Chaque gramme de fibre ne tend qu'à devenir un gilet."
 			},
@@ -5932,10 +5932,10 @@
 			"weaver_loom_recipe": {
                "description": "Assemble des fils à d'autres fils jusqu'à l'obtention d'un tissu.",
                "recipe_name": "Métier à tisser",
-               "flavor": "Patiente araignée, tisserand, poête, reserre encore la trame du destin --Rayya's Rhyme"
+               "flavor": "Patiente araignée, tisserand, poète, resserre encore la trame du destin --Rayya's Rhyme"
 			},
 			"weaver_spinning_wheel_recipe": {
-               "description": "Transforme ce qui est emmélé en fil.",
+               "description": "Transforme ce qui est emmêlé en fil.",
                "recipe_name": "Rouet de tisserand",
                "flavor": "L'araignée sourit; ses huit yeux brillent. 'Quelque chose pour rien, certains sont doux et d'autres amers.'"
 			},
