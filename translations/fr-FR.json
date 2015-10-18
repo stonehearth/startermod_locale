@@ -163,7 +163,8 @@
 			"save_new": "Nouvelle Sauvegarde",
 			"load_game": "Charger Partie",
 			"game_different_version": "Version de la sauvegarde incompatible",
-			"delete_incompatible_saves": "Supprimer les sauvegardes incomaptibles"
+			"delete_incompatible_saves": "Supprimer les sauvegardes incomaptibles",
+            "save_time": "Sauvegardé à [str(save_time)]"
 		 },
 		 "common": {
 			"ok": "OK",
@@ -480,7 +481,7 @@
 			"immigration_report": {
                "title": "Résumé quotidien",
 			   "immigration_report_title": "Rapport d'immigration",
-               "population_label": "Population",
+               "population_label": "Population de [str(town_name)]",
                "next_requirements_label": "Prérequis pour l'arrivé d'un nouveau hearthling"
 			},
 			"collection_quest": {
@@ -570,37 +571,44 @@
 			   "wall": {
                   "material": "Matériaux pour murs",
                   "wood_resource": "Murs en bois",
-                  "stone_resource": "Murs en pierre"
+                  "stone_resource": "Murs en pierre",
+                  "clay_resource": "Murs en argile"
 			   },
 			   "floor": {
                   "material": "Matériaux pour sols",
                   "wood_resource": "Plancher en bois",
-                  "stone_resource": "Sol en pierre"
+                  "stone_resource": "Sol en pierre",
+                  "clay_resource": "Sol en argile"
 			   },
 			   "roof": {
                   "material": "Matériaux de toitures",
                   "wood_resource": "Tuiles en bois",
-                  "stone_resource": "Tuiles en pierre"
+                  "stone_resource": "Tuiles en pierre",
+                  "clay_resource": "Tuiles en argile"
 			   },
 			   "column": {
                   "material": "Matériaux pour colonnes",
                   "wood_resource": "Colonnes en bois",
-                  "stone_resource": "Colonnes en pierre"
+                  "stone_resource": "Colonnes en pierre",
+                  "clay_resource": "Colonnes en argile"
 			   },
 			   "road": {
                   "material": "Matériaux pour routes",
                   "wood_resource": "Route en bois",
-                  "stone_resource": "Route en pierre"
+                  "stone_resource": "Route en pierre",
+                  "clay_resource": "Route en argile"
 			   },
 			   "doors": {
                   "material": "Matériaux pour portes",
-                  "wood_resource": "Portes en bois",
-                  "stone_resource": "Portes en pierre"
+                  "wood_resource": "Porte en bois",
+                  "stone_resource": "Porte en pierre",
+                  "clay_resource": "Porte en argile"
 			   },
 			   "windows": {
                   "material": "Matériaux pour fenêtres",
                   "wood_resource": "Fenêtre en bois",
-                  "stone_resource": "Fenêtre en pierre"
+                  "stone_resource": "Fenêtre en pierre",
+                  "clay_resource": "Fenêtre en argile"
 			   }
 			},
 			"start_building_confirm": {
@@ -640,7 +648,8 @@
 			   "poyo_pasture_name": "Poulailler de poyo",
 			   "sheep_pasture_description": "Les moutons produisent de la laine et peuvent être une source de viande.",
 			   "rabbit_pasture_description": "Les lapins peuvent être une source de viande.",
-			   "poyo_pasture_description": "Les poyos produisent des oeufs, un ingrédient de cuisine précieux !"
+			   "poyo_pasture_description": "Les poyos produisent des oeufs, un ingrédient de cuisine précieux !",
+               "num_animals": "Animaux :"
 			},
 			"stockpile": {
 			   "default_stockpile_name": "Stockage n°[str(self.unit_info.custom_name)]",
@@ -686,7 +695,7 @@
 			}
 		 },
 		 "show_workshop": {
-			"workshop_title": "Ordres de travail",
+			"workshop_title": "[str(job_name)] ordres de travail",
             "placeholder": "Texte à chercher",
             "show_workshop_description": "Appartient à [name(owner)]",
             "unclaimed_workshop_description": "Sans propriétaire",
@@ -702,16 +711,16 @@
 			"crafting_status_queued": "Dans la file",
 			"workshop_paused_status": "en pause...",
 			"workshop_remove_confirm": "Retirer&nbsp;?",
-			"workshop_open": "Ouvert !",
+			"workshop_open": "Ouvert&nbsp;!",
 			"workshop_closed": "Fermé",
             "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d'options de fabrication !",
-            "craft": "Fabriquer !",
+            "craft": "Fabriquer&nbsp;!",
             "craftable_locked": "Dévérouillé au niveau [str(level)]",
             "workshop_requirement_title": "Atelier",
-            "workshop_none_required": "Aucun pré-requis !",
+            "workshop_none_required": "Aucun pré-requis&nbsp;!",
             "workshop_required": "Nécessite de placer ",
             "level_requirement_title": "Niveau requis",
-            "level_requirement_none": "Aucun pré-requis !",
+            "level_requirement_none": "Aucun pré-requis&nbsp;!",
             "level_requirement_needed": "Nécessite un ",
             "level_requirement_level": " de niveau ",
             "too_many_symbol": "trop",
@@ -719,12 +728,12 @@
             "queue_anyway": "Mettre en attente tout de même",
 			"recipe_tab": "Recettes",
 			"orders_tab": "Ordres",
-			"missing_ingredients": "Ingrédients manquants : "
+			"missing_ingredients": "Ingrédients manquants&nbsp;: "
 		 },
 		 "town_overview": {
             "title": "Rapport sur la ville",
 			"journal": {
-               "default_message": "Pas encore d'entrée !",
+               "default_message": "Pas encore d'entrée&nbsp;!",
 			   "signature": "--[name(entry.person)]",
 			   "today": "Aujourd'hui",
                "town_log": "Rapport de la ville ",
@@ -930,9 +939,9 @@
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
                "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
-               "enable_cpp_ai": "Enable CPP Ai",
+               "enable_cpp_ai": "Enable CPP Ai (nécessite un redémarrage)",
                "enable_cpp_ai_description": "Utiliser le nouveau système d'IA codé en C++. Il devrait être plus rapide que l'ancien système en Lua et devrais mieux supporter les grands villages.",
-               "enable_subspace_pathfinder": "Activer le pathfinder du sub-espace",
+               "enable_subspace_pathfinder": "Activer le pathfinder du sub-espace (nécessite un redémarrage)",
                "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!"
             }
 		 },
@@ -953,6 +962,27 @@
                "cancel": "Nope"
             }
 		 },
+         "select_game_story": {
+            "title": "Select the details of your epic adventure:",
+            "select_kingdom": "Select a different kingdom:",
+            "kingdom_description": "Description: ",
+            "kingdom_favored_biome": "Favored Biome: ",
+            "pick_button": "Pick ",
+            "select_biome": "Select a different biome:",
+            "option_summary": "Option Summary: ",
+            "curr_kingdom": "Embark as: ",
+            "curr_biome": "To the wild lands of: ",
+            "continue": "Continue!",
+            "ascendancy_title": "The Ascendancy",
+            "ascendancy_quote": "Sheep? Check. Hoe? Check. Swords? Check. Embark!",
+            "ascendancy_description": "Earnest and hardworking, loyal and well-rounded. Citizens of the Ascendancy chop, build and farm, confident that the known world is theirs to inhabit.",
+            "select_difficulty": "Select a different difficulty: ",
+            "normal_game": "Normal Game",
+            "peaceful_game": "Peaceful Game",
+            "normal_game_description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
+            "peaceful_game_description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
+            "curr_difficulty": "In story mode: "
+         },
 		 "embark": {
 			"title": "Préparez vous pour l'aventure !",
 			"citizen_info": "Liste d'expédition",
@@ -1102,6 +1132,7 @@
             "pelt_resource_name": "Peau",
             "cloth_resource_name": "Rouleau de tissu",
             "wood_resource_name": "Bûche",
+ 			"clay_resource_name": "Boule d'argile",
             "thread_resource_name": "Fil",
             "leather_resource_name": "Cuir en rouleau",
             "fiber_resource_name": "Lot de fibres",
@@ -1886,9 +1917,9 @@
 			   "display_name": "Affamé",
 			   "description": "Un hearthling affamé a gravement besoin de nourriture !"
 			},
-			"starving_animal_buff": {
-			   "display_name": "Affamé",
-			   "description": "Cet animal a gravement besoin de nourriture ! Il ne vaudra rien tant qu'il sera affamé."
+		"starving_animal_buff": {
+               "display_name": "Affamé",
+               "description": "This animal is hungry! Have a cook create some feed so your shepherd can feed it."
 			}
 		 },
 		 "stopped": {
@@ -3068,6 +3099,12 @@
 			   "display_name": "Grande caisse",
 			   "description": "Boîte de rangement"
 			}
+         },
+         "large_urn": {
+            "large_urn_ghost": {
+               "display_name": "Large Urn",
+               "description": "Storage container"
+			}
 		 },
 		 "leather_bound_chest": {
 			"leather_bound_chest_ghost": {
@@ -3087,10 +3124,16 @@
                "description": "Boîte de rangement"
 			}
 		 },
-		 "barrel": {
-			"barrel_ghost": {
-               "display_name": "Coffre en cuir lié",
-			   "description": "Boîte de rangement"
+		"barrel": {
+            "barrel_ghost": {
+               "display_name": "Square Barrel",
+               "description": "Storage container"
+            }
+         },
+         "small_urn": {
+            "small_urn_ghost": {
+               "display_name": "Small Urn",
+               "description": "For storing things"
             }
          },
          "vault": {
@@ -3186,7 +3229,7 @@
 		 },
 		 "carrot_crop": {
 			"display_name": "Carotte",
-			"description": "Fast-growning, but pretty bland on its own.",
+			"description": "Fast-growing, but pretty bland on its own.",
 			"growth_stage": {
 			   "003": {
                   "name": "Carotte mûre",
@@ -3681,6 +3724,30 @@
 			"wooden_wall_lantern_fine_ghost": {
 			   "display_name": "Belle lanterne murale en bois",
 			   "description": "Se fixe facilement aux murs"
+ 			}
+         },
+         "cactus_flower": {
+            "cactus_flower_ghost": {
+               "display_name": "Cactus Flower",
+               "description": "Handle with care!"
+            }
+         },
+         "clay_lamp": {
+            "clay_lamp_ghost": {
+               "display_name": "Clay Oil Lamp",
+               "description": "Its flame brings a warm glow at night."
+            }
+         },
+         "clay_wall_lamp": {
+            "clay_wall_lamp_ghost": {
+               "display_name": "Wall mounted clay lamp",
+               "description": "Provides a warm glow at night."
+            }
+         },
+         "garden_gnome": {
+            "garden_gnome_ghost": {
+               "display_name": "Garden Gnome",
+               "description": "Plant Guardians"
 			}
 		 }
 	  },
@@ -4334,13 +4401,19 @@
 		 },
 		 "stone": {
 			"hunk_of_stone": {
-               "display_name": "Pierre brute",
-               "description": "Une pierre banale et bien lourde."
-			}
+                "display_name": "Pierre brute",
+               "description": "Une lourde, pierre ordinaire"
+            }
+         },
+         "clay": {
+            "clay_mound": {
+               "display_name": "Boule d'argile",
+               "description": "Lourd et doux au toucher"
+            }
 		 },
 		 "tin": {
 			"tin_ore": {
-               "display_name": "Mainerai d'étain",
+               "display_name": "Minerai d'étain",
                "description": "Un bloc d'étain natif"
 			}
 		 },
@@ -4985,7 +5058,7 @@
                "flavor": "Est-ce que la caisse qui stocke tout ce qui ne peut se stocker soi-même se stoke-t-elle elle-même?"
 			},
 			"leather_bound_chest_recipe": {
-               "description": "Pour un rangement compact ayant du style.",
+               "description": "Stylishly stores up to 64 items.",
                "recipe_name": "Coffre à lanières de cuir",
                "flavor": "Comme celui de Papy !"
 			},
@@ -5150,6 +5223,10 @@
             "display_name": "Cuisinier",
             "description": "Avec les légumes et la viande de base, le cuisinier mitonne de délicieux repas trés copieux.",
             "requirements": "Agriculteur niveau 2 et une cuillère de cuisinier, fabriquée par le tailleur de pierre.",
+            "workshop": {
+               "name": "Chaudron en pierre",
+               "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
+            },
 			"level_6_data": {
                "title": "Grand chef",
                "perk_000_name": "10 000 Heures (à venir)",
@@ -5389,6 +5466,11 @@
             "display_name": "Tailleur de pierre",
             "description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
             "requirements": "Maillet et ciseaux de tailleur de pierre, fabriqués par le menuisier.",
+			"workshop": {
+               "name": "Mason's Workshop",
+               "description": "insert description here",
+               "long_description": "The Mason crafts building materials and decorative items from stone."
+            },
 			"level_6_data": {
 			   "title": "Maître tailleur",
 			   "perk_000_name": "10 000 Heures (à venir)",
@@ -5497,7 +5579,7 @@
                "flavor": "D'extérieur !"
 			},
             "stone_chest_recipe": {
-               "description": "Un endroit imposant ou ranger les choses.",
+               "description": "Un endroit imposant ou ranger jusqu'à 64 choses.",
                "recipe_name": "Coffre en pierre",
                "flavor": "'Ecoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.'--Edolf, barde ambulant"
             },
@@ -5546,6 +5628,63 @@
 			"requirements": "???"
 		 }
 	  },
+      "potter": {
+         "potter_description": {
+            "display_name": "Potter",
+            "description": "Makes useful goods from clay. Upgradeable to the Mason",
+            "requirements": "A level 4 Mason and a Potter's Cutter, crafted by the Carpenter",
+            "workshop": {
+               "name": "Potter's Wheel",
+               "description": "insert description here",
+               "long_description": "The Potter crafts useful goods and decorative items from clay."
+            }
+         },
+         "recipes": {
+            "small_urn_recipe": {
+               "description": "For compactly storing up to 8 items",
+               "recipe_name": "Small Urn",
+               "flavor": "Mischevious kids break these pots all the time, looking for treasure."
+            },
+            "storage_name": "Storage",
+            "large_urn_recipe": {
+               "description": "For compactly storing up to 32 items",
+               "recipe_name": "Large Urn",
+               "flavor": "Once we put things in, how will we get them out? Don't think about it too much"
+            },
+            "clay_lamp_recipe": {
+               "description": "Its flame brings a warm glow at night.",
+               "recipe_name": "Clay Oil Lamp"
+            },
+            "clay_wall_lamp_recipe": {
+               "description": "Its flame brings a warm glow at night.",
+               "recipe_name": "Wall Mounted Clay Oil Lamp"
+            },
+            "garden_gnome_recipe": {
+               "description": "Fashioned after mythical forest spirits.",
+               "recipe_name": "Tiny Garden Guardian",
+               "flavor": "Designed by Grandmaster crafter The_M"
+            },
+            "decoration_name": "Decoration"
+         },
+         "potter_workbench": {
+            "potter_workbench_ghost": {
+               "display_name": "Pottery Wheel",
+               "description": "Workshop for making clay goods"
+            }
+         },
+         "potter_cutter": {
+            "display_name": "Potter's Cutter",
+            "description": "Used to form civilization from dirt!",
+            "potter_cutter_talisman": {
+               "display_name": "Potter's Cutter",
+               "description": "Promotes a hearthling into a Potter."
+            }
+         },
+         "potter_outfit": {
+            "display_name": "Potter's Outfit",
+            "description": "Earth sploches are part of it's intense style."
+         }
+      },
 	  "shepherd": {
 		 "shepherd_description": {
 			"display_name": "Berger",
@@ -5879,7 +6018,7 @@
 		 "job": {
 			"starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
 			"default_level_title": "[str(self.stonehearth:job.curr_job_name)] niveau [str(self.stonehearth:job.curr_job_level)]",
-			"default_level_announcement": "[name(i18n_data.entity)] est passé [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
+			"default_level_announcement": "[name(i18n_data.entity)] est devenu [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
 			"general_description_desc": "Santé max. augmentée !",
 			"attribute_up_desc": "Tous les attributs augmentés !"
 		 }
