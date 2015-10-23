@@ -162,7 +162,8 @@
         "save_new": "[!!Ŋĕŵ Śąvĕ!!]",
         "load_game": "[!!Łŏǻđ Ğǻmė!!]",
         "game_different_version": "[!!ĩņĉŏmƿáťĩƂĺě ŝávě věŗŝĩŏņ!!]",
-        "delete_incompatible_saves": "[!!Đěĺěťě ĨņĉŏmƿáťĩƂĺě Ŝávěŝ!!]"
+        "delete_incompatible_saves": "[!!Đěĺěťě ĨņĉŏmƿáťĩƂĺě Ŝávěŝ!!]",
+        "save_time": "[!!Şȁvĕď [str(save_time)]!!]"
       },
       "common": {
         "ok": "[!!ŐĶ!!]",
@@ -480,7 +481,7 @@
         "immigration_report": {
           "title": "[!!Ďàĭľŷ Ũƥďàţȅ!!]",
           "immigration_report_title": "[!!Įmmįġŕāţįőń Řěƥőŕţ!!]",
-          "population_label": "[!!ƥőƥűĺȁťĩőŋ!!]",
+          "population_label": "[!![str(town_name)] ƿơƿůľãţĭơŉ!!]",
           "next_requirements_label": "[!!Ņęxť ħęăŗťħļīņģ ŗęǭūīŗęmęņťš...!!]"
         },
         "collection_quest": {
@@ -570,37 +571,44 @@
           "wall": {
             "material": "[!!Ŵáŀŀ Máťȇŗįáŀ!!]",
             "wood_resource": "[!!Ŵơơđěƞ Ŵȃļļ!!]",
-            "stone_resource": "[!!Şťőŋę Ŵȁĺĺ!!]"
+            "stone_resource": "[!!Şťőŋę Ŵȁĺĺ!!]",
+            "clay_resource": "[!!Ĉłǻƴ Ŵǻłł!!]"
           },
           "floor": {
             "material": "[!!Ƒłőőř Mâŧēřıâł!!]",
             "wood_resource": "[!!Ŵōōďȅń Ƒľōōŕ!!]",
-            "stone_resource": "[!!Šŧơƞě Ƒļơơř!!]"
+            "stone_resource": "[!!Šŧơƞě Ƒļơơř!!]",
+            "clay_resource": "[!!Ċĺȁȳ Ƒĺőőŗ!!]"
           },
           "roof": {
             "material": "[!!Ŗŏŏƒ Máťȇŗįáŀ!!]",
             "wood_resource": "[!!Ŵơơđěƞ Ʀơơƒ!!]",
-            "stone_resource": "[!!Şťőŋę Řőőƒ!!]"
+            "stone_resource": "[!!Şťőŋę Řőőƒ!!]",
+            "clay_resource": "[!!Ĉłǻƴ Ŗŏŏƒ!!]"
           },
           "column": {
             "material": "[!!Čơĺůmŉ Mãţĕŕĩãĺ!!]",
             "wood_resource": "[!!Ŵŏŏđȇņ Ĉŏŀūmņ!!]",
-            "stone_resource": "[!!Śţōńȅ Ćōľũmń!!]"
+            "stone_resource": "[!!Śţōńȅ Ćōľũmń!!]",
+            "clay_resource": "[!!Čļȃɏ Čơļųmƞ!!]"
           },
           "road": {
             "material": "[!!Ŗŏáđ Máťȇŗįáŀ!!]",
             "wood_resource": "[!!Ŵơơđěƞ Ʀơȃđ!!]",
-            "stone_resource": "[!!Şťőŋę Řőȁď!!]"
+            "stone_resource": "[!!Şťőŋę Řőȁď!!]",
+            "clay_resource": "[!!Ĉłǻƴ Ŗŏǻđ!!]"
           },
           "doors": {
             "material": "[!!Đŏŏŗ Máťȇŗįáŀ!!]",
             "wood_resource": "[!!Ŵơơđěƞ Ɗơơř!!]",
-            "stone_resource": "[!!Şťőŋę Ɖőőŗ!!]"
+            "stone_resource": "[!!Şťőŋę Ɖőőŗ!!]",
+            "clay_resource": "[!!Ĉłǻƴ Đŏŏŕ!!]"
           },
           "windows": {
             "material": "[!!Ŵĩŉđơŵ Mãţĕŕĩãĺ!!]",
             "wood_resource": "[!!Ŵŏŏđȇņ Ŵįņđŏŵ!!]",
-            "stone_resource": "[!!Śţōńȅ Ŵĭńďōŵ!!]"
+            "stone_resource": "[!!Śţōńȅ Ŵĭńďōŵ!!]",
+            "clay_resource": "[!!Čļȃɏ Ŵīƞđơŵ!!]"
           }
         },
         "start_building_confirm": {
@@ -640,7 +648,8 @@
           "poyo_pasture_name": "[!!Ƥŏƴŏ Ĉŏŏƿ!!]",
           "sheep_pasture_description": "[!!Šħȅȅƿ ƿřơđųčȅ ŵơơľ ȃƞđ čȃƞ ɓȅ ȃ šơųřčȅ ơƒ mȅȃŧ.!!]",
           "rabbit_pasture_description": "[!!ŖǻƄƄįţŝ ĉǻŉ Ƅȅ ǻ ŝŏůŕĉȅ ŏƒ Ĵȅŕķƴ.!!]",
-          "poyo_pasture_description": "[!!Ƥőȳőş ƥřőďŭċĕ ĕġġş, â vâĺŭâƃĺĕ ċőőƙĩňġ ĩňġřĕďĩĕňŧ.!!]"
+          "poyo_pasture_description": "[!!Ƥőȳőş ƥřőďŭċĕ ĕġġş, â vâĺŭâƃĺĕ ċőőƙĩňġ ĩňġřĕďĩĕňŧ.!!]",
+          "num_animals": "[!!Ąňįmąŀś:!!]"
         },
         "stockpile": {
           "default_stockpile_name": "[!!Şťőċĸƥīļě Ņő.[str(self.unit_info.custom_name)]!!]",
@@ -686,7 +695,7 @@
         }
       },
       "show_workshop": {
-        "workshop_title": "[!!Čŕãƒţĩŉģ Ơŕđĕŕš!!]",
+        "workshop_title": "[!![str(job_name)] Čŗăƒťīņģ Ơŗđęŗš!!]",
         "placeholder": "[!!Ŧȳƥē ŧő şēâřċĥ!!]",
         "show_workshop_description": "[!!Őŵŋĕď ƅȳ [name(owner)]!!]",
         "unclaimed_workshop_description": "[!!Ůŉĉłǻımėđ!!]",
@@ -930,10 +939,11 @@
           "enable_speed_3_description": "[!!Áđđŝ á ņĕŵ ŝƿĕĕđ ŏƿťĩŏņ ĩņ ťħĕ Ƃŏťťŏm ŗĩğħť ƿáņĕĺ ťħáť ŵĩĺĺ ŗūņ ťħĕ ğámĕ áť 4x ŝƿĕĕđ!!!]",
           "default_storage_filter_none": "[!!Šťơŗăģę ƒīļťęŗ đęƒăūļťš ťơ Ņơņę!!]",
           "default_storage_filter_none_description": "[!!Ŵħȅƞ čřȅȃŧīƞģ ȃ ƞȅŵ šŧơčƙƿīļȅ ơř ƿųŧŧīƞģ đơŵƞ ȃ ƞȅŵ čřȃŧȅ, ŧħȅ đȅƒȃųļŧ ƒīļŧȅř ơƞ ŧħȅ šŧơřȃģȅ ŵīļļ ɓȅ šȅŧ ŧơ 'Ņơƞȅ' īƞšŧȅȃđ ơƒ 'Ȃļļ'!!]",
-          "enable_cpp_ai": "[!!ȆņáƂŀȇ ĈƤƤ Áį!!]",
+          "enable_cpp_ai": "[!!ĘņăƂļę ČƤƤ ĂĪ (Ʀęǭūŗęš Ʀęšťăŗť)!!]",
           "enable_cpp_ai_description": "[!!Ŭśė ŧĥė ňėŵ ąį śŷśŧėm ŧĥąŧ įś ŵřįŧŧėň įň Ć++. Ŧĥįś śĥōŭŀď ƃė ƒąśŧėř ŧĥąň ŧĥė ōŀď ąį śŷśŧėm ąňď śĥōŭŀď ĥąňďŀė ŀąřĝė ŧōŵňś ƃėŧŧėř.!!]",
-          "enable_subspace_pathfinder": "[!!Ȅňâƃļȅ Şŭƃşƥâċȅ Ƥâŧĥƒīňďȅř!!]",
-          "enable_subspace_pathfinder_description": "[!!Ūšē ťħē ņēŵ ƿăťħƒĩņđēŗ ťħăť ĩš mơŗē ēƒƒĩčĩēņť ăņđ čăņ šēăŗčħ ƒăŗťħēŗ ťħăņ ťħē ơĺđ ƿăťħ ƒĩņđēŗ. Ħơŵēvēŗ, ƿăťħĩņģ ŵơņĸĩņēšš măɏ ơččūŗ. Ƥĺēăšē ŗēƿơŗť ăņɏ ƿăťħĩņģ ĩššūēš ɏơū ƒĩņđ!!!]"
+          "enable_subspace_pathfinder": "[!!Ėňąƃłė Śŭƃśƥąćė Ƥąŧĥƒıňďėř (Ŕėɋŭřėś Ŕėśŧąřŧ)!!]",
+          "enable_subspace_pathfinder_description": "[!!Ūšē ťħē ņēŵ ƿăťħƒĩņđēŗ ťħăť ĩš mơŗē ēƒƒĩčĩēņť ăņđ čăņ šēăŗčħ ƒăŗťħēŗ ťħăņ ťħē ơĺđ ƿăťħ ƒĩņđēŗ. Ħơŵēvēŗ, ƿăťħĩņģ ŵơņĸĩņēšš măɏ ơččūŗ. Ƥĺēăšē ŗēƿơŗť ăņɏ ƿăťħĩņģ ĩššūēš ɏơū ƒĩņđ!!!]",
+          "max_citizens": "[!!Màx Ćĭţĭźȅńś!!]"
         }
       },
       "title_screen": {
@@ -952,6 +962,27 @@
           "accept": "[!!Ȳėš, šėƞđ čřȃšħ řėƿơřŧš!!]",
           "cancel": "[!!Ɲōƥě!!]"
         }
+      },
+      "select_game_story": {
+        "title": "[!!Şēľēċţ ţĥē ďēţāĭľş őƒ ȳőũŕ ēƥĭċ āďvēńţũŕē:!!]",
+        "select_kingdom": "[!!Šȇľȇčţ ã đĭƒƒȇŕȇŉţ ķĭŉģđơm:!!]",
+        "kingdom_description": "[!!Đȇŝĉŗįƿťįŏņ: !!]",
+        "kingdom_favored_biome": "[!!Ƒãvơŕĕđ ʙĩơmĕ: !!]",
+        "pick_button": "[!!Ƥĩĉƙ !!]",
+        "select_biome": "[!!Ŝěĺěĉť á đĩƒƒěŗěņť Ƃĩŏmě:!!]",
+        "option_summary": "[!!Ōƥťīōŋ Śűmmäŗŷ: !!]",
+        "curr_kingdom": "[!!Ěmɓȃřƙ ȃš: !!]",
+        "curr_biome": "[!!Ťő ťĥĕ ŵĭľď ľȁŋďş őƒ: !!]",
+        "continue": "[!!Ĉŏŉţıŉůė!!!]",
+        "ascendancy_title": "[!!Ŧĥē Âşċēňďâňċȳ!!]",
+        "ascendancy_quote": "[!!Śĥȇȇƥ? Ćĥȇćķ. Ĥōȇ? Ćĥȇćķ. Śŵōŕďś? Ćĥȇćķ. Ȇmƀàŕķ!!!]",
+        "ascendancy_description": "[!!Ęāŕńęşţ āńď ĥāŕďŵőŕķĩńġ, ĺőȳāĺ āńď ŵęĺĺ-ŕőũńďęď. Ċĩţĩžęńş őƒ ţĥę Āşċęńďāńċȳ ċĥőƥ, ƀũĩĺď āńď ƒāŕm, ċőńƒĩďęńţ ţĥāţ ţĥę ķńőŵń ŵőŕĺď ĩş ţĥęĩŕş ţő ĩńĥāƀĩţ.!!]",
+        "select_difficulty": "[!!Šęļęčť ă đīƒƒęŗęņť đīƒƒīčūļťɏ: !!]",
+        "normal_game": "[!!Ņơřmȃļ Ģȃmě!!]",
+        "peaceful_game": "[!!Ƥȇáĉȇƒūŀ Ğámȇ!!]",
+        "normal_game_description": "[!!Ǻđvėŉţůŕė ƒŏŕţħ įŉ ǻ ŵŏŕŀđ ƒŕǻůğħţ ŵįţħ đǻŉğėŕ. Ȳŏůŕ ţŏŵŉ ŵįŀŀ Ƅė ŝůƄĴėĉţ ţŏ ŕǻįđįŉğ ėŉėmįėŝ.!!]",
+        "peaceful_game_description": "[!!À śàńďƀōx-mōďȅ, ŵĥȅŕȅ ŷōũ'ŕȅ ƒŕȅȅ ţō ƀũīļď ŷōũŕ ţōŵń ŵīţĥōũţ ŵōŕŕŷīńĝ àƀōũţ īńvàďȅŕś ŵĥàţśōȅvȅŕ.!!]",
+        "curr_difficulty": "[!!Ĩŉ šţơŕɏ mơđĕ: !!]"
       },
       "embark": {
         "title": "[!!Ƥřěƥąřě ŧō śěŧ ōŭŧ ƒōř ąďvěňŧŭřě!!]",
@@ -1102,6 +1133,7 @@
         "pelt_resource_name": "[!!Ƒŭř Ƥĕŀŧ!!]",
         "cloth_resource_name": "[!!Ɓŏŀť ŏƒ Ĉŀŏťħ!!]",
         "wood_resource_name": "[!!Ŵōōď Ŀōĝ!!]",
+        "clay_resource_name": "[!!Mŏūņđ ŏƒ Ĉŀáƴ!!]",
         "thread_resource_name": "[!!Ţĥŕȇāď!!]",
         "leather_resource_name": "[!!ʙơĺţ ơƒ Ĺĕãţħĕŕ!!]",
         "fiber_resource_name": "[!!ʙůŉđĺĕ ơƒ ƑĩƄĕŕ!!]",
@@ -1887,8 +1919,8 @@
           "description": "[!!Ŝťáŗvĭņğ ħėáŗťħľĭņğ ņėėđŝ ƒŏŏđ Ƃáđľƴ!!!]"
         },
         "starving_animal_buff": {
-          "display_name": "[!!Śŧąřvįňĝ!!]",
-          "description": "[!!Ţħĩš ãŉĩmãĺ ŉȅȅđš ƒơơđ Ƅãđĺɏ! Ĩţ ŵĩĺĺ ŉơţ ƿŕơđůčȅ ŕȅšơůŕčȅš ŵħĩĺȅ šţãŕvĩŉģ.!!]"
+          "display_name": "[!!Ĥũńġŕȳ!!]",
+          "description": "[!!Ţħīŝ ǻŉīmǻļ īŝ ħůŉğŕƴ! Ħǻvě ǻ ĉŏŏķ ĉŕěǻţě ŝŏmě ƒěěđ ŝŏ ƴŏůŕ ŝħěƿħěŕđ ĉǻŉ ƒěěđ īţ.!!]"
         }
       },
       "stopped": {
@@ -3069,6 +3101,12 @@
           "description": "[!!Ŝŧŏřåğę ĉŏƞŧåĭƞęř!!]"
         }
       },
+      "large_urn": {
+        "large_urn_ghost": {
+          "display_name": "[!!Łǻŕğė Ůŕŉ!!]",
+          "description": "[!!Ŝŧŏřåğę ĉŏƞŧåĭƞęř!!]"
+        }
+      },
       "leather_bound_chest": {
         "leather_bound_chest_ghost": {
           "display_name": "[!!Łȅăťħȅŗ ʙơūņđ Čħȅšť!!]",
@@ -3089,8 +3127,14 @@
       },
       "barrel": {
         "barrel_ghost": {
-          "display_name": "[!!Łȅăťħȅŗ ʙơūņđ Čħȅšť!!]",
+          "display_name": "[!!Ŝǭūáŗȇ Ɓáŗŗȇŀ!!]",
           "description": "[!!Ŝŧŏřåğę ĉŏƞŧåĭƞęř!!]"
+        }
+      },
+      "small_urn": {
+        "small_urn_ghost": {
+          "display_name": "[!!Ŝmǻłł Ůŕŉ!!]",
+          "description": "[!!Ƒőŕ şţőŕįńġ ţĥįńġş!!]"
         }
       },
       "vault": {
@@ -3186,7 +3230,7 @@
       },
       "carrot_crop": {
         "display_name": "[!!Ċāŕŕőţ!!]",
-        "description": "[!!Ƒăšť-ģŗơŵņįņģ, Ƃūť ƿŗĕťťɏ Ƃŀăņđ ơņ įťš ơŵņ.!!]",
+        "description": "[!!Ƒāşţ-ġŕőŵĭńġ, ƀũţ ƥŕēţţȳ ƀľāńď őń ĭţş őŵń.!!]",
         "growth_stage": {
           "003": {
             "name": "[!!Ʀīƿě Čȃřřơŧ!!]",
@@ -3212,7 +3256,7 @@
       },
       "corn_crop": {
         "display_name": "[!!Ćōŗŋ!!]",
-        "description": "[!!Ŝļŏŵ-ğřŏŵƞīƞğ, ɓųŧ ŝųƿȇř ƞųŧřīŧīŏųŝ ĉřŏƿ.!!]",
+        "description": "[!!Śĺōŵ-ĝŗōŵĩŋĝ, ƅűť śűƥȅŗ ŋűťŗĩťĩōűś ćŗōƥ.!!]",
         "growth_stage": {
           "003": {
             "name": "[!!Ŗıƿė Ĉŏŕŉ!!]",
@@ -3681,6 +3725,30 @@
         "wooden_wall_lantern_fine_ghost": {
           "display_name": "[!!Ƒĩņě Ŵáĺĺ-mŏūņťěđ Ĺáņťěŗņ!!]",
           "description": "[!!Ęàśıłŷ àţţàćĥęď ţō ŵàłłś!!]"
+        }
+      },
+      "cactus_flower": {
+        "cactus_flower_ghost": {
+          "display_name": "[!!Ĉáĉťūŝ Ƒŀŏŵȇŗ!!]",
+          "description": "[!!Ħåƞđľę ŵĭŧħ ĉåřę!!!]"
+        }
+      },
+      "clay_lamp": {
+        "clay_lamp_ghost": {
+          "display_name": "[!!Ĉŀáƴ Ŏįŀ Ŀámƿ!!]",
+          "description": "[!!Įŧş ƒŀâmę ƃřįňġş â ŵâřm ġŀőŵ âŧ ňįġĥŧ.!!]"
+        }
+      },
+      "clay_wall_lamp": {
+        "clay_wall_lamp_ghost": {
+          "display_name": "[!!Ŵȁľľ mőűŋťĕď ċľȁȳ ľȁmƥ!!]",
+          "description": "[!!Ƥŕővĩďėş ā ŵāŕm ġĺőŵ āţ ńĩġĥţ.!!]"
+        }
+      },
+      "garden_gnome": {
+        "garden_gnome_ghost": {
+          "display_name": "[!!Ĝàŕďȅń Ĝńōmȅ!!]",
+          "description": "[!!Ƥĺãŉţ Ģůãŕđĩãŉš!!]"
         }
       }
     },
@@ -4335,7 +4403,13 @@
       "stone": {
         "hunk_of_stone": {
           "display_name": "[!!Ħūņĸ 'ŏ Ŝťŏņȇ!!]",
-          "description": "[!!Ȃ ħėȃvɏ, ơřđįƞȃřɏ řơčƙ.!!]"
+          "description": "[!!Ȁ ĥĕȁvȳ, őŗďĭŋȁŗȳ ŗőċĸ!!]"
+        }
+      },
+      "clay": {
+        "clay_mound": {
+          "display_name": "[!!Mŏūņđ ŏƒ Ĉŀáƴ!!]",
+          "description": "[!!Ħȇãvɏ ãŉđ čơơľ ţơ ţħȇ ţơůčħ!!]"
         }
       },
       "tin": {
@@ -4985,7 +5059,7 @@
           "flavor": "[!!Đŏĕŝ ťħĕ ĉŗáťĕ ťħáť ŝťŏŗĕŝ áĺĺ ťħĕ ťħĩņğŝ ťħáť đŏ ņŏť ŝťŏŗĕ ťħĕmŝĕĺvĕŝ, ŝťŏŗĕ ĩťŝĕĺƒ?!!]"
         },
         "leather_bound_chest_recipe": {
-          "description": "[!!Ƒōŕ ćōmƥàćţļŷ śţōŕīńĝ ũƥ ţō 16 īţĕmś!!]",
+          "description": "[!!Śŧŷľĭśĥľŷ śŧōřěś ŭƥ ŧō 64 ĭŧěmś.!!]",
           "recipe_name": "[!!Łȅăťħȅŗ ʙơūņđ Čħȅšť!!]",
           "flavor": "[!!Ľĭķȇ ţħȇ ơŉȇ mɏ ģŕãŉđã ħãđ!!!]"
         },
@@ -5142,6 +5216,11 @@
           "description": "[!!Ƒáņĉĩĕŗ ťŏŏĺŝ áĺĺŏŵ ťħĕ ĉáŗƿĕņťĕŗ ťŏ ŵŏŗĸ ŵĩťħ ĉĺŏťħ áņđ ŏťħĕŗ ĉĩvĩĺĩżĕđ ĩņğŗĕđĩĕņťŝ.!!]",
           "recipe_name": "[!!Čăŗƿȅņťȅŗ ŤơơłƂȅņčħ!!]",
           "flavor": "[!!Á mŏŗȅ ȅļȅğáņť ŵŏŗĸŝťáťīŏņ, mŏđȅļȅđ ŏņ á mŏŗȅ ĉīvīļīżȅđ ťīmȅ.!!]"
+        },
+        "potter_cutter_recipe": {
+          "description": "[!!Āłłőŵş ā ĥȅāŕţĥłıńġ ţő māķȅ ţőőłş āńď ġőőďş ƒŕőm ċłāȳ.!!]",
+          "recipe_name": "[!!Ƥơţţĕŕ'š Čůţţĕŕ!!]",
+          "flavor": "[!!Ãŉđ Mơŉķȇɏ šţŕůčķ ţħȇ ȇãŕţħ ŵīţħ ħīš šţãƒƒ. 'Ƒơŕ ɏơů ãŕȇ mɏ čħīļđŕȇŉ, ħȇ šãīđ, ãŉđ ɏơů šħãļļ ŵãŉţ ƒơŕ ŉơţħīŉģ.'!!]"
         }
       }
     },
@@ -5149,7 +5228,11 @@
       "cook_description": {
         "display_name": "[!!Ćōōĸ!!]",
         "description": "[!!Ťĥē ċőőĸ mȁĸēş ďēĺĩċĩőűş, ĥēȁŗťȳ mēȁĺş ƒŗőm ƅȁşē vēġēťȁƅĺēş ȁŋď mēȁťş.!!]",
-        "requirements": "[!!2 ŀēvēŀš ơƒ Ƒãŕmēŕ ãŉđ ã Šţơŉēŵãŕē Šƿơơŉ, čŕãƒţēđ Ƅɏ ţħē Mãšơŉ.!!]",
+        "requirements": "[!!Á ļȅvȅļ 2 Ƒáŗmȅŗ áņđ á Ŝťŏņȅŵáŗȅ Ŝƿŏŏņ, ĉŗáƒťȅđ Ƃƴ ťħȅ Máŝŏņ.!!]",
+        "workshop": {
+          "name": "[!!Şŧőňē Ċâŭłďřőň!!]",
+          "long_description": "[!!Ĥűmōŋĝōűś, ĥĕävŷ ƥōť, śűıťäƅłĕ ƒōŗ ćōōĸıŋĝ űƥ ä ƒĕäśť äť ä ťımĕ!!!]"
+        },
         "level_6_data": {
           "title": "[!!Mȃšŧěř čơơƙ!!]",
           "perk_000_name": "[!!10,000 Ĥőũŕş (ńőţ ĩmƥĺėmėńţėď)!!]",
@@ -5164,7 +5247,7 @@
           "perk_000_description": "[!!Ťħȅ ĉŏŏĸ áđđŝ ņȅŵ ļȅvȅļŝ ŏƒ ƒūņĉťīŏņáļīťƴ ťŏ ĉļáŝŝīĉ ŗȅĉīƿȅŝ.!!]"
         },
         "level_1_data": {
-          "perk_000_name": "[!!Ĉåmƿ Ĉŏŏƙįƞğ -- XXX ŦŎM, ŖĚVĮŜĮŦ ŦĦĚ ĈŎŎƘ ƤĚŖƘŜ!!!!!!!!]",
+          "perk_000_name": "[!!Ćàmƥ Ćōōķĭńĝ!!]",
           "perk_000_description": "[!!Ŧĥė ćōōƙ ćąň mąƙė ƃąśıć, ňŭŧřıŧıōŭś řėćıƥėś.!!]"
         },
         "level_3_data": {
@@ -5388,7 +5471,12 @@
       "mason_description": {
         "display_name": "[!!Måŝŏƞ!!]",
         "description": "[!!Ŧĥȅ Mąśōň ćřąƒŧś ƃŭįŀďįňĝ mąŧȅřįąŀś ąňď ďȅćōřąŧįvȅ įŧȅmś ƒřōm śŧōňȅ.!!]",
-        "requirements": "[!!Mäśōŋ'ś Mäľľęť äŋď Ćĥĭśęľ, ćŗäƒťęď ƅŷ ťĥę ćäŗƥęŋťęŗ.!!]",
+        "requirements": "[!!Ȃ Čħĩšēĺ, čřȃƒŧēđ ɓɏ ŧħē Čȃřƿēƞŧēř.!!]",
+        "workshop": {
+          "name": "[!!Mäśōŋ'ś Ŵōŗĸśĥōƥ!!]",
+          "description": "[!!įƞšėřŧ đėščřįƿŧįơƞ ħėřė!!]",
+          "long_description": "[!!Ŧĥȅ Mąśōň ćřąƒŧś ƃŭįŀďįňĝ mąŧȅřįąŀś ąňď ďȅćōřąŧįvȅ įŧȅmś ƒřōm śŧōňȅ.!!]"
+        },
         "level_6_data": {
           "title": "[!!Màśţȅŕ màśōń!!]",
           "perk_000_name": "[!!10,000 Ĥőũŕş (ńőţ ĩmƥĺėmėńţėď)!!]",
@@ -5497,7 +5585,7 @@
           "flavor": "[!!Őűťďőőŗşȳ!!!]"
         },
         "stone_chest_recipe": {
-          "description": "[!!İmƿŏŝıƞğ ƿłåĉĕ ŧŏ ƿųŧ ŧħıƞğŝ.!!]",
+          "description": "[!!Įmƥőşįňġ ƥŀâċę ŧő ƥŭŧ ŭƥ ŧő 64 ŧĥįňġş.!!]",
           "recipe_name": "[!!Šŧơƞě Čħěšŧ!!]",
           "flavor": "[!!'Ĺĩśťėŋ űƥ, ĸĩď. Äĺĺ ťĥė ćĥėśťś ĩŋ Ĥėmĝōŗĩŗ-Űŋďėŗ-Mōűŋťäĩŋ ĺōōĸėď ĺĩĸė ťĥĩś.'--Ėďōĺƒ, Ŵäŋďėŗĩŋĝ ßäŗď!!]"
         },
@@ -5546,11 +5634,74 @@
         "requirements": "[!!???!!]"
       }
     },
+    "potter": {
+      "potter_description": {
+        "display_name": "[!!Ƥőţţȇŕ!!]",
+        "description": "[!!Māķȅş ũşȅƒũł ġőőďş ƒŕőm ċłāȳ. Ũƥġŕāďȅāƀłȅ ţő ţĥȅ Māşőń!!]",
+        "requirements": "[!!Ã ŀēvēŀ 4 Mãšơŉ ãŉđ ã Ƥơţţēŕ'š Čůţţēŕ, čŕãƒţēđ Ƅɏ ţħē Čãŕƿēŉţēŕ!!]",
+        "workshop": {
+          "name": "[!!Ƥőŧŧēř'ş Ŵĥēēł!!]",
+          "description": "[!!įƞšėřŧ đėščřįƿŧįơƞ ħėřė!!]",
+          "long_description": "[!!Ŧĥȇ Ƥőŧŧȇř ċřâƒŧş ŭşȇƒŭľ ġőőďş âňď ďȇċőřâŧĭvȇ ĭŧȇmş ƒřőm ċľâȳ.!!]"
+        }
+      },
+      "recipes": {
+        "workbench_name": "[!!Ŵŏŕķŝħŏƿŝ!!]",
+        "small_urn_recipe": {
+          "description": "[!!Ƒơř čơmƿȃčŧĺɏ šŧơřĩƞģ ųƿ ŧơ 8 ĩŧēmš!!]",
+          "recipe_name": "[!!Ŝmǻłł Ůŕŉ!!]",
+          "flavor": "[!!Mıŝĉħȇvıŏůŝ ķıđŝ Ƅŕȇǻķ ţħȇŝȇ ƿŏţŝ ǻłł ţħȇ ţımȇ, łŏŏķıŉğ ƒŏŕ ţŕȇǻŝůŕȇ.!!]"
+        },
+        "storage_name": "[!!Šťơŗăģē!!]",
+        "large_urn_recipe": {
+          "description": "[!!Ƒōŕ ćōmƥàćţļŷ śţōŕīńĝ ũƥ ţō 32 īţĕmś!!]",
+          "recipe_name": "[!!Łǻŕğė Ůŕŉ!!]",
+          "flavor": "[!!Őńċĕ ŵĕ ƥũţ ţĥįńġş įń, ĥőŵ ŵįŀŀ ŵĕ ġĕţ ţĥĕm őũţ? Ɖőń'ţ ţĥįńķ āƀőũţ įţ ţőő mũċĥ!!]"
+        },
+        "clay_lamp_recipe": {
+          "description": "[!!Įŧş ƒŀâmę ƃřįňġş â ŵâřm ġŀőŵ âŧ ňįġĥŧ.!!]",
+          "recipe_name": "[!!Ĉŀáƴ Ŏįŀ Ŀámƿ!!]"
+        },
+        "clay_wall_lamp_recipe": {
+          "description": "[!!Įŧş ƒŀâmę ƃřįňġş â ŵâřm ġŀőŵ âŧ ňįġĥŧ.!!]",
+          "recipe_name": "[!!Ŵâļļ Mőŭňŧȅď Ċļâȳ Őīļ Ļâmƥ!!]"
+        },
+        "garden_gnome_recipe": {
+          "description": "[!!Ƒäśĥĩōŋȅď äƒťȅŗ mŷťĥĩćäĺ ƒōŗȅśť śƥĩŗĩťś.!!]",
+          "recipe_name": "[!!Ŧĩňŷ Ĝąřďȇň Ĝŭąřďĩąň!!]",
+          "flavor": "[!!Đėŝĭğņėđ Ƃƴ Ğŗáņđmáŝťėŗ ĉŗáƒťėŗ Ťħė_M!!]"
+        },
+        "decoration_name": "[!!Ɖęċőŗȁťĩőŋ!!]",
+        "potter_workbench_recipe": {
+          "description": "[!!Ĥěļƥş ťĥě ƥőťťěŗ ċŗěȁťě şīmƥļě īťěmş ƒŗőm ċļȁȳ!!]",
+          "recipe_name": "[!!Ƥőŧŧēř'ş Ŵĥēēł!!]",
+          "flavor": "[!!Ŵħěŕě ŵě'vě Ƅěěŉ Ƅěƒŏŕě, ŵě'ļļ Ƅě ǻğǻīŉ, ŕŏůŉđ ŏŉĉě mŏŕě, ƒŏŕ ŝţŕěŉğţħ ǻŉđ ţħěŉ--!!]"
+        }
+      },
+      "potter_workbench": {
+        "potter_workbench_ghost": {
+          "display_name": "[!!Ƥŏťťȇŗƴ Ŵħȇȇŀ!!]",
+          "description": "[!!Ŵőŕķşĥőƥ ƒőŕ māķĩńġ ċĺāȳ ġőőďş!!]"
+        }
+      },
+      "potter_cutter": {
+        "display_name": "[!!Ƥơţţĕŕ'š Čůţţĕŕ!!]",
+        "description": "[!!Ũśĕď ţō ƒōŕm ćīvīļīźàţīōń ƒŕōm ďīŕţ!!!]",
+        "potter_cutter_talisman": {
+          "display_name": "[!!Ƥơţţĕŕ'š Čůţţĕŕ!!]",
+          "description": "[!!Ƥŕōmōţĕś à ĥĕàŕţĥļīńĝ īńţō à Ƥōţţĕŕ.!!]"
+        }
+      },
+      "potter_outfit": {
+        "display_name": "[!!Ƥơţţĕŕ'š Ơůţƒĩţ!!]",
+        "description": "[!!Ěȁŗťĥ şƥļőċĥěş ȁŗě ƥȁŗť őƒ īť'ş īŋťěŋşě şťȳļě.!!]"
+      }
+    },
     "shepherd": {
       "shepherd_description": {
         "display_name": "[!!Śĥĕƥĥĕřď!!]",
         "description": "[!!Ɗơměšťĭčăťěš ŵĭľđ ăņĭmăľš ăņđ ħăŗvěšťš ťħěm ƒơŗ ƒơơđ ăņđ măťěŗĭăľš.!!]",
-        "requirements": "[!!2 łȇvȇłŝ ŏƒ Ţŕǻƿƿȇŕ ǻŉđ ǻ Ŝħȇƿħȇŕđ'ŝ Ĉŕŏŏķ, ĉŕǻƒţȇđ Ƅƴ ţħȇ Ĉǻŕƿȇŉţȇŕ.!!]",
+        "requirements": "[!!Ă ľěvěľ 2 Ťŗăƿƿěŗ ăņđ ă Šħěƿħěŗđ'š Čŗơơĸ, čŗăƒťěđ Ƃɏ ťħě Čăŗƿěņťěŗ.!!]",
         "level_4_data": {
           "perk_000_name": "[!!Äŋīmäļ Mäĝŋėťīśm!!]",
           "perk_000_description": "[!!Ŵīļđ ǻŉīmǻļŝ ǻŕě mŏŕě ļīķěļƴ ţŏ ǻƿƿěǻŕ ŵħěŉěvěŕ ţħě ŝħěƿħěŕđ īŝ ļŏŏķīŉğ ƒŏŕ ţħěm.!!]"
@@ -5880,7 +6031,7 @@
         "starting_level_title": "[!!Äƥƥŗęŋťĭćę [str(self.stonehearth:job.curr_job_name)]!!]",
         "default_level_title": "[!!Ĺȇvȇĺ [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]!!]",
         "default_level_announcement": "[!![name(i18n_data.entity)] ĥäś äćĥĩėvėď [str(i18n_data.job_name)] Ĺėvėĺ [str(i18n_data.level_number)]!!!]",
-        "general_description_desc": "[!!Mǻx ħēǻļţħ īŉĉŕēǻŝēđ!!!]",
+        "level_up_perk_description": "[!!Mâx Ĥēâłŧĥ +10!!]",
         "attribute_up_desc": "[!!Áĺĺ áťťŗĩƂūťěŝ ĩņĉŗěáŝěđ!!!]"
       }
     },
