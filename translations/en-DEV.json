@@ -162,7 +162,8 @@
             "save_new": "New Save",
             "load_game": "Load Game",
             "game_different_version": "incompatible save version",
-            "delete_incompatible_saves": "Delete Incompatible Saves"
+            "delete_incompatible_saves": "Delete Incompatible Saves",
+            "save_time": "Saved [str(save_time)]"
          },
          "common": {
             "ok": "OK",
@@ -480,7 +481,7 @@
             "immigration_report": {
                "title": "Daily Update",
                "immigration_report_title": "Immigration Report",
-               "population_label": "population",
+               "population_label": "[str(town_name)] population",
                "next_requirements_label": "Next hearthling requirements..."
             },
             "collection_quest": {
@@ -570,37 +571,44 @@
                "wall": {
                   "material": "Wall Material",
                   "wood_resource": "Wooden Wall",
-                  "stone_resource": "Stone Wall"
+                  "stone_resource": "Stone Wall",
+                  "clay_resource": "Clay Wall"
                },
                "floor": {
                   "material": "Floor Material",
                   "wood_resource": "Wooden Floor",
-                  "stone_resource": "Stone Floor"
+                  "stone_resource": "Stone Floor",
+                  "clay_resource": "Clay Floor"
                },
                "roof": {
                   "material": "Roof Material",
                   "wood_resource": "Wooden Roof",
-                  "stone_resource": "Stone Roof"
+                  "stone_resource": "Stone Roof",
+                  "clay_resource": "Clay Roof"
                },
                "column": {
                   "material": "Column Material",
                   "wood_resource": "Wooden Column",
-                  "stone_resource": "Stone Column"
+                  "stone_resource": "Stone Column",
+                  "clay_resource": "Clay Column"
                },
                "road": {
                   "material": "Road Material",
                   "wood_resource": "Wooden Road",
-                  "stone_resource": "Stone Road"
+                  "stone_resource": "Stone Road",
+                  "clay_resource": "Clay Road"
                },
                "doors": {
                   "material": "Door Material",
                   "wood_resource": "Wooden Door",
-                  "stone_resource": "Stone Door"
+                  "stone_resource": "Stone Door",
+                  "clay_resource": "Clay Door"
                },
                "windows": {
                   "material": "Window Material",
                   "wood_resource": "Wooden Window",
-                  "stone_resource": "Stone Window"
+                  "stone_resource": "Stone Window",
+                  "clay_resource": "Clay Window"
                }
             },
             "start_building_confirm": {
@@ -640,7 +648,8 @@
                "poyo_pasture_name": "Poyo Coop",
                "sheep_pasture_description": "Sheep produce wool and can be a source of meat.",
                "rabbit_pasture_description": "Rabbits can be a source of jerky.",
-               "poyo_pasture_description": "Poyos produce eggs, a valuable cooking ingredient."
+               "poyo_pasture_description": "Poyos produce eggs, a valuable cooking ingredient.",
+               "num_animals": "Animals:"
             },
             "stockpile": {
                "default_stockpile_name": "Stockpile No.[str(self.unit_info.custom_name)]",
@@ -686,7 +695,7 @@
             }
          },
          "show_workshop": {
-            "workshop_title": "Crafting Orders",
+            "workshop_title": "[str(job_name)] Crafting Orders",
             "placeholder": "Type to search",
             "show_workshop_description": "Owned by [name(owner)]",
             "unclaimed_workshop_description": "Unclaimed",
@@ -930,10 +939,11 @@
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Storage filter defaults to None",
                "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
-               "enable_cpp_ai": "Enable CPP Ai",
+               "enable_cpp_ai": "Enable CPP AI (Requres Restart)",
                "enable_cpp_ai_description": "Use the new ai system that is written in C++. This should be faster than the old ai system and should handle large towns better.",
-               "enable_subspace_pathfinder": "Enable Subspace Pathfinder",
-               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!"
+               "enable_subspace_pathfinder": "Enable Subspace Pathfinder (Requres Restart)",
+               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!",
+               "max_citizens": "Max Citizens"
             }
          },
          "title_screen": {
@@ -952,6 +962,27 @@
                "accept": "Yes, send crash reports",
                "cancel": "Nope"
             }
+         },
+         "select_game_story": {
+            "title": "Select the details of your epic adventure:",
+            "select_kingdom": "Select a different kingdom:",
+            "kingdom_description": "Description: ",
+            "kingdom_favored_biome": "Favored Biome: ",
+            "pick_button": "Pick ",
+            "select_biome": "Select a different biome:",
+            "option_summary": "Option Summary: ",
+            "curr_kingdom": "Embark as: ",
+            "curr_biome": "To the wild lands of: ",
+            "continue": "Continue!",
+            "ascendancy_title": "The Ascendancy",
+            "ascendancy_quote": "Sheep? Check. Hoe? Check. Swords? Check. Embark!",
+            "ascendancy_description": "Earnest and hardworking, loyal and well-rounded. Citizens of the Ascendancy chop, build and farm, confident that the known world is theirs to inhabit.",
+            "select_difficulty": "Select a different difficulty: ",
+            "normal_game": "Normal Game",
+            "peaceful_game": "Peaceful Game",
+            "normal_game_description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
+            "peaceful_game_description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
+            "curr_difficulty": "In story mode: "
          },
          "embark": {
             "title": "Prepare to set out for adventure",
@@ -1102,6 +1133,7 @@
             "pelt_resource_name": "Fur Pelt",
             "cloth_resource_name": "Bolt of Cloth",
             "wood_resource_name": "Wood Log",
+            "clay_resource_name": "Mound of Clay",
             "thread_resource_name": "Thread",
             "leather_resource_name": "Bolt of Leather",
             "fiber_resource_name": "Bundle of Fiber",
@@ -1887,8 +1919,8 @@
                "description": "Starving hearthling needs food badly!"
             },
             "starving_animal_buff": {
-               "display_name": "Starving",
-               "description": "This animal needs food badly! It will not produce resources while starving."
+               "display_name": "Hungry",
+               "description": "This animal is hungry! Have a cook create some feed so your shepherd can feed it."
             }
          },
          "stopped": {
@@ -3069,6 +3101,12 @@
                "description": "Storage container"
             }
          },
+         "large_urn": {
+            "large_urn_ghost": {
+               "display_name": "Large Urn",
+               "description": "Storage container"
+            }
+         },
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
                "display_name": "Leather Bound Chest",
@@ -3089,8 +3127,14 @@
          },
          "barrel": {
             "barrel_ghost": {
-               "display_name": "Leather Bound Chest",
+               "display_name": "Square Barrel",
                "description": "Storage container"
+            }
+         },
+         "small_urn": {
+            "small_urn_ghost": {
+               "display_name": "Small Urn",
+               "description": "For storing things"
             }
          },
          "vault": {
@@ -3186,7 +3230,7 @@
          },
          "carrot_crop": {
             "display_name": "Carrot",
-            "description": "Fast-growning, but pretty bland on its own.",
+            "description": "Fast-growing, but pretty bland on its own.",
             "growth_stage": {
                "003": {
                   "name": "Ripe Carrot",
@@ -3212,7 +3256,7 @@
          },
          "corn_crop": {
             "display_name": "Corn",
-            "description": "Slow-growning, but super nutritious crop.",
+            "description": "Slow-growing, but super nutritious crop.",
             "growth_stage": {
                "003": {
                   "name": "Ripe Corn",
@@ -3681,6 +3725,30 @@
             "wooden_wall_lantern_fine_ghost": {
                "display_name": "Fine Wall-mounted Lantern",
                "description": "Easily attached to walls"
+            }
+         },
+         "cactus_flower": {
+            "cactus_flower_ghost": {
+               "display_name": "Cactus Flower",
+               "description": "Handle with care!"
+            }
+         },
+         "clay_lamp": {
+            "clay_lamp_ghost": {
+               "display_name": "Clay Oil Lamp",
+               "description": "Its flame brings a warm glow at night."
+            }
+         },
+         "clay_wall_lamp": {
+            "clay_wall_lamp_ghost": {
+               "display_name": "Wall mounted clay lamp",
+               "description": "Provides a warm glow at night."
+            }
+         },
+         "garden_gnome": {
+            "garden_gnome_ghost": {
+               "display_name": "Garden Gnome",
+               "description": "Plant Guardians"
             }
          }
       },
@@ -4335,7 +4403,13 @@
          "stone": {
             "hunk_of_stone": {
                "display_name": "Hunk 'o Stone",
-               "description": "A heavy, ordinary rock."
+               "description": "A heavy, ordinary rock"
+            }
+         },
+         "clay": {
+            "clay_mound": {
+               "display_name": "Mound of Clay",
+               "description": "Heavy and cool to the touch"
             }
          },
          "tin": {
@@ -4985,7 +5059,7 @@
                "flavor": "Does the crate that stores all the things that do not store themselves, store itself?"
             },
             "leather_bound_chest_recipe": {
-               "description": "For compactly storing up to 16 items",
+               "description": "Stylishly stores up to 64 items.",
                "recipe_name": "Leather Bound Chest",
                "flavor": "Like the one my granda had!"
             },
@@ -5142,6 +5216,11 @@
                "description": "Fancier tools allow the carpenter to work with cloth and other civilized ingredients.",
                "recipe_name": "Carpenter Toolbench",
                "flavor": "A more elegant workstation, modeled on a more civilized time."
+            },
+            "potter_cutter_recipe": {
+               "description": "Allows a hearthling to make tools and goods from clay.",
+               "recipe_name": "Potter's Cutter",
+               "flavor": "And Monkey struck the earth with his staff. 'For you are my children, he said, and you shall want for nothing.'"
             }
          }
       },
@@ -5149,7 +5228,11 @@
          "cook_description": {
             "display_name": "Cook",
             "description": "The cook makes delicious, hearty meals from base vegetables and meats.",
-            "requirements": "2 levels of Farmer and a Stoneware Spoon, crafted by the Mason.",
+            "requirements": "A level 2 Farmer and a Stoneware Spoon, crafted by the Mason.",
+            "workshop": {
+               "name": "Stone Cauldron",
+               "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
+            },
             "level_6_data": {
                "title": "Master cook",
                "perk_000_name": "10,000 Hours (not implemented)",
@@ -5164,7 +5247,7 @@
                "perk_000_description": "The cook adds new levels of functionality to classic recipes."
             },
             "level_1_data": {
-               "perk_000_name": "Camp Cooking -- XXX TOM, REVISIT THE COOK PERKS!!!!!!",
+               "perk_000_name": "Camp Cooking",
                "perk_000_description": "The cook can make basic, nutritious recipes."
             },
             "level_3_data": {
@@ -5388,7 +5471,12 @@
          "mason_description": {
             "display_name": "Mason",
             "description": "The Mason crafts building materials and decorative items from stone.",
-            "requirements": "Mason's Mallet and Chisel, crafted by the carpenter.",
+            "requirements": "A Chisel, crafted by the Carpenter.",
+            "workshop": {
+               "name": "Mason's Workshop",
+               "description": "insert description here",
+               "long_description": "The Mason crafts building materials and decorative items from stone."
+            },
             "level_6_data": {
                "title": "Master mason",
                "perk_000_name": "10,000 Hours (not implemented)",
@@ -5497,7 +5585,7 @@
                "flavor": "Outdoorsy!"
             },
             "stone_chest_recipe": {
-               "description": "Imposing place to put things.",
+               "description": "Imposing place to put up to 64 things.",
                "recipe_name": "Stone Chest",
                "flavor": "'Listen up, kid. All the chests in Hemgorir-Under-Mountain looked like this.'--Edolf, Wandering Bard"
             },
@@ -5546,11 +5634,74 @@
             "requirements": "???"
          }
       },
+      "potter": {
+         "potter_description": {
+            "display_name": "Potter",
+            "description": "Makes useful goods from clay. Upgradeable to the Mason",
+            "requirements": "A level 4 Mason and a Potter's Cutter, crafted by the Carpenter",
+            "workshop": {
+               "name": "Potter's Wheel",
+               "description": "insert description here",
+               "long_description": "The Potter crafts useful goods and decorative items from clay."
+            }
+         },
+         "recipes": {
+            "workbench_name": "Workshops",
+            "small_urn_recipe": {
+               "description": "For compactly storing up to 8 items",
+               "recipe_name": "Small Urn",
+               "flavor": "Mischevious kids break these pots all the time, looking for treasure."
+            },
+            "storage_name": "Storage",
+            "large_urn_recipe": {
+               "description": "For compactly storing up to 32 items",
+               "recipe_name": "Large Urn",
+               "flavor": "Once we put things in, how will we get them out? Don't think about it too much"
+            },
+            "clay_lamp_recipe": {
+               "description": "Its flame brings a warm glow at night.",
+               "recipe_name": "Clay Oil Lamp"
+            },
+            "clay_wall_lamp_recipe": {
+               "description": "Its flame brings a warm glow at night.",
+               "recipe_name": "Wall Mounted Clay Oil Lamp"
+            },
+            "garden_gnome_recipe": {
+               "description": "Fashioned after mythical forest spirits.",
+               "recipe_name": "Tiny Garden Guardian",
+               "flavor": "Designed by Grandmaster crafter The_M"
+            },
+            "decoration_name": "Decoration",
+            "potter_workbench_recipe": {
+               "description": "Helps the potter create simple items from clay",
+               "recipe_name": "Potter's Wheel",
+               "flavor": "Where we've been before, we'll be again, round once more, for strength and then--"
+            }
+         },
+         "potter_workbench": {
+            "potter_workbench_ghost": {
+               "display_name": "Pottery Wheel",
+               "description": "Workshop for making clay goods"
+            }
+         },
+         "potter_cutter": {
+            "display_name": "Potter's Cutter",
+            "description": "Used to form civilization from dirt!",
+            "potter_cutter_talisman": {
+               "display_name": "Potter's Cutter",
+               "description": "Promotes a hearthling into a Potter."
+            }
+         },
+         "potter_outfit": {
+            "display_name": "Potter's Outfit",
+            "description": "Earth sploches are part of it's intense style."
+         }
+      },
       "shepherd": {
          "shepherd_description": {
             "display_name": "Shepherd",
             "description": "Domesticates wild animals and harvests them for food and materials.",
-            "requirements": "2 levels of Trapper and a Shepherd's Crook, crafted by the Carpenter.",
+            "requirements": "A level 2 Trapper and a Shepherd's Crook, crafted by the Carpenter.",
             "level_4_data": {
                "perk_000_name": "Animal Magnetism",
                "perk_000_description": "Wild animals are more likely to appear whenever the shepherd is looking for them."
@@ -5880,7 +6031,7 @@
             "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
-            "general_description_desc": "Max health increased!",
+            "level_up_perk_description": "Max Health +10",
             "attribute_up_desc": "All attributes increased!"
          }
       },
