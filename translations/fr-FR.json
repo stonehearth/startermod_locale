@@ -788,31 +788,31 @@
 		 "loading_screen": {
 			"initial_load_map_text": "Génération du monde",
 			"loading_map_flavor_text": {
-			   "001": "calcul des angles ...",
+               "001": "aiguisage des angles droits ...",
 			   "002": "décompression des voxels ...",
 			   "003": "synthétisation de la faune ...",
-			   "004": "disperse et remue ...",
+			   "004": "redistribution des redistribuable ...",
 			   "005": "terrassement du terrain ...",
 			   "006": "range le désordre ...",
-			   "007": "gonfle les arbres ...",
+			   "007": "gonflage des arbres ...",
 			   "008": "lève le soleil ...",
 			   "009": "fait flotter les nuages ...",
 			   "010": "malmène de petite choses ...",
 			   "011": "plante les baies ...",
 			   "012": "converse avec son enfance ...",
-			   "013": "résout le déterminisme ...",
+			   "013": "résolution du déterminisme ...",
 			   "014": "calibre la camaraderie ...",
 			   "015": "existentialisme les dilemmes ...",
 			   "016": "improvise la morale ...",
-			   "017": "forme plusieurs réseaux tridimensionnels ...",
+			   "017": "applanissage des réticules ...",
 			   "018": "diversification des sexes ...",
 			   "019": "homogénéisation de la motivation ...",
 			   "020": "faire dévier l'histoire ...",
-			   "021": "indexation des microbes ...",
+			   "021": "indexation des insectes ...",
 			   "022": "compile la vérité ...",
-			   "023": "réassemble le marbres ...",
+			   "023": "rassemblement des billes ...",
 			   "024": "affecter les foules ...",
-			   "025": "apprendre les mathématique avancé ...",
+			   "025": "expérimente les mathématiques avancés ...",
 			   "026": "faire proliférer les fleurs ...",
 			   "027": "s'écarter de la réalité ...",
 			   "028": "positionnement des peluches ...",
@@ -1247,14 +1247,14 @@
 						   "bulletin_message": {
 							  "000": "To borrow strength to rise means to fall when strength fails. Ogo borrows his power not from his so-called-sayer, but from the babe he stole."
 						   },
-						   "bulletin_title": "The figure tilts her head",
+                           "bulletin_title": "Le personnage penche la tête",
 						   "dialog_title": "???"
 						},
 						"erdene_description": {
 						   "choice_000": "Super !",
-						   "choice_001": "Ca pue.",
+						   "choice_001": "Quel mauvais présage.",
 						   "bulletin_message": {
-							  "000": "Me? I am the one who watches. You. Him. For the star. For fate.",
+                              "000": "Moi ? Je suis celui qui observe. Vous. Lui. Pour les étoiles. Pour le destin.",
 							  "001": "I? I am of the Red Kiln. We would have been your saviours, but your Cid parlayed hard in your stead. So now we watch. And wait for the day when your star rises.",
 							  "002": "Me! I suppose you've earned your bit. I am an ember in the forge, a spark in the air. I watch, so that I may know when it is time for the fire to engulf us all.",
 							  "003": "Me? Today, it matters not. Tomorrow, if you still live, you may call me Erdene, of the Red Kiln."
@@ -1263,7 +1263,7 @@
 						   "dialog_title": "???"
 						},
 						"accept_offer": {
-						   "choice_000": "Wait! Who are you?",
+                           "choice_000": "Attendez ! Qui êtes-vous ?",
 						   "choice_001": "Huh.",
 						   "bulletin_message": {
 							  "000": "Fight hard, little town. Fate is meaningless. But were it not, yours would be to rise."
@@ -1272,8 +1272,8 @@
 						   "dialog_title": "???"
 						},
 						"flute_description": {
-						   "choice_000": "Ça sonne juste !",
-						   "choice_001": "Non. Merci.",
+                           "choice_000": "Sounds good!",
+                           "choice_001": "No. Thanks.",
 						   "bulletin_message": {
 							  "000": "Upon this paper, vous devriez trouver le lullabye to sooth the Mountain's soul. Find a stolen flute. Bid your wood-worker pitch it to this melody. Grant it to your bravest sheep-singer, set him at Ogo's great mammoth, and watch self-importance meet it's just reward."
 						   },
@@ -1294,15 +1294,15 @@
 				  "dialog_tree_info": {
 					 "dialog_nodes": {
 						"soothsayer_description": {
-						   "choice_000": "No way!",
+                           "choice_000": "Pas question !",
 						   "choice_001": "Huh.",
 						   "bulletin_message": {
 							  "000": "Soothsayer magic! Speak with old ones! Tell future! He see... he see Red Kiln Falling, new star rising. That star is Ogo. This time, we pick winning side!",
 							  "001": "Soothsayer old, old snake. Speaks out with bones and scales. Sees future! Sees cycle ending, ending forever. Not sure what he mean, but good for Ogo!",
 							  "002": "Soothsayer goblin, obviously! Goblin who can see future! He say old ones dying away, new star rising. Good for Ogo, bad for everyone else, you included!"
 						   },
-						   "bulletin_title": "The goblin's eyes grow round",
-						   "dialog_title": "Ogo's Bannerman"
+						   "bulletin_title": "Le goblin écarquille les yeux",
+						   "dialog_title": "Porte bannière d'Ogo"
 						},
 						"snooty_introduction": {
 						   "choice_000": "Huh.",
@@ -1313,32 +1313,32 @@
 							  "002": "Muahahahahah! This? This your town? I laugh till I cry!"
 						   },
 						   "bulletin_title": "A goblin with a officious smirk slithers into town",
-						   "dialog_title": "Ogo's Bannerman"
+						   "dialog_title": "Porte bannière d'Ogo"
 						},
 						"ogo_introduction": {
-						   "choice_000": "Ogo who?",
-						   "choice_001": "Uh. No.",
+                           "choice_000": "Ogo qui?",
+                           "choice_001": "Uh. Non.",
 						   "bulletin_message": {
-							  "000": "By order of Ogo Skullbonker, Goblin-All-Chief-To-Be, you and all your stuffs now be tribute to Great Glittering Army and Red Kiln Empire!",
-							  "001": "I envoy of Ogo Skullbonker, tamer of Mountains! Ogo demand many thing from all, include you, include your gold!",
-							  "002": "My Chief-of-Chiefs, Ogo Skullbonker, soon rule take Glittering Army and rule all of Red Kiln! You next of many conquests. You become our goldfarmers!",
-							  "003": "I am Bannergoblin of Ogo Skullbonker, rider of Mountain! My master demand you tribute, in form of all you have! You give everything! Or you pay!",
-							  "004": "I bannergoblin of Ogo Skullbonker! When you bested the small chiefs, you bring Ogo's Eye upon you! And Ogo's Eye know all! You will give tribute, or eye will see your end!"
+							  "000": "By order of Ogo Cognecrâne, Goblin-All-Chief-To-Be, you and all your stuffs now be tribute to Great Glittering Army and Red Kiln Empire!",
+							  "001": "I envoy of Ogo Cognecrâne, tamer of Mountains! Ogo demand many thing from all, include you, include your gold!",
+							  "002": "My Chief-of-Chiefs, Ogo Cognecrâne, soon rule take Glittering Army and rule all of Red Kiln! You next of many conquests. You become our goldfarmers!",
+							  "003": "I am Bannergoblin of Ogo Cognecrâne, rider of Mountain! My master demand you tribute, in form of all you have! You give everything! Or you pay!",
+							  "004": "I bannergoblin of Ogo Cognecrâne! When you bested the small chiefs, you bring Ogo's Eye upon you! And Ogo's Eye know all! You will give tribute, or eye will see your end!"
 						   },
 						   "bulletin_title": "The goblin straightens",
-						   "dialog_title": "Ogo's Bannerman"
+						   "dialog_title": "Porte bannière d'Ogo"
 						},
 						"ogo_description": {
 						   "choice_000": "Soothsayer?",
 						   "choice_001": "Eh",
 						   "bulletin_message": {
-							  "000": "Soothsayer say Ogo Skullbonker will be hero above all heroes! You destined to give him gold!",
+							  "000": "Soothsayer say Ogo Cognecrâne will be hero above all heroes! You destined to give him gold!",
 							  "001": "Soothsayer little, but have big thoughts! Soothsayer never wrong. Soothsayer say you give Ogo gold, or Ogo will take it from you!",
-							  "002": "Goblins long be shunned and forgotten. Soothsayer say that Ogo Skullbonker, my LittleChief, will soon change everything! For that, he need gold and labor!",
-							  "003": "Ogo Skullbonker, Master of Masters, have great destiny, to rule over all! Soothsayer say so; soothsayer never wrong. Soothsayer say, you will help!"
+							  "002": "Goblins long be shunned and forgotten. Soothsayer say that Ogo Cognecrâne, my LittleChief, will soon change everything! For that, he need gold and labor!",
+							  "003": "Ogo Cognecrâne, Master of Masters, have great destiny, to rule over all! Soothsayer say so; soothsayer never wrong. Soothsayer say, you will help!"
 						   },
 						   "bulletin_title": "The goblin's eyes glow with zeal",
-						   "dialog_title": "Ogo's Bannerman"
+						   "dialog_title": "Porte bannière d'Ogo"
 						},
 						"conclusion": {
 						   "bulletin_message": {
@@ -1348,7 +1348,7 @@
 							  "003": "Anyway, time to go iron my banner. Be back soon! Be ready, yes? New life under goblin rule awaits!"
 						   },
 						   "bulletin_title": "The goblin's eyes narrow",
-						   "dialog_title": "Ogo's Bannerman"
+						   "dialog_title": "Porte bannière d'Ogo"
 						}
 					 }
 				  }
@@ -1357,15 +1357,15 @@
 				  "dialog_tree_info": {
 					 "dialog_nodes": {
 						"msg1": {
-						   "choice_000": "Thank goodness!",
-						   "choice_001": "(good riddance)",
+                           "choice_000": "Merci mon Dieu !",
+                           "choice_001": "(bon débarras)",
 						   "bulletin_message": {
-							  "000": "Good news for you, pathetic humans! Ogo Skullbonker, Chief-of-Chiefs-To-Be, calls us to home for clan meet-meet. Been fun hanging with you! Maybe we tell friends, back soon for more fun taking your stuff!",
-							  "001": "Humans no challenge. So sad. We hope to return home to our Chief-of-Chiefs, Ogo Skullbonker, with story of our glory, but there is no glory in defeating you. Maybe we come back when you stronger.",
+							  "000": "Good news for you, pathetic humans! Ogo Cognecrâne, Chief-of-Chiefs-To-Be, calls us to home for clan meet-meet. Been fun hanging with you! Maybe we tell friends, back soon for more fun taking your stuff!",
+							  "001": "Humans no challenge. So sad. We hope to return home to our Chief-of-Chiefs, Ogo Cognecrâne, with story of our glory, but there is no glory in defeating you. Maybe we come back when you stronger.",
 							  "002": "We leaving now, humans. But we will be back.",
 							  "003": "Well, was fun preying on you, pathetic humans! But fun times must end, we go home now to big clan meet-meet. While we gone, build more stuff, so when we come back, we can take more!"
 						   },
-						   "bulletin_title": "The goblin sends a note",
+                           "bulletin_title": "Le gobelin envoi une note",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						}
 					 }
@@ -1375,30 +1375,30 @@
 				  "dialog_tree_info": {
 					 "dialog_nodes": {
 						"loot_final": {
-						   "choice_000": "(good riddance)",
-						   "choice_001": "Goodbye!",
+                           "choice_000": "(bon débarras)",
+                           "choice_001": "Adieu !",
 						   "bulletin_message": {
 							  "000": "Hahaha! Exactly. This for you, to remember our friendship."
 						   },
-						   "bulletin_title": "The goblin places something on the ground with great care",
+                           "bulletin_title": "Le gobelin dépose avec grand soin quelque chose sur le sol",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"information": {
 						   "choice_000": "Wow!",
-						   "choice_001": "Sounds ominous.",
+                           "choice_001": "Quel mauvais présage.",
 						   "bulletin_message": {
 							  "000": "You so funny. Because we friends, me tell you: Ogo pretty cool. A bit mean. Once ate a puppy. But... soothsayer say he fated! Meant to stomp on everyone! Me just little guy, you know? Though you littler. Anyways."
 						   },
-						   "bulletin_title": "The goblin laughs",
+                           "bulletin_title": "Le gobelin s'esclaffe",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"msg1": {
-						   "choice_000": "Thank goodness!",
-						   "choice_001": "Ogo who?",
+                           "choice_000": "Merci mon Dieu !",
+                           "choice_001": "Ogo qui?",
 						   "bulletin_message": {
-							  "000": "Good news peons! Ogo Skullbonker, Chief-of-Chiefs-To-Be, calls us back to him. Time to go home, show him tribute! If you lucky, maybe we be back to visit... soon!"
+							  "000": "Good news peons! Ogo Cognecrâne, Chief-of-Chiefs-To-Be, calls us back to him. Time to go home, show him tribute! If you lucky, maybe we be back to visit... soon!"
 						   },
-						   "bulletin_title": "The goblin returns magnanimously",
+                           "bulletin_title": "Le gobelin revient de manière magnanime",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						}
 					 }
@@ -1407,8 +1407,8 @@
 			   "create_wolf_riders": {
 				  "mission": {
 					 "sighted_bulletin": {
-						"title": "Snarling wolves approach!",
-						"message": "Run! Mer told you to run!!!"
+                        "title": "Des loups hurlants approchent !",
+                        "message": "Courez ! Mer vous dit de courrir !!"
 					 }
 				  }
 			   },
@@ -1417,23 +1417,23 @@
 					 "dialog_nodes": {
 						"msg2": {
 						   "bulletin_message": {
-							  "00": "It's been pretty quiet, but you know...? It's a bad sign when the birds stop singing."
+                              "00": "Ça a été plutôt calme ces derniers temps, mais vous savez... quand les oiseaux arrètent de chanter, c'est mauvais signe."
 						   },
-						   "bulletin_title": "Mer Burlyhands scratches his ear",
+                           "bulletin_title": "Mer Burlyhands se gratte l'oreille",
 						   "dialog_title": "Mer Burlyhands"
 						},
 						"msg3": {
 						   "bulletin_message": {
-							  "00": "My guess is wolves. Goblin wolves. Watch your borders. You don't want to fight them after their trainer's got them in a lather, you hear? Bunker down, if you need to. Or run. Runnin's good! No shame in surviving another day."
+                              "00": "Je pense à des loups. Des loups gobelins. Surveillez vos frontières. Vous ne voulez pas les combattre aprés que leurs dresseurs les aient lachés, vous entendez ? Barricadez-vous si nécessaire. Ou courez. La fuite c'est bien  ! Il n'y a pas de honte à survivre un jour de plus."
 						   },
-						   "bulletin_title": "Mer Burlyhands nods firmly",
+                           "bulletin_title": "Mer Burlyhands hoche la tête fermement",
 						   "dialog_title": "Mer Burlyhands"
 						},
 						"msg1": {
 						   "bulletin_message": {
-							  "00": "Ho there township! How are things for you?"
+                              "00": "Ho Hé de la ville ! Comment vont les choses?"
 						   },
-						   "bulletin_title": "A grizzled traveller appears on the horizon",
+                           "bulletin_title": "Un voyageur grisonnant apparait à l'horizon",
 						   "dialog_title": "Mer Burlyhands"
 						}
 					 }
@@ -1444,10 +1444,10 @@
 					 "dialog_nodes": {
 						"msg2": {
 						   "bulletin_message": {
-							  "000": "--the one who watches you"
+                              "000": "-- celui qui vous observe"
 						   },
-						   "bulletin_title": "Mysterious Note",
-						   "dialog_title": "Mysterious Message"
+                           "bulletin_title": "Note mystérieuse",
+                           "dialog_title": "Message mystérieux"
 						},
 						"msg1": {
 						   "bulletin_message": {
@@ -1514,8 +1514,8 @@
 						   "bulletin_message": {
 							  "00": "Yip! Yip! AWOOOOOO!!!!!!!"
 						   },
-						   "bulletin_title": "The wolves explode joyfully from the cages",
-						   "dialog_title": "Escaping Wolves"
+                           "bulletin_title": "Les loups s'échappent joyeusement des cages",
+                           "dialog_title": "Loups fuyant"
 						}
 					 }
 				  }
@@ -1527,21 +1527,21 @@
 						   "bulletin_message": {
 							  "00": "Tell my sheep... me loves her always..."
 						   },
-						   "bulletin_title": "[name(i18n_data.boss)] is Defeated!",
+                           "bulletin_title": "[name(i18n_data.boss)] est vaincu !",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"msg3": {
 						   "bulletin_message": {
-							  "00": "You no win. Ogo... coming. Soothsayer say... Ogo... crush everyone..."
+                              "00": "Toi pas gagné. Ogo... arriver. Soothsayer dit... Ogo... écraser tout le monde."
 						   },
-						   "bulletin_title": "[name(i18n_data.boss)] is Defeated!",
+                           "bulletin_title": "[name(i18n_data.boss)] est vaincu !",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"msg1": {
 						   "bulletin_message": {
-							  "00": "Ow...it hurts..."
+                              "00": "Ouch... ça fait mal..."
 						   },
-						   "bulletin_title": "[name(i18n_data.boss)] is Defeated!",
+                           "bulletin_title": "[name(i18n_data.boss)] est vaincu !",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						}
 					 }
@@ -1549,8 +1549,8 @@
 			   },
 			   "goblin_raiding_camp_1": {
 				  "boss": {
-					 "display_name": "Chieftain [str(self.unit_info.custom_name)]",
-					 "description": "Me leen green fighting macheen!!!"
+                     "display_name": "Chef [str(self.unit_info.custom_name)]",
+                     "description": "Moi être machine à tuer verte !!"
 				  }
 			   },
 			   "shakedown": {
@@ -1558,24 +1558,24 @@
 					 "dialog_nodes": {
 						"shakedown": {
 						   "bulletin_message": {
-							  "000": "Hahaha!! Your puny settlement now part of Glittering Territory! I deserve tribute of shinies!",
-							  "001": "Human Peons! You no understand the might of the Glittering Army! You lucky to bow before me. Also, want some things to hold to at night; to sing me to sleep. ",
-							  "002": "You got supplies? We take; we good. We have understanding?",
-							  "003": "Hahahah, you the new kid in the great Red Territory. This means me less-new-kid take your lunch. Lunch metaphor.  You make for us. Or else.",
-							  "004": "You dumb bok, me big Glittering Chieftain! Natural order mean you give me stuff and I no dees-tro-i you. Me want supplies. Understand?"
+                              "000": "Hahaha!! Votre camp minable être sur territoire flamboyant ! Moi mériter tribut qui brille !",
+                              "001": "Esclaves humains ! Vous pas comprendre puissance de grande armée flamboyante ! Vous chanceux s'incliner devant moi. Aussi moi vouloir chose pour tenir la nuit; pour m'endormir en chanson.",
+                              "002": "Vous avoir marchandises ? Nous prendre; nous bons. Vous avoir compris ?",
+                              "003": "Hahahah, vous être petits nouveaux dans grand territoire rouge. Cala signifie moi moins petit-nouveau prendre ton repas. Repas être métafore. Vous préparer pour nous. Ou sinon ...",
+                              "004": "Vous être stupide, moi être grand chef flamboyant ! Ordre naturel dit vous donner marchandises et moi pas vous é-cra-bou-i-er. Moi vouloir marchandises. Comprendre ?"
 						   },
-						   "bulletin_title": "A goblin with a fancy hat swaggers into town",
+                           "bulletin_title": "Un gobelin portant un chapeau fantasque vient se pavaner en ville.",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"collection_due": {
 						   "bulletin_message": {
-							  "000": "Glittering Army returns! Where iz stuff?",
-							  "001": "My stuff! Where iz?",
-							  "002": "We back. You pay tribute now. Where iz?",
-							  "003": "Me dreamed last night. In dream, you make me stuff; we like brothers only me no kill you. Got Stuff?",
-							  "004": "Want stuff now. You make? We good! You no make? You die. We all friends!"
+                              "000": "Armée flamboyante revenir ! Où être matos ?",
+                              "001": "Mon matos ! Où être ?",
+                              "002": "Nous retour. Vous payer tribut maintenant. Où être ?",
+                              "003": "Moi rêver nuit dernière. Dans rêve, vous me fabriquer matos. Nous être comme frères sauf moi pas tuer vous. Vous avoir matos ?",
+                              "004": "Vouloir matos maintenant ! Vous fabriqer ? Nous gentils! Vous pas fabriquer ? Vous morts. Nous être tous amis !"
 						   },
-						   "bulletin_title": "The goblin stomps back into town",
+                           "bulletin_title": "Le gobelin déboule à nouveau en ville.",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"collection_failed": {
@@ -1604,9 +1604,9 @@
 						},
 						"collection_progress": {
 						   "bulletin_message": {
-							  "000": "Me back soon for stuff. Better have it, or no good for you, little hearthling."
+                              "000": "Moi retour bientôt pour matos. Mieux avoir ou pas bon pour vous petits hearthlings."
 						   },
-						   "bulletin_title": "Satisfy the Goblins",
+                           "bulletin_title": "Satisfaire les Goblins",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"shakedown_refused": {
@@ -1617,7 +1617,7 @@
 							  "003": "What? Cannot believe?! Must kill!!!",
 							  "004": "You no understand. Alternative: Death. Deeeaaaattth. DEAAATTTTTHHH!!!"
 						   },
-						   "bulletin_title": "The goblin looks incredulous",
+                           "bulletin_title": "Le gobelin semble incrédule",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						}
 					 }
@@ -1627,8 +1627,8 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "A goblin raiding party approaches!",
-						   "message": "Gonna get you!"
+                           "title": "Un groupe de pillards gobelins approche !",
+                           "message": "On va vous avoir !"
 						}
 					 }
 				  }
@@ -1637,8 +1637,8 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "A thief!",
-						   "message": "Shhhh, you're not supposed to be able to see him."
+                           "title": "Un voleur !",
+                           "message": "Shhhh, vous n'êtes pas supposé pouvoir le voir."
 						}
 					 }
 				  }
@@ -1647,8 +1647,8 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "A goblin raiding party approaches!",
-						   "message": "Gonna get you!"
+						   "title": "Un groupe de pillards gobelins approche !",
+                           "message": "On va vous avoir !"
 						}
 					 }
 				  }
@@ -1664,25 +1664,25 @@
                                     "description": "Mais ... pourquoi il est vert ?"
                                  },
                                  "workers": {
-                                    "description": "Firekeeper"
+                                    "description": "Garde feu"
                                  }
                               },
                               "goblin_tent": {
                                  "tent": {
-                                    "display_name": "Wolf Trainer Tent",
-                                    "description": "Full of improbable makeshift devices."
+                                    "display_name": "Tente des dresseurs de loups",
+                                    "description": "Rempli de machins improbables."
                                  }
                               },
                               "wolf_cage": {
                                  "wolf_cage": {
-                                    "display_name": "Wolf Cage",
-                                    "description": "Property of Ogo Skullbonker"
+                                    "display_name": "Cage à loup",
+                                    "description": "Propriété d'Ogo Cognecrâne"
                                  },
                                  "trainer": {
                                     "description": "Whips the wolves into a dangerous frenzy"
                                  },
                                  "tame_wolf": {
-                                    "description": "Terrifyingly ferocious"
+                                    "description": "Férocement terrifiant."
                                  }
                               }
                            }
@@ -1695,11 +1695,11 @@
                            "ogo_tent": {
                               "ogo_tent": {
                                  "display_name": "La tente d'Ogo",
-                                 "description": "Made from bleached pelts."
+                                 "description": "Fabriquée avec des peaux décolorées."
                               },
                               "ogo": {
                                  "description": "Soothsayer say, Ogo Chosen One, Ogo Cycle-Breaker",
-                                 "display_name": "Ogo Skullbonker"
+                                 "display_name": "Ogo Cognecrâne"
                               }
                            },
                            "ogo_throne": {
@@ -1710,7 +1710,7 @@
                            },
                            "wolf_kennel": {
                               "wolf_cage": {
-                                 "display_name": "Cage de loup",
+                                 "display_name": "Cage à loup",
                                  "description": "Propriété d'Ogo Cognecrâne"
                               }
                            }
@@ -1724,14 +1724,14 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "Goblin Thieves!",
-						   "message": "They yearn for comfortable things"
+						   "title": "Des voleurs gobelins !",
+						   "message": "Ils désirent ardemment des choses confortables"
 						}
 					 }
 				  },
 				  "raid_stockpiles": {
 					 "thiefs": {
-						"description": "Yearns for a life of comfort"
+                        "description": "Désire une vie de confort."
 					 }
 				  }
 			   },
@@ -1739,14 +1739,14 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "An armed goblin!",
-						   "message": "He wants your stuff"
+                           "title": "Un gobelin armé !",
+                           "message": "Il veut vos biens"
 						}
 					 }
 				  },
 				  "raid_stockpiles": {
 					 "thug": {
-						"description": "Armed and dangerous!"
+                        "description": "Armé et dangereux !"
 					 }
 				  }
 			   },
@@ -4106,7 +4106,7 @@
 			},
 			"goblin_boss_banner": {
 			   "goblin_boss_banner_ghost": {
-				  "display_name": "Ogo Skullbonker's Standard",
+				  "display_name": "Ogo Cognecrâne Standard",
 				  "description": "Clearly indicates goblin-boss-status"
 			   }
 			},
