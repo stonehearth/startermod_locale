@@ -179,6 +179,7 @@
 			"input_text_tooltip": "Cliquer pour modifier"
 		 },
 		 "party": {
+			"title": "Groupes",
 			"create_party": "Créer un groupe",
 			"edit_party": "Modifier",
 			"add_party_member": "Ajouter un membre",
@@ -942,7 +943,8 @@
                "enable_cpp_ai": "Enable CPP Ai (nécessite un redémarrage)",
                "enable_cpp_ai_description": "Utiliser le nouveau système d'IA codé en C++. Il devrait être plus rapide que l'ancien système en Lua et devrais mieux supporter les grands villages.",
                "enable_subspace_pathfinder": "Activer le pathfinder du sub-espace (nécessite un redémarrage)",
-               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!"
+               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!",
+				"max_citizens": "Hearthlings max."
             }
 		 },
 		 "title_screen": {
@@ -5215,6 +5217,11 @@
                "description": "Des outils plus performants permettent au menuisier de travailler aussi avec du tissu et autres ressources avancées.",
 			   "recipe_name": "Établi de menuisier",
 			   "flavor": "Un établi plus élégant, réalisé en des temps plus civilisé."
+			},
+            "potter_cutter_recipe": {
+               "description": "Allows a hearthling to make tools and goods from clay.",
+               "recipe_name": "Potter's Cutter",
+               "flavor": "And Monkey struck the earth with his staff. 'For you are my children, he said, and you shall want for nothing.'"
 			}
 		 }
 	  },
@@ -5640,6 +5647,7 @@
             }
          },
          "recipes": {
+            "workbench_name": "Workshops",
             "small_urn_recipe": {
                "description": "Pour ranger jusqu'à 8 objets.",
                "recipe_name": "Petite urne",
@@ -5664,7 +5672,12 @@
                "recipe_name": "Petit gardien des jardins",
                "flavor": "Conception par The_M, Grand Maître Artisan."
             },
-            "decoration_name": "Décoration"
+            "decoration_name": "Décoration",
+            "potter_workbench_recipe": {
+               "description": "Helps the potter create simple items from clay",
+               "recipe_name": "Potter's Wheel",
+               "flavor": "Where we've been before, we'll be again, round once more, for strength and then--"
+            }
          },
          "potter_workbench": {
             "potter_workbench_ghost": {
