@@ -965,25 +965,25 @@
             }
 		 },
          "select_game_story": {
-            "title": "Select the details of your epic adventure:",
-            "select_kingdom": "Select a different kingdom:",
+            "title": "Sélectionnez les paramètres de votre futur aventure épic:",
+            "select_kingdom": "Sélectionnez un royaume:",
             "kingdom_description": "Description: ",
-            "kingdom_favored_biome": "Favored Biome: ",
-            "pick_button": "Pick ",
-            "select_biome": "Select a different biome:",
-            "option_summary": "Option Summary: ",
-            "curr_kingdom": "Embark as: ",
-            "curr_biome": "To the wild lands of: ",
+            "kingdom_favored_biome": "Biome favori: ",
+            "pick_button": "Choisissez ",
+            "select_biome": "Sélectionnez un biome:",
+            "option_summary": "Résumé des paramètres: ",
+            "curr_kingdom": "Embarquez comme: ",
+            "curr_biome": "Pour les terres sauvages de: ",
             "continue": "Continue!",
-            "ascendancy_title": "The Ascendancy",
-            "ascendancy_quote": "Sheep? Check. Hoe? Check. Swords? Check. Embark!",
-            "ascendancy_description": "Earnest and hardworking, loyal and well-rounded. Citizens of the Ascendancy chop, build and farm, confident that the known world is theirs to inhabit.",
-            "select_difficulty": "Select a different difficulty: ",
-            "normal_game": "Normal Game",
-            "peaceful_game": "Peaceful Game",
-            "normal_game_description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
-            "peaceful_game_description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
-            "curr_difficulty": "In story mode: "
+            "ascendancy_title": "Les Ascendancy",
+            "ascendancy_quote": "Moutons? Vérifiez. Houe? Vérifiez. Glaives? Vérifiez. Embarquez!",
+            "ascendancy_description": "Sérieux et travailleurs, fidèle et complets. Les citoyens de la famille des Ascendancy, construisent et cultivent, confiant que le monde connu est à habiter.",
+            "select_difficulty": "Sélectionnez la difficulté: ",
+            "normal_game": "Normal",
+            "peaceful_game": "Paisible",
+            "normal_game_description": "En avant pour une aventure dans un monde plein de danger. Votre ville sera soumise à des raids ennemis..",
+            "peaceful_game_description": "Un mode sandbox, où vous êtes libre de construire votre ville sans se soucier des envahisseurs quels qu'ils soient..",
+            "curr_difficulty": "Dans le mode histoire: "
          },
 		 "embark": {
 			"title": "Préparez vous pour l'aventure !",
@@ -1245,46 +1245,45 @@
 						   "choice_000": "Euh ... Okay ?",
 						   "choice_001": "Pardon. Désolé.",
 						   "bulletin_message": {
-							  "000": "To borrow strength to rise means to fall when strength fails. Ogo borrows his power not from his so-called-sayer, but from the babe he stole."
+							  "000": "Utiliser la force pour s'élever signifie tomber quand elle ne sera plus là. Ogo obtient sa puissance non pas de son soi-disant-parler, mais de l'enfant qu'il a volé."
 						   },
-                           "bulletin_title": "Le personnage penche la tête",
-						   "dialog_title": "???"
+							"bulletin_title": "La forme incline sa tête",						   "dialog_title": "???"
 						},
 						"erdene_description": {
 						   "choice_000": "Super !",
 						   "choice_001": "Quel mauvais présage.",
 						   "bulletin_message": {
-                              "000": "Moi ? Je suis celui qui observe. Vous. Lui. Pour les étoiles. Pour le destin.",
-							  "001": "I? I am of the Red Kiln. We would have been your saviours, but your Cid parlayed hard in your stead. So now we watch. And wait for the day when your star rises.",
-							  "002": "Me! I suppose you've earned your bit. I am an ember in the forge, a spark in the air. I watch, so that I may know when it is time for the fire to engulf us all.",
-							  "003": "Me? Today, it matters not. Tomorrow, if you still live, you may call me Erdene, of the Red Kiln."
+							  "000": "Moi? Je suis celui qui regarde. Toi. Lui. Pour les étoiles. Pour le destin.",
+							  "001": "Moi? Je suis du Red Kiln. Nous aurions été vos sauveurs, mais votre Cid à misé beaucoup sur vous. Alors maintenant, nous regardons. Et attendons le jour où votre étoile se lèvera.",
+							  "002": "Moi! Je suppose que vous l'avez bien mérité votre part. Je suis une braise dans la forge, une étincelle dans l'air. Je regarde, afin que je puisse savoir quand il est temps pour le feu de tous nous engloutir.",
+							  "003": "Moi? Aujourd'hui, ça n'a pas d'importance. Demain, si vous vivez encore, vous pourrez m'appeler Erdene, du Red Kiln."
 						   },
-						   "bulletin_title": "She smiles with a glint of teeth",
+						   "bulletin_title": "Elle sourit avec une lueur sur les dents",
 						   "dialog_title": "???"
 						},
 						"accept_offer": {
                            "choice_000": "Attendez ! Qui êtes-vous ?",
 						   "choice_001": "Huh.",
 						   "bulletin_message": {
-							  "000": "Fight hard, little town. Fate is meaningless. But were it not, yours would be to rise."
+							  "000": "Bataille ferme, petite ville. Le destin est dénuée de sens. Mais s'il ne l'était pas, vous ne feriez qu'étincellez."
 						   },
-						   "bulletin_title": "She nods firmly",
+						   "bulletin_title": "Elle hoche la tête fermement",
 						   "dialog_title": "???"
 						},
 						"flute_description": {
                            "choice_000": "Sounds good!",
                            "choice_001": "No. Thanks.",
 						   "bulletin_message": {
-							  "000": "Upon this paper, vous devriez trouver le lullabye to sooth the Mountain's soul. Find a stolen flute. Bid your wood-worker pitch it to this melody. Grant it to your bravest sheep-singer, set him at Ogo's great mammoth, and watch self-importance meet it's just reward."
+							  "000": "Sur ce papier, vous devriez trouvé la berceuse pour apaiser l'âme de la montagne. Trouver la flûte volé. Enchérissez sa hauteuravec vos travailleur de bois pour cette mélodie. accordez-là à l'aide de votre plus brave chanteur de mouton, mettez la n musique chez le grand mammouth de Ogo, et regarder la grande importance des rencontres c'est juste la récompense."
 						   },
-						   "bulletin_title": "She offers a scrap of paper",
+						   "bulletin_title": "Elle offre un morceau de papier",
 						   "dialog_title": "???"
 						},
 						"departure": {
 						   "bulletin_message": {
-							  "000": "Well then. Fight hard, little town."
+							  "000": "Eh bien. Bataille ferme, petite ville."
 						   },
-						   "bulletin_title": "She shrugs",
+						   "bulletin_title": "Elle hausse les épaules",
 						   "dialog_title": "???"
 						}
 					 }
