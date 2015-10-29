@@ -1271,8 +1271,8 @@
 						   "dialog_title": "???"
 						},
 						"flute_description": {
-                           "choice_000": "Sounds good!",
-                           "choice_001": "No. Thanks.",
+                           "choice_000": "Ça me va!",
+                           "choice_001": "Non. Merci.",
 						   "bulletin_message": {
 							  "000": "Sur ce papier, vous devriez trouvé la berceuse pour apaiser l'âme de la montagne. Trouver la flûte volé. Enchérissez sa hauteuravec vos travailleur de bois pour cette mélodie. accordez-là à l'aide de votre plus brave chanteur de mouton, mettez la n musique chez le grand mammouth de Ogo, et regarder la grande importance des rencontres c'est juste la récompense."
 						   },
@@ -1296,9 +1296,9 @@
                            "choice_000": "Pas question !",
 						   "choice_001": "Huh.",
 						   "bulletin_message": {
-							  "000": "Soothsayer magic! Speak with old ones! Tell future! He see... he see Red Kiln Falling, new star rising. That star is Ogo. This time, we pick winning side!",
-							  "001": "Soothsayer old, old snake. Speaks out with bones and scales. Sees future! Sees cycle ending, ending forever. Not sure what he mean, but good for Ogo!",
-							  "002": "Soothsayer goblin, obviously! Goblin who can see future! He say old ones dying away, new star rising. Good for Ogo, bad for everyone else, you included!"
+							  "000": "Devin Magique! Parle avec anciens! Raconte futur! Voit... Voit Red Kiln tomber, nouvelle étoile monter. C'est Ogo. Cette fois, ont est du coté des gagnant!",
+							  "001": "Vieux devin, vieux serpent. Parle avec les os et les flammes. Regarde l'avenir! Regarde la fin du cycle, la fin pour toujours.  ... Pas sur de ce qu'il veut dire mais bon, bon pour Ogo !",
+							  "002": "Devin gobelin, évidemment! Gobelin qui peut voir l'avenir! Il dit anciens meurent loin, nouvelle étoile montante. Conseillé pour Ogo, mauvais pour tout le monde, vous aussi!"
 						   },
 						   "bulletin_title": "Le goblin écarquille les yeux",
 						   "dialog_title": "Porte bannière d'Ogo"
@@ -1307,46 +1307,46 @@
 						   "choice_000": "Huh.",
 						   "choice_001": "Gagh!",
 						   "bulletin_message": {
-							  "000": "Ho, puny town! Me stand here with bad news for you!",
-							  "001": "Puny Town! Bow and tremble!",
-							  "002": "Muahahahahah! This? This your town? I laugh till I cry!"
+							  "000": "Ho, ville chétif! Je suis ici avec de mauvaises nouvelles pour vous!",
+							  "001": "Ville chétif! Incline toi et tremble!",
+							  "002": "Muahahahahah! Ça? Ceci votre ville? J'en pleur de rire!"
 						   },
-						   "bulletin_title": "A goblin with a officious smirk slithers into town",
+						   "bulletin_title": "Un gobelin avec un officieux sourire narquois se glisse en ville",
 						   "dialog_title": "Porte bannière d'Ogo"
 						},
 						"ogo_introduction": {
                            "choice_000": "Ogo qui?",
                            "choice_001": "Uh. Non.",
 						   "bulletin_message": {
-							  "000": "By order of Ogo Cognecrâne, Goblin-All-Chief-To-Be, you and all your stuffs now be tribute to Great Glittering Army and Red Kiln Empire!",
-							  "001": "I envoy of Ogo Cognecrâne, tamer of Mountains! Ogo demand many thing from all, include you, include your gold!",
-							  "002": "My Chief-of-Chiefs, Ogo Cognecrâne, soon rule take Glittering Army and rule all of Red Kiln! You next of many conquests. You become our goldfarmers!",
-							  "003": "I am Bannergoblin of Ogo Cognecrâne, rider of Mountain! My master demand you tribute, in form of all you have! You give everything! Or you pay!",
-							  "004": "I bannergoblin of Ogo Cognecrâne! When you bested the small chiefs, you bring Ogo's Eye upon you! And Ogo's Eye know all! You will give tribute, or eye will see your end!"
+							  "000": "Par ordre de Ogo Cognecrâne, Goblin-Tout-Pour-Être-Chef, vous et toutes vos affaires sont maintenant le tribut de votre ville à La Grande Armée scintillante et à l'Empire Red Kiln !",
+							  "001": "Je suis l'envoyé de Ogo Cognecrâne, dompteur de la montagne! Ogo demande des choses de toutes sortes, vous compris, votre or aussi!",
+							  "002": "Mon Chef-parmi-les-Chefs, Ogo Cognecrâne, bientôt prendra l'Armée Scintillante et s'en ira de Red Kiln! Vous êtes la prochaine de ses conquètes. Vous devenez nous fermiers d'or!",
+							  "003": "Je suis la Bannière gobelinne de Ogo Cognecrâne, coureur de Montagne! Mon maître vous demande tribut, sous la forme de tout ce que vous avez! Vous donnez tout! Ou vous payez!",
+							  "004": "Je suis la Bannière gobelinne de Ogo Cognecrâne! Lorsque vous avez vaincu les petits chefs, vous avez apporté l'œil de Ogo sur vous! Et les yeux de Ogo savent tout! Vous lui donner son tribut, ou ses yeux verront votre fin!"
 						   },
-						   "bulletin_title": "The goblin straightens",
+						   "bulletin_title": "Le gobelin se redresse",
 						   "dialog_title": "Porte bannière d'Ogo"
 						},
 						"ogo_description": {
-						   "choice_000": "Soothsayer?",
+						   "choice_000": "Devin?",
 						   "choice_001": "Eh",
 						   "bulletin_message": {
-							  "000": "Soothsayer say Ogo Cognecrâne will be hero above all heroes! You destined to give him gold!",
-							  "001": "Soothsayer little, but have big thoughts! Soothsayer never wrong. Soothsayer say you give Ogo gold, or Ogo will take it from you!",
-							  "002": "Goblins long be shunned and forgotten. Soothsayer say that Ogo Cognecrâne, my LittleChief, will soon change everything! For that, he need gold and labor!",
-							  "003": "Ogo Cognecrâne, Master of Masters, have great destiny, to rule over all! Soothsayer say so; soothsayer never wrong. Soothsayer say, you will help!"
+							  "000": "Devin dire Ogo Cognecrâne sera héros au-dessus de tous héros! Vous destiné à lui donner de l'or!",
+							  "001": "Devin petit, mais devin a de grandes pensées! Devin ne se trompe jamais. Devin dire que vous donnez l'or d'Ogo, ou Ogo va vous le prendre!!",
+							  "002": "Goblins longtemps être rejetés et oubliés. Devin dire que Ogo Cognecrâne, mon Petitchef, viendra bientôt tout changer! Pour cela, il a besoin d'or et de travail!",
+							  "003": "Ogo Cognecrâne, Maître des Maîtres, a un grand destin, pour régner sur tout! Devin le dire; devin ne se trompe jamais. Devin dit, vous contribuerez!"
 						   },
-						   "bulletin_title": "The goblin's eyes glow with zeal",
+						   "bulletin_title": "Les yeux du gobelin brillent avec un zèle",
 						   "dialog_title": "Porte bannière d'Ogo"
 						},
 						"conclusion": {
 						   "bulletin_message": {
-							  "000": "Anyway, it matter not! I here only to warn you: muster your gold, so it easy for us to collect! We be back soon!",
-							  "001": "Hahaha! Whatever. You all belong to us now. We come soon to collect you for gold mines!",
-							  "002": "Oh, you say something? No matter, we return soon! Collect all your things so will be easy for us to move!",
-							  "003": "Anyway, time to go iron my banner. Be back soon! Be ready, yes? New life under goblin rule awaits!"
+							  "000": "Quoi qu'il en soit, Il importe peut! Je suis ici que pour vous avertir: rassembler votre or, pour qu'il soit facile pour nous de le recueillir! Nous serons bientôt de retour!",
+							  "001": "Hahaha! Peu importe. Vous appartenez tous à nous maintenant. Nous arrivons bientôt vous chercher pour les mines d'or!",
+							  "002": "Oh, vous dites quelque chose? Peu importe, nous reviendrons bientôt! Rassemblez tous vos choses pour qu'il soit plus facile pour nous de passer!",
+							  "003": "Quoi qu'il en soit, il est l'heure d'aller repasser ma bannière. J'reviens bientôt! Soyez prêt, oui? Une nouvelle vie sous la domination de gobelin vous attend!"
 						   },
-						   "bulletin_title": "The goblin's eyes narrow",
+						   "bulletin_title": "Les yeux du gobelin se rétrécissent",
 						   "dialog_title": "Porte bannière d'Ogo"
 						}
 					 }
@@ -1359,10 +1359,10 @@
                            "choice_000": "Merci mon Dieu !",
                            "choice_001": "(bon débarras)",
 						   "bulletin_message": {
-							  "000": "Good news for you, pathetic humans! Ogo Cognecrâne, Chief-of-Chiefs-To-Be, calls us to home for clan meet-meet. Been fun hanging with you! Maybe we tell friends, back soon for more fun taking your stuff!",
-							  "001": "Humans no challenge. So sad. We hope to return home to our Chief-of-Chiefs, Ogo Cognecrâne, with story of our glory, but there is no glory in defeating you. Maybe we come back when you stronger.",
-							  "002": "We leaving now, humans. But we will be back.",
-							  "003": "Well, was fun preying on you, pathetic humans! But fun times must end, we go home now to big clan meet-meet. While we gone, build more stuff, so when we come back, we can take more!"
+							  "000": "Bonnes nouvelles pour vous, pathétiques humains!! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous rappel chez nous pour le rassemblement du clan. Ça aurait été amusant de vous pendre! Peut-être qu'on s'appellera amis, bientôt de retour pour plus de plaisir à prendre vos affaires!",
+							  "001": "Humains sans challenges. Tellement triste. Nous espérions retourner chez notre Chef-des-Chefs, Ogo Cognecrâne, avecdes histoires de gloire, mais il n'y a aucune gloire à vous battre. Peut-être que nous reviendrons lorsque vous plus fort.",
+							  "002": "Nous partons maintenant, humains. Mais nous serons de retour.",
+							  "003": "Eh bien, c'était drôle de vous chasser, pathétiques humains! Mais tout moment de bonheur à sa fin, on rentre mainteant au grand rassemblement du clan. Pendant que nous partons, construisez plus de choses, pour que quand nous reviendrons, nous puissions prendre plus!"
 						   },
                            "bulletin_title": "Le gobelin envoi une note",
 						   "dialog_title": "[name(i18n_data.boss)]"
@@ -1377,7 +1377,7 @@
                            "choice_000": "(bon débarras)",
                            "choice_001": "Adieu !",
 						   "bulletin_message": {
-							  "000": "Hahaha! Exactly. This for you, to remember our friendship."
+							  "000": "Hahaha! Exactement. Ceci pour vous, pour se rappeler notre amitié."
 						   },
                            "bulletin_title": "Le gobelin dépose avec grand soin quelque chose sur le sol",
 						   "dialog_title": "[name(i18n_data.boss)]"
@@ -1386,7 +1386,7 @@
 						   "choice_000": "Wow!",
                            "choice_001": "Quel mauvais présage.",
 						   "bulletin_message": {
-							  "000": "You so funny. Because we friends, me tell you: Ogo pretty cool. A bit mean. Once ate a puppy. But... soothsayer say he fated! Meant to stomp on everyone! Me just little guy, you know? Though you littler. Anyways."
+							  "000": "Vous êtes si drôle. Parce que nous amis, moi vous dire: Ogo assez cool. C'est peu dire. Une fois qu'il a mangé un chiot. Mais ... devin dit qu'il voué à l'échec! Conçu pour piétiner tout le monde! Moi juste petit gars, tu le sais? Bien que vous encore plus petit. Quoi qu'il en soit."
 						   },
                            "bulletin_title": "Le gobelin s'esclaffe",
 						   "dialog_title": "[name(i18n_data.boss)]"
