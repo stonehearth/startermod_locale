@@ -1579,26 +1579,26 @@
 						},
 						"collection_failed": {
 						   "bulletin_message": {
-							  "000": "You forgot stuff? You no make? You stain Glittering Army Honor! You die now!",
-							  "001": "You dumb boks no make my stuff?! Dooooom!!! DOOM TO ALL!!!",
-							  "002": "What? You no have my stuff? BLOOD, STABBITY, AND VEN-JENCE!",
-							  "003": "Me want to be good chieftan. Me want to be friends! But you no listen. No. You no worthy. Me must kill you, then go home. Cry for could-have-been. You cry too, except you dead."
+							  "000": "Vous oublier matos? Vous pas faire? Vous soulliez honeur Armée flamboyante! Vous mourrir maintenant!",
+							  "001": "Vous triple idiots pas faire matos?! Moouuuurez!!! Mourrez tous!!!",
+							  "002": "Quoi? Vous pas avoir matos? SANG, POIGNARDAGE, ET VEN-JENCE!",
+							  "003": "Moi veut être bon chef. Moi veut être ami! Mais vous pas écouter. Non. Vous pas méritant. Moi doit vous tuer, puis rentrer maison. Pleurer pendant pouvoir-encore-être. Vous pleurez trop, sauf que ... vous morts."
 						   },
-						   "bulletin_title": "The goblin frowns so hard you can't see his eyes",
+						   "bulletin_title": "Le gobelin fronce les sourcils si fort que vous ne pouvez pas voir ses yeux",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"collection_success": {
 						   "bulletin_message": {
-							  "000": "That's right. You cooperate, we get along just fine.",
-							  "001": "You actually have stuff? I never--I mean, yes. You give me due.",
-							  "002": "You got supplies? We take; we good!",
-							  "003": "For me?! You bestest of best peons!",
-							  "004": "My stuff! I take home now and cuddle to sleep at night.",
-							  "005": "Hahahahaha!!! Pretty stuff!! Beautiful stuff!! Mine mine mine!",
-							  "006": "Stuff!! Me sheep be so happy.",
-							  "007": "My stuff! Hahahah, you pretty good for peon. Be back soon!"
+							  "000": "C'est ça. Vous coopérez, nous très bien nous entendre.",
+							  "001": "Vous bien faire matos? Je jamais--Je vouloir dire, oui. Vous donner raison moi.",
+							  "002": "Vous avoir fournitures? Nous prendre; Nous bon!",
+							  "003": "Pour moi?! Vous meilleur des meilleurs ouvriers!",
+							  "004": "Affaires moi! Je rentre mainteant et câlin pour dormir cette nuit.",
+							  "005": "Hahahahaha!!! Jolie affaires!! Superbe affaires!! Mien mien mien!",
+							  "006": "Matos!! Moutons moi être si heureux.",
+							  "007": "Affaires mienne! Hahahah, Vous très bon pour ouvrier. Reviens bientôt!"
 						   },
-						   "bulletin_title": "The goblin grins like a kid on Frostfeast",
+						   "bulletin_title": "Le gobelin sourit comme un gamin Frostfeast",
 						   "dialog_title": "[name(i18n_data.boss)]"
 						},
 						"collection_progress": {
@@ -1610,11 +1610,11 @@
 						},
 						"shakedown_refused": {
 						   "bulletin_message": {
-							  "000": "What? You say no? Then we take! TAKE ALL THINGS!!!!",
-							  "001": "No no no. You supposed to say 'Yes.' You supposed to feel grateful! Try again? No? Bad! Me fix badness!",
-							  "002": "No? Me brain breaking!! Me break you!",
-							  "003": "What? Cannot believe?! Must kill!!!",
-							  "004": "You no understand. Alternative: Death. Deeeaaaattth. DEAAATTTTTHHH!!!"
+							  "000": "What? You say no? Alors nous prendre! PRENDRE TOUTES CHOSES!!!!",
+							  "001": "Non non non. Vous supposer dire 'Oui.' Vous censé sentir reconnaissants! Essayer encore? Non? Méchant! Moi résoudre méchanceté!",
+							  "002": "Non? Moi rupture cerveau!! Moi casser vous!",
+							  "003": "Quoi? Pouvoir pas croire?! Devoir tuer!!!",
+							  "004": "Vous pas comprendre. Alternative: Mort. Moooorrrrt. MOOOORRRRRRT!!!"
 						   },
                            "bulletin_title": "Le gobelin semble incrédule",
 						   "dialog_title": "[name(i18n_data.boss)]"
@@ -1626,7 +1626,7 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-                           "title": "Un groupe de pillards gobelins approche !",
+                           "title": "Un groupe de pillards gobelins approche!",
                            "message": "On va vous avoir !"
 						}
 					 }
@@ -1646,8 +1646,8 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "Un groupe de pillards gobelins approche !",
-                           "message": "On va vous avoir !"
+						   "title": "Un groupe de pillards gobelins approche!",
+                           "message": "On va vous avoir!"
 						}
 					 }
 				  }
@@ -1660,7 +1660,7 @@
                               "campfire": {
                                  "campfire": {
                                     "display_name": "Feu de camp hypnotique",
-                                    "description": "Mais ... pourquoi il est vert ?"
+                                    "description": "Mais ... pourquoi il est vert?"
                                  },
                                  "workers": {
                                     "description": "Garde feu"
@@ -1678,7 +1678,7 @@
                                     "description": "Propriété d'Ogo Cognecrâne"
                                  },
                                  "trainer": {
-                                    "description": "Whips the wolves into a dangerous frenzy"
+                                    "description": "Fouttez les loups jusqu'à leurs folies dangeureuses."
                                  },
                                  "tame_wolf": {
                                     "description": "Férocement terrifiant."
@@ -1697,14 +1697,14 @@
                                  "description": "Fabriquée avec des peaux décolorées."
                               },
                               "ogo": {
-                                 "description": "Soothsayer say, Ogo Chosen One, Ogo Cycle-Breaker",
+                                 "description": "Devin dire, Ogo Élu, Ogo Brise-Cycle",
                                  "display_name": "Ogo Cognecrâne"
                               }
                            },
                            "ogo_throne": {
                               "ogo_throne": {
                                  "display_name": "Trône d'Ogo",
-                                 "description": "Decorated with Mountain's Baby Tusks"
+                                 "description": "Décoré avec des défences de bébé montagne"
                               }
                            },
                            "wolf_kennel": {
@@ -1723,7 +1723,7 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "Des voleurs gobelins !",
+						   "title": "Des voleurs gobelins!",
 						   "message": "Ils désirent ardemment des choses confortables"
 						}
 					 }
@@ -1738,14 +1738,14 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-                           "title": "Un gobelin armé !",
+                           "title": "Un gobelin armé!",
                            "message": "Il veut vos biens"
 						}
 					 }
 				  },
 				  "raid_stockpiles": {
 					 "thug": {
-                        "description": "Armé et dangereux !"
+                        "description": "Armé et dangereux!"
 					 }
 				  }
 			   },
@@ -1753,7 +1753,7 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "Un loup gobelin errant !",
+						   "title": "Un loup gobelin errant!",
 						   "message": "Il veut vous manger."
 						}
 					 }
@@ -1768,7 +1768,7 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "Un gobelin !",
+						   "title": "Un gobelin!",
 						   "message": "Il veut vos biens"
 						}
 					 }
@@ -1778,7 +1778,7 @@
 						"description": "Froussard mais avide de convoitise"
 					 },
 					 "escorts": {
-						"description": "Avide de convoitise et armé !"
+						"description": "Avide de convoitise et armé!"
 					 }
 				  }
 			   },
@@ -1786,7 +1786,7 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "Un gobelin dangereux !",
+						   "title": "Un gobelin dangereux!",
 						   "message": "Il veut vos biens"
 						}
 					 }
@@ -1796,7 +1796,7 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "Un gobelin se faufile dans le camp !",
+						   "title": "Un gobelin se faufile dans le camp!",
 						   "message": "Il est furtif"
 						}
 					 }
@@ -1811,8 +1811,8 @@
 				  "missions": {
 					 "raid_stockpiles": {
 						"sighted_bulletin": {
-						   "title": "Un voleur se rapproche !",
-						   "message": "Il veut vos biens !!!."
+						   "title": "Un voleur se rapproche!",
+						   "message": "Il veut vos biens!!!."
 						}
 					 }
 				  },
@@ -1828,7 +1828,7 @@
 			   "undead_raid": {
 				  "mission": {
 					 "sighted_bulletin": {
-                        "title": "Intrus repérés !"
+                        "title": "Intrus repérés!"
                      }
                   }
                },
@@ -1840,10 +1840,10 @@
                               "thief_campfire": {
                                  "campfire": {
                                     "display_name": "Feu de camp hypnotique",
-                                    "description": "Mais ... pourquoi il est vert ?"
+                                    "description": "Mais ... pourquoi il est vert?"
                                  },
                                  "workers": {
-                                    "description": "Designated hearth-tender"
+                                    "description": "Désigné foyer-tendre"  
                                  }
                               }
                            }
@@ -1883,21 +1883,21 @@
 		 "groggy": {
 			"groggy_buff": {
 			   "display_name": "Chancelant",
-			   "description": "A hard night's sleep on the ground lowers speed by 25%. A bed would be much better!"
+			   "description": "Une nuit difficile sur le sol réduit la vitesse de 25%. Un lit serait beaucoup mieux!"
 			}
 		 },
 		 "shepherding": {
 			"compassionate_shepherd_buff": {
-			   "display_name": "Cared For",
-			   "description": "Taken care of by a compassionate shepherd. This animal will produce more resources and offspring."
+			   "display_name": "Soigné",
+			   "description": "Pris en charge par un berger compatissant. Cet animal va produire plus de ressources et dedescendance."
 			},
 			"shepherding_speed_bonus": {
-			   "display_name": "Herd Speed Increase +10%",
-			   "description": "The shepherd is now more adept at getting the flock to walk a tiny bit faster."
+			   "display_name": "Vitesse du Troupeau Augmente de +10%",
+			   "description": "Le berger est maintenant plus aptes à faire marcher le troupeau un peu plus vite."
 			},
 			"stenched_shepherd_buff": {
-			   "display_name": "Stenched",
-			   "description": "Animals can smell that this shepherd has slaughtered something recently. This shepherd won't be able to find new wild animals until the stench fades."
+			   "display_name": "puanteur",
+			   "description": "Les animaux peuvent sentir que ce berger a abattu quelque chose récemment. Ce berger ne sera pas en mesure de trouver de nouveaux animaux sauvages jusqu'à ce que l'odeur s'efface."
 			}
 		 },
 		 "sleeping": {
@@ -1920,7 +1920,7 @@
 			},
 		"starving_animal_buff": {
                "display_name": "Affamé",
-               "description": "This animal is hungry! Have a cook create some feed so your shepherd can feed it."
+               "description": "Cet animal a faim! Avoir un cuisinier pour créer un peu de nourriture de sorte que votre berger puisse le nourrir serait utile."
 			}
 		 },
 		 "stopped": {
@@ -2070,8 +2070,8 @@
 			   "description": "Dites à ce hearthling d'aller ailleurs"
 			},
 			"unload_inventory": {
-			   "display_name": "Unload Bags",
-			   "description": "Return to town and desposit the contents of your bags."
+			   "display_name": "Décharger les sacs",
+			   "description": "Retournez à la ville et déposez le contenu de vos sacs."
 			}
 		 },
 		 "plant_tree": {
@@ -2082,25 +2082,25 @@
 	  "personality": {
 		 "carpenter_promote": {
 			"promote_carpenter": {
-			   "text": "On Hearing the Call of the Saw:",
+			   "text": "En  entendant l'appel de la Scie:",
 			   "logs": {
 				  "lovable_rogue": {
-					 "000": "You want me to be the carpenter? Can I... sell the stuff I make? Or is this communal property?"
+					 "000": "Vous voulez me faire menuisier? Est-ce que je pourrais...vendre les objets que je fabriquerais? Ou c'est une propriété commune?"
 				  },
 				  "diligent_sweetheart": {
-					 "000": "Me? You want me to be the carpenter? Ok, I'll do my best!"
+					 "000": "Moi? Vous voulez que je sois menuisier? Ok, Je ferais de mon mieux!"
 				  },
 				  "psychopathic_misanthrope": {
-					 "000": "The Saw? Where some people see a tool, I see a serrated weapon. Saw, you are my new best friend."
+					 "000": "La Scie? Où les gens voyent un outils, Je vois une arme cranté. Scie, Tu es mon nouveau meilleur ami."
 				  },
 				  "insufferable_academic": {
-					 "000": "I shall endeavor to bring the music of the cubes to our furniture."
+					 "000": "Je vais essayer d'apporter la musique des cubes à nos meubles."
 				  },
 				  "hopeless_optimist": {
-					 "000": "Me, Carpenter? YES!! I've always wanted to make minature chairs!!!"
+					 "000": "Moi, menuisier? OUI!! J'ai toujours voulue faires des chaises miniatures!!!"
 				  },
 				  "beleaguered_leader": {
-					 "000": "It is my turn to wield the saw. Too bad mom always said I was bad with power."
+					 "000": "C'est à mon tour de manier la scie. c'est dommage mère m'a toujours dit que j'étais nul avec ça dans les mains."
 				  }
 			   }
 			}
