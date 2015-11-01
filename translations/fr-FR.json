@@ -2111,26 +2111,26 @@
 			   "logs": {
 				  "beleaguered_leader": {
 					 "000": "Aujourd'hui, nous allons couper des arbres pour le bois. Je suis déjà malade de cette mauvaise farce.",
-					 "001": "Timbeerrrrr!!! I could get used to saying that.",
-					 "002": "The gang's keeping track of who's chopped down the most trees. It's me but in the time it would take to correct their math I'd rather just add another tree to my total.",
-					 "003": "Thought I saw a hornet's nest while we were logging. Luckily, everyone got out of the way in time.",
-					 "004": "Wood: our eternal taskmaster. Got to keep our eye on the goal.",
-					 "005": "Everyone chop together! Chop! Chop! Chop! Yes, hurry too!",
-					 "006": "Ok gang, breaktime's over. Back to chopping!",
-					 "007": "Every time I swing this axe, I visualize my dream house and exactly how I'm going to build it. Side effect of all this chopping: the floorplan's getting smaller.",
-					 "008": "Falling wood! Run, people! RUN!",
+					 "001": "Boooiiiiiiiiis!!! Je pourrais m'habituer à dire que cela.",
+					 "002": "La troupe suis le chemin de celui qui coupera le plus d'arbres. Pour l'instant on me suis mais je préfère en couper un de plus pour être sur de mon total.",
+					 "003": "J'ai cru voir un nid de frelon pendant que nous étions dans l'exploitation forestière. Heuresement, tout le monde en est sortie à temps..",
+					 "004": "Bois: Notre éternelle tâche principale. Nous devons garder un oeil sur notre but: t'abbatre.",
+					 "005": "Tout le monde coupe ensemble! Cou-per! Cou-per! Cou-per! Oui, plus vite!",
+					 "006": "Ok les gars, la pause est finie. On retourne couper!!",
+					 "007": "Chaque fois que j'envoie ma hache sur ces arbres, je vois la maison de mes rèves et exactement comment je vais la construire. Effet secondaire de tout ce découpage: le salon se rétrécit.",
+					 "008": "ATTENTION, chute d'arbres! Dégagez! DEGAGEZ LA VOIE!",
 					 "teacher": {
-						"000": "Attacked more trees today. By [str(entry.teacher)] there's a lot of trees out here."
+						"000": "Coupez plus d'arbres aujourd'hui. Par [str(entry.teacher)] il y a beaucoup d'arbres par ici."
 					 }
 				  },
 				  "lovable_rogue": {
-					 "000": "Step 1: Chop wood. Step 2: ???. Step 3: Profit!! Hm. Still working on step 2.",
-					 "001": "I would be more excited to chop trees if they had a discernable anatomy. Or if I could get combat advantage! Or if they could be flanked. Or if they even just had facing, so I could backstab! Not that I ever heard of anyone felling a tree with a backstab.",
-					 "002": "My hands are getting rough from all this chopping.",
-					 "003": "Top reason chopping trees is fun: perfecting the swing of the axe. May be useful one day!",
-					 "004": "Top reason carrying wood is fun: can't think of one.",
-					 "005": "I wonder how much I could sell this wood for back home. ...Nothing, probably.",
-					 "006": "I wonder if I could get out of chopping wood by pretending to have a splinter? Oh right, it woudln't be pretending.",
+					 "000": "Étape 1: Couper du bois. Étape 2: ???. Étape 3: Bénéfice!! Hmm. Il faut encore travailler l'étape 2.",
+					 "001": "Je serais plus exicté pour couper les arbres si ils avaient une anatomie puls simple. Ou si je pouvais obtenir un avanage de combat sur leur taille. Ou si je pouvais les prendre de flanc. Ou s'ils avaient simplement une tête, afin de les poignarder dans le dos! Même si je n'ai jamais entendu parler de quelqu'un qui abbat les arbres en leur mettant un poignard dans le dos..",
+					 "002": "Mes mains deveinnent rugueuses a force de couper le bois.",
+					 "003": "La meilleur raison qui fait que couper des arbres est ammusant: perfectionner le coup de hache. Ça peut être utile un jour!",
+					 "004": "La meiileur raison qui fait que transporter du bois est amusant: : Je n'en connais aucune.",
+					 "005": "Je me demande combien de bois je pourrais vendre en revenant à la maison... Aucun, probablement..",
+					 "006": "Je me demande si je pourrai arréter de couper du bois en prétandant avoir une écharde? Ah, oui,ce ne sera pas que de la prétention.",
 					 "007": "Ow! Blister! Why am I doing this to myself? An at-will employment contract is pretty much beside the point when you're OUT IN THE MIDDLE OF NOWHERE.",
 					 "008": "Splinters! Everywhere! Ok, calming breath. Calming breath. Anyone got tweezers?"
 				  },
