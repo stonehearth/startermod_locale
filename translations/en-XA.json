@@ -201,7 +201,18 @@
         "focus_camera": "[!!Ƒŏĉūŝ ĉáměŗá ŏņ ťħĩŝ ūņĩť!!]"
       },
       "citizens": {
-        "title": "[!!Ćįŧįźĕňś!!]"
+        "title": "[!!Ćįŧįźĕňś!!]",
+        "work_orders_title": "[!!Ŵơřƙ Ơřđěřš!!]",
+        "worker_details": "[!!Ɗēťăĭľš!!]",
+        "workers_list_headers": {
+          "name": "[!!Ɲämě!!]",
+          "haul": "[!!Ĥäűł!!]",
+          "build": "[!!Ɓųĩĺđ!!]",
+          "mine": "[!!Mıŋě!!]",
+          "job": "[!!ĵơƄ!!]",
+          "current_activity": "[!!Čūŗŗȅņť Ăčťıvıťɏ...!!]"
+        },
+        "show_character_sheet": "[!!Mŏŕė İŉƒŏ!!]"
       },
       "create_camp": {
         "new_game_place_banner": "[!!Ċłıċĸ mȇ ťő ƥłȁċȇ ȳőűŗ ťőŵŋ ƅȁŋŋȇŗ!!]",
@@ -2033,11 +2044,6 @@
         "display_name": "[!!Řȇmővȇ!!]",
         "description": "[!!Ʀȅmơvȅ ťħıš łăđđȅŗ.!!]"
       },
-      "shear_sheep": {
-        "display_name": "[!!Šħěȃř Šħěěƿ!!]",
-        "description": "[!!Ĥȁŗvēşť ťĥē ŵőőĺ ƒŗőm ťĥĩş şĥēēƥ. Ɖőŋ'ť ŵőŗŗȳ, ĩť ďőēşŋ'ť ĥűŗť...műċĥ.!!]",
-        "disabled_description": "[!!Ƴōũ'ľľ ƀė àƀľė ţō ĥàŕvėśţ ţĥĭś śĥėėƥ àĝàĭń ōńćė ĭţś ŵōōľ ĥàś ĝŕōŵń ƀàćķ.!!]"
-      },
       "show_workshop": {
         "display_name": "[!!Ŝħŏŵ Ŵŏŗĸŝħŏƿ!!]",
         "description": "[!!Ƴŏųř ĉřåƒŧēř ųŝēŝ ŧħē ŵŏřƙŝħŏƿ ŧŏ ĉŏƞŝŧřųĉŧ ųŝēƒųľ ĭŧēmŝ ƒŏř ƴŏųř ŝēŧŧľēmēƞŧ.!!]",
@@ -3092,6 +3098,18 @@
           "display_name": "[!!Ŵơơđȅņ Ŵıņđơŵ Ƒŗămȅ!!]",
           "description": "[!!Şő műċĥ ƒőŗ ƥŗĭvȁċȳ...!!]"
         }
+      },
+      "wooden_window_frame_tall": {
+        "wooden_window_frame_tall_ghost": {
+          "display_name": "[!!Ŧåľľ Ŵĭƞđŏŵ Ƒřåmę!!]",
+          "description": "[!!Ĕxţŕà ĥĕīĝĥţ àďďś àń àīŕ ōƒ ĕļĕĝàńćĕ!!]"
+        }
+      },
+      "wooden_window_frame_wide": {
+        "wooden_window_frame_wide_ghost": {
+          "display_name": "[!!Ŵĭđę Ŵĭƞđŏŵ Ƒřåmę!!]",
+          "description": "[!!Ĭť'ş ȁ ƥȁŋőŗȁmĭċ vĭĕŵ!!!]"
+        }
       }
     },
     "containers": {
@@ -3191,7 +3209,8 @@
         "sheep_young": {
           "display_name": "[!!Ā Ļāmƀ!!]",
           "description": "[!!Åŵŵŵ!!!]"
-        }
+        },
+        "renewable_harvest_status_text": "[!!şĥēâřıňġ şĥēēƥ!!]"
       },
       "squirrel": {
         "display_name": "[!!Śɋŭįřřĕŀ!!]",
@@ -5221,6 +5240,14 @@
           "description": "[!!Āłłőŵş ā ĥȅāŕţĥłıńġ ţő māķȅ ţőőłş āńď ġőőďş ƒŕőm ċłāȳ.!!]",
           "recipe_name": "[!!Ƥơţţĕŕ'š Čůţţĕŕ!!]",
           "flavor": "[!!Ãŉđ Mơŉķȇɏ šţŕůčķ ţħȇ ȇãŕţħ ŵīţħ ħīš šţãƒƒ. 'Ƒơŕ ɏơů ãŕȇ mɏ čħīļđŕȇŉ, ħȇ šãīđ, ãŉđ ɏơů šħãļļ ŵãŉţ ƒơŕ ŉơţħīŉģ.'!!]"
+        },
+        "wooden_window_frame_tall_recipe": {
+          "description": "[!!Ėxťŗá ħėĭğħť áđđŝ áņ áĭŗ ŏƒ ėľėğáņĉė.!!]",
+          "recipe_name": "[!!Ţàłł Ŵōōďęń Ŵıńďōŵ Ƒŕàmę!!]"
+        },
+        "wooden_window_frame_wide_recipe": {
+          "description": "[!!Īŧ'ş ġőŧ â ƥâňőřâmīċ vīȅŵ!!!]",
+          "recipe_name": "[!!Ŵıďę Ŵōōďęń Ŵıńďōŵ Ƒŕàmę!!]"
         }
       }
     },
