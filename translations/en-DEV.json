@@ -201,7 +201,18 @@
             "focus_camera": "Focus camera on this unit"
          },
          "citizens": {
-            "title": "Citizens"
+            "title": "Citizens",
+            "work_orders_title": "Work Orders",
+            "worker_details": "Details",
+            "workers_list_headers": {
+               "name": "Name",
+               "haul": "Haul",
+               "build": "Build",
+               "mine": "Mine",
+               "job": "Job",
+               "current_activity": "Current Activity..."
+            },
+            "show_character_sheet": "More Info"
          },
          "create_camp": {
             "new_game_place_banner": "Click me to place your town banner",
@@ -2033,11 +2044,6 @@
             "display_name": "Remove",
             "description": "Remove this ladder."
          },
-         "shear_sheep": {
-            "display_name": "Shear Sheep",
-            "description": "Harvest the wool from this sheep. Don't worry, it doesn't hurt...much.",
-            "disabled_description": "You'll be able to harvest this sheep again once its wool has grown back."
-         },
          "show_workshop": {
             "display_name": "Show Workshop",
             "description": "Your crafter uses the workshop to construct useful items for your settlement.",
@@ -3092,6 +3098,18 @@
                "display_name": "Wooden Window Frame",
                "description": "So much for privacy..."
             }
+         },
+         "wooden_window_frame_tall": {
+            "wooden_window_frame_tall_ghost": {
+               "display_name": "Tall Window Frame",
+               "description": "Extra height adds an air of elegance"
+            }
+         },
+         "wooden_window_frame_wide": {
+            "wooden_window_frame_wide_ghost": {
+               "display_name": "Wide Window Frame",
+               "description": "It's a panoramic view!"
+            }
          }
       },
       "containers": {
@@ -3191,7 +3209,8 @@
             "sheep_young": {
                "display_name": "A Lamb",
                "description": "Awww!"
-            }
+            },
+            "renewable_harvest_status_text": "shearing sheep"
          },
          "squirrel": {
             "display_name": "Squirrel",
@@ -5221,6 +5240,14 @@
                "description": "Allows a hearthling to make tools and goods from clay.",
                "recipe_name": "Potter's Cutter",
                "flavor": "And Monkey struck the earth with his staff. 'For you are my children, he said, and you shall want for nothing.'"
+            },
+            "wooden_window_frame_tall_recipe": {
+               "description": "Extra height adds an air of elegance.",
+               "recipe_name": "Tall Wooden Window Frame"
+            },
+            "wooden_window_frame_wide_recipe": {
+               "description": "It's got a panoramic view!",
+               "recipe_name": "Wide Wooden Window Frame"
             }
          }
       },
