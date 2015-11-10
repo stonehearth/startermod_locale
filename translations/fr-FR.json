@@ -290,7 +290,7 @@
 		 "menu": {
 			"town_menu": {
 			   "display_name": "Information du village",
-			   "description": "Information générale à propos de votre village, comment se sentent vos hearthlings, et les richesses que vous avais accumulée !"
+			   "description": "Information générale à propos de votre village, comment se sentent vos hearthlings, et les richesses que vous avez accumulées !"
 			},
 			"citizen_manager": {
 			   "display_name": "Hearthlings",
@@ -2187,22 +2187,22 @@
                "text": "Sur une blessure grave :",
 			   "logs": {
 				  "generic": {
-					 "000": "Ow! That really hurt!",
-					 "001": "I'm in danger!",
-					 "002": "Pain!",
-					 "003": "Hurts! Must... keep going!",
-					 "004": "Things are looking bad!",
-					 "005": "Can't take much more of this!",
-					 "006": "My life's starting to flash before my eyes.",
-					 "007": "Should I be worried?",
-					 "008": "I should have written my mom more letters.",
-					 "009": "If I get out of this alive, I'm going to write Grandma and tell her I love her.",
-					 "010": "I could use some help here!",
-					 "011": "Need to keep going!!!",
-					 "012": "Raagh, take that!",
-					 "013": "If I'm going down you're coming with me!",
-					 "014": "For my friends! For my village!",
-					 "015": "I make my last stand here!"
+					 "000": "Ow! Ça fait vraiment mal!",
+					 "001": "A l'aide!",
+					 "002": "Blessé!",
+					 "003": "Blessés! Doit... continuer!",
+					 "004": "Les choses se présentent mal!",
+					 "005": "Peut pas prendre plus de coup!",
+					 "006": "Ma vie commence à passer edvant mes yeux.",
+					 "007": "Devrais-je être inquiet?",
+					 "008": "J'aurais du écrire plus de lettres à ma mère.",
+					 "009": "Si je sors de ça vivant, je vais écrire grand-mère et lui dire que je l'aime.",
+					 "010": "Je pourrais avoir un peu d'aide par ici!",
+					 "011": "Besoin de continuer!!!",
+					 "012": "Raagh, Prends ça!",
+					 "013": "Si je tombe vous venez avec moi!",
+					 "014": "Pour mes amis! Pour mon village!",
+					 "015": "Je fais mon dernier combat ici!"
 				  }
 			   }
 			},
@@ -4449,7 +4449,7 @@
 			},
 			"pine_log": {
                "display_name": "Bûche de pin",
-               "description": "Une bûche.."
+               "description": "Une bûche."
 			},
 			"cactus_log": {
                "display_name": "Bûche de cactus",
