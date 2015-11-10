@@ -5261,7 +5261,7 @@
                "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
             },
             "level_6_data": {
-               "title": "Master cook",
+               "title": "Master Cook",
                "perk_000_name": "10,000 Hours (not implemented)",
                "perk_000_description": "The cook's dishes are now so good for you they have unexpected effects."
             },
@@ -5505,7 +5505,7 @@
                "long_description": "The Mason crafts building materials and decorative items from stone."
             },
             "level_6_data": {
-               "title": "Master mason",
+               "title": "Master Mason",
                "perk_000_name": "10,000 Hours (not implemented)",
                "perk_000_description": "The mason's mastery of his trade allows him to come up with completely new ways of using wood."
             },
