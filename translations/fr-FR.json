@@ -2211,19 +2211,19 @@
 			   "logs": {
 				  "generic": {
 					 "000": "Ça fait du bien d'être en vie !",
-					 "001": "Another awesome day in town.",
-					 "002": "Peaceful!",
-					 "003": "This seems like a pretty sheltered spot.",
-					 "004": "I was amazingly productive today!",
-					 "005": "Nothing much to do today but enjoy life!",
-					 "006": "Nature sure is beautiful!",
-					 "007": "It's great being here with friends and family.",
-					 "008": "Settling here was a great idea.",
-					 "009": "Feeling happy with a good day's work!",
-					 "010": "This really feels like a spot where we can build something great.",
-					 "011": "Uninterrupted bliss! I love days like this.",
-					 "012": "24 hours of pure tranquility.",
-					 "013": "A whole day without a single extential threat! Amazing!"
+					 "001": "Une autres belle journée en ville.",
+					 "002": "Paix!",
+					 "003": "Ça semble être un endroit assez abritée.",
+					 "004": "j'ai été étonnement productif aujourd'hui!",
+					 "005": "Pas grand chose à faire aujourd'hui mis à part profiter de la vie!",
+					 "006": "La Nature est vraiment belle!",
+					 "007": "C'est bon d'être ici avec ses amis et sa famille.",
+					 "008": "S'installer ici était vraiment une bonne idée.",
+					 "009": "Soyer heureux avec une bonne journée de travail!",
+					 "010": "C'est un bon endroit pour construire quelquechose de grand.",
+					 "011": "Bonheur ininterrompu! J'adore les jours comme ça.",
+					 "012": "24 heures de pure tranquilitée.",
+					 "013": "Une journée entière sans une seule menace existentielle! Incroyable!"
 				  }
 			   }
 			},
@@ -2232,20 +2232,20 @@
 			   "logs": {
 				  "generic": {
 					 "dead_friend_and_teacher": {
-						"000": "[str(entry.teacher)] keep you safe, [name(entry.dead_friend)]."
+						"000": "[str(entry.teacher)] te gardera en sécurité, [name(entry.dead_friend)]."
 					 },
 					 "dead_friend": {
 						"000": "[name(entry.dead_friend)]? [name(entry.dead_friend)]!!!",
-						"001": "[name(entry.dead_friend)]? Nothing will ever be the same without you.",
-						"002": "[name(entry.dead_friend)]!!! Nooooooo!!!",
-						"003": "Goodbye, [name(entry.dead_friend)]. I hope we meet again someday.",
-						"004": "[name(entry.dead_friend)]? But... what will I tell your dad, when I next write home?",
-						"005": "We can't let [name(entry.dead_friend)]'s death be in vain, people!",
-						"006": "Goodbye, [name(entry.dead_friend)]. We'll miss you.",
-						"007": "Don't worry, [name(entry.dead_friend)]. We'll avenge you!",
-						"008": "I can't believe [name(entry.dead_friend)] is really gone.",
-						"009": "[name(entry.dead_friend)]? Gone? Suddenly this whole thing seems like it wasn't worth it, somehow.",
-						"010": "Gee, now I really wish I hadn't talked [name(entry.dead_friend)] into this adventure.",
+						"001": "[name(entry.dead_friend)]? Rien ne sera jamais pareil sans toi.",
+						"002": "[name(entry.dead_friend)]!!! Nooooooon!!!",
+						"003": "Au-revoir, [name(entry.dead_friend)]. J'espère que nous nous reverrons un jour.",
+						"004": "[name(entry.dead_friend)]? Mais... qu'est-ce que je vais dire à ton père, quand je vais lui écrire?",
+						"005": "Nous ne pouvons pas laisser la mort de [name(entry.dead_friend)] en vain, Hearthlings!",
+						"006": "Au-revoir, [name(entry.dead_friend)]. Tu nous manquera.",
+						"007": "Ne t'inquiètes pas, [name(entry.dead_friend)]. Nous te vengerons!",
+						"008": "Je ne peux pas croire que [name(entry.dead_friend)] est vraiment parti.",
+						"009": "[name(entry.dead_friend)]? Parti? Soudainnement, tout cela me semble comme s'il n'en valait pas la peine, en quelque sorte.",
+						"010": "Hé ben, Maintenant j'espère vraiment ne jamais avoir persuader [name(entry.dead_friend)] de venir dans cette aventure.",
 						"011": "[name(entry.dead_friend)]!!"
 					 }
 				  }
@@ -2264,38 +2264,38 @@
 					 }
 				  },
 				  "insufferable_academic": {
-					 "000": "Expeditious Retreat! Expeditious Retreat!!!",
-					 "001": "When in doubt, PANIC!!!",
-					 "002": "Keep Calm and AIEEEEE!",
-					 "003": "::wails silently::",
-					 "004": "Fiends of nightmare stay away!",
-					 "005": "Terror bad for blood pressure!!!",
-					 "006": "Cardiac arrest incoming!!!",
-					 "007": "Brain... paralyzed...!",
-					 "008": "Help! Heeeeeelllpp!!!"
+					 "000": "Repli expéditif! Repli expéditif!!!",
+					 "001": "En cas de doute, PANIQUE!!!",
+					 "002": "Rester calme et AIEEEEE!",
+					 "003": "::gémissement silencieux::",
+					 "004": "Démons de cauchemar rester à l'écart!",
+					 "005": "La terreur est mauvaise pour la tension artérielle!!!",
+					 "006": "Arrêt cardiaque arrivant!!!",
+					 "007": "Cerveau... paralysé...!",
+					 "008": "À l'aide! Aidez-moooooi!!!"
 				  },
 				  "belaguered_leader": {
-					 "000": "Tactical retreat! Tactical retreat!!!",
-					 "001": "Everyone make for the hills!",
-					 "002": "Drop everything and move, people!!!",
-					 "003": "They're too strong for us! Scatter, everyone!!",
-					 "004": "Run purposefully towards the exits!!!"
+					 "000": "Retraite tactique! retraite tactique!!!",
+					 "001": "Tout le monde sur les collines!",
+					 "002": "Laisser tout tomber et dégagez, Hearthlings!!!",
+					 "003": "Ils sont trop fort pour nous! Dispersez-vous!!",
+					 "004": "Courrez résolument vers les sorties!!!"
 				  },
 				  "generic": {
-					 "000": "Scared out of my gourd now!!!",
+					 "000": "J'ai pris peur de ma goudre mainteant!!!",
 					 "001": "Aauuugh!!!",
-					 "002": "Nightmare things!!!",
-					 "003": "Must run awaaaaaayyyy!!!!",
-					 "004": "::cries in terror::"
+					 "002": "Choses de cauchemare!!!",
+					 "003": "Doit couuuurrrrirrrr!!!!",
+					 "004": "::cris de terreur::"
 				  },
 				  "hopeless_optimist": {
-					 "000": "Aaagh! It looks so mean!!!!",
-					 "001": "I can't see you!! I can't see you!!!",
-					 "002": "Monsters!!!!!",
-					 "003": "Auugh! Can't we just be friends??",
-					 "004": "Running away so tomorrow can be another daaaaaayyy!!!",
-					 "005": "Run, run, run away from the scary monsters!!!",
-					 "006": "I don't think it wants to be frieeendss!!!"
+					 "000": "Aaagh! Ils semblent si méchant!!!!",
+					 "001": "Je ne peux pas vous voir !! Je ne peux pas vous voir!!!",
+					 "002": "Monstres!!!!!",
+					 "003": "Auugh! On ne peut pas juste être amis??",
+					 "004": "Fuir pour que demain soit peut-être un autre jour!!!",
+					 "005": "Courir, courir, fuir les monstres effrayants!!!",
+					 "006": "Je ne croit pas qu'ils veulent être ami!!!"
 				  },
 				  "psychopathic_misanthrope": {
 					 "000": "RRAAAAGGGHH!!",
@@ -2304,19 +2304,19 @@
 					 "003": "AIEEEEE!!!"
 				  },
 				  "lovable_rogue": {
-					 "000": "Grab the goods and head for the hills!",
-					 "001": "Please, I don't want to die!",
-					 "002": "I have so many more things I need to do!!!!",
-					 "003": "I can't die here!!!",
-					 "004": "Must... escape!!!",
-					 "005": "Every villager for themselves!!!"
+					 "000": "Récuperrez les biens et dirigez-vous vers les collines!",
+					 "001": "S'il vous plaît, je ne veux pas mourir!",
+					 "002": "Il y a tellement de choses que je dois faire!!!!",
+					 "003": "Je ne peut pas mourrir ici!!!",
+					 "004": "Doit... fuir!!!",
+					 "005": "Chaque villageois pour soi-même!!!"
 				  }
 			   }
 			}
 		 },
 		 "dreams": {
 			"dreams": {
-			   "text": "On Dreaming:",
+			   "text": "En dormant:",
 			   "logs": {
 				  "insufferable_academic": {
 					 "000": "I wonder if anyone else has the dream where their clothes trail their bodies by several feet? Lucky for me, I always seem to have on my trusty pair of shiny knickers.",
@@ -2479,7 +2479,7 @@
 			   }
 			},
 			"sleep_in_bed": {
-			   "text": "On Beds:",
+			   "text": "Dans un lit:",
 			   "logs": {
 				  "generic": {
 					 "000": "It feels good to have my own bed.",
@@ -2493,7 +2493,7 @@
 			   }
 			},
 			"sleep_on_ground": {
-			   "text": "On the Cold, Hard Earth:",
+			   "text": "Sur la terre dur et dans le froid:",
 			   "logs": {
 				  "generic": {
 					 "000": "Sleeping on the ground makes me super sore.",
