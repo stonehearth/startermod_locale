@@ -201,9 +201,7 @@
 			"focus_camera": "Centrer la caméra sur cette unité"
 		 },
 		 "citizens": {
-            "title": "Hearthlings"
-         },
-         "tasks": {
+            "title": "Hearthlings",
             "work_orders_title": "Ordres de travail",
             "worker_details": "Détails",
             "workers_list_headers": {
@@ -214,7 +212,9 @@
                "job": "Job",
                "current_activity": "Activité actuel ..."
             },
-            "show_character_sheet": "Plus d'info."
+            "show_character_sheet": "Plus d'info.",
+            "button_suspend": "interrompre",
+            "button_resume": "reprendre"
 		 },
 		 "create_camp": {
 			"new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
@@ -846,20 +846,12 @@
 			}
 		 },
 		 "new_game": {
-			"title": "Nouvelle partie",
-			"normal_game": "Mode normal",
-			"peaceful_game": "Mode pacifique",
-			"normal_game_description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette à des raids hostiles.",
-			"peaceful_game_description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier d'envahisseurs.",
-			"temperate_biome": "Tempéré",
-			"desert_biome": "Désertique",
-			"arctic_biome": "Arctique",
-			"swamp_biome": "Marécageux",
-			"temperate_biome_description": "Biome par défaut, avec beaucoup de verdure",
-			"desert_biome_description": "Sec et sablonneux, avec des grosses collines et une végétation clairsemée",
-			"arctic_biome_description": "Neigeux, avec de hautes montagnes et de grands plans d'eau",
-			"swamp_biome_description": "Biome tempéré, avec beaucoup de marais et quelques montagnes basses",
-			"create_game": "Créer une partie"
+            "title": "Nouvelle partie",
+            "normal_game": "Mode normal",
+            "peaceful_game": "Mode pacifique",
+            "normal_game_description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette à des raids hostiles.",
+            "peaceful_game_description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier d'envahisseurs.",
+            "create_game": "Créer une partie"
 		 },
 		 "select_settlement": {
             "title": "Cliquez sur la carte pour choisir un emplacement",
@@ -977,25 +969,28 @@
             }
 		 },
          "select_game_story": {
-            "title": "Sélectionnez les paramètres de votre futur aventure épic:",
-            "select_kingdom": "Sélectionnez un royaume:",
-            "kingdom_description": "Description: ",
-            "kingdom_favored_biome": "Biome favori: ",
-            "pick_button": "Choisissez ",
-            "select_biome": "Sélectionnez un biome:",
-            "option_summary": "Résumé des paramètres: ",
-            "curr_kingdom": "Embarquez comme: ",
-            "curr_biome": "Pour les terres sauvages de: ",
-            "continue": "Continue!",
-            "ascendancy_title": "Les Ascendancy",
-            "ascendancy_quote": "Moutons? Vérifiez. Houe? Vérifiez. Glaives? Vérifiez. Embarquez!",
-            "ascendancy_description": "Sérieux et travailleurs, fidèle et complets. Les citoyens de la famille des Ascendancy, construisent et cultivent, confiant que le monde connu est à habiter.",
-            "select_difficulty": "Sélectionnez la difficulté: ",
-            "normal_game": "Normal",
-            "peaceful_game": "Paisible",
-            "normal_game_description": "En avant pour une aventure dans un monde plein de danger. Votre ville sera soumise à des raids ennemis..",
-            "peaceful_game_description": "Un mode sandbox, où vous êtes libre de construire votre ville sans se soucier des envahisseurs quels qu'ils soient..",
-            "curr_difficulty": "Dans le mode histoire: "
+            "title": "Choisissez votre aventure",
+            "story_start": "C'est l'histoire de ...",
+            "kingdom_section_start": "... un groupe courageux de colons de ",
+            "select_button": "?",
+            "kingdom_picker_title": "Sélectionnez un Royaume",
+            "biome_section_start": "À la recherche de nouvelles terres et d'aventure, ils partirent à ",
+            "biome_picker_title": "Sélectionnez un biome",
+            "game_mode_select_start": ", un endroit qui est sûr d'être ",
+            "game_mode_picker_title": "Sélectionnez une difficulté",
+            "game_modes": {
+               "normal": {
+                  "display_name": "Mode normal",
+                  "description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette à des raids hostiles.",
+                  "post_selection_text": "un lieu d'inspiration pour recommencer à zéro."
+               },
+               "peaceful": {
+                  "display_name": "Mode pacifique",
+                  "description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier d'envahisseurs.",
+                  "post_selection_text": "un lieu d'inspiration pour recommencer à zéro."
+               }
+            },
+            "begin_button": "Commencer"
          },
 		 "embark": {
 			"title": "Préparez vous pour l'aventure !",
@@ -1147,6 +1142,7 @@
             "cloth_resource_name": "Rouleau de tissu",
             "wood_resource_name": "Bûche",
  			"clay_resource_name": "Boule d'argile",
+			"clay_brick_resource_name": "Briques d'argile",
             "thread_resource_name": "Fil",
             "leather_resource_name": "Cuir en rouleau",
             "fiber_resource_name": "Lot de fibres",
@@ -1155,6 +1151,37 @@
 	  }
    },
    "data": {
+      "population": {
+         "ascendancy": {
+            "display_name": "The Ascendancy",
+            "quote": "Moutons? Vérifiez. Houe? Vérifiez. Glaives? Vérifiez. Embarquez!",
+            "description": "Sérieux et travailleur, fidèle et bien arrondi. Les hearthlings de la famille des Ascendancy, construisent et cultivent, confiant que le monde connu est la pour être habiter.",
+            "post_selection_description": ", un royaume prospère et travailleur."
+         }
+      },
+      "biome": {
+         "temperate": {
+            "display_name": "Tempéré",
+            "description": "Biome par défaut, avec beaucoup de verdure",
+            "random_location_names": {
+               "000": "La fôret de Darkmoor"
+            }
+         },
+         "arctic": {
+            "display_name": "Arctique",
+            "description": "Neigeux, avec de hautes montagnes et de grands plans d'eau",
+            "random_location_names": {
+               "000": "La tundra des Valkyries"
+            }
+         },
+         "desert": {
+            "display_name": "Désertique",
+            "description": "Sec et sablonneux, avec des grandes collines et une végétation clairsemée",
+            "random_location_names": {
+               "000": "Le désert de Pal'Mum"
+            }
+         }
+      },
 	  "gm": {
 		 "campaigns": {
 			"encounters": {
@@ -1259,7 +1286,8 @@
 						   "bulletin_message": {
 							  "000": "Utiliser la force pour s'élever signifie tomber quand elle ne sera plus là. Ogo obtient sa puissance non pas de son soi-disant-parler, mais de l'enfant qu'il a volé."
 						   },
-							"bulletin_title": "La forme incline sa tête",						   "dialog_title": "???"
+							"bulletin_title": "La forme incline sa tête",
+						    "dialog_title": "???"
 						},
 						"erdene_description": {
 						   "choice_000": "Super !",
@@ -3030,6 +3058,10 @@
 		 }
 	  },
 	  "construction": {
+         "clay_bricks": {
+            "display_name": "Brique d'argile",
+            "description": "Utilisé pour les structures en argile."
+         },
 		 "cobblestone_fence": {
 			"cobblestone_fence_ghost": {
 			   "display_name": "Clôture en pierre",
@@ -3110,6 +3142,54 @@
             "wooden_window_frame_wide_ghost": {
                "display_name": "Cadre de fenêtre large",
                "description": "C'est une vue panoramique !"
+            }
+         },
+         "golden_clay_doorframe": {
+            "golden_clay_doorframe_ghost": {
+               "display_name": "Golden Clay Doorframe",
+               "description": "Matches a golden clay exterior wall"
+            }
+         },
+         "red_clay_door": {
+            "red_clay_door_ghost": {
+               "display_name": "Red Clay Door",
+               "description": "Keeps the indoors cool"
+            }
+         },
+         "red_clay_window_frame": {
+            "red_clay_window_frame_ghost": {
+               "display_name": "Red Clay Window Frame",
+               "description": "Let's the sun in."
+            }
+         },
+         "blue_clay_door": {
+            "blue_clay_door_ghost": {
+               "display_name": "Blue Clay Door",
+               "description": "Blue like a dream of ocean"
+            }
+         },
+         "green_clay_door": {
+            "green_clay_door_ghost": {
+               "display_name": "Green Clay Door",
+               "description": "Colored to match the desert"
+            }
+         },
+         "blue_clay_window_frame": {
+            "blue_clay_window_frame_ghost": {
+               "display_name": "Blue Clay Window Frame",
+               "description": "Lets in the desert air."
+            }
+         },
+         "green_clay_window_frame": {
+            "green_clay_window_frame_ghost": {
+               "display_name": "Green Clay Window Frame",
+               "description": "Lets in the soft desert air."
+            }
+         },
+         "latticed_clay_window_frame": {
+            "latticed_clay_window_frame_ghost": {
+               "display_name": "Latticed Clay Window Frame",
+               "description": "The lattice still lets the good air in."
 			}
 		 }
 	  },
@@ -3563,6 +3643,40 @@
 				  "description": "Reach for the sun, little oakling."
 			   }
 			}
+         },
+         "golden_gourd_crop": {
+            "display_name": "Golden Gourd Crop",
+            "description": "Much prettier than it is tasty",
+            "growth_stage": {
+               "003": {
+                  "name": "Green Gourds",
+                  "description": "Too bitter to eat"
+               },
+               "002": {
+                  "name": "Proto-Gourds",
+                  "description": "Full of promise"
+               },
+               "005": {
+                  "name": "Golden Gourds",
+                  "description": "Harvest now!"
+               },
+               "004": {
+                  "name": "Green Gourds",
+                  "description": "Almost ripe!"
+               },
+               "001": {
+                  "name": "Tiny Vine",
+                  "description": "Clingy"
+               },
+               "000": {
+                  "name": "Seedling!",
+                  "description": "Just a tinly little stub"
+               },
+               "011": {
+                  "name": "Rotten Gourds",
+                  "description": "Sadly inedible"
+               }
+            }
 		 }
 	  },
 	  "decoration": {
@@ -3770,6 +3884,18 @@
                "display_name": "Garden Gnome",
                "description": "Plant Guardians"
 			}
+         },
+         "decorative_teapot": {
+            "decorative_teapot_ghost": {
+               "display_name": "Decorative Teapot",
+               "description": "A reminder of humble beginnings"
+            }
+         },
+         "decorative_tray": {
+            "decorative_tray_ghost": {
+               "display_name": "Decorative Tray",
+               "description": "Adds flash and hospitality"
+            }
 		 }
 	  },
 	  "food": {
@@ -3927,8 +4053,28 @@
             "display_name": "Nourriture pour lapin",
             "description": "Seulement pour les lapins",
 			"rabbit_feed_ground": {
-               "display_name": "Nourriture pour lapin",
-               "description": "Sans provenance contrôlée."
+               "display_name": "Rabbit Feed",
+               "description": "Food for rabbits"
+            }
+         },
+         "prickly_pear": {
+            "prickly_pear_basket": {
+               "display_name": "Prickly Pear Basket",
+               "description": "Eat carefully!"
+            },
+            "prickly_pear_serving": {
+               "display_name": "Prickly Pear Serving",
+               "description": "Ow! Was that a spine?"
+            }
+         },
+         "golden_gourd": {
+            "golden_gourd_basket": {
+               "display_name": "Golden Gourd Basket",
+               "description": "Edible when raw, barely"
+            },
+            "golden_gourd_serving": {
+               "display_name": "Raw Golden Gourd",
+               "description": "Raw gourd is... terrible"
 			}
 		 }
 	  },
@@ -4067,8 +4213,26 @@
 		 },
 		 "writing_desk_fine": {
 			"writing_desk_fine_ghost": {
-               "display_name": "Bureau de luxe",
+               "display_name": "Bureau stylisé",
                "description": "Un meuble pour écrire. Beaucoup."
+            }
+         },
+         "clay_bed": {
+            "clay_bed_ghost": {
+               "display_name": "Clay Bed",
+               "description": "Uncomfortable, but gets you off the ground!"
+            }
+         },
+         "clay_dining_table": {
+            "clay_dining_table_ghost": {
+               "display_name": "Clay Dining Table",
+               "description": "Gets your food off the floor"
+            }
+         },
+         "simple_clay_chair": {
+            "simple_clay_chair_ghost": {
+               "display_name": "Simple Clay Chair",
+               "description": "Less dusty than sitting on the floor"
 			}
 		 }
 	  },
@@ -4296,7 +4460,12 @@
 		 },
 		 "tumbleweed": {
 			"display_name": "Tumbleweed",
-			"description": "Doesn't do anything"
+            "description": "Source of coarse fibers"
+         },
+         "pear_cactus": {
+            "display_name": "Pear Cactus",
+            "description": "Harvest carefully for prickley pears.",
+            "unripe_description": "It's the invisible spines that really hurt"
 		 }
 	  },
 	  "rabbit": {
@@ -4376,8 +4545,12 @@
 			   "description": "Transformable en fil."
 			},
 			"wool_bundle": {
-			   "display_name": "Sac de laine",
-			   "description": "Transformable en fil."
+               "display_name": "Ballot de laine",
+               "description": "Transformable en fil."
+            },
+            "coarse_fiber_bundle": {
+               "display_name": "Coarse Fiber Bundle",
+               "description": "Rough and itchy"
 			}
 		 },
 		 "gold": {
@@ -5688,28 +5861,108 @@
             },
             "clay_lamp_recipe": {
                "description": "Sa flamme donne une lumière chaude la nuit.",
-               "recipe_name": "Lampe à huile d'argile"
+               "recipe_name": "Lampe à huile d'argile",
+               "flavor": "And the Djinni said to Rayya: 'I have but one last wish to grant. Word it well.'"
             },
             "clay_wall_lamp_recipe": {
                "description": "Sa flamme donne une lumière chaude la nuit.",
-               "recipe_name": "Lampe à huile murale d'argile"
+               "recipe_name": "Lampe à huile murale d'argile",
+               "flavor": "'Close round us guard the spirits of night! As they dance and sway, free you'll be to dream the dark away.'"
             },
             "garden_gnome_recipe": {
                "description": "Inspiré par les esprits mythiques de la forêt.",
                "recipe_name": "Petit gardien des jardins",
                "flavor": "Conception par The_M, Grand Maître Artisan."
             },
+			"furniture_name": "Furniture and Decoration",
             "decoration_name": "Décoration",
             "potter_workbench_recipe": {
                "description": "Helps the potter create simple items from clay",
                "recipe_name": "Potter's Wheel",
                "flavor": "Where we've been before, we'll be again, round once more, for strength and then--"
+            },
+            "potter_kiln_recipe": {
+               "description": "Hardens basic clay objects.",
+               "recipe_name": "Potter's Kiln",
+               "flavor": "'Through heat and hardship we realize our final selves.' -Silora, Acolyte of Rayya's Mystery "
+            },
+            "building_parts_name": "Building Parts",
+            "clay_bricks_recipe": {
+               "description": "Used to make structures that stay cool even in great heat.",
+               "recipe_name": "Clay Bricks",
+               "flavor": "'And when Clay emerged from the Kiln, he had become Brick, and no matter how hard Sun blasted him, he remained cheerful.'"
+            },
+            "red_clay_door_recipe": {
+               "description": "Matches red clay walls",
+               "recipe_name": "Red Clay Door",
+               "flavor": "TODO"
+            },
+            "red_clay_window_frame_recipe": {
+               "description": "Matches red clay walls",
+               "recipe_name": "Red Clay Window",
+               "flavor": "TODO"
+            },
+            "blue_clay_door_recipe": {
+               "description": "Blue like the dream of distant ocean.",
+               "recipe_name": "Blue Clay Door Recipe",
+               "flavor": "TODO"
+            },
+            "green_clay_door_recipe": {
+               "description": "Green, like the few scrub in the desert.",
+               "recipe_name": "Green Clay Door",
+               "flavor": "TODO"
+            },
+            "blue_clay_window_frame_recipe": {
+               "description": "Lets in the bright desert air.",
+               "recipe_name": "Blue Clay Window Frame",
+               "flavor": "The dye is named Santori, for an acolyte who longed for the ocean."
+            },
+            "green_clay_window_frame_recipe": {
+               "description": "Let's in the soft desert air.",
+               "recipe_name": "Green Clay Window Frame",
+               "flavor": "It's a window's dream of spring...?"
+            },
+            "latticed_clay_window_frame_recipe": {
+               "description": "The lattice still lets the good air in.",
+               "recipe_name": "Latticed Clay Window Frame",
+               "flavor": "As the shadows move across the floor, child, see if you can find Monkey!"
+            },
+            "clay_bed_recipe": {
+               "description": "Uncomfortable, but it gets you off the ground",
+               "recipe_name": "Clay Bed",
+               "flavor": "TODO"
+            },
+            "clay_dining_table_recipe": {
+               "description": "Gets your food off the ground!",
+               "recipe_name": "Clay Dining Table",
+               "flavor": "TODO"
+            },
+            "simple_clay_chair_recipe": {
+               "description": "Somewhere to sit while eating",
+               "recipe_name": "Simple Clay Chair",
+               "flavor": "'Nests with the tables, ooo, symbolic!' --Nestor Adya, Acolyte"
+            },
+            "decorative_teapot_recipe": {
+               "description": "Reminder of humble beginnings",
+               "recipe_name": "Decorative Teapot",
+               "flavor": "'Wherever she went, the teapot did too, and even when there was nothing but cold water to put in, always out poured steaming tea, redolent with the aroma of Elsewhere.'"
+            },
+            "decorative_tray_recipe": {
+               "description": "Adds hospitality and flash",
+               "recipe_name": "Decorative Tray",
+               "flavor": "'Sugar, spice, and blood of the earth: it is the tray that brings them, and us, together' --Rayya"
             }
          },
          "potter_workbench": {
             "potter_workbench_ghost": {
                "display_name": "Tour de potier",
                "description": "Atelier pour fabriquer des objets d'argile."
+            }
+         },
+         "potter_kiln": {
+            "potter_kiln_ghost": {
+               "display_name": "Four de potier",
+               "description": "Produit briques et de marchandises à partir d'argile."
             }
          },
          "potter_cutter": {
@@ -6090,9 +6343,9 @@
 	  },
 	  "resources": {
 		 "fur_pelt": {
-            "display_name": "Peau",
-            "description": "Douce, souple mais bien morte."
-		}
-	  }
-   }
+            "display_name": "Fur pelt",
+            "description": "Soft, supple, and quite dead"
+		  }
+	   }
+	}
 }
