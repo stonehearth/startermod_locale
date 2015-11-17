@@ -8,7 +8,7 @@ En Français les majuscules ce n'est que : en début de phrase, et pour les nom 
 Encodage en UTF8 (sans bom)
 
 Goblins => gobelins
-citoyen => hearthling
+hearthling/citizen => hearthling
 frostsnap => perce-neige
 silkweed => fil-de-soie
 brightbell => jacinthe rose
