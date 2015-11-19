@@ -565,8 +565,8 @@
                "max_height": "Max Height",
                "rise_slope": "Rise Slope",
                "y_offset": "Roof Offset",
-               "show_gradient": "Slopes",
-               "show_margin": "Sizes"
+               "show_gradient": "Slope",
+               "show_margin": "Overhang"
             },
             "building_templates": {
                "title": "Building Templates",
