@@ -863,7 +863,7 @@
             "normal_game": "Normal Game",
             "peaceful_game": "Peaceful Game",
             "normal_game_description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
-            "peaceful_game_description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
+            "peaceful_game_description": "A sandbox mode where you're free to build your town without worrying about invaders.",
             "create_game": "Create Game"
          },
          "select_settlement": {
@@ -1169,7 +1169,7 @@
             "display_name": "The Ascendancy",
             "quote": "Sheep? Check. Hoe? Check. Swords? Check. Embark!",
             "description": "Earnest and hardworking, loyal and well-rounded. Citizens of the Ascendancy chop, build and farm, confident that the known world is theirs to inhabit.",
-            "post_selection_description": ", a prosperious and industrious kingdom."
+            "post_selection_description": ", a prosperous and industrious kingdom."
          }
       },
       "biome": {
