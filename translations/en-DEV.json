@@ -212,7 +212,9 @@
                "job": "Job",
                "current_activity": "Current Activity..."
             },
-            "show_character_sheet": "More Info"
+            "show_character_sheet": "More Info",
+            "button_suspend": "suspend",
+            "button_resume": "resume"
          },
          "create_camp": {
             "new_game_place_banner": "Click me to place your town banner",
@@ -520,7 +522,8 @@
                "draw_wall_tool": "Free Standing Walls",
                "draw_road_tool": "Roads",
                "place_furniture_tool": "Furniture",
-               "place_decoration_tool": "Decorations"
+               "place_decoration_tool": "Decorations",
+               "erase_tool": "Erase"
             },
             "overhead_tips": {
                "wall_segment_tip_title": "Click to place freestanding wall segments",
@@ -560,7 +563,10 @@
             "roof_shape": {
                "title": "Slope, Direction, & Size",
                "max_height": "Max Height",
-               "rise_slope": "Rise Slope"
+               "rise_slope": "Rise Slope",
+               "y_offset": "Roof Offset",
+               "show_gradient": "Slopes",
+               "show_margin": "Sizes"
             },
             "building_templates": {
                "title": "Building Templates",
@@ -569,7 +575,11 @@
                   "tiny_cottage": "Tiny Cottage",
                   "cottage_for_two": "Cottage for Two",
                   "shared_sleeping_quarters": "Shared Sleeping Quaters",
-                  "dining_hall": "Dining Hall"
+                  "dining_hall": "Dining Hall", 
+                  "little_clay_house" : "Little Clay House",
+                  "clay_house_for_two" : "Clay House for Two", 
+                  "clay_dining_room" : "Clay Dining Room",
+                  "clay_dormitory" : "Clay Dormitory"
                },
                "set_template_name_title": "Template Name",
                "template_default_name": "My new building template",
@@ -583,31 +593,36 @@
                   "material": "Wall Material",
                   "wood_resource": "Wooden Wall",
                   "stone_resource": "Stone Wall",
-                  "clay_resource": "Clay Wall"
+                  "clay_resource": "Clay Wall",
+                  "clay_brick_resource": "Clay Brick Wall"
                },
                "floor": {
                   "material": "Floor Material",
                   "wood_resource": "Wooden Floor",
                   "stone_resource": "Stone Floor",
-                  "clay_resource": "Clay Floor"
+                  "clay_resource": "Clay Floor",
+                  "clay_brick_resource": "Clay Brick Floor"
                },
                "roof": {
                   "material": "Roof Material",
                   "wood_resource": "Wooden Roof",
                   "stone_resource": "Stone Roof",
-                  "clay_resource": "Clay Roof"
+                  "clay_resource": "Clay Roof",
+                  "clay_brick_resource": "Clay Brick Roof"
                },
                "column": {
                   "material": "Column Material",
                   "wood_resource": "Wooden Column",
                   "stone_resource": "Stone Column",
-                  "clay_resource": "Clay Column"
+                  "clay_resource": "Clay Column",
+                  "clay_brick_resource": "Clay Brick Column"
                },
                "road": {
                   "material": "Road Material",
                   "wood_resource": "Wooden Road",
                   "stone_resource": "Stone Road",
-                  "clay_resource": "Clay Road"
+                  "clay_resource": "Clay Road",
+                  "clay_brick_resource": "Clay Brick Road"
                },
                "doors": {
                   "material": "Door Material",
@@ -849,14 +864,6 @@
             "peaceful_game": "Peaceful Game",
             "normal_game_description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
             "peaceful_game_description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
-            "temperate_biome": "Temperate",
-            "desert_biome": "Desert",
-            "arctic_biome": "Arctic",
-            "swamp_biome": "Swamp",
-            "temperate_biome_description": "Default biome type, with lots of greenery",
-            "desert_biome_description": "Dry and sandy, with chunky hills and sparse vegetation",
-            "arctic_biome_description": "Snowy, with tall mountains and large water bodies",
-            "swamp_biome_description": "Temperate biome, with low mountains and a lot of water",
             "create_game": "Create Game"
          },
          "select_settlement": {
@@ -975,32 +982,35 @@
             }
          },
          "select_game_story": {
-            "title": "Select the details of your epic adventure:",
-            "select_kingdom": "Select a different kingdom:",
-            "kingdom_description": "Description: ",
-            "kingdom_favored_biome": "Favored Biome: ",
-            "pick_button": "Pick ",
-            "select_biome": "Select a different biome:",
-            "option_summary": "Option Summary: ",
-            "curr_kingdom": "Embark as: ",
-            "curr_biome": "To the wild lands of: ",
-            "continue": "Continue!",
-            "ascendancy_title": "The Ascendancy",
-            "ascendancy_quote": "Sheep? Check. Hoe? Check. Swords? Check. Embark!",
-            "ascendancy_description": "Earnest and hardworking, loyal and well-rounded. Citizens of the Ascendancy chop, build and farm, confident that the known world is theirs to inhabit.",
-            "select_difficulty": "Select a different difficulty: ",
-            "normal_game": "Normal Game",
-            "peaceful_game": "Peaceful Game",
-            "normal_game_description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
-            "peaceful_game_description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
-            "curr_difficulty": "In story mode: "
+            "title": "Choose your adventure",
+            "story_start": "This is the story of ...",
+            "kingdom_section_start": "... a brave band of settlers from ",
+            "select_button": "?",
+            "kingdom_picker_title": "Select a Kingdom",
+            "biome_section_start": "Seeking new lands and adventure, they set off to ",
+            "biome_picker_title": "Select a Biome",
+            "game_mode_select_start": ", a location that is sure to be ",
+            "game_mode_picker_title": "Select a Difficulty",
+            "game_modes": {
+               "normal": {
+                  "display_name": "Normal Game",
+                  "description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
+                  "post_selection_text": "an inspiring place to start anew."
+               },
+               "peaceful": {
+                  "display_name": "Peaceful Game",
+                  "description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
+                  "post_selection_text": "a tranquil place to start anew."
+               }
+            },
+            "begin_button": "Begin"
          },
          "embark": {
-            "title": "Prepare to set out for adventure",
+            "title": "Prepare to embark",
             "citizen_info": "Expedition Roster",
             "reroll_citizens": "Roll new citizens",
             "shop_title": "Traveller's Store",
-            "shop_gold_label": "Gold",
+            "shop_gold_label": "Starting Gold",
             "shop_sold": "SOLD!",
             "shop_reset_button": "Reset",
             "finished": "Embark!",
@@ -1145,6 +1155,7 @@
             "cloth_resource_name": "Bolt of Cloth",
             "wood_resource_name": "Wood Log",
             "clay_resource_name": "Mound of Clay",
+            "clay_brick_resource_name": "Clay Bricks",
             "thread_resource_name": "Thread",
             "leather_resource_name": "Bolt of Leather",
             "fiber_resource_name": "Bundle of Fiber",
@@ -1153,6 +1164,37 @@
       }
    },
    "data": {
+      "population": {
+         "ascendancy": {
+            "display_name": "The Ascendancy",
+            "quote": "Sheep? Check. Hoe? Check. Swords? Check. Embark!",
+            "description": "Earnest and hardworking, loyal and well-rounded. Citizens of the Ascendancy chop, build and farm, confident that the known world is theirs to inhabit.",
+            "post_selection_description": ", a prosperious and industrious kingdom."
+         }
+      },
+      "biome": {
+         "temperate": {
+            "display_name": "Temperate",
+            "description": "Default biome type, with lots of greenery",
+            "random_location_names": {
+               "000": "Darkmoor Forest"
+            }
+         },
+         "arctic": {
+            "display_name": "Arctic",
+            "description": "Snowy, with tall mountains and large water bodies",
+            "random_location_names": {
+               "000": "Valkyrie Tundra"
+            }
+         },
+         "desert": {
+            "display_name": "Desert",
+            "description": "Dry and sandy, with chunky hills and sparse vegetation",
+            "random_location_names": {
+               "000": "The Desert of Pal'Mum"
+            }
+         }
+      },
       "gm": {
          "campaigns": {
             "encounters": {
@@ -3029,6 +3071,10 @@
          }
       },
       "construction": {
+         "clay_bricks": {
+            "display_name": "Clay Bricks",
+            "description": "Used for clay structures."
+         },
          "cobblestone_fence": {
             "cobblestone_fence_ghost": {
                "display_name": "Cobblestone Fence",
@@ -3109,6 +3155,54 @@
             "wooden_window_frame_wide_ghost": {
                "display_name": "Wide Window Frame",
                "description": "It's a panoramic view!"
+            }
+         },
+         "golden_clay_doorframe": {
+            "golden_clay_doorframe_ghost": {
+               "display_name": "Golden Clay Doorframe",
+               "description": "Matches a golden clay exterior wall"
+            }
+         },
+         "red_clay_door": {
+            "red_clay_door_ghost": {
+               "display_name": "Red Clay Door",
+               "description": "Keeps the indoors cool"
+            }
+         },
+         "red_clay_window_frame": {
+            "red_clay_window_frame_ghost": {
+               "display_name": "Red Clay Window Frame",
+               "description": "Let's the sun in."
+            }
+         },
+         "blue_clay_door": {
+            "blue_clay_door_ghost": {
+               "display_name": "Blue Clay Door",
+               "description": "Blue like a dream of ocean"
+            }
+         },
+         "green_clay_door": {
+            "green_clay_door_ghost": {
+               "display_name": "Green Clay Door",
+               "description": "Colored to match the desert"
+            }
+         },
+         "blue_clay_window_frame": {
+            "blue_clay_window_frame_ghost": {
+               "display_name": "Blue Clay Window Frame",
+               "description": "Lets in the desert air."
+            }
+         },
+         "green_clay_window_frame": {
+            "green_clay_window_frame_ghost": {
+               "display_name": "Green Clay Window Frame",
+               "description": "Lets in the soft desert air."
+            }
+         },
+         "latticed_clay_window_frame": {
+            "latticed_clay_window_frame_ghost": {
+               "display_name": "Latticed Clay Window Frame",
+               "description": "The lattice still lets the good air in."
             }
          }
       },
@@ -3562,6 +3656,40 @@
                   "description": "Reach for the sun, little oakling."
                }
             }
+         },
+         "golden_gourd_crop": {
+            "display_name": "Golden Gourd Crop",
+            "description": "Much prettier than it is tasty",
+            "growth_stage": {
+               "003": {
+                  "name": "Green Gourds",
+                  "description": "Too bitter to eat"
+               },
+               "002": {
+                  "name": "Proto-Gourds",
+                  "description": "Full of promise"
+               },
+               "005": {
+                  "name": "Golden Gourds",
+                  "description": "Harvest now!"
+               },
+               "004": {
+                  "name": "Green Gourds",
+                  "description": "Almost ripe!"
+               },
+               "001": {
+                  "name": "Tiny Vine",
+                  "description": "Clingy"
+               },
+               "000": {
+                  "name": "Seedling!",
+                  "description": "Just a tinly little stub"
+               },
+               "011": {
+                  "name": "Rotten Gourds",
+                  "description": "Sadly inedible"
+               }
+            }
          }
       },
       "decoration": {
@@ -3769,6 +3897,24 @@
                "display_name": "Garden Gnome",
                "description": "Plant Guardians"
             }
+         },
+         "decorative_teapot": {
+            "decorative_teapot_ghost": {
+               "display_name": "Decorative Teapot",
+               "description": "A reminder of humble beginnings"
+            }
+         },
+         "decorative_tray": {
+            "decorative_tray_ghost": {
+               "display_name": "Decorative Tray",
+               "description": "Adds flash and hospitality"
+            }
+         },
+         "potted_cactus": {
+            "potted_cactus_ghost": {
+               "display_name": "Potted Cactus",
+               "description": "Careful, it's still prickly."
+            }
          }
       },
       "food": {
@@ -3929,6 +4075,26 @@
                "display_name": "Rabbit Feed",
                "description": "Food for rabbits"
             }
+         },
+         "prickly_pear": {
+            "prickly_pear_basket": {
+               "display_name": "Prickly Pear Basket",
+               "description": "Eat carefully!"
+            },
+            "prickly_pear_serving": {
+               "display_name": "Prickly Pear Serving",
+               "description": "Ow! Was that a spine?"
+            }
+         },
+         "golden_gourd": {
+            "golden_gourd_basket": {
+               "display_name": "Golden Gourd Basket",
+               "description": "Edible when raw, barely"
+            },
+            "golden_gourd_serving": {
+               "display_name": "Raw Golden Gourd",
+               "description": "Raw gourd is... terrible"
+            }
          }
       },
       "furniture": {
@@ -4068,6 +4234,24 @@
             "writing_desk_fine_ghost": {
                "display_name": "Fine Writing Desk",
                "description": "Furniture"
+            }
+         },
+         "clay_bed": {
+            "clay_bed_ghost": {
+               "display_name": "Clay Bed",
+               "description": "Uncomfortable, but gets you off the ground!"
+            }
+         },
+         "clay_dining_table": {
+            "clay_dining_table_ghost": {
+               "display_name": "Clay Dining Table",
+               "description": "Gets your food off the floor"
+            }
+         },
+         "simple_clay_chair": {
+            "simple_clay_chair_ghost": {
+               "display_name": "Simple Clay Chair",
+               "description": "Less dusty than sitting on the floor"
             }
          }
       },
@@ -4218,6 +4402,10 @@
                   }
                }
             }
+         },
+         "rabbit": {
+            "display_name": "...",
+            "description": "A Rabbit"
          }
       },
       "pets": {
@@ -4295,7 +4483,12 @@
          },
          "tumbleweed": {
             "display_name": "Tumbleweed",
-            "description": "Doesn't do anything"
+            "description": "Source of coarse fibers"
+         },
+         "pear_cactus": {
+            "display_name": "Pear Cactus",
+            "description": "Harvest carefully for prickley pears.",
+            "unripe_description": "It's the invisible spines that really hurt"
          }
       },
       "rabbit": {
@@ -4377,6 +4570,10 @@
             "wool_bundle": {
                "display_name": "Bundle of Wool",
                "description": "Spinnable into thread"
+            },
+            "coarse_fiber_bundle": {
+               "display_name": "Coarse Fiber Bundle",
+               "description": "Rough and itchy"
             }
          },
          "gold": {
@@ -4587,6 +4784,10 @@
             "large_acacia_tree": {
                "display_name": "Large Acacia Tree",
                "description": "It radiates a mysterious aura"
+            },
+            "small_acacia_tree": {
+               "display_name": "Small Acacia Tree",
+               "description": "Young, but hearty"
             }
          },
          "joshua_tree": {
@@ -4675,15 +4876,15 @@
          },
          "giant_bone_axe": {
             "display_name": "Giant Bone Axe",
-            "description": "Carved from the clavical of some great beast.",
+            "description": "Carved from the clavicle of some great beast.",
             "giant_bone_axe_iconic": {
                "display_name": "Giant Bone Axe",
-               "description": "Carved from the clavical of some great beast."
+               "description": "Carved from the clavicle of some great beast."
             }
          },
          "giant_bone_mace": {
             "display_name": "Giant Bone Mace",
-            "description": "Heavy, it packs a whallop.",
+            "description": "Heavy, it packs a wallop.",
             "giant_bone_mace_iconic": {
                "display_name": "Giant Bone Mace",
                "description": "For flattening faces"
@@ -4691,7 +4892,7 @@
          },
          "iron_mace": {
             "display_name": "Iron Mace",
-            "description": "Heavy, it packs a whallop.",
+            "description": "Heavy, it packs a wallop.",
             "iron_mace_iconic": {
                "display_name": "Iron Mace",
                "description": "For flattening faces"
@@ -4880,7 +5081,7 @@
                "flavor": "The masters of old considered its production, evidence of our triumph over the earth."
             },
             "bronze_mace_recipe": {
-               "description": "Heavy, it packs a whallop.",
+               "description": "Heavy, it packs a wallop.",
                "recipe_name": "Bronze Mace",
                "flavor": "The good news: there is no pointy end."
             },
@@ -4910,7 +5111,7 @@
                "flavor": "To both swords and plowshares, what an egg is to a chicken."
             },
             "iron_mace_recipe": {
-               "description": "Heavy, it packs a whallop.",
+               "description": "Heavy, it packs a wallop.",
                "recipe_name": "Iron Mace",
                "flavor": "And Erin rested her forehead upon it, and the iron stole away enchantment and memory, together."
             },
@@ -5053,7 +5254,7 @@
                "flavor": "Nobody ever wants to get out. It makes emergency evacuations awkward."
             },
             "comfy_chair_recipe": {
-               "description": "Its padded seat guarantees a 98% reducion in awkward splinters!",
+               "description": "Its padded seat guarantees a 98% reduction in awkward splinters!",
                "recipe_name": "Comfy Chair",
                "flavor": "If pillows are good for the head, surely they're even better for the butt and back!"
             },
@@ -5687,28 +5888,112 @@
             },
             "clay_lamp_recipe": {
                "description": "Its flame brings a warm glow at night.",
-               "recipe_name": "Clay Oil Lamp"
+               "recipe_name": "Clay Oil Lamp",
+               "flavor": "And the Djinni said to Rayya: 'I have but one last wish to grant. Word it well.'"
             },
             "clay_wall_lamp_recipe": {
                "description": "Its flame brings a warm glow at night.",
-               "recipe_name": "Wall Mounted Clay Oil Lamp"
+               "recipe_name": "Wall Mounted Clay Oil Lamp",
+               "flavor": "'Close round us guard the spirits of night! As they dance and sway, free you'll be to dream the dark away.'"
             },
             "garden_gnome_recipe": {
                "description": "Fashioned after mythical forest spirits.",
                "recipe_name": "Tiny Garden Guardian",
                "flavor": "Designed by Grandmaster crafter The_M"
             },
+            "furniture_name": "Furniture and Decoration",
             "decoration_name": "Decoration",
             "potter_workbench_recipe": {
                "description": "Helps the potter create simple items from clay",
                "recipe_name": "Potter's Wheel",
                "flavor": "Where we've been before, we'll be again, round once more, for strength and then--"
+            },
+            "potter_kiln_recipe": {
+               "description": "Hardens basic clay objects.",
+               "recipe_name": "Potter's Kiln",
+               "flavor": "'Through heat and hardship we realize our final selves.' -Silora, Acolyte of Rayya's Mystery "
+            },
+            "building_parts_name": "Building Parts",
+            "clay_bricks_recipe": {
+               "description": "Used to make structures that stay cool even in great heat.",
+               "recipe_name": "Clay Bricks",
+               "flavor": "'And when Clay emerged from the Kiln, he had become Brick, and no matter how hard Sun blasted him, he remained cheerful.'"
+            },
+            "red_clay_door_recipe": {
+               "description": "Matches red clay walls",
+               "recipe_name": "Red Clay Door",
+               "flavor": "TODO"
+            },
+            "red_clay_window_frame_recipe": {
+               "description": "Matches red clay walls",
+               "recipe_name": "Red Clay Window",
+               "flavor": "TODO"
+            },
+            "blue_clay_door_recipe": {
+               "description": "Blue like the dream of distant ocean.",
+               "recipe_name": "Blue Clay Door Recipe",
+               "flavor": "TODO"
+            },
+            "green_clay_door_recipe": {
+               "description": "Green, like the few scrub in the desert.",
+               "recipe_name": "Green Clay Door",
+               "flavor": "TODO"
+            },
+            "blue_clay_window_frame_recipe": {
+               "description": "Lets in the bright desert air.",
+               "recipe_name": "Blue Clay Window Frame",
+               "flavor": "The dye is named Santori, for an acolyte who longed for the ocean."
+            },
+            "green_clay_window_frame_recipe": {
+               "description": "Let's in the soft desert air.",
+               "recipe_name": "Green Clay Window Frame",
+               "flavor": "It's a window's dream of spring...?"
+            },
+            "latticed_clay_window_frame_recipe": {
+               "description": "The lattice still lets the good air in.",
+               "recipe_name": "Latticed Clay Window Frame",
+               "flavor": "As the shadows move across the floor, child, see if you can find Monkey!"
+            },
+            "clay_bed_recipe": {
+               "description": "Uncomfortable, but it gets you off the ground",
+               "recipe_name": "Clay Bed",
+               "flavor": "TODO"
+            },
+            "clay_dining_table_recipe": {
+               "description": "Gets your food off the ground!",
+               "recipe_name": "Clay Dining Table",
+               "flavor": "TODO"
+            },
+            "simple_clay_chair_recipe": {
+               "description": "Somewhere to sit while eating",
+               "recipe_name": "Simple Clay Chair",
+               "flavor": "'Nests with the tables, ooo, symbolic!' --Nestor Adya, Acolyte"
+            },
+            "decorative_teapot_recipe": {
+               "description": "Reminder of humble beginnings",
+               "recipe_name": "Decorative Teapot",
+               "flavor": "'Wherever she went, the teapot did too, and even when there was nothing but cold water to put in, always out poured steaming tea, redolent with the aroma of Elsewhere.'"
+            },
+            "decorative_tray_recipe": {
+               "description": "Adds hospitality and flash",
+               "recipe_name": "Decorative Tray",
+               "flavor": "'Sugar, spice, and blood of the earth: it is the tray that brings them, and us, together' --Rayya"
+            },
+            "potted_cactus_recipe": {
+               "description": "Plant a cactus in a clay pot.",
+               "recipe_name": "Potted Cactus"
             }
          },
          "potter_workbench": {
             "potter_workbench_ghost": {
                "display_name": "Pottery Wheel",
-               "description": "Workshop for making clay goods"
+               "description": "Workshop for making symmetrical clay goods"
+            }
+         },
+         "potter_kiln": {
+            "potter_kiln_ghost": {
+               "display_name": "Potter's Kiln",
+               "description": "Produces bricks and goods from clay."
             }
          },
          "potter_cutter": {
@@ -5716,7 +6001,7 @@
             "description": "Used to form civilization from dirt!",
             "potter_cutter_talisman": {
                "display_name": "Potter's Cutter",
-               "description": "Promotes a hearthling into a Potter."
+               "description": "Required to promote a hearthling into a Potter."
             }
          },
          "potter_outfit": {

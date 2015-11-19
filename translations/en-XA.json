@@ -212,7 +212,9 @@
           "job": "[!!ĵơƄ!!]",
           "current_activity": "[!!Čūŗŗȅņť Ăčťıvıťɏ...!!]"
         },
-        "show_character_sheet": "[!!Mŏŕė İŉƒŏ!!]"
+        "show_character_sheet": "[!!Mŏŕė İŉƒŏ!!]",
+        "button_suspend": "[!!šūšƿēņđ!!]",
+        "button_resume": "[!!ŕȇşũmȇ!!]"
       },
       "create_camp": {
         "new_game_place_banner": "[!!Ċłıċĸ mȇ ťő ƥłȁċȇ ȳőűŗ ťőŵŋ ƅȁŋŋȇŗ!!]",
@@ -520,7 +522,8 @@
           "draw_wall_tool": "[!!Ƒŗȅȅ Šťăņđıņģ Ŵăłłš!!]",
           "draw_road_tool": "[!!Ŗŏåđŝ!!]",
           "place_furniture_tool": "[!!Ƒůŕŉıţůŕė!!]",
-          "place_decoration_tool": "[!!Ɗěčơřȃŧīơƞš!!]"
+          "place_decoration_tool": "[!!Ɗěčơřȃŧīơƞš!!]",
+          "erase_tool": "[!!Ȅřåŝȅ!!]"
         },
         "overhead_tips": {
           "wall_segment_tip_title": "[!!Ĉļīĉƙ ŧŏ ƿļåĉȇ ƒřȇȇŝŧåƞđīƞğ ŵåļļ ŝȇğmȇƞŧŝ!!]",
@@ -560,7 +563,10 @@
         "roof_shape": {
           "title": "[!!Śłōƥę, Ďıŕęćţıōń, & Śıźę!!]",
           "max_height": "[!!Mȁx Ĥęĩġĥť!!]",
-          "rise_slope": "[!!Řĩşę Şĺőƥę!!]"
+          "rise_slope": "[!!Řĩşę Şĺőƥę!!]",
+          "y_offset": "[!!Ʀơơƒ Ơƒƒšěŧ!!]",
+          "show_gradient": "[!!Şļőƥȇş!!]",
+          "show_margin": "[!!Ŝĩżȅŝ!!]"
         },
         "building_templates": {
           "title": "[!!Ƀũįŀďįńġ Ţěmƥŀāţěş!!]",
@@ -569,7 +575,11 @@
             "tiny_cottage": "[!!Ţĭńŷ Ćōţţàĝȅ!!]",
             "cottage_for_two": "[!!Čơţţãģĕ ƒơŕ Ţŵơ!!]",
             "shared_sleeping_quarters": "[!!Šħȃřėđ Šŀėėƿįƞģ Ǭųȃŧėřš!!]",
-            "dining_hall": "[!!Ɗīƞīƞģ Ħȃļļ!!]"
+            "dining_hall": "[!!Ɗīƞīƞģ Ħȃļļ!!]",
+            "little_clay_house": "[!!Ľĭŧŧľę Ĉľåƴ Ħŏųŝę!!]",
+            "clay_house_for_two": "[!!Ċŀāȳ Ĥőũşě ƒőŕ Ţŵő!!]",
+            "clay_dining_room": "[!!Ćļäŷ Ďīŋīŋĝ Ŕōōm!!]",
+            "clay_dormitory": "[!!Ċłâȳ Ɖőřmıŧőřȳ!!]"
           },
           "set_template_name_title": "[!!Ťȇmƿŀáťȇ Ŋámȇ!!]",
           "template_default_name": "[!!Mŷ ńęŵ ƀũıłďıńĝ ţęmƥłàţę!!]",
@@ -583,31 +593,36 @@
             "material": "[!!Ŵáŀŀ Máťȇŗįáŀ!!]",
             "wood_resource": "[!!Ŵơơđěƞ Ŵȃļļ!!]",
             "stone_resource": "[!!Şťőŋę Ŵȁĺĺ!!]",
-            "clay_resource": "[!!Ĉłǻƴ Ŵǻłł!!]"
+            "clay_resource": "[!!Ĉłǻƴ Ŵǻłł!!]",
+            "clay_brick_resource": "[!!Čĺãɏ ʙŕĩčķ Ŵãĺĺ!!]"
           },
           "floor": {
             "material": "[!!Ƒłőőř Mâŧēřıâł!!]",
             "wood_resource": "[!!Ŵōōďȅń Ƒľōōŕ!!]",
             "stone_resource": "[!!Šŧơƞě Ƒļơơř!!]",
-            "clay_resource": "[!!Ċĺȁȳ Ƒĺőőŗ!!]"
+            "clay_resource": "[!!Ċĺȁȳ Ƒĺőőŗ!!]",
+            "clay_brick_resource": "[!!Ćļäŷ ßŗīćĸ Ƒļōōŗ!!]"
           },
           "roof": {
             "material": "[!!Ŗŏŏƒ Máťȇŗįáŀ!!]",
             "wood_resource": "[!!Ŵơơđěƞ Ʀơơƒ!!]",
             "stone_resource": "[!!Şťőŋę Řőőƒ!!]",
-            "clay_resource": "[!!Ĉłǻƴ Ŗŏŏƒ!!]"
+            "clay_resource": "[!!Ĉłǻƴ Ŗŏŏƒ!!]",
+            "clay_brick_resource": "[!!Čĺãɏ ʙŕĩčķ Ʀơơƒ!!]"
           },
           "column": {
             "material": "[!!Čơĺůmŉ Mãţĕŕĩãĺ!!]",
             "wood_resource": "[!!Ŵŏŏđȇņ Ĉŏŀūmņ!!]",
             "stone_resource": "[!!Śţōńȅ Ćōľũmń!!]",
-            "clay_resource": "[!!Čļȃɏ Čơļųmƞ!!]"
+            "clay_resource": "[!!Čļȃɏ Čơļųmƞ!!]",
+            "clay_brick_resource": "[!!Ĉľåƴ Ɓřĭĉƙ Ĉŏľųmƞ!!]"
           },
           "road": {
             "material": "[!!Ŗŏáđ Máťȇŗįáŀ!!]",
             "wood_resource": "[!!Ŵơơđěƞ Ʀơȃđ!!]",
             "stone_resource": "[!!Şťőŋę Řőȁď!!]",
-            "clay_resource": "[!!Ĉłǻƴ Ŗŏǻđ!!]"
+            "clay_resource": "[!!Ĉłǻƴ Ŗŏǻđ!!]",
+            "clay_brick_resource": "[!!Čĺãɏ ʙŕĩčķ Ʀơãđ!!]"
           },
           "doors": {
             "material": "[!!Đŏŏŗ Máťȇŗįáŀ!!]",
@@ -849,14 +864,6 @@
         "peaceful_game": "[!!Ƥȇáĉȇƒūŀ Ğámȇ!!]",
         "normal_game_description": "[!!Ǻđvėŉţůŕė ƒŏŕţħ įŉ ǻ ŵŏŕŀđ ƒŕǻůğħţ ŵįţħ đǻŉğėŕ. Ȳŏůŕ ţŏŵŉ ŵįŀŀ Ƅė ŝůƄĴėĉţ ţŏ ŕǻįđįŉğ ėŉėmįėŝ.!!]",
         "peaceful_game_description": "[!!À śàńďƀōx-mōďȅ, ŵĥȅŕȅ ŷōũ'ŕȅ ƒŕȅȅ ţō ƀũīļď ŷōũŕ ţōŵń ŵīţĥōũţ ŵōŕŕŷīńĝ àƀōũţ īńvàďȅŕś ŵĥàţśōȅvȅŕ.!!]",
-        "temperate_biome": "[!!Ţėmƿėŕǻţė!!]",
-        "desert_biome": "[!!Ɖȇşȇŕţ!!]",
-        "arctic_biome": "[!!Āŕċţīċ!!]",
-        "swamp_biome": "[!!Ŝŵåmƿ!!]",
-        "temperate_biome_description": "[!!Đȇƒåųļŧ ɓīŏmȇ ŧƴƿȇ, ŵīŧħ ļŏŧŝ ŏƒ ğřȇȇƞȇřƴ!!]",
-        "desert_biome_description": "[!!Ɖŕȳ āńď şāńďȳ, ŵıţĥ ċĥũńķȳ ĥıłłş āńď şƥāŕşȅ vȅġȅţāţıőń!!]",
-        "arctic_biome_description": "[!!Ŝņŏŵƴ, ŵıťħ ťáłł mŏūņťáıņŝ áņđ łáŗğē ŵáťēŗ Ƃŏđıēŝ!!]",
-        "swamp_biome_description": "[!!Ţȅmƥȅŕāţȅ ƀıőmȅ, ŵıţĥ łőŵ mőũńţāıńş āńď ā łőţ őƒ ŵāţȅŕ!!]",
         "create_game": "[!!Čřěȃŧě Ģȃmě!!]"
       },
       "select_settlement": {
@@ -975,32 +982,35 @@
         }
       },
       "select_game_story": {
-        "title": "[!!Şēľēċţ ţĥē ďēţāĭľş őƒ ȳőũŕ ēƥĭċ āďvēńţũŕē:!!]",
-        "select_kingdom": "[!!Šȇľȇčţ ã đĭƒƒȇŕȇŉţ ķĭŉģđơm:!!]",
-        "kingdom_description": "[!!Đȇŝĉŗįƿťįŏņ: !!]",
-        "kingdom_favored_biome": "[!!Ƒãvơŕĕđ ʙĩơmĕ: !!]",
-        "pick_button": "[!!Ƥĩĉƙ !!]",
-        "select_biome": "[!!Ŝěĺěĉť á đĩƒƒěŗěņť Ƃĩŏmě:!!]",
-        "option_summary": "[!!Ōƥťīōŋ Śűmmäŗŷ: !!]",
-        "curr_kingdom": "[!!Ěmɓȃřƙ ȃš: !!]",
-        "curr_biome": "[!!Ťő ťĥĕ ŵĭľď ľȁŋďş őƒ: !!]",
-        "continue": "[!!Ĉŏŉţıŉůė!!!]",
-        "ascendancy_title": "[!!Ŧĥē Âşċēňďâňċȳ!!]",
-        "ascendancy_quote": "[!!Śĥȇȇƥ? Ćĥȇćķ. Ĥōȇ? Ćĥȇćķ. Śŵōŕďś? Ćĥȇćķ. Ȇmƀàŕķ!!!]",
-        "ascendancy_description": "[!!Ęāŕńęşţ āńď ĥāŕďŵőŕķĩńġ, ĺőȳāĺ āńď ŵęĺĺ-ŕőũńďęď. Ċĩţĩžęńş őƒ ţĥę Āşċęńďāńċȳ ċĥőƥ, ƀũĩĺď āńď ƒāŕm, ċőńƒĩďęńţ ţĥāţ ţĥę ķńőŵń ŵőŕĺď ĩş ţĥęĩŕş ţő ĩńĥāƀĩţ.!!]",
-        "select_difficulty": "[!!Šęļęčť ă đīƒƒęŗęņť đīƒƒīčūļťɏ: !!]",
-        "normal_game": "[!!Ņơřmȃļ Ģȃmě!!]",
-        "peaceful_game": "[!!Ƥȇáĉȇƒūŀ Ğámȇ!!]",
-        "normal_game_description": "[!!Ǻđvėŉţůŕė ƒŏŕţħ įŉ ǻ ŵŏŕŀđ ƒŕǻůğħţ ŵįţħ đǻŉğėŕ. Ȳŏůŕ ţŏŵŉ ŵįŀŀ Ƅė ŝůƄĴėĉţ ţŏ ŕǻįđįŉğ ėŉėmįėŝ.!!]",
-        "peaceful_game_description": "[!!À śàńďƀōx-mōďȅ, ŵĥȅŕȅ ŷōũ'ŕȅ ƒŕȅȅ ţō ƀũīļď ŷōũŕ ţōŵń ŵīţĥōũţ ŵōŕŕŷīńĝ àƀōũţ īńvàďȅŕś ŵĥàţśōȅvȅŕ.!!]",
-        "curr_difficulty": "[!!Ĩŉ šţơŕɏ mơđĕ: !!]"
+        "title": "[!!Ĉħŏŏŝē ƴŏůŕ ǻđvēŉţůŕē!!]",
+        "story_start": "[!!Ţĥıś ıś ţĥę śţōŕŷ ōƒ ...!!]",
+        "kingdom_section_start": "[!!... ȁ ƅŗȁvȇ ƅȁŋď őƒ şȇťťłȇŗş ƒŗőm !!]",
+        "select_button": "[!!?!!]",
+        "kingdom_picker_title": "[!!Śėļėćť ä Ķīŋĝďōm!!]",
+        "biome_section_start": "[!!Ŝēēĸıņğ ņēŵ łáņđŝ áņđ áđvēņťūŗē, ťħēƴ ŝēť ŏƒƒ ťŏ !!]",
+        "biome_picker_title": "[!!Şēłēċŧ â Ƀıőmē!!]",
+        "game_mode_select_start": "[!!, ą ľōćąŧĭōň ŧĥąŧ ĭś śŭřě ŧō ƃě !!]",
+        "game_mode_picker_title": "[!!Šȅłȅčť ă Ɗıƒƒıčūłťɏ!!]",
+        "game_modes": {
+          "normal": {
+            "display_name": "[!!Ņơřmȃļ Ģȃmě!!]",
+            "description": "[!!Ǻđvėŉţůŕė ƒŏŕţħ įŉ ǻ ŵŏŕŀđ ƒŕǻůğħţ ŵįţħ đǻŉğėŕ. Ȳŏůŕ ţŏŵŉ ŵįŀŀ Ƅė ŝůƄĴėĉţ ţŏ ŕǻįđįŉğ ėŉėmįėŝ.!!]",
+            "post_selection_text": "[!!ǻŉ įŉŝƿįŕįŉğ ƿŀǻĉȅ ţŏ ŝţǻŕţ ǻŉȅŵ.!!]"
+          },
+          "peaceful": {
+            "display_name": "[!!Ƥȇáĉȇƒūŀ Ğámȇ!!]",
+            "description": "[!!À śàńďƀōx-mōďȅ, ŵĥȅŕȅ ŷōũ'ŕȅ ƒŕȅȅ ţō ƀũīļď ŷōũŕ ţōŵń ŵīţĥōũţ ŵōŕŕŷīńĝ àƀōũţ īńvàďȅŕś ŵĥàţśōȅvȅŕ.!!]",
+            "post_selection_text": "[!!ă ťŗăņǭūīļ ƿļăčę ťơ šťăŗť ăņęŵ.!!]"
+          }
+        },
+        "begin_button": "[!!Ɓȅğĩƞ!!]"
       },
       "embark": {
-        "title": "[!!Ƥřěƥąřě ŧō śěŧ ōŭŧ ƒōř ąďvěňŧŭřě!!]",
+        "title": "[!!Ƥřęƿåřę ŧŏ ęmɓåřƙ!!]",
         "citizen_info": "[!!Ęxƿęđĭŧĭŏƞ Ŗŏŝŧęř!!]",
         "reroll_citizens": "[!!Ŗŏľľ ƞęŵ ĉĭŧĭżęƞŝ!!]",
         "shop_title": "[!!Ŧřåvęľľęř'ŝ Ŝŧŏřę!!]",
-        "shop_gold_label": "[!!Ĝōłď!!]",
+        "shop_gold_label": "[!!Ŝťáŗťįņğ Ğŏŀđ!!]",
         "shop_sold": "[!!ŜŎĹĐ!!!]",
         "shop_reset_button": "[!!Ŗȅŝȅŧ!!]",
         "finished": "[!!ĒmƂăŗĸ!!!]",
@@ -1145,6 +1155,7 @@
         "cloth_resource_name": "[!!Ɓŏŀť ŏƒ Ĉŀŏťħ!!]",
         "wood_resource_name": "[!!Ŵōōď Ŀōĝ!!]",
         "clay_resource_name": "[!!Mŏūņđ ŏƒ Ĉŀáƴ!!]",
+        "clay_brick_resource_name": "[!!Čļȃɏ ʙřīčƙš!!]",
         "thread_resource_name": "[!!Ţĥŕȇāď!!]",
         "leather_resource_name": "[!!ʙơĺţ ơƒ Ĺĕãţħĕŕ!!]",
         "fiber_resource_name": "[!!ʙůŉđĺĕ ơƒ ƑĩƄĕŕ!!]",
@@ -1153,6 +1164,37 @@
     }
   },
   "data": {
+    "population": {
+      "ascendancy": {
+        "display_name": "[!!Ŧĥē Âşċēňďâňċȳ!!]",
+        "quote": "[!!Śĥȇȇƥ? Ćĥȇćķ. Ĥōȇ? Ćĥȇćķ. Śŵōŕďś? Ćĥȇćķ. Ȇmƀàŕķ!!!]",
+        "description": "[!!Ęāŕńęşţ āńď ĥāŕďŵőŕķĩńġ, ĺőȳāĺ āńď ŵęĺĺ-ŕőũńďęď. Ċĩţĩžęńş őƒ ţĥę Āşċęńďāńċȳ ċĥőƥ, ƀũĩĺď āńď ƒāŕm, ċőńƒĩďęńţ ţĥāţ ţĥę ķńőŵń ŵőŕĺď ĩş ţĥęĩŕş ţő ĩńĥāƀĩţ.!!]",
+        "post_selection_description": "[!!, ä ƥŗōśƥȅŗĩōűś äŋď ĩŋďűśťŗĩōűś ĸĩŋĝďōm.!!]"
+      }
+    },
+    "biome": {
+      "temperate": {
+        "display_name": "[!!Ţėmƿėŕǻţė!!]",
+        "description": "[!!Đȇƒåųļŧ ɓīŏmȇ ŧƴƿȇ, ŵīŧħ ļŏŧŝ ŏƒ ğřȇȇƞȇřƴ!!]",
+        "random_location_names": {
+          "000": "[!!Ɗãŕķmơơŕ Ƒơŕĕšţ!!]"
+        }
+      },
+      "arctic": {
+        "display_name": "[!!Āŕċţīċ!!]",
+        "description": "[!!Ŝņŏŵƴ, ŵıťħ ťáłł mŏūņťáıņŝ áņđ łáŗğē ŵáťēŗ Ƃŏđıēŝ!!]",
+        "random_location_names": {
+          "000": "[!!Vãĺķɏŕĩĕ Ţůŉđŕã!!]"
+        }
+      },
+      "desert": {
+        "display_name": "[!!Ɖȇşȇŕţ!!]",
+        "description": "[!!Ɖŕȳ āńď şāńďȳ, ŵıţĥ ċĥũńķȳ ĥıłłş āńď şƥāŕşȅ vȅġȅţāţıőń!!]",
+        "random_location_names": {
+          "000": "[!!Ţħē Đēŝēŕţ ŏƒ Ƥǻļ'Mům!!]"
+        }
+      }
+    },
     "gm": {
       "campaigns": {
         "encounters": {
@@ -3029,6 +3071,10 @@
       }
     },
     "construction": {
+      "clay_bricks": {
+        "display_name": "[!!Čļȃɏ ʙřīčƙš!!]",
+        "description": "[!!Ūŝěđ ƒŏŗ ĉĺáƴ ŝťŗūĉťūŗěŝ.!!]"
+      },
       "cobblestone_fence": {
         "cobblestone_fence_ghost": {
           "display_name": "[!!Ĉŏɓɓľęŝŧŏƞę Ƒęƞĉę!!]",
@@ -3109,6 +3155,54 @@
         "wooden_window_frame_wide_ghost": {
           "display_name": "[!!Ŵĭđę Ŵĭƞđŏŵ Ƒřåmę!!]",
           "description": "[!!Ĭť'ş ȁ ƥȁŋőŗȁmĭċ vĭĕŵ!!!]"
+        }
+      },
+      "golden_clay_doorframe": {
+        "golden_clay_doorframe_ghost": {
+          "display_name": "[!!Ğŏļđēŉ Ĉļǻƴ Đŏŏŕƒŕǻmē!!]",
+          "description": "[!!Mȃŧčħēš ȃ ģơĺđēƞ čĺȃɏ ēxŧēřĩơř ŵȃĺĺ!!]"
+        }
+      },
+      "red_clay_door": {
+        "red_clay_door_ghost": {
+          "display_name": "[!!Ŗȇđ Ĉŀáƴ Đŏŏŗ!!]",
+          "description": "[!!Ķĕĕƥş ťĥĕ ĭŋďőőŗş ċőőľ!!]"
+        }
+      },
+      "red_clay_window_frame": {
+        "red_clay_window_frame_ghost": {
+          "display_name": "[!!Ŗēđ Ĉļǻƴ Ŵīŉđŏŵ Ƒŕǻmē!!]",
+          "description": "[!!Ľęŧ'ŝ ŧħę ŝųƞ ĭƞ.!!]"
+        }
+      },
+      "blue_clay_door": {
+        "blue_clay_door_ghost": {
+          "display_name": "[!!Ƀłŭē Ċłâȳ Ɖőőř!!]",
+          "description": "[!!Ƀļŭȅ ļīƙȅ â ďřȅâm őƒ őċȅâň!!]"
+        }
+      },
+      "green_clay_door": {
+        "green_clay_door_ghost": {
+          "display_name": "[!!Ģŕĕĕŉ Čĺãɏ Ɗơơŕ!!]",
+          "description": "[!!Čơľơŕȇđ ţơ mãţčħ ţħȇ đȇšȇŕţ!!]"
+        }
+      },
+      "blue_clay_window_frame": {
+        "blue_clay_window_frame_ghost": {
+          "display_name": "[!!Ƀľűĕ Ċľȁȳ Ŵĭŋďőŵ Ƒŗȁmĕ!!]",
+          "description": "[!!Ŀėŧš įƞ ŧħė đėšėřŧ ȃįř.!!]"
+        }
+      },
+      "green_clay_window_frame": {
+        "green_clay_window_frame_ghost": {
+          "display_name": "[!!Ģřėėƞ Čŀȃɏ Ŵįƞđơŵ Ƒřȃmė!!]",
+          "description": "[!!Ŀēťś įŋ ťĥē śōƒť ďēśēŗť äįŗ.!!]"
+        }
+      },
+      "latticed_clay_window_frame": {
+        "latticed_clay_window_frame_ghost": {
+          "display_name": "[!!Ļâŧŧīċȅď Ċļâȳ Ŵīňďőŵ Ƒřâmȅ!!]",
+          "description": "[!!Ţħě łãţţıčě šţıłł łěţš ţħě ģơơđ ãıŕ ıŉ.!!]"
         }
       }
     },
@@ -3562,6 +3656,40 @@
             "description": "[!!Řȇȁċĥ ƒőŗ ťĥȇ şűŋ, łıťťłȇ őȁĸłıŋġ.!!]"
           }
         }
+      },
+      "golden_gourd_crop": {
+        "display_name": "[!!Ğŏľđęƞ Ğŏųřđ Ĉřŏƿ!!]",
+        "description": "[!!Mũċĥ ƥŕėţţĩėŕ ţĥāń ĩţ ĩş ţāşţȳ!!]",
+        "growth_stage": {
+          "003": {
+            "name": "[!!Ĝŕȅȅń Ĝōũŕďś!!]",
+            "description": "[!!Ŧŏŏ ɓĭŧŧęř ŧŏ ęåŧ!!]"
+          },
+          "002": {
+            "name": "[!!Ƥŕōţō-Ĝōũŕďś!!]",
+            "description": "[!!Ƒůĺĺ ơƒ ƿŕơmĩšĕ!!]"
+          },
+          "005": {
+            "name": "[!!Ğŏŀđȇņ Ğŏūŗđŝ!!]",
+            "description": "[!!Ĥàŕvȅśţ ńōŵ!!!]"
+          },
+          "004": {
+            "name": "[!!Ĝŕȅȅń Ĝōũŕďś!!]",
+            "description": "[!!Àľmōśţ ŕĭƥȅ!!!]"
+          },
+          "001": {
+            "name": "[!!Ţıŉƴ Vıŉė!!]",
+            "description": "[!!Ċļīńġȳ!!]"
+          },
+          "000": {
+            "name": "[!!Ŝėėđłıŉğ!!!]",
+            "description": "[!!ĵũśţ à ţıńłŷ łıţţłę śţũƀ!!]"
+          },
+          "011": {
+            "name": "[!!Ŗŏťťȇņ Ğŏūŗđŝ!!]",
+            "description": "[!!Şâďłȳ ıňēďıƃłē!!]"
+          }
+        }
       }
     },
     "decoration": {
@@ -3769,6 +3897,24 @@
           "display_name": "[!!Ĝàŕďȅń Ĝńōmȅ!!]",
           "description": "[!!Ƥĺãŉţ Ģůãŕđĩãŉš!!]"
         }
+      },
+      "decorative_teapot": {
+        "decorative_teapot_ghost": {
+          "display_name": "[!!Đęĉŏřåŧĭvę Ŧęåƿŏŧ!!]",
+          "description": "[!!Ă ŗęmīņđęŗ ơƒ ħūmƂļę Ƃęģīņņīņģš!!]"
+        }
+      },
+      "decorative_tray": {
+        "decorative_tray_ghost": {
+          "display_name": "[!!Ɗĕčơŕãţĩvĕ Ţŕãɏ!!]",
+          "description": "[!!Âďďş ƒļâşĥ âňď ĥőşƥīŧâļīŧȳ!!]"
+        }
+      },
+      "potted_cactus": {
+        "potted_cactus_ghost": {
+          "display_name": "[!!Ƥŏťťȇđ Ĉáĉťūŝ!!]",
+          "description": "[!!Ćäŗēƒűŀ, įť'ś śťįŀŀ ƥŗįćĸŀŷ.!!]"
+        }
       }
     },
     "food": {
@@ -3929,6 +4075,26 @@
           "display_name": "[!!Ʀȃɓɓīŧ Ƒěěđ!!]",
           "description": "[!!Ƒōōď ƒōŗ ŗäƅƅīťś!!]"
         }
+      },
+      "prickly_pear": {
+        "prickly_pear_basket": {
+          "display_name": "[!!Ƥŗıčĸłɏ Ƥȅăŗ ʙăšĸȅť!!]",
+          "description": "[!!Ēâŧ ċâřēƒŭłłȳ!!!]"
+        },
+        "prickly_pear_serving": {
+          "display_name": "[!!Ƥřĩćƙĺŷ Ƥȇąř Śȇřvĩňĝ!!]",
+          "description": "[!!Ŏŵ! Ŵǻŝ ţħǻţ ǻ ŝƿīŉē?!!]"
+        }
+      },
+      "golden_gourd": {
+        "golden_gourd_basket": {
+          "display_name": "[!!Ģơłđȅņ Ģơūŗđ ʙăšĸȅť!!]",
+          "description": "[!!Ėđįɓŀė ŵħėƞ řȃŵ, ɓȃřėŀɏ!!]"
+        },
+        "golden_gourd_serving": {
+          "display_name": "[!!Ŕäŵ Ĝōļďėŋ Ĝōűŗď!!]",
+          "description": "[!!Ŕàŵ ĝōũŕď ıś... ţęŕŕıƀłę!!]"
+        }
       }
     },
     "furniture": {
@@ -4068,6 +4234,24 @@
         "writing_desk_fine_ghost": {
           "display_name": "[!!Ƒĭƞę Ŵřĭŧĭƞğ Đęŝƙ!!]",
           "description": "[!!Ƒůŕŉıţůŕė!!]"
+        }
+      },
+      "clay_bed": {
+        "clay_bed_ghost": {
+          "display_name": "[!!Ćŀąŷ ßĕď!!]",
+          "description": "[!!ŪņčơmƒơŗťăƂŀĕ, Ƃūť ģĕťš ɏơū ơƒƒ ťħĕ ģŗơūņđ!!!]"
+        }
+      },
+      "clay_dining_table": {
+        "clay_dining_table_ghost": {
+          "display_name": "[!!Ĉľåƴ Đĭƞĭƞğ Ŧåɓľę!!]",
+          "description": "[!!Ĝēťś ŷōűŗ ƒōōď ōƒƒ ťĥē ƒŀōōŗ!!]"
+        }
+      },
+      "simple_clay_chair": {
+        "simple_clay_chair_ghost": {
+          "display_name": "[!!Ŝĭmƿľę Ĉľåƴ Ĉħåĭř!!]",
+          "description": "[!!Ļĕśś ďũśţŷ ţĥàń śīţţīńĝ ōń ţĥĕ ƒļōōŕ!!]"
         }
       }
     },
@@ -4218,6 +4402,10 @@
             }
           }
         }
+      },
+      "rabbit": {
+        "display_name": "[!!...!!]",
+        "description": "[!!Ą Ŕąƃƃįŧ!!]"
       }
     },
     "pets": {
@@ -4295,7 +4483,12 @@
       },
       "tumbleweed": {
         "display_name": "[!!Ťűmƅĺęŵęęď!!]",
-        "description": "[!!Ɗơȅšņ'ť đơ ăņɏťħıņģ!!]"
+        "description": "[!!Šơųřčė ơƒ čơȃřšė ƒįɓėřš!!]"
+      },
+      "pear_cactus": {
+        "display_name": "[!!Ƥěȃř Čȃčŧųš!!]",
+        "description": "[!!Ħáŗvėŝť ĉáŗėƒūľľƴ ƒŏŗ ƿŗĭĉĸľėƴ ƿėáŗŝ.!!]",
+        "unripe_description": "[!!Ĭţ'ş ţĥē ĭńvĭşĭƀľē şƥĭńēş ţĥāţ ŕēāľľȳ ĥũŕţ!!]"
       }
     },
     "rabbit": {
@@ -4377,6 +4570,10 @@
         "wool_bundle": {
           "display_name": "[!!Ƀŭňďłē őƒ Ŵőőł!!]",
           "description": "[!!ŜƿīŉŉǻƄļē īŉţŏ ţħŕēǻđ!!]"
+        },
+        "coarse_fiber_bundle": {
+          "display_name": "[!!Čơăŗšȅ ƑıƂȅŗ ʙūņđłȅ!!]",
+          "description": "[!!Ʀơůģħ ãŉđ ĩţčħɏ!!]"
         }
       },
       "gold": {
@@ -4587,6 +4784,10 @@
         "large_acacia_tree": {
           "display_name": "[!!Ľåřğę Åĉåĉĭå Ŧřęę!!]",
           "description": "[!!İŧ řåđıåŧĕŝ å mƴŝŧĕřıŏųŝ åųřå!!]"
+        },
+        "small_acacia_tree": {
+          "display_name": "[!!Ŝmåľľ Åĉåĉĭå Ŧřęę!!]",
+          "description": "[!!Ƴŏųƞğ, ɓųŧ ħęåřŧƴ!!]"
         }
       },
       "joshua_tree": {
@@ -4675,15 +4876,15 @@
       },
       "giant_bone_axe": {
         "display_name": "[!!Ġıâňŧ Ƀőňē Âxē!!]",
-        "description": "[!!Ĉǻŕvęđ ƒŕŏm ţħę ĉĺǻvĩĉǻĺ ŏƒ ŝŏmę ğŕęǻţ Ƅęǻŝţ.!!]",
+        "description": "[!!Ĉǻŕvęđ ƒŕŏm ţħę ĉĺǻvĩĉĺę ŏƒ ŝŏmę ğŕęǻţ Ƅęǻŝţ.!!]",
         "giant_bone_axe_iconic": {
           "display_name": "[!!Ġıâňŧ Ƀőňē Âxē!!]",
-          "description": "[!!Ĉǻŕvęđ ƒŕŏm ţħę ĉĺǻvĩĉǻĺ ŏƒ ŝŏmę ğŕęǻţ Ƅęǻŝţ.!!]"
+          "description": "[!!Ĉǻŕvęđ ƒŕŏm ţħę ĉĺǻvĩĉĺę ŏƒ ŝŏmę ğŕęǻţ Ƅęǻŝţ.!!]"
         }
       },
       "giant_bone_mace": {
         "display_name": "[!!Ģĩãŉţ ʙơŉĕ Mãčĕ!!]",
-        "description": "[!!Ĥȅâvȳ, īŧ ƥâċƙş â ŵĥâļļőƥ.!!]",
+        "description": "[!!Ħěávƴ, ĩť ƿáĉĸŝ á ŵáĺĺŏƿ.!!]",
         "giant_bone_mace_iconic": {
           "display_name": "[!!Ģĩãŉţ ʙơŉĕ Mãčĕ!!]",
           "description": "[!!Ƒōř ƒĺąŧŧȇňĩňĝ ƒąćȇś!!]"
@@ -4691,7 +4892,7 @@
       },
       "iron_mace": {
         "display_name": "[!!İŕŏŉ Mǻĉė!!]",
-        "description": "[!!Ĥȅâvȳ, īŧ ƥâċƙş â ŵĥâļļőƥ.!!]",
+        "description": "[!!Ħěávƴ, ĩť ƿáĉĸŝ á ŵáĺĺŏƿ.!!]",
         "iron_mace_iconic": {
           "display_name": "[!!İŕŏŉ Mǻĉė!!]",
           "description": "[!!Ƒōř ƒĺąŧŧȇňĩňĝ ƒąćȇś!!]"
@@ -4880,7 +5081,7 @@
           "flavor": "[!!Ťħĕ máŝťĕŗŝ ŏƒ ŏĺđ ĉŏņŝĩđĕŗĕđ ĩťŝ ƿŗŏđūĉťĩŏņ, ĕvĩđĕņĉĕ ŏƒ ŏūŗ ťŗĩūmƿħ ŏvĕŗ ťħĕ ĕáŗťħ.!!]"
         },
         "bronze_mace_recipe": {
-          "description": "[!!Ĥȅâvȳ, īŧ ƥâċƙş â ŵĥâļļőƥ.!!]",
+          "description": "[!!Ħěávƴ, ĩť ƿáĉĸŝ á ŵáĺĺŏƿ.!!]",
           "recipe_name": "[!!ʙřơƞƶě Mȃčě!!]",
           "flavor": "[!!Ŧĥę ġőőď ňęŵş: ŧĥęřę įş ňő ƥőįňŧȳ ęňď.!!]"
         },
@@ -4910,7 +5111,7 @@
           "flavor": "[!!Ŧơ ɓơŧħ šŵơřđš ȃƞđ ƿłơŵšħȃřęš, ŵħȃŧ ȃƞ ęģģ ıš ŧơ ȃ čħıčƙęƞ.!!]"
         },
         "iron_mace_recipe": {
-          "description": "[!!Ĥȅâvȳ, īŧ ƥâċƙş â ŵĥâļļőƥ.!!]",
+          "description": "[!!Ħěávƴ, ĩť ƿáĉĸŝ á ŵáĺĺŏƿ.!!]",
           "recipe_name": "[!!İŕŏŉ Mǻĉė!!]",
           "flavor": "[!!Ȃƞđ Ěřĩƞ řěšŧěđ ħěř ƒơřěħěȃđ ųƿơƞ ĩŧ, ȃƞđ ŧħě ĩřơƞ šŧơĺě ȃŵȃɏ ěƞčħȃƞŧměƞŧ ȃƞđ měmơřɏ, ŧơģěŧħěř.!!]"
         },
@@ -5053,7 +5254,7 @@
           "flavor": "[!!ƝŏƄŏđƴ ȇvȇŕ ŵǻŉţŝ ţŏ ğȇţ ŏůţ. İţ mǻķȇŝ ȇmȇŕğȇŉĉƴ ȇvǻĉůǻţıŏŉŝ ǻŵķŵǻŕđ.!!]"
         },
         "comfy_chair_recipe": {
-          "description": "[!!Įţš ƿãđđēđ šēãţ ģůãŕãŉţēēš ã 98% ŕēđůčįơŉ įŉ ãŵķŵãŕđ šƿŀįŉţēŕš!!!]",
+          "description": "[!!İťś ƥäďďĕď śĕäť ĝűäŗäŋťĕĕś ä 98% ŗĕďűćťıōŋ ıŋ äŵĸŵäŗď śƥłıŋťĕŗś!!!]",
           "recipe_name": "[!!Čơmƒɏ Čħȃīř!!]",
           "flavor": "[!!Įƒ ƿįŀŀơŵš ȃřȇ ģơơđ ƒơř ŧħȇ ħȇȃđ, šųřȇŀɏ ŧħȇɏ'řȇ ȇvȇƞ ɓȇŧŧȇř ƒơř ŧħȇ ɓųŧŧ ȃƞđ ɓȃčƙ!!!]"
         },
@@ -5261,7 +5462,7 @@
           "long_description": "[!!Ĥűmōŋĝōűś, ĥĕävŷ ƥōť, śűıťäƅłĕ ƒōŗ ćōōĸıŋĝ űƥ ä ƒĕäśť äť ä ťımĕ!!!]"
         },
         "level_6_data": {
-          "title": "[!!Mȃšŧěř čơơƙ!!]",
+          "title": "[!!Mȃšŧěř Čơơƙ!!]",
           "perk_000_name": "[!!10,000 Ĥőũŕş (ńőţ ĩmƥĺėmėńţėď)!!]",
           "perk_000_description": "[!!Ŧħĕ čơơƙ'š đīšħĕš ȃřĕ ƞơŵ šơ ģơơđ ƒơř ɏơų ŧħĕɏ ħȃvĕ ųƞĕxƿĕčŧĕđ ĕƒƒĕčŧš.!!]"
         },
@@ -5505,7 +5706,7 @@
           "long_description": "[!!Ŧĥȅ Mąśōň ćřąƒŧś ƃŭįŀďįňĝ mąŧȅřįąŀś ąňď ďȅćōřąŧįvȅ įŧȅmś ƒřōm śŧōňȅ.!!]"
         },
         "level_6_data": {
-          "title": "[!!Màśţȅŕ màśōń!!]",
+          "title": "[!!Màśţȅŕ Màśōń!!]",
           "perk_000_name": "[!!10,000 Ĥőũŕş (ńőţ ĩmƥĺėmėńţėď)!!]",
           "perk_000_description": "[!!Ťĥę mȁşőŋ'ş mȁşťęŗȳ őƒ ĥış ťŗȁďę ȁłłőŵş ĥım ťő ċőmę űƥ ŵıťĥ ċőmƥłęťęłȳ ŋęŵ ŵȁȳş őƒ űşıŋġ ŵőőď.!!]"
         },
@@ -5687,28 +5888,112 @@
         },
         "clay_lamp_recipe": {
           "description": "[!!Įŧş ƒŀâmę ƃřįňġş â ŵâřm ġŀőŵ âŧ ňįġĥŧ.!!]",
-          "recipe_name": "[!!Ĉŀáƴ Ŏįŀ Ŀámƿ!!]"
+          "recipe_name": "[!!Ĉŀáƴ Ŏįŀ Ŀámƿ!!]",
+          "flavor": "[!!Ąňď ŧĥę ĎĴĩňňĩ śąĩď ŧō Ŕąŷŷą: 'Ĩ ĥąvę ƃŭŧ ōňę ĺąśŧ ŵĩśĥ ŧō ĝřąňŧ. Ŵōřď ĩŧ ŵęĺĺ.'!!]"
         },
         "clay_wall_lamp_recipe": {
           "description": "[!!Įŧş ƒŀâmę ƃřįňġş â ŵâřm ġŀőŵ âŧ ňįġĥŧ.!!]",
-          "recipe_name": "[!!Ŵâļļ Mőŭňŧȅď Ċļâȳ Őīļ Ļâmƥ!!]"
+          "recipe_name": "[!!Ŵâļļ Mőŭňŧȅď Ċļâȳ Őīļ Ļâmƥ!!]",
+          "flavor": "[!!'Čľơšė řơųƞđ ųš ģųȃřđ ŧħė šƿĭřĭŧš ơƒ ƞĭģħŧ! Ȃš ŧħėɏ đȃƞčė ȃƞđ šŵȃɏ, ƒřėė ɏơų'ľľ ɓė ŧơ đřėȃm ŧħė đȃřƙ ȃŵȃɏ.'!!]"
         },
         "garden_gnome_recipe": {
           "description": "[!!Ƒäśĥĩōŋȅď äƒťȅŗ mŷťĥĩćäĺ ƒōŗȅśť śƥĩŗĩťś.!!]",
           "recipe_name": "[!!Ŧĩňŷ Ĝąřďȇň Ĝŭąřďĩąň!!]",
           "flavor": "[!!Đėŝĭğņėđ Ƃƴ Ğŗáņđmáŝťėŗ ĉŗáƒťėŗ Ťħė_M!!]"
         },
+        "furniture_name": "[!!Ƒũŕńıţũŕę àńď Ďęćōŕàţıōń!!]",
         "decoration_name": "[!!Ɖęċőŗȁťĩőŋ!!]",
         "potter_workbench_recipe": {
           "description": "[!!Ĥěļƥş ťĥě ƥőťťěŗ ċŗěȁťě şīmƥļě īťěmş ƒŗőm ċļȁȳ!!]",
           "recipe_name": "[!!Ƥőŧŧēř'ş Ŵĥēēł!!]",
           "flavor": "[!!Ŵħěŕě ŵě'vě Ƅěěŉ Ƅěƒŏŕě, ŵě'ļļ Ƅě ǻğǻīŉ, ŕŏůŉđ ŏŉĉě mŏŕě, ƒŏŕ ŝţŕěŉğţħ ǻŉđ ţħěŉ--!!]"
+        },
+        "potter_kiln_recipe": {
+          "description": "[!!Ħãŕđȇŉš Ƅãšĭč čľãɏ ơƄĴȇčţš.!!]",
+          "recipe_name": "[!!Ƥŏťťȇŗ'ŝ Ƙįŀņ!!]",
+          "flavor": "[!!'Ţħŕŏůğħ ħėǻţ ǻŉđ ħǻŕđŝħįƿ ŵė ŕėǻŀįżė ŏůŕ ƒįŉǻŀ ŝėŀvėŝ.' -Ŝįŀŏŕǻ, Ǻĉŏŀƴţė ŏƒ Ŗǻƴƴǻ'ŝ Mƴŝţėŕƴ !!]"
+        },
+        "building_parts_name": "[!!Ƀŭıłďıňġ Ƥâřŧş!!]",
+        "clay_bricks_recipe": {
+          "description": "[!!Űşėď ťő mȁĸė şťŗűċťűŗėş ťĥȁť şťȁȳ ċőőŀ ėvėŋ įŋ ġŗėȁť ĥėȁť.!!]",
+          "recipe_name": "[!!Čļȃɏ ʙřīčƙš!!]",
+          "flavor": "[!!'Áņđ ŵħėņ Ĉļáƴ ėmėŗğėđ ƒŗŏm ťħė Ƙīļņ, ħė ħáđ Ƃėĉŏmė Ɓŗīĉĸ, áņđ ņŏ máťťėŗ ħŏŵ ħáŗđ Ŝūņ Ƃļáŝťėđ ħīm, ħė ŗėmáīņėđ ĉħėėŗƒūļ.'!!]"
+        },
+        "red_clay_door_recipe": {
+          "description": "[!!Mȁťċĥĕş ŗĕď ċľȁȳ ŵȁľľş!!]",
+          "recipe_name": "[!!Ŗȇđ Ĉŀáƴ Đŏŏŗ!!]",
+          "flavor": "[!!ŤŌĎŌ!!]"
+        },
+        "red_clay_window_frame_recipe": {
+          "description": "[!!Mȁťċĥĕş ŗĕď ċľȁȳ ŵȁľľş!!]",
+          "recipe_name": "[!!Ʀĕđ Čĺãɏ Ŵĩŉđơŵ!!]",
+          "flavor": "[!!ŤŌĎŌ!!]"
+        },
+        "blue_clay_door_recipe": {
+          "description": "[!!Ɓľūė ľĭĸė ťħė đŗėám ŏƒ đĭŝťáņť ŏĉėáņ.!!]",
+          "recipe_name": "[!!Ɓļůē Ĉļǻƴ Đŏŏŕ Ŗēĉīƿē!!]",
+          "flavor": "[!!ŤŌĎŌ!!]"
+        },
+        "green_clay_door_recipe": {
+          "description": "[!!Ĝŗȅȅŋ, ĺĩĸȅ ťĥȅ ƒȅŵ śćŗűƅ ĩŋ ťĥȅ ďȅśȅŗť.!!]",
+          "recipe_name": "[!!Ģŕĕĕŉ Čĺãɏ Ɗơơŕ!!]",
+          "flavor": "[!!ŤŌĎŌ!!]"
+        },
+        "blue_clay_window_frame_recipe": {
+          "description": "[!!Ĺėţş ĩń ţĥė ƀŕĩġĥţ ďėşėŕţ āĩŕ.!!]",
+          "recipe_name": "[!!Ƀľűĕ Ċľȁȳ Ŵĭŋďőŵ Ƒŗȁmĕ!!]",
+          "flavor": "[!!Ţĥę ďȳę īş ńāmęď Şāńţőŕī, ƒőŕ āń āċőļȳţę ŵĥő ļőńġęď ƒőŕ ţĥę őċęāń.!!]"
+        },
+        "green_clay_window_frame_recipe": {
+          "description": "[!!Łĕŧ'ŝ ıƞ ŧħĕ ŝŏƒŧ đĕŝĕřŧ åıř.!!]",
+          "recipe_name": "[!!Ģřėėƞ Čŀȃɏ Ŵįƞđơŵ Ƒřȃmė!!]",
+          "flavor": "[!!Ĩŧ'š ȃ ŵĩƞđơŵ'š đřēȃm ơƒ šƿřĩƞģ...?!!]"
+        },
+        "latticed_clay_window_frame_recipe": {
+          "description": "[!!Ţħě łãţţıčě šţıłł łěţš ţħě ģơơđ ãıŕ ıŉ.!!]",
+          "recipe_name": "[!!Ļâŧŧīċȅď Ċļâȳ Ŵīňďőŵ Ƒřâmȅ!!]",
+          "flavor": "[!!Àś ţĥė śĥàďōŵś mōvė àćŕōśś ţĥė ƒľōōŕ, ćĥĭľď, śėė ĭƒ ŷōũ ćàń ƒĭńď Mōńķėŷ!!!]"
+        },
+        "clay_bed_recipe": {
+          "description": "[!!ŮŉĉŏmƒŏŕţǻƄĺę, Ƅůţ ĩţ ğęţŝ ƴŏů ŏƒƒ ţħę ğŕŏůŉđ!!]",
+          "recipe_name": "[!!Ćŀąŷ ßĕď!!]",
+          "flavor": "[!!ŤŌĎŌ!!]"
+        },
+        "clay_dining_table_recipe": {
+          "description": "[!!Ġėţş ȳőũŕ ƒőőď őƒƒ ţĥė ġŕőũńď!!!]",
+          "recipe_name": "[!!Ĉľåƴ Đĭƞĭƞğ Ŧåɓľę!!]",
+          "flavor": "[!!ŤŌĎŌ!!]"
+        },
+        "simple_clay_chair_recipe": {
+          "description": "[!!Ŝŏmĕŵħĕřĕ ŧŏ ŝıŧ ŵħıłĕ ĕåŧıƞğ!!]",
+          "recipe_name": "[!!Ŝĭmƿľę Ĉľåƴ Ĉħåĭř!!]",
+          "flavor": "[!!'Ňȇşŧş ŵĭŧĥ ŧĥȇ ŧâƃľȇş, őőő, şȳmƃőľĭċ!' --Ňȇşŧőř Âďȳâ, Âċőľȳŧȇ!!]"
+        },
+        "decorative_teapot_recipe": {
+          "description": "[!!Ŗĕmıƞđĕř ŏƒ ħųmɓłĕ ɓĕğıƞƞıƞğŝ!!]",
+          "recipe_name": "[!!Đęĉŏřåŧĭvę Ŧęåƿŏŧ!!]",
+          "flavor": "[!!'Ŵĥēŕēvēŕ śĥē ŵēńţ, ţĥē ţēàƥōţ ďįď ţōō, àńď ēvēń ŵĥēń ţĥēŕē ŵàś ńōţĥįńĝ ƀũţ ćōŀď ŵàţēŕ ţō ƥũţ įń, àŀŵàŷś ōũţ ƥōũŕēď śţēàmįńĝ ţēà, ŕēďōŀēńţ ŵįţĥ ţĥē àŕōmà ōƒ Ēŀśēŵĥēŕē.'!!]"
+        },
+        "decorative_tray_recipe": {
+          "description": "[!!Âďďş ĥőşƥīŧâļīŧȳ âňď ƒļâşĥ!!]",
+          "recipe_name": "[!!Ɗĕčơŕãţĩvĕ Ţŕãɏ!!]",
+          "flavor": "[!!'Ŝūğáŗ, ŝƿĭĉȇ, áņđ Ƃľŏŏđ ŏƒ ťħȇ ȇáŗťħ: ĭť ĭŝ ťħȇ ťŗáƴ ťħáť Ƃŗĭņğŝ ťħȇm, áņđ ūŝ, ťŏğȇťħȇŗ' --Ŗáƴƴá!!]"
+        },
+        "potted_cactus_recipe": {
+          "description": "[!!Ƥłåƞŧ å ĉåĉŧųŝ ıƞ å ĉłåƴ ƿŏŧ.!!]",
+          "recipe_name": "[!!Ƥŏťťȇđ Ĉáĉťūŝ!!]"
         }
       },
       "potter_workbench": {
         "potter_workbench_ghost": {
           "display_name": "[!!Ƥŏťťȇŗƴ Ŵħȇȇŀ!!]",
-          "description": "[!!Ŵőŕķşĥőƥ ƒőŕ māķĩńġ ċĺāȳ ġőőďş!!]"
+          "description": "[!!Ŵőŕķşĥőƥ ƒőŕ māķĭńġ şȳmmēţŕĭċāľ ċľāȳ ġőőďş!!]"
+        }
+      },
+      "potter_kiln": {
+        "potter_kiln_ghost": {
+          "display_name": "[!!Ƥŏťťȇŗ'ŝ Ƙįŀņ!!]",
+          "description": "[!!Ƥŕōďũćĕś ƀŕīćķś àńď ĝōōďś ƒŕōm ćļàŷ.!!]"
         }
       },
       "potter_cutter": {
@@ -5716,7 +6001,7 @@
         "description": "[!!Ũśĕď ţō ƒōŕm ćīvīļīźàţīōń ƒŕōm ďīŕţ!!!]",
         "potter_cutter_talisman": {
           "display_name": "[!!Ƥơţţĕŕ'š Čůţţĕŕ!!]",
-          "description": "[!!Ƥŕōmōţĕś à ĥĕàŕţĥļīńĝ īńţō à Ƥōţţĕŕ.!!]"
+          "description": "[!!Ʀȅɋųĭřȅđ ŧơ ƿřơmơŧȅ ȃ ħȅȃřŧħľĭƞģ ĭƞŧơ ȃ Ƥơŧŧȅř.!!]"
         }
       },
       "potter_outfit": {
