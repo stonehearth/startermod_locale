@@ -9,31 +9,46 @@ The startermod_locale mod adds a pseudolocalization of stonehearth's and rayya c
 
 When you start up Stonehearth with this mod installed, open the settings menu and go to the system tab. You will see that a language named "[!!Ēņģľĭšħ!!]" will be added to the list of languages. Selecting the "[!!Ēņģľĭšħ!!]" language and clicking "OK" will change the game's language.
 
-How it works:
+##How it works:
+
 1) startermod_locale's manifest.json uses this line:
+   ```
    "mixintos" : {
       "stonehearth/locales/supported_languages.json" : "file(added_languages.json)"
    }
+   ```
    This causes all the data in added_languages.json to be added to the list of supported languages recognized by the stonehearth mod.
+
 2) added_languages.json specifies a new language, en-XA like so:
+    ```
       "en-XA": {
          "display_name": "[!!Ēņģľĭšħ!!]"
       }
+    ```
    display_name is what the settings language drop down will show for the name of the language. You can use this to display the name of a language in its native form.
    the name "en-XA" is the language code of the translation. See: http://www.science.co.il/Language/Locale-codes.asp
    Most languages and language variants have a language code. In this case, en means English and the XA is a made up name for the pseudolocale.
    The German translation will be de-DE.json, and the Chinese Mandarin translation will be zh-CN.json
    Note: If you have a region specific translation, the last 2 letters of the translation file MUST be capitalized!
-3) Then, back to startermod_locale's manifes.json, we add the translations provided by this mod using overrides:
+
+3) Then, back to startermod_locale's manifest.json, we add the translations provided by this mod using overrides:
+   ```
    "overrides": {
       "stonehearth/locales/en-XA.json": "file(translations/stonehearth/en-XA.json)",
       "rayyas_children/locales/en-XA.json": "file(translations/rayyas_children/en-XA.json)"
    }
+   ```
    These overrides will effective act as if you added new files under stonehearth/locales/ and rayyas_children/locales/
    The files that are pointed to is the en-XA.json files under the translations folder. This is the file that contains all the translated strings.
 
-Update: The overrides method allows any mod to provide a translation for any other mod.
-Note: To tell the game that your mod contains locale data, you need to specify a default locale in the mod's manifest.json, ex:
+##Update:
+
+The overrides method allows any mod to provide a translation for any other mod.
+
+##Note:
+
+If you are creating your own content mod that has translatable strings (not a mod that is purely translation), to tell the game that your mod contains locale data, you need to specify a default locale in the mod's manifest.json, ex:
+  ```
   {
    "info" : {
       "name" : "rayyas_children",
@@ -41,19 +56,23 @@ Note: To tell the game that your mod contains locale data, you need to specify a
    },
    "default_locale": "en",
   }
+  ```
+
   This tells the game that if the main stonehearth game is running in a language for which your mod doesn't have support, it will know to load the english translation file by default.
 
-How to translate en.json:
+##How to translate en.json:
+
 Only translate strings that come after a ':'' in the json file. You can more easily view the json on a website such as http://codebeautify.org/jsonviewer
 Do not modify the strings that come on the left side of a ':'
 Also, do not modify strings that are surrounded by brackets '[' or ']'
 
 Example:
+  ```
   "ai": {
    "actions": {
       "status_text": {
          "chase_entity": "chasing [name(data.target)]",
-
+  ```
 
 Here, the string that needs to be translated is "chasing [name(data.target)]"
 Note, DO NOT translate the "[name(data.target)]" portion. This is a special string replacement. The name of the target will replace "[name(data.target)]" in the game.
@@ -64,15 +83,19 @@ The replacement is character sensitive, so do not change whether the string is u
 to copy and past the special portion into your translated text.
 
 You can move "[name(data.target)]" around to different locations within the string.
-EX:
-The japanese translated file might show something like this:
+
+The japanese translated file might show something like this:<br>
+  ```
   "ai": {
    "actions": {
       "status_text": {
          "chase_entity": "[name(data.target)]を追う",
+  ```
 
-The Chinese file might look like:
+The Chinese file might look like:<br>
+  ```
   "ai": {
    "actions": {
       "status_text": {
          "chase_entity": "追逐[name(data.target)]",
+  ```
