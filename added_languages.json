@@ -1,12 +1,10 @@
 {
    "languages": {
       "en-XA": {
-         "display_name": "[!!Ēņģľĭšħ!!]",
-         "path": "/startermod_locale/translations/en-XA.json"
+         "display_name": "[!!Ēņģľĭšħ!!]"
       },
       "en-DEV": {
-         "display_name": "English(Dev)",
-         "path": "/startermod_locale/translations/en-DEV.json"
+         "display_name": "English(Dev)"
       }
    }
 }

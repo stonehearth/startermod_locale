@@ -5,5 +5,11 @@
    },
    "mixintos" : {
       "stonehearth/locales/supported_languages.json" : "file(added_languages.json)"
+   },
+   "overrides": {
+      "stonehearth/locales/en-XA.json": "file(translations/stonehearth/en-XA.json)",
+      "stonehearth/locales/en-DEV.json": "file(translations/stonehearth/en-DEV.json)",
+      "rayyas_children/locales/en-XA.json": "file(translations/rayyas_children/en-XA.json)",
+      "rayyas_children/locales/en-DEV.json": "file(translations/rayyas_children/en-DEV.json)"
    }
 }
