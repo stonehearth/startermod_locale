@@ -565,8 +565,8 @@
           "max_height": "[!!Mȁx Ĥęĩġĥť!!]",
           "rise_slope": "[!!Řĩşę Şĺőƥę!!]",
           "y_offset": "[!!Ʀơơƒ Ơƒƒšěŧ!!]",
-          "show_gradient": "[!!Şļőƥȇş!!]",
-          "show_margin": "[!!Ŝĩżȅŝ!!]"
+          "show_gradient": "[!!Ŝĺŏƿȅ!!]",
+          "show_margin": "[!!Ōvĕřĥąňĝ!!]"
         },
         "building_templates": {
           "title": "[!!Ƀũįŀďįńġ Ţěmƥŀāţěş!!]",
@@ -3915,6 +3915,42 @@
           "display_name": "[!!Ƥŏťťȇđ Ĉáĉťūŝ!!]",
           "description": "[!!Ćäŗēƒűŀ, įť'ś śťįŀŀ ƥŗįćĸŀŷ.!!]"
         }
+      },
+      "blown_glass_vase": {
+        "blown_glass_vase_ghost": {
+          "display_name": "[!!ßļōŵŋ Ĝļäśś Väśė!!]",
+          "description": "[!!Mĩŗȁċűĺőűş!!]"
+        }
+      },
+      "decorative_vase": {
+        "decorative_vase_ghost": {
+          "display_name": "[!!Ɗĕčơŕãţĩvĕ Vãšĕ!!]",
+          "description": "[!!Ţĥė mėţāĺş őƒ ţĥė ėāŕţĥ ŕėƀőŕń!!]"
+        }
+      },
+      "sundial": {
+        "sundial_ghost": {
+          "display_name": "[!!Šūņđĭăľ!!]",
+          "description": "[!!Đĕĉŏřåŧĕŝ ğåřđĕƞŝ, måřƙŝ ŧımĕ!!]"
+        }
+      },
+      "tile_floor_mosaic": {
+        "tile_floor_mosaic_ghost": {
+          "display_name": "[!!Ŧĭľę Ƒľŏŏř Mŏŝåĭĉ!!]",
+          "description": "[!!Ĉŏŏļ ŏŉ ţħē Ƅǻŕē ƒēēţ!!]"
+        }
+      },
+      "tile_wall_mosaic": {
+        "tile_wall_mosaic_ghost": {
+          "display_name": "[!!Ťīļė Ŵäļļ Mōśäīć!!]",
+          "description": "[!!Śōōťĥįŋĝ ďēćōŗäťįvē ƥäťťēŗŋś!!]"
+        }
+      },
+      "golden_clay_wall_planter": {
+        "golden_clay_wall_planter_ghost": {
+          "display_name": "[!!Ĝōłďęń Ćłàŷ Ŵàłł Ƥłàńţęŕ!!]",
+          "description": "[!!Ĺĩvĕŉš ůƿ ŵãĺĺš!!]"
+        }
       }
     },
     "food": {
@@ -4095,6 +4131,47 @@
           "display_name": "[!!Ŕäŵ Ĝōļďėŋ Ĝōűŗď!!]",
           "description": "[!!Ŕàŵ ĝōũŕď ıś... ţęŕŕıƀłę!!]"
         }
+      },
+      "golden_gourd_curry": {
+        "golden_gourd_curry": {
+          "display_name": "[!!Ġőŀďěń Ġőũŕď Ċũŕŕȳ!!]",
+          "description": "[!!Ţħȅ ŝƿįĉȅŝ mǻķȅ ţħįŝ đįŝħ ȅđįƄŀȅ.!!]"
+        },
+        "golden_gourd_curry_serving": {
+          "display_name": "[!!Ġőŀďěń Ġőũŕď Ċũŕŕȳ!!]",
+          "description": "[!!Ŵąŷ ƃěŧŧěř ŧĥąň řąŵ ĝōľďěň ĝōŭřď!!]"
+        }
+      },
+      "corn_meal": {
+        "display_name": "[!!Ĉŏŕŉ Mėǻł!!]",
+        "description": "[!!Ċőŕń ġŕőũńď ĩńţő ā ƒĩńė ƥőŵďėŕ!!]"
+      },
+      "flat_bread": {
+        "flat_bread": {
+          "display_name": "[!!Ƒĺȁť Ƀŗęȁď!!]",
+          "description": "[!!Ũńļĕàvĕńĕď ƀŕĕàď màďĕ ƒŕōm ćōŕń mĕàļ!!]"
+        },
+        "flat_bread_serving": {
+          "display_name": "[!!Ƥıȅčȅ ơƒ Ƒłăť ʙŗȅăđ!!]"
+        }
+      },
+      "meat_tagine": {
+        "meat_tagine": {
+          "display_name": "[!!Mėäť Śťėŵ Ťäĝīŋė!!]",
+          "description": "[!!Měãţ ãŉđ věģģıěš šımměŕěđ ıŉ ã čłãɏ ƿơţ!!]"
+        },
+        "meat_tagine_serving": {
+          "display_name": "[!!Ɓŏŵľ ŏƒ Męåŧ Ŝŧęŵ!!]"
+        }
+      },
+      "vegetable_tagine": {
+        "vegetable_tagine": {
+          "display_name": "[!!VēğēţǻƄļē Ŝţēŵ Ţǻğīŉē!!]",
+          "description": "[!!Vėġġĩėş şĩmmėŕėď ĩń ā ċĺāȳ ƥőţ!!]"
+        },
+        "vegetable_tagine_serving": {
+          "display_name": "[!!ʙơŵł ơƒ Vȅģģıȅ Šťȅŵ!!]"
+        }
       }
     },
     "furniture": {
@@ -4252,6 +4329,24 @@
         "simple_clay_chair_ghost": {
           "display_name": "[!!Ŝĭmƿľę Ĉľåƴ Ĉħåĭř!!]",
           "description": "[!!Ļĕśś ďũśţŷ ţĥàń śīţţīńĝ ōń ţĥĕ ƒļōōŕ!!]"
+        }
+      },
+      "clay_dining_table_fine": {
+        "clay_dining_table_fine_ghost": {
+          "display_name": "[!!Ğȇŧŝ ƴŏųř ƒŏŏđ ŏƒƒ ŧħȇ ƒļŏŏř ... īƞ ŝŧƴļȇ!!]",
+          "description": "[!!Ƒĭŋĕ Ċľȁȳ Ɖĭŋĭŋġ Ťȁƅľĕ!!]"
+        }
+      },
+      "simple_clay_chair_fine": {
+        "simple_clay_chair_fine_ghost": {
+          "display_name": "[!!Ŀěŝŝ đųŝŧƴ åƞđ mŏřě ŝŧƴŀįŝħ ŧħåƞ ŝįŧŧįƞğ ŏƞ ŧħě ƒŀŏŏř!!]",
+          "description": "[!!Ƒĩŉĕ Čĺãɏ Čħãĩŕ!!]"
+        }
+      },
+      "clay_bed_fine": {
+        "clay_bed_fine_ghost": {
+          "display_name": "[!!Ƒįņȇ Ĉŀáƴ Ɓȇđ!!]",
+          "description": "[!!Ğȅťŝ ƴŏū ŏƒƒ ťħȅ ğŗŏūņđ īņ ŝťƴļȅ. Ŝťīļļ ūņĉŏmƒŏŗťáƂļȅ, ťħŏūğħ!!]"
         }
       }
     },
@@ -5578,6 +5673,10 @@
         "cook_oven_recipe": {
           "description": "[!!Ġŕěāţ ƒőŕ ŕőāşţįńġ!!]",
           "recipe_name": "[!!Şťőŋę Ővęŋ!!]"
+        },
+        "corn_meal_recipe": {
+          "description": "[!!Ċőŕń ġŕőũńď ĩńţő ā ƒĩńė ƥőŵďėŕ!!]",
+          "recipe_name": "[!!Ĉŏŕŉ Mėǻł!!]"
         }
       },
       "cook_mill": {
@@ -5871,6 +5970,10 @@
           "name": "[!!Ƥőŧŧēř'ş Ŵĥēēł!!]",
           "description": "[!!įƞšėřŧ đėščřįƿŧįơƞ ħėřė!!]",
           "long_description": "[!!Ŧĥȇ Ƥőŧŧȇř ċřâƒŧş ŭşȇƒŭľ ġőőďş âňď ďȇċőřâŧĭvȇ ĭŧȇmş ƒřőm ċľâȳ.!!]"
+        },
+        "level_3_data": {
+          "perk_000_name": "[!!Ąřŧĩśŧĩć Ĩňśƥĩřąŧĩōň!!]",
+          "perk_000_description": "[!!Ŵĥēń ıńśƥıŕàţıōń śţŕıķēś, ţĥē ƥōţţēŕ màŷ ēmƀēłłıśĥ ĥıś/ĥēŕ ŵōŕķś ıń ũńēxƥēćţēď ŵàŷś.!!]"
         }
       },
       "recipes": {
@@ -5982,6 +6085,36 @@
         "potted_cactus_recipe": {
           "description": "[!!Ƥłåƞŧ å ĉåĉŧųŝ ıƞ å ĉłåƴ ƿŏŧ.!!]",
           "recipe_name": "[!!Ƥŏťťȇđ Ĉáĉťūŝ!!]"
+        },
+        "blown_glass_vase_recipe": {
+          "description": "[!!Mĩŗȁċűĺőűş!!]",
+          "recipe_name": "[!!ßļōŵŋ Ĝļäśś Väśė!!]",
+          "flavor": "[!!Ŧħēɏ šȃɏ Mơƞƙēɏ ħȃđ ơƞē ēɏē mȃđē ơƒ ģłȃšš, ȃƞđ ŧħřơųģħ ıŧ, ħē čơųłđ šēē šŧřȃıģħŧ ŧơ ŧħē ħēȃřŧ ơƒ ŧħıƞģš. --Mȃšŧēř Ơřłēƞ!!]"
+        },
+        "decorative_vase_recipe": {
+          "description": "[!!Ťŗáņŝƒŏŗm měťáĺŝ ĩņťŏ áŗť!!]",
+          "recipe_name": "[!!Ɗĕčơŕãţĩvĕ Vãšĕ!!]",
+          "flavor": "[!!Īţ īś ţĥĕ ŕīćĥĕś ōƒ ţĥĕ ĕàŕţĥ ŕĕƀōŕń!!]"
+        },
+        "sundial_recipe": {
+          "description": "[!!Đĕĉŏřåŧĕŝ ğåřđĕƞŝ, måřƙŝ ŧımĕ!!]",
+          "recipe_name": "[!!Ćľàŷ Śũńďĭàľ!!]",
+          "flavor": "[!!Ťĥē şēċŗēť ťő ĩmmőŗťȁĺĩťȳ ĩş ťő mȁĸē ƅēşť őƒ ďȁȳş ĺȁşť ƒőŗēvēŗ --Řȁȳȳȁ!!]"
+        },
+        "tile_floor_mosaic_recipe": {
+          "description": "[!!Đĕĉŏřåŧĕŝ åƞđ ĉŏŏłŝ ŧħĕ ƒłŏŏř!!]",
+          "recipe_name": "[!!Ŧĭľę Ƒľŏŏř Mŏŝåĭĉ!!]",
+          "flavor": "[!!Şťěƥ ővěŗ ťĥě ƥȁīŋťěď ƒļőŵěŗş, ȁŋď ġīvě ťĥȁŋĸş!!]"
+        },
+        "tile_wall_mosaic_recipe": {
+          "description": "[!!Śōōťĥįŋĝ ďēćōŗäťįvē ƥäťťēŗŋś!!]",
+          "recipe_name": "[!!Ťīļė Ŵäļļ Mōśäīć!!]",
+          "flavor": "[!!Ťĩĺě ĉŏŏĺŝ ĩņŝĩđě áņđ ŏūť!!]"
+        },
+        "golden_clay_wall_planter_recipe": {
+          "description": "[!!ʙŗıģħťȅņš ūƿ ă ŵăłł!!]",
+          "recipe_name": "[!!Ĝōłďęń Ćłàŷ Ŵàłł Ƥłàńţęŕ!!]",
+          "flavor": "[!!Ŵħȅřȅ đŏ ŧħȅ ƒłŏŵȅřŝ ĉŏmȅ ƒřŏm? Ƒřŏm ŧħȅ ƿłåƞŧȅř, ŏƒ ĉŏųřŝȅ! --Åĉŏłƴŧȅ ŏƒ Ŗåƴƴå'ŝ Mƴŝŧȅřƴ!!]"
         }
       },
       "potter_workbench": {
