@@ -695,6 +695,7 @@
                   "tooltip_tools": "Tools",
                   "tooltip_wood": "wood",
                   "tooltip_stone": "stone",
+                  "tooltip_clay": "clay",
                   "tooltip_ore": "ore",
                   "tooltip_animal_part": "animal parts",
                   "tooltip_plant": "plants",
