@@ -9,7 +9,9 @@
    "overrides": {
       "stonehearth/locales/en-XA.json": "file(translations/stonehearth/en-XA.json)",
       "stonehearth/locales/en-DEV.json": "file(translations/stonehearth/en-DEV.json)",
+      "stonehearth/locales/fr-FR.json": "file(translations/stonehearth/fr-FR.json)",
       "rayyas_children/locales/en-XA.json": "file(translations/rayyas_children/en-XA.json)",
-      "rayyas_children/locales/en-DEV.json": "file(translations/rayyas_children/en-DEV.json)"
+      "rayyas_children/locales/en-DEV.json": "file(translations/rayyas_children/en-DEV.json)",
+      "rayyas_children/locales/fr-FR.json": "file(translations/rayyas_children/fr-FR.json)"
    }
-}
+} 
