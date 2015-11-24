@@ -162,7 +162,8 @@
             "save_new": "New Save",
             "load_game": "Load Game",
             "game_different_version": "incompatible save version",
-            "delete_incompatible_saves": "Delete Incompatible Saves"
+            "delete_incompatible_saves": "Delete Incompatible Saves",
+            "save_time": "Saved [str(save_time)]"
          },
          "common": {
             "ok": "OK",
@@ -200,7 +201,20 @@
             "focus_camera": "Focus camera on this unit"
          },
          "citizens": {
-            "title": "Citizens"
+            "title": "Citizens",
+            "work_orders_title": "Work Orders",
+            "worker_details": "Details",
+            "workers_list_headers": {
+               "name": "Name",
+               "haul": "Haul",
+               "build": "Build",
+               "mine": "Mine",
+               "job": "Job",
+               "current_activity": "Current Activity..."
+            },
+            "show_character_sheet": "More Info",
+            "button_suspend": "suspend",
+            "button_resume": "resume"
          },
          "create_camp": {
             "new_game_place_banner": "Click me to place your town banner",
@@ -480,7 +494,7 @@
             "immigration_report": {
                "title": "Daily Update",
                "immigration_report_title": "Immigration Report",
-               "population_label": "population",
+               "population_label": "[str(town_name)] population",
                "next_requirements_label": "Next hearthling requirements..."
             },
             "collection_quest": {
@@ -508,7 +522,8 @@
                "draw_wall_tool": "Free Standing Walls",
                "draw_road_tool": "Roads",
                "place_furniture_tool": "Furniture",
-               "place_decoration_tool": "Decorations"
+               "place_decoration_tool": "Decorations",
+               "erase_tool": "Erase"
             },
             "overhead_tips": {
                "wall_segment_tip_title": "Click to place freestanding wall segments",
@@ -548,7 +563,10 @@
             "roof_shape": {
                "title": "Slope, Direction, & Size",
                "max_height": "Max Height",
-               "rise_slope": "Rise Slope"
+               "rise_slope": "Rise Slope",
+               "y_offset": "Roof Offset",
+               "show_gradient": "Slope",
+               "show_margin": "Overhang"
             },
             "building_templates": {
                "title": "Building Templates",
@@ -556,8 +574,12 @@
                "template_names": {
                   "tiny_cottage": "Tiny Cottage",
                   "cottage_for_two": "Cottage for Two",
-                  "shared_sleeping_quarters": "Shared Sleeping Quaters",
-                  "dining_hall": "Dining Hall"
+                  "shared_sleeping_quarters": "Shared Sleeping Quarters",
+                  "dining_hall": "Dining Hall",
+                  "little_clay_house": "Little Clay House",
+                  "clay_house_for_two": "Clay House for Two",
+                  "clay_dining_room": "Clay Dining Room",
+                  "clay_dormitory": "Clay Dormitory"
                },
                "set_template_name_title": "Template Name",
                "template_default_name": "My new building template",
@@ -570,37 +592,49 @@
                "wall": {
                   "material": "Wall Material",
                   "wood_resource": "Wooden Wall",
-                  "stone_resource": "Stone Wall"
+                  "stone_resource": "Stone Wall",
+                  "clay_resource": "Clay Wall",
+                  "clay_brick_resource": "Clay Brick Wall"
                },
                "floor": {
                   "material": "Floor Material",
                   "wood_resource": "Wooden Floor",
-                  "stone_resource": "Stone Floor"
+                  "stone_resource": "Stone Floor",
+                  "clay_resource": "Clay Floor",
+                  "clay_brick_resource": "Clay Brick Floor"
                },
                "roof": {
                   "material": "Roof Material",
                   "wood_resource": "Wooden Roof",
-                  "stone_resource": "Stone Roof"
+                  "stone_resource": "Stone Roof",
+                  "clay_resource": "Clay Roof",
+                  "clay_brick_resource": "Clay Brick Roof"
                },
                "column": {
                   "material": "Column Material",
                   "wood_resource": "Wooden Column",
-                  "stone_resource": "Stone Column"
+                  "stone_resource": "Stone Column",
+                  "clay_resource": "Clay Column",
+                  "clay_brick_resource": "Clay Brick Column"
                },
                "road": {
                   "material": "Road Material",
                   "wood_resource": "Wooden Road",
-                  "stone_resource": "Stone Road"
+                  "stone_resource": "Stone Road",
+                  "clay_resource": "Clay Road",
+                  "clay_brick_resource": "Clay Brick Road"
                },
                "doors": {
                   "material": "Door Material",
                   "wood_resource": "Wooden Door",
-                  "stone_resource": "Stone Door"
+                  "stone_resource": "Stone Door",
+                  "clay_resource": "Clay Door"
                },
                "windows": {
                   "material": "Window Material",
                   "wood_resource": "Wooden Window",
-                  "stone_resource": "Stone Window"
+                  "stone_resource": "Stone Window",
+                  "clay_resource": "Clay Window"
                }
             },
             "start_building_confirm": {
@@ -640,7 +674,8 @@
                "poyo_pasture_name": "Poyo Coop",
                "sheep_pasture_description": "Sheep produce wool and can be a source of meat.",
                "rabbit_pasture_description": "Rabbits can be a source of jerky.",
-               "poyo_pasture_description": "Poyos produce eggs, a valuable cooking ingredient."
+               "poyo_pasture_description": "Poyos produce eggs, a valuable cooking ingredient.",
+               "num_animals": "Animals:"
             },
             "stockpile": {
                "default_stockpile_name": "Stockpile No.[str(self.unit_info.custom_name)]",
@@ -686,7 +721,7 @@
             }
          },
          "show_workshop": {
-            "workshop_title": "Crafting Orders",
+            "workshop_title": "[str(job_name)] Crafting Orders",
             "placeholder": "Type to search",
             "show_workshop_description": "Owned by [name(owner)]",
             "unclaimed_workshop_description": "Unclaimed",
@@ -828,15 +863,7 @@
             "normal_game": "Normal Game",
             "peaceful_game": "Peaceful Game",
             "normal_game_description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
-            "peaceful_game_description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
-            "temperate_biome": "Temperate",
-            "desert_biome": "Desert",
-            "arctic_biome": "Arctic",
-            "swamp_biome": "Swamp",
-            "temperate_biome_description": "Default biome type, with lots of greenery",
-            "desert_biome_description": "Dry and sandy, with chunky hills and sparse vegetation",
-            "arctic_biome_description": "Snowy, with tall mountains and large water bodies",
-            "swamp_biome_description": "Temperate biome, with low mountains and a lot of water",
+            "peaceful_game_description": "A sandbox mode where you're free to build your town without worrying about invaders.",
             "create_game": "Create Game"
          },
          "select_settlement": {
@@ -930,10 +957,11 @@
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Storage filter defaults to None",
                "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
-               "enable_cpp_ai": "Enable CPP Ai",
+               "enable_cpp_ai": "Enable CPP AI (Requres Restart)",
                "enable_cpp_ai_description": "Use the new ai system that is written in C++. This should be faster than the old ai system and should handle large towns better.",
-               "enable_subspace_pathfinder": "Enable Subspace Pathfinder",
-               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!"
+               "enable_subspace_pathfinder": "Enable Subspace Pathfinder (Requres Restart)",
+               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!",
+               "max_citizens": "Max Citizens"
             }
          },
          "title_screen": {
@@ -953,12 +981,36 @@
                "cancel": "Nope"
             }
          },
+         "select_game_story": {
+            "title": "Choose your adventure",
+            "story_start": "This is the story of ...",
+            "kingdom_section_start": "... a brave band of settlers from ",
+            "select_button": "?",
+            "kingdom_picker_title": "Select a Kingdom",
+            "biome_section_start": "Seeking new lands and adventure, they set off to ",
+            "biome_picker_title": "Select a Biome",
+            "game_mode_select_start": ", a location that is sure to be ",
+            "game_mode_picker_title": "Select a Difficulty",
+            "game_modes": {
+               "normal": {
+                  "display_name": "Normal Game",
+                  "description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
+                  "post_selection_text": "an inspiring place to start anew."
+               },
+               "peaceful": {
+                  "display_name": "Peaceful Game",
+                  "description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
+                  "post_selection_text": "a tranquil place to start anew."
+               }
+            },
+            "begin_button": "Begin"
+         },
          "embark": {
-            "title": "Prepare to set out for adventure",
+            "title": "Prepare to embark",
             "citizen_info": "Expedition Roster",
             "reroll_citizens": "Roll new citizens",
             "shop_title": "Traveller's Store",
-            "shop_gold_label": "Gold",
+            "shop_gold_label": "Starting Gold",
             "shop_sold": "SOLD!",
             "shop_reset_button": "Reset",
             "finished": "Embark!",
@@ -1102,6 +1154,8 @@
             "pelt_resource_name": "Fur Pelt",
             "cloth_resource_name": "Bolt of Cloth",
             "wood_resource_name": "Wood Log",
+            "clay_resource_name": "Mound of Clay",
+            "clay_brick_resource_name": "Clay Bricks",
             "thread_resource_name": "Thread",
             "leather_resource_name": "Bolt of Leather",
             "fiber_resource_name": "Bundle of Fiber",
@@ -1110,6 +1164,37 @@
       }
    },
    "data": {
+      "population": {
+         "ascendancy": {
+            "display_name": "The Ascendancy",
+            "quote": "Sheep? Check. Hoe? Check. Swords? Check. Embark!",
+            "description": "Earnest and hardworking, loyal and well-rounded. Citizens of the Ascendancy chop, build and farm, confident that the known world is theirs to inhabit.",
+            "post_selection_description": ", a prosperous and industrious kingdom."
+         }
+      },
+      "biome": {
+         "temperate": {
+            "display_name": "Temperate",
+            "description": "Default biome type, with lots of greenery",
+            "random_location_names": {
+               "000": "Darkmoor Forest"
+            }
+         },
+         "arctic": {
+            "display_name": "Arctic",
+            "description": "Snowy, with tall mountains and large water bodies",
+            "random_location_names": {
+               "000": "Valkyrie Tundra"
+            }
+         },
+         "desert": {
+            "display_name": "Desert",
+            "description": "Dry and sandy, with chunky hills and sparse vegetation",
+            "random_location_names": {
+               "000": "The Desert of Pal'Mum"
+            }
+         }
+      },
       "gm": {
          "campaigns": {
             "encounters": {
@@ -1887,8 +1972,8 @@
                "description": "Starving hearthling needs food badly!"
             },
             "starving_animal_buff": {
-               "display_name": "Starving",
-               "description": "This animal needs food badly! It will not produce resources while starving."
+               "display_name": "Hungry",
+               "description": "This animal is hungry! Have a cook create some feed so your shepherd can feed it."
             }
          },
          "stopped": {
@@ -2000,11 +2085,6 @@
          "remove_ladder": {
             "display_name": "Remove",
             "description": "Remove this ladder."
-         },
-         "shear_sheep": {
-            "display_name": "Shear Sheep",
-            "description": "Harvest the wool from this sheep. Don't worry, it doesn't hurt...much.",
-            "disabled_description": "You'll be able to harvest this sheep again once its wool has grown back."
          },
          "show_workshop": {
             "display_name": "Show Workshop",
@@ -2991,6 +3071,10 @@
          }
       },
       "construction": {
+         "clay_bricks": {
+            "display_name": "Clay Bricks",
+            "description": "Used for clay structures."
+         },
          "cobblestone_fence": {
             "cobblestone_fence_ghost": {
                "display_name": "Cobblestone Fence",
@@ -3060,12 +3144,78 @@
                "display_name": "Wooden Window Frame",
                "description": "So much for privacy..."
             }
+         },
+         "wooden_window_frame_tall": {
+            "wooden_window_frame_tall_ghost": {
+               "display_name": "Tall Window Frame",
+               "description": "Extra height adds an air of elegance"
+            }
+         },
+         "wooden_window_frame_wide": {
+            "wooden_window_frame_wide_ghost": {
+               "display_name": "Wide Window Frame",
+               "description": "It's a panoramic view!"
+            }
+         },
+         "golden_clay_doorframe": {
+            "golden_clay_doorframe_ghost": {
+               "display_name": "Golden Clay Doorframe",
+               "description": "Matches a golden clay exterior wall"
+            }
+         },
+         "red_clay_door": {
+            "red_clay_door_ghost": {
+               "display_name": "Red Clay Door",
+               "description": "Keeps the indoors cool"
+            }
+         },
+         "red_clay_window_frame": {
+            "red_clay_window_frame_ghost": {
+               "display_name": "Red Clay Window Frame",
+               "description": "Let's the sun in."
+            }
+         },
+         "blue_clay_door": {
+            "blue_clay_door_ghost": {
+               "display_name": "Blue Clay Door",
+               "description": "Blue like a dream of ocean"
+            }
+         },
+         "green_clay_door": {
+            "green_clay_door_ghost": {
+               "display_name": "Green Clay Door",
+               "description": "Colored to match the desert"
+            }
+         },
+         "blue_clay_window_frame": {
+            "blue_clay_window_frame_ghost": {
+               "display_name": "Blue Clay Window Frame",
+               "description": "Lets in the desert air."
+            }
+         },
+         "green_clay_window_frame": {
+            "green_clay_window_frame_ghost": {
+               "display_name": "Green Clay Window Frame",
+               "description": "Lets in the soft desert air."
+            }
+         },
+         "latticed_clay_window_frame": {
+            "latticed_clay_window_frame_ghost": {
+               "display_name": "Latticed Clay Window Frame",
+               "description": "The lattice still lets the good air in."
+            }
          }
       },
       "containers": {
          "large_crate": {
             "large_crate_ghost": {
                "display_name": "Large Crate",
+               "description": "Storage container"
+            }
+         },
+         "large_urn": {
+            "large_urn_ghost": {
+               "display_name": "Large Urn",
                "description": "Storage container"
             }
          },
@@ -3089,8 +3239,14 @@
          },
          "barrel": {
             "barrel_ghost": {
-               "display_name": "Leather Bound Chest",
+               "display_name": "Square Barrel",
                "description": "Storage container"
+            }
+         },
+         "small_urn": {
+            "small_urn_ghost": {
+               "display_name": "Small Urn",
+               "description": "For storing things"
             }
          },
          "vault": {
@@ -3147,7 +3303,8 @@
             "sheep_young": {
                "display_name": "A Lamb",
                "description": "Awww!"
-            }
+            },
+            "renewable_harvest_status_text": "shearing sheep"
          },
          "squirrel": {
             "display_name": "Squirrel",
@@ -3186,7 +3343,7 @@
          },
          "carrot_crop": {
             "display_name": "Carrot",
-            "description": "Fast-growning, but pretty bland on its own.",
+            "description": "Fast-growing, but pretty bland on its own.",
             "growth_stage": {
                "003": {
                   "name": "Ripe Carrot",
@@ -3212,7 +3369,7 @@
          },
          "corn_crop": {
             "display_name": "Corn",
-            "description": "Slow-growning, but super nutritious crop.",
+            "description": "Slow-growing, but super nutritious crop.",
             "growth_stage": {
                "003": {
                   "name": "Ripe Corn",
@@ -3499,6 +3656,40 @@
                   "description": "Reach for the sun, little oakling."
                }
             }
+         },
+         "golden_gourd_crop": {
+            "display_name": "Golden Gourd Crop",
+            "description": "Much prettier than it is tasty",
+            "growth_stage": {
+               "003": {
+                  "name": "Green Gourds",
+                  "description": "Too bitter to eat"
+               },
+               "002": {
+                  "name": "Proto-Gourds",
+                  "description": "Full of promise"
+               },
+               "005": {
+                  "name": "Golden Gourds",
+                  "description": "Harvest now!"
+               },
+               "004": {
+                  "name": "Green Gourds",
+                  "description": "Almost ripe!"
+               },
+               "001": {
+                  "name": "Tiny Vine",
+                  "description": "Clingy"
+               },
+               "000": {
+                  "name": "Seedling!",
+                  "description": "Just a tinly little stub"
+               },
+               "011": {
+                  "name": "Rotten Gourds",
+                  "description": "Sadly inedible"
+               }
+            }
          }
       },
       "decoration": {
@@ -3682,6 +3873,84 @@
                "display_name": "Fine Wall-mounted Lantern",
                "description": "Easily attached to walls"
             }
+         },
+         "cactus_flower": {
+            "cactus_flower_ghost": {
+               "display_name": "Cactus Flower",
+               "description": "Handle with care!"
+            }
+         },
+         "clay_lamp": {
+            "clay_lamp_ghost": {
+               "display_name": "Clay Oil Lamp",
+               "description": "Its flame brings a warm glow at night."
+            }
+         },
+         "clay_wall_lamp": {
+            "clay_wall_lamp_ghost": {
+               "display_name": "Wall mounted clay lamp",
+               "description": "Provides a warm glow at night."
+            }
+         },
+         "garden_gnome": {
+            "garden_gnome_ghost": {
+               "display_name": "Garden Gnome",
+               "description": "Plant Guardians"
+            }
+         },
+         "decorative_teapot": {
+            "decorative_teapot_ghost": {
+               "display_name": "Decorative Teapot",
+               "description": "A reminder of humble beginnings"
+            }
+         },
+         "decorative_tray": {
+            "decorative_tray_ghost": {
+               "display_name": "Decorative Tray",
+               "description": "Adds flash and hospitality"
+            }
+         },
+         "potted_cactus": {
+            "potted_cactus_ghost": {
+               "display_name": "Potted Cactus",
+               "description": "Careful, it's still prickly."
+            }
+         },
+         "blown_glass_vase": {
+            "blown_glass_vase_ghost": {
+               "display_name": "Blown Glass Vase",
+               "description": "Miraculous"
+            }
+         },
+         "decorative_vase": {
+            "decorative_vase_ghost": {
+               "display_name": "Decorative Vase",
+               "description": "The metals of the earth reborn"
+            }
+         },
+         "sundial": {
+            "sundial_ghost": {
+               "display_name": "Sundial",
+               "description": "Decorates gardens, marks time"
+            }
+         },
+         "tile_floor_mosaic": {
+            "tile_floor_mosaic_ghost": {
+               "display_name": "Tile Floor Mosaic",
+               "description": "Cool on the bare feet"
+            }
+         },
+         "tile_wall_mosaic": {
+            "tile_wall_mosaic_ghost": {
+               "display_name": "Tile Wall Mosaic",
+               "description": "Soothing decorative patterns"
+            }
+         },
+         "golden_clay_wall_planter": {
+            "golden_clay_wall_planter_ghost": {
+               "display_name": "Golden Clay Wall Planter",
+               "description": "Livens up walls"
+            }
          }
       },
       "food": {
@@ -3842,6 +4111,67 @@
                "display_name": "Rabbit Feed",
                "description": "Food for rabbits"
             }
+         },
+         "prickly_pear": {
+            "prickly_pear_basket": {
+               "display_name": "Prickly Pear Basket",
+               "description": "Eat carefully!"
+            },
+            "prickly_pear_serving": {
+               "display_name": "Prickly Pear Serving",
+               "description": "Ow! Was that a spine?"
+            }
+         },
+         "golden_gourd": {
+            "golden_gourd_basket": {
+               "display_name": "Golden Gourd Basket",
+               "description": "Edible when raw, barely"
+            },
+            "golden_gourd_serving": {
+               "display_name": "Raw Golden Gourd",
+               "description": "Raw gourd is... terrible"
+            }
+         },
+         "golden_gourd_curry": {
+            "golden_gourd_curry": {
+               "display_name": "Golden Gourd Curry",
+               "description": "The spices make this dish edible."
+            },
+            "golden_gourd_curry_serving": {
+               "display_name": "Golden Gourd Curry",
+               "description": "Way better than raw golden gourd"
+            }
+         },
+         "corn_meal": {
+            "display_name": "Corn Meal",
+            "description": "Corn ground into a fine powder"
+         },
+         "flat_bread": {
+            "flat_bread": {
+               "display_name": "Flat Bread",
+               "description": "Unleavened bread made from corn meal"
+            },
+            "flat_bread_serving": {
+               "display_name": "Piece of Flat Bread"
+            }
+         },
+         "meat_tagine": {
+            "meat_tagine": {
+               "display_name": "Meat Stew Tagine",
+               "description": "Meat and veggies simmered in a clay pot"
+            },
+            "meat_tagine_serving": {
+               "display_name": "Bowl of Meat Stew"
+            }
+         },
+         "vegetable_tagine": {
+            "vegetable_tagine": {
+               "display_name": "Vegetable Stew Tagine",
+               "description": "Veggies simmered in a clay pot"
+            },
+            "vegetable_tagine_serving": {
+               "display_name": "Bowl of Veggie Stew"
+            }
          }
       },
       "furniture": {
@@ -3981,6 +4311,42 @@
             "writing_desk_fine_ghost": {
                "display_name": "Fine Writing Desk",
                "description": "Furniture"
+            }
+         },
+         "clay_bed": {
+            "clay_bed_ghost": {
+               "display_name": "Clay Bed",
+               "description": "Uncomfortable, but gets you off the ground!"
+            }
+         },
+         "clay_dining_table": {
+            "clay_dining_table_ghost": {
+               "display_name": "Clay Dining Table",
+               "description": "Gets your food off the floor"
+            }
+         },
+         "simple_clay_chair": {
+            "simple_clay_chair_ghost": {
+               "display_name": "Simple Clay Chair",
+               "description": "Less dusty than sitting on the floor"
+            }
+         },
+         "clay_dining_table_fine": {
+            "clay_dining_table_fine_ghost": {
+               "display_name": "Gets your food off the floor ... in style",
+               "description": "Fine Clay Dining Table"
+            }
+         },
+         "simple_clay_chair_fine": {
+            "simple_clay_chair_fine_ghost": {
+               "display_name": "Less dusty and more stylish than sitting on the floor",
+               "description": "Fine Clay Chair"
+            }
+         },
+         "clay_bed_fine": {
+            "clay_bed_fine_ghost": {
+               "display_name": "Fine Clay Bed",
+               "description": "Gets you off the ground in style. Still uncomfortable, though"
             }
          }
       },
@@ -4131,6 +4497,10 @@
                   }
                }
             }
+         },
+         "rabbit": {
+            "display_name": "...",
+            "description": "A Rabbit"
          }
       },
       "pets": {
@@ -4208,7 +4578,12 @@
          },
          "tumbleweed": {
             "display_name": "Tumbleweed",
-            "description": "Doesn't do anything"
+            "description": "Source of coarse fibers"
+         },
+         "pear_cactus": {
+            "display_name": "Pear Cactus",
+            "description": "Harvest carefully for prickley pears.",
+            "unripe_description": "It's the invisible spines that really hurt"
          }
       },
       "rabbit": {
@@ -4290,6 +4665,10 @@
             "wool_bundle": {
                "display_name": "Bundle of Wool",
                "description": "Spinnable into thread"
+            },
+            "coarse_fiber_bundle": {
+               "display_name": "Coarse Fiber Bundle",
+               "description": "Rough and itchy"
             }
          },
          "gold": {
@@ -4335,7 +4714,13 @@
          "stone": {
             "hunk_of_stone": {
                "display_name": "Hunk 'o Stone",
-               "description": "A heavy, ordinary rock."
+               "description": "A heavy, ordinary rock"
+            }
+         },
+         "clay": {
+            "clay_mound": {
+               "display_name": "Mound of Clay",
+               "description": "Heavy and cool to the touch"
             }
          },
          "tin": {
@@ -4494,6 +4879,10 @@
             "large_acacia_tree": {
                "display_name": "Large Acacia Tree",
                "description": "It radiates a mysterious aura"
+            },
+            "small_acacia_tree": {
+               "display_name": "Small Acacia Tree",
+               "description": "Young, but hearty"
             }
          },
          "joshua_tree": {
@@ -4582,15 +4971,15 @@
          },
          "giant_bone_axe": {
             "display_name": "Giant Bone Axe",
-            "description": "Carved from the clavical of some great beast.",
+            "description": "Carved from the clavicle of some great beast.",
             "giant_bone_axe_iconic": {
                "display_name": "Giant Bone Axe",
-               "description": "Carved from the clavical of some great beast."
+               "description": "Carved from the clavicle of some great beast."
             }
          },
          "giant_bone_mace": {
             "display_name": "Giant Bone Mace",
-            "description": "Heavy, it packs a whallop.",
+            "description": "Heavy, it packs a wallop.",
             "giant_bone_mace_iconic": {
                "display_name": "Giant Bone Mace",
                "description": "For flattening faces"
@@ -4598,7 +4987,7 @@
          },
          "iron_mace": {
             "display_name": "Iron Mace",
-            "description": "Heavy, it packs a whallop.",
+            "description": "Heavy, it packs a wallop.",
             "iron_mace_iconic": {
                "display_name": "Iron Mace",
                "description": "For flattening faces"
@@ -4787,7 +5176,7 @@
                "flavor": "The masters of old considered its production, evidence of our triumph over the earth."
             },
             "bronze_mace_recipe": {
-               "description": "Heavy, it packs a whallop.",
+               "description": "Heavy, it packs a wallop.",
                "recipe_name": "Bronze Mace",
                "flavor": "The good news: there is no pointy end."
             },
@@ -4817,7 +5206,7 @@
                "flavor": "To both swords and plowshares, what an egg is to a chicken."
             },
             "iron_mace_recipe": {
-               "description": "Heavy, it packs a whallop.",
+               "description": "Heavy, it packs a wallop.",
                "recipe_name": "Iron Mace",
                "flavor": "And Erin rested her forehead upon it, and the iron stole away enchantment and memory, together."
             },
@@ -4960,7 +5349,7 @@
                "flavor": "Nobody ever wants to get out. It makes emergency evacuations awkward."
             },
             "comfy_chair_recipe": {
-               "description": "Its padded seat guarantees a 98% reducion in awkward splinters!",
+               "description": "Its padded seat guarantees a 98% reduction in awkward splinters!",
                "recipe_name": "Comfy Chair",
                "flavor": "If pillows are good for the head, surely they're even better for the butt and back!"
             },
@@ -4985,7 +5374,7 @@
                "flavor": "Does the crate that stores all the things that do not store themselves, store itself?"
             },
             "leather_bound_chest_recipe": {
-               "description": "For compactly storing up to 16 items",
+               "description": "Stylishly stores up to 64 items.",
                "recipe_name": "Leather Bound Chest",
                "flavor": "Like the one my granda had!"
             },
@@ -5142,6 +5531,19 @@
                "description": "Fancier tools allow the carpenter to work with cloth and other civilized ingredients.",
                "recipe_name": "Carpenter Toolbench",
                "flavor": "A more elegant workstation, modeled on a more civilized time."
+            },
+            "potter_cutter_recipe": {
+               "description": "Allows a hearthling to make tools and goods from clay.",
+               "recipe_name": "Potter's Cutter",
+               "flavor": "And Monkey struck the earth with his staff. 'For you are my children, he said, and you shall want for nothing.'"
+            },
+            "wooden_window_frame_tall_recipe": {
+               "description": "Extra height adds an air of elegance.",
+               "recipe_name": "Tall Wooden Window Frame"
+            },
+            "wooden_window_frame_wide_recipe": {
+               "description": "It's got a panoramic view!",
+               "recipe_name": "Wide Wooden Window Frame"
             }
          }
       },
@@ -5149,9 +5551,13 @@
          "cook_description": {
             "display_name": "Cook",
             "description": "The cook makes delicious, hearty meals from base vegetables and meats.",
-            "requirements": "2 levels of Farmer and a Stoneware Spoon, crafted by the Mason.",
+            "requirements": "A level 2 Farmer and a Stoneware Spoon, crafted by the Mason.",
+            "workshop": {
+               "name": "Stone Cauldron",
+               "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
+            },
             "level_6_data": {
-               "title": "Master cook",
+               "title": "Master Cook",
                "perk_000_name": "10,000 Hours (not implemented)",
                "perk_000_description": "The cook's dishes are now so good for you they have unexpected effects."
             },
@@ -5164,7 +5570,7 @@
                "perk_000_description": "The cook adds new levels of functionality to classic recipes."
             },
             "level_1_data": {
-               "perk_000_name": "Camp Cooking -- XXX TOM, REVISIT THE COOK PERKS!!!!!!",
+               "perk_000_name": "Camp Cooking",
                "perk_000_description": "The cook can make basic, nutritious recipes."
             },
             "level_3_data": {
@@ -5267,6 +5673,10 @@
             "cook_oven_recipe": {
                "description": "Great for roasting",
                "recipe_name": "Stone Oven"
+            },
+            "corn_meal_recipe": {
+               "description": "Corn ground into a fine powder",
+               "recipe_name": "Corn Meal"
             }
          },
          "cook_mill": {
@@ -5388,9 +5798,14 @@
          "mason_description": {
             "display_name": "Mason",
             "description": "The Mason crafts building materials and decorative items from stone.",
-            "requirements": "Mason's Mallet and Chisel, crafted by the carpenter.",
+            "requirements": "A Chisel, crafted by the Carpenter.",
+            "workshop": {
+               "name": "Mason's Workshop",
+               "description": "insert description here",
+               "long_description": "The Mason crafts building materials and decorative items from stone."
+            },
             "level_6_data": {
-               "title": "Master mason",
+               "title": "Master Mason",
                "perk_000_name": "10,000 Hours (not implemented)",
                "perk_000_description": "The mason's mastery of his trade allows him to come up with completely new ways of using wood."
             },
@@ -5497,7 +5912,7 @@
                "flavor": "Outdoorsy!"
             },
             "stone_chest_recipe": {
-               "description": "Imposing place to put things.",
+               "description": "Imposing place to put up to 64 things.",
                "recipe_name": "Stone Chest",
                "flavor": "'Listen up, kid. All the chests in Hemgorir-Under-Mountain looked like this.'--Edolf, Wandering Bard"
             },
@@ -5546,11 +5961,192 @@
             "requirements": "???"
          }
       },
+      "potter": {
+         "potter_description": {
+            "display_name": "Potter",
+            "description": "Makes useful goods from clay. Upgradeable to the Mason",
+            "requirements": "A level 4 Mason and a Potter's Cutter, crafted by the Carpenter",
+            "workshop": {
+               "name": "Potter's Wheel",
+               "description": "insert description here",
+               "long_description": "The Potter crafts useful goods and decorative items from clay."
+            },
+            "level_3_data": {
+               "perk_000_name": "Artistic Inspiration",
+               "perk_000_description": "When inspiration strikes, the potter may embellish his/her works in unexpected ways."
+            }
+         },
+         "recipes": {
+            "workbench_name": "Workshops",
+            "small_urn_recipe": {
+               "description": "For compactly storing up to 8 items",
+               "recipe_name": "Small Urn",
+               "flavor": "Mischevious kids break these pots all the time, looking for treasure."
+            },
+            "storage_name": "Storage",
+            "large_urn_recipe": {
+               "description": "For compactly storing up to 32 items",
+               "recipe_name": "Large Urn",
+               "flavor": "Once we put things in, how will we get them out? Don't think about it too much"
+            },
+            "clay_lamp_recipe": {
+               "description": "Its flame brings a warm glow at night.",
+               "recipe_name": "Clay Oil Lamp",
+               "flavor": "And the Djinni said to Rayya: 'I have but one last wish to grant. Word it well.'"
+            },
+            "clay_wall_lamp_recipe": {
+               "description": "Its flame brings a warm glow at night.",
+               "recipe_name": "Wall Mounted Clay Oil Lamp",
+               "flavor": "'Close round us guard the spirits of night! As they dance and sway, free you'll be to dream the dark away.'"
+            },
+            "garden_gnome_recipe": {
+               "description": "Fashioned after mythical forest spirits.",
+               "recipe_name": "Tiny Garden Guardian",
+               "flavor": "Designed by Grandmaster crafter The_M"
+            },
+            "furniture_name": "Furniture and Decoration",
+            "decoration_name": "Decoration",
+            "potter_workbench_recipe": {
+               "description": "Helps the potter create simple items from clay",
+               "recipe_name": "Potter's Wheel",
+               "flavor": "Where we've been before, we'll be again, round once more, for strength and then--"
+            },
+            "potter_kiln_recipe": {
+               "description": "Hardens basic clay objects.",
+               "recipe_name": "Potter's Kiln",
+               "flavor": "'Through heat and hardship we realize our final selves.' -Silora, Acolyte of Rayya's Mystery "
+            },
+            "building_parts_name": "Building Parts",
+            "clay_bricks_recipe": {
+               "description": "Used to make structures that stay cool even in great heat.",
+               "recipe_name": "Clay Bricks",
+               "flavor": "'And when Clay emerged from the Kiln, he had become Brick, and no matter how hard Sun blasted him, he remained cheerful.'"
+            },
+            "red_clay_door_recipe": {
+               "description": "Matches red clay walls",
+               "recipe_name": "Red Clay Door",
+               "flavor": "TODO"
+            },
+            "red_clay_window_frame_recipe": {
+               "description": "Matches red clay walls",
+               "recipe_name": "Red Clay Window",
+               "flavor": "TODO"
+            },
+            "blue_clay_door_recipe": {
+               "description": "Blue like the dream of distant ocean.",
+               "recipe_name": "Blue Clay Door Recipe",
+               "flavor": "TODO"
+            },
+            "green_clay_door_recipe": {
+               "description": "Green, like the few scrub in the desert.",
+               "recipe_name": "Green Clay Door",
+               "flavor": "TODO"
+            },
+            "blue_clay_window_frame_recipe": {
+               "description": "Lets in the bright desert air.",
+               "recipe_name": "Blue Clay Window Frame",
+               "flavor": "The dye is named Santori, for an acolyte who longed for the ocean."
+            },
+            "green_clay_window_frame_recipe": {
+               "description": "Let's in the soft desert air.",
+               "recipe_name": "Green Clay Window Frame",
+               "flavor": "It's a window's dream of spring...?"
+            },
+            "latticed_clay_window_frame_recipe": {
+               "description": "The lattice still lets the good air in.",
+               "recipe_name": "Latticed Clay Window Frame",
+               "flavor": "As the shadows move across the floor, child, see if you can find Monkey!"
+            },
+            "clay_bed_recipe": {
+               "description": "Uncomfortable, but it gets you off the ground",
+               "recipe_name": "Clay Bed",
+               "flavor": "TODO"
+            },
+            "clay_dining_table_recipe": {
+               "description": "Gets your food off the ground!",
+               "recipe_name": "Clay Dining Table",
+               "flavor": "TODO"
+            },
+            "simple_clay_chair_recipe": {
+               "description": "Somewhere to sit while eating",
+               "recipe_name": "Simple Clay Chair",
+               "flavor": "'Nests with the tables, ooo, symbolic!' --Nestor Adya, Acolyte"
+            },
+            "decorative_teapot_recipe": {
+               "description": "Reminder of humble beginnings",
+               "recipe_name": "Decorative Teapot",
+               "flavor": "'Wherever she went, the teapot did too, and even when there was nothing but cold water to put in, always out poured steaming tea, redolent with the aroma of Elsewhere.'"
+            },
+            "decorative_tray_recipe": {
+               "description": "Adds hospitality and flash",
+               "recipe_name": "Decorative Tray",
+               "flavor": "'Sugar, spice, and blood of the earth: it is the tray that brings them, and us, together' --Rayya"
+            },
+            "potted_cactus_recipe": {
+               "description": "Plant a cactus in a clay pot.",
+               "recipe_name": "Potted Cactus"
+            },
+            "blown_glass_vase_recipe": {
+               "description": "Miraculous",
+               "recipe_name": "Blown Glass Vase",
+               "flavor": "They say Monkey had one eye made of glass, and through it, he could see straight to the heart of things. --Master Orlen"
+            },
+            "decorative_vase_recipe": {
+               "description": "Transform metals into art",
+               "recipe_name": "Decorative Vase",
+               "flavor": "It is the riches of the earth reborn"
+            },
+            "sundial_recipe": {
+               "description": "Decorates gardens, marks time",
+               "recipe_name": "Clay Sundial",
+               "flavor": "The secret to immortality is to make best of days last forever --Rayya"
+            },
+            "tile_floor_mosaic_recipe": {
+               "description": "Decorates and cools the floor",
+               "recipe_name": "Tile Floor Mosaic",
+               "flavor": "Step over the painted flowers, and give thanks"
+            },
+            "tile_wall_mosaic_recipe": {
+               "description": "Soothing decorative patterns",
+               "recipe_name": "Tile Wall Mosaic",
+               "flavor": "Tile cools inside and out"
+            },
+            "golden_clay_wall_planter_recipe": {
+               "description": "Brightens up a wall",
+               "recipe_name": "Golden Clay Wall Planter",
+               "flavor": "Where do the flowers come from? From the planter, of course! --Acolyte of Rayya's Mystery"
+            }
+         },
+         "potter_workbench": {
+            "potter_workbench_ghost": {
+               "display_name": "Pottery Wheel",
+               "description": "Workshop for making symmetrical clay goods"
+            }
+         },
+         "potter_kiln": {
+            "potter_kiln_ghost": {
+               "display_name": "Potter's Kiln",
+               "description": "Produces bricks and goods from clay."
+            }
+         },
+         "potter_cutter": {
+            "display_name": "Potter's Cutter",
+            "description": "Used to form civilization from dirt!",
+            "potter_cutter_talisman": {
+               "display_name": "Potter's Cutter",
+               "description": "Required to promote a hearthling into a Potter."
+            }
+         },
+         "potter_outfit": {
+            "display_name": "Potter's Outfit",
+            "description": "Earth sploches are part of it's intense style."
+         }
+      },
       "shepherd": {
          "shepherd_description": {
             "display_name": "Shepherd",
             "description": "Domesticates wild animals and harvests them for food and materials.",
-            "requirements": "2 levels of Trapper and a Shepherd's Crook, crafted by the Carpenter.",
+            "requirements": "A level 2 Trapper and a Shepherd's Crook, crafted by the Carpenter.",
             "level_4_data": {
                "perk_000_name": "Animal Magnetism",
                "perk_000_description": "Wild animals are more likely to appear whenever the shepherd is looking for them."
@@ -5880,7 +6476,7 @@
             "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
-            "general_description_desc": "Max health increased!",
+            "level_up_perk_description": "Max Health +10",
             "attribute_up_desc": "All attributes increased!"
          }
       },
