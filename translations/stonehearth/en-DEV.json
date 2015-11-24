@@ -202,7 +202,7 @@
          },
          "citizens": {
             "title": "Citizens",
-            "work_orders_title": "Work Orders",
+            "work_orders_title": "Citizens",
             "worker_details": "Details",
             "workers_list_headers": {
                "name": "Name",
@@ -445,6 +445,11 @@
                      "display_name": "Cook Craft Menu",
                      "description": "Makes food taste better and last longer.",
                      "required_job_text": "Requires a cook"
+                  },
+                  "potter": {
+                     "display_name": "Potter Craft Menu",
+                     "description": "Makes bricks and goods from clay.",
+                     "required_job_text": "Requires a potter"
                   }
                }
             },
@@ -1176,21 +1181,21 @@
       "biome": {
          "temperate": {
             "display_name": "Temperate",
-            "description": "Default biome type, with lots of greenery",
+            "description": "Forests, rivers and mountains. Default biome of the Ascendancy.",
             "random_location_names": {
                "000": "Darkmoor Forest"
             }
          },
          "arctic": {
             "display_name": "Arctic",
-            "description": "Snowy, with tall mountains and large water bodies",
+            "description": "Snowy, with tall mountains and large water bodies. Default home of the Northern Alliance.",
             "random_location_names": {
                "000": "Valkyrie Tundra"
             }
          },
          "desert": {
             "display_name": "Desert",
-            "description": "Dry and sandy, with chunky hills and sparse vegetation",
+            "description": "Dry and sandy, with chunky hills and sparse vegetation. Default home of Rayya's Children.",
             "random_location_names": {
                "000": "The Desert of Pal'Mum"
             }
@@ -3952,6 +3957,12 @@
                "display_name": "Golden Clay Wall Planter",
                "description": "Livens up walls"
             }
+         },
+         "unfired_clay_vase": {
+            "unfired_clay_vase_ghost": {
+               "display_name": "Unfired Clay Vase",
+               "description": "A very simple vase"
+            }
          }
       },
       "food": {
@@ -4334,14 +4345,14 @@
          },
          "clay_dining_table_fine": {
             "clay_dining_table_fine_ghost": {
-               "display_name": "Gets your food off the floor ... in style",
-               "description": "Fine Clay Dining Table"
+               "display_name": "Fine Clay Dining Table",
+               "description": "Gets your food off the floor ... in style"
             }
          },
          "simple_clay_chair_fine": {
             "simple_clay_chair_fine_ghost": {
-               "display_name": "Less dusty and more stylish than sitting on the floor",
-               "description": "Fine Clay Chair"
+               "display_name": "Fine Clay Chair",
+               "description": "Less dusty and more stylish than sitting on the floor"
             }
          },
          "clay_bed_fine": {
@@ -4384,6 +4395,18 @@
             "ent": {
                "display_name": "Ent",
                "description": "Guardian of the forest"
+            },
+            "entling": {
+               "display_name": "Entling",
+               "description": "Minion of the forest"
+            },
+            "entling_mage": {
+               "display_name": "Entling Mage",
+               "description": "Minion of the forest"
+            },
+            "stone_golem": {
+               "display_name": "Stone Golem",
+               "description": "Solid."
             }
          },
          "goblins": {
@@ -5533,11 +5556,6 @@
                "recipe_name": "Carpenter Toolbench",
                "flavor": "A more elegant workstation, modeled on a more civilized time."
             },
-            "potter_cutter_recipe": {
-               "description": "Allows a hearthling to make tools and goods from clay.",
-               "recipe_name": "Potter's Cutter",
-               "flavor": "And Monkey struck the earth with his staff. 'For you are my children, he said, and you shall want for nothing.'"
-            },
             "wooden_window_frame_tall_recipe": {
                "description": "Extra height adds an air of elegance.",
                "recipe_name": "Tall Wooden Window Frame"
@@ -5866,6 +5884,11 @@
                "recipe_name": "Blacksmith's Hammer",
                "flavor": "From the dragon that lives in the forge, weapons and armor, defense and conquest."
             },
+            "potter_cutter_recipe": {
+               "description": "Allows a hearthling to make tools and goods from clay.",
+               "recipe_name": "Potter's Cutter",
+               "flavor": "And Monkey struck the earth with his staff. 'For you are my children, he said, and you shall want for nothing.'"
+            },
             "cobblestone_fence_gate_recipe": {
                "description": "It's thick stone walls grant a sense of security.",
                "recipe_name": "Cobblestone Fence Gate",
@@ -5966,7 +5989,7 @@
          "potter_description": {
             "display_name": "Potter",
             "description": "Makes useful goods from clay. Upgradeable to the Mason",
-            "requirements": "A level 4 Mason and a Potter's Cutter, crafted by the Carpenter",
+            "requirements": "A level 4 Mason and a Potter's Cutter, crafted by the Mason",
             "workshop": {
                "name": "Potter's Wheel",
                "description": "insert description here",
@@ -5975,6 +5998,23 @@
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
                "perk_000_description": "When inspiration strikes, the potter may embellish his/her works in unexpected ways."
+            },
+            "level_6_data": {
+               "title": "Master Potter",
+               "perk_000_name": "Master Potter",
+               "perk_000_description": "The potter has rediscovered ancient secrets of the Phoenix..."
+            },
+            "level_2_data": {
+               "perk_000_name": "Art for Sale",
+               "perk_000_description": "The potter can now make decorative items to liven up the town or sell for money."
+            },
+            "level_4_data": {
+               "perk_000_name": "Collaborative Insight",
+               "perk_000_description": "The potter can now add precious metals to vases and tiles."
+            },
+            "level_1_data": {
+               "perk_000_name": "Standard Catalog",
+               "perk_000_description": "The potter can now make basic furniture and building adornments."
             }
          },
          "recipes": {
@@ -6116,6 +6156,10 @@
                "description": "Brightens up a wall",
                "recipe_name": "Golden Clay Wall Planter",
                "flavor": "Where do the flowers come from? From the planter, of course! --Acolyte of Rayya's Mystery"
+            },
+            "unfired_clay_vase_recipe": {
+               "description": "A simple vase made on the pottery wheel that is used for more complex recipes.",
+               "recipe_name": "Unfired Clay Vase"
             }
          },
          "potter_workbench": {
