@@ -20,7 +20,7 @@
       },
       "mason": {
          "mason_description": {
-            "requirements": "Requires a level 3 Potter and a Mason's Chisel, crafted by the Potter."
+            "requirements": "Requires a level 2 Potter and a Mason's Chisel, crafted by the Potter."
          }
       },
       "cook": {
