@@ -562,7 +562,10 @@
 			"roof_shape": {
                "title": "Pentes, directions et tailles",
                "max_height": "Hauteur max.",
-               "rise_slope": "Augmenter la pente"
+               "rise_slope": "Augmenter la pente",
+               "y_offset": "Roof Offset",
+               "show_gradient": "Slope",
+               "show_margin": "Overhang"
 			},
 			"building_templates": {
                "title": "Bibliothèque de plans",
@@ -571,7 +574,11 @@
                   "tiny_cottage": "Petite maison",
                   "cottage_for_two": "Maisonette pour deux",
                   "shared_sleeping_quarters": "Dortoir",
-                  "dining_hall": "Salle de banquet"
+                  "dining_hall": "Salle de banquet",
+                  "little_clay_house": "Little Clay House",
+                  "clay_house_for_two": "Clay House for Two",
+                  "clay_dining_room": "Clay Dining Room",
+                  "clay_dormitory": "Clay Dormitory"
                },
                "set_template_name_title": "Nom du plan",
                "template_default_name": "Mon dernier plan",
@@ -585,31 +592,36 @@
                   "material": "Matériaux pour murs",
                   "wood_resource": "Murs en bois",
                   "stone_resource": "Murs en pierre",
-                  "clay_resource": "Murs en argile"
+                  "clay_resource": "Murs en argile",
+                  "clay_brick_resource": "Clay Brick Wall"
 			   },
 			   "floor": {
                   "material": "Matériaux pour sols",
                   "wood_resource": "Plancher en bois",
                   "stone_resource": "Sol en pierre",
-                  "clay_resource": "Sol en argile"
+                  "clay_resource": "Sol en argile",
+                  "clay_brick_resource": "Clay Brick Floor"
 			   },
 			   "roof": {
                   "material": "Matériaux de toitures",
                   "wood_resource": "Tuiles en bois",
                   "stone_resource": "Tuiles en pierre",
-                  "clay_resource": "Tuiles en argile"
+                  "clay_resource": "Tuiles en argile",
+                  "clay_brick_resource": "Clay Brick Roof"
 			   },
 			   "column": {
                   "material": "Matériaux pour colonnes",
                   "wood_resource": "Colonnes en bois",
                   "stone_resource": "Colonnes en pierre",
-                  "clay_resource": "Colonnes en argile"
+                  "clay_resource": "Colonnes en argile",
+                  "clay_brick_resource": "Clay Brick Column"
 			   },
 			   "road": {
                   "material": "Matériaux pour routes",
                   "wood_resource": "Route en bois",
                   "stone_resource": "Route en pierre",
-                  "clay_resource": "Route en argile"
+                  "clay_resource": "Route en argile",
+                  "clay_brick_resource": "Clay Brick Road"
 			   },
 			   "doors": {
                   "material": "Matériaux pour portes",
@@ -3896,6 +3908,48 @@
                "display_name": "Decorative Tray",
                "description": "Adds flash and hospitality"
             }
+         },
+         "potted_cactus": {
+            "potted_cactus_ghost": {
+               "display_name": "Potted Cactus",
+               "description": "Careful, it's still prickly."
+            }
+         },
+         "blown_glass_vase": {
+            "blown_glass_vase_ghost": {
+               "display_name": "Blown Glass Vase",
+               "description": "Miraculous"
+            }
+         },
+         "decorative_vase": {
+            "decorative_vase_ghost": {
+               "display_name": "Decorative Vase",
+               "description": "The metals of the earth reborn"
+            }
+         },
+         "sundial": {
+            "sundial_ghost": {
+               "display_name": "Sundial",
+               "description": "Decorates gardens, marks time"
+            }
+         },
+         "tile_floor_mosaic": {
+            "tile_floor_mosaic_ghost": {
+               "display_name": "Tile Floor Mosaic",
+               "description": "Cool on the bare feet"
+            }
+         },
+         "tile_wall_mosaic": {
+            "tile_wall_mosaic_ghost": {
+               "display_name": "Tile Wall Mosaic",
+               "description": "Soothing decorative patterns"
+            }
+         },
+         "golden_clay_wall_planter": {
+            "golden_clay_wall_planter_ghost": {
+               "display_name": "Golden Clay Wall Planter",
+               "description": "Livens up walls"
+            }
 		 }
 	  },
 	  "food": {
@@ -4076,6 +4130,47 @@
                "display_name": "Raw Golden Gourd",
                "description": "Raw gourd is... terrible"
 			}
+         },
+         "golden_gourd_curry": {
+            "golden_gourd_curry": {
+               "display_name": "Golden Gourd Curry",
+               "description": "The spices make this dish edible."
+            },
+            "golden_gourd_curry_serving": {
+               "display_name": "Golden Gourd Curry",
+               "description": "Way better than raw golden gourd"
+            }
+         },
+         "corn_meal": {
+            "display_name": "Corn Meal",
+            "description": "Corn ground into a fine powder"
+         },
+         "flat_bread": {
+            "flat_bread": {
+               "display_name": "Flat Bread",
+               "description": "Unleavened bread made from corn meal"
+            },
+            "flat_bread_serving": {
+               "display_name": "Piece of Flat Bread"
+            }
+         },
+         "meat_tagine": {
+            "meat_tagine": {
+               "display_name": "Meat Stew Tagine",
+               "description": "Meat and veggies simmered in a clay pot"
+            },
+            "meat_tagine_serving": {
+               "display_name": "Bowl of Meat Stew"
+            }
+         },
+         "vegetable_tagine": {
+            "vegetable_tagine": {
+               "display_name": "Vegetable Stew Tagine",
+               "description": "Veggies simmered in a clay pot"
+            },
+            "vegetable_tagine_serving": {
+               "display_name": "Bowl of Veggie Stew"
+            }
 		 }
 	  },
 	  "furniture": {
@@ -4234,6 +4329,24 @@
                "display_name": "Simple Clay Chair",
                "description": "Less dusty than sitting on the floor"
 			}
+         },
+         "clay_dining_table_fine": {
+            "clay_dining_table_fine_ghost": {
+               "display_name": "Gets your food off the floor ... in style",
+               "description": "Fine Clay Dining Table"
+            }
+         },
+         "simple_clay_chair_fine": {
+            "simple_clay_chair_fine_ghost": {
+               "display_name": "Less dusty and more stylish than sitting on the floor",
+               "description": "Fine Clay Chair"
+            }
+         },
+         "clay_bed_fine": {
+            "clay_bed_fine_ghost": {
+               "display_name": "Fine Clay Bed",
+               "description": "Gets you off the ground in style. Still uncomfortable, though"
+            }
 		 }
 	  },
 	  "generic": {
@@ -4383,6 +4496,10 @@
 				  }
 			   }
 			}
+         },
+         "rabbit": {
+            "display_name": "...",
+            "description": "A Rabbit"
 		 }
 	  },
 	  "pets": {
@@ -4761,7 +4878,11 @@
 			"large_acacia_tree": {
                "display_name": "Grand acacia",
                "description": "Une mystérieuse aura l'entoure."
-			}
+			},
+            "small_acacia_tree": {
+               "display_name": "Small Acacia Tree",
+               "description": "Young, but hearty"
+            }
 		 },
 		 "joshua_tree": {
 			"large_joshua_tree": {
@@ -5551,6 +5672,10 @@
 			"cook_oven_recipe": {
                "description": "Super pour le rôtissage.",
                "recipe_name": "Four à bois"
+ 			},
+            "corn_meal_recipe": {
+               "description": "Corn ground into a fine powder",
+               "recipe_name": "Corn Meal"
 			}
 		 },
 		 "cook_mill": {
@@ -5844,6 +5969,10 @@
                "name": "Tour de potier",
                "description": "Atelier pour fabriquer des objets d'argile.",
                "long_description": "Le potier fabrique des objets et des décorations à partir d'argile."
+ 			},
+            "level_3_data": {
+               "perk_000_name": "Artistic Inspiration",
+               "perk_000_description": "When inspiration strikes, the potter may embellish his/her works in unexpected ways."
             }
          },
          "recipes": {
@@ -5951,6 +6080,40 @@
                "description": "Adds hospitality and flash",
                "recipe_name": "Decorative Tray",
                "flavor": "'Sugar, spice, and blood of the earth: it is the tray that brings them, and us, together' --Rayya"
+            },
+            "potted_cactus_recipe": {
+               "description": "Plant a cactus in a clay pot.",
+               "recipe_name": "Potted Cactus"
+            },
+            "blown_glass_vase_recipe": {
+               "description": "Miraculous",
+               "recipe_name": "Blown Glass Vase",
+               "flavor": "They say Monkey had one eye made of glass, and through it, he could see straight to the heart of things. --Master Orlen"
+            },
+            "decorative_vase_recipe": {
+               "description": "Transform metals into art",
+               "recipe_name": "Decorative Vase",
+               "flavor": "It is the riches of the earth reborn"
+            },
+            "sundial_recipe": {
+               "description": "Decorates gardens, marks time",
+               "recipe_name": "Clay Sundial",
+               "flavor": "The secret to immortality is to make best of days last forever --Rayya"
+            },
+            "tile_floor_mosaic_recipe": {
+               "description": "Decorates and cools the floor",
+               "recipe_name": "Tile Floor Mosaic",
+               "flavor": "Step over the painted flowers, and give thanks"
+            },
+            "tile_wall_mosaic_recipe": {
+               "description": "Soothing decorative patterns",
+               "recipe_name": "Tile Wall Mosaic",
+               "flavor": "Tile cools inside and out"
+            },
+            "golden_clay_wall_planter_recipe": {
+               "description": "Brightens up a wall",
+               "recipe_name": "Golden Clay Wall Planter",
+               "flavor": "Where do the flowers come from? From the planter, of course! --Acolyte of Rayya's Mystery"
             }
          },
          "potter_workbench": {
