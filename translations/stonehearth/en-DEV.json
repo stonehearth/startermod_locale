@@ -1016,7 +1016,7 @@
             "citizen_info": "Expedition Roster",
             "reroll_citizens": "Roll new citizens",
             "shop_title": "Traveller's Store",
-            "shop_gold_label": "Starting Gold",
+            "shop_gold_label": "Gold",
             "shop_sold": "SOLD!",
             "shop_reset_button": "Reset",
             "finished": "Embark!",
@@ -1181,7 +1181,7 @@
       "biome": {
          "temperate": {
             "display_name": "Temperate",
-            "description": "Forests, rivers and mountains. Default biome of the Ascendancy.",
+            "description": "Forests, rivers and mountains. Default home of the Ascendancy.",
             "random_location_names": {
                "000": "Darkmoor Forest"
             }
