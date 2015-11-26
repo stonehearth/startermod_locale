@@ -445,6 +445,11 @@
                      "display_name": "Cuisinier",
                      "description": "Pour que la nourriture soit meilleure<br>et se conserve mieux.",
                      "required_job_text": "Nécessite un cuisinier"
+				  },
+                  "potter": {
+                     "display_name": "Potter Craft Menu",
+                     "description": "Makes bricks and goods from clay.",
+                     "required_job_text": "Requires a potter"
                   }
                }
             },
@@ -522,7 +527,8 @@
                "draw_wall_tool": "Murs libres",
                "draw_road_tool": "Routes",
                "place_furniture_tool": "Meubles",
-               "place_decoration_tool": "Décorations"
+               "place_decoration_tool": "Décorations",
+               "erase_tool": "Erase"
 			},
 			"overhead_tips": {
                "wall_segment_tip_title": "Cliquez pour placer des segments de murs libres",
@@ -692,30 +698,31 @@
                   "food_and_drink": "Nourriture et boisson",
 				  "wealth": "Richesse",
 				  "tooltip_tools": "Outils",
-				  "tooltip_wood": "Bois",
-				  "tooltip_stone": "Pierre",
-                  "tooltip_ore": "Minerais",
-				  "tooltip_animal_part": "Ressources animales",
-				  "tooltip_plant": "Plantes",
-				  "tooltip_portal": "Portes et fenêtres",
-                  "tooltip_furniture": "Meubles",
-				  "tooltip_defense": "Défenses",
+				  "tooltip_wood": "bois",
+				  "tooltip_stone": "pierre",
+				  "tooltip_clay": "argile",
+                  "tooltip_ore": "minerais",
+				  "tooltip_animal_part": "ressources animales",
+				  "tooltip_plant": "plantes",
+				  "tooltip_portal": "portes et fenêtres",
+                  "tooltip_furniture": "meubles",
+				  "tooltip_defense": "défenses",
                   "tooltip_light": "Torches et éclairages",
-				  "tooltip_decoration": "Décorations",
-				  "tooltip_refined_cloth": "Fils et habits",
-				  "tooltip_refined_animal_part": "Biens fabriqués à partir d'animaux",
-				  "tooltip_refined_ore": "Barres de métal",
-				  "tooltip_melee_weapon": "Armes de mêlée",
-				  "tooltip_ranged_weapon": "Armes à distance",
-				  "tooltip_light_armor": "Armure légère",
-				  "tooltip_heavy_armor": "Armure lourde",
-				  "tooltip_exotic_gear": "Équipement exotique",
-				  "tooltip_drink": "Boissons savoureuses",
-				  "tooltip_gold": "Or",
-				  "tooltip_gem": "Gemmes et trophés",
-				  "tooltip_food_containers": "Récipients pour aliments",
-				  "tooltip_refined": "Plats cuisinés",
-				  "tooltip_ingredients": "Matières premières"
+				  "tooltip_decoration": "décorations",
+				  "tooltip_refined_cloth": "fils et habits",
+				  "tooltip_refined_animal_part": "biens fabriqués à partir d'animaux",
+				  "tooltip_refined_ore": "barres de métal",
+				  "tooltip_melee_weapon": "armes de mêlée",
+				  "tooltip_ranged_weapon": "armes à distance",
+				  "tooltip_light_armor": "armure légère",
+				  "tooltip_heavy_armor": "armure lourde",
+				  "tooltip_exotic_gear": "équipement exotique",
+				  "tooltip_drink": "boissons savoureuses",
+				  "tooltip_gold": "or",
+				  "tooltip_gem": "gemmes et trophés",
+				  "tooltip_food_containers": "récipients pour aliments",
+				  "tooltip_refined": "plats cuisinés",
+				  "tooltip_ingredients": "matières premières"
 			   }
 			}
 		 },
@@ -3950,7 +3957,13 @@
                "display_name": "Golden Clay Wall Planter",
                "description": "Livens up walls"
             }
-		 }
+         },
+         "unfired_clay_vase": {
+            "unfired_clay_vase_ghost": {
+               "display_name": "Unfired Clay Vase",
+               "description": "A very simple vase"
+		    }
+         }
 	  },
 	  "food": {
 		 "berries": {
@@ -4382,6 +4395,18 @@
 			"ent": {
 			   "display_name": "Ent",
                "description": "Gardien de la forêt."
+ 		    },
+            "entling": {
+               "display_name": "Entling",
+               "description": "Minion of the forest"
+            },
+            "entling_mage": {
+               "display_name": "Entling Mage",
+               "description": "Minion of the forest"
+            },
+            "stone_golem": {
+               "display_name": "Stone Golem",
+               "description": "Solid."
 			}
 		 },
 		 "goblins": {
@@ -5530,11 +5555,6 @@
                "description": "Des outils plus performants permettent au menuisier de travailler aussi avec du tissu et autres ressources avancées.",
 			   "recipe_name": "Établi de menuisier",
 			   "flavor": "Un établi plus élégant, réalisé en des temps plus civilisé."
-			},
-            "potter_cutter_recipe": {
-               "description": "Permet à un hearthling de fabriquer des outils et des biens d'argile.",
-               "recipe_name": "Couteau de potier",
-               "flavor": "Et Singe frappa la terre avec son bâton. 'Car vous êtes mes enfants, dit-il, et vous ne manquerez de rien.'"
             },
             "wooden_window_frame_tall_recipe": {
                "description": "Les hauteurs extrèmes ajoute un air d'élégance.",
@@ -5864,6 +5884,11 @@
                "recipe_name": "Marteau de forgeron",
                "flavor": "Tiré du dragon qui vit dans la forge, armes et armures, défense et conquête."
 			},
+            "potter_cutter_recipe": {
+               "description": "Permet à un hearthling de fabriquer des outils et des biens d'argile.",
+               "recipe_name": "Couteau de potier",
+               "flavor": "Et Singe frappa la terre avec son bâton. 'Car vous êtes mes enfants, dit-il, et vous ne manquerez de rien.'"
+			},
 			"cobblestone_fence_gate_recipe": {
                "description": "Cet épais mur en pierre confère un sentiment de sécurité.",
                "recipe_name": "Portail de clôture en pierre",
@@ -5973,6 +5998,23 @@
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
                "perk_000_description": "When inspiration strikes, the potter may embellish his/her works in unexpected ways."
+            },
+            "level_6_data": {
+               "title": "Master Potter",
+               "perk_000_name": "Master Potter",
+               "perk_000_description": "The potter has rediscovered ancient secrets of the Phoenix..."
+            },
+            "level_2_data": {
+               "perk_000_name": "Art for Sale",
+               "perk_000_description": "The potter can now make decorative items to liven up the town or sell for money."
+            },
+            "level_4_data": {
+               "perk_000_name": "Collaborative Insight",
+               "perk_000_description": "The potter can now add precious metals to vases and tiles."
+            },
+            "level_1_data": {
+               "perk_000_name": "Standard Catalog",
+               "perk_000_description": "The potter can now make basic furniture and building adornments."
             }
          },
          "recipes": {
@@ -6114,6 +6156,10 @@
                "description": "Brightens up a wall",
                "recipe_name": "Golden Clay Wall Planter",
                "flavor": "Where do the flowers come from? From the planter, of course! --Acolyte of Rayya's Mystery"
+            },
+            "unfired_clay_vase_recipe": {
+               "description": "A simple vase made on the pottery wheel that is used for more complex recipes.",
+               "recipe_name": "Unfired Clay Vase"
             }
          },
          "potter_workbench": {
