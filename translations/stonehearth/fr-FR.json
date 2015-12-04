@@ -990,23 +990,23 @@
          "select_game_story": {
             "title": "Choisissez votre aventure",
             "story_start": "C'est l'histoire ...",
-            "kingdom_section_start": "... d'un groupe de courageux colons : ",
+            "kingdom_section_start": "d'un groupe de courageux colons, ",
             "select_button": "?",
             "kingdom_picker_title": "Sélectionnez un Royaume",
-            "biome_section_start": "À la recherche de nouvelles terres et d'aventure, ils partirent à ",
+            "biome_section_start": "À la recherche de nouvelles terres et d'aventure, ils partirent dans",
             "biome_picker_title": "Sélectionnez un biome",
-            "game_mode_select_start": ", un endroit qui est sûr d'être ",
+            "game_mode_select_start": ", qui sera ",
             "game_mode_picker_title": "Sélectionnez une difficulté",
             "game_modes": {
                "normal": {
                   "display_name": "Mode normal",
                   "description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette à des raids hostiles.",
-                  "post_selection_text": "un lieu d'inspiration pour recommencer à zéro."
+                  "post_selection_text": "un lieu animé pour s'installer."
                },
                "peaceful": {
                   "display_name": "Mode pacifique",
                   "description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier d'envahisseurs.",
-                  "post_selection_text": "un lieu d'inspiration pour recommencer à zéro."
+                  "post_selection_text": "un lieu tranquille pour s'installer."
                }
             },
             "begin_button": "Commencer"
@@ -1172,18 +1172,18 @@
    "data": {
       "population": {
          "ascendancy": {
-            "display_name": "The Ascendancy",
+            "display_name": "les Ascendants",
             "quote": "Moutons? Vérifiez. Houe? Vérifiez. Glaives? Vérifiez. Embarquez!",
-            "description": "Sérieux et travailleur, fidèle et bien arrondi. Les hearthlings de la famille des Ascendancy, construisent et cultivent, confiant que le monde connu est la pour être habiter.",
+            "description": "Sérieux et travailleur, fidèle et bien arrondi. Les hearthlings de la famille des Ascendants, construisent et cultivent, confiant que le monde connu est la pour être habiter.",
             "post_selection_description": ", un royaume prospère et travailleur."
          }
       },
       "biome": {
          "temperate": {
             "display_name": "Tempéré",
-            "description": "Forêts, rivières et montagnes. Biome par défaut des Ascendancy.",
+            "description": "Forêts, rivières et montagnes. Biome par défaut des Ascendants.",
             "random_location_names": {
-               "000": "La fôret de Darkmoor"
+               "000": "la fôret de Darkmoor"
             }
          },
          "arctic": {
@@ -1197,7 +1197,7 @@
             "display_name": "Désertique",
             "description": "Sec et sablonneux, avec des grandes collines et une végétation clairsemée",
             "random_location_names": {
-               "000": "Le désert de Pal'Mum"
+               "000": "le désert de Pal'Mum"
             }
          }
       },

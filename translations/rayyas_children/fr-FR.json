@@ -3,7 +3,7 @@
       "kingdom_name": "Les enfants de Rayya",
       "quote": "Meditation, mediation, medication: Order in self brings order to others brings health to all.",
       "long_description": "Les hearthlings du désert ont appris tôt  que pour survivre, ils ont besoin les uns des autres, et de préférence être le plus nombreux possible. Ils sont des hôtes généreux qui peuvent accéder à des biens du monde entier.",
-      "post_selection_description": ", une société de charmant et rusés commerçants."
+      "post_selection_description": ", des commerçants rusés et rafinés."
    },
    "jobs": {
       "potter": {
@@ -47,7 +47,7 @@
    },
    "data": {
       "rayyas_children_population": {
-         "display_name": "Les enfants de Rayya"
+         "display_name": "les enfants de Rayya"
       },
       "gm": {
          "campaigns": {
