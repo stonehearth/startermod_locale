@@ -1,9 +1,9 @@
 {
    "kingdom": {
-      "kingdom_name": "Rayya's Children",
+      "kingdom_name": "Les enfants de Rayya",
       "quote": "Meditation, mediation, medication: Order in self brings order to others brings health to all.",
-      "long_description": "The people of the desert learned early that to survive, they needed each other, and preferably as many others as they could reach. Now, visitors find them generous hosts with access to goods from all over the world.",
-      "post_selection_description": ", a society of charming, wily traders."
+      "long_description": "Les hearthlings du désert ont appris tôt  que pour survivre, ils ont besoin les uns des autres, et de préférence être le plus nombreux possible. Ils sont des hôtes généreux qui peuvent accéder à des biens du monde entier.",
+      "post_selection_description": ", une société de charmant et rusés commerçants."
    },
    "jobs": {
       "potter": {
@@ -47,7 +47,7 @@
    },
    "data": {
       "rayyas_children_population": {
-         "display_name": "Rayya's Children"
+         "display_name": "Les enfants de Rayya"
       },
       "gm": {
          "campaigns": {
@@ -114,7 +114,7 @@
       "gizmos": {
          "rc_camp_standard": {
             "rc_camp_standard_ghost": {
-               "display_name": "The banner of Rayya's Children",
+               "display_name": "La bannière des enfants de Rayya",
                "description": "How you know you've come home"
             }
          }
