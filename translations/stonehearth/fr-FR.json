@@ -213,8 +213,8 @@
                "current_activity": "Activité actuel ..."
             },
             "show_character_sheet": "Plus d'info.",
-            "button_suspend": "interrompre",
-            "button_resume": "reprendre"
+            "button_suspend": "stopper",
+            "button_resume": "lancer"
 		 },
 		 "create_camp": {
 			"new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
