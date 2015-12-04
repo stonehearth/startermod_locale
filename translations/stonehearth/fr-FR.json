@@ -1016,7 +1016,7 @@
 			"citizen_info": "Liste d'expédition",
 			"reroll_citizens": "Générer la liste d'expédition",
 			"shop_title": "Magasin du voyageur",
-			"shop_gold_label": "Or",
+			"shop_gold_label": "Or de départ",
 			"shop_sold": "VENDU !",
 			"shop_reset_button": "Réinitialiser",
 			"finished": "Embarquer !",
@@ -1181,7 +1181,7 @@
       "biome": {
          "temperate": {
             "display_name": "Tempéré",
-            "description": "Biome par défaut, avec beaucoup de verdure",
+            "description": "Forêts, rivières et montagnes. Biome par défaut des Ascendancy.",
             "random_location_names": {
                "000": "La fôret de Darkmoor"
             }
