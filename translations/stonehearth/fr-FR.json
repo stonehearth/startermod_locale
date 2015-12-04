@@ -207,7 +207,7 @@
             "workers_list_headers": {
                "name": "Nom",
                "haul": "Transport",
-               "build": "Construction",
+               "build": "Bâtiment",
                "mine": "Mine",
                "job": "Job",
                "current_activity": "Activité actuel ..."
