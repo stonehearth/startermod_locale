@@ -483,8 +483,10 @@
 			"shop": {
 			   "buy_1": "Acheter 1",
 			   "buy_10": "Acheter 10",
+ 			   "buy_all" : "Acheter tout", 
 			   "sell_1": "Vendre 1",
 			   "sell_10": "Vendre 10",
+ 			   "sell_all": "Vendre tout",
 			   "buy_tab": "Acheter",
 			   "sell_tab": "Vendre",
                "not_enough_gold_tooltip": "Pas assez d'or !"
@@ -4398,15 +4400,23 @@
  		    },
             "entling": {
                "display_name": "Entling",
-               "description": "Minion of the forest"
+               "description": "Minion de la forêt"
             },
             "entling_mage": {
-               "display_name": "Entling Mage",
-               "description": "Minion of the forest"
+               "display_name": "Mage entling",
+               "description": "Minion de la forêt"
             },
             "stone_golem": {
-               "display_name": "Stone Golem",
-               "description": "Solid."
+               "display_name": "Golem de pierre",
+               "description": "Solide."
+            },
+            "little_stone_golem": {
+               "display_name": "Petit golem de pierre",
+               "description": "C'est juste un caillou !"
+            },
+            "alligator": {
+               "display_name": "Alligator",
+               "description": "Rugueux et écailleux"
 			}
 		 },
 		 "goblins": {
