@@ -409,6 +409,12 @@
                      "activated_title": "Town Defense Mode Activated!",
                      "activated_text": "Your workers have stopped their jobs and are vigilantly watching for intruduers."
                   },
+                  "town_alert": {
+                     "display_name": "Town Alert Mode!",
+                     "description": "Rally your milita to draw their weapons and hold off against enemies!",
+                     "activated_title": "Town Alert Mode Activated!",
+                     "activated_text": "Your hearthlings have stopped their jobs and are vigilantly watching for intruders. Hearthlings not in the militia will run to safety points."
+                  },
                   "loot_item": {
                      "display_name": "Loot",
                      "description": "Steal items from another player.",
