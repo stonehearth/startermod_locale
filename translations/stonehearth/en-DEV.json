@@ -411,9 +411,9 @@
                   },
                   "town_alert": {
                      "display_name": "Town Alert Mode!",
-                     "description": "Rally your milita to draw their weapons and hold off against enemies!",
+                     "description": "Rally your fighters to draw their weapons and hold off against enemies!",
                      "activated_title": "Town Alert Mode Activated!",
-                     "activated_text": "Your hearthlings are vigilantly watching for intruders. Hearthlings not in the militia will run to safety points."
+                     "activated_text": "Your hearthlings are vigilantly watching for intruders. Non-combatant hearthlings will run to safety points."
                   },
                   "loot_item": {
                      "display_name": "Loot",
