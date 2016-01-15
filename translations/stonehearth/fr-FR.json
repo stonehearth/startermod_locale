@@ -2497,29 +2497,29 @@
 					 "000": "Je me demande si quelqu'un a eu ce rêve où leurs vêtements corporelles traînent à leurs pieds ? Heureusement pour moi, je semble toujours avoir ma pair de bermuda brillante",
 					 "001": "La nuit dernière, je rêvais : je me tenais devant une classe de raton laveur attentif. Ils ont pris des notes sur la réalité de la nature. Ensuite, nous avons eu un débat agité.",
 					 "002": "Selon les formules de mes rêves, le déterminisme est un mythe. Il est temps de prendre le petit déjeuné.",
-					 "003": "Je rêvais du temps présent, passé et futur. Ma conscience sait étendu pour remplir l'univers. J'étais tout, tout était moi.",
-					 "004": "Je rêvais que j'étais un arbre dans la forêt, l'eau dans le lac, et le vent dans l'air.",
-					 "005": "Je rêvais que j'étais immortel, sans commencement ni fin.",
-					 "006": "Je rêvais que j'étais entre la lumière et l'obscurité, l'espace et le temps."
+					 "003": "J'ai rêvé du temps présent, passé et futur. Ma conscience sait étendu pour remplir l'univers. J'étais tout, tout était moi.",
+					 "004": "J'ai rêvé que j'étais un arbre dans la forêt, l'eau dans le lac, et le vent dans l'air.",
+					 "005": "J'ai rêvé que j'étais immortel, sans commencement ni fin.",
+					 "006": "J'ai rêvé que j'étais entre la lumière et l'obscurité, l'espace et le temps."
 				  },
 				  "lovable_rogue": {
 					 "000": "Ce matin, je me suis réveillé déterminer que les loups avaient volés tous les moutons. Besoin de construire des murs ! Des murs plus épais !",
-					 "001": "Je rêvais d'une mine pleine d'or.",
+					 "001": "J'ai rêvé d'une mine pleine d'or.",
 					 "002": "J'ai eu un rêve où, un crocodile a volé toutes les choses, toute notre nourriture. Puis il a pris un bateau et y est resté",
 					 "003": "Dans mon rêve la nuit dernière, je tournais tout--et tout le monde--que je touchais en or. Oops.",
-					 "004": "Je rêvais que je mangeais tous nos approvisionnements alimentaires. On va vraiment éviter de faire ça aujourd'hui.",
+					 "004": "J'ai rêvé que je mangeais tous nos approvisionnements alimentaires. On va vraiment éviter de faire ça aujourd'hui.",
 					 "teacher": {
 						"000": "J'ai encore eu le rêve sur les échelles fragiles. Si seulement je savais ce qui était au sommet. Je suis sûr que [str(entry.teacher)] essaye de me dire quelque chose."
 					 }
 				  },
 				  "hopeless_optimist": {
-					 "000": "Wolves! All night I dreamed I was being chased by wolves!",
-					 "001": "Rabbits! All night I dreamed I was being chased by rabbits!",
-					 "002": "I love dreams about flying. Tonight I flew by soft clouds and over dense trees. Watch out, birds!",
-					 "003": "I dreamed I was a goblin. Don't tell anyone, but stealing from the town was a lot of fun! (Does that make me a bad person?)",
-					 "004": "I dreamed I was cooking soup for everyone but I ran out of salt. Salt's a rock, right? Can you substitute rocks for salt? ",
-					 "005": "I dreamt a little bird alighted upon my shoulder and told me that today was going to be a great day. I can't wait!",
-					 "006": "I had a dream that in the distant future, the sons of goblins and the sons of hearthlings sat down together at the table of berries."
+					 "000": "Loups ! Toute la nuit, j'ai rêvé que j'étais poursuivit par des loups !",
+					 "001": "Lapins ! Toutes la nuit, j'ai rêvé que j'étais poursuivit par des lapins !",
+					 "002": "J'aime les rêves à propos du vol. Cette nuit, je me suis envolé sur un doux nuages et au-dessus d'arbres très denses. Oiseaux, faite attention !",
+					 "003": "J'ai rêvé que j'étais un gobelin. Ne le dite à personne, mais voler de la ville était vraiment fun ! (Cela fait de moi une mauvaise personne ?)",
+					 "004": "J'ai rêvé que je cuisinais une soupe pour tout le monde, mais je suis tombé à cours de sel. Le sel est de la roche, vrai ? Pouvez-vous remplacer le sel par les roches ? ",
+					 "005": "Je rêvais un petit oiseau descendait sur mon épaule et me parlais qu'aujourd'hui allais être un grand jour. Je ne peux pas attendre !",
+					 "006": "J'ai eu un rêve que dans un avenir lointain, les fils gobelins et les fils hearthlings s'asseyaient ensemble devant une table à baie."
 				  },
 				  "diligent_sweetheart": {
 					 "000": "Whoa! I was out for a while! Do we still have all our hammers?",
