@@ -4034,82 +4034,92 @@
 			   "description": "Se fixe facilement aux murs"
             }
          },
+         "cactus_flower": {
+            "cactus_flower_ghost": {
+               "display_name": "Fleur de cactus",
+               "description": "Manipuler avec soin!"
+            }
+         },
          "clay_lamp": {
             "clay_lamp_ghost": {
-               "display_name": "Clay Oil Lamp",
-               "description": "Its flame brings a warm glow at night."
+               "display_name": "Lampe à pétrole en argile",
+               "description": "Sa flamme apporte une lumière chaleureuse pendant la nuit."
             }
          },
          "clay_wall_lamp": {
             "clay_wall_lamp_ghost": {
                "display_name": "Wall Clay Lamp",
+               "display_name": "Lampe murale en argile",
                "description": "Provides a warm glow at night."
+               "description": "Fournit une lueur chaude pendant la nuit."
             }
          },
          "garden_gnome": {
             "garden_gnome_ghost": {
-               "display_name": "Garden Gnome",
-               "description": "Plant Guardians"
+               "display_name": "Nain de jardin",
+               "description": "Les gardiens des plantes"
 			}
          },
          "decorative_teapot": {
             "decorative_teapot_ghost": {
-               "display_name": "Decorative Teapot",
-               "description": "A reminder of humble beginnings"
+               "display_name": "Théière décorative",
+               "description": "Un rappel des modestes débuts"
             }
          },
          "decorative_tray": {
             "decorative_tray_ghost": {
-               "display_name": "Decorative Tray",
-               "description": "Adds flash and hospitality"
+               "display_name": "Plateau décoratif",
+               "description": "Ajoute de l'éclat et de l'hospitalité"
             }
          },
          "potted_cactus": {
             "potted_cactus_ghost": {
-               "display_name": "Potted Cactus",
-               "description": "Careful, it's still prickly."
+               "display_name": "Cactus en pot",
+               "description": "Attention, il est toujours épineux."
             }
          },
          "blown_glass_vase": {
             "blown_glass_vase_ghost": {
-               "display_name": "Blown Glass Vase",
-               "description": "Miraculous"
+               "display_name": "Vase en verre soufflé",
+               "description": "Merveilleux"
             }
          },
          "decorative_vase": {
             "decorative_vase_ghost": {
-               "display_name": "Decorative Vase",
-               "description": "The metals of the earth reborn"
+               "display_name": "Vase décoratif",
+               "description": "Les métaux de la terre renaissent"
             }
          },
          "sundial": {
             "sundial_ghost": {
-               "display_name": "Sundial",
-               "description": "Decorates gardens, marks time"
+               "display_name": "Cadran solaire",
+               "description": "Marque le temps dans les jardins"
             }
          },
          "tile_floor_mosaic": {
             "tile_floor_mosaic_ghost": {
-               "display_name": "Tile Floor Mosaic",
-               "description": "Cool on the bare feet"
+               "display_name": "Carrelage au sol en mosaïque",
+               "description": "Laisse refroidir les pieds nus"
             }
          },
          "tile_wall_mosaic": {
             "tile_wall_mosaic_ghost": {
-               "display_name": "Tile Wall Mosaic",
-               "description": "Soothing decorative patterns"
+               "display_name": "Carrelage mural en mosaïque",
+               "description": "Motifs décoratifs apaisantes"
             }
          },
          "golden_clay_wall_planter": {
             "golden_clay_wall_planter_ghost": {
                "display_name": "Golden Clay Planter",
                "description": "Livens up walls"
+               "display_name": "Pot mural doré en argile",
+               "description": "Agrémente les murs"
             }
          },
          "unfired_clay_vase": {
             "unfired_clay_vase_ghost": {
-               "display_name": "Unfired Clay Vase",
-               "description": "A very simple vase"
+               "display_name": "Vase en argile primitif",
+               "description": "Un vase très simple"
 		    }
          }
 	  },
