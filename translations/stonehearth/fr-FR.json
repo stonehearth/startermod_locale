@@ -44,7 +44,10 @@
 			"fabricate_structure": "construit",
 			"teardown_structure": "démonte des structures",
 			"feed_pasture_animals": "nourrit les animaux",
-			"restock": "range des objets"
+			"restock": "range des objets",
+            "resting_from_injuries": "a besoin de soins",
+            "healing": "traite des blessures",
+            "healing_target": "guérit [name(data.target)]"
 		 }
 	  }
    },
@@ -198,7 +201,23 @@
 		 },
 		 "unit_frame": {
 			"show_character_sheet": "Afficher la feuille de personnage",
-			"focus_camera": "Centrer la caméra sur cette unité"
+			"focus_camera": "Centrer la caméra sur cette unité",
+            "attack_target": {
+               "display_name": "Attaquer une cible",
+               "description": "Attack a specific enemy at the exclusion of all others, or attack anything near a location, and everything in between."
+            },
+            "defend_location": {
+               "display_name": "Défendre un lieu",
+               "description": "Run towards, then stay at this location, attacking anything in the path."
+            },
+            "move_unit": {
+               "display_name": "Se déplacer",
+               "description": "Move to a location, ignoring all intervening threats."
+            },
+            "manage_party": {
+               "display_name": "Modifier les groupes",
+               "description": "Add and remove combat units from the party."
+            }
 		 },
 		 "citizens": {
             "title": "Hearthlings",
@@ -210,11 +229,22 @@
                "build": "Bâtiment",
                "mine": "Mine",
                "job": "Job",
-               "current_activity": "Activité actuel ..."
+               "current_activity": "Activité actuel ...",
+               "militia": "Militia",
+               "status": "Status"
             },
             "show_character_sheet": "Plus d'info.",
             "button_suspend": "stopper",
-            "button_resume": "lancer"
+            "button_resume": "lancer",
+            "tab": {
+               "tasks": "Tâches",
+               "groups": "Groupes"
+            },
+            "enrollment": {
+               "enrolled": "Inscrit",
+               "not_enrolled": "Pas inscrit",
+               "cannot_enroll": "Ne peut s'inscrire"
+            }
 		 },
 		 "create_camp": {
 			"new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
@@ -414,6 +444,18 @@
                      "description": "Pillez les biens des ennemis.",
                      "tip_title": "Cliquez et tirez pour piller les objets au sol.",
                      "tip_description": "Click droit pour sortir de ce mode"
+                  },
+                  "party_1": {
+                     "display_name": "Groupe de combat 1",
+                     "description": "Direct hearthlings into combat! Promoted combat classes are automatically added here.",
+                     "tip_title": "The party is selected in the unit frame.",
+                     "tip_description": "Use the commands in the unit frame to direct the people in the party."
+                  },
+                  "party_2": {
+                     "display_name": "Groupe de combat",
+                     "description": "Direct hearthlings into combat! Use the unit frame controls to manage the party.",
+                     "tip_title": "The party is selected in the unit frame.",
+                     "tip_description": "Use the commands in the unit frame to direct the people in the party."
 				  }
 			   }
 			},
@@ -447,9 +489,14 @@
                      "required_job_text": "Nécessite un cuisinier"
 				  },
                   "potter": {
-                     "display_name": "Potter Craft Menu",
+                     "display_name": "Potier",
                      "description": "Makes bricks and goods from clay.",
-                     "required_job_text": "Requires a potter"
+                     "required_job_text": "Nécessite un Potier"
+                  },
+                  "herbalist": {
+                     "display_name": "Herboriste",
+                     "description": "Makes healing items from herbs.",
+                     "required_job_text": "Nécessite un herboriste"
                   }
                }
             },
@@ -724,7 +771,8 @@
 				  "tooltip_gem": "gemmes et trophés",
 				  "tooltip_food_containers": "récipients pour aliments",
 				  "tooltip_refined": "plats cuisinés",
-				  "tooltip_ingredients": "matières premières"
+				  "tooltip_ingredients": "matières premières",
+                  "tooltip_healing_items": "objets curatifs"
 			   }
 			}
 		 },
@@ -1092,7 +1140,10 @@
 			},
 			"willpower": {
                "display_name": "Volonté",
-               "description": "Capacité du hearthling à résister aux sorts de l'ennemis."
+               "description": "Capacité du hearthling à résister aux sorts de l'ennemis.",
+               "bullet_points": {
+                  "000": "Détermine la régénération de santé"
+               }
 			},
 			"net_worth": {
                "display_name": "Richesse",
@@ -1150,10 +1201,15 @@
                "display_name": "Sécurité",
                "description": "Protégez votre ville des pilleurs et faites que vos hearthlings se sentent en sécurité en formant des gardes.",
                "town_description": "Ce que pense vos hearthlings de la sécurité de la ville. Sommes nous bien protégés ou des gobelins nous pillent régulièrement ?"
+            },
+            "militia": {
+               "display_name": "Milice",
+               "description": "In Town Alert Mode, militia members will hold their ground against enemies instead of running to a safety banner. In addition, they receive an extra boost of Courage and Muscle."
 			}
 		 },
 		 "constants": {
             "food_meat_raw_name": "Viande fraiche",
+			"food_veggie_raw_name": "Légumes crus",
             "stone_resource_name": "Pierre",
             "pelt_resource_name": "Peau",
             "cloth_resource_name": "Rouleau de tissu",
@@ -1163,7 +1219,8 @@
             "thread_resource_name": "Fil",
             "leather_resource_name": "Cuir en rouleau",
             "fiber_resource_name": "Lot de fibres",
-            "ingot_resource_name": "Lingot de métal"
+            "ingot_resource_name": "Lingot de métal",
+            "herb_resource_name": "Herbe"
 		 }
 	  }
    },
@@ -1882,11 +1939,20 @@
 					 }
 				  }
 			   },
-			   "undead_raid": {
-				  "mission": {
-					 "sighted_bulletin": {
-                        "title": "Intrus repérés!"
-                     }
+			    "zombie_chest_camp": {
+                  "boss": {
+                     "display_name": "Zombie géant",
+                     "description": "Blaarhgh... toucher pas le trésor du Maître !"
+                  }
+               },
+               "wolf_pack_raid": {
+                  "wolves": {
+                     "description": "Défends son territoire"
+                  }
+               },
+               "giant_alligator_raid_6": {
+                  "alligators": {
+                     "description": "L'espèce la plus grande."
                   }
                },
                "arcs": {
@@ -1900,11 +1966,33 @@
                                     "description": "Mais ... pourquoi il est vert?"
                                  },
                                  "workers": {
-                                    "description": "Désigné foyer-tendre"  
+                                    "description": "Désigné foyer-tendre"
                                  }
                               }
-                           }
-                        }
+                           },
+                           "create_necromancer_crypt": {
+                              "crypt": {
+                                 "display_name": "Une crypte",
+                                 "description": "Construit par l'empire Phénix"
+                              },
+                              "sarcophagus": {
+                                 "display_name": "Sarcophage en pierre",
+                                 "description": "Ici gît un membre de la Black Cord"
+                              },
+                              "crypt_structures": {
+                                 "floor_candle": {
+                                    "description": "Illumine l'entrée de la crypte"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+                "random_raid": {
+                  "mission": {
+                     "sighted_bulletin": {
+                        "title": "Envahisseurs en approche !"
 					 }
 				  }
 			   }
@@ -1984,7 +2072,41 @@
 			"stopped_buff": {
 			   "display_name": "Arrêté",
 			   "description": "Mettez ce buff sur quelqu'un qui a besoin de s'arrêter, dès maintenant."
+            }
+         },
+         "injured": {
+            "injured_buff": {
+               "display_name": "Injured",
+               "description": "Moving slower due to low health."
+            }
+         },
+         "recovering": {
+            "recovering_buff": {
+               "display_name": "Bed Ridden",
+               "description": "Slowly recovering from injuries. Can receive medical care from herbalists."
+            }
+         },
+         "stamina_tonic": {
+            "stamina_tonic_buff": {
+               "display_name": "Stamina Tonic",
+               "description": "Slightly more healthy"
+            }
+         },
+         "strength_tonic": {
+            "strength_tonic_buff": {
+               "display_name": "Strength Tonic",
+               "description": "Slightly more buff"
 			}
+         },
+         "severely_injured": {
+            "severely_injured_buff": {
+               "display_name": "Severly Injured",
+               "description": "Wounded badly! This hearthling can hardly walk!"
+            }
+         },
+         "undead_infection": {
+            "display_name": "Infected",
+            "description": "Healing items are 10% less effective"
 		 }
 	  },
 	  "build": {
@@ -2129,6 +2251,14 @@
 		 "plant_tree": {
             "display_name": "Planter un arbre.",
             "description": "Plantez cet arbre dans un peu de terre."
+         },
+         "use_consumable": {
+            "display_name": "Use",
+            "description": "Use this consumable item to buff every hearthling in town. This will destroy the item."
+         },
+         "edit_party": {
+            "display_name": "Edit Party",
+            "description": "Add and remove combatants from this party."
 		 }
 	  },
 	  "personality": {
@@ -2971,6 +3101,12 @@
 			   }
 			}
 		 }
+      },
+      "prototypes": {
+         "party": {
+            "display_name": "Groupe N°[str(self.unit_info.custom_name)]",
+            "description": "Organisez vos troupes en groupes de combat"
+         }
 	  }
    },
    "entities": {
@@ -3135,6 +3271,10 @@
 			"wooden_door_ghost": {
 			   "display_name": "Porte en bois",
 			   "description": "Enfin un peu de vie privée !"
+            },
+            "wooden_tunnel_door_ghost": {
+               "display_name": "Porte de tunnel en bois",
+               "description": "Utile pour bloquer les tunnels"
 			}
 		 },
 		 "wooden_double_door": {
@@ -3694,6 +3834,28 @@
                   "description": "Sadly inedible"
                }
             }
+         },
+         "cactus_flower_crop": {
+            "description": "The flowers have medicinal properties",
+            "display_name": "Fleur de cactus",
+            "growth_stage": {
+               "000": {
+                  "name": "Cactus Bud",
+                  "description": "Starting to grow"
+               },
+               "001": {
+                  "name": "Young Cactus",
+                  "description": "Starting to get prickly"
+               },
+               "002": {
+                  "name": "Mature Cactus",
+                  "description": "Wait for its flower to bloom"
+               },
+               "003": {
+                  "name": "Flowering Cactus",
+                  "description": "Ready for harvesting"
+               }
+            }
 		 }
 	  },
 	  "decoration": {
@@ -3713,13 +3875,7 @@
 			"bird_bath_ghost": {
                "display_name": "Bassin pour oiseaux",
 			   "description": "Tranquille."
-			}
-		 },
-		 "brightbell": {
-			"brightbell_ghost": {
-			   "display_name": "Jacinthe rose",
-			   "description": "Juste une fleur."
-			}
+            }
 		 },
 		 "crate": {
 			"display_name": "Une caisse"
@@ -3740,13 +3896,7 @@
 			"firepit_skulls_ghost": {
                "display_name": "Feu de camp maléfique",
                "description": "Serait-ce des ... Euuh."
-			}
-		 },
-		 "frostsnap": {
-			"frostsnap_ghost": {
-			   "display_name": "Perçe-neige",
-			   "description": "C'est froid au toucher !"
-			}
+            }
 		 },
 		 "fur_rug": {
 			"fur_rug_ghost": {
@@ -3774,7 +3924,13 @@
 			"stone_brazier_ghost": {
 			   "display_name": "Brasero en pierre",
 			   "description": "Fournit un feu chaleureux et confortable la nuit"
-			}
+            }
+         },
+         "stone_floor_candle_holder": {
+            "stone_floor_candle_holder_ghost": {
+               "display_name": "Stone Floor Candle Holder",
+               "description": "Let there be light!"
+            }
 		 },
 		 "stone_garden_lantern": {
 			"stone_garden_lantern_ghost": {
@@ -3876,7 +4032,7 @@
 			"wooden_wall_lantern_fine_ghost": {
 			   "display_name": "Belle lanterne murale en bois",
 			   "description": "Se fixe facilement aux murs"
- 			}
+            }
          },
          "cactus_flower": {
             "cactus_flower_ghost": {
@@ -3892,7 +4048,9 @@
          },
          "clay_wall_lamp": {
             "clay_wall_lamp_ghost": {
+               "display_name": "Wall Clay Lamp",
                "display_name": "Lampe murale en argile",
+               "description": "Provides a warm glow at night."
                "description": "Fournit une lueur chaude pendant la nuit."
             }
          },
@@ -3952,6 +4110,8 @@
          },
          "golden_clay_wall_planter": {
             "golden_clay_wall_planter_ghost": {
+               "display_name": "Golden Clay Planter",
+               "description": "Livens up walls"
                "display_name": "Pot mural doré en argile",
                "description": "Agrémente les murs"
             }
@@ -4380,6 +4540,31 @@
 		 "control_defend_banner": {
             "display_name": "Défendre la bannière",
             "description": "Garder cette position en mode de défense de la ville."
+         },
+         "safety_standard": {
+            "display_name": "Balise de sécurité en bois",
+            "clay_safety_standard": {
+               "display_name": "Balise de sécutité en argile"
+            },
+            "description": "Marquer un point de sécurité pour se regrouper en mode alerte de ville"
+         },
+         "control_attack_marker": {
+            "control_attack_marker_ghost": {
+               "display_name": "Marqueur attaque",
+               "description": "Hearthling attacks everything between here and there"
+            }
+         },
+         "control_hold_marker": {
+            "control_hold_marker_ghost": {
+               "display_name": "Marqueur tenir position",
+               "description": "Post aggresively at this location"
+            }
+         },
+         "control_move_marker": {
+            "control_move_marker_ghost": {
+               "display_name": "Marqueur déplacement",
+               "description": "Move to this location"
+            }
 		 }
 	  },
 	  "loot": {
@@ -4411,8 +4596,12 @@
                "description": "C'est juste un caillou !"
             },
             "alligator": {
-               "display_name": "Alligator",
-               "description": "Rugueux et écailleux"
+               "display_name": "Varanus",
+               "description": "Et ça c'est l'espèce plus petite..."
+            },
+            "wolf": {
+               "display_name": "Loup sauvage",
+               "description": "Grrr! Rwar!"
 			}
 		 },
 		 "goblins": {
@@ -4510,6 +4699,10 @@
 			"wolf_cage": {
                "display_name": "Une cage à loup",
 			   "description": "Signals nappytime for its inhabitants."
+            },
+            "goblin_cage": {
+               "display_name": "Grande cage",
+               "description": "Propriété du chef Grug Cognecrâne"
 			}
 		 },
 		 "undead": {
@@ -4526,11 +4719,31 @@
                      "description": "Il cherche de la chair fraiche"
 				  }
 			   }
+            },
+            "crypt": {
+               "display_name": "Une crypte",
+               "description": "What lies inside?"
+            },
+            "sarcophagus": {
+               "display_name": "Un sarcophage",
+               "description": "Holds remains of the dead"
+            },
+            "tombstone": {
+               "display_name": "Une pierre tombale",
+               "description": "Where undead are born"
+            },
+            "stone_pillar_fence": {
+               "display_name": "Clôture de pilier de pierre ",
+               "description": "Sturdy fence anchored by pillars."
+            },
+            "necromancer": {
+               "display_name": "Nécromancien",
+               "description": "Practitioner of the dark arts"
 			}
          },
          "rabbit": {
             "display_name": "...",
-            "description": "A Rabbit"
+            "description": "Un lapin"
 		 }
 	  },
 	  "pets": {
@@ -4559,7 +4772,8 @@
 		 },
 		 "brightbell_plant": {
 			"display_name": "Jacinthe sauvage",
-			"description": "Une fleur sauvage récoltable."
+			"description": "Une fleur sauvage récoltable.",
+            "unripe_description": "This plant has been harvested and has not grown back yet"
 		 },
 		 "carrot": {
 			"carrot_basket": {
@@ -4573,7 +4787,8 @@
 		 },
 		 "frostsnap_plant": {
 			"display_name": "Perce-neige sauvage",
-			"description": "Une fleur sauvage récoltable."
+			"description": "Une fleur sauvage récoltable.",
+            "unripe_description": "This plant has been harvested and has not grown back yet"
 		 },
 		 "silkweed": {
 			"silkweed": {
@@ -4604,7 +4819,8 @@
 		 },
 		 "cactus_plant": {
 			"display_name": "Wild Cactus",
-			"description": "A harvestable wild flower"
+			"description": "A harvestable wild flower",
+            "unripe_description": "This plant has been harvested and has not grown back yet"
 		 },
 		 "tumbleweed": {
 			"display_name": "Tumbleweed",
@@ -4783,6 +4999,26 @@
 			"acacia_log": {
                "display_name": "Bûche d'acacia",
                "description": "Une bûche."
+            }
+         },
+         "herb": {
+            "brightbell": {
+               "display_name": "Fleurs jacinthe rose",
+               "description": "An herb commonly used for medicinal purposes"
+            },
+            "frostsnap": {
+               "display_name": "Fleurs perce-neige",
+               "description": "An herb that's chill to the touch"
+            },
+            "cactus_flower": {
+               "display_name": "Fleur de cactus",
+               "description": "A beautiful desert bloom with healing properties"
+            }
+         },
+         "skin": {
+            "varanus_skin": {
+               "display_name": "Peau de Varanus",
+               "description": "Rugueux et écailleux"
 			}
 		 }
 	  },
@@ -5089,7 +5325,39 @@
 			"wooden_sword_talisman": {
 			   "display_name": "Épée en bois",
 			   "description": "Nécessaire pour promouvoir un hearthling en fantassin."
+            }
+         },
+         "scythe": {
+            "display_name": "Scythe",
+            "description": "Preferred weapon for reaping"
+         }
+      },
+      "consumables": {
+         "healing_tonic": {
+            "small_healing_tonic": {
+               "display_name": "Small Healing Tonic",
+               "description": "Used by the herbalist to heal small wounds"
 			}
+         },
+         "stamina_tonic": {
+            "display_name": "Potion d'endurance",
+            "description": "Buffs stamina of all hearthlings for a short while"
+         },
+         "strength_tonic": {
+            "display_name": "Potion de force",
+            "description": "Buffs muscle of all hearthlings for a short while"
+         },
+         "coarse_bandage": {
+            "display_name": "Bandage grossier",
+            "description": "Utilisé par l'herboriste pour guérir légérement"
+         },
+         "heavy_bandage": {
+            "display_name": "Bandage épais",
+            "description": "Utilisé par l'herboriste pour guérir beaucoups."
+         },
+         "light_bandage": {
+            "description": "Utilisé par l'herboriste pour guérir modérément",
+            "display_name": "Bandage léger"
 		 }
 	  }
    },
@@ -5438,6 +5706,7 @@
             "armor_name": "Armures",
             "furniture_name": "Meubles",
             "workbench_name": "Ateliers",
+            "utility_name": "Utilitaire",
 			"shepherds_crook_recipe": {
                "description": "Requis pour promouvoir un hearthling en berger",
                "recipe_name": "Bâton de berger",
@@ -5569,6 +5838,18 @@
             "wooden_window_frame_wide_recipe": {
                "description": "C'est une vue panoramique !",
                "recipe_name": "Cadre de fenêtre large"
+            },
+            "herbalist_staff_recipe": {
+               "description": "Nécessaire pour promouvoir un hearthling en herboriste, qui fabrique potions et bandages.",
+               "recipe_name": "Bâton d'herboriste"
+            },
+            "safety_standard_recipe": {
+               "description": "Utilisé pour désigner un point de sécurité",
+               "recipe_name": "Balise de sécurité en bois"
+            },
+            "wooden_tunnel_door_recipe": {
+               "recipe_name": "Porte de tunnel en bois",
+               "description": "Utile pour bloquer les tunnels"
 			}
 		 }
 	  },
@@ -5792,13 +6073,16 @@
 		 },
 		 "footman_buffs": {
 			"damage_1_buff": {
-			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces"
+			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
+               "display_name": "Damage +20%"
 			},
 			"damage_2_buff": {
-			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces"
+			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
+               "display_name": "Damage +20%"
 			},
 			"damage_3_buff": {
-			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces"
+			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
+               "display_name": "Damage +20%"
 			}
 		 },
 		 "footman_outfit": {
@@ -6053,6 +6337,7 @@
             },
 			"furniture_name": "Furniture and Decoration",
             "decoration_name": "Décoration",
+			"utility_name": "Utility",
             "potter_workbench_recipe": {
                "description": "Helps the potter create simple items from clay",
                "recipe_name": "Potter's Wheel",
@@ -6062,6 +6347,10 @@
                "description": "Hardens basic clay objects.",
                "recipe_name": "Potter's Kiln",
                "flavor": "'Through heat and hardship we realize our final selves.' -Silora, Acolyte of Rayya's Mystery "
+            },
+            "clay_safety_standard_recipe": {
+               "description": "Utilisez de désigner un point de sécurité",
+               "recipe_name": "Balise de sécurité en argile"
             },
             "building_parts_name": "Building Parts",
             "clay_bricks_recipe": {
@@ -6515,6 +6804,99 @@
 			"worker_outfit_2_iconic": {
 			   "display_name": "Habit amélioré de travailleur",
 			   "description": "Des coutures renforcées augmentent la productivité des travailleurs"
+            }
+         }
+      },
+      "herbalist": {
+         "herbalist_description": {
+            "display_name": "Herboriste",
+            "description": "Heals units with crafted balms and bandages.",
+            "requirements": "Herbalist's Staff, crafted by the Carpenter",
+            "workshop": {
+               "name": "Labo. d'herboriste",
+               "description": "Allows the Herbalist to craft healing balms and bandages.",
+               "long_description": "Allows the Herbalist to craft healing balms and bandages."
+            },
+            "level_1_data": {
+               "perk_000_name": "Improved Willpower",
+               "perk_000_description": "The herbalist channels the spirits of the forest and gains natural regeneration."
+            },
+            "level_2_data": {
+               "perk_000_name": "Collaborative Insight",
+               "perk_000_description": "The herbalist is now skillful enough to use materials created by the other crafters."
+            },
+            "level_4_data": {
+               "perk_000_name": "Power Medic",
+               "perk_000_description": "The herbalist can now attend to up to 4 hearthlings at a time."
+            },
+            "level_0_data": {
+               "perk_000_name": "Junior Practitioner",
+               "perk_000_description": "The herbalist can attend to 2 hurt hearthlings at a time."
+            },
+            "level_3_data": {
+               "perk_000_name": "Item Proficiency",
+               "perk_000_description": "The herbalist's medical prowess increases the effectiveness of healing items by 50%."
+            }
+         },
+         "herbalist_outfit": {
+            "display_name": "Herbalist Outfit",
+            "description": "Traditional robes of the Herbalist"
+         },
+         "herbalist_staff": {
+            "display_name": "Bâton d'herboriste",
+            "description": "Required to promote a hearthling into an Herbalist",
+            "herbalist_staff_iconic": {
+               "display_name": "Bâton d'herboriste",
+               "description": "Nécessaire pour promouvoir un hearthling en herboriste"
+            },
+            "herbalist_staff_talisman": {
+               "display_name": "Herbalist Staff",
+               "description": "Nécessaire pour promouvoir un hearthling en herboriste"
+            }
+         },
+         "herbalist_workbench": {
+            "herbalist_workbench_ghost": {
+               "display_name": "Labo. d'herboriste",
+               "description": "Used to craft healing items"
+            }
+         },
+         "recipes": {
+            "herbalist_workbench_recipe": {
+               "description": "Allows the Herbalist to craft healing balms and bandages.",
+               "recipe_name": "Herbalist Lab"
+            },
+            "workbenches_name": "workbenches",
+            "tonics_name": "Potions",
+            "small_healing_tonic_recipe": {
+               "description": "A medicinal drink that heals for a minuscule amount",
+               "recipe_name": "Small Healing Tonic"
+            },
+            "stamina_tonic_recipe": {
+               "description": "Buffs stamina of all hearthlings for a short while",
+               "recipe_name": "Potion d'endurance"
+            },
+            "strength_tonic_recipe": {
+               "description": "Buffs muscle of all hearthlings for a short while",
+               "recipe_name": "Potion de force"
+            },
+            "bandages_name": "Bandages",
+            "coarse_bandage_recipe": {
+               "recipe_name": "Bandage grossier",
+               "description": "Utilisé par l'herboriste pour guérir légérement"
+            },
+            "heavy_bandage_recipe": {
+               "recipe_name": "Bandage épais",
+               "description": "Utilisé par l'herboriste pour guérir beaucoups. Bien pour les blessures graves."
+            },
+            "light_bandage_recipe": {
+               "recipe_name": "Bandage léger",
+               "description": "Utilisé par l'herboriste pour guérir modérément"
+            }
+         },
+         "herbalist_buffs": {
+            "willpower_1_buff": {
+               "display_name": "Willpower +50",
+               "description": "The herbalist has improved health regeneration"
 			}
 		 }
 	  }
