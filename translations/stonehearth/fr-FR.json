@@ -2364,22 +2364,22 @@
 			   "text": "En dormant:",
 			   "logs": {
 				  "insufferable_academic": {
-					 "000": "I wonder if anyone else has the dream where their clothes trail their bodies by several feet? Lucky for me, I always seem to have on my trusty pair of shiny knickers.",
-					 "001": "Last night I dreamed I stood before a class of attentive raccoons. They took notes on the nature of realtity. Afterwards, we had a stirring debate.",
-					 "002": "According to the formulae in my dreams, determinism is a myth. Time to get breakfast.",
-					 "003": "I dreamed of times present, past and future. My consciousness expanded to fill the universe. I was all, everything was me.",
-					 "004": "I dreamed I was the trees in the forest, the water in the lake, and the wind in the air.",
-					 "005": "I dreamed I was immortal, without beginning or end.",
-					 "006": "I dreamed I was between light and dark, space and time."
+					 "000": "Je me demande si quelqu'un a eu ce rêve où leurs vêtements corporelles traînent à leurs pieds ? Heureusement pour moi, je semble toujours avoir ma pair de bermuda brillante",
+					 "001": "La nuit dernière, je rêvais : je me tenais devant une classe de raton laveur attentif. Ils ont pris des notes sur la réalité de la nature. Ensuite, nous avons eu un débat agité.",
+					 "002": "Selon les formules de mes rêves, le déterminisme est un mythe. Il est temps de prendre le petit déjeuné.",
+					 "003": "Je rêvais du temps présent, passé et futur. Ma conscience sait étendu pour remplir l'univers. J'étais tout, tout était moi.",
+					 "004": "Je rêvais que j'étais un arbre dans la forêt, l'eau dans le lac, et le vent dans l'air.",
+					 "005": "Je rêvais que j'étais immortel, sans commencement ni fin.",
+					 "006": "Je rêvais que j'étais entre la lumière et l'obscurité, l'espace et le temps."
 				  },
 				  "lovable_rogue": {
-					 "000": "This morning, I woke up certain that wolves had stolen all the sheep. Need to build walls! Thicker walls!",
-					 "001": "I dreamed of a mine full of gold.",
-					 "002": "I had a dream where, of all things, a crocodile, stole all our food. Then he took it to a boat and stayed there",
-					 "003": "In my dream last night, I turned everything--and everyone--I touched, into gold. Oops.",
-					 "004": "I dreamed that I ate all our food supplies. Best try to avoid doing that today.",
+					 "000": "Ce matin, je me suis réveillé déterminer que les loups avaient volés tous les moutons. Besoin de construire des murs ! Des murs plus épais !",
+					 "001": "Je rêvais d'une mine pleine d'or.",
+					 "002": "J'ai eu un rêve où, un crocodile a volé toutes les choses, toute notre nourriture. Puis il a pris un bateau et y est resté",
+					 "003": "Dans mon rêve la nuit dernière, je tournais tout--et tout le monde--que je touchais en or. Oops.",
+					 "004": "Je rêvais que je mangeais tous nos approvisionnements alimentaires. On va vraiment éviter de faire ça aujourd'hui.",
 					 "teacher": {
-						"000": "I had the dream about fragile ladders again. I wish I knew what was at the top. I'm sure [str(entry.teacher)] is trying to tell me something."
+						"000": "J'ai encore eu le rêve sur les échelles fragiles. Si seulement je savais ce qui était au sommet. Je suis sûr que [str(entry.teacher)] essaye de me dire quelque chose."
 					 }
 				  },
 				  "hopeless_optimist": {
