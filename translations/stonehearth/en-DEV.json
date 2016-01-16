@@ -403,11 +403,11 @@
                      "display_name": "Parties",
                      "description": "Organize your troops into groups"
                   },
-                  "town_defense": {
-                     "display_name": "Town Defense Mode!",
-                     "description": "Rally your hearthlings to defend the town!",
-                     "activated_title": "Town Defense Mode Activated!",
-                     "activated_text": "Your workers have stopped their jobs and are vigilantly watching for intruduers."
+                  "town_alert": {
+                     "display_name": "Town Alert Mode!",
+                     "description": "Rally your hearthlings to prepare for intruders!",
+                     "activated_title": "Town Alert Mode Activated!",
+                     "activated_text": "Your hearthlings are vigilantly watching for intruders. Hearthlings not enrolled in the militia will run to safety points."
                   },
                   "loot_item": {
                      "display_name": "Loot",
@@ -963,10 +963,6 @@
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Storage filter defaults to None",
                "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
-               "enable_cpp_ai": "Enable CPP AI (Requres Restart)",
-               "enable_cpp_ai_description": "Use the new ai system that is written in C++. This should be faster than the old ai system and should handle large towns better.",
-               "enable_subspace_pathfinder": "Enable Subspace Pathfinder (Requres Restart)",
-               "enable_subspace_pathfinder_description": "Use the new pathfinder that is more efficient and can search farther than the old path finder. However, pathing wonkiness may occur. Please report any pathing issues you find!",
                "max_citizens": "Max Citizens"
             }
          },
@@ -1016,7 +1012,7 @@
             "citizen_info": "Expedition Roster",
             "reroll_citizens": "Roll new citizens",
             "shop_title": "Traveller's Store",
-            "shop_gold_label": "Starting Gold",
+            "shop_gold_label": "Gold",
             "shop_sold": "SOLD!",
             "shop_reset_button": "Reset",
             "finished": "Embark!",
@@ -1181,7 +1177,7 @@
       "biome": {
          "temperate": {
             "display_name": "Temperate",
-            "description": "Forests, rivers and mountains. Default biome of the Ascendancy.",
+            "description": "Forests, rivers and mountains. Default home of the Ascendancy.",
             "random_location_names": {
                "000": "Darkmoor Forest"
             }
