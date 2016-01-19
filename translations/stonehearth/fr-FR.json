@@ -47,7 +47,8 @@
 			"restock": "range des objets",
             "resting_from_injuries": "a besoin de soins",
             "healing": "traite des blessures",
-            "healing_target": "guérit [name(data.target)]"
+            "healing_target": "guérit [name(data.target)]",
+            "dig_foundation": "creuse des fondations"
 		 }
 	  }
    },
@@ -185,7 +186,7 @@
 			"create_party": "Créer un groupe",
 			"edit_party": "Modifier",
 			"add_party_member": "Ajouter un membre",
-			"disband_party": "Dissoudre",
+			"remove_members": "Dissoudre",
 			"add_party_member_title": "Gérer la liste",
 			"done_adding_members": "Fini",
 			"add_party_member_button": "+",
@@ -315,7 +316,7 @@
 			},
 			"tooltip_combat_base_damage": "Atq :",
 			"tooltip_combat_base_damage_reduction": "Déf :",
-			"tooltip_num_undeployed": "Undeployed: [str(num_undeployed)]",
+			"tooltip_num_undeployed": "Non déployé: [str(num_undeployed)]",
 			"death_notification": "[name(i18n_data.entity)] est mort."
 		 },
 		 "menu": {
@@ -434,7 +435,7 @@
                      "display_name": "Groupes",
                      "description": "Organisez vos troupes en groupes."
 				  },
-				  "town_defense": {
+				  "town_alert": {
                      "display_name": "Mode défense de la ville !",
                      "description": "Rassemblez vos hearthlings pour défendre la ville.",
                      "activated_title": "Mode défense de la ville activé !",
@@ -4135,7 +4136,7 @@
                "description": "Divinement nourrissant."
 			},
 			"corn_basket": {
-               "display_name": "Panier de Maïs",
+               "display_name": "Panier de maïs",
                "description": "Doux et croquant."
 			},
 			"corn_serving": {
