@@ -1835,6 +1835,11 @@
 			   }
 			},
 			"ambient_threats": {
+               "random_encounter": {
+                  "combat_bulletin": {
+                     "title": "Un hearthling est attaqué !"
+                  }
+               },
 			   "goblin_thieves": {
 				  "missions": {
 					 "raid_stockpiles": {
