@@ -2544,21 +2544,21 @@
 					 "006": "J'ai eu un rêve que dans un avenir lointain, les fils gobelins et les fils hearthlings s'asseyaient ensemble devant une table à baie."
 				  },
 				  "diligent_sweetheart": {
-					 "000": "Whoa! I was out for a while! Do we still have all our hammers?",
-					 "001": "Oops! I must've fallen asleep! Do we still have all our trees?",
-					 "002": "I dreamed I fell asleep for a thousand years. Luckily, someone made me a shiny glass coffin with a hatch on the inside for opening. Weird.",
-					 "003": "I had a Dream where a Giant Dragon approached me! But when she opened her mouth, only kitten noises came out. Adorable!",
-					 "004": "I had a dream where I all the forest creatures and I were having a picnic, but the raccoon stole all the honey so we had nothing to put on our bread and butter.",
-					 "005": "I dreamt that everyone was jeering at me. I ran home and didn't move. Ever again.",
-					 "006": "I dreamt of a world of lush forests, and clear rivers, surrounded by friends. I woke and it was real!",
-					 "007": "I dreamt about doing all my chores. Now I've woken I have to do them all over again..."
+					 "000": "Whoa ! J'étais dehors pendant un moment ! Avons-nous encore tous nos marteaux ?",
+					 "001": "Oups ! Je dois m'être endormi ! Avons-nous encore tous nos arbres ?",
+					 "002": "J'ai rêvé que je me suis endormi pendant mille ans. Heureusement, quelqu'un m'a fait un cercueil de verre brillant avec une trappe à l'intérieur pour l'ouvrir. Bizarre.",
+					 "003": "Je fis un rêve où une dragonne géante approchait de moi ! Mais quand elle ouvrit la bouche, seuls des bruits de chaton sont sortis. Adorable !",
+					 "004": "Je fis un rêve où toutes les créatures de la forêt et moi étions à un pique-nique, mais le raton laveur a volé tout le miel... maintenant nous avons rien à mettre sur notre pain et notre beurre.",
+					 "005": "J'ai rêvé que tout le monde se moquait de moi. Je cours à la maison mais rien ne bouge. Encore et toujours.",
+					 "006": "J'ai rêvé d'un monde de forêts luxuriantes et rivières claires, entouré par des amis. Je me suis réveillé et c'était réel !",
+					 "007": "J'ai rêvé de faire toutes mes corvées. Maintenant, je suis réveillé je dois les faire une fois de plus..."
 				  },
 				  "psychopathic_misanthrope": {
-					 "000": "Went to sleep hungry again last night and dreamed for ten consecutivie hours about poyo pot pie! Raaargh! Fear my devouring mouth!",
-					 "001": "In heaven, I hope I get a lake of poyo pot pie to swim in. Swim forever!",
-					 "002": "I dreamed about eating my fellow Hearthlings. They tasted like Poyo.",
-					 "003": "I dreamed I was a goblin. I never had to work! I just stole what I needed and started fires. That was fun!",
-					 "004": "I dreamed I was back at home, and not in the woods with THESE people..."
+					 "000": "Nous sommes allés dormir avec la faim de nouveau la nuit dernière et rêvé pendant environ dix heures consécutives de poyo pot pie ! Raaargh ! Craignez ma bouche dévorante !",
+					 "001": "Dans le paradis, j'espère que je recevrais un lac de Poyo pot pie pour nager. Nager pour toujours !",
+					 "002": "J'ai rêvé de manger mes collègues Terriens. Ils avaient comme un goût de Poyo.",
+					 "003": "J'ai rêvé que j'étais un gobelin. Je ne devais pas travailler ! Je devais voler ce dont j'avais besoin et commencer des incendies. C'était amusant !",
+					 "004": "J'ai rêvé que je revenais à la maison, et non dans les bois avec CES gens..."
 				  },
 				  "generic": {
 					 "000": "First, I dreamed that I found a shiny mirror under my pillow. Then, goblins were attacking our caravan.",
@@ -2664,13 +2664,13 @@
 					 }
 				  },
 				  "beleaguered_leader": {
-					 "000": "Last night I counted sheep to get to sleep, and when I woke up, I realized that all night my dreams were about counting sheep. Joy.",
-					 "001": "I had a dream where I saw myself standing in some kind of sun-god robes on a pyramid. I had a thousand hearthlings as subjects, but they were all screaming and throwing radishes at me.",
-					 "002": "I dreamed that me and my friends lived to build a mighty empire of our own!",
-					 "003": "I dreamed that I pushed an immense boulder up a hill. When I reached the top of the hill I watched the boulder roll back down to the bottom. I then started pushing the boulder back up the hill. This happened all night long...",
-					 "004": "I had a horrible dream! I had a dream, where there were 6 other people, and we were all stuck in the- oh, wait.... that wasn't a dream.",
+					 "000": "La nuit dernière, je comptais les moutons pour trouver le sommeil, et quand je me suis réveillé, J'ai réalisé que toutes mes nuits je comptais les moutons. Joie.",
+					 "001": "Je fis un rêve où je me voyais debout dans une sorte de robes du dieu-soleil sur une pyramide. J'avais mille hearthlings en tant que sujets, mais ils étaient tous à crier et à jeter les radis sur moi.",
+					 "002": "Je rêvais que moi et mes amis vivions pour construire un puissant empire à nous !",
+					 "003": "Je rêvais que je poussai un immense rocher en haut d'une colline. Lorsque je suis arrivé au sommet de la colline que je regardais le rocher dégringoler vers le bas. Je me suis alors commencé à pousser le rocher pour remonter la pente. Ce qui est arrivé toute la nuit...",
+					 "004": "Je fis un rêve horrible ! Je fis un rêve, où il y avait 6 autres personnes, et nous étions tous coincé dans le- oh, attendez.... cela n'a pas été un rêve.",
 					 "teacher_dreams": {
-						"000": "First, I dreamed that the trees grew arms and legs and began to sing. Then, [str(entry.teacher)] asked me to sing in front of a large audience."
+						"000": "Tout d'abord, je rêvais que les arbres avaient des grands bras et grandes jambes et a commencé à chanter. Alors, [str(entry.teacher)] m'a demandé de chanter devant un large public."
 					 }
 				  }
 			   }
