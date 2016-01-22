@@ -458,6 +458,9 @@
                      "description": "Direct hearthlings into combat! Use the unit frame controls to manage the party.",
                      "tip_title": "The party is selected in the unit frame.",
                      "tip_description": "Use the commands in the unit frame to direct the people in the party."
+                  },
+                  "party": {
+                     "required_job_text": "Nécessite un fantassin"
 				  }
 			   }
 			},
@@ -1837,7 +1840,7 @@
 			"ambient_threats": {
                "random_encounter": {
                   "combat_bulletin": {
-                     "title": "Un hearthling est attaqué !"
+                     "title": "Un ennemi !"
                   }
                },
 			   "goblin_thieves": {
@@ -2023,7 +2026,7 @@
 		 "defender": {
 			"defender_buff": {
 			   "display_name": "Défenseur",
-			   "description": "Augmente le courage !"
+			   "description": "Augmente le courage et les muscles !"
 			}
 		 },
 		 "devoted": {
@@ -2114,6 +2117,18 @@
          "undead_infection": {
             "display_name": "Infected",
             "description": "Healing items are 10% less effective"
+         },
+         "courage_tonic": {
+            "courage_tonic_buff": {
+               "display_name": "Potion de courage",
+               "description": "Le courage augmente pour un court instant."
+            }
+         },
+         "minor_courage_buff": {
+            "minor_courage_buff_buff": {
+               "display_name": "Poussé de courage",
+               "description": "Petit boost de courage pendant le mode alerte"
+            }
 		 }
 	  },
 	  "build": {
@@ -4562,6 +4577,12 @@
                "display_name": "Marqueur déplacement",
                "description": "Move to this location"
             }
+         },
+         "party_command_marker": {
+            "party_command_marker_ghost": {
+               "display_name": "Marqueur d'ordre de groupe",
+               "description": "Groupe viens ici !"
+            }
 		 }
 	  },
 	  "loot": {
@@ -5338,11 +5359,11 @@
          },
          "stamina_tonic": {
             "display_name": "Potion d'endurance",
-            "description": "Buffs stamina of all hearthlings for a short while"
+            "description": "Augmente l'endurance temporairement"
          },
          "strength_tonic": {
             "display_name": "Potion de force",
-            "description": "Buffs muscle of all hearthlings for a short while"
+            "description": "Augmente les muscles temporairement"
          },
          "coarse_bandage": {
             "display_name": "Bandage grossier",
@@ -5355,6 +5376,10 @@
          "light_bandage": {
             "description": "Utilisé par l'herboriste pour guérir modérément",
             "display_name": "Bandage léger"
+         },
+         "courage_tonic": {
+            "display_name": "Potion de courage",
+            "description": "Augmente le courage temporairement"
 		 }
 	  }
    },
@@ -6889,6 +6914,10 @@
             "light_bandage_recipe": {
                "recipe_name": "Bandage léger",
                "description": "Utilisé par l'herboriste pour guérir modérément"
+            },
+            "courage_tonic_recipe": {
+               "description": "Augmente le courage de tous vos hearthlings pour un court instant.",
+               "recipe_name": "Potion de courage"
             }
          },
          "herbalist_buffs": {
