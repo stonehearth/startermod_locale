@@ -47,7 +47,8 @@
 			"restock": "range des objets",
             "resting_from_injuries": "a besoin de soins",
             "healing": "traite des blessures",
-            "healing_target": "guérit [name(data.target)]"
+            "healing_target": "guérit [name(data.target)]",
+            "dig_foundation": "creuse des fondations"
 		 }
 	  }
    },
@@ -185,7 +186,7 @@
 			"create_party": "Créer un groupe",
 			"edit_party": "Modifier",
 			"add_party_member": "Ajouter un membre",
-			"disband_party": "Dissoudre",
+			"remove_members": "Dissoudre",
 			"add_party_member_title": "Gérer la liste",
 			"done_adding_members": "Fini",
 			"add_party_member_button": "+",
@@ -310,11 +311,12 @@
 			   "refined": "Raffiné",
 			   "uncategorized": "Non classé",
 			   "workshops" : "Ateliers",
+               "consumable": "Consommable",
 			   "none": "Aucune"
 			},
 			"tooltip_combat_base_damage": "Atq :",
 			"tooltip_combat_base_damage_reduction": "Déf :",
-			"tooltip_num_undeployed": "Undeployed: [str(num_undeployed)]",
+			"tooltip_num_undeployed": "Non déployé: [str(num_undeployed)]",
 			"death_notification": "[name(i18n_data.entity)] est mort."
 		 },
 		 "menu": {
@@ -433,7 +435,7 @@
                      "display_name": "Groupes",
                      "description": "Organisez vos troupes en groupes."
 				  },
-				  "town_defense": {
+				  "town_alert": {
                      "display_name": "Mode défense de la ville !",
                      "description": "Rassemblez vos hearthlings pour défendre la ville.",
                      "activated_title": "Mode défense de la ville activé !",
@@ -770,7 +772,7 @@
 				  "tooltip_gold": "or",
 				  "tooltip_gem": "gemmes et trophés",
 				  "tooltip_food_containers": "récipients pour aliments",
-				  "tooltip_refined": "plats cuisinés",
+				  "tooltip_prepared_food": "plats cuisinés",
 				  "tooltip_ingredients": "matières premières",
                   "tooltip_healing_items": "objets curatifs"
 			   }
@@ -1833,6 +1835,11 @@
 			   }
 			},
 			"ambient_threats": {
+               "random_encounter": {
+                  "combat_bulletin": {
+                     "title": "Un hearthling est attaqué !"
+                  }
+               },
 			   "goblin_thieves": {
 				  "missions": {
 					 "raid_stockpiles": {
@@ -4034,12 +4041,6 @@
 			   "description": "Se fixe facilement aux murs"
             }
          },
-         "cactus_flower": {
-            "cactus_flower_ghost": {
-               "display_name": "Fleur de cactus",
-               "description": "Manipuler avec soin!"
-            }
-         },
          "clay_lamp": {
             "clay_lamp_ghost": {
                "display_name": "Lampe à pétrole en argile",
@@ -4048,9 +4049,7 @@
          },
          "clay_wall_lamp": {
             "clay_wall_lamp_ghost": {
-               "display_name": "Wall Clay Lamp",
                "display_name": "Lampe murale en argile",
-               "description": "Provides a warm glow at night."
                "description": "Fournit une lueur chaude pendant la nuit."
             }
          },
@@ -4110,8 +4109,6 @@
          },
          "golden_clay_wall_planter": {
             "golden_clay_wall_planter_ghost": {
-               "display_name": "Golden Clay Planter",
-               "description": "Livens up walls"
                "display_name": "Pot mural doré en argile",
                "description": "Agrémente les murs"
             }
@@ -4144,7 +4141,7 @@
                "description": "Divinement nourrissant."
 			},
 			"corn_basket": {
-               "display_name": "Panier de Maïs",
+               "display_name": "Panier de maïs",
                "description": "Doux et croquant."
 			},
 			"corn_serving": {
@@ -4529,7 +4526,7 @@
 	  "gizmos": {
 		 "camp_standard": {
 			"camp_standard_ghost": {
-               "display_name": "Bannière de ralliement",
+               "display_name": "Étendard de campement",
                "description": "Utilisée pour marquer un territoire de manière civilisée."
 			}
 		 },
@@ -4542,9 +4539,9 @@
             "description": "Garder cette position en mode de défense de la ville."
          },
          "safety_standard": {
-            "display_name": "Balise de sécurité en bois",
+            "display_name": "Étendard de sécurité en bois",
             "clay_safety_standard": {
-               "display_name": "Balise de sécutité en argile"
+               "display_name": "Étendard de sécutité en argile"
             },
             "description": "Marquer un point de sécurité pour se regrouper en mode alerte de ville"
          },
@@ -4622,7 +4619,7 @@
 			},
 			"goblin_boss_banner": {
 			   "goblin_boss_banner_ghost": {
-				  "display_name": "Ogo Cognecrâne Standard",
+				  "display_name": "Étendard d'Ogo Cognecrâne",
 				  "description": "Clearly indicates goblin-boss-status"
 			   }
 			},
@@ -4913,8 +4910,8 @@
                "description": "Transformable en fil."
             },
             "coarse_fiber_bundle": {
-               "display_name": "Coarse Fiber Bundle",
-               "description": "Rough and itchy"
+               "display_name": "Ballot de fibres grossières",
+               "description": "Rugueux et ça gratte"
 			}
 		 },
 		 "gold": {
@@ -5004,15 +5001,15 @@
          "herb": {
             "brightbell": {
                "display_name": "Fleurs jacinthe rose",
-               "description": "An herb commonly used for medicinal purposes"
+               "description": "Une plante couramment utilisé à des fins médicinales"
             },
             "frostsnap": {
                "display_name": "Fleurs perce-neige",
-               "description": "An herb that's chill to the touch"
+               "description": "Une fleur qui est froide au toucher"
             },
             "cactus_flower": {
                "display_name": "Fleur de cactus",
-               "description": "A beautiful desert bloom with healing properties"
+               "description": "Une magnifique fleur du désert avec des propriétés médicinales"
             }
          },
          "skin": {
@@ -5147,8 +5144,8 @@
                "description": "Une mystérieuse aura l'entoure."
 			},
             "small_acacia_tree": {
-               "display_name": "Small Acacia Tree",
-               "description": "Young, but hearty"
+               "display_name": "Petit acacia",
+               "description": "Jeune, mais vigoureux"
             }
 		 },
 		 "joshua_tree": {
@@ -5328,15 +5325,15 @@
             }
          },
          "scythe": {
-            "display_name": "Scythe",
-            "description": "Preferred weapon for reaping"
+            "display_name": "Faux",
+            "description": "Arme favorite pour faucher"
          }
       },
       "consumables": {
          "healing_tonic": {
             "small_healing_tonic": {
-               "display_name": "Small Healing Tonic",
-               "description": "Used by the herbalist to heal small wounds"
+               "display_name": "Petit potion de guérison",
+               "description": "Utilisé par l'herboriste pour guérir les petites blessures"
 			}
          },
          "stamina_tonic": {
@@ -5845,7 +5842,7 @@
             },
             "safety_standard_recipe": {
                "description": "Utilisé pour désigner un point de sécurité",
-               "recipe_name": "Balise de sécurité en bois"
+               "recipe_name": "Étendard de sécurité en bois"
             },
             "wooden_tunnel_door_recipe": {
                "recipe_name": "Porte de tunnel en bois",
@@ -5981,8 +5978,8 @@
                "recipe_name": "Four à bois"
  			},
             "corn_meal_recipe": {
-               "description": "Corn ground into a fine powder",
-               "recipe_name": "Corn Meal"
+               "description": "Grain de maïs en poudre fine",
+               "recipe_name": "Semoule de maïs"
 			}
 		 },
 		 "cook_mill": {
@@ -6029,7 +6026,8 @@
 		 },
 		 "farmer_buffs": {
 			"speed_1_buff": {
-               "description": "Transporter les produits frais des champs à la table a finit par augmenter la vitesse de l'agriculteur."
+               "description": "Transporter les produits frais des champs à la table a finit par augmenter la vitesse de l'agriculteur.",
+               "display_name": "Augmentation de la vitesse de l'agriculteur +10"
 			}
 		 },
 		 "farmer_hoe": {
@@ -6074,15 +6072,15 @@
 		 "footman_buffs": {
 			"damage_1_buff": {
 			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
-               "display_name": "Damage +20%"
+               "display_name": "Dégat +20%"
 			},
 			"damage_2_buff": {
 			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
-               "display_name": "Damage +20%"
+               "display_name": "Dégat +20%"
 			},
 			"damage_3_buff": {
 			   "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
-               "display_name": "Damage +20%"
+               "display_name": "Dégat +20%"
 			}
 		 },
 		 "footman_outfit": {
@@ -6109,7 +6107,7 @@
             "description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
             "requirements": "Maillet et ciseaux de tailleur de pierre, fabriqués par le menuisier.",
 			"workshop": {
-               "name": "Mason's Workshop",
+               "name": "Atelier de tailleur de pierre",
                "description": "insert description here",
                "long_description": "The Mason crafts building materials and decorative items from stone."
             },
@@ -6350,7 +6348,7 @@
             },
             "clay_safety_standard_recipe": {
                "description": "Utilisez de désigner un point de sécurité",
-               "recipe_name": "Balise de sécurité en argile"
+               "recipe_name": "Étendard de sécurité en argile"
             },
             "building_parts_name": "Building Parts",
             "clay_bricks_recipe": {
