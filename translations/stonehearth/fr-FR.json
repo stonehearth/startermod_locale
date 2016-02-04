@@ -218,6 +218,10 @@
             "manage_party": {
                "display_name": "Modifier les groupes",
                "description": "Add and remove combat units from the party."
+            },
+            "cancel_order": {
+               "display_name": "Cancel Combat Order",
+               "description": "Cancels active combat orders."
             }
 		 },
 		 "citizens": {
@@ -449,13 +453,13 @@
                   },
                   "party_1": {
                      "display_name": "Groupe de combat 1",
-                     "description": "Direct hearthlings into combat! Promoted combat classes are automatically added here.",
+                     "description": "Direct hearthlings with combat jobs into battle! Promoted combat classes are automatically added here.",
                      "tip_title": "The party is selected in the unit frame.",
                      "tip_description": "Use the commands in the unit frame to direct the people in the party."
                   },
                   "party_2": {
                      "display_name": "Groupe de combat",
-                     "description": "Direct hearthlings into combat! Use the unit frame controls to manage the party.",
+                     "description": "Direct hearthlings with combat jobs into battle! Use the unit frame controls to manage the party.",
                      "tip_title": "The party is selected in the unit frame.",
                      "tip_description": "Use the commands in the unit frame to direct the people in the party."
                   },
@@ -877,7 +881,7 @@
                "001": "aiguisage des angles droits ...",
 			   "002": "décompression des voxels ...",
 			   "003": "synthétisation de la faune ...",
-			   "004": "redistribution des redistribuable ...",
+			   "004": "redistribution des redistribuables ...",
 			   "005": "terrassement du terrain ...",
 			   "006": "range le désordre ...",
 			   "007": "gonflage des arbres ...",
@@ -1083,10 +1087,10 @@
 		 "post_bug": {
             "title": "Rapport de bug",
             "message": "Merci de participer à la version Alpha de Stonehearth ! Voici comment remonter un bug :",
-            "file_bug_step_1": "active-bug",
-            "file_bug_step_2": "Vérifiez la liste de sujets actifs at si votre bug n'a pas encore été remonté, créez un nouveau sujet",
-            "file_bug_step_3": "Quand vous remontez un bug, incluez s'il vous plait une capture d'écran de l'erreur affichée",
-            "file_bug_step_4": "Si vous remontez un crash, ajoutez votre identifiant unique d'utilisateur"
+            "file_bug_step_1": "Allez sur http://discourse.stonehearth.net/c/support/bug-reports",
+            "file_bug_step_2": "Check the list of active topics, and if your bug hasn't already been reported, create a new topic",
+            "file_bug_step_3": "When filing bugs, please be sure to include all the information requested in the report, and copy the text of all engine errors. Screenshots for visual bugs are also helpful.",
+            "file_bug_step_4": "If you're encountering a crashing bug, please check out http://discourse.stonehearth.net/t/13297 for common solutions, and how to get support for crashes. Below is your unique user id:"
          },
          "error_browser": {
             "title": "Erreur du moteur",
@@ -1189,7 +1193,7 @@
 			},
 			"mind": {
                "display_name": "Esprit",
-               "description": "Faculté à raisonner brillamment. Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes. Influence la concentration, la curiosité et la créativité"
+               "description": "Faculté à raisonner brillamment. Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes comme l'artisanat. Influence la concentration, la curiosité et la créativité"
 			},
 			"curiosity": {
                "display_name": "Curiosité",
@@ -1199,8 +1203,8 @@
 			   }
 			},
 			"spirit": {
-               "display_name": "Ame",
-               "description": "Foie dans le prochain. Un hearthling d'une grande Ame sera apprécié par les tiens et sera un rempart contre l'ennemi. Influence le courage, la volonté et la compassion"
+               "display_name": "Âme",
+               "description": "Foie dans le prochain. Un hearthling d'une grande âme sera apprécié par les animaux et sera un rempart contre l'ennemi. Influence le courage, la volonté et la compassion"
 			},
 			"safety": {
                "display_name": "Sécurité",
@@ -1965,6 +1969,17 @@
                      "description": "L'espèce la plus grande."
                   }
                },
+               "giant_wolf_raid_4": {
+                  "wolf": {
+                     "display_name": "Loup géant",
+                     "description": "Terriblement grand... et pleins de dents"
+                  }
+               },
+               "entling_raid_7": {
+                  "giant_entlings": {
+                     "display_name": "Entling géant"
+                  }
+               },
                "arcs": {
                   "trigger": {
                      "ambient_threats": {
@@ -2086,37 +2101,37 @@
          },
          "injured": {
             "injured_buff": {
-               "display_name": "Injured",
-               "description": "Moving slower due to low health."
+               "display_name": "Blessé",
+               "description": "Déplacement ralentit en raison de la faible santé."
             }
          },
          "recovering": {
             "recovering_buff": {
-               "display_name": "Bed Ridden",
+               "display_name": "Alité",
                "description": "Slowly recovering from injuries. Can receive medical care from herbalists."
             }
          },
          "stamina_tonic": {
             "stamina_tonic_buff": {
-               "display_name": "Stamina Tonic",
+               "display_name": "Potion d'endurance",
                "description": "Slightly more healthy"
             }
          },
          "strength_tonic": {
             "strength_tonic_buff": {
-               "display_name": "Strength Tonic",
+               "display_name": "Potion de force",
                "description": "Slightly more buff"
 			}
          },
          "severely_injured": {
             "severely_injured_buff": {
-               "display_name": "Severly Injured",
+               "display_name": "Gravement blessé",
                "description": "Wounded badly! This hearthling can hardly walk!"
             }
          },
          "undead_infection": {
-            "display_name": "Infected",
-            "description": "Healing items are 10% less effective"
+            "display_name": "Infecté",
+            "description": "Empêche la récupération de santé naturel acquis par la volonté."
          },
          "courage_tonic": {
             "courage_tonic_buff": {
@@ -2281,6 +2296,14 @@
          "edit_party": {
             "display_name": "Edit Party",
             "description": "Add and remove combatants from this party."
+         },
+         "cancel_marker": {
+            "display_name": "Cancel Marker",
+            "description": "Cancels the combat orders represented by this marker"
+         },
+         "select_owner": {
+            "display_name": "Select Owner",
+            "description": "Selects the combatants influenced by this marker"
 		 }
 	  },
 	  "personality": {
@@ -3199,17 +3222,53 @@
 			"wooden_shield_iconic": {
 			   "display_name": "Bouclier en bois brut",
 			   "description": "Brut et basique"
+            }
+         },
+         "bronze_circlet": {
+            "display_name": "Tiare en bronze",
+            "description": "Protection for your head",
+            "bronze_circlet_iconic": {
+               "display_name": "Leather Skull Cap",
+               "description": "Protection for your head"
+            }
+         },
+         "bronze_shield": {
+            "display_name": "Bouclier en bronze",
+            "description": "Useful for blocking attacks"
+         },
+         "iron_coif": {
+            "display_name": "Camail en fer",
+            "description": "Protection for your head",
+            "iron_coif_iconic": {
+               "display_name": "Iron Coif",
+               "description": "Protection for your head"
+            }
+         },
+         "leather_helmet": {
+            "display_name": "Toque en cuir",
+            "description": "Protection for your head",
+            "leather_helmet_iconic": {
+               "display_name": "Leather Skull Cap",
+               "description": "Protection for your head"
+            }
+         },
+         "steel_helmet": {
+            "display_name": "Casque en acier",
+            "description": "Protection for your head",
+            "steel_helmet_iconic": {
+               "display_name": "Steel Helmet",
+               "description": "Protection for your head"
 			}
 		 }
 	  },
 	  "boulders": {
 		 "large_boulder": {
 			"large_boulder_1": {
-			   "display_name": "Énorme rocher",
+			   "display_name": "Rocher énorme",
 			   "description": "Exploitable pour de la pierre"
 			},
 			"large_boulder_2": {
-			   "display_name": "Énorme rocher",
+			   "display_name": "Rocher énorme",
 			   "description": "Exploitable pour de la pierre"
 			}
 		 },
@@ -4354,6 +4413,10 @@
             "vegetable_tagine_serving": {
                "display_name": "Bowl of Veggie Stew"
             }
+         },
+         "rotten_basket": {
+            "display_name": "Panier de nourriture moisie",
+            "description": "Si pourrie qu'elle n'a plus ni forme ni utilitée."
 		 }
 	  },
 	  "furniture": {
@@ -4583,6 +4646,12 @@
                "display_name": "Marqueur d'ordre de groupe",
                "description": "Groupe viens ici !"
             }
+         },
+         "individual_command_marker": {
+            "individual_command_marker_ghost": {
+               "display_name": "Marqueur de commande",
+               "description": "Représente une commande de combat."
+            }
 		 }
 	  },
 	  "loot": {
@@ -4628,12 +4697,12 @@
 				  "display_name": "Une bannière"
 			   },
 			   "skull_stake": {
-				  "display_name": "A stake"
+				  "display_name": "Un pieu"
 			   }
 			},
 			"goblin": {
 			   "display_name": "[str(self.unit_info.custom_name)]",
-			   "description": "Attracted to shiny things"
+			   "description": "Attiré par les choses brillantes"
 			},
 			"goblin_barricade": {
 			   "display_name": "A barricade"
@@ -4645,7 +4714,7 @@
 			   }
 			},
 			"goblin_boss_hut": {
-			   "display_name": "Boss Hut",
+			   "display_name": "Cabane du boss",
 			   "description": "Dirty white, like the color of winter."
 			},
 			"goblin_chief_hut": {
@@ -5599,6 +5668,23 @@
                "description": "Un rangement massif pour 256 objets !",
                "recipe_name": "Le coffre",
                "flavor": "Conçu par Arci le brillant, survivant du Chaat"
+            },
+            "iron_coif_recipe": {
+               "description": "Protection for your head",
+               "recipe_name": "Camail en fer"
+            },
+            "steel_helmet_recipe": {
+               "description": "Extra protection for your noggin!",
+               "recipe_name": "Casque en acier"
+            },
+            "bronze_circlet_recipe": {
+               "description": "Protection for your head!",
+               "recipe_name": "Tiare en bronze",
+               "flavor": "So regal. So stylish!"
+            },
+            "bronze_shield_recipe": {
+               "description": "Increase armor and blocks attacks!",
+               "recipe_name": "Bouclier en bronze"
             }
 		 }
 	  },
@@ -5724,7 +5810,7 @@
 			},
             "tools_weapons_name": "Outils et armes",
             "storage_name": "Rangement",
-            "building_parts_name": "Elements de construction",
+            "building_parts_name": "Éléments de construction",
             "armor_name": "Armures",
             "furniture_name": "Meubles",
             "workbench_name": "Ateliers",
@@ -6763,6 +6849,10 @@
                "description": "Utilisé pour des confections compliquées à partir de fil est et de tissus.",
                "recipe_name": "Banc de tisserand",
                "flavor": "Au commencement il n'y avait rien et puis il y eu l'araignée."
+            },
+            "leather_helmet_recipe": {
+               "description": "Light-weight protection for your head!",
+               "recipe_name": "Toque en cuir"
 			}
 		 },
 		 "weaver_loom": {
