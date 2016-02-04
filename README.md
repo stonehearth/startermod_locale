@@ -4,7 +4,7 @@
 The overrides method allows any mod to provide a translation for any other mod.
 
 ##About
-Example mod of adding a new language to stonehearth.
+A mod adding French language to stonehearth.
 
 Instructions for use: Download the mod. Unzip to your stonehearth mods directory, as a peer to stonehearth.smod and radiant.smod. Make sure the folder is named startermod_locale, not startermod_locale-master.
 
