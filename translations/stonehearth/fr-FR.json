@@ -205,23 +205,23 @@
             "focus_camera": "Centrer la caméra sur cette unité",
             "attack_target": {
                "display_name": "Attaquer une cible",
-               "description": "Attack a specific enemy at the exclusion of all others, or attack anything near a location, and everything in between."
+               "description": "Attaque un ennemi spécifique à l'exclusion de tous les autres, ou attaque n'importe quoi près de l'emplacement, et entre."
             },
             "defend_location": {
                "display_name": "Défendre un lieu",
-               "description": "Run towards, then stay at this location, attacking anything in the path."
+               "description": "Courir vers, rester en position, et attaquer quoi que ce soit dans le chemin."
             },
             "move_unit": {
                "display_name": "Se déplacer",
-               "description": "Move to a location, ignoring all intervening threats."
+               "description": "Déplacer à un endroit, en ignorant toutes les menaces."
             },
             "manage_party": {
                "display_name": "Modifier les groupes",
-               "description": "Add and remove combat units from the party."
+               "description": "Ajouter ou supprimer une unité dans le groupe."
             },
             "cancel_order": {
-               "display_name": "Cancel Combat Order",
-               "description": "Cancels active combat orders."
+               "display_name": "Annuler les ordres de combat",
+               "description": "Annule les ordres de combat actif."
             }
          },
          "citizens": {
