@@ -14,6 +14,12 @@ The startermod_locale mod adds a pseudolocalization of stonehearth's and rayya c
 
 When you start up Stonehearth with this mod installed, open the settings menu and go to the system tab. You will see that a language named "[!!Ēņģľĭšħ!!]" will be added to the list of languages. Selecting the "[!!Ēņģľĭšħ!!]" language and clicking "OK" will change the game's language.
 
+##How to contribute to french translation?
+
+**Contributing "not collaborator"** | **Contributing collaborator**
+--- | ---
+1. Fork it!<br> 2. Create your feature branch: `git checkout -b my-new-feature`<br> 3. Commit your changes: `git commit -m "Add your new feature"`<br> 4. Push to the branch: `git push origin my-new-feature`<br> 5. Submit a pull request. | 1. Create your feature branch: `git checkout -b my-new-feature`<br> 2. Commit your changes: `git commit -m 'Add some new feature'`<br> 3. Push to the branch: `git push origin my-new-feature`<br> 4. Submit a pull request.<br> Optional : Add/Set labels and milestone =)
+
 ##How it works:
 
 1) startermod_locale's manifest.json uses this line:<br>
