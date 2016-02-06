@@ -196,8 +196,8 @@
             "party_editor_help": "Utilisez cet écran pour ajouter des hearthlings aux groupes.",
             "attack_banner_button": "Ordre d'attaque",
             "attack_banner_button_help": "Envois le groupe attaquer une position",
-            "defend_banner_button": "Ralliement & Ordre de Defense",
-            "defend_banner_button_help": "Envois le groupe rallier une zone quand le Mode de Defense de la Ville est activé",
+            "defend_banner_button": "Ralliement et ordre de défense",
+            "defend_banner_button_help": "Envois le groupe rallier une zone quand le mode de défense de la ville est activé",
             "default_name": "Groupe No.[str(party.ord)]"
          },
          "unit_frame": {
@@ -213,7 +213,7 @@
             },
             "move_unit": {
                "display_name": "Se déplacer",
-               "description": "Déplacer à un endroit, en ignorant toutes les menaces."
+               "description": "Se déplacer à un endroit, en ignorant toutes les menaces."
             },
             "manage_party": {
                "display_name": "Modifier les groupes",
@@ -449,7 +449,7 @@
                      "display_name": "Butin",
                      "description": "Pillez les biens des ennemis.",
                      "tip_title": "Cliquez et tirez pour piller les objets au sol.",
-                     "tip_description": "Click droit pour sortir de ce mode"
+                     "tip_description": "Clique droit pour sortir de ce mode"
                   },
                   "party_1": {
                      "display_name": "Groupe de combat 1",
@@ -1170,7 +1170,7 @@
                "display_name": "Force",
                "description": "C'est la force du hearthling",
                "bullet_points": {
-                  "000": "Tous les 10 points de Constitution augmentent les domages de 1"
+                  "000": "Tous les 10 points de constitution augmentent les domages de 1"
                }
             },
             "happiness": {
