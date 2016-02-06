@@ -3157,10 +3157,10 @@
    "entities": {
       "armor": {
          "basic_shield": {
-            "display_name": "Bouclier fidèle",
+            "display_name": "Bouclier en acier",
             "description": "Armure portable !",
             "basic_shield_iconic": {
-               "display_name": "Bouclier fidèle",
+               "display_name": "Bouclier en acier",
                "description": "Armure portable !"
             }
          },
@@ -5546,8 +5546,8 @@
          "recipes": {
             "basic_shield_recipe": {
                "description": "Permet de bloquer complètement les attaques.",
-               "flavor": "Protection incroyable. Les enfants peuvent jouer à la tortue dessous.",
-               "recipe_name": "Bouclier fidèle"
+               "flavor": "Incroyable protecteur. Les enfants peuvent jouer à la tortue dessous.",
+               "recipe_name": "Bouclier en acier"
             },
             "iron_shield_recipe": {
                "description": "Lourd mais efficace.",
