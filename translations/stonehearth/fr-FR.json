@@ -6931,65 +6931,65 @@
                "long_description": "Allows the Herbalist to craft healing balms and bandages."
             },
             "level_1_data": {
-               "perk_000_name": "Improved Willpower",
+               "perk_000_name": "Volonté amélioré",
                "perk_000_description": "The herbalist channels the spirits of the forest and gains natural regeneration."
             },
             "level_2_data": {
-               "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The herbalist is now skillful enough to use materials created by the other crafters."
+               "perk_000_name": "Perspectives de collaboration",
+               "perk_000_description": "L'herboriste est maintenant assez habile pour utiliser des matériaux créés par les autres artisans."
             },
             "level_4_data": {
-               "perk_000_name": "Power Medic",
-               "perk_000_description": "The herbalist can now attend to up to 4 hearthlings at a time."
+               "perk_000_name": "Médecin puissant",
+               "perk_000_description": "L'herboriste peut s'occuper de 4 hearthlings d'un coup."
             },
             "level_0_data": {
-               "perk_000_name": "Junior Practitioner",
-               "perk_000_description": "The herbalist can attend to 2 hurt hearthlings at a time."
+               "perk_000_name": "Praticien débutant",
+               "perk_000_description": "L'herboriste peut s'occuper de 2 hearthlings d'un coup."
             },
             "level_3_data": {
-               "perk_000_name": "Item Proficiency",
-               "perk_000_description": "The herbalist's medical prowess increases the effectiveness of healing items by 50%."
+               "perk_000_name": "Maîtrise des objets",
+               "perk_000_description": "Les prouesses médical de l'herboriste augmente l'efficacité des objets de guérison de 50%."
             }
          },
          "herbalist_outfit": {
-            "display_name": "Herbalist Outfit",
-            "description": "Traditional robes of the Herbalist"
+            "display_name": "Tenue d'herboriste",
+            "description": "Robes traditionnelles de l'herboristerie"
          },
          "herbalist_staff": {
             "display_name": "Bâton d'herboriste",
-            "description": "Required to promote a hearthling into an Herbalist",
+            "description": "Nécessaire pour promouvoir un hearthling en herboriste",
             "herbalist_staff_iconic": {
                "display_name": "Bâton d'herboriste",
                "description": "Nécessaire pour promouvoir un hearthling en herboriste"
             },
             "herbalist_staff_talisman": {
-               "display_name": "Herbalist Staff",
+               "display_name": "Bâton d'herboriste",
                "description": "Nécessaire pour promouvoir un hearthling en herboriste"
             }
          },
          "herbalist_workbench": {
             "herbalist_workbench_ghost": {
                "display_name": "Labo. d'herboriste",
-               "description": "Used to craft healing items"
+               "description": "Utilisé pour fabriquer des objets de guérison"
             }
          },
          "recipes": {
             "herbalist_workbench_recipe": {
-               "description": "Allows the Herbalist to craft healing balms and bandages.",
-               "recipe_name": "Herbalist Lab"
+               "description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages.",
+               "recipe_name": "Labo. d'herboriste"
             },
             "workbenches_name": "workbenches",
             "tonics_name": "Potions",
             "small_healing_tonic_recipe": {
-               "description": "A medicinal drink that heals for a minuscule amount",
-               "recipe_name": "Small Healing Tonic"
+               "description": "Une boisson médicinale qui guérit un tout petit peu",
+               "recipe_name": "Petite potion de soin"
             },
             "stamina_tonic_recipe": {
-               "description": "Buffs stamina of all hearthlings for a short while",
+               "description": "Augmente l'endurance de tous les hearthlings un court instant",
                "recipe_name": "Potion d'endurance"
             },
             "strength_tonic_recipe": {
-               "description": "Buffs muscle of all hearthlings for a short while",
+               "description": "Augmente la force de tous les hearthlings un court instant",
                "recipe_name": "Potion de force"
             },
             "bandages_name": "Bandages",
@@ -7012,8 +7012,8 @@
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
-               "display_name": "Willpower +50",
-               "description": "The herbalist has improved health regeneration"
+               "display_name": "Bolonté +50",
+               "description": "L'herboriste a amélioré la régénération de santé"
             }
          }
       }
@@ -7034,7 +7034,7 @@
          "food_decay": {
             "food_decay": {
                "decay_1": {
-                  "description": "À commencer à pourrir. Il vaut mieux le manger rapidement."
+                  "description": "A commencer à pourrir. Il vaut mieux le manger rapidement."
                },
                "decay_2": {
                   "description": "Pourri. Beurk."
@@ -7057,8 +7057,8 @@
       },
       "resources": {
          "fur_pelt": {
-            "display_name": "Fur pelt",
-            "description": "Soft, supple, and quite dead"
+            "display_name": "Fourrure",
+            "description": "Douce, souple et bien mort"
          }
       }
    }
