@@ -6686,7 +6686,8 @@
          },
          "trapper_buffs": {
             "speed_1_buff": {
-               "description": "Les longues marches ont finis par améliorer la vitesse du trappeur."
+               "description": "Les longues marches ont finis par améliorer la vitesse du trappeur.",
+               "display_name": "Trapper Speed Increase +10"
             }
          },
          "trapper_knife": {
