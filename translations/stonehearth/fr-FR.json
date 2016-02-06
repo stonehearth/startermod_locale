@@ -287,13 +287,13 @@
             "post_bug": "Signaler un bug",
             "exit_confirm_dialog": {
                "title": "Quitter le jeu",
-               "message": "Voullez-vous vraiment quitter le jeu? Les changements non sauvegardés seront perdus.",
+               "message": "Voulez-vous vraiment quitter le jeu ? Les changements non sauvegardés seront perdus.",
                "yes_button": "Oui",
                "cancel_button": "Annuler"
             },
             "return_to_menu_dialog": {
                "title": "Retourner au menu principal",
-               "message": "Quitter la partie et retourner au menu principal?",
+               "message": "Quitter la partie et retourner au menu principal ?",
                "yes_button": "Oui",
                "cancel_button": "Annuler"
             }
@@ -627,9 +627,9 @@
                "title": "Pentes, directions et tailles",
                "max_height": "Hauteur max.",
                "rise_slope": "Augmenter la pente",
-               "y_offset": "Roof Offset",
-               "show_gradient": "Slope",
-               "show_margin": "Overhang"
+               "y_offset": "Toit Décalé",
+               "show_gradient": "Pente",
+               "show_margin": "Surplomb"
             },
             "building_templates": {
                "title": "Bibliothèque de plans",
@@ -639,10 +639,10 @@
                   "cottage_for_two": "Maisonette pour deux",
                   "shared_sleeping_quarters": "Dortoir",
                   "dining_hall": "Salle de banquet",
-                  "little_clay_house": "Little Clay House",
-                  "clay_house_for_two": "Clay House for Two",
-                  "clay_dining_room": "Clay Dining Room",
-                  "clay_dormitory": "Clay Dormitory"
+                  "little_clay_house": "Petite maison en argile",
+                  "clay_house_for_two": "Maison en argile pour deux",
+                  "clay_dining_room": "Salle à manger en argile",
+                  "clay_dormitory": "Dortoir en argile"
                },
                "set_template_name_title": "Nom du plan",
                "template_default_name": "Mon dernier plan",
@@ -654,38 +654,38 @@
             "materials": {
                "wall": {
                   "material": "Matériaux pour murs",
-                  "wood_resource": "Murs en bois",
-                  "stone_resource": "Murs en pierre",
-                  "clay_resource": "Murs en argile",
-                  "clay_brick_resource": "Clay Brick Wall"
+                  "wood_resource": "Mur en bois",
+                  "stone_resource": "Mur en pierre",
+                  "clay_resource": "Mur en argile",
+                  "clay_brick_resource": "Mur en brique d'argile"
                },
                "floor": {
                   "material": "Matériaux pour sols",
                   "wood_resource": "Plancher en bois",
                   "stone_resource": "Sol en pierre",
                   "clay_resource": "Sol en argile",
-                  "clay_brick_resource": "Clay Brick Floor"
+                  "clay_brick_resource": "Sol en brique d'argile"
                },
                "roof": {
                   "material": "Matériaux de toitures",
                   "wood_resource": "Tuiles en bois",
                   "stone_resource": "Tuiles en pierre",
                   "clay_resource": "Tuiles en argile",
-                  "clay_brick_resource": "Clay Brick Roof"
+                  "clay_brick_resource": "Tuiles en brique d'argile"
                },
                "column": {
                   "material": "Matériaux pour colonnes",
                   "wood_resource": "Colonnes en bois",
                   "stone_resource": "Colonnes en pierre",
                   "clay_resource": "Colonnes en argile",
-                  "clay_brick_resource": "Clay Brick Column"
+                  "clay_brick_resource": "Colonnes en brique d'argile"
                },
                "road": {
                   "material": "Matériaux pour routes",
                   "wood_resource": "Route en bois",
                   "stone_resource": "Route en pierre",
                   "clay_resource": "Route en argile",
-                  "clay_brick_resource": "Clay Brick Road"
+                  "clay_brick_resource": "Route en brique d'argile"
                },
                "doors": {
                   "material": "Matériaux pour portes",
@@ -1011,7 +1011,7 @@
             "force_32_bit": "* Forcer le mode 32-bit (redémarrage requis)",
             "force_32_bit_note": "* Forcer le mode 32-bit seulement si c'est absolument nécéssaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
             "enable_lua_jit": "Utiliser Lua JIT (redémarrage requis)",
-            "send_anon_data": "Envoyer des données anonymes pour améliorer Stonehearth!",
+            "send_anon_data": "Envoyer des données anonymes pour améliorer Stonehearth !",
             "language_select": "Langue",
             "gameplay_tab": {
                "title": "Gameplay",
@@ -1021,7 +1021,7 @@
                "enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. Soyez en averti !",
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
-               "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
+               "default_storage_filter_none_description": "Lors de la création d'une nouvelle réserve ou d'une nouvelle caisse déposé, le filtre par défaut sur le stockage sera réglé sur 'Aucun' au lieu de 'Tout'",
                "max_citizens": "Hearthlings max."
             }
          },
@@ -1037,9 +1037,9 @@
             "patch_notes": "Afficher les notes de mise à jour",
             "alpha_welcome_dialog": {
                "title": "Bienvenue dans Stonehearth !",
-               "message": "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
+               "message": "Attention : ceci est un logiciel de qualité Alpha. Il manque de nombreuses fonctionnalités, et vous pouvez rencontrer des bugs quand vous jouez.<br><br>Vous pouvez nous aider en nous envoyant automatiquement les rapports d'erreur de votre jeu. Voulez-vous le faire ?",
                "accept": "Oui, envoyer les rapports d'erreurs",
-               "cancel": "Nope"
+               "cancel": "Non merci"
             }
          },
          "select_game_story": {
@@ -1077,7 +1077,7 @@
             "finished": "Embarquer !",
             "no_talisman_confirm_dialog": {
                "title": "Embarquer",
-               "message": "Etes-vous sûr de vouloir embarquer sans choisir un outil de la boutique? Comme toujours, vous obtiendrez une scie de charpentier.",
+               "message": "Etes-vous sûr de vouloir embarquer sans choisir un outil de la boutique ? Comme toujours, vous obtiendrez une scie de charpentier.",
                "accept": "Oui, à la dure !",
                "cancel": "Attendez !"
             }
@@ -1088,9 +1088,9 @@
             "title": "Rapport de bug",
             "message": "Merci de participer à la version Alpha de Stonehearth ! Voici comment remonter un bug :",
             "file_bug_step_1": "Allez sur http://discourse.stonehearth.net/c/support/bug-reports",
-            "file_bug_step_2": "Check the list of active topics, and if your bug hasn't already been reported, create a new topic",
-            "file_bug_step_3": "When filing bugs, please be sure to include all the information requested in the report, and copy the text of all engine errors. Screenshots for visual bugs are also helpful.",
-            "file_bug_step_4": "If you're encountering a crashing bug, please check out http://discourse.stonehearth.net/t/13297 for common solutions, and how to get support for crashes. Below is your unique user id:"
+            "file_bug_step_2": "Consultez la liste des sujets actifs, et si votre bug n'a pas déjà été signalé, créer un nouveau sujet.",
+            "file_bug_step_3": "Lors du dépôt d'un bug, assurez-vous s'il vous plaît d'inclure toutes les informations demandées dans le rapport, et copiez le texte de toutes les erreurs du moteur. Les captures d'écran sont également très utiles pour les bugs visuels.",
+            "file_bug_step_4": "Si vous rencontrez un crash bug, s'il vous plait vérifier à cette adresse http://discourse.stonehearth.net/t/13297 des solutions communes, et comment optenir de l'aide pour l'incident. Ci-dessous votre identitée unique d'utilisateur:"
          },
          "error_browser": {
             "title": "Erreur du moteur",
@@ -1213,7 +1213,7 @@
             },
             "militia": {
                "display_name": "Milice",
-               "description": "In Town Alert Mode, militia members will hold their ground against enemies instead of running to a safety banner. In addition, they receive an extra boost of Courage and Muscle."
+               "description": "En mode ville en alerte, les membres de la milice tiendront leurs défenses contre les ennemis au lieu de courir sous la bannière de sécurité. De plus, il reçoivent un bonus supplémentaires de Courage et Muscle."
             }
          },
          "constants": {
