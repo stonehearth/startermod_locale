@@ -217,11 +217,11 @@
             },
             "manage_party": {
                "display_name": "Modifier les groupes",
-               "description": "Ajouter ou supprimer une unité dans le groupe."
+               "description": "Ajouter ou supprimer les unités de combats des groupes."
             },
             "cancel_order": {
                "display_name": "Annuler les ordres de combat",
-               "description": "Annule les ordres de combat actif."
+               "description": "Annule les ordres de combat en cours."
             }
          },
          "citizens": {
@@ -235,8 +235,8 @@
                "mine": "Mine",
                "job": "Job",
                "current_activity": "Activité actuel ...",
-               "militia": "Militia",
-               "status": "Status"
+               "militia": "Milice",
+               "status": "Statut"
             },
             "show_character_sheet": "Plus d'info.",
             "button_suspend": "stopper",
@@ -624,10 +624,10 @@
                "start_editing": "Editer"
             },
             "roof_shape": {
-               "title": "Pentes, directions et tailles",
+               "title": "Pente, direction et taille",
                "max_height": "Hauteur max.",
                "rise_slope": "Augmenter la pente",
-               "y_offset": "Toit Décalé",
+               "y_offset": "Courbure du toit",
                "show_gradient": "Pente",
                "show_margin": "Surplomb"
             },
@@ -671,7 +671,7 @@
                   "wood_resource": "Tuiles en bois",
                   "stone_resource": "Tuiles en pierre",
                   "clay_resource": "Tuiles en argile",
-                  "clay_brick_resource": "Tuiles en brique d'argile"
+                  "clay_brick_resource": "Toit en brique d'argile"
                },
                "column": {
                   "material": "Matériaux pour colonnes",
@@ -1021,7 +1021,7 @@
                "enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. Soyez en averti !",
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
-               "default_storage_filter_none_description": "Lors de la création d'une nouvelle réserve ou d'une nouvelle caisse déposé, le filtre par défaut sur le stockage sera réglé sur 'Aucun' au lieu de 'Tout'",
+               "default_storage_filter_none_description": "Lors de la création d'une nouvelle réserve ou au posage d'une nouvelle caisse, le filtre par défaut sur le stockage sera réglé sur 'Aucun' au lieu de 'Tout'",
                "max_citizens": "Hearthlings max."
             }
          },
@@ -1088,9 +1088,9 @@
             "title": "Rapport de bug",
             "message": "Merci de participer à la version Alpha de Stonehearth ! Voici comment remonter un bug :",
             "file_bug_step_1": "Allez sur http://discourse.stonehearth.net/c/support/bug-reports",
-            "file_bug_step_2": "Consultez la liste des sujets actifs, et si votre bug n'a pas déjà été signalé, créer un nouveau sujet.",
-            "file_bug_step_3": "Lors du dépôt d'un bug, assurez-vous s'il vous plaît d'inclure toutes les informations demandées dans le rapport, et copiez le texte de toutes les erreurs du moteur. Les captures d'écran sont également très utiles pour les bugs visuels.",
-            "file_bug_step_4": "Si vous rencontrez un crash bug, s'il vous plait vérifier à cette adresse http://discourse.stonehearth.net/t/13297 des solutions communes, et comment optenir de l'aide pour l'incident. Ci-dessous votre identitée unique d'utilisateur:"
+            "file_bug_step_2": "Consultez la liste des sujets actifs, et si votre bogue n'a pas déjà été signalé, créer un nouveau sujet.",
+            "file_bug_step_3": "Lors du dépôt d'un bug, assurez-vous s'il vous plaît d'inclure toutes les informations demandées dans le rapport, et copiez le texte de toutes les erreurs du moteur. Les captures d'écran sont également très utiles pour les bogues visuels.",
+            "file_bug_step_4": "Si vous rencontrez un crash bogue, s'il vous plait vérifier à cette adresse http://discourse.stonehearth.net/t/13297 des solutions communes, et comment optenir de l'aide pour l'incident. Ci-dessous votre identitée unique d'utilisateur:"
          },
          "error_browser": {
             "title": "Erreur du moteur",
@@ -1119,7 +1119,7 @@
                "display_name": "Créativité",
                "description": "Trait qui définit la facilité à fabriquer des objets. Un bon inventeur aura plus de chance de produire des objets de qualité",
                "bullet_points": {
-                  "000": "Augmente les chance de fabriquer des objets de qualité"
+                  "000": "Augmente la chance de fabriquer des objets de qualité"
                }
             },
             "shelter": {
@@ -1213,7 +1213,7 @@
             },
             "militia": {
                "display_name": "Milice",
-               "description": "En mode ville en alerte, les membres de la milice tiendront leurs défenses contre les ennemis au lieu de courir sous la bannière de sécurité. De plus, il reçoivent un bonus supplémentaires de Courage et Muscle."
+               "description": "En mode ville en alerte, les membres de la milice tiendront leurs défenses contre les ennemis au lieu de courir sous la bannière de sécurité. De plus, il reçoivent un bonus supplémentaires de courage et de muscle."
             }
          },
          "constants": {
