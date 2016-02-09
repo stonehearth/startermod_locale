@@ -1016,10 +1016,10 @@
             "gameplay_tab": {
                "title": "Gameplay",
                "experimental": "Experimental",
-               "experimental_description": "These settings are still under development and may not be stable! Enable at your own risk!",
+               "experimental_description": "Ces paramètres sont en cours de développement et peuvent ne pas être stable ! Activer à vos propres risques !",
                "enable_speed_3": "Activer la vitesse x3 (Demande un rafraîchissement de l'interface)",
                "enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. Soyez en averti !",
-               "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
+               "enable_speed_3_description": "Ajoute une nouvelle option de vitesse dans le panneau en bas à droite qui fera fonctionner le jeu à la vitesse 4x !",
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
                "default_storage_filter_none_description": "Lors de la création d'une nouvelle réserve ou au posage d'une nouvelle caisse, le filtre par défaut sur le stockage sera réglé sur 'Aucun' au lieu de 'Tout'",
                "max_citizens": "Hearthlings max."
@@ -1376,10 +1376,10 @@
                            "choice_000": "Super !",
                            "choice_001": "Quel mauvais présage.",
                            "bulletin_message": {
-                              "000": "Moi? Je suis celui qui regarde. Toi. Lui. Pour les étoiles. Pour le destin.",
-                              "001": "Moi? Je suis du Red Kiln. Nous aurions été vos sauveurs, mais votre Cid à misé beaucoup sur vous. Alors maintenant, nous regardons. Et attendons le jour où votre étoile se lèvera.",
-                              "002": "Moi! Je suppose que vous l'avez bien mérité votre part. Je suis une braise dans la forge, une étincelle dans l'air. Je regarde, afin que je puisse savoir quand il est temps pour le feu de tous nous engloutir.",
-                              "003": "Moi? Aujourd'hui, ça n'a pas d'importance. Demain, si vous vivez encore, vous pourrez m'appeler Erdene, du Red Kiln."
+                              "000": "Moi ? Je suis celui qui regarde. Toi. Lui. Pour les étoiles. Pour le destin.",
+                              "001": "Moi ? Je suis du Red Kiln. Nous aurions été vos sauveurs, mais votre Cid à misé beaucoup sur vous. Alors maintenant, nous regardons. Et attendons le jour où votre étoile se lèvera.",
+                              "002": "Moi ! Je suppose que vous l'avez bien mérité votre part. Je suis une braise dans la forge, une étincelle dans l'air. Je regarde, afin que je puisse savoir quand il est temps pour le feu de tous nous engloutir.",
+                              "003": "Moi ? Aujourd'hui, ça n'a pas d'importance. Demain, si vous vivez encore, vous pourrez m'appeler Erdene, du Red Kiln."
                            },
                            "bulletin_title": "Elle sourit avec une lueur sur les dents",
                            "dialog_title": "???"
@@ -1394,7 +1394,7 @@
                            "dialog_title": "???"
                         },
                         "flute_description": {
-                           "choice_000": "Ça me va!",
+                           "choice_000": "Ça me va !",
                            "choice_001": "Non. Merci.",
                            "bulletin_message": {
                               "000": "Sur ce papier, vous devriez trouvé la berceuse pour apaiser l'âme de la montagne. Trouver la flûte volé. Enchérissez sa hauteuravec vos travailleur de bois pour cette mélodie. accordez-là à l'aide de votre plus brave chanteur de mouton, mettez la n musique chez le grand mammouth de Ogo, et regarder la grande importance des rencontres c'est juste la récompense."
@@ -1419,9 +1419,9 @@
                            "choice_000": "Pas question !",
                            "choice_001": "Huh.",
                            "bulletin_message": {
-                              "000": "Devin Magique! Parle avec anciens! Raconte futur! Voit... Voit Red Kiln tomber, nouvelle étoile monter. C'est Ogo. Cette fois, ont est du coté des gagnant!",
-                              "001": "Vieux devin, vieux serpent. Parle avec les os et les flammes. Regarde l'avenir! Regarde la fin du cycle, la fin pour toujours.  ... Pas sur de ce qu'il veut dire mais bon, bon pour Ogo !",
-                              "002": "Devin gobelin, évidemment! Gobelin qui peut voir l'avenir! Il dit anciens meurent loin, nouvelle étoile montante. Conseillé pour Ogo, mauvais pour tout le monde, vous aussi!"
+                              "000": "Devin Magique ! Parle avec anciens ! Raconte futur ! Voit... Voit Red Kiln tomber, nouvelle étoile monter. C'est Ogo. Cette fois, ont est du coté des gagnant !",
+                              "001": "Vieux devin, vieux serpent. Parle avec les os et les flammes. Regarde l'avenir ! Regarde la fin du cycle, la fin pour toujours.  ... Pas sur de ce qu'il veut dire mais bon, bon pour Ogo !",
+                              "002": "Devin gobelin, évidemment ! Gobelin qui peut voir l'avenir! Il dit anciens meurent loin, nouvelle étoile montante. Conseillé pour Ogo, mauvais pour tout le monde, vous aussi !"
                            },
                            "bulletin_title": "Le goblin écarquille les yeux",
                            "dialog_title": "Porte bannière d'Ogo"
@@ -1430,9 +1430,9 @@
                            "choice_000": "Huh.",
                            "choice_001": "Gagh!",
                            "bulletin_message": {
-                              "000": "Ho, ville chétif! Je suis ici avec de mauvaises nouvelles pour vous!",
-                              "001": "Ville chétif! Incline toi et tremble!",
-                              "002": "Muahahahahah! Ça? Ceci votre ville? J'en pleur de rire!"
+                              "000": "Ho, ville chétif ! Je suis ici avec de mauvaises nouvelles pour vous !",
+                              "001": "Ville chétif ! Incline toi et tremble !",
+                              "002": "Muahahahahah ! Ça? Ceci votre ville ? J'en pleure de rire !"
                            },
                            "bulletin_title": "Un gobelin avec un officieux sourire narquois se glisse en ville",
                            "dialog_title": "Porte bannière d'Ogo"
@@ -1442,10 +1442,10 @@
                            "choice_001": "Uh. Non.",
                            "bulletin_message": {
                               "000": "Par ordre de Ogo Cognecrâne, Goblin-Tout-Pour-Être-Chef, vous et toutes vos affaires sont maintenant le tribut de votre ville à La Grande Armée scintillante et à l'Empire Red Kiln !",
-                              "001": "Je suis l'envoyé de Ogo Cognecrâne, dompteur de la montagne! Ogo demande des choses de toutes sortes, vous compris, votre or aussi!",
-                              "002": "Mon Chef-parmi-les-Chefs, Ogo Cognecrâne, bientôt prendra l'Armée Scintillante et s'en ira de Red Kiln! Vous êtes la prochaine de ses conquètes. Vous devenez nous fermiers d'or!",
-                              "003": "Je suis la Bannière gobelinne de Ogo Cognecrâne, coureur de Montagne! Mon maître vous demande tribut, sous la forme de tout ce que vous avez! Vous donnez tout! Ou vous payez!",
-                              "004": "Je suis la Bannière gobelinne de Ogo Cognecrâne! Lorsque vous avez vaincu les petits chefs, vous avez apporté l'œil de Ogo sur vous! Et les yeux de Ogo savent tout! Vous lui donner son tribut, ou ses yeux verront votre fin!"
+                              "001": "Je suis l'envoyé de Ogo Cognecrâne, dompteur de la montagne ! Ogo demande des choses de toutes sortes, vous compris, votre or aussi !",
+                              "002": "Mon Chef-parmi-les-Chefs, Ogo Cognecrâne, bientôt prendra l'Armée Scintillante et s'en ira de Red Kiln ! Vous êtes la prochaine de ses conquètes. Vous devenez nous fermiers d'or !",
+                              "003": "Je suis la Bannière gobelinne de Ogo Cognecrâne, coureur de Montagne ! Mon maître vous demande tribut, sous la forme de tout ce que vous avez ! Vous donnez tout ! Ou vous payez !",
+                              "004": "Je suis la Bannière gobelinne de Ogo Cognecrâne ! Lorsque vous avez vaincu les petits chefs, vous avez apporté l'œil de Ogo sur vous ! Et les yeux de Ogo savent tout! Vous lui donner son tribut, ou ses yeux verront votre fin !"
                            },
                            "bulletin_title": "Le gobelin se redresse",
                            "dialog_title": "Porte bannière d'Ogo"
@@ -1454,20 +1454,20 @@
                            "choice_000": "Devin?",
                            "choice_001": "Eh",
                            "bulletin_message": {
-                              "000": "Devin dire Ogo Cognecrâne sera héros au-dessus de tous héros! Vous destiné à lui donner de l'or!",
-                              "001": "Devin petit, mais devin a de grandes pensées! Devin ne se trompe jamais. Devin dire que vous donnez l'or d'Ogo, ou Ogo va vous le prendre!!",
-                              "002": "Goblins longtemps être rejetés et oubliés. Devin dire que Ogo Cognecrâne, mon Petitchef, viendra bientôt tout changer! Pour cela, il a besoin d'or et de travail!",
-                              "003": "Ogo Cognecrâne, Maître des Maîtres, a un grand destin, pour régner sur tout! Devin le dire; devin ne se trompe jamais. Devin dit, vous contribuerez!"
+                              "000": "Devin dire Ogo Cognecrâne sera héros au-dessus de tous héros ! Vous destiné à lui donner de l'or !",
+                              "001": "Devin petit, mais devin a de grandes pensées ! Devin ne se trompe jamais. Devin dire que vous donnez l'or d'Ogo, ou Ogo va vous le prendre !!",
+                              "002": "Goblins longtemps être rejetés et oubliés. Devin dire que Ogo Cognecrâne, mon Petitchef, viendra bientôt tout changer ! Pour cela, il a besoin d'or et de travail !",
+                              "003": "Ogo Cognecrâne, Maître des Maîtres, a un grand destin, pour régner sur tout ! Devin le dire; devin ne se trompe jamais. Devin dit, vous contribuerez !"
                            },
                            "bulletin_title": "Les yeux du gobelin brillent avec un zèle",
                            "dialog_title": "Porte bannière d'Ogo"
                         },
                         "conclusion": {
                            "bulletin_message": {
-                              "000": "Quoi qu'il en soit, Il importe peut! Je suis ici que pour vous avertir: rassembler votre or, pour qu'il soit facile pour nous de le recueillir! Nous serons bientôt de retour!",
-                              "001": "Hahaha! Peu importe. Vous appartenez tous à nous maintenant. Nous arrivons bientôt vous chercher pour les mines d'or!",
-                              "002": "Oh, vous dites quelque chose? Peu importe, nous reviendrons bientôt! Rassemblez tous vos choses pour qu'il soit plus facile pour nous de passer!",
-                              "003": "Quoi qu'il en soit, il est l'heure d'aller repasser ma bannière. J'reviens bientôt! Soyez prêt, oui? Une nouvelle vie sous la domination de gobelin vous attend!"
+                              "000": "Quoi qu'il en soit, Il importe peut! Je suis ici que pour vous avertir: rassembler votre or, pour qu'il soit facile pour nous de le recueillir ! Nous serons bientôt de retour !",
+                              "001": "Hahaha ! Peu importe. Vous appartenez tous à nous maintenant. Nous arrivons bientôt vous chercher pour les mines d'or !",
+                              "002": "Oh, vous dites quelque chose ? Peu importe, nous reviendrons bientôt ! Rassemblez tous vos choses pour qu'il soit plus facile pour nous de passer !",
+                              "003": "Quoi qu'il en soit, il est l'heure d'aller repasser ma bannière. J'reviens bientôt ! Soyez prêt, oui ? Une nouvelle vie sous la domination de gobelin vous attend !"
                            },
                            "bulletin_title": "Les yeux du gobelin se rétrécissent",
                            "dialog_title": "Porte bannière d'Ogo"
@@ -1482,10 +1482,10 @@
                            "choice_000": "Merci mon Dieu !",
                            "choice_001": "(bon débarras)",
                            "bulletin_message": {
-                              "000": "Bonnes nouvelles pour vous, pathétiques humains!! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous rappel chez nous pour le rassemblement du clan. Ça aurait été amusant de vous pendre! Peut-être qu'on s'appellera amis, bientôt de retour pour plus de plaisir à prendre vos affaires!",
+                              "000": "Bonnes nouvelles pour vous, pathétiques humains !! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous rappel chez nous pour le rassemblement du clan. Ça aurait été amusant de vous pendre ! Peut-être qu'on s'appellera amis, bientôt de retour pour plus de plaisir à prendre vos affaires !",
                               "001": "Humains sans challenges. Tellement triste. Nous espérions retourner chez notre Chef-des-Chefs, Ogo Cognecrâne, avecdes histoires de gloire, mais il n'y a aucune gloire à vous battre. Peut-être que nous reviendrons lorsque vous plus fort.",
                               "002": "Nous partons maintenant, humains. Mais nous serons de retour.",
-                              "003": "Eh bien, c'était drôle de vous chasser, pathétiques humains! Mais tout moment de bonheur à sa fin, on rentre mainteant au grand rassemblement du clan. Pendant que nous partons, construisez plus de choses, pour que quand nous reviendrons, nous puissions prendre plus!"
+                              "003": "Eh bien, c'était drôle de vous chasser, pathétiques humains ! Mais tout moment de bonheur à sa fin, on rentre mainteant au grand rassemblement du clan. Pendant que nous partons, construisez plus de choses, pour que quand nous reviendrons, nous puissions prendre plus !"
                            },
                            "bulletin_title": "Le gobelin envoi une note",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1506,19 +1506,19 @@
                            "dialog_title": "[name(i18n_data.boss)]"
                         },
                         "information": {
-                           "choice_000": "Wow!",
+                           "choice_000": "Wow !",
                            "choice_001": "Quel mauvais présage.",
                            "bulletin_message": {
-                              "000": "Vous êtes si drôle. Parce que nous amis, moi vous dire: Ogo assez cool. C'est peu dire. Une fois qu'il a mangé un chiot. Mais ... devin dit qu'il voué à l'échec! Conçu pour piétiner tout le monde! Moi juste petit gars, tu le sais? Bien que vous encore plus petit. Quoi qu'il en soit."
+                              "000": "Vous êtes si drôle. Parce que nous amis, moi vous dire: Ogo assez cool. C'est peu dire. Une fois qu'il a mangé un chiot. Mais ... devin dit qu'il voué à l'échec ! Conçu pour piétiner tout le monde! Moi juste petit gars, tu le sais ? Bien que vous encore plus petit. Quoi qu'il en soit."
                            },
                            "bulletin_title": "Le gobelin s'esclaffe",
                            "dialog_title": "[name(i18n_data.boss)]"
                         },
                         "msg1": {
                            "choice_000": "Merci mon Dieu !",
-                           "choice_001": "Ogo qui?",
+                           "choice_001": "Ogo qui ?",
                            "bulletin_message": {
-                              "000": "Good news peons! Ogo Cognecrâne, Chief-of-Chiefs-To-Be, calls us back to him. Time to go home, show him tribute! If you lucky, maybe we be back to visit... soon!"
+                              "000": "Bonne nouvelles fantassin ! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous appelle de nouveau à lui. Il est temps de rentrer à la maison, montré lui vos hommages ! Si vous avez de la chance, peut-être que nous reviendrons visiter... bientôt !"
                            },
                            "bulletin_title": "Le gobelin revient de manière magnanime",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1553,7 +1553,7 @@
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Ho Hé de la ville ! Comment vont les choses?"
+                              "00": "Ho Hé de la ville ! Comment vont les choses ?"
                            },
                            "bulletin_title": "Un voyageur grisonnant apparait à l'horizon",
                            "dialog_title": "Mër Fortemains"
@@ -1591,9 +1591,9 @@
                         "msg1": {
                            "bulletin_message": {
                               "000": "Il ya des loups dans les bois ! Fuyez pendant que vous le pouvez encore !",
-                              "001": "Entendez vous les hurlements? Il y a des goblins avec des loups dans les bois !",
+                              "001": "Entendez vous les hurlements ? Il y a des goblins avec des loups dans les bois !",
                               "002": "Notre groupe vient juste de se faire attaquer par des gobelins ! Fuyez !",
-                              "003": "Ces loups gobelins ne sont pas comme des loups normaux - ils sont rapides, vicieux et sans peur ! Courez pendant que vous le pouvez!",
+                              "003": "Ces loups gobelins ne sont pas comme des loups normaux - ils sont rapides, vicieux et sans peur ! Courez pendant que vous le pouvez !",
                               "004": "Vous avez des gobelins dans vos bois ! Enfermez-vous dans un endroit sûr avant qu'ils attaquent !"
                            },
                            "bulletin_title": "Des réfugiés épuisés apparaissent à l'horizon",
@@ -1634,7 +1634,7 @@
                      "dialog_nodes": {
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Yip! Yip! AWOOOOOO!!!!!!!"
+                              "00": "Yip ! Yip ! AWOOOOOO !!!!!!!"
                            },
                            "bulletin_title": "Les loups s'échappent joyeusement des cages",
                            "dialog_title": "Loups fuyant"
@@ -1647,7 +1647,7 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Tell my sheep... me loves her always..."
+                              "00": "Dites mes moutons... moi est amoureux d'elle toujours..."
                            },
                            "bulletin_title": "[name(i18n_data.boss)] est vaincu !",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1680,7 +1680,7 @@
                      "dialog_nodes": {
                         "shakedown": {
                            "bulletin_message": {
-                              "000": "Hahaha!! Votre camp minable être sur territoire flamboyant ! Moi mériter tribut qui brille !",
+                              "000": "Hahaha !! Votre camp minable être sur territoire flamboyant ! Moi mériter tribut qui brille !",
                               "001": "Esclaves humains ! Vous pas comprendre puissance de grande armée flamboyante ! Vous chanceux s'incliner devant moi. Aussi moi vouloir chose pour tenir la nuit; pour m'endormir en chanson.",
                               "002": "Vous avoir marchandises ? Nous prendre; nous bons. Vous avoir compris ?",
                               "003": "Hahahah, vous être petits nouveaux dans grand territoire rouge. Cala signifie moi moins petit-nouveau prendre ton repas. Repas être métafore. Vous préparer pour nous. Ou sinon ...",
@@ -1702,10 +1702,10 @@
                         },
                         "collection_failed": {
                            "bulletin_message": {
-                              "000": "Vous oublier matos? Vous pas faire? Vous soulliez honeur Armée flamboyante! Vous mourrir maintenant!",
-                              "001": "Vous triple idiots pas faire matos?! Moouuuurez!!! Mourrez tous!!!",
-                              "002": "Quoi? Vous pas avoir matos? SANG, POIGNARDAGE, ET VEN-JENCE!",
-                              "003": "Moi veut être bon chef. Moi veut être ami! Mais vous pas écouter. Non. Vous pas méritant. Moi doit vous tuer, puis rentrer maison. Pleurer pendant pouvoir-encore-être. Vous pleurez trop, sauf que ... vous morts."
+                              "000": "Vous oublier matos ? Vous pas faire ? Vous soulliez honeur Armée flamboyante ! Vous mourrir maintenant !",
+                              "001": "Vous triple idiots pas faire matos ?! Moouuuurez !!! Mourrez tous !!!",
+                              "002": "Quoi ? Vous pas avoir matos ? SANG, POIGNARDAGE, ET VEN-JENCE !",
+                              "003": "Moi veut être bon chef. Moi veut être ami ! Mais vous pas écouter. Non. Vous pas méritant. Moi doit vous tuer, puis rentrer maison. Pleurer pendant pouvoir-encore-être. Vous pleurez trop, sauf que ... vous morts."
                            },
                            "bulletin_title": "Le gobelin fronce les sourcils si fort que vous ne pouvez pas voir ses yeux",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1713,13 +1713,13 @@
                         "collection_success": {
                            "bulletin_message": {
                               "000": "C'est ça. Vous coopérez, nous très bien nous entendre.",
-                              "001": "Vous bien faire matos? Je jamais--Je vouloir dire, oui. Vous donner raison moi.",
-                              "002": "Vous avoir fournitures? Nous prendre; Nous bon!",
-                              "003": "Pour moi?! Vous meilleur des meilleurs ouvriers!",
+                              "001": "Vous bien faire matos ? Je jamais--Je vouloir dire, oui. Vous donner raison moi.",
+                              "002": "Vous avoir fournitures ? Nous prendre; Nous bon !",
+                              "003": "Pour moi ?! Vous meilleur des meilleurs ouvriers !",
                               "004": "Affaires moi! Je rentre mainteant et câlin pour dormir cette nuit.",
-                              "005": "Hahahahaha!!! Jolie affaires!! Superbe affaires!! Mien mien mien!",
-                              "006": "Matos!! Moutons moi être si heureux.",
-                              "007": "Affaires mienne! Hahahah, Vous très bon pour ouvrier. Reviens bientôt!"
+                              "005": "Hahahahaha !!! Jolie affaires !! Superbe affaires !! Mien mien mien !",
+                              "006": "Matos !! Moutons moi être si heureux.",
+                              "007": "Affaires mienne ! Hahahah, Vous très bon pour ouvrier. Reviens bientôt !"
                            },
                            "bulletin_title": "Le gobelin sourit comme un gamin Frostfeast",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1733,11 +1733,11 @@
                         },
                         "shakedown_refused": {
                            "bulletin_message": {
-                              "000": "What? You say no? Alors nous prendre! PRENDRE TOUTES CHOSES!!!!",
-                              "001": "Non non non. Vous supposer dire 'Oui.' Vous censé sentir reconnaissants! Essayer encore? Non? Méchant! Moi résoudre méchanceté!",
-                              "002": "Non? Moi rupture cerveau!! Moi casser vous!",
-                              "003": "Quoi? Pouvoir pas croire?! Devoir tuer!!!",
-                              "004": "Vous pas comprendre. Alternative: Mort. Moooorrrrt. MOOOORRRRRRT!!!"
+                              "000": "Quoi ? Vous dites non ? Alors nous prendre ! PRENDRE TOUTES CHOSES !!!!",
+                              "001": "Non non non. Vous supposer dire 'Oui.' Vous censé sentir reconnaissants ! Essayer encore ? Non ? Méchant ! Moi résoudre méchanceté !",
+                              "002": "Non ? Moi rupture cerveau !! Moi casser vous !",
+                              "003": "Quoi ? Pouvoir pas croire ?! Devoir tuer !!!",
+                              "004": "Vous pas comprendre. Alternative: Mort. Moooorrrrt. MOOOORRRRRRT !!!"
                            },
                            "bulletin_title": "Le gobelin semble incrédule",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1749,7 +1749,7 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Un groupe de pillards gobelins approche!",
+                           "title": "Un groupe de pillards gobelins approche !",
                            "message": "On va vous avoir !"
                         }
                      }
@@ -1769,8 +1769,8 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Un groupe de pillards gobelins approche!",
-                           "message": "On va vous avoir!"
+                           "title": "Un groupe de pillards gobelins approche !",
+                           "message": "On va vous avoir !"
                         }
                      }
                   }
@@ -1783,7 +1783,7 @@
                               "campfire": {
                                  "campfire": {
                                     "display_name": "Feu de camp hypnotique",
-                                    "description": "Mais ... pourquoi il est vert?"
+                                    "description": "Mais ... pourquoi il est vert ?"
                                  },
                                  "workers": {
                                     "description": "Garde feu"
@@ -1851,7 +1851,7 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Des voleurs gobelins!",
+                           "title": "Des voleurs gobelins !",
                            "message": "Ils désirent ardemment des choses confortables"
                         }
                      }
@@ -1866,14 +1866,14 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Un gobelin armé!",
+                           "title": "Un gobelin armé !",
                            "message": "Il veut vos biens"
                         }
                      }
                   },
                   "raid_stockpiles": {
                      "thug": {
-                        "description": "Armé et dangereux!"
+                        "description": "Armé et dangereux !"
                      }
                   }
                },
@@ -1881,7 +1881,7 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Un loup gobelin errant!",
+                           "title": "Un loup gobelin errant !",
                            "message": "Il veut vous manger."
                         }
                      }
@@ -1896,7 +1896,7 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Un gobelin!",
+                           "title": "Un gobelin !",
                            "message": "Il veut vos biens"
                         }
                      }
@@ -1906,7 +1906,7 @@
                         "description": "Froussard mais avide de convoitise"
                      },
                      "escorts": {
-                        "description": "Avide de convoitise et armé!"
+                        "description": "Avide de convoitise et armé !"
                      }
                   }
                },
@@ -1914,7 +1914,7 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Un gobelin dangereux!",
+                           "title": "Un gobelin dangereux !",
                            "message": "Il veut vos biens"
                         }
                      }
@@ -1924,7 +1924,7 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Un gobelin se faufile dans le camp!",
+                           "title": "Un gobelin se faufile dans le camp !",
                            "message": "Il est furtif"
                         }
                      }
@@ -1939,8 +1939,8 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Un voleur se rapproche!",
-                           "message": "Il veut vos biens!!!."
+                           "title": "Un voleur se rapproche !",
+                           "message": "Il veut vos biens !!!."
                         }
                      }
                   },
@@ -1988,7 +1988,7 @@
                               "thief_campfire": {
                                  "campfire": {
                                     "display_name": "Feu de camp hypnotique",
-                                    "description": "Mais ... pourquoi il est vert?"
+                                    "description": "Mais ... pourquoi il est vert ?"
                                  },
                                  "workers": {
                                     "description": "Désigné foyer-tendre"
@@ -2053,7 +2053,7 @@
          "groggy": {
             "groggy_buff": {
                "display_name": "Chancelant",
-               "description": "Une nuit difficile sur le sol réduit la vitesse de 25%. Un lit serait beaucoup mieux!"
+               "description": "Une nuit difficile sur le sol réduit la vitesse de 25%. Un lit serait beaucoup mieux !"
             }
          },
          "shepherding": {
@@ -2079,7 +2079,7 @@
          },
          "snared": {
             "snared_buff": {
-               "display_name": "Enlacés!",
+               "display_name": "Enlacés !",
                "description": "Piégés et incapables de se déplacer"
             }
          },
@@ -2090,7 +2090,7 @@
             },
             "starving_animal_buff": {
                "display_name": "Affamé",
-               "description": "Cet animal a faim! Avoir un cuisinier pour créer un peu de nourriture de sorte que votre berger puisse le nourrir serait utile."
+               "description": "Cet animal a faim ! Avoir un cuisinier pour créer un peu de nourriture de sorte que votre berger puisse le nourrir serait utile."
             }
          },
          "stopped": {
@@ -2108,25 +2108,25 @@
          "recovering": {
             "recovering_buff": {
                "display_name": "Alité",
-               "description": "Slowly recovering from injuries. Can receive medical care from herbalists."
+               "description": "Se remet lentement de ces blessures. Possibilité de recevoir des soins médicaux d'herboristes."
             }
          },
          "stamina_tonic": {
             "stamina_tonic_buff": {
                "display_name": "Potion d'endurance",
-               "description": "Slightly more healthy"
+               "description": "Légèrement plus endurant"
             }
          },
          "strength_tonic": {
             "strength_tonic_buff": {
                "display_name": "Potion de force",
-               "description": "Slightly more buff"
+               "description": "Légèrement plus fort"
             }
          },
          "severely_injured": {
             "severely_injured_buff": {
                "display_name": "Gravement blessé",
-               "description": "Wounded badly! This hearthling can hardly walk!"
+               "description": "Blessé gravement ! Cette hearthling peut à peine marcher !"
             }
          },
          "undead_infection": {
@@ -2290,20 +2290,20 @@
             "description": "Plantez cet arbre dans un peu de terre."
          },
          "use_consumable": {
-            "display_name": "Use",
-            "description": "Use this consumable item to buff every hearthling in town. This will destroy the item."
+            "display_name": "Utiliser",
+            "description": "Utiliser cet objet consommable pour rendre plus fort tous les hearthling en ville. Cela va détruire cette objet."
          },
          "edit_party": {
-            "display_name": "Edit Party",
-            "description": "Add and remove combatants from this party."
+            "display_name": "Modifier l'équipe",
+            "description": "Ajouter et supprimer des combattants de l'équipe."
          },
          "cancel_marker": {
-            "display_name": "Cancel Marker",
-            "description": "Cancels the combat orders represented by this marker"
+            "display_name": "Annuler le marqueur",
+            "description": "Annuler les ordres de combat représentés par ce marqueur"
          },
          "select_owner": {
-            "display_name": "Select Owner",
-            "description": "Selects the combatants influenced by this marker"
+            "display_name": "Choisir le propriétaire",
+            "description": "Sélectionne les combattants influencés par ce marqueur"
          }
       },
       "personality": {
@@ -2312,19 +2312,19 @@
                "text": "En  entendant l'appel de la Scie:",
                "logs": {
                   "lovable_rogue": {
-                     "000": "Voulez-vous que je devienne menuisier? Est-ce que je pourrais...vendre les objets que je fabriquerais? Ou c'est une propriété commune?"
+                     "000": "Voulez-vous que je devienne menuisier ? Est-ce que je pourrais...vendre les objets que je fabriquerais ? Ou c'est une propriété commune ?"
                   },
                   "diligent_sweetheart": {
-                     "000": "Moi? Vous voulez que je sois menuisier? Ok, Je ferais de mon mieux!"
+                     "000": "Moi ? Vous voulez que je sois menuisier ? Ok, Je ferais de mon mieux !"
                   },
                   "psychopathic_misanthrope": {
-                     "000": "La Scie? Où les gens voyent un outils, Je vois une arme cranté. Scie, Tu es mon nouveau meilleur ami."
+                     "000": "La Scie ? Où les gens voyent un outils, Je vois une arme crantée. Scie, Tu es mon nouveau meilleur ami."
                   },
                   "insufferable_academic": {
                      "000": "Je vais essayer d'apporter la musique des cubes à nos meubles."
                   },
                   "hopeless_optimist": {
-                     "000": "Moi, menuisier? OUI!! J'ai toujours voulue faires des chaises miniatures!!!"
+                     "000": "Moi, menuisier ? OUI !! J'ai toujours voulu faire des chaises miniatures !!!"
                   },
                   "beleaguered_leader": {
                      "000": "C'est à mon tour de manier la scie. c'est dommage mère m'a toujours dit que j'étais nul avec ça dans les mains."
@@ -2338,65 +2338,65 @@
                "logs": {
                   "beleaguered_leader": {
                      "000": "Aujourd'hui, nous allons couper des arbres pour le bois. Je suis déjà malade de cette mauvaise farce.",
-                     "001": "Boooiiiiiiiiis!!! Je pourrais m'habituer à dire que cela.",
+                     "001": "Boooiiiiiiiiis !!! Je pourrais m'habituer à dire que cela.",
                      "002": "La troupe suis le chemin de celui qui coupera le plus d'arbres. Pour l'instant on me suis mais je préfère en couper un de plus pour être sur de mon total.",
                      "003": "J'ai cru voir un nid de frelon pendant que nous étions dans l'exploitation forestière. Heuresement, tout le monde en est sortie à temps..",
                      "004": "Bois: Notre éternelle tâche principale. Nous devons garder un oeil sur notre but: t'abbatre.",
-                     "005": "Tout le monde coupe ensemble! Cou-per! Cou-per! Cou-per! Oui, plus vite!",
-                     "006": "Ok les gars, la pause est finie. On retourne couper!!",
+                     "005": "Tout le monde coupe ensemble ! Cou-per ! Cou-per ! Cou-per ! Oui, plus vite !",
+                     "006": "Ok les gars, la pause est finie. On retourne couper !!",
                      "007": "Chaque fois que j'envoie ma hache sur ces arbres, je vois la maison de mes rèves et exactement comment je vais la construire. Effet secondaire de tout ce découpage: le salon se rétrécit.",
-                     "008": "ATTENTION, chute d'arbres! Dégagez! DEGAGEZ LA VOIE!",
+                     "008": "ATTENTION, chute d'arbres ! Dégagez ! DEGAGEZ LA VOIE !",
                      "teacher": {
                         "000": "Coupez plus d'arbres aujourd'hui. Par [str(entry.teacher)] il y a beaucoup d'arbres par ici."
                      }
                   },
                   "lovable_rogue": {
-                     "000": "Étape 1: Couper du bois. Étape 2: ???. Étape 3: Bénéfice!! Hmm. Il faut encore travailler l'étape 2.",
-                     "001": "Je serais plus exicté pour couper les arbres si ils avaient une anatomie puls simple. Ou si je pouvais obtenir un avanage de combat sur leur taille. Ou si je pouvais les prendre de flanc. Ou s'ils avaient simplement une tête, afin de les poignarder dans le dos! Même si je n'ai jamais entendu parler de quelqu'un qui abbat les arbres en leur mettant un poignard dans le dos..",
+                     "000": "Étape 1: Couper du bois. Étape 2: ???. Étape 3: Bénéfice !! Hmm. Il faut encore travailler l'étape 2.",
+                     "001": "Je serais plus exicté pour couper les arbres si ils avaient une anatomie puls simple. Ou si je pouvais obtenir un avanage de combat sur leur taille. Ou si je pouvais les prendre de flanc. Ou s'ils avaient simplement une tête, afin de les poignarder dans le dos ! Même si je n'ai jamais entendu parler de quelqu'un qui abbat les arbres en leur mettant un poignard dans le dos..",
                      "002": "Mes mains deveinnent rugueuses a force de couper le bois.",
-                     "003": "La meilleur raison qui fait que couper des arbres est ammusant: perfectionner le coup de hache. Ça peut être utile un jour!",
+                     "003": "La meilleur raison qui fait que couper des arbres est ammusant: perfectionner le coup de hache. Ça peut être utile un jour !",
                      "004": "La meiileur raison qui fait que transporter du bois est amusant: : Je n'en connais aucune.",
                      "005": "Je me demande combien de bois je pourrais vendre en revenant à la maison... Aucun, probablement..",
-                     "006": "Je me demande si je pourrai arréter de couper du bois en prétandant avoir une écharde? Ah, oui,ce ne sera pas que de la prétention.",
+                     "006": "Je me demande si je pourrai arréter de couper du bois en prétandant avoir une écharde ? Ah, oui,ce ne sera pas que de la prétention.",
                      "007": "Aïe ! Une cloque ! Pourquoi est-ce que je m'inflige ça ? Un contrat de travail à volonté ne veut rien dire quand on est AU MILIEU DE NUL PART.",
-                     "008": "Des échardes! J'en ai partout! Ok, calme ta réspiration. calme ta respiration. Quelqu'un à une pince à épiler?"
+                     "008": "Des échardes ! J'en ai partout! Ok, calme ta réspiration. Calme ta respiration. Quelqu'un à une pince à épiler ?"
                   },
                   "psychopathic_misanthrope": {
                      "000": "Heeeaaaahhhhrrrghhh!!!",
                      "001": "Raaaarrrrrrghhhhh!",
-                     "002": "Spork those trees, you know? Just spork them all!",
-                     "003": "J'ai couper environ un milliard d'arbre aujourd'hui. Appelez moi le meurtier à la hache!!!",
-                     "004": "Les gens disent que j'ai des gros problèmes d'aggréivité, mais personne ne se plaint de tout le bois que je récolte!",
-                     "005": "Est ce que quelqu'un d'autres coupe ces tronc? Y'a juste moi?",
+                     "002": "Spork ces arbres, vous savez ? Juste Spork-les tous !",
+                     "003": "J'ai couper environ un milliard d'arbre aujourd'hui. Appelez moi le meurtier à la hache !!!",
+                     "004": "Les gens disent que j'ai des gros problèmes d'aggréivité, mais personne ne se plaint de tout le bois que je récolte !",
+                     "005": "Est ce que quelqu'un d'autres coupe ces troncs ? Y'a juste moi ?",
                      "006": "Heureusement que je fait quelque chose de si phisique. Étre assis et tricoté toute la journée me rendrais fou."
                   },
                   "hopeless_optimist": {
-                     "000": "Couper, couper, couper! Si vous le dites encore et encore, c'est presque une chanson!",
-                     "001": "Couper le bois ça fais les muscles! Note à soi-même: voir si quelqu'un l'a remarqué.",
+                     "000": "Couper, couper, couper ! Si vous le dites encore et encore, c'est presque une chanson !",
+                     "001": "Couper le bois ça fais les muscles ! Note à soi-même: voir si quelqu'un l'a remarqué.",
                      "002": "On est désolé M. L'arbre, mais on dois vous couper pour vivre à l'interieur de vous. Mais nous n'oublierons jamais que nous auront chaud et nous serons à l'abrir grâce à vous. Merci pour ce sacrifice.",
-                     "003": "Il y a vraiment quelque chose de satisfaisant de mettre à terre quelque chose de bien plus gros que moi!",
-                     "004": "Je suis Paul Revere! Je veux dire, Bunyon!",
-                     "005": "Combien d'arbres voudrais couper un castor, si un castor peut couper du bois? Bien si mon nom était castor , la réponse serait: beacoup! Note à soi-même: trouver plus tard à quoi ressemble un castor.",
-                     "006": "Bois, Bois, Bois, c'est du bois, dans le monde d'un bûcheron . Ah-aaaa, toutes les choses que je pourrait faire, si j'avais un peu de bois, c'est le monnnnnde du bûcheron. Ahhh-AAAAAIIEEE---CHUTE D'ARBRE!!!!!",
-                     "007": "J'entends que je ne suis pas censé chanter quand je coupe des arbres. Ça m'est égale!",
-                     "008": "Oh non! M. l'Écureuil! Je suis désolé. Je ne voulais pas couper votre maison. Dites moi tout ce que vous- émménager avec moi! Il y a des noisettes à la maison. Oh. J'aurais sûrement pas du parler de maison..."
+                     "003": "Il y a vraiment quelque chose de satisfaisant de mettre à terre quelque chose de bien plus gros que moi !",
+                     "004": "Je suis Paul Revere ! Je veux dire, Bunyon !",
+                     "005": "Combien d'arbres voudrais couper un castor, si un castor peut couper du bois ? Bien si mon nom était castor , la réponse serait: beaucoup ! Note à soi-même: trouver plus tard à quoi ressemble un castor.",
+                     "006": "Bois, Bois, Bois, c'est du bois, dans le monde d'un bûcheron. Ah-aaaa, toutes les choses que je pourrais faire, si j'avais un peu de bois, c'est le monnnnnde du bûcheron. Ahhh-AAAAAIIEEE---CHUTE D'ARBRE !!!!!",
+                     "007": "J'entends que je ne suis pas censé chanter quand je coupe des arbres. Ça m'est égale !",
+                     "008": "Oh non ! M. l'Écureuil ! Je suis désolé. Je ne voulais pas couper votre maison. Dites moi tout ce que vous-émménager chez moi ! Il y a des noisettes à la maison. Oh. J'aurais sûrement pas du parler de maison..."
                   },
                   "insufferable_academic": {
                      "000": "Couper du bois est une sous-utilisation épouvantable de mes grandes facultés intelllectuelles.",
-                     "001": "If I never see another axe again it will be too soon.",
+                     "001": "Il sera à nouveau trop tôt, si je ne vois jamais une autre hache.",
                      "002": "Tout ce bois vaudrait presque la chandelle de faire un effort, s'il était seulement destinées à une usine à papier.",
-                     "003": "N'y a t-il personne d'autre qui pourrait s'engager dans un tel travail de domestique?",
-                     "004": "J'ai mis au point une facon de couper le bois qui et mathématiquement parfaite. Hélas, il n'y a pas de revues ici où je pourrais publier mes découvertes!",
-                     "005": "Je ne peux pas vous aider, mais je sens la nécessité de parler de la vitesse alarmante à laquelle nous déboisons toute la région ... Quoi? Non, bien sûr, je ne cherche pas à éviter les obligations comme celle de couper le bois!"
+                     "003": "N'y a t-il personne d'autre qui pourrait s'engager dans un tel travail de domestique ?",
+                     "004": "J'ai mis au point une facon de couper le bois qui et mathématiquement parfaite. Hélas, il n'y a pas de revues ici où je pourrais publier mes découvertes !",
+                     "005": "Je ne peux pas vous aider, mais je sens la nécessité de parler de la vitesse alarmante à laquelle nous déboisons toute la région ... Quoi ? Non, bien sûr, je ne cherche pas à éviter les obligations comme celle de couper le bois !"
                   },
                   "diligent_sweetheart": {
                      "000": "Je suppose que je dois apprendre à abbatre des arbres si cela dois être fait.",
-                     "001": "Je vais mettre à côté du feu de camp une brindille de chaque arbre que j'ai coupé, en séparant chaque tas tous les jour. Ainsi, je pourrai dire que je coupe les arbres de mieux en mieux!",
+                     "001": "Je vais mettre à côté du feu de camp une brindille de chaque arbre que j'ai coupé, en séparant chaque tas tous les jour. Ainsi, je pourrai dire que je coupe les arbres de mieux en mieux !",
                      "002": "J'espère que les gens pense que les paumes endurcis des mains sont séduisantes.",
-                     "003": "J'ai entendu que souffrir forger le caractère!",
+                     "003": "J'ai entendu que souffrir forger le caractère !",
                      "004": "Couper du bois est réconfortant, si vous ne vous inquiétez pas trop des arbres qui vous tombe dessus.",
-                     "005": "J'espère que nous ne coupons pas la maison de quelqu'un. Imaginez ce que ce  serait d'avoir votre maison coupé autour de vous pour faire la maison de quelqu'un d'autre!",
-                     "006": "J'espère que les arbres n'ont pas de nerfs. Ça leur ferait très mal s'ils en avait. S'ils nous criait STOP, ça doit être dans une autres fréquence que la notre.",
+                     "005": "J'espère que nous ne coupons pas la maison de quelqu'un. Imaginez ce que ce  serait d'avoir votre maison coupé autour de vous pour faire la maison de quelqu'un d'autre !",
+                     "006": "J'espère que les arbres n'ont pas de nerfs. Ça leur feraient très mal s'ils en avaient. S'ils nous criaient STOP, ça devrait être dans une autre fréquence que la notre.",
                      "007": "Je prenais ma hache aujour'hui et j'ai réalisé que je pouvais vraiment blesser si je l'utilisai sur une personne, plutôt que sur un arbre."
                   }
                }
@@ -2407,22 +2407,22 @@
                "text": "Sur une blessure grave :",
                "logs": {
                   "generic": {
-                     "000": "Ow! Ça fait vraiment mal!",
-                     "001": "A l'aide!",
-                     "002": "Blessé!",
-                     "003": "Blessés! Doit... continuer!",
-                     "004": "Les choses se présentent mal!",
-                     "005": "Peut pas prendre plus de coup!",
-                     "006": "Ma vie commence à passer edvant mes yeux.",
-                     "007": "Devrais-je être inquiet?",
+                     "000": "Ow ! Ça fait vraiment mal !",
+                     "001": "A l'aide !",
+                     "002": "Blessé !",
+                     "003": "Blessé ! Doit... continuer !",
+                     "004": "Les choses se présentent mal !",
+                     "005": "Peux pas prendre plus de coup !",
+                     "006": "Ma vie commence à passer devant mes yeux.",
+                     "007": "Devrais-je être inquiet ?",
                      "008": "J'aurais du écrire plus de lettres à ma mère.",
                      "009": "Si je sors de ça vivant, je vais écrire grand-mère et lui dire que je l'aime.",
-                     "010": "Je pourrais avoir un peu d'aide par ici!",
-                     "011": "Besoin de continuer!!!",
+                     "010": "Je pourrais avoir un peu d'aide par ici !",
+                     "011": "Besoin de continuer !!!",
                      "012": "Raagh, Prends ça!",
-                     "013": "Si je tombe vous venez avec moi!",
-                     "014": "Pour mes amis! Pour mon village!",
-                     "015": "Je fais mon dernier combat ici!"
+                     "013": "Si je tombe vous venez avec moi !",
+                     "014": "Pour mes amis ! Pour mon village !",
+                     "015": "Je fais mon dernier combat ici !"
                   }
                }
             },
@@ -2432,18 +2432,18 @@
                   "generic": {
                      "000": "Ça fait du bien d'être en vie !",
                      "001": "Une autres belle journée en ville.",
-                     "002": "Paix!",
+                     "002": "Paix !",
                      "003": "Ça semble être un endroit assez abritée.",
-                     "004": "j'ai été étonnement productif aujourd'hui!",
-                     "005": "Pas grand chose à faire aujourd'hui mis à part profiter de la vie!",
-                     "006": "La Nature est vraiment belle!",
+                     "004": "j'ai été étonnement productif aujourd'hui !",
+                     "005": "Pas grand chose à faire aujourd'hui mis à part profiter de la vie !",
+                     "006": "La Nature est vraiment belle !",
                      "007": "C'est bon d'être ici avec ses amis et sa famille.",
                      "008": "S'installer ici était vraiment une bonne idée.",
-                     "009": "Soyer heureux avec une bonne journée de travail!",
+                     "009": "Soyer heureux avec une bonne journée de travail !",
                      "010": "C'est un bon endroit pour construire quelquechose de grand.",
-                     "011": "Bonheur ininterrompu! J'adore les jours comme ça.",
+                     "011": "Bonheur ininterrompu ! J'adore les jours comme ça.",
                      "012": "24 heures de pure tranquilitée.",
-                     "013": "Une journée entière sans une seule menace existentielle! Incroyable!"
+                     "013": "Une journée entière sans une seule menace existentielle ! Incroyable !"
                   }
                }
             },
