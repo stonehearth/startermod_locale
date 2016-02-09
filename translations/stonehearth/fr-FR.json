@@ -2455,18 +2455,18 @@
                         "000": "[str(entry.teacher)] te gardera en sécurité, [name(entry.dead_friend)]."
                      },
                      "dead_friend": {
-                        "000": "[name(entry.dead_friend)]? [name(entry.dead_friend)]!!!",
-                        "001": "[name(entry.dead_friend)]? Rien ne sera jamais pareil sans toi.",
-                        "002": "[name(entry.dead_friend)]!!! Nooooooon!!!",
+                        "000": "[name(entry.dead_friend)] ? [name(entry.dead_friend)] !!!",
+                        "001": "[name(entry.dead_friend)] ? Rien ne sera jamais pareil sans toi.",
+                        "002": "[name(entry.dead_friend)] !!! Nooooooon !!!",
                         "003": "Au-revoir, [name(entry.dead_friend)]. J'espère que nous nous reverrons un jour.",
-                        "004": "[name(entry.dead_friend)]? Mais... qu'est-ce que je vais dire à ton père, quand je vais lui écrire?",
-                        "005": "Nous ne pouvons pas laisser la mort de [name(entry.dead_friend)] en vain, Hearthlings!",
+                        "004": "[name(entry.dead_friend)] ? Mais... qu'est-ce que je vais dire à ton père, quand je vais lui écrire ?",
+                        "005": "Nous ne pouvons pas laisser la mort de [name(entry.dead_friend)] en vain, Hearthlings !",
                         "006": "Au-revoir, [name(entry.dead_friend)]. Tu nous manquera.",
-                        "007": "Ne t'inquiètes pas, [name(entry.dead_friend)]. Nous te vengerons!",
+                        "007": "Ne t'inquiètes pas, [name(entry.dead_friend)]. Nous te vengerons !",
                         "008": "Je ne peux pas croire que [name(entry.dead_friend)] est vraiment parti.",
-                        "009": "[name(entry.dead_friend)]? Parti? Soudainnement, tout cela me semble comme s'il n'en valait pas la peine, en quelque sorte.",
+                        "009": "[name(entry.dead_friend)] ? Parti ? Soudainnement, tout cela me semble comme s'il n'en valait pas la peine, en quelque sorte.",
                         "010": "Hé ben, Maintenant j'espère vraiment ne jamais avoir persuader [name(entry.dead_friend)] de venir dans cette aventure.",
-                        "011": "[name(entry.dead_friend)]!!"
+                        "011": "[name(entry.dead_friend)] !!"
                      }
                   }
                }
@@ -2484,51 +2484,51 @@
                      }
                   },
                   "insufferable_academic": {
-                     "000": "Repli expéditif! Repli expéditif!!!",
-                     "001": "En cas de doute, PANIQUE!!!",
-                     "002": "Rester calme et AIEEEEE!",
+                     "000": "Repli expéditif ! Repli expéditif !!!",
+                     "001": "En cas de doute, PANIQUE !!!",
+                     "002": "Rester calme et AIEEEEE !",
                      "003": "::gémissement silencieux::",
-                     "004": "Démons de cauchemar rester à l'écart!",
-                     "005": "La terreur est mauvaise pour la tension artérielle!!!",
-                     "006": "Arrêt cardiaque arrivant!!!",
-                     "007": "Cerveau... paralysé...!",
-                     "008": "À l'aide! Aidez-moooooi!!!"
+                     "004": "Démons de cauchemar rester à l'écart !",
+                     "005": "La terreur est mauvaise pour la tension artérielle !!!",
+                     "006": "Arrêt cardiaque arrivant !!!",
+                     "007": "Cerveau... paralysé... !",
+                     "008": "À l'aide! Aidez-moooooi !!!"
                   },
                   "belaguered_leader": {
-                     "000": "Retraite tactique! retraite tactique!!!",
-                     "001": "Tout le monde sur les collines!",
-                     "002": "Laisser tout tomber et dégagez, Hearthlings!!!",
-                     "003": "Ils sont trop fort pour nous! Dispersez-vous!!",
-                     "004": "Courrez résolument vers les sorties!!!"
+                     "000": "Retraite tactique! retraite tactique !!!",
+                     "001": "Tout le monde sur les collines !",
+                     "002": "Laisser tout tomber et dégagez, Hearthlings !!!",
+                     "003": "Ils sont trop fort pour nous ! Dispersez-vous !!",
+                     "004": "Courrez résolument vers les sorties !!!"
                   },
                   "generic": {
-                     "000": "J'ai pris peur de ma goudre mainteant!!!",
-                     "001": "Aauuugh!!!",
-                     "002": "Choses de cauchemare!!!",
-                     "003": "Doit couuuurrrrirrrr!!!!",
+                     "000": "J'ai pris peur de ma goudre mainteant !!!",
+                     "001": "Aauuugh !!!",
+                     "002": "Choses de cauchemare !!!",
+                     "003": "Dois couuuurrrrirrrr !!!!",
                      "004": "::cris de terreur::"
                   },
                   "hopeless_optimist": {
-                     "000": "Aaagh! Ils semblent si méchant!!!!",
-                     "001": "Je ne peux pas vous voir !! Je ne peux pas vous voir!!!",
-                     "002": "Monstres!!!!!",
-                     "003": "Auugh! On ne peut pas juste être amis??",
-                     "004": "Fuir pour que demain soit peut-être un autre jour!!!",
-                     "005": "Courir, courir, fuir les monstres effrayants!!!",
-                     "006": "Je ne croit pas qu'ils veulent être ami!!!"
+                     "000": "Aaagh ! Ils semblent si méchant !!!!",
+                     "001": "Je ne peux pas vous voir !! Je ne peux pas vous voir !!!",
+                     "002": "Monstres !!!!!",
+                     "003": "Auugh ! On ne peut pas juste être amis ??",
+                     "004": "Fuir pour que demain soit peut-être un autre jour !!!",
+                     "005": "Courir, courir, fuir les monstres effrayants !!!",
+                     "006": "Je ne crois pas qu'ils veulent être ami !!!"
                   },
                   "psychopathic_misanthrope": {
-                     "000": "RRAAAAGGGHH!!",
-                     "001": "NEAAARRRRGHHH!",
-                     "002": "GAAAAAAAGHHH!!",
-                     "003": "AIEEEEE!!!"
+                     "000": "RRAAAAGGGHH !!",
+                     "001": "NEAAARRRRGHHH !",
+                     "002": "GAAAAAAAGHHH !!",
+                     "003": "AIEEEEE !!!"
                   },
                   "lovable_rogue": {
-                     "000": "Récuperrez les biens et dirigez-vous vers les collines!",
-                     "001": "S'il vous plaît, je ne veux pas mourir!",
-                     "002": "Il y a tellement de choses que je dois faire!!!!",
-                     "003": "Je ne peut pas mourrir ici!!!",
-                     "004": "Doit... fuir!!!",
+                     "000": "Récuperrez les biens et dirigez-vous vers les collines !",
+                     "001": "S'il vous plaît, je ne veux pas mourir !",
+                     "002": "Il y a tellement de choses que je dois faire !!!!",
+                     "003": "Je ne peux pas mourrir ici !!!",
+                     "004": "Dois... fuir!!!",
                      "005": "Chaque villageois pour soi-même!!!"
                   }
                }
@@ -3226,38 +3226,38 @@
          },
          "bronze_circlet": {
             "display_name": "Tiare en bronze",
-            "description": "Protection for your head",
+            "description": "Protection pour votre tête",
             "bronze_circlet_iconic": {
-               "display_name": "Leather Skull Cap",
-               "description": "Protection for your head"
+               "display_name": "Bonnet en cuir",
+               "description": "Protection pour votre tête"
             }
          },
          "bronze_shield": {
             "display_name": "Bouclier en bronze",
-            "description": "Useful for blocking attacks"
+            "description": "Utile pour bloquer les attaques"
          },
          "iron_coif": {
             "display_name": "Camail en fer",
-            "description": "Protection for your head",
+            "description": "Protection pour votre tête",
             "iron_coif_iconic": {
-               "display_name": "Iron Coif",
-               "description": "Protection for your head"
+               "display_name": "Coiffe en fer",
+               "description": "Protection pour votre tête"
             }
          },
          "leather_helmet": {
             "display_name": "Toque en cuir",
-            "description": "Protection for your head",
+            "description": "Protection pour votre tête",
             "leather_helmet_iconic": {
-               "display_name": "Leather Skull Cap",
-               "description": "Protection for your head"
+               "display_name": "Bonnet en cuir",
+               "description": "Protection pour votre tête"
             }
          },
          "steel_helmet": {
             "display_name": "Casque en acier",
-            "description": "Protection for your head",
+            "description": "Protection pour votre tête",
             "steel_helmet_iconic": {
-               "display_name": "Steel Helmet",
-               "description": "Protection for your head"
+               "display_name": "Casque en acier",
+               "description": "Protection pour votre tête"
             }
          }
       },
@@ -3384,50 +3384,50 @@
          },
          "golden_clay_doorframe": {
             "golden_clay_doorframe_ghost": {
-               "display_name": "Golden Clay Doorframe",
-               "description": "Matches a golden clay exterior wall"
+               "display_name": "Cadre de porte doré en argile",
+               "description": "Correspond à un mur extérieur doré en argile"
             }
          },
          "red_clay_door": {
             "red_clay_door_ghost": {
-               "display_name": "Red Clay Door",
-               "description": "Keeps the indoors cool"
+               "display_name": "Porte rouge en argile",
+               "description": "Maintient la fraicheur à l'intérieur"
             }
          },
          "red_clay_window_frame": {
             "red_clay_window_frame_ghost": {
-               "display_name": "Red Clay Window Frame",
-               "description": "Let's the sun in."
+               "display_name": "Cadre de fenêtre rouge en argile",
+               "description": "Laisse entrer le soleil."
             }
          },
          "blue_clay_door": {
             "blue_clay_door_ghost": {
-               "display_name": "Blue Clay Door",
-               "description": "Blue like a dream of ocean"
+               "display_name": "Porte bleu en argile",
+               "description": "Bleu comme un rêve de l'océan"
             }
          },
          "green_clay_door": {
             "green_clay_door_ghost": {
-               "display_name": "Green Clay Door",
-               "description": "Colored to match the desert"
+               "display_name": "Porte verte en argile",
+               "description": "Couleur pour correspondre avec le désert"
             }
          },
          "blue_clay_window_frame": {
             "blue_clay_window_frame_ghost": {
-               "display_name": "Blue Clay Window Frame",
-               "description": "Lets in the desert air."
+               "display_name": "Cadre de fenêtre bleu en argile",
+               "description": "Laisse rentrer l'air du désert."
             }
          },
          "green_clay_window_frame": {
             "green_clay_window_frame_ghost": {
-               "display_name": "Green Clay Window Frame",
-               "description": "Lets in the soft desert air."
+               "display_name": "Cadre de fenêtre vert en argile",
+               "description": "Laisse rentrer l'air doux du désert."
             }
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
-               "display_name": "Latticed Clay Window Frame",
-               "description": "The lattice still lets the good air in."
+               "display_name": "Cadre de fenêtre treillis en argile",
+               "description": "Le treillis permet toujours de faire rentrer le bon air."
             }
          }
       },
@@ -3601,19 +3601,19 @@
                   "description": "Manger moi ! Manger moi !"
                },
                "002": {
-                  "name": "Green Corn",
-                  "description": "Extremely unsatisfying to eat."
+                  "name": "Maïs vert",
+                  "description": "Extrêmement insatisfaisant pour manger."
                },
                "001": {
-                  "name": "Corn Sprout",
+                  "name": "Germe de maïs",
                   "description": "Pas encore comestible !"
                },
                "000": {
-                  "name": "Corn Seedling",
-                  "description": "Slow-mo, high-stakes gambling."
+                  "name": "Plant de maïs",
+                  "description": "Ralenti, enjeux élevés du jeu."
                },
                "011": {
-                  "name": "Corn Husk",
+                  "name": "Carcasse de maïs",
                   "description": "C'est mort."
                }
             }
@@ -3646,15 +3646,15 @@
          },
          "frostsnap_crop": {
             "display_name": "Perce-neige",
-            "description": "It's chill to the touch.",
+            "description": "Il est froid au touché.",
             "growth_stage": {
                "001": {
                   "name": "Pousse de perce-neige",
-                  "description": "Stubby."
+                  "description": "Trapu."
                },
                "003": {
                   "name": "Perce-neige",
-                  "description": "Mysteriously cool."
+                  "description": "Mystérieusement froid."
                },
                "000": {
                   "name": "Semis de perce-neige",
@@ -3676,19 +3676,19 @@
                },
                "002": {
                   "name": "Bébé navet",
-                  "description": "Small. Bitter."
+                  "description": "Petit. Amer."
                },
                "001": {
                   "name": "Pousse de navet",
-                  "description": "Not edible yet!"
+                  "description": "Pas encore comestible !"
                },
                "000": {
                   "name": "Semis de navet",
-                  "description": "A unrealized turnip."
+                  "description": "Un navet latente."
                },
                "011": {
                   "name": "Navet pourri",
-                  "description": "Moldy and disgusting."
+                  "description": "Moisi et dégoûtant."
                }
             }
          },
@@ -3702,19 +3702,19 @@
                },
                "002": {
                   "name": "Bébé citrouille",
-                  "description": "Not edible yet!"
+                  "description": "Pas encore comestible !"
                },
                "001": {
                   "name": "Pousse de citrouille",
-                  "description": "Not edible yet!"
+                  "description": "Pas encore comestible !"
                },
                "000": {
                   "name": "Semis de citrouille",
-                  "description": "A unrealized pumpkin."
+                  "description": "Une citrouille latente."
                },
                "011": {
                   "name": "Citrouille pourrie",
-                  "description": "Moldy and disgusting."
+                  "description": "Moisi et dégoûtant."
                }
             }
          },
@@ -3744,49 +3744,49 @@
          },
          "tester_crop": {
             "display_name": "Tester",
-            "description": "Steeped in the soil.",
+            "description": "Ancré dans le sol.",
             "tester_crop_slow": {
                "display_name": "Tester_Slow",
-               "description": "Steeped in the soil.",
+               "description": "Ancré dans le sol.",
                "growth_stage": {
                   "001": {
-                     "name": "Ripe Tester",
-                     "description": "Delicious!"
+                     "name": "Tester mûre",
+                     "description": "Délicieux !"
                   },
                   "000": {
-                     "name": "Tester Seedling",
-                     "description": "A unrealized tester."
+                     "name": "Plant Tester",
+                     "description": "Un tester latente."
                   }
                }
             },
             "growth_stage": {
                "001": {
-                  "name": "Ripe Tester",
-                  "description": "Delicious!"
+                  "name": "Tester mûre",
+                  "description": "Délicieux !"
                },
                "000": {
-                  "name": "Tester Seedling",
-                  "description": "A unrealized tester."
+                  "name": "Plant Tester",
+                  "description": "Un tester latente."
                }
             }
          },
          "tester_crop_2": {
             "display_name": "Tester_Slow",
-            "description": "Steeped in the soil.",
+            "description": "Ancré dans le sol.",
             "growth_stage": {
                "001": {
-                  "name": "Ripe Tester",
-                  "description": "Delicious!"
+                  "name": "Tester mûre",
+                  "description": "Délicieux !"
                },
                "000": {
                   "name": "Tester Seedling",
-                  "description": "A unrealized tester."
+                  "description": "Un tester latente."
                }
             }
          },
          "tester_silkweed_crop": {
             "display_name": "Fil-de-soie (test)",
-            "description": "This plant's fiber can be spun into thread",
+            "description": "La fibre de cette plante peut-être filée en fil",
             "growth_stage": {
                "004": {
                   "name": "Fil-de-soie mature"
@@ -3810,27 +3810,27 @@
          },
          "turnip_crop": {
             "display_name": "Navet",
-            "description": "Fast-growing staple crop, but not particularly nutritious nor delicious.",
+            "description": "Culture basique à croissance rapide, mais pas particulièrement nutritifs ni délicieux.",
             "growth_stage": {
                "003": {
-                  "name": "Ripe Turnip",
-                  "description": "Delicious!"
+                  "name": "Navet mûr",
+                  "description": "Délicieux !"
                },
                "002": {
-                  "name": "Baby Turnip",
-                  "description": "Small. Bitter."
+                  "name": "Bébé navet",
+                  "description": "Petit. Amer."
                },
                "001": {
-                  "name": "Turnip Sprout",
-                  "description": "Not edible yet!"
+                  "name": "Pousse de navet",
+                  "description": "Pas encore comestible !"
                },
                "000": {
-                  "name": "Turnip Seedling",
-                  "description": "A unrealized turnip."
+                  "name": "Semis de navet",
+                  "description": "Un navet latente."
                },
                "011": {
-                  "name": "Rotten Turnip",
-                  "description": "Moldy and disgusting."
+                  "name": "Navet pourri",
+                  "description": "Moisi et dégoûtant."
                }
             }
          },
