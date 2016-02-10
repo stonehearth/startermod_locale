@@ -1518,7 +1518,7 @@
                            "choice_000": "Merci mon Dieu !",
                            "choice_001": "Ogo qui ?",
                            "bulletin_message": {
-                              "000": "Bonne nouvelles fantassin ! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous appelle de nouveau à lui. Il est temps de rentrer à la maison, montré lui vos hommages ! Si vous avez de la chance, peut-être que nous reviendrons visiter... bientôt !"
+                              "000": "Bonne nouvelle bouseux ! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous appelle de nouveau à lui. Il est temps de rentrer à la maison, montré lui vos hommages ! Si vous avez de la chance, peut-être que nous reviendrons visiter... bientôt !"
                            },
                            "bulletin_title": "Le gobelin revient de manière magnanime",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1647,7 +1647,7 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Dites mes moutons... moi est amoureux d'elle toujours..."
+                              "00": "Dites à ma brebis ... moi être amoureux d'elle toujours..."
                            },
                            "bulletin_title": "[name(i18n_data.boss)] est vaincu !",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -2108,7 +2108,7 @@
          "recovering": {
             "recovering_buff": {
                "display_name": "Alité",
-               "description": "Se remet lentement de ces blessures. Possibilité de recevoir des soins médicaux d'herboristes."
+               "description": "Se remet lentement de ces blessures. Pourrait recevoir des soins médicaux d'un herboriste."
             }
          },
          "stamina_tonic": {
@@ -2126,7 +2126,7 @@
          "severely_injured": {
             "severely_injured_buff": {
                "display_name": "Gravement blessé",
-               "description": "Blessé gravement ! Cette hearthling peut à peine marcher !"
+               "description": "Blessé gravement ! Ce hearthling peut à peine marcher !"
             }
          },
          "undead_infection": {
@@ -2291,7 +2291,7 @@
          },
          "use_consumable": {
             "display_name": "Utiliser",
-            "description": "Utiliser cet objet consommable pour rendre plus fort tous les hearthling en ville. Cela va détruire cette objet."
+            "description": "Utiliser cet objet consommable pour rendre plus fort tous les hearthlings en ville. Cela va détruire cette objet."
          },
          "edit_party": {
             "display_name": "Modifier l'équipe",
@@ -2383,7 +2383,7 @@
                   },
                   "insufferable_academic": {
                      "000": "Couper du bois est une sous-utilisation épouvantable de mes grandes facultés intelllectuelles.",
-                     "001": "Il sera à nouveau trop tôt, si je ne vois jamais une autre hache.",
+                     "001": "Si jamais je vois à nouveau une hâche c'en est fini de moi.",
                      "002": "Tout ce bois vaudrait presque la chandelle de faire un effort, s'il était seulement destinées à une usine à papier.",
                      "003": "N'y a t-il personne d'autre qui pourrait s'engager dans un tel travail de domestique ?",
                      "004": "J'ai mis au point une facon de couper le bois qui et mathématiquement parfaite. Hélas, il n'y a pas de revues ici où je pourrais publier mes découvertes !",
@@ -3228,7 +3228,7 @@
             "display_name": "Tiare en bronze",
             "description": "Protection pour votre tête",
             "bronze_circlet_iconic": {
-               "display_name": "Bonnet en cuir",
+               "display_name": "Cercle en bronze",
                "description": "Protection pour votre tête"
             }
          },
@@ -3248,7 +3248,7 @@
             "display_name": "Toque en cuir",
             "description": "Protection pour votre tête",
             "leather_helmet_iconic": {
-               "display_name": "Bonnet en cuir",
+               "display_name": "Toque en cuir",
                "description": "Protection pour votre tête"
             }
          },
@@ -3384,19 +3384,19 @@
          },
          "golden_clay_doorframe": {
             "golden_clay_doorframe_ghost": {
-               "display_name": "Cadre de porte doré en argile",
+               "display_name": "Cadre de porte en argile doré",
                "description": "Correspond à un mur extérieur doré en argile"
             }
          },
          "red_clay_door": {
             "red_clay_door_ghost": {
-               "display_name": "Porte rouge en argile",
+               "display_name": "Porte en argile rouge",
                "description": "Maintient la fraicheur à l'intérieur"
             }
          },
          "red_clay_window_frame": {
             "red_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre rouge en argile",
+               "display_name": "Cadre de fenêtre en argile rouge",
                "description": "Laisse entrer le soleil."
             }
          },
@@ -3408,13 +3408,13 @@
          },
          "green_clay_door": {
             "green_clay_door_ghost": {
-               "display_name": "Porte verte en argile",
+               "display_name": "Porte en argile vert",
                "description": "Couleur pour correspondre avec le désert"
             }
          },
          "blue_clay_window_frame": {
             "blue_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre bleu en argile",
+               "display_name": "Cadre de fenêtre en argile bleu",
                "description": "Laisse rentrer l'air du désert."
             }
          },
@@ -3684,7 +3684,7 @@
                },
                "000": {
                   "name": "Semis de navet",
-                  "description": "Un navet latente."
+                  "description": "Un navet pas fini."
                },
                "011": {
                   "name": "Navet pourri",
@@ -3710,7 +3710,7 @@
                },
                "000": {
                   "name": "Semis de citrouille",
-                  "description": "Une citrouille latente."
+                  "description": "Une citrouille pas fini."
                },
                "011": {
                   "name": "Citrouille pourrie",
@@ -3755,7 +3755,7 @@
                   },
                   "000": {
                      "name": "Plant Tester",
-                     "description": "Un tester latente."
+                     "description": "Un tester pas fini."
                   }
                }
             },
@@ -3766,7 +3766,7 @@
                },
                "000": {
                   "name": "Plant Tester",
-                  "description": "Un tester latente."
+                  "description": "Un tester pas fini."
                }
             }
          },
@@ -3780,7 +3780,7 @@
                },
                "000": {
                   "name": "Tester Seedling",
-                  "description": "Un tester latente."
+                  "description": "Un tester pas fini."
                }
             }
          },
@@ -3826,7 +3826,7 @@
                },
                "000": {
                   "name": "Semis de navet",
-                  "description": "Un navet latente."
+                  "description": "Un navet pas fini."
                },
                "011": {
                   "name": "Navet pourri",
