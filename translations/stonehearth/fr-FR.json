@@ -3228,7 +3228,7 @@
             "display_name": "Tiare en bronze",
             "description": "Protection pour votre tête",
             "bronze_circlet_iconic": {
-               "display_name": "Cercle en bronze",
+               "display_name": "Tiare en bronze",
                "description": "Protection pour votre tête"
             }
          },
@@ -3420,7 +3420,7 @@
          },
          "green_clay_window_frame": {
             "green_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre vert en argile",
+               "display_name": "Cadre de fenêtre en argile vert",
                "description": "Laisse rentrer l'air doux du désert."
             }
          },
@@ -3710,11 +3710,11 @@
                },
                "000": {
                   "name": "Semis de citrouille",
-                  "description": "Une citrouille pas fini."
+                  "description": "Une citrouille pas finie."
                },
                "011": {
                   "name": "Citrouille pourrie",
-                  "description": "Moisi et dégoûtant."
+                  "description": "Moisie et dégoûtante."
                }
             }
          },
@@ -3743,44 +3743,44 @@
             }
          },
          "tester_crop": {
-            "display_name": "Tester",
+            "display_name": "Plante (test)",
             "description": "Ancré dans le sol.",
             "tester_crop_slow": {
-               "display_name": "Tester_Slow",
+               "display_name": "Plante avec pousse lente (test)",
                "description": "Ancré dans le sol.",
                "growth_stage": {
                   "001": {
-                     "name": "Tester mûre",
+                     "name": "Mûre",
                      "description": "Délicieux !"
                   },
                   "000": {
-                     "name": "Plant Tester",
-                     "description": "Un tester pas fini."
+                     "name": "Semis",
+                     "description": "Un test pas fini."
                   }
                }
             },
             "growth_stage": {
                "001": {
-                  "name": "Tester mûre",
+                  "name": "Mûre",
                   "description": "Délicieux !"
                },
                "000": {
-                  "name": "Plant Tester",
-                  "description": "Un tester pas fini."
+                  "name": "Semis",
+                  "description": "Un test pas fini."
                }
             }
          },
          "tester_crop_2": {
-            "display_name": "Tester_Slow",
+            "display_name": "Plante avec pousse lente (test)",
             "description": "Ancré dans le sol.",
             "growth_stage": {
                "001": {
-                  "name": "Tester mûre",
+                  "name": "Pousse",
                   "description": "Délicieux !"
                },
                "000": {
-                  "name": "Tester Seedling",
-                  "description": "Un tester pas fini."
+                  "name": "Semis",
+                  "description": "Un test pas fini."
                }
             }
          },
