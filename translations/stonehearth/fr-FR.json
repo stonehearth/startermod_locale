@@ -284,7 +284,7 @@
             "settings": "Paramétres",
             "quit_to_menu": "Retour au menu principal",
             "exit_game": "Quitter le jeu",
-            "post_bug": "Signaler un bug",
+            "post_bug": "Signaler un bogue",
             "exit_confirm_dialog": {
                "title": "Quitter le jeu",
                "message": "Voulez-vous vraiment quitter le jeu ? Les changements non sauvegardés seront perdus.",
@@ -427,7 +427,7 @@
                      "display_name": "Construire une échelle",
                      "description": "Construisez une échelle pour atteindre<br>les endroits hors de portée.",
                      "tip_title": "Cliquez sur un mur pour construire une échelle",
-                     "tip_description": "Cliquez pour placer manuellement une échelle pour atteindre un endroit hors de portée<br><br>Click droit pour sortir"
+                     "tip_description": "Cliquez pour placer manuellement une échelle pour atteindre un endroit hors de portée<br><br>Clique droit pour sortir"
                   }
                }
             },
@@ -529,7 +529,7 @@
                   "mining": "Minage",
                   "trapping": "Chasse"
                },
-               "percent_full": "[str(percent)] Percent Full",
+               "percent_full": "[str(percent)] % plein",
                "active": "active",
                "paused": "en pause"
             }
@@ -586,7 +586,7 @@
                "draw_road_tool": "Routes",
                "place_furniture_tool": "Meubles",
                "place_decoration_tool": "Décorations",
-               "erase_tool": "Erase"
+               "erase_tool": "Effacer"
             },
             "overhead_tips": {
                "wall_segment_tip_title": "Cliquez pour placer des segments de murs libres",
@@ -720,7 +720,7 @@
                "fallow_description": "Ne rien semer et laisser le sol se régénérer seul."
             },
             "mining": {
-               "help": "L'extraction minière permet de creuser le sol et les montagnes et ainsis de trouver des resources spécifiques.",
+               "help": "L'extraction minière permet de creuser le sol et les montagnes et ainsis de trouver des ressources spécifiques.",
                "disable": "Suspendre l'extraction",
                "enable": "Reprendre l'extraction"
             },
