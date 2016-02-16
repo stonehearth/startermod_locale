@@ -2702,13 +2702,13 @@
                "text": "Dans un lit:",
                "logs": {
                   "generic": {
-                     "000": "It feels good to have my own bed.",
-                     "001": "Sleeping in a bed is a ton cooler than sleeping on the floor!",
-                     "002": "Beds are the best invention since regulation log sizes.",
-                     "003": "I'm never going to get tired of sleeping in a bed.",
-                     "004": "Yes! This bed is mine! M-I-N-E!",
-                     "005": "Being in my bed makes me feel so sheltered and cozy.",
-                     "006": "Home is where your bed is."
+                     "000": "Ça fait du bien d'avoir mon propre lit.",
+                     "001": "Dormir dans un lit est plus cool que dormir sur le plancher !",
+                     "002": "Les lits sont la meilleure invention depuis la limitation de la taille du registre.",
+                     "003": "Je ne vais jamais être fatigué à dormir dans un lit.",
+                     "004": "Oui ! Ce lit est le mien ! L-E M-I-E-N !",
+                     "005": "Être dans mon lit, et je me sens si protégé et si confortable.",
+                     "006": "La maison est où votre lit est."
                   }
                }
             },
@@ -2716,17 +2716,17 @@
                "text": "Sur la terre dur et dans le froid:",
                "logs": {
                   "generic": {
-                     "000": "Sleeping on the ground makes me super sore.",
-                     "001": "I think there was a rock in my shoulder all night.",
-                     "002": "Rattlesnakes! What if I wake up covered in rattlesnakes?!",
-                     "003": "I wish I could sleep in a real bed.",
-                     "004": "Any kind of bed would be better than sleeping on the ground",
-                     "005": "I really, really wish I had a bed to call my own.",
-                     "006": "I was too exhausted to find a proper bed, and now I'm really paying for it. Ow.",
-                     "007": "Slept on the ground again. Neck super sore. Everything looks slanted.",
-                     "008": "I counted beds to go to sleep. BEDS!",
+                     "000": "Dormir sur le terrain me fait super mal.",
+                     "001": "Je pense qu'il y avait une pierre dans mon épaule toute la nuit.",
+                     "002": "Serpents à sonnettes ! Que faire si je me réveille couvert de serpents à sonnettes ?!",
+                     "003": "Je voudrais pouvoir dormir dans un vrai lit.",
+                     "004": "Tout type de lit serait mieux que de dormir sur le sol.",
+                     "005": "Je souhaite vraiment, vraiment, avoir un lit.",
+                     "006": "Je suis trop fatigué pour trouver un lit à proprement parler, et maintenant je suis vraiment payer pour ça. Ow.",
+                     "007": "Dormi sur le sol à nouveau. Super mal au cou. Tout semble inclinée.",
+                     "008": "J'ai compté les lits pour aller dormir. Des Lits !",
                      "teacher": {
-                        "000": "Though [str(entry.teacher)] slept on the ground during their pilgrimage, I wish I didn't have to."
+                        "000": "Bien que [str(entry.teacher)] dormais sur le sol au cours de leur pèlerinage, je souhaite que je ne devais pas faire de même."
                      }
                   }
                }
@@ -2734,40 +2734,40 @@
          },
          "eating_berries": {
             "eating_berries": {
-               "text": "On Eating Berries:",
+               "text": "En se nourrissant des baies:",
                "logs": {
                   "psychopathic_misanthrope": {
-                     "000": "Huh. These berries are actually kind of growing on me. They've got that fresh, non-manured taste.",
-                     "001": "I'm not sure. These berries me feel kind of... light inside. I don't like where this is going.",
-                     "002": "Now I know why hippies are vegetarian. Screw this."
+                     "000": "Huh. Ces baies sont de plus en plus en moi. Ils ont ce goût frais, non fumé.",
+                     "001": "Je ne suis pas sûr. Ces baies me font sentir une sorte de... lumière à l'intérieur. Je n'aime pas comment ça va finir.",
+                     "002": "Maintenant je sais pourquoi les hippies sont végétariens. J'en ai rien à faire."
                   },
                   "insufferable_academic": {
-                     "000": "Dark colored berries are full of antioxidants. Which are good for you."
+                     "000": "Les baies de couleur foncée sont plein d'antioxydants. Qui sont bons pour vous."
                   },
                   "hopeless_optimist": {
-                     "000": "Wow! I get to eat all the fresh berries I want! I'll never go hungry again!",
-                     "001": "I love how they make my mouth blue. And my tongue. And my insides. And--",
-                     "002": "Every berry tastes a little different. Like snowflakes, but for the mouth!",
-                     "003": "I'm getting really good at telling which berries are the crunchiest."
+                     "000": "Hou la la ! Je mange tous les fruits frais que je veux ! Je n'aurais plus jamais faim !",
+                     "001": "J'adore comment ça fait bleu dans ma bouche. Et ma langue. Et mes entrailles. Et--",
+                     "002": "Chaque baie a un goût un peu différent. Comme des flocons de neige, mais pour la bouche !",
+                     "003": "Je vais vraiment bien quand je raconte que les baies sont croustillantes."
                   },
                   "beleaguered_leader": {
-                     "000": "Mmm, berries! Part of a healthy, regular diet.",
-                     "001": "Berries again! Which is good, because they're healthy for you.",
-                     "002": "Berries! They taste better than starving.",
-                     "003": "Have you eaten your berries today? I know I've eaten mine!",
-                     "004": "I wonder what's for dinner? I know--BERRIES!",
-                     "005": "Everyone's been pretty good about eating so many berries. I try to set a good example."
+                     "000": "Mmm, des baies ! Le cadre d'un régime alimentaire normal en bonne santé.",
+                     "001": "Des baies encore ! Ce qui est bon, parce qu'ils sont en bonne santé pour vous.",
+                     "002": "Des baies! C'est mieux que mourir de faim.",
+                     "003": "Avez-vous mangé vos baies aujourd'hui ? Je sais que je le mien je les ai mangé !",
+                     "004": "Je me demande ce qui a pour le dîner ? Je sais - DES BAIES !",
+                     "005": "Tout le monde a été assez bien de manger autant de fruits. Je tente de donner le bon exemple."
                   },
                   "lovable_rogue": {
-                     "000": "I should really stop trying to sneak these berries into my pockets. If I keep it up somebody might notice the large purple stains in my pants.",
+                     "000": "Je devrais vraiment arrêter d'essayer de faufiler des baies dans mes poches. Si je continue quelqu'un pourrait remarquer les grandes taches pourpres dans mon pantalon.",
                      "teacher": {
-                        "000": "In theory, you can ferment fruit, right? By *[str(entry.teacher)]* I miss fermented drinks."
+                        "000": "En théorie, vous pouvez fermenter les fruits, non ? Par *[str(entry.teacher)]* Je manque de boissons fermentées."
                      }
                   },
                   "diligent_sweetheart": {
-                     "000": "Mmm, berries! You never got fresh fruit in the city.",
-                     "001": "If we could just build an iron stove, I could make a pie. Well, if I also had butter. And flour. And sugar.",
-                     "002": "My figure is looking great!"
+                     "000": "Mmm, des baies ! Vous avez jamais des fruits frais dans la ville.",
+                     "001": "Si nous pouvions construire un poêle en fonte, je pourrais faire une tarte. Et puis, si j'avais également du beurre. Et la farine. Et le sucre.",
+                     "002": "Ma figure a un teint super !"
                   }
                }
             }
