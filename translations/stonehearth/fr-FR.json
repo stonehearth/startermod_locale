@@ -2704,30 +2704,30 @@
                "logs": {
                   "generic": {
                      "000": "Ça fait du bien d'avoir mon propre lit.",
-                     "001": "Dormir dans un lit est plus cool que dormir sur le plancher !",
-                     "002": "Les lits sont la meilleure invention depuis la limitation de la taille du registre.",
-                     "003": "Je ne vais jamais être fatigué à dormir dans un lit.",
+                     "001": "Dormir dans un lit est carrément plus cool que dormir sur le sol !",
+                     "002": "Les lits sont la meilleure invention depuis la limitation des tailles de registre.",
+                     "003": "Je ne vais jamais me lasser de dormir dans un lit.",
                      "004": "Oui ! Ce lit est le mien ! L-E M-I-E-N !",
-                     "005": "Être dans mon lit, et je me sens si protégé et si confortable.",
-                     "006": "La maison est où votre lit est."
+                     "005": "Être dans mon lit me fait me sentir en sécurité et au chaud.",
+                     "006": "Votre foyer c'est où est votre lit."
                   }
                }
             },
             "sleep_on_ground": {
-               "text": "Sur la terre dur et dans le froid:",
+               "text": "Dans le froid et sur la terre dur :",
                "logs": {
                   "generic": {
-                     "000": "Dormir sur le terrain me fait super mal.",
-                     "001": "Je pense qu'il y avait une pierre dans mon épaule toute la nuit.",
+                     "000": "Dormir sur le sol me fait super mal.",
+                     "001": "Je pense qu'il y avait une pierre contre mon épaule toute la nuit.",
                      "002": "Serpents à sonnettes ! Que faire si je me réveille couvert de serpents à sonnettes ?!",
                      "003": "Je voudrais pouvoir dormir dans un vrai lit.",
                      "004": "Tout type de lit serait mieux que de dormir sur le sol.",
-                     "005": "Je souhaite vraiment, vraiment, avoir un lit.",
-                     "006": "Je suis trop fatigué pour trouver un lit à proprement parler, et maintenant je suis vraiment payer pour ça. Ow.",
+                     "005": "Je souhaite vraiment, vraiment, avoir un lit à moi.",
+                     "006": "Je suis trop fatigué pour trouver un lit à proprement parler, et maintenant je le paye. Oaaaahhh.",
                      "007": "Dormi sur le sol à nouveau. Super mal au cou. Tout semble inclinée.",
-                     "008": "J'ai compté les lits pour aller dormir. Des Lits !",
+                     "008": "J'ai compté les lits pour aller dormir. Des LITS !",
                      "teacher": {
-                        "000": "Bien que [str(entry.teacher)] dormais sur le sol au cours de leur pèlerinage, je souhaite que je ne devais pas faire de même."
+                        "000": "Bien que [str(entry.teacher)] dormais sur le sol au cours de leur pèlerinage, je souhaite ne devais pas faire de même."
                      }
                   }
                }
@@ -2738,9 +2738,9 @@
                "text": "En se nourrissant des baies:",
                "logs": {
                   "psychopathic_misanthrope": {
-                     "000": "Huh. Ces baies sont de plus en plus en moi. Ils ont ce goût frais, non fumé.",
+                     "000": "Huh. Ces baies ont l'air de grandir en moi. Elles sont trop jeune, pas assez mûre.",
                      "001": "Je ne suis pas sûr. Ces baies me font sentir une sorte de... lumière à l'intérieur. Je n'aime pas comment ça va finir.",
-                     "002": "Maintenant je sais pourquoi les hippies sont végétariens. J'en ai rien à faire."
+                     "002": "Maintenant je sais pourquoi les hippies sont végétariens. Qu'ils aillent se faire ***."
                   },
                   "insufferable_academic": {
                      "000": "Les baies de couleur foncée sont plein d'antioxydants. Qui sont bons pour vous."
@@ -2753,22 +2753,22 @@
                   },
                   "beleaguered_leader": {
                      "000": "Mmm, des baies ! Le cadre d'un régime alimentaire normal en bonne santé.",
-                     "001": "Des baies encore ! Ce qui est bon, parce qu'ils sont en bonne santé pour vous.",
+                     "001": "Des baies encore ! Parce qu'elles sont bonne pour votre santé.",
                      "002": "Des baies! C'est mieux que mourir de faim.",
-                     "003": "Avez-vous mangé vos baies aujourd'hui ? Je sais que je le mien je les ai mangé !",
-                     "004": "Je me demande ce qui a pour le dîner ? Je sais - DES BAIES !",
-                     "005": "Tout le monde a été assez bien de manger autant de fruits. Je tente de donner le bon exemple."
+                     "003": "Avez-vous mangé vos baies aujourd'hui ? Je sais que j'ai mangées les miennes !",
+                     "004": "Je me demande ce qu'il y a pour le dîner ? Je sais - DES BAIES !",
+                     "005": "Tout le monde a été assez bien de manger autant de baies. Je tente de montrer l'exemple."
                   },
                   "lovable_rogue": {
-                     "000": "Je devrais vraiment arrêter d'essayer de faufiler des baies dans mes poches. Si je continue quelqu'un pourrait remarquer les grandes taches pourpres dans mon pantalon.",
+                     "000": "Je devrais vraiment arrêter d'essayer de mettre des baies dans mes poches. Si je continue quelqu'un pourrait remarquer les grandes taches violettes sur mon pantalon.",
                      "teacher": {
-                        "000": "En théorie, vous pouvez fermenter les fruits, non ? Par *[str(entry.teacher)]* Je manque de boissons fermentées."
+                        "000": "En théorie, vous pouvez fermenter les fruits, non ? Par *[str(entry.teacher)]* je manque de boissons fermentées."
                      }
                   },
                   "diligent_sweetheart": {
-                     "000": "Mmm, des baies ! Vous avez jamais des fruits frais dans la ville.",
+                     "000": "Mmm, des baies ! Vous n'avez jamais de fruit frais dans la ville.",
                      "001": "Si nous pouvions construire un poêle en fonte, je pourrais faire une tarte. Et puis, si j'avais également du beurre. Et la farine. Et le sucre.",
-                     "002": "Ma figure a un teint super !"
+                     "002": "Mon visage a une super teinte !"
                   }
                }
             }
