@@ -806,6 +806,7 @@
             "workshop_closed": "Closed",
             "maintain_option_disabled": "Build a stockpile or place a crate to unlock more crafting options!",
             "craft": "Craft!",
+            "craft_queue_full": "Orders Full!",
             "craftable_locked": "Unlocked at Level: [str(level)]",
             "workshop_requirement_title": "Workshop",
             "workshop_none_required": "None required!",
