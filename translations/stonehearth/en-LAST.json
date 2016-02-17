@@ -282,6 +282,7 @@
             "resume": "Resume",
             "save": "Save or Load Game",
             "settings": "Settings",
+            "about": "About",
             "quit_to_menu": "Quit to Main Menu",
             "exit_game": "Exit Game",
             "post_bug": "Post a bug",
@@ -876,6 +877,10 @@
          }
       },
       "shell": {
+         "about": {
+            "title": "About Stonehearth",
+            "attributions": "The following is a list of OpenSource Software that is used in Stonehearth:"
+         },
          "loading_screen": {
             "initial_load_map_text": "Generating World",
             "loading_map_flavor_text": {
@@ -1029,7 +1034,7 @@
          "title_screen": {
             "exit": "exit",
             "settings": "settings",
-            "credits": "credits",
+            "about": "about",
             "kingdom_of": "The Kingdom of",
             "continue_game": "Continue",
             "new_game": "New Game",

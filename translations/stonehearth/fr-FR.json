@@ -282,6 +282,7 @@
             "resume": "Reprendre",
             "save": "Sauvegarder ou Charger une partie",
             "settings": "Paramétres",
+            "about": "À propos",
             "quit_to_menu": "Retour au menu principal",
             "exit_game": "Quitter le jeu",
             "post_bug": "Signaler un bogue",
@@ -876,6 +877,10 @@
          }
       },
       "shell": {
+         "about": {
+            "title": "À propos de Stonehearth",
+            "attributions": "Ce qui suit est la liste des logiciels OpenSource utilisés dans Stonehearth&nbsp;:"
+         },
          "loading_screen": {
             "initial_load_map_text": "Génération du monde",
             "loading_map_flavor_text": {
@@ -1029,7 +1034,7 @@
          "title_screen": {
             "exit": "Quitter",
             "settings": "Préférences",
-            "credits": "Crédits",
+            "about": "À propos",
             "kingdom_of": "Le royaume de",
             "continue_game": "Continuer",
             "new_game": "Nouvelle partie",
