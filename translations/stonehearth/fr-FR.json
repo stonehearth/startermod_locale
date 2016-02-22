@@ -167,7 +167,7 @@
             "load_game": "Charger Partie",
             "game_different_version": "Version de la sauvegarde incompatible",
             "delete_incompatible_saves": "Supprimer les sauvegardes incomaptibles",
-            "save_time": "Sauvegardé à [str(save_time)]"
+            "save_time": "Sauvegardé le [str(save_time)]"
          },
          "common": {
             "ok": "OK",
@@ -275,7 +275,7 @@
             },
             "month_format": "i18n(stonehearth:ui.game.calendar.months.[str(date.month)])",
             "date_format_long": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
-            "date_time_long_format": "Jour [str(date.day)] of i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]"
+            "date_time_long_format": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]"
          },
          "esc_menu": {
             "title": "Stonehearth",
@@ -4489,7 +4489,7 @@
          "not_much_of_a_bed": {
             "not_much_of_a_bed_ghost": {
                "display_name": "Lit miteux",
-               "description": "Mean as in poor, not cruel. Though it's that too."
+               "description": "Ce qui veut dire mauvais, pas cruel. Bien que ça le soit aussi."
             }
          },
          "park_bench": {
@@ -5824,7 +5824,7 @@
             "shepherds_crook_recipe": {
                "description": "Requis pour promouvoir un hearthling en berger",
                "recipe_name": "Bâton de berger",
-               "flavor": "Can you tell me another story about The Shepard?"
+               "flavor": "Pouvez-vous me raconter une autre histoire à propos du Berger?"
             },
             "simple_wooden_chair_recipe": {
                "description": "Manger assis procure un gain de satiété de 20%.",
@@ -5918,7 +5918,7 @@
             "wooden_sword_recipe": {
                "description": "Requise pour promouvoir un hearthling en fantassin.",
                "recipe_name": "Epée en bois d'entrainement",
-               "flavor": "Juste assez pointue pour letravail à faire."
+               "flavor": "Juste assez pointue pour le travail à faire."
             },
             "wooden_wall_lantern_recipe": {
                "description": "Une lanterne simple. Placées sur les bâtiments pour fournir de la lumière la nuit.",
