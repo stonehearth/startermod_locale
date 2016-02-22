@@ -2809,8 +2809,8 @@
                   },
                   "hopeless_optimist": {
                      "000": "Peut-être que si je mange tout le temps de cette nourriture, je vais en devenir&nbsp;!",
-                     "001": "[str(entry.recent_food)] encore ? Ma machoire en est blessé.",
-                     "002": "Ça va la langue ! Il suffit de faire semblant que vous ne dégustez pas [str(entry.recent_food)]."
+                     "001": "[str(entry.recent_food)] ! Encore ? Ma bouche me fait mal.",
+                     "002": "Du calme langue ! Fait semblant d'être allergique aux [str(entry.recent_food)]."
                   },
                   "lovable_rogue": {
                      "000": "[str(entry.recent_food)]. Génial.",
