@@ -2809,8 +2809,8 @@
                   },
                   "hopeless_optimist": {
                      "000": "Peut-être que si je mange tout le temps de cette nourriture, je vais en devenir&nbsp;!",
-                     "001": "[str(entry.recent_food)] again? My jaws hurt.",
-                     "002": "It's okay, tongue! Just pretend you can't taste the [str(entry.recent_food)]."
+                     "001": "[str(entry.recent_food)] encore ? Ma machoire en est blessé.",
+                     "002": "Ça va la langue ! Il suffit de faire semblant que vous ne dégustez pas [str(entry.recent_food)]."
                   },
                   "lovable_rogue": {
                      "000": "[str(entry.recent_food)]. Génial.",
@@ -2823,7 +2823,7 @@
                "text": "Sur la diversité de nourriture :",
                "logs": {
                   "generic": {
-                     "000": "Mmm, je l'aime la diversité dans mon alimentation.",
+                     "000": "Mmm, j'aime la diversité de mon alimentation.",
                      "001": "Manger [str(entry.recent_food)] était un bon changement de rythme.",
                      "002": "Avoir des choses différentes au moment des repas réveille les papilles&nbsp;!",
                      "003": "[str(entry.recent_food)] a un meilleur goût quand cela fait un moment que j'en ai pas eu.",
