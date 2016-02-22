@@ -1,4 +1,15 @@
 # startermod_locale
+
+## Summary
+
+- [About](#about)
+- [How to contribute to french translation?](#how-to-contribute-to-french-translation)
+   - [Contributing?](#how-to-contribute-to-french-translation)
+   - [Instructions?](#instructions)
+- [How it works](#how-it-works)
+- [Note](#note)
+- [How to translate en.json](#how-to-translate-enjson)
+
 ##Update:
 
 The overrides method allows any mod to provide a translation for any other mod.
