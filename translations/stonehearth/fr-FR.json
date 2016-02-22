@@ -5824,7 +5824,7 @@
             "shepherds_crook_recipe": {
                "description": "Requis pour promouvoir un hearthling en berger",
                "recipe_name": "Bâton de berger",
-               "flavor": "Pouvez-vous me raconter une autre histoire à propos du Berger?"
+               "flavor": "Pouvez-vous me raconter une autre histoire à propos du Berger&nbsp;?"
             },
             "simple_wooden_chair_recipe": {
                "description": "Manger assis procure un gain de satiété de 20%.",
