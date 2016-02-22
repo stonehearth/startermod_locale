@@ -20,6 +20,21 @@ When you start up Stonehearth with this mod installed, open the settings menu an
 --- | ---
 1. Fork it!<br> 2. Create your feature branch: `git checkout -b my-new-feature`<br> 3. Commit your changes: `git commit -m "Add your new feature"`<br> 4. Push to the branch: `git push origin my-new-feature`<br> 5. Submit a pull request. | 1. Create your feature branch: `git checkout -b my-new-feature`<br> 2. Commit your changes: `git commit -m 'Add some new feature'`<br> 3. Push to the branch: `git push origin my-new-feature`<br> 4. Submit a pull request.<br> Optional : Add/Set labels and milestone =)
 
+###Instructions
+
+* Don't forget in french language a space before a punctuation `;:!?`
+* In French language a uppercase it's only: the beginning of the sentence and for proper names.
+* UTF8 encoding (without BOM)
+* Particular word (translation) : 
+
+**English** | **French**
+--- | ---
+Goblins | Gobelins
+hearthling/citizen | hearthling
+frostsnap | perce-neige
+silkweed | fil-de-soie
+brightbell | jacinthe rose
+
 ##How it works:
 
 1) startermod_locale's manifest.json uses this line:<br>
