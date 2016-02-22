@@ -2784,51 +2784,51 @@
                "logs": {
                   "generic": {
                      "000": "Encore une ration de [str(entry.recent_food)] ? Joie.",
-                     "001": "Si je mange encore une ration de [str(entry.recent_food)] je vais vomier.",
-                     "002": "Wish I had something else to eat other than this [str(entry.recent_food)]."
+                     "001": "Si je mange encore une ration de [str(entry.recent_food)] je vais vomir.",
+                     "002": "Je voudrais avoir autre chose à manger que [str(entry.recent_food)]."
                   },
                   "insufferable_academic": {
                      "000": "Encore une ration de [str(entry.recent_food)] ? Si on pouvait se nourrir que de connaissance...",
-                     "001": "A surprising amount of digestion does not seem to happen on a one-food diet."
+                     "001": "Manger qu'un seul type de nourriture, n'aide pas à la digestion."
                   },
                   "beleaguered_leader": {
                      "000": "Encore une ration de [str(entry.recent_food)] ? Joie.",
-                     "001": "Better chug this [str(entry.recent_food)] down; got to set a good example.",
+                     "001": "Mieux vos sentir [str(entry.recent_food)]; pour arriver à donner le bon exemple.",
                      "002": "Une ration de [str(entry.recent_food)] est définitivement meilleure que mourrir de faim, mais...",
-                     "003": "[str(entry.recent_food)] again? I can feel the revolt coming."
+                     "003": "[str(entry.recent_food)] encore ? Je peux sentir la révolte qui approche."
                   },
                   "psychopathic_misanthrope": {
-                     "000": "There's nothing to eat but [str(entry.recent_food)]? 10 days till I kill someone for their meat.",
-                     "001": "I've eaten so much of this food I can taste it in my sleep.",
-                     "002": "If I have to eat one more [str(entry.recent_food)] I swear I will start to foam at the mouth."
+                     "000": "Il n'y a rien à manger sauf [str(entry.recent_food)] ? 10 jours jusqu'à ce que je tue quelqu'un pour la viande.",
+                     "001": "Je l'ai tellement mangé de cette nourriture que je peux y goûter dans mon sommeil.",
+                     "002": "Si je dois de nouveau manger [str(entry.recent_food)], je jure que ma bouche va commencé à mousser."
                   },
                   "diligent_sweetheart": {
-                     "000": "More [str(entry.recent_food)]? Maybe we can dry some of it to eat later?",
-                     "001": "I don't mean to complain, but all I've eaten recently is food like this [str(entry.recent_food)]. It's starting to hurt my mouth.",
-                     "002": "[str(entry.recent_food)]! Must... keep... chewing....!"
+                     "000": "Plus de [str(entry.recent_food)] ? Nous pourrions peut-être en manger plus tard&nbsp;?",
+                     "001": "Je ne veux pas me plaindre, mais tout ce que j'ai mangé récemment est la nourriture comme ça [str(entry.recent_food)]. Ça commence à blesser ma bouche.",
+                     "002": "[str(entry.recent_food)] ! Doit... continuer... à mâcher...&nbsp;!"
                   },
                   "hopeless_optimist": {
-                     "000": "Maybe if I eat enough of this food, I'll turn into it!",
+                     "000": "Peut-être que si je mange tout le temps de cette nourriture, je vais en devenir&nbsp;!",
                      "001": "[str(entry.recent_food)] again? My jaws hurt.",
                      "002": "It's okay, tongue! Just pretend you can't taste the [str(entry.recent_food)]."
                   },
                   "lovable_rogue": {
-                     "000": "[str(entry.recent_food)]. Great.",
-                     "001": "[str(entry.recent_food)]? I miss steak.",
-                     "002": "The market value for [str(entry.recent_food)] is essentially zero right now."
+                     "000": "[str(entry.recent_food)]. Génial.",
+                     "001": "[str(entry.recent_food)] ? J'ai manqué le bifteck.",
+                     "002": "La valeur de [str(entry.recent_food)] au marché, est proche de zéro en ce moment."
                   }
                }
             },
             "different_food": {
-               "text": "On Eating Something Different:",
+               "text": "Sur la diversité de nourriture :",
                "logs": {
                   "generic": {
-                     "000": "Mmm, I love diversity in my diet.",
-                     "001": "Eating [str(entry.recent_food)] was a nice change of pace.",
-                     "002": "Having different things at mealtimes really synergizes the flavors!",
-                     "003": "[str(entry.recent_food)] tastes better when I haven't had it for a while.",
+                     "000": "Mmm, je l'aime la diversité dans mon alimentation.",
+                     "001": "Manger [str(entry.recent_food)] était un bon changement de rythme.",
+                     "002": "Avoir des choses différentes au moment des repas réveille les papilles&nbsp;!",
+                     "003": "[str(entry.recent_food)] a un meilleur goût quand cela fait un moment que j'en ai pas eu.",
                      "teacher": {
-                        "000": "Praise [str(entry.teacher)]! Diversity in food makes me happy."
+                        "000": "Gloire [str(entry.teacher)] ! La diversité dans la nourriture me rend heureux."
                      }
                   }
                }
