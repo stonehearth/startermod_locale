@@ -533,6 +533,9 @@
                "percent_full": "[str(percent)] % plein",
                "active": "active",
                "paused": "en pause"
+            },
+            "warnings": {
+               "town_inventory_full": "Inventaire de la ville plein"
             }
          },
          "bulletin": {
@@ -564,6 +567,10 @@
             "collection_quest": {
                "pay": "Et voilà !",
                "cancel": "J'ai changé d'avis"
+            },
+            "inventory_full": {
+               "title": "Inventaire de la ville plein",
+               "message": "L'nventaire de votre ville est plein ! Les hearthlings détestent les villes encombrés et ne vont plus collecter de ressource. Vendez ou détruisez les objets à l'aide de l'outil de suppression."
             }
          },
          "build_mode": {
@@ -762,6 +769,7 @@
                   "tooltip_clay": "argile",
                   "tooltip_ore": "minerais",
                   "tooltip_animal_part": "ressources animales",
+                  "tooltip_earth": "matériaux en terre",
                   "tooltip_plant": "plantes",
                   "tooltip_portal": "portes et fenêtres",
                   "tooltip_furniture": "meubles",
@@ -868,6 +876,9 @@
                "food": "Nourriture",
                "shelter": "Habitat",
                "safety": "Sécurité"
+            },
+            "inventory": {
+               "item_count": "Objets :"
             },
             "tab": {
                "town_overview": "Rapport",
@@ -1028,6 +1039,8 @@
                "enable_speed_3_description": "Ajoute une nouvelle option de vitesse dans le panneau en bas à droite qui fera fonctionner le jeu à la vitesse 4x !",
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
                "default_storage_filter_none_description": "Lors de la création d'une nouvelle réserve ou au posage d'une nouvelle caisse, le filtre par défaut sur le stockage sera réglé sur 'Aucun' au lieu de 'Tout'",
+               "show_hearthling_paths": "Montrez les chemins des hearthling",
+               "show_hearthling_paths_description": "Affichez le chemin que vos  hearthlings suivent.",
                "max_citizens": "Hearthlings max."
             }
          },
@@ -1324,12 +1337,6 @@
                   "return_title": "Le négociant est de retour !",
                   "return_greetings_positive": "Me re voilà! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
                   "return_greetings_negative": "Je suis de retour mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
-               },
-               "food_shop": {
-                  "shop_info": {
-                     "name": "Un chariot ambulant de nourriture",
-                     "title": "Un chariot ambulant de nourriture est de passage en ville"
-                  }
                },
                "rugs_shop": {
                   "shop_info": {
@@ -2024,6 +2031,53 @@
                   "mission": {
                      "sighted_bulletin": {
                         "title": "Envahisseurs en approche !"
+                     }
+                  }
+               }
+            },
+            "game_events": {
+               "arcs": {
+                  "trigger": {
+                     "game_events": {
+                        "encounters": {
+                           "ent_warning": {
+                              "collection_quest_info": {
+                                 "dialog_nodes": {
+                                    "collection_due": {
+                                       "bulletin_message": {
+                                          "000": "Will you not release the children of the forest? They do not belong in your crates and piles of trinkets. Your compliance will be rewarded.",
+                                          "001": "Hundreds of great oaks and junipers have been cut down to satiate the greed of humans. Our patience wears thin. I ask of you, return them to the homeland.",
+                                          "002": "Return our logs and help restore the natural balance of the great woodlands. I cannot guarantee your safetey if you refuse.",
+                                          "003": "Our wilderness has been sacrificed for your lifestyle of excess. We will give you a chance to return our logs. I suggest you heed my warning.."
+                                       },
+                                       "bulletin_title": "The Ent has a request.",
+                                       "dialog_title": "Ent"
+                                    },
+                                    "collection_failed": {
+                                       "bulletin_message": {
+                                          "000": "I am deeply disappointed.. I would suggest you prepare yourselves. The minions of the forest speak of an invasion."
+                                       },
+                                       "bulletin_title": "The Ent furrows his brow"
+                                    },
+                                    "collection_success": {
+                                       "bulletin_message": {
+                                          "000": "Thank you for your cooperation.. In return, I will give you [str(i18n_data.reward_gold_amount)] gold coins and [str(i18n_data.reward_item_count)] [str(i18n_data.reward_item_name)]."
+                                       },
+                                       "bulletin_title": "The Ent nods peacefully",
+                                       "dialog_title": "Ent"
+                                    },
+                                    "introduction": {
+                                       "bulletin_message": {
+                                          "000": "Greetings, humans of [str(i18n_data.town_name)]. I have come to warn you of the growing unrest within these forests.",
+                                          "001": "Silently, we have been watching.. since even before the fall of Firebird. Why? To protect. Our trees. Our saplings. Our woods."
+                                       },
+                                       "bulletin_title": "A large tree-like figure approaches.",
+                                       "dialog_title": "Ent"
+                                    }
+                                 }
+                              }
+                           }
+                        }
                      }
                   }
                }
@@ -3241,6 +3295,10 @@
          "bronze_shield": {
             "display_name": "Bouclier en bronze",
             "description": "Utile pour bloquer les attaques"
+            "bronze_shield_iconic": {
+               "display_name": "Bouclier en bronze",
+               "description": "Utile pour bloquer les attaques"
+            }
          },
          "iron_coif": {
             "display_name": "Camail en fer",
@@ -3312,12 +3370,6 @@
             "cobblestone_fence_gate_ghost": {
                "display_name": "Portail de clôture en pierre",
                "description": "Ces épais murs en pierre confèrent un sentiment de sécurité."
-            }
-         },
-         "crafting": {
-            "workshop_outbox": {
-               "display_name": "Coffre de produits finis",
-               "description": "Stocke les fabrications terminées"
             }
          },
          "picket_fence": {
@@ -3435,6 +3487,12 @@
                "display_name": "Cadre de fenêtre treillis en argile",
                "description": "Le treillis permet toujours de faire rentrer le bon air."
             }
+         },
+         "stone_tunnel_door": {
+            "stone_tunnel_door_ghost": {
+               "display_name": "Porte de tunnel en pierre",
+               "description": "Utile pour sceller les tunnels miniers."
+            }
          }
       },
       "containers": {
@@ -3483,14 +3541,8 @@
          "vault": {
             "vault_ghost": {
                "display_name": "L'Abris",
-               "description": "Magasin massif"
+               "description": "Stockage massif"
             }
-         }
-      },
-      "crafting": {
-         "workshop_outbox": {
-            "display_name": "Boîte de produits finis",
-            "description": "Stocke les fabrications terminées."
          }
       },
       "critters": {
@@ -3547,6 +3599,10 @@
          "wolf": {
             "display_name": "Un loup",
             "description": "Grrr ! Rwar !"
+         },
+         "woodchuck": {
+            "display_name": "Woodchuck",
+            "description": "Un mangeur vorace de presque tout, en particulier le bois."
          }
       },
       "crops": {
@@ -3621,32 +3677,6 @@
                "011": {
                   "name": "Carcasse de maïs",
                   "description": "C'est mort."
-               }
-            }
-         },
-         "foo_truffle": {
-            "silkweed_crop": {
-               "display_name": "Fil-de-soie",
-               "description": "La fibre de cette plante peut être filée en fil",
-               "growth_stage": {
-                  "004": {
-                     "name": "Fil-de-soie mature"
-                  },
-                  "001": {
-                     "name": "Pousse de fil-de-soie"
-                  },
-                  "000": {
-                     "name": "Semis de fil-de-soie"
-                  },
-                  "019": {
-                     "name": "Fil-de-soie pourri"
-                  },
-                  "003": {
-                     "name": "Fil-de-soie immature"
-                  },
-                  "002": {
-                     "name": "Fil-de-soie trapu"
-                  }
                }
             }
          },
@@ -4197,6 +4227,24 @@
             "unfired_clay_vase_ghost": {
                "display_name": "Vase en argile primitif",
                "description": "Un vase très simple"
+            }
+         },
+         "wooden_sign_herbalist": {
+            "wooden_sign_herbalist_ghost": {
+               "display_name": "Herbalist's sign",
+               "description": "A sign with the mark of the Herbalist"
+            }
+         },
+         "wooden_sign_inn": {
+            "wooden_sign_inn_ghost": {
+               "display_name": "Enseigne d'auberge",
+               "description": "Une enseigne signalant un lieu pour se reposer."
+            }
+         },
+         "wooden_sign_potter": {
+            "wooden_sign_potter_ghost": {
+               "display_name": "Potter's Sign",
+               "description": "A sign with the mark of the Potter"
             }
          }
       },
@@ -5423,6 +5471,14 @@
          "scythe": {
             "display_name": "Faux",
             "description": "Arme favorite pour faucher"
+         },
+         "bow": {
+            "display_name": "Arc",
+            "description": "Utilisé par un archer pour tirer des flèches",
+            "bow_talisman": {
+               "display_name": "Arc",
+               "description": "Requis pour promouvoir un fantassin en archer"
+            }
          }
       },
       "consumables": {
@@ -5471,6 +5527,10 @@
             "display_name": "???",
             "description": "???",
             "requirements": "???"
+         },
+         "archer_outfit": {
+            "display_name": "Cape d'archer",
+            "description": "Offre une protection légère"
          }
       },
       "architect": {
@@ -5964,6 +6024,22 @@
             "wooden_tunnel_door_recipe": {
                "recipe_name": "Porte de tunnel en bois",
                "description": "Utile pour bloquer les tunnels"
+            },
+            "wooden_sign_cook_recipe": {
+               "description": "Une enseigne avec la marque d'un cuisinier.",
+               "recipe_name": "Enseigne de cuisinier"
+            },
+            "wooden_sign_herbalist_recipe": {
+               "description": "Une enseigne avec la marque d'un herboriste.",
+               "recipe_name": "Enseigne d'herboriste"
+            },
+            "wooden_sign_inn_recipe": {
+               "description": "Une enseigne signalant un lieu pour se reposer.",
+               "recipe_name": "Enseigne d'auberge"
+            },
+            "wooden_sign_potter_recipe": {
+               "description": "Une enseigne avec la marque d'un potier.",
+               "recipe_name": "Enseigne de potier"
             }
          }
       },
@@ -6992,11 +7068,11 @@
                "recipe_name": "Petite potion de soin"
             },
             "stamina_tonic_recipe": {
-               "description": "Augmente l'endurance de tous les hearthlings un court instant",
+               "description": "Grande augmentation de santé",
                "recipe_name": "Potion d'endurance"
             },
             "strength_tonic_recipe": {
-               "description": "Augmente la force de tous les hearthlings un court instant",
+               "description": "Grande augmentation de la force pour faire plus de dégat lors de combat",
                "recipe_name": "Potion de force"
             },
             "bandages_name": "Bandages",
@@ -7021,9 +7097,15 @@
             "willpower_1_buff": {
                "display_name": "Bolonté +50",
                "description": "L'herboriste a amélioré la régénération de santé"
-            }
-         }
-      }
+	        }
+	     }
+	 },
+	 "cleric": {
+	     "cleric_outfit": {
+	         "display_name": "Robe de clerc",
+	         "description": "Habit sacré porté uniquement par les religieux"
+	     }
+	 }
    },
    "stonehearth_mixins": {
       "base_human": {

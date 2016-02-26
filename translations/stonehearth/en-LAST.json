@@ -533,6 +533,9 @@
                "percent_full": "[str(percent)] Percent Full",
                "active": "active",
                "paused": "paused"
+            },
+            "warnings": {
+               "town_inventory_full": "Town Inventory Full"
             }
          },
          "bulletin": {
@@ -564,6 +567,10 @@
             "collection_quest": {
                "pay": "Here you go!",
                "cancel": "I've changed my mind"
+            },
+            "inventory_full": {
+               "title": "Town Inventory Full",
+               "message": "Your town inventory is full! Hearthlings hate cluttered towns and will not harvest resources with a full inventory. Sell off the extra items or destroy them using the clear item tool."
             }
          },
          "build_mode": {
@@ -762,6 +769,7 @@
                   "tooltip_clay": "clay",
                   "tooltip_ore": "ore",
                   "tooltip_animal_part": "animal parts",
+                  "tooltip_earth": "materials made of earth",
                   "tooltip_plant": "plants",
                   "tooltip_portal": "doors & windows",
                   "tooltip_furniture": "furniture",
@@ -868,6 +876,9 @@
                "food": "Food",
                "shelter": "Shelter",
                "safety": "Safety"
+            },
+            "inventory": {
+               "item_count": "Items:"
             },
             "tab": {
                "town_overview": "Town Overview",
@@ -1028,6 +1039,8 @@
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Storage filter defaults to None",
                "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
+               "show_hearthling_paths": "Show Hearthling paths",
+               "show_hearthling_paths_description": "Display the path your hearthlings are following.",
                "max_citizens": "Max Citizens"
             }
          },
@@ -1324,12 +1337,6 @@
                   "return_title": "The trader returns!",
                   "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Still sounds good?",
                   "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
-               },
-               "food_shop": {
-                  "shop_info": {
-                     "name": "A simple food cart",
-                     "title": "A simple food cart rolls into town"
-                  }
                },
                "rugs_shop": {
                   "shop_info": {
@@ -2027,6 +2034,53 @@
                      }
                   }
                }
+            },
+            "game_events": {
+               "arcs": {
+                  "trigger": {
+                     "game_events": {
+                        "encounters": {
+                           "ent_warning": {
+                              "collection_quest_info": {
+                                 "dialog_nodes": {
+                                    "collection_due": {
+                                       "bulletin_message": {
+                                          "000": "Will you not release the children of the forest? They do not belong in your crates and piles of trinkets. Your compliance will be rewarded.",
+                                          "001": "Hundreds of great oaks and junipers have been cut down to satiate the greed of humans. Our patience wears thin. I ask of you, return them to the homeland.",
+                                          "002": "Return our logs and help restore the natural balance of the great woodlands. I cannot guarantee your safetey if you refuse.",
+                                          "003": "Our wilderness has been sacrificed for your lifestyle of excess. We will give you a chance to return our logs. I suggest you heed my warning.."
+                                       },
+                                       "bulletin_title": "The Ent has a request.",
+                                       "dialog_title": "Ent"
+                                    },
+                                    "collection_failed": {
+                                       "bulletin_message": {
+                                          "000": "I am deeply disappointed.. I would suggest you prepare yourselves. The minions of the forest speak of an invasion."
+                                       },
+                                       "bulletin_title": "The Ent furrows his brow"
+                                    },
+                                    "collection_success": {
+                                       "bulletin_message": {
+                                          "000": "Thank you for your cooperation.. In return, I will give you [str(i18n_data.reward_gold_amount)] gold coins and [str(i18n_data.reward_item_count)] [str(i18n_data.reward_item_name)]."
+                                       },
+                                       "bulletin_title": "The Ent nods peacefully",
+                                       "dialog_title": "Ent"
+                                    },
+                                    "introduction": {
+                                       "bulletin_message": {
+                                          "000": "Greetings, humans of [str(i18n_data.town_name)]. I have come to warn you of the growing unrest within these forests.",
+                                          "001": "Silently, we have been watching.. since even before the fall of Firebird. Why? To protect. Our trees. Our saplings. Our woods."
+                                       },
+                                       "bulletin_title": "A large tree-like figure approaches.",
+                                       "dialog_title": "Ent"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
             }
          }
       },
@@ -2120,13 +2174,13 @@
          "stamina_tonic": {
             "stamina_tonic_buff": {
                "display_name": "Stamina Tonic",
-               "description": "Slightly more healthy"
+               "description": "Health increased greatly."
             }
          },
          "strength_tonic": {
             "strength_tonic_buff": {
                "display_name": "Strength Tonic",
-               "description": "Slightly more buff"
+               "description": "Muscle increased greatly for more combat damage."
             }
          },
          "severely_injured": {
@@ -3234,13 +3288,17 @@
             "display_name": "Bronze Circlet",
             "description": "Protection for your head",
             "bronze_circlet_iconic": {
-               "display_name": "Leather Skull Cap",
+               "display_name": "Bronze Circlet",
                "description": "Protection for your head"
             }
          },
          "bronze_shield": {
             "display_name": "Bronze Shield",
-            "description": "Useful for blocking attacks"
+            "description": "Useful for blocking attacks",
+            "bronze_shield_iconic": {
+               "display_name": "Bronze Shield",
+               "description": "Useful for blocking attacks"
+            }
          },
          "iron_coif": {
             "display_name": "Iron Coif",
@@ -3312,12 +3370,6 @@
             "cobblestone_fence_gate_ghost": {
                "display_name": "Cobblestone Fence Gate",
                "description": "It's thick stone walls grant a sense of security."
-            }
-         },
-         "crafting": {
-            "workshop_outbox": {
-               "display_name": "Crafter Outbox",
-               "description": "Stores finished craftables"
             }
          },
          "picket_fence": {
@@ -3435,6 +3487,12 @@
                "display_name": "Latticed Clay Window Frame",
                "description": "The lattice still lets the good air in."
             }
+         },
+         "stone_tunnel_door": {
+            "stone_tunnel_door_ghost": {
+               "display_name": "Stone Tunnel Door",
+               "description": "Useful for sealing off mine tunnels."
+            }
          }
       },
       "containers": {
@@ -3485,12 +3543,6 @@
                "display_name": "The Vault",
                "description": "Massive storage"
             }
-         }
-      },
-      "crafting": {
-         "workshop_outbox": {
-            "display_name": "Crafter Outbox",
-            "description": "Stores finished craftables"
          }
       },
       "critters": {
@@ -3547,6 +3599,10 @@
          "wolf": {
             "display_name": "A wolf",
             "description": "Grrr! Rwar!"
+         },
+         "woodchuck": {
+            "display_name": "Woodchuck",
+            "description": "A voracious eater of almost everything, especially logs."
          }
       },
       "crops": {
@@ -3621,32 +3677,6 @@
                "011": {
                   "name": "Corn Husk",
                   "description": "It's dead."
-               }
-            }
-         },
-         "foo_truffle": {
-            "silkweed_crop": {
-               "display_name": "Silkweed",
-               "description": "This plant's fiber can be spun into thread",
-               "growth_stage": {
-                  "004": {
-                     "name": "Mature silkweed"
-                  },
-                  "001": {
-                     "name": "Silkweed sprout"
-                  },
-                  "000": {
-                     "name": "Silkweed seedling"
-                  },
-                  "019": {
-                     "name": "Rotten silkweed"
-                  },
-                  "003": {
-                     "name": "Immature silkweed"
-                  },
-                  "002": {
-                     "name": "Stubby silkweed"
-                  }
                }
             }
          },
@@ -4197,6 +4227,24 @@
             "unfired_clay_vase_ghost": {
                "display_name": "Unfired Clay Vase",
                "description": "A very simple vase"
+            }
+         },
+         "wooden_sign_herbalist": {
+            "wooden_sign_herbalist_ghost": {
+               "display_name": "Herbalist's sign",
+               "description": "A sign with the mark of the Herbalist"
+            }
+         },
+         "wooden_sign_inn": {
+            "wooden_sign_inn_ghost": {
+               "display_name": "Inn Sign",
+               "description": "A sign marking a place for rest and revelry."
+            }
+         },
+         "wooden_sign_potter": {
+            "wooden_sign_potter_ghost": {
+               "display_name": "Potter's Sign",
+               "description": "A sign with the mark of the Potter"
             }
          }
       },
@@ -4976,7 +5024,7 @@
          },
          "thread": {
             "display_name": "Spool of Thread",
-            "description": "Nobody would ever think this started with a sheep. Or a plant."
+            "description": "Spun from the wool of sheep. Or plants."
          },
          "tin_ingot": {
             "display_name": "Tin Ingot",
@@ -5384,7 +5432,7 @@
             "display_name": "Short Sword",
             "description": "Stubby, but its steel blade keeps an edge.",
             "short_sword_iconic": {
-               "display_name": "short Sword",
+               "display_name": "Short Sword",
                "description": "Pointy. Shiny."
             }
          },
@@ -5423,6 +5471,14 @@
          "scythe": {
             "display_name": "Scythe",
             "description": "Preferred weapon for reaping"
+         },
+         "bow": {
+            "display_name": "Bow",
+            "description": "Used by an archer for shooting arrows",
+            "bow_talisman": {
+               "display_name": "Archer's Bow",
+               "description": "Required to promote a Footman to an Archer"
+            }
          }
       },
       "consumables": {
@@ -5471,6 +5527,10 @@
             "display_name": "???",
             "description": "???",
             "requirements": "???"
+         },
+         "archer_outfit": {
+            "display_name": "Archer's Cloak",
+            "description": "Offers light protection"
          }
       },
       "architect": {
@@ -5964,6 +6024,22 @@
             "wooden_tunnel_door_recipe": {
                "recipe_name": "Wooden Tunnel Door",
                "description": "Useful for blocking off tunnels"
+            },
+            "wooden_sign_cook_recipe": {
+               "description": "A sign with the mark of the Cook.",
+               "recipe_name": "Cook's Sign"
+            },
+            "wooden_sign_herbalist_recipe": {
+               "description": "A sign with the mark of the Herbalist.",
+               "recipe_name": "Herbalist's Sign"
+            },
+            "wooden_sign_inn_recipe": {
+               "description": "A sign marking a place for rest and revelry.",
+               "recipe_name": "Inn Sign"
+            },
+            "wooden_sign_potter_recipe": {
+               "description": "A sign with the mark of the Potter.",
+               "recipe_name": "Potter's Sign"
             }
          }
       },
@@ -7022,6 +7098,12 @@
                "display_name": "Willpower +50",
                "description": "The herbalist has improved health regeneration"
             }
+         }
+      },
+      "cleric": {
+         "cleric_outfit": {
+            "display_name": "Cleric's Robes",
+            "description": "Holy garb worn by the devout few"
          }
       }
    },
