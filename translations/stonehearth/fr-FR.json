@@ -3294,7 +3294,7 @@
          },
          "bronze_shield": {
             "display_name": "Bouclier en bronze",
-            "description": "Utile pour bloquer les attaques"
+            "description": "Utile pour bloquer les attaques",
             "bronze_shield_iconic": {
                "display_name": "Bouclier en bronze",
                "description": "Utile pour bloquer les attaques"
