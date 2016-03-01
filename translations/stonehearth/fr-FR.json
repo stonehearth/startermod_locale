@@ -256,7 +256,7 @@
             "click_banner_tip": "Cliquez sur la banière pour choisir l'emplacement de votre colonie",
             "select_camp_tip": "Maintenant cliquez quelque part dans le monde",
             "name_camp_title": "Nommez votre colonie",
-            "name_camp_prompt": "Entrez un nom pour votre colonie!"
+            "name_camp_prompt": "Entrez un nom pour votre colonie !"
          },
          "calendar": {
             "months": {
