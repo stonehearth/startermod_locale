@@ -3493,6 +3493,12 @@
                "display_name": "Porte de tunnel en pierre",
                "description": "Utile pour sceller les tunnels miniers."
             }
+         },
+         "clay_tunnel_door": {
+            "clay_tunnel_door_ghost": {
+               "display_name": "Porte de tunnel en argile",
+               "description": "Utile pour sceller les tunnels miniers."
+            }
          }
       },
       "containers": {
@@ -4245,6 +4251,12 @@
             "wooden_sign_potter_ghost": {
                "display_name": "Potter's Sign",
                "description": "A sign with the mark of the Potter"
+            }
+         },
+         "wooden_sign_cook": {
+            "wooden_sign_cook_ghost": {
+               "display_name": "Enseigne de cuisinier",
+               "description": "Une enseigne avec la marque du cuisinier"
             }
          }
       },
@@ -6027,19 +6039,19 @@
             },
             "wooden_sign_cook_recipe": {
                "description": "Une enseigne avec la marque d'un cuisinier.",
-               "recipe_name": "Enseigne de cuisinier"
+               "recipe_name": "Enseigne murale de cuisinier"
             },
             "wooden_sign_herbalist_recipe": {
                "description": "Une enseigne avec la marque d'un herboriste.",
-               "recipe_name": "Enseigne d'herboriste"
+               "recipe_name": "Enseigne murale d'herboriste"
             },
             "wooden_sign_inn_recipe": {
                "description": "Une enseigne signalant un lieu pour se reposer.",
-               "recipe_name": "Enseigne d'auberge"
+               "recipe_name": "Enseigne murale d'auberge"
             },
             "wooden_sign_potter_recipe": {
                "description": "Une enseigne avec la marque d'un potier.",
-               "recipe_name": "Enseigne de potier"
+               "recipe_name": "Enseigne murale de potier"
             }
          }
       },

@@ -3493,6 +3493,12 @@
                "display_name": "Stone Tunnel Door",
                "description": "Useful for sealing off mine tunnels."
             }
+         },
+         "clay_tunnel_door": {
+            "clay_tunnel_door_ghost": {
+               "display_name": "Clay Tunnel Door",
+               "description": "Useful for sealing off mine tunnels"
+            }
          }
       },
       "containers": {
@@ -4245,6 +4251,12 @@
             "wooden_sign_potter_ghost": {
                "display_name": "Potter's Sign",
                "description": "A sign with the mark of the Potter"
+            }
+         },
+         "wooden_sign_cook": {
+            "wooden_sign_cook_ghost": {
+               "display_name": "Cook's Sign",
+               "description": "A sign with the mark of the cook"
             }
          }
       },
@@ -6027,19 +6039,19 @@
             },
             "wooden_sign_cook_recipe": {
                "description": "A sign with the mark of the Cook.",
-               "recipe_name": "Cook's Sign"
+               "recipe_name": "Cook's Wall-Mounted Sign"
             },
             "wooden_sign_herbalist_recipe": {
                "description": "A sign with the mark of the Herbalist.",
-               "recipe_name": "Herbalist's Sign"
+               "recipe_name": "Herbalist's Wall-Mounted Sign"
             },
             "wooden_sign_inn_recipe": {
                "description": "A sign marking a place for rest and revelry.",
-               "recipe_name": "Inn Sign"
+               "recipe_name": "Inn Wall-Mounted Sign"
             },
             "wooden_sign_potter_recipe": {
                "description": "A sign with the mark of the Potter.",
-               "recipe_name": "Potter's Sign"
+               "recipe_name": "Potter's Wall-Mounted Sign"
             }
          }
       },
