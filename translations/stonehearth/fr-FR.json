@@ -2891,29 +2891,29 @@
                "text": "Sur le manger vraiment sain :",
                "logs": {
                   "lovable_rogue": {
-                     "000": "Wow, qui savait [str(entry.recent_food)] était si incroyablement amincissante&nbsp;?",
-                     "001": "Ce [str(entry.recent_food)] est la meilleure chose que j'ai mangé depuis longtemps.",
-                     "002": "Je parie, il y a un marché à nourriture pour ce bien. À moins que je le garde pour moi tout seul&nbsp;?",
+                     "000": "Wow, qui savait que ce [str(entry.recent_food)] était si incroyablement nutritif&nbsp;?",
+                     "001": "[str(entry.recent_food)] est la meilleure nourriture que j'ai mangé depuis longtemps.",
+                     "002": "Je parie, il y a un marché à nourriture pour ce bien. À moins que je garde tout pour moi seul&nbsp;?",
                      "teacher": {
-                        "000": "C'était étonnant ce [str(entry.recent_food)]. Louer soit [str(entry.teacher)] et l'église d'abondance&nbsp;!"
+                        "000": "[str(entry.recent_food)] était étonnant. Louer soit [str(entry.teacher)] et l'église d'abondance&nbsp;!"
                      }
                   },
                   "hopeless_optimist": {
                      "000": "Wow&nbsp;! Je me sens bien&nbsp;!",
-                     "001": "Nous devons faire plus de nourriture comme ce [str(entry.recent_food)] afin que chacun puisse en manger un peu&nbsp;!",
-                     "002": "Plus plus plus de ce [str(entry.recent_food)]."
+                     "001": "Nous devons produire plus de nourriture de [str(entry.recent_food)] afin que chacun puisse en manger un peu&nbsp;!",
+                     "002": "Plus plus plus toujours plus de [str(entry.recent_food)]."
                   },
                   "beleaguered_leader": {
-                     "000": "Wow. Qui aurait deviné que ce [str(entry.recent_food)] soit de la nourriture si bonne&nbsp;?",
+                     "000": "Wow. Qui aurait deviné que la nourriture de [str(entry.recent_food)] soit si bonne&nbsp;?",
                      "001": "Ce fut une surprise satisfaisante ce [str(entry.recent_food)].",
-                     "002": "Ce [str(entry.recent_food)] était tellement bon, que je devrais en manger plus en priorité.",
-                     "003": "Arr ! Maintenant je me sens comme un super-héros&nbsp;!"
+                     "002": "[str(entry.recent_food)] était d'un goût tellement bon, que je devrais en manger plus en priorité.",
+                     "003": "Ahhh ! Maintenant je me sens comme un super-héros&nbsp;!"
                   },
                   "generic": {
-                     "000": "Wow ! Ce [str(entry.recent_food)] m'a donnée une santé de fer&nbsp;!",
-                     "001": "Ce [str(entry.recent_food)] était étonnamment satisfaisant&nbsp;!",
+                     "000": "Wow ! [str(entry.recent_food)] m'a donné une santé de fer&nbsp;!",
+                     "001": "La nourriture de [str(entry.recent_food)] était étonnamment satisfaisante&nbsp;!",
                      "002": "[str(entry.recent_food)] ? Super copieux&nbsp;!",
-                     "003": "Ce [str(entry.recent_food)] va alimenter de grands travaux d'aujourd'hui&nbsp;!"
+                     "003": "[str(entry.recent_food)] va alimenter les grands travaux d'aujourd'hui&nbsp;!"
                   }
                }
             }
@@ -2923,10 +2923,10 @@
                "text": "A propos des repas :",
                "logs": {
                   "generic": {
-                     "000": "Nourriture ! Le [str(entry.recent_food)] a un goût étonnamment bon aujourd'hui.",
-                     "001": "J'ai jamais vraiment aimé ce [str(entry.recent_food)] depuis que nous nous sommes installé ici.",
-                     "002": "Etre nourri est beaucoup, beaucoup, beaucoup mieux que d'avoir faim.",
-                     "003": "Oh petit ! [str(entry.recent_food)]. Il a bon goût dans le ventre.",
+                     "000": "La nourriture de [str(entry.recent_food)] a un goût étonnamment bon aujourd'hui.",
+                     "001": "J'ai jamais vraiment aimé la nourriture de [str(entry.recent_food)] que depuis que nous nous sommes installé ici.",
+                     "002": "&Eacute;tre nourri est beaucoup, beaucoup, beaucoup mieux que d'avoir faim.",
+                     "003": "Oh petit ! [str(entry.recent_food)]. Cette nourriture apaise mon ventre.",
                      "with_reaction": {
                         "000": "Cher journal. Aujourd'hui, je mange : [str(entry.recent_food)]. Mmm&nbsp;!",
                         "001": "Cher journal. Aujourd'hui, je mange : [str(entry.recent_food)]. La nourriture est bonne.",
@@ -2938,7 +2938,7 @@
                         "007": "Cher journal. Aujourd'hui, je mange : [str(entry.recent_food)]. Mieux que de mourir de faim&nbsp;!"
                      },
                      "teacher": {
-                        "000": "[str(entry.teacher)], merci pour ce [str(entry.recent_food)]."
+                        "000": "[str(entry.teacher)], merci pour la nourriture de [str(entry.recent_food)]."
                      }
                   }
                }
