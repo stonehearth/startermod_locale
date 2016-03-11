@@ -12,6 +12,8 @@
             "place_item_on_structure": "placing [name(data.target)]",
             "work_at_workshop": "crafting [str(data.craftable_name)]",
             "attack_melee_adjacent": "attacking [name(data.target)]",
+            "wait_at_safety_point": "waiting at safety banner",
+            "weaponize": "watching for intruders",
             "resting_by_fire": "resting by the fire",
             "claiming_animal": "claiming animal",
             "looking_for_animals": "looking for animals",
@@ -167,7 +169,8 @@
             "load_game": "Load Game",
             "game_different_version": "incompatible save version",
             "delete_incompatible_saves": "Delete Incompatible Saves",
-            "save_time": "Saved [str(save_time)]"
+            "save_time": "Saved [str(save_time)]",
+            "save_tooltip_description": "Folder Name: [str(folder_name)]"
          },
          "common": {
             "ok": "OK",
@@ -317,12 +320,14 @@
                "uncategorized": "Uncategorized",
                "workshops": "Workshops",
                "consumable": "Consumable",
+               "storage": "Storage",
                "none": "None"
             },
             "tooltip_combat_base_damage": "Atk:",
             "tooltip_combat_base_damage_reduction": "Def:",
             "tooltip_num_undeployed": "Undeployed: [str(num_undeployed)]",
-            "death_notification": "[name(i18n_data.entity)] has died."
+            "death_notification": "[name(i18n_data.entity)] has died.",
+            "imminent_death_notification": "[name(i18n_data.citizen)] is severely low on health!"
          },
          "menu": {
             "town_menu": {
@@ -618,8 +623,7 @@
                "build_road_tip_description": "Right click to exit"
             },
             "building_cost": {
-               "required_item": "Required Item",
-               "count": "Num"
+               "required_item": "Required Items"
             },
             "overview": {
                "title": "Building Designer - [str(building_name)]",
@@ -871,6 +875,9 @@
             },
             "score": {
                "net_worth": "Net worth",
+               "buildings": "Buildings",
+               "inventory": "Inventory",
+               "agriculture": "Agriculture",
                "edibles": "Edibles",
                "overall_morale": "Overall Morale",
                "food": "Food",
@@ -1175,8 +1182,7 @@
             },
             "net_worth": {
                "display_name": "Net Worth",
-               "description": "A score based on the value of everything in the town's inventory.",
-               "town_description": "The gold value of everything in the town's inventory."
+               "description": "A reflection of the prosperity of your town. Buildings, inventory, and agriculture combine to form this score."
             },
             "courage": {
                "display_name": "Courage",
@@ -1233,6 +1239,18 @@
             "militia": {
                "display_name": "Militia",
                "description": "In Town Alert Mode, militia members will hold their ground against enemies instead of running to a safety banner. In addition, they receive an extra boost of Courage and Muscle."
+            },
+            "inventory": {
+               "display_name": "Inventory",
+               "description": "The gold value of all non-Resource items in the town inventory."
+            },
+            "buildings": {
+               "display_name": "Buildings",
+               "description": "The value of all the buildings constructed your town. Large buildings will have much higher score contributions than small ones."
+            },
+            "agriculture": {
+               "display_name": "Agriculture",
+               "description": "The value of farming fields and pastures in your town. Each planted crop and each pasture animal contributes to the score."
             }
          },
          "constants": {
@@ -3549,6 +3567,34 @@
                "display_name": "The Vault",
                "description": "Massive storage"
             }
+         },
+         "log_pile": {
+            "log_pile_ghost": {
+               "display_name": "Log Pile",
+               "description": "Harvest for a large number of logs"
+            },
+            "log_pile_iconic": {
+               "description": "Harvestable for wood when placed."
+            }
+         },
+         "stone_pile": {
+            "stone_pile": {
+               "description": "Harvest for many hunks of stone",
+               "display_name": "Stone Pile"
+            },
+            "stone_pile_iconic": {
+               "description": "Harvestable for stone when placed"
+            }
+         },
+         "clay_pile": {
+            "display_name": "Clay Pile",
+            "description": "Harvest for a large amount of clay",
+            "iconic_description": "Harvestable for clay when placed"
+         },
+         "wheat_pile": {
+            "display_name": "Large Wheat Bundle",
+            "description": "Harvest for a large amount of wheat",
+            "iconic_description": "Harvestable for wheat when placed"
          }
       },
       "critters": {
@@ -4659,6 +4705,12 @@
                "display_name": "Fine Clay Bed",
                "description": "Gets you off the ground in style. Still uncomfortable, though"
             }
+         },
+         "blue_market_stall": {
+            "blue_market_stall_ghost": {
+               "display_name": "Blue Market Stall",
+               "description": "Merchants can use this stall to buy and sell goods."
+            }
          }
       },
       "generic": {
@@ -5535,14 +5587,14 @@
          }
       },
       "archer": {
-         "archer_description": {
-            "display_name": "???",
-            "description": "???",
-            "requirements": "???"
-         },
          "archer_outfit": {
             "display_name": "Archer's Cloak",
             "description": "Offers light protection"
+         },
+         "archer_description": {
+            "display_name": "Archer",
+            "description": "A ranged combat unit that shoots foes with arrows",
+            "requirements": "A level 2 footman and an Archer's Bow"
          }
       },
       "architect": {
@@ -5763,7 +5815,8 @@
             "bronze_shield_recipe": {
                "description": "Increase armor and blocks attacks!",
                "recipe_name": "Bronze Shield"
-            }
+            },
+            "decoration_name": "Decorations"
          }
       },
       "carpenter": {
@@ -6052,6 +6105,14 @@
             "wooden_sign_potter_recipe": {
                "description": "A sign with the mark of the Potter.",
                "recipe_name": "Potter's Wall-Mounted Sign"
+            },
+            "log_pile_recipe": {
+               "recipe_name": "Log Pile",
+               "description": "A pile of logs stacked together. An excellent way to store lots of wood for later use."
+            },
+            "wheat_pile_recipe": {
+               "recipe_name": "Large Wheat Bundle",
+               "description": "For when normal wheat bales are just too small. Good for efficiently storing a large amount of wheat"
             }
          }
       },
@@ -6185,7 +6246,8 @@
             "corn_meal_recipe": {
                "description": "Corn ground into a fine powder",
                "recipe_name": "Corn Meal"
-            }
+            },
+            "decoration_name": "Decorations"
          },
          "cook_mill": {
             "cook_mill_ghost": {
@@ -6468,7 +6530,11 @@
                "recipe_name": "Mason's Pedestal",
                "flavor": "Snap and spark, hiss of coal, light the way, transmute the earth whole."
             },
-            "workbenches_name": "Workbenches"
+            "workbenches_name": "Workbenches",
+            "stone_pile_recipe": {
+               "recipe_name": "Stone Pile",
+               "description": "A pile of rocks stacked together. An excellent way to store lots of stone for later use."
+            }
          }
       },
       "miner": {
@@ -6539,7 +6605,7 @@
                "flavor": "Designed by Grandmaster crafter The_M"
             },
             "furniture_name": "Furniture and Decoration",
-            "decoration_name": "Decoration",
+            "decoration_name": "Decorations",
             "utility_name": "Utility",
             "potter_workbench_recipe": {
                "description": "Helps the potter create simple items from clay",
@@ -6658,6 +6724,10 @@
             "unfired_clay_vase_recipe": {
                "description": "A simple vase made on the pottery wheel that is used for more complex recipes.",
                "recipe_name": "Unfired Clay Vase"
+            },
+            "clay_pile_recipe": {
+               "recipe_name": "Clay Pile",
+               "description": "A pile of clay stacked together. An excellent way to store lots of clay for later use."
             }
          },
          "potter_workbench": {
@@ -6968,8 +7038,8 @@
                "description": "For spinning fiber into thread"
             },
             "weaver_spindle_talisman": {
-               "display_name": "The Spindle",
-               "description": "For spinning fiber into thread"
+               "display_name": "Weaver's Spindle",
+               "description": "Required to promote a hearthling into a Weaver"
             }
          },
          "weaver_spinning_wheel": {
@@ -7058,7 +7128,7 @@
                "description": "Required to promote a hearthling into an Herbalist"
             },
             "herbalist_staff_talisman": {
-               "display_name": "Herbalist Staff",
+               "display_name": "Herbalist's Staff",
                "description": "Required to promote a hearthling into an Herbalist"
             }
          },
@@ -7103,7 +7173,8 @@
             "courage_tonic_recipe": {
                "description": "Increases the courage of all town citizens for a short while.",
                "recipe_name": "Courage Tonic"
-            }
+            },
+            "decorations_name": "Decorations"
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
@@ -7116,6 +7187,19 @@
          "cleric_outfit": {
             "display_name": "Cleric's Robes",
             "description": "Holy garb worn by the devout few"
+         },
+         "cleric_description": {
+            "display_name": "Cleric",
+            "description": "A combat healer",
+            "requirements": "A level 2 herbalist and a Cleric's Tome"
+         },
+         "cleric_tome": {
+            "cleric_tome_talisman": {
+               "display_name": "Cleric's Tome",
+               "description": "Required to promote a hearthling to a Cleric"
+            },
+            "display_name": "Tome of Healing",
+            "description": "Contains sacred texts on the way of the cleric"
          }
       }
    },

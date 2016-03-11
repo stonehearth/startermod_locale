@@ -12,6 +12,8 @@
             "place_item_on_structure": "place [name(data.target)]",
             "work_at_workshop": "fabrique [str(data.craftable_name)]",
             "attack_melee_adjacent": "attaque [name(data.target)]",
+            "wait_at_safety_point": "attend une bannière de raliement",
+            "weaponize": "fait le guet",
             "resting_by_fire": "se repose prêt du feu",
             "claiming_animal": "apprivoise un animal",
             "looking_for_animals": "cherche des animaux",
@@ -167,7 +169,8 @@
             "load_game": "Charger Partie",
             "game_different_version": "Version de la sauvegarde incompatible",
             "delete_incompatible_saves": "Supprimer les sauvegardes incomaptibles",
-            "save_time": "Sauvegardé le [str(save_time)]"
+            "save_time": "Sauvegardé le [str(save_time)]",
+            "save_tooltip_description": "Nom du dossier&nbsp;: [str(folder_name)]"
          },
          "common": {
             "ok": "OK",
@@ -317,13 +320,14 @@
                "uncategorized": "Non classé",
                "workshops": "Ateliers",
                "consumable": "Consommable",
+               "storage": "Stockage",
                "none": "Aucune"
             },
             "tooltip_combat_base_damage": "Atq :",
             "tooltip_combat_base_damage_reduction": "Déf :",
             "tooltip_num_undeployed": "Non déployé: [str(num_undeployed)]",
-            "death_notification": "[name(i18n_data.entity)] est mort."
-         },
+            "death_notification": "[name(i18n_data.entity)] est mort.",
+            "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !"         },
          "menu": {
             "town_menu": {
                "display_name": "Information du village",
@@ -618,8 +622,7 @@
                "build_road_tip_description": "Click droit pour sortir"
             },
             "building_cost": {
-               "required_item": "Eléments nécessaires",
-               "count": "Qtt"
+               "required_item": "Eléments nécessaires"
             },
             "overview": {
                "title": "Conception - [str(building_name)]",
@@ -875,6 +878,9 @@
                "overall_morale": "Moral général",
                "food": "Nourriture",
                "shelter": "Habitat",
+               "safety": "Sécurité",
+               "food": "Nourriture",
+               "shelter": "Abris",
                "safety": "Sécurité"
             },
             "inventory": {
@@ -1175,8 +1181,7 @@
             },
             "net_worth": {
                "display_name": "Richesse",
-               "description": "Un total basé sur la valeur du contenu de l'inventaire de la ville.",
-               "town_description": "La valeur en or du contenu de l'inventaire de la ville."
+               "description": "Le reflet de la prospérité de votre ville. Bâtiments, inventaire, et agriculture sont combinés pour calculer ce score."
             },
             "courage": {
                "display_name": "Courage",
@@ -1233,6 +1238,18 @@
             "militia": {
                "display_name": "Milice",
                "description": "En mode ville en alerte, les membres de la milice tiendront leurs défenses contre les ennemis au lieu de courir sous la bannière de sécurité. De plus, il reçoivent un bonus supplémentaires de courage et de muscle."
+            },
+            "inventory": {
+               "display_name": "Inventaire",
+               "description": "Le montant en or de toute les objets transformés présent dans l'inventaire de la ville."
+            },
+            "buildings": {
+               "display_name": "Bâtiments",
+               "description": "La valeur de tous les bâtiments construit dans votre ville. Les grands bâtiments auront un plus grand score que les petits."
+            },
+            "agriculture": {
+               "display_name": "Agriculture",
+               "description": "La valeur des champs et des pâturages de votre ville. Chaque plant et chaque animal participe à ce score."
             }
          },
          "constants": {
@@ -3549,7 +3566,35 @@
                "display_name": "L'Abris",
                "description": "Stockage massif"
             }
-         }
+         },
+         "log_pile": {
+            "log_pile_ghost": {
+               "display_name": "Tas de bois",
+               "description": "Récolter pour un tas de bois."
+            },
+            "log_pile_iconic": {
+               "description": "Bon pour l'abattage."
+            }
+         },
+         "stone_pile": {
+            "stone_pile": {
+               "description": "Récolter pour obtenir plusieurs morceaux de pierre",
+               "display_name": "Tas de pierre"
+            },
+            "stone_pile_iconic": {
+               "description": "Pierres ramassables si marqués."
+            }
+         },
+         "clay_pile": {
+            "display_name": "Tas d'argile",
+            "description": "Récolter pour obtenir une grande quantité d'argile",
+            "iconic_description": "Argiles ramassables si marqués."
+         },
+         "wheat_pile": {
+            "display_name": "Grand ballot de blé",
+            "description": "Récolter pour obtenir une grande quantité de blé",
+            "iconic_description": "Blés ramassables si marqués."
+		}
       },
       "critters": {
          "poyo": {
@@ -4659,11 +4704,17 @@
                "display_name": "Fine Clay Bed",
                "description": "Gets you off the ground in style. Still uncomfortable, though"
             }
+         },
+         "blue_market_stall": {
+            "blue_market_stall_ghost": {
+               "display_name": "Étal de marché bleu",
+               "description": "Les marchands peuvent utiliser cet étal pour vendre ou acheter des biens."
+            }
          }
       },
       "generic": {
          "default_object": {
-            "display_name": "Objet par défaul",
+            "display_name": "Objet par défaut",
             "description": "Mystérieux"
          }
       },
@@ -5535,14 +5586,14 @@
          }
       },
       "archer": {
-         "archer_description": {
-            "display_name": "???",
-            "description": "???",
-            "requirements": "???"
-         },
          "archer_outfit": {
             "display_name": "Cape d'archer",
             "description": "Offre une protection légère"
+         },
+         "archer_description": {
+            "display_name": "Archer",
+            "description": "Une unité de combat à distance qui tire sur les ennemis avec des flèches",
+            "requirements": "Un fantassin de niveau 2 et un arc."
          }
       },
       "architect": {
@@ -5763,7 +5814,8 @@
             "bronze_shield_recipe": {
                "description": "Increase armor and blocks attacks!",
                "recipe_name": "Bouclier en bronze"
-            }
+            },
+            "decoration_name": "Décorations"
          }
       },
       "carpenter": {
@@ -6052,6 +6104,14 @@
             "wooden_sign_potter_recipe": {
                "description": "Une enseigne avec la marque d'un potier.",
                "recipe_name": "Enseigne murale de potier"
+            },
+            "log_pile_recipe": {
+               "recipe_name": "Tas de bois",
+               "description": "Du bois empilé. Un excelent moyen de stocké beaucoup de bois pour une utilisation ultérieur."
+            },
+            "wheat_pile_recipe": {
+               "recipe_name": "Grand ballot de blé",
+               "description": "Lorsque les ballots normal sont trop petits. Bien pour stocker efficacement une grand quantité de blé."
             }
          }
       },
@@ -6468,7 +6528,11 @@
                "recipe_name": "Autel de tailleur de pierre",
                "flavor": "Crépitements et étincelles, sifflement du charbon, éclaire la voie, transmute la terre complète."
             },
-            "workbenches_name": "Ateliers"
+            "workbenches_name": "Ateliers",
+            "stone_pile_recipe": {
+               "recipe_name": "Tas de pierre",
+               "description": "Des pierres empilées. Une excelent méthode pour stocker une grande quantité de pierre pour une utilisation ultérieur."
+            }
          }
       },
       "miner": {
@@ -6539,7 +6603,7 @@
                "flavor": "Conception par The_M, Grand Maître Artisan."
             },
             "furniture_name": "Furniture and Decoration",
-            "decoration_name": "Décoration",
+            "decoration_name": "Décorations",
             "utility_name": "Utility",
             "potter_workbench_recipe": {
                "description": "Helps the potter create simple items from clay",
@@ -6658,6 +6722,10 @@
             "unfired_clay_vase_recipe": {
                "description": "A simple vase made on the pottery wheel that is used for more complex recipes.",
                "recipe_name": "Unfired Clay Vase"
+            },
+            "clay_pile_recipe": {
+               "recipe_name": "Tas d'argile",
+               "description": "De l'argile empilé. Un excelent moyen de stocker une grande quantité d'argile pour une utilisation ultérieur."
             }
          },
          "potter_workbench": {
@@ -6969,7 +7037,7 @@
             },
             "weaver_spindle_talisman": {
                "display_name": "Fuseau de tisserand",
-               "description": "Pour le filage de fibres en fil"
+               "description": "Requis pour promouvoir un hearhling en tisserand"
             }
          },
          "weaver_spinning_wheel": {
@@ -7103,7 +7171,8 @@
             "courage_tonic_recipe": {
                "description": "Augmente le courage de tous vos hearthlings pour un court instant.",
                "recipe_name": "Potion de courage"
-            }
+            },
+            "decorations_name": "Décorations"
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
@@ -7116,6 +7185,19 @@
 	     "cleric_outfit": {
 	         "display_name": "Robe de clerc",
 	         "description": "Habit sacré porté uniquement par les religieux"
+         },
+         "cleric_description": {
+            "display_name": "Clerc",
+            "description": "Un guérisseur de combat",
+            "requirements": "Un herboriste niveau 2 et un livre sacré"
+         },
+         "cleric_tome": {
+            "cleric_tome_talisman": {
+               "display_name": "Livre sacré",
+               "description": "Requis pour promouvoir un herboriste en clerc"
+            },
+            "display_name": "Livre de guérison",
+            "description": "Contient des textes sacrés sur la voie du clerc"
 	     }
 	 }
    },
