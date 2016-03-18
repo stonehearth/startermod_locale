@@ -2382,6 +2382,15 @@
          "select_owner": {
             "display_name": "Select Owner",
             "description": "Selects the combatants influenced by this marker"
+         },
+         "call_trader": {
+            "display_name": "Call Merchant",
+            "description": "Call a trader to this stall",
+            "disabled_description": "A trader has already visited this stall recently. Try again later."
+         },
+         "show_shop": {
+            "display_name": "Show Shop",
+            "description": "Buy and sell goods"
          }
       },
       "personality": {
@@ -3230,10 +3239,24 @@
             "display_name": "Party No.[str(self.unit_info.custom_name)]",
             "description": "Organizes troops into groups for combat"
          }
+      },
+      "shops": {
+         "basic_resource_shop": {
+            "name": "Basic Resource Shop",
+            "title": "Basic Resource Shop"
+         }
       }
    },
    "entities": {
       "armor": {
+         "knights_shield": {
+            "shield_talisman": {
+               "display_name": "Knight's Shield",
+               "description": "Required to promote a hearthling to a knight"
+            },
+            "display_name": "Metal Shield",
+            "description": "Provides a moderate amount of defense"
+         },
          "basic_shield": {
             "display_name": "Steel Shield",
             "description": "Portable armor!",
@@ -4529,6 +4552,27 @@
          "rotten_basket": {
             "display_name": "Rotten Food Basket",
             "description": "So rotten that it's lost all form and function."
+         },
+         "rotten_egg": {
+            "display_name": "Rotten Egg",
+            "description": "Disgusting"
+         },
+         "rotten_jerky": {
+            "display_name": "Rotten Jerky",
+            "description": "Even jerky will rot eventually. It's true"
+         },
+         "mutton": {
+            "display_name": "Raw Mutton",
+            "description": "Raw meat from a sheep"
+         },
+         "roast_mutton": {
+            "roast_mutton": {
+               "display_name": "Rack of Roast Mutton",
+               "description": "Tenderly roasted to perfection"
+            },
+            "roast_mutton_serving": {
+               "display_name": "Roasted Mutton Rack"
+            }
          }
       },
       "furniture": {
@@ -4709,7 +4753,10 @@
          "blue_market_stall": {
             "blue_market_stall_ghost": {
                "display_name": "Blue Market Stall",
-               "description": "Merchants can use this stall to buy and sell goods."
+               "description": "Merchants can set up shop here"
+            },
+            "trader": {
+               "description": "A traveling merchant"
             }
          }
       },
@@ -5826,8 +5873,8 @@
             "requirements": "Carpenter's saw, crafted by the Blacksmith.",
             "level_6_data": {
                "title": "Master Carpenter",
-               "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The carpenter's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_name": "10,000 Hours",
+               "perk_000_description": "The carpenter's mastery of his trade allows him access to recipes that expand your town's opportunities."
             },
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
@@ -6113,6 +6160,11 @@
             "wheat_pile_recipe": {
                "recipe_name": "Large Wheat Bundle",
                "description": "For when normal wheat bales are just too small. Good for efficiently storing a large amount of wheat"
+            },
+            "blue_market_stall_recipe": {
+               "description": "Merchants can visit this stall to buy and sell goods",
+               "recipe_name": "Blue Market Stall",
+               "flavor": "But who are these people? And where are they coming from?"
             }
          }
       },
@@ -6247,7 +6299,11 @@
                "description": "Corn ground into a fine powder",
                "recipe_name": "Corn Meal"
             },
-            "decoration_name": "Decorations"
+            "decoration_name": "Decorations",
+            "roast_mutton_recipe": {
+               "recipe_name": "Roasted Rack of Mutton",
+               "description": "Nutritious and delicious"
+            }
          },
          "cook_mill": {
             "cook_mill_ghost": {
@@ -6342,8 +6398,8 @@
                "display_name": "Damage +20%"
             },
             "damage_2_buff": {
-               "description": "At Level 1, the footman attacks with increased ferocity",
-               "display_name": "Damage +20%"
+               "description": "The footman attacks with increased ferocity",
+               "display_name": "Damage +40%"
             },
             "damage_3_buff": {
                "description": "At Level 1, the footman attacks with increased ferocity",
@@ -7201,6 +7257,35 @@
             "display_name": "Tome of Healing",
             "description": "Contains sacred texts on the way of the cleric"
          }
+      },
+      "knight": {
+         "knight_outfit": {
+            "display_name": "Knight's Armor",
+            "description": "Metal armor worn by a knight"
+         },
+         "knight_description": {
+            "display_name": "Knight",
+            "description": "A defensive combatant focused on protecting allies from harm.",
+            "requirements": "Requires a level 2 footman and a Knight's Shield, crafted by the Blacksmith",
+            "level_1_data": {
+               "perk_000_name": "Damage Reduction Rank 1",
+               "perk_000_description": "The knight reduces damage from foes by a little"
+            },
+            "level_4_data": {
+               "perk_000_name": "Damage Reduction Rank 2",
+               "perk_000_description": "The knight reduces damage from foes by a lot"
+            }
+         },
+         "knight_buffs": {
+            "defense_1_buff": {
+               "display_name": "Defense Up 20%",
+               "description": "Increases defense by 20%"
+            },
+            "defense_2_buff": {
+               "display_name": "Defense Up 40%",
+               "description": "Increases defense by 40%"
+            }
+         }
       }
    },
    "stonehearth_mixins": {
@@ -7224,6 +7309,11 @@
                "decay_2": {
                   "description": "Rotten. Ew."
                }
+            },
+            "egg": {
+               "decay_1": {
+                  "description": "Starting to go bad. Better cook it soon."
+               }
             }
          },
          "jerky": {
@@ -7245,6 +7335,10 @@
             "display_name": "Fur pelt",
             "description": "Soft, supple, and quite dead"
          }
+      },
+      "base_human_npc": {
+         "display_name": "[str(self.unit_info.custom_name)]",
+         "description": "A guest of your town"
       }
    }
 }

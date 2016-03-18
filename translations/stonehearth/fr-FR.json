@@ -2381,6 +2381,15 @@
          "select_owner": {
             "display_name": "Choisir le propriétaire",
             "description": "Sélectionne les combattants influencés par ce marqueur"
+         },
+         "call_trader": {
+            "display_name": "Appeler un marchand",
+            "description": "Appeler un marchand à cet étal",
+            "disabled_description": "Un marchand a déjà visité cet étal récemment. Essayez à nouveau plus tard."
+         },
+         "show_shop": {
+            "display_name": "Voir l'étal",
+            "description": "Acheter et vendre des biens"
          }
       },
       "personality": {
@@ -3229,10 +3238,24 @@
             "display_name": "Groupe N°[str(self.unit_info.custom_name)]",
             "description": "Organisez vos troupes en groupes de combat"
          }
+      },
+      "shops": {
+         "basic_resource_shop": {
+            "name": "Étal de resource de base",
+            "title": "Étal de resource de base"
+         }
       }
    },
    "entities": {
       "armor": {
+         "knights_shield": {
+            "shield_talisman": {
+               "display_name": "Bouclier de chevalier",
+               "description": "Requis pour promouvoir un hearthling en chevalier"
+            },
+            "display_name": "Bouclier en métal",
+            "description": "Procure une défense partielle"
+         },
          "basic_shield": {
             "display_name": "Bouclier en acier",
             "description": "Armure portable !",
@@ -4528,6 +4551,27 @@
          "rotten_basket": {
             "display_name": "Panier de nourriture moisie",
             "description": "Si pourrie qu'elle n'a plus ni forme ni utilitée."
+         },
+         "rotten_egg": {
+            "display_name": "Rotten Egg",
+            "description": "Disgusting"
+         },
+         "rotten_jerky": {
+            "display_name": "Rotten Jerky",
+            "description": "Even jerky will rot eventually. It's true"
+         },
+         "mutton": {
+            "display_name": "Raw Mutton",
+            "description": "Raw meat from a sheep"
+         },
+         "roast_mutton": {
+            "roast_mutton": {
+               "display_name": "Rack of Roast Mutton",
+               "description": "Tenderly roasted to perfection"
+            },
+            "roast_mutton_serving": {
+               "display_name": "Roasted Mutton Rack"
+            }
          }
       },
       "furniture": {
@@ -4709,6 +4753,9 @@
             "blue_market_stall_ghost": {
                "display_name": "Étal de marché bleu",
                "description": "Les marchands peuvent utiliser cet étal pour vendre ou acheter des biens."
+            },
+            "trader": {
+               "description": "Un marchand itinérant"
             }
          }
       },
@@ -5825,8 +5872,8 @@
             "requirements": "Scie de menuisier. Fabriquée par le forgeron.",
             "level_6_data": {
                "title": "Maître menuisier",
-               "perk_000_name": "10,000 Heures (à venir)",
-               "perk_000_description": "La maîtrise de son Art permet au menuisier d'inventer de nouveaux moyens d'exploiter le bois."
+               "perk_000_name": "10.000 heures",
+               "perk_000_description": "La maîtrise de son Art permet au menuisier d'accéder à des recettes qui élargissent les possibilités de votre ville."
             },
             "level_2_data": {
                "perk_000_name": "Perspicacité collaborative",
@@ -6112,6 +6159,11 @@
             "wheat_pile_recipe": {
                "recipe_name": "Grand ballot de blé",
                "description": "Lorsque les ballots normal sont trop petits. Bien pour stocker efficacement une grand quantité de blé."
+            },
+            "blue_market_stall_recipe": {
+               "description": "Les marchands peuvent visiter cet étal pour acheter et vendre des biens",
+               "recipe_name": "Étal de marché bleu",
+               "flavor": "Mais qui sont ces gens ? Et d'où peuvent-ils venir ?"
             }
          }
       },
@@ -6245,6 +6297,11 @@
             "corn_meal_recipe": {
                "description": "Grain de maïs en poudre fine",
                "recipe_name": "Semoule de maïs"
+            },
+            "decoration_name": "Décorations",
+            "roast_mutton_recipe": {
+               "recipe_name": "Roasted Rack of Mutton",
+               "description": "Nutritious and delicious"
             }
          },
          "cook_mill": {
@@ -6340,8 +6397,8 @@
                "display_name": "Dégat +20%"
             },
             "damage_2_buff": {
-               "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
-               "display_name": "Dégat +20%"
+               "description": "Les attaques du fantassin sont plus féroces",
+               "display_name": "Dégat +40%"
             },
             "damage_3_buff": {
                "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
@@ -7198,6 +7255,35 @@
             },
             "display_name": "Livre de guérison",
             "description": "Contient des textes sacrés sur la voie du clerc"
+         }
+      },
+      "knight": {
+         "knight_outfit": {
+            "display_name": "Armure de chevalier",
+            "description": "Armure de métal portée par un chevalier"
+         },
+         "knight_description": {
+            "display_name": "Chevalier",
+            "description": "Un combattant défensive avec comme priorité de protéger ses alliées du mal.",
+            "requirements": "Nécessite un fantassin niveau 2 et un bouclier de chevalier, fabriqué par le forgeron",
+            "level_1_data": {
+               "perk_000_name": "Réduction de dégat niveau 1",
+               "perk_000_description": "Le chevalier réduit un peu les dommages causés par les ennemis"
+            },
+            "level_4_data": {
+               "perk_000_name": "Réduction de dégat niveau 2",
+               "perk_000_description": "Le chevalier réduit beaucoup les dommages causés par les ennemis"
+            }
+         },
+         "knight_buffs": {
+            "defense_1_buff": {
+               "display_name": "Défense augmentée de 20%",
+               "description": "Aumente la défense de 20%"
+            },
+            "defense_2_buff": {
+               "display_name": "Défense augmentée de 40%",
+               "description": "Aumente la défense de 40%"
+            }
 	     }
 	 }
    },
@@ -7222,6 +7308,11 @@
                "decay_2": {
                   "description": "Pourri. Beurk."
                }
+            },
+            "egg": {
+               "decay_1": {
+                  "description": "Commence à être mauvais. Il vaudrait mieux les cuisiner bientôt."
+               }
             }
          },
          "jerky": {
@@ -7243,6 +7334,10 @@
             "display_name": "Fourrure",
             "description": "Douce, souple et bien mort"
          }
+      },
+      "base_human_npc": {
+         "display_name": "[str(self.unit_info.custom_name)]",
+         "description": "Un invité de votre ville"
       }
    }
 }
