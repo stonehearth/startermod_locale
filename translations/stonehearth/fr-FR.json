@@ -327,7 +327,8 @@
             "tooltip_combat_base_damage_reduction": "Déf :",
             "tooltip_num_undeployed": "Non déployé: [str(num_undeployed)]",
             "death_notification": "[name(i18n_data.entity)] est mort.",
-            "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !"         },
+            "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !"
+         },
          "menu": {
             "town_menu": {
                "display_name": "Information du village",
@@ -818,7 +819,7 @@
             "workshop_closed": "Fermé",
             "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d'options de fabrication&nbsp;!",
             "craft": "Fabriquer&nbsp;!",
- 			"craft_queue_full": "File pleine&nbsp;!",
+            "craft_queue_full": "File pleine&nbsp;!",
             "craftable_locked": "Déverouillé au niveau [str(level)]",
             "workshop_requirement_title": "Atelier",
             "workshop_none_required": "Aucun pré-requis&nbsp;!",
@@ -874,11 +875,11 @@
             },
             "score": {
                "net_worth": "Richesse",
+               "buildings": "Bâtiments",
+               "inventory": "Inventaire",
+               "agriculture": "Agriculture",
                "edibles": "Comestibles",
                "overall_morale": "Moral général",
-               "food": "Nourriture",
-               "shelter": "Habitat",
-               "safety": "Sécurité",
                "food": "Nourriture",
                "shelter": "Abris",
                "safety": "Sécurité"
@@ -3617,7 +3618,7 @@
             "display_name": "Grand ballot de blé",
             "description": "Récolter pour obtenir une grande quantité de blé",
             "iconic_description": "Blés ramassables si marqués."
-		}
+         }
       },
       "critters": {
          "poyo": {
@@ -7235,13 +7236,13 @@
             "willpower_1_buff": {
                "display_name": "Bolonté +50",
                "description": "L'herboriste a amélioré la régénération de santé"
-	        }
-	     }
-	 },
-	 "cleric": {
-	     "cleric_outfit": {
-	         "display_name": "Robe de clerc",
-	         "description": "Habit sacré porté uniquement par les religieux"
+            }
+         }
+      },
+      "cleric": {
+         "cleric_outfit": {
+            "display_name": "Robe de clerc",
+            "description": "Habit sacré porté uniquement par les religieux"
          },
          "cleric_description": {
             "display_name": "Clerc",
@@ -7284,8 +7285,8 @@
                "display_name": "Défense augmentée de 40%",
                "description": "Aumente la défense de 40%"
             }
-	     }
-	 }
+         }
+      }
    },
    "stonehearth_mixins": {
       "base_human": {
