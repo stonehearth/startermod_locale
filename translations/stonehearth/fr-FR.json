@@ -3973,57 +3973,57 @@
          },
          "oak_tree_crop": {
             "display_name": "Plants de chêne",
-            "description": "Out of trees? Get ready to participate in reforestation.",
+            "description": "En manque d'arbre ? Soyez prêt à participer à la reforestation.",
             "growth_stage": {
                "001": {
-                  "name": "Oak Tree Seedling",
-                  "description": "It's just getting started."
+                  "name": "Semis de chêne",
+                  "description": "Il ne fait que commencer."
                },
                "003": {
-                  "name": "Oak Tree Sapling",
-                  "description": "Ready to be transferred to a bigger plot."
+                  "name": "Jeune chêne",
+                  "description": "Prêt à être transféré dans un grand espace."
                },
                "000": {
-                  "name": "Acorn",
-                  "description": "Even a mighty tree has humble beginnings."
+                  "name": "Gland",
+                  "description": "Même un arbre puissant a des débuts modestes."
                },
                "002": {
-                  "name": "Oak Tree Sprout",
-                  "description": "Reach for the sun, little oakling."
+                  "name": "Pousse de chêne",
+                  "description": "Atteint le soleil, petit bébé chêne."
                }
             }
          },
          "golden_gourd_crop": {
-            "display_name": "Golden Gourd Crop",
-            "description": "Much prettier than it is tasty",
+            "display_name": "Plants de courge dorée",
+            "description": "Beaucoup plus jolie que savoureux",
             "growth_stage": {
                "003": {
-                  "name": "Green Gourds",
-                  "description": "Too bitter to eat"
+                  "name": "Courge verte",
+                  "description": "Trop amer à manger"
                },
                "002": {
-                  "name": "Proto-Gourds",
-                  "description": "Full of promise"
+                  "name": "Pousse de courge",
+                  "description": "Plein de promesse"
                },
                "005": {
-                  "name": "Golden Gourds",
-                  "description": "Harvest now!"
+                  "name": "Courge dorée",
+                  "description": "Récoltez maintenant !"
                },
                "004": {
-                  "name": "Green Gourds",
-                  "description": "Almost ripe!"
+                  "name": "Courge verte",
+                  "description": "Presque morte!"
                },
                "001": {
-                  "name": "Tiny Vine",
-                  "description": "Clingy"
+                  "name": "Minuscule vigne",
+                  "description": "S'enlace"
                },
                "000": {
-                  "name": "Seedling!",
-                  "description": "Just a tinly little stub"
+                  "name": "Semis !",
+                  "description": "Juste un tout petit bout"
                },
                "011": {
-                  "name": "Rotten Gourds",
-                  "description": "Sadly inedible"
+                  "name": "Courge pourrie",
+                  "description": "Malheureusement immangeable"
                }
             }
          },
@@ -5923,7 +5923,7 @@
          },
          "carpenter_toolbench": {
             "carpenter_toolbench_ghost": {
-               "display_name": "Etabli de menuisier",
+               "display_name": "Établi de menuisier",
                "description": "Idéal pour fabriquer des meubles plus sophistiqués."
             }
          },
@@ -6480,7 +6480,7 @@
          },
          "mason_workbench": {
             "mason_workbench_ghost": {
-               "display_name": "Etabli de tailleur de pierre",
+               "display_name": "Établi de tailleur de pierre",
                "description": "Utilisé par les tailleurs de pierre pour leur artisanat."
             }
          },
@@ -6584,7 +6584,7 @@
             },
             "mason_workbench_recipe": {
                "description": "Indispensable à la fabrication de la plupart des produits du tailleur de pierre.",
-               "recipe_name": "Table de tailleur de pierre",
+               "recipe_name": "Établi de tailleur de pierre",
                "flavor": "Tappety-tap; Make the earth sing, Raise Brelor's ghost, Watch the mountain take wing."
             },
             "mason_pedestal_recipe": {
