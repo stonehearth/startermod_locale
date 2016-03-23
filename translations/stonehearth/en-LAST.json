@@ -4327,6 +4327,12 @@
                "display_name": "Cook's Sign",
                "description": "A sign with the mark of the cook"
             }
+         },
+         "clay_market_stall": {
+            "clay_market_stall_ghost": {
+               "display_name": "Clay Market Stall",
+               "description": "Merchants can set up shop here"
+            }
          }
       },
       "food": {
@@ -6784,6 +6790,10 @@
             "clay_pile_recipe": {
                "recipe_name": "Clay Pile",
                "description": "A pile of clay stacked together. An excellent way to store lots of clay for later use."
+            },
+            "clay_market_stall_recipe": {
+               "description": "Merchants can visit this stall to buy and sell goods",
+               "recipe_name": "Clay Market Stall"
             }
          },
          "potter_workbench": {

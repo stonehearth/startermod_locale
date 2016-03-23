@@ -4327,6 +4327,12 @@
                "display_name": "Enseigne de cuisinier",
                "description": "Une enseigne avec la marque du cuisinier"
             }
+         },
+         "clay_market_stall": {
+            "clay_market_stall_ghost": {
+               "display_name": "Étal de marché en argile",
+               "description": "Les commerçants peuvent mettre en place une boutique ici."
+            }
          }
       },
       "food": {
@@ -6784,6 +6790,10 @@
             "clay_pile_recipe": {
                "recipe_name": "Tas d'argile",
                "description": "De l'argile empilé. Un excelent moyen de stocker une grande quantité d'argile pour une utilisation ultérieur."
+            },
+            "clay_market_stall_recipe": {
+               "description": "Les commerçants peuvent visiter ce stand pour acheter et vendre des marchandises",
+               "recipe_name": "Étal de marché en argile"
             }
          },
          "potter_workbench": {
