@@ -505,12 +505,12 @@
                   },
                   "potter": {
                      "display_name": "Potier",
-                     "description": "Makes bricks and goods from clay.",
+                     "description": "Fait des briques et d'autres biens à partir d'argile.",
                      "required_job_text": "Nécessite un Potier"
                   },
                   "herbalist": {
                      "display_name": "Herboriste",
-                     "description": "Makes healing items from herbs.",
+                     "description": "Fait des objets curatifs à partir d'herbes.",
                      "required_job_text": "Nécessite un herboriste"
                   }
                }
@@ -743,7 +743,7 @@
             },
             "pasture": {
                "help": "Les bergers ménent leur animaux dans ce lieu et s'occupent d'eux ici même.",
-               "choose_pasture_type": "Choose Pasture Type",
+               "choose_pasture_type": "Choisir le type d'enclos",
                "sheep_pasture_name": "Pâturage de moutons",
                "rabbit_pasture_name": "Enclos de lapin",
                "poyo_pasture_name": "Poulailler de poyo",
@@ -1039,7 +1039,7 @@
             "language_select": "Langue",
             "gameplay_tab": {
                "title": "Gameplay",
-               "experimental": "Experimental",
+               "experimental": "Expérimental",
                "experimental_description": "Ces paramètres sont en cours de développement et peuvent ne pas être stable ! Activer à vos propres risques !",
                "enable_speed_3": "Activer la vitesse x3 (Demande un rafraîchissement de l'interface)",
                "enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. Soyez en averti !",
@@ -1136,9 +1136,9 @@
          "tooltips": {
             "stamina": {
                "display_name": "Endurance",
-               "description": "Durée de travail avant que le hearthling ai besoin de dormir",
+               "description": "L'endurance physique de ce hearthling",
                "bullet_points": {
-                  "000": "Détermine la durée du repos"
+                  "000": "Chaque point augmente la santé maximum de 2"
                }
             },
             "inventiveness": {
@@ -1186,7 +1186,7 @@
             },
             "courage": {
                "display_name": "Courage",
-               "description": "Bravour du hearthling face au combat.",
+               "description": "Bravoure du hearthling face au combat.",
                "bullet_points": {
                   "000": "Détermine les chances de fuite pendant le combat"
                }
@@ -1195,7 +1195,7 @@
                "display_name": "Force",
                "description": "C'est la force du hearthling",
                "bullet_points": {
-                  "000": "Tous les 10 points de constitution augmentent les domages de 1"
+                  "000": "Tous les 10 points de force augmentent les dégats de 1"
                }
             },
             "happiness": {
@@ -1364,13 +1364,13 @@
                },
                "stonecutter_shop": {
                   "shop_info": {
-                     "name": "Rufus Garrow - Tailleur de pierre depuis 962",
+                     "name": "Rufus Garrow - Tailleur de pierre",
                      "title": "Rufus Garrow arrive pour vendre son stock"
                   }
                },
                "tannery_shop": {
                   "shop_info": {
-                     "name": "Tannerie de Jess Vexed.<br>Marchandises des contrés sauvages",
+                     "name": "Tannerie et marchandises des contrés sauvages de Jess Vexed",
                      "title": "Une trappeuse est descendue en ville avec ses marchandises"
                   }
                },
@@ -7082,7 +7082,7 @@
                "flavor": "Au commencement il n'y avait rien et puis il y eu l'araignée."
             },
             "leather_helmet_recipe": {
-               "description": "Light-weight protection for your head!",
+               "description": "Protection légère pour votre tête !",
                "recipe_name": "Toque en cuir"
             }
          },
