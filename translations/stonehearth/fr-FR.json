@@ -1195,7 +1195,7 @@
                "display_name": "Force",
                "description": "C'est la force du hearthling",
                "bullet_points": {
-                  "000": "Tous les 10 points de force augmentent les dégats de 1"
+                  "000": "Tous les 10 points de force augmentent les dégâts de 1"
                }
             },
             "happiness": {
@@ -3947,27 +3947,27 @@
          },
          "wheat_crop": {
             "display_name": "Blé",
-            "description": "Amber wave of grain.",
+            "description": "Une variété avec des grains couleur ambre.",
             "growth_stage": {
                "003": {
-                  "name": "Ripe wheat",
-                  "description": "Ready for harvest!"
+                  "name": "Blé mûr",
+                  "description": "Prêt pour la récolte !"
                },
                "002": {
-                  "name": "Immature wheat",
-                  "description": "Not ready for harvest"
+                  "name": "Blé immature",
+                  "description": "Pas prêt pour la récolte"
                },
                "001": {
-                  "name": "Wheat Sprout",
-                  "description": "Not ready for harvest"
+                  "name": "Germes de blé",
+                  "description": "Pas prêt pour la récolte"
                },
                "000": {
-                  "name": "Wheat Seedling",
-                  "description": "Not ready for harvest"
+                  "name": "Semis de blé",
+                  "description": "Pas prêt pour la récolte"
                },
                "011": {
-                  "name": "Wheat Husk",
-                  "description": "It's dead."
+                  "name": "Brou de blé",
+                  "description": "C'est mort."
                }
             }
          },
