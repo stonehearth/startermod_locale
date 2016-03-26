@@ -1164,7 +1164,7 @@
             "food": {
                "display_name": "Nourriture",
                "description": "Assurez vous de la disponibilité de nourriture varié. Les plats cuisinés sont plus appréciés que la nourriture de base.",
-               "town_description": "Ce que pense l'opinion des la nourriture en ville. Y-a-t-il assez à manger ? Essayez d'obtenir une plus grande variété de nourriture !"
+               "town_description": "Ce que pense l'opinion de la nourriture en ville. Y-a-t-il assez à manger ? Essayez d'obtenir une plus grande variété de nourriture !"
             },
             "diligence": {
                "display_name": "Concentration",
@@ -1234,7 +1234,7 @@
             "safety": {
                "display_name": "Sécurité",
                "description": "Protégez votre ville des pilleurs et faites que vos hearthlings se sentent en sécurité en formant des gardes.",
-               "town_description": "Ce que pense vos hearthlings de la sécurité de la ville. Sommes nous bien protégés ou des gobelins nous pillent régulièrement ?"
+               "town_description": "Ce que pense vos hearthlings de la sécurité de la ville. Sommes nous bien protégés ? Des gobelins nous pillent-ils régulièrement ?"
             },
             "militia": {
                "display_name": "Milice",
@@ -5817,8 +5817,8 @@
                "flavor": "Le début de l'age moderne."
             },
             "steel_mail_recipe": {
-               "description": "A full suit of heavy, durable steel armor.",
-               "recipe_name": "Full Platemail",
+               "description": "Une armure complète en acier",
+               "recipe_name": "Armure de plates",
                "flavor": "Full Metal Jacket"
             },
             "tin_ingot_recipe": {
@@ -5853,20 +5853,20 @@
                "flavor": "Conçu par Arci le brillant, survivant du Chaat"
             },
             "iron_coif_recipe": {
-               "description": "Protection for your head",
+               "description": "Protection pour votre tête",
                "recipe_name": "Camail en fer"
             },
             "steel_helmet_recipe": {
-               "description": "Extra protection for your noggin!",
+               "description": "Protection supplémentaire pour votre caboche !",
                "recipe_name": "Casque en acier"
             },
             "bronze_circlet_recipe": {
-               "description": "Protection for your head!",
+               "description": "Protection pour votre tête !",
                "recipe_name": "Tiare en bronze",
-               "flavor": "So regal. So stylish!"
+               "flavor": "Tellement majestueux. Tellement élégant !"
             },
             "bronze_shield_recipe": {
-               "description": "Increase armor and blocks attacks!",
+               "description": "Améliore l'armure et bloque les attaques !",
                "recipe_name": "Bouclier en bronze"
             },
             "decoration_name": "Décorations"
