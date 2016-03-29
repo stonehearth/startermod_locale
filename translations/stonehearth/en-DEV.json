@@ -318,6 +318,12 @@
                      "tip_title": "Click and drag to dig downward",
                      "tip_description": "Right click to exit"
                   },
+                  "loot_item": {
+                     "display_name": "Loot",
+                     "description": "Steal items from another player.",
+                     "tip_title": "Click and drag to loot items from the world",
+                     "tip_description": "Right click to exit this mode"
+                  },
                   "cancel_task": {
                      "display_name": "Cancel Task",
                      "description": "Cancel tasks on this object",
@@ -408,12 +414,6 @@
                      "description": "Rally your hearthlings to prepare for intruders!",
                      "activated_title": "Town Alert Mode Activated!",
                      "activated_text": "Your hearthlings are vigilantly watching for intruders. Hearthlings not enrolled in the militia will run to safety points."
-                  },
-                  "loot_item": {
-                     "display_name": "Loot",
-                     "description": "Steal items from another player.",
-                     "tip_title": "Click and drag to loot items from the world",
-                     "tip_description": "Right click to exit this mode"
                   }
                }
             },
