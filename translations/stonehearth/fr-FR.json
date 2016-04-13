@@ -12,7 +12,7 @@
             "place_item_on_structure": "place [name(data.target)]",
             "work_at_workshop": "fabrique [str(data.craftable_name)]",
             "attack_melee_adjacent": "attaque [name(data.target)]",
-			"heal_ranged_in_sight": "soigne [name(data.target)]",
+            "heal_ranged_in_sight": "soigne [name(data.target)]",
             "wait_at_safety_point": "attend une bannière de raliement",
             "weaponize": "fait le guet",
             "resting_by_fire": "se repose prêt du feu",
@@ -228,7 +228,7 @@
                "description": "Annule les ordres de combat en cours."
             },
             "level": "Lv: ",
-            "class_lv_title": "Class and Level Requirements",
+            "class_lv_title": "Classe et Niveau Requis",
             "no_requirements": "Aucun !",
             "equipment_description": "Portable par : [str(class_list)]",
             "level_description": "de niveau [str(level_req)]",
@@ -2143,7 +2143,7 @@
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "You there! Erdene told me about you! She said you defeated Ogo Skullbonker. The Red Kiln believes that advancement can only come from conflict between equals."
+                                          "00": "Vous là ! Erdene m'a parlé de vous ! Elle a dit que vous avez vaincu Ogo Skullbonker. Le Red Kiln croit que l'avancement ne peut venir que d'un conflit d'égal à égal."
                                        },
                                        "bulletin_title": "Un chef de guerre orc approches de votre ville",
                                        "dialog_title": "Chef de guerre Oghar Grakbash"
@@ -2156,14 +2156,14 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "Don't be arrogant, puny humans! Brethren from the Capitol await to test their might. Any town bearing an Elite Gong will not be unheeded."
+                                          "00": "Ne soit pas arrogant, chétifs humains ! Les frères du Capitole attendent pour tester leur force. Toute ville portant un Gong Elite ne sera pas ignoré."
                                        },
                                        "bulletin_title": "Scout orc",
                                        "dialog_title": "Scout orc"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Hragh! Me surrender! We could not bring honor to the Emerald Star!"
+                                          "00": "Hragh! Moi me rendre ! Nous n'avons pas pu faire honneur à l'Emerald Star !"
                                        },
                                        "bulletin_title": "Le scout orc se débat sauvagement",
                                        "dialog_title": "Le scout orc se rend"
@@ -2477,15 +2477,15 @@
          "archer_arrows": {
             "default_arrows": {
                "display_name": "Utiliser les flèches par défaut",
-               "description": "Using normal arrows. Click to swap to a different arrow type"
+               "description": "Utilisant des flèches normales. Cliquez pour échanger avec un autre type de flèche."
             },
             "slow_arrows": {
                "display_name": "Utiliser les flèches à pointes",
-               "description": "Currently using spiky arrows, which slow enemies. Click to swap between arrow types."
+               "description": "Actuellement en utilisant des flèches pointues, qui ralentit les ennemis. Cliquez pour échanger avec un autre type de flèche."
             },
             "fire_arrows": {
                "display_name": "Utiliser les flèches enflammées",
-               "description": "Currently using fire arrows, which have a chance to set fire to enemies, dealing additional damage over time. Click to swap between arrow types."
+               "description": "Actuellement en utilisant des flèches enflammées, qui ont une chance de mettre le feu aux ennemis, infligeant des dégâts supplémentaires au fil du temps. Cliquez pour échanger avec un autre type de flèche."
             }
          }
       },
