@@ -4104,7 +4104,7 @@
          },
          "gilded_crimson_rug": {
             "gilded_crimson_rug_ghost": {
-               "display_name": "Tapis doré cramoisie",
+               "display_name": "Tapis doré et cramoisie",
                "description": "Si royal"
             }
          },
@@ -4120,8 +4120,8 @@
          },
          "stone_floor_candle_holder": {
             "stone_floor_candle_holder_ghost": {
-               "display_name": "Stone Floor Candle Holder",
-               "description": "Let there be light!"
+               "display_name": "Bougeoire de sol en pierre",
+               "description": "Que la lumière soit !"
             }
          },
          "stone_garden_lantern": {
