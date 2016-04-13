@@ -12,6 +12,7 @@
             "place_item_on_structure": "placing [name(data.target)]",
             "work_at_workshop": "crafting [str(data.craftable_name)]",
             "attack_melee_adjacent": "attacking [name(data.target)]",
+            "heal_ranged_in_sight": "healing [name(data.target)]",
             "wait_at_safety_point": "waiting at safety banner",
             "weaponize": "watching for intruders",
             "resting_by_fire": "resting by the fire",
@@ -225,7 +226,13 @@
             "cancel_order": {
                "display_name": "Cancel Combat Order",
                "description": "Cancels active combat orders."
-            }
+            },
+            "level": "Lv: ",
+            "class_lv_title": "Class and Level Requirements",
+            "no_requirements": "None!",
+            "equipment_description": "Equippable by: [str(class_list)]",
+            "level_description": "of Level [str(level_req)]",
+            "or": " or "
          },
          "citizens": {
             "title": "Citizens",
@@ -360,6 +367,12 @@
                      "tip_title": "Click and drag to dig downward",
                      "tip_description": "Right click to exit"
                   },
+                  "loot_item": {
+                     "display_name": "Loot",
+                     "description": "Steal items from another player.",
+                     "tip_title": "Click and drag to loot items from the world",
+                     "tip_description": "Right click to exit this mode"
+                  },
                   "cancel_task": {
                      "display_name": "Cancel Task",
                      "description": "Cancel tasks on this object",
@@ -450,12 +463,6 @@
                      "description": "Rally your hearthlings to prepare for intruders!",
                      "activated_title": "Town Alert Mode Activated!",
                      "activated_text": "Your hearthlings are vigilantly watching for intruders. Hearthlings not enrolled in the militia will run to safety points."
-                  },
-                  "loot_item": {
-                     "display_name": "Loot",
-                     "description": "Steal items from another player.",
-                     "tip_title": "Click and drag to loot items from the world",
-                     "tip_description": "Right click to exit this mode"
                   },
                   "party_1": {
                      "display_name": "Combat Party 1",
@@ -567,7 +574,12 @@
                "title": "Daily Update",
                "immigration_report_title": "Immigration Report",
                "population_label": "[str(town_name)] population",
-               "next_requirements_label": "Next hearthling requirements..."
+               "next_requirements_label": "Next hearthling requirements...",
+               "tooltips": {
+                  "food": "Higher quality food provides higher food scores.",
+                  "morale": "Keep your hearthlings safe, well-fed, and comfortable to improve morale.",
+                  "net_worth": "Estimated value of your town. Collect items, accumulate gold and build buildings to increase your net worth."
+               }
             },
             "collection_quest": {
                "pay": "Here you go!",
@@ -747,9 +759,9 @@
                "sheep_pasture_name": "Sheep Pasture",
                "rabbit_pasture_name": "Rabbit Pen",
                "poyo_pasture_name": "Poyo Coop",
-               "sheep_pasture_description": "Sheep produce wool and can be a source of meat.",
-               "rabbit_pasture_description": "Rabbits can be a source of jerky.",
-               "poyo_pasture_description": "Poyos produce eggs, a valuable cooking ingredient.",
+               "sheep_pasture_description": "Sheep produce wool, used by the weaver. Slaughtering sheep will produce mutton, a raw cooking ingredient",
+               "rabbit_pasture_description": "Rabbits reproduce quickly and can be slaughtered for jerky and pelts",
+               "poyo_pasture_description": "Poyos produce eggs, a valuable cooking ingredient. Slaughtering poyo will yield meat and, occasionally, feathers for crafting",
                "num_animals": "Animals:"
             },
             "stockpile": {
@@ -773,7 +785,7 @@
                   "tooltip_clay": "clay",
                   "tooltip_ore": "ore",
                   "tooltip_animal_part": "animal parts",
-                  "tooltip_earth": "materials made of earth",
+                  "tooltip_resource_pile": "resource piles",
                   "tooltip_plant": "plants",
                   "tooltip_portal": "doors & windows",
                   "tooltip_furniture": "furniture",
@@ -1048,7 +1060,9 @@
                "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
                "show_hearthling_paths": "Show Hearthling paths",
                "show_hearthling_paths_description": "Display the path your hearthlings are following.",
-               "max_citizens": "Max Citizens"
+               "max_citizens": "Max Citizens",
+               "randomize_attributes": "Randomize Hearthling Attributes",
+               "randomize_attributes_description": "If enabled, hearthling Mind, Body, and Spirit attributes will be assigned completely at random instead of distributed in a balanced fashion."
             }
          },
          "title_screen": {
@@ -1080,14 +1094,19 @@
             "game_mode_picker_title": "Select a Difficulty",
             "game_modes": {
                "normal": {
-                  "display_name": "Normal Game",
+                  "display_name": "Normal",
                   "description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
                   "post_selection_text": "an inspiring place to start anew."
                },
                "peaceful": {
-                  "display_name": "Peaceful Game",
+                  "display_name": "Peaceful",
                   "description": "A sandbox-mode, where you're free to build your town without worrying about invaders whatsoever.",
                   "post_selection_text": "a tranquil place to start anew."
+               },
+               "hard": {
+                  "display_name": "Hard",
+                  "description": "Face more difficult monsters than normal mode",
+                  "post_selection_text": "an daunting place to start anew."
                }
             },
             "begin_button": "Begin"
@@ -1104,7 +1123,7 @@
             "no_talisman_confirm_dialog": {
                "title": "Embark",
                "message": "Are you sure you want to embark without choosing a tool from the shop? As always, you will still get the starting talisman for your faction.",
-               "accept": "Yes, hard mode.",
+               "accept": "Yes, I want the gold",
                "cancel": "Wait!"
             }
          }
@@ -1138,14 +1157,14 @@
                "display_name": "Stamina",
                "description": "This hearthling's physical endurance.",
                "bullet_points": {
-                  "000": "Each point increases max health by 2"
+                  "000": "Each point increases max health by 1"
                }
             },
             "inventiveness": {
                "display_name": "Inventiveness",
                "description": "How good this hearthling is at creating things. Good inventors are more likely to create fine craftables.",
                "bullet_points": {
-                  "000": "Improves chance to craft fine items"
+                  "000": "Every 2 points increases chance to craft a fine item by 1%"
                }
             },
             "shelter": {
@@ -1158,7 +1177,8 @@
                "description": "How likely this hearthling will help out a fellow villager or befriend others.",
                "bullet_points": {
                   "000": "Determines maximum trapper pet count",
-                  "001": "Increases shepherd animal happiness"
+                  "001": "Increases shepherd animal happiness",
+                  "002": "Each point increases direct healing amount by 1"
                }
             },
             "food": {
@@ -1224,7 +1244,7 @@
                "display_name": "Curiosity",
                "description": "How much this hearthling enjoys new experiences.",
                "bullet_points": {
-                  "000": "Improves experience gain when crafting new items"
+                  "000": "Every 10 curiosity increases bonus experience earned by 1"
                }
             },
             "spirit": {
@@ -2099,6 +2119,56 @@
                      }
                   }
                }
+            },
+            "orc_war": {
+               "arcs": {
+                  "trigger": {
+                     "old_khan": {
+                        "encounters": {
+                           "warchief_intro_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "...But now that I am here, I see that you are not yet worthy to fight even the least of my camp chiefs! I will return later, when you are stronger. Put out a Decorative Elite Gong to signal that you are ready."
+                                       },
+                                       "bulletin_title": "Warchief Oghar Grakbash",
+                                       "dialog_title": "Warchief Oghar Grakbash"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "You there! Erdene told me about you! She said you defeated Ogo Skullbonker. The Red Kiln believes that advancement can only come from conflict between equals."
+                                       },
+                                       "bulletin_title": "An orcish warchief approaches your town",
+                                       "dialog_title": "Warchief Oghar Grakbash"
+                                    }
+                                 }
+                              }
+                           },
+                           "blue_tier_begin_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "Don't be arrogant, puny humans! Brethren from the Capitol await to test their might. Any town bearing an Elite Gong will not be unheeded."
+                                       },
+                                       "bulletin_title": "Orc Scout",
+                                       "dialog_title": "Orc Scout"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "Hragh! Me surrender! We could not bring honor to the Emerald Star!"
+                                       },
+                                       "bulletin_title": "The orc scout gestures wildly",
+                                       "dialog_title": "Orc Scout surrenders"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
             }
          }
       },
@@ -2204,7 +2274,7 @@
          "severely_injured": {
             "severely_injured_buff": {
                "display_name": "Severly Injured",
-               "description": "Wounded badly! This hearthling can hardly walk!"
+               "description": "Wounded badly! Can hardly walk!"
             }
          },
          "undead_infection": {
@@ -2221,6 +2291,12 @@
             "minor_courage_buff_buff": {
                "display_name": "Minor Courage",
                "description": "Small boost of courage while in alert mode"
+            }
+         },
+         "game_modes": {
+            "game_mode_hard_buff": {
+               "display_name": "Hard Mode",
+               "description": "Does more damage"
             }
          }
       },
@@ -2391,6 +2467,20 @@
          "show_shop": {
             "display_name": "Show Shop",
             "description": "Buy and sell goods"
+         },
+         "archer_arrows": {
+            "default_arrows": {
+               "display_name": "Using Default Arrows",
+               "description": "Using normal arrows. Click to swap to a different arrow type"
+            },
+            "slow_arrows": {
+               "display_name": "Using Spiky Arrows",
+               "description": "Currently using spiky arrows, which slow enemies. Click to swap between arrow types."
+            },
+            "fire_arrows": {
+               "display_name": "Using Fire Arrows",
+               "description": "Currently using fire arrows, which have a chance to set fire to enemies, dealing additional damage over time. Click to swap between arrow types."
+            }
          }
       },
       "personality": {
@@ -3245,6 +3335,16 @@
             "name": "Basic Resource Shop",
             "title": "Basic Resource Shop"
          }
+      },
+      "monster_tuning": {
+         "kobolds": {
+            "wolf_tank": {
+               "kobold_wolf": {
+                  "display_name": "Kobold Wolf",
+                  "description": "A Fearsome Wolf!"
+               }
+            }
+         }
       }
    },
    "entities": {
@@ -3254,16 +3354,8 @@
                "display_name": "Knight's Shield",
                "description": "Required to promote a hearthling to a knight"
             },
-            "display_name": "Metal Shield",
-            "description": "Provides a moderate amount of defense"
-         },
-         "basic_shield": {
-            "display_name": "Steel Shield",
-            "description": "Portable armor!",
-            "basic_shield_iconic": {
-               "display_name": "Steel Shield",
-               "description": "Portable armor!"
-            }
+            "display_name": "Knight's Shield",
+            "description": "For defending one's allies"
          },
          "iron_shield": {
             "display_name": "Heavy Iron Shield",
@@ -3364,6 +3456,38 @@
                "display_name": "Steel Helmet",
                "description": "Protection for your head"
             }
+         },
+         "steel_shield": {
+            "display_name": "Steel Shield",
+            "description": "A sturdy shield made from steel"
+         },
+         "iron_helm": {
+            "display_name": "Iron Helm",
+            "description": "Protection for your head"
+         },
+         "iron_circlet": {
+            "display_name": "Iron Circlet",
+            "description": "Medium head protection"
+         },
+         "steel_circlet": {
+            "display_name": "Steel Circlet",
+            "description": "Light weight and strong protection for one's head"
+         },
+         "simple_quiver": {
+            "display_name": "Spiky Quiver",
+            "description": "A light quiver of slowing arrows"
+         },
+         "fire_quiver": {
+            "display_name": "Fire Quiver",
+            "description": "Sets enemies on fire, dealing damage over time"
+         },
+         "cracked_wooden_buckler": {
+            "display_name": "Cracked Wooden Buckler",
+            "description": "Has withstood many battles"
+         },
+         "square_cracked_wooden_buckler": {
+            "display_name": "Square wooden buckler",
+            "description": "Watch out for those corners!"
          }
       },
       "boulders": {
@@ -4333,6 +4457,30 @@
                "display_name": "Clay Market Stall",
                "description": "Merchants can set up shop here"
             }
+         },
+         "decorative_elite_gong": {
+            "decorative_elite_gong_ghost": {
+               "display_name": "Elite Gong",
+               "description": "Inspired by the Elite Kobold Menace"
+            }
+         },
+         "decorative_generals_gong": {
+            "decorative_generals_gong_ghost": {
+               "display_name": "General's Golden Gong",
+               "description": "Inspired by the Kobold Archer General"
+            }
+         },
+         "decorative_master_gong": {
+            "decorative_master_gong_ghost": {
+               "display_name": "Master's Gong",
+               "description": "Inspired by the Kobold Master Archer"
+            }
+         },
+         "decorative_scout_gong": {
+            "decorative_scout_gong_ghost": {
+               "display_name": "Scout's Gong",
+               "description": "Inspired by the Kobold Scout"
+            }
          }
       },
       "food": {
@@ -4963,6 +5111,34 @@
                "description": "Property of Central Chief Grug Skull Crusher"
             }
          },
+         "kobolds": {
+            "kobold": {
+               "display_name": "[str(self.unit_info.custom_name)]",
+               "description": "Devotee of the Diamond Star"
+            },
+            "loot": {
+               "elite_bling_hat": {
+                  "display_name": "Elite Kobold Hat",
+                  "description": "Kobolds love their bling!"
+               },
+               "generals_bling_hat": {
+                  "display_name": "General's Hat",
+                  "description": "Dropped by the kobold archer general"
+               },
+               "masters_bling_hat": {
+                  "display_name": "Master's Bling Hat",
+                  "description": "Dropped by the kobold master archer"
+               },
+               "scout_bling_hat": {
+                  "display_name": "Scout's Hat",
+                  "description": "Dropped by the kobold scout archer"
+               }
+            },
+            "kobold_wolf": {
+               "display_name": "Kobold Wolf",
+               "description": "A Fearsome Wolf!"
+            }
+         },
          "undead": {
             "skeleton": {
                "display_name": "[str(self.unit_info.custom_name)]",
@@ -5002,6 +5178,26 @@
          "rabbit": {
             "display_name": "...",
             "description": "A Rabbit"
+         },
+         "ogres": {
+            "ogre": {
+               "display_name": "[str(self.unit_info.custom_name)]",
+               "description": "An orc gone terribly wrong"
+            }
+         },
+         "orcs": {
+            "orc": {
+               "display_name": "Orc",
+               "description": "A warrior of the Red Kiln"
+            },
+            "orc_boss_banner": {
+               "display_name": "Warchief Oghar Grakbash's Banner",
+               "description": "Made to intimidate the weak hearted"
+            },
+            "orc_hut": {
+               "display_name": "Orc hut",
+               "description": "Made from coarsely chopped wooden boards"
+            }
          }
       },
       "pets": {
@@ -5010,8 +5206,8 @@
             "description": "So brave!"
          },
          "dragon_whelp": {
-            "display_name": "Rabbit",
-            "description": "Om nom nom"
+            "display_name": "Dragon Whelp",
+            "description": "A baby dragon"
          },
          "kitten": {
             "display_name": "Kitten",
@@ -5277,6 +5473,12 @@
             "varanus_skin": {
                "display_name": "Varanus Skin",
                "description": "Rough and scaly"
+            }
+         },
+         "feathers": {
+            "poyo_feathers": {
+               "display_name": "Poyo Feathers",
+               "description": "Feathers from a plump bird"
             }
          }
       },
@@ -5546,7 +5748,7 @@
             "description": "Keeps the fuzzies in line"
          },
          "short_sword": {
-            "display_name": "Short Sword",
+            "display_name": "Steel Short Sword",
             "description": "Stubby, but its steel blade keeps an edge.",
             "short_sword_iconic": {
                "display_name": "Short Sword",
@@ -5596,6 +5798,22 @@
                "display_name": "Archer's Bow",
                "description": "Required to promote a Footman to an Archer"
             }
+         },
+         "arrow": {
+            "display_name": "Slowing Arrow",
+            "description": "Slows targets that it hits"
+         },
+         "recurve_bow": {
+            "display_name": "Recurve Bow",
+            "description": "Curved for faster and stronger shots"
+         },
+         "crude_metal_axe": {
+            "display_name": "Crude Metal Axe",
+            "description": "Simple but effective."
+         },
+         "crude_wooden_club": {
+            "display_name": "Crude Wooden Club",
+            "description": "Pointy branch wrapped in cloth"
          }
       },
       "consumables": {
@@ -5641,13 +5859,59 @@
       },
       "archer": {
          "archer_outfit": {
-            "display_name": "Archer's Cloak",
-            "description": "Offers light protection"
+            "display_name": "Archer's Padded Vest",
+            "description": "Offers light protection",
+            "archer_hood": {
+               "display_name": "Archer's Cloak",
+               "description": "Hooded protection for one's head"
+            }
          },
          "archer_description": {
             "display_name": "Archer",
             "description": "A ranged combat unit that shoots foes with arrows",
-            "requirements": "A level 2 footman and an Archer's Bow"
+            "requirements": "A level 3 footman and an Archer's Bow, crafted by the Carpenter",
+            "level_1_data": {
+               "perk_000_name": "Increased Draw Strength",
+               "perk_000_description": "The archer's damage is increased"
+            },
+            "level_2_data": {
+               "perk_000_name": "Armor Piercing Arrows",
+               "perk_000_description": "The archer's shots ignore 50% of the target's armor"
+            },
+            "level_0_data": {
+               "perk_000_name": "Bow Proficiency",
+               "perk_000_description": "The archer is able to use a bow to shoot arrows at enemies"
+            },
+            "level_3_data": {
+               "perk_000_name": "Range Increase",
+               "perk_000_description": "The Archer can attack enemies from further away"
+            },
+            "level_5_data": {
+               "perk_000_name": "Range Increase (Rank 2)",
+               "perk_000_description": "The Archer can attack enemies from very far away"
+            },
+            "level_4_data": {
+               "perk_000_name": "Draw Speed Up",
+               "perk_000_description": "The archer shoots arrows with greater speed"
+            },
+            "level_6_data": {
+               "perk_000_name": "Double Shot",
+               "perk_000_description": "The archer learns the ancient art of quick shots, allowing rapid firing of two arrows in rapid succession"
+            }
+         },
+         "archer_buffs": {
+            "damage_1_buff": {
+               "display_name": "Damage +20%",
+               "description": "The archer's damage is increased."
+            },
+            "slowing_arrow": {
+               "display_name": "Slowed",
+               "description": "Slowed by Freezing Arrows"
+            },
+            "fire_arrow": {
+               "display_name": "On Fire",
+               "description": "Set aflame! Taking fire damage every 5 minutes for 15 minutes"
+            }
          }
       },
       "architect": {
@@ -5727,11 +5991,6 @@
             }
          },
          "recipes": {
-            "basic_shield_recipe": {
-               "description": "Grants the ability to completely block attacks.",
-               "flavor": "Incredibly protective. Small children play turtle underneath.",
-               "recipe_name": "Steel Shield"
-            },
             "iron_shield_recipe": {
                "description": "Heavy, but effective.",
                "flavor": "'Buck up, recruit! Better the shield dent than you!' -Thredd, Man at Arms",
@@ -5803,7 +6062,7 @@
             "tools_name": "Tools",
             "short_sword_recipe": {
                "description": "Stubby, but its steel blade keeps an edge.",
-               "recipe_name": "Short Sword",
+               "recipe_name": "Steel Short Sword",
                "flavor": "But, does it glow when orcs are near?"
             },
             "silver_ingot_recipe": {
@@ -5869,7 +6128,48 @@
                "description": "Increase armor and blocks attacks!",
                "recipe_name": "Bronze Shield"
             },
-            "decoration_name": "Decorations"
+            "decoration_name": "Decorations",
+            "steel_shield_recipe": {
+               "recipe_name": "Steel Plated Shield",
+               "description": "Grants the ability to completely block attacks.",
+               "flavor": "Incredibly protective. Small children play turtle underneath."
+            },
+            "knights_shield_recipe": {
+               "recipe_name": "Knight's Shield",
+               "description": "Required to promote a hearthling into a Knight"
+            },
+            "iron_helm_recipe": {
+               "recipe_name": "Iron Helm",
+               "description": "Protection for one's head"
+            },
+            "iron_circlet_recipe": {
+               "recipe_name": "Iron Circlet",
+               "description": "It's quite heavy, but protects one's head"
+            },
+            "steel_circlet_recipe": {
+               "recipe_name": "Steel Circlet",
+               "description": "Light weight and strong head protection"
+            },
+            "decorative_elite_gong_recipe": {
+               "description": "Inspired by the Elite Kobold Menace",
+               "recipe_name": "Decorative Elite Gong",
+               "flavor": "As it turns out, their hats were very dense"
+            },
+            "decorative_generals_gong_recipe": {
+               "description": "Enormous and decorative!",
+               "recipe_name": "General's Golden Gong",
+               "flavor": "The generals hat, when melted down, could have filled a lake with gold"
+            },
+            "decorative_master_gong_recipe": {
+               "description": "Inspired by the Master Kobold Archer",
+               "recipe_name": "Decorative Master Gong",
+               "flavor": "Great for taunting master kobolds"
+            },
+            "decorative_scout_gong_recipe": {
+               "description": "Inspired by the Kobold Scout",
+               "recipe_name": "Decorative Scout Gong",
+               "flavor": "Even scouts are adorned with gold"
+            }
          }
       },
       "carpenter": {
@@ -5995,7 +6295,7 @@
             "tools_weapons_name": "Tools & Weapons",
             "storage_name": "Storage",
             "building_parts_name": "Building Parts",
-            "armor_name": "Armor",
+            "armor_name": "Weapons and Armor",
             "furniture_name": "Furniture",
             "workbench_name": "Workbenches",
             "utility_name": "Utility",
@@ -6171,6 +6471,14 @@
                "description": "Merchants can visit this stall to buy and sell goods",
                "recipe_name": "Blue Market Stall",
                "flavor": "But who are these people? And where are they coming from?"
+            },
+            "archer_bow_recipe": {
+               "recipe_name": "Archer's Bow",
+               "description": "Required to promote a hearthling into an archer"
+            },
+            "recurve_bow_recipe": {
+               "recipe_name": "Recurve Bow",
+               "description": "A bow that curves away from the wielder, allowing for stronger and faster arrow attacks"
             }
          }
       },
@@ -6338,7 +6646,8 @@
             "requirements": "Farmer's Hoe, crafted by the Carpenter.",
             "level_6_data": {
                "perk_000_name": "Nature's Surprise (not implemented)",
-               "perk_000_description": "Occasionally, the farmer's special touch yields... special results."
+               "perk_000_description": "Occasionally, the farmer's special touch yields... special results.",
+               "title": "Master Farmer"
             },
             "level_1_data": {
                "perk_000_name": "Speed Up",
@@ -6396,6 +6705,18 @@
             "level_3_data": {
                "perk_000_name": "Power Spike",
                "perk_000_description": "This powerful, overhead swing deals double damage."
+            },
+            "level_6_data": {
+               "perk_000_name": "Damage Up 60%",
+               "perk_000_description": "Maxiumum damage!"
+            },
+            "level_2_data": {
+               "perk_000_name": "First Responder",
+               "perk_000_description": "The footman charges into battle with speed"
+            },
+            "level_5_data": {
+               "perk_000_name": "Cleave",
+               "perk_000_description": "A slashing strike that deals damage to up to 4 enemies around the footman's target"
             }
          },
          "footman_buffs": {
@@ -6408,8 +6729,12 @@
                "display_name": "Damage +40%"
             },
             "damage_3_buff": {
-               "description": "At Level 1, the footman attacks with increased ferocity",
-               "display_name": "Damage +20%"
+               "description": "At Level 6, the footman's attacks are unstoppable!",
+               "display_name": "Damage +60%"
+            },
+            "speed_buff": {
+               "display_name": "First Responder",
+               "description": "The footman moves faster"
             }
          },
          "footman_outfit": {
@@ -6596,6 +6921,10 @@
             "stone_pile_recipe": {
                "recipe_name": "Stone Pile",
                "description": "A pile of rocks stacked together. An excellent way to store lots of stone for later use."
+            },
+            "stone_tunnel_door_recipe": {
+               "description": "Useful for sealing off mine tunnels.",
+               "recipe_name": "Stone Tunnel Door"
             }
          }
       },
@@ -6794,6 +7123,10 @@
             "clay_market_stall_recipe": {
                "description": "Merchants can visit this stall to buy and sell goods",
                "recipe_name": "Clay Market Stall"
+            },
+            "clay_tunnel_door_recipe": {
+               "description": "Useful for sealing off mine tunnels.",
+               "recipe_name": "Clay Tunnel Door"
             }
          },
          "potter_workbench": {
@@ -6837,6 +7170,9 @@
             "level_3_data": {
                "perk_000_name": "Extra Bonuses",
                "perk_000_description": "The shepherd's skill produces greater yields in animal products."
+            },
+            "level_6_data": {
+               "title": "Master Shepherd"
             }
          },
          "shepherd_crook": {
@@ -6871,9 +7207,8 @@
          "trapper_description": {
             "display_name": "Trapper",
             "description": "The Trapper's snares capture and (ahem) &quot;harvest&quot; small critters for a reliable source of food and supplies.",
-            "requirements": "Trapper's Knife, forged by the Blacksmith",
+            "requirements": "Trapper's Knife, crafted by the Mason",
             "level_1_data": {
-               "title": "Journeyman Trapper",
                "perk_000_name": "Speed Up",
                "perk_000_description": "Long walks have increased the trapper's foot speed."
             },
@@ -6889,11 +7224,12 @@
             },
             "level_6_data": {
                "perk_000_name": "The Deadliest Catch (Not Implemented!)",
-               "perk_000_description": "Lay special trapping zones to 'deter' acquisitive neighbors."
+               "perk_000_description": "Lay special trapping zones to 'deter' acquisitive neighbors.",
+               "title": "Master Trapper"
             },
             "level_5_data": {
-               "perk_000_name": "Toothier Traps (Not implemented!)",
-               "perk_000_description": "Traps now lure in and hold larger prey."
+               "perk_000_name": "Toothier Traps",
+               "perk_000_description": "Better trap arming skills increase the trapper's chance for capturing prey by 25%."
             },
             "level_4_data": {
                "perk_000_name": "Backpack Size +8",
@@ -7084,6 +7420,14 @@
             "leather_helmet_recipe": {
                "description": "Light-weight protection for your head!",
                "recipe_name": "Leather Skull Cap"
+            },
+            "simple_quiver_recipe": {
+               "recipe_name": "Spiky Quiver",
+               "description": "A quiver equippable by an archer. Stores freezing arrows that will slow enemies"
+            },
+            "fire_quiver_recipe": {
+               "recipe_name": "Fire Quiver",
+               "description": "Gives an Archer access to fire arrows, which deal damage over time"
             }
          },
          "weaver_loom": {
@@ -7180,6 +7524,9 @@
             "level_3_data": {
                "perk_000_name": "Item Proficiency",
                "perk_000_description": "The herbalist's medical prowess increases the effectiveness of healing items by 50%."
+            },
+            "level_6_data": {
+               "title": "Master Herbalist"
             }
          },
          "herbalist_outfit": {
@@ -7209,7 +7556,7 @@
                "description": "Allows the Herbalist to craft healing balms and bandages.",
                "recipe_name": "Herbalist Lab"
             },
-            "workbenches_name": "workbenches",
+            "workbenches_name": "Workbenches",
             "tonics_name": "Tonics",
             "small_healing_tonic_recipe": {
                "description": "A medicinal drink that heals for a minuscule amount",
@@ -7240,7 +7587,12 @@
                "description": "Increases the courage of all town citizens for a short while.",
                "recipe_name": "Courage Tonic"
             },
-            "decorations_name": "Decorations"
+            "decorations_name": "Decorations",
+            "cleric_tome_recipe": {
+               "recipe_name": "Cleric's Tome",
+               "description": "Required to promote a hearthling to a cleric"
+            },
+            "tools_name": "Tools"
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
@@ -7257,7 +7609,35 @@
          "cleric_description": {
             "display_name": "Cleric",
             "description": "A combat healer",
-            "requirements": "A level 2 herbalist and a Cleric's Tome"
+            "requirements": "A level 2 Herbalist and a Cleric's Tome, crafted by the Herbalist",
+            "level_0_data": {
+               "perk_000_name": "Healing Aura",
+               "perk_000_description": "The cleric's presence heals everyone around them periodically"
+            },
+            "level_1_data": {
+               "perk_000_name": "Minor Strength",
+               "perk_000_description": "The cleric's presence improves the muscle of those around them"
+            },
+            "level_2_data": {
+               "perk_000_name": "Compassion Up",
+               "perk_000_description": "Increased compassion for increased direct healing"
+            },
+            "level_3_data": {
+               "perk_000_name": "Heal Aura (Rank 2)",
+               "perk_000_description": "Healing aura power increased"
+            },
+            "level_6_data": {
+               "perk_000_name": "Healing Master",
+               "perk_000_description": "The cleric has mastered the art of healing"
+            },
+            "level_4_data": {
+               "perk_000_name": "Heal Aura (Rank 3)",
+               "perk_000_description": "Healing Aura range increased"
+            },
+            "level_5_data": {
+               "perk_000_name": "Major Strength",
+               "perk_000_description": "The cleric's presence greatly improves the muscle of those around them"
+            }
          },
          "cleric_tome": {
             "cleric_tome_talisman": {
@@ -7266,6 +7646,86 @@
             },
             "display_name": "Tome of Healing",
             "description": "Contains sacred texts on the way of the cleric"
+         },
+         "cleric_buffs": {
+            "heal_aura_1_buff": {
+               "display_name": "Healing Aura",
+               "description": "The cleric's presence heals everyone around them periodically"
+            },
+            "add_health_small_buff": {
+               "display_name": "Small Heal",
+               "description": "From a healing aura!"
+            },
+            "minor_muscle_aura_buff": {
+               "display_name": "Minor Strength",
+               "description": "Increases strength of those around by a small amount"
+            },
+            "minor_muscle_aura_effect_buff": {
+               "display_name": "Minor Strength",
+               "description": "Strength improved slightly from the presence of a cleric"
+            },
+            "compassion_1_buff": {
+               "display_name": "Compassion Up",
+               "description": "Compassion Increased by 20"
+            },
+            "heal_aura_2_buff": {
+               "display_name": "Heal Aura (Rank 2)",
+               "description": "Heals everyone around the cleric periodically."
+            },
+            "add_health_medium_buff": {
+               "display_name": "Healing Medium",
+               "description": "Healing for a medium amount"
+            },
+            "compassion_2_buff": {
+               "display_name": "Compassion Up",
+               "description": "Compassion Increased by 50"
+            },
+            "heal_aura_3_buff": {
+               "display_name": "Heal Aura (Rank 3)",
+               "description": "Heals everyone 30 units around the cleric"
+            },
+            "major_muscle_aura_buff": {
+               "display_name": "Major Strength",
+               "description": "Greatly increases the muscle of those around"
+            },
+            "major_muscle_aura_effect_buff": {
+               "display_name": "Major Strength",
+               "description": "Muscle improved greatly from the presence of a cleric"
+            }
+         }
+      },
+      "magmasmith": {
+         "magmasmith_outfit": {
+            "display_name": "Magmasmith Outfit",
+            "description": "Traditional uniform of the Magmasmith."
+         },
+         "magmasmith_hammer": {
+            "magmasmith_hammer_talisman": {
+               "display_name": "Magmasmith's Hammer",
+               "description": "Required to promote a hearthling to a Magmasmith"
+            },
+            "display_name": "Magmasmith's Hammer",
+            "description": "Lava to the face"
+         },
+         "magmasmith_forge": {
+            "magmasmith_forge_ghost": {
+               "display_name": "Magmasmith Forge",
+               "description": "Like a normal forge, except a lot hotter"
+            }
+         },
+         "magmasmith_workbench": {
+            "magmasmith_workbench_ghost": {
+               "display_name": "Magmasmith Workbench",
+               "description": "Lava flows from within"
+            }
+         },
+         "magmasmith_description": {
+            "display_name": "Magmasmith",
+            "description": "Crafts from magma",
+            "requirements": "Level 2 blacksmith and Magmasmith's hammer"
+         },
+         "recipes": {
+            "workbenches_name": "Workbenches"
          }
       },
       "knight": {
@@ -7276,24 +7736,83 @@
          "knight_description": {
             "display_name": "Knight",
             "description": "A defensive combatant focused on protecting allies from harm.",
-            "requirements": "Requires a level 2 footman and a Knight's Shield, crafted by the Blacksmith",
+            "requirements": "Requires a level 3 footman and a Knight's Shield, crafted by the Blacksmith",
             "level_1_data": {
                "perk_000_name": "Damage Reduction Rank 1",
-               "perk_000_description": "The knight reduces damage from foes by a little"
+               "perk_000_description": "The knight gains an additional 10% defense from equipment"
             },
             "level_4_data": {
                "perk_000_name": "Damage Reduction Rank 2",
-               "perk_000_description": "The knight reduces damage from foes by a lot"
+               "perk_000_description": "The knight gains an additional 20% armor from equipment"
+            },
+            "level_0_data": {
+               "perk_000_name": "Cutting Word",
+               "perk_000_description": "Increases Stamina and Courage"
+            },
+            "level_3_data": {
+               "perk_000_name": "Cutting Word (Rank 2)",
+               "perk_000_description": "Stamina and Courage increased greatly"
+            },
+            "level_5_data": {
+               "perk_000_name": "Inspiring Presence",
+               "perk_000_description": "The knight boosts courage of everyone around"
+            },
+            "level_2_data": {
+               "perk_000_name": "Shout",
+               "perk_000_description": "The knight intimidates the opponent, drawing the attention of nearby enemies."
+            },
+            "level_6_data": {
+               "perk_000_name": "Hero's Horn",
+               "perk_000_description": "The knight sounds a horn of combat, drawing the attention enemies both near and far"
             }
          },
          "knight_buffs": {
             "defense_1_buff": {
-               "display_name": "Defense Up 20%",
-               "description": "Increases defense by 20%"
+               "display_name": "Defense Up 10%",
+               "description": "Defense from equipment increased by 10%"
             },
             "defense_2_buff": {
-               "display_name": "Defense Up 40%",
-               "description": "Increases defense by 40%"
+               "display_name": "Defense Up 20%",
+               "description": "Defense from equipment increased by 10%"
+            },
+            "health_1_buff": {
+               "display_name": "Cutting Word",
+               "description": "The knight becomes more menacing to enemies, drawing their attention in combat. They also get a health and stamina bonus to keep up."
+            },
+            "health_2_buff": {
+               "display_name": "Cutting Word (Rank 2)",
+               "description": "More fast, more furious"
+            },
+            "courage_aura_buff": {
+               "display_name": "Inspiring Presence",
+               "description": "The knight increases courage of everyone around"
+            },
+            "courage_aura_effect_buff": {
+               "display_name": "Inspired",
+               "description": "Courage increased from the presence of a knight."
+            }
+         },
+         "knight_helm": {
+            "display_name": "Knight's Helm",
+            "description": "Iron headgear standard issue for all knights"
+         }
+      },
+      "npc_jobs": {
+         "npc_thief": {
+            "npc_thief_description": {
+               "display_name": "Thief",
+               "description": "Steals items from stockpiles",
+               "level_0_data": {
+                  "title": "Thief"
+               }
+            }
+         },
+         "npc_knight": {
+            "npc_knight_buffs": {
+               "npc_health_def_1_buff": {
+                  "display_name": "Tank",
+                  "description": "Increased health and courage. Armor defense improved by 20%"
+               }
             }
          }
       }
