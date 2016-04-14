@@ -803,9 +803,9 @@
                   "tooltip_drink": "tasty beverages",
                   "tooltip_gold": "gold",
                   "tooltip_gem": "gems and trophies",
-                  "tooltip_food_containers": "food containers",
+                  "tooltip_food_containers": "fruit and vegetable baskets",
                   "tooltip_prepared_food": "cooked foods",
-                  "tooltip_ingredients": "raw ingredients",
+                  "tooltip_ingredients": "raw ingredients and animal feed",
                   "tooltip_healing_items": "healing items and other consumables"
                }
             }
@@ -1286,7 +1286,8 @@
             "leather_resource_name": "Bolt of Leather",
             "fiber_resource_name": "Bundle of Fiber",
             "ingot_resource_name": "Metal Ingot",
-            "herb_resource_name": "Herb"
+            "herb_resource_name": "Herb",
+            "ore_resource_name": "Ore"
          }
       }
    },
@@ -7628,7 +7629,7 @@
             },
             "level_6_data": {
                "perk_000_name": "Healing Master",
-               "perk_000_description": "The cleric has mastered the art of healing"
+               "perk_000_description": "The cleric has mastered the art of healing. Compassion greatly increased."
             },
             "level_4_data": {
                "perk_000_name": "Heal Aura (Rank 3)",
@@ -7666,7 +7667,7 @@
             },
             "compassion_1_buff": {
                "display_name": "Compassion Up",
-               "description": "Compassion Increased by 20"
+               "description": "Compassion Increased by 20%"
             },
             "heal_aura_2_buff": {
                "display_name": "Heal Aura (Rank 2)",
@@ -7678,7 +7679,7 @@
             },
             "compassion_2_buff": {
                "display_name": "Compassion Up",
-               "description": "Compassion Increased by 50"
+               "description": "Compassion Increased by 40%"
             },
             "heal_aura_3_buff": {
                "display_name": "Heal Aura (Rank 3)",
@@ -7746,11 +7747,11 @@
                "perk_000_description": "The knight gains an additional 20% armor from equipment"
             },
             "level_0_data": {
-               "perk_000_name": "Cutting Word",
-               "perk_000_description": "Increases Stamina and Courage"
+               "perk_000_name": "Fortify",
+               "perk_000_description": "Increases Stamina, Courage, and draws attention from monsters"
             },
             "level_3_data": {
-               "perk_000_name": "Cutting Word (Rank 2)",
+               "perk_000_name": "Fortify (Rank 2)",
                "perk_000_description": "Stamina and Courage increased greatly"
             },
             "level_5_data": {
@@ -7773,14 +7774,14 @@
             },
             "defense_2_buff": {
                "display_name": "Defense Up 20%",
-               "description": "Defense from equipment increased by 10%"
+               "description": "Defense agained from equipment increased by 20%"
             },
             "health_1_buff": {
-               "display_name": "Cutting Word",
+               "display_name": "Fortify",
                "description": "The knight becomes more menacing to enemies, drawing their attention in combat. They also get a health and stamina bonus to keep up."
             },
             "health_2_buff": {
-               "display_name": "Cutting Word (Rank 2)",
+               "display_name": "Fortify (Rank 2)",
                "description": "More fast, more furious"
             },
             "courage_aura_buff": {
