@@ -13,7 +13,7 @@
             "work_at_workshop": "fabrique [str(data.craftable_name)]",
             "attack_melee_adjacent": "attaque [name(data.target)]",
             "heal_ranged_in_sight": "soigne [name(data.target)]",
-            "wait_at_safety_point": "attend une bannière de raliement",
+            "wait_at_safety_point": "attend une bannière de ralliement",
             "weaponize": "fait le guet",
             "resting_by_fire": "se repose prêt du feu",
             "claiming_animal": "apprivoise un animal",
@@ -109,7 +109,7 @@
             "max_level": "Niveau max!!!",
             "level_text": "Niveau ",
             "level_abbreviation": "Niv",
-            "locked_status": " (Verouillé)",
+            "locked_status": " (Verrouillé)",
             "apprentice": "Apprenti",
             "journal": "Journal",
             "attributes": "Attributs",
@@ -169,7 +169,7 @@
             "save_new": "Nouvelle Sauvegarde",
             "load_game": "Charger Partie",
             "game_different_version": "Version de la sauvegarde incompatible",
-            "delete_incompatible_saves": "Supprimer les sauvegardes incomaptibles",
+            "delete_incompatible_saves": "Supprimer les sauvegardes incompatibles",
             "save_time": "Sauvegardé le [str(save_time)]",
             "save_tooltip_description": "Nom du dossier&nbsp;: [str(folder_name)]"
          },
@@ -228,7 +228,7 @@
                "description": "Annule les ordres de combat en cours."
             },
             "level": "Lv: ",
-            "class_lv_title": "Classe et Niveau Requis",
+            "class_lv_title": "Classe et niveau requis",
             "no_requirements": "Aucun !",
             "equipment_description": "Portable par : [str(class_list)]",
             "level_description": "de niveau [str(level_req)]",
@@ -263,7 +263,7 @@
          },
          "create_camp": {
             "new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
-            "click_banner_tip": "Cliquez sur la banière pour choisir l'emplacement de votre colonie",
+            "click_banner_tip": "Cliquez sur la bannière pour choisir l'emplacement de votre colonie",
             "select_camp_tip": "Maintenant cliquez quelque part dans le monde",
             "name_camp_title": "Nommez votre colonie",
             "name_camp_prompt": "Entrez un nom pour votre colonie !"
@@ -291,7 +291,7 @@
             "title": "Stonehearth",
             "resume": "Reprendre",
             "save": "Sauvegarder ou Charger une partie",
-            "settings": "Paramétres",
+            "settings": "Paramètres",
             "about": "À propos",
             "quit_to_menu": "Retour au menu principal",
             "exit_game": "Quitter le jeu",
@@ -352,19 +352,19 @@
                   "harvest": {
                      "display_name": "Récolte",
                      "description": "Récoltez arbres, plantes et pierres en surface du territoire",
-                     "tip_title": "Click and drag pour récolter les ressources",
+                     "tip_title": "Cliquez et relâchez pour récolter les ressources",
                      "tip_description": "Bouton droit pour quitter ce mode"
                   },
                   "mining_ui": {
                      "display_name": "Creuser un tunnel",
                      "description": "Creuse des tunnels et des grottes",
-                     "tip_title": "Cliquez et relachez pour creuser dans une direction",
+                     "tip_title": "Cliquez et relâchez pour creuser dans une direction",
                      "tip_description": "Bouton droite pour sortir"
                   },
                   "mine_block": {
                      "display_name": "Creuser un bloc",
                      "description": "Creuse des blocs individuels",
-                     "tip_title": "Cliquez et relachez pour creuser dans une direction",
+                     "tip_title": "Cliquez et relâchez pour creuser dans une direction",
                      "tip_description": "Bouton droite pour sortir"
                   },
                   "loot_item": {
@@ -376,13 +376,13 @@
                   "cancel_task": {
                      "display_name": "Annuler une tâche",
                      "description": "Annule les tâches sur des objets",
-                     "tip_title": "Cliquez et relachez pour retirer différentes instructions",
+                     "tip_title": "Cliquez et relâchez pour retirer différentes instructions",
                      "tip_description": "Bouton droite pour sortir de ce mode"
                   },
                   "clear_item": {
                      "display_name": "Effacer",
                      "description": "Fait disparaitre des éléments de la surface du globe",
-                     "tip_title": "Cliquez et relachez pour supprimer définitivement des éléments",
+                     "tip_title": "Cliquez et relâchez pour supprimer définitivement des éléments",
                      "tip_description": "Bouton droite pour sortir de ce mode",
                      "confirm_title": "Êtes-vous sur d'effacer ces éléments ?",
                      "confirm_message": "Les objets utilisables dans cette zone vont être détruit définitivement",
@@ -398,28 +398,28 @@
                   "create_stockpile": {
                      "display_name": "Stock",
                      "description": "Place une zone pour stocker des ressources.",
-                     "tip_title": "Cliquez et relachez pour créer un stock",
+                     "tip_title": "Cliquez et relâchez pour créer un stock",
                      "tip_description": "Bouton droite pour sortir ce mode"
                   },
                   "create_farm": {
                      "display_name": "Champ",
                      "description": "Place une parcelle de terre cultivable sur le sol.",
                      "required_job_text": "Nécessite un fermier",
-                     "tip_title": "Cliquez et relachez pour créer un nouveau champ",
+                     "tip_title": "Cliquez et relâchez pour créer un nouveau champ",
                      "tip_description": "Les fermiers vont retourner la terre et semer ici"
                   },
                   "create_trapping_grounds": {
                      "display_name": "Zone piégé",
                      "description": "Place des pièges pour capturer des petites bestioles.",
                      "required_job_text": "Nécessite un trappeur",
-                     "tip_title": "Cliquez et relachez pour créer une zone piégé",
+                     "tip_title": "Cliquez et relâchez pour créer une zone piégé",
                      "tip_description": "Les trappeurs capturent des bestioles pour leur nourriture et leur ressources dans cette zone"
                   },
                   "create_pasture": {
                      "display_name": "Pâturage",
                      "description": "Le berger va mener ses animaux ici pour paître.",
                      "required_job_text": "Nécessite un berger",
-                     "tip_title": "Cliquez et relachez pour créer un pâturage",
+                     "tip_title": "Cliquez et relâchez pour créer un pâturage",
                      "tip_description": "Le berger mène les animaux ici pour subvenir à leur besoin."
                   }
                }
@@ -580,9 +580,9 @@
                "title": "Résumé quotidien",
                "immigration_report_title": "Rapport d'immigration",
                "population_label": "Population de [str(town_name)]",
-               "next_requirements_label": "Prérequis pour l'arrivé d'un nouveau hearthling",
+               "next_requirements_label": "Pré-requis pour l'arrivée d'un nouveau hearthling",
                "tooltips": {
-                  "food": "De la nourriture de haute qualité donne un meilleur socre.",
+                  "food": "De la nourriture de haute qualité donne un meilleur score.",
                   "morale": "Gardez vos hearthlings en sécurité, bien nourris, et dans le confort pour améliorer le moral.",
                   "net_worth": "Estimation de la valeur de votre ville. Récupérez des objets, accumulez de l'or et de construisez des bâtiments pour augmenter votre score."
                }
@@ -593,7 +593,7 @@
             },
             "inventory_full": {
                "title": "Inventaire de la ville plein",
-               "message": "L'nventaire de votre ville est plein ! Les hearthlings détestent les villes encombrés et ne vont plus collecter de ressource. Vendez ou détruisez les objets à l'aide de l'outil de suppression."
+               "message": "L'inventaire de votre ville est plein ! Les hearthlings détestent les villes encombrés et ne vont plus collecter de ressource. Vendez ou détruisez les objets à l'aide de l'outil de suppression."
             }
          },
          "build_mode": {
@@ -624,21 +624,21 @@
                "wall_segment_tip_description": "Gardez SHIFT pressé tout en cliquant pour placer des murs connectés",
                "build_title_building_designer": "Concepteur de bâtiment",
                "build_floor_tip_title": "Cliquez et tirez pour placer des dalles de planchers",
-               "build_floor_tip_description": "Click droit pour sortir",
+               "build_floor_tip_description": "Clique droit pour sortir",
                "build_slab_tip_title": "Cliquez et tirez pour construire des blocs",
-               "build_slab_tip_description": "Click droit pour sortir",
+               "build_slab_tip_description": "Clique droit pour sortir",
                "erase_structure_tip_title": "Cliquez pour supprimer. Cliquez et tirez pour supprimer un plancher",
-               "erase_structure_tip_description": "Click droit pour sortir",
+               "erase_structure_tip_description": "Clique droit pour sortir",
                "roof_tip_title": "Cliquez un sol entouré de murs pour placer une toiture.",
-               "roof_tip_description": "Click droit pour sortir",
+               "roof_tip_description": "Clique droit pour sortir",
                "raise_walls_tip_title": "Cliquez un sol pour ajouter des murs.",
-               "raise_walls_tip_description": "Click droit pour sortir",
+               "raise_walls_tip_description": "Clique droit pour sortir",
                "doodad_tip_title": "Cliquez sur un mur pour placer une fenêtre.",
-               "doodad_tip_description": "Click droit pour sortir",
+               "doodad_tip_description": "Clique droit pour sortir",
                "draw_template_title": "Cliquez pour positionner un plan.",
                "draw_template_description": "Faire une rotation avec les touches , et .",
                "build_road_tip_title": "Cliquez et tirez pour construire une route.",
-               "build_road_tip_description": "Click droit pour sortir"
+               "build_road_tip_description": "Clique droit pour sortir"
             },
             "building_cost": {
                "required_item": "Eléments nécessaires"
@@ -651,7 +651,7 @@
                "pause_building": "Suspendre la construction",
                "save_building_template": "Sauvegarder",
                "finished_editing": "Terminer l'édition",
-               "start_editing": "Editer"
+               "start_editing": "Éditer"
             },
             "roof_shape": {
                "title": "Pente, direction et taille",
@@ -666,7 +666,7 @@
                "design_custom_building": "Dessinez vos propres bâtiments",
                "template_names": {
                   "tiny_cottage": "Petite maison",
-                  "cottage_for_two": "Maisonette pour deux",
+                  "cottage_for_two": "Maisonnette pour deux",
                   "shared_sleeping_quarters": "Dortoir",
                   "dining_hall": "Salle de banquet",
                   "little_clay_house": "Petite maison en argile",
@@ -750,7 +750,7 @@
                "fallow_description": "Ne rien semer et laisser le sol se régénérer seul."
             },
             "mining": {
-               "help": "L'extraction minière permet de creuser le sol et les montagnes et ainsis de trouver des ressources spécifiques.",
+               "help": "L'extraction minière permet de creuser le sol et les montagnes et ainsi de trouver des ressources spécifiques.",
                "disable": "Suspendre l'extraction",
                "enable": "Reprendre l'extraction"
             },
@@ -760,14 +760,14 @@
                "enable": "Reprendre la pose de piège"
             },
             "pasture": {
-               "help": "Les bergers ménent leur animaux dans ce lieu et s'occupent d'eux ici même.",
+               "help": "Les bergers mènent leur animaux dans ce lieu et s'occupent d'eux ici même.",
                "choose_pasture_type": "Choisir le type d'enclos",
                "sheep_pasture_name": "Pâturage de moutons",
                "rabbit_pasture_name": "Enclos de lapin",
                "poyo_pasture_name": "Poulailler de poyo",
                "sheep_pasture_description": "Les moutons produisent de la laine, utilisé par le tisserand. L'abattage des moutons produira de la viande à cuisiner",
                "rabbit_pasture_description": "Les lapins se reproduisent rapidement et peuvent être abattus pour leur viande et leur peaux",
-               "poyo_pasture_description": "Les poyos produisent des oeufs, un ingrédient de cuisine précieux. L'abattage de poyo donnera de la viande et, parfois, des plumes pour l'artisanat",
+               "poyo_pasture_description": "Les poyos produisent des œufs, un ingrédient de cuisine précieux. L'abattage de poyo donnera de la viande et, parfois, des plumes pour l'artisanat",
                "num_animals": "Animaux :"
             },
             "stockpile": {
@@ -808,7 +808,7 @@
                   "tooltip_exotic_gear": "équipement exotique",
                   "tooltip_drink": "boissons savoureuses",
                   "tooltip_gold": "or",
-                  "tooltip_gem": "gemmes et trophés",
+                  "tooltip_gem": "gemmes et trophées",
                   "tooltip_food_containers": "fruits et légumes en paniers",
                   "tooltip_prepared_food": "plats cuisinés",
                   "tooltip_ingredients": "matières premières et aliments pour animaux",
@@ -827,7 +827,7 @@
             "craft_up_to_left": "Maintenir",
             "craft_up_to_right": "en inventaire.",
             "craft_ingredients": "Ingrédients :",
-            "craft_requirements": "Eléments requis :",
+            "craft_requirements": "Éléments requis :",
             "unlock_text": "À débloquer :",
             "crafting_status": "fabrication en cours...",
             "crafting_status_queued": "Dans la file",
@@ -838,7 +838,7 @@
             "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d'options de fabrication&nbsp;!",
             "craft": "Fabriquer&nbsp;!",
             "craft_queue_full": "File pleine&nbsp;!",
-            "craftable_locked": "Déverouillé au niveau [str(level)]",
+            "craftable_locked": "Déverrouillé au niveau [str(level)]",
             "workshop_requirement_title": "Atelier",
             "workshop_none_required": "Aucun pré-requis&nbsp;!",
             "workshop_required": "Nécessite de placer ",
@@ -869,7 +869,7 @@
                "town_description": "Le [str(descriptor)] [str(noun)] de [str(town_name)]",
                "size": {
                   "camp": "Campement",
-                  "settlement": "Hammeau",
+                  "settlement": "Hameau",
                   "hamlet": "Bourgade",
                   "village": "Village",
                   "town": "Ville",
@@ -881,7 +881,7 @@
                   "0": "Pitoyable",
                   "1": "Misérable",
                   "2": "Abattu",
-                  "3": "Indiférrent",
+                  "3": "Indifférent",
                   "4": "Juste",
                   "5": "Bien",
                   "6": "Content",
@@ -951,17 +951,17 @@
                "029": "régularise les dreadlocks ..."
             },
             "tips": {
-               "000": "Si vos mineurs restent bloqués dans un puit, construisez une échelle pour les en sortir !",
+               "000": "Si vos mineurs restent bloqués dans un puits, construisez une échelle pour les en sortir !",
                "001": "Vos hearthlings feront de meilleures nuits si vous leurs offrez des lits.",
                "002": "Construisez un enclos autour des pâturages pour être sur que les animaux ne s'enfuient pas.",
-               "003": "Les réserves peuvent être modifiées pour acceuillir des objets spécifiques.",
+               "003": "Les réserves peuvent être modifiées pour accueillir des objets spécifiques.",
                "004": "Vous pouvez cultiver des plantes à soie pour avoir une source régulière de fibres végétales.",
                "005": "Une ville bien nourrit est une ville heureuse.",
                "006": "Utilisez les touches . ou , pour faire tourner un objet ou un bâtiment avant de le placer.",
                "007": "Vos hearthlings se déplacent plus vite sur les routes.",
                "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
                "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
-               "010": "Les bergers trouveront d'eux-même les moutons ou atres animaux pour remplir les pâturages.",
+               "010": "Les bergers trouveront d'eux-même les moutons ou autres animaux pour remplir les pâturages.",
                "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands."
             }
          },
@@ -1051,7 +1051,7 @@
             "effects_volume": "Volume des effets sonores",
             "system": "Système",
             "force_32_bit": "* Forcer le mode 32-bit (redémarrage requis)",
-            "force_32_bit_note": "* Forcer le mode 32-bit seulement si c'est absolument nécéssaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
+            "force_32_bit_note": "* Forcer le mode 32-bit seulement si c'est absolument nécessaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
             "enable_lua_jit": "Utiliser Lua JIT (redémarrage requis)",
             "send_anon_data": "Envoyer des données anonymes pour améliorer Stonehearth !",
             "language_select": "Langue",
@@ -1063,7 +1063,7 @@
                "enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. On vous aura prévenu !",
                "enable_speed_3_description": "Ajoute une nouvelle option de vitesse dans le panneau en bas à droite qui fera fonctionner le jeu à la vitesse 4x !",
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
-               "default_storage_filter_none_description": "Lors de la création d'une nouvelle réserve ou au posage d'une nouvelle caisse, le filtre par défaut sur le stockage sera réglé sur 'Aucun' au lieu de 'Tout'",
+               "default_storage_filter_none_description": "Lors de la création d'une nouvelle réserve ou à la pose d'une nouvelle caisse, le filtre par défaut sur le stockage sera réglé sur 'Aucun' au lieu de 'Tout'",
                "show_hearthling_paths": "Montrez les chemins des hearthling",
                "show_hearthling_paths_description": "Affichez le chemin que vos  hearthlings suivent.",
                "max_citizens": "Hearthlings max.",
@@ -1083,7 +1083,7 @@
             "patch_notes": "Afficher les notes de mise à jour",
             "alpha_welcome_dialog": {
                "title": "Bienvenue dans Stonehearth !",
-               "message": "Attention : ceci est un logiciel de qualité Alpha. Il manque de nombreuses fonctionnalités, et vous pouvez rencontrer des bugs quand vous jouez.<br><br>Vous pouvez nous aider en nous envoyant automatiquement les rapports d'erreur de votre jeu. Voulez-vous le faire ?",
+               "message": "Attention : ceci est un logiciel de qualité Alpha. Il manque de nombreuses fonctionnalités, et vous pouvez rencontrer des bogues quand vous jouez.<br><br>Vous pouvez nous aider en nous envoyant automatiquement les rapports d'erreur de votre jeu. Voulez-vous le faire ?",
                "accept": "Oui, envoyer les rapports d'erreurs",
                "cancel": "Non merci"
             }
@@ -1128,7 +1128,7 @@
             "finished": "Embarquer !",
             "no_talisman_confirm_dialog": {
                "title": "Embarquer",
-               "message": "Etes-vous sûr de vouloir embarquer sans choisir un outil de la boutique ? Comme toujours, vous obtiendrez une scie de menuisier.",
+               "message": "Êtes-vous sûr de vouloir embarquer sans choisir un outil de la boutique ? Comme toujours, vous obtiendrez une scie de menuisier.",
                "accept": "Oui, je veux l'or !",
                "cancel": "Attendez !"
             }
@@ -1140,8 +1140,8 @@
             "message": "Merci de participer à la version Alpha de Stonehearth ! Voici comment remonter un bug :",
             "file_bug_step_1": "Allez sur http://discourse.stonehearth.net/c/support/bug-reports",
             "file_bug_step_2": "Consultez la liste des sujets actifs, et si votre bogue n'a pas déjà été signalé, créer un nouveau sujet.",
-            "file_bug_step_3": "Lors du dépôt d'un bug, assurez-vous s'il vous plaît d'inclure toutes les informations demandées dans le rapport, et copiez le texte de toutes les erreurs du moteur. Les captures d'écran sont également très utiles pour les bogues visuels.",
-            "file_bug_step_4": "Si vous rencontrez un crash bogue, s'il vous plait vérifier à cette adresse http://discourse.stonehearth.net/t/13297 des solutions communes, et comment optenir de l'aide pour l'incident. Ci-dessous votre identitée unique d'utilisateur:"
+            "file_bug_step_3": "Lors du dépôt d'un bogue, assurez-vous s'il vous plaît d'inclure toutes les informations demandées dans le rapport, et copiez le texte de toutes les erreurs du moteur. Les captures d'écran sont également très utiles pour les bogues visuels.",
+            "file_bug_step_4": "Si vous rencontrez un crash bogue, s'il vous plait vérifier à cette adresse http://discourse.stonehearth.net/t/13297 des solutions communes, et comment obtenir de l'aide pour l'incident. Ci-dessous votre identité unique d'utilisateur:"
          },
          "error_browser": {
             "title": "Erreur du moteur",
@@ -1201,7 +1201,7 @@
             },
             "willpower": {
                "display_name": "Volonté",
-               "description": "Capacité du hearthling à résister aux sorts de l'ennemis.",
+               "description": "Capacité du hearthling à résister aux sorts de l'ennemi.",
                "bullet_points": {
                   "000": "Détermine la régénération de santé"
                }
@@ -1311,14 +1311,14 @@
             "display_name": "Tempéré",
             "description": "Forêts, rivières et montagnes. Biome par défaut des Ascendants.",
             "random_location_names": {
-               "000": "la fôret de Darkmoor"
+               "000": "la forêt de Darkmoor"
             }
          },
          "arctic": {
             "display_name": "Arctique",
             "description": "Neigeux, avec de hautes montagnes et de grands plans d'eau",
             "random_location_names": {
-               "000": "La tundra des Valkyries"
+               "000": "La toundra des Valkyries"
             }
          },
          "desert": {
@@ -1446,7 +1446,7 @@
                            "choice_000": "Attendez ! Qui êtes-vous ?",
                            "choice_001": "Huh.",
                            "bulletin_message": {
-                              "000": "Bataille ferme, petite ville. Le destin est dénuée de sens. Mais s'il ne l'était pas, vous ne feriez qu'étincellez."
+                              "000": "Bataille ferme, petite ville. Le destin est dénuée de sens. Mais s'il ne l'était pas, vous ne feriez qu'étincelez."
                            },
                            "bulletin_title": "Elle hoche la tête fermement",
                            "dialog_title": "???"
@@ -1455,7 +1455,7 @@
                            "choice_000": "Ça me va !",
                            "choice_001": "Non. Merci.",
                            "bulletin_message": {
-                              "000": "Sur ce papier, vous devriez trouvé la berceuse pour apaiser l'âme de la montagne. Trouver la flûte volé. Enchérissez sa hauteuravec vos travailleur de bois pour cette mélodie. accordez-là à l'aide de votre plus brave chanteur de mouton, mettez la n musique chez le grand mammouth de Ogo, et regarder la grande importance des rencontres c'est juste la récompense."
+                              "000": "Sur ce papier, vous devriez trouvé la berceuse pour apaiser l'âme de la montagne. Trouver la flûte volé. Enchérissez sa hauteur avec vos travailleur de bois pour cette mélodie. accordez-là à l'aide de votre plus brave chanteur de mouton, mettez la n musique chez le grand mammouth de Ogo, et regarder la grande importance des rencontres c'est juste la récompense."
                            },
                            "bulletin_title": "Elle offre un morceau de papier",
                            "dialog_title": "???"
@@ -1481,7 +1481,7 @@
                               "001": "Vieux devin, vieux serpent. Parle avec les os et les flammes. Regarde l'avenir ! Regarde la fin du cycle, la fin pour toujours.  ... Pas sur de ce qu'il veut dire mais bon, bon pour Ogo !",
                               "002": "Devin gobelin, évidemment ! Gobelin qui peut voir l'avenir! Il dit anciens meurent loin, nouvelle étoile montante. Conseillé pour Ogo, mauvais pour tout le monde, vous aussi !"
                            },
-                           "bulletin_title": "Le goblin écarquille les yeux",
+                           "bulletin_title": "Le gobelin écarquille les yeux",
                            "dialog_title": "Porte bannière d'Ogo"
                         },
                         "snooty_introduction": {
@@ -1501,7 +1501,7 @@
                            "bulletin_message": {
                               "000": "Par ordre de Ogo Cognecrâne, Goblin-Tout-Pour-Être-Chef, vous et toutes vos affaires sont maintenant le tribut de votre ville à La Grande Armée scintillante et à l'Empire Red Kiln !",
                               "001": "Je suis l'envoyé de Ogo Cognecrâne, dompteur de la montagne ! Ogo demande des choses de toutes sortes, vous compris, votre or aussi !",
-                              "002": "Mon Chef-parmi-les-Chefs, Ogo Cognecrâne, bientôt prendra l'Armée Scintillante et s'en ira de Red Kiln ! Vous êtes la prochaine de ses conquètes. Vous devenez nous fermiers d'or !",
+                              "002": "Mon Chef-parmi-les-Chefs, Ogo Cognecrâne, bientôt prendra l'Armée Scintillante et s'en ira de Red Kiln ! Vous êtes la prochaine de ses conquêtes. Vous devenez nous fermiers d'or !",
                               "003": "Je suis la Bannière gobelinne de Ogo Cognecrâne, coureur de Montagne ! Mon maître vous demande tribut, sous la forme de tout ce que vous avez ! Vous donnez tout ! Ou vous payez !",
                               "004": "Je suis la Bannière gobelinne de Ogo Cognecrâne ! Lorsque vous avez vaincu les petits chefs, vous avez apporté l'œil de Ogo sur vous ! Et les yeux de Ogo savent tout! Vous lui donner son tribut, ou ses yeux verront votre fin !"
                            },
@@ -1541,9 +1541,9 @@
                            "choice_001": "(bon débarras)",
                            "bulletin_message": {
                               "000": "Bonnes nouvelles pour vous, pathétiques humains !! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous rappel chez nous pour le rassemblement du clan. Ça aurait été amusant de vous pendre ! Peut-être qu'on s'appellera amis, bientôt de retour pour plus de plaisir à prendre vos affaires !",
-                              "001": "Humains sans challenges. Tellement triste. Nous espérions retourner chez notre Chef-des-Chefs, Ogo Cognecrâne, avecdes histoires de gloire, mais il n'y a aucune gloire à vous battre. Peut-être que nous reviendrons lorsque vous plus fort.",
+                              "001": "Humains sans challenges. Tellement triste. Nous espérions retourner chez notre Chef-des-Chefs, Ogo Cognecrâne, avec des histoires de gloire, mais il n'y a aucune gloire à vous battre. Peut-être que nous reviendrons lorsque vous plus fort.",
                               "002": "Nous partons maintenant, humains. Mais nous serons de retour.",
-                              "003": "Eh bien, c'était drôle de vous chasser, pathétiques humains ! Mais tout moment de bonheur à sa fin, on rentre mainteant au grand rassemblement du clan. Pendant que nous partons, construisez plus de choses, pour que quand nous reviendrons, nous puissions prendre plus !"
+                              "003": "Eh bien, c'était drôle de vous chasser, pathétiques humains ! Mais tout moment de bonheur à sa fin, on rentre maintenant au grand rassemblement du clan. Pendant que nous partons, construisez plus de choses, pour que quand nous reviendrons, nous puissions prendre plus !"
                            },
                            "bulletin_title": "Le gobelin envoi une note",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1588,7 +1588,7 @@
                   "mission": {
                      "sighted_bulletin": {
                         "title": "Des loups hurlants approchent !",
-                        "message": "Courez ! Mër vous dit de courrir !!"
+                        "message": "Courez ! Mër vous dit de courir !!"
                      }
                   }
                },
@@ -1597,14 +1597,14 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Ce fut plutôt calme ces derniers temps, mais vous savez... quand les oiseaux arrètent de chanter, c'est mauvais signe."
+                              "00": "Ce fut plutôt calme ces derniers temps, mais vous savez... quand les oiseaux arrêtent de chanter, c'est mauvais signe."
                            },
                            "bulletin_title": "Mër Fortemains se gratte l'oreille",
                            "dialog_title": "Mër Fortemains"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "Je pense à des loups. Des loups gobelins. Surveillez vos frontières. Vous ne voulez pas les combattre aprés que leurs dresseurs les aient lachés, vous entendez ? Barricadez-vous si nécessaire. Ou courez. La fuite c'est bien  ! Il n'y a pas de honte à survivre un jour de plus."
+                              "00": "Je pense à des loups. Des loups gobelins. Surveillez vos frontières. Vous ne voulez pas les combattre après que leurs dresseurs les aient lâchés, vous entendez ? Barricadez-vous si nécessaire. Ou courez. La fuite c'est bien  ! Il n'y a pas de honte à survivre un jour de plus."
                            },
                            "bulletin_title": "Mër Fortemains hoche la tête fermement",
                            "dialog_title": "Mër Fortemains"
@@ -1631,10 +1631,10 @@
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "000": "Si vous voulez tuer les loups avant qu'ils ne vous finissent, attapez les en premier.",
-                              "001": "Ils y a des loups dans la fôret. Des loups gobelins. Chassez les avant qu'ils ne vous chassent.",
+                              "000": "Si vous voulez tuer les loups avant qu'ils ne vous finissent, attrapez les en premier.",
+                              "001": "Ils y a des loups dans la forêt. Des loups gobelins. Chassez les avant qu'ils ne vous chassent.",
                               "002": "Les forces d'Ogo sont en mouvement. Ils y a des loups dans vos bois.",
-                              "003": "Petit campement humain : rechercher vos ennemis pendant qu'ils dorments.",
+                              "003": "Petit campement humain : rechercher vos ennemis pendant qu'ils dorment.",
                               "004": "Les loups gobelins sont entrainés pour attaqués sur commande. Libérez les avant que cet ordre n'arrive, et vous dormiez tranquillement cette nuit."
                            },
                            "bulletin_title": "Une flèche avec un message se plante sur votre bannière",
@@ -1649,7 +1649,7 @@
                         "msg1": {
                            "bulletin_message": {
                               "000": "Il ya des loups dans les bois ! Fuyez pendant que vous le pouvez encore !",
-                              "001": "Entendez vous les hurlements ? Il y a des goblins avec des loups dans les bois !",
+                              "001": "Entendez vous les hurlements ? Il y a des gobelins avec des loups dans les bois !",
                               "002": "Notre groupe vient juste de se faire attaquer par des gobelins ! Fuyez !",
                               "003": "Ces loups gobelins ne sont pas comme des loups normaux - ils sont rapides, vicieux et sans peur ! Courez pendant que vous le pouvez !",
                               "004": "Vous avez des gobelins dans vos bois ! Enfermez-vous dans un endroit sûr avant qu'ils attaquent !"
@@ -1672,7 +1672,7 @@
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "Voici un cadeau que j'ai collecté des villes voisines. Grace à vous, tout le monde dormira bien mieux ce soir !"
+                              "00": "Voici un cadeau que j'ai collecté des villes voisines. Grâce à vous, tout le monde dormira bien mieux ce soir !"
                            },
                            "bulletin_title": "Mër Fortemains hoche la tête fermement",
                            "dialog_title": "Mër Fortemains"
@@ -1681,7 +1681,7 @@
                            "bulletin_message": {
                               "00": "Bonjour, bonjour !? Il reste quelqu'un à la maison ?"
                            },
-                           "bulletin_title": "Mër Fortemains réaparrait",
+                           "bulletin_title": "Mër Fortemains réapparait",
                            "dialog_title": "Mër Fortemains"
                         }
                      }
@@ -1712,7 +1712,7 @@
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "Toi pas gagné. Ogo... arriver. Soothsayer dit... Ogo... écraser tout le monde."
+                              "00": "Toi pas gagné. Ogo... arriver. Le devin dit... Ogo... écraser tout le monde."
                            },
                            "bulletin_title": "[name(i18n_data.boss)] est vaincu !",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1741,7 +1741,7 @@
                               "000": "Hahaha !! Votre camp minable être sur territoire flamboyant ! Moi mériter tribut qui brille !",
                               "001": "Esclaves humains ! Vous pas comprendre puissance de grande armée flamboyante ! Vous chanceux s'incliner devant moi. Aussi moi vouloir chose pour tenir la nuit; pour m'endormir en chanson.",
                               "002": "Vous avoir marchandises ? Nous prendre; nous bons. Vous avoir compris ?",
-                              "003": "Hahahah, vous être petits nouveaux dans grand territoire rouge. Cala signifie moi moins petit-nouveau prendre ton repas. Repas être métafore. Vous préparer pour nous. Ou sinon ...",
+                              "003": "Hahahah, vous être petits nouveaux dans grand territoire rouge. Cala signifie moi moins petit-nouveau prendre ton repas. Repas être métaphore. Vous préparer pour nous. Ou sinon ...",
                               "004": "Vous être stupide, moi être grand chef flamboyant ! Ordre naturel dit vous donner marchandises et moi pas vous é-cra-bou-i-er. Moi vouloir marchandises. Comprendre ?"
                            },
                            "bulletin_title": "Un gobelin portant un chapeau fantasque vient se pavaner en ville.",
@@ -1753,7 +1753,7 @@
                               "001": "Mon matos ! Où être ?",
                               "002": "Nous retour. Vous payer tribut maintenant. Où être ?",
                               "003": "Moi rêver nuit dernière. Dans rêve, vous me fabriquer matos. Nous être comme frères sauf moi pas tuer vous. Vous avoir matos ?",
-                              "004": "Vouloir matos maintenant ! Vous fabriqer ? Nous gentils! Vous pas fabriquer ? Vous morts. Nous être tous amis !"
+                              "004": "Vouloir matos maintenant ! Vous fabriquer ? Nous gentils! Vous pas fabriquer ? Vous morts. Nous être tous amis !"
                            },
                            "bulletin_title": "Le gobelin déboule à nouveau en ville.",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1774,7 +1774,7 @@
                               "001": "Vous bien faire matos ? Je jamais--Je vouloir dire, oui. Vous donner raison moi.",
                               "002": "Vous avoir fournitures ? Nous prendre; Nous bon !",
                               "003": "Pour moi ?! Vous meilleur des meilleurs ouvriers !",
-                              "004": "Affaires moi! Je rentre mainteant et câlin pour dormir cette nuit.",
+                              "004": "Affaires moi! Je rentre maintenant et câlin pour dormir cette nuit.",
                               "005": "Hahahahaha !!! Jolie affaires !! Superbe affaires !! Mien mien mien !",
                               "006": "Matos !! Moutons moi être si heureux.",
                               "007": "Affaires mienne ! Hahahah, Vous très bon pour ouvrier. Reviens bientôt !"
@@ -1786,7 +1786,7 @@
                            "bulletin_message": {
                               "000": "Moi retour bientôt pour matos. Mieux avoir ou pas bon pour vous petits hearthlings."
                            },
-                           "bulletin_title": "Satisfaire les Goblins",
+                           "bulletin_title": "Satisfaire les gobelins",
                            "dialog_title": "[name(i18n_data.boss)]"
                         },
                         "shakedown_refused": {
@@ -1859,7 +1859,7 @@
                                     "description": "Propriété d'Ogo Cognecrâne"
                                  },
                                  "trainer": {
-                                    "description": "Fouttez les loups jusqu'à leurs folies dangeureuses."
+                                    "description": "Fouettez les loups jusqu'à leurs folies dangereuses."
                                  },
                                  "tame_wolf": {
                                     "description": "Férocement terrifiant."
@@ -1885,7 +1885,7 @@
                            "ogo_throne": {
                               "ogo_throne": {
                                  "display_name": "Trône d'Ogo",
-                                 "description": "Décoré avec des défences de bébé montagne"
+                                 "description": "Décoré avec des défenses de bébé montagne"
                               }
                            },
                            "wolf_kennel": {
@@ -2214,7 +2214,7 @@
          "shepherding": {
             "compassionate_shepherd_buff": {
                "display_name": "Soigné",
-               "description": "Pris en charge par un berger compatissant. Cet animal va produire plus de ressources et dedescendance."
+               "description": "Pris en charge par un berger compatissant. Cet animal va produire plus de ressources et de progéniture."
             },
             "shepherding_speed_bonus": {
                "display_name": "Vitesse du Troupeau Augmente de +10%",
@@ -2303,7 +2303,7 @@
          "game_modes": {
             "game_mode_hard_buff": {
                "display_name": "Mode difficile",
-               "description": "Fait plus de dégats"
+               "description": "Fait plus de dégâts"
             }
          }
       },
@@ -2423,7 +2423,7 @@
          "slaughter": {
             "display_name": "Sacrifier pour de la viande",
             "description": "Sacrifie cet animal pour sa viande.",
-            "disabled_description": "Cet animal à été si mal nouris qu'il n'a pas de viande. C'est juste un sac d'os."
+            "disabled_description": "Cet animal à été si mal nourris qu'il n'a pas de viande. C'est juste un sac d'os."
          },
          "undeploy_item": {
             "display_name": "Ranger",
@@ -2478,15 +2478,15 @@
          "archer_arrows": {
             "default_arrows": {
                "display_name": "Utiliser les flèches par défaut",
-               "description": "Utilisant des flèches normales. Cliquez pour échanger avec un autre type de flèche."
+               "description": "Utilise des flèches normales. Cliquez passer à un autre type de flèche."
             },
             "slow_arrows": {
                "display_name": "Utiliser les flèches à pointes",
-               "description": "Actuellement en utilisant des flèches pointues, qui ralentit les ennemis. Cliquez pour échanger avec un autre type de flèche."
+               "description": "Utilise des flèches à pointes, qui ralentit les ennemis. Cliquez passer à un autre type de flèche."
             },
             "fire_arrows": {
                "display_name": "Utiliser les flèches enflammées",
-               "description": "Actuellement en utilisant des flèches enflammées, qui ont une chance de mettre le feu aux ennemis, infligeant des dégâts supplémentaires au fil du temps. Cliquez pour échanger avec un autre type de flèche."
+               "description": "Utilise des flèches enflammées, qui ont une chance de mettre le feu aux ennemis, infligeant des dégâts supplémentaires au fil du temps. Cliquez passer à un autre type de flèche."
             }
          }
       },
@@ -2502,7 +2502,7 @@
                      "000": "Moi ? Vous voulez que je sois menuisier ? Ok, Je ferais de mon mieux !"
                   },
                   "psychopathic_misanthrope": {
-                     "000": "La Scie ? Où les gens voyent un outils, Je vois une arme crantée. Scie, Tu es mon nouveau meilleur ami."
+                     "000": "La Scie ? Où les gens voient un outils, Je vois une arme crantée. Scie, Tu es mon nouveau meilleur ami."
                   },
                   "insufferable_academic": {
                      "000": "Je vais essayer d'apporter la musique des cubes à nos meubles."
@@ -2518,14 +2518,14 @@
          },
          "chopping_wood": {
             "chopping_logs": {
-               "text": "En couppant du bois :",
+               "text": "En coupant du bois :",
                "logs": {
                   "beleaguered_leader": {
                      "000": "Aujourd'hui, nous allons couper des arbres pour le bois. Je suis déjà malade de cette mauvaise farce.",
                      "001": "Boooiiiiiiiiis !!! Je pourrais m'habituer à dire que cela.",
                      "002": "La troupe suis le chemin de celui qui coupera le plus d'arbres. Pour l'instant on me suis mais je préfère en couper un de plus pour être sur de mon total.",
-                     "003": "J'ai cru voir un nid de frelon pendant que nous étions dans l'exploitation forestière. Heuresement, tout le monde en est sortie à temps..",
-                     "004": "Bois: Notre éternelle tâche principale. Nous devons garder un oeil sur notre but: t'abbatre.",
+                     "003": "J'ai cru voir un nid de frelon pendant que nous étions dans l'exploitation forestière. Heureusement, tout le monde en est sortie à temps..",
+                     "004": "Bois: Notre éternelle tâche principale. Nous devons garder un œil sur notre but: t'abattre.",
                      "005": "Tout le monde coupe ensemble ! Cou-per ! Cou-per ! Cou-per ! Oui, plus vite !",
                      "006": "Ok les gars, la pause est finie. On retourne couper !!",
                      "007": "Chaque fois que j'envoie ma hache sur ces arbres, je vois la maison de mes rèves et exactement comment je vais la construire. Effet secondaire de tout ce découpage: le salon se rétrécit.",
@@ -2536,52 +2536,52 @@
                   },
                   "lovable_rogue": {
                      "000": "Étape 1: Couper du bois. Étape 2: ???. Étape 3: Bénéfice !! Hmm. Il faut encore travailler l'étape 2.",
-                     "001": "Je serais plus exicté pour couper les arbres si ils avaient une anatomie puls simple. Ou si je pouvais obtenir un avanage de combat sur leur taille. Ou si je pouvais les prendre de flanc. Ou s'ils avaient simplement une tête, afin de les poignarder dans le dos ! Même si je n'ai jamais entendu parler de quelqu'un qui abbat les arbres en leur mettant un poignard dans le dos..",
-                     "002": "Mes mains deveinnent rugueuses a force de couper le bois.",
-                     "003": "La meilleur raison qui fait que couper des arbres est ammusant: perfectionner le coup de hache. Ça peut être utile un jour !",
-                     "004": "La meiileur raison qui fait que transporter du bois est amusant: : Je n'en connais aucune.",
+                     "001": "Je serais plus excité pour couper les arbres si ils avaient une anatomie plus simple. Ou si je pouvais obtenir un avantage de combat sur leur taille. Ou si je pouvais les prendre de flanc. Ou s'ils avaient simplement une tête, afin de les poignarder dans le dos ! Même si je n'ai jamais entendu parler de quelqu'un qui abat les arbres en leur mettant un poignard dans le dos..",
+                     "002": "Mes mains deviennent rugueuses a force de couper le bois.",
+                     "003": "La meilleur raison qui fait que couper des arbres est amusant: perfectionner le coup de hache. Ça peut être utile un jour !",
+                     "004": "La meilleur raison qui fait que transporter du bois est amusant: : Je n'en connais aucune.",
                      "005": "Je me demande combien de bois je pourrais vendre en revenant à la maison... Aucun, probablement..",
-                     "006": "Je me demande si je pourrai arréter de couper du bois en prétandant avoir une écharde ? Ah, oui,ce ne sera pas que de la prétention.",
+                     "006": "Je me demande si je pourrai arrêter de couper du bois en prétendant avoir une écharde ? Ah, oui,ce ne sera pas que de la prétention.",
                      "007": "Aïe ! Une cloque ! Pourquoi est-ce que je m'inflige ça ? Un contrat de travail à volonté ne veut rien dire quand on est AU MILIEU DE NUL PART.",
-                     "008": "Des échardes ! J'en ai partout! Ok, calme ta réspiration. Calme ta respiration. Quelqu'un à une pince à épiler ?"
+                     "008": "Des échardes ! J'en ai partout! Ok, calme ta respiration. Calme ta respiration. Quelqu'un à une pince à épiler ?"
                   },
                   "psychopathic_misanthrope": {
                      "000": "Heeeaaaahhhhrrrghhh!!!",
                      "001": "Raaaarrrrrrghhhhh!",
                      "002": "Spork ces arbres, vous savez ? Juste Spork-les tous !",
-                     "003": "J'ai couper environ un milliard d'arbre aujourd'hui. Appelez moi le meurtier à la hache !!!",
-                     "004": "Les gens disent que j'ai des gros problèmes d'aggréivité, mais personne ne se plaint de tout le bois que je récolte !",
+                     "003": "J'ai couper environ un milliard d'arbre aujourd'hui. Appelez moi le meurtrier à la hache !!!",
+                     "004": "Les gens disent que j'ai des gros problèmes d'agressivité, mais personne ne se plaint de tout le bois que je récolte !",
                      "005": "Est ce que quelqu'un d'autres coupe ces troncs ? Y'a juste moi ?",
-                     "006": "Heureusement que je fait quelque chose de si phisique. Étre assis et tricoté toute la journée me rendrais fou."
+                     "006": "Heureusement que je fait quelque chose de si physique. Être assis et tricoté toute la journée me rendrais fou."
                   },
                   "hopeless_optimist": {
                      "000": "Couper, couper, couper ! Si vous le dites encore et encore, c'est presque une chanson !",
                      "001": "Couper le bois ça fais les muscles ! Note à soi-même: voir si quelqu'un l'a remarqué.",
-                     "002": "On est désolé M. L'arbre, mais on dois vous couper pour vivre à l'interieur de vous. Mais nous n'oublierons jamais que nous auront chaud et nous serons à l'abrir grâce à vous. Merci pour ce sacrifice.",
+                     "002": "On est désolé M. L'arbre, mais on dois vous couper pour vivre à l'intérieur de vous. Mais nous n'oublierons jamais que nous auront chaud et nous serons à l'abri grâce à vous. Merci pour ce sacrifice.",
                      "003": "Il y a vraiment quelque chose de satisfaisant de mettre à terre quelque chose de bien plus gros que moi !",
                      "004": "Je suis Paul Revere ! Je veux dire, Bunyon !",
                      "005": "Combien d'arbres voudrais couper un castor, si un castor peut couper du bois ? Bien si mon nom était castor , la réponse serait: beaucoup ! Note à soi-même: trouver plus tard à quoi ressemble un castor.",
                      "006": "Bois, Bois, Bois, c'est du bois, dans le monde d'un bûcheron. Ah-aaaa, toutes les choses que je pourrais faire, si j'avais un peu de bois, c'est le monnnnnde du bûcheron. Ahhh-AAAAAIIEEE---CHUTE D'ARBRE !!!!!",
                      "007": "J'entends que je ne suis pas censé chanter quand je coupe des arbres. Ça m'est égale !",
-                     "008": "Oh non ! M. l'Écureuil ! Je suis désolé. Je ne voulais pas couper votre maison. Dites moi tout ce que vous-émménager chez moi ! Il y a des noisettes à la maison. Oh. J'aurais sûrement pas du parler de maison..."
+                     "008": "Oh non ! M. l'Écureuil ! Je suis désolé. Je ne voulais pas couper votre maison. Dites moi tout ce que vous-emménager chez moi ! Il y a des noisettes à la maison. Oh. J'aurais sûrement pas du parler de maison..."
                   },
                   "insufferable_academic": {
-                     "000": "Couper du bois est une sous-utilisation épouvantable de mes grandes facultés intelllectuelles.",
-                     "001": "Si jamais je vois à nouveau une hâche c'en est fini de moi.",
+                     "000": "Couper du bois est une sous-utilisation épouvantable de mes grandes facultés intellectuelles.",
+                     "001": "Si jamais je vois à nouveau une hache c'en est fini de moi.",
                      "002": "Tout ce bois vaudrait presque la chandelle de faire un effort, s'il était seulement destinées à une usine à papier.",
                      "003": "N'y a t-il personne d'autre qui pourrait s'engager dans un tel travail de domestique ?",
-                     "004": "J'ai mis au point une facon de couper le bois qui et mathématiquement parfaite. Hélas, il n'y a pas de revues ici où je pourrais publier mes découvertes !",
+                     "004": "J'ai mis au point une façon de couper le bois qui et mathématiquement parfaite. Hélas, il n'y a pas de revues ici où je pourrais publier mes découvertes !",
                      "005": "Je ne peux pas vous aider, mais je sens la nécessité de parler de la vitesse alarmante à laquelle nous déboisons toute la région ... Quoi ? Non, bien sûr, je ne cherche pas à éviter les obligations comme celle de couper le bois !"
                   },
                   "diligent_sweetheart": {
-                     "000": "Je suppose que je dois apprendre à abbatre des arbres si cela dois être fait.",
+                     "000": "Je suppose que je dois apprendre à abattre des arbres si cela dois être fait.",
                      "001": "Je vais mettre à côté du feu de camp une brindille de chaque arbre que j'ai coupé, en séparant chaque tas tous les jour. Ainsi, je pourrai dire que je coupe les arbres de mieux en mieux !",
                      "002": "J'espère que les gens pense que les paumes endurcis des mains sont séduisantes.",
                      "003": "J'ai entendu que souffrir forger le caractère !",
                      "004": "Couper du bois est réconfortant, si vous ne vous inquiétez pas trop des arbres qui vous tombe dessus.",
                      "005": "J'espère que nous ne coupons pas la maison de quelqu'un. Imaginez ce que ce  serait d'avoir votre maison coupé autour de vous pour faire la maison de quelqu'un d'autre !",
                      "006": "J'espère que les arbres n'ont pas de nerfs. Ça leur feraient très mal s'ils en avaient. S'ils nous criaient STOP, ça devrait être dans une autre fréquence que la notre.",
-                     "007": "Je prenais ma hache aujour'hui et j'ai réalisé que je pouvais vraiment blesser si je l'utilisai sur une personne, plutôt que sur un arbre."
+                     "007": "Je prenais ma hache aujourd'hui et j'ai réalisé que je pouvais vraiment blesser si je l'utilisai sur une personne, plutôt que sur un arbre."
                   }
                }
             }
@@ -2624,9 +2624,9 @@
                      "007": "C'est bon d'être ici avec ses amis et sa famille.",
                      "008": "S'installer ici était vraiment une bonne idée.",
                      "009": "Soyer heureux avec une bonne journée de travail !",
-                     "010": "C'est un bon endroit pour construire quelquechose de grand.",
+                     "010": "C'est un bon endroit pour construire quelque chose de grand.",
                      "011": "Bonheur ininterrompu ! J'adore les jours comme ça.",
-                     "012": "24 heures de pure tranquilitée.",
+                     "012": "24 heures de pure tranquillité.",
                      "013": "Une journée entière sans une seule menace existentielle ! Incroyable !"
                   }
                }
@@ -2648,7 +2648,7 @@
                         "006": "Au-revoir, [name(entry.dead_friend)]. Tu nous manquera.",
                         "007": "Ne t'inquiètes pas, [name(entry.dead_friend)]. Nous te vengerons !",
                         "008": "Je ne peux pas croire que [name(entry.dead_friend)] est vraiment parti.",
-                        "009": "[name(entry.dead_friend)] ? Parti ? Soudainnement, tout cela me semble comme s'il n'en valait pas la peine, en quelque sorte.",
+                        "009": "[name(entry.dead_friend)] ? Parti ? Soudainement, tout cela me semble comme s'il n'en valait pas la peine, en quelque sorte.",
                         "010": "Hé ben, Maintenant j'espère vraiment ne jamais avoir persuader [name(entry.dead_friend)] de venir dans cette aventure.",
                         "011": "[name(entry.dead_friend)] !!"
                      }
@@ -2686,9 +2686,9 @@
                      "004": "Courrez résolument vers les sorties !!!"
                   },
                   "generic": {
-                     "000": "J'ai pris peur de ma goudre mainteant !!!",
+                     "000": "J'ai pris peur de ma gourde maintenant !!!",
                      "001": "Aauuugh !!!",
-                     "002": "Choses de cauchemare !!!",
+                     "002": "Cauchemar !!!",
                      "003": "Dois couuuurrrrirrrr !!!!",
                      "004": "::cris de terreur::"
                   },
@@ -2708,10 +2708,10 @@
                      "003": "AIEEEEE !!!"
                   },
                   "lovable_rogue": {
-                     "000": "Récuperrez les biens et dirigez-vous vers les collines !",
+                     "000": "Récupérerez les biens et dirigez-vous vers les collines !",
                      "001": "S'il vous plaît, je ne veux pas mourir !",
                      "002": "Il y a tellement de choses que je dois faire !!!!",
-                     "003": "Je ne peux pas mourrir ici !!!",
+                     "003": "Je ne peux pas mourir ici !!!",
                      "004": "Dois... fuir!!!",
                      "005": "Chaque villageois pour soi-même!!!"
                   }
