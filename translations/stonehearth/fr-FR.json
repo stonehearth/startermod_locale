@@ -2528,7 +2528,7 @@
                      "004": "Bois: Notre éternelle tâche principale. Nous devons garder un œil sur notre but: t'abattre.",
                      "005": "Tout le monde coupe ensemble ! Cou-per ! Cou-per ! Cou-per ! Oui, plus vite !",
                      "006": "Ok les gars, la pause est finie. On retourne couper !!",
-                     "007": "Chaque fois que j'envoie ma hache sur ces arbres, je vois la maison de mes rèves et exactement comment je vais la construire. Effet secondaire de tout ce découpage: le salon se rétrécit.",
+                     "007": "Chaque fois que j'envoie ma hache sur ces arbres, je vois la maison de mes rêves et exactement comment je vais la construire. Effet secondaire de tout ce découpage: le salon se rétrécit.",
                      "008": "ATTENTION, chute d'arbres ! Dégagez ! DEGAGEZ LA VOIE !",
                      "teacher": {
                         "000": "Coupez plus d'arbres aujourd'hui. Par [str(entry.teacher)] il y a beaucoup d'arbres par ici."
@@ -3339,8 +3339,8 @@
       },
       "shops": {
          "basic_resource_shop": {
-            "name": "Étal de resource de base",
-            "title": "Étal de resource de base"
+            "name": "Étal de ressource de base",
+            "title": "Étal de ressource de base"
          }
       },
       "monster_tuning": {
@@ -3382,10 +3382,10 @@
          },
          "cloth_padded_vest": {
             "display_name": "Gilet rembourré",
-            "description": "Procure une légére protection en combat.",
+            "description": "Procure une légère protection en combat.",
             "cloth_padded_vest_iconic": {
-               "display_name": "Gilet rembourrè",
-               "description": "Procure une légére protection en combat. Chaque petit geste compte!"
+               "display_name": "Gilet rembourré",
+               "description": "Procure une légère protection en combat. Chaque petit geste compte!"
             }
          },
          "iron_mail": {
@@ -3481,11 +3481,11 @@
             "description": "Light weight and strong protection for one's head"
          },
          "simple_quiver": {
-            "display_name": "Carquoi de flèches à pointes",
+            "display_name": "Carquois de flèches à pointes",
             "description": "A light quiver of slowing arrows"
          },
          "fire_quiver": {
-            "display_name": "Carquoi de flèches à enflammer",
+            "display_name": "Carquois de flèches à enflammer",
             "description": "Sets enemies on fire, dealing damage over time"
          },
          "cracked_wooden_buckler": {
@@ -3603,7 +3603,7 @@
          "wooden_window_frame_tall": {
             "wooden_window_frame_tall_ghost": {
                "display_name": "Cadre de fenêtre haut",
-               "description": "Les hauteurs extrèmes ajoute un air d'élégance"
+               "description": "Les hauteurs extrêmes ajoute un air d'élégance"
             }
          },
          "wooden_window_frame_wide": {
@@ -3756,7 +3756,7 @@
             "display_name": "Un poyo",
             "description": "Oiseau sauvage dodu et savoureux",
             "poyo_egg": {
-               "display_name": "Oeuf de poyo fécondé.",
+               "display_name": "Œuf de poyo fécondé.",
                "description": "Est-il en train d'éclore ?"
             },
             "young": {
@@ -4251,7 +4251,7 @@
          },
          "stone_floor_candle_holder": {
             "stone_floor_candle_holder_ghost": {
-               "display_name": "Bougeoire de sol en pierre",
+               "display_name": "Bougeoir de sol en pierre",
                "description": "Que la lumière soit !"
             }
          },
@@ -4324,25 +4324,25 @@
          "wooden_sign_blacksmith": {
             "wooden_sign_blacksmith_ghost": {
                "display_name": "Enseigne murale de forgeron",
-               "description": "Enseigne avec le symbol du forgeron."
+               "description": "Enseigne avec le symbole du forgeron."
             }
          },
          "wooden_sign_carpenter": {
             "wooden_sign_carpenter_ghost": {
                "display_name": "Enseigne murale de menuisier",
-               "description": "Enseigne avec le symbol du menuisier."
+               "description": "Enseigne avec le symbole du menuisier."
             }
          },
          "wooden_sign_mason": {
             "wooden_sign_mason_ghost": {
                "display_name": "Enseigne murale de tailleur de pierre",
-               "description": "Enseigne avec le symbol du tailleur de pierre."
+               "description": "Enseigne avec le symbole du tailleur de pierre."
             }
          },
          "wooden_sign_weaver": {
             "wooden_sign_weaver_ghost": {
                "display_name": "Enseigne murale de tisserand",
-               "description": "Enseigne avec le symbol du tisserand."
+               "description": "Enseigne avec le symbole du tisserand."
             }
          },
          "wooden_wall_lantern": {
@@ -4437,7 +4437,7 @@
          },
          "wooden_sign_herbalist": {
             "wooden_sign_herbalist_ghost": {
-               "display_name": "Herbalist's sign",
+               "display_name": "Enseigne d'herboriste",
                "description": "A sign with the mark of the Herbalist"
             }
          },
@@ -4449,7 +4449,7 @@
          },
          "wooden_sign_potter": {
             "wooden_sign_potter_ghost": {
-               "display_name": "Potter's Sign",
+               "display_name": "Enseigne de potier",
                "description": "A sign with the mark of the Potter"
             }
          },
@@ -4504,7 +4504,7 @@
          "corn": {
             "amazing_corn_basket": {
                "display_name": "Panier de maïs extraordinaire",
-               "description": "Epis super nourrissants."
+               "description": "Épis super nourrissants."
             },
             "amazing_corn_serving": {
                "display_name": "Maïs extraordinaire",
@@ -4515,7 +4515,7 @@
                "description": "Doux et croquant."
             },
             "corn_serving": {
-               "display_name": "Epi de maïs",
+               "display_name": "Épi de maïs",
                "description": "Gicle sous la dent."
             }
          },
@@ -4569,8 +4569,8 @@
             "description": "Prête à l'emploi"
          },
          "egg": {
-            "display_name": "Un oeuf",
-            "description": "Qui vole un oeuf vole un poyo."
+            "display_name": "Un œuf",
+            "description": "Qui vole un œuf vole un poyo."
          },
          "corn_bread": {
             "corn_bread": {
@@ -4587,18 +4587,18 @@
          },
          "poyo_pot_pie": {
             "poyo_pot_pie": {
-               "display_name": "Chausson au paté de poyo",
+               "display_name": "Chausson au pâté de poyo",
                "description": "On en bave."
             },
             "poyo_pot_pie_serving": {
-               "display_name": "Tranche de chausson de paté de poyo",
+               "display_name": "Tranche de chausson de pâté de poyo",
                "description": "Mmm ... trop bon."
             }
          },
          "omelette": {
             "omelette": {
                "display_name": "Omelette",
-               "description": "Délicieuse viande, succulents légumes, le tout enrobé d'oeuf."
+               "description": "Délicieuse viande, succulents légumes, le tout enrobé d'œuf."
             },
             "omelette_serving": {
                "display_name": "Assiette d'omelette",
@@ -4607,20 +4607,20 @@
          },
          "roast_poyo": {
             "roast_poyo": {
-               "display_name": "Poyo roti",
+               "display_name": "Poyo rôti",
                "description": "Magnifiquement juteux"
             },
             "roast_poyo_serving": {
-               "display_name": "Assiette de poyo roti"
+               "display_name": "Assiette de poyo rôti"
             }
          },
          "fried_eggs": {
             "fried_eggs": {
-               "display_name": "Oeufs frits",
+               "display_name": "Œufs frits",
                "description": "Frits et bien sûr délicieux."
             },
             "fried_eggs_serving": {
-               "display_name": "Assiette d'oeufs frits"
+               "display_name": "Assiette d'œufs frits"
             }
          },
          "sheep_feed": {
@@ -4712,7 +4712,7 @@
          },
          "rotten_basket": {
             "display_name": "Panier de nourriture moisie",
-            "description": "Si pourrie qu'elle n'a plus ni forme ni utilitée."
+            "description": "Si pourrie qu'elle n'a plus ni forme ni utilité."
          },
          "rotten_egg": {
             "display_name": "Rotten Egg",
@@ -4945,7 +4945,7 @@
          "safety_standard": {
             "display_name": "Étendard de sécurité en bois",
             "clay_safety_standard": {
-               "display_name": "Étendard de sécutité en argile"
+               "display_name": "Étendard de sécurité en argile"
             },
             "description": "Marquer un point de sécurité pour se regrouper en mode alerte de ville"
          },
@@ -5221,7 +5221,7 @@
             "description": "Il est si mignon!"
          },
          "mammoth": {
-            "display_name": "Bébé mamouth",
+            "display_name": "Bébé mammouth",
             "description": "Si poilu!"
          }
       },
@@ -5541,7 +5541,7 @@
                "description": "Du fer à profusion."
             },
             "ore_block": {
-               "display_name": "Block de minerai",
+               "display_name": "Bloc de minerai",
                "description": "Minez pour en obtenir."
             },
             "silver_block": {
@@ -5587,7 +5587,7 @@
             },
             "large_juniper_tree": {
                "display_name": "Grand genévrier",
-               "description": "Un specimen impressionant."
+               "description": "Un spécimen impressionnant."
             },
             "medium_juniper_tree": {
                "display_name": "Genévrier",
@@ -5601,7 +5601,7 @@
          "palm_tree": {
             "large_palm_tree": {
                "display_name": "Grand palmier",
-               "description": "Un specimen impressionant."
+               "description": "Un spécimen impressionnant."
             },
             "small_palm_tree": {
                "display_name": "Petit palmier",
@@ -5641,7 +5641,7 @@
          "cactus_tree": {
             "large_cactus_tree": {
                "display_name": "Grand cactus",
-               "description": "Un specimen impressionant."
+               "description": "Un spécimen impressionnant."
             },
             "small_cactus_tree": {
                "display_name": "Petit cactus",
@@ -5680,17 +5680,17 @@
       "weapons": {
          "bronze_mace": {
             "display_name": "Mace en bronze",
-            "description": "Précisément ciselée pour faire un maximum de dégats",
+            "description": "Précisément ciselée pour faire un maximum de dégâts",
             "bronze_mace_iconic": {
                "display_name": "Mace de bronze",
-               "description": "Pour applatir les faces."
+               "description": "Pour aplatir les faces."
             }
          },
          "bronze_sword": {
-            "display_name": "Epée courte de bronze",
+            "display_name": "Épée courte de bronze",
             "description": "C'est mieux que de se battre avec un cure dent !",
             "bronze_sword_iconic": {
-               "display_name": "Epée de bronze",
+               "display_name": "Épée de bronze",
                "description": "Pointue. Brillante."
             }
          },
@@ -5715,15 +5715,15 @@
             "description": "Lourde, elle cogne dur",
             "giant_bone_mace_iconic": {
                "display_name": "Mace géante d'os",
-               "description": "Pour applanir les faces."
+               "description": "Pour aplanir les faces."
             }
          },
          "iron_mace": {
-            "display_name": "Mace de far",
+            "display_name": "Mace de fer",
             "description": "Lourde, elle défonce sec.",
             "iron_mace_iconic": {
-               "display_name": "Mace de far",
-               "description": "Pour applanir les faces."
+               "display_name": "Mace de fer",
+               "description": "Pour aplanir les faces."
             }
          },
          "iron_pike": {
@@ -5743,10 +5743,10 @@
             }
          },
          "long_sword": {
-            "display_name": "Epée longue",
+            "display_name": "Épée longue",
             "description": "Aiguisée avec plus de portée. Une arme de confiance.",
             "long_sword_iconic": {
-               "display_name": "Epée longue",
+               "display_name": "Épée longue",
                "description": "Pointue. Brillante."
             }
          },
@@ -5755,10 +5755,10 @@
             "description": "Keeps the fuzzies in line"
          },
          "short_sword": {
-            "display_name": "Epée courte en acier",
+            "display_name": "Épée courte en acier",
             "description": "Pas très grande mais sa lame d'acier reste efficace.",
             "short_sword_iconic": {
-               "display_name": "Epée courte",
+               "display_name": "Épée courte",
                "description": "Pointue. Brillante."
             }
          },
@@ -5771,20 +5771,20 @@
             "description": "L'outil parfait pour écraser.",
             "stone_maul_iconic": {
                "display_name": "Marteau en pierre",
-               "description": "Pour applanir les faces."
+               "description": "Pour aplanir les faces."
             }
          },
          "two_handed_sword": {
-            "display_name": "Epée à deux mains",
+            "display_name": "Épée à deux mains",
             "description": "Double mains, double problèmes.",
             "two_handed_sword_iconic": {
-               "display_name": "Epée à deux mains",
+               "display_name": "Épée à deux mains",
                "description": "Double mains, double problèmes."
             }
          },
          "wooden_sword": {
             "display_name": "Épée en bois",
-            "description": "Tranche tes enemies avec la force du chêne",
+            "description": "Tranche tes ennemies avec la force du chêne",
             "wooden_sword_iconic": {
                "display_name": "Épée en bois",
                "description": "Épée basique en bois."
@@ -5815,7 +5815,7 @@
             "description": "Courbé pour des tirs plus rapides et plus puissants"
          },
          "crude_metal_axe": {
-            "display_name": "Axe en métal brut",
+            "display_name": "Hache en métal brut",
             "description": "Simple mais efficace."
          },
          "crude_wooden_club": {
@@ -5840,11 +5840,11 @@
          },
          "coarse_bandage": {
             "display_name": "Bandage grossier",
-            "description": "Utilisé par l'herboriste pour guérir légérement"
+            "description": "Utilisé par l'herboriste pour guérir légèrement"
          },
          "heavy_bandage": {
             "display_name": "Bandage épais",
-            "description": "Utilisé par l'herboriste pour guérir beaucoups."
+            "description": "Utilisé par l'herboriste pour guérir beaucoup."
          },
          "light_bandage": {
             "description": "Utilisé par l'herboriste pour guérir modérément",
@@ -5867,7 +5867,7 @@
       "archer": {
          "archer_outfit": {
             "display_name": "Veste matelassée d'archer",
-            "description": "Offers light protection",
+            "description": "Offre une protection légère",
             "archer_hood": {
                "display_name": "Cape d'archer",
                "description": "Protection à capuche pour sa tête"
@@ -6060,7 +6060,7 @@
             },
             "long_sword_recipe": {
                "description": "Aiguisée et offrant une plus grande portée. Une arme de valeur.",
-               "recipe_name": "Epée longue",
+               "recipe_name": "Épée longue",
                "flavor": "'Ah ! La seule arme qui vaille la peine d'une spécialisation.' --Lady Giest"
             },
             "weapons_name": "Armes",
@@ -6069,8 +6069,8 @@
             "tools_name": "Outils",
             "short_sword_recipe": {
                "description": "Courtaude, mais sa lame d'acier reste tranchante.",
-               "recipe_name": "Epée courte en acier",
-               "flavor": "Mais, brille-t-elle quand les Orcs sont proches ?"
+               "recipe_name": "Épée courte en acier",
+               "flavor": "Mais, brille-t-elle quand les orcs sont proches ?"
             },
             "silver_ingot_recipe": {
                "description": "Une barre d'argent pur. Un matériau adapté à la fabrication d'objets artisanaux.",
@@ -6090,12 +6090,12 @@
             "tin_ingot_recipe": {
                "description": "Une barre d'étain pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot d'étain",
-               "flavor": "Etape 1 : battre très fin. Etape 2 : utilisez pour couvrir le toit de l'hôtel de ville."
+               "flavor": "Étape 1 : battre très fin. Étape 2 : utilisez pour couvrir le toit de l'hôtel de ville."
             },
             "trapper_knife_recipe": {
                "description": "Requis pour promouvoir un hearthling en trappeur.",
                "recipe_name": "Couteau de trappeur",
-               "flavor": "'Garde les pointes de ta moustaches éfilées, garçon et coupe franchementt.' --Willard Foxghost"
+               "flavor": "'Garde les pointes de ta moustaches éfilées, garçon et coupe franchement.' --Willard Foxghost"
             },
             "two_handed_sword_recipe": {
                "description": "Double mains, doubles bobos.",
@@ -6109,7 +6109,7 @@
             "blacksmith_workbench_recipe": {
                "description": "Utilisé pour forger armes et armures à partir des lingots.",
                "recipe_name": "Enclume",
-               "flavor": "'Ce n'est pas une coincidence si les métaphores d'un bon personnage viennnet toute de l'Art de la forge.' --Lucan Varius, Artifex Ignis"
+               "flavor": "'Ce n'est pas une coïncidence si les métaphores d'un bon personnage viennent toute de l'Art de la forge.' --Lucan Varius, Artifex Ignis"
             },
             "workbenches_name": "Ateliers",
             "storage_name": "Rangement",
@@ -6138,12 +6138,12 @@
             "decoration_name": "Décorations",
             "steel_shield_recipe": {
                "recipe_name": "Bouclier recouvert d'acier",
-               "description": "Grants the ability to completely block attacks.",
+               "description": "Confère la capacité de bloquer complètement les attaques.",
                "flavor": "Incredibly protective. Small children play turtle underneath."
             },
             "knights_shield_recipe": {
                "recipe_name": "Bouclier en acier",
-               "description": "Required to promote a hearthling into a Knight"
+               "description": "Requis pour promouvoir un hearthling en chevalier"
             },
             "iron_helm_recipe": {
                "recipe_name": "Casque en fer",
@@ -6155,7 +6155,7 @@
             },
             "steel_circlet_recipe": {
                "recipe_name": "Tiare en acier",
-               "description": "Light weight and strong head protection"
+               "description": "D'un poids léger mais une forte protection pour la tête"
             },
             "decorative_elite_gong_recipe": {
                "description": "Inspired by the Elite Kobold Menace",
@@ -6168,12 +6168,12 @@
                "flavor": "The generals hat, when melted down, could have filled a lake with gold"
             },
             "decorative_master_gong_recipe": {
-               "description": "Inspired by the Master Kobold Archer",
+               "description": "Inspiré par le maître archer kobold",
                "recipe_name": "Gong de maître",
-               "flavor": "Great for taunting master kobolds"
+               "flavor": "Parfait pour attirer des maîtres kobolds"
             },
             "decorative_scout_gong_recipe": {
-               "description": "Inspired by the Kobold Scout",
+               "description": "Inspiré par le scout kobold",
                "recipe_name": "Gong de scout",
                "flavor": "Even scouts are adorned with gold"
             }
@@ -6182,7 +6182,7 @@
       "carpenter": {
          "carpenter_description": {
             "display_name": "Menuisier",
-            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu'il fabrique permettent de déverouiller d'autres professions.",
+            "description": "Le menuisier fabrique des outils et des meubles à partir du bois. Les outils qu'il fabrique permettent de déverrouiller d'autres professions.",
             "requirements": "Scie de menuisier. Fabriquée par le forgeron.",
             "level_6_data": {
                "title": "Maître menuisier",
@@ -6191,7 +6191,7 @@
             },
             "level_2_data": {
                "perk_000_name": "Perspicacité collaborative",
-               "perk_000_description": "Le menuisier est maintenant assez habile pour utiliser des matériaux provenants d'autres artisans."
+               "perk_000_description": "Le menuisier est maintenant assez habile pour utiliser des matériaux provenant d'autres artisans."
             },
             "level_4_data": {
                "perk_000_name": "Catalogue étendu",
@@ -6212,7 +6212,7 @@
          },
          "carpenter_saw": {
             "display_name": "Scie de menuisier",
-            "description": "L'outils de l'excellence du menuisier.",
+            "description": "L'outil de l'excellence du menuisier.",
             "carpenter_saw_iconic": {
                "display_name": "Scie de menuisier",
                "description": "Scie de base pour menuisier."
@@ -6402,7 +6402,7 @@
             },
             "wooden_sword_recipe": {
                "description": "Requise pour promouvoir un hearthling en fantassin.",
-               "recipe_name": "Epée en bois d'entrainement",
+               "recipe_name": "Épée en bois d'entrainement",
                "flavor": "Juste assez pointue pour le travail à faire."
             },
             "wooden_wall_lantern_recipe": {
@@ -6431,7 +6431,7 @@
                "flavor": "Un établi plus élégant, réalisé en des temps plus civilisé."
             },
             "wooden_window_frame_tall_recipe": {
-               "description": "Les hauteurs extrèmes ajoute un air d'élégance.",
+               "description": "Les hauteurs extrêmes ajoute un air d'élégance.",
                "recipe_name": "Cadre de fenêtre haut"
             },
             "wooden_window_frame_wide_recipe": {
@@ -6468,7 +6468,7 @@
             },
             "log_pile_recipe": {
                "recipe_name": "Tas de bois",
-               "description": "Du bois empilé. Un excelent moyen de stocké beaucoup de bois pour une utilisation ultérieur."
+               "description": "Du bois empilé. Un excellent moyen de stocké beaucoup de bois pour une utilisation ultérieur."
             },
             "wheat_pile_recipe": {
                "recipe_name": "Grand ballot de blé",
@@ -6570,11 +6570,11 @@
             },
             "poyo_pot_pie_recipe": {
                "description": "Une tourte légumes et viandes.",
-               "recipe_name": "Tourte au paté de poyo",
+               "recipe_name": "Tourte au pâté de poyo",
                "flavor": "Les tourtes, c'est toujours bon."
             },
             "omelette_recipe": {
-               "description": "Viande et légumes battus dans des oeufs.",
+               "description": "Viande et légumes battus dans des œufs.",
                "recipe_name": "Omelette",
                "flavor": "Elément d'un petit déjeuné sain."
             },
@@ -6584,8 +6584,8 @@
                "flavor": "Aller hop, un autre poyo sur le barbeuc !"
             },
             "fried_eggs_recipe": {
-               "description": "Oeufs frits en commande !",
-               "recipe_name": "Oeufs frits",
+               "description": "Œufs frits en commande !",
+               "recipe_name": "Œufs frits",
                "flavor": "Vous préférez les jaunes vers le haut?"
             },
             "animal_feed_name": "Nourriture pour animaux",
@@ -6699,7 +6699,7 @@
       "footman": {
          "footman_description": {
             "display_name": "Fantassin",
-            "description": "Le fantassin est un combatant de mêlée. Un bon choix pour la base de la défense de votre ville.",
+            "description": "Le fantassin est un combattant de mêlée. Un bon choix pour la base de la défense de votre ville.",
             "requirements": "Epée d'entrainement en bois, fabriquée par le menuisier",
             "level_4_data": {
                "perk_000_name": "40% de dommages supplémentaires",
@@ -6715,11 +6715,11 @@
             },
             "level_6_data": {
                "perk_000_name": "Endommager jusqu'à 60%",
-               "perk_000_description": "Dégats maximum !"
+               "perk_000_description": "Dégâts maximum !"
             },
             "level_2_data": {
                "perk_000_name": "Premier dans la mêlée",
-               "perk_000_description": "The footman charges into battle with speed"
+               "perk_000_description": "Le fantassin charges dans la mêlée avec vitesse"
             },
             "level_5_data": {
                "perk_000_name": "Fendre",
@@ -6729,15 +6729,15 @@
          "footman_buffs": {
             "damage_1_buff": {
                "description": "Au niveau 1, les attaques du fantassin sont plus féroces",
-               "display_name": "Dégat +20%"
+               "display_name": "Dégât +20%"
             },
             "damage_2_buff": {
                "description": "Les attaques du fantassin sont plus féroces",
-               "display_name": "Dégat +40%"
+               "display_name": "Dégât +40%"
             },
             "damage_3_buff": {
                "description": "Au niveau 6, les attaques du fantassin sont frénétiques",
-               "display_name": "Dégat +60%"
+               "display_name": "Dégât +60%"
             },
             "speed_buff": {
                "display_name": "Premier dans la mêlée",
@@ -6861,7 +6861,7 @@
             "tools_name": "Outils",
             "storage_name": "Rangement",
             "signage_decoration_name": "Signalétique et décoration",
-            "building_parts_name": "Eléments de construction",
+            "building_parts_name": "Éléments de construction",
             "weapons_name": "Armes",
             "furniture_name": "Meubles",
             "stone_bench_recipe": {
@@ -6871,7 +6871,7 @@
             },
             "stone_brazier_recipe": {
                "description": "Un petit feu de camp qui offre confort et chaleur pendant la nuit .",
-               "recipe_name": "Brazero en pierre",
+               "recipe_name": "Brasero en pierre",
                "flavor": "Attention :  Ne rien verser dedans pendant qu'il est allumé."
             },
             "stone_bricks_recipe": {
@@ -6887,7 +6887,7 @@
             "stone_chest_recipe": {
                "description": "Un endroit imposant ou ranger jusqu'à 64 choses.",
                "recipe_name": "Coffre en pierre",
-               "flavor": "'Ecoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.'--Edolf, barde ambulant"
+               "flavor": "'Écoutez les enfants. Tous les coffres de Hemgorir-Sous-La-Montagne ressemblaient à ça.'--Edolf, barde ambulant"
             },
             "stone_garden_lantern_recipe": {
                "description": "Une lanterne au look antique qui donne une super ambiance.",
@@ -6911,7 +6911,7 @@
             },
             "tower_brazier_recipe": {
                "description": "Inspiré par une tour de château, il devient un signal lumineux puissant la nuit.",
-               "recipe_name": "Brazero sur colonne",
+               "recipe_name": "Brasero sur colonne",
                "flavor": "Super pour illuminer les allées de jardin et intimider les invités."
             },
             "mason_workbench_recipe": {
@@ -6927,7 +6927,7 @@
             "workbenches_name": "Ateliers",
             "stone_pile_recipe": {
                "recipe_name": "Tas de pierre",
-               "description": "Des pierres empilées. Une excelent méthode pour stocker une grande quantité de pierre pour une utilisation ultérieur."
+               "description": "Des pierres empilées. Une excellent méthode pour stocker une grande quantité de pierre pour une utilisation ultérieur."
             },
             "stone_tunnel_door_recipe": {
                "description": "Utile pour sceller les tunnels miniers.",
@@ -6945,7 +6945,7 @@
       "potter": {
          "potter_description": {
             "display_name": "Potier",
-            "description": "Fabrique des objets utiles avec de l'argile. Evolution du tailleur de pierre.",
+            "description": "Fabrique des objets utiles avec de l'argile. Évolution du tailleur de pierre.",
             "requirements": "Un tailleur de pierre niv4 et une spatule de potier fabriquée par le menuisier",
             "workshop": {
                "name": "Tour de potier",
@@ -7158,7 +7158,7 @@
          },
          "potter_outfit": {
             "display_name": "Blouse de potier",
-            "description": "Les tâches de terres font partis de son sytle... particulier."
+            "description": "Les tâches de terres font partis de son style... particulier."
          }
       },
       "shepherd": {
@@ -7172,7 +7172,7 @@
             },
             "level_1_data": {
                "perk_000_name": "Gain de vitesse 10%",
-               "perk_000_description": "Grace au berger le troupeau se déplace un peu plus vite."
+               "perk_000_description": "Grâce au berger le troupeau se déplace un peu plus vite."
             },
             "level_3_data": {
                "perk_000_name": "Bonus supplémentaires",
@@ -7224,7 +7224,7 @@
                "perk_000_description": "Une longue pratique permet au trappeur de récupérer des ressources de chaque animal."
             },
             "level_2_data": {
-               "perk_000_name": "Charmer des familliers",
+               "perk_000_name": "Charmer des familiers",
                "perk_001_name": "Opportunité de travail",
                "perk_000_description": "De temps à autre, le trappeur choisira d'apprivoiser un animal particulièrement beau.",
                "perk_001_description": "Le trappeur est maintenant qualifié pour un travail plus avancé.<br>Voir l'arbre de promotion pour plus de détails"
@@ -7260,12 +7260,12 @@
          "trapper_buffs": {
             "speed_1_buff": {
                "description": "Les longues marches ont finis par améliorer la vitesse du trappeur.",
-               "display_name": "Trapper Speed Increase +10"
+               "display_name": "Vitesse du trappeur augmenté de +10"
             }
          },
          "trapper_knife": {
             "display_name": "Couteau de trappeur",
-            "description": "Un couteau de trapper",
+            "description": "Un couteau de trappeur",
             "trapper_knife_iconic": {
                "display_name": "Couteau de trappeur",
                "description": "Couteau de base du trappeur."
@@ -7429,11 +7429,11 @@
                "recipe_name": "Toque en cuir"
             },
             "simple_quiver_recipe": {
-               "recipe_name": "Carquoi de flèches à pointes",
+               "recipe_name": "Carquois de flèches à pointes",
                "description": "A quiver equippable by an archer. Stores freezing arrows that will slow enemies"
             },
             "fire_quiver_recipe": {
-               "recipe_name": "Carquoi de flèches à enflammer",
+               "recipe_name": "Carquois de flèches à enflammer",
                "description": "Gives an Archer access to fire arrows, which deal damage over time"
             }
          },
@@ -7574,17 +7574,17 @@
                "recipe_name": "Potion d'endurance"
             },
             "strength_tonic_recipe": {
-               "description": "Grande augmentation de la force pour faire plus de dégat lors de combat",
+               "description": "Grande augmentation de la force pour faire plus de dégât lors de combat",
                "recipe_name": "Potion de force"
             },
             "bandages_name": "Bandages",
             "coarse_bandage_recipe": {
                "recipe_name": "Bandage grossier",
-               "description": "Utilisé par l'herboriste pour guérir légérement"
+               "description": "Utilisé par l'herboriste pour guérir légèrement"
             },
             "heavy_bandage_recipe": {
                "recipe_name": "Bandage épais",
-               "description": "Utilisé par l'herboriste pour guérir beaucoups. Bien pour les blessures graves."
+               "description": "Utilisé par l'herboriste pour guérir beaucoup. Bien pour les blessures graves."
             },
             "light_bandage_recipe": {
                "recipe_name": "Bandage léger",
@@ -7745,11 +7745,11 @@
             "description": "Un combattant défensive avec comme priorité de protéger ses alliées du mal.",
             "requirements": "Nécessite un fantassin niveau 3 et un bouclier de chevalier, fabriqué par le forgeron",
             "level_1_data": {
-               "perk_000_name": "Réduction de dégat niveau 1",
+               "perk_000_name": "Réduction de dégât niveau 1",
                "perk_000_description": "The knight gains an additional 10% defense from equipment"
             },
             "level_4_data": {
-               "perk_000_name": "Réduction de dégat niveau 2",
+               "perk_000_name": "Réduction de dégât niveau 2",
                "perk_000_description": "Le chevalier réduit beaucoup les dommages causés par les ennemis"
             },
             "level_0_data": {
