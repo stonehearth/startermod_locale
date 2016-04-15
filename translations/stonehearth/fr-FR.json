@@ -4468,25 +4468,25 @@
          "decorative_elite_gong": {
             "decorative_elite_gong_ghost": {
                "display_name": "Gong d'élite",
-               "description": "Inspired by the Elite Kobold Menace"
+               "description": "Inspiré par l'élite kobold menaçant"
             }
          },
          "decorative_generals_gong": {
             "decorative_generals_gong_ghost": {
                "display_name": "Gong doré de général",
-               "description": "Inspired by the Kobold Archer General"
+               "description": "Inspiré par le général kobold archer"
             }
          },
          "decorative_master_gong": {
             "decorative_master_gong_ghost": {
                "display_name": "Gong du maître",
-               "description": "Inspired by the Kobold Master Archer"
+               "description": "Inspiré par le maître archer kobold"
             }
          },
          "decorative_scout_gong": {
             "decorative_scout_gong_ghost": {
                "display_name": "Gong de scout",
-               "description": "Inspired by the Kobold Scout"
+               "description": "Inspiré par le scout kobold"
             }
          }
       },
@@ -5126,19 +5126,19 @@
             "loot": {
                "elite_bling_hat": {
                   "display_name": "Chapeau d'élite kobold",
-                  "description": "Kobolds love their bling!"
+                  "description": "Les kobolds aiment leur chic !"
                },
                "generals_bling_hat": {
                   "display_name": "Chapeau de général",
-                  "description": "Dropped by the kobold archer general"
+                  "description": "Lâché par le général archer kobold"
                },
                "masters_bling_hat": {
                   "display_name": "Chapeau de maître",
-                  "description": "Dropped by the kobold master archer"
+                  "description": "Lâché par le maître archer kobold"
                },
                "scout_bling_hat": {
                   "display_name": "Chapeau de scout",
-                  "description": "Dropped by the kobold scout archer"
+                  "description": "Lâché par le scout archer kobold"
                }
             },
             "kobold_wolf": {
@@ -5878,46 +5878,46 @@
             "description": "Une unité de combat à distance qui tire sur les ennemis avec des flèches",
             "requirements": "Un fantassin de niveau 3 et un arc, fabriqué par le menuisier.",
             "level_1_data": {
-               "perk_000_name": "Increased Draw Strength",
-               "perk_000_description": "The archer's damage is increased"
+               "perk_000_name": "Augmente la force de tir",
+               "perk_000_description": "Les dégâts de l'archer sont augmentés"
             },
             "level_2_data": {
-               "perk_000_name": "Armor Piercing Arrows",
-               "perk_000_description": "The archer's shots ignore 50% of the target's armor"
+               "perk_000_name": "Flèche perforante",
+               "perk_000_description": "Les tires de l'archer ignore 50% de l'armure de la cible"
             },
             "level_0_data": {
-               "perk_000_name": "Bow Proficiency",
-               "perk_000_description": "The archer is able to use a bow to shoot arrows at enemies"
+               "perk_000_name": "Maîtrise de l'arc",
+               "perk_000_description": "L'archer est capable d'utiliser un arc pour tirer des flèches sur les ennemis"
             },
             "level_3_data": {
-               "perk_000_name": "Range Increase",
-               "perk_000_description": "The Archer can attack enemies from further away"
+               "perk_000_name": "Distance maximum augmentés",
+               "perk_000_description": "L'archer peut attaquer les ennemis de plus loin"
             },
             "level_5_data": {
-               "perk_000_name": "Range Increase (Rank 2)",
-               "perk_000_description": "The Archer can attack enemies from very far away"
+               "perk_000_name": "Distance maximum augmentés (Rang 2)",
+               "perk_000_description": "L'archer peut attaquer les ennemis de très loin"
             },
             "level_4_data": {
-               "perk_000_name": "Draw Speed Up",
-               "perk_000_description": "The archer shoots arrows with greater speed"
+               "perk_000_name": "Tir plus rapide",
+               "perk_000_description": "L'archer tire des flèches avec une plus grande vitesse"
             },
             "level_6_data": {
-               "perk_000_name": "Double Shot",
-               "perk_000_description": "The archer learns the ancient art of quick shots, allowing rapid firing of two arrows in rapid succession"
+               "perk_000_name": "Double tir",
+               "perk_000_description": "L'archer apprend l'art ancien de tir rapide, ce qui lui permet un tir rapide de deux flèches en une succession rapide"
             }
          },
          "archer_buffs": {
             "damage_1_buff": {
-               "display_name": "Damage +20%",
-               "description": "The archer's damage is increased."
+               "display_name": "Dégât +20%",
+               "description": "Les dégâts de l'archer sont augmentés."
             },
             "slowing_arrow": {
-               "display_name": "Slowed",
-               "description": "Slowed by Freezing Arrows"
+               "display_name": "Ralenti",
+               "description": "Ralenti par une flèche de glace"
             },
             "fire_arrow": {
-               "display_name": "On Fire",
-               "description": "Set aflame! Taking fire damage every 5 minutes for 15 minutes"
+               "display_name": "En feu",
+               "description": "Enflammée ! Prend des dégâts de feu toutes les 5 minutes pendant 15 minutes"
             }
          }
       },
@@ -6139,7 +6139,7 @@
             "steel_shield_recipe": {
                "recipe_name": "Bouclier recouvert d'acier",
                "description": "Confère la capacité de bloquer complètement les attaques.",
-               "flavor": "Incredibly protective. Small children play turtle underneath."
+               "flavor": "Incroyable protection. Les enfants joue en dessous à la tortue."
             },
             "knights_shield_recipe": {
                "recipe_name": "Bouclier en acier",
@@ -6147,25 +6147,25 @@
             },
             "iron_helm_recipe": {
                "recipe_name": "Casque en fer",
-               "description": "Protection for one's head"
+               "description": "Protection pour la tête"
             },
             "iron_circlet_recipe": {
                "recipe_name": "Tiare en fer",
-               "description": "It's quite heavy, but protects one's head"
+               "description": "Il est assez lourd, mais protège la tête"
             },
             "steel_circlet_recipe": {
                "recipe_name": "Tiare en acier",
                "description": "D'un poids léger mais une forte protection pour la tête"
             },
             "decorative_elite_gong_recipe": {
-               "description": "Inspired by the Elite Kobold Menace",
+               "description": "Inspiré par l'élite kobold menaçant",
                "recipe_name": "Gong d'élite",
-               "flavor": "As it turns out, their hats were very dense"
+               "flavor": "Comme il y parait, leurs chapeaux étaient très épais"
             },
             "decorative_generals_gong_recipe": {
-               "description": "Enormous and decorative!",
+               "description": "Énorme et décoratif !",
                "recipe_name": "Gong doré de général",
-               "flavor": "The generals hat, when melted down, could have filled a lake with gold"
+               "flavor": "Le chapeau du général peut remplir un lac d'or, quand il est sous forme fondu"
             },
             "decorative_master_gong_recipe": {
                "description": "Inspiré par le maître archer kobold",
@@ -6175,7 +6175,7 @@
             "decorative_scout_gong_recipe": {
                "description": "Inspiré par le scout kobold",
                "recipe_name": "Gong de scout",
-               "flavor": "Even scouts are adorned with gold"
+               "flavor": "Même les scouts sont ornés d'or"
             }
          }
       },
@@ -7619,19 +7619,19 @@
             "requirements": "Un herboriste niveau 2 et un livre sacré, fabriqué par l'herboriste",
             "level_0_data": {
                "perk_000_name": "Aura de soin rang 1",
-               "perk_000_description": "The cleric's presence heals everyone around them periodically"
+               "perk_000_description": "La présence du clerc guérit tout le monde autour d'eux périodiquement"
             },
             "level_1_data": {
                "perk_000_name": "Force mineure",
-               "perk_000_description": "The cleric's presence improves the muscle of those around them"
+               "perk_000_description": "La présence du clerc améliore les muscles de ceux qui les entourent"
             },
             "level_2_data": {
                "perk_000_name": "Compassion augmenté",
-               "perk_000_description": "Increased compassion for increased direct healing"
+               "perk_000_description": "compassion accrue pour augmenté la guérison directe"
             },
             "level_3_data": {
                "perk_000_name": "Aura de soin rang 2",
-               "perk_000_description": "Healing aura power increased"
+               "perk_000_description": "Puissance de l'aura de guérison augmenté"
             },
             "level_6_data": {
                "perk_000_name": "Maître de guérison",
@@ -7639,11 +7639,11 @@
             },
             "level_4_data": {
                "perk_000_name": "Aura de soin rang 3",
-               "perk_000_description": "Healing Aura range increased"
+               "perk_000_description": "Distance de l'aura de guérison augmenté"
             },
             "level_5_data": {
                "perk_000_name": "Force majeure",
-               "perk_000_description": "The cleric's presence greatly improves the muscle of those around them"
+               "perk_000_description": "La présence du clerc améliore grandement les muscles de ceux qui les entourent"
             }
          },
          "cleric_tome": {
@@ -7657,19 +7657,19 @@
          "cleric_buffs": {
             "heal_aura_1_buff": {
                "display_name": "Aura de soin rang 1",
-               "description": "The cleric's presence heals everyone around them periodically"
+               "description": "La présence du clerc guérit tout le monde autour d'eux périodiquement"
             },
             "add_health_small_buff": {
-               "display_name": "Small Heal",
-               "description": "From a healing aura!"
+               "display_name": "Petit soin",
+               "description": "Provient d'une aura de soin !"
             },
             "minor_muscle_aura_buff": {
                "display_name": "Force mineure",
-               "description": "Increases strength of those around by a small amount"
+               "description": "Provient d'une aura de force !"
             },
             "minor_muscle_aura_effect_buff": {
-               "display_name": "Minor Strength",
-               "description": "Strength improved slightly from the presence of a cleric"
+               "display_name": "Force mineure",
+               "description": "Augmente légèrement la force par la présence d'un clerc"
             },
             "compassion_1_buff": {
                "display_name": "Compassion augmenté",
@@ -7677,11 +7677,11 @@
             },
             "heal_aura_2_buff": {
                "display_name": "Aura de soin rang 2",
-               "description": "Heals everyone around the cleric periodically."
+               "description": "Soigne périodiquement tout le monde autour du clerc."
             },
             "add_health_medium_buff": {
-               "display_name": "Healing Medium",
-               "description": "Healing for a medium amount"
+               "display_name": "Soin moyen",
+               "description": "Soin d'une moyenne quantité"
             },
             "compassion_2_buff": {
                "display_name": "Compassion augmenté",
@@ -7689,15 +7689,15 @@
             },
             "heal_aura_3_buff": {
                "display_name": "Aura de soin rang 3",
-               "description": "Heals everyone 30 units around the cleric"
+               "description": "Soigne chacun de 30 unités autour du clerc"
             },
             "major_muscle_aura_buff": {
                "display_name": "Force majeure",
-               "description": "Greatly increases the muscle of those around"
+               "description": "Augmente considérablement les muscles de ceux qui l'entourent"
             },
             "major_muscle_aura_effect_buff": {
                "display_name": "Force majeure",
-               "description": "Muscle improved greatly from the presence of a cleric"
+               "description": "Muscle grandement améliorée par la présence d'un clerc"
             }
          }
       },
@@ -7746,71 +7746,71 @@
             "requirements": "Nécessite un fantassin niveau 3 et un bouclier de chevalier, fabriqué par le forgeron",
             "level_1_data": {
                "perk_000_name": "Réduction de dégât niveau 1",
-               "perk_000_description": "The knight gains an additional 10% defense from equipment"
+               "perk_000_description": "Le chevalier gagne 10% de défense supplémentaire de l'équipement"
             },
             "level_4_data": {
                "perk_000_name": "Réduction de dégât niveau 2",
                "perk_000_description": "Le chevalier réduit beaucoup les dommages causés par les ennemis"
             },
             "level_0_data": {
-               "perk_000_name": "Fortify",
-               "perk_000_description": "Increases Stamina, Courage, and draws attention from monsters"
+               "perk_000_name": "Fortifier",
+               "perk_000_description": "Augmente l'endurance, le courage, et attire l'attention des monstres"
             },
             "level_3_data": {
-               "perk_000_name": "Fortify (Rank 2)",
-               "perk_000_description": "Stamina and Courage increased greatly"
+               "perk_000_name": "Fortifier (Rang 2)",
+               "perk_000_description": "L'endurance et le courage sont considérablement augmentés"
             },
             "level_5_data": {
-               "perk_000_name": "Inspiring Presence",
-               "perk_000_description": "The knight boosts courage of everyone around"
+               "perk_000_name": "Présence inspirante",
+               "perk_000_description": "Le chevalier stimule le courage pour tout le monde autour de lui"
             },
             "level_2_data": {
-               "perk_000_name": "Shout",
-               "perk_000_description": "The knight intimidates the opponent, drawing the attention of nearby enemies."
+               "perk_000_name": "Crie d'intimidation",
+               "perk_000_description": "Le chevalier intimide les adversaires, attirant l'attention des ennemis proches."
             },
             "level_6_data": {
-               "perk_000_name": "Hero's Horn",
-               "perk_000_description": "The knight sounds a horn of combat, drawing the attention enemies both near and far"
+               "perk_000_name": "Cor de Heroes",
+               "perk_000_description": "Le chevalier sonne le cor de combat, attirant l'attention des ennemis à la fois proche et lointain."
             }
          },
          "knight_buffs": {
             "defense_1_buff": {
                "display_name": "Défense augmentée de 10%",
-               "description": "Defense from equipment increased by 10%"
+               "description": "Défense de l'équipement est augmenté de 10%"
             },
             "defense_2_buff": {
                "display_name": "Défense augmentée de 20%",
-               "description": "Defense from equipment increased by 20%"
+               "description": "Défense de l'équipement est augmenté de 20%"
             },
             "health_1_buff": {
-               "display_name": "Fortify",
-               "description": "The knight becomes more menacing to enemies, drawing their attention in combat. They also get a health and stamina bonus to keep up."
+               "display_name": "Fortifier",
+               "description": "Le chevalier devient plus menaçant pour les ennemis, en attirant leur attention au combat. Il obtient également un bonus de santé et de l'endurance."
             },
             "health_2_buff": {
-               "display_name": "Fortify (Rank 2)",
-               "description": "More fast, more furious"
+               "display_name": "Fortifier (Rang 2)",
+               "description": "Plus rapide, plus furieux"
             },
             "courage_aura_buff": {
-               "display_name": "Inspiring Presence",
-               "description": "The knight increases courage of everyone around"
+               "display_name": "Présence inspirante",
+               "description": "Le chevalier augmente le courage de tout le monde autour de lui"
             },
             "courage_aura_effect_buff": {
-               "display_name": "Inspired",
-               "description": "Courage increased from the presence of a knight."
+               "display_name": "Inspiré",
+               "description": "Courage augmenté par la présence d'un chevalier."
             }
          },
          "knight_helm": {
-            "display_name": "Knight's Helm",
-            "description": "Iron headgear standard issue for all knights"
+            "display_name": "Heaume de chevalier",
+            "description": "Heaume en fer standard pour tous les chevaliers"
          }
       },
       "npc_jobs": {
          "npc_thief": {
             "npc_thief_description": {
-               "display_name": "Thief",
-               "description": "Steals items from stockpiles",
+               "display_name": "Voleur",
+               "description": "Vole les articles de la réserve",
                "level_0_data": {
-                  "title": "Thief"
+                  "title": "Voleur"
                }
             }
          },
@@ -7818,7 +7818,7 @@
             "npc_knight_buffs": {
                "npc_health_def_1_buff": {
                   "display_name": "Tank",
-                  "description": "Increased health and courage. Armor defense improved by 20%"
+                  "description": "Santé et courage accrue. Défense de l'armure améliorée de 20%"
                }
             }
          }

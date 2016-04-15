@@ -45,6 +45,13 @@ hearthling/citizen | hearthling
 frostsnap | perce-neige
 silkweed | fil-de-soie
 brightbell | jacinthe rose
+Diamond Star | Étoile Diamant
+Kobold | kobold
+Red Kiln | Kiln Rouge
+Poyo | poyo
+Carpenter | Menuisier
+Phoenix Empire | empire Phénix
+Phoenix | empire Phénix
 
 ##How it works:
 
