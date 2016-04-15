@@ -17,3 +17,5 @@ Kobold => kobold
 Red Kiln => Kiln Rouge
 Poyo => poyo
 Carpenter => Menuisier
+Phoenix Empire => Empire Phénix
+Phoenix => Empire Phénix

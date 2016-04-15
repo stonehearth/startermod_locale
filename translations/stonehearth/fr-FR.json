@@ -615,7 +615,7 @@
                "grow_wall_tool": "Murs",
                "draw_wall_tool": "Murs libres",
                "draw_road_tool": "Routes",
-               "place_furniture_tool": "Meubles",
+               "place_furniture_tool": "Mobilier",
                "place_decoration_tool": "Décorations",
                "erase_tool": "Effacer"
             },
@@ -794,7 +794,7 @@
                   "tooltip_resource_pile": "piles de ressources",
                   "tooltip_plant": "plantes",
                   "tooltip_portal": "portes et fenêtres",
-                  "tooltip_furniture": "meubles",
+                  "tooltip_furniture": "mobilier",
                   "tooltip_defense": "défenses",
                   "tooltip_light": "Torches et éclairages",
                   "tooltip_decoration": "décorations",
@@ -4723,16 +4723,16 @@
             "description": "Even jerky will rot eventually. It's true"
          },
          "mutton": {
-            "display_name": "Raw Mutton",
-            "description": "Raw meat from a sheep"
+            "display_name": "Mouton cru",
+            "description": "Viande cru provenant d'un mouton"
          },
          "roast_mutton": {
             "roast_mutton": {
-               "display_name": "Rack of Roast Mutton",
-               "description": "Tenderly roasted to perfection"
+               "display_name": "Carré d'agneau",
+               "description": "Tendrement rôti à la perfection"
             },
             "roast_mutton_serving": {
-               "display_name": "Roasted Mutton Rack"
+               "display_name": "Caissette de rôti de mouton"
             }
          }
       },
@@ -5949,24 +5949,24 @@
             "requirements": "Un marteau de forgeron, fabriqué par le tailleur de pierre.",
             "level_6_data": {
                "title": "Maître forgeron",
-               "perk_000_name": "The Armory",
-               "perk_000_description": "The blacksmith's mastery of his trade allows him to create the finest weapons and armors seen since the forgotten Phoenix Empire."
+               "perk_000_name": "L'armurerie",
+               "perk_000_description": "La maîtrise de la forgeronnerie lui permet de créer les plus belles armes et armures depuis la disparition de l'empire Phénix."
             },
             "level_2_data": {
-               "perk_000_name": "Iron Age!",
-               "perk_000_description": "The blacksmith is now skilled enough to forge heavy items made of iron."
+               "perk_000_name": "L'âge du fer!",
+               "perk_000_description": "Le forgeron est pas assez habile pour forger des lourds objets en fer."
             },
             "level_4_data": {
-               "perk_000_name": "Cold Steel",
-               "perk_000_description": "Long hours at the forge have unlocked the secret of steel: sharper weapons and lighter armor."
+               "perk_000_name": "Acier froid",
+               "perk_000_description": "De longues heures à la forge ont débloqués le secret de l'acier: des armes plus nettes et une armure plus légère."
             },
             "level_1_data": {
-               "perk_000_name": "Bronze Age!",
+               "perk_000_name": "L'Âge du bronze!",
                "perk_000_description": "The secrets of bronze are now available to the blacksmith."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the blacksmith may embellish his works in unexpected ways."
+               "perk_000_name": "Inspiration artistique",
+               "perk_000_description": "Quand l'inspiration frappe, le forgeron peut embellir ses œuvres de manière inattendue."
             }
          },
          "blacksmith_forge": {
@@ -6000,18 +6000,18 @@
          "recipes": {
             "iron_shield_recipe": {
                "description": "Lourd mais efficace.",
-               "flavor": "'Buck up, recruit! Better the shield dent than you!' -Thredd, Man at Arms",
+               "flavor": "'Bouclier haut, recrue ! Mieux vaut le bouclier que vous !' -Thredd, Homme d'armes",
                "recipe_name": "Bouclier de fer"
             },
             "bronze_breastplate_recipe": {
-               "description": "Partial but sturdy coverage against blunt and edged weapons.",
+               "description": "Un recouvrement partielle mais robuste contre les armes contondantes et tranchantes.",
                "recipe_name": "Cuirasse de bronze",
-               "flavor": "Design reminiscent of the Phoenix's Legions."
+               "flavor": "La conception rappelle celle des légions Phénix."
             },
             "bronze_ingot_recipe": {
                "description": "Une barre de bronze pur. Un matériel adapté à la fabrication d'objets.",
                "recipe_name": "Lingot de bronze",
-               "flavor": "The masters of old considered its production, evidence of our triumph over the earth."
+               "flavor": "Les maîtres anciens considérés sa production comme preuve de notre triomphe sur la terre."
             },
             "bronze_mace_recipe": {
                "description": "Heavy, it packs a whallop.",
@@ -6019,14 +6019,14 @@
                "flavor": "La bonne nouvelle : il n'y pas de pointe au bout."
             },
             "bronze_sword_recipe": {
-               "description": "Basic, but better than fighting with a sharpened stick!",
+               "description": "Basique, mais mieux que de se battre avec un bâton aiguisé !",
                "recipe_name": "Epée de bronze",
-               "flavor": "Made in the shape of Braun's own blade."
+               "flavor": "Fabriqué avec l'imitation de la lame de Braun."
             },
             "carpenter_saw_recipe": {
                "description": "Requis pour promouvoir un hearthling en menuisier",
                "recipe_name": "Scie du menuisier",
-               "flavor": "Now the circle can begin anew."
+               "flavor": "Maintenant, le cercle peut commencer à nouveau."
             },
             "copper_ingot_recipe": {
                "description": "Une barre de cuivre pur. Un matériau adapté à la fabrication d'objets artisanaux.",
@@ -6075,7 +6075,7 @@
             "silver_ingot_recipe": {
                "description": "Une barre d'argent pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot d'argent",
-               "flavor": "A pair of silver shoes once started a Phoenix war over currency."
+               "flavor": "Une paire de chaussures en argent depuis qu'a commencé la guerre Phoenix sur la monnaie."
             },
             "steel_ingot_recipe": {
                "description": "Une barre d'acier pur. Un matériau adapté à la fabrication d'objets artisanaux.",
@@ -6190,7 +6190,7 @@
                "perk_000_description": "La maîtrise de son Art permet au menuisier d'accéder à des recettes qui élargissent les possibilités de votre ville."
             },
             "level_2_data": {
-               "perk_000_name": "Perspicacité collaborative",
+               "perk_000_name": "Perspectives de collaboration",
                "perk_000_description": "Le menuisier est maintenant assez habile pour utiliser des matériaux provenant d'autres artisans."
             },
             "level_4_data": {
@@ -6303,7 +6303,7 @@
             "storage_name": "Rangement",
             "building_parts_name": "Éléments de construction",
             "armor_name": "Armes et armures",
-            "furniture_name": "Meubles",
+            "furniture_name": "Mobilier",
             "workbench_name": "Ateliers",
             "utility_name": "Utilitaire",
             "shepherds_crook_recipe": {
@@ -6622,8 +6622,8 @@
             },
             "decoration_name": "Décorations",
             "roast_mutton_recipe": {
-               "recipe_name": "Roasted Rack of Mutton",
-               "description": "Nutritious and delicious"
+               "recipe_name": "Carré d'agneau",
+               "description": "Nutritif et délicieux"
             }
          },
          "cook_mill": {
@@ -6634,7 +6634,7 @@
          },
          "cook_oven": {
             "cook_oven_ghost": {
-               "display_name": "Four à bois",
+               "display_name": "Four en pierre",
                "description": "Super pour le rôtissage."
             }
          }
@@ -6863,7 +6863,7 @@
             "signage_decoration_name": "Signalétique et décoration",
             "building_parts_name": "Éléments de construction",
             "weapons_name": "Armes",
-            "furniture_name": "Meubles",
+            "furniture_name": "Mobilier",
             "stone_bench_recipe": {
                "description": "Siège d'extérieur pour des moments de détente.",
                "recipe_name": "Banc en pierre",
@@ -6953,25 +6953,25 @@
                "long_description": "Le potier fabrique des objets et des décorations à partir d'argile."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the potter may embellish his/her works in unexpected ways."
+               "perk_000_name": "Inspiration artistique",
+               "perk_000_description": "Quand l'inspiration frappe, le potier peut embellir ses travaux de manière inattendue."
             },
             "level_6_data": {
-               "title": "Master Potter",
-               "perk_000_name": "Master Potter",
-               "perk_000_description": "The potter has rediscovered ancient secrets of the Phoenix..."
+               "title": "Maître potier",
+               "perk_000_name": "Maître potier",
+               "perk_000_description": "Le potier a redécouvert d'anciens secrets de l'Empire Phénix ..."
             },
             "level_2_data": {
-               "perk_000_name": "Art for Sale",
-               "perk_000_description": "The potter can now make decorative items to liven up the town or sell for money."
+               "perk_000_name": "Art de la vente",
+               "perk_000_description": "Le potier peut désormais faire des objets décoratifs pour animer la ville ou les vendre pour de l'or."
             },
             "level_4_data": {
-               "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The potter can now add precious metals to vases and tiles."
+               "perk_000_name": "Perspectives de collaboration",
+               "perk_000_description": "Le potier peut désormais ajouter des métaux précieux aux vases et aux tuiles."
             },
             "level_1_data": {
-               "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The potter can now make basic furniture and building adornments."
+               "perk_000_name": "Catalogue standard",
+               "perk_000_description": "Le potier peut désormais faire des meubles simples et des ornements de bâtisse."
             }
          },
          "recipes": {
@@ -7004,26 +7004,26 @@
             },
             "furniture_name": "Furniture and Decoration",
             "decoration_name": "Décorations",
-            "utility_name": "Utility",
+            "utility_name": "Utilitaire",
             "potter_workbench_recipe": {
-               "description": "Helps the potter create simple items from clay",
-               "recipe_name": "Potter's Wheel",
+               "description": "Aide le potier a créer des objets simple à partir d'argile",
+               "recipe_name": "Tour de potier",
                "flavor": "Where we've been before, we'll be again, round once more, for strength and then--"
             },
             "potter_kiln_recipe": {
                "description": "Hardens basic clay objects.",
-               "recipe_name": "Potter's Kiln",
+               "recipe_name": "Four de pottier",
                "flavor": "'Through heat and hardship we realize our final selves.' -Silora, Acolyte of Rayya's Mystery "
             },
             "clay_safety_standard_recipe": {
-               "description": "Utilisez de désigner un point de sécurité",
+               "description": "Utilisez pour désigner un point de sécurité",
                "recipe_name": "Étendard de sécurité en argile"
             },
             "building_parts_name": "Building Parts",
             "clay_bricks_recipe": {
                "description": "Used to make structures that stay cool even in great heat.",
-               "recipe_name": "Clay Bricks",
-               "flavor": "'And when Clay emerged from the Kiln, he had become Brick, and no matter how hard Sun blasted him, he remained cheerful.'"
+               "recipe_name": "Briques d'argile",
+               "flavor": "'Et quand l'argile sortie du four, elle était devenue brique, et peu importe comment le soleil brillé, elle restait consistante.'"
             },
             "red_clay_door_recipe": {
                "description": "Matches red clay walls",
@@ -7307,7 +7307,7 @@
                "perk_000_description": "La maîtrise de son Art permet au tisserand de réinventer la manière d'utiliser le tissu."
             },
             "level_2_data": {
-               "perk_000_name": "Perspicacité collaborative",
+               "perk_000_name": "Perspectives de collaboration",
                "perk_000_description": "Le tisserand à maintenant assez de maîtrise pour utiliser des ressources provenant d'autres artisans."
             },
             "level_4_data": {
