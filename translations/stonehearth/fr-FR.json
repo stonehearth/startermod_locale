@@ -4732,7 +4732,7 @@
                "description": "Tendrement rôti à la perfection"
             },
             "roast_mutton_serving": {
-               "display_name": "Caissette de rôti de mouton"
+               "display_name": "Carré d'agneau"
             }
          }
       },
@@ -5962,7 +5962,7 @@
             },
             "level_1_data": {
                "perk_000_name": "L'Âge du bronze!",
-               "perk_000_description": "The secrets of bronze are now available to the blacksmith."
+               "perk_000_description": "Les secrets du bronze sont désormais disponibles au forgeron."
             },
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
