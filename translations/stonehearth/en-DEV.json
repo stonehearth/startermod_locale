@@ -931,6 +931,7 @@
             "gfx_msaa": "Anti-Aliasing Level",
             "gfx_shadows": "Shadow Detail",
             "gfx_max_lights": "Maximum Number of Lights",
+            "gfx_max_shadows": "Maximum Number of Shadows",
             "gfx_drawdistance": "Draw Distance",
             "gfx_enable_ssao": "Enable Ambient Occlusion",
             "gfx_use_high_quality": "Enable High Quality Graphics",
