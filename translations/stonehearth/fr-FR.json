@@ -4474,7 +4474,7 @@
          "decorative_generals_gong": {
             "decorative_generals_gong_ghost": {
                "display_name": "Gong doré de général",
-               "description": "Inspiré par le général kobold archer"
+               "description": "Inspiré par le général archer kobold"
             }
          },
          "decorative_master_gong": {
@@ -5890,11 +5890,11 @@
                "perk_000_description": "L'archer est capable d'utiliser un arc pour tirer des flèches sur les ennemis"
             },
             "level_3_data": {
-               "perk_000_name": "Distance maximum augmentés",
+               "perk_000_name": "Distance maximum augmentée",
                "perk_000_description": "L'archer peut attaquer les ennemis de plus loin"
             },
             "level_5_data": {
-               "perk_000_name": "Distance maximum augmentés (Rang 2)",
+               "perk_000_name": "Distance maximum augmentée (Rang 2)",
                "perk_000_description": "L'archer peut attaquer les ennemis de très loin"
             },
             "level_4_data": {
