@@ -1026,6 +1026,7 @@
             "gfx_msaa": "Anti-Aliasing Level",
             "gfx_shadows": "Shadow Detail",
             "gfx_max_lights": "Maximum Number of Lights",
+            "gfx_max_shadows": "Maximum Number of Shadows",
             "gfx_drawdistance": "Draw Distance",
             "gfx_enable_ssao": "Enable Ambient Occlusion",
             "gfx_use_high_quality": "Enable High Quality Graphics",
@@ -1062,7 +1063,9 @@
                "show_hearthling_paths_description": "Display the path your hearthlings are following.",
                "max_citizens": "Max Citizens",
                "randomize_attributes": "Randomize Hearthling Attributes",
-               "randomize_attributes_description": "If enabled, hearthling Mind, Body, and Spirit attributes will be assigned completely at random instead of distributed in a balanced fashion."
+               "randomize_attributes_description": "If enabled, hearthling Mind, Body, and Spirit attributes will be assigned completely at random instead of distributed in a balanced fashion.",
+               "auto_loot": "Auto Loot",
+               "auto_loot_description": "When an enemy drops loot, automatically mark it for pick up."
             }
          },
          "title_screen": {
@@ -1090,7 +1093,7 @@
             "kingdom_picker_title": "Select a Kingdom",
             "biome_section_start": "Seeking new lands and adventure, they set off to ",
             "biome_picker_title": "Select a Biome",
-            "game_mode_select_start": ", a location that is sure to be ",
+            "game_mode_select_start": ", a location that is sure to be",
             "game_mode_picker_title": "Select a Difficulty",
             "game_modes": {
                "normal": {
@@ -1106,7 +1109,7 @@
                "hard": {
                   "display_name": "Hard",
                   "description": "Face more difficult monsters than normal mode",
-                  "post_selection_text": "an daunting place to start anew."
+                  "post_selection_text": "a daunting place to start anew."
                }
             },
             "begin_button": "Begin"
@@ -1403,6 +1406,9 @@
                }
             },
             "goblin_war": {
+               "unlock_windchimes" : {
+                  "bulletin_title" : "The Carpenter has unlocked the Windchime recipe!"
+               },
                "erdenes_help": {
                   "dialog_tree_info": {
                      "dialog_nodes": {
@@ -1449,7 +1455,7 @@
                            "choice_000": "Sounds good!",
                            "choice_001": "No. Thanks.",
                            "bulletin_message": {
-                              "000": "Upon this paper, you shall find the lullabye to sooth the Mountain's soul. Find a stolen flute. Bid your wood-worker pitch it to this melody. Grant it to your bravest sheep-singer, set him at Ogo's great mammoth, and watch self-importance meet it's just reward."
+                              "000": "Upon this paper, you shall find the lullabye to sooth the Mountain's soul. Find a stolen flute. Bid your wood-worker pitch it to this melody. Place it in Ogo's great ogre's path, and watch self-importance meet it's just reward."
                            },
                            "bulletin_title": "She offers a scrap of paper",
                            "dialog_title": "???"
@@ -4972,6 +4978,12 @@
                "display_name": "Command Marker",
                "description": "Represents a combat command."
             }
+         },
+         "mountains_windchime": {
+            "mountains_windchime_ghost": {
+               "display_name": "Mountain's Windchime",
+               "description": "Soothing happy notes"
+            }
          }
       },
       "loot": {
@@ -6480,6 +6492,11 @@
             "recurve_bow_recipe": {
                "recipe_name": "Recurve Bow",
                "description": "A bow that curves away from the wielder, allowing for stronger and faster arrow attacks"
+            },
+            "mountains_windchime_recipe": {
+               "description": "Place to deter Mountain, Ogo's trained ogre",
+               "recipe_name": "Mountain's Windchime",
+               "flavor": "The melody evokes the stolen ogre's long-ago lullabye"
             }
          }
       },
@@ -7805,14 +7822,6 @@
                "description": "Steals items from stockpiles",
                "level_0_data": {
                   "title": "Thief"
-               }
-            }
-         },
-         "npc_knight": {
-            "npc_knight_buffs": {
-               "npc_health_def_1_buff": {
-                  "display_name": "Tank",
-                  "description": "Increased health and courage. Armor defense improved by 20%"
                }
             }
          }

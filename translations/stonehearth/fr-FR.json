@@ -1032,6 +1032,7 @@
             "gfx_msaa": "Niveau de l'anticrénelage",
             "gfx_shadows": "Qualité des ombres",
             "gfx_max_lights": "Nombre maximum de sources lumineuses",
+            "gfx_max_shadows": "Nombre maximum d'ombres",
             "gfx_drawdistance": "Distance d'affichage",
             "gfx_enable_ssao": "Activer l'occlusion ambiante",
             "gfx_use_high_quality": "Activer les graphismes en haute qualité",
@@ -1068,7 +1069,9 @@
                "show_hearthling_paths_description": "Affichez le chemin que vos  hearthlings suivent.",
                "max_citizens": "Hearthlings max.",
                "randomize_attributes": "Rendre aléatoire les attributs des  hearthlings",
-               "randomize_attributes_description": "Si activée, les attributs des hearthlings seront assignés complètement au hasard au lieu d'être distribuer de façon équilibrée."
+               "randomize_attributes_description": "Si activée, les attributs des hearthlings seront assignés complètement au hasard au lieu d'être distribuer de façon équilibrée.",
+               "auto_loot": "Pillage automatique",
+               "auto_loot_description": "Quand un ennemi a du butin, le marquer automatiquement pour le ramassage."
             }
          },
          "title_screen": {
@@ -1409,6 +1412,9 @@
                }
             },
             "goblin_war": {
+               "unlock_windchimes" : {
+                  "bulletin_title" : "Le menuisier a débloqué la procédé de fabrication du carillon à vent !"
+               },
                "erdenes_help": {
                   "dialog_tree_info": {
                      "dialog_nodes": {
@@ -1455,7 +1461,7 @@
                            "choice_000": "Ça me va !",
                            "choice_001": "Non. Merci.",
                            "bulletin_message": {
-                              "000": "Sur ce papier, vous devriez trouvé la berceuse pour apaiser l'âme de la montagne. Trouver la flûte volé. Enchérissez sa hauteur avec vos travailleur de bois pour cette mélodie. accordez-là à l'aide de votre plus brave chanteur de mouton, mettez la n musique chez le grand mammouth de Ogo, et regarder la grande importance des rencontres c'est juste la récompense."
+                              "000": "Sur ce papier, vous devriez trouvé la berceuse pour apaiser l'âme de la montagne. Trouver la flûte volé. Bid your wood-worker pitch it to this melody. Place it in Ogo's great ogre's path, and watch self-importance meet it's just reward."
                            },
                            "bulletin_title": "Elle offre un morceau de papier",
                            "dialog_title": "???"
@@ -4978,6 +4984,12 @@
                "display_name": "Marqueur de commande",
                "description": "Représente une commande de combat."
             }
+         },
+         "mountains_windchime": {
+            "mountains_windchime_ghost": {
+               "display_name": "Carillon à vent de montagne",
+               "description": "Un son heureux et apaisants"
+            }
          }
       },
       "loot": {
@@ -6486,6 +6498,11 @@
             "recurve_bow_recipe": {
                "recipe_name": "Arc recourbé",
                "description": "Un arc courbé pour des tirs plus rapides et plus puissants"
+            },
+            "mountains_windchime_recipe": {
+               "description": "À placer pour dissuader Montagne, l'ogre formé par Ogo",
+               "recipe_name": "Carillon à vent de montagne",
+               "flavor": "La mélodie évoque l'ancienne berceuse de l'ogre volé"
             }
          }
       },
@@ -7811,14 +7828,6 @@
                "description": "Vole les articles de la réserve",
                "level_0_data": {
                   "title": "Voleur"
-               }
-            }
-         },
-         "npc_knight": {
-            "npc_knight_buffs": {
-               "npc_health_def_1_buff": {
-                  "display_name": "Tank",
-                  "description": "Santé et courage accrue. Défense de l'armure améliorée de 20%"
                }
             }
          }
