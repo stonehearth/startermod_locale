@@ -1412,8 +1412,8 @@
                }
             },
             "goblin_war": {
-               "unlock_windchimes" : {
-                  "bulletin_title" : "Le menuisier a débloqué la procédé de fabrication du carillon à vent !"
+               "unlock_windchimes": {
+                  "bulletin_title": "Le menuisier a débloqué la procédé de fabrication du carillon à vent !"
                },
                "erdenes_help": {
                   "dialog_tree_info": {
