@@ -2354,17 +2354,17 @@
                                        "bulletin_message": {
                                           "00": " The Red Kiln believes that advancement can only come from conflict between equals. Khan is no longer. And where one falls, those stronger and more cunning will rise."
                                        },
-                                       "bulletin_title": "Warchief Oghar Norwind",
-                                       "dialog_title": "Warchief Oghar Norwind"
+                                       "bulletin_title": "Chef de guerre Oghar Norwind",
+                                       "dialog_title": "Chef de guerre Oghar Norwind"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "You there. Erdene told me of you. She said you defeated Ogo Skullbonker."
+                                          "00": "Vous là ! Erdene m'a parlé de vous ! Elle a dit que vous avez vaincu Ogo Skullbonker."
                                        },
-                                       "bulletin_title": "An orcish warchief approaches your town",
-                                       "dialog_title": "Warchief Oghar Norwind",
-                                       "choice_000": "Yes, that's me",
-                                       "choice_001": "What's it to you?"
+                                       "bulletin_title": "Un chef de guerre orc apporche de votre village",
+                                       "dialog_title": "Chef de guerre Oghar Norwind",
+                                       "choice_000": "Oui, c'est moi",
+                                       "choice_001": "Qu'est ce que c'est pour toi ?"
                                     },
                                     "msg4": {
                                        "bulletin_message": {
@@ -2373,9 +2373,9 @@
                                     },
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "Now that I am here, I see you are not yet worthy to face even the least of my camp chiefs. In your eyes flame not the lust for mastery!"
+                                          "00": "Maintenant que je suis ici, je vois que vous n'êtes pas encore digne de combattre, même le moindre de mes chefs de camp ! Dans la flamme de vos yeux ne brille pas la soif de la domination !"
                                        },
-                                       "choice_000": "How rude!"
+                                       "choice_000": "Si grossier !"
                                     }
                                  }
                               }
@@ -2387,9 +2387,9 @@
                                        "bulletin_message": {
                                           "00": "You ask why? We offer to great Goddess Khulgana! Bring great riches after life. Now you know, you need give us treasure!"
                                        },
-                                       "bulletin_title": "Kobold Scout",
-                                       "dialog_title": "Kobold Scout",
-                                       "choice_000": "Nah"
+                                       "bulletin_title": "Scout kobold",
+                                       "dialog_title": "Scout kobold",
+                                       "choice_000": "Nan"
                                     },
                                     "msg4": {
                                        "bulletin_message": {
@@ -2397,8 +2397,8 @@
                                           "001": "Ha, we was just testing you! Of course we strong enough to take!",
                                           "002": "We take all gold! We revenge for hat melting!!"
                                        },
-                                       "bulletin_title": "Kobold Scout",
-                                       "dialog_title": "Kobold Scout",
+                                       "bulletin_title": "Scout kobold",
+                                       "dialog_title": "Scout kobold",
                                        "choice_000": "Ok"
                                     },
                                     "msg1": {
@@ -2407,16 +2407,16 @@
                                           "001": "Oo shinies! Gong! Emerald!"
                                        },
                                        "bulletin_title": "A kobold stares longingly at your piles of gold.",
-                                       "dialog_title": "Kobold Scout",
-                                       "choice_000": "What are you doing?"
+                                       "dialog_title": "Scout kobold",
+                                       "choice_000": "Qu'est-ce que vous faites ?"
                                     },
                                     "msg2": {
                                        "bulletin_message": {
                                           "000": "We see you many treasures in piles and boxes. Us need many, many loots. You share, yes?"
                                        },
-                                       "bulletin_title": "Kobold Scout",
-                                       "dialog_title": "Kobold Scout",
-                                       "choice_000": "Why do you need so much loot?"
+                                       "bulletin_title": "Scout kobold",
+                                       "dialog_title": "Scout kobold",
+                                       "choice_000": "Pourquoi avez-vous besoin de tant de butin ?"
                                     }
                                  }
                               }
@@ -2429,7 +2429,7 @@
                                           "00": "Us.. too weak.. Put out Elite Gong if you dares.."
                                        },
                                        "bulletin_title": "The Kobold Scout whimpers on the ground",
-                                       "dialog_title": "Kobold Scout"
+                                       "dialog_title": "Scout kobold"
                                     }
                                  }
                               }
@@ -2441,8 +2441,8 @@
                                        "bulletin_message": {
                                           "00": "We contractors. We make camp. Orc pay us. Those orc obsess with honor, politics, new Khan. Soon enough, they send orc army here and we need clean up again."
                                        },
-                                       "bulletin_title": "Camp goblin",
-                                       "dialog_title": "Camp goblin",
+                                       "bulletin_title": "Camp gobelin",
+                                       "dialog_title": "Camp gobelin",
                                        "choice_000": "I see"
                                     },
                                     "msg1": {
@@ -2450,18 +2450,18 @@
                                           "00": "You recognize? ...No, me don't know you. You saying us all look same?!"
                                        },
                                        "bulletin_title": "Some familiar looking goblins begin building huts near your town",
-                                       "dialog_title": "Camp goblin",
-                                       "choice_000": "Maybe",
-                                       "choice_001": "No?"
+                                       "dialog_title": "Camp gobelin",
+                                       "choice_000": "Peut-être",
+                                       "choice_001": "Non ?"
                                     },
                                     "msg2": {
                                        "bulletin_message": {
                                           "000": "You lucky us busy! What we doing? We building huts. Set up camp.",
                                           "001": "....We busy, so we ignore and go back to setting up camp."
                                        },
-                                       "bulletin_title": "Camp goblin",
-                                       "dialog_title": "Camp goblin",
-                                       "choice_000": "Why?"
+                                       "bulletin_title": "Camp gobelin",
+                                       "dialog_title": "Camp gobelin",
+                                       "choice_000": "Pourquoi ?"
                                     }
                                  }
                               }
@@ -2473,23 +2473,23 @@
                                        "bulletin_message": {
                                           "000": "Oh! Me think of great idea! You pay us instead and we make so no orc come! You just need give us some few treasures. You win, me win, both win."
                                        },
-                                       "bulletin_title": "The goblin's beady little eyes light up",
-                                       "dialog_title": "Camp goblin"
+                                       "bulletin_title": "The gobelin's beady little eyes light up",
+                                       "dialog_title": "Camp gobelin"
                                     },
                                     "collection_due": {
                                        "bulletin_message": {
-                                          "000": "We backs! Where is our shiny loots??"
+                                          "000": "Nous sommes de retour! Ou sont vos pierres qui brille ??"
                                        },
                                        "bulletin_title": "A pack of goblins lazily slog into back into town",
-                                       "dialog_title": "Camp goblin"
+                                       "dialog_title": "Camp gobelin"
                                     },
                                     "collection_failed": {
                                        "bulletin_message": {
                                           "000": "What? You change mind? ... You humans so inconsiderate of our time. Now we need call back dumb bok orcs and take pay cut.",
                                           "001": "No has?? We has family you knows! You waste our time! We tell orcs give you no mercy!"
                                        },
-                                       "bulletin_title": "The goblin frowns",
-                                       "dialog_title": "Camp goblin"
+                                       "bulletin_title": "Le gobelin fronce les sourcils",
+                                       "dialog_title": "Camp gobelin"
                                     },
                                     "collection_success": {
                                        "bulletin_message": {
@@ -2499,21 +2499,21 @@
                                           "003": "You give good stuffs! Me wolf will be so happy! Have you met ogre chief yet? They like color red. Like on Gong. Ask you blacksmith."
                                        },
                                        "bulletin_title": "The goblin flashes a toothy grin",
-                                       "dialog_title": "Camp goblin"
+                                       "dialog_title": "Camp gobelin"
                                     },
                                     "collection_progress": {
                                        "bulletin_message": {
                                           "000": "You agree pay? Good, make us life easier. We come back later for stuffs. We take nap now..."
                                        },
-                                       "bulletin_title": "Satisfy the goblins (again)",
-                                       "dialog_title": "Camp goblin"
+                                       "bulletin_title": "Satisfaire les gobelins (à nouveau)",
+                                       "dialog_title": "Camp gobelin"
                                     },
                                     "shakedown_refused": {
                                        "bulletin_message": {
                                           "000": "You no want pay? Ok. Make little difference for us. Watch, for orc army come soon."
                                        },
-                                       "bulletin_title": "The goblin frowns",
-                                       "dialog_title": "Camp goblin"
+                                       "bulletin_title": "Le gobelin fronce les sourcils",
+                                       "dialog_title": "Camp gobelin"
                                     }
                                  }
                               }
@@ -2525,8 +2525,8 @@
                                        "bulletin_message": {
                                           "00": "Your precious Cid Treaty can't protect you now, foolish humans!"
                                        },
-                                       "bulletin_title": "Ogre chief",
-                                       "dialog_title": "Ogre chief",
+                                       "bulletin_title": "Chef ogre",
+                                       "dialog_title": "Chef ogre",
                                        "choice_000": "Bring it on"
                                     },
                                     "msg1": {
@@ -2547,8 +2547,8 @@
                                        "bulletin_message": {
                                           "00": "Don't get arrogant puny humans! Brethren from Capitol await to test their might. Any town bearing the General's Gong will not be unheeded!"
                                        },
-                                       "bulletin_title": "The ogre chief shakes his fist angrily",
-                                       "dialog_title": "Chief Grut Bashbrain"
+                                       "bulletin_title": "Le chef ogre secoue son poing de colère",
+                                       "dialog_title": "Chef Grut Bashbrain"
                                     }
                                  }
                               }
@@ -2560,16 +2560,16 @@
                                        "bulletin_message": {
                                           "00": "That being said, we too are not to be underestimated. We have fought more beasts and creatures than your settlement could even conceive of. I look forward to our fight."
                                        },
-                                       "bulletin_title": "Orc troop",
-                                       "dialog_title": "Orc troop"
+                                       "bulletin_title": "Orc troupe",
+                                       "dialog_title": "Orc troupe"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "So long it has been since we have seen the Purple Glimmer of a General's token. The Red Kiln would stand to benefit from fighting more foes such as yourself."
                                        },
-                                       "bulletin_title": "A troop of orcs walk towards you in perfect synchrony",
-                                       "dialog_title": "Orc troop",
-                                       "choice_000": "Thank you"
+                                       "bulletin_title": "Une troupe orcs marche vers vous au pas",
+                                       "dialog_title": "Troupe orc",
+                                       "choice_000": "Merci"
                                     }
                                  }
                               }
@@ -2581,25 +2581,25 @@
                                        "bulletin_message": {
                                           "00": "For us, there are many roads for advancement. This is but one, yet fruitful in itself."
                                        },
-                                       "bulletin_title": "Orc troop",
-                                       "dialog_title": "Orc troop",
-                                       "choice_000": "Huh?"
+                                       "bulletin_title": "Troupe orc",
+                                       "dialog_title": "Troupe orc",
+                                       "choice_000": "Huh ?"
                                     },
                                     "msg3": {
                                        "bulletin_message": {
                                           "00": "Perhaps you would not understand what fortuity this experience has given us, in this period of political upheaval. But that matters not. The Warchief will wish to meet you again. For now, I bid you well, human."
                                        },
-                                       "bulletin_title": "Orc troop",
-                                       "dialog_title": "Orc troop",
-                                       "choice_000": "Bye"
+                                       "bulletin_title": "Troupe orc",
+                                       "dialog_title": "Troupe orc",
+                                       "choice_000": "Aurevoir"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "I commend you on your victory. You have proven yourself a skilled and honorable foe."
                                        },
                                        "bulletin_title": "The orc respectfully bows at the outcome of the battle",
-                                       "dialog_title": "Orc troop",
-                                       "choice_000": "Thanks"
+                                       "dialog_title": "Troupe orc",
+                                       "choice_000": "Merci"
                                     }
                                  }
                               }
@@ -2611,15 +2611,15 @@
                                        "bulletin_message": {
                                           "00": "The defeat of my chiefs and warriors demands from us recognition of your strength. Let us contend in battle and the greater of equals shall come forth with honor and valiance."
                                        },
-                                       "bulletin_title": "Warchief Oghar Norwind",
-                                       "dialog_title": "Warchief Oghar Norwind"
+                                       "bulletin_title": "Chef de guerre Oghar Norwind",
+                                       "dialog_title": "Chef de guerre Oghar Norwind"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "As I predicted, fate brings us together once more."
                                        },
-                                       "bulletin_title": "Warchief Oghar Norwind strides towards you with fearless bravado",
-                                       "dialog_title": "Warchief Oghar Norwind"
+                                       "bulletin_title": "Chef de guerre Oghar Norwind strides towards you with fearless bravado",
+                                       "dialog_title": "Chef de guerre Oghar Norwind"
                                     }
                                  }
                               }
@@ -2631,16 +2631,16 @@
                                        "bulletin_message": {
                                           "00": "I now return home. Word comes to me that bereft of our Khan's wisdom, our shaman have delved too far into dark, unknowable things. Nonetheless, if you ever wish to spar again and improve your skills, put out any gong of the Four Colors and we will gladly return to meet your challenge."
                                        },
-                                       "bulletin_title": "Warchief Oghar Norwind",
-                                       "dialog_title": "Warchief Oghar Norwind"
+                                       "bulletin_title": "Chef de guerre Oghar Norwind",
+                                       "dialog_title": "Chef de guerre Oghar Norwind"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "Erdene was right about you. You are a worthy opponent indead. We will not forget the strength that you have helped us gain."
                                        },
                                        "bulletin_title": "The warchief nods humbly",
-                                       "dialog_title": "Warchief Oghar Norwind",
-                                       "choice_000": "No problem"
+                                       "dialog_title": "Chef de guerre Oghar Norwind",
+                                       "choice_000": "Pas de problème"
                                     }
                                  }
                               }
