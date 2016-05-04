@@ -1414,7 +1414,7 @@
             },
             "goblin_war": {
                "unlock_windchimes": {
-                  "bulletin_title": "Le menuisier a débloqué la procédé de fabrication du carillon à vent !"
+                  "bulletin_title": "Le menuisier a débloqué le procédé de fabrication du carillon à vent !"
                },
                "erdenes_help": {
                   "dialog_tree_info": {
@@ -1910,58 +1910,58 @@
                                  "dialog_nodes": {
                                     "erdene_appears": {
                                        "bulletin_message": {
-                                          "000": "Well done, little town. You survive another night. Ogo, his mountain, and his soothsayer are disappeared from the earth, but you remain. Do you celebrate?"
+                                          "000": "Bien joué, petite ville. Vous survivez une autre nuit. Ogo, de la montagne, et de son devin sont disparu de la terre , mais vous restez. Allez-vous le célèbrer ?"
                                        },
-                                       "bulletin_title": "The cloaked orc scout appears",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
-                                       "choice_000": "Yup! It was pretty cool",
-                                       "choice_001": "You look... sad?"
+                                       "bulletin_title": "Le scout orc masqué apparaît",
+                                       "dialog_title": "Erdene, Scout Red Kiln",
+                                       "choice_000": "Oui ! Il était assez cool",
+                                       "choice_001": "Tu as l'air triste ?"
                                     },
                                     "erdene_departs": {
                                        "bulletin_message": {
-                                          "000": "My Khan calls me home. Fair well, little town. To every equal, another day dawns."
+                                          "000": "Mon Khan m'appelle à la maison. Adieu, petite ville. Un autre jour se lève, tout se ressemble."
                                        },
-                                       "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
-                                       "choice_000": "Goodbye!",
-                                       "choice_001": "Thanks, I guess?"
+                                       "bulletin_title": "Erdene considération",
+                                       "dialog_title": "Erdene, Scout Red Kiln",
+                                       "choice_000": "Au revoir !",
+                                       "choice_001": "Merci, je suppose ?"
                                     },
                                     "ogo_poem_3": {
                                        "bulletin_message": {
-                                          "000": "Of lumber born and southstar driven, grew nest of hope in mountains riven"
+                                          "000": "De la naissance du bois et de la conduite de l'étoile sud, a grandit un nid d'espoir dans les montagnes déchirées"
                                        },
-                                       "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                       "bulletin_title": "Erdene considération",
+                                       "dialog_title": "Erdene, Scout Red Kiln"
                                     },
                                     "red_kiln_description": {
                                        "bulletin_message": {
-                                          "000": "My Khan has seen many years. He is ill. When his star falls, his men will look to the wilds, to grow their honor. Ogo's onus will pass to you, and they will come."
+                                          "000": "Mon Khan a vu de nombreuses années. Il est malade. Quand son étoile tombe, ses hommes se tourneront vers les déserts, pour faire croître leur honneur. Le fardeau de Ogo va passer à vous, et ils viendront."
                                        },
-                                       "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
-                                       "choice_000": "Ogo's what?",
-                                       "choice_001": "Will you fight with us?"
+                                       "bulletin_title": "Erdene considération",
+                                       "dialog_title": "Erdene, Scout Red Kiln",
+                                       "choice_000": "Ogo est quoi ?",
+                                       "choice_001": "Allez-vous vous battre avec nous ?"
                                     },
                                     "ogo_poem_2": {
                                        "bulletin_message": {
-                                          "000": "Oh heroes come, and heroes go, but forever's found in the campfire's glow"
+                                          "000": "Oh les héros viennent et partent, mais on trouve toujours une lueur de feu de camp"
                                        },
-                                       "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                       "bulletin_title": "Erdene considération",
+                                       "dialog_title": "Erdene, Scout Red Kiln"
                                     },
                                     "ogo_poem_4": {
                                        "bulletin_message": {
                                           "000": "The wink of the gem in the monkey's paw, the rebirth of the star the Gods foresaw"
                                        },
-                                       "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                       "bulletin_title": "Erdene considération",
+                                       "dialog_title": "Erdene, Scout Red Kiln"
                                     },
                                     "erdene_discusses": {
                                        "bulletin_message": {
                                           "000": "To the great, come the challenges of the great. Power seeks power. To defeat power... is to invite the attention of more."
                                        },
-                                       "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "bulletin_title": "Erdene considération",
+                                       "dialog_title": "Erdene, Scout Red Kiln",
                                        "choice_000": "More?",
                                        "choice_001": "We can take them!"
                                     },
@@ -1969,8 +1969,8 @@
                                        "bulletin_message": {
                                           "000": "Who can say? My people believe... well. It does not matter now. The cycles of the gods are not for the everyday considerations of men, lizardkin, monkey's folk or otherwise. Look to your tomorrow, little town, and prosper."
                                        },
-                                       "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "bulletin_title": "Erdene considération",
+                                       "dialog_title": "Erdene, Scout Red Kiln",
                                        "choice_000": "That's not helpful",
                                        "choice_001": "Thanks, I guess?"
                                     },
@@ -1978,8 +1978,8 @@
                                        "bulletin_message": {
                                           "000": "Cast the bones, Ogo's soothsayer did, over the cradle of this land. Would you hear his words?"
                                        },
-                                       "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "bulletin_title": "Erdene considération",
+                                       "dialog_title": "Erdene, Scout Red Kiln",
                                        "choice_000": "Sure!",
                                        "choice_001": "No thanks"
                                     }
