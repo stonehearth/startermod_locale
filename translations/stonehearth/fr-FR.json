@@ -2026,9 +2026,9 @@
                                        "bulletin_title": "Mountain the Ogre",
                                        "dialog_title": "Mountain the Ogre",
                                        "choice_000": "Whoops. Attack!"
+                                    }
+                                 }
                               }
-                           }
-                        }
                            },
                            "ogo_dying_dialog": {
                               "dialog_tree_info": {
