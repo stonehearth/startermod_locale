@@ -285,7 +285,8 @@
             },
             "month_format": "i18n(stonehearth:ui.game.calendar.months.[str(date.month)])",
             "date_format_long": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
-            "date_time_long_format": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]"
+            "date_time_long_format": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]",
+            "date_format_short": "i18n(stonehearth:ui.game.calendar.month_format), [str(date.day)]"
          },
          "esc_menu": {
             "title": "Stonehearth",
@@ -1901,6 +1902,214 @@
                               }
                            }
                         }
+                     },
+                     "ogo_invasion": {
+                        "encounters": {
+                           "erdenes_congratulations": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "erdene_appears": {
+                                       "bulletin_message": {
+                                          "000": "Well done, little town. You survive another night. Ogo, his mountain, and his soothsayer are disappeared from the earth, but you remain. Do you celebrate?"
+                                       },
+                                       "bulletin_title": "The cloaked orc scout appears",
+                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "choice_000": "Yup! It was pretty cool",
+                                       "choice_001": "You look... sad?"
+                                    },
+                                    "erdene_departs": {
+                                       "bulletin_message": {
+                                          "000": "My Khan calls me home. Fair well, little town. To every equal, another day dawns."
+                                       },
+                                       "bulletin_title": "Erdene considers",
+                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "choice_000": "Goodbye!",
+                                       "choice_001": "Thanks, I guess?"
+                                    },
+                                    "ogo_poem_3": {
+                                       "bulletin_message": {
+                                          "000": "Of lumber born and southstar driven, grew nest of hope in mountains riven"
+                                       },
+                                       "bulletin_title": "Erdene considers",
+                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                    },
+                                    "red_kiln_description": {
+                                       "bulletin_message": {
+                                          "000": "My Khan has seen many years. He is ill. When his star falls, his men will look to the wilds, to grow their honor. Ogo's onus will pass to you, and they will come."
+                                       },
+                                       "bulletin_title": "Erdene considers",
+                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "choice_000": "Ogo's what?",
+                                       "choice_001": "Will you fight with us?"
+                                    },
+                                    "ogo_poem_2": {
+                                       "bulletin_message": {
+                                          "000": "Oh heroes come, and heroes go, but forever's found in the campfire's glow"
+                                       },
+                                       "bulletin_title": "Erdene considers",
+                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                    },
+                                    "ogo_poem_4": {
+                                       "bulletin_message": {
+                                          "000": "The wink of the gem in the monkey's paw, the rebirth of the star the Gods foresaw"
+                                       },
+                                       "bulletin_title": "Erdene considers",
+                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                    },
+                                    "erdene_discusses": {
+                                       "bulletin_message": {
+                                          "000": "To the great, come the challenges of the great. Power seeks power. To defeat power... is to invite the attention of more."
+                                       },
+                                       "bulletin_title": "Erdene considers",
+                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "choice_000": "More?",
+                                       "choice_001": "We can take them!"
+                                    },
+                                    "ogo_poem_5": {
+                                       "bulletin_message": {
+                                          "000": "Who can say? My people believe... well. It does not matter now. The cycles of the gods are not for the everyday considerations of men, lizardkin, monkey's folk or otherwise. Look to your tomorrow, little town, and prosper."
+                                       },
+                                       "bulletin_title": "Erdene considers",
+                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "choice_000": "That's not helpful",
+                                       "choice_001": "Thanks, I guess?"
+                                    },
+                                    "ogo_poem": {
+                                       "bulletin_message": {
+                                          "000": "Cast the bones, Ogo's soothsayer did, over the cradle of this land. Would you hear his words?"
+                                       },
+                                       "bulletin_title": "Erdene considers",
+                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "choice_000": "Sure!",
+                                       "choice_001": "No thanks"
+                                    }
+                                 }
+                              }
+                           },
+                           "mountains_gift": {
+                              "donation_dialog_info": {
+                                 "dialog_nodes": {
+                                    "simple_message": {
+                                       "bulletin_message": {
+                                          "000": "Music remind Mountain of warm, safe place. Of food and fire. Me give you this to say thank you."
+                                       },
+                                       "bulletin_title": "Mountain leaves you a gift",
+                                       "dialog_title": "Mountain, the Ogre",
+                                       "choice_000": "Good Luck!"
+                                    }
+                                 }
+                              }
+                           },
+                           "ogo_dead_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "mountain_notices": {
+                                       "bulletin_message": {
+                                          "000": "Ogo can you not hear the chimes? Like old memory! Me no want to fight anymore."
+                                       },
+                                       "bulletin_title": "Mountain the Ogre lifts his head to listen",
+                                       "dialog_title": "Mountain the Ogre",
+                                       "choice_000": "Huh."
+                                    },
+                                    "mountain_notices_2": {
+                                       "bulletin_message": {
+                                          "000": "Ogo?"
+                                       },
+                                       "bulletin_title": "Mountain the Ogre",
+                                       "dialog_title": "Mountain the Ogre",
+                                       "choice_000": "Uh Oh."
+                                    },
+                                    "mountain_notices_3": {
+                                       "bulletin_message": {
+                                          "000": "OGO? YOU PEOPLE KILL OGO!!! SONG BE MEMORIAL FOR MOUNTAIN FRIEND!!!"
+                                       },
+                                       "bulletin_title": "Mountain the Ogre",
+                                       "dialog_title": "Mountain the Ogre",
+                                       "choice_000": "Whoops. Attack!"
+                              }
+                           }
+                        }
+                           },
+                           "ogo_dying_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "ogo_death_2": {
+                                       "bulletin_message": {
+                                          "000": "Mountain! Fight... on...."
+                                       },
+                                       "bulletin_title": "Ogo Skullbonker falls to the ground",
+                                       "dialog_title": "Ogo Skullbonker"
+                                    },
+                                    "ogo_death_1": {
+                                       "bulletin_message": {
+                                          "000": "What? Ogo Skullbonker, defeated? What soothsayer say? What Mountain say? What about Khan? What about... next cycle?"
+                                       },
+                                       "bulletin_title": "Ogo Skullbonker falls to the ground",
+                                       "dialog_title": "Ogo Skullbonker"
+                                    }
+                                 }
+                              }
+                           },
+                           "ogo_mountain_alive_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "ogo_resists": {
+                                       "bulletin_message": {
+                                          "000": "Mountain, ridiculous! This is war! For shinies! Forward!!!"
+                                       },
+                                       "bulletin_title": "Ogo Skullbonker",
+                                       "dialog_title": "Ogo Skullbonker"
+                                    },
+                                    "renewed_attack": {
+                                       "bulletin_message": {
+                                          "000": "See Mountain? They refuse your offer of peace! Renewed attack!"
+                                       },
+                                       "bulletin_title": "Ogo Skullbonker",
+                                       "dialog_title": "Ogo Skullbonker",
+                                       "choice_000": "Attack!!"
+                                    },
+                                    "mountain_replies": {
+                                       "bulletin_message": {
+                                          "000": "Ogo can you not hear the chimes? Like old memory! Me no want to fight anymore."
+                                       },
+                                       "bulletin_title": "Mountain the Ogre",
+                                       "dialog_title": "Mountain the Ogre"
+                                    },
+                                    "ogo_relents": {
+                                       "bulletin_message": {
+                                          "000": "Arghhh!!! But the shinies! Fine. Mountain my friend; me no go where he no go. Your town safe... for now. We return when Khan is well!"
+                                       },
+                                       "bulletin_title": "Ogo Skullbonker",
+                                       "dialog_title": "Ogo Skullbonker",
+                                       "choice_000": "See you later!"
+                                    },
+                                    "ogo_notices": {
+                                       "bulletin_message": {
+                                          "000": "Mountain, why you stop fighting?"
+                                       },
+                                       "bulletin_title": "Ogo Skullbonker waves to get his ogre's attention",
+                                       "dialog_title": "Ogo Skullbonker"
+                                    },
+                                    "mountain_asks": {
+                                       "bulletin_message": {
+                                          "000": "No. Me no want to fight anymore. What about you, little people? If me no feel like fighting, what you do?"
+                                       },
+                                       "bulletin_title": "Mountain the Ogre",
+                                       "dialog_title": "Mountain the Ogre",
+                                       "choice_000": "No Way!",
+                                       "choice_001": "Let's be friends!"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               },
+               "ogo_army_raid": {
+                  "mission": {
+                     "sighted_bulletin": {
+                        "title": "Ogo's Army Approaches!"
                      }
                   }
                }
@@ -2143,17 +2352,84 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "... Maintenant que je suis ici, je vois que vous n'êtes pas encore digne de combattre, même le moindre de mes chefs de camp! Je reviendrai plus tard, quand vous serai plus fort. Mettez un gong d'élite pour signaler que vous êtes prêt."
+                                          "00": " The Red Kiln believes that advancement can only come from conflict between equals. Khan is no longer. And where one falls, those stronger and more cunning will rise."
                                        },
-                                       "bulletin_title": "Chef de guerre Oghar Grakbash",
-                                       "dialog_title": "Chef de guerre Oghar Grakbash"
+                                       "bulletin_title": "Warchief Oghar Norwind",
+                                       "dialog_title": "Warchief Oghar Norwind"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Vous là ! Erdene m'a parlé de vous ! Elle a dit que vous avez vaincu Ogo Skullbonker. Le Red Kiln croit que l'avancement ne peut venir que d'un conflit d'égal à égal."
+                                          "00": "You there. Erdene told me of you. She said you defeated Ogo Skullbonker."
                                        },
-                                       "bulletin_title": "Un chef de guerre orc approches de votre ville",
-                                       "dialog_title": "Chef de guerre Oghar Grakbash"
+                                       "bulletin_title": "An orcish warchief approaches your town",
+                                       "dialog_title": "Warchief Oghar Norwind",
+                                       "choice_000": "Yes, that's me",
+                                       "choice_001": "What's it to you?"
+                                    },
+                                    "msg4": {
+                                       "bulletin_message": {
+                                          "00": "The age of this Khan is over, but new light seeps from the horizon. We do as Cid bade and respect the mark of the Four Colors. Place a Scout Gong in your territory to mark your readiness for battle."
+                                       }
+                                    },
+                                    "msg3": {
+                                       "bulletin_message": {
+                                          "00": "Now that I am here, I see you are not yet worthy to face even the least of my camp chiefs. In your eyes flame not the lust for mastery!"
+                                       },
+                                       "choice_000": "How rude!"
+                                    }
+                                 }
+                              }
+                           },
+                           "green_tier_begin_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg3": {
+                                       "bulletin_message": {
+                                          "00": "You ask why? We offer to great Goddess Khulgana! Bring great riches after life. Now you know, you need give us treasure!"
+                                       },
+                                       "bulletin_title": "Kobold Scout",
+                                       "dialog_title": "Kobold Scout",
+                                       "choice_000": "Nah"
+                                    },
+                                    "msg4": {
+                                       "bulletin_message": {
+                                          "000": "You no give shinies?! We take!!!",
+                                          "001": "Ha, we was just testing you! Of course we strong enough to take!",
+                                          "002": "We take all gold! We revenge for hat melting!!"
+                                       },
+                                       "bulletin_title": "Kobold Scout",
+                                       "dialog_title": "Kobold Scout",
+                                       "choice_000": "Ok"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Grek!! You notice me?",
+                                          "001": "Oo shinies! Gong! Emerald!"
+                                       },
+                                       "bulletin_title": "A kobold stares longingly at your piles of gold.",
+                                       "dialog_title": "Kobold Scout",
+                                       "choice_000": "What are you doing?"
+                                    },
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "000": "We see you many treasures in piles and boxes. Us need many, many loots. You share, yes?"
+                                       },
+                                       "bulletin_title": "Kobold Scout",
+                                       "dialog_title": "Kobold Scout",
+                                       "choice_000": "Why do you need so much loot?"
+                                    }
+                                 }
+                              }
+                           },
+                           "green_tier_end_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "Us.. too weak.. Put out Elite Gong if you dares.."
+                                       },
+                                       "bulletin_title": "The Kobold Scout whimpers on the ground",
+                                       "dialog_title": "Kobold Scout"
                                     }
                                  }
                               }
@@ -2161,19 +2437,210 @@
                            "blue_tier_begin_dialog": {
                               "dialog_tree_info": {
                                  "dialog_nodes": {
-                                    "msg2": {
+                                    "msg3": {
                                        "bulletin_message": {
-                                          "00": "Ne soit pas arrogant, chétifs humains ! Les frères du Capitole attendent pour tester leur force. Toute ville portant un Gong Elite ne sera pas ignoré."
+                                          "00": "We contractors. We make camp. Orc pay us. Those orc obsess with honor, politics, new Khan. Soon enough, they send orc army here and we need clean up again."
                                        },
-                                       "bulletin_title": "Scout orc",
-                                       "dialog_title": "Scout orc"
+                                       "bulletin_title": "Camp goblin",
+                                       "dialog_title": "Camp goblin",
+                                       "choice_000": "I see"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Hragh! Moi me rendre ! Nous n'avons pas pu faire honneur à l'Emerald Star !"
+                                          "00": "You recognize? ...No, me don't know you. You saying us all look same?!"
                                        },
-                                       "bulletin_title": "Le scout orc se débat sauvagement",
-                                       "dialog_title": "Le scout orc se rend"
+                                       "bulletin_title": "Some familiar looking goblins begin building huts near your town",
+                                       "dialog_title": "Camp goblin",
+                                       "choice_000": "Maybe",
+                                       "choice_001": "No?"
+                                    },
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "000": "You lucky us busy! What we doing? We building huts. Set up camp.",
+                                          "001": "....We busy, so we ignore and go back to setting up camp."
+                                       },
+                                       "bulletin_title": "Camp goblin",
+                                       "dialog_title": "Camp goblin",
+                                       "choice_000": "Why?"
+                                    }
+                                 }
+                              }
+                           },
+                           "blue_tier_shakedown": {
+                              "collection_quest_info": {
+                                 "dialog_nodes": {
+                                    "shakedown": {
+                                       "bulletin_message": {
+                                          "000": "Oh! Me think of great idea! You pay us instead and we make so no orc come! You just need give us some few treasures. You win, me win, both win."
+                                       },
+                                       "bulletin_title": "The goblin's beady little eyes light up",
+                                       "dialog_title": "Camp goblin"
+                                    },
+                                    "collection_due": {
+                                       "bulletin_message": {
+                                          "000": "We backs! Where is our shiny loots??"
+                                       },
+                                       "bulletin_title": "A pack of goblins lazily slog into back into town",
+                                       "dialog_title": "Camp goblin"
+                                    },
+                                    "collection_failed": {
+                                       "bulletin_message": {
+                                          "000": "What? You change mind? ... You humans so inconsiderate of our time. Now we need call back dumb bok orcs and take pay cut.",
+                                          "001": "No has?? We has family you knows! You waste our time! We tell orcs give you no mercy!"
+                                       },
+                                       "bulletin_title": "The goblin frowns",
+                                       "dialog_title": "Camp goblin"
+                                    },
+                                    "collection_success": {
+                                       "bulletin_message": {
+                                          "000": "Shinies! Supplies! Maybe this job even better than work for Chieftain. Thanks, human. If you up to it, put out red Master Gong. Ogre take red token as challenge.",
+                                          "001": "You that scared of orc boks? Well, good for me! Don't put out red Gong or even bigger, dumber boks might come.",
+                                          "002": "Stuffs!! You should hire we full-time. You ask what we do for you? ..We can discuss in contract. Maybe you need us if you display Master Gong and giant ogre bok come.",
+                                          "003": "You give good stuffs! Me wolf will be so happy! Have you met ogre chief yet? They like color red. Like on Gong. Ask you blacksmith."
+                                       },
+                                       "bulletin_title": "The goblin flashes a toothy grin",
+                                       "dialog_title": "Camp goblin"
+                                    },
+                                    "collection_progress": {
+                                       "bulletin_message": {
+                                          "000": "You agree pay? Good, make us life easier. We come back later for stuffs. We take nap now..."
+                                       },
+                                       "bulletin_title": "Satisfy the goblins (again)",
+                                       "dialog_title": "Camp goblin"
+                                    },
+                                    "shakedown_refused": {
+                                       "bulletin_message": {
+                                          "000": "You no want pay? Ok. Make little difference for us. Watch, for orc army come soon."
+                                       },
+                                       "bulletin_title": "The goblin frowns",
+                                       "dialog_title": "Camp goblin"
+                                    }
+                                 }
+                              }
+                           },
+                           "red_tier_begin_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "Your precious Cid Treaty can't protect you now, foolish humans!"
+                                       },
+                                       "bulletin_title": "Ogre chief",
+                                       "dialog_title": "Ogre chief",
+                                       "choice_000": "Bring it on"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "Puny town! You mount mark of Ruby! You dare challenge me, Chief Grut Bashbrain?!"
+                                       },
+                                       "bulletin_title": "An ogre stomps into town",
+                                       "dialog_title": "Ogre chief",
+                                       "choice_000": "You don't scare me!"
+                                    }
+                                 }
+                              }
+                           },
+                           "red_tier_end_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "Don't get arrogant puny humans! Brethren from Capitol await to test their might. Any town bearing the General's Gong will not be unheeded!"
+                                       },
+                                       "bulletin_title": "The ogre chief shakes his fist angrily",
+                                       "dialog_title": "Chief Grut Bashbrain"
+                                    }
+                                 }
+                              }
+                           },
+                           "purple_tier_begin_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "That being said, we too are not to be underestimated. We have fought more beasts and creatures than your settlement could even conceive of. I look forward to our fight."
+                                       },
+                                       "bulletin_title": "Orc troop",
+                                       "dialog_title": "Orc troop"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "So long it has been since we have seen the Purple Glimmer of a General's token. The Red Kiln would stand to benefit from fighting more foes such as yourself."
+                                       },
+                                       "bulletin_title": "A troop of orcs walk towards you in perfect synchrony",
+                                       "dialog_title": "Orc troop",
+                                       "choice_000": "Thank you"
+                                    }
+                                 }
+                              }
+                           },
+                           "purple_tier_end_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "For us, there are many roads for advancement. This is but one, yet fruitful in itself."
+                                       },
+                                       "bulletin_title": "Orc troop",
+                                       "dialog_title": "Orc troop",
+                                       "choice_000": "Huh?"
+                                    },
+                                    "msg3": {
+                                       "bulletin_message": {
+                                          "00": "Perhaps you would not understand what fortuity this experience has given us, in this period of political upheaval. But that matters not. The Warchief will wish to meet you again. For now, I bid you well, human."
+                                       },
+                                       "bulletin_title": "Orc troop",
+                                       "dialog_title": "Orc troop",
+                                       "choice_000": "Bye"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "I commend you on your victory. You have proven yourself a skilled and honorable foe."
+                                       },
+                                       "bulletin_title": "The orc respectfully bows at the outcome of the battle",
+                                       "dialog_title": "Orc troop",
+                                       "choice_000": "Thanks"
+                                    }
+                                 }
+                              }
+                           },
+                           "warchief_boss_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "The defeat of my chiefs and warriors demands from us recognition of your strength. Let us contend in battle and the greater of equals shall come forth with honor and valiance."
+                                       },
+                                       "bulletin_title": "Warchief Oghar Norwind",
+                                       "dialog_title": "Warchief Oghar Norwind"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "As I predicted, fate brings us together once more."
+                                       },
+                                       "bulletin_title": "Warchief Oghar Norwind strides towards you with fearless bravado",
+                                       "dialog_title": "Warchief Oghar Norwind"
+                                    }
+                                 }
+                              }
+                           },
+                           "warchief_defeat_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "I now return home. Word comes to me that bereft of our Khan's wisdom, our shaman have delved too far into dark, unknowable things. Nonetheless, if you ever wish to spar again and improve your skills, put out any gong of the Four Colors and we will gladly return to meet your challenge."
+                                       },
+                                       "bulletin_title": "Warchief Oghar Norwind",
+                                       "dialog_title": "Warchief Oghar Norwind"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "Erdene was right about you. You are a worthy opponent indead. We will not forget the strength that you have helped us gain."
+                                       },
+                                       "bulletin_title": "The warchief nods humbly",
+                                       "dialog_title": "Warchief Oghar Norwind",
+                                       "choice_000": "No problem"
                                     }
                                  }
                               }
@@ -3356,6 +3823,12 @@
                   "display_name": "Loup kobold",
                   "description": "Un loup redoutable !"
                }
+            }
+         },
+         "orcs": {
+            "warchief_boss": {
+               "display_name": "Warchief Oghar Norwind",
+               "description": "She's the boss."
             }
          }
       }
@@ -5216,6 +5689,10 @@
             "orc_hut": {
                "display_name": "Hutte d'orc",
                "description": "Fabriqué à partir de planches de bois grossièrement hachées"
+            },
+            "orc_tent": {
+               "display_name": "Orc Tent",
+               "description": "Smells like old laundry."
             }
          }
       },
@@ -5925,7 +6402,7 @@
             },
             "slowing_arrow": {
                "display_name": "Ralenti",
-               "description": "Ralenti par une flèche de glace"
+               "description": "Ralenti par une flèche à pointes"
             },
             "fire_arrow": {
                "display_name": "En feu",
