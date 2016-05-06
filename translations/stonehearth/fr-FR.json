@@ -1910,19 +1910,19 @@
                                  "dialog_nodes": {
                                     "erdene_appears": {
                                        "bulletin_message": {
-                                          "000": "Bien joué, petite ville. Vous survivez une autre nuit. Ogo, de la montagne, et de son devin sont disparu de la terre , mais vous restez. Allez-vous le célèbrer ?"
+                                          "000": "Bien joué, petite ville. Vous survivez à une autre nuit. Ogo, sa montagne, et son devin ont disparu de la surface de la terre, mais vous restez. Allez-vous organiser une cérémonie ?"
                                        },
                                        "bulletin_title": "Le scout orc masqué apparaît",
                                        "dialog_title": "Erdene, Scout Red Kiln",
-                                       "choice_000": "Oui ! Il était assez cool",
-                                       "choice_001": "Tu as l'air triste ?"
+                                       "choice_000": "Oui ! Ce fut assez cool",
+                                       "choice_001": "Tu as l'air ... triste ?"
                                     },
                                     "erdene_departs": {
                                        "bulletin_message": {
-                                          "000": "Mon Khan m'appelle à la maison. Adieu, petite ville. Un autre jour se lève, tout se ressemble."
+                                          "000": "Mon Khan me rappel à lui. Adieu, petite ville. Un autre jour se lève, tout se ressemble."
                                        },
-                                       "bulletin_title": "Erdene considération",
-                                       "dialog_title": "Erdene, Scout Red Kiln",
+                                       "bulletin_title": "Les considérations d'Erdene",
+                                       "dialog_title": "Erdene, scout de la Kiln Rouge",
                                        "choice_000": "Au revoir !",
                                        "choice_001": "Merci, je suppose ?"
                                     },
@@ -1930,47 +1930,47 @@
                                        "bulletin_message": {
                                           "000": "De la naissance du bois et de la conduite de l'étoile sud, a grandit un nid d'espoir dans les montagnes déchirées"
                                        },
-                                       "bulletin_title": "Erdene considération",
-                                       "dialog_title": "Erdene, Scout Red Kiln"
+                                       "bulletin_title": "Les considérations d'Erdene",
+                                       "dialog_title": "Erdene, scout de la Kiln Rouge"
                                     },
                                     "red_kiln_description": {
                                        "bulletin_message": {
                                           "000": "Mon Khan a vu de nombreuses années. Il est malade. Quand son étoile tombe, ses hommes se tourneront vers les déserts, pour faire croître leur honneur. Le fardeau de Ogo va passer à vous, et ils viendront."
                                        },
-                                       "bulletin_title": "Erdene considération",
-                                       "dialog_title": "Erdene, Scout Red Kiln",
-                                       "choice_000": "Ogo est quoi ?",
+                                       "bulletin_title": "Les considérations d'Erdene",
+                                       "dialog_title": "Erdene, scout de la Kiln Rouge",
+                                       "choice_000": "Ogo quoi ?",
                                        "choice_001": "Allez-vous vous battre avec nous ?"
                                     },
                                     "ogo_poem_2": {
                                        "bulletin_message": {
-                                          "000": "Oh les héros viennent et partent, mais on trouve toujours une lueur de feu de camp"
+                                          "000": "Oh les héros viennent, les héros partent, mais on en trouve toujours à la lueur d'un feu de camp"
                                        },
-                                       "bulletin_title": "Erdene considération",
-                                       "dialog_title": "Erdene, Scout Red Kiln"
+                                       "bulletin_title": "Les considérations d'Erdene",
+                                       "dialog_title": "Erdene, scout de la Kiln Rouge"
                                     },
                                     "ogo_poem_4": {
                                        "bulletin_message": {
                                           "000": "The wink of the gem in the monkey's paw, the rebirth of the star the Gods foresaw"
                                        },
-                                       "bulletin_title": "Erdene considération",
-                                       "dialog_title": "Erdene, Scout Red Kiln"
+                                       "bulletin_title": "Les considérations d'Erdene",
+                                       "dialog_title": "Erdene, scout de la Kiln Rouge"
                                     },
                                     "erdene_discusses": {
                                        "bulletin_message": {
                                           "000": "To the great, come the challenges of the great. Power seeks power. To defeat power... is to invite the attention of more."
                                        },
-                                       "bulletin_title": "Erdene considération",
-                                       "dialog_title": "Erdene, Scout Red Kiln",
-                                       "choice_000": "More?",
-                                       "choice_001": "We can take them!"
+                                       "bulletin_title": "Les considérations d'Erdene",
+                                       "dialog_title": "Erdene, scout de la Kiln Rouge",
+                                       "choice_000": "Encore plus ?",
+                                       "choice_001": "Nous pouvons les prendres!"
                                     },
                                     "ogo_poem_5": {
                                        "bulletin_message": {
                                           "000": "Who can say? My people believe... well. It does not matter now. The cycles of the gods are not for the everyday considerations of men, lizardkin, monkey's folk or otherwise. Look to your tomorrow, little town, and prosper."
                                        },
-                                       "bulletin_title": "Erdene considération",
-                                       "dialog_title": "Erdene, Scout Red Kiln",
+                                       "bulletin_title": "Les considérations d'Erdene",
+                                       "dialog_title": "Erdene, scout de la Kiln Rouge",
                                        "choice_000": "That's not helpful",
                                        "choice_001": "Thanks, I guess?"
                                     },
@@ -1978,10 +1978,10 @@
                                        "bulletin_message": {
                                           "000": "Cast the bones, Ogo's soothsayer did, over the cradle of this land. Would you hear his words?"
                                        },
-                                       "bulletin_title": "Erdene considération",
-                                       "dialog_title": "Erdene, Scout Red Kiln",
-                                       "choice_000": "Sure!",
-                                       "choice_001": "No thanks"
+                                       "bulletin_title": "Les considérations d'Erdene",
+                                       "dialog_title": "Erdene, scout de la Kiln Rouge",
+                                       "choice_000": "Bien sûr !",
+                                       "choice_001": "Non merci"
                                     }
                                  }
                               }
