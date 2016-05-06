@@ -213,7 +213,7 @@
             },
             "defend_location": {
                "display_name": "Defend Location",
-               "description": "Run towards, then stay at this location, attacking anything in the path."
+               "description": "Move to and stay at a location, defending it from enemies."
             },
             "move_unit": {
                "display_name": "Move to Location",
@@ -1266,11 +1266,11 @@
             },
             "inventory": {
                "display_name": "Inventory",
-               "description": "The gold value of all non-Resource items in the town inventory."
+               "description": "The gold value of all non-Resource and non-Edible items in the town inventory."
             },
             "buildings": {
                "display_name": "Buildings",
-               "description": "The value of all the buildings constructed your town. Large buildings will have much higher score contributions than small ones."
+               "description": "The value of all the buildings constructed your town. Large buildings will have slightly higher score contributions than small ones."
             },
             "agriculture": {
                "display_name": "Agriculture",
@@ -2009,7 +2009,7 @@
                                        "bulletin_message": {
                                           "000": "Ogo?"
                                        },
-                                       "bulletin_title": "Mountain the Ogre",
+                                       "bulletin_title": "Mountain looks around in horror",
                                        "dialog_title": "Mountain the Ogre",
                                        "choice_000": "Uh Oh."
                                     },
@@ -2017,7 +2017,7 @@
                                        "bulletin_message": {
                                           "000": "OGO? YOU PEOPLE KILL OGO!!! SONG BE MEMORIAL FOR MOUNTAIN FRIEND!!!"
                                        },
-                                       "bulletin_title": "Mountain the Ogre",
+                                       "bulletin_title": "Mountain beats his enormous chest",
                                        "dialog_title": "Mountain the Ogre",
                                        "choice_000": "Whoops. Attack!"
                                     }
@@ -2051,14 +2051,14 @@
                                        "bulletin_message": {
                                           "000": "Mountain, ridiculous! This is war! For shinies! Forward!!!"
                                        },
-                                       "bulletin_title": "Ogo Skullbonker",
+                                       "bulletin_title": "Ogo looks indignant",
                                        "dialog_title": "Ogo Skullbonker"
                                     },
                                     "renewed_attack": {
                                        "bulletin_message": {
                                           "000": "See Mountain? They refuse your offer of peace! Renewed attack!"
                                        },
-                                       "bulletin_title": "Ogo Skullbonker",
+                                       "bulletin_title": "Ogo raises his fist in triumph",
                                        "dialog_title": "Ogo Skullbonker",
                                        "choice_000": "Attack!!"
                                     },
@@ -2066,14 +2066,14 @@
                                        "bulletin_message": {
                                           "000": "Ogo can you not hear the chimes? Like old memory! Me no want to fight anymore."
                                        },
-                                       "bulletin_title": "Mountain the Ogre",
+                                       "bulletin_title": "Mountain lifts his head to listen",
                                        "dialog_title": "Mountain the Ogre"
                                     },
                                     "ogo_relents": {
                                        "bulletin_message": {
                                           "000": "Arghhh!!! But the shinies! Fine. Mountain my friend; me no go where he no go. Your town safe... for now. We return when Khan is well!"
                                        },
-                                       "bulletin_title": "Ogo Skullbonker",
+                                       "bulletin_title": "Ogo stomps his foot in frustration",
                                        "dialog_title": "Ogo Skullbonker",
                                        "choice_000": "See you later!"
                                     },
@@ -2088,7 +2088,7 @@
                                        "bulletin_message": {
                                           "000": "No. Me no want to fight anymore. What about you, little people? If me no feel like fighting, what you do?"
                                        },
-                                       "bulletin_title": "Mountain the Ogre",
+                                       "bulletin_title": "Mountain shakes his giant head",
                                        "dialog_title": "Mountain the Ogre",
                                        "choice_000": "No Way!",
                                        "choice_001": "Let's be friends!"
@@ -2770,7 +2770,7 @@
          "game_modes": {
             "game_mode_hard_buff": {
                "display_name": "Hard Mode",
-               "description": "Does more damage"
+               "description": "In Hard Mode, enemies have more armor and health and will inflict more damage"
             }
          }
       },
@@ -2949,7 +2949,7 @@
             },
             "slow_arrows": {
                "display_name": "Using Spiky Arrows",
-               "description": "Currently using spiky arrows, which slow enemies. Click to swap between arrow types."
+               "description": "Currently using spiky arrows, which slows enemy movement speed. Click to swap between arrow types."
             },
             "fire_arrows": {
                "display_name": "Using Fire Arrows",
@@ -6396,7 +6396,7 @@
             },
             "slowing_arrow": {
                "display_name": "Slowed",
-               "description": "Slowed by Spikey Arrows"
+               "description": "Movement speed slowed by Spikey Arrows"
             },
             "fire_arrow": {
                "display_name": "On Fire",
