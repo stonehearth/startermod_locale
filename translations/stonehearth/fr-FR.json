@@ -2834,7 +2834,7 @@
          },
          "eating_similar_foods": {
             "flavor_fatigue": {
-               "text": "Sur le manque de diversité de nourriture :",
+               "text": "Concernant le manque de diversité de nourriture :",
                "logs": {
                   "generic": {
                      "000": "Encore une ration de [str(entry.recent_food)] ? Joie.",
@@ -2874,7 +2874,7 @@
                }
             },
             "different_food": {
-               "text": "Sur la diversité de nourriture :",
+               "text": "Concernant la diversité de nourriture :",
                "logs": {
                   "generic": {
                      "000": "Mmm, j'aime la diversité de mon alimentation.",
@@ -2888,43 +2888,43 @@
                }
             },
             "super_nutritious_food": {
-               "text": "Sur le manger vraiment sain :",
+               "text": "Concernant la nourriture de qualité :",
                "logs": {
                   "lovable_rogue": {
-                     "000": "Wow, qui savait que ce [str(entry.recent_food)] était si incroyablement nutritif&nbsp;?",
-                     "001": "[str(entry.recent_food)] est la meilleure nourriture que j'ai mangé depuis longtemps.",
-                     "002": "Je parie, il y a un marché à nourriture pour ce bien. À moins que je garde tout pour moi seul&nbsp;?",
+                     "000": "Wow, qui savait qu'un repas de [str(entry.recent_food)] est si incroyablement nutritifs&nbsp;?",
+                     "001": "[str(entry.recent_food)] : c'est la meilleure nourriture que j'ai mangé depuis longtemps.",
+                     "002": "Je parie, que ça a beaucoups de valeur marchande. À moins de tout garder pour moi&nbsp;?",
                      "teacher": {
-                        "000": "[str(entry.recent_food)] était étonnant. Louer soit [str(entry.teacher)] et l'église d'abondance&nbsp;!"
+                        "000": "Super ces [str(entry.recent_food)] ! Ce repas m'a comblé. Louer soit [str(entry.teacher)] et l'Église d'Abondance&nbsp;!"
                      }
                   },
                   "hopeless_optimist": {
                      "000": "Wow&nbsp;! Je me sens bien&nbsp;!",
-                     "001": "Nous devons produire plus de nourriture de [str(entry.recent_food)] afin que chacun puisse en manger un peu&nbsp;!",
+                     "001": "Nous devons produire plus de [str(entry.recent_food)] afin que chacun puisse en manger un peu&nbsp;!",
                      "002": "Plus plus plus toujours plus de [str(entry.recent_food)]."
                   },
                   "beleaguered_leader": {
-                     "000": "Wow. Qui aurait deviné que la nourriture de [str(entry.recent_food)] soit si bonne&nbsp;?",
+                     "000": "Wow. Qui aurait deviné qu'un repas de [str(entry.recent_food)] soit si réussit&nbsp;?",
                      "001": "Ce fut une surprise satisfaisante ce [str(entry.recent_food)].",
-                     "002": "[str(entry.recent_food)] était d'un goût tellement bon, que je devrais en manger plus en priorité.",
+                     "002": "Un repas de [str(entry.recent_food)] hhmmm, je devrais en faire plus.",
                      "003": "Ahhh ! Maintenant je me sens comme un super-héros&nbsp;!"
                   },
                   "generic": {
-                     "000": "Wow ! [str(entry.recent_food)] m'a donné une santé de fer&nbsp;!",
-                     "001": "La nourriture de [str(entry.recent_food)] était étonnamment satisfaisante&nbsp;!",
+                     "000": "Wow ! Après un repas de [str(entry.recent_food)] j'ai une santé de fer&nbsp;!",
+                     "001": "Un repas de [str(entry.recent_food)] quel satisfaction&nbsp;!",
                      "002": "[str(entry.recent_food)] ? Super copieux&nbsp;!",
-                     "003": "[str(entry.recent_food)] va alimenter les grands travaux d'aujourd'hui&nbsp;!"
+                     "003": "Ce repas de [str(entry.recent_food)] va alimenter les grands travaux d'aujourd'hui&nbsp;!"
                   }
                }
             }
          },
          "eat_once_per_day": {
             "eat_once_daily": {
-               "text": "A propos des repas :",
+               "text": "Concernant les repas :",
                "logs": {
                   "generic": {
-                     "000": "La nourriture de [str(entry.recent_food)] a un goût étonnamment bon aujourd'hui.",
-                     "001": "J'ai jamais vraiment aimé la nourriture de [str(entry.recent_food)] que depuis que nous nous sommes installé ici.",
+                     "000": "Ce repas de [str(entry.recent_food)] a un goût étonnamment bon aujourd'hui.",
+                     "001": "Je n'ai jamais vraiment aimé un repas de [str(entry.recent_food)] sauf depuis que nous nous sommes installé ici.",
                      "002": "&Eacute;tre nourri est beaucoup, beaucoup, beaucoup mieux que d'avoir faim.",
                      "003": "Oh petit ! [str(entry.recent_food)]. Cette nourriture apaise mon ventre.",
                      "with_reaction": {
