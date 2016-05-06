@@ -7012,7 +7012,7 @@
             "clay_wall_lamp_recipe": {
                "description": "Sa flamme donne une lumière chaude la nuit.",
                "recipe_name": "Lampe à huile murale d'argile",
-               "flavor": "'Fermez vous autour des esprits gardiens de la nuit ! Comme dans une danse dominante, et vous serez libéré de l'obscurité des rêves.'"
+               "flavor": "'Encerclez nous esprits et gardiens de la nuit ! Comme eux danser et balancer vous, et vos rêves seront libérés de l'obscurité.'"
             },
             "garden_gnome_recipe": {
                "description": "Inspiré par les esprits mythiques de la forêt.",
