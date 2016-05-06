@@ -7484,19 +7484,19 @@
             "clay_lamp_recipe": {
                "description": "Sa flamme donne une lumière chaude la nuit.",
                "recipe_name": "Lampe à huile d'argile",
-               "flavor": "And the Djinni said to Rayya: 'I have but one last wish to grant. Word it well.'"
+               "flavor": "Et le Djinni dit à Rayya: 'J'ai un dernier souhait à accorder. Choisissez bien vos mots.'"
             },
             "clay_wall_lamp_recipe": {
                "description": "Sa flamme donne une lumière chaude la nuit.",
                "recipe_name": "Lampe à huile murale d'argile",
-               "flavor": "'Close round us guard the spirits of night! As they dance and sway, free you'll be to dream the dark away.'"
+               "flavor": "'Encerclez nous esprits et gardiens de la nuit ! Comme eux danser et balancer vous, et vos rêves seront libérés de l'obscurité.'"
             },
             "garden_gnome_recipe": {
                "description": "Inspiré par les esprits mythiques de la forêt.",
                "recipe_name": "Petit gardien des jardins",
                "flavor": "Conception par The_M, Grand Maître Artisan."
             },
-            "furniture_name": "Furniture and Decoration",
+            "furniture_name": "Fourniture et décoration",
             "decoration_name": "Décorations",
             "utility_name": "Utilitaire",
             "potter_workbench_recipe": {
