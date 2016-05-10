@@ -1952,28 +1952,28 @@
                                     },
                                     "ogo_poem_4": {
                                        "bulletin_message": {
-                                          "000": "The wink of the gem in the monkey's paw, the rebirth of the star the Gods foresaw"
+                                          "000": "La brillance de la gemme dans la patte du singe prévoyait la renaissance de l'étoile des dieux"
                                        },
                                        "bulletin_title": "Les considérations d'Erdene",
                                        "dialog_title": "Erdene, scout de la Kiln Rouge"
                                     },
                                     "erdene_discusses": {
                                        "bulletin_message": {
-                                          "000": "To the great, come the challenges of the great. Power seeks power. To defeat power... is to invite the attention of more."
+                                          "000": "La grandeur appelle de grand défis. La puissance cherche la puissance. Pour vaincre la puissance... il faut attirer le plus d'attention."
                                        },
                                        "bulletin_title": "Les considérations d'Erdene",
                                        "dialog_title": "Erdene, scout de la Kiln Rouge",
                                        "choice_000": "Encore plus ?",
-                                       "choice_001": "Nous pouvons les prendres!"
+                                       "choice_001": "Nous pouvons les prendres !"
                                     },
                                     "ogo_poem_5": {
                                        "bulletin_message": {
-                                          "000": "Who can say? My people believe... well. It does not matter now. The cycles of the gods are not for the everyday considerations of men, lizardkin, monkey's folk or otherwise. Look to your tomorrow, little town, and prosper."
+                                          "000": "Qui peut dire ? Mes gens croient... bien. Cela n'a plus d'importance maintenant. Le cycle des dieux n'a quotidiennement pas de considération pour les hommes, les lézards, les singes ou autre. Regardez vers l'avenir, une petite ville, et prospère."
                                        },
                                        "bulletin_title": "Les considérations d'Erdene",
                                        "dialog_title": "Erdene, scout de la Kiln Rouge",
-                                       "choice_000": "That's not helpful",
-                                       "choice_001": "Thanks, I guess?"
+                                       "choice_000": "Ce n'est pas utile",
+                                       "choice_001": "Merci, je suppose ?"
                                     },
                                     "ogo_poem": {
                                        "bulletin_message": {
@@ -1992,11 +1992,11 @@
                                  "dialog_nodes": {
                                     "simple_message": {
                                        "bulletin_message": {
-                                          "000": "Music remind Mountain of warm, safe place. Of food and fire. Me give you this to say thank you."
+                                          "000": "La musique rappel que la montagne est un endroit chaud, et sûr. De la nourriture et du feu. Moi vous donnez ceci pour vous remerciez."
                                        },
-                                       "bulletin_title": "Mountain leaves you a gift",
-                                       "dialog_title": "Mountain, the Ogre",
-                                       "choice_000": "Good Luck!"
+                                       "bulletin_title": "La montagne vous laisse un cadeau",
+                                       "dialog_title": "Montagne l'Ogre",
+                                       "choice_000": "Bonne chance !"
                                     }
                                  }
                               }
@@ -2006,10 +2006,10 @@
                                  "dialog_nodes": {
                                     "mountain_notices": {
                                        "bulletin_message": {
-                                          "000": "Ogo can you not hear the chimes? Like old memory! Me no want to fight anymore."
+                                          "000": "Ogo ne pourra plus entendre les carillons ? Comme un ancien souvenir ! Je ne veux plus me battre."
                                        },
-                                       "bulletin_title": "Mountain the Ogre lifts his head to listen",
-                                       "dialog_title": "Mountain the Ogre",
+                                       "bulletin_title": "Montagne l'Ogre lève la tête pour écouter",
+                                       "dialog_title": "Montagne l'Ogre",
                                        "choice_000": "Huh."
                                     },
                                     "mountain_notices_2": {
@@ -2022,11 +2022,11 @@
                                     },
                                     "mountain_notices_3": {
                                        "bulletin_message": {
-                                          "000": "OGO? YOU PEOPLE KILL OGO!!! SONG BE MEMORIAL FOR MOUNTAIN FRIEND!!!"
+                                          "000": "OGO ? VOUS TUEZ LES OGO !!! CHANSON EN MEMOIRE AU AMI DE MONTAGNE !!!"
                                        },
-                                       "bulletin_title": "Mountain beats his enormous chest",
-                                       "dialog_title": "Mountain the Ogre",
-                                       "choice_000": "Whoops. Attack!"
+                                       "bulletin_title": "Montagne bat son énorme poitrine",
+                                       "dialog_title": "Montagne l'Ogre",
+                                       "choice_000": "Whoops. Attaque !"
                                     }
                                  }
                               }
@@ -2036,16 +2036,16 @@
                                  "dialog_nodes": {
                                     "ogo_death_2": {
                                        "bulletin_message": {
-                                          "000": "Mountain! Fight... on...."
+                                          "000": "Montagne ! Combat... sur...."
                                        },
-                                       "bulletin_title": "Ogo Skullbonker falls to the ground",
+                                       "bulletin_title": "Ogo Skullbonker tombe au sol",
                                        "dialog_title": "Ogo Skullbonker"
                                     },
                                     "ogo_death_1": {
                                        "bulletin_message": {
-                                          "000": "What? Ogo Skullbonker, defeated? What soothsayer say? What Mountain say? What about Khan? What about... next cycle?"
+                                          "000": "Quoi ? Ogo Skullbonker, vaincu ? Que dit soothsayer ? Que dit Montagne ? Qu'en est-il de Khan? Qu'en est-il du... prochain cycle ?"
                                        },
-                                       "bulletin_title": "Ogo Skullbonker falls to the ground",
+                                       "bulletin_title": "Ogo Skullbonker tombe au sol",
                                        "dialog_title": "Ogo Skullbonker"
                                     }
                                  }
@@ -2056,49 +2056,49 @@
                                  "dialog_nodes": {
                                     "ogo_resists": {
                                        "bulletin_message": {
-                                          "000": "Mountain, ridiculous! This is war! For shinies! Forward!!!"
+                                          "000": "Montagne, ridicule ! C'est la guerre ! Pour shinies ! En avant !!!"
                                        },
-                                       "bulletin_title": "Ogo looks indignant",
+                                       "bulletin_title": "Ogo regarde indigné",
                                        "dialog_title": "Ogo Skullbonker"
                                     },
                                     "renewed_attack": {
                                        "bulletin_message": {
-                                          "000": "See Mountain? They refuse your offer of peace! Renewed attack!"
+                                          "000": "Regarde Montagne ? Ils refusent votre offre de paix ! Renouvelé l'attaque !"
                                        },
-                                       "bulletin_title": "Ogo raises his fist in triumph",
+                                       "bulletin_title": "Ogo lève le poing en triomphe",
                                        "dialog_title": "Ogo Skullbonker",
-                                       "choice_000": "Attack!!"
+                                       "choice_000": "A l'attaque !!"
                                     },
                                     "mountain_replies": {
                                        "bulletin_message": {
-                                          "000": "Ogo can you not hear the chimes? Like old memory! Me no want to fight anymore."
+                                          "000": "Ogo ne pourra plus entendre les carillons ? Comme un ancien souvenir ! Je ne veux plus me battre."
                                        },
-                                       "bulletin_title": "Mountain lifts his head to listen",
-                                       "dialog_title": "Mountain the Ogre"
+                                       "bulletin_title": "Montagne lève la tête pour écouter",
+                                       "dialog_title": "Montagne l'Ogre"
                                     },
                                     "ogo_relents": {
                                        "bulletin_message": {
-                                          "000": "Arghhh!!! But the shinies! Fine. Mountain my friend; me no go where he no go. Your town safe... for now. We return when Khan is well!"
+                                          "000": "Arghhh !!! Mais les shinies! Bien. Montagne mon ami; je ne peux pas aller où il ne va pas. Votre ville est sauvé... pour le moment. Quand Khan sera mieux, nous reviendrons !"
                                        },
-                                       "bulletin_title": "Ogo stomps his foot in frustration",
+                                       "bulletin_title": "Ogo piétine avec son pied dans la frustration",
                                        "dialog_title": "Ogo Skullbonker",
-                                       "choice_000": "See you later!"
+                                       "choice_000": "A plus tard !"
                                     },
                                     "ogo_notices": {
                                        "bulletin_message": {
-                                          "000": "Mountain, why you stop fighting?"
+                                          "000": "Montagne, pourquoi vous arretez le combat ?"
                                        },
-                                       "bulletin_title": "Ogo Skullbonker waves to get his ogre's attention",
+                                       "bulletin_title": "Ogo Skullbonker fait signe pour attirer l'attention de l'ogre",
                                        "dialog_title": "Ogo Skullbonker"
                                     },
                                     "mountain_asks": {
                                        "bulletin_message": {
-                                          "000": "No. Me no want to fight anymore. What about you, little people? If me no feel like fighting, what you do?"
+                                          "000": "Non. Je n'en peux plus de me battre. Qu'en pensez vous petite personne ? Si je ne me sens plus l'envi de combattre, que feriez-vous ?"
                                        },
-                                       "bulletin_title": "Mountain shakes his giant head",
-                                       "dialog_title": "Mountain the Ogre",
-                                       "choice_000": "No Way!",
-                                       "choice_001": "Let's be friends!"
+                                       "bulletin_title": "Mountain secoue sa tête géante",
+                                       "dialog_title": "Montagne l'Ogre",
+                                       "choice_000": "En aucune façon !",
+                                       "choice_001": "Soyons amis !"
                                     }
                                  }
                               }
@@ -2170,7 +2170,7 @@
                "ogo_army_raid": {
                   "mission": {
                      "sighted_bulletin": {
-                        "title": "Ogo's Army Approaches!"
+                        "title": "L'armée d'Ogo approche !"
                      }
                   }
                }
