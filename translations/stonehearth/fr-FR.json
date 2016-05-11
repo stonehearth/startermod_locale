@@ -8037,11 +8037,11 @@
             },
             "simple_quiver_recipe": {
                "recipe_name": "Carquois de flèches à pointes",
-               "description": "A quiver equippable by an archer. Stores freezing arrows that will slow enemies"
+               "description": "Un carquois equippable par un archer. Stoque des flèches gelée qui ralentiront les ennemis"
             },
             "fire_quiver_recipe": {
                "recipe_name": "Carquois de flèches à enflammer",
-               "description": "Gives an Archer access to fire arrows, which deal damage over time"
+               "description": "Les archers recoivent l'accès aux flèches enflammers, qui infligent des dégâts au fil du temps"
             },
             "cloth_padded_helmet_recipe": {
                "recipe_name": "Casque de tissu matelassé",
@@ -8117,12 +8117,12 @@
       "herbalist": {
          "herbalist_description": {
             "display_name": "Herboriste",
-            "description": "Heals units with crafted balms and bandages.",
-            "requirements": "Herbalist's Staff, crafted by the Carpenter",
+            "description": "Soigne les unités avec des baumes et bandages artinasaux.",
+            "requirements": "Baton d'herboriste, conçu par le charpentier",
             "workshop": {
                "name": "Labo. d'herboriste",
-               "description": "Allows the Herbalist to craft healing balms and bandages.",
-               "long_description": "Allows the Herbalist to craft healing balms and bandages."
+               "description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages.",
+               "long_description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages."
             },
             "level_1_data": {
                "perk_000_name": "Volonté amélioré",
