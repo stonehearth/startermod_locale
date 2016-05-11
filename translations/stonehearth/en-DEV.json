@@ -952,6 +952,7 @@
             "system": "System",
             "force_32_bit": "* Force 32-bit (Requires Restart)",
             "force_32_bit_note": "* Force 32-bit only if absolutely necessary. 64-bit is faster and supports larger towns.",
+            "collect_profile" : "Collect profile",
             "enable_lua_jit": "Use Lua JIT (Requires Restart)",
             "send_anon_data": "Send anonymous feedback to help improve Stonehearth!",
             "language_select": "Language",
