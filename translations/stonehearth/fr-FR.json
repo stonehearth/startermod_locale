@@ -7722,13 +7722,13 @@
                "flavor": "Tile cools inside and out"
             },
             "golden_clay_wall_planter_recipe": {
-               "description": "Brightens up a wall",
-               "recipe_name": "Golden Clay Wall Planter",
-               "flavor": "Where do the flowers come from? From the planter, of course! --Acolyte of Rayya's Mystery"
+               "description": "Illumine un mur",
+               "recipe_name": "Jardinière mural doré en argile",
+               "flavor": "D'où proviennent les fleurs ? Des pousses, bien sûr ! --Acolyte des mystères de Rayya"
             },
             "unfired_clay_vase_recipe": {
-               "description": "A simple vase made on the pottery wheel that is used for more complex recipes.",
-               "recipe_name": "Unfired Clay Vase"
+               "description": "Un simple vase fait sur la roue de la poterie, utilisé pour des recettes complexes.",
+               "recipe_name": "Vase en argile non cuit"
             },
             "clay_pile_recipe": {
                "recipe_name": "Tas d'argile",
@@ -7824,7 +7824,7 @@
             "requirements": "Couteau de trappeur, fabriqué par le tailleur de pierre.",
             "level_1_data": {
                "perk_000_name": "Gain de vitesse 10%",
-               "perk_000_description": "Long walks have increased the trapper's foot speed."
+               "perk_000_description": "De longues promenades ont augmenté la vitesse de marche du trappeur."
             },
             "level_3_data": {
                "perk_000_name": "Dépeçage efficace",
