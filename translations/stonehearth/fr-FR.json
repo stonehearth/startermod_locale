@@ -1054,6 +1054,7 @@
             "system": "Système",
             "force_32_bit": "* Forcer le mode 32-bit (redémarrage requis)",
             "force_32_bit_note": "* Forcer le mode 32-bit seulement si c'est absolument nécessaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
+            "collect_profile": "Récupérer le profil",
             "enable_lua_jit": "Utiliser Lua JIT (redémarrage requis)",
             "send_anon_data": "Envoyer des données anonymes pour améliorer Stonehearth !",
             "language_select": "Langue",
@@ -1508,7 +1509,7 @@
                            "bulletin_message": {
                               "000": "Par ordre de Ogo Cognecrâne, Goblin-Tout-Pour-Être-Chef, vous et toutes vos affaires sont maintenant le tribut de votre ville à La Grande Armée scintillante et à l'Empire Red Kiln !",
                               "001": "Je suis l'envoyé de Ogo Cognecrâne, dompteur de la montagne ! Ogo demande des choses de toutes sortes, vous compris, votre or aussi !",
-                              "002": "Mon Chef-parmi-les-Chefs, Ogo Cognecrâne, bientôt prendra l'Armée Scintillante et s'en ira de Red Kiln ! Vous êtes la prochaine de ses conquêtes. Vous devenez nous fermiers d'or !",
+                              "002": "Mon Chef-parmi-les-Chefs, Ogo Cognecrâne, bientôt prendra l'Armée Scintillante et commandera la Kiln Rouge ! Vous êtes les prochains d'une longue liste de conquêtes. Vous deviendrais nos esclaves dans nos mines d'or !",
                               "003": "Je suis la Bannière gobelinne de Ogo Cognecrâne, coureur de Montagne ! Mon maître vous demande tribut, sous la forme de tout ce que vous avez ! Vous donnez tout ! Ou vous payez !",
                               "004": "Je suis la Bannière gobelinne de Ogo Cognecrâne ! Lorsque vous avez vaincu les petits chefs, vous avez apporté l'œil de Ogo sur vous ! Et les yeux de Ogo savent tout! Vous lui donner son tribut, ou ses yeux verront votre fin !"
                            },
@@ -2099,6 +2100,66 @@
                                        "choice_000": "No Way!",
                                        "choice_001": "Let's be friends!"
                                     }
+                                 }
+                              }
+                           },
+                           "goblin_retribution_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "goblin_boss_notices": {
+                                       "bulletin_message": {
+                                          "000": "What? Human town dare display goblin honor token?! Retributioooooonnnn!!!!"
+                                       },
+                                       "bulletin_title": "Another Goblin Horn Sounds",
+                                       "dialog_title": "Goblin Bully"
+                                    }
+                                 }
+                              }
+                           },
+                           "goblin_retribution_raid": {
+                              "mission": {
+                                 "sighted_bulletin": {
+                                    "title": "Goblins come to reclaim their honor tokens!"
+                                 }
+                              }
+                           },
+                           "ogo_attacks_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "army_replies": {
+                                       "bulletin_message": {
+                                          "000": "Take all the things!!!!"
+                                       },
+                                       "bulletin_title": "The goblins raise their weapons",
+                                       "dialog_title": "Ogo's Bannerman"
+                                    },
+                                    "ogo_attacks": {
+                                       "bulletin_message": {
+                                          "000": "At last, we come to place of great shinies! Go forth, my minions! Go forth for Ogo Skullbonker's glory!"
+                                       },
+                                       "bulletin_title": "You Hear Goblin War Horns",
+                                       "dialog_title": "Ogo Skullbonker"
+                                    },
+                                    "mountain_replies": {
+                                       "bulletin_message": {
+                                          "000": "For Ogo! For Shinies!"
+                                       },
+                                       "bulletin_title": "Mountan roars is approval",
+                                       "dialog_title": "Mountain the Ogre"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  },
+                  "trigger": {
+                     "raidcamp": {
+                        "encounters": {
+                           "create_camp": {
+                              "loot_chest": {
+                                 "sheep": {
+                                    "display_name": "Bluebell the Sheep"
                                  }
                               }
                            }
@@ -3974,6 +4035,34 @@
          "square_cracked_wooden_buckler": {
             "display_name": "Bouclier carré et craquelé en bois",
             "description": "Attention à ses coins !"
+         },
+         "silver_mail": {
+            "display_name": "Côte de maille en argent",
+            "description": "La meilleur armure... pour l'instant.",
+            "silver_mail_iconic": {
+               "display_name": "Côte de maille en argent",
+               "description": "La meilleur armure... pour l'instant."
+            }
+         },
+         "silver_helmet": {
+            "display_name": "Casque en argent",
+            "description": "Quintessentiellement héroïque",
+            "silver_helmet_iconic": {
+               "display_name": "Casque en argent",
+               "description": "Quintessentiellement héroïque"
+            }
+         },
+         "cloth_padded_helmet": {
+            "display_name": "Casque de tissu matelassé",
+            "description": "Rembourrage supplémentaire pour votre caboche",
+            "cloth_padded_helmet_iconic": {
+               "display_name": "Casque de tissu matelassé",
+               "description": "Rembourrage supplémentaire pour votre caboche"
+            }
+         },
+         "bronze_helm": {
+            "display_name": "Casque en bronze",
+            "description": "Jolie et protecteur"
          }
       },
       "boulders": {
@@ -5591,7 +5680,7 @@
             "skull_trophy": {
                "skull_trophy_ghost": {
                   "display_name": "Signe honorifique Goblin",
-                  "description": "Signe de clan goblin en bois."
+                  "description": "Des gobelins pourrait vouloir récupérer ça à nouveau..."
                }
             },
             "wolf_cage": {
@@ -6310,6 +6399,14 @@
          "crude_wooden_club": {
             "display_name": "Massue de bois brut",
             "description": "Branche pointue avec un manche enveloppée d'un bout de tissu"
+         },
+         "ogos_bone_mace": {
+            "display_name": "The Bonker",
+            "description": "Conçu par Ogo Skullbonker",
+            "ogos_bone_mace_iconic": {
+               "display_name": "The Bonker",
+               "description": "Ex-propriété d'Ogo Skullbonker"
+            }
          }
       },
       "consumables": {
@@ -6564,7 +6661,7 @@
             "silver_ingot_recipe": {
                "description": "Une barre d'argent pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot d'argent",
-               "flavor": "Une paire de chaussures en argent depuis qu'a commencé la guerre Phoenix sur la monnaie."
+               "flavor": "Une paire de chaussures en argent depuis qu'a commencé la guerre Phénix sur la monnaie."
             },
             "steel_ingot_recipe": {
                "description": "Une barre d'acier pur. Un matériau adapté à la fabrication d'objets artisanaux.",
@@ -6613,7 +6710,8 @@
             },
             "steel_helmet_recipe": {
                "description": "Protection supplémentaire pour votre caboche !",
-               "recipe_name": "Casque en acier"
+               "recipe_name": "Casque en acier",
+               "flavor": "Longtemps considéré comme la quintessence de la chapellerie; doublé comme une bonne marmite - Roke Tastybakes II"
             },
             "bronze_circlet_recipe": {
                "description": "Protection pour votre tête !",
@@ -6665,6 +6763,21 @@
                "description": "Inspiré par le scout kobold",
                "recipe_name": "Gong de scout",
                "flavor": "Même les scouts sont ornés d'or"
+            },
+            "silver_mail_recipe": {
+               "recipe_name": "Côte de maille en argent",
+               "description": "La meilleur armure... pour l'instant.",
+               "flavor": "Cid aimait la couleur des fraises"
+            },
+            "silver_helmet_recipe": {
+               "recipe_name": "Casque en argent",
+               "description": "Quintessentiellement héroïque",
+               "flavor": "Inspiré par les plumes du Phénix"
+            },
+            "bronze_helm_recipe": {
+               "recipe_name": "Casque en bronze",
+               "description": "Jolie et protecteur",
+               "flavor": "Les travailleurs de fer ont insistés qu'ils avaient perfectionnés l'art, mais les travailleurs de bronze ont sontenus que le leur était plus beau."
             }
          }
       },
@@ -7929,6 +8042,11 @@
             "fire_quiver_recipe": {
                "recipe_name": "Carquois de flèches à enflammer",
                "description": "Gives an Archer access to fire arrows, which deal damage over time"
+            },
+            "cloth_padded_helmet_recipe": {
+               "recipe_name": " "Casque de tissu matelassé",
+               "description": "Rembourrage supplémentaire pour votre caboche",
+               "flavor": "Étaient-elles des ailles de Phénix, ou des ailles de serpent ?"
             }
          },
          "weaver_loom": {
