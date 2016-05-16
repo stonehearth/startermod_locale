@@ -8044,7 +8044,7 @@
                "description": "Gives an Archer access to fire arrows, which deal damage over time"
             },
             "cloth_padded_helmet_recipe": {
-               "recipe_name": " "Casque de tissu matelassé",
+               "recipe_name": "Casque de tissu matelassé",
                "description": "Rembourrage supplémentaire pour votre caboche",
                "flavor": "Étaient-elles des ailles de Phénix, ou des ailles de serpent ?"
             }
