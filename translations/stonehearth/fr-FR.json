@@ -1952,7 +1952,7 @@
                                     },
                                     "ogo_poem_4": {
                                        "bulletin_message": {
-                                          "000": "La brillance de la gemme dans la patte du singe prévoyait la renaissance de l'étoile des dieux"
+                                          "000": "L'éclat de la gemme dans la patte du singe, présagé la renaissance de l'étoile Divine"
                                        },
                                        "bulletin_title": "Les considérations d'Erdene",
                                        "dialog_title": "Erdene, scout de la Kiln Rouge"
@@ -1992,10 +1992,10 @@
                                  "dialog_nodes": {
                                     "simple_message": {
                                        "bulletin_message": {
-                                          "000": "La musique rappel que la montagne est un endroit chaud, et sûr. De la nourriture et du feu. Moi vous donnez ceci pour vous remerciez."
+                                          "000": "La musique rappel à Montagne un endroit chaud, et sûr. De la nourriture et du feu. Moi vous donnez ceci pour vous remerciez."
                                        },
-                                       "bulletin_title": "La montagne vous laisse un cadeau",
-                                       "dialog_title": "Montagne l'Ogre",
+                                       "bulletin_title": "Montagne vous laisse un cadeau",
+                                       "dialog_title": "Montagne, l'ogre",
                                        "choice_000": "Bonne chance !"
                                     }
                                  }
@@ -2008,8 +2008,8 @@
                                        "bulletin_message": {
                                           "000": "Ogo ne pourra plus entendre les carillons ? Comme un ancien souvenir ! Je ne veux plus me battre."
                                        },
-                                       "bulletin_title": "Montagne l'Ogre lève la tête pour écouter",
-                                       "dialog_title": "Montagne l'Ogre",
+                                       "bulletin_title": "Montagne l'ogre lève la tête pour écouter",
+                                       "dialog_title": "Montagne l'ogre",
                                        "choice_000": "Huh."
                                     },
                                     "mountain_notices_2": {
@@ -2017,15 +2017,15 @@
                                           "000": "Ogo?"
                                        },
                                        "bulletin_title": "Montagne regarde autour de lui avec horreur",
-                                       "dialog_title": "Montagne l'Ogre",
+                                       "dialog_title": "Montagne l'ogre",
                                        "choice_000": "Uh Oh."
                                     },
                                     "mountain_notices_3": {
                                        "bulletin_message": {
-                                          "000": "OGO ? VOUS TUEZ LES OGO !!! CHANSON EN MEMOIRE AU AMI DE MONTAGNE !!!"
+                                          "000": "OGO ? VOUS TUEZ OGO !!! CHANSON EN MEMOIRE D'AMI DE MONTAGNE !!!"
                                        },
                                        "bulletin_title": "Montagne bat son énorme poitrine",
-                                       "dialog_title": "Montagne l'Ogre",
+                                       "dialog_title": "Montagne l'ogre",
                                        "choice_000": "Whoops. Attaque !"
                                     }
                                  }
@@ -2043,7 +2043,7 @@
                                     },
                                     "ogo_death_1": {
                                        "bulletin_message": {
-                                          "000": "Quoi ? Ogo Skullbonker, vaincu ? Que dit soothsayer ? Que dit Montagne ? Qu'en est-il de Khan? Qu'en est-il du... prochain cycle ?"
+                                          "000": "Quoi ? Ogo Skullbonker, vaincu ? Que dit le devin ? Que dit Montagne ? Qu'en est-il de Khan? Qu'en est-il du... prochain cycle ?"
                                        },
                                        "bulletin_title": "Ogo Skullbonker tombe au sol",
                                        "dialog_title": "Ogo Skullbonker"
@@ -7723,11 +7723,11 @@
             },
             "golden_clay_wall_planter_recipe": {
                "description": "Illumine un mur",
-               "recipe_name": "Jardinière mural doré en argile",
+               "recipe_name": "Jardinière mural dorée en argile",
                "flavor": "D'où proviennent les fleurs ? Des pousses, bien sûr ! --Acolyte des mystères de Rayya"
             },
             "unfired_clay_vase_recipe": {
-               "description": "Un simple vase fait sur la roue de la poterie, utilisé pour des recettes complexes.",
+               "description": "Un simple vase fait sur une roue de potier, utilisé pour des recettes plus complexes.",
                "recipe_name": "Vase en argile non cuit"
             },
             "clay_pile_recipe": {
@@ -7823,18 +7823,18 @@
             "description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fournitures.",
             "requirements": "Couteau de trappeur, fabriqué par le tailleur de pierre.",
             "level_1_data": {
-               "perk_000_name": "Gain de vitesse 10%",
-               "perk_000_description": "De longues promenades ont augmenté la vitesse de marche du trappeur."
+               "perk_000_name": "Gain de vitesse",
+               "perk_000_description": "De longues promenades ont augmentées la vitesse de marche du trappeur."
             },
             "level_3_data": {
                "perk_000_name": "Dépeçage efficace",
-               "perk_000_description": "Une longue pratique permet au trappeur de récupérer des ressources de chaque animal."
+               "perk_000_description": "Une longue pratique permet au trappeur de récupérer plus de ressource de chaque animal."
             },
             "level_2_data": {
                "perk_000_name": "Charmer des familiers",
                "perk_001_name": "Opportunité de travail",
                "perk_000_description": "De temps à autre, le trappeur choisira d'apprivoiser un animal particulièrement beau.",
-               "perk_001_description": "Le trappeur est maintenant qualifié pour un travail plus avancé.<br>Voir l'arbre de promotion pour plus de détails"
+               "perk_001_description": "Le trappeur est maintenant qualifié pour les professions avancées. Allez dans l'écran de sélection de profession pour plus de détail."
             },
             "level_6_data": {
                "perk_000_name": "Le coup le-plus-mortel (à venir)",
