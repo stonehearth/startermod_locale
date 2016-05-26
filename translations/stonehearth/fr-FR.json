@@ -2366,9 +2366,9 @@
                                  "dialog_nodes": {
                                     "collection_due": {
                                        "bulletin_message": {
-                                          "000": "Will you not release the children of the forest? They do not belong in your crates and piles of trinkets. Your compliance will be rewarded.",
+                                          "000": "Will you not return the children of the forest? They do not belong in your crates and piles of trinkets. Your compliance will be rewarded.",
                                           "001": "Hundreds of great oaks and junipers have been cut down to satiate the greed of humans. Our patience wears thin. I ask of you, return them to the homeland.",
-                                          "002": "Return our logs and help restore the natural balance of the great woodlands. I cannot guarantee your safetey if you refuse.",
+                                          "002": "Return our logs and help restore the natural balance of the great woodlands. I cannot guarantee your safety if you refuse.",
                                           "003": "Our wilderness has been sacrificed for your lifestyle of excess. We will give you a chance to return our logs. I suggest you heed my warning.."
                                        },
                                        "bulletin_title": "The Ent has a request.",
@@ -2376,13 +2376,13 @@
                                     },
                                     "collection_failed": {
                                        "bulletin_message": {
-                                          "000": "I am deeply disappointed.. I would suggest you prepare yourselves. The minions of the forest speak of an invasion."
+                                          "000": "I am deeply disappointed... I would suggest you prepare yourselves. The minions of the forest speak of an invasion."
                                        },
                                        "bulletin_title": "The Ent furrows his brow"
                                     },
                                     "collection_success": {
                                        "bulletin_message": {
-                                          "000": "Thank you for your cooperation.. In return, I will give you [str(i18n_data.reward_gold_amount)] gold coins and [str(i18n_data.reward_item_count)] [str(i18n_data.reward_item_name)]."
+                                          "000": "Thank you for your cooperation. In return, we have prepared a gift."
                                        },
                                        "bulletin_title": "The Ent nods peacefully",
                                        "dialog_title": "Ent"
@@ -2394,7 +2394,35 @@
                                        },
                                        "bulletin_title": "A large tree-like figure approaches.",
                                        "dialog_title": "Ent"
+                                    },
+                                    "revenge": {
+                                       "bulletin_message": {
+                                          "000": "We will be taking these back."
+                                       },
+                                       "bulletin_title": "A horde of entlings escape with your logs!",
+                                       "dialog_title": "Ent"
                                     }
+                                 }
+                              }
+                           },
+                           "ent_donation_dialog": {
+                              "donation_dialog_info": {
+                                 "dialog_nodes": {
+                                    "simple_message": {
+                                       "bulletin_message": {
+                                          "000": "Here, take this as a token of our gratitude."
+                                       },
+                                       "bulletin_title": "Entlings carrying loot scurry toward you",
+                                       "dialog_title": "Ent",
+                                       "choice_000": "Thanks!"
+                                    }
+                                 }
+                              }
+                           },
+                           "ent_wrath": {
+                              "mission": {
+                                 "sighted_bulletin": {
+                                    "title": "An angry entling army approaches!"
                                  }
                               }
                            }
@@ -2429,7 +2457,7 @@
                                     },
                                     "msg4": {
                                        "bulletin_message": {
-                                          "00": "The age of this Khan is over, but new light seeps from the horizon. We do as Cid bade and respect the mark of the Four Colors. Place a Scout Gong in your territory to mark your readiness for battle."
+                                          "00": "The age of this Khan is over, but new light seeps from the horizon. We do as Cid bade and respect the mark of the Four Colors. Place a Scout Gong, smelted by your metal worker, in your territory to mark your readiness for battle."
                                        }
                                     },
                                     "msg3": {
@@ -4599,22 +4627,27 @@
             "description": "La fibre de cette plante peut-être filée en fil",
             "growth_stage": {
                "004": {
-                  "name": "Fil-de-soie mature"
+                  "name": "Fil-de-soie mature",
+                  "description": "Prêt pour le tissage !"
                },
                "001": {
-                  "name": "Pousse de fil-de-soie"
+                  "name": "Pousse de fil-de-soie",
+                  "description": "Petite pousse !"
                },
                "000": {
-                  "name": "Semis de fil-de-soie"
+                  "name": "Semis de fil-de-soie",
+                  "description": "Encore un long chemin à croître."
                },
                "019": {
                   "name": "Fil-de-soie pourri"
                },
                "003": {
-                  "name": "Fil-de-soie immature"
+                  "name": "Fil-de-soie immature",
+                  "description": "Des pétales commencent à émerger."
                },
                "002": {
-                  "name": "Fil-de-soie trapu"
+                  "name": "Fil-de-soie trapu",
+                  "description": "Regardez ces follicules!"
                }
             }
          },
@@ -5557,7 +5590,8 @@
       "loot": {
          "gold": {
             "display_name": "Coffre de pièces d'or",
-            "description": "C'est [str(self.item.stacks)] pièces!"
+            "description": "C'est [str(self.item.stacks)] pièces!",
+            "label": "or"
          }
       },
       "monsters": {
@@ -6439,6 +6473,12 @@
          "courage_tonic": {
             "display_name": "Potion de courage",
             "description": "Augmente le courage temporairement"
+         }
+      },
+      "outfits": {
+         "trader_outfit": {
+            "display_name": "Un marchand de tenue",
+            "description": "Vêtements de choix pour les marchands"
          }
       }
    },
