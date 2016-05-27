@@ -2360,9 +2360,9 @@
                                  "dialog_nodes": {
                                     "collection_due": {
                                        "bulletin_message": {
-                                          "000": "Will you not release the children of the forest? They do not belong in your crates and piles of trinkets. Your compliance will be rewarded.",
+                                          "000": "Will you not return the children of the forest? They do not belong in your crates and piles of trinkets. Your compliance will be rewarded.",
                                           "001": "Hundreds of great oaks and junipers have been cut down to satiate the greed of humans. Our patience wears thin. I ask of you, return them to the homeland.",
-                                          "002": "Return our logs and help restore the natural balance of the great woodlands. I cannot guarantee your safetey if you refuse.",
+                                          "002": "Return our logs and help restore the natural balance of the great woodlands. I cannot guarantee your safety if you refuse.",
                                           "003": "Our wilderness has been sacrificed for your lifestyle of excess. We will give you a chance to return our logs. I suggest you heed my warning.."
                                        },
                                        "bulletin_title": "The Ent has a request.",
@@ -2370,13 +2370,13 @@
                                     },
                                     "collection_failed": {
                                        "bulletin_message": {
-                                          "000": "I am deeply disappointed.. I would suggest you prepare yourselves. The minions of the forest speak of an invasion."
+                                          "000": "I am deeply disappointed... I would suggest you prepare yourselves. The minions of the forest speak of an invasion."
                                        },
                                        "bulletin_title": "The Ent furrows his brow"
                                     },
                                     "collection_success": {
                                        "bulletin_message": {
-                                          "000": "Thank you for your cooperation.. In return, I will give you [str(i18n_data.reward_gold_amount)] gold coins and [str(i18n_data.reward_item_count)] [str(i18n_data.reward_item_name)]."
+                                          "000": "Thank you for your cooperation. In return, we have prepared a gift."
                                        },
                                        "bulletin_title": "The Ent nods peacefully",
                                        "dialog_title": "Ent"
@@ -2388,7 +2388,35 @@
                                        },
                                        "bulletin_title": "A large tree-like figure approaches.",
                                        "dialog_title": "Ent"
+                                    },
+                                    "revenge": {
+                                       "bulletin_message": {
+                                          "000": "We will be taking these back."
+                                       },
+                                       "bulletin_title": "A horde of entlings escape with your logs!",
+                                       "dialog_title": "Ent"
                                     }
+                                 }
+                              }
+                           },
+                           "ent_donation_dialog": {
+                              "donation_dialog_info": {
+                                 "dialog_nodes": {
+                                    "simple_message": {
+                                       "bulletin_message": {
+                                          "000": "Here, take this as a token of our gratitude."
+                                       },
+                                       "bulletin_title": "Entlings carrying loot scurry toward you",
+                                       "dialog_title": "Ent",
+                                       "choice_000": "Thanks!"
+                                    }
+                                 }
+                              }
+                           },
+                           "ent_wrath": {
+                              "mission": {
+                                 "sighted_bulletin": {
+                                    "title": "An angry entling army approaches!"
                                  }
                               }
                            }
@@ -2423,7 +2451,7 @@
                                     },
                                     "msg4": {
                                        "bulletin_message": {
-                                          "00": "The age of this Khan is over, but new light seeps from the horizon. We do as Cid bade and respect the mark of the Four Colors. Place a Scout Gong in your territory to mark your readiness for battle."
+                                          "00": "The age of this Khan is over, but new light seeps from the horizon. We do as Cid bade and respect the mark of the Four Colors. Place a Scout Gong, smelted by your metal worker, in your territory to mark your readiness for battle."
                                        }
                                     },
                                     "msg3": {
@@ -4527,22 +4555,27 @@
             "description": "This plant's fiber can be spun into thread",
             "growth_stage": {
                "004": {
-                  "name": "Mature silkweed"
+                  "name": "Mature silkweed",
+                  "description": "Ready for weaving!"
                },
                "001": {
-                  "name": "Silkweed sprout"
+                  "name": "Silkweed sprout",
+                  "description": "Sprout, little one!"
                },
                "000": {
-                  "name": "Silkweed seedling"
+                  "name": "Silkweed seedling",
+                  "description": "Still a long way to grow."
                },
                "019": {
                   "name": "Rotten silkweed"
                },
                "003": {
-                  "name": "Immature silkweed"
+                  "name": "Immature silkweed",
+                  "description": "Flossy hairs are beginning to emerge"
                },
                "002": {
-                  "name": "Stubby silkweed"
+                  "name": "Stubby silkweed",
+                  "description": "Look at those follicles!"
                }
             }
          },
@@ -5551,7 +5584,8 @@
       "loot": {
          "gold": {
             "display_name": "Chest of Gold Coins",
-            "description": "It's [str(self.item.stacks)] coins!"
+            "description": "It's [str(self.item.stacks)] coins!",
+            "label": "gold"
          }
       },
       "monsters": {
@@ -6433,6 +6467,12 @@
          "courage_tonic": {
             "display_name": "Courage Tonic",
             "description": "Temporarily buffs Courage"
+         }
+      },
+      "outfits": {
+         "trader_outfit": {
+            "display_name": "Trader Outfit",
+            "description": "Clothing of choice for traders"
          }
       }
    },
