@@ -198,7 +198,8 @@
          },
          "unit_frame": {
             "show_character_sheet": "Show character sheet",
-            "focus_camera": "Focus camera on this unit"
+            "focus_camera": "Focus camera on this unit",
+            "num_uses": "Uses"
          },
          "citizens": {
             "title": "Citizens",
