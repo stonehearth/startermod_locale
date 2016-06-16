@@ -14,7 +14,7 @@
             "attack_melee_adjacent": "attaque [name(data.target)]",
             "heal_ranged_in_sight": "soigne [name(data.target)]",
             "wait_at_safety_point": "attend une bannière de ralliement",
-            "weaponize": "fait le guet",
+            "repair_entity": "réparation [name(data.target)]",
             "resting_by_fire": "se repose prêt du feu",
             "claiming_animal": "apprivoise un animal",
             "looking_for_animals": "cherche des animaux",
@@ -92,6 +92,12 @@
             "stamper_top_text": "CLIQUER POUR",
             "stamper_bottom_text": "APPROUVER",
             "requires": "Prérequis"
+         },
+         "people_picker": {
+            "title": "Choisissez un Hearthling",
+            "select_person": "Sélectionner",
+            "ownership_current_owner_tooltip": "Propriétaire actuel",
+            "ownership_owns_another_tooltip": "Possède déjà un objet similaire"
          },
          "build_workshop": {
             "title": "Construire l'atelier",
@@ -208,16 +214,16 @@
             "show_character_sheet": "Afficher la feuille de personnage",
             "focus_camera": "Centrer la caméra sur cette unité",
             "attack_target": {
-               "display_name": "Attaquer une cible",
-               "description": "Attaque un ennemi spécifique à l'exclusion de tous les autres, ou attaque n'importe quoi près de l'emplacement, et entre."
+               "display_name": "Attaquer en mouvement",
+               "description": "Attaquer une cible ou un emplacement spécifique."
             },
             "defend_location": {
                "display_name": "Défendre un lieu",
-               "description": "Courir vers et rester à cette position, et défendez là des ennemis."
+               "description": "Défendre un emplacement des ennemis."
             },
             "move_unit": {
                "display_name": "Se déplacer",
-               "description": "Se déplacer à un endroit, en ignorant toutes les menaces."
+               "description": "Déplacer vers un endroit sans attaquer."
             },
             "manage_party": {
                "display_name": "Modifier les groupes",
@@ -232,7 +238,8 @@
             "no_requirements": "Aucun !",
             "equipment_description": "Portable par : [str(class_list)]",
             "level_description": "de niveau [str(level_req)]",
-            "or": " ou "
+            "or": " ou ",
+            "num_uses": "Utiliser"
          },
          "citizens": {
             "title": "Hearthlings",
@@ -315,11 +322,14 @@
             "unknown_name": "Inconnu",
             "item_categories": {
                "food": "Nourriture",
+               "cooking_ingredient": "Cuisiner des ingrédients",
                "resources": "Ressources",
                "furniture": "Mobilier",
                "armor": "Armure",
-               "decoration": "Décoration",
+               "decoration": "Décorations",
                "construction": "Construction",
+               "door": "Portes",
+               "window": "Fenêtres",
                "plants": "Plantes",
                "weapons": "Armes",
                "tools": "Outils",
@@ -327,8 +337,10 @@
                "refined": "Raffiné",
                "uncategorized": "Non classé",
                "workshops": "Ateliers",
-               "consumable": "Consommable",
+               "consumable": "Consommables",
                "storage": "Stockage",
+               "defense": "Défense",
+               "trophy": "Trophées",
                "none": "Aucune"
             },
             "tooltip_combat_base_damage": "Atq :",
@@ -443,6 +455,10 @@
                      "tip_title": "Cliquez pour placer cet objet",
                      "tip_description": "Faire une rotation avec les touches , et ."
                   },
+                  "cannot_place_item": {
+                     "tip_title": "Vous ne pouvez pas placer cet article",
+                     "tip_description": "Limit placement de l'article [str(num)] / [str(max)] atteinte [str(tag)]."
+                  },
                   "build_ladder": {
                      "display_name": "Construire une échelle",
                      "description": "Construisez une échelle pour atteindre<br>les endroits hors de portée.",
@@ -526,6 +542,11 @@
                      "display_name": "Herboriste",
                      "description": "Fait des objets curatifs à partir d'herbes.",
                      "required_job_text": "Nécessite un herboriste"
+                  },
+                  "engineer": {
+                     "display_name": "Menu des plans de construction d'ingénieur",
+                     "description": "Faire des engins et des armes défensives",
+                     "required_job_text": "Nécessite un ingénieur"
                   }
                }
             },
@@ -554,7 +575,7 @@
                "paused": "en pause"
             },
             "warnings": {
-               "town_inventory_full": "Inventaire de la ville plein"
+               "town_inventory_full": "Objets de la ville plein"
             }
          },
          "bulletin": {
@@ -569,6 +590,15 @@
                "buy_tab": "Acheter",
                "sell_tab": "Vendre",
                "not_enough_gold_tooltip": "Pas assez d'or !"
+            },
+            "city_dialog": {
+               "proclamation": "PROCLAMATION DE"
+            },
+            "city_tier_dialog": {
+               "build_and_place": "Construire & Placez",
+               "attain_net_worth": "Valeur net atteint:",
+               "check_requirements": "Vérifier les exigences",
+               "summon_herald": "Invoquer un héraut !"
             },
             "quest_bulletin": {
                "title": "Nouveau message"
@@ -593,8 +623,8 @@
                "cancel": "J'ai changé d'avis"
             },
             "inventory_full": {
-               "title": "Inventaire de la ville plein",
-               "message": "L'inventaire de votre ville est plein ! Les hearthlings détestent les villes encombrés et ne vont plus collecter de ressource. Vendez ou détruisez les objets à l'aide de l'outil de suppression."
+               "title": "Objets de la ville plein",
+               "message": "La capacité d'objet de votre ville est au maximum ! Les hearthlings détestent les villes encombrés et ne vont plus collecter de ressource. Les conteneurs de stockage comptent comme des objets et n'augmente pas votre limite d'objet par ville. Vendez ou détruisez les objets à l'aide de l'outil de suppression."
             }
          },
          "build_mode": {
@@ -647,12 +677,15 @@
             "overview": {
                "title": "Conception - [str(building_name)]",
                "building_name": "Désignation de la construction",
-               "building_cost": "Coût de fabrication",
+               "building_cost": "Matériaux nécessaires",
                "start_building": "Construire !",
                "pause_building": "Suspendre la construction",
+               "continue_building": "Continuer la construction",
                "save_building_template": "Sauvegarder",
                "finished_editing": "Terminer l'édition",
-               "start_editing": "Éditer"
+               "start_editing": "Éditer",
+               "build_complete_title": "Félicitations !",
+               "build_complete_description": "ce bâtiment est terminé"
             },
             "roof_shape": {
                "title": "Pente, direction et taille",
@@ -677,7 +710,15 @@
                },
                "set_template_name_title": "Nom du plan",
                "template_default_name": "Mon dernier plan",
-               "set_template_name_prompt": "Saisissez un nom pour ce plan"
+               "set_template_name_prompt": "Saisissez un nom pour ce plan",
+               "remove_template_confirm": {
+                  "title": "Supprimer le modèle",
+                  "message": "Êtes-vous sûr de vouloir supprimer ce modèle de bâtiment ?",
+                  "keep_template": "Gardez ce modèle",
+                  "remove_template": "Supprime-le !"
+               },
+               "remove_template_button": "Supprimer le modèle",
+               "build_template_button": "Construire"
             },
             "place_item": {
                "title": "Placer un objet"
@@ -689,6 +730,20 @@
                   "stone_resource": "Mur en pierre",
                   "clay_resource": "Mur en argile",
                   "clay_brick_resource": "Mur en brique d'argile"
+               },
+               "foundation": {
+                  "material": "Matériel de fondation",
+                  "wood_resource": "Fondation en bois",
+                  "stone_resource": "Fondation en pierre",
+                  "clay_resource": "Fondation en argile",
+                  "clay_brick_resource": "Fondation en brique d'argile"
+               },
+               "slab": {
+                  "material": "Material de dalles",
+                  "wood_resource": "Dalles en bois",
+                  "stone_resource": "Dalles en pierre",
+                  "clay_resource": "Dalles en argile",
+                  "clay_brick_resource": "Dalles en brique d'argile"
                },
                "floor": {
                   "material": "Matériaux pour sols",
@@ -717,23 +772,11 @@
                   "stone_resource": "Route en pierre",
                   "clay_resource": "Route en argile",
                   "clay_brick_resource": "Route en brique d'argile"
-               },
-               "doors": {
-                  "material": "Matériaux pour portes",
-                  "wood_resource": "Porte en bois",
-                  "stone_resource": "Porte en pierre",
-                  "clay_resource": "Porte en argile"
-               },
-               "windows": {
-                  "material": "Matériaux pour fenêtres",
-                  "wood_resource": "Fenêtre en bois",
-                  "stone_resource": "Fenêtre en pierre",
-                  "clay_resource": "Fenêtre en argile"
                }
             },
             "start_building_confirm": {
                "title": "Commencer la construction ?",
-               "message": "Une fois les travaux commencé, le plan ne peux plus être modifié. Êtes-vous sûr de vouloir construire tout de suite ?",
+               "message": "Une fois les travaux commencé, le plan ne peux plus être édité ou supprimé ! Êtes-vous sûr de vouloir construire maintenant ?",
                "yes": "Oui, commencer la construction !",
                "no": "Pas encore"
             },
@@ -786,34 +829,35 @@
                   "gear": "Armes et armures",
                   "food_and_drink": "Nourriture et boisson",
                   "wealth": "Richesse",
-                  "tooltip_tools": "Outils",
-                  "tooltip_wood": "bois",
-                  "tooltip_stone": "pierre",
-                  "tooltip_clay": "argile",
-                  "tooltip_ore": "minerais",
-                  "tooltip_animal_part": "ressources animales",
+                  "tooltip_tools": "Talismans",
+                  "tooltip_wood": "Bois",
+                  "tooltip_stone": "Pierre",
+                  "tooltip_clay": "Argile",
+                  "tooltip_ore": "Minerais",
+                  "tooltip_animal_part": "Fourrure et peaux d'animaux",
                   "tooltip_resource_pile": "piles de ressources",
-                  "tooltip_plant": "plantes",
-                  "tooltip_portal": "portes et fenêtres",
-                  "tooltip_furniture": "mobilier",
-                  "tooltip_defense": "défenses",
+                  "tooltip_plant": "Plantes",
+                  "tooltip_portal": "Portes et fenêtres",
+                  "tooltip_furniture": "Mobilier",
+                  "tooltip_defense": "Défenses",
                   "tooltip_light": "Torches et éclairages",
-                  "tooltip_decoration": "décorations",
-                  "tooltip_refined_cloth": "fils et habits",
+                  "tooltip_decoration": "Décorations",
+                  "tooltip_refined_weaver": "Fil, tissu et cuir",
+                  "tooltip_refined_craftables": "Craftables raffinés",
                   "tooltip_refined_animal_part": "biens fabriqués à partir d'animaux",
-                  "tooltip_refined_ore": "barres de métal",
-                  "tooltip_melee_weapon": "armes de mêlée",
+                  "tooltip_refined_ore": "Barres de métal",
+                  "tooltip_melee_weapon": "Armes de mêlée",
                   "tooltip_ranged_weapon": "armes à distance",
-                  "tooltip_light_armor": "armure légère",
+                  "tooltip_light_armor": "Armure et autre équipement",
                   "tooltip_heavy_armor": "armure lourde",
                   "tooltip_exotic_gear": "équipement exotique",
                   "tooltip_drink": "boissons savoureuses",
-                  "tooltip_gold": "or",
-                  "tooltip_gem": "gemmes et trophées",
-                  "tooltip_food_containers": "fruits et légumes en paniers",
-                  "tooltip_prepared_food": "plats cuisinés",
-                  "tooltip_ingredients": "matières premières et aliments pour animaux",
-                  "tooltip_healing_items": "objets curatifs"
+                  "tooltip_gold": "Coffres d'or",
+                  "tooltip_trophy": "Trophées",
+                  "tooltip_raw_food": "Nourriture crue",
+                  "tooltip_prepared_food": "Plats cuisinés",
+                  "tooltip_cooking_ingredients": "Ingrédients de cuisson et aliments pour animaux",
+                  "tooltip_consumables": "Articles de guérison et autres consommables"
                }
             }
          },
@@ -1073,7 +1117,9 @@
                "randomize_attributes": "Rendre aléatoire les attributs des  hearthlings",
                "randomize_attributes_description": "Si activée, les attributs des hearthlings seront assignés complètement au hasard au lieu d'être distribuer de façon équilibrée.",
                "auto_loot": "Pillage automatique",
-               "auto_loot_description": "Quand un ennemi a du butin, le marquer automatiquement pour le ramassage."
+               "auto_loot_description": "Quand un ennemi a du butin, le marquer automatiquement pour le ramassage.",
+               "building_auto_queue_crafters": "File d'attente automatique d'artisanat pour la construction",
+               "building_auto_queue_crafters_description": "Lors du démarrage de la construction d'un bâtiment, tous les meubles et accessoires pour ce bâtiment sont automatiquement en file d'attente pour leurs artisans respectifs."
             }
          },
          "title_screen": {
@@ -1410,6 +1456,188 @@
                   "shop_info": {
                      "name": "Ebénisterie Norm Windriser",
                      "title": "Norm Windriser est de passage avec quelques meubles à vendre"
+                  }
+               },
+               "valor_tier_2_reached": {
+                  "title": "Retour du héraut de la princesse",
+                  "speaker_name": "L'honorable Anwyn Redelm",
+                  "message": "Félicitation, [str(i18n_data.town_name)]! a propager vos prouesses martiales. Votre ville se qualifie officiellement en tant que canton ! Je vous ai apporté des matériaux de construction et des accords commerciaux, comme il est d'usage !",
+                  "accept": "Woohoo !",
+                  "dialog_title": "Canton atteint !",
+                  "tier_title": "Canton",
+                  "reward_message": "Par décret de la princesse Diana de l'Ascendancy, nous reconnaissons:",
+                  "reward_message_ctd": "Pour les actes de bravoure incroyable dans le combat. La ville est par les présentes éligibles pour:",
+                  "tier_2_bldg_template": "Niveau 2 Modèles de construction",
+                  "tier_2_shops": "Niveau 2 Magasins",
+                  "tier_2_BGM": "Niveau 2 BGM"
+               },
+               "generosity_tier_2_reached": {
+                  "reward_message_ctd": "Pour preuve d'une grande générosité envers les nécessiteux. La ville est par les présentes éligibles pour:"
+               },
+               "crafting_tier_2_reached": {
+                  "reward_message_ctd": "Pour l'excellence dans l'artisanat. La ville est par les présentes éligibles pour:"
+               },
+               "ascendancy_town_tier_quest": {
+                  "title": "Quête de Canton",
+                  "dialog_title": "Quête de Canton",
+                  "text": "Satisfaire l'une des conditions suivantes pour se qualifier pour le statut de canton:",
+                  "military_requirement_title": "Cid's valeur",
+                  "church_requirement_title": "Eglise d'abondance",
+                  "crafting_requirement_title": "Approbation des artisans"
+               },
+               "herald_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "proclamation": {
+                           "bulletin_message": {
+                              "000": "Par ordre de la princesse Dania, Première Dame de la Ascendancy, et dont les dimensions en vous sont installé, et avec la bénédiction de l'église d'abondance, dans sa sagesse nous prospérons..."
+                           },
+                           "bulletin_title": "Anwyn dégage sa gorge",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Wow, une proclamation !",
+                           "choice_001": "Zzz..."
+                        },
+                        "craft_reqs": {
+                           "bulletin_message": {
+                              "000": "Les maîtres de l'art royal honore ceux avec un oeil pour l'excellence. Demandez à votre maçon de créer une statue avec ces spécifications rigoureuses; avec l'aide de leurs amis, et vous les impressionnerez."
+                           },
+                           "bulletin_title": "Anwyn revient sur le rouleau",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Maçons ho !",
+                           "choice_001": "De quelle autre façon puis-je gagner de la renommée ?"
+                        },
+                        "proc_details": {
+                           "bulletin_message": {
+                              "000": "Tous les établissements qui obtiennent la renommée locale seront reconnues comme officielles du Cantons de Ascendancy, avec les droits, privilèges et avantages de celle-ci."
+                           },
+                           "bulletin_title": "Anwyn lit",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Hein ?",
+                           "choice_001": "Récompenses ?"
+                        },
+                        "actual_meaning": {
+                           "bulletin_message": {
+                              "000": "Qu'est-ce que cela signifie réellement? Eh bien, la plupart du temps nous écrivons dans un livre quelque part, dans le cas où on ne se souvient pas de revenir et de percevoir des impôts."
+                           },
+                           "bulletin_title": "Anwyn grimace",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Pas de soucis alors !",
+                           "choice_001": "Taxes ? Sérieux ?"
+                        },
+                        "rewards": {
+                           "bulletin_message": {
+                              "000": "Effectivement ! La connaissance du royaume ne peut être dispersé de façon aléatoire dans le désert, et de tomber en proie à des gobelins ou des loups ! Cependant, par l'ordre de la princesse, les villes admissibles doivent gagner l'accès à l'apprentissage architectural et aux riches caravanes pour le commerce."
+                           },
+                           "bulletin_title": "Hochements de tête d'Anwyn",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "D'accord. Que ce passe t-il après ?"
+                        },
+                        "military_reqs": {
+                           "bulletin_message": {
+                              "000": "Pour gagner la renommée de l'Ordre du Cid, vous devez faire preuve de courage et de bravoure ! Je vais donner à votre maçon une recette; et une quête des ingrédients pour fabriquer un monument digne de votre bras armé."
+                           },
+                           "bulletin_title": "Anwyn revient sur le rouleau",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Ça m'a l'air bien !",
+                           "choice_001": "De quelle autre façon puis-je gagner de la renommée?"
+                        },
+                        "herald_announcement": {
+                           "bulletin_message": {
+                              "000": "Excellent! Messire Burlyhands dit que vous seriez bien ici, même si c'est un peu petit, cela devrait aller dans les premiers jours. Allons-nous commencer ?"
+                           },
+                           "bulletin_title": "Anwyn déroule un rouleau",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Débuté avec quoi ?"
+                        },
+                        "requirements": {
+                           "bulletin_message": {
+                              "000": "Vous pouvez gagner une renommée suffisante pour passer à une municipalité en l'une des trois façons: la gloire militaire, la faveur de l'Eglise, ou l'approbation des maîtres artisans. Qu'est ce qui semble le plus intéressant pour vous ?"
+                           },
+                           "bulletin_title": "Anwyn revient sur le rouleau",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Militaire !",
+                           "choice_001": "L'église !",
+                           "choice_002": "Les maîtres artisans !"
+                        },
+                        "joking": {
+                           "bulletin_message": {
+                              "000": "Je plaisante ! Les Comptables royaux ont les mains pleines en ce moment avec le couronnement et tout. Quoi qu'il en soit, le statut Canton signifie vraiment que vous obtenez une foule de récompenses et d'avantages."
+                           },
+                           "bulletin_title": "Anwyn grimace",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Récompenses et avantages ?"
+                        },
+                        "church_reqs": {
+                           "bulletin_message": {
+                              "000": "L'église de Plenty demande à ceux qui en ont trop, de donner à ceux qui en ont besoin. Je vais donner des recettes à votre maçon et votre cuisinier; pour construire un calvaire à Wandering Cid, et je serai de retour pour recueillir ce don pour les plus nécessiteux."
+                           },
+                           "bulletin_title": "Anwyn revient sur le rouleau",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Nous pouvons faire ça !",
+                           "choice_001": "De quelle autre façon puis-je gagner de la renommée ?"
+                        },
+                        "herald_approaches": {
+                           "bulletin_message": {
+                              "000": "Ho là ! Est-ce la nouvelle colonie [str(i18n_data.town_name)] ?"
+                           },
+                           "bulletin_title": "A l'approche de héraut royal",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Bienvenue, gente dame !",
+                           "choice_001": "C'est nous !"
+                        },
+                        "conclusion": {
+                           "bulletin_message": {
+                              "000": "Excellent ! En plus d'un monument approprié, votre ville devra également avoir accumulé un certain niveau de valeur. Je laisserai les exigences avec vous, si vous souhaitez les consulter à nouveau, ou devrais-je voir un chemin différent pour venir faire mon discourt plus que votre route initiale."
+                           },
+                           "bulletin_title": "Anwyn enroule le rouleau",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Merci à vous, gente dame !"
+                        },
+                        "conclusion2": {
+                           "bulletin_message": {
+                              "000": "Que la générosité de Cid soit sur vous, [str(i18n_data.town_name)]. Je vais vous laisser un oiseau, afin que vous puissiez me convoquer pour évaluer votre progrès !"
+                           },
+                           "bulletin_title": "Anwyn enroule le rouleau",
+                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "choice_000": "Adieu !"
+                        }
+                     }
+                  }
+               },
+               "arcs": {
+                  "encounters": {
+                     "tier_2_shops": {
+                        "weapon_armor_shop": {
+                           "shop_info": {
+                              "name": "Boutique armurie de Sombre Marteau Noir",
+                              "title": "Sombre Marteau Noir est arrivé avec du matériel à vendre"
+                           }
+                        },
+                        "farming_supplies_shop": {
+                           "shop_info": {
+                              "name": "Les fournitures agricoles de Jim l'agriculteur",
+                              "title": "Jim l'agriculteur roule en ville avec sa charette d'approvisionnement"
+                           }
+                        },
+                        "bakery_shop": {
+                           "shop_info": {
+                              "name": "Les pains et les soupes de Jordan canne à sucre",
+                              "title": "Jordan canne à sucre est arrivé avec des produits de boulangerie à vendre"
+                           }
+                        },
+                        "container_shop": {
+                           "shop_info": {
+                              "name": "La grange à container de Jo Boxen",
+                              "title": "Jo Boxen arrive avec une boîte de caisses"
+                           }
+                        },
+                        "door_shop": {
+                           "shop_info": {
+                              "name": "Le magasin de porte d'Edgar Planckton",
+                              "title": "Edgar Planckton est arrivé avec des portes à vendre"
+                           }
+                        }
+                     }
                   }
                }
             },
@@ -2907,6 +3135,57 @@
                "display_name": "Mur",
                "description": "Garde le toit en l'air"
             }
+         },
+         "building_brushes": {
+            "colors": {
+               "#928C76": "Gris chiné",
+               "#4C2424": "Volcan clair",
+               "#C0BBA8": "Cendre",
+               "#693921": "Nouvelle ambre",
+               "#A5A199": "Brouillard de montagne clair",
+               "#224165": "Bleu royal foncé",
+               "#958455": "Muesli",
+               "#332B1F": "Cacao brun",
+               "#4E442F": "Punga",
+               "#979492": "Brouillard de montagne foncé",
+               "#592E18": "Baker's Chocolate",
+               "#B5A37B": "Meringue",
+               "#B0AB9F": "Nuageux",
+               "#8E8260": "Granite vert",
+               "#302118": "Bistre",
+               "#575E67": "Gris foncé",
+               "#604B42": "Liège",
+               "#172F4A": "Blue majestueux",
+               "#806B27": "Pesto",
+               "#2C3339": "Bronze industriel",
+               "#5A3D2D": "Chocolat",
+               "#D0B884": "Noisetier d'hiver",
+               "#412B1F": "Brun maroc",
+               "#542929": "Volcan",
+               "#403521": "Mâchefer",
+               "#A59F8B": "Napa",
+               "#86764A": "Ombre",
+               "#65573A": "Brun tabac",
+               "#C0BBA7": "Cendre clair",
+               "#786322": "Or Yukon",
+               "#6E5B21": "Laiton Antique",
+               "#69534A": "Sombre brun congo",
+               "#A59465": "Sandale",
+               "#A69C7F": "Hillary",
+               "#464D53": "Thon",
+               "#7A452A": "Cuivre Canyon",
+               "#3B1919": "Rouge Rustique",
+               "#244E7D": "Bleu Bahamas",
+               "#DCCAA3": "Raphia",
+               "#9B8F6D": "Huître Pâle",
+               "#A19D97": "Brouillard de montagne",
+               "#C1A975": "Ecru",
+               "#676D74": "Gris moyen",
+               "#4E555C": "Truite",
+               "#864E31": "Korma",
+               "#644F46": "Brun Congo",
+               "#927923": "Gingembre citron"
+            }
          }
       },
       "commands": {
@@ -3018,15 +3297,15 @@
          },
          "edit_party": {
             "display_name": "Modifier l'équipe",
-            "description": "Ajouter et supprimer des combattants de l'équipe."
+            "description": "Ajouter et supprimer des membres de l'équipe."
          },
          "cancel_marker": {
             "display_name": "Annuler le marqueur",
-            "description": "Annuler les ordres de combat représentés par ce marqueur"
+            "description": "Annuler les ordres de combat pour ce marqueur"
          },
          "select_owner": {
-            "display_name": "Choisir le propriétaire",
-            "description": "Sélectionne les combattants influencés par ce marqueur"
+            "display_name": "Choisir un membre",
+            "description": "Sélectionne les membres qui suivront ces ordres"
          },
          "call_trader": {
             "display_name": "Appeler un marchand",
@@ -3050,6 +3329,28 @@
                "display_name": "Utiliser les flèches enflammées",
                "description": "Utilise des flèches enflammées, qui ont une chance de mettre le feu aux ennemis, infligeant des dégâts supplémentaires au fil du temps. Cliquez passer à un autre type de flèche."
             }
+         },
+         "combat": {
+            "move": {
+               "display_name": "Déplacer le marqueur",
+               "description": "Déplacer vers ce lieu sans attaquer"
+            },
+            "attack_move": {
+               "display_name": "Déplacer et attaquer le marqueur",
+               "description": "Attaque quoi que ce soit près de cet endroit"
+            },
+            "defend_location": {
+               "display_name": "Défendre le marqueur",
+               "description": "Défendre ce lieu"
+            }
+         },
+         "change_owner": {
+            "display_name": "Attribuer un propriétaire",
+            "description": "Attribuer cet objet à un nouveau propriétaire"
+         },
+         "toggle_lock": {
+            "display_name": "Serrure à bascule",
+            "description": "Verrouiller ou déverrouiller cette porte"
          }
       },
       "personality": {
@@ -3919,6 +4220,49 @@
                "display_name": "Warchief Oghar Norwind",
                "description": "She's the boss."
             }
+         },
+         "forest": {
+            "insane_alligator": {
+               "description": "Les petites varanuses ont tendance à affluer autour d'elles."
+            }
+         }
+      },
+      "saved_objects": {
+         "building_templates_index": {
+            "template_tabs": {
+               "ascendancy": {
+                  "display_name": "Ascendant",
+                  "categories": {
+                     "camp": "Modèles de Camp",
+                     "town": "Modèles de ville"
+                  }
+               },
+               "custom": {
+                  "display_name": "Personnalisé"
+               }
+            }
+         },
+         "building_templates": {
+            "tier2": {
+               "black_forest_inn": {
+                  "display_name": "Auberge la forêt noire"
+               },
+               "blacksmith_house": {
+                  "display_name": "Maison forgeron"
+               },
+               "corner_house": {
+                  "display_name": "Maison d'angle"
+               },
+               "cozy_townhouse": {
+                  "display_name": "Maison confortable"
+               },
+               "tall_townhouse": {
+                  "display_name": "Grande maison de ville"
+               },
+               "tavern": {
+                  "display_name": "Taverne"
+               }
+            }
          }
       }
    },
@@ -4266,6 +4610,12 @@
             "clay_tunnel_door_ghost": {
                "display_name": "Porte de tunnel en argile",
                "description": "Utile pour sceller les tunnels miniers."
+            }
+         },
+         "iron_door": {
+            "iron_door_ghost": {
+               "display_name": "Porte à toute épreuve",
+               "description": "Plus robuste que les portes en bois ou en pierre"
             }
          }
       },
@@ -5089,6 +5439,30 @@
                "display_name": "Gong de scout",
                "description": "Inspiré par le scout kobold"
             }
+         },
+         "valor_statue": {
+            "valor_statue_ghost": {
+               "display_name": "La valeur du Cid",
+               "description": "Un monument à la puissance militaire de votre ville"
+            }
+         },
+         "roadside_shrine": {
+            "roadside_shrine_ghost": {
+               "display_name": "Sanctuaire d'abondance",
+               "description": "Place en preuve de la générosité et la piété"
+            }
+         },
+         "craftsman_statue": {
+            "craftsman_statue_ghost": {
+               "display_name": "Le Maître de Guilde",
+               "description": "Place en preuve de l'habileté à l'artisanat"
+            }
+         },
+         "wooden_sign_engineer": {
+            "wooden_sign_engineer_ghost": {
+               "display_name": "Le signe de l'ingénieur",
+               "description": "Un signe avec la marque de l'ingénieur."
+            }
          }
       },
       "food": {
@@ -5335,6 +5709,16 @@
             "roast_mutton_serving": {
                "display_name": "Carré d'agneau"
             }
+         },
+         "donation_box": {
+            "donation_box": {
+               "display_name": "Don à l'Eglise d'abondance",
+               "description": "Création pour montrer la générosité et la piété"
+            },
+            "donation_box_serving": {
+               "display_name": "Boîte de don du service",
+               "description": "Une pièce d'abondance"
+            }
          }
       },
       "furniture": {
@@ -5401,7 +5785,7 @@
          "not_much_of_a_bed": {
             "not_much_of_a_bed_ghost": {
                "display_name": "Lit miteux",
-               "description": "Ce qui veut dire mauvais, pas cruel. Bien que ça le soit aussi."
+               "description": "Ce qui veut dire mauvais, pas cruel."
             }
          },
          "park_bench": {
@@ -5478,38 +5862,38 @@
          },
          "clay_bed": {
             "clay_bed_ghost": {
-               "display_name": "Clay Bed",
-               "description": "Uncomfortable, but gets you off the ground!"
+               "display_name": "Lit en argile",
+               "description": "Sol surélevé !"
             }
          },
          "clay_dining_table": {
             "clay_dining_table_ghost": {
-               "display_name": "Clay Dining Table",
-               "description": "Gets your food off the floor"
+               "display_name": "Table à manger en argile",
+               "description": "Enlève votre nourriture du sol"
             }
          },
          "simple_clay_chair": {
             "simple_clay_chair_ghost": {
-               "display_name": "Simple Clay Chair",
-               "description": "Less dusty than sitting on the floor"
+               "display_name": "Simple chaise en argile",
+               "description": "Moins de poussière que de rester assis sur le plancher"
             }
          },
          "clay_dining_table_fine": {
             "clay_dining_table_fine_ghost": {
-               "display_name": "Gets your food off the floor ... in style",
-               "description": "Fine Clay Dining Table"
+               "display_name": "Belle table à manger en argile",
+               "description": "Enlève votre nourriture du sol ... dans un style"
             }
          },
          "simple_clay_chair_fine": {
             "simple_clay_chair_fine_ghost": {
-               "display_name": "Less dusty and more stylish than sitting on the floor",
-               "description": "Fine Clay Chair"
+               "display_name": "Belle chaise en argile",
+               "description": "Moins poussiéreux et plus élégant que de rester assis sur le plancher"
             }
          },
          "clay_bed_fine": {
             "clay_bed_fine_ghost": {
-               "display_name": "Fine Clay Bed",
-               "description": "Gets you off the ground in style. Still uncomfortable, though"
+               "display_name": "Beau lit en argile",
+               "description": "Fantaisique, mais toujours inconfortable"
             }
          },
          "blue_market_stall": {
@@ -5519,6 +5903,12 @@
             },
             "trader": {
                "description": "Un marchand itinérant"
+            }
+         },
+         "statue_of_cid_wanderer": {
+            "statue_of_cid_wanderer_ghost": {
+               "display_name": "Statue de Cid l'égaré",
+               "description": "Shows Cid in his later years"
             }
          }
       },
@@ -5535,14 +5925,6 @@
                "description": "Utilisée pour marquer un territoire de manière civilisée."
             }
          },
-         "control_attack_banner": {
-            "display_name": "Attaquer la bannière",
-            "description": "Attaquer !!!"
-         },
-         "control_defend_banner": {
-            "display_name": "Défendre la bannière",
-            "description": "Garder cette position en mode de défense de la ville."
-         },
          "safety_standard": {
             "display_name": "Étendard de sécurité en bois",
             "clay_safety_standard": {
@@ -5550,40 +5932,34 @@
             },
             "description": "Marquer un point de sécurité pour se regrouper en mode alerte de ville"
          },
-         "control_attack_marker": {
-            "control_attack_marker_ghost": {
-               "display_name": "Marqueur attaque",
-               "description": "Hearthling attacks everything between here and there"
-            }
-         },
-         "control_hold_marker": {
-            "control_hold_marker_ghost": {
-               "display_name": "Marqueur tenir position",
-               "description": "Post aggresively at this location"
-            }
-         },
-         "control_move_marker": {
-            "control_move_marker_ghost": {
-               "display_name": "Marqueur déplacement",
-               "description": "Move to this location"
-            }
-         },
-         "party_command_marker": {
-            "party_command_marker_ghost": {
-               "display_name": "Marqueur d'ordre de groupe",
-               "description": "Groupe viens ici !"
-            }
-         },
-         "individual_command_marker": {
-            "individual_command_marker_ghost": {
-               "display_name": "Marqueur de commande",
-               "description": "Représente une commande de combat."
-            }
-         },
          "mountains_windchime": {
             "mountains_windchime_ghost": {
                "display_name": "Carillon à vent de montagne",
                "description": "Un son heureux et apaisants"
+            }
+         },
+         "small_turret": {
+            "small_turret_ghost": {
+               "display_name": "Tourelle",
+               "description": "Tirent sur les ennemis à une petite distance"
+            }
+         },
+         "clamp_trap": {
+            "clamp_trap_ghost": {
+               "display_name": "Piège à pince",
+               "description": "Inflige des dommages et étourdit un peu les ennemis qui marchent sur elle"
+            }
+         },
+         "turnip_shooter": {
+            "turnip_shooter_ghost": {
+               "display_name": "Navet tireur",
+               "description": "Tirent des navets sur les ennemis"
+            }
+         },
+         "critter_trap": {
+            "critter_trap_ghost": {
+               "display_name": "Piège à créature",
+               "description": "Reconverti pour une utilisation contre les ennemis."
             }
          }
       },
@@ -5701,16 +6077,6 @@
                "display_name": "Goblin Raiding Wolf",
                "description": "Bred to inspire terror"
             },
-            "orc": {
-               "display_name": "Un orc",
-               "description": "Les orcs, ça broie les hearthling !",
-               "male": {
-                  "zombie_male": {
-                     "display_name": "Un orc",
-                     "description": "Les orcs, ça broie les hearthling !"
-                  }
-               }
-            },
             "skull_trophy": {
                "skull_trophy_ghost": {
                   "display_name": "Signe honorifique Goblin",
@@ -5802,7 +6168,7 @@
          },
          "orcs": {
             "orc": {
-               "display_name": "Orc",
+               "display_name": "[str(self.unit_info.custom_name)]",
                "description": "Un guerrier de la Kiln Rouge"
             },
             "orc_boss_banner": {
@@ -5961,6 +6327,14 @@
          "tin_ingot": {
             "display_name": "Lingot d'étain",
             "description": "Une barre d'étain pur."
+         },
+         "bronze_gear": {
+            "display_name": "Engrenage en bronze",
+            "description": "Utilisé pour fabriquer des gadgets de base"
+         },
+         "iron_gear": {
+            "display_name": "Engrenage en fer",
+            "description": "Utilisé pour fabriquer des gadgets intermédiaire"
          }
       },
       "resources": {
@@ -6092,6 +6466,10 @@
             "varanus_skin": {
                "display_name": "Peau de Varanus",
                "description": "Rugueux et écailleux"
+            },
+            "ogre_bone": {
+               "display_name": "Os d'ogre",
+               "description": "Dense et solide"
             }
          },
          "feathers": {
@@ -6441,6 +6819,14 @@
                "display_name": "The Bonker",
                "description": "Ex-propriété d'Ogo Skullbonker"
             }
+         },
+         "bullet": {
+            "display_name": "Balle",
+            "description": "Projectile en métal"
+         },
+         "turnip_bullet": {
+            "display_name": "Navet",
+            "description": "Légumes militarisé."
          }
       },
       "consumables": {
@@ -6818,6 +7204,10 @@
                "recipe_name": "Casque en bronze",
                "description": "Jolie et protecteur",
                "flavor": "Les travailleurs de fer ont insistés qu'ils avaient perfectionnés l'art, mais les travailleurs de bronze ont sontenus que le leur était plus beau."
+            },
+            "engineer_wrench_recipe": {
+               "description": "Requis pour promouvoir un hearthling en ingénieur",
+               "recipe_name": "Clé d'ingénieur"
             }
          }
       },
@@ -7133,6 +7523,11 @@
                "description": "À placer pour dissuader Montagne, l'ogre formé par Ogo",
                "recipe_name": "Carillon à vent de montagne",
                "flavor": "La mélodie évoque l'ancienne berceuse de l'ogre volé"
+            },
+            "statue_of_cid_wanderer_recipe": {
+               "recipe_name": "Statue de Cid l'égaré",
+               "description": "Montre Cid dans la vie plus tard",
+               "flavor": "Et où Cid l'égaré, l'église se lève sur ses traces..."
             }
          }
       },
@@ -7271,6 +7666,11 @@
             "roast_mutton_recipe": {
                "recipe_name": "Carré d'agneau",
                "description": "Nutritif et délicieux"
+            },
+            "donation_box_recipe": {
+               "recipe_name": "Don à l'Eglise d'abondance",
+               "description": "Oeuvre de charité pour ceux qui en ont plus besoin que toi",
+               "flavor": "Pour les affamés, le pain, dans la conduite, et la foi. --Cid l'égaré"
             }
          },
          "cook_mill": {
@@ -7288,9 +7688,107 @@
       },
       "engineer": {
          "engineer_description": {
-            "display_name": "???",
-            "description": "???",
-            "requirements": "???"
+            "display_name": "Ingénieur",
+            "description": "L'ingénieur crée des engins de haute technologie et des armes défensives.",
+            "requirements": "Un forgeron niveau 2 et une clé d'ingénieur, conçu par le forgeron.",
+            "level_6_data": {
+               "title": "Maître ingénieur",
+               "perk_000_name": "Général de la Défense",
+               "perk_000_description": "Cet ingénieur peut placer jusqu'à douze pièges et quatre tourelles"
+            },
+            "level_2_data": {
+               "perk_000_name": "Amélioration de l'inventivité",
+               "perk_000_description": "L'ingénieur peut réparer les portes cassées et des portes plus efficacement"
+            },
+            "level_1_data": {
+               "perk_000_name": "Catalogue standard",
+               "perk_001_name": "Défenseur junior",
+               "perk_000_description": "L'ingénieur peut maintenant faire des gadgets et des décorations de base.",
+               "perk_001_description": "Cet ingénieur peut placer jusqu'à quatre pièges et une tourelle"
+            },
+            "level_4_data": {
+               "perk_000_name": "Catalogue étendu",
+               "perk_000_description": "L'ingénieur a maintenant le courage de créer des gadgets plus complexes."
+            },
+            "level_0_data": {
+               "perk_000_name": "Bricoleur",
+               "perk_000_description": "L'ingénieur peut réparer les portes cassées, des portes et d'autres structures réparables."
+            },
+            "level_3_data": {
+               "perk_000_name": "Défenseur de la ville",
+               "perk_000_description": "Cet ingénieur peut placer jusqu'à huit pièges et deux tourelles"
+            }
+         },
+         "engineer_wrench": {
+            "engineer_wrench_talisman": {
+               "display_name": "Clé de l'ingénieur",
+               "description": "Requis pour promouvoir un hearthling en ingénieur"
+            },
+            "display_name": "Clés de l'ingénieur",
+            "description": "Les outils du métier pour un ingénieur"
+         },
+         "engineer_workbench": {
+            "engineer_workbench_ghost": {
+               "display_name": "Atelier de l'ingénieur",
+               "description": "Atelier pour les ingénieurs pour créer des gadgets, des armes et des pièges."
+            }
+         },
+         "engineer_outfit": {
+            "display_name": "Tenue d'ingénieur",
+            "description": "Uniforme pour tous les ingénieurs"
+         },
+         "recipes": {
+            "engineer_workbench_recipe": {
+               "description": "Permet aux ingénieurs de construire divers gadgets et bidules",
+               "recipe_name": "Banc d'outil d'ingénieur"
+            },
+            "workbenches_name": "Etablis",
+            "bronze_gear_recipe": {
+               "description": "Utilisé pour fabriquer des gadgets de base",
+               "recipe_name": "Engrenage en bronze",
+               "flavor": "Heureusement le dentelage ne nécessitent pas de brossage"
+            },
+            "gadget_parts_name": "Pièces de gadget",
+            "small_turret_recipe": {
+               "description": "Après l'avoir placé, tiré sur les ennemis à distance. Détruite après 15 utilisations.",
+               "recipe_name": "Tourelle"
+            },
+            "iron_gear_recipe": {
+               "description": "Utilisé pour fabriquer des gadgets intermédiaires",
+               "recipe_name": "Engrenage en fer",
+               "flavor": "Ne pas utiliser comme une étoile de lancement"
+            },
+            "clamp_trap_recipe": {
+               "description": "Inflige des dommages et étourdit un peu les ennemis qui marchent sur elle",
+               "recipe_name": "Piège à pince"
+            },
+            "ranged_weapons_name": "Armes à distance",
+            "traps_name": "Pièges défensifs",
+            "turnip_shooter_recipe": {
+               "description": "Tire des navets sur les ennemis à une petite distance. Tombe en morceaux après 12 utilisations.",
+               "recipe_name": "Navet de tir",
+               "flavor": "Ne pas aimer le goût des navets ? Ne vous inquiétez pas, ils sont multi-fonctions."
+            },
+            "critter_trap_recipe": {
+               "description": "Offres une petite quantité de dégâts et étourdit peu ennemis.",
+               "recipe_name": "Piège à créature",
+               "flavor": "Une légère gêne pour les ogres. Une envie de mourir pour les souris."
+            },
+            "iron_door_recipe": {
+               "description": "Épais, porte de fer solide",
+               "recipe_name": "Porte à toute épreuve"
+            },
+            "decorations_name": "Décorations",
+            "wooden_sign_engineer_recipe": {
+               "description": "Un signe avec la marque de l'ingénieur.",
+               "recipe_name": "Signe mural de l'ingénieur"
+            }
+         },
+         "engineer_buffs": {
+            "inventiveness_2_buff": {
+               "display_name": "Inventivité +50",
+               "description": "L'ingénieur peut réparer les portes plus efficacement"
+            }
          }
       },
       "farmer": {
@@ -7579,6 +8077,26 @@
             "stone_tunnel_door_recipe": {
                "description": "Utile pour sceller les tunnels miniers.",
                "recipe_name": "Porte de tunnel en pierre"
+            },
+            "firepit_recipe": {
+               "recipe_name": "Feu de camp en pierre",
+               "description": "Le cœur de votre ville",
+               "flavor": "Le feu est la vie, les cendres sont la mort, dans ces pierres, l'histoire de notre peuple. -- Cid"
+            },
+            "valor_statue_recipe": {
+               "description": "Un monument à la puissance militaire de votre ville",
+               "recipe_name": "La valeur de Cid",
+               "flavor": "Avant le début, Cid était d'abord et avant tout, un chevalier. --Theon Hartful, l'église d'abondance"
+            },
+            "roadside_shrine_recipe": {
+               "recipe_name": "Sanctuaire d'abondance",
+               "description": "Place pour preuve de la générosité et la piété !",
+               "flavor": "Cid a façonné sa cuirasse dans un panier, et parcouraient les routes comme un simple voyageur --Edison Arn, l'église d'abondance"
+            },
+            "craftsman_statue_recipe": {
+               "recipe_name": "L'habileté du maître de guilde",
+               "description": "Affiche chaque artisan dans leur meilleur profil",
+               "flavor": "Souvent fabriqués et soumis par les membres de la guilde de l'espoir"
             }
          }
       },
@@ -8283,7 +8801,7 @@
             },
             "level_3_data": {
                "perk_000_name": "Aura de soin rang 2",
-               "perk_000_description": "Puissance de l'aura de guérison augmenté"
+               "perk_000_description": "Puissance de l'aura de guérison augmenté ainsi que la porté du rayon"
             },
             "level_6_data": {
                "perk_000_name": "Maître de guérison",
@@ -8329,7 +8847,7 @@
             },
             "heal_aura_2_buff": {
                "display_name": "Aura de soin rang 2",
-               "description": "Soigne périodiquement tout le monde autour du clerc."
+               "description": "La présence du clerc guérit tout le monde autour d'eux périodiquement."
             },
             "add_health_medium_buff": {
                "display_name": "Soin moyen",
@@ -8338,10 +8856,6 @@
             "compassion_2_buff": {
                "display_name": "Compassion augmenté",
                "description": "Compassion augmenté de 40%"
-            },
-            "heal_aura_3_buff": {
-               "display_name": "Aura de soin rang 3",
-               "description": "Soigne chacun de 30 unités autour du clerc"
             },
             "major_muscle_aura_buff": {
                "display_name": "Force majeure",
