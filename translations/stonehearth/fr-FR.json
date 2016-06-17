@@ -74,6 +74,8 @@
             "terrain_slice_vision": "Vue géologique en couche",
             "terrain_slice_vision_icon_name": "Terrain",
             "terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l'élévation pour voir différentes couches.",
+            "terrain_slice_vision_up": "Relevez le terrain",
+            "terrain_slice_vision_down": "Descendre le terrain",
             "terrain_xray_vision_icon_name": "Rayon X",
             "terrain_xray_vision": "Vision rayon X",
             "terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains.",
@@ -829,7 +831,7 @@
                   "gear": "Armes et armures",
                   "food_and_drink": "Nourriture et boisson",
                   "wealth": "Richesse",
-                  "tooltip_tools": "Talismans",
+                  "tooltip_tools": "Talismans et etablis",
                   "tooltip_wood": "Bois",
                   "tooltip_stone": "Pierre",
                   "tooltip_clay": "Argile",
@@ -1499,7 +1501,7 @@
                         },
                         "craft_reqs": {
                            "bulletin_message": {
-                              "000": "Les maîtres de l'art royal honore ceux avec un oeil pour l'excellence. Demandez à votre maçon de créer une statue avec ces spécifications rigoureuses; avec l'aide de leurs amis, et vous les impressionnerez."
+                              "000": "Les maîtres de l'art royal honore ceux avec un oeil pour l'excellence. Demandez à votre maçon de créer une statue avec ces spécifications rigoureuses; et vous serez l'un des rares à les impressionner."
                            },
                            "bulletin_title": "Anwyn revient sur le rouleau",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1526,7 +1528,7 @@
                         },
                         "rewards": {
                            "bulletin_message": {
-                              "000": "Effectivement ! La connaissance du royaume ne peut être dispersé de façon aléatoire dans le désert, et de tomber en proie à des gobelins ou des loups ! Cependant, par l'ordre de la princesse, les villes admissibles doivent gagner l'accès à l'apprentissage architectural et aux riches caravanes pour le commerce."
+                              "000": "Effectivement ! Par ordre de la princesse, les villes admissibles qui ont fait leurs preuves doivent gagner l'accès à l'apprentissage architectural et des caravanes riches pour le commerce."
                            },
                            "bulletin_title": "Hochements de tête d'Anwyn",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1569,7 +1571,7 @@
                         },
                         "church_reqs": {
                            "bulletin_message": {
-                              "000": "L'église de Plenty demande à ceux qui en ont trop, de donner à ceux qui en ont besoin. Je vais donner des recettes à votre maçon et votre cuisinier; pour construire un calvaire à Wandering Cid, et je serai de retour pour recueillir ce don pour les plus nécessiteux."
+                              "000": "L'Eglise d'Abondance favorise ceux qui partagent leur richesse avec ceux qui en ont besoin. Je vais donner des recettes à votre maçon et votre cuisinier; construisez une fontaine de Abondance et je serai de retour pour célébrer vos réalisations."
                            },
                            "bulletin_title": "Anwyn revient sur le rouleau",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -5448,13 +5450,13 @@
          },
          "roadside_shrine": {
             "roadside_shrine_ghost": {
-               "display_name": "Sanctuaire d'abondance",
-               "description": "Place en preuve de la générosité et la piété"
+               "display_name": "Fountaine d'Abondance",
+               "description": "Place en preuve de la générosité et la foi"
             }
          },
          "craftsman_statue": {
             "craftsman_statue_ghost": {
-               "display_name": "Le Maître de Guilde",
+               "display_name": "L'habileté du maître de guilde",
                "description": "Place en preuve de l'habileté à l'artisanat"
             }
          },
@@ -7789,6 +7791,10 @@
                "display_name": "Inventivité +50",
                "description": "L'ingénieur peut réparer les portes plus efficacement"
             }
+         },
+         "engineer_helm": {
+            "display_name": "Lunettes de sécurité",
+            "description": "Une protection supplémentaire pour les yeux d'experts"
          }
       },
       "farmer": {
@@ -8086,17 +8092,17 @@
             "valor_statue_recipe": {
                "description": "Un monument à la puissance militaire de votre ville",
                "recipe_name": "La valeur de Cid",
-               "flavor": "Avant le début, Cid était d'abord et avant tout, un chevalier. --Theon Hartful, l'église d'abondance"
+               "flavor": "Le bouclier de résilience, et l'épée pour la force. - Cid, chevalier des Old Ways"
             },
             "roadside_shrine_recipe": {
-               "recipe_name": "Sanctuaire d'abondance",
-               "description": "Place pour preuve de la générosité et la piété !",
-               "flavor": "Cid a façonné sa cuirasse dans un panier, et parcouraient les routes comme un simple voyageur --Edison Arn, l'église d'abondance"
+               "recipe_name": "Fountaine d'abondance",
+               "description": "Place pour preuve de la générosité et de la foi !",
+               "flavor": "Cid a façonné sa cuirasse dans un panier, et a apporté la richesse des riches au chevet des pauvres --Edison Arn, L'eglise d'Abondance"
             },
             "craftsman_statue_recipe": {
                "recipe_name": "L'habileté du maître de guilde",
                "description": "Affiche chaque artisan dans leur meilleur profil",
-               "flavor": "Souvent fabriqués et soumis par les membres de la guilde de l'espoir"
+               "flavor": "Un bon artisan ne blâme jamais ses outils, seuls les gens qui font ses outils. --Otto Crankfrown, maître de guilde Emérite"
             }
          }
       },

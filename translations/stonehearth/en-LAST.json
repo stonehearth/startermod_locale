@@ -74,6 +74,8 @@
             "terrain_slice_vision": "Terrain slice vision",
             "terrain_slice_vision_icon_name": "slice",
             "terrain_slice_vision_description": "Slice the terrain, allowing you to see underground structures. Change the elevation to see different slices.",
+            "terrain_slice_vision_up": "Raise slice",
+            "terrain_slice_vision_down": "Lower slice",
             "terrain_xray_vision_icon_name": "x-ray",
             "terrain_xray_vision": "Terrain x-ray vision",
             "terrain_xray_vision_description": "See through the terrain. Change between full and flat view to show underground walls.",
@@ -823,7 +825,7 @@
                   "gear": "Weapons & Armor",
                   "food_and_drink": "Food & Drink",
                   "wealth": "Wealth",
-                  "tooltip_tools": "Talismans",
+                  "tooltip_tools": "Talismans and Workbenches",
                   "tooltip_wood": "Wood",
                   "tooltip_stone": "Stone",
                   "tooltip_clay": "Clay",
@@ -1493,7 +1495,7 @@
                         },
                         "craft_reqs": {
                            "bulletin_message": {
-                              "000": "The Royal Craftmasters honor those with an eye for excellence. Have your mason create a statue to these exacting specifications; the aid of their friends, and you shall impress them."
+                              "000": "The Royal Craftmasters honor those with an eye for excellence. Have your mason create a statue to their exacting specifications, and you shall be one of the few to impress them."
                            },
                            "bulletin_title": "Anwyn looks back at the scroll",
                            "dialog_title": "The Honorable Anwyn Redelm",
@@ -1520,7 +1522,7 @@
                         },
                         "rewards": {
                            "bulletin_message": {
-                              "000": "Indeed! The knowledge of the kingdom cannot be randomly dispersed into the wilderness, to fall prey to goblins or wolves! However, by the Princess's order, eligible towns shall win access to architectural learning and wealthier caravans for trade."
+                              "000": "Indeed! By the Princess's order, eligible towns that have proven their worth shall win access to architectural learning and wealthier caravans for trade."
                            },
                            "bulletin_title": "Anwyn Nods",
                            "dialog_title": "The Honorable Anwyn Redelm",
@@ -1563,7 +1565,7 @@
                         },
                         "church_reqs": {
                            "bulletin_message": {
-                              "000": "The Church of Plenty asks those with much, to give to those in need. I shall give recipes to your mason and your cook; build a wayside shrine to Wandering Cid, and I shall be back to collect its donation to those in greater need."
+                              "000": "The Church of Plenty favors those who share their wealth with those in need. I shall give recipes to your mason and your cook; build a Fountain of Plenty and I shall be back to celebrate your achievements."
                            },
                            "bulletin_title": "Anwyn looks back at the scroll",
                            "dialog_title": "The Honorable Anwyn Redelm",
@@ -1572,7 +1574,7 @@
                         },
                         "herald_approaches": {
                            "bulletin_message": {
-                              "000": "Ho there! Is this the new settlement of [str(i18n_data.town_name)]?"
+                              "000": "Ho there! Is this the new settlement of [str(i18n_data.town_name)]?  Messire Burlyhands said you'd be out here, but it's always a bit touch and go in the early days. Shall we get started with the Proclamation?"
                            },
                            "bulletin_title": "A Royal Herald Approaches",
                            "dialog_title": "The Honorable Anwyn Redelm",
@@ -5442,13 +5444,13 @@
          },
          "roadside_shrine": {
             "roadside_shrine_ghost": {
-               "display_name": "Shrine of Plenty",
-               "description": "Place to show generosity and piety"
+               "display_name": "Fountain of Plenty",
+               "description": "Place to show generosity and faith"
             }
          },
          "craftsman_statue": {
             "craftsman_statue_ghost": {
-               "display_name": "The Guildmaster",
+               "display_name": "The Guildmaster's Skill",
                "description": "Place to show skill at crafting"
             }
          },
@@ -7783,6 +7785,10 @@
                "display_name": "Inventiveness +50",
                "description": "The engineer can repair doors more efficiently"
             }
+         },
+         "engineer_helm": {
+            "display_name": "Safety Goggles",
+            "description": "Extra protection for expert eyes"
          }
       },
       "farmer": {
@@ -8080,17 +8086,17 @@
             "valor_statue_recipe": {
                "description": "A monument to your town's military might",
                "recipe_name": "The Valor of Cid",
-               "flavor": "Before the beginning, Cid was first and foremost, a Knight. --Theon Hartful, Church of Plenty"
+               "flavor": "The shield for resiliance, and the sword for strength. -- Cid, Knight of the Old Ways"
             },
             "roadside_shrine_recipe": {
-               "recipe_name": "Shrine of Plenty",
-               "description": "Place to show generositoy and piety!",
-               "flavor": "Cid fashioned his breastplate into a basket, and roamed the roads as a simple traveller --Edison Arn, Church of Plenty"
+               "recipe_name": "Fountain of Plenty",
+               "description": "Place to show generosity and faith",
+               "flavor": "Cid fashioned his breastplate into a basket and brought the wealth of the rich to the bedsides of the poor --Edison Arn, Church of Plenty"
             },
             "craftsman_statue_recipe": {
                "recipe_name": "The Guildmaster's Skill",
-               "description": "Shows each craftsman to their best",
-               "flavor": "Often made and submitted by hopeful guildmembers"
+               "description": "Shows each craftsman at their best",
+               "flavor": "A good crafter never blames his tools, only the people who make his tools. --Otto Crankfrown, Guildmaster Emeritus"
             }
          }
       },
