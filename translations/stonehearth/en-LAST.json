@@ -51,7 +51,8 @@
             "resting_from_injuries": "requiring medical attention",
             "healing": "treating wounds",
             "healing_target": "healing [name(data.target)]",
-            "dig_foundation": "digging foundation"
+            "dig_foundation": "digging foundation",
+            "unit_hold_location": "defending location"
          }
       }
    },
@@ -644,7 +645,8 @@
                "draw_road_tool": "Roads",
                "place_furniture_tool": "Furniture",
                "place_decoration_tool": "Decorations",
-               "erase_tool": "Erase"
+               "erase_tool": "Erase",
+               "draw_stairs_tool": "Ladders and Stairs"
             },
             "overhead_tips": {
                "wall_segment_tip_title": "Click to place freestanding wall segments",
@@ -665,7 +667,9 @@
                "draw_template_title": "Click to build template",
                "draw_template_description": "Rotate with , and . keys",
                "build_road_tip_title": "Click and drag to build road",
-               "build_road_tip_description": "Right click to exit"
+               "build_road_tip_description": "Right click to exit",
+               "stairs_tip_title": "Click to place stairs",
+               "stairs_tip_description": "Right click to exit. Rotate with , and . keys"
             },
             "building_cost": {
                "required_item": "Needed Items"
@@ -690,6 +694,14 @@
                "y_offset": "Roof Offset",
                "show_gradient": "Slope",
                "show_margin": "Overhang"
+            },
+            "stairs_shape": {
+               "shape_title": "Stairs Shape",
+               "options_title": "Stairs Options",
+               "max_height": "Free-standing Height",
+               "width": "Width",
+               "solid_stairs": "Solid Stairs",
+               "hollow_stairs": "Hollow Stairs"
             },
             "building_templates": {
                "title": "Building Templates",
@@ -768,6 +780,13 @@
                   "stone_resource": "Stone Road",
                   "clay_resource": "Clay Road",
                   "clay_brick_resource": "Clay Brick Road"
+               },
+               "stairs": {
+                  "material": "Stairs Material",
+                  "wood_resource": "Wooden Stairs",
+                  "stone_resource": "Stone Stairs",
+                  "clay_resource": "Clay Stairs",
+                  "clay_brick_resource": "Clay Brick Stairs"
                }
             },
             "start_building_confirm": {
@@ -1635,6 +1654,15 @@
                         }
                      }
                   }
+               },
+               "unlock_craftsman_statue_recipe": {
+                  "bulletin_title": "Mason Recipe Unlocked: The Guildmaster's Skill"
+               },
+               "unlock_roadside_shrine_recipe": {
+                  "bulletin_title": "Mason Recipe Unlocked: Fountain of Plenty"
+               },
+               "unlock_valor_statue_recipe": {
+                  "bulletin_title": "Mason Recipe Unlocked: The Valor of Cid"
                }
             },
             "goblin_war": {
@@ -2957,6 +2985,15 @@
                                     }
                                  }
                               }
+                           },
+                           "unlock_blue_token_recipe": {
+                              "bulletin_title": "The blacksmith has unlocked the Decorative Elite Gong recipe!"
+                           },
+                           "unlock_purple_token_recipe": {
+                              "bulletin_title": "The Blacksmith has unlocked the General's Golden Gong recipe!"
+                           },
+                           "unlock_red_token_recipe": {
+                              "bulletin_title": "The Blacksmith has unlocked the Decorative Master Gong recipe!"
                            }
                         }
                      }
@@ -3130,6 +3167,10 @@
             "wall": {
                "display_name": "Wall",
                "description": "Keeps roofs up"
+            },
+            "stairs": {
+               "display_name": "Stairs",
+               "description": "Go up and down"
             }
          },
          "building_brushes": {
@@ -6690,7 +6731,7 @@
          },
          "giant_bone_axe": {
             "display_name": "Giant Bone Axe",
-            "description": "Carved from the clavicle of some great beast.",
+            "description": "Carved from the clavicle of some great beast. (Two-handed)",
             "giant_bone_axe_iconic": {
                "display_name": "Giant Bone Axe",
                "description": "Carved from the clavicle of some great beast."
@@ -6698,7 +6739,7 @@
          },
          "giant_bone_mace": {
             "display_name": "Giant Bone Mace",
-            "description": "Heavy, it packs a wallop.",
+            "description": "Heavy, it packs a wallop. (Two-handed)",
             "giant_bone_mace_iconic": {
                "display_name": "Giant Bone Mace",
                "description": "For flattening faces"
@@ -6714,7 +6755,7 @@
          },
          "iron_pike": {
             "display_name": "Iron Pike",
-            "description": "Sharp. Long. Pointy.",
+            "description": "Sharp. Long. Pointy. (Two-handed)",
             "iron_pike_iconic": {
                "display_name": "Iron pike",
                "description": "Sharp. Long. Pointy."
@@ -6762,7 +6803,7 @@
          },
          "two_handed_sword": {
             "display_name": "Two Handed Sword",
-            "description": "Double the hands, double the trouble.",
+            "description": "Double the hands, double the trouble. (Two-handed)",
             "two_handed_sword_iconic": {
                "display_name": "Two Handed Sword",
                "description": "Double the hands, double the trouble."
@@ -6810,7 +6851,7 @@
          },
          "ogos_bone_mace": {
             "display_name": "The Bonker",
-            "description": "Designed by Ogo Skullbonker",
+            "description": "Designed by Ogo Skullbonker. (Two-handed)",
             "ogos_bone_mace_iconic": {
                "display_name": "The Bonker",
                "description": "Ex-property of Ogo Skullbonker"
@@ -7726,7 +7767,7 @@
          "engineer_workbench": {
             "engineer_workbench_ghost": {
                "display_name": "Engineer's Workshop",
-               "description": "Workshop for engineers to create gadgets, weapons and traps."
+               "description": "Used by engineers to create gadgets"
             }
          },
          "engineer_outfit": {
@@ -7771,7 +7812,7 @@
                "flavor": "A slight annoyance for ogres. A death wish for mice."
             },
             "iron_door_recipe": {
-               "description": "Thick, sturdy iron door",
+               "description": "Thick, sturdy iron door. Also comes with a thick, sturdy lock.",
                "recipe_name": "Ironclad Door"
             },
             "decorations_name": "Decorations",

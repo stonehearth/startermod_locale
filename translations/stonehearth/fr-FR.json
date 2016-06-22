@@ -51,7 +51,8 @@
             "resting_from_injuries": "a besoin de soins",
             "healing": "traite des blessures",
             "healing_target": "guérit [name(data.target)]",
-            "dig_foundation": "creuse des fondations"
+            "dig_foundation": "creuse des fondations",
+            "unit_hold_location": "défendre la position"
          }
       }
    },
@@ -74,8 +75,8 @@
             "terrain_slice_vision": "Vue géologique en couche",
             "terrain_slice_vision_icon_name": "Terrain",
             "terrain_slice_vision_description": "Découpe le terrain, vous permettant de voir les structures souterraines. Changez l'élévation pour voir différentes couches.",
-            "terrain_slice_vision_up": "Relevez le terrain",
-            "terrain_slice_vision_down": "Descendre le terrain",
+            "terrain_slice_vision_up": "Relevez la vision du terrain",
+            "terrain_slice_vision_down": "Descendre la vision du terrain",
             "terrain_xray_vision_icon_name": "Rayon X",
             "terrain_xray_vision": "Vision rayon X",
             "terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains.",
@@ -650,7 +651,8 @@
                "draw_road_tool": "Routes",
                "place_furniture_tool": "Mobilier",
                "place_decoration_tool": "Décorations",
-               "erase_tool": "Effacer"
+               "erase_tool": "Effacer",
+               "draw_stairs_tool": "Échelles et escaliers"
             },
             "overhead_tips": {
                "wall_segment_tip_title": "Cliquez pour placer des segments de murs libres",
@@ -671,7 +673,9 @@
                "draw_template_title": "Cliquez pour positionner un plan.",
                "draw_template_description": "Faire une rotation avec les touches , et .",
                "build_road_tip_title": "Cliquez et tirez pour construire une route.",
-               "build_road_tip_description": "Clique droit pour sortir"
+               "build_road_tip_description": "Clique droit pour sortir",
+               "stairs_tip_title": "Cliquez pour placer les escaliers",
+               "stairs_tip_description": "Faites un clic droit pour quitter. Tourner avec les touches , et . "
             },
             "building_cost": {
                "required_item": "Eléments nécessaires"
@@ -696,6 +700,14 @@
                "y_offset": "Courbure du toit",
                "show_gradient": "Pente",
                "show_margin": "Surplomb"
+            },
+            "stairs_shape": {
+               "shape_title": "Forme d'escaliers",
+               "options_title": "Options d'escaliers",
+               "max_height": "Hauteur indépendante",
+               "width": "Largeur",
+               "solid_stairs": "Solide escaliers",
+               "hollow_stairs": "Escaliers creux"
             },
             "building_templates": {
                "title": "Bibliothèque de plans",
@@ -774,6 +786,13 @@
                   "stone_resource": "Route en pierre",
                   "clay_resource": "Route en argile",
                   "clay_brick_resource": "Route en brique d'argile"
+               },
+               "stairs": {
+                  "material": "Matériaux d'escaliers",
+                  "wood_resource": "Escaliers en bois",
+                  "stone_resource": "Escaliers en pierre",
+                  "clay_resource": "Escaliers en argile",
+                  "clay_brick_resource": "Escaliers en brique d'argile"
                }
             },
             "start_building_confirm": {
@@ -831,7 +850,7 @@
                   "gear": "Armes et armures",
                   "food_and_drink": "Nourriture et boisson",
                   "wealth": "Richesse",
-                  "tooltip_tools": "Talismans et etablis",
+                  "tooltip_tools": "Talismans et établis",
                   "tooltip_wood": "Bois",
                   "tooltip_stone": "Pierre",
                   "tooltip_clay": "Argile",
@@ -1528,7 +1547,7 @@
                         },
                         "rewards": {
                            "bulletin_message": {
-                              "000": "Effectivement ! Par ordre de la princesse, les villes admissibles qui ont fait leurs preuves doivent gagner l'accès à l'apprentissage architectural et des caravanes riches pour le commerce."
+                              "000": "Effectivement ! Par ordre de la princesse, les villes admissibles qui ont fait leurs preuves doivent gagner l'accès à l'apprentissage architectural et les riches caravanes pour le commerce."
                            },
                            "bulletin_title": "Hochements de tête d'Anwyn",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1580,7 +1599,7 @@
                         },
                         "herald_approaches": {
                            "bulletin_message": {
-                              "000": "Ho là ! Est-ce la nouvelle colonie [str(i18n_data.town_name)] ?"
+                              "000": "Ho là ! Est-ce la nouvelle colonie [str(i18n_data.town_name)] ? Messire Burlyhands m'a dit que vous seriez ici, mais il est toujours mieux d'aller et voir les premiers jours. Pouvons-nous commencer avec la proclamation ?"
                            },
                            "bulletin_title": "A l'approche de héraut royal",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1641,6 +1660,15 @@
                         }
                      }
                   }
+               },
+               "unlock_craftsman_statue_recipe": {
+                  "bulletin_title": "Maçon Recette Débloqué: L'habileté du maître de guilde"
+               },
+               "unlock_roadside_shrine_recipe": {
+                  "bulletin_title": "Maçon Recette Débloqué: Fontaine d'abondance"
+               },
+               "unlock_valor_statue_recipe": {
+                  "bulletin_title": "Maçon Recette Débloqué: La valeur du Cid"
                }
             },
             "goblin_war": {
@@ -2963,6 +2991,15 @@
                                     }
                                  }
                               }
+                           },
+                           "unlock_blue_token_recipe": {
+                              "bulletin_title": "Le forgeron a débloqué la recette de la décoration de l'élite Gong !"
+                           },
+                           "unlock_purple_token_recipe": {
+                              "bulletin_title": "Le forgeron a débloqué la recette du générale Gong en or !"
+                           },
+                           "unlock_red_token_recipe": {
+                              "bulletin_title": "Le forgeron a débloqué la recette de la décoration du maître Gong !"
                            }
                         }
                      }
@@ -3136,6 +3173,10 @@
             "wall": {
                "display_name": "Mur",
                "description": "Garde le toit en l'air"
+            },
+            "stairs": {
+               "display_name": "Escaliers",
+               "description": "Aller en haut et en bas"
             }
          },
          "building_brushes": {
@@ -5450,13 +5491,13 @@
          },
          "roadside_shrine": {
             "roadside_shrine_ghost": {
-               "display_name": "Fountaine d'Abondance",
-               "description": "Place en preuve de la générosité et la foi"
+               "display_name": "Fontaine d'abondance",
+               "description": "Place en preuve de la générosité et de la foi"
             }
          },
          "craftsman_statue": {
             "craftsman_statue_ghost": {
-               "display_name": "L'habileté du maître de guilde",
+               "display_name": "L'habileté du Maître de Guilde",
                "description": "Place en preuve de l'habileté à l'artisanat"
             }
          },
@@ -6696,7 +6737,7 @@
          },
          "giant_bone_axe": {
             "display_name": "Hache géante d'os",
-            "description": "Taillée dans la clavicule d'une bête énorme.",
+            "description": "Taillée dans la clavicule d'une bête énorme. (À deux mains)",
             "giant_bone_axe_iconic": {
                "display_name": "Hache géante d'os",
                "description": "Taillée dans la clavicule d'une bête énorme."
@@ -6704,7 +6745,7 @@
          },
          "giant_bone_mace": {
             "display_name": "Mace géante d'os",
-            "description": "Lourde, elle cogne dur",
+            "description": "Lourde, elle cogne dur. (À deux mains)",
             "giant_bone_mace_iconic": {
                "display_name": "Mace géante d'os",
                "description": "Pour aplanir les faces."
@@ -6720,7 +6761,7 @@
          },
          "iron_pike": {
             "display_name": "Lance de fer",
-            "description": "Aiguisée. Longue. Pointue.",
+            "description": "Aiguisée. Longue. Pointue. (À deux mains)",
             "iron_pike_iconic": {
                "display_name": "Lance de fer",
                "description": "Aiguisée. Longue. Pointue."
@@ -6768,7 +6809,7 @@
          },
          "two_handed_sword": {
             "display_name": "Épée à deux mains",
-            "description": "Double mains, double problèmes.",
+            "description": "Double mains, double problèmes. (À deux mains)",
             "two_handed_sword_iconic": {
                "display_name": "Épée à deux mains",
                "description": "Double mains, double problèmes."
@@ -6816,7 +6857,7 @@
          },
          "ogos_bone_mace": {
             "display_name": "The Bonker",
-            "description": "Conçu par Ogo Skullbonker",
+            "description": "Conçu par Ogo Skullbonker. (À deux mains)",
             "ogos_bone_mace_iconic": {
                "display_name": "The Bonker",
                "description": "Ex-propriété d'Ogo Skullbonker"
@@ -7732,7 +7773,7 @@
          "engineer_workbench": {
             "engineer_workbench_ghost": {
                "display_name": "Atelier de l'ingénieur",
-               "description": "Atelier pour les ingénieurs pour créer des gadgets, des armes et des pièges."
+               "description": "Utilisé par l'ingénieur pour créer des gadgets."
             }
          },
          "engineer_outfit": {
@@ -7777,7 +7818,7 @@
                "flavor": "Une légère gêne pour les ogres. Une envie de mourir pour les souris."
             },
             "iron_door_recipe": {
-               "description": "Épais, porte de fer solide",
+               "description": "Épais, porte de fer solide. Comprend aussi une épaisse robuste serrure.",
                "recipe_name": "Porte à toute épreuve"
             },
             "decorations_name": "Décorations",
@@ -8092,17 +8133,17 @@
             "valor_statue_recipe": {
                "description": "Un monument à la puissance militaire de votre ville",
                "recipe_name": "La valeur de Cid",
-               "flavor": "Le bouclier de résilience, et l'épée pour la force. - Cid, chevalier des Old Ways"
+               "flavor": "Le bouclier de résilience, et l'épée de force. -- Cid, Chevalier de l'ancien temps"
             },
             "roadside_shrine_recipe": {
-               "recipe_name": "Fountaine d'abondance",
+               "recipe_name": "Fontaine d'abondance",
                "description": "Place pour preuve de la générosité et de la foi !",
-               "flavor": "Cid a façonné sa cuirasse dans un panier, et a apporté la richesse des riches au chevet des pauvres --Edison Arn, L'eglise d'Abondance"
+               "flavor": "Cid façonné sa cuirasse dans un panier et a apporté la richesse des riches au chevet des pauvres --Edison Arn, l'église d'abondance"
             },
             "craftsman_statue_recipe": {
                "recipe_name": "L'habileté du maître de guilde",
-               "description": "Affiche chaque artisan dans leur meilleur profil",
-               "flavor": "Un bon artisan ne blâme jamais ses outils, seuls les gens qui font ses outils. --Otto Crankfrown, maître de guilde Emérite"
+               "description": "Affiche chaque artisan sur leur meilleur profil",
+               "flavor": "Un bon artisan ne blâme ses outils, seuls les gens qui font ses outils. --Otto Crankfrown, Honorable Maître de Guilde"
             }
          }
       },
