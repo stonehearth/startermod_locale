@@ -627,13 +627,14 @@
          "build_mode": {
             "tooltips": {
                "building_tools": "Building Tools",
+               "erase":"Erase Tool",
                "voxel_tools": "Voxel Tools",
                "voxel_add": "Add Voxel",
                "voxel_paint": "Paint Voxel",
                "voxel_remove": "Remove Voxel",
                "selection": "Selection",
                "delete": "Delete",
-               "undo": "Undo",
+               "undo": "Undo (Ctrl + Z)",
                "draw_slab_tool": "Slabs",
                "draw_floor_tool": "Foundations",
                "grow_floor_tool": "Floors",
@@ -646,7 +647,7 @@
                "place_furniture_tool": "Furniture",
                "place_decoration_tool": "Decorations",
                "erase_tool": "Erase",
-               "draw_stairs_tool": "Ladders and Stairs"
+               "draw_stairs_tool": "Stairs"
             },
             "overhead_tips": {
                "wall_segment_tip_title": "Click to place freestanding wall segments",
@@ -960,7 +961,8 @@
                "overall_morale": "Overall Morale",
                "food": "Food",
                "shelter": "Shelter",
-               "safety": "Safety"
+               "safety": "Safety",
+               "military_strength": "Military Strength"
             },
             "inventory": {
                "item_count": "Items:"
@@ -1343,6 +1345,10 @@
             "agriculture": {
                "display_name": "Agriculture",
                "description": "The value of farming fields and pastures in your town. Each planted crop and each pasture animal contributes to the score."
+            },
+            "military_strength": {
+               "display_name": "Military Strength",
+               "description": "A value that reflects how strong your town is militarily. Combat units and equipped weapons and armor contribute to this score."
             }
          },
          "constants": {
@@ -3115,6 +3121,12 @@
             "courage_tonic_buff": {
                "display_name": "Courage Tonic",
                "description": "Courage increased for a short while."
+            }
+         },
+         "energy_tonic": {
+            "energy_tonic_buff": {
+               "display_name": "Energy Tonic",
+               "description": "Energy increased for a short while."
             }
          },
          "minor_courage_buff": {
@@ -6896,6 +6908,10 @@
          "courage_tonic": {
             "display_name": "Courage Tonic",
             "description": "Temporarily buffs Courage"
+         },
+         "energy_tonic": {
+            "display_name": "Energy Tonic",
+            "description": "Temporarily buffs energy"
          }
       },
       "outfits": {
@@ -8804,6 +8820,10 @@
             "courage_tonic_recipe": {
                "description": "Increases the courage of all town citizens for a short while.",
                "recipe_name": "Courage Tonic"
+            },
+            "energy_tonic_recipe": {
+               "description": "This tonic will make your town citizens less sleepy and move faster for a short while.",
+               "recipe_name": "Energy Tonic"
             },
             "decorations_name": "Decorations",
             "cleric_tome_recipe": {

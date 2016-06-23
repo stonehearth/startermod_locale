@@ -633,13 +633,14 @@
          "build_mode": {
             "tooltips": {
                "building_tools": "Outils de construction",
+               "erase": "Effacer un outil",
                "voxel_tools": "Outils Voxel",
                "voxel_add": "Ajouter un voxel",
                "voxel_paint": "Colorer un voxel",
                "voxel_remove": "Supprimer un voxel",
                "selection": "Sélection",
                "delete": "Supprimer",
-               "undo": "Annuler",
+               "undo": "Annuler (Ctrl + Z)",
                "draw_slab_tool": "Blocs",
                "draw_floor_tool": "Fondations",
                "grow_floor_tool": "Planchers",
@@ -652,7 +653,7 @@
                "place_furniture_tool": "Mobilier",
                "place_decoration_tool": "Décorations",
                "erase_tool": "Effacer",
-               "draw_stairs_tool": "Échelles et escaliers"
+               "draw_stairs_tool": "Escaliers"
             },
             "overhead_tips": {
                "wall_segment_tip_title": "Cliquez pour placer des segments de murs libres",
@@ -966,7 +967,8 @@
                "overall_morale": "Moral général",
                "food": "Nourriture",
                "shelter": "Abris",
-               "safety": "Sécurité"
+               "safety": "Sécurité",
+               "military_strength": "Force militaire"
             },
             "inventory": {
                "item_count": "Objets :"
@@ -1349,6 +1351,10 @@
             "agriculture": {
                "display_name": "Agriculture",
                "description": "La valeur des champs et des pâturages de votre ville. Chaque plant et chaque animal participe à ce score."
+            },
+            "military_strength": {
+               "display_name": "Force militaire",
+               "description": "Une valeur qui reflète la force militaire de votre ville. Les unités de combat, les armes équipées et armures contribuent à ce score."
             }
          },
          "constants": {
@@ -3121,6 +3127,12 @@
             "courage_tonic_buff": {
                "display_name": "Potion de courage",
                "description": "Le courage augmente pour un court instant."
+            }
+         },
+         "energy_tonic": {
+            "energy_tonic_buff": {
+               "display_name": "Energie tonique",
+               "description": "L'énergie est augmenté pendant une courte période."
             }
          },
          "minor_courage_buff": {
@@ -6902,6 +6914,10 @@
          "courage_tonic": {
             "display_name": "Potion de courage",
             "description": "Augmente le courage temporairement"
+         },
+         "energy_tonic": {
+            "display_name": "Energie tonique",
+            "description": "Augmente l'énergie temporairement"
          }
       },
       "outfits": {
@@ -8810,6 +8826,10 @@
             "courage_tonic_recipe": {
                "description": "Augmente le courage de tous vos hearthlings pour un court instant.",
                "recipe_name": "Potion de courage"
+            },
+            "energy_tonic_recipe": {
+               "description": "Ce tonique rendra vos citoyens de la ville moins somnolent et ils se déplaceront plus rapidement pendant une courte période.",
+               "recipe_name": "Energie tonique"
             },
             "decorations_name": "Décorations",
             "cleric_tome_recipe": {
