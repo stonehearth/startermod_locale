@@ -199,7 +199,8 @@
          "unit_frame": {
             "show_character_sheet": "Show character sheet",
             "focus_camera": "Focus camera on this unit",
-            "num_uses": "Uses"
+            "num_uses": "Uses",
+            "placed": "placed"
          },
          "citizens": {
             "title": "Citizens",
