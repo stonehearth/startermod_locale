@@ -242,7 +242,8 @@
             "equipment_description": "Portable par : [str(class_list)]",
             "level_description": "de niveau [str(level_req)]",
             "or": " ou ",
-            "num_uses": "Utiliser"
+            "num_uses": "Utiliser",
+            "placed": "Placer"
          },
          "citizens": {
             "title": "Hearthlings",
@@ -1160,6 +1161,11 @@
                "message": "Attention : ceci est un logiciel de qualité Alpha. Il manque de nombreuses fonctionnalités, et vous pouvez rencontrer des bogues quand vous jouez.<br><br>Vous pouvez nous aider en nous envoyant automatiquement les rapports d'erreur de votre jeu. Voulez-vous le faire ?",
                "accept": "Oui, envoyer les rapports d'erreurs",
                "cancel": "Non merci"
+            },
+            "mod_conflic_dialog": {
+               "title": "Conflit de module détectés !",
+               "message": "Attention: Votre répertoire mods contient à la fois un .smod et un dossier plat contenant certain mod. Le dossier plat va être utilisé par le jeu. Ces mod vont devenir obsolète lorsque le .smod sera mis à jour et causer des bugs. Les mods touchés sont: <br><br>",
+               "accept": "Oui, continuer."
             }
          },
          "select_game_story": {
@@ -2003,6 +2009,10 @@
                   "boss": {
                      "display_name": "Chef [str(self.unit_info.custom_name)]",
                      "description": "Moi être machine à tuer verte !!"
+                  },
+                  "sheep": {
+                     "display_name": "Bluebell le mouton",
+                     "description": "Compagnon précieux du Chef"
                   }
                },
                "shakedown": {
@@ -2411,19 +2421,6 @@
                                        "bulletin_title": "Mountan roars is approval",
                                        "dialog_title": "Mountain the Ogre"
                                     }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  },
-                  "trigger": {
-                     "raidcamp": {
-                        "encounters": {
-                           "create_camp": {
-                              "loot_chest": {
-                                 "sheep": {
-                                    "display_name": "Bluebell the Sheep"
                                  }
                               }
                            }
@@ -3146,6 +3143,16 @@
                "display_name": "Mode difficile",
                "description": "En mode difficile, les ennemies auront auront une armure plus résitante, auront plus de santé et feront plus de dégâts"
             }
+         },
+         "slowed": {
+            "snap_trap": {
+               "display_name": "Piège à pression",
+               "description": "Mouvement ralenti après avoir pris les dommages causés par piège"
+            },
+            "snap_trap_2": {
+               "display_name": "Piège à pince",
+               "description": "Mouvement considérablement ralenti après avoir pris les dommages causés par un grand piège"
+            }
          }
       },
       "build": {
@@ -3203,7 +3210,7 @@
                "#332B1F": "Cacao brun",
                "#4E442F": "Punga",
                "#979492": "Brouillard de montagne foncé",
-               "#592E18": "Baker's Chocolate",
+               "#592E18": "Chocolat boulangerie",
                "#B5A37B": "Meringue",
                "#B0AB9F": "Nuageux",
                "#8E8260": "Granite vert",
@@ -3240,6 +3247,26 @@
                "#864E31": "Korma",
                "#644F46": "Brun Congo",
                "#927923": "Gingembre citron"
+            },
+            "patterns": {
+               "gold_clay_wall": "Un motif de Meringue, Raphia, Noisetier d'hiver, et Ecru",
+               "wooden_wall": "Un motif de Punga, et Brun tabac",
+               "red_clay_slat_roof": "Un toit en argile colorée de Korma et en bois de Cacao brun",
+               "cobblestone": "Un motif de Hillary, Granite vert, et Huître Pâle",
+               "thatch_peaked_roof": "Un toit en bois colorée de Pesto, Gingembre citron, Or Yukon, et Laiton Antique",
+               "red_slate_peaked_roof": "Un toit en pierre de couleur Volcan clair, Volcan, et Rouge Rustique",
+               "gray_clay_wall": "Un motif de Brouillard de montagne clair, Brouillard de montagne, Brouillard de montagne foncé, et Nuageux",
+               "golden_clay_slat_roof": "Un toit d'argile colorée en Raphia et de bois Cacao brun",
+               "castle_roof": "Un toit en pierre colorée de couleur Thon, Gris foncé, et Gris moyen",
+               "plastered_wall": "Un motif de Napa, et Cendre",
+               "blue_slate_peaked_roof": "Un toit en pierre colorée de Bleu Bahamas, Blue majestueux, et Bleu royal foncé",
+               "brick_tiled": "Un motif de Brun Congo, Sombre brun congo, and Liège",
+               "wooden_peaked_roof": "Un toit en bois colorée de couleur Chocolat, Bistre, et Brun maroc",
+               "cobblestone_wall": "Un motif de couleur Thon, et Truite",
+               "slate_blue_checkered": "Un toit en Gris foncé, et Gris moyen",
+               "clay_slat_roof": "Un toit d'argile colorée de Cendre clair et de bois Cacao brun",
+               "wood_dark_diagonal": "Un motif de Muesli and Sandale",
+               "red_clay_wall": "Un motif de Chocolat boulangerie, et Nouvelle ambre"
             }
          }
       },
@@ -4573,15 +4600,9 @@
                "description": "Plus robuste qu'une porte classique."
             }
          },
-         "wooden_door_4x4": {
-            "wooden_door_ghost": {
-               "display_name": "Porte en bois",
-               "description": "Enfin un peu de vie privée !"
-            },
-            "wooden_tunnel_door_ghost": {
+         "wooden_tunnel_door": {
                "display_name": "Porte de tunnel en bois",
                "description": "Utile pour bloquer les tunnels"
-            }
          },
          "wooden_double_door": {
             "wooden_double_door_ghost": {
@@ -4957,6 +4978,32 @@
                },
                "011": {
                   "name": "Citrouille pourrie",
+                  "description": "Moisie et dégoûtante."
+               }
+            }
+         },
+         "watermelon_crop": {
+            "display_name": "Pastèque",
+            "description": "Prend un certain temps à se développer, mais très amusant à manger !",
+            "growth_stage": {
+               "003": {
+                  "name": "Pastèque mûre",
+                  "description": "Délicieux !"
+               },
+               "002": {
+                  "name": "Bébé pastèque",
+                  "description": "Pas encore comestible !"
+               },
+               "001": {
+                  "name": "Watermelon Sprout",
+                  "description": "Pas encore comestible !"
+               },
+               "000": {
+                  "name": "Semis de Pastèque",
+                  "description": "Une pastèque pas finie."
+               },
+               "011": {
+                  "name": "Pastèque pourrie",
                   "description": "Moisie et dégoûtante."
                }
             }
@@ -5581,6 +5628,16 @@
                "description": "C'est un délice, vraiment..."
             }
          },
+         "watermelon": {
+            "watermelon_basket": {
+               "display_name": "Panier de Pastèque",
+               "description": "Prêt à manger"
+            },
+            "watermelon_serving": {
+               "display_name": "Tranche de pastèque",
+               "description": "De plus, vous pouvez cracher les graines !"
+            }
+         },
          "sheep_jerky": {
             "display_name": "Carré d'agneau"
          },
@@ -5767,7 +5824,7 @@
          },
          "donation_box": {
             "donation_box": {
-               "display_name": "Don à l'Eglise d'abondance",
+               "display_name": "Boîte de dons alimentaires",
                "description": "Création pour montrer la générosité et la piété"
             },
             "donation_box_serving": {
@@ -5901,6 +5958,10 @@
             "tombstone_ghost": {
                "display_name": "R.I.P. [str(self.unit_info.custom_name)]",
                "description": "[str(self.unit_info.custom_name)] sera toujours dans nos coeurs."
+            },
+            "tombstone": {
+               "display_name": "Pierre tombale",
+               "description": "Un mémorial pour les perdus"
             }
          },
          "writing_desk": {
@@ -6882,6 +6943,10 @@
          "turnip_bullet": {
             "display_name": "Navet",
             "description": "Légumes militarisé."
+         },
+         "bolt": {
+            "display_name": "Boulon",
+            "description": "Boulon"
          }
       },
       "consumables": {
@@ -6918,6 +6983,10 @@
          "energy_tonic": {
             "display_name": "Energie tonique",
             "description": "Augmente l'énergie temporairement"
+         },
+         "repair_pack": {
+            "display_name": "Paque de réparation",
+            "description": "Utilisé pour recharger la tourelle munitions et des pièges à renard"
          }
       },
       "outfits": {
@@ -7749,11 +7818,11 @@
          "engineer_description": {
             "display_name": "Ingénieur",
             "description": "L'ingénieur crée des engins de haute technologie et des armes défensives.",
-            "requirements": "Un forgeron niveau 2 et une clé d'ingénieur, conçu par le forgeron.",
+            "requirements": "Un forgeron niveau 1 et une clé d'ingénieur, conçu par le forgeron.",
             "level_6_data": {
                "title": "Maître ingénieur",
                "perk_000_name": "Général de la Défense",
-               "perk_000_description": "Cet ingénieur peut placer jusqu'à douze pièges et quatre tourelles"
+               "perk_000_description": "Cet ingénieur peut placer jusqu'à douze pièges et huit tourelles"
             },
             "level_2_data": {
                "perk_000_name": "Amélioration de l'inventivité",
@@ -7763,7 +7832,7 @@
                "perk_000_name": "Catalogue standard",
                "perk_001_name": "Défenseur junior",
                "perk_000_description": "L'ingénieur peut maintenant faire des gadgets et des décorations de base.",
-               "perk_001_description": "Cet ingénieur peut placer jusqu'à quatre pièges et une tourelle"
+               "perk_001_description": "Cet ingénieur peut placer jusqu'à quatre pièges et deux tourelles"
             },
             "level_4_data": {
                "perk_000_name": "Catalogue étendu",
@@ -7775,7 +7844,7 @@
             },
             "level_3_data": {
                "perk_000_name": "Défenseur de la ville",
-               "perk_000_description": "Cet ingénieur peut placer jusqu'à huit pièges et deux tourelles"
+               "perk_000_description": "Cet ingénieur peut placer jusqu'à huit pièges et quatre tourelles"
             }
          },
          "engineer_wrench": {
@@ -7807,9 +7876,9 @@
                "recipe_name": "Engrenage en bronze",
                "flavor": "Heureusement le dentelage ne nécessitent pas de brossage"
             },
-            "gadget_parts_name": "Pièces de gadget",
+            "gadget_parts_name": "Des engrenages et des pièces",
             "small_turret_recipe": {
-               "description": "Après l'avoir placé, tiré sur les ennemis à distance. Détruite après 15 utilisations.",
+               "description": "Après l'avoir placé, tiré sur les ennemis à distance. Doit être réparé après 20 utilisations.",
                "recipe_name": "Tourelle"
             },
             "iron_gear_recipe": {
@@ -7824,7 +7893,7 @@
             "ranged_weapons_name": "Armes à distance",
             "traps_name": "Pièges défensifs",
             "turnip_shooter_recipe": {
-               "description": "Tire des navets sur les ennemis à une petite distance. Tombe en morceaux après 12 utilisations.",
+               "description": "Tire des navets sur les ennemis à une petite distance. Doit être réparé après 15 utilisations.",
                "recipe_name": "Navet de tir",
                "flavor": "Ne pas aimer le goût des navets ? Ne vous inquiétez pas, ils sont multi-fonctions."
             },
@@ -7841,6 +7910,10 @@
             "wooden_sign_engineer_recipe": {
                "description": "Un signe avec la marque de l'ingénieur.",
                "recipe_name": "Signe mural de l'ingénieur"
+            },
+            "repair_pack_recipe": {
+               "description": "Utilisé pour recharger les munitions de la tourelle et la réparation des pièges",
+               "recipe_name": "Pack de réparation"
             }
          },
          "engineer_buffs": {
@@ -8746,8 +8819,8 @@
                "long_description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages."
             },
             "level_1_data": {
-               "perk_000_name": "Volonté amélioré",
-               "perk_000_description": "The herbalist channels the spirits of the forest and gains natural regeneration."
+               "perk_000_name": "Régénération naturelle",
+               "perk_000_description": "L'herboriste ouvre un canal spirituel avec la forêt et gagne de la régénération naturelle. Volonté augmenté."
             },
             "level_2_data": {
                "perk_000_name": "Perspectives de collaboration",
@@ -8840,8 +8913,8 @@
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
-               "display_name": "Volonté +50",
-               "description": "L'herboriste a amélioré la régénération de santé"
+               "display_name": "Régénération naturelle",
+               "description": "L'herboriste a amélioré la régénération de santé et volonté"
             }
          }
       },

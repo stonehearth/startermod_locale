@@ -242,7 +242,8 @@
             "equipment_description": "Equippable by: [str(class_list)]",
             "level_description": "of Level [str(level_req)]",
             "or": " or ",
-            "num_uses": "Uses"
+            "num_uses": "Uses",
+            "placed": "placed"
          },
          "citizens": {
             "title": "Citizens",
@@ -627,7 +628,7 @@
          "build_mode": {
             "tooltips": {
                "building_tools": "Building Tools",
-               "erase":"Erase Tool",
+               "erase": "Erase Tool",
                "voxel_tools": "Voxel Tools",
                "voxel_add": "Add Voxel",
                "voxel_paint": "Paint Voxel",
@@ -1154,6 +1155,11 @@
                "message": "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
                "accept": "Yes, send crash reports",
                "cancel": "Nope"
+            },
+            "mod_conflic_dialog": {
+               "title": "Module Conflicts Detected!",
+               "message": "Warning: Your mods directory contains both a .smod and a flat folder of some mods. The flat folder mod will be used by the game. This mod will become out of date when the .smod is updated and cause bugs. The affected mods are: <br><br>",
+               "accept": "Yes, proceed."
             }
          },
          "select_game_story": {
@@ -1997,6 +2003,10 @@
                   "boss": {
                      "display_name": "Chieftain [str(self.unit_info.custom_name)]",
                      "description": "Me leen green fighting macheen!!!"
+                  },
+                  "sheep": {
+                     "display_name": "Bluebell the Sheep",
+                     "description": "The Chieftain's prized companion"
                   }
                },
                "shakedown": {
@@ -2405,19 +2415,6 @@
                                        "bulletin_title": "Mountan roars is approval",
                                        "dialog_title": "Mountain the Ogre"
                                     }
-                                 }
-                              }
-                           }
-                        }
-                     }
-                  },
-                  "trigger": {
-                     "raidcamp": {
-                        "encounters": {
-                           "create_camp": {
-                              "loot_chest": {
-                                 "sheep": {
-                                    "display_name": "Bluebell the Sheep"
                                  }
                               }
                            }
@@ -3140,6 +3137,16 @@
                "display_name": "Hard Mode",
                "description": "In Hard Mode, enemies have more armor and health and will inflict more damage"
             }
+         },
+         "slowed": {
+            "snap_trap": {
+               "display_name": "Snap Trap",
+               "description": "Movement slowed after taking damage from trap"
+            },
+            "snap_trap_2": {
+               "display_name": "Clamp Trap",
+               "description": "Movement greatly slowed after taking damage from a large trap"
+            }
          }
       },
       "build": {
@@ -3234,6 +3241,26 @@
                "#864E31": "Korma",
                "#644F46": "Congo Brown",
                "#927923": "Lemon Ginger"
+            },
+            "patterns": {
+               "gold_clay_wall": "A Pattern of Pavlova, Raffia, Winter Hazel, and Ecru",
+               "wooden_wall": "A Pattern of Punga, and Tobacco Brown",
+               "red_clay_slat_roof": "A roof made of Korma colored clay and Cocoa Brown wood",
+               "cobblestone": "A Pattern of Hillary, Granite Green, and Pale Oyster",
+               "thatch_peaked_roof": "A roof made of Pesto, Lemon Ginger, Yukon Gold, and Antique Brass colored wood",
+               "red_slate_peaked_roof": "A roof made of Light Volcano, Volcano, and Rustic Red colored stone",
+               "gray_clay_wall": "A Pattern of Light Mountain Mist, Mountain Mist, Dark Mountain Mist, and Cloudy",
+               "golden_clay_slat_roof": "A roof made of Raffia colored clay and Cocoa Brown wood",
+               "castle_roof": "A roof made of Tuna, Shuttle Grey, and Mid Grey colored stone",
+               "plastered_wall": "A Pattern of Napa, and Ash",
+               "blue_slate_peaked_roof": "A roof made of Bahama Blue, Regal Blue, and Dark Regal Blue colored stone",
+               "brick_tiled": "A Pattern of Congo Brown, Dark Congo Brown, and Cork",
+               "wooden_peaked_roof": "A roof made of Cioccolato, Bistre, and Morocco Brown colored wood",
+               "cobblestone_wall": "A Pattern of Tuna, and Trout",
+               "slate_blue_checkered": "A Pattern of Shuttle Grey, and Mid Grey",
+               "clay_slat_roof": "A roof made of Light Ash colored clay and Cocoa Brown wood",
+               "wood_dark_diagonal": "A Pattern of Muesli and Sandal",
+               "red_clay_wall": "A Pattern of Baker's Chocolate, and New Amber"
             }
          }
       },
@@ -3539,7 +3566,7 @@
                      "010": "This really feels like a spot where we can build something great.",
                      "011": "Uninterrupted bliss! I love days like this.",
                      "012": "24 hours of pure tranquility.",
-                     "013": "A whole day without a single extential threat! Amazing!"
+                     "013": "A whole day without a single existential threat! Amazing!"
                   }
                }
             },
@@ -4567,15 +4594,9 @@
                "description": "Sturdier than your average door."
             }
          },
-         "wooden_door_4x4": {
-            "wooden_door_ghost": {
-               "display_name": "Wooden Door",
-               "description": "Privacy at last!"
-            },
-            "wooden_tunnel_door_ghost": {
-               "display_name": "Wooden Tunnel Door",
-               "description": "Useful for blocking off tunnels"
-            }
+         "wooden_tunnel_door": {
+            "display_name": "Wooden Tunnel Door",
+            "description": "Useful for blocking off tunnels"
          },
          "wooden_double_door": {
             "wooden_double_door_ghost": {
@@ -4951,6 +4972,32 @@
                },
                "011": {
                   "name": "Rotten pumpkin",
+                  "description": "Moldy and disgusting."
+               }
+            }
+         },
+         "watermelon_crop": {
+            "display_name": "Watermelon",
+            "description": "Takes a while to grow, but very fun to eat!",
+            "growth_stage": {
+               "003": {
+                  "name": "Ripe watermelon",
+                  "description": "Delicious!"
+               },
+               "002": {
+                  "name": "Baby watermelon",
+                  "description": "Not edible yet!"
+               },
+               "001": {
+                  "name": "Watermelon Sprout",
+                  "description": "Not edible yet!"
+               },
+               "000": {
+                  "name": "Watermelon Seedling",
+                  "description": "A unrealized watermelon."
+               },
+               "011": {
+                  "name": "Rotten watermelon",
                   "description": "Moldy and disgusting."
                }
             }
@@ -5575,6 +5622,16 @@
                "description": "Delicious. Really..."
             }
          },
+         "watermelon": {
+            "watermelon_basket": {
+               "display_name": "Watermelon Basket",
+               "description": "Ready for eating"
+            },
+            "watermelon_serving": {
+               "display_name": "Watermelon Slice",
+               "description": "Plus you can spit out the seeds!"
+            }
+         },
          "sheep_jerky": {
             "display_name": "Rack of Mutton"
          },
@@ -5761,7 +5818,7 @@
          },
          "donation_box": {
             "donation_box": {
-               "display_name": "Donation to the Church of Plenty",
+               "display_name": "Food Donation Box",
                "description": "Craft to show generosity and piety"
             },
             "donation_box_serving": {
@@ -5895,6 +5952,10 @@
             "tombstone_ghost": {
                "display_name": "R.I.P. [str(self.unit_info.custom_name)]",
                "description": "[str(self.unit_info.custom_name)] will always be remembered."
+            },
+            "tombstone": {
+               "display_name": "Tombstone",
+               "description": "A memorial for the fallen"
             }
          },
          "writing_desk": {
@@ -6876,6 +6937,10 @@
          "turnip_bullet": {
             "display_name": "Turnip",
             "description": "Weaponized vegetable."
+         },
+         "bolt": {
+            "display_name": "Bolt",
+            "description": "Bolt"
          }
       },
       "consumables": {
@@ -6912,6 +6977,10 @@
          "energy_tonic": {
             "display_name": "Energy Tonic",
             "description": "Temporarily buffs energy"
+         },
+         "repair_pack": {
+            "display_name": "Repair Pack",
+            "description": "Used to refill turret ammo and fix traps"
          }
       },
       "outfits": {
@@ -7743,11 +7812,11 @@
          "engineer_description": {
             "display_name": "Engineer",
             "description": "The engineer creates advanced contraptions and defensive weaponry.",
-            "requirements": "A level 2 Blacksmith and a wrench, crafted by the Blacksmith.",
+            "requirements": "A level 1 Blacksmith and a wrench, crafted by the Blacksmith.",
             "level_6_data": {
                "title": "Master Engineer",
                "perk_000_name": "General of Defense",
-               "perk_000_description": "This engineer can place up to twelve traps and four turrets"
+               "perk_000_description": "This engineer can place up to twelve traps and eight turrets"
             },
             "level_2_data": {
                "perk_000_name": "Improved Inventiveness",
@@ -7757,7 +7826,7 @@
                "perk_000_name": "Standard Catalog",
                "perk_001_name": "Junior Defender",
                "perk_000_description": "The engineer can now make basic gadgets and decorations.",
-               "perk_001_description": "This engineer can place up to four traps and one turret"
+               "perk_001_description": "This engineer can place up to four traps and two turrets"
             },
             "level_4_data": {
                "perk_000_name": "Extended Catalog",
@@ -7769,7 +7838,7 @@
             },
             "level_3_data": {
                "perk_000_name": "Town Defender",
-               "perk_000_description": "This engineer can place up to eight traps and two turrets"
+               "perk_000_description": "This engineer can place up to eight traps and four turrets"
             }
          },
          "engineer_wrench": {
@@ -7801,9 +7870,9 @@
                "recipe_name": "Bronze Gear",
                "flavor": "Luckily have teeth that don't requiring brushing"
             },
-            "gadget_parts_name": "Gadget Parts",
+            "gadget_parts_name": "Gears and Parts",
             "small_turret_recipe": {
-               "description": "After placed, shoots at enemies from a distance. Destructs after 15 uses.",
+               "description": "After placed, shoots at enemies from a distance. Must be repaired after 20 uses.",
                "recipe_name": "Turret"
             },
             "iron_gear_recipe": {
@@ -7818,7 +7887,7 @@
             "ranged_weapons_name": "Ranged Weapons",
             "traps_name": "Defensive Traps",
             "turnip_shooter_recipe": {
-               "description": "Shoots turnips at enemies from a small distance. Falls apart after 12 uses.",
+               "description": "Shoots turnips at enemies from a small distance. Must be repaired after 15 uses.",
                "recipe_name": "Turnip Shooter",
                "flavor": "Don't like the taste of turnips? Don't worry, they're multi-functional."
             },
@@ -7835,6 +7904,10 @@
             "wooden_sign_engineer_recipe": {
                "description": "A sign with the mark of the Engineer.",
                "recipe_name": "Engineer's Wall-Mounted Sign"
+            },
+            "repair_pack_recipe": {
+               "description": "Used to refill turret ammo and repair traps",
+               "recipe_name": "Repair Pack"
             }
          },
          "engineer_buffs": {
@@ -8740,8 +8813,8 @@
                "long_description": "Allows the Herbalist to craft healing balms and bandages."
             },
             "level_1_data": {
-               "perk_000_name": "Improved Willpower",
-               "perk_000_description": "The herbalist channels the spirits of the forest and gains natural regeneration."
+               "perk_000_name": "Natural Regeneration",
+               "perk_000_description": "The herbalist channels the spirits of the forest and gains natural regeneration. Willpower and Diligence increased."
             },
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
@@ -8834,8 +8907,8 @@
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
-               "display_name": "Willpower +50",
-               "description": "The herbalist has improved health regeneration"
+               "display_name": "Natural Regeneration",
+               "description": "The herbalist has improved health regeneration and diligence"
             }
          }
       },
