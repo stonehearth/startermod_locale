@@ -4601,8 +4601,8 @@
             }
          },
          "wooden_tunnel_door": {
-               "display_name": "Porte de tunnel en bois",
-               "description": "Utile pour bloquer les tunnels"
+            "display_name": "Porte de tunnel en bois",
+            "description": "Utile pour bloquer les tunnels"
          },
          "wooden_double_door": {
             "wooden_double_door_ghost": {
