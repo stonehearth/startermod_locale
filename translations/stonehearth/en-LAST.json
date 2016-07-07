@@ -687,7 +687,8 @@
                "finished_editing": "Finished Editing",
                "start_editing": "Edit",
                "build_complete_title": "Congratulations!",
-               "build_complete_description": "this building is complete"
+               "build_complete_description": "this building is complete",
+               "compute_scaffolding": "Building Planning"
             },
             "roof_shape": {
                "title": "Slope, Direction, & Size",
@@ -6977,10 +6978,6 @@
          "energy_tonic": {
             "display_name": "Energy Tonic",
             "description": "Temporarily buffs energy"
-         },
-         "repair_pack": {
-            "display_name": "Repair Pack",
-            "description": "Used to refill turret ammo and fix traps"
          }
       },
       "outfits": {
@@ -7904,10 +7901,6 @@
             "wooden_sign_engineer_recipe": {
                "description": "A sign with the mark of the Engineer.",
                "recipe_name": "Engineer's Wall-Mounted Sign"
-            },
-            "repair_pack_recipe": {
-               "description": "Used to refill turret ammo and repair traps",
-               "recipe_name": "Repair Pack"
             }
          },
          "engineer_buffs": {

@@ -693,7 +693,8 @@
                "finished_editing": "Terminer l'édition",
                "start_editing": "Éditer",
                "build_complete_title": "Félicitations !",
-               "build_complete_description": "ce bâtiment est terminé"
+               "build_complete_description": "ce bâtiment est terminé",
+               "compute_scaffolding": "Planification de construction"
             },
             "roof_shape": {
                "title": "Pente, direction et taille",
@@ -6983,10 +6984,6 @@
          "energy_tonic": {
             "display_name": "Energie tonique",
             "description": "Augmente l'énergie temporairement"
-         },
-         "repair_pack": {
-            "display_name": "Paque de réparation",
-            "description": "Utilisé pour recharger la tourelle munitions et des pièges à renard"
          }
       },
       "outfits": {
@@ -7910,10 +7907,6 @@
             "wooden_sign_engineer_recipe": {
                "description": "Un signe avec la marque de l'ingénieur.",
                "recipe_name": "Signe mural de l'ingénieur"
-            },
-            "repair_pack_recipe": {
-               "description": "Utilisé pour recharger les munitions de la tourelle et la réparation des pièges",
-               "recipe_name": "Pack de réparation"
             }
          },
          "engineer_buffs": {
