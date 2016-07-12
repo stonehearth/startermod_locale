@@ -75,7 +75,7 @@
                      "dialog_nodes": {
                         "simple_message": {
                            "bulletin_message": {
-                              "000": "Haha, there's nothing like the sight of a brand new outpost, eh? With your hard work, this desolate land will soon a nexus of wealth and prosperity! We'll be back tomorrow with the whole store, but in the meantime, here's the starting stake your families sent along:",
+                              "000": "Haha, there's nothing like the sight of a brand new outpost, eh? With your hard work, this desolate land will soon be a nexus of wealth and prosperity! We'll be back tomorrow with the whole store, but in the meantime, here's the starting stake your families sent along:",
                               "001": "Monkey keep you, friends! It's always a pleasure to see a party make it to their designated tradepoint. As per your contract, we'll be back with the whole store tomorrow. In the meantime, here are the starting supplies your families ordered for you:",
                               "002": "Iskender Traders is always looking for a new place to rest between routes. We're pleased to see you out here, friends! We'll be back with the store tomorrow, but in the meantime, have a sample of our goods, to get you started:",
                               "003": "All ready to start a new outpost, eh! My friends, the desert welcomes all its children. We'll be back tomorrow to check on you, but in the meantime, your parents sent these supplies, to get you started:",
@@ -110,6 +110,18 @@
                   "shop_info": {
                      "name": "Farmer Gem's Farm Supplies",
                      "title": "Farmer Gem's supply cart rolls into town"
+                  }
+               }
+            }
+         }
+      },
+      "saved_objects": {
+         "building_templates_index": {
+            "template_tabs": {
+               "rayyas_children": {
+                  "display_name": "Rayya's",
+                  "categories": {
+                     "town": "Town Templates"
                   }
                }
             }

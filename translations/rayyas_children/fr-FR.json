@@ -31,16 +31,16 @@
                "flavor": "TODO(flavor!)"
             },
             "flat_bread_recipe": {
-               "description": "Unleavened bread made from corn meal",
-               "recipe_name": "Flat Bread"
+               "description": "Le pain sans levain à base de semoule de maïs",
+               "recipe_name": "Galette"
             },
             "meat_tagine_recipe": {
-               "description": "Meat and veggies simmered in a clay pot",
-               "recipe_name": "Meat Stew Tagine"
+               "description": "Viande et légumes mijotés dans un pot d'argile",
+               "recipe_name": "Ragoût de Tagine avec de la viande"
             },
             "vegetable_tagine_recipe": {
-               "description": "Veggies simmered in a clay pot",
-               "recipe_name": "Vegetable Stew Tagine"
+               "description": "Des légumes mijotés dans un pot d'argile",
+               "recipe_name": "Ragoût de Tagine aux légumes"
             }
          }
       }
@@ -75,7 +75,7 @@
                      "dialog_nodes": {
                         "simple_message": {
                            "bulletin_message": {
-                              "000": "Haha, there's nothing like the sight of a brand new outpost, eh? With your hard work, this desolate land will soon a nexus of wealth and prosperity! We'll be back tomorrow with the whole store, but in the meantime, here's the starting stake your families sent along:",
+                              "000": "Haha, there's nothing like the sight of a brand new outpost, eh? With your hard work, this desolate land will soon be a nexus of wealth and prosperity! We'll be back tomorrow with the whole store, but in the meantime, here's the starting stake your families sent along:",
                               "001": "Monkey keep you, friends! It's always a pleasure to see a party make it to their designated tradepoint. As per your contract, we'll be back with the whole store tomorrow. In the meantime, here are the starting supplies your families ordered for you:",
                               "002": "Iskender Traders is always looking for a new place to rest between routes. We're pleased to see you out here, friends! We'll be back with the store tomorrow, but in the meantime, have a sample of our goods, to get you started:",
                               "003": "All ready to start a new outpost, eh! My friends, the desert welcomes all its children. We'll be back tomorrow to check on you, but in the meantime, your parents sent these supplies, to get you started:",
@@ -90,26 +90,38 @@
                },
                "stonecutter_shop": {
                   "shop_info": {
-                     "name": "Vosker Saji's Polished Earths",
-                     "title": "A master mason's cart draws near"
+                     "name": "Terres polies de Vosker Saji",
+                     "title": "Un maître maçon en charrette se rapproche"
                   }
                },
                "tannery_shop": {
                   "shop_info": {
-                     "name": "Rin's Fine Pelts and Rugs",
-                     "title": "A wagon of fine animal goods approaches"
+                     "name": "Fine Fourrures et tapis de Erin",
+                     "title": "Un wagon de fines marchandises animales approches"
                   }
                },
                "woodcutter_shop": {
                   "shop_info": {
-                     "name": "Rajin's Goods of the Distant West",
-                     "title": "An exotic shop of rare woods arrives"
+                     "name": "Les marchandises de Rajin de l'Ouest Distant",
+                     "title": "Une boutique exotique de bois rares arrive"
                   }
                },
                "food_shop": {
                   "shop_info": {
                      "name": "Les fournitures agricoles du fermier Gem",
-                     "title": "Farmer Gem's supply cart rolls into town"
+                     "title": "Gem's l'aggriculteur roule vers la ville avec sa charrette d'approvisionnement"
+                  }
+               }
+            }
+         }
+      },
+      "saved_objects": {
+         "building_templates_index": {
+            "template_tabs": {
+               "rayyas_children": {
+                  "display_name": "Rayya's",
+                  "categories": {
+                     "town": "Modèles de ville"
                   }
                }
             }
@@ -121,7 +133,7 @@
          "rc_camp_standard": {
             "rc_camp_standard_ghost": {
                "display_name": "Bannière de campement",
-               "description": "How you know you've come home"
+               "description": "Comment savez vous que vous êtes à la maison"
             }
          }
       }
