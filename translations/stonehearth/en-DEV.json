@@ -4374,14 +4374,6 @@
                "display_name": "Camp Standard",
                "description": "Use to mark territory, civilizedly."
             }
-         },
-         "control_attack_banner": {
-            "display_name": "Attack Banner",
-            "description": "Attack!!!!"
-         },
-         "control_defend_banner": {
-            "display_name": "Defend Banner",
-            "description": "Hold this ground in Town Defense mode"
          }
       },
       "loot": {
