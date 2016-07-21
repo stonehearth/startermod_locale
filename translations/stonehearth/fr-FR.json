@@ -6297,8 +6297,8 @@
                "description": "Fabriqué à partir de planches de bois grossièrement hachées"
             },
             "orc_tent": {
-               "display_name": "Orc Tent",
-               "description": "Smells like old laundry."
+               "display_name": "Tente orc",
+               "description": "Sent comme dans une ancienne buanderie"
             }
          }
       },
@@ -6329,7 +6329,7 @@
          "brightbell_plant": {
             "display_name": "Jacinthe sauvage",
             "description": "Une fleur sauvage récoltable.",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé"
          },
          "carrot": {
             "carrot_basket": {
@@ -6344,7 +6344,7 @@
          "frostsnap_plant": {
             "display_name": "Perce-neige sauvage",
             "description": "Une fleur sauvage récoltable.",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé"
          },
          "silkweed": {
             "silkweed": {
@@ -6374,18 +6374,18 @@
             }
          },
          "cactus_plant": {
-            "display_name": "Wild Cactus",
-            "description": "A harvestable wild flower",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
+            "display_name": "Cactus sauvage",
+            "description": "Une fleur sauvage récoltable",
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé."
          },
          "tumbleweed": {
             "display_name": "Tumbleweed",
-            "description": "Source of coarse fibers"
+            "description": "Source de fibres grossières"
          },
          "pear_cactus": {
-            "display_name": "Pear Cactus",
-            "description": "Harvest carefully for prickley pears.",
-            "unripe_description": "It's the invisible spines that really hurt"
+            "display_name": "Poire de cactus",
+            "description": "Poire à épigne a récolter délicatement.",
+            "unripe_description": "Ce sont des épines invisibles et qui blessent vraiment"
          }
       },
       "rabbit": {
@@ -7168,7 +7168,7 @@
             "copper_ingot_recipe": {
                "description": "Une barre de cuivre pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot de cuivre",
-               "flavor": "Smooth and silky to the touch"
+               "flavor": "Lisse et soyeux au touché"
             },
             "gold_ingot_recipe": {
                "description": "Une barre d'or pur. Un matériau adapté à la fabrication d'objets artisanaux.",
@@ -7178,10 +7178,10 @@
             "iron_ingot_recipe": {
                "description": "Une barre de fer pur. Un matériau adapté à la fabrication d'objets artisanaux.",
                "recipe_name": "Lingot de fer",
-               "flavor": "To both swords and plowshares, what an egg is to a chicken."
+               "flavor": "Pour les épées et les socs, comme ce qu'est l'oeuf à la poule."
             },
             "iron_mace_recipe": {
-               "description": "Heavy, it packs a whallop.",
+               "description": "Lourd, il emballe en un gros coup.",
                "recipe_name": "Mace de fer",
                "flavor": "And Erin rested her forehead upon it, and the iron stole away enchantment and memory, together."
             },
