@@ -587,7 +587,9 @@
                "sell_all": "Sell All",
                "buy_tab": "Buy",
                "sell_tab": "Sell",
-               "not_enough_gold_tooltip": "Not enough gold"
+               "shopkeeper_gold_label": "Merchant gold",
+               "not_enough_gold_tooltip": "Not enough gold",
+               "shopkeeper_not_enough_gold_tooltip": "Shopkeeper does not have enough gold"
             },
             "city_dialog": {
                "proclamation": "PROCLAMATION OF"
@@ -1153,9 +1155,9 @@
             "patch_notes": "Show Patch Notes",
             "alpha_welcome_dialog": {
                "title": "Welcome to Stonehearth!",
-               "message": "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us crash reports for your game. Would you like to do this?",
-               "accept": "Yes, send crash reports",
-               "cancel": "Nope"
+               "message": "Warning: this is Alpha quality software. It's missing many features, and you can expect to encounter bugs as you play.<br><br>You can help by automatically sending us anonymous gameplay data and crash reports from your game.",
+               "accept": "Yes, I want to help!",
+               "cancel": "No, thanks."
             },
             "mod_conflic_dialog": {
                "title": "Module Conflicts Detected!",
@@ -1460,6 +1462,15 @@
                   "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] hours to give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
                   "return_title": "The trader returns!",
                   "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Still sounds good?",
+                  "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
+               },
+               "returning_crop_trader_encounter": {
+                  "title": "A trader brings seeds from a distant land.",
+                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_item)] in exchange. Sound good?",
+                  "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] hours!",
+                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] hours to give you [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
+                  "return_title": "The trader returns!",
+                  "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_item)] in exchange. Still sounds good?",
                   "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
                },
                "rugs_shop": {
@@ -3196,7 +3207,7 @@
          "building_brushes": {
             "colors": {
                "#928C76": "Heathered Grey",
-               "#4C2424": "Light Volcano",
+               "#4C2424": "Volcano",
                "#C0BBA8": "Ash",
                "#693921": "New Amber",
                "#A5A199": "Light Mountain Mist",
@@ -3218,7 +3229,7 @@
                "#5A3D2D": "Cioccolato",
                "#D0B884": "Winter Hazel",
                "#412B1F": "Morocco Brown",
-               "#542929": "Volcano",
+               "#542929": "Light Volcano",
                "#403521": "Clinker",
                "#A59F8B": "Napa",
                "#86764A": "Shadow",
@@ -3371,6 +3382,10 @@
          "use_consumable": {
             "display_name": "Use",
             "description": "Use this consumable item to buff every hearthling in town. This will destroy the item."
+         },
+         "use_seeds": {
+            "display_name": "Use",
+            "description": "Use these seeds to teach your farmers to grow a new crop. This will destroy the item."
          },
          "edit_party": {
             "display_name": "Edit Party",
@@ -4339,6 +4354,9 @@
                "tavern": {
                   "display_name": "Tavern"
                }
+            },
+            "carpenter_house": {
+               "display_name": "Carpenter House"
             }
          }
       }
@@ -4688,6 +4706,70 @@
                "display_name": "Ironclad Door",
                "description": "Studier than wooden or stone doors"
             }
+         },
+         "bronze_portcullis": {
+            "bronze_portcullis_ghost": {
+               "display_name": "Bronze Portcullis",
+               "description": "Useful for fortifying town entrypoints"
+            }
+         },
+         "wooden_door_fine": {
+            "wooden_door_fine_ghost": {
+               "display_name": "Wooden Door",
+               "description": "Privacy at last!"
+            }
+         },
+         "wooden_door_2_fine": {
+            "wooden_door_2_fine_ghost": {
+               "description": "Sturdier than your average door, and such a sweet pattern too.",
+               "display_name": "Fine Reinforced Wooden Door"
+            }
+         },
+         "wooden_double_door_fine": {
+            "wooden_double_door_fine_ghost": {
+               "display_name": "Fine Wooden Double Door",
+               "description": "A larger door with some extra style. All your friends will be envious."
+            }
+         },
+         "wooden_window_frame_fine": {
+            "wooden_window_frame_fine_ghost": {
+               "display_name": "Wooden Window Frame",
+               "description": "So much for privacy..."
+            }
+         },
+         "wooden_window_frame_tall_fine": {
+            "wooden_window_frame_tall_fine_ghost": {
+               "display_name": "Tall Window Frame",
+               "description": "Extra height adds an air of elegance"
+            }
+         },
+         "wooden_window_frame_wide_fine": {
+            "wooden_window_frame_wide_fine_ghost": {
+               "display_name": "Wide Window Frame",
+               "description": "It's a panoramic view!"
+            }
+         },
+         "wooden_diamond_window_fine": {
+            "wooden_diamond_window_fine_ghost": {
+               "display_name": "Fine Diamond Window Frame",
+               "description": "So much for privacy..."
+            }
+         },
+         "picket_fence_fine": {
+            "picket_fence_fine_ghost": {
+               "display_name": "Fine Picket Fence",
+               "description": "If it's not white, is our life unfulfilled?"
+            }
+         },
+         "picket_fence_gate_fine": {
+            "picket_fence_gate_fine_ghost": {
+               "display_name": "Fine Picket Fence Gate",
+               "description": "Don't like your neighbors? Don't install."
+            }
+         },
+         "wooden_tunnel_door_fine": {
+            "display_name": "Fine Wooden Tunnel Door",
+            "description": "Useful for blocking off tunnels"
          }
       },
       "containers": {
@@ -4766,6 +4848,24 @@
             "display_name": "Large Wheat Bundle",
             "description": "Harvest for a large amount of wheat",
             "iconic_description": "Harvestable for wheat when placed"
+         },
+         "small_crate_fine": {
+            "small_crate_fine_ghost": {
+               "display_name": "Fine Small Create",
+               "description": "Storage container with style"
+            }
+         },
+         "large_crate_fine": {
+            "large_crate_fine_ghost": {
+               "description": "Storage container with style",
+               "display_name": "Fine Large Crate"
+            }
+         },
+         "leather_bound_chest_fine": {
+            "leather_bound_chest_fine_ghost": {
+               "display_name": "Fine Leather Bound Chest",
+               "description": "Storage Container with style"
+            }
          }
       },
       "critters": {
@@ -5172,6 +5272,28 @@
                }
             }
          },
+         "acacia_tree_crop": {
+            "display_name": "Acacia Tree Sapling",
+            "description": "Out of trees? Get ready to participate in reforestation.",
+            "growth_stage": {
+               "001": {
+                  "name": "Acacia Tree Seedling",
+                  "description": "It's just getting started."
+               },
+               "003": {
+                  "name": "Acacia Tree Sapling",
+                  "description": "Ready to be transferred to a bigger plot."
+               },
+               "000": {
+                  "name": "Seed Pod",
+                  "description": "Even a mighty tree has humble beginnings."
+               },
+               "002": {
+                  "name": "Acacia Tree Sprout",
+                  "description": "Perfect size for a baby giraffe."
+               }
+            }
+         },
          "golden_gourd_crop": {
             "display_name": "Golden Gourd Crop",
             "description": "Much prettier than it is tasty",
@@ -5360,7 +5482,10 @@
          "wooden_garden_lantern_fine": {
             "wooden_garden_lantern_fine_ghost": {
                "display_name": "Fine Garden Lantern",
-               "description": "A compact source of light"
+               "description": "A compact source of light, with a little bit of flair."
+            },
+            "wooden_garden_lantern_red_ghost": {
+               "display_name": "wooden garden lantern red"
             }
          },
          "wooden_sign": {
@@ -5560,6 +5685,30 @@
                "display_name": "Engineer's Sign",
                "description": "A sign with the mark of the Engineer."
             }
+         },
+         "wooden_garden_lantern_red": {
+            "wooden_garden_lantern_red_ghost": {
+               "display_name": "Wooden Garden Lantern - in Red",
+               "description": "A compact source of light"
+            }
+         },
+         "wooden_wall_lantern_red": {
+            "wooden_wall_lantern_fine_ghost": {
+               "display_name": "Wooden Wall Lantern - in Red",
+               "description": "Easily attached to walls"
+            }
+         },
+         "window_box_brightbell_fine": {
+            "window_box_brightbell_fine_ghost": {
+               "display_name": "Fine Brightbell planter",
+               "description": "A cozy home for the plant."
+            }
+         },
+         "window_box_frostsnap_fine": {
+            "window_box_frostsnap_fine_ghost": {
+               "display_name": "Fine Frostsnap planter",
+               "description": "A cozy home for the plant."
+            }
          }
       },
       "food": {
@@ -5665,7 +5814,11 @@
          },
          "poyo_meat": {
             "display_name": "Raw Poyo Meat",
-            "description": "I hear it takes like poyo."
+            "description": "I hear it takes like poyo.",
+            "rotten": {
+               "display_name": "Rotten Poyo Meat",
+               "description": "It stinks"
+            }
          },
          "poyo_pot_pie": {
             "poyo_pot_pie": {
@@ -6021,6 +6174,12 @@
                "display_name": "Statue of Cid Wanderer",
                "description": "Shows Cid in his later years"
             }
+         },
+         "park_bench_red": {
+            "park_bench_red_ghost": {
+               "display_name": "Red Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation"
+            }
          }
       },
       "generic": {
@@ -6072,6 +6231,12 @@
                "display_name": "Critter Trap",
                "description": "Repurposed for use against enemies."
             }
+         },
+         "dummy_training": {
+            "dummy_training_ghost": {
+               "display_name": "Training Dummy",
+               "description": "Its best to practice with this friendly guy."
+            }
          }
       },
       "loot": {
@@ -6108,7 +6273,7 @@
                "description": "And this is the smaller variety..."
             },
             "wolf": {
-               "display_name": "Untamed Wolf",
+               "display_name": "Feral Wolf",
                "description": "Grrr! Rwar!"
             }
          },
@@ -6717,6 +6882,16 @@
             "small_acacia_tree": {
                "display_name": "Small Acacia Tree",
                "description": "Young, but hearty"
+            },
+            "sapling_acacia_tree": {
+               "description": "Baby acacia tree.",
+               "sapling_acacia_tree_ghost": {
+                  "display_name": "Acacia Tree Sapling",
+                  "description": "Baby acacia tree."
+               },
+               "sapling_acacia_tree_iconic": {
+                  "description": "Plant it in the earth and watch it grow."
+               }
             }
          },
          "joshua_tree": {
@@ -6767,10 +6942,10 @@
                "description": "Slightly larger than a sapling."
             },
             "sapling_oak_tree": {
-               "description": "Plant it in the earth and watch it grow.",
+               "description": "Baby oak tree.",
                "sapling_oak_tree_ghost": {
                   "display_name": "Oak Tree Sapling",
-                  "description": "Plant it in the earth and watch it grow."
+                  "description": "Baby oak tree."
                },
                "sapling_oak_tree_iconic": {
                   "description": "Plant it in the earth and watch it grow."
@@ -6942,6 +7117,10 @@
          "bolt": {
             "display_name": "Bolt",
             "description": "Bolt"
+         },
+         "fire_arrow": {
+            "display_name": "Fire Arrow",
+            "description": "An arrow imbued with flames"
          }
       },
       "consumables": {
@@ -6978,12 +7157,75 @@
          "energy_tonic": {
             "display_name": "Energy Tonic",
             "description": "Temporarily buffs energy"
+         },
+         "seeds": {
+            "turnip_seeds": {
+               "display_name": "Turnip Seeds",
+               "description": "Learn to grow the mighty turnip."
+            },
+            "carrot_seeds": {
+               "display_name": "Carrot Seeds",
+               "description": "Learn to grow carrots."
+            },
+            "pumpkin_seeds": {
+               "display_name": "Pumpkin Seeds",
+               "description": "Learn to grow pumpkins."
+            },
+            "golden_gourd_seeds": {
+               "display_name": "Golden Gourd Seeds",
+               "description": "Learn to grow golden gourds."
+            },
+            "watermelon_seeds": {
+               "display_name": "Watermelon Seeds",
+               "description": "Learn to grow delicious melons."
+            },
+            "cactus_flower_seeds": {
+               "display_name": "Cactus Flower Seeds",
+               "description": "Learn to grow delicious prickly flowers."
+            },
+            "acacia_tree_seeds": {
+               "display_name": "Acacia Seeds",
+               "description": "Learn to grow acacia trees."
+            },
+            "oak_tree_seeds": {
+               "display_name": "Acorns",
+               "description": "Learn to grow oak trees."
+            },
+            "brightbell_seeds": {
+               "display_name": "Brightbell Seeds",
+               "description": "Learn to grow brightbells."
+            },
+            "frostsnap_seeds": {
+               "display_name": "Frostsnap Seeds",
+               "description": "Learn to grow frostsnaps."
+            },
+            "wheat_seeds": {
+               "display_name": "Wheat Grain",
+               "description": "Learn to grow wheat."
+            },
+            "silkweed_seeds": {
+               "display_name": "Silkweed Seeds",
+               "description": "Learn to grow silkweed."
+            }
          }
       },
       "outfits": {
          "trader_outfit": {
             "display_name": "Trader Outfit",
             "description": "Clothing of choice for traders"
+         }
+      },
+      "constructillon": {
+         "wooden_door_2_fine": {
+            "wooden_door_2_fine_ghost": {
+               "description": "Sturdier than your average door, and more polished too."
+            }
+         }
+      },
+      "ephemera": {
+         "ball_of_wax": {
+            "display_name": "Ball of Ear Wax",
+            "description": "Gross, isn't it?"
          }
       }
    },
@@ -7054,9 +7296,17 @@
       },
       "architect": {
          "architect_description": {
-            "display_name": "???",
+            "display_name": "Architect",
             "description": "???",
-            "requirements": "???"
+            "requirements": "???",
+            "level_0_data": {
+               "perk_000_name": "Fast Construction",
+               "perk_000_description": "Build faster!"
+            },
+            "level_1_data": {
+               "perk_000_name": "Conservation of Materials",
+               "perk_000_description": "Have a chance every fabrication to not consume a stack of building material."
+            }
          }
       },
       "armorsmith": {
@@ -8325,7 +8575,7 @@
             },
             "blue_clay_door_recipe": {
                "description": "Blue like the dream of distant ocean.",
-               "recipe_name": "Blue Clay Door Recipe",
+               "recipe_name": "Blue Clay Door",
                "flavor": "TODO"
             },
             "green_clay_door_recipe": {
