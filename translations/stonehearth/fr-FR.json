@@ -210,8 +210,7 @@
             "attack_banner_button": "Ordre d'attaque",
             "attack_banner_button_help": "Envois le groupe attaquer une position",
             "defend_banner_button": "Ralliement et ordre de défense",
-            "defend_banner_button_help": "Envois le groupe rallier une zone quand le mode de défense de la ville est activé",
-            "default_name": "Groupe No.[str(party.ord)]"
+            "defend_banner_button_help": "Envois le groupe rallier une zone quand le mode de défense de la ville est activé"
          },
          "unit_frame": {
             "show_character_sheet": "Afficher la feuille de personnage",
@@ -322,7 +321,7 @@
             }
          },
          "entities": {
-            "custom_name": "[str(self.unit_info.custom_name)]",
+            "custom_name": "[str(self.stonehearth:unit_info.custom_name)]",
             "unknown_name": "Inconnu",
             "item_categories": {
                "food": "Nourriture",
@@ -606,9 +605,6 @@
                "check_requirements": "Vérifier les exigences",
                "summon_herald": "Invoquer un héraut !"
             },
-            "quest_bulletin": {
-               "title": "Nouveau message"
-            },
             "level_up_bulletin": {
                "title": "[name(i18n_data.entity)] a gagné un niveau !",
                "show_char_sheet": "Feuille de personnage"
@@ -841,7 +837,7 @@
                "num_animals": "Animaux :"
             },
             "stockpile": {
-               "default_stockpile_name": "Stockage n°[str(self.unit_info.custom_name)]",
+               "default_stockpile_name": "Stockage",
                "contents": "Contenu",
                "filter": "Filtre",
                "help": "Cliquez sur les icônes pour choisir quoi stocker",
@@ -1463,9 +1459,11 @@
                },
                "returning_trader_encounter": {
                   "title": "Un négociant approche de la ville.",
+                  "days": "jours",
+                  "hours": "heures",
                   "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m'avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)](s), je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange. Qu'en dites vous ?",
-                  "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] heures !",
-                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] heures pour vous échanger [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) contre [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) !",
+                  "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
+                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) contre [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) !",
                   "return_title": "Le négociant est de retour !",
                   "return_greetings_positive": "Me re voilà ! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
                   "return_greetings_negative": "Je suis de retour mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
@@ -1473,8 +1471,8 @@
                "returning_crop_trader_encounter": {
                   "title": "Un commerçant apporte des graines provenant d'un pays lointain.",
                   "trade_details": "Salut [str(i18n_data.town_name)] ! Je ne fais que passer, mais nous pourrions peut-être faire un peu d'échange de service si cela vous intéresse ? Si vous pouvez m'avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)], je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_item)] en échange. Qu'en dites vous ?",
-                  "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] heures !",
-                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] heures pour vous échanger [str(i18n_data.reward_item)] si vous avez [str(i18n_data.want_number)] [str(i18n_data.want_item)] prêt pour lui !",
+                  "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
+                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger [str(i18n_data.reward_item)] si vous avez [str(i18n_data.want_number)] [str(i18n_data.want_item)] prêt pour lui !",
                   "return_title": "Le négociant est de retour !",
                   "return_greetings_positive": "Je suis de retour ! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)]. Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_item)] en échange; Êtes-vous toujours partant ?",
                   "return_greetings_negative": "Je suis de retour mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)] que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
@@ -2019,7 +2017,7 @@
                },
                "goblin_raiding_camp_1": {
                   "boss": {
-                     "display_name": "Chef [str(self.unit_info.custom_name)]",
+                     "display_name": "Chef [str(self.stonehearth:unit_info.custom_name)]",
                      "description": "Moi être machine à tuer verte !!"
                   },
                   "sheep": {
@@ -3170,7 +3168,8 @@
       "build": {
          "prototypes": {
             "building": {
-               "display_name": "Construction n°[str(self.unit_info.custom_name)]",
+               "display_name": "Construction",
+               "numbered_display_name": "Construction n°[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Un bâtiment. Whouhaou !!"
             },
             "column": {
@@ -4294,7 +4293,13 @@
       },
       "prototypes": {
          "party": {
-            "display_name": "Groupe N°[str(self.unit_info.custom_name)]",
+            "display_name": "Partie",
+            "display_names": {
+               "party_1": "Partie No.1",
+               "party_2": "Partie No.2",
+               "party_3": "Partie No.3",
+               "party_4": "Partie No.4"
+            },
             "description": "Organisez vos troupes en groupes de combat"
          }
       },
@@ -4363,6 +4368,68 @@
             },
             "carpenter_house": {
                "display_name": "Menuisier de maison"
+            }
+         }
+      },
+      "tutorial": {
+         "tutorial_steps": {
+            "craft_carpenter_workbench": {
+               "ui_steps": {
+                  "set1": {
+                     "step003": {
+                        "title": "Cliquez sur l'atelier du menuisier"
+                     },
+                     "step002": {
+                        "title": "Ouvrez le menu des fabrications du menuisier"
+                     },
+                     "step005": {
+                        "title": "Cliquez sur X pour fermer cette fenêtre"
+                     },
+                     "step004": {
+                        "title": "Cliquez sur le bouton Fabriquer pour fabriquer l'atelier"
+                     },
+                     "step001": {
+                        "title": "Ouvrez le menu de l'atelier",
+                        "description": "Ce menu permet de gérer les différents ateliers artisanat de vos citoyens. "
+                     },
+                     "step000": {
+                        "title": "Configurer un plan de travail",
+                        "description": "Notre menuisier a besoin d'une station d'artisanat afin de fabriquer des objets de la ville. Faisons un plan de travail !"
+                     }
+                  }
+               }
+            },
+            "place_carpenter_workbench": {
+               "ui_steps": {
+                  "set1": {
+                     "step001": {
+                        "title": "Ouvrez le menu de construction",
+                        "description": "Ce menu permet de construire des structures et de placer des objets dans votre ville."
+                     },
+                     "step000": {
+                        "title": "Placez l'établi du menuisier",
+                        "description": "Maintenant que nous avons créé l'atelier, nous avons besoin de le placer en ville pour que le menuisier puisse l'utiliser."
+                     },
+                     "step003": {
+                        "title": "Cliquez sur l'atelier d'article du menuisier",
+                        "description": "Sélectionnez l'atelier et cliquez pour le placer quelque part dans la ville."
+                     },
+                     "step002": {
+                        "title": "Ouvrir le lieu du panneau des articles"
+                     }
+                  },
+                  "set2": {
+                     "step000": {
+                        "title": "Félicitations à vous !",
+                        "description": "Nous avons des ressources, un endroit pour stocker les marchandises, et une façon de fabriquer des objets. Nous sommes sur la bonne voie pour obtenir notre colonie sur notre terre !"
+                     }
+                  }
+               }
+            },
+            "harvest_logs": {
+               "scenario_data": {
+                  "declined_text": "Je ne pas besoin d'un tutoriel - Je sais ce qu'il faut faire !"
+               }
             }
          }
       }
@@ -4776,6 +4843,36 @@
          "wooden_tunnel_door_fine": {
             "display_name": "Porte de tunnel en beau bois",
             "description": "Utile pour obturer les tunnels"
+         },
+         "blue_latticed_window": {
+            "blue_latticed_window_ghost": {
+               "display_name": "Fenêtre bleu treillis",
+               "description": "Une fenêtre en treillis bleue apaisante"
+            }
+         },
+         "green_latticed_window": {
+            "green_latticed_window_ghost": {
+               "display_name": "Fenêtre verte treillis",
+               "description": "La fenêtre en treillis vous connaissez et aimez, maintenant en vert !"
+            }
+         },
+         "tan_clay_window_frame": {
+            "tan_clay_window_frame_ghost": {
+               "display_name": "Cadre de fenêtre brun pale en argile",
+               "description": "Conserve le soleil à l'intérieur"
+            }
+         },
+         "tan_latticed_window": {
+            "tan_latticed_window_ghost": {
+               "display_name": "Fenêtre brun pale treillis",
+               "description": "La fenêtre treillis vous le connaissez et l'aimez, en brun pale"
+            }
+         },
+         "tall_clay_window": {
+            "tall_clay_window_ghost": {
+               "display_name": "Fenêtre brun pale en argile",
+               "description": "Donne de la douceur à l'air du désert"
+            }
          }
       },
       "containers": {
@@ -5715,6 +5812,12 @@
                "display_name": "Belle jardinière pour Perce-neige",
                "description": "Une maison confortable pour la plante."
             }
+         },
+         "poyo_weathervane": {
+            "poyo_weathervane_ghost": {
+               "display_name": "Girouette Poyo",
+               "description": "Une girouette à l'image d'une volaille amical"
+            }
          }
       },
       "food": {
@@ -6110,8 +6213,8 @@
          },
          "tombstone": {
             "tombstone_ghost": {
-               "display_name": "R.I.P. [str(self.unit_info.custom_name)]",
-               "description": "[str(self.unit_info.custom_name)] sera toujours dans nos coeurs."
+               "display_name": "R.I.P. [str(self.stonehearth:unit_info.custom_name)]",
+               "description": "[str(self.stonehearth:unit_info.custom_name)] sera toujours dans nos coeurs."
             },
             "tombstone": {
                "display_name": "Pierre tombale",
@@ -6248,7 +6351,7 @@
       "loot": {
          "gold": {
             "display_name": "Coffre de pièces d'or",
-            "description": "C'est [str(self.item.stacks)] pièces!",
+            "description": "C'est [str(self.stonehearth:stacks.stacks)] pièces!",
             "label": "or"
          }
       },
@@ -6293,7 +6396,7 @@
                }
             },
             "goblin": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Attiré par les choses brillantes"
             },
             "goblin_barricade": {
@@ -6376,7 +6479,7 @@
          },
          "kobolds": {
             "kobold": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Dévot du l'Étoile Diamant"
             },
             "loot": {
@@ -6404,15 +6507,15 @@
          },
          "undead": {
             "skeleton": {
-               "display_name": "Un squelette",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Il cherche de la chair fraiche"
             },
             "zombie": {
-               "display_name": "Un zombie",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Il cherche de la chair fraiche",
                "male": {
                   "zombie_male": {
-                     "display_name": "Un zombie",
+                     "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                      "description": "Il cherche de la chair fraiche"
                   }
                }
@@ -6444,13 +6547,13 @@
          },
          "ogres": {
             "ogre": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Un orc devenu terriblement mauvais"
             }
          },
          "orcs": {
             "orc": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Un guerrier de la Kiln Rouge"
             },
             "orc_boss_banner": {
@@ -6464,6 +6567,12 @@
             "orc_tent": {
                "display_name": "Tente orc",
                "description": "Sent comme dans une ancienne buanderie"
+            }
+         },
+         "mammoth": {
+            "mammoth": {
+               "display_name": "Mammouth",
+               "description": "Large bestiole"
             }
          }
       },
@@ -7903,6 +8012,11 @@
                "recipe_name": "Statue de Cid l'égaré",
                "description": "Montre Cid dans la vie plus tard",
                "flavor": "Et où Cid l'égaré, l'église se lève sur ses traces..."
+            },
+            "poyo_weathervane_recipe": {
+               "recipe_name": "Girouette Poyo",
+               "description": "Une girouette à l'image d'une volaille amical",
+               "flavor": "TODO"
             }
          }
       },
@@ -8678,6 +8792,31 @@
             "clay_tunnel_door_recipe": {
                "description": "Utile pour sceller les tunnels miniers.",
                "recipe_name": "Porte de tunnel en argile"
+            },
+            "tan_latticed_window_recipe": {
+               "recipe_name": "Fenêtre treillis brun pale",
+               "description": "La fenêtre treillis vous le connaissez et l'aimez, en brun pale",
+               "flavor": "TODO"
+            },
+            "tall_clay_window_recipe": {
+               "recipe_name": "Fenêtre brun pale en argile",
+               "description": "Donne de la douceur à l'air du désert",
+               "flavor": "TODO"
+            },
+            "tan_clay_window_frame_recipe": {
+               "flavor": "TODO",
+               "recipe_name": "Cadre de fenêtre brun pale en argile",
+               "description": "Conserve le soleil à l'intérieur"
+            },
+            "green_latticed_window_recipe": {
+               "recipe_name": "Fenêtre verte treillis",
+               "flavor": "TODO",
+               "description": "La fenêtre en treillis vous connaissez et aimez, maintenant en vert !"
+            },
+            "blue_latticed_window_recipe": {
+               "recipe_name": "Fenêtre bleu treillis",
+               "description": "Une fenêtre en treillis bleue apaisante",
+               "flavor": "TODO"
             }
          },
          "potter_workbench": {
@@ -9367,7 +9506,7 @@
    },
    "stonehearth_mixins": {
       "base_human": {
-         "display_name": "[str(self.unit_info.custom_name)]",
+         "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
          "description": "Hearthlings",
          "job": {
             "starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
@@ -9414,8 +9553,90 @@
          }
       },
       "base_human_npc": {
-         "display_name": "[str(self.unit_info.custom_name)]",
+         "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
          "description": "Un invité de votre ville"
+      }
+   },
+   "scenarios": {
+      "tutorial": {
+         "tutorial_steps": {
+            "create_stockpile": {
+               "ui_steps": {
+                  "set1": {
+                     "step001": {
+                        "title": "Cliquez sur le bouton Zones",
+                        "description": "Les zones définissent où des évènements se passe dans votre ville"
+                     },
+                     "step000": {
+                        "title": "Nous avons récolté du bois",
+                        "description": "Maintenant, nous avons besoin d'un endroit pour le stocker"
+                     },
+                     "step003": {
+                        "title": "Cliquez sur le contrôleur pour confirmer",
+                        "description": "Utilisez les filtres pour déterminer quel type d'articles que vous voulez aller dans la réserve"
+                     },
+                     "step002": {
+                        "title": "Cliquez sur le bouton créer une réserve",
+                        "description": "Les Hearthlings stockent les articles dans les réserves"
+                     }
+                  }
+               }
+            },
+            "harvest_logs": {
+               "scenario_data": {
+                  "message": "Si nous voulons obtenir cette ville sur ce sol, nous aurons besoin de bois, et beaucoup ! Hacher bas quelques arbres voisins pour obtenir ces bûches.",
+                  "completed_message": "Félicitations à vous ! Nous avons des ressources en bois maintenant. Les bûches et les autres ressources naturelles peuvent être utilisées pour construire des bâtiments et des objets d'artisanat. Ils sont les premiers blocs de construction pour faire avancer votre ville.",
+                  "title": "[str(i18n_data.town_name)] Ville: Fournitures initiales",
+                  "resource_display_name": "bûches de bois"
+               },
+               "ui_steps": {
+                  "set1": {
+                     "step001": {
+                        "title": "Cliquez sur le bouton Collecter",
+                        "description": "Utilisez le bouton collecter pour abattre des arbres"
+                     },
+                     "step000": {
+                        "title": "Cliquez sur le bouton Récolter",
+                        "description": "Utilisez le bouton récolter pour recueillir les ressources du monde"
+                     }
+                  }
+               }
+            },
+            "promote_carpenter": {
+               "ui_steps": {
+                  "set1": {
+                     "step006": {
+                        "title": "Cliquez sur le tampon encreur pour approuver la promotion"
+                     },
+                     "step005": {
+                        "title": "Cliquez sur le bouton emploi de Menuisier."
+                     },
+                     "step004": {
+                        "title": "Cliquez sur Modifier l'emploi pour promouvoir ce hearthling à un autre poste"
+                     },
+                     "step001": {
+                        "title": "Ouvrez le gestionnaire des citoyens",
+                        "description": "Utilisez ce volet pour gérer tous vos citoyens, voir leurs stats, et définir leurs commandes de tâches."
+                     },
+                     "step000": {
+                        "title": "Promouvoir une Hearthling en Menuisier",
+                        "description": "Nous avons les bûches et un endroit pour stocker les marchandises, mais la ville est assez vide. Heureusement, je vous ai apporté une scie avec nous. Nous allons promouvoir un citoyen en menuisier !"
+                     },
+                     "step007": {
+                        "title": "Artisans de ville",
+                        "description": "Les menuisiers et les autres artisans peuvent créer divers éléments pour aider votre village, du lits, aux matériaux de construction, aux armes."
+                     },
+                     "step003": {
+                        "title": "Passez la souris sur les chiffres pour apprendre ce que fait chaque attribut",
+                        "description": "Chaque hearthling possède un attribut intelligence, corps et esprit qui affecte la façon dont ils font les choses."
+                     },
+                     "step002": {
+                        "title": "Choisissez un citoyen pour promouvoir"
+                     }
+                  }
+               }
+            }
+         }
       }
    }
 }

@@ -210,8 +210,7 @@
             "attack_banner_button": "Attack Order",
             "attack_banner_button_help": "Tell the party to assault a location",
             "defend_banner_button": "Rally & Defend Order",
-            "defend_banner_button_help": "Tell the party to rally to a location when Town Defense Mode is activated",
-            "default_name": "Party No.[str(party.ord)]"
+            "defend_banner_button_help": "Tell the party to rally to a location when Town Defense Mode is activated"
          },
          "unit_frame": {
             "show_character_sheet": "Show character sheet",
@@ -322,7 +321,7 @@
             }
          },
          "entities": {
-            "custom_name": "[str(self.unit_info.custom_name)]",
+            "custom_name": "[str(self.stonehearth:unit_info.custom_name)]",
             "unknown_name": "Unknown",
             "item_categories": {
                "food": "Food",
@@ -600,9 +599,6 @@
                "check_requirements": "Check Requirements",
                "summon_herald": "Summon Herald!"
             },
-            "quest_bulletin": {
-               "title": "New Message"
-            },
             "level_up_bulletin": {
                "title": "[name(i18n_data.entity)] has Leveled Up!",
                "show_char_sheet": "Character Sheet"
@@ -835,7 +831,7 @@
                "num_animals": "Animals:"
             },
             "stockpile": {
-               "default_stockpile_name": "Stockpile No.[str(self.unit_info.custom_name)]",
+               "default_stockpile_name": "Stockpile",
                "contents": "Contents",
                "filter": "Filter",
                "help": "Click the icons to choose what to store in this stockpile.",
@@ -1457,9 +1453,11 @@
                },
                "returning_trader_encounter": {
                   "title": "A trader approaches your town.",
+                  "days": " days",
+                  "hours": " hours",
                   "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Sound good?",
-                  "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] hours!",
-                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] hours to give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
+                  "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)]!",
+                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] to give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
                   "return_title": "The trader returns!",
                   "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Still sounds good?",
                   "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
@@ -1467,8 +1465,8 @@
                "returning_crop_trader_encounter": {
                   "title": "A trader brings seeds from a distant land.",
                   "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_item)] in exchange. Sound good?",
-                  "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] hours!",
-                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] hours to give you [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
+                  "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)]!",
+                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] to give you [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
                   "return_title": "The trader returns!",
                   "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_item)] in exchange. Still sounds good?",
                   "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
@@ -2013,7 +2011,7 @@
                },
                "goblin_raiding_camp_1": {
                   "boss": {
-                     "display_name": "Chieftain [str(self.unit_info.custom_name)]",
+                     "display_name": "Chieftain [str(self.stonehearth:unit_info.custom_name)]",
                      "description": "Me leen green fighting macheen!!!"
                   },
                   "sheep": {
@@ -3164,7 +3162,8 @@
       "build": {
          "prototypes": {
             "building": {
-               "display_name": "Building No.[str(self.unit_info.custom_name)]",
+               "display_name": "Building",
+               "numbered_display_name": "Building No.[str(self.stonehearth:unit_info.custom_name)]",
                "description": "A building.  woot!!"
             },
             "column": {
@@ -4288,7 +4287,13 @@
       },
       "prototypes": {
          "party": {
-            "display_name": "Party No.[str(self.unit_info.custom_name)]",
+            "display_name": "Party",
+            "display_names": {
+               "party_1": "Party No.1",
+               "party_2": "Party No.2",
+               "party_3": "Party No.3",
+               "party_4": "Party No.4"
+            },
             "description": "Organizes troops into groups for combat"
          }
       },
@@ -4357,6 +4362,68 @@
             },
             "carpenter_house": {
                "display_name": "Carpenter House"
+            }
+         }
+      },
+      "tutorial": {
+         "tutorial_steps": {
+            "craft_carpenter_workbench": {
+               "ui_steps": {
+                  "set1": {
+                     "step003": {
+                        "title": "Click the Carpenter's Workshop"
+                     },
+                     "step002": {
+                        "title": "Open the Carpenter's Craft Menu"
+                     },
+                     "step005": {
+                        "title": "Click X to close this window"
+                     },
+                     "step004": {
+                        "title": "Click the Craft button to craft the workshop"
+                     },
+                     "step001": {
+                        "title": "Open the workshop menu",
+                        "description": "Use this menu to manage the various crafting workshops of your citizens. "
+                     },
+                     "step000": {
+                        "title": "Set Up a Workbench",
+                        "description": "Our carpenter needs a crafting station in order to craft items for the town. Let's make a workbench!"
+                     }
+                  }
+               }
+            },
+            "place_carpenter_workbench": {
+               "ui_steps": {
+                  "set1": {
+                     "step001": {
+                        "title": "Open the Build Menu",
+                        "description": "Use this menu to build structures and place items in your town."
+                     },
+                     "step000": {
+                        "title": "Place the Carpenter's Workbench",
+                        "description": "Now that we've crafted the workbench, we need to place it in town for the Carpenter to use."
+                     },
+                     "step003": {
+                        "title": "Click the Carpenter's Workshop item",
+                        "description": "Select the workshop and click to place it somewhere in town."
+                     },
+                     "step002": {
+                        "title": "Open the Place Item pane"
+                     }
+                  },
+                  "set2": {
+                     "step000": {
+                        "title": "Congratulations!",
+                        "description": "We've got resources, a place to store goods, and a way to craft items. We're well on our way to getting this settlement off the ground!"
+                     }
+                  }
+               }
+            },
+            "harvest_logs": {
+               "scenario_data": {
+                  "declined_text": "I don't need a tutorial -- I know what to do!"
+               }
             }
          }
       }
@@ -4770,6 +4837,36 @@
          "wooden_tunnel_door_fine": {
             "display_name": "Fine Wooden Tunnel Door",
             "description": "Useful for blocking off tunnels"
+         },
+         "blue_latticed_window": {
+            "blue_latticed_window_ghost": {
+               "display_name": "Blue Latticed Window",
+               "description": "A soothing blue latticed window"
+            }
+         },
+         "green_latticed_window": {
+            "green_latticed_window_ghost": {
+               "display_name": "Green Latticed Window",
+               "description": "The latticed window you know and love, now in green!"
+            }
+         },
+         "tan_clay_window_frame": {
+            "tan_clay_window_frame_ghost": {
+               "display_name": "Tan Clay Window Frame",
+               "description": "Lets the sun in"
+            }
+         },
+         "tan_latticed_window": {
+            "tan_latticed_window_ghost": {
+               "display_name": "Tan Latticed Window",
+               "description": "The latticed window you know and love, in tan"
+            }
+         },
+         "tall_clay_window": {
+            "tall_clay_window_ghost": {
+               "display_name": "Tall Clay Window",
+               "description": "Still lets in the soft desert air"
+            }
          }
       },
       "containers": {
@@ -5709,6 +5806,12 @@
                "display_name": "Fine Frostsnap planter",
                "description": "A cozy home for the plant."
             }
+         },
+         "poyo_weathervane": {
+            "poyo_weathervane_ghost": {
+               "display_name": "Poyo Weathervane",
+               "description": "A weathervane in the image of a friendly yardbird"
+            }
          }
       },
       "food": {
@@ -6104,8 +6207,8 @@
          },
          "tombstone": {
             "tombstone_ghost": {
-               "display_name": "R.I.P. [str(self.unit_info.custom_name)]",
-               "description": "[str(self.unit_info.custom_name)] will always be remembered."
+               "display_name": "R.I.P. [str(self.stonehearth:unit_info.custom_name)]",
+               "description": "[str(self.stonehearth:unit_info.custom_name)] will always be remembered."
             },
             "tombstone": {
                "display_name": "Tombstone",
@@ -6242,7 +6345,7 @@
       "loot": {
          "gold": {
             "display_name": "Chest of Gold Coins",
-            "description": "It's [str(self.item.stacks)] coins!",
+            "description": "It's [str(self.stonehearth:stacks.stacks)] coins!",
             "label": "gold"
          }
       },
@@ -6287,7 +6390,7 @@
                }
             },
             "goblin": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Attracted to shiny things"
             },
             "goblin_barricade": {
@@ -6370,7 +6473,7 @@
          },
          "kobolds": {
             "kobold": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "Devotee of the Diamond Star"
             },
             "loot": {
@@ -6398,15 +6501,15 @@
          },
          "undead": {
             "skeleton": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "It yearns for flesh"
             },
             "zombie": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "It yearns for flesh",
                "male": {
                   "zombie_male": {
-                     "display_name": "[str(self.unit_info.custom_name)]",
+                     "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                      "description": "It yearns for flesh"
                   }
                }
@@ -6438,13 +6541,13 @@
          },
          "ogres": {
             "ogre": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "An orc gone terribly wrong"
             }
          },
          "orcs": {
             "orc": {
-               "display_name": "[str(self.unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
                "description": "A warrior of the Red Kiln"
             },
             "orc_boss_banner": {
@@ -6458,6 +6561,12 @@
             "orc_tent": {
                "display_name": "Orc Tent",
                "description": "Smells like old laundry."
+            }
+         },
+         "mammoth": {
+            "mammoth": {
+               "display_name": "Mammoth",
+               "description": "Large Woolie Beastie"
             }
          }
       },
@@ -7897,6 +8006,11 @@
                "recipe_name": "Statue of Cid Wanderer",
                "description": "Shows Cid in later life",
                "flavor": "And where Cid wandered, the Church rose up in his footsteps..."
+            },
+            "poyo_weathervane_recipe": {
+               "recipe_name": "Poyo Weathervane",
+               "description": "A weathervane in the image of a friendly yardbird",
+               "flavor": "TODO"
             }
          }
       },
@@ -8672,6 +8786,31 @@
             "clay_tunnel_door_recipe": {
                "description": "Useful for sealing off mine tunnels.",
                "recipe_name": "Clay Tunnel Door"
+            },
+            "tan_latticed_window_recipe": {
+               "recipe_name": "Tan Latticed Window",
+               "description": "The latticed window you know and love, in tan",
+               "flavor": "TODO"
+            },
+            "tall_clay_window_recipe": {
+               "recipe_name": "Tall Clay Window",
+               "description": "Still lets in the soft desert air",
+               "flavor": "TODO"
+            },
+            "tan_clay_window_frame_recipe": {
+               "flavor": "TODO",
+               "recipe_name": "Tan Clay Window Frame",
+               "description": "Lets the sun in"
+            },
+            "green_latticed_window_recipe": {
+               "recipe_name": "Green Latticed Window",
+               "flavor": "TODO",
+               "description": "The latticed window you know and love, now in green!"
+            },
+            "blue_latticed_window_recipe": {
+               "recipe_name": "Blue Latticed Window",
+               "description": "A soothing blue latticed window",
+               "flavor": "TODO"
             }
          },
          "potter_workbench": {
@@ -9319,11 +9458,11 @@
          "knight_buffs": {
             "defense_1_buff": {
                "display_name": "Defense Up 10%",
-               "description": "Defense from equipment increased by 10%"
+               "description": "Defense gained from equipment increased by 10%"
             },
             "defense_2_buff": {
                "display_name": "Defense Up 20%",
-               "description": "Defense agained from equipment increased by 20%"
+               "description": "Defense gained from equipment increased by 20%"
             },
             "health_1_buff": {
                "display_name": "Fortify",
@@ -9361,7 +9500,7 @@
    },
    "stonehearth_mixins": {
       "base_human": {
-         "display_name": "[str(self.unit_info.custom_name)]",
+         "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
          "description": "Citizen of your town",
          "job": {
             "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
@@ -9408,8 +9547,90 @@
          }
       },
       "base_human_npc": {
-         "display_name": "[str(self.unit_info.custom_name)]",
+         "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
          "description": "A guest of your town"
+      }
+   },
+   "scenarios": {
+      "tutorial": {
+         "tutorial_steps": {
+            "create_stockpile": {
+               "ui_steps": {
+                  "set1": {
+                     "step001": {
+                        "title": "Click the Zones button",
+                        "description": "Zones define what happens where in your town"
+                     },
+                     "step000": {
+                        "title": "We've harvested some wood",
+                        "description": "Now we need someplace to store it"
+                     },
+                     "step003": {
+                        "title": "Click the check to confirm",
+                        "description": "Use the filters to determine what type of items you want to go into the stockpile"
+                     },
+                     "step002": {
+                        "title": "Click the Create Stockpile button",
+                        "description": "Hearthlings store your items in stockpiles"
+                     }
+                  }
+               }
+            },
+            "harvest_logs": {
+               "scenario_data": {
+                  "message": "If we're going to get this town off the ground, we'll need wood, and lots of it! Chop down some nearby trees to get logs.",
+                  "completed_message": "Congratulations! We've got some wood resources now. Logs and other natural resources can be used to construct buildings and craft items. They're the first building blocks for advancing your town.",
+                  "title": "[str(i18n_data.town_name)] Town: Initial Supplies",
+                  "resource_display_name": "Wooden logs"
+               },
+               "ui_steps": {
+                  "set1": {
+                     "step001": {
+                        "title": "Click the Gather button",
+                        "description": "Use the gather button to chop down trees"
+                     },
+                     "step000": {
+                        "title": "Click the Harvest menu button",
+                        "description": "Use the Harvest menu to gather resources from the world"
+                     }
+                  }
+               }
+            },
+            "promote_carpenter": {
+               "ui_steps": {
+                  "set1": {
+                     "step006": {
+                        "title": "Click stamper to approve the promotion"
+                     },
+                     "step005": {
+                        "title": "Click the Carpenter job button."
+                     },
+                     "step004": {
+                        "title": "Click Change Jobs to promote this hearthling to a different job"
+                     },
+                     "step001": {
+                        "title": "Open the Citizens manager",
+                        "description": "Use this pane to manage all your citizens, view their stats, and set their task orders."
+                     },
+                     "step000": {
+                        "title": "Promote a Hearthling to a Carpenter",
+                        "description": "We have logs and a place to store goods, but the town is looking pretty empty. Fortunately, we've brought a saw along with us. Let's promote a citizen to a Carpenter!"
+                     },
+                     "step007": {
+                        "title": "Town Crafters",
+                        "description": "Carpenters and other crafters can create various goods to help your settlement, from beds, to building materials, to weapons."
+                     },
+                     "step003": {
+                        "title": "Mouse over the numbers to learn what each attribute does",
+                        "description": "Each hearthling has a Mind, Body, and Spirit attribute that affects how well they do certain things."
+                     },
+                     "step002": {
+                        "title": "Choose a citizen to promote"
+                     }
+                  }
+               }
+            }
+         }
       }
    }
 }
