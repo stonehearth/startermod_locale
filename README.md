@@ -3,19 +3,19 @@
 ## Summary
 
 - [About](#about)
-- [How to contribute to french translation?](#how-to-contribute-to-french-translation)
-   - [Contributing?](#how-to-contribute-to-french-translation)
-   - [Instructions?](#instructions)
 - [How it works](#how-it-works)
 - [Note](#note)
 - [How to translate en.json](#how-to-translate-enjson)
+- [How to contribute to french translation?](#how-to-contribute-to-french-translation)
+   - [Contributing?](#how-to-contribute-to-french-translation)
+   - [Instructions?](#instructions)
 
 ##Update:
 
 The overrides method allows any mod to provide a translation for any other mod.
 
 ##About
-A mod adding French language to stonehearth.
+Example mod of adding a new language to stonehearth.
 
 Instructions for use: Download the mod. Unzip to your stonehearth mods directory, as a peer to stonehearth.smod and radiant.smod. Make sure the folder is named startermod_locale, not startermod_locale-master.
 
@@ -24,34 +24,6 @@ Inside the startermod_locale folder, you should see a manifest.json file, a adde
 The startermod_locale mod adds a pseudolocalization of stonehearth's and rayya children's en.json file. The en-DEV.json file is the plain english used to generate en-XA.json. Pseudolocalization replaces all the characters in stonehearth's en.json file with characters that have accents. This mimics what foreign languages will look like when displayed in the game.
 
 When you start up Stonehearth with this mod installed, open the settings menu and go to the system tab. You will see that a language named "[!!Ēņģľĭšħ!!]" will be added to the list of languages. Selecting the "[!!Ēņģľĭšħ!!]" language and clicking "OK" will change the game's language.
-
-##How to contribute to french translation?
-
-**Contributing "not collaborator"** | **Contributing collaborator**
---- | ---
-1. Fork it!<br> 2. Create your feature branch: `git checkout -b my-new-feature`<br> 3. Commit your changes: `git commit -m "Add your new feature"`<br> 4. Push to the branch: `git push origin my-new-feature`<br> 5. Submit a pull request. | 1. Create your feature branch: `git checkout -b my-new-feature`<br> 2. Commit your changes: `git commit -m 'Add some new feature'`<br> 3. Push to the branch: `git push origin my-new-feature`<br> 4. Submit a pull request.<br> Optional : Add/Set labels and milestone =)
-
-###Instructions
-
-* Don't forget in french language a space before a punctuation `;:!?`
-* In French language a uppercase it's only: the beginning of the sentence and for proper names.
-* UTF8 encoding (without BOM)
-* Particular word (translation) : 
-
-**English** | **French**
---- | ---
-Goblins | Gobelins
-hearthling/citizen | hearthling
-frostsnap | perce-neige
-silkweed | fil-de-soie
-brightbell | jacinthe rose
-Diamond Star | Étoile Diamant
-Kobold | kobold
-Red Kiln | Kiln Rouge
-Poyo | poyo
-Carpenter | Menuisier
-Phoenix Empire | empire Phénix
-Phoenix | empire Phénix
 
 ##How it works:
 
@@ -139,3 +111,31 @@ The Chinese file might look like:<br>
       "status_text": {
          "chase_entity": "追逐[name(data.target)]",
   ````
+
+##How to contribute to french translation?
+
+**Contributing "not collaborator"** | **Contributing collaborator**
+--- | ---
+1. Fork it!<br> 2. Create your feature branch: `git checkout -b my-new-feature`<br> 3. Commit your changes: `git commit -m "Add your new feature"`<br> 4. Push to the branch: `git push origin my-new-feature`<br> 5. Submit a pull request. | 1. Create your feature branch: `git checkout -b my-new-feature`<br> 2. Commit your changes: `git commit -m 'Add some new feature'`<br> 3. Push to the branch: `git push origin my-new-feature`<br> 4. Submit a pull request.<br> Optional : Add/Set labels and milestone =)
+
+###Instructions
+
+* Don't forget in french language a space before a punctuation `;:!?`
+* In French language a uppercase it's only: the beginning of the sentence and for proper names.
+* UTF8 encoding (without BOM)
+* Particular word (translation) : 
+
+**English** | **French**
+--- | ---
+Goblins | Gobelins
+hearthling/citizen | hearthling
+frostsnap | perce-neige
+silkweed | fil-de-soie
+brightbell | jacinthe rose
+Diamond Star | Étoile Diamant
+Kobold | kobold
+Red Kiln | Kiln Rouge
+Poyo | poyo
+Carpenter | Menuisier
+Phoenix Empire | empire Phénix
+Phoenix | empire Phénix
