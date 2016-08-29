@@ -4788,7 +4788,7 @@
          },
          "wooden_door_fine": {
             "wooden_door_fine_ghost": {
-               "display_name": "Porte en bois",
+               "display_name": "Belle porte en bois",
                "description": "Enfin en privé !"
             }
          },
@@ -4806,19 +4806,19 @@
          },
          "wooden_window_frame_fine": {
             "wooden_window_frame_fine_ghost": {
-               "display_name": "Encadrement de fenêtre en bois",
+               "display_name": "Bel encadrement de fenêtre en beau bois",
                "description": "Et voilà pour la vie privée ..."
             }
          },
          "wooden_window_frame_tall_fine": {
             "wooden_window_frame_tall_fine_ghost": {
-               "display_name": "Grand cadre de fenêtre",
+               "display_name": "Beau grand cadre de fenêtre",
                "description": "La hauteur supplémentaire ajoute un air d'élégance"
             }
          },
          "wooden_window_frame_wide_fine": {
             "wooden_window_frame_wide_fine_ghost": {
-               "display_name": "Large encadrement de fenêtre",
+               "display_name": "Beau large encadrement de fenêtre",
                "description": "C'est une vue panoramique !"
             }
          },

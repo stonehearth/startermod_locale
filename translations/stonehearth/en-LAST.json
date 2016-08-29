@@ -4782,7 +4782,7 @@
          },
          "wooden_door_fine": {
             "wooden_door_fine_ghost": {
-               "display_name": "Wooden Door",
+               "display_name": "Fine Wooden Door",
                "description": "Privacy at last!"
             }
          },
@@ -4800,19 +4800,19 @@
          },
          "wooden_window_frame_fine": {
             "wooden_window_frame_fine_ghost": {
-               "display_name": "Wooden Window Frame",
+               "display_name": "Fine Wooden Window Frame",
                "description": "So much for privacy..."
             }
          },
          "wooden_window_frame_tall_fine": {
             "wooden_window_frame_tall_fine_ghost": {
-               "display_name": "Tall Window Frame",
+               "display_name": "Fine Tall Window Frame",
                "description": "Extra height adds an air of elegance"
             }
          },
          "wooden_window_frame_wide_fine": {
             "wooden_window_frame_wide_fine_ghost": {
-               "display_name": "Wide Window Frame",
+               "display_name": "Fine Wide Window Frame",
                "description": "It's a panoramic view!"
             }
          },
