@@ -242,7 +242,11 @@
             "level_description": "of Level [str(level_req)]",
             "or": " or ",
             "num_uses": "Uses",
-            "placed": "placed"
+            "placed": "placed",
+            "placement_tags": {
+               "turret": "Turrets",
+               "trap": "Traps"
+            }
          },
          "citizens": {
             "title": "Citizens",
@@ -980,6 +984,7 @@
             "attributions": "The following is a list of OpenSource Software that is used in Stonehearth:"
          },
          "loading_screen": {
+            "initial_load_game_text": "Loading Game",
             "initial_load_map_text": "Generating World",
             "loading_map_flavor_text": {
                "001": "sharpening right angles...",
@@ -4948,14 +4953,14 @@
          },
          "small_crate_fine": {
             "small_crate_fine_ghost": {
-               "display_name": "Fine Small Create",
+               "display_name": "Fine Small Crate",
                "description": "Storage container with style"
             }
          },
          "large_crate_fine": {
             "large_crate_fine_ghost": {
-               "description": "Storage container with style",
-               "display_name": "Fine Large Crate"
+               "display_name": "Fine Large Crate",
+               "description": "Storage container with style"
             }
          },
          "leather_bound_chest_fine": {

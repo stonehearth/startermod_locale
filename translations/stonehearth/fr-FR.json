@@ -242,7 +242,11 @@
             "level_description": "de niveau [str(level_req)]",
             "or": " ou ",
             "num_uses": "Utiliser",
-            "placed": "Placer"
+            "placed": "Placer",
+            "placement_tags": {
+               "turret": "Tourelles",
+               "trap": "Pièges"
+            }
          },
          "citizens": {
             "title": "Hearthlings",
@@ -986,6 +990,7 @@
             "attributions": "Ce qui suit est la liste des logiciels OpenSource utilisés dans Stonehearth&nbsp;:"
          },
          "loading_screen": {
+            "initial_load_game_text": "Jeu en cours de chargement",
             "initial_load_map_text": "Génération du monde",
             "loading_map_flavor_text": {
                "001": "aiguisage des angles droits ...",
@@ -4960,8 +4965,8 @@
          },
          "large_crate_fine": {
             "large_crate_fine_ghost": {
-               "description": "Conteneur de stockage avec du style",
-               "display_name": "Belle grande caisse"
+               "display_name": "Belle grande caisse",
+               "description": "Conteneur de stockage avec du style"
             }
          },
          "leather_bound_chest_fine": {
