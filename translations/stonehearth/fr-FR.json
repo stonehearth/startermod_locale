@@ -990,7 +990,7 @@
             "attributions": "Ce qui suit est la liste des logiciels OpenSource utilisés dans Stonehearth&nbsp;:"
          },
          "loading_screen": {
-            "initial_load_game_text": "Jeu en cours de chargement",
+            "initial_load_game_text": "Chargement en cours",
             "initial_load_map_text": "Génération du monde",
             "loading_map_flavor_text": {
                "001": "aiguisage des angles droits ...",
@@ -1021,7 +1021,9 @@
                "026": "faire proliférer les fleurs ...",
                "027": "s'écarter de la réalité ...",
                "028": "positionnement des peluches ...",
-               "029": "régularise les dreadlocks ..."
+               "029": "régularise les dreadlocks ...",
+               "030": "la tonte des moutons ...",
+               "031": "percolation du cerveau ..."
             },
             "tips": {
                "000": "Si vos mineurs restent bloqués dans un puits, construisez une échelle pour les en sortir !",
@@ -1030,21 +1032,27 @@
                "003": "Les réserves peuvent être modifiées pour accueillir des objets spécifiques.",
                "004": "Vous pouvez cultiver des plantes à soie pour avoir une source régulière de fibres végétales.",
                "005": "Une ville bien nourrit est une ville heureuse.",
-               "006": "Utilisez les touches . ou , pour faire tourner un objet ou un bâtiment avant de le placer.",
+               "006": "Utilisez les touches < ou > pour faire tourner un objet ou un bâtiment avant de le placer.",
                "007": "Vos hearthlings se déplacent plus vite sur les routes.",
                "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
                "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
                "010": "Les bergers trouveront d'eux-même les moutons ou autres animaux pour remplir les pâturages.",
-               "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands."
+               "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands.",
+               "012": "Les ressources et l'alimentation ne contribuent pas à la valeur nette de votre ville.",
+               "013": "L'attribut de curiosité augmente le gain d'expérience.",
+               "014": "Les beaux objets ont une valeur nette supérieure à leurs versions normales.",
+               "015": "La valeur nette d'un produit est sa valeur de vente.",
+               "016": "Vous pouvez utiliser une porte de tunnel pour bloquer l'entrées du tunnel de vos mines.",
+               "017": "Vous ne voulez pas que vos hearthlings quitte votre ville ? L'ingénieur peut faire une porte verrouillable.",
+               "018": "Les hearthlings avec un attribut d'esprit supérieure feront de bons artisans.",
+               "019": "Placez les stocks de nourriture plus près des zones de travail de sorte qu'il est plus facile pour vos hearthlings d'accéder à la nourriture.",
+               "020": "Les trappeurs peuvent définir des pièges dans les montagnes et le désert, mais il y a moins de bestioles là bas.",
+               "021": "Vous pouvez désactiver une classe de travail de combat dans le panneau des citoyens pour les forcer à prendre un repos.",
+               "022": "Miné de la terre donne occasionnellement de l'argile et de la pierre.",
+               "023": "Vous pouvez voir visuellement les veines de minerai dans le côté des montagnes.",
+               "024": "Vous avez besoin d'une source de nourriture de départ ? Bougez les buissons de baie ou figuier de Barbarie plus proche de votre ville.",
+               "025": "Après la défaite du chef Goblin, vous pouvez réclamer le mouton Bluebell chez vous."
             }
-         },
-         "new_game": {
-            "title": "Nouvelle partie",
-            "normal_game": "Mode normal",
-            "peaceful_game": "Mode pacifique",
-            "normal_game_description": "L'aventure se déroule dans un monde rempli de danger. Votre ville sera sujette à des raids hostiles.",
-            "peaceful_game_description": "Un mode bac à sable où vous êtes libre de construire votre ville sans vous soucier d'envahisseurs.",
-            "create_game": "Créer une partie"
          },
          "select_settlement": {
             "title": "Cliquez sur la carte pour choisir un emplacement",
@@ -8680,7 +8688,8 @@
             },
             "clay_safety_standard_recipe": {
                "description": "Utilisez pour désigner un point de sécurité",
-               "recipe_name": "Étendard de sécurité en argile"
+               "recipe_name": "Étendard de sécurité en argile",
+               "flavor": "Pour atteindre un niveau de vie idéal, trouver la sécurité en nombre.. --Mystères et Proverbes, V"
             },
             "building_parts_name": "Building Parts",
             "clay_bricks_recipe": {
@@ -8691,7 +8700,7 @@
             "red_clay_door_recipe": {
                "description": "Matches red clay walls",
                "recipe_name": "Red Clay Door",
-               "flavor": "TODO"
+               "flavor": "\"Le rouge indique une allure de mystères. Qu'est ce qui se trouve au-delà de la porte rouge ?\" -- Ember Iskender, Département de la poésie appliquée"
             },
             "red_clay_window_frame_recipe": {
                "description": "Matches red clay walls",
@@ -8701,12 +8710,12 @@
             "blue_clay_door_recipe": {
                "description": "Blue like the dream of distant ocean.",
                "recipe_name": "Recette de porte bleu en argile",
-               "flavor": "TODO"
+               "flavor": "'C'est une porte. Que pourrions-nous dire de plus ?' --Joni Iskender, Marketing Apprentice"
             },
             "green_clay_door_recipe": {
                "description": "Green, like the few scrub in the desert.",
                "recipe_name": "Green Clay Door",
-               "flavor": "TODO"
+               "flavor": "'Pouvez-vous faire le trou un peu plus petit ? Le but est de voir qui est là sans qu'on sache que je suis à la maison.' --Vara Tenter, Irate Customer"
             },
             "blue_clay_window_frame_recipe": {
                "description": "Lets in the bright desert air.",
@@ -8788,11 +8797,13 @@
             },
             "clay_pile_recipe": {
                "recipe_name": "Tas d'argile",
-               "description": "De l'argile empilé. Un excelent moyen de stocker une grande quantité d'argile pour une utilisation ultérieur."
+               "description": "De l'argile empilé. Un excelent moyen de stocker une grande quantité d'argile pour une utilisation ultérieur.",
+               "flavor": "Incroyable, honnêtement, qu'il se sépare à nouveau."
             },
             "clay_market_stall_recipe": {
                "description": "Les commerçants peuvent visiter ce stand pour acheter et vendre des marchandises",
-               "recipe_name": "Étal de marché en argile"
+               "recipe_name": "Étal de marché en argile",
+               "flavor": "'Couper la main ? Pour du vol ? Quel serait le but ?' --Talidor Roq, Knight of Mysteries "
             },
             "clay_tunnel_door_recipe": {
                "description": "Utile pour sceller les tunnels miniers.",
@@ -8801,7 +8812,7 @@
             "tan_latticed_window_recipe": {
                "recipe_name": "Fenêtre treillis brun pale",
                "description": "La fenêtre treillis vous le connaissez et l'aimez, en brun pale",
-               "flavor": "TODO"
+               "flavor": "\"Laisse les punaises, mais au moins pas les très gros !\" -- Drenkar Iskender, Ex-Marketing Associate"
             },
             "tall_clay_window_recipe": {
                "recipe_name": "Fenêtre brun pale en argile",
@@ -8815,13 +8826,13 @@
             },
             "green_latticed_window_recipe": {
                "recipe_name": "Fenêtre verte treillis",
-               "flavor": "TODO",
+               "flavor": "Réminiscence d'une fenêtre de maison couvert d'une vigne, fané en mémoire",
                "description": "La fenêtre en treillis vous connaissez et aimez, maintenant en vert !"
             },
             "blue_latticed_window_recipe": {
                "recipe_name": "Fenêtre bleu treillis",
                "description": "Une fenêtre en treillis bleue apaisante",
-               "flavor": "TODO"
+               "flavor": "\"Non mais vraiment, d'ou vient ce colorant ?\" -- Farah, Professional Bugcatcher"
             }
          },
          "potter_workbench": {

@@ -984,7 +984,7 @@
             "attributions": "The following is a list of OpenSource Software that is used in Stonehearth:"
          },
          "loading_screen": {
-            "initial_load_game_text": "Loading Game",
+            "initial_load_game_text": "Loading",
             "initial_load_map_text": "Generating World",
             "loading_map_flavor_text": {
                "001": "sharpening right angles...",
@@ -1015,30 +1015,38 @@
                "026": "proliferating flowers...",
                "027": "escaping realism...",
                "028": "positioning plushies...",
-               "029": "regulating hairbobs..."
+               "029": "regulating hairbobs...",
+               "030": "sheering sheep...",
+               "031": "percolating brain..."
             },
             "tips": {
                "000": "If your workers get stuck in a mine, you can build a ladder to get them out!",
-               "001": "Your settlers will get a better night's sleep if you provide beds for them.",
+               "001": "Your hearthlings will get a better night's sleep if you provide beds for them.",
                "002": "Build pens around your pastures to make sure shepherded animals stay put.",
                "003": "Stockpiles can be changed to hold specific kinds of items.",
                "004": "You can farm silkweed for a steady supply of thread fiber.",
                "005": "A well fed town is a happy town.",
-               "006": "Use the . and , keys to rotate an item or building before placing it.",
+               "006": "Use the < and > keys to rotate an item or building before placing it.",
                "007": "Your hearthlings move faster on roads.",
                "008": "The weaver can craft new uniforms that increases the effectiveness of your workers.",
                "009": "Sitting during a meal helps with digestion. Build tables and chairs for your hearthlings.",
                "010": "Shepherds will automatically find sheep to fill a pasture.",
-               "011": "If you want a higher net worth, try selling your items to a merchant for gold"
+               "011": "If you want a higher net worth, try selling your items to a merchant for gold.",
+               "012": "Resources and Food do not contribute to your town net worth.",
+               "013": "The curiosity attribute increases experience gain.",
+               "014": "Fine items have a higher net worth than their normal versions.",
+               "015": "The net worth of an item is its sell value.",
+               "016": "You can use a tunnel door to block off your mining tunnel entrances.",
+               "017": "Don't want your hearthlings to leave town? The Engineer can make a lockable door.",
+               "018": "Settlers with a high Mind attribute will make good crafters.",
+               "019": "Place food stockpiles closer to work areas so it's easier for your hearthlings to access food.",
+               "020": "Trappers can set traps in the mountains and the desert, but there are fewer critters there.",
+               "021": "You can disable a combat class's job in the Citizens panel to force them to take a rest from fighting.",
+               "022": "Mining dirt in will occasionally yield clay and stone.",
+               "023": "You can visually see ore veins in the side of mountains.",
+               "024": "Need a starting food source? Move Berry Bushes or Prickly Pear Cacti closer to your town.",
+               "025": "After defeating the Goblin Chieftain, you can claim Bluebell the sheep as your own."
             }
-         },
-         "new_game": {
-            "title": "New Game",
-            "normal_game": "Normal Game",
-            "peaceful_game": "Peaceful Game",
-            "normal_game_description": "Adventure forth in a world fraught with danger. Your town will be subject to raiding enemies.",
-            "peaceful_game_description": "A sandbox mode where you're free to build your town without worrying about invaders.",
-            "create_game": "Create Game"
          },
          "select_settlement": {
             "title": "Click the map to choose your settlement's location",
@@ -8674,7 +8682,8 @@
             },
             "clay_safety_standard_recipe": {
                "description": "Use to designate a safety point",
-               "recipe_name": "Clay Safety Standard"
+               "recipe_name": "Clay Safety Standard",
+               "flavor": "To achieve an ideal standard of living, find safety in numbers. --Mysteries and Proverbs, V"
             },
             "building_parts_name": "Building Parts",
             "clay_bricks_recipe": {
@@ -8685,7 +8694,7 @@
             "red_clay_door_recipe": {
                "description": "Matches red clay walls",
                "recipe_name": "Red Clay Door",
-               "flavor": "TODO"
+               "flavor": "\"The red hints at a mystery, allure. What lies beyond yon red door?\" -- Ember Iskender, Dept of Applied Poetry"
             },
             "red_clay_window_frame_recipe": {
                "description": "Matches red clay walls",
@@ -8695,12 +8704,12 @@
             "blue_clay_door_recipe": {
                "description": "Blue like the dream of distant ocean.",
                "recipe_name": "Blue Clay Door",
-               "flavor": "TODO"
+               "flavor": "'It's a door. What more could we possibly say?' --Joni Iskender, Marketing Apprentice"
             },
             "green_clay_door_recipe": {
                "description": "Green, like the few scrub in the desert.",
                "recipe_name": "Green Clay Door",
-               "flavor": "TODO"
+               "flavor": "'Can you make the hole a bit smaller? The point is to see who it is without giving away that I'm home.' --Vara Tenter, Irate Customer"
             },
             "blue_clay_window_frame_recipe": {
                "description": "Lets in the bright desert air.",
@@ -8782,11 +8791,13 @@
             },
             "clay_pile_recipe": {
                "recipe_name": "Clay Pile",
-               "description": "A pile of clay stacked together. An excellent way to store lots of clay for later use."
+               "description": "A pile of clay stacked together. An excellent way to store lots of clay for later use.",
+               "flavor": "Amazing, honestly, that it comes apart again."
             },
             "clay_market_stall_recipe": {
                "description": "Merchants can visit this stall to buy and sell goods",
-               "recipe_name": "Clay Market Stall"
+               "recipe_name": "Clay Market Stall",
+               "flavor": "'Cut off his hand? For theft? What would be the point?' --Talidor Roq, Knight of Mysteries "
             },
             "clay_tunnel_door_recipe": {
                "description": "Useful for sealing off mine tunnels.",
@@ -8795,7 +8806,7 @@
             "tan_latticed_window_recipe": {
                "recipe_name": "Tan Latticed Window",
                "description": "The latticed window you know and love, in tan",
-               "flavor": "TODO"
+               "flavor": "\"Lets in the bugs, but at least not the really big ones!\" -- Drenkar Iskender, Ex-Marketing Associate"
             },
             "tall_clay_window_recipe": {
                "recipe_name": "Tall Clay Window",
@@ -8809,13 +8820,13 @@
             },
             "green_latticed_window_recipe": {
                "recipe_name": "Green Latticed Window",
-               "flavor": "TODO",
+               "flavor": "Reminicent of a vine-covered treehouse window, faded into memory",
                "description": "The latticed window you know and love, now in green!"
             },
             "blue_latticed_window_recipe": {
                "recipe_name": "Blue Latticed Window",
                "description": "A soothing blue latticed window",
-               "flavor": "TODO"
+               "flavor": "\"No but really, where is this dye coming from?\" -- Farah, Professional Bugcatcher"
             }
          },
          "potter_workbench": {
