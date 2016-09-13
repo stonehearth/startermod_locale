@@ -12,9 +12,9 @@
          },
          "recipes": {
             "mason_clay_chisel_recipe": {
-               "description": "The potter uses clay to bind wood and stone",
-               "recipe_name": "Mason's Clay Chisel",
-               "flavor": "'The kiln tempers all things; witness how clay shall, by Monkey's alchemy, grow as strong as stone' --Master Erisa"
+               "description": "Nécessaire pour promouvoir un hearthling en maçon",
+               "recipe_name": "Ciseaux de maçon en argile",
+               "flavor": ""
             }
          }
       },
@@ -124,6 +124,14 @@
                      "town": "Modèles de ville"
                   }
                }
+            }
+         },
+         "building_templates": {
+            "pottery_studio": {
+               "display_name": "Studio de poterie"
+            },
+            "weavers_hut": {
+               "display_name": "Cabane de Tisserin"
             }
          }
       }

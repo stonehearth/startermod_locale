@@ -496,18 +496,18 @@
                   },
                   "party_1": {
                      "display_name": "Groupe de combat 1",
-                     "description": "Direct hearthlings with combat jobs into battle! Promoted combat classes are automatically added here.",
-                     "tip_title": "The party is selected in the unit frame.",
-                     "tip_description": "Use the commands in the unit frame to direct the people in the party."
+                     "description": "Envoi directement des hearthlings avec des emplois de combat dans la bataille ! Les unités de combat promus sont automatiquement ajoutés ici.",
+                     "tip_title": "Le groupe est sélectionné dans le 'cadre de l'unité'.",
+                     "tip_description": "Utilisez les commandes dans le 'cadre de l'unité' pour diriger le peuple dans le groupe."
                   },
                   "party_2": {
                      "display_name": "Groupe de combat",
-                     "description": "Direct hearthlings with combat jobs into battle! Use the unit frame controls to manage the party.",
-                     "tip_title": "The party is selected in the unit frame.",
-                     "tip_description": "Use the commands in the unit frame to direct the people in the party."
+                     "description": "Envoi directement des hearthlings avec des emplois de combat dans la bataille ! Les unités de combat promus sont automatiquement ajoutés ici.",
+                     "tip_title": "Le groupe est sélectionné dans le 'cadre de l'unité'.",
+                     "tip_description": "Utilisez les commandes dans le 'cadre de l'unité' pour diriger le peuple dans le groupe."
                   },
                   "party": {
-                     "required_job_text": "Nécessite un fantassin"
+                     "required_job_text": "Nécessite un emploi de combattant"
                   }
                }
             },
@@ -1047,7 +1047,7 @@
                "018": "Les hearthlings avec un attribut d'esprit supérieure feront de bons artisans.",
                "019": "Placez les stocks de nourriture plus près des zones de travail de sorte qu'il est plus facile pour vos hearthlings d'accéder à la nourriture.",
                "020": "Les trappeurs peuvent définir des pièges dans les montagnes et le désert, mais il y a moins de bestioles là bas.",
-               "021": "Vous pouvez désactiver une classe de travail de combat dans le panneau des citoyens pour les forcer à prendre un repos.",
+               "021": "Vous pouvez désactiver un emploi de combattant dans le panneau des citoyens pour les forcer à prendre un repos.",
                "022": "Miné de la terre donne occasionnellement de l'argile et de la pierre.",
                "023": "Vous pouvez voir visuellement les veines de minerai dans le côté des montagnes.",
                "024": "Vous avez besoin d'une source de nourriture de départ ? Bougez les buissons de baie ou figuier de Barbarie plus proche de votre ville.",
@@ -3290,7 +3290,8 @@
                "slate_blue_checkered": "Un toit en Gris foncé, et Gris moyen",
                "clay_slat_roof": "Un toit d'argile colorée de Cendre clair et de bois Cacao brun",
                "wood_dark_diagonal": "Un motif de Muesli and Sandale",
-               "red_clay_wall": "Un motif de Chocolat boulangerie, et Nouvelle ambre"
+               "red_clay_wall": "Un motif de Chocolat boulangerie, et Nouvelle ambre",
+               "red_clay_peaked_roof": "Un toit pointu en chocolat de boulanger et nouvelle ambre en argile colorée avec du bois coloré en bistre"
             }
          }
       },
@@ -8838,7 +8839,7 @@
          "potter_workbench": {
             "potter_workbench_ghost": {
                "display_name": "Tour de potier",
-               "description": "Atelier pour fabriquer des objets d'argile."
+               "description": "Pour la fabrication de produits d'argile symétriques"
             }
          },
          "potter_kiln": {

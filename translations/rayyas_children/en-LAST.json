@@ -12,9 +12,9 @@
          },
          "recipes": {
             "mason_clay_chisel_recipe": {
-               "description": "The potter uses clay to bind wood and stone",
+               "description": "Required to promote a hearthling into a Mason",
                "recipe_name": "Mason's Clay Chisel",
-               "flavor": "'The kiln tempers all things; witness how clay shall, by Monkey's alchemy, grow as strong as stone' --Master Erisa"
+               "flavor": ""
             }
          }
       },
@@ -124,6 +124,14 @@
                      "town": "Town Templates"
                   }
                }
+            }
+         },
+         "building_templates": {
+            "pottery_studio": {
+               "display_name": "Pottery Studio"
+            },
+            "weavers_hut": {
+               "display_name": "Weaver's Hut"
             }
          }
       }

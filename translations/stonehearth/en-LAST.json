@@ -490,7 +490,7 @@
                   },
                   "party_1": {
                      "display_name": "Combat Party 1",
-                     "description": "Direct hearthlings with combat jobs into battle! Promoted combat classes are automatically added here.",
+                     "description": "Direct hearthlings with combat jobs into battle! Promoted combat units are automatically added here.",
                      "tip_title": "The party is selected in the unit frame.",
                      "tip_description": "Use the commands in the unit frame to direct the people in the party."
                   },
@@ -501,7 +501,7 @@
                      "tip_description": "Use the commands in the unit frame to direct the people in the party."
                   },
                   "party": {
-                     "required_job_text": "Requires a footman"
+                     "required_job_text": "Requires a combat job"
                   }
                }
             },
@@ -1041,7 +1041,7 @@
                "018": "Settlers with a high Mind attribute will make good crafters.",
                "019": "Place food stockpiles closer to work areas so it's easier for your hearthlings to access food.",
                "020": "Trappers can set traps in the mountains and the desert, but there are fewer critters there.",
-               "021": "You can disable a combat class's job in the Citizens panel to force them to take a rest from fighting.",
+               "021": "You can disable a combat unit's job in the Citizens panel to force them to take a rest from fighting.",
                "022": "Mining dirt in will occasionally yield clay and stone.",
                "023": "You can visually see ore veins in the side of mountains.",
                "024": "Need a starting food source? Move Berry Bushes or Prickly Pear Cacti closer to your town.",
@@ -3284,7 +3284,8 @@
                "slate_blue_checkered": "A Pattern of Shuttle Grey, and Mid Grey",
                "clay_slat_roof": "A roof made of Light Ash colored clay and Cocoa Brown wood",
                "wood_dark_diagonal": "A Pattern of Muesli and Sandal",
-               "red_clay_wall": "A Pattern of Baker's Chocolate, and New Amber"
+               "red_clay_wall": "A Pattern of Baker's Chocolate, and New Amber",
+               "red_clay_peaked_roof": "A peaked roof made of Baker's Chocolate and New Amber colored clay with Bistre colored wood"
             }
          }
       },
@@ -8832,7 +8833,7 @@
          "potter_workbench": {
             "potter_workbench_ghost": {
                "display_name": "Pottery Wheel",
-               "description": "Workshop for making symmetrical clay goods"
+               "description": "For making symmetrical clay goods"
             }
          },
          "potter_kiln": {
