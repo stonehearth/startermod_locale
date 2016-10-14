@@ -15,18 +15,35 @@
                "description": "Nécessaire pour promouvoir un hearthling en maçon",
                "recipe_name": "Ciseaux de maçon en argile",
                "flavor": ""
+            },
+            "trading_post_monument_recipe": {
+               "recipe_name": "Monument des biens commerciaux",
+               "description": "Représente votre ville comme un comptoir commercial de bonne réputation"
+            },
+            "monkey_shrine_monument_recipe": {
+               "description": "Un endroit pour rendre hommage au singe et ces mystères",
+               "recipe_name": "Monument Sanctuaire au Singe"
+            },
+            "exotic_trade_monument_recipe": {
+               "description": "Un hommage à l'habileté de votre ville dans le commerce exotique",
+               "recipe_name": "Monument de Tapisserie"
             }
+         }
+      },
+      "herbalist": {
+         "herbalist_description": {
+            "requirements": "Bâton d'herboriste, conçu par le potier."
          }
       },
       "mason": {
          "mason_description": {
-            "requirements": "Requires a level 2 Potter and a Mason's Chisel, crafted by the Potter."
+            "requirements": "Nécessite un potier niveau 2 et un burin de maçon, conçu par le potier."
          }
       },
       "cook": {
          "recipes": {
             "golden_gourd_curry_recipe": {
-               "description": "Are gourds are more edible when cooked?",
+               "description": "Les courges sont plus comestibles lorsqu'ils sont cuits ?",
                "recipe_name": "Courge jaune au curry",
                "flavor": "TODO(flavor!)"
             },
@@ -111,6 +128,186 @@
                      "name": "Les fournitures agricoles du fermier Gem",
                      "title": "Gem's l'aggriculteur roule vers la ville avec sa charrette d'approvisionnement"
                   }
+               },
+               "naryal_tier_2_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "rewards": {
+                           "bulletin_message": {
+                              "000": "Eh bien, en plus d'être distingué comme un canton officiel, vous gagnerez la reconnaissance de commerçants et les voyageurs de partout dans Hearth. Nous allons également vous proposer des plans d'architecture que nous avons recueillies dans le cadre de nos opérations avec les établissements des autres enfants de Rayya."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Alors ok !"
+                        },
+                        "shrine_reqs": {
+                           "bulletin_message": {
+                              "000": "L'église de Rayya, plus communément connu sous son mystère, peut désigner un avant-poste comme un point de passage officiel de l'Église. Pour être admissible, votre ville doit fournir un sanctuaire où les voyageurs et vagabonds fatigués peuvent donner des offrandes au singe et rendre hommage à mère guilde de Rayya."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Ça m'a l'air bien !",
+                           "choice_001": "Comment puis-je gagner de la renommée ?"
+                        },
+                        "details": {
+                           "bulletin_message": {
+                              "000": "Eh bien, arriver au point, je crois que nous pouvons à la fois bénéficier d'un accord de toutes sortes. Nous, à l'Agence Iskender efforçons de créer les cartes les plus complètes de Hearth, et nous souhaitons des détails des établissements et des avant-postes notables tels que le vôtre. Avec votre permission, bien sûr !"
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Qu'est-ce que je reçois en retour ?"
+                        },
+                        "requirements": {
+                           "bulletin_message": {
+                              "000": "Génial ! Mettons ce processus en marche alors. Tout d'abord, comment voulez-vous être connu ? Nous pouvons vous mettre sur la carte comme un lieu réputé pour son : comptoir commercial, lieu saint, ou marchandises exotiques."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Comptoir commercial !",
+                           "choice_001": "Lieu saint !",
+                           "choice_002": "Marchandises exotiques !"
+                        },
+                        "repeat_reqs": {
+                           "bulletin_message": {
+                              "000": "Comment voulez-vous être connu ? Nous pouvons vous mettre sur la carte comme un lieu réputé pour son : comptoir commercial, lieu saint, ou marchandises exotiques."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Comptoir commercial !",
+                           "choice_001": "Lieu saint !",
+                           "choice_002": "Marchandises exotiques !"
+                        },
+                        "naryal_approaches": {
+                           "bulletin_message": {
+                              "000": "Salutations, amis de [str(i18n_data.town_name)] ! Cela fait un bon moment depuis que nous avons visité la dernière fois cet avant-poste. On dirait que vous avez fait bon usage des fournitures que nous vous avions livrés."
+                           },
+                           "bulletin_title": "Iskender Agent Naryal Approaches",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Que faites-vous ici ?"
+                        },
+                        "exotic_goods_reqs": {
+                           "bulletin_message": {
+                              "000": "Afin de gagner la renommée du commerce de marchandises exotiques, votre ville doit se livrer à des métiers avec des visiteurs venus de terres lointaines et donc avoir accès à une variété de produits qui seraient autrement impossibles à obtenir dans votre région."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Ça m'a l'air bien !",
+                           "choice_001": "Comment puis-je gagner la renommée ?"
+                        },
+                        "conclusion2": {
+                           "bulletin_message": {
+                              "000": "Singe soit avec vous, [str(i18n_data.town_name)] ! Je vais vous laisser un oiseau, afin que vous puissiez me convoquer pour évaluer votre progrès !"
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Adieu !"
+                        },
+                        "map_of_hearth": {
+                           "bulletin_message": {
+                              "000": "Pourquoi, nos cartographes font des préparatifs pour la prochaine itération d'impression de la carte Iskender de la Hearth. Bien que nous à Iskender avons une agence d'échange connus pour le commerce, nous sommes également fiers de l'exactitude et l'utilité de nos cartes. Des colonies et des routes à travers le monde sont représentés dans les moindres détails."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender"
+                        },
+                        "trading_post_reqs": {
+                           "bulletin_message": {
+                              "000": "Afin de gagner la renommée en tant que comptoire commercial pour les masses, il est important que votre ville soit un endroit accueillant à l'échange des marchandises entre les commerçants et les voyageurs en visite. Je vais donner à votre potier une recette; afin de construire un monument qui peut agir comme un monument grandiose et accueillant au cœur de votre colonie."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Ça m'a l'air bien !",
+                           "choice_001": "Comment puis-je gagner la renommée ?"
+                        },
+                        "conclusion": {
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Merci, honorable frère !",
+                           "bulletin_message": {
+                              "000": "Excellent ! En plus d'un monument approprié, votre ville devra également avoir accumulé un certain niveau de valeur. Je laisserai les exigences avec vous, si vous souhaitez les consulter à nouveau, ou choisir un chemin différent plus aventageux que votre choix initial."
+                           }
+                        },
+                        "shrine_reqs_ctd": {
+                           "bulletin_message": {
+                              "000": "Je vais donner à votre potier une recette d'un sanctuaire sacré, qu'on transmet à la plupart des officiers d'élite. Ils disent que les ingrédients se trouvent dans les anciennes structures et des coffres de butin; construisez le monument et je reviendrai pour vérifier si elle est conforme aux spécifications de l'Église."
+                           }
+                        },
+                        "exotic_goods_reqs_ctd": {
+                           "bulletin_message": {
+                              "000": "Je vais donner à votre potier une recette. Vous pouvez obtenir les ingrédients de marchands ambulants et caravanes commerciales, mais il faut noter que pas beaucoup de voyageurs en transportent sur eux. Construisez un monument qui incorpore ces ingrédients afin de démontrer votre excellence dans le commerce de produits exotiques."
+                           }
+                        }
+                     }
+                  }
+               },
+               "unlock_exotic_trade_monument": {
+                  "bulletin_title": "Recette de potier déverrouillée : Monument Tapisserie"
+               },
+               "unlock_monkey_shrine_monument": {
+                  "bulletin_title": "Recette de potier déverrouillée : Lieu Saint du Singe"
+               },
+               "unlock_trading_post_monument": {
+                  "bulletin_title": "Recette de potier déverrouillée : Monument du Comptoir commercial"
+               },
+               "trading_post_tier_2_reached": {
+                  "title": "Retour de l'agent Naryal Iskender",
+                  "speaker_name": "Naryal Iskender",
+                  "message": "Félicitations à vous, [str(i18n_data.town_name)] ! Votre ville est admissible à être reconnu officiellement comme un canton ! Je vous ai apporté des matériaux de construction et des accords commerciaux, comme il est d'usage.",
+                  "accept": "Woohoo !",
+                  "dialog_title": "Status Canton obtenu!",
+                  "tier_title": "Canton",
+                  "reward_message": "Par décret honorifique des enfants du Rayya, nous reconnaissons : ",
+                  "reward_message_ctd": "Pour son excellence en tant que comptoir commercial de classe mondiale. La ville est par les présentes éligibles pour : ",
+                  "tier_2_bldg_template": "Niveau 2 Modèles de construction",
+                  "tier_2_shops": "Niveau 2 Magasins",
+                  "tier_2_BGM": "Niveau 2 BGM"
+               },
+               "rayyas_children_town_tier_quest": {
+                  "title": "Quête pour un canton",
+                  "dialog_title": "Quête pour un canton",
+                  "text": "Satisfaire l'une des exigences suivantes pour obtenir une renommée suffisante pour prétendre au statut de canton : ",
+                  "summon_text": "Convoquer par Iskender !"
+               },
+               "exotic_trade_tier_2_reached": {
+                  "reward_message_ctd": "Pour l'excellence dans le commerce extérieur et exotique. La ville est par les présentes éligibles pour : "
+               },
+               "shrine_tier_2_reached": {
+                  "reward_message_ctd": "Pour son hospitalité et son sanctuaire emblématique. La ville est par les présentes éligibles pour : "
+               },
+               "arcs": {
+                  "encounters": {
+                     "tier_2_shops": {
+                        "bakery_shop": {
+                           "shop_info": {
+                              "name": "Areff Tigris Pains et ragoûts",
+                              "title": "La charrette d'un chef de pains et de ragoûts roule en ville"
+                           }
+                        },
+                        "container_shop": {
+                           "shop_info": {
+                              "name": "Elia Boxen's la hutte du conteneur",
+                              "title": "Elia Boxen arrive avec une boîte de caisses"
+                           }
+                        },
+                        "door_shop": {
+                           "shop_info": {
+                              "name": "Radien's Exotic Porte et Panneaux",
+                              "title": "Raiden est arrivé avec des portes exotiques et des panneaux à vendre"
+                           }
+                        },
+                        "farming_supplies_shop": {
+                           "shop_info": {
+                              "name": "Fermier Makabi's Les fournitures agricoles",
+                              "title": "Le fermier Makabi's arrive à charette en ville avec des fournitures"
+                           }
+                        },
+                        "weapon_armor_shop": {
+                           "shop_info": {
+                              "name": "Zadok's Armurie",
+                              "title": "Un wagon transportant un assortiment d'armure approche"
+                           }
+                        }
+                     }
+                  }
                }
             }
          }
@@ -121,7 +318,8 @@
                "rayyas_children": {
                   "display_name": "Rayya's",
                   "categories": {
-                     "town": "Modèles de ville"
+                     "outpost": "Modèles d'avant-poste",
+                     "settlement": "Modèles de colonie"
                   }
                }
             }
@@ -131,7 +329,33 @@
                "display_name": "Studio de poterie"
             },
             "weavers_hut": {
-               "display_name": "Cabane de Tisserin"
+               "display_name": "Cabane de tisserin"
+            },
+            "communal_kitchen": {
+               "display_name": "Cuisine communale"
+            },
+            "masons_workshop": {
+               "display_name": "Atelier de maçon"
+            },
+            "tier2": {
+               "desert_lodge": {
+                  "display_name": "Hutte du désert"
+               },
+               "little_red_hut": {
+                  "display_name": "Petit hutte rouge"
+               },
+               "rayyas_shadow": {
+                  "display_name": "L'ombre de Rayya"
+               },
+               "red_clay_homes": {
+                  "display_name": "Maisons en argile rouge"
+               },
+               "engineers_workshop": {
+                  "display_name": "Maison d'ingénieur"
+               }
+            },
+            "blacksmiths_workshop": {
+               "display_name": "La forge"
             }
          }
       }
@@ -142,6 +366,26 @@
             "rc_camp_standard_ghost": {
                "display_name": "Bannière de campement",
                "description": "Comment savez vous que vous êtes à la maison"
+            }
+         }
+      },
+      "decoration": {
+         "monkey_shrine_monument": {
+            "monkey_shrine_monument_ghost": {
+               "display_name": "Lieu Saint du Singe",
+               "description": "Place pour rendre hommage au Singe et ces mystères"
+            }
+         },
+         "exotic_trade_monument": {
+            "exotic_trade_monument_ghost": {
+               "display_name": "Monument de Tapisserie",
+               "description": "Un hommage à l'habileté de votre ville dans le commerce exotique"
+            }
+         },
+         "trading_post_monument": {
+            "trading_post_monument_ghost": {
+               "display_name": "Monument du Comptoir commercial",
+               "description": "Représente votre ville comme un comptoir commercial de bonne renommée"
             }
          }
       }

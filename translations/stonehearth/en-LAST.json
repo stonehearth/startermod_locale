@@ -52,7 +52,8 @@
             "healing": "treating wounds",
             "healing_target": "healing [name(data.target)]",
             "dig_foundation": "digging foundation",
-            "unit_hold_location": "defending location"
+            "unit_hold_location": "defending location",
+            "execute_conversation": "socializing"
          }
       }
    },
@@ -259,7 +260,6 @@
                "mine": "Mine",
                "job": "Job",
                "current_activity": "Current Activity...",
-               "militia": "Militia",
                "status": "Status"
             },
             "show_character_sheet": "More Info",
@@ -486,7 +486,7 @@
                      "display_name": "Town Alert Mode!",
                      "description": "Rally your hearthlings to prepare for intruders!",
                      "activated_title": "Town Alert Mode Activated!",
-                     "activated_text": "Your hearthlings are vigilantly watching for intruders. Hearthlings not enrolled in the militia will run to safety points."
+                     "activated_text": "Your hearthlings are vigilantly watching for intruders. Non-combat hearthlings will run to safety points."
                   },
                   "party_1": {
                      "display_name": "Combat Party 1",
@@ -1016,8 +1016,9 @@
                "027": "escaping realism...",
                "028": "positioning plushies...",
                "029": "regulating hairbobs...",
-               "030": "sheering sheep...",
-               "031": "percolating brain..."
+               "030": "shearing sheep...",
+               "031": "percolating brain...",
+               "032": "poking poyos..."
             },
             "tips": {
                "000": "If your workers get stuck in a mine, you can build a ladder to get them out!",
@@ -1042,7 +1043,7 @@
                "019": "Place food stockpiles closer to work areas so it's easier for your hearthlings to access food.",
                "020": "Trappers can set traps in the mountains and the desert, but there are fewer critters there.",
                "021": "You can disable a combat unit's job in the Citizens panel to force them to take a rest from fighting.",
-               "022": "Mining dirt in will occasionally yield clay and stone.",
+               "022": "Mining dirt will occasionally yield clay and stone.",
                "023": "You can visually see ore veins in the side of mountains.",
                "024": "Need a starting food source? Move Berry Bushes or Prickly Pear Cacti closer to your town.",
                "025": "After defeating the Goblin Chieftain, you can claim Bluebell the sheep as your own."
@@ -1050,7 +1051,7 @@
          },
          "select_settlement": {
             "title": "Click the map to choose your settlement's location",
-            "loading": "Loading...",
+            "loading": "Loading",
             "settle_at_this_location": "Settle here!",
             "clear_selection": "Choose another location",
             "regenerate_map": "Roll new map",
@@ -1150,6 +1151,21 @@
                "auto_loot_description": "When an enemy drops loot, automatically mark it for pick up.",
                "building_auto_queue_crafters": "Auto Queue Crafting For Building",
                "building_auto_queue_crafters_description": "When starting construction on a building, all furniture and fixtures for that building are automatically queued for their respective crafters."
+            },
+            "mods": "Mods",
+            "mods_tab": {
+               "title": "Installed Modules",
+               "note": "Enabling or disabling a module requires a game reload.",
+               "invalid_manifest": "Invalid Manifest",
+               "out_of_date": "Out of Date",
+               "deferred_load": "Automatically Loaded by Other Mods",
+               "required": "Required",
+               "mods_changed_dialog": {
+                  "title": "Modules Changed",
+                  "message": "The game needs to reload to apply module changes. Reload now?",
+                  "accept": "Ok",
+                  "cancel": "Cancel"
+               }
             }
          },
          "title_screen": {
@@ -1348,10 +1364,6 @@
                "description": "Protect your town from raiders and make your citizens feel safe by assigning guards.",
                "town_description": "How your citizens feel about the town's security. Is the town well protected or getting pillaged by goblins?"
             },
-            "militia": {
-               "display_name": "Militia",
-               "description": "In Town Alert Mode, militia members will hold their ground against enemies instead of running to a safety banner. In addition, they receive an extra boost of Courage and Muscle."
-            },
             "inventory": {
                "display_name": "Inventory",
                "description": "The gold value of all non-Resource and non-Edible items in the town inventory."
@@ -1383,7 +1395,8 @@
             "fiber_resource_name": "Bundle of Fiber",
             "ingot_resource_name": "Metal Ingot",
             "herb_resource_name": "Herb",
-            "ore_resource_name": "Ore"
+            "ore_resource_name": "Ore",
+            "dirt_resource_name": "Pile of Dirt"
          }
       }
    },
@@ -1443,7 +1456,7 @@
             },
             "trader": {
                "simple_caravan_encounter": {
-                  "message": "Hello [str(i18n_data.town_name)]! I come bearing goods for trade. Would you like to give me [str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s) in exchange for [str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s)?",
+                  "message": "Hello [str(i18n_data.town_name)]! I come bearing goods for trade. Would you like to give me <strong>[str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s)</strong> in exchange for <strong>[str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s)</strong>?",
                   "title": "A caravan approaches!"
                },
                "starting_food_donation": {
@@ -1468,9 +1481,9 @@
                   "title": "A trader approaches your town.",
                   "days": " days",
                   "hours": " hours",
-                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Sound good?",
+                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong>, I'll be back in [str(i18n_data.num_days)] days and might be able to get you <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)]</strong> in exchange. Sound good?",
                   "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)]!",
-                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] to give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
+                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] to give you <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)]</strong> if you have <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong> ready for him!",
                   "return_title": "The trader returns!",
                   "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Still sounds good?",
                   "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
@@ -1533,7 +1546,8 @@
                   "text": "Satisfy any of the following requirements to qualify for township status:",
                   "military_requirement_title": "Cid's Valor",
                   "church_requirement_title": "Church of Plenty",
-                  "crafting_requirement_title": "Crafter's Approval"
+                  "crafting_requirement_title": "Crafter's Approval",
+                  "summon_text": "Summon Herald!"
                },
                "herald_dialog": {
                   "dialog_tree_info": {
@@ -3264,10 +3278,14 @@
                "#4E555C": "Trout",
                "#864E31": "Korma",
                "#644F46": "Congo Brown",
+               "#97775E": "Roserock",
+               "#A7855A": "Fawn",
+               "#9E7F56": "Coffee Cake",
                "#927923": "Lemon Ginger"
             },
             "patterns": {
                "gold_clay_wall": "A Pattern of Pavlova, Raffia, Winter Hazel, and Ecru",
+               "tan_clay_wall": "A pattern of Roserock, Coffee Cake, and Fawn",
                "wooden_wall": "A Pattern of Punga, and Tobacco Brown",
                "red_clay_slat_roof": "A roof made of Korma colored clay and Cocoa Brown wood",
                "cobblestone": "A Pattern of Hillary, Granite Green, and Pale Oyster",
@@ -3351,6 +3369,10 @@
          "remove_ladder": {
             "display_name": "Remove",
             "description": "Remove this ladder."
+         },
+         "restore_terrain": {
+            "display_name": "Restore Terrain",
+            "description": "Restore the terrain to its original state."
          },
          "show_workshop": {
             "display_name": "Show Workshop",
@@ -4887,31 +4909,31 @@
          "large_crate": {
             "large_crate_ghost": {
                "display_name": "Large Crate",
-               "description": "Storage container"
+               "description": "Stores up to 32 items"
             }
          },
          "large_urn": {
             "large_urn_ghost": {
                "display_name": "Large Urn",
-               "description": "Storage container"
+               "description": "Stores up to 32 items"
             }
          },
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
                "display_name": "Leather Bound Chest",
-               "description": "Storage container"
+               "description": "Stores up to 64 items"
             }
          },
          "small_crate": {
             "small_crate_ghost": {
                "display_name": "Small Crate",
-               "description": "Storage container"
+               "description": "Stores up to 8 items"
             }
          },
          "stone_chest": {
             "stone_chest_ghost": {
                "display_name": "Stone Chest",
-               "description": "Storage container"
+               "description": "Stores up to 64 items"
             }
          },
          "barrel": {
@@ -4923,13 +4945,13 @@
          "small_urn": {
             "small_urn_ghost": {
                "display_name": "Small Urn",
-               "description": "For storing things"
+               "description": "Stores up to 8 items"
             }
          },
          "vault": {
             "vault_ghost": {
                "display_name": "The Vault",
-               "description": "Massive storage"
+               "description": "Massive storage for 256 items"
             }
          },
          "log_pile": {
@@ -4969,13 +4991,13 @@
          "large_crate_fine": {
             "large_crate_fine_ghost": {
                "display_name": "Fine Large Crate",
-               "description": "Storage container with style"
+               "description": "Stores up to 32 items. With style."
             }
          },
          "leather_bound_chest_fine": {
             "leather_bound_chest_fine_ghost": {
                "display_name": "Fine Leather Bound Chest",
-               "description": "Storage Container with style"
+               "description": "Stores up to 64 items. With style."
             }
          }
       },
@@ -6361,6 +6383,14 @@
             "display_name": "Chest of Gold Coins",
             "description": "It's [str(self.stonehearth:stacks.stacks)] coins!",
             "label": "gold"
+         },
+         "dusty_tome": {
+            "display_name": "Dusty Tome",
+            "description": "An ancient text preserving knowledge of the past"
+         },
+         "old_scroll": {
+            "display_name": "Old Scroll",
+            "description": "Covered in faded ink and inscrutable symbols"
          }
       },
       "monsters": {
@@ -6382,7 +6412,7 @@
                "description": "Solid."
             },
             "little_stone_golem": {
-               "display_name": "Little Stone Golem",
+               "display_name": "Stoneling",
                "description": "He's just a pebble!"
             },
             "alligator": {
@@ -6442,7 +6472,7 @@
             },
             "goblin_hut": {
                "display_name": "Goblin Tent",
-               "description": "Made from coarsely chopped wodden boards"
+               "description": "Made from coarsely chopped wooden boards"
             },
             "goblin_large_totem": {
                "display_name": "Large totem"
@@ -6666,8 +6696,20 @@
          },
          "pear_cactus": {
             "display_name": "Pear Cactus",
-            "description": "Harvest carefully for prickley pears.",
+            "description": "Harvest carefully for prickly pears.",
             "unripe_description": "It's the invisible spines that really hurt"
+         },
+         "foxlily_plant": {
+            "foxlily_plant_ghost": {
+               "display_name": "Fox Lily",
+               "description": "Orange flowers bearing resemblance to fox tails"
+            }
+         },
+         "sunflower_plant": {
+            "sunflower_plant_ghost": {
+               "display_name": "Sunflower",
+               "description": "Bright and happy like the sun"
+            }
          }
       },
       "rabbit": {
@@ -6815,6 +6857,16 @@
                "description": "Heavy and cool to the touch"
             }
          },
+         "dirt": {
+            "dirt_pile": {
+               "display_name": "Pile of Dirt",
+               "description": "Looks dirty"
+            },
+            "terrain_dirt": {
+               "display_name": "Large Pile of Dirt",
+               "description": "A huge mound of dirt excavated from the land"
+            }
+         },
          "tin": {
             "tin_ore": {
                "display_name": "Tin Ore",
@@ -6859,6 +6911,10 @@
             "cactus_flower": {
                "display_name": "Cactus Flower",
                "description": "A beautiful desert bloom with healing properties"
+            },
+            "summer_jasmine": {
+               "display_name": "Summer Jasmine Flower",
+               "description": "Vibrant yellow flower that blooms in summer"
             }
          },
          "skin": {
@@ -7775,7 +7831,7 @@
                "flavor": "If pillows are good for the head, surely they're even better for the butt and back!"
             },
             "dining_table_recipe": {
-               "description": "Allows a group of people to all eat together. Like grown ups.",
+               "description": "Allows a group of people to all eat together. Like grown-ups.",
                "recipe_name": "Dining Table",
                "flavor": "Sitting down to eat is a sign of civilization."
             },
@@ -7838,7 +7894,7 @@
             "simple_wooden_chair_recipe": {
                "description": "When sitting, food is 20% more satisfying.",
                "recipe_name": "Simple Wooden Chair",
-               "flavor": "Ten thousand years of reseach culminated in this four-legged design."
+               "flavor": "Ten thousand years of research culminated in this four-legged design."
             },
             "small_crate_recipe": {
                "description": "For compactly storing up to 8 items",
@@ -8526,7 +8582,7 @@
                "flavor": "Tis a lucky thing, boy, that the square is the natural shape within most rocks. --Garen Knapper"
             },
             "stone_chair_recipe": {
-               "description": "Not horribly comforable, but a symbol of status.",
+               "description": "Not horribly comfortable, but a symbol of status.",
                "recipe_name": "Stone Chair",
                "flavor": "Outdoorsy!"
             },
@@ -8852,7 +8908,7 @@
          },
          "potter_outfit": {
             "display_name": "Potter's Outfit",
-            "description": "Earth sploches are part of it's intense style."
+            "description": "Earth splotches are part of its intense style."
          }
       },
       "shepherd": {
@@ -9367,7 +9423,7 @@
                "description": "From a healing aura!"
             },
             "minor_muscle_aura_buff": {
-               "display_name": "Minor Strength",
+               "display_name": "Minor Strength Aura",
                "description": "Increases strength of those around by a small amount"
             },
             "minor_muscle_aura_effect_buff": {
@@ -9391,7 +9447,7 @@
                "description": "Compassion Increased by 40%"
             },
             "major_muscle_aura_buff": {
-               "display_name": "Major Strength",
+               "display_name": "Major Strength Aura",
                "description": "Greatly increases the muscle of those around"
             },
             "major_muscle_aura_effect_buff": {

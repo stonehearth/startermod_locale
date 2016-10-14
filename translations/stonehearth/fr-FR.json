@@ -52,7 +52,8 @@
             "healing": "traite des blessures",
             "healing_target": "guérit [name(data.target)]",
             "dig_foundation": "creuse des fondations",
-            "unit_hold_location": "défendre la position"
+            "unit_hold_location": "défendre la position",
+            "execute_conversation": "socialisation"
          }
       }
    },
@@ -259,7 +260,6 @@
                "mine": "Mine",
                "job": "Job",
                "current_activity": "Activité actuel ...",
-               "militia": "Milice",
                "status": "Statut"
             },
             "show_character_sheet": "Plus d'info.",
@@ -486,13 +486,7 @@
                      "display_name": "Mode défense de la ville !",
                      "description": "Rassemblez vos hearthlings pour défendre la ville.",
                      "activated_title": "Mode défense de la ville activé !",
-                     "activated_text": "Les hearthlings ont cessés leurs activités et recherchent des intrus."
-                  },
-                  "loot_item": {
-                     "display_name": "Butin",
-                     "description": "Pillez les biens des ennemis.",
-                     "tip_title": "Cliquez et tirez pour piller les objets au sol.",
-                     "tip_description": "Clique droit pour sortir de ce mode"
+                     "activated_text": "Les hearthlings ont cessés leurs activités et recherchent des intrus. Tous les hearthlings hors combat courront aux points de sécurité."
                   },
                   "party_1": {
                      "display_name": "Groupe de combat 1",
@@ -1023,7 +1017,8 @@
                "028": "positionnement des peluches ...",
                "029": "régularise les dreadlocks ...",
                "030": "la tonte des moutons ...",
-               "031": "percolation du cerveau ..."
+               "031": "percolation du cerveau ...",
+               "032": "pousser un poyos..."
             },
             "tips": {
                "000": "Si vos mineurs restent bloqués dans un puits, construisez une échelle pour les en sortir !",
@@ -1056,7 +1051,7 @@
          },
          "select_settlement": {
             "title": "Cliquez sur la carte pour choisir un emplacement",
-            "loading": "Chargement...",
+            "loading": "Chargement",
             "settle_at_this_location": "S'installer ici!",
             "clear_selection": "Choisir un autre emplacement",
             "regenerate_map": "Nouvelle carte",
@@ -1156,6 +1151,21 @@
                "auto_loot_description": "Quand un ennemi a du butin, le marquer automatiquement pour le ramassage.",
                "building_auto_queue_crafters": "File d'attente automatique d'artisanat pour la construction",
                "building_auto_queue_crafters_description": "Lors du démarrage de la construction d'un bâtiment, tous les meubles et accessoires pour ce bâtiment sont automatiquement en file d'attente pour leurs artisans respectifs."
+            },
+            "mods": "Mods",
+            "mods_tab": {
+               "title": "Modules installés",
+               "note": "L'activation ou la désactivation d'un module nécessite un rechargement de jeu.",
+               "invalid_manifest": "Document Manifest invalide",
+               "out_of_date": "Obsolète",
+               "deferred_load": "Chargé automatiquement par d'autres Mods",
+               "required": "Requis",
+               "mods_changed_dialog": {
+                  "title": "Modules Changé",
+                  "message": "Le jeu a besoin d'être rechargé pour appliquer les modifications du module. Recharger maintenant ?",
+                  "accept": "Ok",
+                  "cancel": "Annuler"
+               }
             }
          },
          "title_screen": {
@@ -1354,10 +1364,6 @@
                "description": "Protégez votre ville des pilleurs et faites que vos hearthlings se sentent en sécurité en formant des gardes.",
                "town_description": "Ce que pense vos hearthlings de la sécurité de la ville. Sommes nous bien protégés ? Des gobelins nous pillent-ils régulièrement ?"
             },
-            "militia": {
-               "display_name": "Milice",
-               "description": "En mode ville en alerte, les membres de la milice tiendront leurs défenses contre les ennemis au lieu de courir sous la bannière de sécurité. De plus, il reçoivent un bonus supplémentaires de courage et de muscle."
-            },
             "inventory": {
                "display_name": "Inventaire",
                "description": "Le montant en or de toute les objets exceptés les resources et les aliments présent dans l'inventaire de la ville."
@@ -1389,7 +1395,8 @@
             "fiber_resource_name": "Lot de fibres",
             "ingot_resource_name": "Lingot de métal",
             "herb_resource_name": "Herbe",
-            "ore_resource_name": "Minerai"
+            "ore_resource_name": "Minerai",
+            "dirt_resource_name": "Tas de terre"
          }
       }
    },
@@ -1449,7 +1456,7 @@
             },
             "trader": {
                "simple_caravan_encounter": {
-                  "message": "Salutation [str(i18n_data.town_name)] ! Je viens faire du troc. Seriez vous intéressé par [str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s) en échange de [str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s) ?",
+                  "message": "Salutation [str(i18n_data.town_name)] ! Je viens faire du troc. Seriez vous intéressé par <strong>[str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s)</strong> en échange de <strong>[str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s)</strong> ?",
                   "title": "Une caravane approche !"
                },
                "starting_food_donation": {
@@ -1474,9 +1481,9 @@
                   "title": "Un négociant approche de la ville.",
                   "days": "jours",
                   "hours": "heures",
-                  "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m'avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)](s), je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange. Qu'en dites vous ?",
+                  "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m'avoir <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)](s)</strong>, je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s)</strong> en échange. Qu'en dites vous ?",
                   "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
-                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) contre [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) !",
+                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s)</strong> contre <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)](s)</strong> !",
                   "return_title": "Le négociant est de retour !",
                   "return_greetings_positive": "Me re voilà ! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
                   "return_greetings_negative": "Je suis de retour mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
@@ -1539,7 +1546,8 @@
                   "text": "Satisfaire l'une des conditions suivantes pour se qualifier pour le statut de canton:",
                   "military_requirement_title": "Cid's valeur",
                   "church_requirement_title": "Eglise d'abondance",
-                  "crafting_requirement_title": "Approbation des artisans"
+                  "crafting_requirement_title": "Approbation des artisans",
+                  "summon_text": "Appeler un héraut !"
                },
                "herald_dialog": {
                   "dialog_tree_info": {
@@ -3270,10 +3278,14 @@
                "#4E555C": "Truite",
                "#864E31": "Korma",
                "#644F46": "Brun Congo",
+               "#97775E": "Roche Rose",
+               "#A7855A": "Faon",
+               "#9E7F56": "Gâteau au café",
                "#927923": "Gingembre citron"
             },
             "patterns": {
                "gold_clay_wall": "Un motif de Meringue, Raphia, Noisetier d'hiver, et Ecru",
+               "tan_clay_wall": "Un motif de roche rose, Gâteau au café, et Faon",
                "wooden_wall": "Un motif de Punga, et Brun tabac",
                "red_clay_slat_roof": "Un toit en argile colorée de Korma et en bois de Cacao brun",
                "cobblestone": "Un motif de Hillary, Granite vert, et Huître Pâle",
@@ -3357,6 +3369,10 @@
          "remove_ladder": {
             "display_name": "Démonter",
             "description": "Fait disparaitre cette échelle."
+         },
+         "restore_terrain": {
+            "display_name": "Restaurer le terrain",
+            "description": "Restaurer le terrain dans son état initial."
          },
          "show_workshop": {
             "display_name": "Ouvrir l'atelier",
@@ -4893,31 +4909,31 @@
          "large_crate": {
             "large_crate_ghost": {
                "display_name": "Grande caisse",
-               "description": "Conteneur de stockage"
+               "description": "Stocke jusqu'à 32 articles"
             }
          },
          "large_urn": {
             "large_urn_ghost": {
                "display_name": "Grande urne",
-               "description": "Conteneur de stockage"
+               "description": "Stocke jusqu'à 32 articles"
             }
          },
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
                "display_name": "Coffre en cuir lié",
-               "description": "Conteneur de stockage"
+               "description": "Stocke jusqu'à 64 articles"
             }
          },
          "small_crate": {
             "small_crate_ghost": {
                "display_name": "Petite caisse",
-               "description": "Conteneur de stockage"
+               "description": "Stocke jusqu'à 8 articles"
             }
          },
          "stone_chest": {
             "stone_chest_ghost": {
                "display_name": "Coffre en pierre",
-               "description": "Conteneur de stockage"
+               "description": "Stocke jusqu'à 64 articles"
             }
          },
          "barrel": {
@@ -4929,13 +4945,13 @@
          "small_urn": {
             "small_urn_ghost": {
                "display_name": "Petite urne",
-               "description": "Pour stocker des choses"
+               "description": "Stocke jusqu'à 8 articles"
             }
          },
          "vault": {
             "vault_ghost": {
                "display_name": "L'Abris",
-               "description": "Stockage massif"
+               "description": "Stocke jusqu'à 256 articles"
             }
          },
          "log_pile": {
@@ -4975,13 +4991,13 @@
          "large_crate_fine": {
             "large_crate_fine_ghost": {
                "display_name": "Belle grande caisse",
-               "description": "Conteneur de stockage avec du style"
+               "description": "Stocke jusqu'à 32 articles, avec du style"
             }
          },
          "leather_bound_chest_fine": {
             "leather_bound_chest_fine_ghost": {
                "display_name": "Beau coffre en cuir lié",
-               "description": "Conteneur de stockage avec du style"
+               "description": "Stocke jusqu'à 64 articles, avec du style"
             }
          }
       },
@@ -6367,6 +6383,14 @@
             "display_name": "Coffre de pièces d'or",
             "description": "C'est [str(self.stonehearth:stacks.stacks)] pièces!",
             "label": "or"
+         },
+         "dusty_tome": {
+            "display_name": "Tome poussiéreux",
+            "description": "Un ancien texte préservant les connaissances du passé"
+         },
+         "old_scroll": {
+            "display_name": "Vieux rouleau",
+            "description": "Recouvert d'encre pâlie et de symboles indéchiffrables"
          }
       },
       "monsters": {
@@ -6671,9 +6695,21 @@
             "description": "Source de fibres grossières"
          },
          "pear_cactus": {
-            "display_name": "Poire de cactus",
-            "description": "Poire à épigne a récolter délicatement.",
+            "display_name": "Figue de Barbarie",
+            "description": "Récolte soigneusement pour les figues de Barbarie.",
             "unripe_description": "Ce sont des épines invisibles et qui blessent vraiment"
+         },
+         "foxlily_plant": {
+            "foxlily_plant_ghost": {
+               "display_name": "Lis des steppes géant",
+               "description": "Lis des steppes géant sont des grandes fleurs de lis orange portant ressemblance avec des queues de renard."
+            }
+         },
+         "sunflower_plant": {
+            "sunflower_plant_ghost": {
+               "display_name": "Tournesol",
+               "description": "Lumineux et heureux comme le soleil"
+            }
          }
       },
       "rabbit": {
@@ -6821,6 +6857,16 @@
                "description": "Lourd et doux au toucher"
             }
          },
+         "dirt": {
+            "dirt_pile": {
+               "display_name": "Tas de terre",
+               "description": "Semble sale"
+            },
+            "terrain_dirt": {
+               "display_name": "Grand tas de terre",
+               "description": "Un énorme monticule de terre excavée de la terre"
+            }
+         },
          "tin": {
             "tin_ore": {
                "display_name": "Minerai d'étain",
@@ -6865,6 +6911,10 @@
             "cactus_flower": {
                "display_name": "Fleur de cactus",
                "description": "Une magnifique fleur du désert avec des propriétés médicinales"
+            },
+            "summer_jasmine": {
+               "display_name": "Fleur de Jasmin d'été",
+               "description": "Fleur jaune vive qui fleurit en été"
             }
          },
          "skin": {
@@ -8532,7 +8582,7 @@
                "flavor": "C'est une chance, mon garçon, que le cube soit la structure naturelle de la plupart des roches. --Garen Knapper"
             },
             "stone_chair_recipe": {
-               "description": "Pas super confortable mais un signe de statut social.",
+               "description": "Pas super confortable, mais c'est un signe de statut social.",
                "recipe_name": "Chaise en pierre",
                "flavor": "D'extérieur !"
             },
@@ -9373,7 +9423,7 @@
                "description": "Provient d'une aura de soin !"
             },
             "minor_muscle_aura_buff": {
-               "display_name": "Force mineure",
+               "display_name": "Aura de Force mineure",
                "description": "Provient d'une aura de force !"
             },
             "minor_muscle_aura_effect_buff": {
@@ -9397,7 +9447,7 @@
                "description": "Compassion augmenté de 40%"
             },
             "major_muscle_aura_buff": {
-               "display_name": "Force majeure",
+               "display_name": "Aura de Force majeure",
                "description": "Augmente considérablement les muscles de ceux qui l'entourent"
             },
             "major_muscle_aura_effect_buff": {
