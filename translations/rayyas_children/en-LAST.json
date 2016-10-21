@@ -14,7 +14,7 @@
             "mason_clay_chisel_recipe": {
                "description": "Required to promote a hearthling into a Mason",
                "recipe_name": "Mason's Clay Chisel",
-               "flavor": ""
+               "flavor": "\"A tool used to make big rocks into smaller, prettier, more functional rocks.\" "
             },
             "trading_post_monument_recipe": {
                "recipe_name": "Trading Goods Monument",
@@ -27,6 +27,9 @@
             "exotic_trade_monument_recipe": {
                "description": "A tribute to your town's skill in exotic trade",
                "recipe_name": "Tapestry Monument"
+            },
+            "herbalist_clay_staff_recipe": {
+               "flavor": "'These flowers care for their gardener as their gardener cares for them.' -Zale, Master Herbalist"
             }
          }
       },
@@ -187,7 +190,7 @@
                         },
                         "exotic_goods_reqs": {
                            "bulletin_message": {
-                              "000": "In order to gain renown Exotic Trade, your town must engage in trades with visitors from faraway lands and thus gain access to a variety of goods that would be otherwise unobtainable in your area."
+                              "000": "In order to gain renown in Exotic Trade, your town must engage in trades with visitors from faraway lands and thus gain access to a variety of goods that would be otherwise unobtainable in your area."
                            },
                            "bulletin_title": "Naryal Iskender",
                            "dialog_title": "Naryal Iskender",

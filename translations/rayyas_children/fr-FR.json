@@ -14,7 +14,7 @@
             "mason_clay_chisel_recipe": {
                "description": "Nécessaire pour promouvoir un hearthling en maçon",
                "recipe_name": "Ciseaux de maçon en argile",
-               "flavor": ""
+               "flavor": "\"Un outil utilisé pour faire de gros rochers en petits, des roches plus jolies, plus fonctionnels.\" "
             },
             "trading_post_monument_recipe": {
                "recipe_name": "Monument des biens commerciaux",
@@ -27,6 +27,9 @@
             "exotic_trade_monument_recipe": {
                "description": "Un hommage à l'habileté de votre ville dans le commerce exotique",
                "recipe_name": "Monument de Tapisserie"
+            },
+            "herbalist_clay_staff_recipe": {
+               "flavor": "'Ces fleurs prennent soin du jardinier comme le jardinier prend soin d'elle' -Zale, Maître Herboriste"
             }
          }
       },

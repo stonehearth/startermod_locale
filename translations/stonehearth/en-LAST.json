@@ -6387,10 +6387,6 @@
          "dusty_tome": {
             "display_name": "Dusty Tome",
             "description": "An ancient text preserving knowledge of the past"
-         },
-         "old_scroll": {
-            "display_name": "Old Scroll",
-            "description": "Covered in faded ink and inscrutable symbols"
          }
       },
       "monsters": {
@@ -6911,10 +6907,6 @@
             "cactus_flower": {
                "display_name": "Cactus Flower",
                "description": "A beautiful desert bloom with healing properties"
-            },
-            "summer_jasmine": {
-               "display_name": "Summer Jasmine Flower",
-               "description": "Vibrant yellow flower that blooms in summer"
             }
          },
          "skin": {
@@ -8756,7 +8748,7 @@
             "red_clay_window_frame_recipe": {
                "description": "Matches red clay walls",
                "recipe_name": "Red Clay Window",
-               "flavor": "TODO"
+               "flavor": "\"Industry standard for a reason\" -- Jorya Iskender, Dyemaster"
             },
             "blue_clay_door_recipe": {
                "description": "Blue like the dream of distant ocean.",
@@ -8786,12 +8778,12 @@
             "clay_bed_recipe": {
                "description": "Uncomfortable, but it gets you off the ground",
                "recipe_name": "Clay Bed",
-               "flavor": "TODO"
+               "flavor": "\"It's like a pot, for sleeping!\" - Clarence, Temporary Salesperson"
             },
             "clay_dining_table_recipe": {
                "description": "Gets your food off the ground!",
                "recipe_name": "Clay Dining Table",
-               "flavor": "TODO"
+               "flavor": "\"An elevated environment for elevated conversation\" "
             },
             "simple_clay_chair_recipe": {
                "description": "Somewhere to sit while eating",
@@ -8810,7 +8802,8 @@
             },
             "potted_cactus_recipe": {
                "description": "Plant a cactus in a clay pot.",
-               "recipe_name": "Potted Cactus"
+               "recipe_name": "Potted Cactus",
+               "flavor": "YOWCH! --Every cactus potter, ever"
             },
             "blown_glass_vase_recipe": {
                "description": "Miraculous",
@@ -8844,7 +8837,8 @@
             },
             "unfired_clay_vase_recipe": {
                "description": "A simple vase made on the pottery wheel that is used for more complex recipes.",
-               "recipe_name": "Unfired Clay Vase"
+               "recipe_name": "Unfired Clay Vase",
+               "flavor": "'The First Pot was formed together by wind, earth, and fire, connecting the people to Hearth' --Master Orlen"
             },
             "clay_pile_recipe": {
                "recipe_name": "Clay Pile",
@@ -8858,7 +8852,8 @@
             },
             "clay_tunnel_door_recipe": {
                "description": "Useful for sealing off mine tunnels.",
-               "recipe_name": "Clay Tunnel Door"
+               "recipe_name": "Clay Tunnel Door",
+               "flavor": "Speak friend and enter.... oh no wait it's not locked. - Eber, Potter's Apprentice"
             },
             "tan_latticed_window_recipe": {
                "recipe_name": "Tan Latticed Window",
@@ -8868,10 +8863,10 @@
             "tall_clay_window_recipe": {
                "recipe_name": "Tall Clay Window",
                "description": "Still lets in the soft desert air",
-               "flavor": "TODO"
+               "flavor": "\"Windowsill can cool a really tall pie\" -Aaryn, Pragmatist"
             },
             "tan_clay_window_frame_recipe": {
-               "flavor": "TODO",
+               "flavor": "\"No, I didn't forget the dye.\" -Isfan Dorret, Inventor of Achromatism",
                "recipe_name": "Tan Clay Window Frame",
                "description": "Lets the sun in"
             },
@@ -8884,6 +8879,9 @@
                "recipe_name": "Blue Latticed Window",
                "description": "A soothing blue latticed window",
                "flavor": "\"No but really, where is this dye coming from?\" -- Farah, Professional Bugcatcher"
+            },
+            "wooden_sign_potter_recipe": {
+               "flavor": "Less fragile and easier than hanging a real pot!"
             }
          },
          "potter_workbench": {

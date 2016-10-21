@@ -6387,10 +6387,6 @@
          "dusty_tome": {
             "display_name": "Tome poussiéreux",
             "description": "Un ancien texte préservant les connaissances du passé"
-         },
-         "old_scroll": {
-            "display_name": "Vieux rouleau",
-            "description": "Recouvert d'encre pâlie et de symboles indéchiffrables"
          }
       },
       "monsters": {
@@ -6911,10 +6907,6 @@
             "cactus_flower": {
                "display_name": "Fleur de cactus",
                "description": "Une magnifique fleur du désert avec des propriétés médicinales"
-            },
-            "summer_jasmine": {
-               "display_name": "Fleur de Jasmin d'été",
-               "description": "Fleur jaune vive qui fleurit en été"
             }
          },
          "skin": {
@@ -8756,7 +8748,7 @@
             "red_clay_window_frame_recipe": {
                "description": "Matches red clay walls",
                "recipe_name": "Red Clay Window",
-               "flavor": "TODO"
+               "flavor": "\"Norme industriel pour des raisons\" -- Jorya Iskender, maître de colorant"
             },
             "blue_clay_door_recipe": {
                "description": "Blue like the dream of distant ocean.",
@@ -8784,14 +8776,14 @@
                "flavor": "As the shadows move across the floor, child, see if you can find Monkey!"
             },
             "clay_bed_recipe": {
-               "description": "Uncomfortable, but it gets you off the ground",
-               "recipe_name": "Clay Bed",
-               "flavor": "TODO"
+               "description": "Inconfortable, mais il vous suréleve du sol",
+               "recipe_name": "Lit en argile",
+               "flavor": "\"Il est comme un pot, pour dormir !\" - Clarence, vendeur temporairement"
             },
             "clay_dining_table_recipe": {
-               "description": "Gets your food off the ground!",
-               "recipe_name": "Clay Dining Table",
-               "flavor": "TODO"
+               "description": "Suréleve la nourriture du sol !",
+               "recipe_name": "Table à manger en argile",
+               "flavor": "\"Un environnement élevée pour la conversation élevée\" "
             },
             "simple_clay_chair_recipe": {
                "description": "Somewhere to sit while eating",
@@ -8809,8 +8801,9 @@
                "flavor": "'Sugar, spice, and blood of the earth: it is the tray that brings them, and us, together' --Rayya"
             },
             "potted_cactus_recipe": {
-               "description": "Plant a cactus in a clay pot.",
-               "recipe_name": "Potted Cactus"
+               "description": "Plantez un cactus dans un pot en argile.",
+               "recipe_name": "Cactus en pot",
+               "flavor": "OUUTCH ! --Chaque potier cactus, toujours"
             },
             "blown_glass_vase_recipe": {
                "description": "Miraculous",
@@ -8844,7 +8837,8 @@
             },
             "unfired_clay_vase_recipe": {
                "description": "Un simple vase fait sur une roue de potier, utilisé pour des recettes plus complexes.",
-               "recipe_name": "Vase en argile non cuit"
+               "recipe_name": "Vase en argile non cuit",
+               "flavor": "'Le premier pot a été formé conjointement par le vent, la terre et le feu, reliant les gens à l'âtre' --Maître Orlen"
             },
             "clay_pile_recipe": {
                "recipe_name": "Tas d'argile",
@@ -8858,7 +8852,8 @@
             },
             "clay_tunnel_door_recipe": {
                "description": "Utile pour sceller les tunnels miniers.",
-               "recipe_name": "Porte de tunnel en argile"
+               "recipe_name": "Porte de tunnel en argile",
+               "flavor": "Parlez avec vos amis et entrez .... oh non attendez, il n'est pas verrouillé. - Eber, apprenti potier"
             },
             "tan_latticed_window_recipe": {
                "recipe_name": "Fenêtre treillis brun pale",
@@ -8868,10 +8863,10 @@
             "tall_clay_window_recipe": {
                "recipe_name": "Fenêtre brun pale en argile",
                "description": "Donne de la douceur à l'air du désert",
-               "flavor": "TODO"
+               "flavor": "\"Le rebord de la fenêtre peut refroidir une très grande tarte\" -Aaryn, Pragmatique"
             },
             "tan_clay_window_frame_recipe": {
-               "flavor": "TODO",
+               "flavor": "\"Non, je n'ai pas oublié le colorant. \" -Isfan Dorret, inventeur d'achromatisme",
                "recipe_name": "Cadre de fenêtre brun pale en argile",
                "description": "Conserve le soleil à l'intérieur"
             },
@@ -8884,6 +8879,9 @@
                "recipe_name": "Fenêtre bleu treillis",
                "description": "Une fenêtre en treillis bleue apaisante",
                "flavor": "\"Non mais vraiment, d'ou vient ce colorant ?\" -- Farah, Professional Bugcatcher"
+            },
+            "wooden_sign_potter_recipe": {
+               "flavor": "Moins fragile et plus facile que de traîner un vrai pot !"
             }
          },
          "potter_workbench": {
