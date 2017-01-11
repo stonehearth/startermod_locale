@@ -359,6 +359,9 @@
             },
             "blacksmiths_workshop": {
                "display_name": "The Forge"
+            },
+            "herbalists_workshop": {
+               "display_name": "Herbalist's Workshop"
             }
          }
       }
