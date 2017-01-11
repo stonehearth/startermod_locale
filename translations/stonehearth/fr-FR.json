@@ -53,7 +53,10 @@
             "healing_target": "guérit [name(data.target)]",
             "dig_foundation": "creuse des fondations",
             "unit_hold_location": "défendre la position",
-            "execute_conversation": "socialisation"
+            "execute_conversation": "socialisation",
+            "incapacitated": "à terre",
+            "rescue_citizen": "aide [name(data.target)]",
+            "recuperating": "est en convalescence"
          }
       }
    },
@@ -122,6 +125,8 @@
             "locked_status": " (Verrouillé)",
             "apprentice": "Apprenti",
             "journal": "Journal",
+            "thoughts": "Pensées",
+            "morale_meter": "État du moral",
             "attributes": "Attributs",
             "equipment": "Équipement",
             "abilities": "Compétences",
@@ -144,7 +149,7 @@
                "accept": "Je ne veux plus de ce familier.",
                "cancel": "Attendez!"
             },
-            "befriended_pet_description": "Est l'ami de [name(self.stonehearth:pet.owner)]"
+            "befriended_pet_description": "Est le compagnon de [name(self.stonehearth:pet.owner)]"
          },
          "tutorials": {
             "camera": {
@@ -920,6 +925,7 @@
          },
          "town_overview": {
             "title": "Rapport sur la ville",
+            "town_morale": "Morale de la ville",
             "journal": {
                "default_message": "Pas encore d'entrée&nbsp;!",
                "signature": "--[name(entry.person)]",
@@ -1328,8 +1334,8 @@
             },
             "happiness": {
                "display_name": "Moral général",
-               "description": "La satisfaction générale des hearthlings basée sur la nourriture, l'habitat et la sécurité.",
-               "town_description": "La satisfaction générale des hearthlings. Visez un score de 10 qui correspond à la satisfaction maximale."
+               "description": "La satisfaction générale des hearthlings",
+               "town_description": "La satisfaction générale des hearthlings."
             },
             "speed": {
                "display_name": "Vitesse",
@@ -1379,6 +1385,26 @@
             "military_strength": {
                "display_name": "Force militaire",
                "description": "Une valeur qui reflète la force militaire de votre ville. Les unités de combat, les armes équipées et armures contribuent à ce score."
+            },
+            "content": {
+               "display_name": "Satisfait",
+               "town_description": "Vos hearthlings sont satisfaits de la façon dont les choses se sont passées."
+            },
+            "jubilant": {
+               "display_name": "Heureux",
+               "town_description": "Vos hearthlings sont incroyablement heureux de vivre ici !"
+            },
+            "forlorn": {
+               "display_name": "Désespéré",
+               "town_description": "Vos hearthlings ont eu des moments incroyablement difficiles ces derniers temps."
+            },
+            "merry": {
+               "display_name": "Joyeux",
+               "town_description": "Vos hearthlings sont généralement heureux."
+            },
+            "glum": {
+               "display_name": "Maussade",
+               "town_description": "Vos hearthlings ne se sentent pas très bien, dans l'ensemble."
             }
          },
          "constants": {
@@ -1429,6 +1455,12 @@
             "description": "Sec et sablonneux, avec des grandes collines et une végétation clairsemée",
             "random_location_names": {
                "000": "le désert de Pal'Mum"
+            },
+            "sandy_poyo": {
+               "display_name": "Poyo des sables"
+            },
+            "fennec_fox": {
+               "display_name": "Fennec"
             }
          }
       },
@@ -2449,8 +2481,8 @@
                                        "bulletin_message": {
                                           "000": "For Ogo! For Shinies!"
                                        },
-                                       "bulletin_title": "Mountan roars is approval",
-                                       "dialog_title": "Mountain the Ogre"
+                                       "bulletin_title": "Montagne hurle son approbation",
+                                       "dialog_title": "Montagne l'Ogre"
                                     }
                                  }
                               }
@@ -3123,8 +3155,8 @@
                "description": "Déplacement ralentit en raison de la faible santé."
             }
          },
-         "recovering": {
-            "recovering_buff": {
+         "bed_ridden": {
+            "bed_ridden_buff": {
                "display_name": "Alité",
                "description": "Se remet lentement de ces blessures. Pourrait recevoir des soins médicaux d'un herboriste."
             }
@@ -3165,7 +3197,7 @@
          },
          "minor_courage_buff": {
             "minor_courage_buff_buff": {
-               "display_name": "Poussé de courage",
+               "display_name": "Esprit défensif",
                "description": "Petit boost de courage pendant le mode alerte"
             }
          },
@@ -3183,6 +3215,66 @@
             "snap_trap_2": {
                "display_name": "Piège à pince",
                "description": "Mouvement considérablement ralenti après avoir pris les dommages causés par un grand piège"
+            }
+         },
+         "incapacitated": {
+            "incapacitated_buff": {
+               "display_name": "À terre",
+               "description": "Que quelqu'un aide ce pauvre hearthling !"
+            }
+         },
+         "recuperating": {
+            "recuperating_buff": {
+               "display_name": "En convalescence",
+               "description": "Encore blessé, mais récupére lentement au fil du temps. Un herboriste peut aider à accélérer sa récupération."
+            }
+         },
+         "recently_treated": {
+            "recently_treated_buff": {
+               "display_name": "Récemment soigné",
+               "description": "Ce hearthling a été récemment soigné par un médecin et aura besoin de se reposer un certain temps avant un autre traitement."
+            }
+         },
+         "mood": {
+            "forlorn": {
+               "forlorn_mood_buff": {
+                  "display_name": "Désespéré",
+                  "description": "It's been incredibly hard going of late."
+               }
+            },
+            "glum": {
+               "glum_mood_buff": {
+                  "display_name": "Maussade",
+                  "description": "Les choses ne se sont pas passées comme je voudrais."
+               }
+            },
+            "content": {
+               "content_mood_buff": {
+                  "display_name": "Satisfait",
+                  "description": "Tout bien considéré, je vais bien."
+               }
+            },
+            "merry": {
+               "merry_mood_buff": {
+                  "display_name": "Joyeux",
+                  "description": "Aujourd'hui est un bon jour."
+               }
+            },
+            "jubilant": {
+               "jubilant_mood_buff": {
+                  "display_name": "Heureux",
+                  "description": "Woaw, je ne pourrais pas être plus heureux !"
+               }
+            }
+         },
+         "town_alert": {
+            "town_alert_courage_buff": {
+               "display_name": "Rising Courage",
+               "description": "Increasing courage when defending the town as long as they are not attacked"
+            },
+            "town_alert_banner_buff": {
+               "display_name": "Town Alert Banner Buff",
+               "description": "Emits a stacking courage buff every 5 minutes"
             }
          }
       },
@@ -3478,6 +3570,10 @@
          "toggle_lock": {
             "display_name": "Serrure à bascule",
             "description": "Verrouiller ou déverrouiller cette porte"
+         },
+         "rescue": {
+            "display_name": "Porter secours",
+            "description": "Ordonner aux gens de la ville d'essayer de sauver ce hearthling"
          }
       },
       "personality": {
@@ -4459,6 +4555,166 @@
             "harvest_logs": {
                "scenario_data": {
                   "declined_text": "Je ne pas besoin d'un tutoriel - Je sais ce qu'il faut faire !"
+               }
+            }
+         }
+      },
+      "happiness": {
+         "thoughts": {
+            "hunger": {
+               "hungry": {
+                  "display_name": "Hungry",
+                  "tooltip": "I could really go for a good meal."
+               },
+               "famished": {
+                  "display_name": "Famished",
+                  "tooltip": "It's been awhile since I've eaten. I really need some food!"
+               },
+               "starving": {
+                  "display_name": "Starving",
+                  "tooltip": "My stomach is in knots!  If I don't find something to eat soon..."
+               },
+               "values": {
+                  "stuffed": {
+                     "display_name": "Stuffed",
+                     "tooltip": "My last meal was so filling I won't need to eat again for a bit."
+                  }
+               }
+            },
+            "space": {
+               "spacious": {
+                  "display_name": "Spacious Environment",
+                  "tooltip": "Then is a really open space. It makes me feel at ease."
+               },
+               "cramped": {
+                  "display_name": "Cramped Environment",
+                  "tooltip": "This area is pretty tight. I have to watch my step so as not to bump into anything."
+               },
+               "very_cramped": {
+                  "display_name": "Very Cramped Environment",
+                  "tooltip": "This place is suffocating! There's barely room to breathe."
+               }
+            },
+            "health": {
+               "pain_mild": {
+                  "display_name": "Pain (Mild)",
+                  "tooltip": "Ow ow ow!"
+               },
+               "pain_moderate": {
+                  "display_name": "Pain (Moderate)",
+                  "tooltip": "Agh, I'm in rough shape!"
+               },
+               "pain_scratched": {
+                  "display_name": "Pain (Scratched)",
+                  "tooltip": "I'm a little worse for wear."
+               },
+               "pain_severe": {
+                  "display_name": "Pain (Severe)",
+                  "tooltip": "!!!"
+               }
+            },
+            "sleeping": {
+               "slept_on_ground": {
+                  "display_name": "Slept on ground",
+                  "tooltip": "My back is killing me from having slept on the ground. When are we going to get some decent beds?"
+               },
+               "slept_in_shared_bed": {
+                  "display_name": "Slept in a shared bed",
+                  "tooltip": "I'm sharing my bed with someone else right now. It's not the worst, but I really wish I had my own."
+               },
+               "slept_in_comfy_bed": {
+                  "display_name": "Slept in a comfy bed",
+                  "tooltip": "My bed is really comfortable. I felt refreshed when I woke up!"
+               }
+            },
+            "eating": {
+               "ate_fine": {
+                  "display_name": "Ate a fine meal",
+                  "tooltip": "My recent meal was amazing! Whoever made the [str(foodname)] really put their heart into it."
+               },
+               "ate_tasty": {
+                  "display_name": "Ate a tasty meal",
+                  "tooltip": "The [str(foodname)] I ate was pretty tasty! I still remember the combination of flavors."
+               },
+               "ate_raw": {
+                  "display_name": "Ate a raw meal",
+                  "tooltip": "I recently ate a raw [str(foodname)].  I could almost taste the dirt on it.  Bleh!"
+               },
+               "ate_bland": {
+                  "display_name": "Ate a bland meal",
+                  "tooltip": "I remember eating a bland [str(foodname)]. It gave me the strength to keep going, but the meal was so boring."
+               },
+               "values": {
+                  "ate_cooked": {
+                     "display_name": "Ate a cooked meal",
+                     "tooltip": "I always enjoy the 'warm belly' feeling after a nice cooked meal."
+                  }
+               }
+            },
+            "town": {
+               "founding": {
+                  "pioneering_spirit": {
+                     "display_name": "Pioneering Spirit",
+                     "tooltip": "We've left our home to build a new one. We will make it better than before!"
+                  },
+                  "settling_in": {
+                     "display_name": "Settling In",
+                     "tooltip": "I'm starting to feel at home, but there's work yet to be done."
+                  }
+               },
+               "township": {
+                  "level_2": {
+                     "display_name": "Township Celebration",
+                     "tooltip": "We've been recognized as a fully fledged settlement!  Our work is starting to pay off."
+                  }
+               },
+               "safety": {
+                  "lack_of_safety": {
+                     "display_name": "Lack of safety",
+                     "tooltip": "Without some form of city guard, I just don't feel at ease in this wilderness."
+                  }
+               },
+               "theft": {
+                  "petty_theft": {
+                     "display_name": "Theft",
+                     "tooltip": "Someone stole something from our supplies! We need better defenses."
+                  }
+               }
+            },
+            "sleepiness": {
+               "values": {
+                  "tired": {
+                     "display_name": "Tired",
+                     "tooltip": "It's been awhile since I've slept."
+                  },
+                  "exhausted": {
+                     "display_name": "Exhausted",
+                     "tooltip": "It feels like forever since I've slept.. I can barely keep my eyes open."
+                  },
+                  "fatigued": {
+                     "display_name": "Fatigued",
+                     "tooltip": "I've been on my feet for too long. I really need some time to sleep."
+                  }
+               }
+            },
+            "combat": {
+               "values": {
+                  "panicked": {
+                     "display_name": "Feared for their life",
+                     "tooltip": "I'm not proud of how I acted when the monsters came, but it's all I could think to do."
+                  }
+               }
+            },
+            "violence": {
+               "values": {
+                  "townmember_died": {
+                     "display_name": "Townmember has died",
+                     "tooltip": "A fellow townmember has died. If only we had been more watchful!"
+                  },
+                  "pet_died": {
+                     "display_name": "My pet died",
+                     "tooltip": "My poor [str(pet)] died recently. I'll miss them quite a bit."
+                  }
                }
             }
          }
@@ -5924,6 +6180,9 @@
          "sheep_jerky": {
             "display_name": "Carré d'agneau"
          },
+         "unknown_food": {
+            "display_name": "Matière comestible"
+         },
          "veggie_stew": {
             "veggie_stew": {
                "display_name": "Soupe de légumes",
@@ -5939,7 +6198,7 @@
             "description": "Prête à l'emploi"
          },
          "egg": {
-            "display_name": "Un œuf",
+            "display_name": "Œuf",
             "description": "Qui vole un œuf vole un poyo."
          },
          "corn_bread": {
@@ -5952,7 +6211,7 @@
             }
          },
          "poyo_meat": {
-            "display_name": "Viande de poyo crue",
+            "display_name": "Viande de poyo",
             "description": "Je l'entends le prendre comme un poyo.",
             "rotten": {
                "display_name": "Viande de Poyo pourrie",
@@ -5990,7 +6249,7 @@
          },
          "fried_eggs": {
             "fried_eggs": {
-               "display_name": "Œufs frits",
+               "display_name": "Œuf frit",
                "description": "Frits et bien sûr délicieux."
             },
             "fried_eggs_serving": {
@@ -6029,7 +6288,7 @@
                "description": "Eat carefully!"
             },
             "prickly_pear_serving": {
-               "display_name": "Prickly Pear Serving",
+               "display_name": "Prickly Pear",
                "description": "Ow! Was that a spine?"
             }
          },
@@ -6039,7 +6298,7 @@
                "description": "Edible when raw, barely"
             },
             "golden_gourd_serving": {
-               "display_name": "Raw Golden Gourd",
+               "display_name": "Golden Gourd",
                "description": "Raw gourd is... terrible"
             }
          },
@@ -6117,6 +6376,12 @@
             "donation_box_serving": {
                "display_name": "Boîte de don du service",
                "description": "Une pièce d'abondance"
+            }
+         },
+         "kibble": {
+            "kibble": {
+               "display_name": "Croquettes",
+               "description": "Attire les chats"
             }
          }
       },
@@ -8216,6 +8481,11 @@
                "recipe_name": "Don à l'Eglise d'abondance",
                "description": "Oeuvre de charité pour ceux qui en ont plus besoin que toi",
                "flavor": "Pour les affamés, le pain, dans la conduite, et la foi. --Cid l'égaré"
+            },
+            "kibble_recipe": {
+               "recipe_name": "Recette de croquettes",
+               "description": "Pour attirer des compagnons à fourrure",
+               "flavor": "Il y a un trou dans mon cœur qui a la forme d'un chaton."
             }
          },
          "cook_mill": {
