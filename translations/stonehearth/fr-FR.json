@@ -110,9 +110,9 @@
             "title": "Construire l'atelier",
             "requirements": "Prérequis",
             "create_stockpile": "Réserve des artisans",
-            "create_stockpile_description": "Les artisans vont stocker leur produits dans cette réserve.<p>Vous souhaiterez sans doute le placer à proximité d'une table de travail, mais bon, la décision vous reviens.",
+            "create_stockpile_description": "Les artisans vont entreposer leur produits dans cette réserve.<p>Vous souhaiterez sans doute le placer à proximité d'une table de travail, mais bon, la décision vous reviens.",
             "page1_subtitle2": "Cliquer sur le sol pour placer l'atelier",
-            "page2_subtitle2": "Cliquer sur le sol pour placer le stockage"
+            "page2_subtitle2": "Cliquer sur le sol pour placer la réserve"
          },
          "citizen_character_sheet": {
             "title": "Informations personnel",
@@ -196,7 +196,7 @@
             "accept": "Accepter",
             "decline": "Refuser",
             "next": "Suivant",
-            "hotkey": "touche : ",
+            "hotkey": "Touche : ",
             "remove": "Retirer",
             "input_text_tooltip": "Cliquer pour modifier",
             "days": "j",
@@ -352,7 +352,7 @@
                "uncategorized": "Non classé",
                "workshops": "Ateliers",
                "consumable": "Consommables",
-               "storage": "Stockage",
+               "storage": "Réserve",
                "defense": "Défense",
                "trophy": "Trophées",
                "none": "Aucune"
@@ -420,12 +420,12 @@
             },
             "zone_menu": {
                "display_name": "Désignation des zones",
-               "description": "Désigne les zones sur le sol pour le stockage, l'agriculture, etc...",
+               "description": "Désigne les zones sur le sol pour l'entreposage, l'agriculture, etc...",
                "items": {
                   "create_stockpile": {
-                     "display_name": "Stock",
-                     "description": "Place une zone pour stocker des ressources.",
-                     "tip_title": "Cliquez et relâchez pour créer un stock",
+                     "display_name": "Réserve",
+                     "description": "Place une zone pour entreposer des ressources.",
+                     "tip_title": "Cliquez et relâchez pour créer une réserve",
                      "tip_description": "Bouton droite pour sortir ce mode"
                   },
                   "create_farm": {
@@ -522,9 +522,9 @@
                      "required_job_text": "Nécessite un menuisier"
                   },
                   "weaver": {
-                     "display_name": "Tisserand",
+                     "display_name": "Tisseur",
                      "description": "Pour confectionner des tissus,<br>vêtements ou éléments de décor.",
-                     "required_job_text": "Nécessite un tisserand"
+                     "required_job_text": "Nécessite un tisseur"
                   },
                   "mason": {
                      "display_name": "Tailleur de pierre",
@@ -569,7 +569,7 @@
                "pause_stockpile": "Pause",
                "resume_stockpile": "Reprendre",
                "group": {
-                  "stockpiles": "Stockage",
+                  "stockpiles": "Réserve",
                   "building": "Construction",
                   "placement": "Objets en place",
                   "maintenance": "Maintenance générale",
@@ -695,8 +695,8 @@
                "save_building_template": "Sauvegarder",
                "finished_editing": "Terminer l'édition",
                "start_editing": "Éditer",
-               "build_complete_title": "Félicitations !",
-               "build_complete_description": "ce bâtiment est terminé",
+               "build_complete_title": "Félicitations!",
+               "build_complete_description": "Ce bâtiment est terminé",
                "compute_scaffolding": "Planification de construction"
             },
             "roof_shape": {
@@ -809,7 +809,7 @@
             },
             "remove_building_confirm": {
                "title": "Supprimer ce bâtiment ?",
-               "message": "Êtes-vous sûr de vouloir supprimer de bâtiment ?",
+               "message": "Êtes-vous sûr de vouloir supprimer ce bâtiment ?",
                "keep_building": "Garder ce bâtiment",
                "remove_building": "Supprimer ce bâtiment"
             }
@@ -836,16 +836,16 @@
                "sheep_pasture_name": "Pâturage de moutons",
                "rabbit_pasture_name": "Enclos de lapin",
                "poyo_pasture_name": "Poulailler de poyo",
-               "sheep_pasture_description": "Les moutons produisent de la laine, utilisé par le tisserand. L'abattage des moutons produira de la viande à cuisiner",
-               "rabbit_pasture_description": "Les lapins se reproduisent rapidement et peuvent être abattus pour leur viande et leur peaux",
+               "sheep_pasture_description": "Les moutons produisent de la laine, utilisé par le tisseur. L'abattage des moutons produira de la viande à cuisiner",
+               "rabbit_pasture_description": "Les lapins se reproduisent rapidement et peuvent être abattus pour leur viande et leur peau",
                "poyo_pasture_description": "Les poyos produisent des œufs, un ingrédient de cuisine précieux. L'abattage de poyo donnera de la viande et, parfois, des plumes pour l'artisanat",
                "num_animals": "Animaux :"
             },
             "stockpile": {
-               "default_stockpile_name": "Stockage",
+               "default_stockpile_name": "Réserve",
                "contents": "Contenu",
                "filter": "Filtre",
-               "help": "Cliquez sur les icônes pour choisir quoi stocker",
+               "help": "Cliquez sur les icônes pour choisir quoi ranger",
                "used_space": "Espace utilisé :",
                "filters": {
                   "all": "Tout",
@@ -1037,7 +1037,7 @@
                "005": "Une ville bien nourrit est une ville heureuse.",
                "006": "Utilisez les touches < ou > pour faire tourner un objet ou un bâtiment avant de le placer.",
                "007": "Vos hearthlings se déplacent plus vite sur les routes.",
-               "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
+               "008": "Le tisseur peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
                "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
                "010": "Les bergers trouveront d'eux-même les moutons ou autres animaux pour remplir les pâturages.",
                "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands.",
@@ -1048,7 +1048,7 @@
                "016": "Vous pouvez utiliser une porte de tunnel pour bloquer l'entrées du tunnel de vos mines.",
                "017": "Vous ne voulez pas que vos hearthlings quitte votre ville ? L'ingénieur peut faire une porte verrouillable.",
                "018": "Les hearthlings avec un attribut d'esprit supérieure feront de bons artisans.",
-               "019": "Placez les stocks de nourriture plus près des zones de travail de sorte qu'il est plus facile pour vos hearthlings d'accéder à la nourriture.",
+               "019": "Placez les réserves de nourriture plus près des zones de travail de sorte qu'il est plus facile pour vos hearthlings d'accéder à la nourriture.",
                "020": "Les trappeurs peuvent définir des pièges dans les montagnes et le désert, mais il y a moins de bestioles là bas.",
                "021": "Vous pouvez désactiver un emploi de combattant dans le panneau des citoyens pour les forcer à prendre un repos.",
                "022": "Miné de la terre donne occasionnellement de l'argile et de la pierre.",
@@ -1123,7 +1123,7 @@
             "gfx_enable_ssao": "Activer l'occlusion ambiante",
             "gfx_use_high_quality": "Activer les graphismes en haute qualité",
             "shadow_0": "Sans",
-            "shadow_1": "juste un peu",
+            "shadow_1": "Juste un peu",
             "shadow_2": "Un peu",
             "shadow_3": "Un peu plus",
             "shadow_4": "Beaucoup",
@@ -1287,8 +1287,8 @@
             },
             "shelter": {
                "display_name": "Habitat",
-               "description": "Soyez sur que vos hearthlings aient de confortable lits pour se reposer.",
-               "town_description": "L'avis des hearthlings sur le confort des logements. Y-a-t-il des lits ou dormir ?"
+               "description": "Soyez sur que vos hearthlings aient des lits onfortables pour se reposer.",
+               "town_description": "L'avis des hearthlings sur le confort des logements. Y-a-t-il des lits où dormir ?"
             },
             "compassion": {
                "display_name": "Compassion",
@@ -1301,8 +1301,8 @@
             },
             "food": {
                "display_name": "Nourriture",
-               "description": "Assurez vous de la disponibilité de nourriture varié. Les plats cuisinés sont plus appréciés que la nourriture de base.",
-               "town_description": "Ce que pense l'opinion de la nourriture en ville. Y-a-t-il assez à manger ? Essayez d'obtenir une plus grande variété de nourriture !"
+               "description": "Assurez-vous de la disponibilité de nourriture varié. Les plats cuisinés sont plus appréciés que la nourriture de base.",
+               "town_description": "L'opinion des hearthlings sur la nourriture en ville. Y-a-t-il assez à manger ? Essayez d'obtenir une plus grande variété de nourriture !"
             },
             "diligence": {
                "display_name": "Concentration",
@@ -1326,7 +1326,7 @@
                "display_name": "Courage",
                "description": "Bravoure du hearthling face au combat.",
                "bullet_points": {
-                  "000": "Détermine les chances de fuite pendant le combat"
+                  "000": "Détermine les chances de fuite lors de combat"
                }
             },
             "muscle": {
@@ -1343,7 +1343,7 @@
             },
             "speed": {
                "display_name": "Vitesse",
-               "description": "Définit la vitesse du hearthling"
+               "description": "Défini la vitesse du hearthling"
             },
             "body": {
                "display_name": "Physique",
@@ -1362,7 +1362,7 @@
                "display_name": "Curiosité",
                "description": "Capacité du hearthling à apprécier de nouvelles expériences.",
                "bullet_points": {
-                  "000": "Tous les 10 points de curiosité augmente le bonus d'expérience gagnés lors de la fabrication d'objets par 1"
+                  "000": "Tous les 10 points de curiosité augmentent le bonus d'expérience gagné lors de la fabrication d'objets par 1"
                }
             },
             "spirit": {
@@ -1372,11 +1372,11 @@
             "safety": {
                "display_name": "Sécurité",
                "description": "Protégez votre ville des pilleurs et faites que vos hearthlings se sentent en sécurité en formant des gardes.",
-               "town_description": "Ce que pense vos hearthlings de la sécurité de la ville. Sommes nous bien protégés ? Des gobelins nous pillent-ils régulièrement ?"
+               "town_description": "Ce que pense vos hearthlings de la sécurité de la ville. Sommes-nous bien protégés ? Des gobelins nous pillent-ils régulièrement ?"
             },
             "inventory": {
                "display_name": "Inventaire",
-               "description": "Le montant en or de toute les objets exceptés les resources et les aliments présent dans l'inventaire de la ville."
+               "description": "Le montant en or de tous les objets, exceptés les resources et les aliments présent dans l'inventaire de la ville."
             },
             "buildings": {
                "display_name": "Bâtiments",
@@ -1435,7 +1435,7 @@
          "ascendancy": {
             "display_name": "les Ascendants",
             "quote": "Moutons? Vérifiez. Houe? Vérifiez. Glaives? Vérifiez. Embarquez!",
-            "description": "Sérieux et travailleur, fidèle et bien arrondi. Les hearthlings de la famille des Ascendants, construisent et cultivent, confiant que le monde connu est la pour être habiter.",
+            "description": "Sérieux et travailleur, fidèle et bien arrondi. Les hearthlings de la famille des Ascendants, construisent et cultivent, confiant que le monde connu est là pour être habiter.",
             "post_selection_description": ", un royaume prospère et travailleur."
          }
       },
@@ -1492,7 +1492,7 @@
             },
             "trader": {
                "simple_caravan_encounter": {
-                  "message": "Salutation [str(i18n_data.town_name)] ! Je viens faire du troc. Seriez vous intéressé par <strong>[str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s)</strong> en échange de <strong>[str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s)</strong> ?",
+                  "message": "Salutation [str(i18n_data.town_name)] ! Je viens faire du troc. Seriez-vous intéressé par <strong>[str(i18n_data.your_quantity)] [str(i18n_data.your_item)](s)</strong> en échange de <strong>[str(i18n_data.my_quantity)] [str(i18n_data.my_item)](s)</strong> ?",
                   "title": "Une caravane approche !"
                },
                "starting_food_donation": {
@@ -1501,7 +1501,7 @@
                         "simple_message": {
                            "choice_000": "Merci mon Dieu !",
                            "bulletin_message": {
-                              "000": "Soyez les bienvenus en ces lieux ! Boudiou, vous semblez affamés les gars ! Prenez ceci pour vous aider :",
+                              "000": "Soyez les bienvenus en ces lieux ! Mon dieu, vous semblez affamés les gars ! Prenez ceci pour vous aider :",
                               "001": "Alors, on célèbre le jour du départ ? Courage ! On dirait que quelque chose de gouteux vous ferait de bien. Et si je vous donnais ceci :",
                               "002": "Aventuriers ! Remerciez Cid. Voici de quoi bien commencer.",
                               "003": "Le voyage à travers les montagnes à été long, hein ? Et bien vous êtes à un endroit sur maintenant. Voici un petit coup de pouce :",
@@ -1517,12 +1517,12 @@
                   "title": "Un négociant approche de la ville.",
                   "days": "jours",
                   "hours": "heures",
-                  "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m'avoir <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)](s)</strong>, je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s)</strong> en échange. Qu'en dites vous ?",
+                  "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer, mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m'avoir <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)](s)</strong>, je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s)</strong> en échange. Qu'en dites vous ?",
                   "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
                   "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s)</strong> contre <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)](s)</strong> !",
                   "return_title": "Le négociant est de retour !",
-                  "return_greetings_positive": "Me re voilà ! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
-                  "return_greetings_negative": "Je suis de retour mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
+                  "return_greetings_positive": "Me revoilà ! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
+                  "return_greetings_negative": "Je suis de retour, mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
                },
                "returning_crop_trader_encounter": {
                   "title": "Un commerçant apporte des graines provenant d'un pays lointain.",
@@ -1531,7 +1531,7 @@
                   "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger [str(i18n_data.reward_item)] si vous avez [str(i18n_data.want_number)] [str(i18n_data.want_item)] prêt pour lui !",
                   "return_title": "Le négociant est de retour !",
                   "return_greetings_positive": "Je suis de retour ! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)]. Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_item)] en échange; Êtes-vous toujours partant ?",
-                  "return_greetings_negative": "Je suis de retour mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)] que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
+                  "return_greetings_negative": "Je suis de retour, mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)] que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
                },
                "rugs_shop": {
                   "shop_info": {
@@ -1542,7 +1542,7 @@
                "stonecutter_shop": {
                   "shop_info": {
                      "name": "Rufus Garrow - Tailleur de pierre",
-                     "title": "Rufus Garrow arrive pour vendre son stock"
+                     "title": "Rufus Garrow arrive pour vendre sa marchandise"
                   }
                },
                "tannery_shop": {
@@ -3147,7 +3147,7 @@
             },
             "starving_animal_buff": {
                "display_name": "Affamé",
-               "description": "Cet animal a faim ! Avoir un cuisinier pour créer un peu de nourriture de sorte que votre berger puisse le nourrir serait utile."
+               "description": "Cet animal a faim ! Avoir un cuisinier pour créer un peu de nourriture, de sorte que votre berger puisse le nourrir, serait utile."
             }
          },
          "stopped": {
@@ -3211,17 +3211,17 @@
          "game_modes": {
             "game_mode_hard_buff": {
                "display_name": "Mode difficile",
-               "description": "En mode difficile, les ennemies auront auront une armure plus résitante, auront plus de santé et feront plus de dégâts"
+               "description": "En mode difficile, les ennemies auront une armure plus résitante, plus de santé et feront plus de dégâts"
             }
          },
          "slowed": {
             "snap_trap": {
                "display_name": "Piège à pression",
-               "description": "Mouvement ralenti après avoir pris les dommages causés par piège"
+               "description": "Mouvement ralenti après avoir pris des dommages causés par piège"
             },
             "snap_trap_2": {
                "display_name": "Piège à pince",
-               "description": "Mouvement considérablement ralenti après avoir pris les dommages causés par un grand piège"
+               "description": "Mouvement considérablement ralenti après avoir pris des dommages causés par un grand piège"
             }
          },
          "incapacitated": {
@@ -3434,7 +3434,7 @@
          },
          "move_item": {
             "display_name": "Déplace un objet",
-            "description": "Déplacer cette chose quelques par ailleurs dans le monde.",
+            "description": "Déplacer cet objet ailleurs dans le monde.",
             "disabled_description": "Cet objet est utilisé. Essayé de le bouger plus tard."
          },
          "place_item": {
@@ -3447,7 +3447,7 @@
                "description": "Or comestible."
             },
             "display_name": "Créer une culture !",
-            "description": "Plantez quelques choses dans ce carré.",
+            "description": "Plantez quelque chose dans ce carré.",
             "plant_turnip": {
                "display_name": "Planter un navets !",
                "description": "Plantez un navet dans ce carré."
@@ -3642,7 +3642,7 @@
                      "000": "Heeeaaaahhhhrrrghhh!!!",
                      "001": "Raaaarrrrrrghhhhh!",
                      "002": "Spork ces arbres, vous savez ? Juste Spork-les tous !",
-                     "003": "J'ai couper environ un milliard d'arbre aujourd'hui. Appelez moi le meurtrier à la hache !!!",
+                     "003": "J'ai couper environ un milliard d'arbres aujourd'hui. Appelez-moi le meurtrier à la hache !!!",
                      "004": "Les gens disent que j'ai des gros problèmes d'agressivité, mais personne ne se plaint de tout le bois que je récolte !",
                      "005": "Est ce que quelqu'un d'autres coupe ces troncs ? Y'a juste moi ?",
                      "006": "Heureusement que je fait quelque chose de si physique. Être assis et tricoté toute la journée me rendrais fou."
@@ -3660,7 +3660,7 @@
                   },
                   "insufferable_academic": {
                      "000": "Couper du bois est une sous-utilisation épouvantable de mes grandes facultés intellectuelles.",
-                     "001": "Si jamais je vois à nouveau une hache c'en est fini de moi.",
+                     "001": "Si jamais je vois à nouveau une hache, c'en est fini de moi.",
                      "002": "Tout ce bois vaudrait presque la chandelle de faire un effort, s'il était seulement destinées à une usine à papier.",
                      "003": "N'y a t-il personne d'autre qui pourrait s'engager dans un tel travail de domestique ?",
                      "004": "J'ai mis au point une façon de couper le bois qui et mathématiquement parfaite. Hélas, il n'y a pas de revues ici où je pourrais publier mes découvertes !",
@@ -3708,11 +3708,11 @@
                "logs": {
                   "generic": {
                      "000": "Ça fait du bien d'être en vie !",
-                     "001": "Une autres belle journée en ville.",
+                     "001": "Une autre belle journée en ville.",
                      "002": "Paix !",
-                     "003": "Ça semble être un endroit assez abritée.",
+                     "003": "Ça semble être un endroit assez abrité.",
                      "004": "j'ai été étonnement productif aujourd'hui !",
-                     "005": "Pas grand chose à faire aujourd'hui mis à part profiter de la vie !",
+                     "005": "Pas grand chose à faire aujourd'hui, mis à part profiter de la vie !",
                      "006": "La Nature est vraiment belle !",
                      "007": "C'est bon d'être ici avec ses amis et sa famille.",
                      "008": "S'installer ici était vraiment une bonne idée.",
@@ -3738,7 +3738,7 @@
                         "003": "Au-revoir, [name(entry.dead_friend)]. J'espère que nous nous reverrons un jour.",
                         "004": "[name(entry.dead_friend)] ? Mais... qu'est-ce que je vais dire à ton père, quand je vais lui écrire ?",
                         "005": "Nous ne pouvons pas laisser la mort de [name(entry.dead_friend)] en vain, Hearthlings !",
-                        "006": "Au-revoir, [name(entry.dead_friend)]. Tu nous manquera.",
+                        "006": "Au-revoir, [name(entry.dead_friend)]. Tu nous manqueras.",
                         "007": "Ne t'inquiètes pas, [name(entry.dead_friend)]. Nous te vengerons !",
                         "008": "Je ne peux pas croire que [name(entry.dead_friend)] est vraiment parti.",
                         "009": "[name(entry.dead_friend)] ? Parti ? Soudainement, tout cela me semble comme s'il n'en valait pas la peine, en quelque sorte.",
@@ -3754,8 +3754,8 @@
                      "000": "Oh non ! Des monstres !",
                      "001": "Tout le monde, sauve-qui-peut !",
                      "002": "AAAH! DES MONSTRES !!!",
-                     "003": "AAAAH! S'il vous plaît ne nous faite pas de mal !!!",
-                     "004": "Si je ne peux pas le voir, peut-être il ne peut pas me voir ?",
+                     "003": "AAAAH! S'il vous plaît, ne nous faites pas de mal !!!",
+                     "004": "Si je ne peux pas le voir, peut-être qu'il ne peut pas me voir ?",
                      "teacher": {
                         "000": "[str(entry.teacher)] SAUVEZ-NOUS !!!"
                      }
@@ -3765,16 +3765,16 @@
                      "001": "En cas de doute, PANIQUE !!!",
                      "002": "Rester calme et AIEEEEE !",
                      "003": "::gémissement silencieux::",
-                     "004": "Démons de cauchemar rester à l'écart !",
+                     "004": "Démons de cauchemar, restez à l'écart !",
                      "005": "La terreur est mauvaise pour la tension artérielle !!!",
-                     "006": "Arrêt cardiaque arrivant !!!",
+                     "006": "Arrêt cardiaque imminent !!!",
                      "007": "Cerveau... paralysé... !",
                      "008": "À l'aide! Aidez-moooooi !!!"
                   },
                   "belaguered_leader": {
-                     "000": "Retraite tactique! retraite tactique !!!",
+                     "000": "Retraite tactique! Retraite tactique !!!",
                      "001": "Tout le monde sur les collines !",
-                     "002": "Laisser tout tomber et dégagez, Hearthlings !!!",
+                     "002": "Laissez tout tomber et dégagez, Hearthlings !!!",
                      "003": "Ils sont trop fort pour nous ! Dispersez-vous !!",
                      "004": "Courrez résolument vers les sorties !!!"
                   },
@@ -3786,7 +3786,7 @@
                      "004": "::cris de terreur::"
                   },
                   "hopeless_optimist": {
-                     "000": "Aaagh ! Ils semblent si méchant !!!!",
+                     "000": "Aaagh ! Ils semblent si méchants !!!!",
                      "001": "Je ne peux pas vous voir !! Je ne peux pas vous voir !!!",
                      "002": "Monstres !!!!!",
                      "003": "Auugh ! On ne peut pas juste être amis ??",
@@ -3816,19 +3816,19 @@
                "text": "En dormant:",
                "logs": {
                   "insufferable_academic": {
-                     "000": "Je me demande si quelqu'un a eu ce rêve où leurs vêtements corporelles traînent à leurs pieds ? Heureusement pour moi, je semble toujours avoir ma pair de bermuda brillante",
+                     "000": "Je me demande si quelqu'un a eu ce rêve où leurs vêtements corporelles traînent à leurs pieds ? Heureusement pour moi, je semble toujours avoir ma paire de bermuda brillante",
                      "001": "La nuit dernière, je rêvais : je me tenais devant une classe de raton laveur attentif. Ils ont pris des notes sur la réalité de la nature. Ensuite, nous avons eu un débat agité.",
                      "002": "Selon les formules de mes rêves, le déterminisme est un mythe. Il est temps de prendre le petit déjeuné.",
-                     "003": "J'ai rêvé du temps présent, passé et futur. Ma conscience sait étendu pour remplir l'univers. J'étais tout, tout était moi.",
+                     "003": "J'ai rêvé du temps présent, passé et futur. Ma conscience s'est étendu pour remplir l'univers. J'étais tout, tout était moi.",
                      "004": "J'ai rêvé que j'étais un arbre dans la forêt, l'eau dans le lac, et le vent dans l'air.",
                      "005": "J'ai rêvé que j'étais immortel, sans commencement ni fin.",
                      "006": "J'ai rêvé que j'étais entre la lumière et l'obscurité, l'espace et le temps."
                   },
                   "lovable_rogue": {
-                     "000": "Ce matin, je me suis réveillé déterminer que les loups avaient volés tous les moutons. Besoin de construire des murs ! Des murs plus épais !",
+                     "000": "Ce matin, je me suis réveillé certain que les loups avaient volés tous les moutons. Besoin de construire des murs ! Des murs plus épais !",
                      "001": "J'ai rêvé d'une mine pleine d'or.",
-                     "002": "J'ai eu un rêve où, un crocodile a volé toutes les choses, toute notre nourriture. Puis il a pris un bateau et y est resté",
-                     "003": "Dans mon rêve la nuit dernière, je tournais tout--et tout le monde--que je touchais en or. Oops.",
+                     "002": "J'ai eu un rêve où un crocodile a volé toutes les choses, toute notre nourriture. Puis il a pris un bateau et y est resté",
+                     "003": "Dans mon rêve la nuit dernière, je transformais tout -ainsi que tout ls gens- que je touchais en or. Oops.",
                      "004": "J'ai rêvé que je mangeais tous nos approvisionnements alimentaires. On va vraiment éviter de faire ça aujourd'hui.",
                      "teacher": {
                         "000": "J'ai encore eu le rêve sur les échelles fragiles. Si seulement je savais ce qui était au sommet. Je suis sûr que [str(entry.teacher)] essaye de me dire quelque chose."
@@ -3847,16 +3847,16 @@
                      "000": "Whoa ! J'étais dehors pendant un moment ! Avons-nous encore tous nos marteaux ?",
                      "001": "Oups ! Je dois m'être endormi ! Avons-nous encore tous nos arbres ?",
                      "002": "J'ai rêvé que je me suis endormi pendant mille ans. Heureusement, quelqu'un m'a fait un cercueil de verre brillant avec une trappe à l'intérieur pour l'ouvrir. Bizarre.",
-                     "003": "Je fis un rêve où une dragonne géante approchait de moi ! Mais quand elle ouvrit la bouche, seuls des bruits de chaton sont sortis. Adorable !",
+                     "003": "Je fis un rêve où une dragonne géante s'approchait de moi ! Mais quand elle ouvrit la bouche, seuls des bruits de chaton sont sortis. Adorable !",
                      "004": "Je fis un rêve où toutes les créatures de la forêt et moi étions à un pique-nique, mais le raton laveur a volé tout le miel... maintenant nous avons rien à mettre sur notre pain et notre beurre.",
                      "005": "J'ai rêvé que tout le monde se moquait de moi. Je cours à la maison mais rien ne bouge. Encore et toujours.",
-                     "006": "J'ai rêvé d'un monde de forêts luxuriantes et rivières claires, entouré par des amis. Je me suis réveillé et c'était réel !",
+                     "006": "J'ai rêvé d'un monde de forêts luxuriantes et de rivières claires, entouré par des amis. Je me suis réveillé et c'était réel !",
                      "007": "J'ai rêvé de faire toutes mes corvées. Maintenant, je suis réveillé je dois les faire une fois de plus..."
                   },
                   "psychopathic_misanthrope": {
-                     "000": "Nous sommes allés dormir avec la faim de nouveau la nuit dernière et rêvé pendant environ dix heures consécutives de poyo pot pie ! Raaargh ! Craignez ma bouche dévorante !",
-                     "001": "Dans le paradis, j'espère que je recevrais un lac de Poyo pot pie pour nager. Nager pour toujours !",
-                     "002": "J'ai rêvé de manger mes collègues Terriens. Ils avaient comme un goût de Poyo.",
+                     "000": "Nous sommes allés dormir encore affamé la nuit dernière, et rêvé pendant environ dix heures consécutives de paté de poyo ! Raaargh ! Craignez ma bouche dévorante !",
+                     "001": "Au paradis, j'espère que je vais recevoir un lac de paté de poyo pour nager. Nager pour toujours !",
+                     "002": "J'ai rêvé de manger mes collègues Hearthlings. Ils avaient comme un goût de Poyo.",
                      "003": "J'ai rêvé que j'étais un gobelin. Je ne devais pas travailler ! Je devais voler ce dont j'avais besoin et commencer des incendies. C'était amusant !",
                      "004": "J'ai rêvé que je revenais à la maison, et non dans les bois avec CES gens..."
                   },
@@ -3872,7 +3872,7 @@
                      "008": "J'ai rêvé que nous avont fait une course de moutons. Quelque chose à essayer demain?",
                      "009": "J'ai rêvé que je ne pouvais arrêter de remplir mon sac à dos avec tous les objets dispersés sur le sol.",
                      "010": "La nuit dernière j'ai eu ce rêve où j'ai été attaqué par une horde de poyo.",
-                     "011": "J'ai eu un rêve que tout le monde ne pouvait que cueillir des baies. Il n'y avait même pas d'arbres à couper ou de blocs de pierre à miner.",
+                     "011": "J'ai eu un rêve où tout le monde ne pouvait que cueillir des baies. Il n'y avait même pas d'arbres à couper ou de blocs de pierre à miner.",
                      "012": "J'ai rêvé que j'ai mangé des baies jusuq'à ce que je deviennes violet et ensuite j'ai roulé jusque dans un étang.",
                      "013": "J'ai rêvé que j'étais à la merci d'une maladie qui me transformait en zombie.",
                      "014": "La nuit dernière, j'ai rêvé que j'étais prisonnié d'un trou toute la nuit et personne ne voulait me construire une échelle pour en sortir.",
@@ -4459,7 +4459,7 @@
          },
          "forest": {
             "insane_alligator": {
-               "description": "Les petites varanuses ont tendance à affluer autour d'elles."
+               "description": "Les petits varanuses ont tendance à affluer autour d'elles."
             }
          }
       },
@@ -4858,7 +4858,7 @@
             "description": "Un carquois léger de flèche ralentissante"
          },
          "fire_quiver": {
-            "display_name": "Carquois de flèches enflammés",
+            "display_name": "Carquois de flèches enflammées",
             "description": "Mets les ennemies en feu, faisant du dommage durant quelques secondes"
          },
          "cracked_wooden_buckler": {
@@ -5088,7 +5088,7 @@
          "wooden_door_2_fine": {
             "wooden_door_2_fine_ghost": {
                "description": "Plus solide que les portes moyenne et avec un beau motif",
-               "display_name": "Belle porte renforcé en bois"
+               "display_name": "Belle porte renforcée en bois"
             }
          },
          "wooden_double_door_fine": {
@@ -5532,7 +5532,7 @@
                "growth_stage": {
                   "001": {
                      "name": "Mûre",
-                     "description": "Délicieux !"
+                     "description": "Délicieux!"
                   },
                   "000": {
                      "name": "Semis",
@@ -6730,12 +6730,12 @@
                   "description": "Produit des sifflements pathétiques."
                },
                "mountains_flute": {
-                  "display_name": "Flute de chant de montagne",
-                  "description": "Pitched to soothe Mountain's soul. Son pour apaiser l'âme de la montagne."
+                  "display_name": "Flute de la balade de la montagne",
+                  "description": "Musique qui apaise l'âme de la montagne."
                },
                "mountains_flute_iconic": {
                   "display_name": "Mountain's Lullabye Flute",
-                  "description": "Pitched to soothe Mountain's soul."
+                  "description": "Musique qui apaise l'âme de la montagne."
                }
             },
             "goblin_hut": {
@@ -6749,11 +6749,7 @@
                "display_name": "Petit Totem"
             },
             "goblin_soldier": {
-<<<<<<< HEAD
                "display_name": "Soldat gobelin",
-=======
-               "display_name": "Gobelin Soldat",
->>>>>>> Update 11-01-2017
                "description": "Gobble, gobble, gobble..."
             },
             "goblin_soothsayer_tent": {
@@ -6769,22 +6765,13 @@
                "description": "Fait de bois, d'os et d'ego"
             },
             "goblin_wolf": {
-<<<<<<< HEAD
                "display_name": "Loup de raid gobelin",
-=======
-               "display_name": "Loup de raids gobelin",
->>>>>>> Update 11-01-2017
                "description": "Élevé pour inspirer la terreur"
             },
             "skull_trophy": {
                "skull_trophy_ghost": {
-<<<<<<< HEAD
                   "display_name": "Signe honorifique gobelin",
-                  "description": "Des gobelins pourrait vouloir récupérer ça à nouveau..."
-=======
-                  "display_name": "Signe honorifique Goblin",
-                  "description": "Des gobelins pourraient vouloir récupérer ça à nouveau..."
->>>>>>> Update 11-01-2017
+                  "description": "Des gobelins pourraient vouloir récupérer ceci à nouveau..."
                }
             },
             "wolf_cage": {
@@ -6884,7 +6871,7 @@
                "description": "Fabriqué à partir de planches de bois grossièrement hachées"
             },
             "orc_tent": {
-               "display_name": "Tente orc",
+               "display_name": "Tente d'orc",
                "description": "Sent comme dans une ancienne buanderie"
             }
          },
@@ -8376,7 +8363,7 @@
                "perk_000_description": "Les plats du cuisinier sont si incroyables qu'ils ont des effets inattendus."
             },
             "level_2_data": {
-               "perk_000_name": "Chimie culinaire",
+               "perk_000_name": "Chimie Culinaire",
                "perk_000_description": "Le cuisinier développe plus de fantaisie dans ses recettes."
             },
             "level_4_data": {
@@ -8901,7 +8888,7 @@
             "mason_workbench_recipe": {
                "description": "Indispensable à la fabrication de la plupart des produits du tailleur de pierre.",
                "recipe_name": "Établi de tailleur de pierre",
-               "flavor": "Tappety-tap; Make the earth sing, Raise Brelor's ghost, Watch the mountain take wing."
+               "flavor": "Tappety-tap; Fait chanter la terre; Éveille le fantôme de Brelor; Regarde la montagnes prendre son envole."
             },
             "mason_pedestal_recipe": {
                "description": "Une zone de travail bien éclairée pour créer des sculptures en pierre.",
@@ -9012,117 +8999,117 @@
             "potter_workbench_recipe": {
                "description": "Aide le potier a créer des objets simple à partir d'argile",
                "recipe_name": "Tour de potier",
-               "flavor": "Where we've been before, we'll be again, round once more, for strength and then--"
+               "flavor": "Où nous avons déjà été, nous y retournerons. Rond encore une fois, pour la puissance et donc--"
             },
             "potter_kiln_recipe": {
-               "description": "Hardens basic clay objects.",
+               "description": "Durci les objets simple d'argile",
                "recipe_name": "Four de pottier",
-               "flavor": "'Through heat and hardship we realize our final selves.' -Silora, Acolyte of Rayya's Mystery "
+               "flavor": "'Au travers de la chaleur et des épreuves nous créons notre version finale.' -Silora, Compagnon du Mystère de Rayya"
             },
             "clay_safety_standard_recipe": {
                "description": "Utilisez pour désigner un point de sécurité",
                "recipe_name": "Étendard de sécurité en argile",
                "flavor": "Pour atteindre un niveau de vie idéal, trouver la sécurité en nombre.. --Mystères et Proverbes, V"
             },
-            "building_parts_name": "Building Parts",
+            "building_parts_name": "Parties de la Structure",
             "clay_bricks_recipe": {
-               "description": "Used to make structures that stay cool even in great heat.",
-               "recipe_name": "Briques d'argile",
+               "description": "Utilisé pour faire des structures qui reste frais même en période de grande chaleur.",
+               "recipe_name": "Briques d'Argile",
                "flavor": "'Et quand l'argile sortie du four, elle était devenue brique, et peu importe comment le soleil brillé, elle restait consistante.'"
             },
             "red_clay_door_recipe": {
-               "description": "Matches red clay walls",
-               "recipe_name": "Red Clay Door",
-               "flavor": "\"Le rouge indique une allure de mystères. Qu'est ce qui se trouve au-delà de la porte rouge ?\" -- Ember Iskender, Département de la poésie appliquée"
+               "description": "S'harmonise avec les murs d'argile rouges",
+               "recipe_name": "Porte d'Argile Rouge",
+               "flavor": "\"Le rouge indique une allure de mystère. Qu'est ce qui se trouve au-delà de la porte rouge ?\" -- Ember Iskender, Département de la poésie appliquée"
             },
             "red_clay_window_frame_recipe": {
-               "description": "Matches red clay walls",
-               "recipe_name": "Red Clay Window",
+               "description": "S'harmonise avec les murs d'argile rouges",
+               "recipe_name": "Fenêtre d'Argile Rouge",
                "flavor": "\"Norme industriel pour des raisons\" -- Jorya Iskender, maître de colorant"
             },
             "blue_clay_door_recipe": {
-               "description": "Blue like the dream of distant ocean.",
-               "recipe_name": "Recette de porte bleu en argile",
+               "description": "Bleu comme le rêve d'un océan lointain.",
+               "recipe_name": "Porte d'Argile Bleue",
                "flavor": "'C'est une porte. Que pourrions-nous dire de plus ?' --Joni Iskender, Marketing Apprentice"
             },
             "green_clay_door_recipe": {
-               "description": "Green, like the few scrub in the desert.",
-               "recipe_name": "Green Clay Door",
-               "flavor": "'Pouvez-vous faire le trou un peu plus petit ? Le but est de voir qui est là sans qu'on sache que je suis à la maison.' --Vara Tenter, Irate Customer"
+               "description": "Vert, comme les rares brousailles du désert.",
+               "recipe_name": "Porte d'Argile Verte",
+               "flavor": "'Pouvez-vous faire le trou un peu plus petit? Le but est de voir qui est là sans qu'on sache que je suis à la maison.' --Vara Tenter, Irate Customer"
             },
             "blue_clay_window_frame_recipe": {
-               "description": "Lets in the bright desert air.",
-               "recipe_name": "Blue Clay Window Frame",
-               "flavor": "The dye is named Santori, for an acolyte who longed for the ocean."
+               "description": "Laisse entrer l'air plus frais du désert.",
+               "recipe_name": "Fenêtre d'Argile Bleue",
+               "flavor": "La teinture est appelée Santori, pour un compagnon qui désire la vue de l'océan."
             },
             "green_clay_window_frame_recipe": {
-               "description": "Let's in the soft desert air.",
-               "recipe_name": "Green Clay Window Frame",
-               "flavor": "It's a window's dream of spring...?"
+               "description": "Laisse entrer l'air léger du désert.",
+               "recipe_name": "Fenêtre d'Argile Verte",
+               "flavor": "C'est le rêve de printemps d'une fenêtre...?"
             },
             "latticed_clay_window_frame_recipe": {
-               "description": "The lattice still lets the good air in.",
-               "recipe_name": "Latticed Clay Window Frame",
-               "flavor": "As the shadows move across the floor, child, see if you can find Monkey!"
+               "description": "Le treillis laisse entrer le bon air.",
+               "recipe_name": "Fenêtre d'Argile Treillis",
+               "flavor": "Comme les ombres qui bouge au sol, petit, voit si tu peux trouver Singe! "
             },
             "clay_bed_recipe": {
                "description": "Inconfortable, mais il vous suréleve du sol",
-               "recipe_name": "Lit en argile",
-               "flavor": "\"Il est comme un pot, pour dormir !\" - Clarence, vendeur temporairement"
+               "recipe_name": "Lit en Argile",
+               "flavor": "\"Il est comme un pot, pour dormir !\" - Clarence, vendeur temporaire"
             },
             "clay_dining_table_recipe": {
                "description": "Suréleve la nourriture du sol !",
-               "recipe_name": "Table à manger en argile",
-               "flavor": "\"Un environnement élevée pour la conversation élevée\" "
+               "recipe_name": "Table à Manger en Argile",
+               "flavor": "\"Un environnement élevé, pour une conversation élevée\" "
             },
             "simple_clay_chair_recipe": {
-               "description": "Somewhere to sit while eating",
-               "recipe_name": "Simple Clay Chair",
-               "flavor": "'Nests with the tables, ooo, symbolic!' --Nestor Adya, Acolyte"
+               "description": "Un endroit pour s'asseoir en mangeant",
+               "recipe_name": "Chaise d'Argile Simple",
+               "flavor": "'S'emboite avec les tables, ooooo, symbolique!' -Nestor Adya, Compagnon"
             },
             "decorative_teapot_recipe": {
-               "description": "Reminder of humble beginnings",
-               "recipe_name": "Decorative Teapot",
-               "flavor": "'Wherever she went, the teapot did too, and even when there was nothing but cold water to put in, always out poured steaming tea, redolent with the aroma of Elsewhere.'"
+               "description": "Un rappel des commencements plus humbles",
+               "recipe_name": "Théière Décorative",
+               "flavor": "'Qu'importe où elle allait, la théière suivait; Et même lorsqu'il n'y avait que de l'eau froide à y mettre, en sortait toujours un thé fumant, parfumé d'arôme d'Ailleurs.'"
             },
             "decorative_tray_recipe": {
-               "description": "Adds hospitality and flash",
-               "recipe_name": "Decorative Tray",
-               "flavor": "'Sugar, spice, and blood of the earth: it is the tray that brings them, and us, together' --Rayya"
+               "description": "Ajoute de l'hospitalité et de l'éclat",
+               "recipe_name": "Plateau Décoratif",
+               "flavor": "'Sucre, épice, et le sang de la terre: c'est le plateau qui nous réunis tous ensemble' -Rayya"
             },
             "potted_cactus_recipe": {
                "description": "Plantez un cactus dans un pot en argile.",
-               "recipe_name": "Cactus en pot",
+               "recipe_name": "Cactus en Pot",
                "flavor": "OUUTCH ! --Chaque potier cactus, toujours"
             },
             "blown_glass_vase_recipe": {
-               "description": "Miraculous",
-               "recipe_name": "Blown Glass Vase",
-               "flavor": "They say Monkey had one eye made of glass, and through it, he could see straight to the heart of things. --Master Orlen"
+               "description": "Miraculeux",
+               "recipe_name": "Vase en Verre Brun",
+               "flavor": "Il es dit que Singe avait un oeil fait de verre, et qu'à travers lui, il pouvait voir directement dans le coeur des choses. - Maître Orlen"
             },
             "decorative_vase_recipe": {
-               "description": "Transform metals into art",
-               "recipe_name": "Decorative Vase",
-               "flavor": "It is the riches of the earth reborn"
+               "description": "Tranforme les métaux en art",
+               "recipe_name": "Vase Décoratif",
+               "flavor": "C'est la richesse de la renaissance de la terre."
             },
             "sundial_recipe": {
-               "description": "Decorates gardens, marks time",
-               "recipe_name": "Clay Sundial",
-               "flavor": "The secret to immortality is to make best of days last forever --Rayya"
+               "description": "Décore le jardin, indique l'heure",
+               "recipe_name": "Cadran Solaire en Argile",
+               "flavor": "Le secret de l'immortalité, c'est de faire que les meilleurs jours durent pour toujours -Rayya"
             },
             "tile_floor_mosaic_recipe": {
-               "description": "Decorates and cools the floor",
-               "recipe_name": "Tile Floor Mosaic",
-               "flavor": "Step over the painted flowers, and give thanks"
+               "description": "Décore et rafraichi le plancher",
+               "recipe_name": "Carrelage en Mosaïque",
+               "flavor": "Marche par dessus les fleurs peints, et dit merci"
             },
             "tile_wall_mosaic_recipe": {
-               "description": "Soothing decorative patterns",
-               "recipe_name": "Tile Wall Mosaic",
-               "flavor": "Tile cools inside and out"
+               "description": "Les motifs de décoration sont apaisant",
+               "recipe_name": "Carrelage de Mur en Mosaïque",
+               "flavor": "La tuile refroidi l'intérieur et l'extérieur"
             },
             "golden_clay_wall_planter_recipe": {
                "description": "Illumine un mur",
-               "recipe_name": "Jardinière mural dorée en argile",
+               "recipe_name": "Jardinière Murale en Argile Dorée ",
                "flavor": "D'où proviennent les fleurs ? Des pousses, bien sûr ! --Acolyte des mystères de Rayya"
             },
             "unfired_clay_vase_recipe": {
@@ -9132,13 +9119,13 @@
             },
             "clay_pile_recipe": {
                "recipe_name": "Tas d'argile",
-               "description": "De l'argile empilé. Un excelent moyen de stocker une grande quantité d'argile pour une utilisation ultérieur.",
+               "description": "De l'argile empilé. Un excelent moyen d'entreposer une grande quantité d'argile pour une utilisation ultérieur.",
                "flavor": "Incroyable, honnêtement, qu'il se sépare à nouveau."
             },
             "clay_market_stall_recipe": {
                "description": "Les commerçants peuvent visiter ce stand pour acheter et vendre des marchandises",
                "recipe_name": "Étal de marché en argile",
-               "flavor": "'Couper la main ? Pour du vol ? Quel serait le but ?' --Talidor Roq, Knight of Mysteries "
+               "flavor": "'Couper la main? Pour du vol ? Quel serait le but ?' --Talidor Roq, Knight of Mysteries "
             },
             "clay_tunnel_door_recipe": {
                "description": "Utile pour sceller les tunnels miniers.",
@@ -9146,29 +9133,29 @@
                "flavor": "Parlez avec vos amis et entrez .... oh non attendez, il n'est pas verrouillé. - Eber, apprenti potier"
             },
             "tan_latticed_window_recipe": {
-               "recipe_name": "Fenêtre treillis brun pale",
-               "description": "La fenêtre treillis vous le connaissez et l'aimez, en brun pale",
-               "flavor": "\"Laisse les punaises, mais au moins pas les très gros !\" -- Drenkar Iskender, Ex-Marketing Associate"
+               "recipe_name": "Fenêtre Treillis Brun Pale",
+               "description": "La fenêtre treillis que vous connaissez et aimez, en brun pale",
+               "flavor": "\"Laisse les punaises entrer, mais au moins pas les très gros !\" -- Drenkar Iskender, Ex-Marketing Associate"
             },
             "tall_clay_window_recipe": {
-               "recipe_name": "Fenêtre brun pale en argile",
+               "recipe_name": "Fenêtre en Argile Brune Pale ",
                "description": "Donne de la douceur à l'air du désert",
                "flavor": "\"Le rebord de la fenêtre peut refroidir une très grande tarte\" -Aaryn, Pragmatique"
             },
             "tan_clay_window_frame_recipe": {
                "flavor": "\"Non, je n'ai pas oublié le colorant. \" -Isfan Dorret, inventeur d'achromatisme",
-               "recipe_name": "Cadre de fenêtre brun pale en argile",
+               "recipe_name": "Fenêtre en Argile Brune Pale ",
                "description": "Conserve le soleil à l'intérieur"
             },
             "green_latticed_window_recipe": {
-               "recipe_name": "Fenêtre verte treillis",
+               "recipe_name": "Fenêtre en Treillis Verte",
                "flavor": "Réminiscence d'une fenêtre de maison couvert d'une vigne, fané en mémoire",
-               "description": "La fenêtre en treillis vous connaissez et aimez, maintenant en vert !"
+               "description": "La fenêtre en treillis que vous connaissez et aimez, maintenant en vert!"
             },
             "blue_latticed_window_recipe": {
-               "recipe_name": "Fenêtre bleu treillis",
+               "recipe_name": "Fenêtre en Treillis Bleue",
                "description": "Une fenêtre en treillis bleue apaisante",
-               "flavor": "\"Non mais vraiment, d'ou vient ce colorant ?\" -- Farah, Professional Bugcatcher"
+               "flavor": "\"Non mais vraiment, d'ou vient ce colorant ?\" -Farah, Attrapeur d'insecte professionnel"
             },
             "wooden_sign_potter_recipe": {
                "flavor": "Moins fragile et plus facile que de traîner un vrai pot !"
@@ -9183,19 +9170,19 @@
          "potter_kiln": {
             "potter_kiln_ghost": {
                "display_name": "Four de potier",
-               "description": "Produit briques et de marchandises à partir d'argile."
+               "description": "Produit des briques et de la marchandise à partir d'argile."
             }
          },
          "potter_cutter": {
-            "display_name": "Spatule du potier",
+            "display_name": "Spatule du Potier",
             "description": "Utilisé pour modeler la civilisation depuis la terre !",
             "potter_cutter_talisman": {
-               "display_name": "Spatule du potier",
+               "display_name": "Spatule du Potier",
                "description": "Requis pour promouvoir un hearthling en potier."
             }
          },
          "potter_outfit": {
-            "display_name": "Blouse de potier",
+            "display_name": "Blouse de Potier",
             "description": "Les tâches de terres font partis de son style... particulier."
          }
       },
@@ -9209,26 +9196,26 @@
                "perk_000_description": "Le berger a plus de chance de trouver des animaux sauvages quand il en cherche."
             },
             "level_1_data": {
-               "perk_000_name": "Gain de vitesse 10%",
-               "perk_000_description": "Grâce au berger le troupeau se déplace un peu plus vite."
+               "perk_000_name": "Gain de vitesse de 10%",
+               "perk_000_description": "Grâce au berger, le troupeau se déplace un peu plus vite."
             },
             "level_3_data": {
-               "perk_000_name": "Bonus supplémentaires",
-               "perk_000_description": "Les compétences du berger permettent d'obtenir un meilleur rendement en produits animaux."
+               "perk_000_name": "Bonus Supplémentaires",
+               "perk_000_description": "Les compétences du berger permettent d'obtenir un meilleur rendement en produits animaliers."
             },
             "level_6_data": {
                "title": "Maître berger"
             }
          },
          "shepherd_crook": {
-            "display_name": "Bâton de berger",
+            "display_name": "Bâton de Berger",
             "description": "Utile pour rassembler le troupeau",
             "shepherd_crook_iconic": {
-               "display_name": "Bâton de berger",
+               "display_name": "Bâton de Berger",
                "description": "Requis pour promouvoir un hearthling en berger"
             },
             "shepherd_crook_talisman": {
-               "display_name": "Bâton de berger",
+               "display_name": "Bâton de Berger",
                "description": "Requis pour promouvoir un hearthling en berger"
             }
          },
@@ -9265,7 +9252,7 @@
                "perk_000_name": "Charmer des familiers",
                "perk_001_name": "Opportunité de travail",
                "perk_000_description": "De temps à autre, le trappeur choisira d'apprivoiser un animal particulièrement beau.",
-               "perk_001_description": "Le trappeur est maintenant qualifié pour les professions avancées. Allez dans l'écran de sélection de profession pour plus de détail."
+               "perk_001_description": "Le trappeur est maintenant qualifié pour les professions avancées. Allez dans l'écran de sélection de profession pour plus de détails."
             },
             "level_6_data": {
                "perk_000_name": "Le coup le-plus-mortel (à venir)",
@@ -9302,19 +9289,19 @@
             }
          },
          "trapper_knife": {
-            "display_name": "Couteau de trappeur",
+            "display_name": "Couteau de Trappeur",
             "description": "Un couteau de trappeur",
             "trapper_knife_iconic": {
-               "display_name": "Couteau de trappeur",
+               "display_name": "Couteau de Trappeur",
                "description": "Couteau de base du trappeur."
             },
             "trapper_knife_talisman": {
-               "display_name": "Couteau de trappeur",
+               "display_name": "Couteau de Trappeur",
                "description": "Requis pour promouvoir un hearthling en trappeur."
             }
          },
          "trapper_outfit": {
-            "display_name": "Habit de trappeur"
+            "display_name": "Habit de Trappeur"
          },
          "trapping_grounds": {
             "display_name": "Zone de chasse",
@@ -9336,29 +9323,29 @@
       },
       "weaver": {
          "weaver_description": {
-            "display_name": "Tisserand",
-            "description": "Le tisserand fabrique du fil et des vêtements avec des fibres naturelles et des colorants.",
-            "requirements": "Fuseau de tisserand, fabriqué par le menuisier.",
+            "display_name": "Tisseur",
+            "description": "Le tisseur fabrique du fil et des vêtements avec des fibres naturelles et des colorants.",
+            "requirements": "Fuseau de tisseur, fabriqué par le menuisier.",
             "level_6_data": {
-               "title": "Maître tisserand",
+               "title": "Maître Tisseur",
                "perk_000_name": "10.000 heures (à venir)",
-               "perk_000_description": "La maîtrise de son Art permet au tisserand de réinventer la manière d'utiliser le tissu."
+               "perk_000_description": "La maîtrise de son Art permet au tisseur de réinventer la manière d'utiliser le tissu."
             },
             "level_2_data": {
                "perk_000_name": "Perspectives de collaboration",
-               "perk_000_description": "Le tisserand à maintenant assez de maîtrise pour utiliser des ressources provenant d'autres artisans."
+               "perk_000_description": "Le tisseur à maintenant assez de maîtrise pour utiliser des ressources provenant d'autres artisans."
             },
             "level_4_data": {
                "perk_000_name": "Amélioration de l'ingéniosité (à venir)",
-               "perk_000_description": "Le tisserand améliore les recettes de bases en y ajoutant plus de fonctionnalités."
+               "perk_000_description": "Le tisseur améliore les recettes de bases en y ajoutant plus de fonctionnalités."
             },
             "level_1_data": {
                "perk_000_name": "Catalogue standard",
-               "perk_000_description": "Le tisserand peut maintenant confectionner des vêtements et des éléments de décor basiques."
+               "perk_000_description": "Le tisseur peut maintenant confectionner des vêtements et des éléments de décor simples."
             },
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l'inspiration frappe, le tisserand est capable d'obtenir des résultats surprenant."
+               "perk_000_description": "Quand l'inspiration frappe, le tisseur est capable d'obtenir des résultats surprenant."
             }
          },
          "recipes": {
@@ -9374,16 +9361,16 @@
             },
             "bolt_of_cloth_recipe": {
                "description": "Utilisé pour rendre certains meubles plus confortables.",
-               "recipe_name": "Rouleau de tissu basique",
-               "flavor": "Pour rendre plus large de l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
+               "recipe_name": "Rouleau de tissu simple",
+               "flavor": "Pour rendre plus large l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
             },
             "cloth_bolt_recipe": {
                "description": "Utilisé pour rendre certains meubles plus confortables.",
                "recipe_name": "Rouleau de tissu",
-               "flavor": "Pour rendre plus large de l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
+               "flavor": "Pour rendre plus large l'épaisseur d'un fil : rajouter un autre fil. Répétez 1 000 000 de fois."
             },
             "cloth_padded_vest_recipe": {
-               "description": "Cette veste triplement matelassée protège mieux vos combattants que de simple habits. Bon, pas tellement mieux, mais c'est toujours ça !",
+               "description": "Cette veste, triplement matelassée, protège mieux vos combattants que de simple habits. Bon, pas tellement mieux, mais c'est toujours ça !",
                "recipe_name": "Veste rembourrée",
                "flavor": "Nécessite... plus... de rembourrage!"
             },
@@ -9394,12 +9381,12 @@
             },
             "fur_rug_recipe": {
                "description": "Un tapis de fourrure chaud et confortable confectionné à l'aide de différentes peaux.",
-               "recipe_name": "Tapis de fourrure",
-               "flavor": "Parfait pour les soirée prés du feu."
+               "recipe_name": "Tapis de Fourrure",
+               "flavor": "Parfait pour les soirée près du feu."
             },
             "leather_bolt_recipe": {
-               "description": "Des peaux tannées prêtes à l'usage.",
-               "recipe_name": "Cuir en rouleau",
+               "description": "Des peaux tannées, prêtes à l'usage.",
+               "recipe_name": "Cuir en Rouleau",
                "flavor": "Difficile de distinguer l'origine de chaque pièces."
             },
             "leather_vest_recipe": {
@@ -9444,23 +9431,23 @@
             "worker_outfit_winter_recipe": {
                "description": "Un lourd manteau de laine pour les froides nuits d'hivers.<br>Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
                "recipe_name": "Habit d'hiver de travailleur",
-               "flavor": "L'hivers arrive !"
+               "flavor": "L'hiver arrive !"
             },
             "workbenches_name": "Ateliers",
             "weaver_loom_recipe": {
                "description": "Assemble des fils à d'autres fils jusqu'à l'obtention d'un tissu.",
                "recipe_name": "Métier à tisser",
-               "flavor": "Patiente araignée, tisserand, poète, resserre encore la trame du destin --Rayya's Rhyme"
+               "flavor": "Patiente araignée, tisseuse, poète, resserre encore la trame du destin --Rayya's Rhyme"
             },
             "weaver_spinning_wheel_recipe": {
                "description": "Transforme ce qui est emmêlé en fil.",
-               "recipe_name": "Rouet de tisserand",
+               "recipe_name": "Rouet de Tisseur",
                "flavor": "L'araignée sourit; ses huit yeux brillent. 'Quelque chose pour rien, certains sont doux et d'autres amers.'"
             },
             "weaver_workbench_recipe": {
-               "description": "Utilisé pour des confections compliquées à partir de fil est et de tissus.",
-               "recipe_name": "Banc de tisserand",
-               "flavor": "Au commencement il n'y avait rien et puis il y eu l'araignée."
+               "description": "Utilisé pour des confections compliquées à partir de fils et de tissus.",
+               "recipe_name": "Banc de Tisseur",
+               "flavor": "Au commencement, il n'y avait rien et puis il y eu l'araignée."
             },
             "leather_helmet_recipe": {
                "description": "Protection légère pour votre tête !",
@@ -9471,54 +9458,54 @@
                "description": "Un carquois equippable par un archer. Stoque des flèches gelée qui ralentiront les ennemis"
             },
             "fire_quiver_recipe": {
-               "recipe_name": "Carquois de flèches à enflammer",
-               "description": "Les archers recoivent l'accès aux flèches enflammers, qui infligent des dégâts au fil du temps"
+               "recipe_name": "Carquois de flèches enflammées",
+               "description": "Les archers recoivent l'accès aux flèches enflammées, qui infligent des dégâts au fil du temps"
             },
             "cloth_padded_helmet_recipe": {
                "recipe_name": "Casque de tissu matelassé",
                "description": "Rembourrage supplémentaire pour votre caboche",
-               "flavor": "Étaient-elles des ailles de Phénix, ou des ailles de serpent ?"
+               "flavor": "Étaient-elles des ailes de Phénix, ou des ailes de serpent ?"
             }
          },
          "weaver_loom": {
             "weaver_loom_ghost": {
-               "display_name": "Métier à tisser",
-               "description": "Un tisserand qualifié l'utilise pour tisser le fil en habit."
+               "display_name": "Métier à Tisser",
+               "description": "Un tisseur qualifié l'utilise pour tisser le fil en habit."
             }
          },
          "weaver_outfit": {
-            "display_name": "Habit de tisserand",
-            "description": "Une tenue pour tous les tisserands"
+            "display_name": "Habit de Tisseur",
+            "description": "Une tenue pour tous les tisseurs"
          },
          "weaver_spindle": {
-            "display_name": "Fuseau de tisserand",
+            "display_name": "Fuseau de Tisseur",
             "description": "Pour le filage de fibres en fil",
             "weaver_spindle_iconic": {
-               "display_name": "Fuseau de tisserand",
+               "display_name": "Fuseau de Tisseur",
                "description": "Pour le filage de fibres en fil"
             },
             "weaver_spindle_talisman": {
-               "display_name": "Fuseau de tisserand",
-               "description": "Requis pour promouvoir un hearhling en tisserand"
+               "display_name": "Fuseau de Tisseur",
+               "description": "Requis pour promouvoir un hearthling en tisseur"
             }
          },
          "weaver_spinning_wheel": {
             "weaver_spinning_wheel_ghost": {
-               "display_name": "Rouet de tisserand",
-               "description": "Un tisserand qualifié l'utilise pour filer les fibres en fil."
+               "display_name": "Rouet de Tisseur",
+               "description": "Un tisseur qualifié l'utilise pour filer les fibres en fil."
             }
          },
          "weaver_workbench": {
             "weaver_workbench_ghost": {
-               "display_name": "Banc de tisserand",
-               "description": "Utilisé par le tisserand pour travailler."
+               "display_name": "Banc de Tisseur",
+               "description": "Utilisé par le tisseur pour travailler."
             }
          }
       },
       "worker": {
          "worker_description": {
             "display_name": "Travailleur",
-            "description": "Les travailleurs effectuent des tâches diverses comme la récolte des ressources, la logistique, et la construction de bâtiments.",
+            "description": "Les travailleurs effectuent des tâches diverses, comme la récolte des ressources, la logistique, et la construction de bâtiments.",
             "requirements": "Aucun, seulement du travail et des tripes.",
             "level_0_data": {
                "title": "Travailleur"
@@ -9526,7 +9513,7 @@
          },
          "winter_worker_outfit": {
             "display_name": "Habit d'hiver de travailleur",
-            "description": "Un manteau de laine épaisses, pour les froides nuits d'hiver",
+            "description": "Un manteau fait de laine épaisse, pour les froides nuits d'hiver",
             "winter_worker_outfit_iconic": {
                "display_name": "Habit d'hiver de travailleur",
                "description": "Si chaud..."
@@ -9549,15 +9536,15 @@
          "herbalist_description": {
             "display_name": "Herboriste",
             "description": "Soigne les unités avec des baumes et bandages artinasaux.",
-            "requirements": "Baton d'herboriste, conçu par le charpentier",
+            "requirements": "Bâton d'herboriste, conçu par le charpentier",
             "workshop": {
-               "name": "Labo. d'herboriste",
+               "name": "Labo. d'Herboriste",
                "description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages.",
                "long_description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages."
             },
             "level_1_data": {
                "perk_000_name": "Régénération naturelle",
-               "perk_000_description": "L'herboriste ouvre un canal spirituel avec la forêt et gagne de la régénération naturelle. Volonté augmenté."
+               "perk_000_description": "L'herboriste ouvre un canal spirituel avec la forêt et gagne de la régénération naturelle. Volonté augmentée."
             },
             "level_2_data": {
                "perk_000_name": "Perspectives de collaboration",
@@ -9565,33 +9552,33 @@
             },
             "level_4_data": {
                "perk_000_name": "Médecin puissant",
-               "perk_000_description": "L'herboriste peut s'occuper de 4 hearthlings d'un coup."
+               "perk_000_description": "L'herboriste peut s'occuper de 4 hearthlings en même temps."
             },
             "level_0_data": {
                "perk_000_name": "Praticien débutant",
-               "perk_000_description": "L'herboriste peut s'occuper de 2 hearthlings d'un coup."
+               "perk_000_description": "L'herboriste peut s'occuper de 2 hearthlings en même tempss."
             },
             "level_3_data": {
                "perk_000_name": "Maîtrise des objets",
-               "perk_000_description": "Les prouesses médical de l'herboriste augmente l'efficacité des objets de guérison de 50%."
+               "perk_000_description": "Les prouesses médicales de l'herboriste augmentent l'efficacité des objets de guérison de 50%."
             },
             "level_6_data": {
-               "title": "Maître herboriste"
+               "title": "Maître Herboriste"
             }
          },
          "herbalist_outfit": {
-            "display_name": "Tenue d'herboriste",
+            "display_name": "Tenue d'Herboriste",
             "description": "Robes traditionnelles de l'herboristerie"
          },
          "herbalist_staff": {
-            "display_name": "Bâton d'herboriste",
+            "display_name": "Bâton d'Herboriste",
             "description": "Nécessaire pour promouvoir un hearthling en herboriste",
             "herbalist_staff_iconic": {
-               "display_name": "Bâton d'herboriste",
+               "display_name": "Bâton d'Herboriste",
                "description": "Nécessaire pour promouvoir un hearthling en herboriste"
             },
             "herbalist_staff_talisman": {
-               "display_name": "Bâton d'herboriste",
+               "display_name": "Bâton d'Herboriste",
                "description": "Nécessaire pour promouvoir un hearthling en herboriste"
             }
          },
@@ -9674,7 +9661,7 @@
             },
             "level_2_data": {
                "perk_000_name": "Compassion augmenté",
-               "perk_000_description": "compassion accrue pour augmenté la guérison directe"
+               "perk_000_description": "Compassion accrue afin d'augmenté la guérison directe"
             },
             "level_3_data": {
                "perk_000_name": "Aura de soin rang 2",
@@ -9682,7 +9669,7 @@
             },
             "level_6_data": {
                "perk_000_name": "Maître de guérison",
-               "perk_000_description": "Le clerc a maîtrisé l'art de guérir. Sa compassion a considérablement augmenté."
+               "perk_000_description": "Le clerc a maîtrisé l'art de guérir. Sa compassion a considérablement augmentée."
             },
             "level_4_data": {
                "perk_000_name": "Aura de soin rang 3",
@@ -9719,8 +9706,8 @@
                "description": "Augmente légèrement la force par la présence d'un clerc"
             },
             "compassion_1_buff": {
-               "display_name": "Compassion augmenté",
-               "description": "Compassion augmenté de 20%"
+               "display_name": "Compassion augmentée",
+               "description": "Compassion augmentée de 20%"
             },
             "heal_aura_2_buff": {
                "display_name": "Aura de soin rang 2",
@@ -9731,8 +9718,8 @@
                "description": "Soin d'une moyenne quantité"
             },
             "compassion_2_buff": {
-               "display_name": "Compassion augmenté",
-               "description": "Compassion augmenté de 40%"
+               "display_name": "Compassion augmentée",
+               "description": "Compassion augmentée de 40%"
             },
             "major_muscle_aura_buff": {
                "display_name": "Aura de Force majeure",
@@ -9740,7 +9727,7 @@
             },
             "major_muscle_aura_effect_buff": {
                "display_name": "Force majeure",
-               "description": "Muscle grandement améliorée par la présence d'un clerc"
+               "description": "Muscle grandement amélioré par la présence d'un clerc"
             }
          }
       },
@@ -9765,17 +9752,17 @@
          },
          "magmasmith_workbench": {
             "magmasmith_workbench_ghost": {
-               "display_name": "Magmasmith Workbench",
-               "description": "Lava flows from within"
+               "display_name": "Magmasmith Workbench Table du ",
+               "description": "La lave coule en son sein"
             }
          },
          "magmasmith_description": {
             "display_name": "Magmasmith",
-            "description": "Crafts from magma",
-            "requirements": "Level 2 blacksmith and Magmasmith's hammer"
+            "description": "Construit à partir de magma",
+            "requirements": "Un forgeron niveau 2 et un marteau de Magmasmith"
          },
          "recipes": {
-            "workbenches_name": "Workbenches"
+            "workbenches_name": "Tables de travail"
          }
       },
       "knight": {
@@ -9785,7 +9772,7 @@
          },
          "knight_description": {
             "display_name": "Chevalier",
-            "description": "Un combattant défensive avec comme priorité de protéger ses alliées du mal.",
+            "description": "Un combattant défensif, qui a pour priorité de protéger ses alliés du mal.",
             "requirements": "Nécessite un fantassin niveau 3 et un bouclier de chevalier, fabriqué par le forgeron",
             "level_1_data": {
                "perk_000_name": "Réduction de dégât niveau 1",
@@ -9793,7 +9780,7 @@
             },
             "level_4_data": {
                "perk_000_name": "Réduction de dégât niveau 2",
-               "perk_000_description": "Le chevalier réduit beaucoup les dommages causés par les ennemis"
+               "perk_000_description": "Le chevalier réduit de beaucoup les dommages causés par les ennemis"
             },
             "level_0_data": {
                "perk_000_name": "Fortifier",
@@ -9809,7 +9796,7 @@
             },
             "level_2_data": {
                "perk_000_name": "Crie d'intimidation",
-               "perk_000_description": "Le chevalier intimide les adversaires, attirant l'attention des ennemis proches."
+               "perk_000_description": "Le chevalier intimide ses adversaires, attirant l'attention des ennemis proches."
             },
             "level_6_data": {
                "perk_000_name": "Cor de Heroes",
@@ -9819,15 +9806,15 @@
          "knight_buffs": {
             "defense_1_buff": {
                "display_name": "Défense augmentée de 10%",
-               "description": "Défense de l'équipement est augmenté de 10%"
+               "description": "Défense de l'équipement est augmentée de 10%"
             },
             "defense_2_buff": {
                "display_name": "Défense augmentée de 20%",
-               "description": "Défense de l'équipement est augmenté de 20%"
+               "description": "Défense de l'équipement est augmentée de 20%"
             },
             "health_1_buff": {
                "display_name": "Fortifier",
-               "description": "Le chevalier devient plus menaçant pour les ennemis, en attirant leur attention au combat. Il obtient également un bonus de santé et de l'endurance."
+               "description": "Le chevalier devient plus menaçant pour les ennemis, en attirant leur attention au combat. Il obtient également un bonus en santé et en endurance."
             },
             "health_2_buff": {
                "display_name": "Fortifier (Rang 2)",
@@ -9868,7 +9855,7 @@
             "default_level_title": "[str(self.stonehearth:job.curr_job_name)] niveau [str(self.stonehearth:job.curr_job_level)]",
             "default_level_announcement": "[name(i18n_data.entity)] est devenu [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
             "level_up_perk_description": "Santé max. +10",
-            "attribute_up_desc": "Tous les attributs augmentés !"
+            "attribute_up_desc": "Tous les attributs ont augmentés !"
          }
       },
       "food": {
@@ -9897,14 +9884,14 @@
             "starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "[str(self.stonehearth:job.curr_job_name)] niveau [str(self.stonehearth:job.curr_job_level)]",
             "default_level_announcement": "[name(i18n_data.entity)] à atteint [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
-            "general_description_desc": "Santé maximum augmentée !",
-            "attribute_up_desc": "Tous les attributs augmenté !"
+            "general_description_desc": "Santé maximum augmentée!",
+            "attribute_up_desc": "Tous les attributs augmentés!"
          }
       },
       "resources": {
          "fur_pelt": {
             "display_name": "Fourrure",
-            "description": "Douce, souple et bien mort"
+            "description": "Douce, souple et bien morte"
          }
       },
       "base_human_npc": {
@@ -9920,19 +9907,19 @@
                   "set1": {
                      "step001": {
                         "title": "Cliquez sur le bouton Zones",
-                        "description": "Les zones définissent où des évènements se passe dans votre ville"
+                        "description": "Les zones définissent où les évènements se passe dans votre ville"
                      },
                      "step000": {
                         "title": "Nous avons récolté du bois",
-                        "description": "Maintenant, nous avons besoin d'un endroit pour le stocker"
+                        "description": "Maintenant, nous avons besoin d'un endroit pour le ranger"
                      },
                      "step003": {
                         "title": "Cliquez sur le contrôleur pour confirmer",
-                        "description": "Utilisez les filtres pour déterminer quel type d'articles que vous voulez aller dans la réserve"
+                        "description": "Utilisez les filtres pour déterminer quel type d'articles vous désirez avoir dans la réserve"
                      },
                      "step002": {
                         "title": "Cliquez sur le bouton créer une réserve",
-                        "description": "Les Hearthlings stockent les articles dans les réserves"
+                        "description": "Les Hearthlings entreposent les articles dans les réserves"
                      }
                   }
                }
@@ -9940,15 +9927,15 @@
             "harvest_logs": {
                "scenario_data": {
                   "message": "Si nous voulons obtenir cette ville sur ce sol, nous aurons besoin de bois, et beaucoup ! Hacher bas quelques arbres voisins pour obtenir ces bûches.",
-                  "completed_message": "Félicitations à vous ! Nous avons des ressources en bois maintenant. Les bûches et les autres ressources naturelles peuvent être utilisées pour construire des bâtiments et des objets d'artisanat. Ils sont les premiers blocs de construction pour faire avancer votre ville.",
+                  "completed_message": "Félicitations! Nous avons des ressources de bois maintenant. Les bûches et les autres ressources naturelles peuvent être utilisées pour construire des bâtiments et des objets d'artisanat. Ils sont les premiers blocs de construction pour faire avancer votre ville.",
                   "title": "[str(i18n_data.town_name)] Ville: Fournitures initiales",
-                  "resource_display_name": "bûches de bois"
+                  "resource_display_name": "Bûches de bois"
                },
                "ui_steps": {
                   "set1": {
                      "step001": {
-                        "title": "Cliquez sur le bouton Collecter",
-                        "description": "Utilisez le bouton collecter pour abattre des arbres"
+                        "title": "Cliquez sur le bouton Récolter",
+                        "description": "Utilisez le bouton Récolter pour abattre des arbres"
                      },
                      "step000": {
                         "title": "Cliquez sur le bouton Récolter",
@@ -9975,7 +9962,7 @@
                      },
                      "step000": {
                         "title": "Promouvoir une Hearthling en Menuisier",
-                        "description": "Nous avons les bûches et un endroit pour stocker les marchandises, mais la ville est assez vide. Heureusement, je vous ai apporté une scie avec nous. Nous allons promouvoir un citoyen en menuisier !"
+                        "description": "Nous avons les bûches et un endroit pour entreposer les marchandises, mais la ville est assez vide. Heureusement, j'ai apporté une scie avec nous. Nous allons promouvoir un citoyen en menuisier !"
                      },
                      "step007": {
                         "title": "Artisans de ville",
