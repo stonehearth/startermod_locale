@@ -3239,7 +3239,7 @@
             "forlorn": {
                "forlorn_mood_buff": {
                   "display_name": "Désespéré",
-                  "description": "It's been incredibly hard going of late."
+                  "description": "Depuis quelque temps, ça a été incroyablement dur."
                }
             },
             "glum": {
@@ -3269,12 +3269,12 @@
          },
          "town_alert": {
             "town_alert_courage_buff": {
-               "display_name": "Rising Courage",
-               "description": "Increasing courage when defending the town as long as they are not attacked"
+               "display_name": "Augmentation du courage",
+               "description": "Augmentation du courage quand ils défendent la ville du moment qu'ils ne sont pas attaqués"
             },
             "town_alert_banner_buff": {
-               "display_name": "Town Alert Banner Buff",
-               "description": "Emits a stacking courage buff every 5 minutes"
+               "display_name": "Buff bannière d'alerte de la Ville",
+               "description": "Émet un buff de courage toutes les 5 minutes"
             }
          }
       },
@@ -4563,157 +4563,157 @@
          "thoughts": {
             "hunger": {
                "hungry": {
-                  "display_name": "Hungry",
-                  "tooltip": "I could really go for a good meal."
+                  "display_name": "Très Affamé",
+                  "tooltip": "Je pourrais vraiment partir pour un bon repas."
                },
                "famished": {
-                  "display_name": "Famished",
-                  "tooltip": "It's been awhile since I've eaten. I really need some food!"
+                  "display_name": "Affamé",
+                  "tooltip": "Ça fait longtemps que je n'ai pas mangé. J'ai vraiment besoin de nourriture!"
                },
                "starving": {
-                  "display_name": "Starving",
-                  "tooltip": "My stomach is in knots!  If I don't find something to eat soon..."
+                  "display_name": "Grande faim",
+                  "tooltip": "Mon estomac est en noeuds! Si je ne trouve pas quelque chose à manger bientôt ..."
                },
                "values": {
                   "stuffed": {
-                     "display_name": "Stuffed",
-                     "tooltip": "My last meal was so filling I won't need to eat again for a bit."
+                     "display_name": "Gavé",
+                     "tooltip": "Mon dernier repas était tellement remplissant je n'ai pas besoin de manger à nouveau pour un peu."
                   }
                }
             },
             "space": {
                "spacious": {
-                  "display_name": "Spacious Environment",
-                  "tooltip": "Then is a really open space. It makes me feel at ease."
+                  "display_name": "Environnement spacieux",
+                  "tooltip": "Quand l'espace est vraiment ouvert. Cela me fait sentir à l'aise."
                },
                "cramped": {
-                  "display_name": "Cramped Environment",
-                  "tooltip": "This area is pretty tight. I have to watch my step so as not to bump into anything."
+                  "display_name": "Environnement encombré",
+                  "tooltip": "Cette zone est assez serré. Je dois surveiller mon pas afin de ne pas heurter quelque chose."
                },
                "very_cramped": {
-                  "display_name": "Very Cramped Environment",
-                  "tooltip": "This place is suffocating! There's barely room to breathe."
+                  "display_name": "Environnement très encombré",
+                  "tooltip": "Cet endroit est suffocant! Il y a à peine de la place pour respirer."
                }
             },
             "health": {
                "pain_mild": {
-                  "display_name": "Pain (Mild)",
+                  "display_name": "Douleur (Doux)",
                   "tooltip": "Ow ow ow!"
                },
                "pain_moderate": {
-                  "display_name": "Pain (Moderate)",
-                  "tooltip": "Agh, I'm in rough shape!"
+                  "display_name": "Douleur (Modérer)",
+                  "tooltip": "Agh, je suis en pleine forme !"
                },
                "pain_scratched": {
-                  "display_name": "Pain (Scratched)",
-                  "tooltip": "I'm a little worse for wear."
+                  "display_name": "Douleur (Ecorcher)",
+                  "tooltip": "Je me sens un peu rouillé"
                },
                "pain_severe": {
-                  "display_name": "Pain (Severe)",
+                  "display_name": "Douleur (Sévère)",
                   "tooltip": "!!!"
                }
             },
             "sleeping": {
                "slept_on_ground": {
-                  "display_name": "Slept on ground",
-                  "tooltip": "My back is killing me from having slept on the ground. When are we going to get some decent beds?"
+                  "display_name": "Couché sur le sol",
+                  "tooltip": "Mon dos me tue d'avoir dormi sur le sol. Quand allons-nous obtenir des lits décents?"
                },
                "slept_in_shared_bed": {
-                  "display_name": "Slept in a shared bed",
-                  "tooltip": "I'm sharing my bed with someone else right now. It's not the worst, but I really wish I had my own."
+                  "display_name": "Couché dans un lit partagé",
+                  "tooltip": "Je partage mon lit avec quelqu'un d'autre en ce moment. Ce n'est pas le pire, mais je souhaite vraiment en avoir un à moi."
                },
                "slept_in_comfy_bed": {
-                  "display_name": "Slept in a comfy bed",
-                  "tooltip": "My bed is really comfortable. I felt refreshed when I woke up!"
+                  "display_name": "dormi dans un lit confortable",
+                  "tooltip": "Mon lit est vraiment confortable. Je me suis senti rafraîchi à mon réveille !"
                }
             },
             "eating": {
                "ate_fine": {
-                  "display_name": "Ate a fine meal",
-                  "tooltip": "My recent meal was amazing! Whoever made the [str(foodname)] really put their heart into it."
+                  "display_name": "A mangé un bon repas",
+                  "tooltip": "Mon récent repas était incroyable ! Celui qui a fait le [str(foodname)] y a vraiment mis beaucoup d'amour."
                },
                "ate_tasty": {
-                  "display_name": "Ate a tasty meal",
-                  "tooltip": "The [str(foodname)] I ate was pretty tasty! I still remember the combination of flavors."
+                  "display_name": "A mangé un repas savoureux",
+                  "tooltip": "Le [str(foodname)] que j'ai mangé était assez savoureux ! Je me souviens encore de la combinaison des saveurs.."
                },
                "ate_raw": {
-                  "display_name": "Ate a raw meal",
-                  "tooltip": "I recently ate a raw [str(foodname)].  I could almost taste the dirt on it.  Bleh!"
+                  "display_name": "A mangé un repas brut",
+                  "tooltip": "J'ai récemment mangé [str(foodname)] brut. Je pourrais presque goûter la saleté dessus. Beurk !"
                },
                "ate_bland": {
-                  "display_name": "Ate a bland meal",
-                  "tooltip": "I remember eating a bland [str(foodname)]. It gave me the strength to keep going, but the meal was so boring."
+                  "display_name": "A mangé un repas fade",
+                  "tooltip": "Je me souviens d'avoir mangé un [str(foodname)] fade. Il m'a donné la force de continuer, mais le repas était tellement ennuyeux."
                },
                "values": {
                   "ate_cooked": {
-                     "display_name": "Ate a cooked meal",
-                     "tooltip": "I always enjoy the 'warm belly' feeling after a nice cooked meal."
+                     "display_name": "A mangé un repas cuisiné",
+                     "tooltip": "J'ai toujours apprécié le sentiment de 'ventre chaud' après un bon repas cuisiné."
                   }
                }
             },
             "town": {
                "founding": {
                   "pioneering_spirit": {
-                     "display_name": "Pioneering Spirit",
-                     "tooltip": "We've left our home to build a new one. We will make it better than before!"
+                     "display_name": "Esprit pionnier",
+                     "tooltip": "Nous avons quitté notre maison pour en construire une nouvelle. Nous le ferons mieux qu'avant!"
                   },
                   "settling_in": {
-                     "display_name": "Settling In",
-                     "tooltip": "I'm starting to feel at home, but there's work yet to be done."
+                     "display_name": "S'installe",
+                     "tooltip": "Je commence à me sentir chez moi, mais il reste du travail à faire."
                   }
                },
                "township": {
                   "level_2": {
-                     "display_name": "Township Celebration",
-                     "tooltip": "We've been recognized as a fully fledged settlement!  Our work is starting to pay off."
+                     "display_name": "Fête du canton",
+                     "tooltip": "Nous avons été reconnus comme un canton à part entière ! Notre travail commence à porter ses fruits."
                   }
                },
                "safety": {
                   "lack_of_safety": {
-                     "display_name": "Lack of safety",
-                     "tooltip": "Without some form of city guard, I just don't feel at ease in this wilderness."
+                     "display_name": "Insécurité",
+                     "tooltip": "Sans une certaine forme de garde de ville, je ne me sens pas à l'aise dans ce désert."
                   }
                },
                "theft": {
                   "petty_theft": {
-                     "display_name": "Theft",
-                     "tooltip": "Someone stole something from our supplies! We need better defenses."
+                     "display_name": "Vol",
+                     "tooltip": "Quelqu'un a volé quelque chose de nos fournitures ! Nous avons besoin de meilleures défenses."
                   }
                }
             },
             "sleepiness": {
                "values": {
                   "tired": {
-                     "display_name": "Tired",
-                     "tooltip": "It's been awhile since I've slept."
+                     "display_name": "Fatigué",
+                     "tooltip": "Ça fait longtemps que je n'ai pas dormi."
                   },
                   "exhausted": {
-                     "display_name": "Exhausted",
-                     "tooltip": "It feels like forever since I've slept.. I can barely keep my eyes open."
+                     "display_name": "Épuisé",
+                     "tooltip": "Je me sens toujours bien depuis que j'ai dormi .. Mais je peux à peine garder les yeux ouverts."
                   },
                   "fatigued": {
-                     "display_name": "Fatigued",
-                     "tooltip": "I've been on my feet for too long. I really need some time to sleep."
+                     "display_name": "Exténué",
+                     "tooltip": "Je suis sur mes pieds depuis trop longtemps. J'ai vraiment besoin de dormir !"
                   }
                }
             },
             "combat": {
                "values": {
                   "panicked": {
-                     "display_name": "Feared for their life",
-                     "tooltip": "I'm not proud of how I acted when the monsters came, but it's all I could think to do."
+                     "display_name": "Craint pour leur vie",
+                     "tooltip": "Je ne suis pas fier de la façon dont j'ai agi quand les monstres sont venus, mais c'est tout ce que je pouvais penser faire."
                   }
                }
             },
             "violence": {
                "values": {
                   "townmember_died": {
-                     "display_name": "Townmember has died",
-                     "tooltip": "A fellow townmember has died. If only we had been more watchful!"
+                     "display_name": "Le citoyen est mort",
+                     "tooltip": "Un membre de la commune est décédé. Si seulement nous avions été plus vigilants!"
                   },
                   "pet_died": {
-                     "display_name": "My pet died",
-                     "tooltip": "My poor [str(pet)] died recently. I'll miss them quite a bit."
+                     "display_name": "Mon animal est mort",
+                     "tooltip": "Mon pauvre [str(pet)] est décédé récemment. il va un peu me manquer."
                   }
                }
             }
@@ -6910,7 +6910,7 @@
                "description": "Alignées en belles rangés"
             },
             "carrot_serving": {
-               "display_name": "Une carotte",
+               "display_name": "Carotte",
                "description": "Petite. Amère."
             }
          },
@@ -6942,7 +6942,7 @@
                "description": "Bien violets et ronds."
             },
             "turnip_serving": {
-               "display_name": "Un navet",
+               "display_name": "Navet",
                "description": "Petit navet perdu..."
             }
          },

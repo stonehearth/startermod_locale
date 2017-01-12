@@ -6910,7 +6910,7 @@
                "description": "Lined up in neat rows."
             },
             "carrot_serving": {
-               "display_name": "A carrot",
+               "display_name": "Carrot",
                "description": "Tiny. Bitter."
             }
          },
@@ -6942,7 +6942,7 @@
                "description": "Juicy and exciting!"
             },
             "turnip_serving": {
-               "display_name": "A Turnip",
+               "display_name": "Turnip",
                "description": "Tiny. Bitter."
             }
          },
