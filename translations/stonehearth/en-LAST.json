@@ -1052,7 +1052,9 @@
                "022": "Mining dirt will occasionally yield clay and stone.",
                "023": "You can visually see ore veins in the side of mountains.",
                "024": "Need a starting food source? Move Berry Bushes or Prickly Pear Cacti closer to your town.",
-               "025": "After defeating the Goblin Chieftain, you can claim Bluebell the sheep as your own."
+               "025": "After defeating the Goblin Chieftain, you can claim Bluebell the sheep as your own.",
+               "026": "Your hearthlings don't like being in cramped spaces for too long.",
+               "027": "Farm animals can reproduce if there are at least 2 of the same animals in a pen."
             }
          },
          "select_settlement": {
@@ -2749,6 +2751,9 @@
                                     "title": "An angry entling army approaches!"
                                  }
                               }
+                           },
+                           "happiness_intro": {
+                              "title": "Hearthling Morale"
                            }
                         }
                      }

@@ -1052,7 +1052,9 @@
                "022": "Miné de la terre donne occasionnellement de l'argile et de la pierre.",
                "023": "Vous pouvez voir visuellement les veines de minerai dans le côté des montagnes.",
                "024": "Vous avez besoin d'une source de nourriture de départ ? Bougez les buissons de baie ou figuier de Barbarie plus proche de votre ville.",
-               "025": "Après la défaite du chef Goblin, vous pouvez réclamer le mouton Bluebell chez vous."
+               "025": "Après la défaite du chef Goblin, vous pouvez réclamer le mouton Bluebell chez vous.",
+               "026": "Vos hearthlings n'aiment pas être dans des espaces étroits pendant trop longtemps.",
+               "027": "Les animaux de ferme peuvent se reproduire s'il y a au moins 2 des mêmes animaux dans un enclos."
             }
          },
          "select_settlement": {
@@ -2749,6 +2751,9 @@
                                     "title": "An angry entling army approaches!"
                                  }
                               }
+                           },
+                           "happiness_intro": {
+                              "title": "Moral des hearthlings"
                            }
                         }
                      }
