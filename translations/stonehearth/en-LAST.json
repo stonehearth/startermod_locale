@@ -4642,8 +4642,8 @@
                   "tooltip": "The [str(foodname)] I ate was pretty tasty! I still remember the combination of flavors."
                },
                "ate_raw": {
-                  "display_name": "Ate a raw meal",
-                  "tooltip": "I recently ate a raw [str(foodname)].  I could almost taste the dirt on it.  Bleh!"
+                  "display_name": "My meal was raw",
+                  "tooltip": "I recently ate a raw [str(foodname)].  I can only imagine how much better it would have tasted were it cooked."
                },
                "ate_bland": {
                   "display_name": "Ate a bland meal",
@@ -4651,8 +4651,8 @@
                },
                "values": {
                   "ate_cooked": {
-                     "display_name": "Ate a cooked meal",
-                     "tooltip": "I always enjoy the 'warm belly' feeling after a nice cooked meal."
+                     "display_name": "My meal was cooked",
+                     "tooltip": "I always enjoy the 'warm belly' feeling after a nice prepared meal."
                   }
                }
             },

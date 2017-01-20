@@ -4642,8 +4642,8 @@
                   "tooltip": "Le [str(foodname)] que j'ai mangé était assez savoureux ! Je me souviens encore de la combinaison des saveurs.."
                },
                "ate_raw": {
-                  "display_name": "A mangé un repas brut",
-                  "tooltip": "J'ai récemment mangé [str(foodname)] brut. Je pourrais presque goûter la saleté dessus. Beurk !"
+                  "display_name": "Mon repas était cru",
+                  "tooltip": "J'ai récemment mangé [str(foodname)] brut. Je peux seulement imaginer combien cela aurait été savoureux si cela avait été cuit."
                },
                "ate_bland": {
                   "display_name": "A mangé un repas fade",
@@ -4651,8 +4651,8 @@
                },
                "values": {
                   "ate_cooked": {
-                     "display_name": "A mangé un repas cuisiné",
-                     "tooltip": "J'ai toujours apprécié le sentiment de 'ventre chaud' après un bon repas cuisiné."
+                     "display_name": "Mon repas était cuit",
+                     "tooltip": "J'ai toujours apprécié le sentiment de 'ventre chaud' après un bon repas préparé."
                   }
                }
             },
