@@ -198,7 +198,9 @@
             "next": "Suivant",
             "hotkey": "touche : ",
             "remove": "Retirer",
-            "input_text_tooltip": "Cliquer pour modifier"
+            "input_text_tooltip": "Cliquer pour modifier",
+            "days": "j",
+            "hours": "h"
          },
          "party": {
             "title": "Groupes",
@@ -4589,15 +4591,15 @@
             "space": {
                "spacious": {
                   "display_name": "Environnement spacieux",
-                  "tooltip": "Quand l'espace est vraiment ouvert. Cela me fait sentir à l'aise."
+                  "tooltip": "Il y a tellement d'espace libre ici. Ça me fait vraiment sentir à l'aise."
                },
                "cramped": {
                   "display_name": "Environnement encombré",
-                  "tooltip": "Cette zone est assez serré. Je dois surveiller mon pas afin de ne pas heurter quelque chose."
+                  "tooltip": "Je me sens plutôt à l'étroit. Je dois toujours regarder mon pas pour ne pas heurter n'importe quoi."
                },
                "very_cramped": {
                   "display_name": "Environnement très encombré",
-                  "tooltip": "Cet endroit est suffocant! Il y a à peine de la place pour respirer."
+                  "tooltip": "Cet endroit est suffocant ! Il y a à peine de la place pour respirer !"
                }
             },
             "health": {

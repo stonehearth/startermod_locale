@@ -198,7 +198,9 @@
             "next": "Next",
             "hotkey": "key: ",
             "remove": "Remove",
-            "input_text_tooltip": "Click to edit"
+            "input_text_tooltip": "Click to edit",
+            "days": "d",
+            "hours": "h"
          },
          "party": {
             "title": "Parties",
@@ -4589,15 +4591,15 @@
             "space": {
                "spacious": {
                   "display_name": "Spacious Environment",
-                  "tooltip": "Then is a really open space. It makes me feel at ease."
+                  "tooltip": "There's so much open space around here. It really makes me feel at ease."
                },
                "cramped": {
                   "display_name": "Cramped Environment",
-                  "tooltip": "This area is pretty tight. I have to watch my step so as not to bump into anything."
+                  "tooltip": "I'm feeling rather cramped. I always have to watch my step not to bump into anything."
                },
                "very_cramped": {
                   "display_name": "Very Cramped Environment",
-                  "tooltip": "This place is suffocating! There's barely room to breathe."
+                  "tooltip": "This place is suffocating! There's barely room to breathe!"
                }
             },
             "health": {
