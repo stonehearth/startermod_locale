@@ -1054,7 +1054,7 @@
                "022": "Miné de la terre donne occasionnellement de l'argile et de la pierre.",
                "023": "Vous pouvez voir visuellement les veines de minerai dans le côté des montagnes.",
                "024": "Vous avez besoin d'une source de nourriture de départ ? Bougez les buissons de baie ou figuier de Barbarie plus proche de votre ville.",
-               "025": "Après la défaite du chef Goblin, vous pouvez réclamer le mouton Bluebell chez vous.",
+               "025": "Après la défaite du chef gobelin, vous pouvez réclamer le mouton Bluebell chez vous.",
                "026": "Vos hearthlings n'aiment pas être dans des espaces étroits pendant trop longtemps.",
                "027": "Les animaux de ferme peuvent se reproduire s'il y a au moins 2 des mêmes animaux dans un enclos."
             }
@@ -1844,7 +1844,7 @@
                            "choice_000": "Ogo qui?",
                            "choice_001": "Uh. Non.",
                            "bulletin_message": {
-                              "000": "Par ordre de Ogo Cognecrâne, Goblin-Tout-Pour-Être-Chef, vous et toutes vos affaires sont maintenant le tribut de votre ville à La Grande Armée scintillante et à l'Empire Red Kiln !",
+                              "000": "Par ordre de Ogo Cognecrâne, Gobelin-Tout-Pour-Être-Chef, vous et toutes vos affaires sont maintenant le tribut de votre ville à La Grande Armée scintillante et à l'Empire Red Kiln !",
                               "001": "Je suis l'envoyé de Ogo Cognecrâne, dompteur de la montagne ! Ogo demande des choses de toutes sortes, vous compris, votre or aussi !",
                               "002": "Mon Chef-parmi-les-Chefs, Ogo Cognecrâne, bientôt prendra l'Armée Scintillante et commandera la Kiln Rouge ! Vous êtes les prochains d'une longue liste de conquêtes. Vous deviendrais nos esclaves dans nos mines d'or !",
                               "003": "Je suis la Bannière gobelinne de Ogo Cognecrâne, coureur de Montagne ! Mon maître vous demande tribut, sous la forme de tout ce que vous avez ! Vous donnez tout ! Ou vous payez !",
@@ -1859,7 +1859,7 @@
                            "bulletin_message": {
                               "000": "Devin dire Ogo Cognecrâne sera héros au-dessus de tous héros ! Vous destiné à lui donner de l'or !",
                               "001": "Devin petit, mais devin a de grandes pensées ! Devin ne se trompe jamais. Devin dire que vous donnez l'or d'Ogo, ou Ogo va vous le prendre !!",
-                              "002": "Goblins longtemps être rejetés et oubliés. Devin dire que Ogo Cognecrâne, mon Petitchef, viendra bientôt tout changer ! Pour cela, il a besoin d'or et de travail !",
+                              "002": "Gobelins longtemps être rejetés et oubliés. Devin dire que Ogo Cognecrâne, mon Petitchef, viendra bientôt tout changer ! Pour cela, il a besoin d'or et de travail !",
                               "003": "Ogo Cognecrâne, Maître des Maîtres, a un grand destin, pour régner sur tout ! Devin le dire; devin ne se trompe jamais. Devin dit, vous contribuerez !"
                            },
                            "bulletin_title": "Les yeux du gobelin brillent avec un zèle",
@@ -2010,7 +2010,7 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Des félicitations s'imposent, si c'est le genre de chose auquel vous tenez. J'ai fait le tour de la région et il semble que vous nous ayez débarrassé de la majeur partie des goblins de la zone ! Je ne dis pas que vous ne croiserez pas un ou deux traînards mais dans l'ensemble c'est du bon travail."
+                              "00": "Des félicitations s'imposent, si c'est le genre de chose auquel vous tenez. J'ai fait le tour de la région et il semble que vous nous ayez débarrassé de la majeur partie des gobelins de la zone ! Je ne dis pas que vous ne croiserez pas un ou deux traînards mais dans l'ensemble c'est du bon travail."
                            },
                            "bulletin_title": "Mër Fortemains secoue la tête",
                            "dialog_title": "Mër Fortemains"
@@ -2379,15 +2379,15 @@
                                        "bulletin_message": {
                                           "000": "Montagne ! Combat... sur...."
                                        },
-                                       "bulletin_title": "Ogo Skullbonker tombe au sol",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "bulletin_title": "Ogo Cognecrâne tombe au sol",
+                                       "dialog_title": "Ogo Cognecrâne"
                                     },
                                     "ogo_death_1": {
                                        "bulletin_message": {
-                                          "000": "Quoi ? Ogo Skullbonker, vaincu ? Que dit le devin ? Que dit Montagne ? Qu'en est-il de Khan? Qu'en est-il du... prochain cycle ?"
+                                          "000": "Quoi ? Ogo Cognecrâne, vaincu ? Que dit le devin ? Que dit Montagne ? Qu'en est-il de Khan? Qu'en est-il du... prochain cycle ?"
                                        },
-                                       "bulletin_title": "Ogo Skullbonker tombe au sol",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "bulletin_title": "Ogo Cognecrâne tombe au sol",
+                                       "dialog_title": "Ogo Cognecrâne"
                                     }
                                  }
                               }
@@ -2400,14 +2400,14 @@
                                           "000": "Montagne, ridicule ! C'est la guerre ! Pour shinies ! En avant !!!"
                                        },
                                        "bulletin_title": "Ogo regarde indigné",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "dialog_title": "Ogo Cognecrâne"
                                     },
                                     "renewed_attack": {
                                        "bulletin_message": {
                                           "000": "Regarde Montagne ? Ils refusent votre offre de paix ! Renouvelé l'attaque !"
                                        },
                                        "bulletin_title": "Ogo lève le poing en triomphe",
-                                       "dialog_title": "Ogo Skullbonker",
+                                       "dialog_title": "Ogo Cognecrâne",
                                        "choice_000": "A l'attaque !!"
                                     },
                                     "mountain_replies": {
@@ -2422,15 +2422,15 @@
                                           "000": "Arghhh !!! Mais les shinies! Bien. Montagne mon ami; je ne peux pas aller où il ne va pas. Votre ville est sauvé... pour le moment. Quand Khan sera mieux, nous reviendrons !"
                                        },
                                        "bulletin_title": "Ogo piétine avec son pied dans la frustration",
-                                       "dialog_title": "Ogo Skullbonker",
+                                       "dialog_title": "Ogo Cognecrâne",
                                        "choice_000": "A plus tard !"
                                     },
                                     "ogo_notices": {
                                        "bulletin_message": {
                                           "000": "Montagne, pourquoi vous arretez le combat ?"
                                        },
-                                       "bulletin_title": "Ogo Skullbonker fait signe pour attirer l'attention de l'ogre",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "bulletin_title": "Ogo Cognecrâne fait signe pour attirer l'attention de l'ogre",
+                                       "dialog_title": "Ogo Cognecrâne"
                                     },
                                     "mountain_asks": {
                                        "bulletin_message": {
@@ -2449,10 +2449,10 @@
                                  "dialog_nodes": {
                                     "goblin_boss_notices": {
                                        "bulletin_message": {
-                                          "000": "What? Human town dare display goblin honor token?! Retributioooooonnnn!!!!"
+                                          "000": "Quoi? La ville humaine ose montrer symbole d'honneur gobelin ?! Vengeance !!!!!"
                                        },
-                                       "bulletin_title": "Another Goblin Horn Sounds",
-                                       "dialog_title": "Goblin Bully"
+                                       "bulletin_title": "Un autre son de corne gobelin",
+                                       "dialog_title": "Brute gobelin"
                                     }
                                  }
                               }
@@ -2460,7 +2460,7 @@
                            "goblin_retribution_raid": {
                               "mission": {
                                  "sighted_bulletin": {
-                                    "title": "Goblins come to reclaim their honor tokens!"
+                                    "title": "Les gobelins viennent pour récupérer leurs symbole d'honneur !"
                                  }
                               }
                            },
@@ -2469,17 +2469,17 @@
                                  "dialog_nodes": {
                                     "army_replies": {
                                        "bulletin_message": {
-                                          "000": "Take all the things!!!!"
+                                          "000": "Prenez tout!!!!"
                                        },
-                                       "bulletin_title": "The goblins raise their weapons",
-                                       "dialog_title": "Ogo's Bannerman"
+                                       "bulletin_title": "Les gobelins lèvent leur armes",
+                                       "dialog_title": "Porte bannière d'Ogo"
                                     },
                                     "ogo_attacks": {
                                        "bulletin_message": {
-                                          "000": "At last, we come to place of great shinies! Go forth, my minions! Go forth for Ogo Skullbonker's glory!"
+                                          "000": "At last, we come to place of great shinies! Go forth, my minions! Go forth for Ogo Cognecrâne's glory!"
                                        },
-                                       "bulletin_title": "You Hear Goblin War Horns",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "bulletin_title": "Vous entendez des cornes de guerre gobelins",
+                                       "dialog_title": "Ogo Cognecrâne"
                                     },
                                     "mountain_replies": {
                                        "bulletin_message": {
@@ -2774,15 +2774,15 @@
                                        "bulletin_message": {
                                           "00": " The Red Kiln believes that advancement can only come from conflict between equals. Khan is no longer. And where one falls, those stronger and more cunning will rise."
                                        },
-                                       "bulletin_title": "Chef de guerre Oghar Norwind",
-                                       "dialog_title": "Chef de guerre Oghar Norwind"
+                                       "bulletin_title": "Chef de guerre Oghar Ventfroid",
+                                       "dialog_title": "Chef de guerre Oghar Ventfroid"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Vous là ! Erdene m'a parlé de vous ! Elle a dit que vous avez vaincu Ogo Skullbonker."
+                                          "00": "Vous là ! Erdene m'a parlé de vous ! Elle a dit que vous avez vaincu Ogo Cognecrâne."
                                        },
                                        "bulletin_title": "Un chef de guerre orc apporche de votre village",
-                                       "dialog_title": "Chef de guerre Oghar Norwind",
+                                       "dialog_title": "Chef de guerre Oghar Ventfroid",
                                        "choice_000": "Oui, c'est moi",
                                        "choice_001": "Qu'est ce que c'est pour toi ?"
                                     },
@@ -2869,7 +2869,7 @@
                                        "bulletin_message": {
                                           "00": "You recognize? ...No, me don't know you. You saying us all look same?!"
                                        },
-                                       "bulletin_title": "Some familiar looking goblins begin building huts near your town",
+                                       "bulletin_title": "Quelques gobelins familiers commencent à construire des huttes près de votre ville",
                                        "dialog_title": "Camp gobelin",
                                        "choice_000": "Peut-être",
                                        "choice_001": "Non ?"
@@ -3031,15 +3031,15 @@
                                        "bulletin_message": {
                                           "00": "The defeat of my chiefs and warriors demands from us recognition of your strength. Let us contend in battle and the greater of equals shall come forth with honor and valiance."
                                        },
-                                       "bulletin_title": "Chef de guerre Oghar Norwind",
-                                       "dialog_title": "Chef de guerre Oghar Norwind"
+                                       "bulletin_title": "Chef de guerre Oghar Ventfroid",
+                                       "dialog_title": "Chef de guerre Oghar Ventfroid"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "As I predicted, fate brings us together once more."
                                        },
-                                       "bulletin_title": "Chef de guerre Oghar Norwind strides towards you with fearless bravado",
-                                       "dialog_title": "Chef de guerre Oghar Norwind"
+                                       "bulletin_title": "Chef de guerre Oghar Ventfroid s'avance vers vous avec fougue",
+                                       "dialog_title": "Chef de guerre Oghar Ventfroid"
                                     }
                                  }
                               }
@@ -3051,15 +3051,15 @@
                                        "bulletin_message": {
                                           "00": "I now return home. Word comes to me that bereft of our Khan's wisdom, our shaman have delved too far into dark, unknowable things. Nonetheless, if you ever wish to spar again and improve your skills, put out any gong of the Four Colors and we will gladly return to meet your challenge."
                                        },
-                                       "bulletin_title": "Chef de guerre Oghar Norwind",
-                                       "dialog_title": "Chef de guerre Oghar Norwind"
+                                       "bulletin_title": "Chef de guerre Oghar Ventfroid",
+                                       "dialog_title": "Chef de guerre Oghar Ventfroid"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "Erdene was right about you. You are a worthy opponent indead. We will not forget the strength that you have helped us gain."
                                        },
                                        "bulletin_title": "The warchief nods humbly",
-                                       "dialog_title": "Chef de guerre Oghar Norwind",
+                                       "dialog_title": "Chef de guerre Oghar Ventfroid",
                                        "choice_000": "Pas de problème"
                                     }
                                  }
@@ -3861,7 +3861,7 @@
                      "004": "J'ai rêvé que je revenais à la maison, et non dans les bois avec CES gens..."
                   },
                   "generic": {
-                     "000": "En premier, j'ai rêvé que je trouvais un mirroir scintillant sous mon oreiller. Puis, les goblins attaquaient notre caravane.",
+                     "000": "En premier, j'ai rêvé que je trouvais un mirroir scintillant sous mon oreiller. Puis, les gobelins attaquaient notre caravane.",
                      "001": "J'ai rêvé que je construisais une échelle jusqu'au ciel! C'est alors que quelqu'un l'arracha et me laissa là haut. C'était effrayant.",
                      "002": "J'ai rêvé que J'ÉTAIS l'arbre qu'on coupait!",
                      "003": "J'ai rêvé d'une créature avec le bec d'un canard et la queue d'un castor.",
@@ -3871,7 +3871,7 @@
                      "007": "J'ai rêvé que mon marteau me courait après.",
                      "008": "J'ai rêvé que nous avont fait une course de moutons. Quelque chose à essayer demain?",
                      "009": "J'ai rêvé que je ne pouvais arrêter de remplir mon sac à dos avec tous les objets dispersés sur le sol.",
-                     "010": "Last night I had this dream where I was attacked by a swarm of poyos. La nuit dernière j'ai eu ce rêve où j'ai été attaqué par une horde de poyo.",
+                     "010": "La nuit dernière j'ai eu ce rêve où j'ai été attaqué par une horde de poyo.",
                      "011": "J'ai eu un rêve que tout le monde ne pouvait que cueillir des baies. Il n'y avait même pas d'arbres à couper ou de blocs de pierre à miner.",
                      "012": "J'ai rêvé que j'ai mangé des baies jusuq'à ce que je deviennes violet et ensuite j'ai roulé jusque dans un étang.",
                      "013": " J'ai rêvé que j'étais à la merci d'une maladie qui me transformait en zombie.",
@@ -3885,7 +3885,7 @@
                      "021": "J'ai rêvé que je n'étais plus attaché à cette dimension, et que je flottais de plan en plan.",
                      "022": "J'ai eu ce rêve où les personnes m'enterraient et me tranformaient en arbre.",
                      "023": "J'ai rêvé que les arbres pouvaient parlés.",
-                     "024": "J'ai rêver que j'ai parlé à une roche, mais que celle-ci restait de marbre.",
+                     "024": "J'ai rêvé que j'ai parlé à une roche, mais que celle-ci restait de marbre.",
                      "025": "J'ai rêvé qu'un des arbres ancients prenait vie et attaquait notre ville! C'était horrible.",
                      "026": "J'ai rêvé d'un temps où les maisons n'avaient pas de toît. Il faisait vraiment froid.",
                      "027": "J'ai rêvé que je marchais au travers d'une vaste plaine sans arbres et tout ce que je pouvais entendre était le son du vent dans mes oreilles. Les os d'un animal large à corne parsemaient le paysage. Je me sentais tellement seul.",
@@ -3893,7 +3893,7 @@
                      "029": "J'ai rêvé que j'étais pris dans un labyrinthe. Je devais courrir au travers avec les autres.",
                      "030": "J'eu un rêve où les fourmis étaient aussi grandes que des arbres!",
                      "031": "J'ai rêvé que je découvrais mes pouvoirs magiques, et que je sauvais mes camarades Hearthlings d'une certaine extermination.",
-                     "032": "J'ai rêvé que j'étais un héro avec un partenaire poyo. Nous combattions les goblins et devenions célèbre!",
+                     "032": "J'ai rêvé que j'étais un héro avec un partenaire poyo. Nous combattions les gobelins et devenions célèbre!",
                      "033": "J'ai rêvé que je protégeais la ville d'une horde d'animaux de ferme en colère.",
                      "034": "J'ai rêvé que je rencontrais un poyo pouvant parler. Il ne cessait de dire que son nom était BuckBuck.",
                      "035": "J'eu un rêve où j'ai trouver une épée antique dans une crypt profonde. En m'étirant pour l'atteindre, elle s'est évaporée et une cloche mélancholique résonna. Tout devint noir.",
@@ -3924,19 +3924,19 @@
                      "060": "J'ai rêvé que je devenais roi après avoir retiré une épée d'une roche.",
                      "061": "J'ai rêvé d'un homme avec une boite qui pouvait voyager dans le temps et l'espace. C'était plus gros à l'intérieur.",
                      "062": "J'ai rêvé que les dragons étaient réels et que nous pouvions les apprivoisés. Un rêve fou!",
-                     "063": "J'ai rêvé qu'importe où j'allais, un petit goblin me suivait. Quand je me tournais pour l'attraper, il fonçait vers les arbres.",
+                     "063": "J'ai rêvé qu'importe où j'allais, un petit gobelin me suivait. Quand je me tournais pour l'attraper, il fonçait vers les arbres.",
                      "064": "J'ai eu un rêve où il y avait des oeufs partout au sol et je devais marcher si soigneusement entre chaque.",
                      "065": "J'ai rêvé que je mangeais un paté au poyo ... C'était bon.",
                      "066": "La nuit dernière, j'ai rêvé que quelqu'un lisait mon journal intime. Étrange.",
                      "067": "J'ai rêvé de créatures au pouvoir incommensurable autour de nous. Ils étaient en fait des poyo.",
-                     "068": "J'ai rêvé que de mon épée émanait une lueur bleutée lorsqu'il y avait des goblins à proximité.",
+                     "068": "J'ai rêvé que de mon épée émanait une lueur bleutée lorsqu'il y avait des gobelins à proximité.",
                      "069": "J'ai rêvé que nous avons fait cuire des languettes de viande grasses et salés d'un animal à défense que nous avons chassé dans la forêt. C'était la chose la plus délicieuse que j'ai mangé de ma vie! Je crois que je vais l'appeler ...  &quot;bacon&quot;.",
                      "070": "J'ai rêvé que j'avais un joli petit poyo que j'aimais vraiment beaucoup. Je lui ai fait un petit bonnet pour mettre sur sa tête!",
                      "071": "J'ai eu un rêve dans lequel le sol tremblait et grondait. La terre engouffrait tout nos poyo.",
                      "072": "J'ai rêvé qu'un écureuil coupait notre maison pour construire son arbre.",
                      "073": "J'eu un rêve dans lequel un guerrier formidable nous enseignait comment tiré les gens dans les genoux avec des flèches.",
                      "074": "J'eu un rêve dans lequel j'étais cuisiné en un paté géant.",
-                     "075": "J'eu un rêve dans lequel des goblins attaquaient notre village, mais toutes nos armes avaient été remplacées par du maïs et nos armures étaient fait de plumes cousu ensemble.",
+                     "075": "J'eu un rêve dans lequel des gobelins attaquaient notre village, mais toutes nos armes avaient été remplacées par du maïs et nos armures étaient fait de plumes cousu ensemble.",
                      "076": "J'eu un rêve dans lequel tout ce que nous arrivions a faire pousser du sol était des épées. Nous vendions les épées pour pouvoir acheter de la nourriture.",
                      "077": "J'eu un rêve où je brouttais du gazon dans l'enclos des moutons, mais j'étais encore un humain.",
                      "078": "J'eu un rêve dans lequel les nains amassait tous nos bas.",
@@ -4453,7 +4453,7 @@
          },
          "orcs": {
             "warchief_boss": {
-               "display_name": "Warchief Oghar Norwind",
+               "display_name": "Chef de guerre Oghar Ventfroid",
                "description": "She's the boss."
             }
          },
@@ -6749,28 +6749,28 @@
                "display_name": "Small totem"
             },
             "goblin_soldier": {
-               "display_name": "Goblin Soldier",
+               "display_name": "Soldat gobelin",
                "description": "Gobble, gobble, gobble..."
             },
             "goblin_soothsayer_tent": {
-               "display_name": "The Soothsayer's Tent",
-               "description": "Cobbled together out of luxurious scraps"
+               "display_name": "La tente du devin",
+               "description": "Assemblé à partir de restes de luxe"
             },
             "goblin_tent": {
-               "display_name": "A Tent",
-               "description": "Made from crudely-sewn animal hides"
+               "display_name": "Une tente",
+               "description": "Fabriquée à partir de peaux grossièrement cousues"
             },
             "goblin_throne": {
-               "display_name": "Goblin Throne",
-               "description": "Made of wood, bone, and ego"
+               "display_name": "Trône gobelin",
+               "description": "Fait de bois, d'os et d'ego"
             },
             "goblin_wolf": {
-               "display_name": "Goblin Raiding Wolf",
-               "description": "Bred to inspire terror"
+               "display_name": "Loup de raid gobelin",
+               "description": "Élevé pour inspirer la terreur"
             },
             "skull_trophy": {
                "skull_trophy_ghost": {
-                  "display_name": "Signe honorifique Goblin",
+                  "display_name": "Signe honorifique gobelin",
                   "description": "Des gobelins pourrait vouloir récupérer ça à nouveau..."
                }
             },
@@ -6863,7 +6863,7 @@
                "description": "Un guerrier de la Kiln Rouge"
             },
             "orc_boss_banner": {
-               "display_name": "Bannière du chef de guerre Oghar Grakbash",
+               "display_name": "Bannière du chef de guerre Oghar Ventfroid",
                "description": "Fait pour intimider les cœurs faibles"
             },
             "orc_hut": {
@@ -7543,10 +7543,10 @@
          },
          "ogos_bone_mace": {
             "display_name": "The Bonker",
-            "description": "Conçu par Ogo Skullbonker. (À deux mains)",
+            "description": "Conçu par Ogo Cognecrâne. (À deux mains)",
             "ogos_bone_mace_iconic": {
                "display_name": "The Bonker",
-               "description": "Ex-propriété d'Ogo Skullbonker"
+               "description": "Ex-propriété d'Ogo Cognecrâne"
             }
          },
          "bullet": {
