@@ -1287,7 +1287,7 @@
             },
             "shelter": {
                "display_name": "Habitat",
-               "description": "Soyez sur que vos hearthlings aient des lits onfortables pour se reposer.",
+               "description": "Soyez sur que vos hearthlings aient des lits confortables pour se reposer.",
                "town_description": "L'avis des hearthlings sur le confort des logements. Y-a-t-il des lits où dormir ?"
             },
             "compassion": {
@@ -1306,7 +1306,7 @@
             },
             "diligence": {
                "display_name": "Concentration",
-               "description": "Une forte concentration permet d'exécuter de longues taches sans se faire distraire.",
+               "description": "Une forte concentration permet d'exécuter de longues tâches sans se faire distraire.",
                "bullet_points": {
                   "000": "Augmente la vitesse de fabrication"
                }
@@ -1727,7 +1727,7 @@
                         },
                         "container_shop": {
                            "shop_info": {
-                              "name": "La grange à container de Jo Boxen",
+                              "name": "La grange à conteneur de Jo Boxen",
                               "title": "Jo Boxen arrive avec une boîte de caisses"
                            }
                         },
@@ -1741,13 +1741,13 @@
                   }
                },
                "unlock_craftsman_statue_recipe": {
-                  "bulletin_title": "Maçon Recette Débloqué: L'habileté du maître de guilde"
+                  "bulletin_title": "Recette Maçon Débloquée: L'habileté du maître de guilde"
                },
                "unlock_roadside_shrine_recipe": {
-                  "bulletin_title": "Maçon Recette Débloqué: Fontaine d'abondance"
+                  "bulletin_title": "Recette Maçon Débloquée: Fontaine d'abondance"
                },
                "unlock_valor_statue_recipe": {
-                  "bulletin_title": "Maçon Recette Débloqué: La valeur du Cid"
+                  "bulletin_title": "Recette Maçon Débloquée: La valeur du Cid"
                }
             },
             "goblin_war": {
@@ -1761,7 +1761,7 @@
                            "choice_000": "Pas question !",
                            "choice_001": "Bon ... d'accord.",
                            "bulletin_message": {
-                              "000": "Avez-vous peurs, vaillants hearthlings ? Ogo soi-disant-chef sera bientôt là. Pour vous."
+                              "000": "Avez-vous peur, vaillants hearthlings ? Ogo soi-disant-chef sera bientôt là. Pour vous."
                            },
                            "bulletin_title": "Une voix sifflante se fait entendre à côté de votre feu de camp",
                            "dialog_title": "???"
@@ -1791,7 +1791,7 @@
                            "choice_000": "Attendez ! Qui êtes-vous ?",
                            "choice_001": "Huh.",
                            "bulletin_message": {
-                              "000": "Bataille ferme, petite ville. Le destin est dénuée de sens. Mais s'il ne l'était pas, vous ne feriez qu'étincelez."
+                              "000": "Battez-vous bien, petite ville. Le destin est dénué de sens. Mais s'il ne l'était pas, vous ne feriez qu'étincelez."
                            },
                            "bulletin_title": "Elle hoche la tête fermement",
                            "dialog_title": "???"
@@ -1800,14 +1800,14 @@
                            "choice_000": "Ça me va !",
                            "choice_001": "Non. Merci.",
                            "bulletin_message": {
-                              "000": "Sur ce papier, vous devriez trouvé la berceuse pour apaiser l'âme de la montagne. Trouver la flûte volé. Bid your wood-worker pitch it to this melody. Place it in Ogo's great ogre's path, and watch self-importance meet it's just reward."
+                              "000": "Sur ce papier, vous trouverez la berceuse pour apaiser l'âme de la montagne. Trouvez la flûte volée. Demande à ton charpentier de l'accorder a cette mélodie. Placez-la dans le chemin d'Ogo le grand, et regarde son arrogance recevoir sa juste punition."
                            },
                            "bulletin_title": "Elle offre un morceau de papier",
                            "dialog_title": "???"
                         },
                         "departure": {
                            "bulletin_message": {
-                              "000": "Eh bien. Bataille ferme, petite ville."
+                              "000": "Eh bien. Battez-vous bien, petite ville."
                            },
                            "bulletin_title": "Elle hausse les épaules",
                            "dialog_title": "???"
@@ -1857,7 +1857,7 @@
                            "choice_000": "Devin?",
                            "choice_001": "Eh",
                            "bulletin_message": {
-                              "000": "Devin dire Ogo Cognecrâne sera héros au-dessus de tous héros ! Vous destiné à lui donner de l'or !",
+                              "000": "Devin dire Ogo Cognecrâne sera héros au-dessus de tous héros ! Vous destinez à lui donner de l'or !",
                               "001": "Devin petit, mais devin a de grandes pensées ! Devin ne se trompe jamais. Devin dire que vous donnez l'or d'Ogo, ou Ogo va vous le prendre !!",
                               "002": "Gobelins longtemps être rejetés et oubliés. Devin dire que Ogo Cognecrâne, mon Petitchef, viendra bientôt tout changer ! Pour cela, il a besoin d'or et de travail !",
                               "003": "Ogo Cognecrâne, Maître des Maîtres, a un grand destin, pour régner sur tout ! Devin le dire; devin ne se trompe jamais. Devin dit, vous contribuerez !"
@@ -1867,9 +1867,9 @@
                         },
                         "conclusion": {
                            "bulletin_message": {
-                              "000": "Quoi qu'il en soit, Il importe peut! Je suis ici que pour vous avertir: rassembler votre or, pour qu'il soit facile pour nous de le recueillir ! Nous serons bientôt de retour !",
+                              "000": "Quoi qu'il en soit, ça importe peu! Je suis ici que pour vous avertir: Rassemblez votre or, pour qu'il soit facile pour nous de le recueillir ! Nous serons bientôt de retour !",
                               "001": "Hahaha ! Peu importe. Vous appartenez tous à nous maintenant. Nous arrivons bientôt vous chercher pour les mines d'or !",
-                              "002": "Oh, vous dites quelque chose ? Peu importe, nous reviendrons bientôt ! Rassemblez tous vos choses pour qu'il soit plus facile pour nous de passer !",
+                              "002": "Oh, vous avez dit quelque chose ? Peu importe, nous reviendrons bientôt ! Rassemblez toutes vos choses pour qu'il soit plus facile pour nous de passer !",
                               "003": "Quoi qu'il en soit, il est l'heure d'aller repasser ma bannière. J'reviens bientôt ! Soyez prêt, oui ? Une nouvelle vie sous la domination de gobelin vous attend !"
                            },
                            "bulletin_title": "Les yeux du gobelin se rétrécissent",
@@ -1886,9 +1886,9 @@
                            "choice_001": "(bon débarras)",
                            "bulletin_message": {
                               "000": "Bonnes nouvelles pour vous, pathétiques humains !! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous rappel chez nous pour le rassemblement du clan. Ça aurait été amusant de vous pendre ! Peut-être qu'on s'appellera amis, bientôt de retour pour plus de plaisir à prendre vos affaires !",
-                              "001": "Humains sans challenges. Tellement triste. Nous espérions retourner chez notre Chef-des-Chefs, Ogo Cognecrâne, avec des histoires de gloire, mais il n'y a aucune gloire à vous battre. Peut-être que nous reviendrons lorsque vous plus fort.",
+                              "001": "Humains sans défi. Tellement triste. Nous espérions retourner chez notre Chef-des-Chefs, Ogo Cognecrâne, avec des histoires de gloire, mais il n'y a aucune gloire à vous battre. Peut-être que nous reviendrons lorsque vous plus fort.",
                               "002": "Nous partons maintenant, humains. Mais nous serons de retour.",
-                              "003": "Eh bien, c'était drôle de vous chasser, pathétiques humains ! Mais tout moment de bonheur à sa fin, on rentre maintenant au grand rassemblement du clan. Pendant que nous partons, construisez plus de choses, pour que quand nous reviendrons, nous puissions prendre plus !"
+                              "003": "Eh bien, c'était drôle de vous chasser, pathétiques humains ! Mais tout moment de bonheur à sa fin, on rentre maintenant au grand rassemblement du clan. Pendant que nous partons, construisez plus de choses, pour que quand nous allons revenir, nous puissions prendre plus !"
                            },
                            "bulletin_title": "Le gobelin envoi une note",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1912,7 +1912,7 @@
                            "choice_000": "Wow !",
                            "choice_001": "Quel mauvais présage.",
                            "bulletin_message": {
-                              "000": "Vous êtes si drôle. Parce que nous amis, moi vous dire: Ogo assez cool. C'est peu dire. Une fois qu'il a mangé un chiot. Mais ... devin dit qu'il voué à l'échec ! Conçu pour piétiner tout le monde! Moi juste petit gars, tu le sais ? Bien que vous encore plus petit. Quoi qu'il en soit."
+                              "000": "Vous êtes si drôle. Parce que nous amis, moi vous dire: Ogo assez cool. C'est peu dire. Une fois il a mangé un chiot. Mais ... devin dit qu'il voué à l'échec ! Conçu pour piétiner tout le monde! Moi juste petit gars, tu le sais ? Bien que vous encore plus petit. Quoi qu'il en soit."
                            },
                            "bulletin_title": "Le gobelin s'esclaffe",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1921,7 +1921,7 @@
                            "choice_000": "Merci mon Dieu !",
                            "choice_001": "Ogo qui ?",
                            "bulletin_message": {
-                              "000": "Bonne nouvelle bouseux ! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous appelle de nouveau à lui. Il est temps de rentrer à la maison, montré lui vos hommages ! Si vous avez de la chance, peut-être que nous reviendrons visiter... bientôt !"
+                              "000": "Bonne nouvelle bouseux ! Ogo Cognecrâne, Chef-des-Chefs-A-Devenir, nous appelle de nouveau à lui. Il est temps de rentrer à la maison, montrez-lui vos hommages ! Si vous avez de la chance, peut-être que nous reviendrons visiter... bientôt !"
                            },
                            "bulletin_title": "Le gobelin revient de manière magnanime",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1994,7 +1994,7 @@
                         "msg1": {
                            "bulletin_message": {
                               "000": "Il ya des loups dans les bois ! Fuyez pendant que vous le pouvez encore !",
-                              "001": "Entendez vous les hurlements ? Il y a des gobelins avec des loups dans les bois !",
+                              "001": "Entendez-vous les hurlements ? Il y a des gobelins avec des loups dans les bois !",
                               "002": "Notre groupe vient juste de se faire attaquer par des gobelins ! Fuyez !",
                               "003": "Ces loups gobelins ne sont pas comme des loups normaux - ils sont rapides, vicieux et sans peur ! Courez pendant que vous le pouvez !",
                               "004": "Vous avez des gobelins dans vos bois ! Enfermez-vous dans un endroit sûr avant qu'ils attaquent !"
@@ -2254,8 +2254,8 @@
                                        "bulletin_message": {
                                           "000": "Bien joué, petite ville. Vous survivez à une autre nuit. Ogo, sa montagne, et son devin ont disparu de la surface de la terre, mais vous restez. Allez-vous organiser une cérémonie ?"
                                        },
-                                       "bulletin_title": "Le scout orc masqué apparaît",
-                                       "dialog_title": "Erdene, Scout Red Kiln",
+                                       "bulletin_title": "L'éclaireur orc masqué apparaît",
+                                       "dialog_title": "Erdene, éclaireur du Red Kiln",
                                        "choice_000": "Oui ! Ce fut assez cool",
                                        "choice_001": "Tu as l'air ... triste ?"
                                     },
@@ -2451,7 +2451,7 @@
                                        "bulletin_message": {
                                           "000": "Quoi? La ville humaine ose montrer symbole d'honneur gobelin ?! Vengeance !!!!!"
                                        },
-                                       "bulletin_title": "Un autre son de corne gobelin",
+                                       "bulletin_title": "Un autre son de corne gobeline",
                                        "dialog_title": "Brute gobelin"
                                     }
                                  }
@@ -2476,16 +2476,16 @@
                                     },
                                     "ogo_attacks": {
                                        "bulletin_message": {
-                                          "000": "At last, we come to place of great shinies! Go forth, my minions! Go forth for Ogo Cognecrâne's glory!"
+                                          "000": "Enfin, nous arrivons à un endroit de richesses brillantes! À l'attaque, mes serviteurs! À l'attaque pour la gloire de Ogo SkullBonker!"
                                        },
-                                       "bulletin_title": "Vous entendez des cornes de guerre gobelins",
+                                       "bulletin_title": "Vous entendez des cornes de guerre de gobelin",
                                        "dialog_title": "Ogo Cognecrâne"
                                     },
                                     "mountain_replies": {
                                        "bulletin_message": {
-                                          "000": "For Ogo! For Shinies!"
+                                          "000": "Pour Ogo! Pour le trésor!"
                                        },
-                                       "bulletin_title": "Montagne hurle son approbation",
+                                       "bulletin_title": "La montagne hurle son approbation",
                                        "dialog_title": "Montagne l'Ogre"
                                     }
                                  }
@@ -2565,7 +2565,7 @@
                   },
                   "raid_stockpiles": {
                      "thiefs": {
-                        "description": "Froussard mais avide de convoitise"
+                        "description": "Froussard, mais avide de convoitise"
                      },
                      "escorts": {
                         "description": "Avide de convoitise et armé !"
@@ -2618,7 +2618,7 @@
                "zombie_chest_camp": {
                   "boss": {
                      "display_name": "Zombie géant",
-                     "description": "Blaarhgh... toucher pas le trésor du Maître !"
+                     "description": "Blaarhgh... Touchez pas le trésor du maître !"
                   }
                },
                "wolf_pack_raid": {
@@ -2694,40 +2694,40 @@
                                  "dialog_nodes": {
                                     "collection_due": {
                                        "bulletin_message": {
-                                          "000": "Will you not return the children of the forest? They do not belong in your crates and piles of trinkets. Your compliance will be rewarded.",
-                                          "001": "Hundreds of great oaks and junipers have been cut down to satiate the greed of humans. Our patience wears thin. I ask of you, return them to the homeland.",
-                                          "002": "Return our logs and help restore the natural balance of the great woodlands. I cannot guarantee your safety if you refuse.",
-                                          "003": "Our wilderness has been sacrificed for your lifestyle of excess. We will give you a chance to return our logs. I suggest you heed my warning.."
+                                          "000": "Ne retournerez vous pas les enfants de la forêt? Ils n'appartiennent pas dans vos caisses ou dans une pile de bibelots. Votre accord va être récompensé.",
+                                          "001": "Des centaines de grands chênes et de genévriers ont été couper afin d'assouvir l'avidité des humains. Notre patience tire à sa fin. Je vous le demande, retournez-les à leur terre.",
+                                          "002": "Rendez-nous nos bûches et aidez-nous à restaurer l'équilibre naturel des grands bois. Je ne peux pas guarantir votre sécurité si vous refusez.",
+                                          "003": "Our wilderness has been sacrificed for your lifestyle of excess. We will give you a chance to return our logs. I suggest you heed my warning.. Notre région sauvage a été sacrifiée pour votre style de vie excessif. Nous vous donnez une chance de nous redonnez nos bûches. Je vous suggère de tenir compte de mon avertissement."
                                        },
-                                       "bulletin_title": "The Ent has a request.",
+                                       "bulletin_title": "L'Ent a une requête.",
                                        "dialog_title": "Ent"
                                     },
                                     "collection_failed": {
                                        "bulletin_message": {
-                                          "000": "I am deeply disappointed... I would suggest you prepare yourselves. The minions of the forest speak of an invasion."
+                                          "000": "Je suis profondément déçu... Je vous suggère de vous préparer. Les créatures de la forêt parle d'une invasion."
                                        },
-                                       "bulletin_title": "The Ent furrows his brow"
+                                       "bulletin_title": "The Ent furrows his brow**"
                                     },
                                     "collection_success": {
                                        "bulletin_message": {
-                                          "000": "Thank you for your cooperation. In return, we have prepared a gift."
+                                          "000": "Merci de votre coopération. En retour, nous avons préparez un cadeau."
                                        },
-                                       "bulletin_title": "The Ent nods peacefully",
+                                       "bulletin_title": "L'Ent hoche paisiblement",
                                        "dialog_title": "Ent"
                                     },
                                     "introduction": {
                                        "bulletin_message": {
-                                          "000": "Greetings, humans of [str(i18n_data.town_name)]. I have come to warn you of the growing unrest within these forests.",
-                                          "001": "Silently, we have been watching.. since even before the fall of Firebird. Why? To protect. Our trees. Our saplings. Our woods."
+                                          "000": "Salutation, humain de [str(i18n_data.town_name)]. Je suis venu vous avertir d'une hausse d'agitation dans la forêt.",
+                                          "001": "Silencieusement, nous vous avons regardés... même avant la chute de Firebird. Pourquoi? Afin de protéger. Nos arbres. Nos jeunes arbres. Nos forêts."
                                        },
-                                       "bulletin_title": "A large tree-like figure approaches.",
+                                       "bulletin_title": "Une large silouhette ressemblant à un arbre approche.",
                                        "dialog_title": "Ent"
                                     },
                                     "revenge": {
                                        "bulletin_message": {
-                                          "000": "We will be taking these back."
+                                          "000": "Nous allons reprendre tout ceci."
                                        },
-                                       "bulletin_title": "A horde of entlings escape with your logs!",
+                                       "bulletin_title": "Une horde d'entling s'enfuit avec vos bûches!",
                                        "dialog_title": "Ent"
                                     }
                                  }
@@ -2738,11 +2738,11 @@
                                  "dialog_nodes": {
                                     "simple_message": {
                                        "bulletin_message": {
-                                          "000": "Here, take this as a token of our gratitude."
+                                          "000": "Tenez, prenez ceci en signe de notre reconnaissance."
                                        },
-                                       "bulletin_title": "Entlings carrying loot scurry toward you",
+                                       "bulletin_title": "Des entlings se précipite à vous amener des trésors.",
                                        "dialog_title": "Ent",
-                                       "choice_000": "Thanks!"
+                                       "choice_000": "Merci!"
                                     }
                                  }
                               }
@@ -2750,7 +2750,7 @@
                            "ent_wrath": {
                               "mission": {
                                  "sighted_bulletin": {
-                                    "title": "An angry entling army approaches!"
+                                    "title": "Une armée d'entlings furieux approche! "
                                  }
                               }
                            },
@@ -2772,7 +2772,7 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": " The Red Kiln believes that advancement can only come from conflict between equals. Khan is no longer. And where one falls, those stronger and more cunning will rise."
+                                          "00": "Le Red Kiln croit que l'avancement ne peut venir que de conflits entre égaux. Khan n'est plus. Et où quelqu'un tombe, les plus forts et les plus rusés vont s'élever."
                                        },
                                        "bulletin_title": "Chef de guerre Oghar Ventfroid",
                                        "dialog_title": "Chef de guerre Oghar Ventfroid"
@@ -2788,12 +2788,12 @@
                                     },
                                     "msg4": {
                                        "bulletin_message": {
-                                          "00": "The age of this Khan is over, but new light seeps from the horizon. We do as Cid bade and respect the mark of the Four Colors. Place a Scout Gong, smelted by your metal worker, in your territory to mark your readiness for battle."
+                                          "00": "L'ère de Khan est fini, mais une nouvelle lumière s'infiltre de l'horizon. Nous faisont ce que Cid dicte et nous respectons la marque des Quatre Couleurs. Érigez un gong d'éclaireur, forgé par votre forgeron. Placé dans votre territoire afin d'afficher votre désir de vous battre. "
                                        }
                                     },
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "Maintenant que je suis ici, je vois que vous n'êtes pas encore digne de combattre, même le moindre de mes chefs de camp ! Dans la flamme de vos yeux ne brille pas la soif de la domination !"
+                                          "00": "Maintenant que je suis ici, je vois que vous n'êtes pas encore digne de combattre, même le moindre de mes chefs de camps! Dans la flamme de vos yeux ne brille pas la soif de la domination !"
                                        },
                                        "choice_000": "Si grossier !"
                                     }
@@ -2805,10 +2805,10 @@
                                  "dialog_nodes": {
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "You ask why? We offer to great Goddess Khulgana! Bring great riches after life. Now you know, you need give us treasure!"
+                                          "00": "Vous demandez pourquoi? Nous offrons à la grande déesse Khulgana! Amène plein de richesses après la vie. Maintenant, vous savez, vous devez nous donner des trésors!"
                                        },
-                                       "bulletin_title": "Scout kobold",
-                                       "dialog_title": "Scout kobold",
+                                       "bulletin_title": "Éclaireur kobold",
+                                       "dialog_title": "Éclaireur kobold",
                                        "choice_000": "Nan"
                                     },
                                     "msg4": {
