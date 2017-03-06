@@ -3586,7 +3586,7 @@
       "personality": {
          "carpenter_promote": {
             "promote_carpenter": {
-               "text": "En  entendant l'appel de la Scie:",
+               "text": "En  entendant l'appel de la Scie :",
                "logs": {
                   "lovable_rogue": {
                      "000": "Voulez-vous que je devienne menuisier ? Est-ce que je pourrais...vendre les objets que je fabriquerais ? Ou c'est une propriété commune ?"
@@ -4428,10 +4428,10 @@
          "party": {
             "display_name": "Partie",
             "display_names": {
-               "party_1": "Partie No.1",
-               "party_2": "Partie No.2",
-               "party_3": "Partie No.3",
-               "party_4": "Partie No.4"
+               "party_1": "Groupe N°1",
+               "party_2": "Groupe N°2",
+               "party_3": "Groupe N°3",
+               "party_4": "Groupe N°4"
             },
             "description": "Organisez vos troupes en groupes de combat"
          }
@@ -4469,7 +4469,7 @@
                "ascendancy": {
                   "display_name": "Ascendant",
                   "categories": {
-                     "camp": "Modèles de Camp",
+                     "camp": "Modèles de camp",
                      "town": "Modèles de ville"
                   }
                },
@@ -5570,27 +5570,22 @@
             "description": "La fibre de cette plante peut-être filée en fil",
             "growth_stage": {
                "004": {
-                  "name": "Fil-de-soie mature",
-                  "description": "Prêt pour le tissage !"
+                  "name": "Fil-de-soie mature"
                },
                "001": {
-                  "name": "Pousse de fil-de-soie",
-                  "description": "Petite pousse !"
+                  "name": "Pousse de fil-de-soie"
                },
                "000": {
-                  "name": "Semis de fil-de-soie",
-                  "description": "Encore un long chemin à croître."
+                  "name": "Semis de fil-de-soie"
                },
                "019": {
                   "name": "Fil-de-soie pourri"
                },
                "003": {
-                  "name": "Fil-de-soie immature",
-                  "description": "Des pétales commencent à émerger."
+                  "name": "Fil-de-soie immature"
                },
                "002": {
-                  "name": "Fil-de-soie trapu",
-                  "description": "Regardez ces follicules!"
+                  "name": "Fil-de-soie trapu"
                }
             }
          },
