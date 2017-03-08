@@ -116,10 +116,11 @@
          },
          "citizen_character_sheet": {
             "title": "Informations personnel",
-            "health": "santé",
+            "health": "HP",
             "morale": "moral",
             "experience": "expérience",
-            "max_level": "Niveau max!!!",
+            "max_level": "Maximum",
+            "no_levels": "Maximum",
             "level_text": "Niveau ",
             "level_abbreviation": "Niv",
             "locked_status": " (Verrouillé)",
@@ -162,7 +163,10 @@
                "camera_orbit_2": "Q et E fonctionnent aussi",
                "camera_zoom_title": "Pour zoomer et dézoomer",
                "camera_zoom_1": "Utilisez la molette de la souris",
-               "camera_zoom_2": "Ou utilisez les touches + et - "
+               "camera_zoom_2": "Ou utilisez les touches + et - ",
+               "camera_follow_title": "Suivre un Hearthling",
+               "camera_follow_1": "Sélectionnez le Hearthling que vous souhaitez suivre",
+               "camera_follow_2": "Appuyer sur la touche J"
             }
          },
          "save_view": {
@@ -196,6 +200,7 @@
             "accept": "Accepter",
             "decline": "Refuser",
             "next": "Suivant",
+            "continue": "Continuer",
             "hotkey": "Touche : ",
             "remove": "Retirer",
             "input_text_tooltip": "Cliquer pour modifier",
@@ -361,7 +366,10 @@
             "tooltip_combat_base_damage_reduction": "Déf :",
             "tooltip_num_undeployed": "Non déployé: [str(num_undeployed)]",
             "death_notification": "[name(i18n_data.entity)] est mort.",
-            "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !"
+            "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !",
+            "starving_notification": "[name(i18n_data.citizen)] est affamé !",
+            "health_status_normal": "Normal",
+            "health": "HP"
          },
          "menu": {
             "town_menu": {
@@ -597,6 +605,7 @@
                "sell_all": "Vendre tout",
                "buy_tab": "Acheter",
                "sell_tab": "Vendre",
+               "shop_gold_label": "Or",
                "shopkeeper_gold_label": "Marchand d'or",
                "not_enough_gold_tooltip": "Pas assez d'or !",
                "shopkeeper_not_enough_gold_tooltip": "Le commerçant n'a pas assez d'or"
@@ -1227,23 +1236,24 @@
                   "post_selection_text": "un lieu intimidant pour recommencer à zéro."
                }
             },
-            "begin_button": "Commencer"
+            "biome_warning_title": "Méfiez-vous, voyageurs ...",
+            "biome_warning_text": "Les ressources d'artisanat peuvent être difficiles à trouver lors du choix de l'Ascendance pour s'installer dans le Biome du désert ou dans le biome tempéré avec les enfants de Rayya. Un problème que nous espérons bientôt résoudre.<br><br>Voulez-vous continuer avec votre sélection actuelle ?",
+            "begin_button": "Sélectionnez la liste"
          },
-         "embark": {
-            "title": "Préparez vous pour l'aventure !",
+         "select_roster": {
+            "reroll_citizens": "Roll all Citizens",
             "citizen_info": "Liste d'expédition",
-            "reroll_citizens": "Générer la liste d'expédition",
-            "shop_title": "Magasin du voyageur",
-            "shop_gold_label": "Or",
-            "shop_sold": "VENDU !",
-            "shop_reset_button": "Réinitialiser",
-            "finished": "Embarquer !",
-            "no_talisman_confirm_dialog": {
-               "title": "Embarquer",
-               "message": "Êtes-vous sûr de vouloir embarquer sans choisir un outil de la boutique ? Comme toujours, vous obtiendrez une scie de menuisier.",
-               "accept": "Oui, je veux l'or !",
-               "cancel": "Attendez !"
-            }
+            "accept_roster": "Accepter la liste",
+            "randomize": "Randomiser",
+            "hair_style": "Coiffure",
+            "skin_color": "Couleur de peau",
+            "facial_hair": "Pilosité faciale",
+            "hair_color": "Couleur de cheveux",
+            "coming_soon": "Prochainement !"
+         },
+         "loadout": {
+            "title": "Sélectionnez les ressources de départ",
+            "start": "Démarrer"
          }
       },
       "debug": {
@@ -3283,6 +3293,21 @@
                "display_name": "Buff bannière d'alerte de la Ville",
                "description": "Émet un buff de courage toutes les 5 minutes"
             }
+         },
+         "scratched": {
+            "scratched_buff": {
+               "display_name": "Éraflures"
+            }
+         },
+         "hothead": {
+            "winded_buff": {
+               "display_name": "Mal de tête",
+               "description": "-5% Dommage"
+            },
+            "furious_buff": {
+               "display_name": "Furieux",
+               "description": "+15% Dommage. Ne fuira ou se recroquevillera pas pour une courte période"
+            }
          }
       },
       "build": {
@@ -4483,9 +4508,6 @@
                "black_forest_inn": {
                   "display_name": "Auberge la forêt noire"
                },
-               "blacksmith_house": {
-                  "display_name": "Maison de forgeron"
-               },
                "corner_house": {
                   "display_name": "Maison d'angle"
                },
@@ -4501,6 +4523,9 @@
             },
             "carpenter_house": {
                "display_name": "Menuisier de maison"
+            },
+            "blacksmith_house": {
+               "display_name": "Maison de forgeron"
             }
          }
       },
@@ -4566,6 +4591,111 @@
             }
          }
       },
+      "loadouts": {
+         "food_for_days": {
+            "description": "La grande quantité de nourriture entassés à l'arrière de la caravane devrait garder les foyers actuels pendant une poignée de jours jusqu'à la finalisation de leur établissement.",
+            "display_name": "Nourriture pour les jours",
+            "tooltip": "Une option sûre pour les nouveaux joueurs, mais manquant de défense."
+         },
+         "merchant_caravan": {
+            "description": "Une collection d'outils commerciaux devrait donner une chance à leur établissement dans le désert.",
+            "display_name": "Caravane marchande",
+            "tooltip": "Une bonne collection de compétences artisanales, mais court sur la nourriture."
+         },
+         "money_solves_all_problems": {
+            "description": "Tout ce que la ville a besoin, ils devraient être en mesure d'acheter auprès d'un commerçant.  C'est-à-dire, en supposant que l'on les trouve et qu'il dispose des marchandises appropriées à vendre ...",
+            "display_name": "L'argent résout tous les problèmes",
+            "tooltip": "Un choix risqué mais potentiellement très bénéfique. Tout dépend de quand est ce que les commerçants arrivent."
+         },
+         "items": {
+            "gold": "Or",
+            "food": "Nourriture",
+            "berries": "Baies",
+            "carrots": "Carottes",
+            "jerky": "Viande séchée"
+         },
+         "coming_soon": "Prochainement"
+      },
+      "traits": {
+         "herbivore": {
+            "herbivore_trait": {
+               "display_name": "Herbivore",
+               "description": "[name(i18n_data.entity)] est un ami de tous les animaux ! Plantes, moins."
+            }
+         },
+         "carnivore": {
+            "carnivore_trait": {
+               "display_name": "Carnivore",
+               "description": "[name(i18n_data.entity)] aime simplement les animaux ! Surtout avec de bonne sauce chaude."
+            }
+         },
+         "excitable": {
+            "excitable_trait": {
+               "display_name": "Excitable",
+               "description": "[name(i18n_data.entity)] ne peuvent jamais contenir leurs émotions, de sorte qu'ils deviennent heureux ou triste beaucoup plus vite que la normale."
+            }
+         },
+         "professor": {
+            "professor_trait": {
+               "display_name": "Professeur",
+               "description": "[name(i18n_data.entity)] aime toujours donner des conseils aux autres sur la base de leurs observations, que le récepteur le veuille ou non."
+            }
+         },
+         "featherweight": {
+            "featherweight_trait": {
+               "display_name": "Poids plume",
+               "description": "[name(i18n_data.entity)] se déplace toujours d'un pied léger, bien qu'ils tendent à porter moins en conséquence."
+            }
+         },
+         "pack_mule": {
+            "pack_mule_trait": {
+               "display_name": "Sac à mule",
+               "description": "This hearthling peut transporter des montagnes ! Ils peuvent transporter plus dans leur paquet, mais marche légèrement plus lent en cas de surpoids."
+            }
+         },
+         "glutton": {
+            "glutton_trait": {
+               "display_name": "Glouton",
+               "description": "[name(i18n_data.entity)] a un estomac qui pourrait bien être un portail vers d'autre monde, pour autant que les portail soit capables de manger. Cependant, ceci explique peut-être un peu de leur résilience."
+            }
+         },
+         "hothead": {
+            "hothead_trait": {
+               "display_name": "Tête brulée",
+               "description": "[name(i18n_data.entity)] ne se retire jamais volontairement d'un combat. Même de ceux qu'ils devraient probablement..."
+            }
+         },
+         "night_owl": {
+            "night_owl_trait": {
+               "display_name": "Hibou de nuit",
+               "description": "Le jour commence seulement vraiment une fois que le soleil s'est couché."
+            }
+         },
+         "optimistic": {
+            "optimistic_trait": {
+               "display_name": "Optimiste",
+               "description": "[name(i18n_data.entity)] regarde toujours le côté brillant, et voit une doublure d'argent dans presque tout."
+            }
+         },
+         "passion_job": {
+            "passion_job_trait": {
+               "display_name": "Passionné [str(i18n_data.passion_job)]",
+               "description": "[name(i18n_data.entity)] a toujours rêvé d'être un [str(i18n_data.passion_job)], peut-être que maintenant il aura sa chance ?"
+            }
+         },
+         "pessimistic": {
+            "pessimistic_trait": {
+               "display_name": "Pessimiste",
+               "description": "[name(i18n_data.entity)] est une personne gentielle et avec un verre à moitier vide."
+            }
+         },
+         "cultist": {
+            "cultist_trait": {
+               "display_name": "Cultiste",
+               "description": "Ce hearthling conserve des murmures à propos de toute sorte de secret de \"dieu lapin\" sommeillant pour l'éternité. Ça parles de quoi ?"
+            }
+         }
+      },
       "happiness": {
          "thoughts": {
             "hunger": {
@@ -4602,6 +4732,16 @@
                   "tooltip": "Cet endroit est suffocant ! Il y a à peine de la place pour respirer !"
                }
             },
+            "darkness": {
+               "very_dark": {
+                  "display_name": "Environnement très sombre",
+                  "tooltip": "Je ne vois presque rien !"
+               },
+               "dark": {
+                  "display_name": "Environnement sombre",
+                  "tooltip": "Cette zone n'est pas très bien éclairée."
+               }
+            },
             "health": {
                "pain_mild": {
                   "display_name": "Douleur (Doux)",
@@ -4629,12 +4769,32 @@
                   "display_name": "Couché dans un lit partagé",
                   "tooltip": "Je partage mon lit avec quelqu'un d'autre en ce moment. Ce n'est pas le pire, mais je souhaite vraiment en avoir un à moi."
                },
+               "slept_in_shared_room": {
+                  "display_name": "Couché dans une chambre partagée",
+                  "tooltip": "Je partage ma chambre avec quelqu'un d'autre en ce moment. Je pourrais avoir un peu plus d'intimité."
+               },
+               "slept_outside": {
+                  "display_name": "Couché à l'extérieur",
+                  "tooltip": "Je voudrais avoir un abri et une protection contre les éléments."
+               },
                "slept_in_comfy_bed": {
                   "display_name": "dormi dans un lit confortable",
                   "tooltip": "Mon lit est vraiment confortable. Je me suis senti rafraîchi à mon réveille !"
                }
             },
             "eating": {
+               "ate_unpalatable": {
+                  "display_name": "J'ai mangé quelque chose d'horrible",
+                  "tooltip": "En mangeant [str(foodname)] ça a été l'un des choix les plus pauvres que j'ai fait aujourd'hui."
+               },
+               "herbivore_ate_meat": {
+                  "display_name": "J'ai mangé de la viande ! NOOOON !",
+                  "tooltip": "Je ne peux pas croire que j'ai mangé [str(foodname)].  Je peux juste imaginer comment c'était mignon avant..."
+               },
+               "carnivore_ate_veggies": {
+                  "display_name": "J'ai mangé une plante ! Beurk !",
+                  "tooltip": "Il y a eu une erreur. J'ai accidentellement mangé de la nourriture que mange ma nourriture."
+               },
                "ate_fine": {
                   "display_name": "A mangé un bon repas",
                   "tooltip": "Mon récent repas était incroyable ! Celui qui a fait le [str(foodname)] y a vraiment mis beaucoup d'amour."
@@ -4645,7 +4805,7 @@
                },
                "ate_raw": {
                   "display_name": "Mon repas était cru",
-                  "tooltip": "J'ai récemment mangé [str(foodname)] brut. Je peux seulement imaginer combien cela aurait été savoureux si cela avait été cuit."
+                  "tooltip": "J'ai récemment mangé [str(foodname)] brut.  Je peux seulement imaginer combien cela aurait été savoureux si cela avait été cuit."
                },
                "ate_bland": {
                   "display_name": "A mangé un repas fade",
@@ -4720,7 +4880,7 @@
                   },
                   "pet_died": {
                      "display_name": "Mon animal est mort",
-                     "tooltip": "Mon pauvre [str(pet)] est décédé récemment. il va un peu me manquer."
+                     "tooltip": "Mon pauvre [str(pet_name)] est décédé récemment. il va un peu me manquer."
                   }
                }
             }
@@ -6354,7 +6514,7 @@
             "description": "Dégeulasse"
          },
          "rotten_jerky": {
-            "display_name": "Viande Séchée Pourrie",
+            "display_name": "Viande séchée pourrie",
             "description": "Même la viande sèche pourrie évantuellement. C'est vrai"
          },
          "mutton": {

@@ -116,10 +116,11 @@
          },
          "citizen_character_sheet": {
             "title": "Character Info",
-            "health": "health",
+            "health": "HP",
             "morale": "morale",
             "experience": "experience",
-            "max_level": "Max Level!!!",
+            "max_level": "Max",
+            "no_levels": "No Lvl Up",
             "level_text": "Level ",
             "level_abbreviation": "Lvl",
             "locked_status": " (Locked)",
@@ -162,7 +163,10 @@
                "camera_orbit_2": "Q and E work too",
                "camera_zoom_title": "To zoom in and out",
                "camera_zoom_1": "Use the mouse scroll wheel",
-               "camera_zoom_2": "Or use the + and - keys"
+               "camera_zoom_2": "Or use the + and - keys",
+               "camera_follow_title": "To follow a Hearthling",
+               "camera_follow_1": "Select the Hearthling you wish to follow",
+               "camera_follow_2": "Press the J key"
             }
          },
          "save_view": {
@@ -196,6 +200,7 @@
             "accept": "Accept",
             "decline": "Decline",
             "next": "Next",
+            "continue": "Continue",
             "hotkey": "key: ",
             "remove": "Remove",
             "input_text_tooltip": "Click to edit",
@@ -361,7 +366,10 @@
             "tooltip_combat_base_damage_reduction": "Def:",
             "tooltip_num_undeployed": "Undeployed: [str(num_undeployed)]",
             "death_notification": "[name(i18n_data.entity)] has died.",
-            "imminent_death_notification": "[name(i18n_data.citizen)] is severely low on health!"
+            "imminent_death_notification": "[name(i18n_data.citizen)] is severely low on health!",
+            "starving_notification": "[name(i18n_data.citizen)] is starving!",
+            "health_status_normal": "Normal",
+            "health": "HP"
          },
          "menu": {
             "town_menu": {
@@ -597,6 +605,7 @@
                "sell_all": "Sell All",
                "buy_tab": "Buy",
                "sell_tab": "Sell",
+               "shop_gold_label": "Gold",
                "shopkeeper_gold_label": "Merchant gold",
                "not_enough_gold_tooltip": "Not enough gold",
                "shopkeeper_not_enough_gold_tooltip": "Shopkeeper does not have enough gold"
@@ -1227,23 +1236,24 @@
                   "post_selection_text": "a daunting place to start anew."
                }
             },
-            "begin_button": "Begin"
+            "biome_warning_title": "Beware, Traveler...",
+            "biome_warning_text": "Crafting resources can be hard to find when choosing The Ascendancy to settle in the Desert Biome or Rayya?s Children in the Temperate Biome. An issue we hope to fix soon.<br><br>Do you still want to continue with your current selection?",
+            "begin_button": "Select Roster"
          },
-         "embark": {
-            "title": "Prepare to embark",
+         "select_roster": {
+            "reroll_citizens": "Roll all Citizens",
             "citizen_info": "Expedition Roster",
-            "reroll_citizens": "Roll new citizens",
-            "shop_title": "Traveller's Store",
-            "shop_gold_label": "Gold",
-            "shop_sold": "SOLD!",
-            "shop_reset_button": "Reset",
-            "finished": "Embark!",
-            "no_talisman_confirm_dialog": {
-               "title": "Embark",
-               "message": "Are you sure you want to embark without choosing a tool from the shop? As always, you will still get the starting talisman for your faction.",
-               "accept": "Yes, I want the gold",
-               "cancel": "Wait!"
-            }
+            "accept_roster": "Accept Roster",
+            "randomize": "Randomize",
+            "hair_style": "Hair Style",
+            "skin_color": "Skin Color",
+            "facial_hair": "Facial Hair",
+            "hair_color": "Hair Color",
+            "coming_soon": "Coming Soon!"
+         },
+         "loadout": {
+            "title": "Select starting resources",
+            "start": "Start"
          }
       },
       "debug": {
@@ -3283,6 +3293,21 @@
                "display_name": "Town Alert Banner Buff",
                "description": "Emits a stacking courage buff every 5 minutes"
             }
+         },
+         "scratched": {
+            "scratched_buff": {
+               "display_name": "Scratched"
+            }
+         },
+         "hothead": {
+            "winded_buff": {
+               "display_name": "Winded",
+               "description": "-5% Damage"
+            },
+            "furious_buff": {
+               "display_name": "Furious",
+               "description": "+15% Damage. Will not flee or cower for a short time"
+            }
          }
       },
       "build": {
@@ -4483,9 +4508,6 @@
                "black_forest_inn": {
                   "display_name": "Black Forest Inn"
                },
-               "blacksmith_house": {
-                  "display_name": "Blacksmith House"
-               },
                "corner_house": {
                   "display_name": "Corner House"
                },
@@ -4501,6 +4523,9 @@
             },
             "carpenter_house": {
                "display_name": "Carpenter House"
+            },
+            "blacksmith_house": {
+               "display_name": "Blacksmith House"
             }
          }
       },
@@ -4566,6 +4591,111 @@
             }
          }
       },
+      "loadouts": {
+         "food_for_days": {
+            "description": "The large amount of food crammed into the back of the caravan should keep the hearthlings going for a handful of days while they get their settlement up and running.",
+            "display_name": "Food for Days",
+            "tooltip": "A safe option for new players, though lacking in defense."
+         },
+         "merchant_caravan": {
+            "description": "A collection of trade tools should give the settlement a leg up in the wilderness.",
+            "display_name": "Merchant Caravan",
+            "tooltip": "A good collection of craft skills, but short on food."
+         },
+         "money_solves_all_problems": {
+            "description": "Anything that the town needs they should be able to purchase from a trader.  That is, presuming one finds them and has the proper goods for sale...",
+            "display_name": "Money Solves All Problems",
+            "tooltip": "A risky but potentially very beneficial choice.  It all depends on when and what traders arrive."
+         },
+         "items": {
+            "gold": "Gold",
+            "food": "Food",
+            "berries": "Berries",
+            "carrots": "Carrots",
+            "jerky": "Jerky"
+         },
+         "coming_soon": "Coming Soon"
+      },
+      "traits": {
+         "herbivore": {
+            "herbivore_trait": {
+               "display_name": "Herbivore",
+               "description": "[name(i18n_data.entity)] is a friend to all animals! Plants, less so."
+            }
+         },
+         "carnivore": {
+            "carnivore_trait": {
+               "display_name": "Carnivore",
+               "description": "[name(i18n_data.entity)] just LOVES animals! Especially with hot sauce."
+            }
+         },
+         "excitable": {
+            "excitable_trait": {
+               "display_name": "Excitable",
+               "description": "[name(i18n_data.entity)] can never seem to keep their emotions in check, so they become happy or sad much faster than normal."
+            }
+         },
+         "professor": {
+            "professor_trait": {
+               "display_name": "Professor",
+               "description": "[name(i18n_data.entity)] always likes to give advice to others based on their observations, whether the receiver wants it or not."
+            }
+         },
+         "featherweight": {
+            "featherweight_trait": {
+               "display_name": "Featherweight",
+               "description": "[name(i18n_data.entity)] is always light on their feet, though they tend to carry less as a result."
+            }
+         },
+         "pack_mule": {
+            "pack_mule_trait": {
+               "display_name": "Pack Mule",
+               "description": "This hearthling can move mountains! They can carry more in their pack, but walk slightly slower when it's full due to the weight."
+            }
+         },
+         "glutton": {
+            "glutton_trait": {
+               "display_name": "Glutton",
+               "description": "[name(i18n_data.entity)]'s stomach might as well be a portal to another world for as much as they're able to eat. Maybe that explains a bit of their resilience, though."
+            }
+         },
+         "hothead": {
+            "hothead_trait": {
+               "display_name": "Hothead",
+               "description": "[name(i18n_data.entity)] never voluntarily backs down from a fight. Even from ones they probably should..."
+            }
+         },
+         "night_owl": {
+            "night_owl_trait": {
+               "display_name": "Night Owl",
+               "description": "The day only really begins once the sun has set."
+            }
+         },
+         "optimistic": {
+            "optimistic_trait": {
+               "display_name": "Optimistic",
+               "description": "[name(i18n_data.entity)] always looks on the bright side, and sees a silver lining in almost everything."
+            }
+         },
+         "passion_job": {
+            "passion_job_trait": {
+               "display_name": "Passionate [str(i18n_data.passion_job)]",
+               "description": "[name(i18n_data.entity)] always dreamed of being a [str(i18n_data.passion_job)], maybe now they'll get their chance?"
+            }
+         },
+         "pessimistic": {
+            "pessimistic_trait": {
+               "display_name": "Pessimistic",
+               "description": "[name(i18n_data.entity)] is a glass half-empty kinda person."
+            }
+         },
+         "cultist": {
+            "cultist_trait": {
+               "display_name": "Cultist",
+               "description": "This hearthling keeps mumbling about some sort of secret \"bunny god\" sleeping eternally. What's that about?"
+            }
+         }
+      },
       "happiness": {
          "thoughts": {
             "hunger": {
@@ -4602,6 +4732,16 @@
                   "tooltip": "This place is suffocating! There's barely room to breathe!"
                }
             },
+            "darkness": {
+               "very_dark": {
+                  "display_name": "Very Dark Environment",
+                  "tooltip": "I can hardly see anything!"
+               },
+               "dark": {
+                  "display_name": "Dark Environment",
+                  "tooltip": "This area isn't very well lit."
+               }
+            },
             "health": {
                "pain_mild": {
                   "display_name": "Pain (Mild)",
@@ -4629,12 +4769,32 @@
                   "display_name": "Slept in a shared bed",
                   "tooltip": "I'm sharing my bed with someone else right now. It's not the worst, but I really wish I had my own."
                },
+               "slept_in_shared_room": {
+                  "display_name": "Slept in a shared room",
+                  "tooltip": "I'm sharing my room with someone else right now. I could use a little more privacy."
+               },
+               "slept_outside": {
+                  "display_name": "Slept outside",
+                  "tooltip": "I wish I had some shelter and protection from the elements."
+               },
                "slept_in_comfy_bed": {
                   "display_name": "Slept in a comfy bed",
                   "tooltip": "My bed is really comfortable. I felt refreshed when I woke up!"
                }
             },
             "eating": {
+               "ate_unpalatable": {
+                  "display_name": "Ate something awful",
+                  "tooltip": "Eating [str(foodname)] was one of the poorer choices I made today."
+               },
+               "herbivore_ate_meat": {
+                  "display_name": "I ate meat! NOOOO!",
+                  "tooltip": "I can't believe I ate a [str(foodname)].  I can just imagine how cute it must have looked... before..."
+               },
+               "carnivore_ate_veggies": {
+                  "display_name": "I ate a plant! Bleh!",
+                  "tooltip": "There's been a mistake.  I've accidentally eaten food that my food eats."
+               },
                "ate_fine": {
                   "display_name": "Ate a fine meal",
                   "tooltip": "My recent meal was amazing! Whoever made the [str(foodname)] really put their heart into it."
@@ -4645,7 +4805,7 @@
                },
                "ate_raw": {
                   "display_name": "My meal was raw",
-                  "tooltip": "I recently ate a raw [str(foodname)].  I can only imagine how much better it would have tasted were it cooked."
+                  "tooltip": "I recently ate a raw [str(foodname)]. I can only imagine how much better it would have tasted were it cooked."
                },
                "ate_bland": {
                   "display_name": "Ate a bland meal",
@@ -4715,12 +4875,12 @@
             "violence": {
                "values": {
                   "townmember_died": {
-                     "display_name": "Townmember has died",
+                     "display_name": "A townmember has died",
                      "tooltip": "A fellow townmember has died. If only we had been more watchful!"
                   },
                   "pet_died": {
                      "display_name": "My pet died",
-                     "tooltip": "My poor [str(pet)] died recently. I'll miss them quite a bit."
+                     "tooltip": "My poor [str(pet_name)] passed away recently. I'll miss them quite a bit."
                   }
                }
             }
@@ -9852,7 +10012,7 @@
          "description": "Citizen of your town",
          "job": {
             "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
             "level_up_perk_description": "Max Health +10",
             "attribute_up_desc": "All attributes increased!"
