@@ -1210,7 +1210,7 @@
             }
          },
          "select_game_story": {
-            "title": "Choisissez votre aventure",
+            "title": "Début de l'aventure",
             "story_start": "C'est l'histoire ...",
             "kingdom_section_start": "d'un groupe de courageux colons, ",
             "select_button": "?",
@@ -1241,10 +1241,10 @@
             "begin_button": "Sélectionnez la liste"
          },
          "select_roster": {
-            "reroll_citizens": "Roll all Citizens",
+            "reroll_citizens": "Relancer les dés",
             "citizen_info": "Liste d'expédition",
             "accept_roster": "Accepter la liste",
-            "randomize": "Randomiser",
+            "randomize": "Relancer",
             "hair_style": "Coiffure",
             "skin_color": "Couleur de peau",
             "facial_hair": "Pilosité faciale",
@@ -1356,7 +1356,7 @@
                "description": "Défini la vitesse du hearthling"
             },
             "body": {
-               "display_name": "Physique",
+               "display_name": "Corps",
                "description": "Influence les activités physiques. Avec un indice physique haut, les hearthlings se déplacent plus vite. Influence la force, la vitesse et l'endurance."
             },
             "edibles": {
@@ -4586,7 +4586,7 @@
             },
             "harvest_logs": {
                "scenario_data": {
-                  "declined_text": "Je n'ai pas besoin d'un tutoriel - Je sais ce qu'il faut faire !"
+                  "declined_text": "Pas besoin d'un tutoriel, je sais ce qu'il faut faire !"
                }
             }
          }
@@ -4594,7 +4594,7 @@
       "loadouts": {
          "food_for_days": {
             "description": "La grande quantité de nourriture entassés à l'arrière de la caravane devrait garder les foyers actuels pendant une poignée de jours jusqu'à la finalisation de leur établissement.",
-            "display_name": "Nourriture pour les jours",
+            "display_name": "Nourriture pour plusieurs jours",
             "tooltip": "Une option sûre pour les nouveaux joueurs, mais manquant de défense."
          },
          "merchant_caravan": {
@@ -4612,7 +4612,7 @@
             "food": "Nourriture",
             "berries": "Baies",
             "carrots": "Carottes",
-            "jerky": "Viande séchée"
+            "jerky": "Viande"
          },
          "coming_soon": "Prochainement"
       },
@@ -4679,7 +4679,7 @@
          },
          "passion_job": {
             "passion_job_trait": {
-               "display_name": "Passionné [str(i18n_data.passion_job)]",
+               "display_name": "[str(i18n_data.passion_job)] passionné ",
                "description": "[name(i18n_data.entity)] a toujours rêvé d'être un [str(i18n_data.passion_job)], peut-être que maintenant il aura sa chance ?"
             }
          },
@@ -4700,7 +4700,7 @@
          "thoughts": {
             "hunger": {
                "hungry": {
-                  "display_name": "Très Affamé",
+                  "display_name": "Faim",
                   "tooltip": "Je pourrais vraiment partir pour un bon repas."
                },
                "famished": {
@@ -4708,7 +4708,7 @@
                   "tooltip": "Ça fait longtemps que je n'ai pas mangé. J'ai vraiment besoin de nourriture!"
                },
                "starving": {
-                  "display_name": "Grande faim",
+                  "display_name": "Meurt de faim",
                   "tooltip": "Mon estomac est en noeuds! Si je ne trouve pas quelque chose à manger bientôt ..."
                },
                "values": {
@@ -4744,19 +4744,19 @@
             },
             "health": {
                "pain_mild": {
-                  "display_name": "Douleur (Doux)",
+                  "display_name": "Douleur (bénigne)",
                   "tooltip": "Ow ow ow!"
                },
                "pain_moderate": {
-                  "display_name": "Douleur (Modérer)",
+                  "display_name": "Douleur (modérer)",
                   "tooltip": "Agh, je suis en pleine forme !"
                },
                "pain_scratched": {
-                  "display_name": "Douleur (Ecorcher)",
+                  "display_name": "Douleur (écorché)",
                   "tooltip": "Je me sens un peu rouillé"
                },
                "pain_severe": {
-                  "display_name": "Douleur (Sévère)",
+                  "display_name": "Douleur (sévère)",
                   "tooltip": "!!!"
                }
             },
@@ -10082,7 +10082,7 @@
             "harvest_logs": {
                "scenario_data": {
                   "message": "Si nous voulons obtenir cette ville sur ce sol, nous aurons besoin de bois, et beaucoup ! Hacher bas quelques arbres voisins pour obtenir ces bûches.",
-                  "completed_message": "Félicitations! Nous avons des ressources de bois maintenant. Les bûches et les autres ressources naturelles peuvent être utilisées pour construire des bâtiments et des objets d'artisanat. Ils sont les premiers blocs de construction pour faire avancer votre ville.",
+                  "completed_message": "Félicitations ! Nous avons des ressources de bois maintenant. Les bûches et les autres ressources naturelles peuvent être utilisées pour construire des bâtiments et des objets d'artisanat. Ils sont les premiers blocs de construction pour faire avancer votre ville.",
                   "title": "[str(i18n_data.town_name)] Ville: Fournitures initiales",
                   "resource_display_name": "Bûches de bois"
                },
