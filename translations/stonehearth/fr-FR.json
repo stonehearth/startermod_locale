@@ -1248,8 +1248,7 @@
             "hair_style": "Coiffure",
             "skin_color": "Couleur de peau",
             "facial_hair": "Pilosité faciale",
-            "hair_color": "Couleur de cheveux",
-            "coming_soon": "Prochainement !"
+            "hair_color": "Couleur de cheveux"
          },
          "loadout": {
             "title": "Sélectionnez les ressources de départ",
@@ -4623,10 +4622,22 @@
                "description": "[name(i18n_data.entity)] est un ami de tous les animaux ! Plantes, moins."
             }
          },
+         "callous": {
+            "callous_trait": {
+               "display_name": "Callous",
+               "description": "[name(i18n_data.entity)] keeps everyone at arms length. This helps them to not be as hurt when tragedy occurs around them, but their constant guarded composure makes them slow to make friends."
+            }
+         },
          "carnivore": {
             "carnivore_trait": {
                "display_name": "Carnivore",
                "description": "[name(i18n_data.entity)] aime simplement les animaux ! Surtout avec de bonne sauce chaude."
+            }
+         },
+         "courageous": {
+            "courageous_trait": {
+               "display_name": "Courageous",
+               "description": "[name(i18n_data.entity)] aimes sauver les autres, et la sécurité de la ville est sa priorité"
             }
          },
          "excitable": {
@@ -4635,6 +4646,19 @@
                "description": "[name(i18n_data.entity)] ne peuvent jamais contenir leurs émotions, de sorte qu'ils deviennent heureux ou triste beaucoup plus vite que la normale."
             }
          },
+         "green_thumb": {
+            "green_thumb_trait": {
+               "display_name": "Green Thumb",
+               "description": "[name(i18n_data.entity)] seems to have a way with plants that is somewhat indescribable."
+            }
+         },
+         "heart_of_a_crafter": {
+            "heart_of_a_crafter_trait": {
+               "display_name": "Heart of a Crafter",
+               "description": "[name(i18n_data.entity)] loves crafting things for others. If they don't make at least one thing a day, they feel the day is wasted."
+            }
+         },
+
          "professor": {
             "professor_trait": {
                "display_name": "Professeur",
@@ -4644,7 +4668,7 @@
          "featherweight": {
             "featherweight_trait": {
                "display_name": "Poids plume",
-               "description": "[name(i18n_data.entity)] se déplace toujours d'un pied léger, bien qu'ils tendent à porter moins en conséquence."
+               "description": "[name(i18n_data.entity)] aime marcher un peu plus vite que les autres, bien qu'ils tendent à porter moins en conséquence."
             }
          },
          "pack_mule": {
@@ -4869,6 +4893,26 @@
                   "panicked": {
                      "display_name": "Craint pour leur vie",
                      "tooltip": "Je ne suis pas fier de la façon dont j'ai agi quand les monstres sont venus, mais c'est tout ce que je pouvais penser faire."
+                  }
+               }
+            },
+            "traits": {
+               "values": {
+                  "plant_lover": {
+                     "display_name": "Amoureux des plantes",
+                     "tooltip": "Chaque fois que j'interagis avec les plantes je me sens un peu plus calme."
+                  },
+                  "fruitful_labors": {
+                     "display_name": "Travailleur efficace",
+                     "tooltip": "Il est toujours bon de faire quelque chose de ses propres mains. Cela m'aide à m'éclaircir les idées."
+                  },
+                  "idle_hands": {
+                     "display_name": "Fainéant",
+                     "tooltip": "Je n'ai rien fait depuis un moment et je me sens comme un vagabond. N'y at-il pas quelque chose que je puisse fabriquer ?"
+                  },
+                  "protected_the_town": {
+                     "display_name": "Défendre la ville",
+                     "tooltip": "Nous avons pourfendus un groupe de puyant récemment, ça ma vraiment fait battre le coeur&nbsp;!"
                   }
                }
             },
@@ -8117,7 +8161,7 @@
             },
             "decoration_name": "Décorations",
             "steel_shield_recipe": {
-               "recipe_name": "Bouclier recouvert d'acier",
+               "recipe_name": "Bouclier en acier",
                "description": "Confère la capacité de bloquer complètement les attaques.",
                "flavor": "Incroyable protection. Les enfants joue en dessous à la tortue."
             },
@@ -9419,7 +9463,7 @@
                "perk_000_description": "De meilleures compétences en armement de piège augmentent les chances du trappeur de capturer des proies de 25%."
             },
             "level_4_data": {
-               "perk_000_name": "Super sac-à-dos",
+               "perk_000_name": "Sac-à-dos +2",
                "perk_000_description": "Le trappeur est devenu un maître du paquetage. +8 à l'espace de son sac-à-dos."
             }
          },

@@ -1248,8 +1248,7 @@
             "hair_style": "Hair Style",
             "skin_color": "Skin Color",
             "facial_hair": "Facial Hair",
-            "hair_color": "Hair Color",
-            "coming_soon": "Coming Soon!"
+            "hair_color": "Hair Color"
          },
          "loadout": {
             "title": "Select starting resources",
@@ -4623,10 +4622,22 @@
                "description": "[name(i18n_data.entity)] is a friend to all animals! Plants, less so."
             }
          },
+         "callous": {
+            "callous_trait": {
+               "display_name": "Callous",
+               "description": "[name(i18n_data.entity)]  keeps everyone at arms length. This helps them to not be as hurt when tragedy occurs around them, but their constant guarded composure makes them slow to make friends."
+            }
+         },
          "carnivore": {
             "carnivore_trait": {
                "display_name": "Carnivore",
                "description": "[name(i18n_data.entity)] just LOVES animals! Especially with hot sauce."
+            }
+         },
+         "courageous": {
+            "courageous_trait": {
+               "display_name": "Courageous",
+               "description": "[name(i18n_data.entity)] loves to save others, and puts the safety of the town as paramount."
             }
          },
          "excitable": {
@@ -4635,6 +4646,19 @@
                "description": "[name(i18n_data.entity)] can never seem to keep their emotions in check, so they become happy or sad much faster than normal."
             }
          },
+         "green_thumb": {
+            "green_thumb_trait": {
+               "display_name": "Green Thumb",
+               "description": "[name(i18n_data.entity)] seems to have a way with plants that is somewhat indescribable."
+            }
+         },
+         "heart_of_a_crafter": {
+            "heart_of_a_crafter_trait": {
+               "display_name": "Heart of a Crafter",
+               "description": "[name(i18n_data.entity)] loves crafting things for others. If they don't make at least one thing a day, they feel the day is wasted."
+            }
+         },
+
          "professor": {
             "professor_trait": {
                "display_name": "Professor",
@@ -4644,7 +4668,7 @@
          "featherweight": {
             "featherweight_trait": {
                "display_name": "Featherweight",
-               "description": "[name(i18n_data.entity)] is always light on their feet, though they tend to carry less as a result."
+               "description": "[name(i18n_data.entity)] likes to walk a bit faster than others, though they tend to carry less as a result."
             }
          },
          "pack_mule": {
@@ -4869,6 +4893,26 @@
                   "panicked": {
                      "display_name": "Feared for their life",
                      "tooltip": "I'm not proud of how I acted when the monsters came, but it's all I could think to do."
+                  }
+               }
+            },
+            "traits": {
+               "values": {
+                  "plant_lover": {
+                     "display_name": "Plant Lover",
+                     "tooltip": "Everytime I interact with plants I feel a bit calmer."
+                  },
+                  "fruitful_labors": {
+                     "display_name": "Fruitful Labors",
+                     "tooltip": "It always feels good to make something with one's own hands. It helps clear my mind."
+                  },
+                  "idle_hands": {
+                     "display_name": "Idle Hands",
+                     "tooltip": "I've not made anything in awhile and feel like a layabout. Isn't there something I can craft?"
+                  },
+                  "protected_the_town": {
+                     "display_name": "Protected the Town",
+                     "tooltip": "We fended off a group of nasties recently, it really got my blood pumping!"
                   }
                }
             },
@@ -8122,7 +8166,7 @@
             },
             "decoration_name": "Decorations",
             "steel_shield_recipe": {
-               "recipe_name": "Steel Plated Shield",
+               "recipe_name": "Steel Shield",
                "description": "Grants the ability to completely block attacks.",
                "flavor": "Incredibly protective. Small children play turtle underneath."
             },
@@ -9424,7 +9468,7 @@
                "perk_000_description": "Better trap arming skills increase the trapper's chance for capturing prey by 25%."
             },
             "level_4_data": {
-               "perk_000_name": "Backpack Size +8",
+               "perk_000_name": "Backpack Size +2",
                "perk_000_description": "The trapper has become more efficient at packing in the loot."
             }
          },
