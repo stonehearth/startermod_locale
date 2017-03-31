@@ -215,7 +215,7 @@
             "create_party": "Créer un groupe",
             "edit_party": "Modifier",
             "add_party_member": "Ajouter un membre",
-            "remove_members": "Dissoudre",
+            "remove_members": "Disperse",
             "add_party_member_title": "Gérer la liste",
             "done_adding_members": "Fini",
             "add_party_member_button": "+",
@@ -2862,9 +2862,9 @@
                                     },
                                     "msg4": {
                                        "bulletin_message": {
-                                          "000": "You no give shinies?! We take!!!",
-                                          "001": "Ha, we was just testing you! Of course we strong enough to take!",
-                                          "002": "We take all gold! We revenge for hat melting!!"
+                                          "000": "Vous donner pas trésors? On prend!!!",
+                                          "001": "Ha, nous évaluons vous! Nous sommes assez fort pour prendre!",
+                                          "002": "Nous prendre tout l'or! Notre revenge pour casque fondu!!"
                                        },
                                        "bulletin_title": "Scout kobold",
                                        "dialog_title": "Scout kobold",
@@ -2872,19 +2872,19 @@
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "000": "Grek!! You notice me?",
-                                          "001": "Oo shinies! Gong! Emerald!"
+                                          "000": "Wah!! Tu m'as remarqué?",
+                                          "001": "Ouuh trésors! Gong! Émeraude!"
                                        },
-                                       "bulletin_title": "A kobold stares longingly at your piles of gold.",
-                                       "dialog_title": "Scout kobold",
+                                       "bulletin_title": "Un kobold fixe intensément vos piles d'or.",
+                                       "dialog_title": "Éclaireur kobold",
                                        "choice_000": "Qu'est-ce que vous faites ?"
                                     },
                                     "msg2": {
                                        "bulletin_message": {
-                                          "000": "We see you many treasures in piles and boxes. Us need many, many loots. You share, yes?"
+                                          "000": "Nous voyons pleins de pile de trésors et boites à vous. Nous besoin beaucoup, beaucoup de trésors. Vous partager?"
                                        },
-                                       "bulletin_title": "Scout kobold",
-                                       "dialog_title": "Scout kobold",
+                                       "bulletin_title": "Éclaireur kobold",
+                                       "dialog_title": "Éclaireur kobold",
                                        "choice_000": "Pourquoi avez-vous besoin de tant de butin ?"
                                     }
                                  }
@@ -2895,10 +2895,10 @@
                                  "dialog_nodes": {
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Us.. too weak.. Put out Elite Gong if you dares.."
+                                          "00": "Nous... trop faible... Sortir Gong Elite si vous oser..."
                                        },
-                                       "bulletin_title": "The Kobold Scout whimpers on the ground",
-                                       "dialog_title": "Scout kobold"
+                                       "bulletin_title": "L'éclaireur Kobold gémit au sol",
+                                       "dialog_title": "Éclaireur kobold"
                                     }
                                  }
                               }
@@ -2908,15 +2908,15 @@
                                  "dialog_nodes": {
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "We contractors. We make camp. Orc pay us. Those orc obsess with honor, politics, new Khan. Soon enough, they send orc army here and we need clean up again."
+                                          "00": "Nous entrepreneurs. Nous faisons campement. Les orcs paie nous. Ces orcs sont obsédé par honneur, politique et nouveau Khan. Bientôt, ils envoyer armée d'orc ici et nous devoir nettoyer encore."
                                        },
                                        "bulletin_title": "Camp gobelin",
                                        "dialog_title": "Camp gobelin",
-                                       "choice_000": "I see"
+                                       "choice_000": "Je vois"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "You recognize? ...No, me don't know you. You saying us all look same?!"
+                                          "00": "Vous reconnaitre moi? ... Non, je connais pas vous. Vous dites nous être tous pareil?!"
                                        },
                                        "bulletin_title": "Quelques gobelins familiers commencent à construire des huttes près de votre ville",
                                        "dialog_title": "Camp gobelin",
@@ -2925,8 +2925,8 @@
                                     },
                                     "msg2": {
                                        "bulletin_message": {
-                                          "000": "You lucky us busy! What we doing? We building huts. Set up camp.",
-                                          "001": "....We busy, so we ignore and go back to setting up camp."
+                                          "000": "Vous chanceux que nous êtes occupés! Nous faire quoi? Construire maisons. Installer camp.",
+                                          "001": "....Nous occupés, alors nous ignorer vous et continue à installer camp."
                                        },
                                        "bulletin_title": "Camp gobelin",
                                        "dialog_title": "Camp gobelin",
@@ -2940,7 +2940,7 @@
                                  "dialog_nodes": {
                                     "shakedown": {
                                        "bulletin_message": {
-                                          "000": "Oh! Me think of great idea! You pay us instead and we make so no orc come! You just need give us some few treasures. You win, me win, both win."
+                                          "000": "Oh! Je pense a une grande idée! Tu paie nous au lieu et nous faire pour que aucun orc ne vient! Vous juste à donner à nous quelques trésors. Vous gagnez, je gagne, nous deux gagnants."
                                        },
                                        "bulletin_title": "The gobelin's beady little eyes light up",
                                        "dialog_title": "Camp gobelin"
@@ -2954,15 +2954,15 @@
                                     },
                                     "collection_failed": {
                                        "bulletin_message": {
-                                          "000": "What? You change mind? ... You humans so inconsiderate of our time. Now we need call back dumb bok orcs and take pay cut.",
-                                          "001": "No has?? We has family you knows! You waste our time! We tell orcs give you no mercy!"
+                                          "000": " Quoi? Vous changer d'idée? ... Vous humains n'avoir pas d'égards pour pour notre temps. Maintenant nous appeler les orcs bok idiots et prendre notre paye.",
+                                          "001": "Vous rien? Nous avoir famille en passant! Vous avoir faite perdre notre temps! Nous dire à orc de n'avoir pas pitié!"
                                        },
                                        "bulletin_title": "Le gobelin fronce les sourcils",
                                        "dialog_title": "Camp gobelin"
                                     },
                                     "collection_success": {
                                        "bulletin_message": {
-                                          "000": "Shinies! Supplies! Maybe this job even better than work for Chieftain. Thanks, human. If you up to it, put out red Master Gong. Ogre take red token as challenge.",
+                                          "000": "Trésors! Provisions! Peut-être que ce travail est mieux que le travail pour le chef. Merci, humains. Si vous êtes partant, sorter le Gong Maître rouge. Ogre prendre sa comme signe de défi.",
                                           "001": "You that scared of orc boks? Well, good for me! Don't put out red Gong or even bigger, dumber boks might come.",
                                           "002": "Stuffs!! You should hire we full-time. You ask what we do for you? ..We can discuss in contract. Maybe you need us if you display Master Gong and giant ogre bok come.",
                                           "003": "You give good stuffs! Me wolf will be so happy! Have you met ogre chief yet? They like color red. Like on Gong. Ask you blacksmith."
@@ -3214,7 +3214,7 @@
          "bed_ridden": {
             "bed_ridden_buff": {
                "display_name": "Alité",
-               "description": "Se remet lentement de ces blessures. Pourrait recevoir des soins médicaux d'un herboriste."
+               "description": "Se remet lentement de ses blessures. Pourrait recevoir des soins médicaux d'un herboriste."
             }
          },
          "stamina_tonic": {
@@ -3247,7 +3247,7 @@
          },
          "energy_tonic": {
             "energy_tonic_buff": {
-               "display_name": "Energie tonique",
+               "display_name": "Tonique Énergique",
                "description": "L'énergie est augmenté pendant une courte période."
             }
          },
@@ -4666,43 +4666,43 @@
          "herbivore": {
             "herbivore_trait": {
                "display_name": "Herbivore",
-               "description": "[name(i18n_data.entity)] est un ami de tous les animaux ! Plantes, moins."
+               "description": "[name(i18n_data.entity)] est un ami de tous les animaux ! Des plantes, moins."
             }
          },
          "callous": {
             "callous_trait": {
-               "display_name": "Callous",
-               "description": "[name(i18n_data.entity)] keeps everyone at arms length. This helps them to not be as hurt when tragedy occurs around them, but their constant guarded composure makes them slow to make friends."
+               "display_name": "Insensible",
+               "description": "[name(i18n_data.entity)] garde tout le monde à distance sécuritaire. Ça les aide à ne pas être blessé quand une tragédie arrive, mais sa constante impassibilité les rends plus lent à se faire des amis."
             }
          },
          "carnivore": {
             "carnivore_trait": {
                "display_name": "Carnivore",
-               "description": "[name(i18n_data.entity)] aime simplement les animaux ! Surtout avec de bonne sauce chaude."
+               "description": "[name(i18n_data.entity)] ADORE les animaux! Surtout avec de la bonne sauce chaude."
             }
          },
          "courageous": {
             "courageous_trait": {
-               "display_name": "Courageous",
-               "description": "[name(i18n_data.entity)] aimes sauver les autres, et la sécurité de la ville est sa priorité"
+               "display_name": "Courageux",
+               "description": "[name(i18n_data.entity)] aimes sauver les autres, et la sécurité de la ville est sa priorité!"
             }
          },
          "excitable": {
             "excitable_trait": {
-               "display_name": "Excitable",
+               "display_name": "Impulsive",
                "description": "[name(i18n_data.entity)] ne peuvent jamais contenir leurs émotions, de sorte qu'ils deviennent heureux ou triste beaucoup plus vite que la normale."
             }
          },
          "green_thumb": {
             "green_thumb_trait": {
-               "display_name": "Green Thumb",
-               "description": "[name(i18n_data.entity)] seems to have a way with plants that is somewhat indescribable."
+               "display_name": "Pouce vert",
+               "description": "[name(i18n_data.entity)] a une affinité indescriptible avec les plantes."
             }
          },
          "heart_of_a_crafter": {
             "heart_of_a_crafter_trait": {
-               "display_name": "Heart of a Crafter",
-               "description": "[name(i18n_data.entity)] loves crafting things for others. If they don't make at least one thing a day, they feel the day is wasted."
+               "display_name": "Le coeur d'un bricoleur",
+               "description": "[name(i18n_data.entity)] Adore constuire des objets pour les autres. S'ils ne font pas au moins un objet par jour, ils sentent que leur journée est gâchée."
             }
          },
          "professor": {
@@ -4719,14 +4719,14 @@
          },
          "pack_mule": {
             "pack_mule_trait": {
-               "display_name": "Sac à mule",
-               "description": "This hearthling peut transporter des montagnes ! Ils peuvent transporter plus dans leur paquet, mais marche légèrement plus lent en cas de surpoids."
+               "display_name": "Mule",
+               "description": "Ce hearthling peut transporter des montagnes! Il peut transporter plus dans son sac, mais marche plus lentement lorsque celui-ci est plein."
             }
          },
          "glutton": {
             "glutton_trait": {
                "display_name": "Glouton",
-               "description": "[name(i18n_data.entity)] a un estomac qui pourrait bien être un portail vers d'autre monde, pour autant que les portail soit capables de manger. Cependant, ceci explique peut-être un peu de leur résilience."
+               "description": "[name(i18n_data.entity)] a un estomac qui pourrait bien être un portail vers d'autre monde tant il peut manger. Cependant, ceci explique peut-être un peu leur résilience."
             }
          },
          "hothead": {
@@ -4737,14 +4737,14 @@
          },
          "night_owl": {
             "night_owl_trait": {
-               "display_name": "Hibou de nuit",
-               "description": "Le jour commence seulement vraiment une fois que le soleil s'est couché."
+               "display_name": "Oiseau de nuit",
+               "description": "Le jour commence vraiment une fois que le soleil s'est couché."
             }
          },
          "optimistic": {
             "optimistic_trait": {
                "display_name": "Optimiste",
-               "description": "[name(i18n_data.entity)] regarde toujours le côté brillant, et voit une doublure d'argent dans presque tout."
+               "description": "[name(i18n_data.entity)] voit toujours le bon côté des choses, et sait que le soleil revient après la pluie."
             }
          },
          "passion_job": {
@@ -4756,13 +4756,13 @@
          "pessimistic": {
             "pessimistic_trait": {
                "display_name": "Pessimiste",
-               "description": "[name(i18n_data.entity)] est une personne gentielle et avec un verre à moitier vide."
+               "description": "[name(i18n_data.entity)] est le type de personne à voir le verre à moitié vide."
             }
          },
          "cultist": {
             "cultist_trait": {
                "display_name": "Cultiste",
-               "description": "Ce hearthling conserve des murmures à propos de toute sorte de secret de \"dieu lapin\" sommeillant pour l'éternité. Ça parles de quoi ?"
+               "description": "Ce hearthling n'arrête pas de marmonner à propos d'un secret \"dieu lapin\" dormant pour l'éternité. Qu'est-ce que ça veut dire?"
             }
          },
          "jokester": {
@@ -4803,12 +4803,12 @@
                },
                "starving": {
                   "display_name": "Meurt de faim",
-                  "tooltip": "Mon estomac est en noeuds! Si je ne trouve pas quelque chose à manger bientôt ..."
+                  "tooltip": "J'ai l'estomac dans les talons! Si je ne trouve pas quelque chose à manger bientôt ..."
                },
                "values": {
                   "stuffed": {
                      "display_name": "Gavé",
-                     "tooltip": "Mon dernier repas était tellement remplissant je n'ai pas besoin de manger à nouveau pour un peu."
+                     "tooltip": "Mon dernier repas était tellement remplissant, je n'ai pas besoin de manger à nouveau pour un bout."
                   }
                }
             },
@@ -4819,7 +4819,7 @@
                },
                "cramped": {
                   "display_name": "Environnement encombré",
-                  "tooltip": "Je me sens plutôt à l'étroit. Je dois toujours regarder mon pas pour ne pas heurter n'importe quoi."
+                  "tooltip": "Je me sens plutôt à l'étroit. Je dois toujours regarder où je mets les pieds pour ne pas heurter n'importe quoi."
                },
                "very_cramped": {
                   "display_name": "Environnement très encombré",
@@ -4842,11 +4842,11 @@
                   "tooltip": "Ow ow ow!"
                },
                "pain_moderate": {
-                  "display_name": "Douleur (modérer)",
+                  "display_name": "Douleur (modérée)",
                   "tooltip": "Agh, je suis en pleine forme !"
                },
                "pain_scratched": {
-                  "display_name": "Douleur (écorché)",
+                  "display_name": "Douleur (écorchée)",
                   "tooltip": "Je me sens un peu rouillé"
                },
                "pain_severe": {
@@ -4865,33 +4865,33 @@
                },
                "slept_in_shared_room": {
                   "display_name": "Couché dans une chambre partagée",
-                  "tooltip": "Je partage ma chambre avec quelqu'un d'autre en ce moment. Je pourrais avoir un peu plus d'intimité."
+                  "tooltip": "Je partage ma chambre avec quelqu'un d'autre en ce moment. J'aimerais avoir un peu plus d'intimité."
                },
                "slept_outside": {
                   "display_name": "Couché à l'extérieur",
                   "tooltip": "Je voudrais avoir un abri et une protection contre les éléments."
                },
                "slept_in_comfy_bed": {
-                  "display_name": "dormi dans un lit confortable",
+                  "display_name": "Dormi dans un lit confortable",
                   "tooltip": "Mon lit est vraiment confortable. Je me suis senti rafraîchi à mon réveille !"
                }
             },
             "eating": {
                "ate_unpalatable": {
                   "display_name": "J'ai mangé quelque chose d'horrible",
-                  "tooltip": "En mangeant [str(foodname)] ça a été l'un des choix les plus pauvres que j'ai fait aujourd'hui."
+                  "tooltip": "En mangeant [str(foodname)] ça a été l'un des pires choix que j'ai fait aujourd'hui."
                },
                "herbivore_ate_meat": {
                   "display_name": "J'ai mangé de la viande ! NOOOON !",
-                  "tooltip": "Je ne peux pas croire que j'ai mangé [str(foodname)].  Je peux juste imaginer comment c'était mignon avant..."
+                  "tooltip": "Je ne peux pas croire que j'ai mangé [str(foodname)].  Je peux seulement imaginer comment c'était mignon ... avant."
                },
                "carnivore_ate_veggies": {
                   "display_name": "J'ai mangé une plante ! Beurk !",
-                  "tooltip": "Il y a eu une erreur. J'ai accidentellement mangé de la nourriture que mange ma nourriture."
+                  "tooltip": "Il y a eu une erreur. J'ai accidentellement mangé la nourriture que ma nourriture mange."
                },
                "ate_fine": {
                   "display_name": "A mangé un bon repas",
-                  "tooltip": "Mon récent repas était incroyable ! Celui qui a fait le [str(foodname)] y a vraiment mis beaucoup d'amour."
+                  "tooltip": "Mon dernier repas était incroyable ! Celui qui a fait le [str(foodname)] y a vraiment mis beaucoup d'amour."
                },
                "ate_tasty": {
                   "display_name": "A mangé un repas savoureux",
