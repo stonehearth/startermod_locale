@@ -88,17 +88,19 @@
             "terrain_xray_vision_full": "Complet"
          },
          "promotion_tree": {
-            "title": "Choisir une profession",
+            "title": "Choisir une profession -",
             "promotion_title": "Promouvoir en [str(job_name)]",
-            "text_1": "En l'honneur de ses efforts inébranlables et de votre rigueur, nous vous annonçons par la présente",
+            "text_1": "En l'honneur de ses efforts inébranlables et de votre rigueur, nous vous annonçons par la présente :",
+            "text_current": "C'est le travail actuel des hearthlings.",
             "choose": "Choisissez un hearthling...",
-            "text_2": "en ce jour du, [str(date)]",
+            "text_2": "[str(date)]",
             "approve": "APPROUVER",
             "approved": "APPROUVÉ",
             "denied": "REFUSÉ! Éxigences non remplies",
             "stamper_top_text": "CLIQUER POUR",
             "stamper_bottom_text": "APPROUVER",
-            "requires": "Prérequis"
+            "requires": "Prérequis",
+            "parent_level": "Un niveau [str(parent_level)] [str(parent_name)]"
          },
          "people_picker": {
             "title": "Choisissez un Hearthling",
@@ -140,7 +142,8 @@
             "defense_abbreviation": "Déf",
             "backpack_tab_name": "Sac à dos",
             "journal_no_entries": "Aucune note",
-            "retired": "Mort le :"
+            "retired": "Mort le :",
+            "traits": "Traits"
          },
          "pet_character_sheet": {
             "title": "Informations du familier",
@@ -271,10 +274,11 @@
                "build": "Bâtiment",
                "mine": "Mine",
                "job": "Job",
-               "current_activity": "Activité actuel ...",
-               "status": "Statut"
+               "current_activity": "Activité",
+               "status": "Statut",
+               "morale": "Moral"
             },
-            "show_character_sheet": "Plus d'info.",
+            "show_character_sheet": "Feuille de personnage",
             "button_suspend": "stopper",
             "button_resume": "lancer",
             "tab": {
@@ -311,6 +315,7 @@
             },
             "month_format": "i18n(stonehearth:ui.game.calendar.months.[str(date.month)])",
             "date_format_long": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
+            "date_format_long_ordinal": "[str(ord_day)] Day of i18n(stonehearth:ui.game.calendar.month_format) [str(date.year)]",
             "date_time_long_format": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]",
             "date_format_short": "i18n(stonehearth:ui.game.calendar.month_format), [str(date.day)]"
          },
@@ -1242,7 +1247,7 @@
          },
          "select_roster": {
             "reroll_citizens": "Relancer les dés",
-            "citizen_info": "Liste d'expédition",
+            "citizen_info": "Personnaliser votre partie",
             "accept_roster": "Accepter la liste",
             "randomize": "Relancer",
             "hair_style": "Coiffure",
@@ -1418,6 +1423,15 @@
             "glum": {
                "display_name": "Maussade",
                "town_description": "Vos hearthlings ne se sentent pas très bien, dans l'ensemble."
+            },
+            "exp_bar": {
+               "description": "Cet hearthling passe au prochain niveau."
+            },
+            "health_status": {
+               "description": "L'état de santé actuel de ce hearthling."
+            },
+            "suspend_button": {
+               "description": "Pause ou reprise d'un type de travaux"
             }
          },
          "constants": {
@@ -1470,10 +1484,12 @@
                "000": "le désert de Pal'Mum"
             },
             "sandy_poyo": {
-               "display_name": "Poyo des sables"
+               "display_name": "Poyo des sables",
+               "species": "poyo"
             },
             "fennec_fox": {
-               "display_name": "Fennec"
+               "display_name": "Fennec",
+               "species": "renard"
             }
          }
       },
@@ -3498,12 +3514,12 @@
             "description": "Restaurer le terrain dans son état initial."
          },
          "show_workshop": {
-            "display_name": "Ouvrir l'atelier",
+            "display_name": "L'atelier",
             "description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement.",
             "disabled_description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement. Avant la fabrication, vous devez assigner à un artisan son atelier. "
          },
          "show_workshop_from_crafter": {
-            "display_name": "Ouvrir l'atelier",
+            "display_name": "L'atelier",
             "description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement.",
             "disabled_description": "Votre artisan utilise un atelier pour fabriquer les objets nécessaires à votre campement. Avant la fabrication, vous devez assigner à un artisan son atelier. "
          },
@@ -4616,6 +4632,13 @@
          "coming_soon": "Prochainement"
       },
       "traits": {
+         "animal_companion": {
+            "animal_companion_trait": {
+               "display_name": "Animaux de compagnie",
+               "description": "Ils ont été inséparables, depuis [name(i18n_data.savior)] sauvé leurs [str(i18n_data.species)] d'un danger mortel.",
+               "default_species": "compagnon"
+            }
+         },
          "herbivore": {
             "herbivore_trait": {
                "display_name": "Herbivore",
@@ -4898,6 +4921,14 @@
             },
             "traits": {
                "values": {
+                  "misses_pet": {
+                     "display_name": "Compagnon perdu",
+                     "tooltip": "Bien qu'il a été un certain temps depuis leur mort, il arrive de me surprendre à rechercher mon animal de compagnie [str(pet_name)]."
+                  },
+                  "nuzzled": {
+                     "display_name": "Fouineur",
+                     "tooltip": "Ho, [str(pet_name)] se débrouille toujours pour se réconforter."
+                  },
                   "plant_lover": {
                      "display_name": "Amoureux des plantes",
                      "tooltip": "Chaque fois que j'interagis avec les plantes je me sens un peu plus calme."
@@ -4913,6 +4944,10 @@
                   "protected_the_town": {
                      "display_name": "Défendre la ville",
                      "tooltip": "Nous avons pourfendus un groupe de puyant récemment, ça ma vraiment fait battre le coeur&nbsp;!"
+                  },
+                  "loves_their_job": {
+                     "display_name": "Aime leur travail",
+                     "tooltip": "C'est le travail parfait pour moi ! J'aime ce que je fais jour après jour."
                   }
                }
             },
@@ -5479,28 +5514,32 @@
             "young": {
                "display_name": "Poussin poyo",
                "description": "Piou piou !"
-            }
+            },
+            "species": "poyo"
          },
          "rabbit": {
             "display_name": "Lapin",
             "description": "Om nom nom",
             "rabbit_jerky": {
                "display_name": "Lapin séché"
-            }
+            },
+            "species": "lapin"
          },
          "racoon": {
             "display_name": "Raton laveur",
             "description": "Petite créature de la forêt",
             "racoon_jerky": {
                "display_name": "Raton laveur séché"
-            }
+            },
+            "species": "raton laveur"
          },
          "red_fox": {
             "display_name": "Renard",
             "description": "Petite créature de la forêt",
             "red_fox_jerky": {
                "display_name": "Renard séché"
-            }
+            },
+            "species": "renard"
          },
          "sheep": {
             "display_name": "Un mouton",
@@ -5510,22 +5549,26 @@
                "display_name": "Un agneau",
                "description": "Bêêê !"
             },
-            "renewable_harvest_status_text": "tondre le mouton"
+            "renewable_harvest_status_text": "tondre le mouton",
+            "species": "mouton"
          },
          "squirrel": {
             "display_name": "Écureuil",
             "description": "Petite créature de la forêt",
             "squirrel_jerky": {
                "display_name": "Écureuil séché"
-            }
+            },
+            "species": "écureuil"
          },
          "wolf": {
             "display_name": "Un loup",
-            "description": "Grrr ! Rwar !"
+            "description": "Grrr ! Rwar !",
+            "species": "loup"
          },
          "woodchuck": {
             "display_name": "Marmotte",
-            "description": "Un mangeur vorace de presque tout, en particulier le bois."
+            "description": "Un mangeur vorace de presque tout, en particulier le bois.",
+            "species": "marmotte"
          }
       },
       "crops": {
@@ -5708,22 +5751,27 @@
             "description": "La fibre de cette plante peut être filée en fil",
             "growth_stage": {
                "004": {
-                  "name": "Fil-de-soie mature"
+                  "name": "Fil-de-soie mature",
+                  "description": "Prêt pour le tissage !"
                },
                "001": {
-                  "name": "Pousse de fil-de-soie"
+                  "name": "Pousse de fil-de-soie",
+                  "description": "Petite pousse!"
                },
                "000": {
-                  "name": "Semis de fil-de-soie"
+                  "name": "Semis de fil-de-soie",
+                  "description": "Encore un long chemin à développer."
                },
                "019": {
                   "name": "Fil-de-soie pourri"
                },
                "003": {
-                  "name": "Fil-de-soie immature"
+                  "name": "Fil-de-soie immature",
+                  "description": "les pétales commencent à émerger"
                },
                "002": {
-                  "name": "Fil-de-soie trapu"
+                  "name": "Fil-de-soie trapu",
+                  "description": "Regardez ces follicules !"
                }
             }
          },
@@ -7081,22 +7129,31 @@
             }
          }
       },
+      "peoples": {
+         "hearthling": {
+            "species": "Hearthling"
+         }
+      },
       "pets": {
          "collie": {
             "display_name": "Collie",
-            "description": "Si brave!"
+            "description": "Si brave!",
+            "species": "chien"
          },
          "dragon_whelp": {
             "display_name": "Petit dragon",
-            "description": "Un bébé dragon"
+            "description": "Un bébé dragon",
+            "species": "dragon"
          },
          "kitten": {
             "display_name": "Chaton",
-            "description": "Il est si mignon!"
+            "description": "Il est si mignon!",
+            "species": "chat"
          },
          "mammoth": {
             "display_name": "Bébé mammouth",
-            "description": "Si poilu!"
+            "description": "Si poilu!",
+            "species": "mammouth"
          }
       },
       "plants": {
@@ -7891,7 +7948,7 @@
          "archer_description": {
             "display_name": "Archer",
             "description": "Une unité de combat à distance qui tire sur les ennemis avec des flèches",
-            "requirements": "Un fantassin de niveau 3 et un arc, fabriqué par le menuisier.",
+            "requirements": "Fabriqué par un charpentier",
             "level_1_data": {
                "perk_000_name": "Augmente la force de tir",
                "perk_000_description": "Les dégâts de l'archer sont augmentés"
@@ -7969,7 +8026,7 @@
          "blacksmith_description": {
             "display_name": "Forgeron",
             "description": "Le forgeron raffine le minerai en barre de métal pour les utiliser dans la fabrication d'armes et d'armures.",
-            "requirements": "Un marteau de forgeron, fabriqué par le tailleur de pierre.",
+            "requirements": "Fabriqué par un maçon",
             "level_6_data": {
                "title": "Maître forgeron",
                "perk_000_name": "L'armurerie",
@@ -8226,7 +8283,7 @@
          "carpenter_description": {
             "display_name": "Menuisier",
             "description": "Le menuisier fabrique des outils et des meubles à partir de bois. Les outils qu'il fabrique permettent de déverrouiller d'autres professions.",
-            "requirements": "Scie de menuisier. Fabriquée par le forgeron.",
+            "requirements": "Fabriquée par un forgeron",
             "level_6_data": {
                "title": "Maître menuisier",
                "perk_000_name": "10.000 heures",
@@ -8551,7 +8608,7 @@
          "cook_description": {
             "display_name": "Cuisinier",
             "description": "Avec les légumes et la viande de base, le cuisinier mitonne de délicieux repas très copieux.",
-            "requirements": "Agriculteur niveau 2 et une cuillère de cuisinier, fabriquée par le tailleur de pierre.",
+            "requirements": "Fabriqué par un maçon",
             "workshop": {
                "name": "Chaudron en pierre",
                "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
@@ -8711,7 +8768,7 @@
          "engineer_description": {
             "display_name": "Ingénieur",
             "description": "L'ingénieur crée des engins de haute technologie et des armes défensives.",
-            "requirements": "Un forgeron niveau 1 et une clé d'ingénieur, conçu par le forgeron.",
+            "requirements": "Fabriqué par un forgeron",
             "level_6_data": {
                "title": "Maître ingénieur",
                "perk_000_name": "Général de la Défense",
@@ -8820,7 +8877,7 @@
          "farmer_description": {
             "display_name": "Agriculteur",
             "description": "Les agriculteurs travaillent la terre et cultivent les champs pour avoir une nourriture consistante et des ingrédients pour la cuisine.",
-            "requirements": "Houe d'agriculteur, fabriquée par le menuisier.",
+            "requirements": "Fabriqué par un charpentier",
             "level_6_data": {
                "perk_000_name": "Surprise de la nature (à venir)",
                "perk_000_description": "De temps en temps, le doigté spécial de l'agriculteur à des effets... spéciaux.",
@@ -8870,7 +8927,7 @@
          "footman_description": {
             "display_name": "Fantassin",
             "description": "Le fantassin est un combattant de mêlée. Un bon choix pour la base de la défense de votre ville.",
-            "requirements": "Épée d'entrainement en bois, fabriquée par le menuisier",
+            "requirements": "Fabriqué par un charpentier",
             "level_4_data": {
                "perk_000_name": "40% de dommages supplémentaires",
                "perk_000_description": "Le fantassin est maintenant entrainé à optimiser les effets de chaque coups."
@@ -8936,7 +8993,7 @@
          "mason_description": {
             "display_name": "Tailleur de pierre",
             "description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
-            "requirements": "Maillet et ciseaux de tailleur de pierre, fabriqués par le menuisier.",
+            "requirements": "Fabriqué par un charpentier",
             "workshop": {
                "name": "Atelier de tailleur de pierre",
                "description": "insert description here",
@@ -9136,7 +9193,7 @@
          "potter_description": {
             "display_name": "Potier",
             "description": "Fabrique des objets utiles avec de l'argile. Évolution du tailleur de pierre.",
-            "requirements": "Un tailleur de pierre niv4 et une spatule de potier fabriquée par le menuisier",
+            "requirements": "Fabriqué par un maçon",
             "workshop": {
                "name": "Tour de potier",
                "description": "Atelier pour fabriquer des objets d'argile.",
@@ -9389,7 +9446,7 @@
          "shepherd_description": {
             "display_name": "Berger",
             "description": "Domestique les animaux sauvages pour des ressources et de la nourriture.",
-            "requirements": "Trappeur niv2 et un bâton de berger sculpté par le menuisier.",
+            "requirements": "Fabriqué par un charpentier",
             "level_4_data": {
                "perk_000_name": "Magnétisme animal",
                "perk_000_description": "Le berger a plus de chance de trouver des animaux sauvages quand il en cherche."
@@ -9438,7 +9495,7 @@
          "trapper_description": {
             "display_name": "Trappeur",
             "description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fournitures.",
-            "requirements": "Couteau de trappeur, fabriqué par le tailleur de pierre.",
+            "requirements": "Fabriqué par un maçon",
             "level_1_data": {
                "perk_000_name": "Gain de vitesse",
                "perk_000_description": "De longues promenades ont augmentées la vitesse de marche du trappeur."
@@ -9524,7 +9581,7 @@
          "weaver_description": {
             "display_name": "Tisseur",
             "description": "Le tisseur fabrique du fil et des vêtements avec des fibres naturelles et des colorants.",
-            "requirements": "Fuseau de tisseur, fabriqué par le menuisier.",
+            "requirements": "Fabriqué par un charpentier",
             "level_6_data": {
                "title": "Maître Tisseur",
                "perk_000_name": "10.000 heures (à venir)",
@@ -9735,7 +9792,7 @@
          "herbalist_description": {
             "display_name": "Herboriste",
             "description": "Soigne les unités avec des baumes et bandages artinasaux.",
-            "requirements": "Bâton d'herboriste, conçu par le charpentier",
+            "requirements": "Fabriqué par un charpentier",
             "workshop": {
                "name": "Labo. d'Herboriste",
                "description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages.",
@@ -9849,7 +9906,7 @@
          "cleric_description": {
             "display_name": "Clerc",
             "description": "Un guérisseur de combat",
-            "requirements": "Un herboriste niveau 2 et un livre sacré, fabriqué par l'herboriste",
+            "requirements": "UFabriqué par un herboriste",
             "level_0_data": {
                "perk_000_name": "Aura de soin rang 1",
                "perk_000_description": "La présence du clerc guérit tout le monde autour d'eux périodiquement"
@@ -9972,7 +10029,7 @@
          "knight_description": {
             "display_name": "Chevalier",
             "description": "Un combattant défensif, qui a pour priorité de protéger ses alliés du mal.",
-            "requirements": "Nécessite un fantassin niveau 3 et un bouclier de chevalier, fabriqué par le forgeron",
+            "requirements": "Fabriqué par un forgeron",
             "level_1_data": {
                "perk_000_name": "Réduction de dégât niveau 1",
                "perk_000_description": "Le chevalier gagne 10% de défense supplémentaire de l'équipement"

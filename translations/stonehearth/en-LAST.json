@@ -88,17 +88,19 @@
             "terrain_xray_vision_full": "full"
          },
          "promotion_tree": {
-            "title": "Choose a Job",
-            "promotion_title": "Promotion to [str(job_name)]",
-            "text_1": "In honor of steadfast efforts and resilience, we hereby advance",
+            "title": "Change Job -",
+            "promotion_title": "Promote to [str(job_name)]",
+            "text_1": "In honor of steadfast efforts and resilience, we hereby advance:",
+            "text_current": "This is the hearthling's current job.",
             "choose": "choose a hearthling...",
-            "text_2": "this day of, [str(date)]",
+            "text_2": "[str(date)]",
             "approve": "APPROVE",
             "approved": "APPROVED",
             "denied": "DENIED! Requirements not met",
             "stamper_top_text": "CLICK TO",
             "stamper_bottom_text": "APPROVE",
-            "requires": "Requires"
+            "requires": "Requires",
+            "parent_level": "A level [str(parent_level)] [str(parent_name)]"
          },
          "people_picker": {
             "title": "Choose a Hearthling",
@@ -140,7 +142,8 @@
             "defense_abbreviation": "Def",
             "backpack_tab_name": "Backpack",
             "journal_no_entries": "no entries",
-            "retired": "Retired at:"
+            "retired": "Retired at:",
+            "traits": "Traits"
          },
          "pet_character_sheet": {
             "title": "Pet Info",
@@ -271,10 +274,11 @@
                "build": "Build",
                "mine": "Mine",
                "job": "Job",
-               "current_activity": "Current Activity...",
-               "status": "Status"
+               "current_activity": "Activity",
+               "status": "Status",
+               "morale": "Morale"
             },
-            "show_character_sheet": "More Info",
+            "show_character_sheet": "Character Sheet",
             "button_suspend": "suspend",
             "button_resume": "resume",
             "tab": {
@@ -311,6 +315,7 @@
             },
             "month_format": "i18n(stonehearth:ui.game.calendar.months.[str(date.month)])",
             "date_format_long": "Day [str(date.day)] of i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
+            "date_format_long_ordinal": "[str(ord_day)] Day of i18n(stonehearth:ui.game.calendar.month_format) [str(date.year)]",
             "date_time_long_format": "Day [str(date.day)] of i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]",
             "date_format_short": "i18n(stonehearth:ui.game.calendar.month_format), [str(date.day)]"
          },
@@ -1242,7 +1247,7 @@
          },
          "select_roster": {
             "reroll_citizens": "Roll all Citizens",
-            "citizen_info": "Expedition Roster",
+            "citizen_info": "Customize your party",
             "accept_roster": "Accept Roster",
             "randomize": "Randomize",
             "hair_style": "Hair Style",
@@ -1418,6 +1423,15 @@
             "glum": {
                "display_name": "Glum",
                "town_description": "Your citizens aren't feeling great, overall."
+            },
+            "exp_bar": {
+               "description": "This hearthling's progress to next level."
+            },
+            "health_status": {
+               "description": "This hearthling's current health status."
+            },
+            "suspend_button": {
+               "description": "Pause or resume a work type"
             }
          },
          "constants": {
@@ -1470,10 +1484,12 @@
                "000": "The Desert of Pal'Mum"
             },
             "sandy_poyo": {
-               "display_name": "Sandy Poyo"
+               "display_name": "Sandy Poyo",
+               "species": "poyo"
             },
             "fennec_fox": {
-               "display_name": "Fennec Fox"
+               "display_name": "Fennec Fox",
+               "species": "fox"
             }
          }
       },
@@ -3498,12 +3514,12 @@
             "description": "Restore the terrain to its original state."
          },
          "show_workshop": {
-            "display_name": "Show Workshop",
+            "display_name": "Workshop",
             "description": "Your crafter uses the workshop to construct useful items for your settlement.",
             "disabled_description": "Your crafter uses the workshop to construct useful items for your settlement. Before you can craft you need to assign a crafter to this workshop."
          },
          "show_workshop_from_crafter": {
-            "display_name": "Show Workshop",
+            "display_name": "Workshop",
             "description": "Your crafter uses the workshop to construct useful items for your settlement.",
             "disabled_description": "Your crafter uses the workshop to construct useful items for your settlement. Before you can craft you need to assign a crafter to this workshop."
          },
@@ -4616,6 +4632,13 @@
          "coming_soon": "Coming Soon"
       },
       "traits": {
+         "animal_companion": {
+            "animal_companion_trait": {
+               "display_name": "Animal Companion",
+               "description": "Ever since [name(i18n_data.savior)] saved their [str(i18n_data.species)] from mortal danger, they've been inseparable.",
+               "default_species": "companion"
+            }
+         },
          "herbivore": {
             "herbivore_trait": {
                "display_name": "Herbivore",
@@ -4898,6 +4921,14 @@
             },
             "traits": {
                "values": {
+                  "misses_pet": {
+                     "display_name": "Misses Companion",
+                     "tooltip": "Although it's been awhile since they died, I still catch myself sometimes looking for my pet, [str(pet_name)]."
+                  },
+                  "nuzzled": {
+                     "display_name": "Nuzzled",
+                     "tooltip": "Aww, [str(pet_name)] always manages to cheer me up."
+                  },
                   "plant_lover": {
                      "display_name": "Plant Lover",
                      "tooltip": "Everytime I interact with plants I feel a bit calmer."
@@ -4913,6 +4944,10 @@
                   "protected_the_town": {
                      "display_name": "Protected the Town",
                      "tooltip": "We fended off a group of nasties recently, it really got my blood pumping!"
+                  },
+                  "loves_their_job": {
+                     "display_name": "Loves Their Job",
+                     "tooltip": "This is the perfect job for me! I love what I do day to day."
                   }
                }
             },
@@ -5479,28 +5514,32 @@
             "young": {
                "display_name": "Poyo Chick",
                "description": "Peep Peep!"
-            }
+            },
+            "species": "poyo"
          },
          "rabbit": {
             "display_name": "Rabbit",
             "description": "Om nom nom",
             "rabbit_jerky": {
                "display_name": "Rabbit jerky"
-            }
+            },
+            "species": "rabbit"
          },
          "racoon": {
             "display_name": "Racoon",
             "description": "Small forest creature",
             "racoon_jerky": {
                "display_name": "Racoon jerky"
-            }
+            },
+            "species": "racoon"
          },
          "red_fox": {
             "display_name": "Fox",
             "description": "Small forest creature",
             "red_fox_jerky": {
                "display_name": "Fox jerky"
-            }
+            },
+            "species": "fox"
          },
          "sheep": {
             "display_name": "A sheep",
@@ -5510,22 +5549,26 @@
                "display_name": "A Lamb",
                "description": "Awww!"
             },
-            "renewable_harvest_status_text": "shearing sheep"
+            "renewable_harvest_status_text": "shearing sheep",
+            "species": "sheep"
          },
          "squirrel": {
             "display_name": "Squirrel",
             "description": "Small forest creature",
             "squirrel_jerky": {
                "display_name": "Squirrel jerky"
-            }
+            },
+            "species": "squirrel"
          },
          "wolf": {
             "display_name": "A wolf",
-            "description": "Grrr! Rwar!"
+            "description": "Grrr! Rwar!",
+            "species": "wolf"
          },
          "woodchuck": {
             "display_name": "Woodchuck",
-            "description": "A voracious eater of almost everything, especially logs."
+            "description": "A voracious eater of almost everything, especially logs.",
+            "species": "woodchuck"
          }
       },
       "crops": {
@@ -7086,22 +7129,31 @@
             }
          }
       },
+      "peoples": {
+         "hearthling": {
+            "species": "Hearthling"
+         }
+      },
       "pets": {
          "collie": {
             "display_name": "Collie",
-            "description": "So brave!"
+            "description": "So brave!",
+            "species": "dog"
          },
          "dragon_whelp": {
             "display_name": "Dragon Whelp",
-            "description": "A baby dragon"
+            "description": "A baby dragon",
+            "species": "dragon"
          },
          "kitten": {
             "display_name": "Kitten",
-            "description": "He's so cute!"
+            "description": "He's so cute!",
+            "species": "cat"
          },
          "mammoth": {
             "display_name": "Baby Mammoth",
-            "description": "So furry!"
+            "description": "So furry!",
+            "species": "mammoth"
          }
       },
       "plants": {
@@ -7896,7 +7948,7 @@
          "archer_description": {
             "display_name": "Archer",
             "description": "A ranged combat unit that shoots foes with arrows",
-            "requirements": "A level 3 footman and an Archer's Bow, crafted by the Carpenter",
+            "requirements": "Crafted by Carpenter",
             "level_1_data": {
                "perk_000_name": "Increased Draw Strength",
                "perk_000_description": "The archer's damage is increased"
@@ -7974,7 +8026,7 @@
          "blacksmith_description": {
             "display_name": "Blacksmith",
             "description": "The Blacksmith refines raw ore into metal bars, then uses those bars to craft weapons, armor, and building parts like gates.",
-            "requirements": "Blacksmith's Hammer, crafted by the Mason",
+            "requirements": "Crafted by Mason",
             "level_6_data": {
                "title": "Master Blacksmith",
                "perk_000_name": "The Armory",
@@ -8231,7 +8283,7 @@
          "carpenter_description": {
             "display_name": "Carpenter",
             "description": "The carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
-            "requirements": "Carpenter's saw, crafted by the Blacksmith.",
+            "requirements": "Crafted by Blacksmith",
             "level_6_data": {
                "title": "Master Carpenter",
                "perk_000_name": "10,000 Hours",
@@ -8556,7 +8608,7 @@
          "cook_description": {
             "display_name": "Cook",
             "description": "The cook makes delicious, hearty meals from base vegetables and meats.",
-            "requirements": "A level 2 Farmer and a Stoneware Spoon, crafted by the Mason.",
+            "requirements": "Crafted by Mason",
             "workshop": {
                "name": "Stone Cauldron",
                "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
@@ -8716,7 +8768,7 @@
          "engineer_description": {
             "display_name": "Engineer",
             "description": "The engineer creates advanced contraptions and defensive weaponry.",
-            "requirements": "A level 1 Blacksmith and a wrench, crafted by the Blacksmith.",
+            "requirements": "Crafted by Blacksmith",
             "level_6_data": {
                "title": "Master Engineer",
                "perk_000_name": "General of Defense",
@@ -8825,7 +8877,7 @@
          "farmer_description": {
             "display_name": "Farmer",
             "description": "Farmers till fields and harvest crops, providing a consistent food supply and raw materials for baked goods.",
-            "requirements": "Farmer's Hoe, crafted by the Carpenter.",
+            "requirements": "Crafted by Carpenter",
             "level_6_data": {
                "perk_000_name": "Nature's Surprise (not implemented)",
                "perk_000_description": "Occasionally, the farmer's special touch yields... special results.",
@@ -8875,7 +8927,7 @@
          "footman_description": {
             "display_name": "Footman",
             "description": "The Footman is a melee fighter. A good choice for the backbone of your town's defense.",
-            "requirements": "Wooden Practice Sword, crafted by the Carpenter.",
+            "requirements": "Crafted by Carpenter",
             "level_4_data": {
                "perk_000_name": "Damage Up 40%",
                "perk_000_description": "The footman is now practiced at optimizing the effect of each blow."
@@ -8941,7 +8993,7 @@
          "mason_description": {
             "display_name": "Mason",
             "description": "The Mason crafts building materials and decorative items from stone.",
-            "requirements": "A Chisel, crafted by the Carpenter.",
+            "requirements": "Crafted by Carpenter",
             "workshop": {
                "name": "Mason's Workshop",
                "description": "insert description here",
@@ -9141,7 +9193,7 @@
          "potter_description": {
             "display_name": "Potter",
             "description": "Makes useful goods from clay. Upgradeable to the Mason",
-            "requirements": "A level 4 Mason and a Potter's Cutter, crafted by the Mason",
+            "requirements": "Crafted by Mason",
             "workshop": {
                "name": "Potter's Wheel",
                "description": "insert description here",
@@ -9394,7 +9446,7 @@
          "shepherd_description": {
             "display_name": "Shepherd",
             "description": "Domesticates wild animals and harvests them for food and materials.",
-            "requirements": "A level 2 Trapper and a Shepherd's Crook, crafted by the Carpenter.",
+            "requirements": "Crafted by Carpenter",
             "level_4_data": {
                "perk_000_name": "Animal Magnetism",
                "perk_000_description": "Wild animals are more likely to appear whenever the shepherd is looking for them."
@@ -9443,7 +9495,7 @@
          "trapper_description": {
             "display_name": "Trapper",
             "description": "The Trapper's snares capture and (ahem) &quot;harvest&quot; small critters for a reliable source of food and supplies.",
-            "requirements": "Trapper's Knife, crafted by the Mason",
+            "requirements": "Crafted by Mason",
             "level_1_data": {
                "perk_000_name": "Speed Up",
                "perk_000_description": "Long walks have increased the trapper's foot speed."
@@ -9529,7 +9581,7 @@
          "weaver_description": {
             "display_name": "Weaver",
             "description": "The Weaver makes thread, fabrics and hangings from fiber and dye.",
-            "requirements": "Weaver's Spindle, crafted by the Carpenter.",
+            "requirements": "Crafted by Carpenter",
             "level_6_data": {
                "title": "Master Weaver",
                "perk_000_name": "10,000 Hours (not implemented)",
@@ -9740,7 +9792,7 @@
          "herbalist_description": {
             "display_name": "Herbalist",
             "description": "Heals units with crafted balms and bandages.",
-            "requirements": "Herbalist's Staff, crafted by the Carpenter",
+            "requirements": "Crafted by Carpenter",
             "workshop": {
                "name": "Herbalist Lab",
                "description": "Allows the Herbalist to craft healing balms and bandages.",
@@ -9854,7 +9906,7 @@
          "cleric_description": {
             "display_name": "Cleric",
             "description": "A combat healer",
-            "requirements": "A level 2 Herbalist and a Cleric's Tome, crafted by the Herbalist",
+            "requirements": "Crafted by Herbalist",
             "level_0_data": {
                "perk_000_name": "Healing Aura",
                "perk_000_description": "The cleric's presence heals everyone around them periodically"
@@ -9977,7 +10029,7 @@
          "knight_description": {
             "display_name": "Knight",
             "description": "A defensive combatant focused on protecting allies from harm.",
-            "requirements": "Requires a level 3 footman and a Knight's Shield, crafted by the Blacksmith",
+            "requirements": "Crafted by Blacksmith",
             "level_1_data": {
                "perk_000_name": "Damage Reduction Rank 1",
                "perk_000_description": "The knight gains an additional 10% defense from equipment"
