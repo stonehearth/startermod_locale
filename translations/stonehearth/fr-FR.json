@@ -2942,14 +2942,14 @@
                                        "bulletin_message": {
                                           "000": "Oh! Je pense a une grande idée! Tu paie nous au lieu et nous faire pour que aucun orc ne vient! Vous juste à donner à nous quelques trésors. Vous gagnez, je gagne, nous deux gagnants."
                                        },
-                                       "bulletin_title": "The gobelin's beady little eyes light up",
+                                       "bulletin_title": "Les petits yeux rond du gobelin s'illumine",
                                        "dialog_title": "Camp gobelin"
                                     },
                                     "collection_due": {
                                        "bulletin_message": {
                                           "000": "Nous sommes de retour! Ou sont vos pierres qui brille ??"
                                        },
-                                       "bulletin_title": "A pack of goblins lazily slog into back into town",
+                                       "bulletin_title": "Un groupe de gobelin reviennent lâchement en ville",
                                        "dialog_title": "Camp gobelin"
                                     },
                                     "collection_failed": {
@@ -2967,19 +2967,19 @@
                                           "002": "Stuffs!! You should hire we full-time. You ask what we do for you? ..We can discuss in contract. Maybe you need us if you display Master Gong and giant ogre bok come.",
                                           "003": "You give good stuffs! Me wolf will be so happy! Have you met ogre chief yet? They like color red. Like on Gong. Ask you blacksmith."
                                        },
-                                       "bulletin_title": "The goblin flashes a toothy grin",
+                                       "bulletin_title": "Le gobelin sourit, montrant ses dents",
                                        "dialog_title": "Camp gobelin"
                                     },
                                     "collection_progress": {
                                        "bulletin_message": {
-                                          "000": "You agree pay? Good, make us life easier. We come back later for stuffs. We take nap now..."
+                                          "000": "Vous accepter de payer? Bien. Faire notre vie plus facile. Nous reviens plus tard pour nos choses. Nous faire sieste maintenant..."
                                        },
                                        "bulletin_title": "Satisfaire les gobelins (à nouveau)",
                                        "dialog_title": "Camp gobelin"
                                     },
                                     "shakedown_refused": {
                                        "bulletin_message": {
-                                          "000": "You no want pay? Ok. Make little difference for us. Watch, for orc army come soon."
+                                          "000": "Tu veux pas payer? Ok. Fait pas grand différence à nous. Regarde pour l'armée orc qui arrive bientôt."
                                        },
                                        "bulletin_title": "Le gobelin fronce les sourcils",
                                        "dialog_title": "Camp gobelin"
@@ -2992,19 +2992,19 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "Your precious Cid Treaty can't protect you now, foolish humans!"
+                                          "00": "Votre précieux traité ne peux pas vous protéger maintenant, humains sots!"
                                        },
                                        "bulletin_title": "Chef ogre",
                                        "dialog_title": "Chef ogre",
-                                       "choice_000": "Bring it on"
+                                       "choice_000": "Amènez-vous!"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Puny town! You mount mark of Ruby! You dare challenge me, Chief Grut Bashbrain?!"
+                                          "00": "Ville Piteuse! Vous affichez le symbole du Ruby! Vous osez me défier, Chef Grut Bashbrain!?"
                                        },
-                                       "bulletin_title": "An ogre stomps into town",
-                                       "dialog_title": "Ogre chief",
-                                       "choice_000": "You don't scare me!"
+                                       "bulletin_title": "Un ogre piétine jusqu'en ville",
+                                       "dialog_title": "Chef ogre",
+                                       "choice_000": "Vous ne me faites pas peur!"
                                     }
                                  }
                               }
@@ -3014,7 +3014,7 @@
                                  "dialog_nodes": {
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Don't get arrogant puny humans! Brethren from Capitol await to test their might. Any town bearing the General's Gong will not be unheeded!"
+                                          "00": "Ne soyez pas arrogants, piteux humains! Nos camarades de la capitale attendent pour tester leur force! Toute ville qui porte le Gong du général ne sera pas ignorée! "
                                        },
                                        "bulletin_title": "Le chef ogre secoue son poing de colère",
                                        "dialog_title": "Chef Grut Bashbrain"
@@ -3027,17 +3027,17 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "That being said, we too are not to be underestimated. We have fought more beasts and creatures than your settlement could even conceive of. I look forward to our fight."
+                                          "00": "Ceci étant dis, nous ne sommes pas à être sous-estimé non plus... Nous avons battus plus de bêtes et de créatures que votre village ne peut s'imaginer! J'attend avec impatience notre combat."
                                        },
-                                       "bulletin_title": "Orc troupe",
-                                       "dialog_title": "Orc troupe"
+                                       "bulletin_title": "Troupe d'orc",
+                                       "dialog_title": "Troupe d'orc"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "So long it has been since we have seen the Purple Glimmer of a General's token. The Red Kiln would stand to benefit from fighting more foes such as yourself."
+                                          "00": "Nous n'avons pas vu le scintillement mauve du Gong du Générale depuis si longtemps. Le Red Kiln bénifiecirait de battre plus d'adversaire digne tel que vous."
                                        },
-                                       "bulletin_title": "Une troupe orcs marche vers vous au pas",
-                                       "dialog_title": "Troupe orc",
+                                       "bulletin_title": "Une troupe d'orcs marche vers vous au pas",
+                                       "dialog_title": "Troupe d'orc",
                                        "choice_000": "Merci"
                                     }
                                  }
@@ -3050,24 +3050,24 @@
                                        "bulletin_message": {
                                           "00": "For us, there are many roads for advancement. This is but one, yet fruitful in itself."
                                        },
-                                       "bulletin_title": "Troupe orc",
-                                       "dialog_title": "Troupe orc",
+                                       "bulletin_title": "Troupe d'orc",
+                                       "dialog_title": "Troupe d'orc",
                                        "choice_000": "Huh ?"
                                     },
                                     "msg3": {
                                        "bulletin_message": {
                                           "00": "Perhaps you would not understand what fortuity this experience has given us, in this period of political upheaval. But that matters not. The Warchief will wish to meet you again. For now, I bid you well, human."
                                        },
-                                       "bulletin_title": "Troupe orc",
-                                       "dialog_title": "Troupe orc",
+                                       "bulletin_title": "Troupe d'orc",
+                                       "dialog_title": "Troupe d'orc",
                                        "choice_000": "Aurevoir"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "I commend you on your victory. You have proven yourself a skilled and honorable foe."
                                        },
-                                       "bulletin_title": "The orc respectfully bows at the outcome of the battle",
-                                       "dialog_title": "Troupe orc",
+                                       "bulletin_title": "Les orcs se prosterne respectueusement au résultat de ce combat",
+                                       "dialog_title": "Troupe d'orc",
                                        "choice_000": "Merci"
                                     }
                                  }
@@ -3085,7 +3085,7 @@
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "As I predicted, fate brings us together once more."
+                                          "00": "Comme je l'ai prédit, le destin nous réunis une fois de plus."
                                        },
                                        "bulletin_title": "Chef de guerre Oghar Ventfroid s'avance vers vous avec fougue",
                                        "dialog_title": "Chef de guerre Oghar Ventfroid"
@@ -3107,7 +3107,7 @@
                                        "bulletin_message": {
                                           "00": "Erdene was right about you. You are a worthy opponent indead. We will not forget the strength that you have helped us gain."
                                        },
-                                       "bulletin_title": "The warchief nods humbly",
+                                       "bulletin_title": "Le chef de guerre hoche humblement de la tête",
                                        "dialog_title": "Chef de guerre Oghar Ventfroid",
                                        "choice_000": "Pas de problème"
                                     }
@@ -3115,10 +3115,10 @@
                               }
                            },
                            "unlock_blue_token_recipe": {
-                              "bulletin_title": "Le forgeron a débloqué la recette de la décoration de l'élite Gong !"
+                              "bulletin_title": "Le forgeron a débloqué la recette de la décoration du Gong élite !"
                            },
                            "unlock_purple_token_recipe": {
-                              "bulletin_title": "Le forgeron a débloqué la recette du générale Gong en or !"
+                              "bulletin_title": "Le forgeron a débloqué la recette du Gong en or du général!"
                            },
                            "unlock_red_token_recipe": {
                               "bulletin_title": "Le forgeron a débloqué la recette de la décoration du maître Gong !"
@@ -3137,7 +3137,7 @@
          "carrying": {
             "carrying_buff": {
                "display_name": "Si lourd !",
-               "description": "Équiper les heartlings de choses lourdes va naturellement les faire se déplacer plus lentement"
+               "description": "Équipez les heartlings de choses lourdes va naturellement les faire se déplacer plus lentement"
             }
          },
          "combat_basics": {
@@ -3165,15 +3165,15 @@
          "shepherding": {
             "compassionate_shepherd_buff": {
                "display_name": "Soigné",
-               "description": "Pris en charge par un berger compatissant. Cet animal va produire plus de ressources et de progéniture."
+               "description": "Pris en charge par un berger compatissant, cet animal va produire plus de ressources et de progéniture."
             },
             "shepherding_speed_bonus": {
-               "display_name": "Vitesse du Troupeau Augmente de +10%",
+               "display_name": "Vitesse du troupeau augmente de +10%",
                "description": "Le berger est maintenant plus aptes à faire marcher le troupeau un peu plus vite."
             },
             "stenched_shepherd_buff": {
-               "display_name": "puanteur",
-               "description": "Les animaux peuvent sentir que ce berger a abattu quelque chose récemment. Ce berger ne sera pas en mesure de trouver de nouveaux animaux sauvages jusqu'à ce que l'odeur s'efface."
+               "display_name": "Puanteur",
+               "description": "Les animaux sentent que ce berger a abattu quelque chose récemment. Ce berger ne sera pas en mesure de trouver de nouveaux animaux sauvages jusqu'à ce que l'odeur s'estompe."
             }
          },
          "sleeping": {
@@ -3196,7 +3196,7 @@
             },
             "starving_animal_buff": {
                "display_name": "Affamé",
-               "description": "Cet animal a faim ! Avoir un cuisinier pour créer un peu de nourriture, de sorte que votre berger puisse le nourrir, serait utile."
+               "description": "Cet animal a faim ! Avoir un cuisinier pour de faire de la nourriture serait utile, pour que votre berger puisse le nourrir."
             }
          },
          "stopped": {
@@ -3208,7 +3208,7 @@
          "injured": {
             "injured_buff": {
                "display_name": "Blessé",
-               "description": "Déplacement ralentit en raison de la faible santé."
+               "description": "Déplacement ralentit en raison de la santé faible."
             }
          },
          "bed_ridden": {
@@ -3220,19 +3220,19 @@
          "stamina_tonic": {
             "stamina_tonic_buff": {
                "display_name": "Potion d'endurance",
-               "description": "Légèrement plus endurant"
+               "description": "Rend légèrement plus endurant"
             }
          },
          "strength_tonic": {
             "strength_tonic_buff": {
                "display_name": "Potion de force",
-               "description": "Légèrement plus fort"
+               "description": "Rend légèrement plus fort"
             }
          },
          "severely_injured": {
             "severely_injured_buff": {
                "display_name": "Gravement blessé",
-               "description": "Blessé gravement ! Peut à peine marcher !"
+               "description": "Blessé gravement! Peut à peine marcher!"
             }
          },
          "undead_infection": {
@@ -3313,7 +3313,7 @@
             "merry": {
                "merry_mood_buff": {
                   "display_name": "Joyeux",
-                  "description": "Aujourd'hui est un bon jour."
+                  "description": "Aujourd'hui est une belle journée."
                }
             },
             "jubilant": {
@@ -3477,11 +3477,11 @@
          },
          "chop_tree": {
             "display_name": "Récolter",
-            "description": "Récoltez du bois, ou juste pour les enlever du passage."
+            "description": "Récoltez du bois ou enlevez-les du passage."
          },
          "destroy_entity": {
             "display_name": "Détruire",
-            "description": "Supprimer de manière irrévocable cet objet de ce monde !"
+            "description": "Supprimer de manière irréversible cet objet du monde !"
          },
          "harvest_berries": {
             "display_name": "Ramasser des baies",
@@ -3497,7 +3497,7 @@
             "description": "Revendiquer cet objet pour votre ville."
          },
          "move_item": {
-            "display_name": "Déplace un objet",
+            "display_name": "Déplacer un objet",
             "description": "Déplacer cet objet ailleurs dans le monde.",
             "disabled_description": "Cet objet est utilisé. Essayé de le bouger plus tard."
          },
@@ -3519,7 +3519,7 @@
          },
          "promote_to_job": {
             "display_name": "Changer de profession",
-            "description": "Donne à ce hearthling une nouvelle activité"
+            "description": "Donne à ce hearthling une nouvelle profession"
          },
          "raze_crop": {
             "display_name": "Nettoyer la parcelle",
@@ -3561,7 +3561,7 @@
             "abilities": {
                "snare_trap": {
                   "display_name": "Collet",
-                  "description": "Fixe un fil solide pour capturer les petits animaux comme les lapins ou les écureuils."
+                  "description": "Fixe un fil solide pour capturer des petits animaux comme les lapins ou les écureuils."
                }
             },
             "move_unit": {
@@ -3579,7 +3579,7 @@
          },
          "use_consumable": {
             "display_name": "Utiliser",
-            "description": "Utiliser cet objet consommable pour rendre plus fort tous les hearthlings en ville. Cela va détruire cette objet."
+            "description": "Utiliser cet objet consommable pour rendre plus fort tous les hearthlings en ville. Cela va détruire cet objet."
          },
          "use_seeds": {
             "display_name": "Utiliser",
@@ -3587,7 +3587,7 @@
          },
          "edit_party": {
             "display_name": "Modifier l'équipe",
-            "description": "Ajouter et supprimer des membres de l'équipe."
+            "description": "Ajouter ou supprimer des membres de l'équipe."
          },
          "cancel_marker": {
             "display_name": "Annuler le marqueur",
@@ -3806,7 +3806,7 @@
                         "007": "Ne t'inquiètes pas, [name(entry.dead_friend)]. Nous te vengerons !",
                         "008": "Je ne peux pas croire que [name(entry.dead_friend)] est vraiment parti.",
                         "009": "[name(entry.dead_friend)] ? Parti ? Soudainement, tout cela me semble comme s'il n'en valait pas la peine, en quelque sorte.",
-                        "010": "Hé ben, Maintenant j'espère vraiment ne jamais avoir persuader [name(entry.dead_friend)] de venir dans cette aventure.",
+                        "010": "Hé ben, maintenant j'espère vraiment ne jamais avoir persuader [name(entry.dead_friend)] de venir dans cette aventure.",
                         "011": "[name(entry.dead_friend)] !!"
                      }
                   }
@@ -3865,8 +3865,8 @@
                      "003": "AIEEEEE !!!"
                   },
                   "lovable_rogue": {
-                     "000": "Récupérerez les biens et dirigez-vous vers les collines !",
-                     "001": "S'il vous plaît, je ne veux pas mourir !",
+                     "000": "Récupérerez-les biens et dirigez-vous vers les collines !",
+                     "001": "S'il-vous-plaît, je ne veux pas mourir !",
                      "002": "Il y a tellement de choses que je dois faire !!!!",
                      "003": "Je ne peux pas mourir ici !!!",
                      "004": "Dois... fuir!!!",
@@ -4561,7 +4561,7 @@
                }
             },
             "carpenter_house": {
-               "display_name": "Menuisier de maison"
+               "display_name": "Maison de menuisier"
             },
             "blacksmith_house": {
                "display_name": "Maison de forgeron"
@@ -4883,7 +4883,7 @@
                },
                "herbivore_ate_meat": {
                   "display_name": "J'ai mangé de la viande ! NOOOON !",
-                  "tooltip": "Je ne peux pas croire que j'ai mangé [str(foodname)].  Je peux seulement imaginer comment c'était mignon ... avant."
+                  "tooltip": "Je ne peux pas croire que j'ai mangé [str(foodname)]. Je peux seulement imaginer comment c'était mignon ... avant."
                },
                "carnivore_ate_veggies": {
                   "display_name": "J'ai mangé une plante ! Beurk !",
@@ -4932,13 +4932,13 @@
                "safety": {
                   "lack_of_safety": {
                      "display_name": "Insécurité",
-                     "tooltip": "Sans une certaine forme de garde de ville, je ne me sens pas à l'aise dans ce désert."
+                     "tooltip": "Sans une certaine forme de garde en ville, je ne me sens pas à l'aise dans ce désert."
                   }
                },
                "theft": {
                   "petty_theft": {
                      "display_name": "Vol",
-                     "tooltip": "Quelqu'un a volé quelque chose de nos fournitures ! Nous avons besoin de meilleures défenses."
+                     "tooltip": "Quelqu'un a volé quelque chose dans nos réserve! Nous avons besoin de meilleures défenses."
                   }
                }
             },
@@ -4990,7 +4990,7 @@
                   },
                   "protected_the_town": {
                      "display_name": "Défendre la ville",
-                     "tooltip": "Nous avons pourfendus un groupe de puyant récemment, ça ma vraiment fait battre le coeur&nbsp;!"
+                     "tooltip": "Nous avons pourfendus un groupe de méchants récemment, ça ma vraiment fait battre le coeur!"
                   },
                   "loves_their_job": {
                      "display_name": "Aime leur travail",
@@ -5033,12 +5033,12 @@
             "violence": {
                "values": {
                   "townmember_died": {
-                     "display_name": "Le citoyen est mort",
+                     "display_name": "Un citoyen est mort",
                      "tooltip": "Un membre de la commune est décédé. Si seulement nous avions été plus vigilants!"
                   },
                   "pet_died": {
                      "display_name": "Mon animal est mort",
-                     "tooltip": "Mon pauvre [str(pet_name)] est décédé récemment. il va un peu me manquer."
+                     "tooltip": "Mon pauvre [str(pet_name)] est décédé récemment. Il va me manquer."
                   }
                }
             },
@@ -5440,19 +5440,19 @@
          "wooden_double_door_fine": {
             "wooden_double_door_fine_ghost": {
                "display_name": "Double porte en beau bois",
-               "description": "Une porte plus grande avec un peu de style supplémentaire. Tous vos amis seront envieux."
+               "description": "Une porte plus grande avec du style supplémentaire. Tous vos amis seront envieux."
             }
          },
          "wooden_window_frame_fine": {
             "wooden_window_frame_fine_ghost": {
-               "display_name": "Bel encadrement de fenêtre en beau bois",
+               "display_name": "Bel encadrement de fenêtre en bois de qualité",
                "description": "Et voilà pour la vie privée ..."
             }
          },
          "wooden_window_frame_tall_fine": {
             "wooden_window_frame_tall_fine_ghost": {
                "display_name": "Beau grand cadre de fenêtre",
-               "description": "La hauteur supplémentaire ajoute un air d'élégance"
+               "description": "La hauteur supplémentaire ajoute un air d'élégance."
             }
          },
          "wooden_window_frame_wide_fine": {
@@ -5476,7 +5476,7 @@
          "picket_fence_gate_fine": {
             "picket_fence_gate_fine_ghost": {
                "display_name": "Belle porte de palissade",
-               "description": "Vous n'aimez pas vos voisins ? Ne l'installer surtout pas alors."
+               "description": "Vous n'aimez pas vos voisins ? Ne l'installer alors surtout pas."
             }
          },
          "wooden_tunnel_door_fine": {
@@ -6791,7 +6791,7 @@
          },
          "dining_table_fine": {
             "dining_table_fine_ghost": {
-               "display_name": "Table à manger stylisé",
+               "display_name": "Table à manger stylisée",
                "description": "S'assoir pour manger est un signe de civilisation.<br>Encore plus sur cette version !"
             }
          },
@@ -6803,7 +6803,7 @@
          },
          "dresser_fine": {
             "dresser_fine_ghost": {
-               "display_name": "Commode stylisé",
+               "display_name": "Commode stylisée",
                "description": "Encore plus décorative en l'absence de propriétaire."
             }
          },
