@@ -374,7 +374,11 @@
             "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !",
             "starving_notification": "[name(i18n_data.citizen)] est affamé !",
             "health_status_normal": "Normal",
-            "health": "HP"
+            "health": "HP",
+            "gender": {
+               "male": "Homme",
+               "female": "Femme"
+            }
          },
          "menu": {
             "town_menu": {
@@ -1249,11 +1253,14 @@
             "reroll_citizens": "Relancer les dés",
             "citizen_info": "Personnaliser votre partie",
             "accept_roster": "Accepter la liste",
-            "randomize": "Relancer",
+            "randomize": "Apparence aléatoire",
             "hair_style": "Coiffure",
             "skin_color": "Couleur de peau",
             "facial_hair": "Pilosité faciale",
-            "hair_color": "Couleur de cheveux"
+            "hair_color": "Couleur de cheveux",
+            "name": "nom",
+            "name_and_appearance": "nom et apparence",
+            "appearance": "apparence"
          },
          "loadout": {
             "title": "Sélectionnez les ressources de départ",
@@ -1431,7 +1438,18 @@
                "description": "L'état de santé actuel de ce hearthling."
             },
             "suspend_button": {
-               "description": "Pause ou reprise d'un type de travaux"
+               "description": "Pause ou reprise d'un type de travaux."
+            },
+            "current_gender": {
+               "display_name": "Sexe",
+               "description": "Ce hearthling s'identifie comme [str(gender)]."
+            },
+            "change_gender": {
+               "display_name": "Sexe",
+               "description": "Cliquez pour changer le sexe de ce hearthling pour [str(gender)]."
+            },
+            "customization_lock": {
+               "description": "Ce hearthling [str(customization)] sera sauvegardé pendant la relance trait et stat."
             }
          },
          "constants": {

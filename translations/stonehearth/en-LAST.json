@@ -374,7 +374,11 @@
             "imminent_death_notification": "[name(i18n_data.citizen)] is severely low on health!",
             "starving_notification": "[name(i18n_data.citizen)] is starving!",
             "health_status_normal": "Normal",
-            "health": "HP"
+            "health": "HP",
+            "gender": {
+               "male": "Male",
+               "female": "Female"
+            }
          },
          "menu": {
             "town_menu": {
@@ -1249,11 +1253,14 @@
             "reroll_citizens": "Roll all Citizens",
             "citizen_info": "Customize your party",
             "accept_roster": "Accept Roster",
-            "randomize": "Randomize",
+            "randomize": "Randomize Appearance",
             "hair_style": "Hair Style",
             "skin_color": "Skin Color",
             "facial_hair": "Facial Hair",
-            "hair_color": "Hair Color"
+            "hair_color": "Hair Color",
+            "name": "name",
+            "name_and_appearance": "name and appearance",
+            "appearance": "appearance"
          },
          "loadout": {
             "title": "Select starting resources",
@@ -1431,7 +1438,18 @@
                "description": "This hearthling's current health status."
             },
             "suspend_button": {
-               "description": "Pause or resume a work type"
+               "description": "Pause or resume a work type."
+            },
+            "current_gender": {
+               "display_name": "Gender",
+               "description": "This hearthling identifies as [str(gender)]."
+            },
+            "change_gender": {
+               "display_name": "Gender",
+               "description": "Click to change this hearthling's identified gender to [str(gender)]."
+            },
+            "customization_lock": {
+               "description": "This hearthling's [str(customization)] will be saved during trait and stat rerolls."
             }
          },
          "constants": {
