@@ -292,11 +292,11 @@
             }
          },
          "create_camp": {
-            "new_game_place_banner": "Cliquez sur moi pour placer la bannière de la colonie",
+            "new_game_place_banner": "Cliquez-moi pour placer la bannière de la colonie",
             "click_banner_tip": "Cliquez sur la bannière pour choisir l'emplacement de votre colonie",
-            "select_camp_tip": "Maintenant cliquez quelque part dans le monde",
+            "select_camp_tip": "Maintenant, cliquez quelque part dans le monde",
             "name_camp_title": "Nommez votre colonie",
-            "name_camp_prompt": "Entrez un nom pour votre colonie !"
+            "name_camp_prompt": "Entrez un nom pour votre colonie!"
          },
          "calendar": {
             "months": {
@@ -336,7 +336,7 @@
             },
             "return_to_menu_dialog": {
                "title": "Retourner au menu principal",
-               "message": "Quitter la partie et retourner au menu principal ?",
+               "message": "Quitter la partie et retourner au menu principal?",
                "yes_button": "Oui",
                "cancel_button": "Annuler"
             }
@@ -443,7 +443,7 @@
                      "display_name": "Réserve",
                      "description": "Place une zone pour entreposer des ressources.",
                      "tip_title": "Cliquez et relâchez pour créer une réserve",
-                     "tip_description": "Bouton droite pour sortir ce mode"
+                     "tip_description": "Cliquez le bouton droit pour sortir ce mode"
                   },
                   "create_farm": {
                      "display_name": "Champ",
@@ -453,11 +453,11 @@
                      "tip_description": "Les fermiers vont retourner la terre et semer ici"
                   },
                   "create_trapping_grounds": {
-                     "display_name": "Zone piégé",
+                     "display_name": "Zone piégée",
                      "description": "Place des pièges pour capturer des petites bestioles.",
                      "required_job_text": "Nécessite un trappeur",
-                     "tip_title": "Cliquez et relâchez pour créer une zone piégé",
-                     "tip_description": "Les trappeurs capturent des bestioles pour leur nourriture et leur ressources dans cette zone"
+                     "tip_title": "Cliquez et relâchez pour créer une zone piégée",
+                     "tip_description": "Les trappeurs capturent des bestioles pour leurs ressources dans cette zone"
                   },
                   "create_pasture": {
                      "display_name": "Pâturage",
@@ -737,11 +737,11 @@
                "title": "Bibliothèque de plans",
                "design_custom_building": "Dessinez vos propres bâtiments",
                "template_names": {
-                  "tiny_cottage": "Petite maison",
+                  "tiny_cottage": "Maisonnette",
                   "cottage_for_two": "Maisonnette pour deux",
                   "shared_sleeping_quarters": "Dortoir",
                   "dining_hall": "Salle de banquet",
-                  "little_clay_house": "Petite maison en argile",
+                  "little_clay_house": "Maisonnette en argile",
                   "clay_house_for_two": "Maison en argile pour deux",
                   "clay_dining_room": "Salle à manger en argile",
                   "clay_dormitory": "Dortoir en argile"
@@ -849,7 +849,7 @@
                "enable": "Reprendre la pose de piège"
             },
             "pasture": {
-               "help": "Les bergers mènent leur animaux dans ce lieu et s'occupent d'eux ici même.",
+               "help": "Les bergers mènent leur animaux dans ce lieu et s'en occupent ici.",
                "choose_pasture_type": "Choisir le type d'enclos",
                "sheep_pasture_name": "Pâturage de moutons",
                "rabbit_pasture_name": "Enclos de lapin",
@@ -1086,7 +1086,7 @@
             "world_seed": "Carte n°",
             "terrain_stats": {
                "trees_and_plants_title": "Arbres et plantes",
-               "trees_and_plants_description": "Le bois est la ressource principal pour la construction. Vous en aurez besoin afin de construire vos bâtiments et vos objets artisanaux.",
+               "trees_and_plants_description": "Le bois est la ressource principale pour la construction. Vous en aurez besoin afin de construire vos bâtiments et vos objets artisanaux.",
                "wildlife_title": "Faune",
                "wildlife_description": "La faune locale peut être chassé pour la nourriture et les matériaux d'artisanat.",
                "minerals_title": "Minerais",
@@ -1132,7 +1132,7 @@
             "gfx_cardinfo": "[str(gpuRenderer)] ([str(gpuDriver)])",
             "gfx_enable_shadows": "Activer les ombres",
             "gfx_enable_vsync": "Activer la synchronisation verticale",
-            "gfx_enable_fullscreen": "Plein écran (redémarrage requis))",
+            "gfx_enable_fullscreen": "Plein écran (redémarrage requis)",
             "gfx_msaa": "Niveau de l'anticrénelage",
             "gfx_shadows": "Qualité des ombres",
             "gfx_max_lights": "Nombre maximum de sources lumineuses",
@@ -1156,7 +1156,7 @@
             "effects_volume": "Volume des effets sonores",
             "system": "Système",
             "force_32_bit": "* Forcer le mode 32-bit (redémarrage requis)",
-            "force_32_bit_note": "* Forcer le mode 32-bit seulement si c'est absolument nécessaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
+            "force_32_bit_note": "* Forcer le mode 32-bit seulement si nécessaire. Le mode 64-bit est plus rapide et supporte de plus grands villages.",
             "collect_profile": "Récupérer le profil",
             "enable_lua_jit": "Utiliser Lua JIT (redémarrage requis)",
             "send_anon_data": "Envoyer des données anonymes pour améliorer Stonehearth !",
@@ -1171,10 +1171,10 @@
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
                "default_storage_filter_none_description": "Lors de la création d'une nouvelle réserve ou à la pose d'une nouvelle caisse, le filtre par défaut sur le stockage sera réglé sur 'Aucun' au lieu de 'Tout'",
                "show_hearthling_paths": "Montrez les chemins des hearthling",
-               "show_hearthling_paths_description": "Affichez le chemin que vos  hearthlings suivent.",
+               "show_hearthling_paths_description": "Affichez le chemin que vos hearthlings suivent.",
                "max_citizens": "Hearthlings max.",
-               "randomize_attributes": "Rendre aléatoire les attributs des  hearthlings",
-               "randomize_attributes_description": "Si activée, les attributs des hearthlings seront assignés complètement au hasard au lieu d'être distribuer de façon équilibrée.",
+               "randomize_attributes": "Rendre aléatoire les attributs des hearthlings",
+               "randomize_attributes_description": "Si activée, les attributs des hearthlings seront assignés complètement au hasard au lieu d'être distribué de façon équilibrée.",
                "auto_loot": "Pillage automatique",
                "auto_loot_description": "Quand un ennemi a du butin, le marquer automatiquement pour le ramassage.",
                "building_auto_queue_crafters": "File d'attente automatique d'artisanat pour la construction",
@@ -1273,8 +1273,8 @@
             "message": "Merci de participer à la version Alpha de Stonehearth ! Voici comment remonter un bug :",
             "file_bug_step_1": "Allez sur http://discourse.stonehearth.net/c/support/bug-reports",
             "file_bug_step_2": "Consultez la liste des sujets actifs, et si votre bogue n'a pas déjà été signalé, créer un nouveau sujet.",
-            "file_bug_step_3": "Lors du dépôt d'un bogue, assurez-vous s'il vous plaît d'inclure toutes les informations demandées dans le rapport, et copiez le texte de toutes les erreurs du moteur. Les captures d'écran sont également très utiles pour les bogues visuels.",
-            "file_bug_step_4": "Si vous rencontrez un crash bogue, s'il vous plait vérifier à cette adresse http://discourse.stonehearth.net/t/13297 des solutions communes, et comment obtenir de l'aide pour l'incident. Ci-dessous votre identité unique d'utilisateur:"
+            "file_bug_step_3": "Lors du dépôt d'un bug, assurez-vous, s'il-vous-plaît, d'inclure toutes les informations demandées dans le rapport et copiez le texte de toutes les erreurs du moteur. Les captures d'écran sont également très utiles pour les bugs visuels.",
+            "file_bug_step_4": "Si vous rencontrez un crash bug, s'il-vous-plait vérifier à cette adresse http://discourse.stonehearth.net/t/13297 des solutions communes, et comment obtenir de l'aide pour l'incident. Ci-dessous votre identité unique d'utilisateur:"
          },
          "error_browser": {
             "title": "Erreur du moteur",
@@ -1286,7 +1286,7 @@
          },
          "error_dialog_js": {
             "title": "Erreur d'IU",
-            "reset_hint": "Pressez F5 pour relancer l'IU",
+            "reset_hint": "Appuyez sur F5 pour relancer l'IU",
             "copy_button": "Copier dans le presse-papier"
          }
       },
@@ -1432,7 +1432,7 @@
                "town_description": "Vos hearthlings ne se sentent pas très bien, dans l'ensemble."
             },
             "exp_bar": {
-               "description": "Cet hearthling passe au prochain niveau."
+               "description": "Ce hearthling passe au prochain niveau."
             },
             "health_status": {
                "description": "L'état de santé actuel de ce hearthling."
@@ -1468,7 +1468,7 @@
             "clay_resource_name": "Boule d'argile",
             "clay_brick_resource_name": "Briques d'argile",
             "thread_resource_name": "Fil",
-            "leather_resource_name": "Cuir en rouleau",
+            "leather_resource_name": "Cuir enroulé",
             "fiber_resource_name": "Lot de fibres",
             "ingot_resource_name": "Lingot de métal",
             "herb_resource_name": "Herbe",
@@ -1482,7 +1482,7 @@
          "ascendancy": {
             "display_name": "les Ascendants",
             "quote": "Moutons? Vérifiez. Houe? Vérifiez. Glaives? Vérifiez. Embarquez!",
-            "description": "Sérieux et travailleur, fidèle et bien arrondi. Les hearthlings de la famille des Ascendants, construisent et cultivent, confiant que le monde connu est là pour être habiter.",
+            "description": "Sérieux et travailleur, fidèle et bien arrondi. Les hearthlings de la famille des Ascendants, construisent et cultivent, confiant que le monde connu est là pour être habité.",
             "post_selection_description": ", un royaume prospère et travailleur."
          }
       },
@@ -1534,7 +1534,7 @@
                      "000": "J'ai beaucoup entendu parler de votre ville !",
                      "001": "J'aimerais vous rejoindre.",
                      "002": "Il semble que vous pourriez avoir besoin de plus de mains !",
-                     "003": "Whaow! Mais quelle ville ! Laissez moi vous aider !"
+                     "003": "Whaow! Mais quelle ville ! Laissez-moi vous aider !"
                   },
                   "outcome_statement": "Un [str(i18n_data.job)] aimerait rejoindre [str(i18n_data.town_name)] !"
                }
@@ -1563,22 +1563,22 @@
                   }
                },
                "returning_trader_encounter": {
-                  "title": "Un négociant approche de la ville.",
+                  "title": "Un commerçant approche de la ville.",
                   "days": "jours",
                   "hours": "heures",
                   "trade_details": "Bien le bonjour [str(i18n_data.town_name)] ! Je ne fais que passer, mais nous pourrions peut-être faire un peu de troc ? Si vous pouvez m'avoir <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)](s)</strong>, je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s)</strong> en échange. Qu'en dites vous ?",
-                  "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
-                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s)</strong> contre <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)](s)</strong> !",
-                  "return_title": "Le négociant est de retour !",
+                  "waiting_title": "Le commerçant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
+                  "waiting_text": "Le commerçant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s)</strong> contre <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)](s)</strong> !",
+                  "return_title": "Le commerçant est de retour !",
                   "return_greetings_positive": "Me revoilà ! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)](s). Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_number)] [str(i18n_data.reward_item)](s) en échange; Êtes-vous toujours partant ?",
                   "return_greetings_negative": "Je suis de retour, mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)](s) que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
                },
                "returning_crop_trader_encounter": {
                   "title": "Un commerçant apporte des graines provenant d'un pays lointain.",
-                  "trade_details": "Salut [str(i18n_data.town_name)] ! Je ne fais que passer, mais nous pourrions peut-être faire un peu d'échange de service si cela vous intéresse ? Si vous pouvez m'avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)], je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_item)] en échange. Qu'en dites vous ?",
-                  "waiting_title": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
-                  "waiting_text": "Le négociant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger [str(i18n_data.reward_item)] si vous avez [str(i18n_data.want_number)] [str(i18n_data.want_item)] prêt pour lui !",
-                  "return_title": "Le négociant est de retour !",
+                  "trade_details": "Salut [str(i18n_data.town_name)] ! Je ne fais que passer, mais nous pourrions peut-être faire un peu d'échange de service si cela vous intéresses ? Si vous pouvez m'avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)], je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_item)] en échange. Qu'en dites vous ?",
+                  "waiting_title": "Le commerçant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
+                  "waiting_text": "Le commerçant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger [str(i18n_data.reward_item)] si vous avez [str(i18n_data.want_number)] [str(i18n_data.want_item)] prêt pour lui !",
+                  "return_title": "Le commerçant est de retour !",
                   "return_greetings_positive": "Je suis de retour ! Je vois que vous avez mes [str(i18n_data.want_number)] [str(i18n_data.want_item)]. Voulez-vous toujours faire affaire ? J'ai [str(i18n_data.reward_item)] en échange; Êtes-vous toujours partant ?",
                   "return_greetings_negative": "Je suis de retour, mais je vois que n'avez pas les [str(i18n_data.want_number)] [str(i18n_data.want_item)] que je vous ai demandé. Quel dommage ! Et bien, peut-être une prochaine fois ?"
                },
@@ -1614,23 +1614,23 @@
                   "dialog_title": "Canton atteint !",
                   "tier_title": "Canton",
                   "reward_message": "Par décret de la princesse Diana de l'Ascendancy, nous reconnaissons:",
-                  "reward_message_ctd": "Pour les actes de bravoure incroyable dans le combat. La ville est par les présentes éligibles pour:",
-                  "tier_2_bldg_template": "Niveau 2 Modèles de construction",
-                  "tier_2_shops": "Niveau 2 Magasins",
-                  "tier_2_BGM": "Niveau 2 BGM"
+                  "reward_message_ctd": "Pour les actes de bravoure incroyable dans le combat. La ville est par les présentes éligible pour:",
+                  "tier_2_bldg_template": "Modèles de construction niveau 2",
+                  "tier_2_shops": "Magasins niveau 2",
+                  "tier_2_BGM": "BGM niveau 2"
                },
                "generosity_tier_2_reached": {
-                  "reward_message_ctd": "Pour preuve d'une grande générosité envers les nécessiteux. La ville est par les présentes éligibles pour:"
+                  "reward_message_ctd": "Comme preuve d'une grande générosité envers les plus démunis. La ville est par les présentes éligible pour:"
                },
                "crafting_tier_2_reached": {
-                  "reward_message_ctd": "Pour l'excellence dans l'artisanat. La ville est par les présentes éligibles pour:"
+                  "reward_message_ctd": "Pour l'excellence dans l'artisanat. La ville est par les présentes éligible pour:"
                },
                "ascendancy_town_tier_quest": {
                   "title": "Quête de Canton",
                   "dialog_title": "Quête de Canton",
                   "text": "Satisfaire l'une des conditions suivantes pour se qualifier pour le statut de canton:",
                   "military_requirement_title": "Cid's valeur",
-                  "church_requirement_title": "Eglise d'abondance",
+                  "church_requirement_title": "Église d'abondance",
                   "crafting_requirement_title": "Approbation des artisans",
                   "summon_text": "Appeler un héraut !"
                },
@@ -1648,7 +1648,7 @@
                         },
                         "craft_reqs": {
                            "bulletin_message": {
-                              "000": "Les maîtres de l'art royal honore ceux avec un oeil pour l'excellence. Demandez à votre maçon de créer une statue avec ces spécifications rigoureuses; et vous serez l'un des rares à les impressionner."
+                              "000": "Les maîtres de l'art royal honorent ceux avec un oeil pour l'excellence. Demandez à votre maçon de créer une statue avec ces spécifications rigoureuses; et vous serez l'un des rares à les impressionner."
                            },
                            "bulletin_title": "Anwyn revient sur le rouleau",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1718,7 +1718,7 @@
                         },
                         "church_reqs": {
                            "bulletin_message": {
-                              "000": "L'Eglise d'Abondance favorise ceux qui partagent leur richesse avec ceux qui en ont besoin. Je vais donner des recettes à votre maçon et votre cuisinier; construisez une fontaine de Abondance et je serai de retour pour célébrer vos réalisations."
+                              "000": "L'Église de l'Abondance favorise ceux qui partagent leurs richesses avec ceux qui en ont besoin. Je vais donner des recettes à votre maçon et votre cuisinier; construisez une fontaine d'Abondance et je serai de retour pour célébrer vos réalisations."
                            },
                            "bulletin_title": "Anwyn revient sur le rouleau",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1736,7 +1736,7 @@
                         },
                         "conclusion": {
                            "bulletin_message": {
-                              "000": "Excellent ! En plus d'un monument approprié, votre ville devra également avoir accumulé un certain niveau de valeur. Je laisserai les exigences avec vous, si vous souhaitez les consulter à nouveau, ou devrais-je voir un chemin différent pour venir faire mon discourt plus que votre route initiale."
+                              "000": "Excellent ! En plus d'un monument approprié, votre ville devra également avoir accumulé un certain niveau de valeur. Je laisserai les exigences avec vous, si vous souhaitez les consulter à nouveau."
                            },
                            "bulletin_title": "Anwyn enroule le rouleau",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1744,7 +1744,7 @@
                         },
                         "conclusion2": {
                            "bulletin_message": {
-                              "000": "Que la générosité de Cid soit sur vous, [str(i18n_data.town_name)]. Je vais vous laisser un oiseau, afin que vous puissiez me convoquer pour évaluer votre progrès !"
+                              "000": "Que la générosité de Cid soit avec vous, [str(i18n_data.town_name)]. Je vais vous laisser un oiseau, afin que vous puissiez me convoquer pour évaluer votre progrès !"
                            },
                            "bulletin_title": "Anwyn enroule le rouleau",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1758,8 +1758,8 @@
                      "tier_2_shops": {
                         "weapon_armor_shop": {
                            "shop_info": {
-                              "name": "Boutique armurie de Sombre Marteau Noir",
-                              "title": "Sombre Marteau Noir est arrivé avec du matériel à vendre"
+                              "name": "Boutique l'armurie de Marteau Sombre",
+                              "title": "Marteau Sombre est arrivé avec du matériel à vendre"
                            }
                         },
                         "farming_supplies_shop": {
@@ -1849,7 +1849,7 @@
                            "choice_000": "Ça me va !",
                            "choice_001": "Non. Merci.",
                            "bulletin_message": {
-                              "000": "Sur ce papier, vous trouverez la berceuse pour apaiser l'âme de la montagne. Trouvez la flûte volée. Demande à ton charpentier de l'accorder a cette mélodie. Placez-la dans le chemin d'Ogo le grand, et regarde son arrogance recevoir sa juste punition."
+                              "000": "Sur ce papier, vous trouverez la berceuse pour apaiser l'âme de la montagne. Trouvez la flûte volée. Demande à ton charpentier de l'accorder a cette mélodie. Placez-la sur le chemin d'Ogo le grand, et regardez son arrogance recevoir sa juste punition."
                            },
                            "bulletin_title": "Elle offre un morceau de papier",
                            "dialog_title": "???"
@@ -7232,7 +7232,7 @@
          "mammoth": {
             "mammoth": {
                "display_name": "Mammouth",
-               "description": "Large bestiole"
+               "description": "Animal large"
             }
          }
       },
@@ -7352,7 +7352,7 @@
          },
          "rabbit_statue": {
             "display_name": "Un monument des anciens",
-            "description": "Moussu, mais la pierre est encore bonne ..."
+            "description": "Plein de mousse, mais la pierre est encore bonne ..."
          }
       },
       "refined": {
@@ -7869,7 +7869,7 @@
             "description": "Tranche tes ennemies avec la force du chêne",
             "wooden_sword_iconic": {
                "display_name": "Épée en bois",
-               "description": "Épée basique en bois."
+               "description": "Épée simple en bois."
             },
             "wooden_sword_talisman": {
                "display_name": "Épée en bois",
@@ -7890,7 +7890,7 @@
          },
          "arrow": {
             "display_name": "Flèche à pointes",
-            "description": "Ralentit cible qu'elle frappe"
+            "description": "Ralentit les cibles qu'elle frappe"
          },
          "recurve_bow": {
             "display_name": "Arc recourbé",
@@ -7902,7 +7902,7 @@
          },
          "crude_wooden_club": {
             "display_name": "Massue de bois brut",
-            "description": "Branche pointue avec un manche enveloppée d'un bout de tissu"
+            "description": "Branche pointue avec un manche, enveloppé d'un bout de tissu"
          },
          "ogos_bone_mace": {
             "display_name": "The Bonker",
@@ -7967,51 +7967,51 @@
          "seeds": {
             "turnip_seeds": {
                "display_name": "Graines de navet",
-               "description": "Apprenez à développer des navets."
+               "description": "Apprenez à faire pousser des navets."
             },
             "carrot_seeds": {
                "display_name": "Graines de carotte",
-               "description": "Apprenez à développer des carottes."
+               "description": "Apprenez à faire pousser des carottes."
             },
             "pumpkin_seeds": {
                "display_name": "Graines de citrouille",
-               "description": "Apprenez à développer des citrouilles."
+               "description": "Apprenez à faire pousser des citrouilles."
             },
             "golden_gourd_seeds": {
                "display_name": "Graines de courge dorée",
-               "description": "Apprenez à développer des courges dorée."
+               "description": "Apprenez à faire pousser des courges dorée."
             },
             "watermelon_seeds": {
                "display_name": "Graines de pastèque",
-               "description": "Apprenez à développer des délicieuses pastèques."
+               "description": "Apprenez à faire pousser des délicieuses pastèques."
             },
             "cactus_flower_seeds": {
                "display_name": "Graines de fleur de cactus",
-               "description": "Apprenez à développer des délicieuses fleurs piquante."
+               "description": "Apprenez à faire pousser des délicieuses fleurs piquante."
             },
             "acacia_tree_seeds": {
                "display_name": "Graines d'acacia",
-               "description": "Apprenez à développer des arbres d'acacia."
+               "description": "Apprenez à faire pousser des arbres d'acacia."
             },
             "oak_tree_seeds": {
                "display_name": "Glands",
-               "description": "Apprenez à développer des chêniers."
+               "description": "Apprenez à faire pousser des chêniers."
             },
             "brightbell_seeds": {
                "display_name": "Graines de jacinthe",
-               "description": "Apprenez à développer des jacinthes."
+               "description": "Apprenez à faire pousser des jacinthes."
             },
             "frostsnap_seeds": {
                "display_name": "Graines de perce-neige",
-               "description": "Apprenez à développer des perce-neiges."
+               "description": "Apprenez à faire pousser des perce-neiges."
             },
             "wheat_seeds": {
                "display_name": "Graines de blé",
-               "description": "Apprenez à développer du blé."
+               "description": "Apprenez à faire pousser du blé."
             },
             "silkweed_seeds": {
                "display_name": "Graines de fil-de-soie",
-               "description": "Apprenez à développer du fil-de-soie."
+               "description": "Apprenez à faire pousser du fil-de-soie."
             }
          }
       },
@@ -8031,7 +8031,7 @@
       "ephemera": {
          "ball_of_wax": {
             "display_name": "Boule de cire",
-            "description": "Brut n'est-ce pas ?"
+            "description": "Brut, n'est-ce pas ?"
          }
       }
    },
@@ -8475,7 +8475,7 @@
             "large_crate_recipe": {
                "description": "Pour entreposer jusqu'à 32 objets.",
                "recipe_name": "Grande caisse",
-               "flavor": "Est-ce que la caisse qui entrepose tout ce qui ne peut s'entreposer soi-même se stocke-t-elle elle-même?"
+               "flavor": "Est-ce que la caisse qui entrepose tout ce qui ne peut s'entreposer soi-même, se stocke-t-elle elle-même?"
             },
             "leather_bound_chest_recipe": {
                "description": "Entreposage stylisé qui peut contenir jusqu'à 64 objets.",
@@ -8489,12 +8489,12 @@
             "not_much_of_a_bed_recipe": {
                "description": "Un poil plus confortable que de dormir sur une planche.",
                "recipe_name": "Lit miteux",
-               "flavor": "Mean as in poor, not cruel. Though it's that too."
+               "flavor": "Miteux à dans pauvre, et non plein de mites. Peut-être."
             },
             "park_bench_recipe": {
                "description": "Siège d'extérieur pour des moments de relaxation.",
                "recipe_name": "Banc de parc en bois",
-               "flavor": "La vie c'est comme une assiette de baies."
+               "flavor": "La vie, c'est comme une assiette de baies."
             },
             "picket_fence_gate_recipe": {
                "description": "Permet aux gens de traverser votre clôture.",
@@ -8504,7 +8504,7 @@
             "picket_fence_recipe": {
                "description": "Garde les gens en dehors de votre propriété.",
                "recipe_name": "Clôture",
-               "flavor": "Si elle n'est pas blanche, cela manquera t'il à votre vie ?"
+               "flavor": "Si elle n'est pas blanche, cela manquera à votre vie."
             },
             "tools_weapons_name": "Outils et armes",
             "storage_name": "Rangement",
@@ -8521,15 +8521,15 @@
             "simple_wooden_chair_recipe": {
                "description": "Manger assis procure un gain de satiété de 20%.",
                "recipe_name": "Chaise en bois",
-               "flavor": "Dix mille ans de recherche ont aboutis dans ce concept à quatre pieds."
+               "flavor": "Dix mille ans de recherche ont aboutis à ce concept à quatre pieds."
             },
             "small_crate_recipe": {
                "description": "Pour ranger 8 objets.",
                "recipe_name": "Petite caisse",
-               "flavor": "Est-ce que la caisse qui stocke tout ce qui ne peut se stocker soi-même se stocke-t-elle elle-même?"
+               "flavor": "Est-ce que la caisse qui entrepose tout ce qui ne peut s'entreposer soi-même, s'entrepose-t-elle elle-même?"
             },
             "table_for_one_recipe": {
-               "description": "C'est mieux que de manger debout. A moins que vous ne faites attention à votre poids.",
+               "description": "C'est mieux que de manger debout. À moins que vous ne faites pas attention à votre poids.",
                "recipe_name": "Table de célibataire",
                "flavor": "Matériel de repas pour introvertis."
             },
@@ -8541,7 +8541,7 @@
             "window_box_brightbell_recipe": {
                "description": "Une jardinière pleine de jacinthe rose, à suspendre aux fenêtres.",
                "recipe_name": "Jardinière de jacinthe rose",
-               "flavor": "Une jacinthe rose par jour éloigne les ogres pour toujours !"
+               "flavor": "Une jacinthe rose par jour, éloigne les ogres pour toujours !"
             },
             "window_box_frostsnap_recipe": {
                "description": "Une jardinière pleine de Perce-neige, à suspendre aux fenêtres.",
@@ -8560,16 +8560,16 @@
             "wooden_door_2_recipe": {
                "description": "Plus solide que les portes classiques.",
                "recipe_name": "Porte en bois renforcée",
-               "flavor": "This here pattern, I learned from the Squarefolk."
+               "flavor": "Ce modèle, je l'ai appris par les Squarefolk."
             },
             "wooden_door_recipe": {
                "description": "Obstacle mineur pour les intrus.",
                "recipe_name": "Porte en bois",
-               "flavor": "Enfin un peu de vie privée !"
+               "flavor": "Enfin, un peu de vie privée !"
             },
             "wooden_double_door_recipe": {
                "description": "Deux portes sont mieux qu'une.",
-               "recipe_name": "Double porte en bois",
+               "recipe_name": "Porte double en bois",
                "flavor": "Certaines personnes aiment faire des entrées... tous les jours."
             },
             "wooden_garden_lantern_recipe": {
@@ -8578,7 +8578,7 @@
                "flavor": "Pratique et romantique !"
             },
             "wooden_shield_recipe": {
-               "description": "Très basique, mais permet toutefois à son porteur de bloquer des coups.",
+               "description": "Très simple, mais permet toutefois à son porteur de bloquer des coups.",
                "recipe_name": "Bouclier en bois",
                "flavor": "Mieux qu'improviser avec une branche."
             },
@@ -8595,7 +8595,7 @@
             "wooden_sign_mason_recipe": {
                "description": "Une enseigne avec la marque du tailleur de pierre à placer sur les bâtiments.",
                "recipe_name": "Enseigne murale de tailleur de pierre",
-               "flavor": "Belles et lourdes choses qui parfois contiennent des choses qui brulent."
+               "flavor": "Produit de beaux et lourds objets. Contient parfois des choses qui brulent."
             },
             "wooden_sign_recipe": {
                "description": "Une enseigne générique pour identifier vos bâtiments.",
@@ -8613,7 +8613,7 @@
                "flavor": "Juste assez pointue pour le travail à faire."
             },
             "wooden_wall_lantern_recipe": {
-               "description": "Une lanterne simple. Placées sur les bâtiments pour fournir de la lumière la nuit.",
+               "description": "Une lanterne simple. Placé sur les bâtiments pour fournir de la lumière la nuit.",
                "recipe_name": "Lanterne murale en bois",
                "flavor": "So comfortinzzzzzzzz..."
             },
@@ -8638,7 +8638,7 @@
                "flavor": "Un établi plus élégant, réalisé en des temps plus civilisé."
             },
             "wooden_window_frame_tall_recipe": {
-               "description": "Les hauteurs extrêmes ajoute un air d'élégance.",
+               "description": "Les hauteurs extrêmes ajoutent un air d'élégance.",
                "recipe_name": "Cadre de fenêtre haut"
             },
             "wooden_window_frame_wide_recipe": {
@@ -8718,7 +8718,7 @@
             "requirements": "Fabriqué par un maçon",
             "workshop": {
                "name": "Chaudron en pierre",
-               "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
+               "long_description": "Gigantesque marmite lourde propice à cuire un festin à la fois!"
             },
             "level_6_data": {
                "title": "Grand chef",
@@ -8735,7 +8735,7 @@
             },
             "level_1_data": {
                "perk_000_name": "Camp Cooking -- XXX TOM, REVISIT THE COOK PERKS!!!!!!",
-               "perk_000_description": "Le cuisiner peut faire des choses basique, bien nutritive."
+               "perk_000_description": "Le cuisiner peut faire des choses basiques, bien nutritive."
             },
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
@@ -9168,7 +9168,7 @@
                "flavor": "Tiré du dragon qui vit dans la forge, armes et armures, défense et conquête."
             },
             "potter_cutter_recipe": {
-               "description": "Permet à un hearthling de fabriquer des outils et des biens d'argile.",
+               "description": "Permet à un hearthling de fabriquer des outils et des biens en argile.",
                "recipe_name": "Couteau de potier",
                "flavor": "Et Singe frappa la terre avec son bâton. 'Car vous êtes mes enfants, dit-il, et vous ne manquerez de rien.'"
             },
@@ -9783,11 +9783,11 @@
             },
             "throw_rug_recipe": {
                "description": "Enjolive ce vieux sol poussiéreux",
-               "recipe_name": "Une capette décorative",
-               "flavor": "Trop belle pour y marcher."
+               "recipe_name": "Un tapis décoratif",
+               "flavor": "Trop beau pour marcher dessus."
             },
             "worker_outfit_2_recipe": {
-               "description": "Coutures doubles et rembourrages placés stratégiquement augmentent la productivité des travailleurs. Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
+               "description": "Ses coutures doubles et son rembourrage placé stratégiquement augmentent la productivité des travailleurs. Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
                "recipe_name": "Habit amélioré de travailleur",
                "flavor": "Votre ville vous aime !"
             },
