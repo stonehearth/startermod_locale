@@ -21,7 +21,7 @@ json 파일의 콜론 ' : ' 오른쪽에 오는 문장만 변경하면 됩니다
 http://codebeautify.org/jsonviewer  웹사이트를 사용하여 해당 데이터 구조를 더욱 쉽게 볼 수 있습니다.
 
 ### 5. 참조
-이 가이드는 [네이버 스톤하스 포럼 카페](http://http://cafe.naver.com/stonehearth)에서 작성되었습니다.<br>
+이 가이드는 [네이버 스톤하스 포럼 카페](http://cafe.naver.com/stonehearth)에서 작성되었습니다.<br>
 
 ### 6. 기여자
   - Goldmetal: 관리, 개발 [#과거_커밋_목록](https://github.com/StonehearthForum/stoneHearth_locale_ko/commits/master?author=Goldmetal) [#커밋_목록](https://github.com/StonehearthForum/stoneHearth_locale_kr/commits/master?author=Goldmetal)
