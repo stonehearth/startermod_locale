@@ -1170,15 +1170,15 @@
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Storage filter defaults to None",
                "default_storage_filter_none_description": "When creating a new stockpile or putting down a new crate, the default filter on the storage will be set to 'None' instead of 'All'",
-               "show_hearthling_paths": "Show Hearthling paths",
-               "show_hearthling_paths_description": "Display the path your hearthlings are following.",
+               "show_hearthling_paths": "하슬링 경로 표시",
+               "show_hearthling_paths_description": "하슬링의 이동 경로를 표시합니다.",
                "max_citizens": "최대 인구 수",
                "randomize_attributes": "Randomize Hearthling Attributes",
                "randomize_attributes_description": "If enabled, hearthling Mind, Body, and Spirit attributes will be assigned completely at random instead of distributed in a balanced fashion.",
-               "auto_loot": "Auto Loot",
-               "auto_loot_description": "When an enemy drops loot, automatically mark it for pick up.",
-               "building_auto_queue_crafters": "Auto Queue Crafting For Building",
-               "building_auto_queue_crafters_description": "When starting construction on a building, all furniture and fixtures for that building are automatically queued for their respective crafters."
+               "auto_loot": "자동 줍기",
+               "auto_loot_description": "적이 물건을 떨어뜨리면 자동으로 줍습니다.",
+               "building_auto_queue_crafters": "건축을 위한 자동대기열 활성화",
+               "building_auto_queue_crafters_description": "건물 공사에 필요한 모든 가구와 비품들을 자동으로 제작에 들어가도록 설정해줍니다."
             },
             "mods": "Mods",
             "mods_tab": {
@@ -4619,7 +4619,7 @@
             },
             "harvest_logs": {
                "scenario_data": {
-                  "declined_text": "I don't need a tutorial -- I know what to do!"
+                  "declined_text": "튜토리얼 필요없음"
                }
             }
          }
@@ -5062,7 +5062,7 @@
             }
          },
          "bronze_shield": {
-            "display_name": "Bronze Shield",
+            "display_name": "청동 방패",
             "description": "Useful for blocking attacks",
             "bronze_shield_iconic": {
                "display_name": "Bronze Shield",
@@ -10199,7 +10199,7 @@
             },
             "harvest_logs": {
                "scenario_data": {
-                  "message": "If we're going to get this town off the ground, we'll need wood, and lots of it! Chop down some nearby trees to get logs.",
+                  "message": "우리가 이 땅에 정착하기 위해서 많은 목재를 필요로 할 것입니다! 통나무를 얻기 위해 근처의 나무들을 잘라보세요.",
                   "completed_message": "Congratulations! We've got some wood resources now. Logs and other natural resources can be used to construct buildings and craft items. They're the first building blocks for advancing your town.",
                   "title": "[str(i18n_data.town_name)] Town: Initial Supplies",
                   "resource_display_name": "Wooden logs"
