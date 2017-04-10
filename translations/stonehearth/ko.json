@@ -4821,7 +4821,7 @@
                },
                "pain_severe": {
                   "display_name": "심각한 통증",
-                  "tooltip": "!!!"
+                  "tooltip": "!!!!"
                }
             },
             "sleeping": {
@@ -9557,8 +9557,8 @@
          },
          "trapper_buffs": {
             "speed_1_buff": {
-               "description": "Long walks have increased the trapper's foot speed.",
-               "display_name": "Trapper Speed Increase +10"
+               "description": "기나긴 산책은 사냥꾼의 발걸음 속도를 증가 시켰습니다.",
+               "display_name": "사냥꾼 이동 속도 +10"
             }
          },
          "trapper_knife": {
