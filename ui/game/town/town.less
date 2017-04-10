@@ -1,0 +1,368 @@
+#town {
+   margin: 160px auto;
+   position: relative;
+
+   .window {
+      width: 750px;
+      height: 650px;
+      position: relative;
+   }
+
+   .tabPage {
+      width: 753px;
+      height: 554px;
+      display: none;
+      overflow-y: none;
+      overflow-x: visible;
+   }
+
+   #info {
+      position: relative;
+      height: 133px;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      #townTitle {
+         position: absolute;
+         left: 10px;
+         top: 20px;
+
+         #descriptor {
+            font-size: 18px;
+         }
+
+         #name {
+            .nobr;
+            padding-top: 4px;
+            font-size: 34px;
+            max-width: 500px;
+            overflow: hidden;
+         }
+      }
+
+      #citizenCount {
+         position: absolute;
+         top: 9px;
+         right: 106px;
+         width: 210px;
+
+         .counter {
+            float: left;
+            width: 70px;
+            height: 70px;
+            display: flex;
+
+            div {
+               font-family: @controlFontFamily;
+               font-size: 24px;
+               margin: auto;
+            }
+         }
+
+         #workers {
+            background: url(images/worker_count_bg.png);
+         }
+
+         #crafters {
+            background: url(images/crafter_count_bg.png);
+         }
+
+         #soldiers {
+            background: url(images/soldier_count_bg.png);
+         }
+      }
+
+      #moraleBanner {
+         position: absolute;
+         width: 71px;
+         height: 100%;
+         right: 9px;
+         top: 0px;
+         background: url(/stonehearth/ui/game/images/morale_banner.png);
+         background-size: contain;
+         background-repeat: no-repeat;
+
+         #townMoraleName {
+            position: relative;
+            top: 13px;
+            font-family: @controlFontFamily;
+            color: @headerFontColor;
+            font-size: 20px;
+            text-align: center;
+         }
+
+         #moraleIcon {
+            position: relative;
+            top: 24px;
+            left: 12px;
+            width: 45px;
+            height: 45px;
+            background-size: contain;
+         }
+      }
+   }
+
+   #scores {
+      top: 200px;
+      padding-left: 18px;
+
+      #moodIcon {
+         height: 40px;
+         width: 50px;
+         background-size: contain;
+         background-repeat: no-repeat;
+      }
+
+      .row {
+         font-family: @controlFontFamily;
+         font-size: 22px;
+         padding-top: 8px;
+         padding-bottom: 8px;
+
+         div {
+            display: inline-block;
+            vertical-align: middle;
+         }
+
+         div:nth-of-type(1) {
+            width: 40px;
+            height: 40px;
+         }
+
+         div:nth-of-type(2) {
+            color: #a8935d;
+            width: 300px;
+            padding-left: 10px;
+         }
+
+         div:nth-of-type(3) {
+            color: #fedb17;
+         }
+      }
+
+      .row.indented {
+         padding-left: 40px;
+         font-size: 20px;
+         div:nth-of-type(2) {
+            width: 262px; 
+         }
+      }
+
+      #netWorthIcon {
+         height: 40px;
+         width: 40px;
+         background-image: url(images/net_worth_icon.png);
+         background-position: center center;
+         background-repeat: no-repeat;
+      }
+
+      #buildingIcon {
+         height: 30px;
+         width: 40px;
+         background-image: url(images/buildings_icon.png);
+         background-position: center center;
+         background-repeat: no-repeat;
+      }
+
+      #inventoryIcon {
+         height: 30px;
+         width: 40px;
+         background-image: url(images/inventory_icon.png);
+         background-position: center center;
+         background-repeat: no-repeat;
+      }
+
+      #agricultureIcon {
+         height: 30px;
+         width: 40px;
+         background-image: url(images/agriculture_icon.png);
+         background-position: center center;
+         background-repeat: no-repeat;
+      }
+
+      #ediblesIcon {
+         width: 40px;
+         height: 40px;
+         background-image: url(images/edibles_icon.png);
+         background-position: center center;
+         background-repeat: no-repeat;
+      }
+
+      #happinessIcon {
+         width: 40px;
+         height: 30px;
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-image: url(images/happiness_icon.png);
+      }
+
+      #militaryIcon {
+         height: 40px;
+         width: 40px;
+         background-image: url(images/military_icon.png);
+         background-position: center center;
+         background-repeat: no-repeat;
+      }
+   }
+
+   #tabs {
+      position: absolute;
+      top: 175px;
+      left: 23px;
+   }
+
+   .logTitle {
+      color: #cf5300;
+   }
+
+   #scoreEnhancers {
+      float: left;
+      top: 20px;
+      left: 20px;
+      width: 350px;
+      overflow-y: auto;
+
+   }
+
+   #scoreDowners {
+      float: right;
+      top: 20px;
+      right: 20px;
+      width: 350px;
+      overflow-y: auto;
+   }
+
+   .signature {
+      padding-top: 4px;
+      padding-right: 10px;
+      display: block;
+      text-align: right;
+   }
+
+   #backForwardDiv {
+      position: relative;
+      width: 740px;
+   }
+
+   #inventoryTab {
+      #inventoryPaletteContainer {
+         height: 380px;
+         overflow-y: scroll;
+      }
+      #inventoryCount{
+         color: #fedb17;
+         font-family: @controlFontFamily;
+         font-size: 22px;
+         display: block;
+         padding-left: 2px;
+         padding-top: 8px;
+         display: inline-block;
+
+         #countNumbers {
+            font-family: @controlFontFamily;
+            font-size: 22px;
+         }
+
+         #countNumbers.notFull {
+            color: #fedb17;
+         }
+
+         #countNumbers.fullWarning {
+            color: red;
+         }
+      }
+   }
+
+   #journalsTab {
+      #journalsDownSection {
+         position: absolute;
+         height: 380px;
+         width: 731px;
+      }
+      .book {
+         position: relative;
+         top: 12px;
+         left: 29px;
+
+         #defaultMessage {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 70px;
+            text-shadow: none;
+            color: #000;
+         }
+
+         #bookBeginning {
+            text-align: center;
+            padding-right: 10px;
+         }
+
+         h2 {
+            left: 0px;
+            right:0px;
+            height: 44px;
+            padding-left: 15px;
+            padding-top:7px;
+            display: block;
+
+            font-family: @headerFontFamily;
+            font-size: 26px;
+            .outlined(#b1955b);
+            color: #000;
+            margin: 0;
+         }
+
+         .praiseTitle {
+            padding-left: 17px;
+            background: url(images/praises.png);
+            text-align: left;
+            background-repeat: no-repeat;
+
+         }
+         .gripeTitle {
+            padding-right: 15px;
+            background: url(images/gripes.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            text-align: right;
+
+         }
+      }
+
+      #dateControls {
+         position: absolute;
+         margin-top: -16px;
+         margin-left: 70px;
+         height: 34px;
+
+         #pageBackBtn {
+            float: left;
+            width: 35px;
+            height: 31px;
+            background: url(images/date_prev.png);
+         }
+
+         #journalDate {
+            float: left;
+            width: 207px;
+            height: 34px;
+            padding-top: 7px;
+            background: url(images/date_bg.png);
+            background-repeat: no-repeat;
+            .controlFont;
+            text-align: center;
+            font-size: 14px;
+
+         }
+
+         #pageForwardBtn {
+            float: left;
+            width: 35px;
+            height: 31px;
+            background: url(images/date_next.png);
+         }
+      }
+
+   }
+}

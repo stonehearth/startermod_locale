@@ -1,0 +1,673 @@
+#citizenCharacterSheet {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   width: 724px;
+   height: 850px;
+   z-index: 99;
+
+   .title {
+      .outlined(#786b4e);
+      color: @darkBrownColor;
+   }
+
+   #glass {
+      .controlFont;
+      .outlined(#000, 4px);
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      width: 271px;
+      height: 333px;
+      background-image: url(images/glass.png);
+      color: #fff;
+      font-size: 50px;
+      text-align: center;
+      pointer-events: none;
+
+      #mind {
+         position: absolute;
+         left: 30px;
+         top: 75px;
+         width: 100px;
+      }
+
+      #body {
+         position: absolute;
+         top: 75px;
+         left: 135px;
+         width: 100px;
+      }
+
+      #spirit {
+         position: absolute;
+         top: 175px;
+         left: 80px;
+         width: 100px;
+      }
+
+      .whiteBlackOutline {
+         .outlinedThick;
+         font-size: 20px;
+         color: #fff;
+      }
+   }
+
+   #header {
+      .outlined;
+      position: absolute;
+      top: 68px;
+      font-family: @headerFontFamily;
+      color: #fff;
+
+      #name {
+         .outlined;
+         font-family: @headerFontFamily;
+         background: rgba(0,0,0,0.0);
+         color: #ffc000;
+         font-size: 31px;
+         width: 400px;
+         border: 0px;
+         position: relative;
+         overflow:hidden;
+         text-overflow: ellipsis;
+         margin-left: 3px;
+         text-indent: 3px;
+      }
+
+      #descriptionSection {
+         margin-left: 5px;
+         padding-left: 5px;
+         border: rgba(131, 116, 82, 0.44) solid 2px;
+      }
+
+      #description {
+         color: @barleyBrownColor;
+         font-size: 25px;
+         height: 50px;
+         margin-top: 5px;
+
+         .classIconImg {
+            float: left;
+            margin-right: 5px;
+            width: 45px;
+            height: 45px
+         }
+
+         .classNameLvlDesc {
+            padding-top: 10px;
+            width: 340px;
+            display: block;
+         }
+       }
+
+      #healthDisplay {
+         position: absolute;
+         left: 266px;
+         top: 48px;
+         width: 147px;
+         height: 90px;
+
+         .healthIndicator {
+            width: 64px;
+            height: 111px;
+            margin-left: 39px;
+            margin-top: -17px;
+            background-repeat: no-repeat;
+            background-size: contain;
+         }
+
+         .healthStatusDescription {
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: @baseFontFamily;
+            text-align: center;
+         }
+
+         .healthStatusName {
+            color: @barleyBrownColor;
+            margin-top: -70px;
+            margin-left: 113px;
+            font-size: 17px;
+         }
+      }
+
+      #expStat {
+         .baseFont;
+         .outlined;
+         color: #fff;
+         margin-top: -4px;
+         .label {
+            position: relative;
+            left: 11px;
+            top: -7px;
+            font-size: 15px;
+            color: @barleyBrownColor;
+            font-family: @controlFontFamily;
+         }
+
+         .bar {
+            position: relative;
+            width: 230px;
+            height: 15px;
+            display: inline-block;
+            border: 3px solid #000;
+            background: @darkGreyBlueColor;
+            text-align: right;
+            margin-left: 8px;
+         }
+
+         .expBar {
+            background: @expBarColor;
+            height: 100%;
+         }
+      }
+   }
+
+   #traitIcons {
+      position: absolute;
+      top: 220px;
+      left: 20px;
+
+      #traits {
+         margin-top: 10px;
+         height: 70px;
+         width: 450px;
+
+         .item {
+            display: inline-block;
+         }
+      }
+   }
+
+   #details {
+      position: absolute;
+      top: 400px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+
+      .tabPage {
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         right: 0px;
+         bottom: 0px;
+         padding: 0px 10px 10px 10px;
+         overflow-y: auto;
+         vertical-align: top;
+
+         h2 {
+            font-size: 26px;
+         }
+      }
+
+      #equipmentTab {
+         display: none;
+         overflow-y: auto;
+
+         #equipmentTable {
+            width: 100%;
+            border-collapse:collapse;
+            font-size: 18px;
+
+            vertical-align: middle;
+            .slotImg{
+               img {
+                  height: 80px;
+                  width: 80px;
+                  padding: 10px;
+               }
+            }
+
+            td {
+               .outlined;
+               text-align: center;
+               vertical-align: middle;
+            }
+
+            td:nth-of-type(1) {
+               .outlined;
+               text-align: left;
+               width: 120px;
+            }
+
+            td:nth-of-type(2) {
+               .outlined;
+               width: 300px;
+               text-align: left;
+            }
+
+            td:nth-of-type(3) {
+               .outlined;
+               width: 100px;
+            }
+
+            td:nth-of-type(4) {
+               .outlined;
+               width: 100px;
+            }
+
+            tr:nth-child(even) {
+               background: rgba(0,0,0,0.1);
+            }
+
+            .equipmentDataValue {
+               color: #02ff39;
+            }
+
+         }
+      }
+
+      #moraleTab {
+         background-image: url('./images/thoughts_parchment.png');
+         background-size: 100% 102%;
+         background-repeat: no-repeat;
+         overflow: hidden;
+         height: 430px;
+      }
+
+      #attributesTab {
+         display: none;
+         background-image: url('./images/parchment.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position-y: -23px;
+         overflow: hidden;
+         height: 430px;
+
+         #traitDescriptions {
+            position: relative;
+            top: 12px;
+            left: 12px;
+            overflow: auto;
+            height: 313px;
+            width: 675px;
+         }
+      }
+
+      #abilitiesTab {
+         display: none;
+         overflow-y: auto;
+
+         .retiredEffect {
+            -webkit-filter: grayscale(75%);
+         }
+
+         .jobData {
+            margin-top: 5px;
+            color: #ffe850;
+            width: 690px;
+            display: none;
+
+            .levelText {
+               color: #ff5a00;
+            }
+
+            .activeClassNameHeader {
+               font-family: @headerFontFamily;
+               font-size: 26px;
+               color: #ffe850;
+            }
+
+            .retiredClassNameHeader {
+               font-family: @headerFontFamily;
+               font-size: 16px;
+               color: gray;
+            }
+
+            .perkDiv {
+               float: left;
+               margin-right: 10px;
+
+               img {
+                  float: left;
+               }
+               .perkImgLocked {
+                  -webkit-filter: grayscale(75%);
+               }
+               .perkImgUnlocked {
+                  -webkit-filter: grayscale(0%);
+               }
+
+               .levelLabel {
+                  position: absolute;
+                  width: 80px;
+                  padding-top: 60px;
+                  display: block;
+
+                  text-align: center;
+                  font-size: 14;
+                  font-family: @headerFontFamily;
+               }
+
+               .lvLabelUnlocked {
+                  -webkit-filter: grayscale(0%);
+               }
+               .lvLabelLocked {
+                  -webkit-filter: grayscale(75%);
+               }
+            }
+         }
+      }
+
+      #backpackTab {
+         display: none;
+      }
+   }
+
+   .statsTable {
+      width: 660px;
+      margin-left: 46px;
+      margin-top: 18px;
+      font-size: 20px;
+
+      .attr {
+         .outlined(#000);
+         .attrValue {
+            display: inline-block;
+            float: left;
+            width: 42px;
+         }
+
+         .attrName {
+            display: inline-block;
+         }
+      }
+
+      td {
+         width: 33%;
+         vertical-align: top;
+         padding: 4px 0px 4px 0px;
+      }
+   }
+
+   #moraleSection {
+      #moodImg {
+         position: absolute;
+         left: 102px;
+         bottom: 106px;
+         height: 65px;
+      }
+
+      #happinessBarPressureMarker {
+         position: absolute;
+         z-index: 3;
+         height: 38px;
+         width: 69px;
+         bottom: 45px;
+         /*background-image is set in the javascript*/
+         background-repeat: no-repeat;
+
+         -webkit-animation-name: fadeinout;
+         -webkit-animation-duration:1s;
+         -webkit-animation-direction:alternate;
+         -webkit-animation-iteration-count:infinite;
+      }
+
+      .increasePressure {
+         left: 617px;
+      }
+
+      .decreasePressure {
+         left: 17px;
+      }
+
+      #happinessBarFrame {
+         position: absolute;
+         width: 518px;
+         height: 79px;
+         left: 93px;
+         bottom: 20px;
+         background-image: url(http://radiant/stonehearth/ui/game/character_sheets/citizen_character_sheet/images/morale_bar.png);
+         background-repeat: no-repeat;
+         z-index: 2;
+      }
+
+      #happinessBar {
+         position: absolute;
+         height: 50px;
+         left: 102px;
+         bottom: 39px;
+         width: 500px;
+
+         .moodBarSegment {
+            float: left;
+            height: 52.5px;
+            border: 1.5px solid black;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+         }
+
+         .inactiveMood {
+            height: 50px;
+            bottom: 48px;
+            position: relative;
+            background: rgba(60, 60, 60, 0.75);
+         }
+
+         #barShade {
+            z-index: 1;
+            position: relative;
+            height: 23px;
+            top: 27px;
+            left: 0px;
+            background-color: rgba(1, 1, 1, 0.13);
+         }
+
+         .moodBarIcon {
+            display: block;
+            margin: 2px auto 0 auto;
+            height:45px;
+         }
+      }
+
+      #moraleBarArrowContainer {
+         z-index: 3;
+         position: relative;
+         top: 152px;
+         left: 68px;
+         width: 500px;
+      }
+
+      #moraleBarArrow {
+         position: relative;
+         background-image: url(images/morale_bar_arrow.png);
+         background-repeat: no-repeat;
+         width: 46px;
+         height: 32px;
+         -webkit-transition: left 0.5s linear;
+         transition: left 0.5s linear;
+      }
+
+      #moodDescription {
+         position: absolute;
+         bottom: 109px;
+         background: rgba(0, 0, 0, 0.3);
+         margin: 0px 60px 0px 78px;
+         height: 58px;
+         left: 44px;
+         width: 478px;
+
+         .displayName {
+            display: block;
+            text-align: center;
+            font-size: 20px;
+            color: #ffc000;
+            margin-top: 5px;
+            margin-bottom: -12px;
+         }
+
+         .description {
+            display: block;
+			font-size: 19px;
+            text-align: center;
+         }
+      }
+   }
+
+   #thoughtsSection {
+      font-size: 15px;
+      height: 238px;
+
+      #thoughtEntries {
+         margin-left: 10px;
+         margin-top: 16px;
+         overflow-y: auto;
+         height: 240px;
+         width: 681px;
+      }
+
+      .thoughtsColumn {
+         float: left;
+         width: 310px;
+         min-height: 1px; /* make sure columns don't collapse */
+      }
+
+      #positiveThoughts {
+         margin-left: 7px;
+      }
+
+      #negativeThoughts {
+         margin-right: 22px;
+      }
+
+      .happinessDeltaSymbol {
+         font-size: 22px;
+         float: left;
+         margin-top: 1px;
+         margin-left: 5px;
+         letter-spacing: 1.5px;
+      }
+
+      .thoughtEntryRow {
+         background-image: url(images/thought_entry_bg.png);
+         background-repeat: no-repeat;
+         height: 44px;
+      }
+
+      .thoughtEntryData {
+         height: 37px;
+         padding-bottom: 11px;
+         position: relative;
+      }
+
+      .thoughtDisplayName {
+         font-size: 18px;
+         margin-left: 10px;
+         margin-top: 7px;
+         float: left;
+      }
+
+      .duration {
+         float: right;
+         font-size: 13px;
+         margin-right: 12px;
+         margin-top: 8px;
+      }
+
+      .thoughtStack {
+         position: absolute;
+         right: 262px;
+         top: 30px;
+         color: #e7c46d;
+         float: right;
+         font-family: @controlFontFamily;
+      }
+
+      .moodIncreaseColor {
+         color: #ffea79;
+      }
+
+      .moodDecreaseColor {
+         color: #7db4ff;
+      }
+
+      .noThoughts {
+         color: #403626;
+         font-size: 13px;
+         text-shadow: none;
+         margin-top: 10px;
+         margin-left: 10px;
+      }
+   }
+
+   .lineSeparator{
+      position: absolute;
+      height: 233px;
+      background: #A9956C;
+      border-left: 1px solid #9c8a64;
+      top: 14px;
+      left: 344px;
+   }
+
+   .buffedValue{
+      color: #42d00e;
+   }
+
+   .debuffedValue {
+      color: #d00e0e;
+   }
+
+   .normalValue {
+      color: white;
+   }
+
+   #tabs {
+      position: absolute;
+      top: -52px;
+   }
+
+}
+
+.buffTooltip {
+   .outlined;
+   font-size: 17px;
+   margin-top: 1px;
+
+   .buffTooltipImg {
+      width: 29px;
+      height: 32px;
+      vertical-align: middle;
+   }
+
+   .buffTooltipText {
+      margin-bottom: 3px;
+   }
+
+   .dataSpan {
+      margin-top: 5px;
+      padding-left: 15px;
+      padding-top: 2px;
+
+      float: right;
+	  font-size: 17px;
+	  
+      vertical-align: middle;
+      background-repeat:no-repeat;
+      background-position:left;
+   }
+
+   .debuffDataSpan {
+      margin-left: 8px;
+      background-image: url('./images/debuff_arrow.png');
+      color: red;
+   }
+
+   .buffDataSpan {
+      margin-left: 8px;
+      background-image: url('./images/buff_arrow.png');
+      color: green;
+   }
+}
+
+.lockedTooltipLabel {
+   color: gray;
+}
+
+@-webkit-keyframes fadeinout
+{
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+}

@@ -1,0 +1,167 @@
+{
+   "type": "kingdom",
+   "kingdom_name": "The Golden Conquering Arm",
+   "kingdom_id": "goblins",
+   "amenity_to_strangers": "hostile",
+   "amenity_to": {
+      "orcs": "neutral"
+   },
+   "roles": {
+      "default": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:goblins:goblin"
+            ],
+            "given_names": [
+               "Zug",
+               "Baa",
+               "Ulan",
+               "Ikh",
+               "Baatar",
+               "Zun",
+               "Muud",
+               "Govi",
+               "Omno",
+               "Hod",
+               "Veek",
+               "Gom",
+               "Morun",
+               "Ky",
+               "Ragnash"
+            ]
+         },
+         "female": {
+            "uri": [
+               "stonehearth:monsters:goblins:goblin"
+            ],
+            "given_names": [
+               "Khru",
+               "Sel",
+               "Anji",
+               "Maa",
+               "Ree",
+               "Dini",
+               "Olgi",
+               "Alsa",
+               "Haaki",
+               "Erde",
+               "Arvee",
+               "Bayan"
+            ]
+         },
+         "surnames": [
+            "the Magnificent",
+            "the Puce",
+            "the Sagacious",
+            "Skull Crusher",
+            "Nail Biter",
+            "the Extemporaneous",
+            "the Orange",
+            "the Olive",
+            "Oliveskinner",
+            "the Horrendous",
+            "the Mighty",
+            "Brillaintmind",
+            "the Earnest",
+            "the Awesome",
+            "the Magnanimous",
+            "Kingmaker",
+            "the Ripped",
+            "Scarletfang",
+            "Skaleladder",
+            "the Blatant",
+            "Armguard",
+            "the Flange",
+            "Leathermail",
+            "the Expiditer",
+            "Dragonslayer",
+            "Thornpants",
+            "Deathfist",
+            "Bloodpainter",
+            "the Grandiose"
+         ]
+      },
+      "wolf": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:goblins:wolf"
+            ],
+            "given_names": [
+               "Upear",
+               "Fastpaw",
+               "Brownruff",
+               "Bitey",
+               "Blaze",
+               "Toothy",
+               "Antonio",
+               "Grarghfng",
+               "Growlie",
+               "Puppy",
+               "Yellow",
+               "Ruff",
+               "Barkspawn",
+               "Edwina",
+               "Ember",
+               "Growlkhang",
+               "Jeff",
+               "Dumbrawrrrr",
+               "Cliffy",
+               "Lancer",
+               "Spike",
+               "Toothy"
+            ]
+         },
+         "surnames": [
+            "the Ferocious",
+            "Chases-the-Sky",
+            "Gruffbarker",
+            "the Frothing",
+            "the Intimidating",
+            "the Manic",
+            "the Rabid",
+            "the Fearsome",
+            "the Cuddly",
+            "the Favorite",
+            "Peopleeater",
+            "the Friendly"
+         ]
+      },
+      "mountain_ogre": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:ogres:ogre"
+            ],
+            "given_names": [
+               "Mountain"
+            ],
+            "surnames": [
+               "the Ogre"
+            ]
+         }
+      },
+      "boss_sheep": {
+         "male": {
+            "uri": [
+               "stonehearth:sheep"
+            ],
+            "given_names": [
+               "Bluebell"
+            ]
+         }
+      }
+   },
+   "town_pieces": {
+      "optional_prefix": [
+         "Ay"
+      ],
+      "town_name": [
+         "Pohk"
+      ],
+      "suffix": [
+         "yu"
+      ]
+   },
+   "task_groups": {
+      "stonehearth:task_group:restock": "stonehearth:simple_labor"
+   }
+}

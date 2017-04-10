@@ -1,10 +1,7 @@
 {
    "languages": {
-      "en-XA": {
-         "display_name": "[!!Ēņģľĭšħ!!]"
-      },
-      "en-DEV": {
-         "display_name": "English(Dev)"
+      "ko": {
+         "display_name": "Korean(한국어)"
       }
    }
 }
