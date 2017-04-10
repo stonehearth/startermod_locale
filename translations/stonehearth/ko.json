@@ -3130,40 +3130,40 @@
          "buff_duration_minutes": "[str(minutes)]분",
          "carrying": {
             "carrying_buff": {
-               "display_name": "So Heavy!",
-               "description": "Carrying heavy things naturally causes people to move more slowly"
+               "display_name": "너무 무거워!",
+               "description": "무거운 물건으로 인해 이동 속도가 감소하였습니다."
             }
          },
          "combat_basics": {
-            "display_name": "Basic Combat Training",
-            "description": "Increased courage through hours of combat training"
+            "display_name": "기초 전투 훈련",
+            "description": "전투 훈련으로 용기가 증가하였습니다."
          },
          "defender": {
             "defender_buff": {
-               "display_name": "Defender",
-               "description": "Increased courage and muscle!"
+               "display_name": "수호자",
+               "description": "용기와 근력이 증가했습니다!"
             }
          },
          "devoted": {
             "devoted_buff": {
-               "display_name": "Devoted",
-               "description": "Speed Increased by 20"
+               "display_name": "헌신",
+               "description": "이동 속도가 20 증가합니다."
             }
          },
          "groggy": {
             "groggy_buff": {
-               "display_name": "Groggy",
-               "description": "A hard night's sleep on the ground lowers speed by 25%. A bed would be much better!"
+               "display_name": "그로기",
+               "description": "한밤에 땅 바닥에서 잠을 자버려서 이동 속도가 25% 감소했습니다. 침대가 훨씬 낫겠군요!"
             }
          },
          "shepherding": {
             "compassionate_shepherd_buff": {
-               "display_name": "Cared For",
-               "description": "Taken care of by a compassionate shepherd. This animal will produce more resources and offspring."
+               "display_name": "보살핌",
+               "description": "자비로운 양치기에 보살핌을 받았습니다. 이 동물은 더 많은 자원과 새끼를 낳을 것입니다."
             },
             "shepherding_speed_bonus": {
-               "display_name": "Herd Speed Increase",
-               "description": "The shepherd is now more adept at getting the flock to walk a tiny bit faster."
+               "display_name": "엄청난 속도 향상",
+               "description": "이제 더 빠른 속도로 양떼를 걷게 하는데 더 능숙해졌습니다"
             },
             "stenched_shepherd_buff": {
                "display_name": "Stenched",
@@ -4756,7 +4756,7 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "광신자",
-               "description": "영원히 잠드는 것, 그건 무엇일까요?"
+               "description": ""
             }
          }
       },
