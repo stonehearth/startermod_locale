@@ -98,7 +98,7 @@
             "approved": "승인됨!",
             "denied": "조건이 충족되지 않았습니다!",
             "stamper_top_text": "도장",
-            "stamper_bottom_text": "결제",
+            "stamper_bottom_text": "결재",
             "requires": "필요 조건",
             "parent_level": "레벨 [str(parent_level)] [str(parent_name)]"
          },
@@ -854,7 +854,7 @@
                "sheep_pasture_name": "양 목초지",
                "rabbit_pasture_name": "토끼 우리",
                "poyo_pasture_name": "닭장",
-               "sheep_pasture_description": "닭은 양털을 생산하며 고기를 얻을 수 있습니다.",
+               "sheep_pasture_description": "양은 양털을 생산하며 고기를 얻을 수 있습니다.",
                "rabbit_pasture_description": "토끼를 육포로 만들 수 있습니다.",
                "poyo_pasture_description": "닭은 달걀을 생산하며, 요리에 사용할 수 있습니다.",
                "num_animals": "동물:"
@@ -1333,10 +1333,10 @@
                }
             },
             "willpower": {
-               "display_name": "의지력",
+               "display_name": "의지",
                "description": "적들의 매력에 저항하는 지수입니다.",
                "bullet_points": {
-                  "000": "자가 치유력을 결정합니다."
+                  "000": "자연 치유력을 결정합니다."
                }
             },
             "net_worth": {
@@ -4707,7 +4707,7 @@
          },
          "featherweight": {
             "featherweight_trait": {
-               "display_name": "페더급 신체",
+               "display_name": "날렵한 신체",
                "description": "[name(i18n_data.entity)]은(는) 다른 이들보다 이동 속도가 더 빠르지만, 그만큼 운반량도 적습니다."
             }
          },
@@ -4720,7 +4720,7 @@
          "glutton": {
             "glutton_trait": {
                "display_name": "대식가",
-               "description": "[name(i18n_data.entity)]의 위장은 아무래도 다른 세계와 포탈로 연결된 것 같습니다. 상당히 많은 양의 음식을 먹지만 그만큼 자가 치유력이 높습니다."
+               "description": "[name(i18n_data.entity)]의 위장은 아무래도 다른 세계와 포탈로 연결된 것 같습니다. 상당히 많은 양의 음식을 먹지만 그만큼 자연 치유력이 높습니다."
             }
          },
          "hothead": {
@@ -4732,7 +4732,7 @@
          "night_owl": {
             "night_owl_trait": {
                "display_name": "올빼미 같은 사람 ",
-               "description": "이 하슬링의 하루는 해가 져야 비로소 시작됩니다."
+               "description": "[name(i18n_data.entity)]의 하루는 해가 지고 나서야 비로소 시작됩니다."
             }
          },
          "optimistic": {
@@ -4744,7 +4744,7 @@
          "passion_job": {
             "passion_job_trait": {
                "display_name": "[str(i18n_data.passion_job)]을(를) 열망함",
-               "description": "[name(i18n_data.entity)]은(는) 매일 [str(i18n_data.passion_job)] 직업을 꿈꾸고 있습니다. 아마 기회를 잡을 수 있을지두요?"
+               "description": "[name(i18n_data.entity)]은(는) 매일 [str(i18n_data.passion_job)] 직업을 꿈꾸고 있습니다. 아마 기회를 잡을 수 있지 않을까요?"
             }
          },
          "pessimistic": {
@@ -4756,7 +4756,7 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "광신자",
-               "description": "영원히 잠드는 것, 그것은 무엇일까요?"
+               "description": "영원히 잠드는 것, 그건 무엇일까요?"
             }
          }
       },
@@ -4987,10 +4987,10 @@
       "armor": {
          "knights_shield": {
             "shield_talisman": {
-               "display_name": "기사 방패",
+               "display_name": "기사의 방패",
                "description": "Required to promote a hearthling to a knight"
             },
-            "display_name": "기사 방패",
+            "display_name": "기사의 방패",
             "description": "For defending one's allies"
          },
          "iron_shield": {
@@ -7775,14 +7775,14 @@
             }
          },
          "wooden_sword": {
-            "display_name": "Wooden Sword",
+            "display_name": "보병의 목검",
             "description": "Thacks thine enemies with oaken might",
             "wooden_sword_iconic": {
-               "display_name": "Wooden Sword",
+               "display_name": "보병의 목검",
                "description": "Basic wooden sword."
             },
             "wooden_sword_talisman": {
-               "display_name": "Wooden Sword",
+               "display_name": "보병의 목검",
                "description": "Required to promote a hearthling into a Footman."
             }
          },
@@ -7791,10 +7791,10 @@
             "description": "Preferred weapon for reaping"
          },
          "bow": {
-            "display_name": "Bow",
+            "display_name": "활",
             "description": "Used by an archer for shooting arrows",
             "bow_talisman": {
-               "display_name": "Archer's Bow",
+               "display_name": "궁수의 활",
                "description": "Required to promote a Footman to an Archer"
             }
          },
@@ -7964,64 +7964,64 @@
          },
          "archer_description": {
             "display_name": "궁수",
-            "description": "A ranged combat unit that shoots foes with arrows",
-            "requirements": "Crafted by Carpenter",
+            "description": "화살을 이용한 원거리 공격으로 적을 무찌르는 전투원입니다.",
+            "requirements": "목수로 제작 가능.",
             "level_1_data": {
-               "perk_000_name": "Increased Draw Strength",
-               "perk_000_description": "The archer's damage is increased"
+               "perk_000_name": "당김 힘 증가",
+               "perk_000_description": "궁수의 공격력이 증가합니다."
             },
             "level_2_data": {
-               "perk_000_name": "Armor Piercing Arrows",
-               "perk_000_description": "The archer's shots ignore 50% of the target's armor"
+               "perk_000_name": "장갑 관통 화살",
+               "perk_000_description": "화살이 50% 확률로 목표의 방어력을 무시합니다."
             },
             "level_0_data": {
-               "perk_000_name": "Bow Proficiency",
-               "perk_000_description": "The archer is able to use a bow to shoot arrows at enemies"
+               "perk_000_name": "숙련된 활 사용",
+               "perk_000_description": "궁수가 활을 사용하여 적을 공격할 수 있습니다."
             },
             "level_3_data": {
-               "perk_000_name": "Range Increase",
-               "perk_000_description": "The Archer can attack enemies from further away"
+               "perk_000_name": "사거리 증가",
+               "perk_000_description": "궁수가 더 먼 거리에서 적을 공격합니다."
             },
             "level_5_data": {
-               "perk_000_name": "Range Increase (Rank 2)",
-               "perk_000_description": "The Archer can attack enemies from very far away"
+               "perk_000_name": "사거리 증가 (랭크 2)",
+               "perk_000_description": "궁수가 더욱 먼 거리에서 적을 공격합니다."
             },
             "level_4_data": {
-               "perk_000_name": "Draw Speed Up",
-               "perk_000_description": "The archer shoots arrows with greater speed"
+               "perk_000_name": "당김 속도 향상",
+               "perk_000_description": "궁수의 화살 비행 속도가 대폭 증가합니다."
             },
             "level_6_data": {
-               "perk_000_name": "Double Shot",
-               "perk_000_description": "The archer learns the ancient art of quick shots, allowing rapid firing of two arrows in rapid succession"
+               "perk_000_name": "더블 샷",
+               "perk_000_description": "고대의 퀵샷 기술을 연마하여, 빠른 속도로 두 발의 화살을 발사할 수 있습니다."
             }
          },
          "archer_buffs": {
             "damage_1_buff": {
-               "display_name": "Damage +20%",
-               "description": "The archer's damage is increased."
+               "display_name": "공격력 +20%",
+               "description": "궁수의 공격력이 증가합니다."
             },
             "slowing_arrow": {
-               "display_name": "Slowed",
-               "description": "Movement speed slowed by Spikey Arrows"
+               "display_name": "가시 화살",
+               "description": "이 화살을 맞은 적은 이동 속도가 느려집니다."
             },
             "fire_arrow": {
-               "display_name": "On Fire",
-               "description": "Set aflame! Taking fire damage every 5 minutes for 15 minutes"
+               "display_name": "불 화살",
+               "description": "불을 질러라! 15분 동안 매 5분마다 화재 피해를 입힙니다."
             }
          }
       },
       "architect": {
          "architect_description": {
-            "display_name": "Architect",
+            "display_name": "건축가",
             "description": "???",
             "requirements": "???",
             "level_0_data": {
-               "perk_000_name": "Fast Construction",
-               "perk_000_description": "Build faster!"
+               "perk_000_name": "빠른 건설",
+               "perk_000_description": "남들보다 빠르게 건설합니다."
             },
             "level_1_data": {
-               "perk_000_name": "Conservation of Materials",
-               "perk_000_description": "Have a chance every fabrication to not consume a stack of building material."
+               "perk_000_name": "재료 보존",
+               "perk_000_description": "일정 확률로 모든 구조물이 건축 자재 더미를 소비하지 않게 됩니다."
             }
          }
       },
@@ -8042,45 +8042,45 @@
       "blacksmith": {
          "blacksmith_description": {
             "display_name": "대장장이",
-            "description": "The Blacksmith refines raw ore into metal bars, then uses those bars to craft weapons, armor, and building parts like gates.",
-            "requirements": "Crafted by Mason",
+            "description": "대장장이는 광석을 제련하고, 금속을 이용하여 무기와 감옷, 기타 구조물을 제작합니다.",
+            "requirements": "석공으로 제작 가능.",
             "level_6_data": {
                "title": "일류 대장장이",
-               "perk_000_name": "The Armory",
-               "perk_000_description": "The blacksmith's mastery of his trade allows him to create the finest weapons and armors seen since the forgotten Phoenix Empire."
+               "perk_000_name": "무기고",
+               "perk_000_description": "대장장이가 자신의 업적을 숙달함으로써 잊혀진 피닉스 제국 이후로 본 최고의 무기와 갑옷을 만들 수 있습니다."
             },
             "level_2_data": {
-               "perk_000_name": "Iron Age!",
-               "perk_000_description": "The blacksmith is now skilled enough to forge heavy items made of iron."
+               "perk_000_name": "철기 시대!",
+               "perk_000_description": "대장장이는 이제 철로 만든 무거운 물건을 만들 정도로 숙련되었습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Cold Steel",
-               "perk_000_description": "Long hours at the forge have unlocked the secret of steel: sharper weapons and lighter armor."
+               "perk_000_name": "콜드 스틸",
+               "perk_000_description": "대장간에서 보낸 긴 시간으로 비로소 더 날카로운 무기와 가벼운 갑옷을 이루는 강철의 비밀을 풀 수 있었습니다."
             },
             "level_1_data": {
-               "perk_000_name": "Bronze Age!",
-               "perk_000_description": "The secrets of bronze are now available to the blacksmith."
+               "perk_000_name": "청동기 시대!",
+               "perk_000_description": "청동의 비밀을 이제 대장장이가 이용할 수 있습니다."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the blacksmith may embellish his works in unexpected ways."
+               "perk_000_name": "예술적 영감",
+               "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             }
          },
          "blacksmith_forge": {
             "blacksmith_forge_ghost": {
-               "display_name": "Forge",
-               "description": "A stone oven for heating metal"
+               "display_name": "용광로",
+               "description": "금속을 녹이기 위한 석재 오븐"
             }
          },
          "blacksmith_hammer": {
-            "display_name": "Blacksmith's Hammer",
+            "display_name": "대장장이의 망치",
             "description": "Tools of the trade for a blacksmith.",
             "blacksmith_hammer_iconic": {
-               "display_name": "Blacksmith's Hammer",
+               "display_name": "대장장이의 망치",
                "description": "Tools of the trade for a blacksmith."
             },
             "blacksmith_hammer_talisman": {
-               "display_name": "Blacksmith's Hammer",
+               "display_name": "대장장이의 망치",
                "description": "Required to promote a hearthling to a blacksmith."
             }
          },
@@ -8299,43 +8299,43 @@
       "carpenter": {
          "carpenter_description": {
             "display_name": "목수",
-            "description": "The carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
-            "requirements": "Crafted by Blacksmith",
+            "description": "목수는 나무로 도구와 가구, 그리고 건설 재료를 만듭니다. ",
+            "requirements": "대장장이로 제작 가능.",
             "level_6_data": {
                "title": "일류 목수",
-               "perk_000_name": "10,000 Hours",
-               "perk_000_description": "The carpenter's mastery of his trade allows him access to recipes that expand your town's opportunities."
+               "perk_000_name": "1만 시간",
+               "perk_000_description": "목수의 완벽한 숙련으로 마을의 발전시킬 수 있는 레시피를 찾을 수 있게 되었습니다."
             },
             "level_2_data": {
-               "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The carpenter is now skillful enough to use materials created by other crafters."
+               "perk_000_name": "협업적 통찰력",
+               "perk_000_description": "이제 다른 제작가들이 만든 재료를 사용할만큼 충분히 솜씨가 좋습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The carpenter now has the courage to try more elaborate projects."
+               "perk_000_name": "확장 목록",
+               "perk_000_description": "더욱 정교한 프로젝트를 시도할 용기가 생겼습니다."
             },
             "level_1_data": {
-               "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The carpenter can now make a solid array of basic furniture."
+               "perk_000_name": "표준 목록",
+               "perk_000_description": "튼튼한 기본 가구를 만들 수 있다."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the carpenter may embellish his works in unexpected ways."
+               "perk_000_name": "예술적 영감",
+               "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             }
          },
          "carpenter_outfit": {
-            "display_name": "Carpenter Overalls",
-            "description": "Uniform for all carpenters"
+            "display_name": "목수 작업복",
+            "description": "모든 목수의 유니폼"
          },
          "carpenter_saw": {
-            "display_name": "Carpenter's Saw",
+            "display_name": "목수의 쇠톱",
             "description": "Tools of the trade for a Carpenter.",
             "carpenter_saw_iconic": {
-               "display_name": "Carpenter's Saw",
+               "display_name": "목수의 쇠톱",
                "description": "Basic level carpenter's saw."
             },
             "carpenter_saw_talisman": {
-               "display_name": "Carpenter's Saw",
+               "display_name": "목수의 쇠톱",
                "description": "Required to promote a hearthling into a Carpenter."
             }
          },
@@ -8624,32 +8624,32 @@
       "cook": {
          "cook_description": {
             "display_name": "요리사",
-            "description": "The cook makes delicious, hearty meals from base vegetables and meats.",
-            "requirements": "Crafted by Mason",
+            "description": "요리사는 채소와 고기로 맛있고 푸짐한 식사를 제공합니다.",
+            "requirements": "석공으로 제작 가능.",
             "workshop": {
                "name": "석재 가마솥",
-               "long_description": "Humongous, heavy pot, suitable for cooking up a feast at a time!"
+               "long_description": "엄청나고 무거운 냄비, 한 번에 잔치를 준비하는 데 적합합니다!"
             },
             "level_6_data": {
                "title": "일류 요리사",
-               "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The cook's dishes are now so good for you they have unexpected effects."
+               "perk_000_name": "1만 시간 (미구현)",
+               "perk_000_description": "요리사의 솜씨가 너무 좋은 나머지, 예상치 못한 효과가 있을 수 있습니다."
             },
             "level_2_data": {
-               "perk_000_name": "Kitchen Chemistry",
-               "perk_000_description": "The cook has learned to make slightly fancier recipes."
+               "perk_000_name": "주방 화학",
+               "perk_000_description": "요리사는 약간 더 사랑스러운 요리법을 익혔습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Ingenuity Enhancements (not implemented)",
-               "perk_000_description": "The cook adds new levels of functionality to classic recipes."
+               "perk_000_name": "기존 기능 향상 (미구현)",
+               "perk_000_description": "요리사는 고전적인 요리법에서 새로운 차원의 기능성을 추가합니다."
             },
             "level_1_data": {
-               "perk_000_name": "Camp Cooking",
-               "perk_000_description": "The cook can make basic, nutritious recipes."
+               "perk_000_name": "캠프 요리",
+               "perk_000_description": "요리사는 기본적이고 영양가있는 요리를 만들 수 있다."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the cook may embellish his works in unexpected ways."
+               "perk_000_name": "예술적 영감",
+               "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             }
          },
          "cook_outfit": {
@@ -8657,14 +8657,14 @@
             "description": "Uniform for all cooks"
          },
          "cook_spoon": {
-            "display_name": "Cook's Spoon",
+            "display_name": "요리사의 국자",
             "description": "Used by the cook",
             "cook_spoon_iconic": {
-               "display_name": "Cook's Spoon",
+               "display_name": "요리사의 국자",
                "description": "Required to promote a hearthling into a Cook."
             },
             "cook_spoon_talisman": {
-               "display_name": "Cook's Spoon",
+               "display_name": "요리사의 국자",
                "description": "Required to promote a hearthling into a Cook."
             }
          },
@@ -8783,43 +8783,43 @@
       },
       "engineer": {
          "engineer_description": {
-            "display_name": "공학자",
-            "description": "The engineer creates advanced contraptions and defensive weaponry.",
-            "requirements": "Crafted by Blacksmith",
+            "display_name": "기술자",
+            "description": "기술자는 고급 무기와 방어용 무기를 개발합니다.",
+            "requirements": "대장장이로 제작 가능.",
             "level_6_data": {
-               "title": "일류 공학자",
-               "perk_000_name": "General of Defense",
-               "perk_000_description": "This engineer can place up to twelve traps and eight turrets"
+               "title": "일류 기술자",
+               "perk_000_name": "우주 방어",
+               "perk_000_description": "최대 12개의 트랩과 8개의 트랩을 배치할 수 있습니다."
             },
             "level_2_data": {
-               "perk_000_name": "Improved Inventiveness",
-               "perk_000_description": "The engineer can repair broken doors and gates more efficiently"
+               "perk_000_name": "향상된 성능",
+               "perk_000_description": "고장난 자동문과 문을 보다 효율적으로 수리할 수 있습니다."
             },
             "level_1_data": {
-               "perk_000_name": "Standard Catalog",
-               "perk_001_name": "Junior Defender",
-               "perk_000_description": "The engineer can now make basic gadgets and decorations.",
-               "perk_001_description": "This engineer can place up to four traps and two turrets"
+               "perk_000_name": "표준 목록",
+               "perk_001_name": "국지 방어",
+               "perk_000_description": "이제 기본적인 기계와 장식품을 만들 수 있습니다.",
+               "perk_001_description": "최대 4개의 트랩과 2개의 트랩을 배치할 수 있습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The engineer now has the courage to create more complex gadgets."
+               "perk_000_name": "확장 목록",
+               "perk_000_description": "이제 더욱 복잡한 장치를 만들 용기가 생겼습니다."
             },
             "level_0_data": {
-               "perk_000_name": "Handyman",
-               "perk_000_description": "The engineer can repair broken doors, gates and other fixable structures."
+               "perk_000_name": "핸디맨",
+               "perk_000_description": "고장난 자동문과 문, 그리고 기타 고정식 구조물을 수리할 수 ​있습니다."
             },
             "level_3_data": {
-               "perk_000_name": "Town Defender",
-               "perk_000_description": "This engineer can place up to eight traps and four turrets"
+               "perk_000_name": "도시 방어",
+               "perk_000_description": "최대 8개의 트랩과 4개의 터렛을 배치할 수 있습니다."
             }
          },
          "engineer_wrench": {
             "engineer_wrench_talisman": {
-               "display_name": "Engineer's Wrench",
+               "display_name": "기술자의 렌치",
                "description": "Required to promote a hearthling into an Engineer"
             },
-            "display_name": "Engineer's Wrench",
+            "display_name": "기술자의 렌치",
             "description": "Tools of the trade for an Engineer"
          },
          "engineer_workbench": {
@@ -8893,42 +8893,42 @@
       "farmer": {
          "farmer_description": {
             "display_name": "농부",
-            "description": "Farmers till fields and harvest crops, providing a consistent food supply and raw materials for baked goods.",
-            "requirements": "Crafted by Carpenter",
+            "description": "농부는 작물을 재배하고 각종 수확물을 제공합니다.",
+            "requirements": "목수로 제작 가능.",
             "level_6_data": {
-               "perk_000_name": "Nature's Surprise (not implemented)",
-               "perk_000_description": "Occasionally, the farmer's special touch yields... special results.",
+               "perk_000_name": "자연의 놀라움 (미구현)",
+               "perk_000_description": "때때로, 농부의 손길이... 특별한 결과를 가져옵니다.",
                "title": "일류 농부"
             },
             "level_1_data": {
-               "perk_000_name": "Speed Up",
-               "perk_000_description": "Running fresh food from field to table has increased the farmer's footspeed."
+               "perk_000_name": "향상된 이동 속도",
+               "perk_000_description": "농지의 신선한 음식을 바로 제공할 수 있도록 발걸음이 빨라졌습니다."
             },
             "level_2_data": {
-               "perk_000_name": "Job Opportunities",
-               "perk_000_description": "Exposure to fresh food has given the farmer ideas about cooked food. See the promotion menu for details."
+               "perk_000_name": "취업 기회",
+               "perk_000_description": "신선한 음식으로 인해 농부는 요리에 대한 아이디어를 얻었습니다. 자세한 내용은 전직 메뉴를 참조하세요."
             },
             "level_3_data": {
-               "perk_000_name": "Bountiful Harvest",
-               "perk_000_description": "The farmer coaxes greater yield from each plant."
+               "perk_000_name": "풍성한 수확",
+               "perk_000_description": "작물로부터 더 많은 수확량을 끌어낼 수 있습니다."
             }
          },
          "farmer_buffs": {
             "speed_1_buff": {
-               "description": "Running fresh food from field to table has increased the farmer's footspeed.",
-               "display_name": "Farmer Speed Increase +10"
+               "description": "농지의 신선한 음식을 바로 제공할 수 있도록 발걸음이 빨라졌습니다.",
+               "display_name": "이동 속도 +10"
             }
          },
          "farmer_hoe": {
-            "display_name": "Farmer's Hoe",
-            "description": "Used to till fields.",
+            "display_name": "농부의 호미",
+            "description": "밭을 일구는데 유용합니다.",
             "farmer_hoe_iconic": {
-               "display_name": "Farmer's Hoe",
-               "description": "Required to promote a hearthling into a Farmer."
+               "display_name": "농부의 호미",
+               "description": "밭을 일구는데 유용합니다."
             },
             "farmer_hoe_talisman": {
-               "display_name": "Farmer's Hoe",
-               "description": "Required to promote a hearthling into a Farmer."
+               "display_name": "농부의 호미",
+               "description": "밭을 일구는데 유용합니다."
             }
          },
          "farmer_outfit": {
@@ -8937,60 +8937,60 @@
          },
          "field": {
             "display_name": "농장 터",
-            "description": "For growing crops"
+            "description": "작물이 자라는 땅입니다."
          }
       },
       "footman": {
          "footman_description": {
-            "display_name": "전사",
-            "description": "The Footman is a melee fighter. A good choice for the backbone of your town's defense.",
-            "requirements": "Crafted by Carpenter",
+            "display_name": "보병",
+            "description": "보병는 근접 전투원입니다. 마을 방어의 중추로서 좋은 선택입니다.",
+            "requirements": "목수로 제작 가능.",
             "level_4_data": {
-               "perk_000_name": "Damage Up 40%",
-               "perk_000_description": "The footman is now practiced at optimizing the effect of each blow."
+               "perk_000_name": "공격력 40% 증가",
+               "perk_000_description": "보병는 이제 타격 효과를 최적화하는 연습을 합니다."
             },
             "level_1_data": {
-               "perk_000_name": "Damage Up 20%",
-               "perk_000_description": "The footman knows that all combats may have mortal consequences, and attacks with renewed determination."
+               "perk_000_name": "공격력 20% 증가",
+               "perk_000_description": "모든 전투가 필멸의 결과를 낳을 수 있으며, 새로운 결정으로 공격할 수 있음을 알게 됩니다."
             },
             "level_3_data": {
-               "perk_000_name": "Power Spike",
-               "perk_000_description": "This powerful, overhead swing deals double damage."
+               "perk_000_name": "파워 스트라이크",
+               "perk_000_description": "이 강력한 오버헤드 스윙은 두 배의 피해량을 선사합니다."
             },
             "level_6_data": {
-               "perk_000_name": "Damage Up 60%",
-               "perk_000_description": "Maxiumum damage!"
+               "perk_000_name": "공격력 60% 증가",
+               "perk_000_description": "공격력 최대로!"
             },
             "level_2_data": {
-               "perk_000_name": "First Responder",
-               "perk_000_description": "The footman charges into battle with speed"
+               "perk_000_name": "최초 대처자",
+               "perk_000_description": "빠른 속도로 전장에 뛰어듭니다."
             },
             "level_5_data": {
-               "perk_000_name": "Cleave",
-               "perk_000_description": "A slashing strike that deals damage to up to 4 enemies around the footman's target"
+               "perk_000_name": "가르기 공격",
+               "perk_000_description": "주변의 최대 4명의 적에게 대폭적인 공격을 가합니다."
             }
          },
          "footman_buffs": {
             "damage_1_buff": {
-               "description": "At Level 1, the footman attacks with increased ferocity",
-               "display_name": "Damage +20%"
+               "description": "보병의 공격이 사나워집니다.",
+               "display_name": "공격력 +20%"
             },
             "damage_2_buff": {
-               "description": "The footman attacks with increased ferocity",
-               "display_name": "Damage +40%"
+               "description": "보병의 공격이 더욱 날카로워집니다.",
+               "display_name": "공격력 +40%"
             },
             "damage_3_buff": {
-               "description": "At Level 6, the footman's attacks are unstoppable!",
-               "display_name": "Damage +60%"
+               "description": "보병의 공격이 멈출 줄 모릅니다!",
+               "display_name": "공격력 +60%"
             },
             "speed_buff": {
-               "display_name": "First Responder",
-               "description": "The footman moves faster"
+               "display_name": "최초 대처자",
+               "description": "보병의 이동 속도가 빨라집니다."
             }
          },
          "footman_outfit": {
-            "display_name": "Military Uniform",
-            "description": "Standard issue gear for all soldiers"
+            "display_name": "군복",
+            "description": "모든 병사들의 표준 장비"
          }
       },
       "geomancer": {
@@ -9009,46 +9009,46 @@
       "mason": {
          "mason_description": {
             "display_name": "석공",
-            "description": "The Mason crafts building materials and decorative items from stone.",
-            "requirements": "Crafted by Carpenter",
+            "description": "석공은 재료와 돌로 장식한 장식품을 만듭니다.",
+            "requirements": "목수로 제작 가능.",
             "workshop": {
-               "name": "Mason's Workshop",
-               "description": "insert description here",
-               "long_description": "The Mason crafts building materials and decorative items from stone."
+               "name": "석공의 작업대",
+               "description": "여기에 설명을 기입합니다.",
+               "long_description": "석공은 재료와 돌로 장식한 장식품을 만듭니다."
             },
             "level_6_data": {
                "title": "일류 석공",
-               "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The mason's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_name": "1만 시간 (미구현)",
+               "perk_000_description": "석공업을 마스터한 사람은,  나무를 이용한 완전히 새로운 방법을 찾아낼 수 있습니다."
             },
             "level_2_data": {
-               "perk_000_name": "Fancy Rocks",
-               "perk_000_description": "The mason can now make more elaborate items froms stone."
+               "perk_000_name": "멋진 바위",
+               "perk_000_description": "더욱 정교한 아이템을 만들 수 있습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The mason ventures from the realm of the functional into... art."
+               "perk_000_name": "확장 목록",
+               "perk_000_description": "이제 석공은 기능적인 제작품에 예술을 얹을 것입니다."
             },
             "level_1_data": {
-               "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The mason can now make a solid array of basic furniture."
+               "perk_000_name": "표준 목록",
+               "perk_000_description": "기본적인 가구를 단색으로 제작할 수 있습니다."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the mason may embellish his works in unexpected ways."
+               "perk_000_name": "예술적 영감",
+               "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             }
          },
          "mason_chisel": {
-            "display_name": "Mason's Chisel",
-            "description": "Tools of the trade for a mason.",
+            "display_name": "석공의 끌",
+            "description": "석공의 거래 도구입니다.",
             "mason_chisel_talisman": {
-               "display_name": "Mason's Chisel",
+               "display_name": "석공의 끌",
                "description": "Required to promote a hearthling into a mason."
             }
          },
          "mason_hammer": {
-            "display_name": "Mason's Hammer",
-            "description": "Tools of the trade for a mason."
+            "display_name": "석공의 망치",
+            "description": "석공의 거래 도구입니다."
          },
          "mason_outfit": {
             "display_name": "Mason Smock",
@@ -9209,37 +9209,37 @@
       "potter": {
          "potter_description": {
             "display_name": "도예가",
-            "description": "Makes useful goods from clay. Upgradeable to the Mason",
-            "requirements": "Crafted by Mason",
+            "description": "점토에서 유용한 상품을 만듭니다. ",
+            "requirements": "석공으로 제작 가능.",
             "workshop": {
-               "name": "Potter's Wheel",
-               "description": "insert description here",
-               "long_description": "The Potter crafts useful goods and decorative items from clay."
+               "name": "도예가의 도자기 물레",
+               "description": "여기에 설명을 기입하세요.",
+               "long_description": "도예가는 유용한 물건들과 장식품들을 진흙으로부터 제작합니다."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the potter may embellish his&frasl;her works in unexpected ways."
+               "perk_000_name": "예술적 영감",
+               "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             },
             "level_6_data": {
                "title": "일류 도예가",
                "perk_000_name": "일류 도예가",
-               "perk_000_description": "The potter has rediscovered ancient secrets of the Phoenix..."
+               "perk_000_description": "도예가는 피닉스 제국의 고대 비밀을 재발견했습니다."
             },
             "level_2_data": {
-               "perk_000_name": "Art for Sale",
-               "perk_000_description": "The potter can now make decorative items to liven up the town or sell for money."
+               "perk_000_name": "판매 예술",
+               "perk_000_description": "마을을 돈독스럽게하기 위해 장식용 물건을 만들 수 있습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The potter can now add precious metals to vases and tiles."
+               "perk_000_name": "협업적 통찰력",
+               "perk_000_description": "도예가는 이제 화병과 타일에 귀금속을 추가 할 수 있습니다."
             },
             "level_1_data": {
-               "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The potter can now make basic furniture and building adornments."
+               "perk_000_name": "표준 목록",
+               "perk_000_description": "기본적인 가구와 장식을 만들 수 있습니다."
             }
          },
          "recipes": {
-            "workbench_name": "Workshops",
+            "workbench_name": "작업대",
             "small_urn_recipe": {
                "description": "For compactly storing up to 8 items",
                "recipe_name": "Small Urn",
@@ -9447,10 +9447,10 @@
             }
          },
          "potter_cutter": {
-            "display_name": "Potter's Cutter",
+            "display_name": "도예가의 칼",
             "description": "Used to form civilization from dirt!",
             "potter_cutter_talisman": {
-               "display_name": "Potter's Cutter",
+               "display_name": "도예가의 칼",
                "description": "Required to promote a hearthling into a Potter."
             }
          },
@@ -9462,43 +9462,43 @@
       "shepherd": {
          "shepherd_description": {
             "display_name": "양치기",
-            "description": "Domesticates wild animals and harvests them for food and materials.",
-            "requirements": "Crafted by Carpenter",
+            "description": "야생 동물들을 모아 길러서 음식과 재료를 얻기 위해 수확합니다.",
+            "requirements": "목수로 제작 가능.",
             "level_4_data": {
-               "perk_000_name": "Animal Magnetism",
-               "perk_000_description": "Wild animals are more likely to appear whenever the shepherd is looking for them."
+               "perk_000_name": "동물적 매력",
+               "perk_000_description": "양치기가 동물을 찾아 나설 때마다 나타날 가능성이 높아집니다."
             },
             "level_1_data": {
-               "perk_000_name": "Speed Up",
-               "perk_000_description": "The shepherd is now more adept at getting the flock to walk a tiny bit faster."
+               "perk_000_name": "향상된 이동 속도",
+               "perk_000_description": "더 빠른 속도로 양떼를 걷게 하는데 더 능숙해졌습니다."
             },
             "level_3_data": {
-               "perk_000_name": "Extra Bonuses",
-               "perk_000_description": "The shepherd's skill produces greater yields in animal products."
+               "perk_000_name": "추가적 보너스",
+               "perk_000_description": "양치기의 놀라운 솜씨는 더 많은 수확량을 보장합니다."
             },
             "level_6_data": {
                "title": "일류 양치기"
             }
          },
          "shepherd_crook": {
-            "display_name": "Shepherd's Crook",
-            "description": "Used to corral the flock",
+            "display_name": "양치기의 지팡이",
+            "description": "양데를 모으기 위해 사용합니다.",
             "shepherd_crook_iconic": {
-               "display_name": "Shepherd's Crook",
-               "description": "Required to promote a hearthling into a Shepherd."
+               "display_name": "양치기의 지팡이",
+               "description": "양데를 모으기 위해 사용합니다."
             },
             "shepherd_crook_talisman": {
-               "display_name": "Shepherd's Crook",
-               "description": "Required to promote a hearthling into a Shepherd."
+               "display_name": "양치기의 지팡이",
+               "description": "양데를 모으기 위해 사용합니다."
             }
          },
          "shepherd_outfit": {
-            "display_name": "Shepherd Outfit",
-            "description": "Uniform for all shepherds"
+            "display_name": "양치기 외투",
+            "description": "모든 양치기의 일반적인 의상입니다."
          },
          "shepherd_pasture": {
-            "display_name": "Animal Pasture",
-            "description": "Shepherds bring animals to these locations and tend to them here."
+            "display_name": "동물 목장",
+            "description": "양치기는 동물들을 이 장소에 데리고 와서 기릅니다."
          }
       },
       "shield_bearer": {
@@ -9511,38 +9511,38 @@
       "trapper": {
          "trapper_description": {
             "display_name": "사냥꾼",
-            "description": "The Trapper's snares capture and (ahem) &quot;harvest&quot; small critters for a reliable source of food and supplies.",
-            "requirements": "Crafted by Mason",
+            "description": "사냥꾼은 고기와 가죽을 얻기 위해 작은 동물을 낚습니다.",
+            "requirements": "석공으로 제작 가능.",
             "level_1_data": {
-               "perk_000_name": "Speed Up",
-               "perk_000_description": "Long walks have increased the trapper's foot speed."
+               "perk_000_name": "향상된 이동 속도",
+               "perk_000_description": "기나긴 산책은 사냥꾼의 발걸음 속도를 증가 시켰습니다."
             },
             "level_3_data": {
-               "perk_000_name": "Efficient Cuts",
-               "perk_000_description": "Long practice helps the trapper salvage more from each animal."
+               "perk_000_name": "효율적인 절단",
+               "perk_000_description": "각각의 동물들로부터 더 많은 것을 구할 수 있습니다."
             },
             "level_2_data": {
-               "perk_000_name": "펫 길들이기",
-               "perk_001_name": "Job Opportunities",
-               "perk_000_description": "The trapper will occasionally choose to turn a particulary fine animal into a pet!",
-               "perk_001_description": "The trapper now qualifies for advanced jobs. Click the promote command for details."
+               "perk_000_name": "애완동물 길들이기",
+               "perk_001_name": "취업 기회",
+               "perk_000_description": "사냥꾼이 가끔 멋진 애완 동물을 선택하게 됩니다!",
+               "perk_001_description": "사냥꾼은 이제 고급 직업을 택할 수 있습니다. 자세한 내용은 전직 메뉴을 참조하세요."
             },
             "level_6_data": {
-               "perk_000_name": "The Deadliest Catch (Not Implemented!)",
-               "perk_000_description": "Lay special trapping zones to 'deter' acquisitive neighbors.",
+               "perk_000_name": "치명적인 덫",
+               "perk_000_description": "탐욕스러운 이웃들을 저지하기 위해 특수 포획 구역을 배치하세요.",
                "title": "일류 사냥꾼"
             },
             "level_5_data": {
-               "perk_000_name": "Toothier Traps",
-               "perk_000_description": "Better trap arming skills increase the trapper's chance for capturing prey by 25%."
+               "perk_000_name": "드러난 덫",
+               "perk_000_description": "더 좋은 함정 기술을 사용하여 동물을 잡을 확률이 25% 증가합니다."
             },
             "level_4_data": {
                "perk_000_name": "가방 크기 +2",
-               "perk_000_description": "The trapper has become more efficient at packing in the loot."
+               "perk_000_description": "가방을 늘려 수확물을 더 효율적으로 운반할 수 있습니다."
             }
          },
          "snare_trap": {
-            "display_name": "덫",
+            "display_name": "사냥용 덫",
             "description": "Safely immobilizes its prey",
             "commands": {
                "harvest_trapped_beast": {
@@ -9597,16 +9597,16 @@
       "weaver": {
          "weaver_description": {
             "display_name": "방직공",
-            "description": "The Weaver makes thread, fabrics and hangings from fiber and dye.",
-            "requirements": "Crafted by Carpenter",
+            "description": "방직공은 섬유와 염료로 실을 짜고 천으로 만든 천을 만듭니다.",
+            "requirements": "목수로 제작 가능.",
             "level_6_data": {
                "title": "일류 방직공",
-               "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The weaver's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_name": "1만 시간 (미구현)",
+               "perk_000_description": "방직을 마스터한 사람은 완전히 새로운 방법으로 목재를 사용할 수 있습니다."
             },
             "level_2_data": {
-               "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The weaver is now skillful enough to use materials created by other crafters."
+               "perk_000_name": "협업적 통찰력",
+               "perk_000_description": "이 방직공은 다른 사람들이 만든 재료를 사용할 수 있을 정도로 솜씨가 좋습니다."
             },
             "level_4_data": {
                "perk_000_name": "독창성 향상",
@@ -9614,18 +9614,18 @@
             },
             "level_1_data": {
                "perk_000_name": "기본 카탈로그",
-               "perk_000_description": "The weaver can now make basic hangings and decor."
+               "perk_000_description": "전통적인 설계에 새로운 수준의 기능을 더했습니다."
             },
             "level_3_data": {
                "perk_000_name": "예술적 영감",
-               "perk_000_description": "When inspiration strikes, the weaver may embellish his works in unexpected ways."
+               "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             }
          },
          "recipes": {
             "banner_wall_big_recipe": {
-               "description": "Show your town pride with this decorative banner.",
-               "recipe_name": "Big Wall-Mounted Banner",
-               "flavor": "Also a sign of affluence."
+               "description": "이 아름다운 배너로 여러분의 마을을 자랑하세요.",
+               "recipe_name": "큰 벽걸이형 배너",
+               "flavor": "또한 풍요의 표시이기도 합니다."
             },
             "banner_wall_small_recipe": {
                "description": "Show your town pride with this small banner.",
@@ -9748,17 +9748,17 @@
          },
          "weaver_outfit": {
             "display_name": "방직공 유니폼",
-            "description": "Uniform for all weavers"
+            "description": "모든 방직공들의 의상입니다."
          },
          "weaver_spindle": {
-            "display_name": "스핀들",
+            "display_name": "방직공의 주축",
             "description": "For spinning fiber into thread",
             "weaver_spindle_iconic": {
-               "display_name": "The Spindle",
+               "display_name": "방직공의 주축",
                "description": "For spinning fiber into thread"
             },
             "weaver_spindle_talisman": {
-               "display_name": "스핀들",
+               "display_name": "방직공의 주축",
                "description": "Required to promote a hearthling into a Weaver"
             }
          },
@@ -9770,7 +9770,7 @@
          },
          "weaver_workbench": {
             "weaver_workbench_ghost": {
-               "display_name": "방직공의 작업소",
+               "display_name": "방직공의 작업대",
                "description": "Used by the Weaver for crafting."
             }
          }
@@ -9778,18 +9778,18 @@
       "worker": {
          "worker_description": {
             "display_name": "일꾼",
-            "description": "Workers perform basic tasks like harvesting resources, hauling stuff around, and constructing buildings.",
-            "requirements": "None, just hard work and guts.",
+            "description": "일꾼은 자원 채집, 운송, 건설 같은 기본적인 업무를 수행합니다.",
+            "requirements": "그럴리가요, 누구나 열심히 일할 수 있답니다.",
             "level_0_data": {
                "title": "일꾼"
             }
          },
          "winter_worker_outfit": {
-            "display_name": "일꾼 유니폼 동복",
+            "display_name": "일꾼 동복 외투",
             "description": "A heavy wool coat, for cold winter nights",
             "winter_worker_outfit_iconic": {
                "display_name": "Winter Worker Outfit",
-               "description": "So warm..."
+               "description": "매우 따뜻합니다..."
             }
          },
          "worker_outfit": {
@@ -9808,32 +9808,32 @@
       "herbalist": {
          "herbalist_description": {
             "display_name": "약초상",
-            "description": "Heals units with crafted balms and bandages.",
-            "requirements": "Crafted by Carpenter",
+            "description": "약초상은 천연 포션과 붕대로 부상자를 치료합니다.",
+            "requirements": "목수로 제작 가능.",
             "workshop": {
-               "name": "Herbalist Lab",
-               "description": "Allows the Herbalist to craft healing balms and bandages.",
-               "long_description": "Allows the Herbalist to craft healing balms and bandages."
+               "name": "약초상 실험대",
+               "description": "약초상이 포션과 붕대를 제작할 수 있도록 해 줍니다.",
+               "long_description": "약초상이 포션과 붕대를 제작할 수 있도록 해 줍니다."
             },
             "level_1_data": {
-               "perk_000_name": "Natural Regeneration",
-               "perk_000_description": "The herbalist channels the spirits of the forest and gains natural regeneration. Willpower and Diligence increased."
+               "perk_000_name": "자연 재생",
+               "perk_000_description": "약초상은 숲의 정령과 교감하여 자연 재생을 이룹니다. 의지과 근면이 증가합니다."
             },
             "level_2_data": {
-               "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The herbalist is now skillful enough to use materials created by the other crafters."
+               "perk_000_name": "협업적 통찰력",
+               "perk_000_description": "약초상은 이제 다른 제작가에 의해 만들어진 재료를 사용할만큼 충분히 능숙해졌습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Power Medic",
-               "perk_000_description": "The herbalist can now attend to up to 4 hearthlings at a time."
+               "perk_000_name": "파워 메딕",
+               "perk_000_description": "이제 한번에 4명까지의 부상자를 돌볼 수 있습니다."
             },
             "level_0_data": {
-               "perk_000_name": "Junior Practitioner",
-               "perk_000_description": "The herbalist can attend to 2 hurt hearthlings at a time."
+               "perk_000_name": "수습 의사",
+               "perk_000_description": "한번에 2명의 부상자를 돌볼 수 있습니다."
             },
             "level_3_data": {
-               "perk_000_name": "Item Proficiency",
-               "perk_000_description": "The herbalist's medical prowess increases the effectiveness of healing items by 50%."
+               "perk_000_name": "숙련된 아이템 사용",
+               "perk_000_description": "치료 물품의 효능을 50% 증대시킵니다."
             },
             "level_6_data": {
                "title": "일류 약초상"
@@ -9844,14 +9844,14 @@
             "description": "Traditional robes of the Herbalist"
          },
          "herbalist_staff": {
-            "display_name": "Herbalist Staff",
+            "display_name": "약초상의 지팡이",
             "description": "Required to promote a hearthling into an Herbalist",
             "herbalist_staff_iconic": {
-               "display_name": "Herbalist Staff",
+               "display_name": "약초상의 지팡이",
                "description": "Required to promote a hearthling into an Herbalist"
             },
             "herbalist_staff_talisman": {
-               "display_name": "Herbalist's Staff",
+               "display_name": "약초상의 지팡이",
                "description": "Required to promote a hearthling into an Herbalist"
             }
          },
@@ -9922,40 +9922,40 @@
          },
          "cleric_description": {
             "display_name": "성직자",
-            "description": "A combat healer",
-            "requirements": "Crafted by Herbalist",
+            "description": "전장을 뛰는 전투 치유사입니다.",
+            "requirements": "약초상으로 제작 가능.",
             "level_0_data": {
-               "perk_000_name": "Healing Aura",
-               "perk_000_description": "The cleric's presence heals everyone around them periodically"
+               "perk_000_name": "치유 아우라",
+               "perk_000_description": "성직자 주변 하슬링들을 정기적으로 치유합니다."
             },
             "level_1_data": {
-               "perk_000_name": "Minor Strength",
-               "perk_000_description": "The cleric's presence improves the muscle of those around them"
+               "perk_000_name": "경미한 기운",
+               "perk_000_description": "성직자 주변 하슬링들의 근력을 미약하게 증가시킵니다."
             },
             "level_2_data": {
-               "perk_000_name": "Compassion Up",
-               "perk_000_description": "Increased compassion for increased direct healing"
+               "perk_000_name": "동정심 상승",
+               "perk_000_description": "직접적인 치료를 증진시키기 위한 동정심이 증가합니다."
             },
             "level_3_data": {
-               "perk_000_name": "Heal Aura (Rank 2)",
-               "perk_000_description": "Healing aura power and radius increased"
+               "perk_000_name": "치유 아우라 (랭크 2)",
+               "perk_000_description": "치유 수치와 범위가 더욱 넓어집니다."
             },
             "level_6_data": {
-               "perk_000_name": "Healing Master",
-               "perk_000_description": "The cleric has mastered the art of healing. Compassion greatly increased."
+               "perk_000_name": "치유 마스터",
+               "perk_000_description": "이 성직자는 치유 기술을 마스터했습니다. 동정심이 크게 증가했습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Heal Aura (Rank 3)",
-               "perk_000_description": "Healing Aura range increased"
+               "perk_000_name": "치유 아우라 (랭크 2)",
+               "perk_000_description": "치유 범위가 광범위해집니다."
             },
             "level_5_data": {
-               "perk_000_name": "Major Strength",
-               "perk_000_description": "The cleric's presence greatly improves the muscle of those around them"
+               "perk_000_name": "강력한 기운",
+               "perk_000_description": "성직자 주변 하슬링들의 근력을 크게 증가시킵니다."
             }
          },
          "cleric_tome": {
             "cleric_tome_talisman": {
-               "display_name": "Cleric's Tome",
+               "display_name": "성직자의 책",
                "description": "Required to promote a hearthling to a Cleric"
             },
             "display_name": "Tome of Healing",
@@ -10030,8 +10030,8 @@
             }
          },
          "magmasmith_description": {
-            "display_name": "Magmasmith",
-            "description": "Crafts from magma",
+            "display_name": "용암장인",
+            "description": "용암으로 제작 가능.",
             "requirements": "Level 2 blacksmith and Magmasmith's hammer"
          },
          "recipes": {
@@ -10040,80 +10040,80 @@
       },
       "knight": {
          "knight_outfit": {
-            "display_name": "Knight's Armor",
+            "display_name": "기사의 방패",
             "description": "Metal armor worn by a knight"
          },
          "knight_description": {
             "display_name": "기사",
-            "description": "A defensive combatant focused on protecting allies from harm.",
-            "requirements": "Crafted by Blacksmith",
+            "description": "방어 특화 전투원으로서 동맹국을 침략으로부터 보호하는데 중점을 둡니다.",
+            "requirements": "대장장이로 제작 가능.",
             "level_1_data": {
-               "perk_000_name": "Damage Reduction Rank 1",
-               "perk_000_description": "The knight gains an additional 10% defense from equipment"
+               "perk_000_name": "피해량 감소",
+               "perk_000_description": "장비 방어력의 10%를 추가로 얻습니다."
             },
             "level_4_data": {
-               "perk_000_name": "Damage Reduction Rank 2",
-               "perk_000_description": "The knight gains an additional 20% armor from equipment"
+               "perk_000_name": "피해량 감소 (랭크 2)",
+               "perk_000_description": "장비 방어력의 20%를 추가로 얻습니다."
             },
             "level_0_data": {
-               "perk_000_name": "Fortify",
-               "perk_000_description": "Increases Stamina, Courage, and draws attention from monsters"
+               "perk_000_name": "용기 강화",
+               "perk_000_description": "스태미나 및 용기가 상승하며, 몬스터들의 시선을 집중시킵니다."
             },
             "level_3_data": {
-               "perk_000_name": "Fortify (Rank 2)",
-               "perk_000_description": "Stamina and Courage increased greatly"
+               "perk_000_name": "용기 강화 (랭크 2)",
+               "perk_000_description": "스태미나 및 용기가 크게 상승합니다."
             },
             "level_5_data": {
-               "perk_000_name": "Inspiring Presence",
-               "perk_000_description": "The knight boosts courage of everyone around"
+               "perk_000_name": "영감을 주는 존재",
+               "perk_000_description": "근처 하슬링들의 용기를 북돋아줍니다."
             },
             "level_2_data": {
-               "perk_000_name": "Shout",
-               "perk_000_description": "The knight intimidates the opponent, drawing the attention of nearby enemies."
+               "perk_000_name": "전투 외침",
+               "perk_000_description": "상대를 협박하여 주변의 적들에게 주의를 환기시킵니다."
             },
             "level_6_data": {
-               "perk_000_name": "Hero's Horn",
-               "perk_000_description": "The knight sounds a horn of combat, drawing the attention enemies both near and far"
+               "perk_000_name": "영웅의 뿔",
+               "perk_000_description": "전투 뿔피리를 불어, 모든 적을 자신에게 끌어모읍니다."
             }
          },
          "knight_buffs": {
             "defense_1_buff": {
-               "display_name": "Defense Up 10%",
-               "description": "Defense gained from equipment increased by 10%"
+               "display_name": "방어력 10% 증가",
+               "description": "장비 방어력이 10% 증가합니다."
             },
             "defense_2_buff": {
-               "display_name": "Defense Up 20%",
-               "description": "Defense gained from equipment increased by 20%"
+               "display_name": "방어력 10% 증가",
+               "description": "장비 방어력이 20% 증가합니다."
             },
             "health_1_buff": {
-               "display_name": "Fortify",
-               "description": "The knight becomes more menacing to enemies, drawing their attention in combat. They also get a health and stamina bonus to keep up."
+               "display_name": "용기 강화",
+               "description": "기사는 적들에게 더 위협적이되어 주목을 받습니다. 또한 스테미나와 체력 보너스를 받습니다."
             },
             "health_2_buff": {
-               "display_name": "Fortify (Rank 2)",
-               "description": "More fast, more furious"
+               "display_name": "용기 강화 (랭크 2)",
+               "description": "더 빠르게, 더욱 분노하라."
             },
             "courage_aura_buff": {
-               "display_name": "Inspiring Presence",
-               "description": "The knight increases courage of everyone around"
+               "display_name": "영감을 주는 존재",
+               "description": "근처 하슬링들의 용기를 북돋아줍니다."
             },
             "courage_aura_effect_buff": {
-               "display_name": "Inspired",
-               "description": "Courage increased from the presence of a knight."
+               "display_name": "영감 받음",
+               "description": "기사에 의해 용기가 증가하였습니다."
             }
          },
          "knight_helm": {
-            "display_name": "Knight's Helm",
-            "description": "Iron headgear standard issue for all knights"
+            "display_name": "기사의 투구",
+            "description": "모든 기사들의 표준 강철 투구입니다."
          }
       },
       "npc_jobs": {
          "npc_thief": {
             "npc_thief_description": {
-               "display_name": "Thief",
-               "description": "Steals items from stockpiles",
+               "display_name": "도적",
+               "description": "비축소의 자원들을 훔칩니다.",
                "level_0_data": {
-                  "title": "Thief"
+                  "title": "도적"
                }
             }
          }
@@ -10122,13 +10122,13 @@
    "stonehearth_mixins": {
       "base_human": {
          "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
-         "description": "Citizen of your town",
+         "description": "마을의 시민",
          "job": {
             "starting_level_title": "수습 [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "레벨[str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)]가 [str(i18n_data.job_name)]레벨 [str(i18n_data.level_number)]를 달성했습니다!",
-            "level_up_perk_description": "Max Health +10",
-            "attribute_up_desc": "All attributes increased!"
+            "level_up_perk_description": "최대 체력 +10",
+            "attribute_up_desc": "모든 속성이 증가했습니다!"
          }
       },
       "food": {
@@ -10154,11 +10154,11 @@
       },
       "monster": {
          "job": {
-            "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
-            "general_description_desc": "Max Health increased!",
-            "attribute_up_desc": "All attributes increased!"
+            "starting_level_title": "수습 [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_title": "레벨 [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_announcement": "[name(i18n_data.entity)]가 [str(i18n_data.job_name)]레벨 [str(i18n_data.level_number)]를 달성했습니다!",
+            "general_description_desc": "최대 체력이 증가했습니다!",
+            "attribute_up_desc": "모든 속성이 증가했습니다!"
          }
       },
       "resources": {

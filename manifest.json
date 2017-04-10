@@ -32,6 +32,7 @@
 		"stonehearth/ui/game/town/town.less" : "file(ui/game/town/town.less)",
 		"stonehearth/ui/game/citizens/citizens.less" : "file(ui/game/citizens/citizens.less)",
 		"stonehearth/ui/game/unit_frame/unit_frame.less" : "file(ui/game/unit_frame/unit_frame.less)",
+		"stonehearth/ui/game/promotion_tree/promotion_tree.less" : "file(ui/game/promotion_tree/promotion_tree.less)",
 		"stonehearth/ui/game/save_view/save_view.less" : "file(ui/game/save_view/save_view.less)"
 	}
 }
