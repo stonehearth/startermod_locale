@@ -4525,40 +4525,40 @@
          "building_templates_index": {
             "template_tabs": {
                "ascendancy": {
-                  "display_name": "Ascendancy",
+                  "display_name": "기본 설계도",
                   "categories": {
-                     "camp": "Camp Templates",
-                     "town": "Town Templates"
+                     "camp": "캠프 설계도",
+                     "town": "마을 설계도"
                   }
                },
                "custom": {
-                  "display_name": "Custom"
+                  "display_name": "커스텀"
                }
             }
          },
          "building_templates": {
             "tier2": {
                "black_forest_inn": {
-                  "display_name": "Black Forest Inn"
+                  "display_name": "검은 숲 여관"
                },
                "corner_house": {
-                  "display_name": "Corner House"
+                  "display_name": "외곽 저택"
                },
                "cozy_townhouse": {
-                  "display_name": "Cozy Townhouse"
+                  "display_name": "안락한 마을 저택"
                },
                "tall_townhouse": {
-                  "display_name": "Tall Townhouse"
+                  "display_name": "높은 마을 저택"
                },
                "tavern": {
-                  "display_name": "Tavern"
+                  "display_name": "선술집"
                }
             },
             "carpenter_house": {
-               "display_name": "Carpenter House"
+               "display_name": "목공소"
             },
             "blacksmith_house": {
-               "display_name": "Blacksmith House"
+               "display_name": "대장간"
             }
          }
       },
