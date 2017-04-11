@@ -4496,8 +4496,8 @@
       },
       "shops": {
          "basic_resource_shop": {
-            "name": "Basic Resource Shop",
-            "title": "Basic Resource Shop"
+            "name": "기본 자제 판매점",
+            "title": "기본 자제 판매점"
          }
       },
       "monster_tuning": {
