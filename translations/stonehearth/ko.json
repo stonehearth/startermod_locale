@@ -54,7 +54,7 @@
             "dig_foundation": "부지 공사 중",
             "unit_hold_location": "지역 방어 중",
             "execute_conversation": "이야기 나누는 중",
-            "incapacitated": "무능력 상태",
+            "incapacitated": "행동 불능",
             "rescue_citizen": "[name(data.target)] 구하는 중",
             "recuperating": "회복 중"
          }
@@ -564,9 +564,9 @@
                      "required_job_text": "도예가가 필요합니다."
                   },
                   "herbalist": {
-                     "display_name": "약초상 메뉴",
+                     "display_name": "약초사 메뉴",
                      "description": "허브를 통해 회복 아이템을 제작합니다.",
-                     "required_job_text": "약초상이 필요합니다."
+                     "required_job_text": "약초사가 필요합니다."
                   },
                   "engineer": {
                      "display_name": "공학자 메뉴",
@@ -3186,7 +3186,7 @@
          "starving": {
             "starving_buff": {
                "display_name": "굶주림",
-               "description": "굶주린 하슬링이 먹을 것을 갈구합니다!"
+               "description": "굶주린 하슬링이 음식을 갈구합니다!"
             },
             "starving_animal_buff": {
                "display_name": "배고픔",
@@ -3202,13 +3202,13 @@
          "injured": {
             "injured_buff": {
                "display_name": "부상",
-               "description": "크게 다친 바람에 움직임이 느려졌습니다."
+               "description": "크게 다친 바람에 움직이기 어렵습니다."
             }
          },
          "bed_ridden": {
             "bed_ridden_buff": {
                "display_name": "침대에 몸져누움",
-               "description": "천천히 부상에서 회복 중. 약초사으로부터 치료를 받을 수 있습니다."
+               "description": "천천히 부상에서 회복 중. 약초사로부터 치료를 받을 수 있습니다."
             }
          },
          "stamina_tonic": {
@@ -3254,7 +3254,7 @@
          "game_modes": {
             "game_mode_hard_buff": {
                "display_name": "어려움 난이도",
-               "description": "어려움 난이도에서는 적들이 더 많은 갑옷과 체력을 가지고 있으며, 더 많은 피해를 입힙니다."
+               "description": "어려움 난이도에서는 적들이 더 많은 갑옷과 체력을 가지고 있으며, 강력한 피해를 입힙니다."
             }
          },
          "slowed": {
@@ -3282,7 +3282,7 @@
          "recently_treated": {
             "recently_treated_buff": {
                "display_name": "최근에 처리됨",
-               "description": "이 하슬링은 치료 리스트에 올라온 상태로,차례가 올 때까지 휴식을 취할 것입니다."
+               "description": "이 하슬링은 치료 목록에 등록된 상태로,차례가 올 때까지 휴식을 취할 것입니다."
             }
          },
          "mood": {
@@ -9807,21 +9807,21 @@
       },
       "herbalist": {
          "herbalist_description": {
-            "display_name": "약초상",
-            "description": "약초상은 천연 포션과 붕대로 부상자를 치료합니다.",
+            "display_name": "약초사",
+            "description": "약초사는 천연 포션과 붕대로 부상자를 치료합니다.",
             "requirements": "목수로 제작 가능.",
             "workshop": {
-               "name": "약초상 실험대",
-               "description": "약초상이 포션과 붕대를 제작할 수 있도록 해 줍니다.",
-               "long_description": "약초상이 포션과 붕대를 제작할 수 있도록 해 줍니다."
+               "name": "약초사 실험대",
+               "description": "약초사가 포션과 붕대를 제작할 수 있도록 해 줍니다.",
+               "long_description": "약초사가 포션과 붕대를 제작할 수 있도록 해 줍니다."
             },
             "level_1_data": {
                "perk_000_name": "자연 회복",
-               "perk_000_description": "약초상은 숲의 정령과 교감하여 자연 재생을 이룹니다. 의지과 근면이 증가합니다."
+               "perk_000_description": "약초사는 숲의 정령과 교감하여 자연 재생을 이룹니다. 의지과 근면이 증가합니다."
             },
             "level_2_data": {
                "perk_000_name": "협업적 통찰력",
-               "perk_000_description": "약초상은 이제 다른 제작가에 의해 만들어진 재료를 사용할만큼 충분히 능숙해졌습니다."
+               "perk_000_description": "약초사는 이제 다른 제작가에 의해 만들어진 재료를 사용할만큼 충분히 능숙해졌습니다."
             },
             "level_4_data": {
                "perk_000_name": "파워 메딕",
@@ -9836,7 +9836,7 @@
                "perk_000_description": "치료 물품의 효능을 50% 증대시킵니다."
             },
             "level_6_data": {
-               "title": "일류 약초상"
+               "title": "일류 약초사"
             }
          },
          "herbalist_outfit": {
@@ -9844,14 +9844,14 @@
             "description": "Traditional robes of the Herbalist"
          },
          "herbalist_staff": {
-            "display_name": "약초상의 지팡이",
+            "display_name": "약초사의 지팡이",
             "description": "Required to promote a hearthling into an Herbalist",
             "herbalist_staff_iconic": {
-               "display_name": "약초상의 지팡이",
+               "display_name": "약초사의 지팡이",
                "description": "Required to promote a hearthling into an Herbalist"
             },
             "herbalist_staff_talisman": {
-               "display_name": "약초상의 지팡이",
+               "display_name": "약초사의 지팡이",
                "description": "Required to promote a hearthling into an Herbalist"
             }
          },
@@ -9923,7 +9923,7 @@
          "cleric_description": {
             "display_name": "성직자",
             "description": "전장을 뛰는 전투 치유사입니다.",
-            "requirements": "약초상으로 제작 가능.",
+            "requirements": "약초사로 제작 가능.",
             "level_0_data": {
                "perk_000_name": "치유 아우라",
                "perk_000_description": "성직자 주변 하슬링들을 정기적으로 치유합니다."
