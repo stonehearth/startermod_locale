@@ -1042,7 +1042,7 @@
                "027": "현실을 도피하는 중...",
                "028": "위치를 추적하는 중...",
                "029": "규제를 조정하는 중...",
-               "030": "1",
+               "030": "양털을 깎는 중...",
                "031": "뇌를 자극하는 중...",
                "032": "포요들이 삐져 나오는 중..."
             },
@@ -1336,7 +1336,7 @@
                "display_name": "의지",
                "description": "적들의 매력에 저항하는 지수입니다.",
                "bullet_points": {
-                  "000": "자연 치유력을 결정합니다."
+                  "000": "자연 회복력을 결정합니다."
                }
             },
             "net_worth": {
@@ -3163,126 +3163,126 @@
             },
             "shepherding_speed_bonus": {
                "display_name": "엄청난 속도 향상",
-               "description": "이제 더 빠른 속도로 양떼를 걷게 하는데 더 능숙해졌습니다"
+               "description": "이제 더 빠른 속도로 양떼를 걷게 하는데 더 능숙해졌습니다."
             },
             "stenched_shepherd_buff": {
-               "display_name": "Stenched",
-               "description": "Animals can smell that this shepherd has slaughtered something recently. This shepherd won't be able to find new wild animals until the stench fades."
+               "display_name": "지독한 악취",
+               "description": "동물들은 이 양치기가 최근에 무언가를 살육했다는 것을 알아챌 수 있습니다. 이 지독한 악취가 사라질 때까지는 새로운 야생 동물을 찾을 수 없을 것입니다."
             }
          },
          "sleeping": {
             "sleeping_buff": {
-               "display_name": "Sleeping",
-               "description": "Sleeping...",
-               "short_description": "Sleeping..."
+               "display_name": "수면",
+               "description": "잠자는 중...",
+               "short_description": "잠자는 중..."
             }
          },
          "snared": {
             "snared_buff": {
-               "display_name": "Snared!",
-               "description": "Trapped by a snare and unable to move"
+               "display_name": "덫에 걸림!",
+               "description": "덫에 걸려 움직일 수 없습니다."
             }
          },
          "starving": {
             "starving_buff": {
-               "display_name": "Starving",
-               "description": "Starving hearthling needs food badly!"
+               "display_name": "굶주림",
+               "description": "굶주린 하슬링이 먹을 것을 갈구합니다!"
             },
             "starving_animal_buff": {
-               "display_name": "Hungry",
-               "description": "This animal is hungry! Have a cook create some feed so your shepherd can feed it."
+               "display_name": "배고픔",
+               "description": "이 애완동물은 배고파 합니다! 먹이를 만들어 줄 요리사가 필요해요."
             }
          },
          "stopped": {
             "stopped_buff": {
-               "display_name": "Stopped",
-               "description": "Put this buff on someone who needs to stop, right now."
+               "display_name": "멈춤",
+               "description": "당장 멈추어야 할 이유가 있으므로 이 버프를 드립니다."
             }
          },
          "injured": {
             "injured_buff": {
-               "display_name": "Injured",
-               "description": "Moving slower due to low health."
+               "display_name": "부상",
+               "description": "크게 다친 바람에 움직임이 느려졌습니다."
             }
          },
          "bed_ridden": {
             "bed_ridden_buff": {
-               "display_name": "Bed Ridden",
-               "description": "Slowly recovering from injuries. Can receive medical care from herbalists."
+               "display_name": "침대에 몸져누움",
+               "description": "천천히 부상에서 회복 중. 약초사으로부터 치료를 받을 수 있습니다."
             }
          },
          "stamina_tonic": {
             "stamina_tonic_buff": {
-               "display_name": "Stamina Tonic",
-               "description": "Slightly more healthy"
+               "display_name": "스태미나 물약",
+               "description": "체력이 크게 증가합니다."
             }
          },
          "strength_tonic": {
             "strength_tonic_buff": {
-               "display_name": "Strength Tonic",
-               "description": "Slightly more buff"
+               "display_name": "기운의 물약",
+               "description": "공격력을 위한 근력이 크게 증가합니다."
             }
          },
          "severely_injured": {
             "severely_injured_buff": {
-               "display_name": "Severly Injured",
-               "description": "Wounded badly! This hearthling can hardly walk!"
+               "display_name": "심한 부상",
+               "description": "심하게 다쳤습니다! 거의 걷지 못해요!"
             }
          },
          "undead_infection": {
-            "display_name": "Infected",
-            "description": "Prevents natural health recovery via willpower."
+            "display_name": "감염됨",
+            "description": "의지를 통한 자연 회복을 방지합니다."
          },
          "courage_tonic": {
             "courage_tonic_buff": {
-               "display_name": "Courage Tonic",
-               "description": "Courage increased for a short while."
+               "display_name": "용기의 물약",
+               "description": "용기가 짧은 시간동안 증가합니다."
             }
          },
          "energy_tonic": {
             "energy_tonic_buff": {
-               "display_name": "Energy Tonic",
-               "description": "Energy increased for a short while."
+               "display_name": "에너지 물약",
+               "description": "에너지가 짧은 시간동안 증가합니다."
             }
          },
          "minor_courage_buff": {
             "minor_courage_buff_buff": {
-               "display_name": "Minor Courage",
-               "description": "Small boost of courage while in alert mode"
+               "display_name": "작은 용기",
+               "description": "경고 상태에서 용기가 조금씩 증폭됩니다."
             }
          },
          "game_modes": {
             "game_mode_hard_buff": {
-               "display_name": "Hard Mode",
-               "description": "In Hard Mode, enemies have more armor and health and will inflict more damage"
+               "display_name": "어려움 난이도",
+               "description": "어려움 난이도에서는 적들이 더 많은 갑옷과 체력을 가지고 있으며, 더 많은 피해를 입힙니다."
             }
          },
          "slowed": {
             "snap_trap": {
-               "display_name": "Snap Trap",
-               "description": "Movement slowed after taking damage from trap"
+               "display_name": "포살 쥐덫",
+               "description": "덫으로부터 피해를 입은 후 움직임이 약간 느려졌습니다."
             },
             "snap_trap_2": {
-               "display_name": "Clamp Trap",
-               "description": "Movement greatly slowed after taking damage from a large trap"
+               "display_name": "집게 덫",
+               "description": "큰 함정으로부터 피해를 입은 후 움직임이 크게 느려졌습니다."
             }
          },
          "incapacitated": {
             "incapacitated_buff": {
-               "display_name": "Incapacitated",
-               "description": "Someone help this poor hearthling!"
+               "display_name": "행동 불능",
+               "description": "이 불쌍한 녀석 좀 도와줘!"
             }
          },
          "recuperating": {
             "recuperating_buff": {
-               "display_name": "Recuperating",
-               "description": "Still incapacitated, but slowly recovering over time. An herbalist can help speed up recovery."
+               "display_name": "회복 중",
+               "description": "여전히 행동 불능이지만 시간이 지남에 따라 천천히 회복됩니다. 약초사는 이 회복 속도를 높일 수 있습니다."
             }
          },
          "recently_treated": {
             "recently_treated_buff": {
-               "display_name": "Recently Treated",
-               "description": "This hearthling was recently attended to by a medic and will need to rest awhile before another treatment."
+               "display_name": "최근에 처리됨",
+               "description": "이 하슬링은 치료 리스트에 올라온 상태로,차례가 올 때까지 휴식을 취할 것입니다."
             }
          },
          "mood": {
@@ -4611,7 +4611,7 @@
                   },
                   "set2": {
                      "step000": {
-                        "title": "Congratulations!",
+                        "title": "축하합니다!",
                         "description": "We've got resources, a place to store goods, and a way to craft items. We're well on our way to getting this settlement off the ground!"
                      }
                   }
@@ -4720,7 +4720,7 @@
          "glutton": {
             "glutton_trait": {
                "display_name": "대식가",
-               "description": "[name(i18n_data.entity)]의 위장은 아무래도 다른 세계와 포탈로 연결된 것 같습니다. 상당히 많은 양의 음식을 먹지만 그만큼 자연 치유력이 높습니다."
+               "description": "[name(i18n_data.entity)]의 위장은 아무래도 다른 세계와 포탈로 연결된 것 같습니다. 상당히 많은 양의 음식을 먹지만 그만큼 자연 회복력이 높습니다."
             }
          },
          "hothead": {
@@ -8013,8 +8013,8 @@
       "architect": {
          "architect_description": {
             "display_name": "건축가",
-            "description": "???",
-            "requirements": "???",
+            "description": "??? ",
+            "requirements": "??? ",
             "level_0_data": {
                "perk_000_name": "빠른 건설",
                "perk_000_description": "남들보다 빠르게 건설합니다."
@@ -8027,16 +8027,16 @@
       },
       "armorsmith": {
          "armorsmith_description": {
-            "display_name": "???",
-            "description": "???",
-            "requirements": "???"
+            "display_name": "??? ",
+            "description": "??? ",
+            "requirements": "??? "
          }
       },
       "big_game_hunter": {
          "big_game_hunter_description": {
-            "display_name": "???",
-            "description": "???",
-            "requirements": "???"
+            "display_name": "??? ",
+            "description": "??? ",
+            "requirements": "??? "
          }
       },
       "blacksmith": {
@@ -9816,7 +9816,7 @@
                "long_description": "약초상이 포션과 붕대를 제작할 수 있도록 해 줍니다."
             },
             "level_1_data": {
-               "perk_000_name": "자연 재생",
+               "perk_000_name": "자연 회복",
                "perk_000_description": "약초상은 숲의 정령과 교감하여 자연 재생을 이룹니다. 의지과 근면이 증가합니다."
             },
             "level_2_data": {
