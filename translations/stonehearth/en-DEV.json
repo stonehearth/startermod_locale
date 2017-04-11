@@ -140,7 +140,10 @@
                "camera_orbit_2": "Q and E work too",
                "camera_zoom_title": "To zoom in and out",
                "camera_zoom_1": "Use the mouse scroll wheel",
-               "camera_zoom_2": "Or use the + and - keys"
+               "camera_zoom_2": "Or use the + and - keys",
+               "camera_follow_title": "To follow a Hearthling",
+               "camera_follow_1": "Select the Hearthling you wish to follow",
+               "camera_follow_2": "Press the J key"
             }
          },
          "save_view": {
@@ -415,7 +418,7 @@
                      "display_name": "Town Alert Mode!",
                      "description": "Rally your hearthlings to prepare for intruders!",
                      "activated_title": "Town Alert Mode Activated!",
-                     "activated_text": "Your hearthlings are vigilantly watching for intruders. Hearthlings not enrolled in the militia will run to safety points."
+                     "activated_text": "Your hearthlings are vigilantly watching for intruders. Non-combat hearthlings will run to safety points."
                   }
                }
             },
