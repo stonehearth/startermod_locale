@@ -4525,7 +4525,7 @@
          "building_templates_index": {
             "template_tabs": {
                "ascendancy": {
-                  "display_name": "기본 설계도",
+                  "display_name": "기본",
                   "categories": {
                      "camp": "캠프 설계도",
                      "town": "마을 설계도"
