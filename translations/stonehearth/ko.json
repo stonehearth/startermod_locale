@@ -1042,13 +1042,13 @@
                "027": "현실을 도피하는 중...",
                "028": "위치를 추적하는 중...",
                "029": "규제를 조정하는 중...",
-               "030": "양털을 깎는 중...",
+               "030": "1",
                "031": "뇌를 자극하는 중...",
                "032": "포요들이 삐져 나오는 중..."
             },
             "tips": {
-               "000": "If your workers get stuck in a mine, you can build a ladder to get them out!",
-               "001": "Your hearthlings will get a better night's sleep if you provide beds for them.",
+               "000": "만약 당신의 일꾼들이 갇힌다면, 당신은 사다리를 지어서 그들을 꺼낼 수 있습니다!",
+               "001": "당신의 하슬링들은 당신이 그들을 위해 침대를 만들어주었다면 밤에 더 편하게 잘 수 있습니다.",
                "002": "Build pens around your pastures to make sure shepherded animals stay put.",
                "003": "Stockpiles can be changed to hold specific kinds of items.",
                "004": "You can farm silkweed for a steady supply of thread fiber.",
@@ -3483,7 +3483,7 @@
             "disabled_description": "The berries on this bush aren't ripe yet!"
          },
          "harvest_planted": {
-            "display_name": "Harvest",
+            "display_name": "수확",
             "description": "Reap whatever's available."
          },
          "loot_item": {
@@ -3501,7 +3501,7 @@
          },
          "plant_crop": {
             "plant_corn": {
-               "display_name": "Plant Corn!",
+               "display_name": "옥수수를 심습니다!",
                "description": "Edible Gold."
             },
             "display_name": "Plant a crop!",
@@ -4994,7 +4994,7 @@
             "description": "For defending one's allies"
          },
          "iron_shield": {
-            "display_name": "Heavy Iron Shield",
+            "display_name": "무거운 철 방패",
             "description": "Ooof. Heavy.",
             "iron_shield_iconic": {
                "display_name": "Heavy Iron Shield",
@@ -5535,31 +5535,31 @@
             "species": "poyo"
          },
          "rabbit": {
-            "display_name": "Rabbit",
-            "description": "Om nom nom",
+            "display_name": "토끼",
+            "description": "암 냠 냠",
             "rabbit_jerky": {
-               "display_name": "Rabbit jerky"
+               "display_name": "토끼 육포"
             },
-            "species": "rabbit"
+            "species": "토끼"
          },
          "racoon": {
-            "display_name": "Racoon",
-            "description": "Small forest creature",
+            "display_name": "너구리",
+            "description": "숲에 사는 작은 생물",
             "racoon_jerky": {
-               "display_name": "Racoon jerky"
+               "display_name": "너구리 육포"
             },
-            "species": "racoon"
+            "species": "너구리"
          },
          "red_fox": {
-            "display_name": "Fox",
-            "description": "Small forest creature",
+            "display_name": "여우",
+            "description": "숲에 사는 작은 생물",
             "red_fox_jerky": {
-               "display_name": "Fox jerky"
+               "display_name": "여우 육포"
             },
-            "species": "fox"
+            "species": "여우"
          },
          "sheep": {
-            "display_name": "A sheep",
+            "display_name": "양",
             "description": "So fluffy!",
             "unripe_description": "This sheep is still quite naked.",
             "sheep_young": {
@@ -5570,17 +5570,17 @@
             "species": "sheep"
          },
          "squirrel": {
-            "display_name": "Squirrel",
-            "description": "Small forest creature",
+            "display_name": "다람쥐",
+            "description": "숲에 사는 작은 생물",
             "squirrel_jerky": {
-               "display_name": "Squirrel jerky"
+               "display_name": "다람쥐 육포"
             },
-            "species": "squirrel"
+            "species": "다람쥐"
          },
          "wolf": {
-            "display_name": "A wolf",
-            "description": "Grrr! Rwar!",
-            "species": "wolf"
+            "display_name": "늑대",
+            "description": "으르르릉! 왈!",
+            "species": "늑대"
          },
          "woodchuck": {
             "display_name": "Woodchuck",
@@ -5613,7 +5613,7 @@
          },
          "carrot_crop": {
             "display_name": "당근",
-            "description": "Fast-growing, but pretty bland on its own.",
+            "description": "빠르게 자라지만, 혼자서는 좀 단조롭습니다.",
             "growth_stage": {
                "003": {
                   "name": "잘 익은 당근",
@@ -5625,7 +5625,7 @@
                },
                "001": {
                   "name": "싹이 튼 당근",
-                  "description": "Not edible yet!"
+                  "description": "아직은 먹지 못해."
                },
                "000": {
                   "name": "당근 모종",
@@ -5639,7 +5639,7 @@
          },
          "corn_crop": {
             "display_name": "옥수수",
-            "description": "Slow-growing, but super nutritious crop.",
+            "description": "느리게 자라지만, 엄청난 영양가가 있습니다.",
             "growth_stage": {
                "003": {
                   "name": "잘 익은 옥수수",
@@ -5651,7 +5651,7 @@
                },
                "001": {
                   "name": "싹이 튼 옥수수",
-                  "description": "Not edible yet!"
+                  "description": "아직은 먹지 못해."
                },
                "000": {
                   "name": "옥수수 모종",
@@ -5659,7 +5659,7 @@
                },
                "011": {
                   "name": "옥수수 껍질",
-                  "description": "It's dead."
+                  "description": "죽었어."
                }
             }
          },
@@ -5687,7 +5687,7 @@
          },
          "gingercap_crop": {
             "display_name": "순무",
-            "description": "Fast-growing staple crop, but not particularly nutritious nor delicious.",
+            "description": "빠르게 자라는 주요한 작물이지만, 영양가가 있거나 맛있진 않습니다.",
             "growth_stage": {
                "003": {
                   "name": "잘 익은 순무",
@@ -5699,7 +5699,7 @@
                },
                "001": {
                   "name": "싹이 튼 순무",
-                  "description": "Not edible yet!"
+                  "description": "아직은 먹지 못해."
                },
                "000": {
                   "name": "순무 모종",
@@ -5707,13 +5707,13 @@
                },
                "011": {
                   "name": "썩은 순무",
-                  "description": "Moldy and disgusting."
+                  "description": "케케묵고 역겨워."
                }
             }
          },
          "pumpkin_crop": {
             "display_name": "호박",
-            "description": "Big, round, and fast-growing, but tasty it is not.",
+            "description": "크고, 둥글고, 빠르게 자라지만, 맛은 그저 그렇습니다.",
             "growth_stage": {
                "003": {
                   "name": "잘 익은 호박",
@@ -5721,11 +5721,11 @@
                },
                "002": {
                   "name": "어린 호박",
-                  "description": "Not edible yet!"
+                  "description": "아직은 먹지 못해."
                },
                "001": {
                   "name": "싹이 튼 호박",
-                  "description": "Not edible yet!"
+                  "description": "아직은 먹지 못해."
                },
                "000": {
                   "name": "호박 모종",
@@ -5733,13 +5733,13 @@
                },
                "011": {
                   "name": "썩은 호박",
-                  "description": "Moldy and disgusting."
+                  "description": "케케묵고 역겨워."
                }
             }
          },
          "watermelon_crop": {
-            "display_name": "Watermelon",
-            "description": "Takes a while to grow, but very fun to eat!",
+            "display_name": "수박",
+            "description": "자라는데 시간이 걸리지만, 먹는게 굉장히 즐겁습니다!",
             "growth_stage": {
                "003": {
                   "name": "Ripe watermelon",
@@ -5872,7 +5872,7 @@
                },
                "001": {
                   "name": "싹이 튼 순무",
-                  "description": "Not edible yet!"
+                  "description": "아직 먹지 못해."
                },
                "000": {
                   "name": "순무 모종",
@@ -5880,7 +5880,7 @@
                },
                "011": {
                   "name": "썩은 순무",
-                  "description": "Moldy and disgusting."
+                  "description": "케케묵고 역겨워."
                }
             }
          },
@@ -5906,7 +5906,7 @@
                },
                "011": {
                   "name": "밀 껍질",
-                  "description": "It's dead."
+                  "description": "죽었군."
                }
             }
          },
@@ -5916,7 +5916,7 @@
             "growth_stage": {
                "001": {
                   "name": "참나무 모종",
-                  "description": "It's just getting started."
+                  "description": "이제야 시작했습니다."
                },
                "003": {
                   "name": "참나무 묘목",
@@ -6041,14 +6041,14 @@
          },
          "firepit": {
             "firepit_ghost": {
-               "display_name": "Fire Pit",
-               "description": "Provides warmth and light"
+               "display_name": "화덕",
+               "description": "따뜻함과 빛을 제공해줍니다."
             }
          },
          "firepit_skulls": {
             "firepit_skulls_ghost": {
-               "display_name": "Wicked Fire Pit",
-               "description": "Are those....ew."
+               "display_name": "못된 화덕",
+               "description": "이것들... 으..."
             }
          },
          "fur_rug": {
@@ -6070,7 +6070,7 @@
             }
          },
          "loot_chest": {
-            "display_name": "A big chest",
+            "display_name": "큰  상자",
             "description": "It holds loot!"
          },
          "stone_brazier": {
@@ -6391,7 +6391,7 @@
          "corn": {
             "amazing_corn_basket": {
                "display_name": "Amazing Basket of Maize",
-               "description": "Super nutritous corn."
+               "description": "엄청난 영양소가 있는 옥수수."
             },
             "amazing_corn_serving": {
                "display_name": "Amazing Maize",
@@ -6399,7 +6399,7 @@
             },
             "corn_basket": {
                "display_name": "옥수수가 담긴 바구니",
-               "description": "Sweet and crunchy."
+               "description": "달고 바삭합니다."
             },
             "corn_serving": {
                "display_name": "옥수수대",
@@ -6431,17 +6431,17 @@
          "pumpkin": {
             "pumpkin_basket": {
                "display_name": "호박이 담긴 바구니",
-               "description": "Ready for eating"
+               "description": "먹히는걸 기다리는중"
             },
             "pumpkin_serving": {
-               "display_name": "Pumpkin Mush",
-               "description": "Delicious. Really..."
+               "display_name": "호박 죽",
+               "description": "맛있어. 진짜로..."
             }
          },
          "watermelon": {
             "watermelon_basket": {
-               "display_name": "Watermelon Basket",
-               "description": "Ready for eating"
+               "display_name": "수박이 담긴 바구니",
+               "description": "먹히는걸 기다리는중"
             },
             "watermelon_serving": {
                "display_name": "Watermelon Slice",
@@ -6457,16 +6457,16 @@
          "veggie_stew": {
             "veggie_stew": {
                "display_name": "야채 스튜",
-               "description": "Warm and delicious"
+               "description": "따뜻하고 맛있습니다."
             },
             "veggie_stew_serving": {
-               "display_name": "Bowl of Veggie Stew",
-               "description": "Delicious!"
+               "display_name": "야채 스튜 한 그릇",
+               "description": "맛있어!"
             }
          },
          "wheat_bale": {
-            "display_name": "Bale of Wheat",
-            "description": "Ready for use"
+            "display_name": "밀 더미",
+            "description": "사용되길 기다리는중"
          },
          "egg": {
             "display_name": "달걀",
@@ -6547,7 +6547,7 @@
          },
          "rabbit_feed": {
             "display_name": "토끼 사료",
-            "description": "For rabbits",
+            "description": "토끼를 위한겁니다.",
             "rabbit_feed_ground": {
                "display_name": "Rabbit Feed",
                "description": "Food for rabbits"
@@ -6555,8 +6555,8 @@
          },
          "prickly_pear": {
             "prickly_pear_basket": {
-               "display_name": "Prickly Pear Basket",
-               "description": "Eat carefully!"
+               "display_name": "가시가 있는 배가 담긴 바구니",
+               "description": "조심히 먹어!"
             },
             "prickly_pear_serving": {
                "display_name": "Prickly Pear Serving",
@@ -6619,12 +6619,12 @@
             "description": "So rotten that it's lost all form and function."
          },
          "rotten_egg": {
-            "display_name": "Rotten Egg",
-            "description": "Disgusting"
+            "display_name": "썩은 알",
+            "description": "역겨워"
          },
          "rotten_jerky": {
-            "display_name": "Rotten Jerky",
-            "description": "Even jerky will rot eventually. It's true"
+            "display_name": "썩은 육포",
+            "description": "심지어 육포도 결국 썩습니다. 이건 사실이고요."
          },
          "mutton": {
             "display_name": "Raw Mutton",
@@ -6671,20 +6671,20 @@
          },
          "comfy_bed": {
             "comfy_bed_ghost": {
-               "display_name": "Comfy Bed",
-               "description": "I dreamed... of flying sheep."
+               "display_name": "편안한 침대",
+               "description": "나는 날아다니는 양이 있는 꿈을 꿨어."
             }
          },
          "comfy_bed_fine": {
             "comfy_bed_fine_ghost": {
-               "display_name": "Fine Comfy Bed",
-               "description": "I dreamed... of flying sheep."
+               "display_name": "괜찮은 편안한 침대",
+               "description": "나는 날아다니는 양이 있는 꿈을 꿨어."
             }
          },
          "comfy_chair": {
             "comfy_chair_ghost": {
-               "display_name": "Comfy Chair",
-               "description": "For sitting!"
+               "display_name": "편안한 의자",
+               "description": "앉기를 위해서입니다!"
             }
          },
          "comfy_chair_fine": {
@@ -6755,8 +6755,8 @@
          },
          "stone_chair": {
             "stone_chair_ghost": {
-               "display_name": "Stone Chair",
-               "description": "For sitting"
+               "display_name": "돌 의자",
+               "description": "앉는걸 위한겁니다."
             }
          },
          "stone_table": {
@@ -6813,7 +6813,7 @@
          },
          "simple_clay_chair": {
             "simple_clay_chair_ghost": {
-               "display_name": "Simple Clay Chair",
+               "display_name": "간단한 점토 의자",
                "description": "Less dusty than sitting on the floor"
             }
          },
@@ -6825,13 +6825,13 @@
          },
          "simple_clay_chair_fine": {
             "simple_clay_chair_fine_ghost": {
-               "display_name": "Fine Clay Chair",
+               "display_name": "괜찮은 점토 의자",
                "description": "Less dusty and more stylish than sitting on the floor"
             }
          },
          "clay_bed_fine": {
             "clay_bed_fine_ghost": {
-               "display_name": "Fine Clay Bed",
+               "display_name": "괜찮은 점토 침대",
                "description": "Gets you off the ground in style. Still uncomfortable, though"
             }
          },
@@ -6945,7 +6945,7 @@
             },
             "little_stone_golem": {
                "display_name": "Little Stone Golem",
-               "description": "He's just a pebble!"
+               "description": "그는 그저 조약돌입니다!"
             },
             "alligator": {
                "display_name": "Varanus",
@@ -6953,7 +6953,7 @@
             },
             "wolf": {
                "display_name": "Untamed Wolf",
-               "description": "Grrr! Rwar!"
+               "description": "으르르! 왈!"
             }
          },
          "goblins": {
@@ -7013,7 +7013,7 @@
                "display_name": "Small totem"
             },
             "goblin_soldier": {
-               "display_name": "Goblin Soldier",
+               "display_name": "고블린 병사",
                "description": "Gobble, gobble, gobble..."
             },
             "goblin_soothsayer_tent": {
@@ -7163,9 +7163,9 @@
             "species": "dragon"
          },
          "kitten": {
-            "display_name": "Kitten",
-            "description": "He's so cute!",
-            "species": "cat"
+            "display_name": "고양이",
+            "description": "그는 너무 귀여워!",
+            "species": "고양이"
          },
          "mammoth": {
             "display_name": "Baby Mammoth",
@@ -7546,7 +7546,7 @@
             "description": "..."
          },
          "worker_hammer": {
-            "display_name": "Worker's Hammer",
+            "display_name": "일꾼의 망치",
             "description": "Everything looks like a nail when all you have is a hammer"
          }
       },
@@ -7618,8 +7618,8 @@
          },
          "pine_tree": {
             "large_pine_tree": {
-               "display_name": "Large Pine Tree",
-               "description": "100's of years old. Too bad..."
+               "display_name": "큰 소나무",
+               "description": "몇백년은 됐군요. 안타까워.."
             },
             "medium_pine_tree": {
                "display_name": "Medium Pine Tree",
@@ -7636,8 +7636,8 @@
                "description": "An impressive specimen."
             },
             "small_cactus_tree": {
-               "display_name": "Small Cactus",
-               "description": "Small and prickly."
+               "display_name": "작은 선인장",
+               "description": "작고 가시가 있군요."
             }
          },
          "oak_tree": {
@@ -7646,8 +7646,8 @@
                "description": "It radiates a mysterious aura"
             },
             "large_oak_tree": {
-               "display_name": "Large Oak Tree",
-               "description": "100's of years old. Too bad..."
+               "display_name": "큰 오크 트리",
+               "description": "몇백년은 됐군요. 안타까워..."
             },
             "medium_oak_tree": {
                "display_name": "Medium Oak Tree",
