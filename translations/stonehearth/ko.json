@@ -737,14 +737,14 @@
                "title": "건설 도면",
                "design_custom_building": "커스텀 건물 디자인하기",
                "template_names": {
-                  "tiny_cottage": "Tiny Cottage",
-                  "cottage_for_two": "Cottage for Two",
-                  "shared_sleeping_quarters": "Shared Sleeping Quarters",
-                  "dining_hall": "Dining Hall",
-                  "little_clay_house": "Little Clay House",
-                  "clay_house_for_two": "Clay House for Two",
-                  "clay_dining_room": "Clay Dining Room",
-                  "clay_dormitory": "Clay Dormitory"
+                  "tiny_cottage": "작은 집",
+                  "cottage_for_two": "2인용 집",
+                  "shared_sleeping_quarters": "4인용 집",
+                  "dining_hall": "식당",
+                  "little_clay_house": "작은 집",
+                  "clay_house_for_two": "2인용 집",
+                  "clay_dining_room": "식당",
+                  "clay_dormitory": "4인용 집"
                },
                "set_template_name_title": "도면 이름",
                "template_default_name": "새로운 건설 도면",
