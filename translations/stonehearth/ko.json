@@ -741,10 +741,10 @@
                   "cottage_for_two": "2인용 집",
                   "shared_sleeping_quarters": "4인용 집",
                   "dining_hall": "식당",
-                  "little_clay_house": "작은 집",
-                  "clay_house_for_two": "2인용 집",
-                  "clay_dining_room": "식당",
-                  "clay_dormitory": "4인용 집"
+                  "little_clay_house": "점토로 만든 작은 집",
+                  "clay_house_for_two": "점토로 만든 2인용 집",
+                  "clay_dining_room": "점토로 만든 식당",
+                  "clay_dormitory": "점토로 만든 기숙사"
                },
                "set_template_name_title": "도면 이름",
                "template_default_name": "새로운 건설 도면",
@@ -4568,24 +4568,24 @@
                "ui_steps": {
                   "set1": {
                      "step003": {
-                        "title": "Click the Carpenter's Workshop"
+                        "title": "목수의 작업대를 클릭하세요."
                      },
                      "step002": {
-                        "title": "Open the Carpenter's Craft Menu"
+                        "title": "목수 메뉴를 여세요."
                      },
                      "step005": {
-                        "title": "Click X to close this window"
+                        "title": "창을 닫아주세요."
                      },
                      "step004": {
-                        "title": "Click the Craft button to craft the workshop"
+                        "title": "제작 버튼을 클릭하세요."
                      },
                      "step001": {
-                        "title": "Open the workshop menu",
-                        "description": "Use this menu to manage the various crafting workshops of your citizens. "
+                        "title": "작업 메뉴를 여세요.",
+                        "description": "이 메뉴를 사용하면 당신의 시민들을 위한 다양한 물건을 관리할 수 있습니다."
                      },
                      "step000": {
-                        "title": "Set Up a Workbench",
-                        "description": "Our carpenter needs a crafting station in order to craft items for the town. Let's make a workbench!"
+                        "title": "작업대를 만드세요.",
+                        "description": "목수는 마을에 필요한 아이템을 만들기 위해 작업대가 필요합니다. 작업대를 만들어봅시다!"
                      }
                   }
                }
@@ -4594,25 +4594,25 @@
                "ui_steps": {
                   "set1": {
                      "step001": {
-                        "title": "Open the Build Menu",
-                        "description": "Use this menu to build structures and place items in your town."
+                        "title": "건설 메뉴를 여세요.",
+                        "description": "이 메뉴를 사용하면 당신의 마을에 건물을 짓거나 아이템을 설치할 수 있습니다."
                      },
                      "step000": {
-                        "title": "Place the Carpenter's Workbench",
-                        "description": "Now that we've crafted the workbench, we need to place it in town for the Carpenter to use."
+                        "title": "목수의 작업대를 설치해주세요.",
+                        "description": "작업대를 만들었으니 목수가 사용하기 위한 작업대를 설치해야 합니다."
                      },
                      "step003": {
-                        "title": "Click the Carpenter's Workshop item",
-                        "description": "Select the workshop and click to place it somewhere in town."
+                        "title": "목수의 작업대 아이템을 클릭하세요.",
+                        "description": "아이템을 선택하고 마을의 원하는 곳에 배치해주세요."
                      },
                      "step002": {
-                        "title": "Open the Place Item pane"
+                        "title": "아이템 설치 창을 여세요."
                      }
                   },
                   "set2": {
                      "step000": {
                         "title": "축하합니다!",
-                        "description": "We've got resources, a place to store goods, and a way to craft items. We're well on our way to getting this settlement off the ground!"
+                        "description": "이제 자원과 자원을 저장할 수 있는 비축소 그리고 작업대를 가지고 있습니다. 순조롭게 정착할 수 있게 되었습니다!"
                      }
                   }
                }
@@ -8341,13 +8341,13 @@
          },
          "carpenter_workbench": {
             "carpenter_workbench_ghost": {
-               "display_name": "Carpenter Workbench",
+               "display_name": "목수의 작업대",
                "description": "Used by the Carpenter for crafting."
             }
          },
          "carpenter_toolbench": {
             "carpenter_toolbench_ghost": {
-               "display_name": "Carpenter Toolbench",
+               "display_name": "목수의 향상된 작업대",
                "description": "Used to make fancier kinds of furniture."
             }
          },
@@ -8539,12 +8539,12 @@
             },
             "carpenter_workbench_recipe": {
                "description": "Required to produce most of the Carpenter's recipes.",
-               "recipe_name": "Carpenter Workbench",
+               "recipe_name": "목수의 작업대",
                "flavor": "A sturdy, well-organized place for tools and crafts."
             },
             "carpenter_toolbench_recipe": {
                "description": "Fancier tools allow the carpenter to work with cloth and other civilized ingredients.",
-               "recipe_name": "Carpenter Toolbench",
+               "recipe_name": "목수의 향상된 작업대",
                "flavor": "A more elegant workstation, modeled on a more civilized time."
             },
             "wooden_window_frame_tall_recipe": {
