@@ -3300,7 +3300,7 @@
             },
             "content": {
                "content_mood_buff": {
-                  "display_name": "만족",
+                  "display_name": "만족함",
                   "description": "모든 것이 괜찮을 것 같아요."
                }
             },
@@ -3319,27 +3319,27 @@
          },
          "town_alert": {
             "town_alert_courage_buff": {
-               "display_name": "Rising Courage",
-               "description": "Increasing courage when defending the town as long as they are not attacked"
+               "display_name": "솟아난 용기",
+               "description": "마을을 지키려는 마음으로 용기가 솟아났으며, 공격당하기 전까지 유효합니다."
             },
             "town_alert_banner_buff": {
-               "display_name": "Town Alert Banner Buff",
-               "description": "Emits a stacking courage buff every 5 minutes"
+               "display_name": "마을 경고 배너 버프",
+               "description": "매 5분마다 용기를 누적 증가시키는 버프가 발생합니다."
             }
          },
          "scratched": {
             "scratched_buff": {
-               "display_name": "Scratched"
+               "display_name": "긁힘"
             }
          },
          "hothead": {
             "winded_buff": {
-               "display_name": "Winded",
-               "description": "-5% Damage"
+               "display_name": "숨이 참",
+               "description": "공격력 5% 감소"
             },
             "furious_buff": {
-               "display_name": "Furious",
-               "description": "+15% Damage. Will not flee or cower for a short time"
+               "display_name": "맹렬함",
+               "description": "공격력 15% 증가. 짧은 시간동안 도망치거나 움츠리지 않습니다."
             }
          }
       },
