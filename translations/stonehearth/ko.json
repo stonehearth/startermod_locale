@@ -4486,12 +4486,12 @@
          "party": {
             "display_name": "[str(self.unit_info.custom_name)]번째 파티",
             "display_names": {
-               "party_1": "Party No.1",
-               "party_2": "Party No.2",
-               "party_3": "Party No.3",
-               "party_4": "Party No.4"
+               "party_1": "1번째 파티",
+               "party_2": "2번째 파티",
+               "party_3": "3번째 파티",
+               "party_4": "4번째 파티"
             },
-            "description": "Organizes troops into groups for combat"
+            "description": "전투를 위해 병사를 그룹에 추가하세요."
          }
       },
       "shops": {
@@ -4504,20 +4504,20 @@
          "kobolds": {
             "wolf_tank": {
                "kobold_wolf": {
-                  "display_name": "Kobold Wolf",
-                  "description": "A Fearsome Wolf!"
+                  "display_name": "고블린 울프",
+                  "description": "무시무시한 늑대입니다!"
                }
             }
          },
          "orcs": {
             "warchief_boss": {
-               "display_name": "Warchief Oghar Norwind",
-               "description": "She's the boss."
+               "display_name": "오우거 대족장 노르윈드",
+               "description": "그녀는 보스입니다."
             }
          },
          "forest": {
             "insane_alligator": {
-               "description": "Smaller varanuses tend to flock around them."
+               "description": "작은 바라누스들은 그 주위에 모이는 경향이 있습니다."
             }
          }
       },
