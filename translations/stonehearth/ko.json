@@ -1155,8 +1155,8 @@
             "background_music_volume": "BGM 크기",
             "effects_volume": "효과음 크기",
             "system": "시스템",
-            "force_32_bit": "* 강제 32비트 (재시작시 적용)",
-            "force_32_bit_note": "* 문제가 있을 경우에만 강제 32비트로 변경하세요. 64비트는 더욱 빠르고 큰 도시를 지원합니다.",
+            "force_32_bit": "* 강제 32bit (재시작시 적용)",
+            "force_32_bit_note": "* 문제가 있을 때만 강제 32bit로 변경하세요. 64bit는 더욱 빠르고 큰 도시를 지원합니다.",
             "collect_profile": "Collect profile",
             "enable_lua_jit": "Lua JIT컴파일 (재시작시 적용)",
             "send_anon_data": "익명으로 피드백 보내기",
@@ -1164,7 +1164,7 @@
             "gameplay_tab": {
                "title": "게임플레이",
                "experimental": "실험실",
-               "experimental_description": "이곳의 기능들은 개발중이며 게임 플레이에 문제를 일으킬 수 있습니다.",
+               "experimental_description": "이곳의 기능들은 개발 중이며 게임 플레이에 문제를 일으킬 수 있습니다.",
                "enable_speed_3": "3번째 게임속도 (UI 새로고침 필요)",
                "enable_speed_3_note": "주의: 마을이 커질 경우, 게임 성능이 저하될 수 있습니다.",
                "enable_speed_3_description": "4배속 옵션을 새로 추가합니다!",
@@ -1174,23 +1174,23 @@
                "show_hearthling_paths_description": "하슬링의 이동 경로를 표시합니다.",
                "max_citizens": "최대 인구 수",
                "randomize_attributes": "하스링 랜덤 속성",
-               "randomize_attributes_description": "이 옵션을 활성화 할 경우, 등장하는 하스링의 정신,육체,영혼 속성이 균형없이 랜덤하게 출현합니다.",
+               "randomize_attributes_description": "이 옵션을 활성화할 경우, 등장하는 하스링의 정신, 육체, 영혼 속성이 균형 없이 랜덤하게 출현합니다.",
                "auto_loot": "자동 줍기",
-               "auto_loot_description": "적이 물건을 떨어뜨리면 자동으로 줍습니다.",
+               "auto_loot_description": "적이 떨어트린 전리품을 자동으로 줍습니다.",
                "building_auto_queue_crafters": "건축을 위한 자동대기열 활성화",
                "building_auto_queue_crafters_description": "건물 공사에 필요한 모든 가구와 비품들을 자동으로 제작에 들어가도록 설정해줍니다."
             },
             "mods": "모드",
             "mods_tab": {
                "title": "설치된 모듈",
-               "note": "모듈을 활성화하거나 비활성화를 위해서는 게임을 재시작 해야 합니다.",
-               "invalid_manifest": "manifest파일이 잘못됨",
+               "note": "모듈을 활성화하거나 비활성화를 위해서는 게임을 재 시작 해야 합니다.",
+               "invalid_manifest": "잘못된 manifest파일",
                "out_of_date": "만료",
                "deferred_load": "다른 모드 자동 로드",
                "required": "필수",
                "mods_changed_dialog": {
                   "title": "모듈 변경",
-                  "message": "모듈 변경사항을 적용하기 위해서는 게임을 재시작해야합니다. 재시작 하시겠습니까?",
+                  "message": "모듈 변경사항을 적용하기 위해서는 게임을 재시작해야 합니다. 재시작하시겠습니까?",
                   "accept": "네",
                   "cancel": "아니요"
                }
