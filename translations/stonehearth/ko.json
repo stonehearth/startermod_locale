@@ -3346,45 +3346,45 @@
       "build": {
          "prototypes": {
             "building": {
-               "display_name": "Building",
-               "numbered_display_name": "Building No.[str(self.stonehearth:unit_info.custom_name)]",
-               "description": "A building.  woot!!"
+               "display_name": "건물",
+               "numbered_display_name": "[str(self.stonehearth:unit_info.custom_name)]번째 건물",
+               "description": "건물이다. 야호!!"
             },
             "column": {
-               "display_name": "Wooden Column",
-               "description": "Provides wall support"
+               "display_name": "나무 기둥",
+               "description": "벽을 지지하도록 도와줍니다."
             },
             "floor": {
-               "display_name": "Floor",
-               "description": "Keeps feet clean"
+               "display_name": "바닥",
+               "description": "발을 깨끗하게 유지시켜 줍니다."
             },
             "ladder": {
-               "display_name": "Ladder",
-               "description": "Used to reach high places"
+               "display_name": "사다리",
+               "description": "높은 곳에 도달하기 위해 이용됩니다."
             },
             "patch_wall": {
-               "display_name": "Wall",
-               "description": "Keeps roofs up"
+               "display_name": "벽",
+               "description": "지붕을 받쳐줍니다."
             },
             "road": {
-               "display_name": "Road",
-               "description": "For speedier travel"
+               "display_name": "길",
+               "description": "빠르게 이동하도록 도와줍니다."
             },
             "roof": {
-               "display_name": "Roof",
-               "description": "Keeps the rain out"
+               "display_name": "지붕",
+               "description": "비를 막아줍니다."
             },
             "scaffolding": {
-               "display_name": "Scaffolding",
-               "description": "Construction support structure"
+               "display_name": "비계",
+               "description": "공사를 도와주는 구조물입니다."
             },
             "wall": {
-               "display_name": "Wall",
-               "description": "Keeps roofs up"
+               "display_name": "벽",
+               "description": "지붕을 받쳐줍니다."
             },
             "stairs": {
-               "display_name": "Stairs",
-               "description": "Go up and down"
+               "display_name": "계단",
+               "description": "위,아래로 이동하도록 도와줍니다."
             }
          },
          "building_brushes": {
