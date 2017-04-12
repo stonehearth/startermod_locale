@@ -1156,9 +1156,9 @@
             "effects_volume": "효과음 크기",
             "system": "시스템",
             "force_32_bit": "* 강제 32비트 (재시작시 적용)",
-            "force_32_bit_note": "* Force 32-bit only if absolutely necessary. 64-bit is faster and supports larger towns.",
+            "force_32_bit_note": "* 문제가 있을 경우에만 강제 32비트로 변경하세요. 64비트는 더욱 빠르고 큰 도시를 지원합니다.",
             "collect_profile": "Collect profile",
-            "enable_lua_jit": "Use Lua JIT (Requires Restart)",
+            "enable_lua_jit": "Lua JIT컴파일 (재시작시 적용)",
             "send_anon_data": "익명으로 피드백 보내기",
             "language_select": "언어(Language)",
             "gameplay_tab": {
@@ -1180,19 +1180,19 @@
                "building_auto_queue_crafters": "건축을 위한 자동대기열 활성화",
                "building_auto_queue_crafters_description": "건물 공사에 필요한 모든 가구와 비품들을 자동으로 제작에 들어가도록 설정해줍니다."
             },
-            "mods": "Mods",
+            "mods": "모드",
             "mods_tab": {
-               "title": "Installed Modules",
-               "note": "Enabling or disabling a module requires a game reload.",
-               "invalid_manifest": "Invalid Manifest",
-               "out_of_date": "Out of Date",
-               "deferred_load": "Automatically Loaded by Other Mods",
-               "required": "Required",
+               "title": "설치된 모듈",
+               "note": "모듈을 활성화하거나 비활성화를 위해서는 게임을 재시작 해야 합니다.",
+               "invalid_manifest": "manifest파일이 잘못됨",
+               "out_of_date": "만료",
+               "deferred_load": "다른 모드 자동 로드",
+               "required": "필수",
                "mods_changed_dialog": {
-                  "title": "Modules Changed",
-                  "message": "The game needs to reload to apply module changes. Reload now?",
-                  "accept": "Ok",
-                  "cancel": "Cancel"
+                  "title": "모듈 변경",
+                  "message": "모듈 변경사항을 적용하기 위해서는 게임을 재시작해야합니다. 재시작 하시겠습니까?",
+                  "accept": "네",
+                  "cancel": "아니요"
                }
             }
          },
