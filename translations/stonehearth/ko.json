@@ -4626,19 +4626,19 @@
       },
       "loadouts": {
          "food_for_days": {
-            "description": "The large amount of food crammed into the back of the caravan should keep the hearthlings going for a handful of days while they get their settlement up and running.",
-            "display_name": "Food for Days",
-            "tooltip": "A safe option for new players, though lacking in defense."
+            "description": "캐러밴 뒤에 실려있는 많은 양의 음식들은 하슬링들이 정착하고 운영하는 며칠 동안 매우 유용할 것입니다.",
+            "display_name": "며칠 간의 음식들",
+            "tooltip": "수비에 약하지만 초보자에겐 안전한 선택입니다."
          },
          "merchant_caravan": {
-            "description": "A collection of trade tools should give the settlement a leg up in the wilderness.",
-            "display_name": "Merchant Caravan",
-            "tooltip": "A good collection of craft skills, but short on food."
+            "description": "황무지에서의 정착을 도와줄 좋은 도구들의 모음입니다.",
+            "display_name": "캐러밴 상인",
+            "tooltip": "음식은 부족하지만 제작 기술을 위한 좋은 선택입니다."
          },
          "money_solves_all_problems": {
-            "description": "Anything that the town needs they should be able to purchase from a trader.  That is, presuming one finds them and has the proper goods for sale...",
-            "display_name": "Money Solves All Problems",
-            "tooltip": "A risky but potentially very beneficial choice.  It all depends on when and what traders arrive."
+            "description": "마을에 필요한 어떤 것이든 상인으로부터 구입할 수 있습니다. 적절한 상품을 가진 그들을 만날 수 있다면요...",
+            "display_name": "돈은 모든 문제를 해결해준다",
+            "tooltip": "위험하지만 매우 유익한 선택일 수 있습니다. 이 선택은 어떤 상인이 언제 오느냐에 따라 달려있습니다."
          },
          "items": {
             "gold": "금화",
