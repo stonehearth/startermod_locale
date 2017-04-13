@@ -1405,7 +1405,7 @@
             },
             "agriculture": {
                "display_name": "농업",
-               "description": "마을의 농경지와 목장의 가치. 각각의 수확된 곡물과 각각의 방목지 동물들이 수치에 반영됩니다."
+               "description": "마을의 농경지와 목장의 가치. 각각의 수확된 작물과 각각의 방목지 동물들이 수치에 반영됩니다."
             },
             "military_strength": {
                "display_name": "군사력",
@@ -3466,49 +3466,49 @@
       },
       "commands": {
          "build_workshop": {
-            "display_name": "Build Workshop",
-            "description": "Create a place for productivity!"
+            "display_name": "작업대 설치",
+            "description": "생산성이 좋은 장소에 설치하세요."
          },
          "chop_tree": {
-            "display_name": "Harvest",
+            "display_name": "수확",
             "description": "Harvest for lumber, or just to get it out of the way."
          },
          "destroy_entity": {
-            "display_name": "Destroy",
-            "description": "Irrevocably remove this item from the world!"
+            "display_name": "파괴",
+            "description": "세상에서 이 아이템을 지워버립니다."
          },
          "harvest_berries": {
-            "display_name": "Gather Berries",
-            "description": "This bush produces berries that can be gathered to feed your settlers.",
-            "disabled_description": "The berries on this bush aren't ripe yet!"
+            "display_name": "열매 수집",
+            "description": "이 열매 덤불은 여러분의 정착민들을 위한 열매를 생산합니다.",
+            "disabled_description": "이 열매는 아직 익지 않았어요!"
          },
          "harvest_planted": {
             "display_name": "수확",
-            "description": "Reap whatever's available."
+            "description": "무엇이든 수확할 수 있습니다."
          },
          "loot_item": {
-            "display_name": "Loot item",
-            "description": "Claim this item for your town."
+            "display_name": "아이템 줍기",
+            "description": "당신의 마을로 아이템을 가져옵니다."
          },
          "move_item": {
-            "display_name": "Move item",
-            "description": "Move this thing somewhere else in the world.",
-            "disabled_description": "This item is in use. Try moving it later."
+            "display_name": "아이템 이동",
+            "description": "이 세상 어디든 옮길 수 있습니다.",
+            "disabled_description": "이 아이템은 사용중입니다. 다시 시도하세요."
          },
          "place_item": {
-            "display_name": "Place item",
-            "description": "Place this item in the world."
+            "display_name": "아이템 설치",
+            "description": "이 세상 어디든 설치할 수 있습니다."
          },
          "plant_crop": {
             "plant_corn": {
                "display_name": "옥수수를 심습니다!",
-               "description": "Edible Gold."
+               "description": "식용 금"
             },
-            "display_name": "Plant a crop!",
-            "description": "Plant something in this square.",
+            "display_name": "작물을 심으세요!",
+            "description": "이 구역 안에 무언가를 심으세요.",
             "plant_turnip": {
-               "display_name": "Plant a Turnip!",
-               "description": "Plant a turnip in this square."
+               "display_name": "순무를 심으세요!",
+               "description": "이 구역 안에 순무를 심으세요."
             }
          },
          "promote_to_job": {
@@ -3516,129 +3516,129 @@
             "description": "하슬링에게 새로운 직업을 줍니다."
          },
          "raze_crop": {
-            "display_name": "Clear Ground",
-            "description": "Clear or harvest the contents of this plot."
+            "display_name": "땅 정리하기",
+            "description": "이 곳의 내용물을 치우거나 수확합니다."
          },
          "release_pet": {
             "display_name": "펫 방생",
-            "description": "Tell this pet you don't want it anymore."
+            "description": "펫에서 이제 더 이상 널 원하지 않는다고 말하세요."
          },
          "remove_ladder": {
-            "display_name": "Remove",
-            "description": "Remove this ladder."
+            "display_name": "철거",
+            "description": "이 사다리를 제거합니다."
          },
          "restore_terrain": {
-            "display_name": "Restore Terrain",
-            "description": "Restore the terrain to its original state."
+            "display_name": "지형 복원",
+            "description": "이 지역을 원래 상태로 복원시킵니다."
          },
          "show_workshop": {
             "display_name": "작업대 열기",
-            "description": "Your crafter uses the workshop to construct useful items for your settlement.",
-            "disabled_description": "Your crafter uses the workshop to construct useful items for your settlement. Before you can craft you need to assign a crafter to this workshop."
+            "description": "당신의 제작가는 정착민들을 위한 유용한 아이템을 제작합니다.",
+            "disabled_description": "당신의 제작가는 정착민들을 위한 유용한 아이템을 제작합니다. 우선 당신은 이 작업대를 사용할 제작가를 정해야 합니다."
          },
          "show_workshop_from_crafter": {
             "display_name": "작업대 열기",
-            "description": "Your crafter uses the workshop to construct useful items for your settlement.",
-            "disabled_description": "Your crafter uses the workshop to construct useful items for your settlement. Before you can craft you need to assign a crafter to this workshop."
+            "description": "당신의 제작가는 정착민들을 위한 유용한 아이템을 제작합니다.",
+            "disabled_description": "당신의 제작가는 정착민들을 위한 유용한 아이템을 제작합니다. 우선 당신은 이 작업대를 사용할 제작가를 정해야 합니다."
          },
          "slaughter": {
-            "display_name": "Harvest for Meat",
-            "description": "Harvest this animal for its meat.",
-            "disabled_description": "This animal is so malnourished that it has no meat. It's just skin and bones."
+            "display_name": "고기 수확",
+            "description": "고기를 위해 동물을 수확합니다.",
+            "disabled_description": "이 동물을 영양분이 없어 고기가 없습니다. 살과 뼈 뿐입니다."
          },
          "undeploy_item": {
-            "display_name": "Undeploy",
-            "description": "Undeploy this item and return it to a stockpile",
-            "disabled_description": "This item is in use. Try undeploying it later."
+            "display_name": "배치 취소",
+            "description": "이 아이템을 배치하지 않고 비축소로 되돌립니다.",
+            "disabled_description": "이 아이템은 사용중입니다. 다시 시도하세요."
          },
          "unit_control": {
             "abilities": {
                "snare_trap": {
-                  "display_name": "Snare Trap",
-                  "description": "Spring a weighted net to capture small game like rabbits and squirrels."
+                  "display_name": "사냥용 덫",
+                  "description": "토끼나 다람쥐 같은 작은 동물들을 잡기 위한 덫입니다."
                }
             },
             "move_unit": {
-               "display_name": "Move",
-               "description": "Tell this character to move somewhere else"
+               "display_name": "이동",
+               "description": "다른 곳으로 이동하라고 말하세요."
             },
             "unload_inventory": {
-               "display_name": "Unload Bags",
-               "description": "Return to town and desposit the contents of your bags."
+               "display_name": "짐 내리기",
+               "description": "마을로 돌아가 당신의 가방을 다시 채우세요."
             }
          },
          "plant_tree": {
-            "display_name": "Plant Tree",
-            "description": "Plant this tree in some dirt."
+            "display_name": "나무 심기",
+            "description": "흙이 있는 곳에 이 나무를 심으세요."
          },
          "use_consumable": {
             "display_name": "사용",
-            "description": "Use this consumable item to buff every hearthling in town. This will destroy the item."
+            "description": "마을의 모든 하슬링들을 위해 이 소모품을 사용하세요. 이 아이템은 없어질 것입니다."
          },
          "use_seeds": {
-            "display_name": "Use",
-            "description": "Use these seeds to teach your farmers to grow a new crop. This will destroy the item."
+            "display_name": "사용",
+            "description": "이 씨앗을 이용해 농부들에게 새로운 작물을 재배하도록 가르치세요. 이 아이템은 없어질 것입니다."
          },
          "edit_party": {
-            "display_name": "Edit Party",
-            "description": "Add and remove combatants from this party."
+            "display_name": "파티 수정",
+            "description": "이 파티의 전투원을 추가하거나 제거합니다."
          },
          "cancel_marker": {
-            "display_name": "Cancel Marker",
-            "description": "Cancels the combat orders represented by this marker"
+            "display_name": "취소 표시",
+            "description": "이 표시가 된 공격 명령을 취소합니다."
          },
          "select_owner": {
-            "display_name": "Select Owner",
-            "description": "Selects the combatants influenced by this marker"
+            "display_name": "전투원 선택",
+            "description": "이 표시에 영향을 받을 전투원을 선택합니다."
          },
          "call_trader": {
-            "display_name": "Call Merchant",
-            "description": "Call a trader to this stall",
-            "disabled_description": "A trader has already visited this stall recently. Try again later."
+            "display_name": "상인 소환",
+            "description": "이 가판대로 상인을 부릅니다.",
+            "disabled_description": "최근 상인이 이 가판대에 이미 다녀갔습니다. 다시 시도하세요."
          },
          "show_shop": {
-            "display_name": "Show Shop",
-            "description": "Buy and sell goods"
+            "display_name": "상점 보기",
+            "description": "상품들을 사고 팝니다."
          },
          "archer_arrows": {
             "default_arrows": {
-               "display_name": "Using Default Arrows",
-               "description": "Using normal arrows. Click to swap to a different arrow type"
+               "display_name": "기본 화살 사용",
+               "description": "기본 화살을 사용합니다. 다른 화살 타입을 선택해주세요."
             },
             "slow_arrows": {
-               "display_name": "Using Spiky Arrows",
-               "description": "Currently using spiky arrows, which slows enemy movement speed. Click to swap between arrow types."
+               "display_name": "뾰족한 화살",
+               "description": "뾰족한 화살을 사용하면 적의 이동속도를 느리게 합니다. 다른 화살 타입을 선택해주세요."
             },
             "fire_arrows": {
-               "display_name": "Using Fire Arrows",
-               "description": "Currently using fire arrows, which have a chance to set fire to enemies, dealing additional damage over time. Click to swap between arrow types."
+               "display_name": "불 화살 사용",
+               "description": "불 화살을 사용하면 적을 불태우고 지속적인 데미지를 줄 수 있습니다. 다른 화살 타입을 선택해주세요."
             }
          },
          "combat": {
             "move": {
-               "display_name": "Move Marker",
-               "description": "Move to this location without attacking"
+               "display_name": "이동 표시",
+               "description": "공격 없이 이 위치로 이동합니다."
             },
             "attack_move": {
-               "display_name": "Attack Move Marker",
-               "description": "Attack anything near this location"
+               "display_name": "공격 이동 표시",
+               "description": "이 장소 근처를 공격합니다."
             },
             "defend_location": {
-               "display_name": "Defend Marker",
-               "description": "Defend this location"
+               "display_name": "방어 표시",
+               "description": "이 장소를 방어합니다."
             }
          },
          "change_owner": {
-            "display_name": "Assign Owner",
-            "description": "Assign this object to a new owner"
+            "display_name": "주인 선정",
+            "description": "이 물건을 새 주인에게 맡깁니다."
          },
          "toggle_lock": {
-            "display_name": "Toggle Lock",
-            "description": "Lock or unlock this door"
+            "display_name": "잠금",
+            "description": "문을 잠그거나 해제합니다."
          },
          "rescue": {
-            "display_name": "Rescue",
-            "description": "Tells the town's people to try to rescue this hearthling"
+            "display_name": "구조",
+            "description": "마을 사람들에게 이 하슬링을 구조하기 위해 노력해달라고 말해주세요."
          }
       },
       "personality": {
@@ -5629,11 +5629,11 @@
                },
                "000": {
                   "name": "당근 모종",
-                  "description": "A unrealized carrot."
+                  "description": "아직 덜 자랐어."
                },
                "011": {
                   "name": "썩은 당근",
-                  "description": "Moldy and disgusting."
+                  "description": "케케묵고 역겨워."
                }
             }
          },
@@ -5647,7 +5647,7 @@
                },
                "002": {
                   "name": "초록빛 옥수수",
-                  "description": "Extremely unsatisfying to eat."
+                  "description": "확실히 만족감을 주지는 못할꺼야."
                },
                "001": {
                   "name": "싹이 튼 옥수수",
@@ -5703,7 +5703,7 @@
                },
                "000": {
                   "name": "순무 모종",
-                  "description": "A unrealized turnip."
+                  "description": "아직 덜 자랐어."
                },
                "011": {
                   "name": "썩은 순무",
@@ -5729,7 +5729,7 @@
                },
                "000": {
                   "name": "호박 모종",
-                  "description": "A unrealized pumpkin."
+                  "description": "아직 덜 자랐어."
                },
                "011": {
                   "name": "썩은 호박",
@@ -5759,7 +5759,7 @@
                },
                "011": {
                   "name": "Rotten watermelon",
-                  "description": "Moldy and disgusting."
+                  "description": "케케묵고 역겨워."
                }
             }
          },
@@ -5860,7 +5860,7 @@
          },
          "turnip_crop": {
             "display_name": "순무",
-            "description": "Fast-growing staple crop, but not particularly nutritious nor delicious.",
+            "description": "빠르게 자라지만, 특별히 영양분이 많거나 맛있지는 않다.",
             "growth_stage": {
                "003": {
                   "name": "잘 익은 순무",
@@ -5876,7 +5876,7 @@
                },
                "000": {
                   "name": "순무 모종",
-                  "description": "A unrealized turnip."
+                  "description": "아직 덜 자랐어."
                },
                "011": {
                   "name": "썩은 순무",
@@ -5886,23 +5886,23 @@
          },
          "wheat_crop": {
             "display_name": "밀",
-            "description": "Amber wave of grain.",
+            "description": "국물의 황금 물결이야.",
             "growth_stage": {
                "003": {
                   "name": "잘 익은 밀",
                   "description": "수확할 준비가 되었어!"
                },
                "002": {
-                  "name": "Immature wheat",
-                  "description": "Not ready for harvest"
+                  "name": "덜 익은 밀",
+                  "description": "수확할 준비가 되지 않았습니다."
                },
                "001": {
                   "name": "싹이 튼 밀",
-                  "description": "Not ready for harvest"
+                  "description": "수확할 준비가 되지 않았습니다."
                },
                "000": {
                   "name": "밀 모종",
-                  "description": "Not ready for harvest"
+                  "description": "수확할 준비가 되지 않았습니다."
                },
                "011": {
                   "name": "밀 껍질",
@@ -5912,7 +5912,7 @@
          },
          "oak_tree_crop": {
             "display_name": "참나무 묘목",
-            "description": "Out of trees? Get ready to participate in reforestation.",
+            "description": "나무에서 떨어져 나왔냐고? 다시 심을 준비를 합시다.",
             "growth_stage": {
                "001": {
                   "name": "참나무 모종",
@@ -5920,11 +5920,11 @@
                },
                "003": {
                   "name": "참나무 묘목",
-                  "description": "Ready to be transferred to a bigger plot."
+                  "description": "더 큰 곳으로 갈 준비가 되었습니다."
                },
                "000": {
-                  "name": "Acorn",
-                  "description": "Even a mighty tree has humble beginnings."
+                  "name": "도토리",
+                  "description": "심지어 큰 나무도 초라한 시작을 한답니다."
                },
                "002": {
                   "name": "싹이 튼 참나무",
