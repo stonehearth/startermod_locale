@@ -215,7 +215,7 @@
             "create_party": "파티 생성",
             "edit_party": "편집",
             "add_party_member": "파티원 추가",
-            "remove_members": "모든 멤버 제거",
+            "remove_members": "모든 파티원 제거",
             "add_party_member_title": "명단 관리",
             "done_adding_members": "완료",
             "add_party_member_button": "추가",
@@ -1065,12 +1065,14 @@
                "015": "아이템의 가치는 판매 가격입니다.",
                "016": "터널 문을 사용하여 광산 입구를 차단할 수 있습니다",
                "017": "하슬링들이 마을 밖으로 떠나는 걸 원치 않으세요? 엔지니어의 잠금식 문으로 해결해보세요.",
+               "018": "",
                "019": "음식 비축소를 일하는 곳 가까이에 배치하여 하슬링들이 접근하기 쉽도록 만들어보세요.",
                "020": "사냥꾼는 산과 사막에도 덫을 놓을 수 있지만, 동물을 잡기에는 더 어려울 것입니다.",
                "021": "시민 메뉴에서 전투원의 직업를 해제하여, 전투에서 휴식을 취하도록 강요할 수 있습니다.",
                "022": "땅을 파는 도중에 가끔 흙이 쌓여서 점토와 석재가 생길 수 있습니다.",
                "023": "여러분은 산의 겉면에서 광맥을 발견할 수 있습니다.",
                "024": "음식 공급원이 필요한가요? 열매 덤불이나 선인장을 가까운 곳으로 옮기세요.",
+               "025": "",
                "026": "당신의 하슬링들은 비좁은 공간에 너무 오랫동안 생활하는 것을 좋아하지 않습니다.",
                "027": "목장에 같은 동물이 2마리 이상 있다면 번식하여 개체 수를 늘릴 수 있습니다."
             }
@@ -3485,7 +3487,7 @@
             "description": "무엇이든 수확할 수 있습니다."
          },
          "loot_item": {
-            "display_name": "아이템 줍기",
+            "display_name": "아이템 습득",
             "description": "당신의 마을로 아이템을 가져옵니다."
          },
          "move_item": {
@@ -3523,7 +3525,7 @@
          },
          "remove_ladder": {
             "display_name": "철거",
-            "description": "이 사다리를 제거합니다."
+            "description": "사다리를 제거합니다."
          },
          "restore_terrain": {
             "display_name": "지형 복원",
@@ -3541,12 +3543,12 @@
          },
          "slaughter": {
             "display_name": "고기 수확",
-            "description": "고기를 위해 동물을 수확합니다.",
+            "description": "고기를 얻기 위해 동물을 수확합니다.",
             "disabled_description": "이 동물을 영양분이 없어 고기가 없습니다. 살과 뼈 뿐입니다."
          },
          "undeploy_item": {
             "display_name": "배치 취소",
-            "description": "이 아이템을 배치하지 않고 비축소로 되돌립니다.",
+            "description": "이 아이템을 배치를 취소하고 비축소로 되돌립니다.",
             "disabled_description": "이 아이템은 사용중입니다. 다시 시도하세요."
          },
          "unit_control": {
@@ -3579,23 +3581,23 @@
          },
          "edit_party": {
             "display_name": "파티 수정",
-            "description": "이 파티의 전투원을 추가하거나 제거합니다."
+            "description": "파티원을 추가하거나 제거합니다."
          },
          "cancel_marker": {
             "display_name": "취소 표시",
             "description": "이 표시가 된 공격 명령을 취소합니다."
          },
          "select_owner": {
-            "display_name": "전투원 선택",
-            "description": "이 표시에 영향을 받을 전투원을 선택합니다."
+            "display_name": "파티원 선택",
+            "description": "이 명령에 따를 파티원을 선택합니다."
          },
          "call_trader": {
             "display_name": "상인 소환",
             "description": "이 가판대로 상인을 부릅니다.",
-            "disabled_description": "최근 상인이 이 가판대에 이미 다녀갔습니다. 다시 시도하세요."
+            "disabled_description": "상인이 이 가판대에 이미 다녀갔습니다. 나중에 다시 시도해주세요."
          },
          "show_shop": {
-            "display_name": "상점 보기",
+            "display_name": "상점 방문",
             "description": "상품들을 사고 팝니다."
          },
          "archer_arrows": {
@@ -3636,7 +3638,7 @@
          },
          "rescue": {
             "display_name": "구조",
-            "description": "마을 사람들에게 이 하슬링을 구조하기 위해 노력해달라고 말해주세요."
+            "description": "마을 사람들에게 이 하슬링을 구해달라고 말해주세요."
          }
       },
       "personality": {
@@ -5884,7 +5886,7 @@
          },
          "wheat_crop": {
             "display_name": "밀",
-            "description": "국물의 황금 물결이야.",
+            "description": "곡물의 황금 물결이야.",
             "growth_stage": {
                "003": {
                   "name": "잘 익은 밀",
@@ -5910,7 +5912,7 @@
          },
          "oak_tree_crop": {
             "display_name": "참나무 묘목",
-            "description": "나무에서 떨어져 나왔냐고? 다시 심을 준비를 합시다.",
+            "description": "나무에서 떨어져 나왔냐고? 다시 심을 준비나 합시다.",
             "growth_stage": {
                "001": {
                   "name": "참나무 모종",
