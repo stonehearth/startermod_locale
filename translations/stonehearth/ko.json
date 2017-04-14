@@ -625,7 +625,7 @@
             "city_tier_dialog": {
                "build_and_place": "건설 & 배치",
                "attain_net_worth": "순 자산:",
-               "check_requirements": "점검 요구 사항",
+               "check_requirements": "요구 사항 점검",
                "summon_herald": "헤럴드 소환!"
             },
             "level_up_bulletin": {
@@ -1072,7 +1072,7 @@
                "022": "땅을 파는 도중에 가끔 흙이 쌓여서 점토와 석재가 생길 수 있습니다.",
                "023": "여러분은 산의 겉면에서 광맥을 발견할 수 있습니다.",
                "024": "음식 공급원이 필요한가요? 열매 덤불이나 선인장을 가까운 곳으로 옮기세요.",
-               "025": "",
+               "025": "고블린 족장을 패배시킨 뒤, 블루벨 양을 내 것으로 할 수 있습니다.",
                "026": "당신의 하슬링들은 비좁은 공간에 너무 오랫동안 생활하는 것을 좋아하지 않습니다.",
                "027": "목장에 같은 동물이 2마리 이상 있다면 번식하여 개체 수를 늘릴 수 있습니다."
             }
@@ -1535,7 +1535,7 @@
             },
             "trader": {
                "simple_caravan_encounter": {
-                  "message": "안녕하십니까? 언제나 [str(i18n_data.town_name)]마을은 언제 봐도 아름답군요! 저희가 이 아름다운 마을에 한가지 제안을 할까 합니다. [str(i18n_data.your_item)]  [str(i18n_data.your_quantity)]개를 [str(i18n_data.my_item)] [str(i18n_data.my_quantity)] 개와 교환하지 않으시겠습니까?",
+                  "message": "안녕하십니까? 언제나 [str(i18n_data.town_name)]마을은 언제 봐도 아름답군요! 저희가 이 아름다운 마을에 한가지 제안을 할까 합니다. [str(i18n_data.your_item)]  [str(i18n_data.your_quantity)]개를 [str(i18n_data.my_item)] [str(i18n_data.my_quantity)]개와 교환하지 않으시겠습니까?",
                   "title": "캐러밴이 접근 중!"
                },
                "starting_food_donation": {
@@ -1557,35 +1557,35 @@
                   }
                },
                "returning_trader_encounter": {
-                  "title": "상인이 접근 중",
-                  "days": " days",
-                  "hours": " hours",
-                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Sound good?",
-                  "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] hours!",
-                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] hours to give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
-                  "return_title": "The trader returns!",
+                  "title": "상인이 접근 중입니다.",
+                  "days": " 일",
+                  "hours": " 시간",
+                  "trade_details": "안녕하세요. [str(i18n_data.town_name)]! 저는 지나가는 중인데 당신이 관심이 있다면 거래를 해보고 싶군요. 만약 당신이 나에게 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준다면, 나는 [str(i18n_data.num_days)] 일 뒤에 돌아와 [str(i18n_data.reward_item)] [str(i18n_data.reward_number)]개를 교환할 수 있을 것 같군요. 어떤가요?",
+                  "waiting_title": "상인이 [str(i18n_data.hour_counter)] [str(i18n_data.period)] 뒤에 돌아옵니다!",
+                  "waiting_text": "상인은 [str(i18n_data.hour_counter)] 시간 뒤에 돌아올 것입니다. 만약 당신이 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 가지고 있다면 당신에게 [str(i18n_data.reward_item)] [str(i18n_data.reward_number)]개를 드리겠습니다.",
+                  "return_title": "상인이 돌아왔습니다!",
                   "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Still sounds good?",
-                  "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
+                  "return_greetings_negative": "돌아왔습니다, 하지만 당신은 제가 요청했던 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준비하지 못한 것 같군요. 아쉽군요! 아마 다음 기회가 있을겁니다!"
                },
                "returning_crop_trader_encounter": {
-                  "title": "A trader brings seeds from a distant land.",
-                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_item)] in exchange. Sound good?",
-                  "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)]!",
-                  "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] to give you [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
-                  "return_title": "The trader returns!",
-                  "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_item)] in exchange. Still sounds good?",
+                  "title": "상인이 저 먼 곳으로부터 씨앗을 가져왔습니다.",
+                  "trade_details": "안녕하십니까 [str(i18n_data.town_name)]! 지나가는 중이었는데 만약 관심이 가는 것이 있다면 거래를 하고싶군요. 만약 당신이 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준다면, 나는 [str(i18n_data.num_days)]일 뒤에 돌아와 [str(i18n_data.reward_item)]을(를) 교환하고 싶군요. 어떻게 생각하시나요?",
+                  "waiting_title": "상인이 [str(i18n_data.hour_counter)] [str(i18n_data.period)] 뒤에 돌아옵니다!",
+                  "waiting_text": "상인은 [str(i18n_data.hour_counter)] [str(i18n_data.period)] 뒤에 돌아와 [str(i18n_data.reward_item)]을(를) 줄 것입니다. 만약 당신이 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준비해두었다면요!",
+                  "return_title": "상인이 돌아왔습니다!",
+                  "return_greetings_positive": "돌아왔습니다! 제가 요청했던 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준비했군요. 여전히 저와 거래할 마음이 있으신가요? 그렇다면 [str(i18n_data.reward_item)]을(를) 드리겠습니다. 여전히 괜찮으신가요?",
                   "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
                },
                "rugs_shop": {
                   "shop_info": {
-                     "name": "Havaad's Fine Rugs and Garments",
-                     "title": "A simple merchant has arrived with wares to sell"
+                     "name": "Havaad의 고품질의 깔개와 옷들",
+                     "title": "소박한 상인이 상품을 팔기 위해 도착했습니다."
                   }
                },
                "stonecutter_shop": {
                   "shop_info": {
                      "name": "Rufus Garrow's Stonecutter Shop",
-                     "title": "Rufus Garrow has arrived with wares to sell"
+                     "title": "Rufus Garrow가 상품을 팔기 위해 도착했습니다."
                   }
                },
                "tannery_shop": {
@@ -1602,11 +1602,11 @@
                },
                "valor_tier_2_reached": {
                   "title": "The Princess's Herald Returns",
-                  "speaker_name": "The Honorable Anwyn Redelm",
+                  "speaker_name": "명예로운 Anwyn Redelm",
                   "message": "Congratulations, [str(i18n_data.town_name)]! Word has spread of your martial prowess. Your town officially qualifies as a township! I have brought building materials and trade agreements, as is customary!",
-                  "accept": "Woohoo!",
+                  "accept": "우후!",
                   "dialog_title": "Township Achieved!",
-                  "tier_title": "Township",
+                  "tier_title": "마을",
                   "reward_message": "By decree of Princess Dania of the Ascendancy, we recognize:",
                   "reward_message_ctd": "For acts of incredibe valor in combat. The town is hereby eligible for:",
                   "tier_2_bldg_template": "Tier 2 Building Templates",
@@ -1620,129 +1620,129 @@
                   "reward_message_ctd": "For excellence in craftsmanship. The town is hereby eligible for:"
                },
                "ascendancy_town_tier_quest": {
-                  "title": "Quest for a Township",
-                  "dialog_title": "Quest for a Township",
-                  "text": "Satisfy any of the following requirements to qualify for township status:",
-                  "military_requirement_title": "Cid's Valor",
-                  "church_requirement_title": "Church of Plenty",
-                  "crafting_requirement_title": "Crafter's Approval",
-                  "summon_text": "Summon Herald!"
+                  "title": "마을을 위한 퀘스트",
+                  "dialog_title": "마을을 위한 퀘스트",
+                  "text": "아래의 마을 요구 사항을 충족시켜 주세요.",
+                  "military_requirement_title": "Cid의 용맹함",
+                  "church_requirement_title": "풍요의 교회",
+                  "crafting_requirement_title": "장인의 인정",
+                  "summon_text": "전령 소환!"
                },
                "herald_dialog": {
                   "dialog_tree_info": {
                      "dialog_nodes": {
                         "proclamation": {
                            "bulletin_message": {
-                              "000": "By order of Princess Dania, First Lady of the Ascendancy, and in whose dimenses you settle, and with the blessings of the Church of Plenty, in whose wisdom we all prosper..."
+                              "000": "어센던시의 영부인이신 Dania 공주님의 명에 따라 왔습니다. 당신의 정착에 우리 모두가 번영할 수 있는 지혜를 주는 풍요의 교회의 축복과 함께 하길 바라십니다."
                            },
-                           "bulletin_title": "Anwyn Clears her Throat",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Wow, a proclamation!",
-                           "choice_001": "Zzz..."
+                           "bulletin_title": "Anwyn이 목을 가다듬는다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "와우, 멋진 선언이군요!",
+                           "choice_001": "쿨쿨쿨..."
                         },
                         "craft_reqs": {
                            "bulletin_message": {
-                              "000": "The Royal Craftmasters honor those with an eye for excellence. Have your mason create a statue to their exacting specifications, and you shall be one of the few to impress them."
+                              "000": "왕실의 장신은 그 탁월함에 존경의 눈빛을 받게 될 것입니다. 당신의 석공은 그들의 엄격한 기준에 따라 동상을 만들 것입니다. 그리고 그들에게 감명을 주는 특별한 사람 중 1명이 될 것입니다."
                            },
-                           "bulletin_title": "Anwyn looks back at the scroll",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Masons ho!",
-                           "choice_001": "How else can I gain reknown?"
+                           "bulletin_title": "Anwyn이 두루마리 뒤를 본다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "석공 호!",
+                           "choice_001": "다시 한번 생각해봐도 될까요?"
                         },
                         "proc_details": {
                            "bulletin_message": {
-                              "000": "All settlements that attain local reknown will be hereby recognized as official Ascendancy Townships, with the rights, priviledges, and rewards thereof."
+                              "000": "만약 당신이 정착에 완전히 성공한다면 권리, 특권 그리고 보상과 함께 공식적인 어센던시 마을로 인정받을 것입니다."
                            },
-                           "bulletin_title": "Anwyn Reads",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Huh?",
-                           "choice_001": "Rewards?"
+                           "bulletin_title": "Anwyn이 읽는다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "응?",
+                           "choice_001": "보상이요?"
                         },
                         "actual_meaning": {
                            "bulletin_message": {
                               "000": "What does that actually mean? Well, mostly that we write you down in a ledger somewhere, in case we ever remember to come back and collect taxes."
                            },
-                           "bulletin_title": "Anwyn Grins",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Never mind then!",
-                           "choice_001": "Taxes? Seriously?"
+                           "bulletin_title": "Anwyn이 활짝 웃는다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "그럼 신경 쓰지 마세요!",
+                           "choice_001": "세금? 진지하세요?"
                         },
                         "rewards": {
                            "bulletin_message": {
-                              "000": "Indeed! By the Princess's order, eligible towns that have proven their worth shall win access to architectural learning and wealthier caravans for trade."
+                              "000": "물론입니다! 공주님의 명에 따라 자격이 있는 마을은 교육 학습의 기회와 캐러밴을 통한 거래로 부유함을 얻을 수 있습니다."
                            },
-                           "bulletin_title": "Anwyn Nods",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Ok. What comes next?"
+                           "bulletin_title": "Anwyn이 고개를 끄덕인다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "좋아요. 이제 뭘 하면 되죠?"
                         },
                         "military_reqs": {
                            "bulletin_message": {
-                              "000": "To gain reknown with the Order of Cid, you must display courage and valor! I shall give your mason a recipe; quest for the ingredients to craft a monument worthy of your swordarm."
+                              "000": "Cid의 명령을 받기위해 당신은 용기와 용맹함을 보여야만 합니다! 나는 당신의 석공에게 제작법을 줄 것입니다. 당신의 상징적인 기념비를 만들기 위한 재료를 찾아 떠나세요."
                            },
-                           "bulletin_title": "Anwyn looks back at the scroll",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Sounds good!",
-                           "choice_001": "How else can I gain reknown?"
+                           "bulletin_title": "Anwyn이 두루마리 뒤를 본다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "그거 괜찮군요!",
+                           "choice_001": "다시 한번 생각해봐도 될까요?"
                         },
                         "herald_announcement": {
                            "bulletin_message": {
-                              "000": "Excellent! Messire Burlyhands said you'd be out here, but it's always a bit touch and go in the early days. Shall we get started?"
+                              "000": "아주 좋습니다! Messire Burlyhands가 당신이 여기 있을 거라고 했는데 아슬아슬했군요. 바로 시작해볼까요?"
                            },
-                           "bulletin_title": "Anwyn unrolls a scroll",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Started with what?"
+                           "bulletin_title": "Anwyn이 두루마리를 푼다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "무엇부터 시작하면 되죠?"
                         },
                         "requirements": {
                            "bulletin_message": {
-                              "000": "You may gain sufficient reknown to advance to a township in any of three ways: Military Glory, Favor with the Church, or The Approval of the Craftsmasters. Which sounds most interesting to you?"
+                              "000": "무력을 통한 영광, 교회와 함께하는 친절, 장인으로서의 인정이 있습니다. 이 3가지 중 하나의 방법으로 마을의 발전을 충분히 입증시키면 됩니다. 당신에게 가장 흥미로운 것은 어떤 것인가요?"
                            },
-                           "bulletin_title": "Anwyn looks back at the scroll",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Military!",
-                           "choice_001": "Church!",
-                           "choice_002": "Craftmasters!"
+                           "bulletin_title": "Anwyn이 두루마리 뒤를 본다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "군대!",
+                           "choice_001": "교회!",
+                           "choice_002": "장인!"
                         },
                         "joking": {
                            "bulletin_message": {
-                              "000": "I'm just joking! The Royal Accountants have their hands full right now with the coronation and everything. Anyway, Township status really means that you get a host of rewards and benefits."
+                              "000": "그냥 농담이야! 왕실의 회계사들은 대관식 뿐 아니라 모든 것들을 지금 꽉 잡고 있어. 어쨋든, 마을의 지위는 많은 보상과 혜택을 얻는 것을 의미해."
                            },
-                           "bulletin_title": "Anwyn Grins",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Rewards and benefits?"
+                           "bulletin_title": "Anwyn이 활짝 웃는다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "보상과 혜택?"
                         },
                         "church_reqs": {
                            "bulletin_message": {
-                              "000": "The Church of Plenty favors those who share their wealth with those in need. I shall give recipes to your mason and your cook; build a Fountain of Plenty and I shall be back to celebrate your achievements."
+                              "000": "풍요의 교회는 어려운 자들과 함께 살아가는 그들의 편에 설 것입니다. 당신의 석공과 요리사에게 제작법을 가르쳐 드리겠습니다. 그리고 풍요의 분수를 짓고 당신의 업적을 기념하며 돌아갈 것입니다."
                            },
-                           "bulletin_title": "Anwyn looks back at the scroll",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "We can do that!",
-                           "choice_001": "How else can I gain reknown?"
+                           "bulletin_title": "Anwyn이 두루마리 뒤를 본다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "이걸로 하겠어요!",
+                           "choice_001": "다시 한번 생각해봐도 될까요?"
                         },
                         "herald_approaches": {
                            "bulletin_message": {
-                              "000": "Ho there! Is this the new settlement of [str(i18n_data.town_name)]?  Messire Burlyhands said you'd be out here, but it's always a bit touch and go in the early days. Shall we get started with the Proclamation?"
+                              "000": "안녕하십니까! [str(i18n_data.town_name)]이 새로운 정착지인가요?  Messire Burlyhands가 당신이 여기 있을 거라고 했는데 아슬아슬했군요. 선언문부터 시작할까요?"
                            },
-                           "bulletin_title": "A Royal Herald Approaches",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Welcome, Milady!",
-                           "choice_001": "That's us!"
+                           "bulletin_title": "국왕의 전령이 나타났다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "환영합니다!",
+                           "choice_001": "됐어요!"
                         },
                         "conclusion": {
                            "bulletin_message": {
-                              "000": "Excellent! In addition to an appropriate monument, your town will also need to have accumulated a certain level of worth. I shall leave the requirements with you, should you wish to consult with them again, or should a different path come to appeal more than your initial chosen road."
+                              "000": "좋은 선택입니다! 기념비 뿐 아니라 당신의 마을은 확실히 부를 축적해 나갈 것입니다. I shall leave the requirements with you, should you wish to consult with them again, or should a different path come to appeal more than your initial chosen road."
                            },
-                           "bulletin_title": "Anwyn rolls up the scroll",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Thank you, Milady!"
+                           "bulletin_title": "Anwyn이 두루마리를 걷어 올렸다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "감사합니다!"
                         },
                         "conclusion2": {
                            "bulletin_message": {
-                              "000": "Cid's bounty be upon you, [str(i18n_data.town_name)]. I shall leave you a bird, so you may summon me to evaluate your progress!"
+                              "000": "Cid의 너그러움이 함께하길 빌겠네, [str(i18n_data.town_name)]. 성장을 평가하기 위해 나를 불러야 하니 당신에게 새를 주고 떠나겠습니다."
                            },
-                           "bulletin_title": "Anwyn rolls up the scroll",
-                           "dialog_title": "The Honorable Anwyn Redelm",
-                           "choice_000": "Farewell!"
+                           "bulletin_title": "Anwyn이 두루마리를 걷어 올렸다.",
+                           "dialog_title": "명예로운 Anwyn Redelm",
+                           "choice_000": "안녕히 가세요!"
                         }
                      }
                   }
@@ -1784,13 +1784,13 @@
                   }
                },
                "unlock_craftsman_statue_recipe": {
-                  "bulletin_title": "Mason Recipe Unlocked: The Guildmaster's Skill"
+                  "bulletin_title": "석공 제작법 잠금 해제: 길드마스터의 기술"
                },
                "unlock_roadside_shrine_recipe": {
-                  "bulletin_title": "Mason Recipe Unlocked: Fountain of Plenty"
+                  "bulletin_title": "석공 제작법 잠금 해제: 풍요의 분수"
                },
                "unlock_valor_statue_recipe": {
-                  "bulletin_title": "Mason Recipe Unlocked: The Valor of Cid"
+                  "bulletin_title": "석공 제작법 잠금 해제: Cid의 용맹"
                }
             },
             "goblin_war": {
@@ -1804,7 +1804,7 @@
                            "choice_000": "절대 안됩니다!",
                            "choice_001": "으음...네",
                            "bulletin_message": {
-                              "000": "Are you afraid, valiant town? Ogo so-called-chief will be here soon. For you."
+                              "000": "용맹한 마을이여, 두려운가? 족장이라 불리는 Ogo가 곧 올 것이다. 당신을 위하여."
                            },
                            "bulletin_title": "A figure with a sibilant voice appears beside your fire",
                            "dialog_title": "???"
@@ -1870,37 +1870,37 @@
                               "002": "Soothsayer goblin, obviously! Goblin who can see future! He say old ones dying away, new star rising. Good for Ogo, bad for everyone else, you included!"
                            },
                            "bulletin_title": "The goblin's eyes grow round",
-                           "dialog_title": "Ogo's Bannerman"
+                           "dialog_title": "Ogo의 기수"
                         },
                         "snooty_introduction": {
-                           "choice_000": "Huh.",
+                           "choice_000": "허.",
                            "choice_001": "Gagh!",
                            "bulletin_message": {
-                              "000": "Ho, puny town! Me stand here with bad news for you!",
+                              "000": "호, 작은 마을이군! 너에게 나쁜 소식을 전하기 위해 왔다!",
                               "001": "Puny Town! Bow and tremble!",
                               "002": "Muahahahahah! This? This your town? I laugh till I cry!"
                            },
                            "bulletin_title": "A goblin with a officious smirk slithers into town",
-                           "dialog_title": "Ogo's Bannerman"
+                           "dialog_title": "Ogo의 기수"
                         },
                         "ogo_introduction": {
-                           "choice_000": "Ogo who?",
-                           "choice_001": "Uh. No.",
+                           "choice_000": "Ogo가 누군데?",
+                           "choice_001": "음, 싫어.",
                            "bulletin_message": {
                               "000": "By order of Ogo Skullbonker, Goblin-All-Chief-To-Be, you and all your stuffs now be tribute to Great Glittering Army and Red Kiln Empire!",
                               "001": "I envoy of Ogo Skullbonker, tamer of Mountains! Ogo demand many thing from all, include you, include your gold!",
                               "002": "My Chief-of-Chiefs, Ogo Skullbonker, soon rule take Glittering Army and rule all of Red Kiln! You next of many conquests. You become our goldfarmers!",
                               "003": "I am Bannergoblin of Ogo Skullbonker, rider of Mountain! My master demand you tribute, in form of all you have! You give everything! Or you pay!",
-                              "004": "I bannergoblin of Ogo Skullbonker! When you bested the small chiefs, you bring Ogo's Eye upon you! And Ogo's Eye know all! You will give tribute, or eye will see your end!"
+                              "004": "나는 Ogo Skullbonker의 기수다! 너가 우리의 족장을 돕는다면 Ogo의 눈은 너를 바라볼 것이다! 그리고 Ogo의 눈은 모든 것을 안다! 공물을 바쳐라, 아니면 눈은 너의 종말을 볼 것이다!"
                            },
                            "bulletin_title": "The goblin straightens",
-                           "dialog_title": "Ogo's Bannerman"
+                           "dialog_title": "Ogo의 기수"
                         },
                         "ogo_description": {
-                           "choice_000": "Soothsayer?",
-                           "choice_001": "Eh",
+                           "choice_000": "예언자?",
+                           "choice_001": "뭐",
                            "bulletin_message": {
-                              "000": "Soothsayer say Ogo Skullbonker will be hero above all heroes! You destined to give him gold!",
+                              "000": "예언자는 Ogo Skullbonker가 영웅 중의 영웅이 될 것이라고 말한다! 그리고 너는 황금을 바칠 운명이다!",
                               "001": "Soothsayer little, but have big thoughts! Soothsayer never wrong. Soothsayer say you give Ogo gold, or Ogo will take it from you!",
                               "002": "Goblins long be shunned and forgotten. Soothsayer say that Ogo Skullbonker, my LittleChief, will soon change everything! For that, he need gold and labor!",
                               "003": "Ogo Skullbonker, Master of Masters, have great destiny, to rule over all! Soothsayer say so; soothsayer never wrong. Soothsayer say, you will help!"
@@ -1913,10 +1913,10 @@
                               "000": "Anyway, it matter not! I here only to warn you: muster your gold, so it easy for us to collect! We be back soon!",
                               "001": "Hahaha! Whatever. You all belong to us now. We come soon to collect you for gold mines!",
                               "002": "Oh, you say something? No matter, we return soon! Collect all your things so will be easy for us to move!",
-                              "003": "Anyway, time to go iron my banner. Be back soon! Be ready, yes? New life under goblin rule awaits!"
+                              "003": "어쨋든, 돌아갈 시간이 됐군. 곧 다시 돌아오겠다! 준비하고 있어라, 알겠나? 고블린 아래에서의 새 삶을 기대해라!"
                            },
-                           "bulletin_title": "The goblin's eyes narrow",
-                           "dialog_title": "Ogo's Bannerman"
+                           "bulletin_title": "고블린이 눈을 찌푸린다.",
+                           "dialog_title": "Ogo의 기수"
                         }
                      }
                   }
@@ -1975,8 +1975,8 @@
                "create_wolf_riders": {
                   "mission": {
                      "sighted_bulletin": {
-                        "title": "Snarling wolves approach!",
-                        "message": "Run! Mer told you to run!!!"
+                        "title": "늑대들이 으르렁거리며 접근하고 있어!",
+                        "message": "도망쳐! 도망치라니까!!!"
                      }
                   }
                },
@@ -1985,23 +1985,23 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "It's been pretty quiet, but you know...? It's a bad sign when the birds stop singing."
+                              "00": "꽤 조용하군. 그런데 당신은 알고 있나요...? 새들이 노래 부르는 것을 그만두는 것은 나쁜 징조라는 것을요."
                            },
-                           "bulletin_title": "Mer Burlyhands scratches his ear",
+                           "bulletin_title": "Mer Burlyhands가 귀를 긁는다.",
                            "dialog_title": "Mer Burlyhands"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "My guess is wolves. Goblin wolves. Watch your borders. You don't want to fight them after their trainer's got them in a lather, you hear? Bunker down, if you need to. Or run. Runnin's good! No shame in surviving another day."
+                              "00": "제 생각에는 늑대인 것 같아요. 고블린 늑대요. 당신의 경계를 잘 관찰하세요. 그들을 흥분시켜서는 안됩니다. 벙커로 숨으세요. 만약 도망가길 원한다면 그렇게 하세요. 아주 좋은 방법이죠! 내일을 위해 도망가는 것은 결코 부끄러운 일이 아니예요."
                            },
-                           "bulletin_title": "Mer Burlyhands nods firmly",
+                           "bulletin_title": "Mer Burlyhands가 고개를 끄덕인다.",
                            "dialog_title": "Mer Burlyhands"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Ho there township! How are things for you?"
+                              "00": "안녕하세요! 지낼만하신가요?"
                            },
-                           "bulletin_title": "A grizzled traveller appears on the horizon",
+                           "bulletin_title": "백발의 여행자가 지평선 위에 나타났습니다.",
                            "dialog_title": "Mer Burlyhands"
                         }
                      }
@@ -2012,21 +2012,21 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "000": "--the one who watches you"
+                              "000": "--당신을 지켜보고 있는 사람으로부터"
                            },
-                           "bulletin_title": "Mysterious Note",
-                           "dialog_title": "Mysterious Message"
+                           "bulletin_title": "신비로운 노트",
+                           "dialog_title": "신비로운 메시지"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "000": "If you want to finish the wolves before they finish you, strike first.",
-                              "001": "There are wolves in the forest. Goblin wolves. Get them before they get you.",
-                              "002": "Ogo's forces are on the move. There are wolves in your woods.",
-                              "003": "Little human camp: search out your enemy while they yet sleep.",
-                              "004": "Goblin wolves are trained to attack on command. Free them before that command is issued, and you will sleep easy tonight."
+                              "000": "만약 늑대들이 당신을 해치우려 하기 전에 이 문제를 해결하고 싶다면, 먼저 공격하세요.",
+                              "001": "그들은 숲에 있어요. 고블린 늑대들이요. 그들이 당신을 찾기 전에 당신이 먼저 찾으세요.",
+                              "002": "그들이 움직이고 있어요. 당신의 숲에 늑대들이 있어요.",
+                              "003": "사람들의 작은 캠프 : 그들이 아직 자는동안 적을 찾아내세요.",
+                              "004": "고블린 늑대들은 명령에 따라 공격받도록 훈련되어있습니다. 그 명령을 내리기 전에 그들을 자유롭게 해준다면, 당신은 아주 편안한 밤을 보낼 수 있겠죠."
                            },
-                           "bulletin_title": "A message on an arrow appears on your banner",
-                           "dialog_title": "Mysterious Message"
+                           "bulletin_title": "메시지가 적힌 화살이 날아왔습니다.",
+                           "dialog_title": "신비로운 메시지"
                         }
                      }
                   }
@@ -2036,14 +2036,14 @@
                      "dialog_nodes": {
                         "msg1": {
                            "bulletin_message": {
-                              "000": "There are wolves in the woods! Run away while you still can!",
-                              "001": "Can't you hear the howling? There are goblin wolves in the woods!",
-                              "002": "Our group was just attacked by goblins! Flee!",
-                              "003": "Those goblin wolves aren't like normal wolves--they're fast and vicious and unafraid! Run while you can!",
-                              "004": "You have goblins in your woods! Bunker down somewhere safe before they attack!"
+                              "000": "숲에 늑대가 나타났습니다! 아직은 도망갈 수 있어요!",
+                              "001": "그들의 울음소리가 들리세요? 숲에 고블린 늑대들이 있어요!",
+                              "002": "우리 그룹이 고블린에게 공격받고 있어요! 도망치세요!",
+                              "003": "이 고블린 늑대들은 평범한 늑대들이 아닌 것 같아요--그들은 빠르고 잔인하며 두려움이 없어요! 최대한 도망치세요!",
+                              "004": "당신의 숲에 고블린들이 있어요! 그들이 공격하기 전에 안전한 곳으로 숨으세요!"
                            },
-                           "bulletin_title": "Panting refugees appear on the horizon",
-                           "dialog_title": "Refugee"
+                           "bulletin_title": "피난민이 숨을 헐떡이며 지평선 위에 나타났다.",
+                           "dialog_title": "피난민"
                         }
                      }
                   }
@@ -2053,23 +2053,23 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Congratulations are in order, if that's the sort of thing you care about. I've been up and down the area and it seems you've taken care of the bulk of the goblins around these parts! Not saying you won't see a straggler or two come to harass you, but good job, all in all."
+                              "00": "만약 당신이 걱정하고 있는 것이 있다면 축하드릴 일이 있습니다. 제가 이 근처를 여기저기 돌아다녔는데 고블린 무리들을 못 본 것 같아요. 당신을 공격하려는 몬스터들을 보지 못할 것이라는 말이 아니라 아주 좋은 일이라는 것입니다."
                            },
-                           "bulletin_title": "Mer Burlyhands shakes his head",
+                           "bulletin_title": "Mer Burlyhands가 고개를 젓는다.",
                            "dialog_title": "Mer Burlyhands"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "Here's a gift I've collected from some neighboring towns. Everyone's sleeping easier tonight because of you."
+                              "00": "이웃 마을로부터 수집해온 선물이 있어요. 오늘 밤 모두가 당신 덕분에 쉽게 잠을 잘수 있을꺼예요."
                            },
-                           "bulletin_title": "Mer Burlyhands nods firmly",
+                           "bulletin_title": "Mer Burlyhand가 고개를 끄덕인다.",
                            "dialog_title": "Mer Burlyhands"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Hello there? Anyone still home?"
+                              "00": "안녕하세요? 집에 아무도 없나요?"
                            },
-                           "bulletin_title": "Mer Burlyhands Reappears",
+                           "bulletin_title": "Mer Burlyhands가 다시 나타났다",
                            "dialog_title": "Mer Burlyhands"
                         }
                      }
@@ -2080,10 +2080,10 @@
                      "dialog_nodes": {
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Yip! Yip! AWOOOOOO!!!!!!!"
+                              "00": "왈! 왈! 아우!!!!!!!"
                            },
-                           "bulletin_title": "The wolves explode joyfully from the cages",
-                           "dialog_title": "Escaping Wolves"
+                           "bulletin_title": "늑대들이 우리를 탈출해서 미친듯이 기뻐보인다.",
+                           "dialog_title": "탈출한 늑대들"
                         }
                      }
                   }
@@ -2093,9 +2093,9 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Tell my sheep... me loves her always..."
+                              "00": "내 양에게 말해줘요... 나의 사랑은 언제나 당신이었다고..."
                            },
-                           "bulletin_title": "[name(i18n_data.boss)] is Defeated!",
+                           "bulletin_title": "[name(i18n_data.boss)]가 패배했다!",
                            "dialog_title": "[name(i18n_data.boss)]"
                         },
                         "msg3": {
@@ -2117,12 +2117,12 @@
                },
                "goblin_raiding_camp_1": {
                   "boss": {
-                     "display_name": "Chieftain [str(self.stonehearth:unit_info.custom_name)]",
+                     "display_name": "족장 [str(self.stonehearth:unit_info.custom_name)]",
                      "description": "Me leen green fighting macheen!!!"
                   },
                   "sheep": {
-                     "display_name": "Bluebell the Sheep",
-                     "description": "The Chieftain's prized companion"
+                     "display_name": "블루벨 양",
+                     "description": "족장은 소중한 동반자다."
                   }
                },
                "shakedown": {
@@ -2549,14 +2549,14 @@
             "ambient_threats": {
                "random_encounter": {
                   "combat_bulletin": {
-                     "title": "An enemy!"
+                     "title": "적이다!"
                   }
                },
                "goblin_thieves": {
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "Goblin Thieves!",
+                           "title": "고블린 도둑들!",
                            "message": "They yearn for comfortable things"
                         }
                      }
@@ -2693,7 +2693,7 @@
                               "thief_campfire": {
                                  "campfire": {
                                     "display_name": "Hypnotic Campfire",
-                                    "description": "But... what makes it green?"
+                                    "description": "근데... 왜 초록색이지?"
                                  },
                                  "workers": {
                                     "description": "Designated hearth-tender"
@@ -3603,15 +3603,15 @@
          "archer_arrows": {
             "default_arrows": {
                "display_name": "기본 화살 사용",
-               "description": "기본 화살을 사용합니다. 다른 화살 타입을 선택해주세요."
+               "description": "기본 화살을 사용합니다. 클릭하면 다른 화살타입으로 바뀝니다."
             },
             "slow_arrows": {
                "display_name": "뾰족한 화살",
-               "description": "뾰족한 화살을 사용하면 적의 이동속도를 느리게 합니다. 다른 화살 타입을 선택해주세요."
+               "description": "뾰족한 화살을 사용하면 적의 이동속도를 느리게 합니다. 클릭하면 다른 화살타입으로 바뀝니다."
             },
             "fire_arrows": {
                "display_name": "불 화살 사용",
-               "description": "불 화살을 사용하면 적을 불태우고 지속적인 데미지를 줄 수 있습니다. 다른 화살 타입을 선택해주세요."
+               "description": "불 화살을 사용하면 적을 불태우고 지속적인 데미지를 줄 수 있습니다. 클릭하면 다른 화살타입으로 바뀝니다."
             }
          },
          "combat": {
@@ -4504,7 +4504,7 @@
          "kobolds": {
             "wolf_tank": {
                "kobold_wolf": {
-                  "display_name": "고블린 울프",
+                  "display_name": "고블린 늑대",
                   "description": "무시무시한 늑대입니다!"
                }
             }
@@ -5110,12 +5110,12 @@
             "description": "Light weight and strong protection for one's head"
          },
          "simple_quiver": {
-            "display_name": "Spiky Quiver",
-            "description": "A light quiver of slowing arrows"
+            "display_name": "뾰족한 화살통",
+            "description": "적을 느리게 만드는 가벼운 화살통입니다."
          },
          "fire_quiver": {
-            "display_name": "Fire Quiver",
-            "description": "Sets enemies on fire, dealing damage over time"
+            "display_name": "불 화살통",
+            "description": "적을 불태우며 지속적인 데미지를 줍니다"
          },
          "cracked_wooden_buckler": {
             "display_name": "Cracked Wooden Buckler",
@@ -9184,16 +9184,16 @@
             },
             "valor_statue_recipe": {
                "description": "A monument to your town's military might",
-               "recipe_name": "The Valor of Cid",
+               "recipe_name": "Cid의 용맹함",
                "flavor": "The shield for resiliance, and the sword for strength. -- Cid, Knight of the Old Ways"
             },
             "roadside_shrine_recipe": {
-               "recipe_name": "Fountain of Plenty",
+               "recipe_name": "풍요의 분수",
                "description": "Place to show generosity and faith",
                "flavor": "Cid fashioned his breastplate into a basket and brought the wealth of the rich to the bedsides of the poor --Edison Arn, Church of Plenty"
             },
             "craftsman_statue_recipe": {
-               "recipe_name": "The Guildmaster's Skill",
+               "recipe_name": "길드마스터의 기술",
                "description": "Shows each craftsman at their best",
                "flavor": "A good crafter never blames his tools, only the people who make his tools. --Otto Crankfrown, Guildmaster Emeritus"
             }
@@ -9727,12 +9727,12 @@
                "recipe_name": "Leather Skull Cap"
             },
             "simple_quiver_recipe": {
-               "recipe_name": "Spiky Quiver",
-               "description": "A quiver equippable by an archer. Stores freezing arrows that will slow enemies"
+               "recipe_name": "뾰족한 화살통",
+               "description": "이 화살통은 궁수가 사용가능합니다. 적을 얼려서 느리게 하는 화살이 들어있습니다."
             },
             "fire_quiver_recipe": {
-               "recipe_name": "Fire Quiver",
-               "description": "Gives an Archer access to fire arrows, which deal damage over time"
+               "recipe_name": "불 화살통",
+               "description": "궁수가 사용가능하며, 지속적인 데미지를 줄 수 있는 불화살이 들어있습니다."
             },
             "cloth_padded_helmet_recipe": {
                "recipe_name": "Cloth Padded Helmet",
