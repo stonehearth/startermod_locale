@@ -8881,13 +8881,13 @@
          },
          "engineer_buffs": {
             "inventiveness_2_buff": {
-               "display_name": "Inventiveness +50",
-               "description": "The engineer can repair doors more efficiently"
+               "display_name": "창의력 +50",
+               "description": "문을 보다 효율적으로 수리할 수 있습니다."
             }
          },
          "engineer_helm": {
-            "display_name": "Safety Goggles",
-            "description": "Extra protection for expert eyes"
+            "display_name": "안전 고글",
+            "description": "전문가 눈 보호를 위한 추가 장비"
          }
       },
       "farmer": {
@@ -9817,7 +9817,7 @@
             },
             "level_1_data": {
                "perk_000_name": "자연 회복",
-               "perk_000_description": "약초사는 숲의 정령과 교감하여 자연 재생을 이룹니다. 의지과 근면이 증가합니다."
+               "perk_000_description": "약초사는 숲의 정령과 교감하여 자연 재생을 이룹니다. 의지와 근면이 증가합니다."
             },
             "level_2_data": {
                "perk_000_name": "협업적 통찰력",
@@ -9910,8 +9910,8 @@
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
-               "display_name": "Natural Regeneration",
-               "description": "The herbalist has improved health regeneration and diligence"
+               "display_name": "자연 회복",
+               "description": "자연 회복력이 증가하고 의지와 근면이 증가합니다."
             }
          }
       },
@@ -9963,44 +9963,44 @@
          },
          "cleric_buffs": {
             "heal_aura_1_buff": {
-               "display_name": "Healing Aura",
-               "description": "The cleric's presence heals everyone around them periodically"
+               "display_name": "치유 아우라",
+               "description": "성직자 주변 하슬링들을 정기적으로 치유합니다."
             },
             "add_health_small_buff": {
-               "display_name": "Small Heal",
-               "description": "From a healing aura!"
+               "display_name": "작은 힐링",
+               "description": "치유 아우라를 통해 받았습니다!"
             },
             "minor_muscle_aura_buff": {
-               "display_name": "Minor Strength Aura",
-               "description": "Increases strength of those around by a small amount"
+               "display_name": "경미한 기운 아우라",
+               "description": "근력을 미약하게 증가시킵니다."
             },
             "minor_muscle_aura_effect_buff": {
-               "display_name": "Minor Strength",
-               "description": "Strength improved slightly from the presence of a cleric"
+               "display_name": "경미한 기운",
+               "description": "성직자 주변 하슬링들의 근력을 미약하게 증가시킵니다."
             },
             "compassion_1_buff": {
-               "display_name": "Compassion Up",
-               "description": "Compassion Increased by 20%"
+               "display_name": "동정심 상승",
+               "description": "동정심이 20% 증가합니다."
             },
             "heal_aura_2_buff": {
-               "display_name": "Heal Aura (Rank 2)",
-               "description": "The cleric's presence heals everyone around them periodically."
+               "display_name": "치유 아우라 (랭크 2)",
+               "description": "성직자 주변의 모든 하슬링들을 정기적으로 치료합니다."
             },
             "add_health_medium_buff": {
-               "display_name": "Healing Medium",
-               "description": "Healing for a medium amount"
+               "display_name": "중간 힐링",
+               "description": "중간 정도의 치유를 받습니다."
             },
             "compassion_2_buff": {
-               "display_name": "Compassion Up",
-               "description": "Compassion Increased by 40%"
+               "display_name": "동정심 상승",
+               "description": "동정심이 40% 증가합니다."
             },
             "major_muscle_aura_buff": {
-               "display_name": "Major Strength Aura",
-               "description": "Greatly increases the muscle of those around"
+               "display_name": "강력한 기운 아우라",
+               "description": "근력을 크게 증가시킵니다."
             },
             "major_muscle_aura_effect_buff": {
-               "display_name": "Major Strength",
-               "description": "Muscle improved greatly from the presence of a cleric"
+               "display_name": "강력한 기운",
+               "description": "성직자 주변 하슬링들의 근력을 크게 증가시킵니다."
             }
          }
       },
