@@ -2817,15 +2817,15 @@
                                        "bulletin_message": {
                                           "00": " The Red Kiln believes that advancement can only come from conflict between equals. Khan is no longer. And where one falls, those stronger and more cunning will rise."
                                        },
-                                       "bulletin_title": "Warchief Oghar Norwind",
-                                       "dialog_title": "Warchief Oghar Norwind"
+                                       "bulletin_title": "대족장 오가르 노스윈드",
+                                       "dialog_title": "대족장 오가르 노스윈드"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "You there. Erdene told me of you. She said you defeated Ogo Skullbonker."
                                        },
                                        "bulletin_title": "An orcish warchief approaches your town",
-                                       "dialog_title": "Warchief Oghar Norwind",
+                                       "dialog_title": "대족장 오가르 노스윈드",
                                        "choice_000": "Yes, that's me",
                                        "choice_001": "What's it to you?"
                                     },
@@ -3074,15 +3074,15 @@
                                        "bulletin_message": {
                                           "00": "The defeat of my chiefs and warriors demands from us recognition of your strength. Let us contend in battle and the greater of equals shall come forth with honor and valiance."
                                        },
-                                       "bulletin_title": "Warchief Oghar Norwind",
-                                       "dialog_title": "Warchief Oghar Norwind"
+                                       "bulletin_title": "대족장 오가르 노스윈드",
+                                       "dialog_title": "대족장 오가르 노스윈드"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "As I predicted, fate brings us together once more."
                                        },
                                        "bulletin_title": "Warchief Oghar Norwind strides towards you with fearless bravado",
-                                       "dialog_title": "Warchief Oghar Norwind"
+                                       "dialog_title": "대족장 오가르 노스윈드"
                                     }
                                  }
                               }
@@ -3094,15 +3094,15 @@
                                        "bulletin_message": {
                                           "00": "I now return home. Word comes to me that bereft of our Khan's wisdom, our shaman have delved too far into dark, unknowable things. Nonetheless, if you ever wish to spar again and improve your skills, put out any gong of the Four Colors and we will gladly return to meet your challenge."
                                        },
-                                       "bulletin_title": "Warchief Oghar Norwind",
-                                       "dialog_title": "Warchief Oghar Norwind"
+                                       "bulletin_title": "대족장 오가르 노스윈드",
+                                       "dialog_title": "대족장 오가르 노스윈드"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "Erdene was right about you. You are a worthy opponent indead. We will not forget the strength that you have helped us gain."
                                        },
                                        "bulletin_title": "The warchief nods humbly",
-                                       "dialog_title": "Warchief Oghar Norwind",
+                                       "dialog_title": "대족장 오가르 노스윈드",
                                        "choice_000": "No problem"
                                     }
                                  }
@@ -4511,7 +4511,7 @@
          },
          "orcs": {
             "warchief_boss": {
-               "display_name": "대족장 노르윈드 오가르",
+               "display_name": "대족장 오가르 노스윈드",
                "description": "그녀는 보스입니다."
             }
          },
@@ -7127,7 +7127,7 @@
                "description": "A warrior of the Red Kiln"
             },
             "orc_boss_banner": {
-               "display_name": "Warchief Oghar Grakbash's Banner",
+               "display_name": "대족장 오가르의 배너",
                "description": "Made to intimidate the weak hearted"
             },
             "orc_hut": {
