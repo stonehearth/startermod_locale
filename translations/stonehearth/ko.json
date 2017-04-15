@@ -349,9 +349,9 @@
                "cooking_ingredient": "요리 재료",
                "resources": "자원",
                "furniture": "가구",
-               "armor": "장비",
+               "armor": "방어구",
                "decoration": "꾸미기용 가구",
-               "construction": "건축자제",
+               "construction": "건축자재",
                "door": "문",
                "window": "창문",
                "plants": "식물",
@@ -869,8 +869,8 @@
                   "all": "모두",
                   "none": "없음",
                   "resources": "자원",
-                  "construction": "건축자제",
-                  "goods": "도구와 좋은 아이템",
+                  "construction": "건축자재",
+                  "goods": "도구 & 제품",
                   "gear": "무기와 방어구",
                   "food_and_drink": "음식",
                   "wealth": "재산",
@@ -1623,7 +1623,7 @@
                   "title": "마을을 위한 퀘스트",
                   "dialog_title": "마을을 위한 퀘스트",
                   "text": "아래의 마을 요구 사항을 충족시켜 주세요.",
-                  "military_requirement_title": "Cid의 용맹함",
+                  "military_requirement_title": "시드의 용맹함",
                   "church_requirement_title": "풍요의 교회",
                   "crafting_requirement_title": "장인의 인정",
                   "summon_text": "전령 소환!"
@@ -1633,7 +1633,7 @@
                      "dialog_nodes": {
                         "proclamation": {
                            "bulletin_message": {
-                              "000": "어센던시의 영부인이신 Dania 공주님의 명에 따라 왔습니다. 당신의 정착에 우리 모두가 번영할 수 있는 지혜를 주는 풍요의 교회의 축복과 함께 하길 바라십니다."
+                              "000": "어센던시의 영부인이신 데니아 공주님의 명에 따라 왔습니다. 당신의 정착에 우리 모두가 번영할 수 있는 지혜를 주는 풍요의 교회의 축복과 함께 하길 바라십니다."
                            },
                            "bulletin_title": "Anwyn이 목을 가다듬는다.",
                            "dialog_title": "명예로운 Anwyn Redelm",
@@ -1677,7 +1677,7 @@
                         },
                         "military_reqs": {
                            "bulletin_message": {
-                              "000": "Cid의 명령을 받기위해 당신은 용기와 용맹함을 보여야만 합니다! 나는 당신의 석공에게 제작법을 줄 것입니다. 당신의 상징적인 기념비를 만들기 위한 재료를 찾아 떠나세요."
+                              "000": "시드의 명령을 받기위해 당신은 용기와 용맹함을 보여야만 합니다! 나는 당신의 석공에게 제작법을 줄 것입니다. 당신의 상징적인 기념비를 만들기 위한 재료를 찾아 떠나세요."
                            },
                            "bulletin_title": "Anwyn이 두루마리 뒤를 본다.",
                            "dialog_title": "명예로운 Anwyn Redelm",
@@ -1704,7 +1704,7 @@
                         },
                         "joking": {
                            "bulletin_message": {
-                              "000": "그냥 농담이야! 왕실의 회계사들은 대관식 뿐 아니라 모든 것들을 지금 꽉 잡고 있어. 어쨋든, 마을의 지위는 많은 보상과 혜택을 얻는 것을 의미해."
+                              "000": "농담이야! 왕실의 회계사들은 대관식 뿐 아니라 모든 것들을 지금 꽉 잡고 있거든. 어쨋든, 마을의 지위가 높아질수록 많은 보상과 혜택을 얻는 것을 의미해."
                            },
                            "bulletin_title": "Anwyn이 활짝 웃는다.",
                            "dialog_title": "명예로운 Anwyn Redelm",
@@ -1738,7 +1738,7 @@
                         },
                         "conclusion2": {
                            "bulletin_message": {
-                              "000": "Cid의 너그러움이 함께하길 빌겠네, [str(i18n_data.town_name)]. 성장을 평가하기 위해 나를 불러야 하니 당신에게 새를 주고 떠나겠습니다."
+                              "000": "[str(i18n_data.town_name)]이여. 시드의 너그러움이 함께하길 빌겠습니다. 성장을 평가하기 위해 나를 불러야 하니 당신에게 새 한마리를 주고 떠나겠습니다!"
                            },
                            "bulletin_title": "Anwyn이 두루마리를 걷어 올렸다.",
                            "dialog_title": "명예로운 Anwyn Redelm",
@@ -1790,7 +1790,7 @@
                   "bulletin_title": "석공 제작법 잠금 해제: 풍요의 분수"
                },
                "unlock_valor_statue_recipe": {
-                  "bulletin_title": "석공 제작법 잠금 해제: Cid의 용맹"
+                  "bulletin_title": "석공 제작법 잠금 해제: 시드의 용맹함"
                }
             },
             "goblin_war": {
@@ -1804,7 +1804,7 @@
                            "choice_000": "절대 안됩니다!",
                            "choice_001": "으음...네",
                            "bulletin_message": {
-                              "000": "용맹한 마을이여, 두려운가? 족장이라 불리는 Ogo가 곧 올 것이다. 당신을 위하여."
+                              "000": "용맹한 마을이여, 두려운가? 족장이라 불리는 오고가 곧 올 것이다. 당신을 위하여."
                            },
                            "bulletin_title": "A figure with a sibilant voice appears beside your fire",
                            "dialog_title": "???"
@@ -1870,7 +1870,7 @@
                               "002": "Soothsayer goblin, obviously! Goblin who can see future! He say old ones dying away, new star rising. Good for Ogo, bad for everyone else, you included!"
                            },
                            "bulletin_title": "The goblin's eyes grow round",
-                           "dialog_title": "Ogo의 기수"
+                           "dialog_title": "오고의 기수"
                         },
                         "snooty_introduction": {
                            "choice_000": "허.",
@@ -1881,26 +1881,26 @@
                               "002": "Muahahahahah! This? This your town? I laugh till I cry!"
                            },
                            "bulletin_title": "A goblin with a officious smirk slithers into town",
-                           "dialog_title": "Ogo의 기수"
+                           "dialog_title": "오고의 기수"
                         },
                         "ogo_introduction": {
-                           "choice_000": "Ogo가 누군데?",
+                           "choice_000": "오고가 누군데?",
                            "choice_001": "음, 싫어.",
                            "bulletin_message": {
                               "000": "By order of Ogo Skullbonker, Goblin-All-Chief-To-Be, you and all your stuffs now be tribute to Great Glittering Army and Red Kiln Empire!",
                               "001": "I envoy of Ogo Skullbonker, tamer of Mountains! Ogo demand many thing from all, include you, include your gold!",
                               "002": "My Chief-of-Chiefs, Ogo Skullbonker, soon rule take Glittering Army and rule all of Red Kiln! You next of many conquests. You become our goldfarmers!",
                               "003": "I am Bannergoblin of Ogo Skullbonker, rider of Mountain! My master demand you tribute, in form of all you have! You give everything! Or you pay!",
-                              "004": "나는 Ogo Skullbonker의 기수다! 너가 우리의 족장을 돕는다면 Ogo의 눈은 너를 바라볼 것이다! 그리고 Ogo의 눈은 모든 것을 안다! 공물을 바쳐라, 아니면 눈은 너의 종말을 볼 것이다!"
+                              "004": "나는 오고 Skullbonker의 기수다! 너가 우리의 족장을 돕는다면 Ogo의 눈은 너를 바라볼 것이다! 그리고 Ogo의 눈은 모든 것을 안다! 공물을 바쳐라, 아니면 눈은 너의 종말을 볼 것이다!"
                            },
                            "bulletin_title": "The goblin straightens",
-                           "dialog_title": "Ogo의 기수"
+                           "dialog_title": "오고의 기수"
                         },
                         "ogo_description": {
                            "choice_000": "예언자?",
                            "choice_001": "뭐",
                            "bulletin_message": {
-                              "000": "예언자는 Ogo Skullbonker가 영웅 중의 영웅이 될 것이라고 말한다! 그리고 너는 황금을 바칠 운명이다!",
+                              "000": "예언자는 오고 Skullbonker가 영웅 중의 영웅이 될 것이라고 말한다! 그리고 너는 황금을 바칠 운명이다!",
                               "001": "Soothsayer little, but have big thoughts! Soothsayer never wrong. Soothsayer say you give Ogo gold, or Ogo will take it from you!",
                               "002": "Goblins long be shunned and forgotten. Soothsayer say that Ogo Skullbonker, my LittleChief, will soon change everything! For that, he need gold and labor!",
                               "003": "Ogo Skullbonker, Master of Masters, have great destiny, to rule over all! Soothsayer say so; soothsayer never wrong. Soothsayer say, you will help!"
@@ -1916,7 +1916,7 @@
                               "003": "어쨋든, 돌아갈 시간이 됐군. 곧 다시 돌아오겠다! 준비하고 있어라, 알겠나? 고블린 아래에서의 새 삶을 기대해라!"
                            },
                            "bulletin_title": "고블린이 눈을 찌푸린다.",
-                           "dialog_title": "Ogo의 기수"
+                           "dialog_title": "오고의 기수"
                         }
                      }
                   }
@@ -1962,7 +1962,7 @@
                         },
                         "msg1": {
                            "choice_000": "Thank goodness!",
-                           "choice_001": "Ogo who?",
+                           "choice_001": "오고가 누군데?",
                            "bulletin_message": {
                               "000": "Good news peons! Ogo Skullbonker, Chief-of-Chiefs-To-Be, calls us back to him. Time to go home, show him tribute! If you lucky, maybe we be back to visit... soon!"
                            },
@@ -2107,7 +2107,7 @@
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Ow...it hurts..."
+                              "00": "으... 다쳤어..."
                            },
                            "bulletin_title": "[name(i18n_data.boss)] is Defeated!",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -2232,8 +2232,8 @@
                            "create_scout_camp": {
                               "campfire": {
                                  "campfire": {
-                                    "display_name": "Hypnotic Campfire",
-                                    "description": "But... what makes it green?"
+                                    "display_name": "최면을 거는 듯한 모닥불",
+                                    "description": "근데... 왜 초록색이지?"
                                  },
                                  "workers": {
                                     "description": "Firekeeper"
@@ -2241,13 +2241,13 @@
                               },
                               "goblin_tent": {
                                  "tent": {
-                                    "display_name": "Wolf Trainer Tent",
+                                    "display_name": "늑대 조련사 텐트",
                                     "description": "Full of improbable makeshift devices."
                                  }
                               },
                               "wolf_cage": {
                                  "wolf_cage": {
-                                    "display_name": "Wolf Cage",
+                                    "display_name": "늑대 우리",
                                     "description": "Property of Ogo Skullbonker"
                                  },
                                  "trainer": {
@@ -2266,7 +2266,7 @@
                         "create_camp": {
                            "ogo_tent": {
                               "ogo_tent": {
-                                 "display_name": "Ogo's Tent",
+                                 "display_name": "오고의 텐트",
                                  "description": "Made from bleached pelts."
                               },
                               "ogo": {
@@ -2282,7 +2282,7 @@
                            },
                            "wolf_kennel": {
                               "wolf_cage": {
-                                 "display_name": "Wolf Cage",
+                                 "display_name": "늑대 우리",
                                  "description": "Property of Ogo Skullbonker"
                               }
                            }
@@ -2541,7 +2541,7 @@
                "ogo_army_raid": {
                   "mission": {
                      "sighted_bulletin": {
-                        "title": "Ogo's Army Approaches!"
+                        "title": "오고의 군대가 오고있어!"
                      }
                   }
                }
@@ -2571,7 +2571,7 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "An armed goblin!",
+                           "title": "무장한 고블린이다!",
                            "message": "He wants your stuff"
                         }
                      }
@@ -2601,7 +2601,7 @@
                   "missions": {
                      "raid_stockpiles": {
                         "sighted_bulletin": {
-                           "title": "A goblin!",
+                           "title": "고블린이다!",
                            "message": "He wants your stuff"
                         }
                      }
@@ -2682,7 +2682,7 @@
                },
                "entling_raid_7": {
                   "giant_entlings": {
-                     "display_name": "Giant Entling"
+                     "display_name": "거인 엔트"
                   }
                },
                "arcs": {
@@ -2692,7 +2692,7 @@
                            "create_thief_camp": {
                               "thief_campfire": {
                                  "campfire": {
-                                    "display_name": "Hypnotic Campfire",
+                                    "display_name": "최면을 거는 듯한 모닥불",
                                     "description": "근데... 왜 초록색이지?"
                                  },
                                  "workers": {
@@ -2756,7 +2756,7 @@
                                           "000": "Thank you for your cooperation.. In return, I will give you [str(i18n_data.reward_gold_amount)] gold coins and [str(i18n_data.reward_item_count)] [str(i18n_data.reward_item_name)]."
                                        },
                                        "bulletin_title": "The Ent nods peacefully",
-                                       "dialog_title": "Ent"
+                                       "dialog_title": "엔트"
                                     },
                                     "introduction": {
                                        "bulletin_message": {
@@ -2764,14 +2764,14 @@
                                           "001": "Silently, we have been watching.. since even before the fall of Firebird. Why? To protect. Our trees. Our saplings. Our woods."
                                        },
                                        "bulletin_title": "A large tree-like figure approaches.",
-                                       "dialog_title": "Ent"
+                                       "dialog_title": "엔트"
                                     },
                                     "revenge": {
                                        "bulletin_message": {
                                           "000": "We will be taking these back."
                                        },
                                        "bulletin_title": "A horde of entlings escape with your logs!",
-                                       "dialog_title": "Ent"
+                                       "dialog_title": "엔트"
                                     }
                                  }
                               }
@@ -2784,7 +2784,7 @@
                                           "000": "Here, take this as a token of our gratitude."
                                        },
                                        "bulletin_title": "Entlings carrying loot scurry toward you",
-                                       "dialog_title": "Ent",
+                                       "dialog_title": "엔트",
                                        "choice_000": "Thanks!"
                                     }
                                  }
@@ -2793,7 +2793,7 @@
                            "ent_wrath": {
                               "mission": {
                                  "sighted_bulletin": {
-                                    "title": "An angry entling army approaches!"
+                                    "title": "성난 엔틀링 군대가 오고있다!"
                                  }
                               }
                            },
@@ -3471,7 +3471,7 @@
          },
          "chop_tree": {
             "display_name": "수확",
-            "description": "Harvest for lumber, or just to get it out of the way."
+            "description": "목재를 얻거나 방해하는 것들을 제거하세요."
          },
          "destroy_entity": {
             "display_name": "파괴",
@@ -5439,7 +5439,7 @@
          },
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
-               "display_name": "Leather Bound Chest",
+               "display_name": "가죽으로 꾸민 상자",
                "description": "Storage container"
             }
          },
@@ -5470,12 +5470,12 @@
          "vault": {
             "vault_ghost": {
                "display_name": "The Vault",
-               "description": "Massive storage"
+               "description": "거대한 저장고"
             }
          },
          "log_pile": {
             "log_pile_ghost": {
-               "display_name": "Log Pile",
+               "display_name": "원목 더미",
                "description": "Harvest for a large number of logs"
             },
             "log_pile_iconic": {
@@ -5503,19 +5503,19 @@
          },
          "small_crate_fine": {
             "small_crate_fine_ghost": {
-               "display_name": "Fine Small Crate",
+               "display_name": "고품질의 작은 상자",
                "description": "Storage container with style"
             }
          },
          "large_crate_fine": {
             "large_crate_fine_ghost": {
-               "display_name": "Fine Large Crate",
+               "display_name": "고품질의 큰 상자",
                "description": "Stores up to 32 items. With style."
             }
          },
          "leather_bound_chest_fine": {
             "leather_bound_chest_fine_ghost": {
-               "display_name": "Fine Leather Bound Chest",
+               "display_name": "가죽으로 꾸민 고품질 상자",
                "description": "Stores up to 64 items. With style."
             }
          }
@@ -6075,8 +6075,8 @@
          },
          "stone_brazier": {
             "stone_brazier_ghost": {
-               "display_name": "Stone Brazier",
-               "description": "Provides warm and cozy fire at night"
+               "display_name": "석조 화로",
+               "description": "밤에 따뜻하고 아늑한 불을 제공합니다."
             }
          },
          "stone_floor_candle_holder": {
@@ -6659,13 +6659,13 @@
       "furniture": {
          "arch_backed_chair": {
             "arch_backed_chair_ghost": {
-               "display_name": "Cathedral-Arch Chair",
+               "display_name": "대성당의 아치형 의자",
                "description": "Classy like piety."
             }
          },
          "arch_backed_chair_fine": {
             "arch_backed_chair_fine_ghost": {
-               "display_name": "Fine Cathedral-Arch Chair",
+               "display_name": "고품질의 대성당의 아치형 의자",
                "description": "Classy like piety."
             }
          },
@@ -6719,8 +6719,8 @@
          },
          "not_much_of_a_bed": {
             "not_much_of_a_bed_ghost": {
-               "display_name": "Mean Bed",
-               "description": "Mean as in poor, not cruel. Though it's that too."
+               "display_name": "일반적인 침대",
+               "description": "괴롭진 않지만 약간 부족하다. 딱 그 정도다."
             }
          },
          "park_bench": {
@@ -6837,7 +6837,7 @@
          },
          "blue_market_stall": {
             "blue_market_stall_ghost": {
-               "display_name": "Blue Market Stall",
+               "display_name": "파란색 가판대",
                "description": "Merchants can set up shop here"
             },
             "trader": {
@@ -6916,32 +6916,32 @@
       },
       "loot": {
          "gold": {
-            "display_name": "Chest of Gold Coins",
-            "description": "It's [str(self.stonehearth:stacks.stacks)] coins!",
+            "display_name": "금화 상자",
+            "description": "[str(self.stonehearth:stacks.stacks)]개의 금화가 들어있습니다!",
             "label": "gold"
          },
          "dusty_tome": {
-            "display_name": "Dusty Tome",
-            "description": "An ancient text preserving knowledge of the past"
+            "display_name": "먼지투성이 책",
+            "description": "과거의 지식을 보존하고 있는 고대 문자"
          }
       },
       "monsters": {
          "forest": {
             "ent": {
-               "display_name": "Ent",
-               "description": "Guardian of the forest"
+               "display_name": "엔트",
+               "description": "숲의 수호자"
             },
             "entling": {
-               "display_name": "Entling",
-               "description": "Minion of the forest"
+               "display_name": "엔틀링",
+               "description": "숲의 하인"
             },
             "entling_mage": {
-               "display_name": "Entling Mage",
-               "description": "Minion of the forest"
+               "display_name": "엔틀링 마법사",
+               "description": "숲의 하인"
             },
             "stone_golem": {
-               "display_name": "Stone Golem",
-               "description": "Solid."
+               "display_name": "돌 골렘",
+               "description": "단단하다."
             },
             "little_stone_golem": {
                "display_name": "Little Stone Golem",
@@ -6984,7 +6984,7 @@
             },
             "goblin_chief_hut": {
                "goblin_tent": {
-                  "display_name": "Goblin Tent",
+                  "display_name": "고블린 텐트",
                   "description": "Made from crudely-sewn animal hides"
                }
             },
@@ -7003,25 +7003,25 @@
                }
             },
             "goblin_hut": {
-               "display_name": "Goblin Tent",
+               "display_name": "고블린 텐트",
                "description": "Made from coarsely chopped wodden boards"
             },
             "goblin_large_totem": {
-               "display_name": "Large totem"
+               "display_name": "큰 토템"
             },
             "goblin_small_totem": {
-               "display_name": "Small totem"
+               "display_name": "작은 토템"
             },
             "goblin_soldier": {
                "display_name": "고블린 병사",
-               "description": "Gobble, gobble, gobble..."
+               "description": "고블, 고블, 고블..."
             },
             "goblin_soothsayer_tent": {
                "display_name": "The Soothsayer's Tent",
                "description": "Cobbled together out of luxurious scraps"
             },
             "goblin_tent": {
-               "display_name": "A Tent",
+               "display_name": "텐트",
                "description": "Made from crudely-sewn animal hides"
             },
             "goblin_throne": {
@@ -7039,11 +7039,11 @@
                }
             },
             "wolf_cage": {
-               "display_name": "A wolf cage",
+               "display_name": "늑대 우리",
                "description": "Signals nappytime for its inhabitants."
             },
             "goblin_cage": {
-               "display_name": "Large Cage",
+               "display_name": "큰 우리",
                "description": "Property of Central Chief Grug Skull Crusher"
             }
          },
@@ -7416,33 +7416,33 @@
          },
          "wood": {
             "juniper_log": {
-               "display_name": "Juniper Log",
-               "description": "A log. Made of wood."
+               "display_name": "향나무 원목",
+               "description": "나무로부터 나온 원목입니다."
             },
             "oak_log": {
-               "display_name": "Oak Log",
-               "description": "A log. Made of wood."
+               "display_name": "오크나무 원목",
+               "description": "나무로부터 나온 원목입니다."
             },
             "pine_log": {
-               "display_name": "Pine Log",
-               "description": "A log. Made of wood."
+               "display_name": "소나무 원목",
+               "description": "나무로부터 나온 원목입니다."
             },
             "cactus_log": {
-               "display_name": "Cactus Log",
-               "description": "A log. Made of wood."
+               "display_name": "선인장 원목",
+               "description": "나무로부터 나온 원목입니다."
             },
             "palm_log": {
-               "display_name": "Palm Log",
-               "description": "A log. Made of wood."
+               "display_name": "야자나무 원목",
+               "description": "나무로부터 나온 원목입니다."
             },
             "acacia_log": {
-               "display_name": "Acacia Log",
-               "description": "A log. Made of wood."
+               "display_name": "아카시아 원목",
+               "description": "나무로부터 나온 원목입니다."
             }
          },
          "herb": {
             "brightbell": {
-               "display_name": "Brightbell Flowers",
+               "display_name": "브라이트벨 꽃",
                "description": "An herb commonly used for medicinal purposes"
             },
             "frostsnap": {
@@ -7450,7 +7450,7 @@
                "description": "An herb that's chill to the touch"
             },
             "cactus_flower": {
-               "display_name": "Cactus Flower",
+               "display_name": "선인장 꽃",
                "description": "A beautiful desert bloom with healing properties"
             }
          },
@@ -7783,7 +7783,7 @@
             },
             "wooden_sword_talisman": {
                "display_name": "보병의 목검",
-               "description": "Required to promote a hearthling into a Footman."
+               "description": "하슬링을 보병으로 전직시키기 위해 필요합니다."
             }
          },
          "scythe": {
@@ -8121,8 +8121,8 @@
                "flavor": "Made in the shape of Braun's own blade."
             },
             "carpenter_saw_recipe": {
-               "description": "Required to promote a hearthling into a Carpenter.",
-               "recipe_name": "Carpenter's Saw",
+               "description": "하슬링을 목수로 전직시키기 위해 필요합니다.",
+               "recipe_name": "목수의 톱",
                "flavor": "Now the circle can begin anew."
             },
             "copper_ingot_recipe": {
@@ -8190,8 +8190,8 @@
                "flavor": "Step 1: Beat thin. Step 2: Use to cover roof of town hall."
             },
             "trapper_knife_recipe": {
-               "description": "Required to promote a hearthling into a Trapper.",
-               "recipe_name": "Trapper's Knife",
+               "description": "하슬링을 사냥꾼으로 전직시키기 위해 필요합니다.",
+               "recipe_name": "사냥꾼의 단검",
                "flavor": "Keep your edge whisker sharp, boy, and cut quick. --Willard Foxghost"
             },
             "two_handed_sword_recipe": {
@@ -8209,9 +8209,9 @@
                "flavor": "It is no coincidence that the metaphors of good character descend from work of the smith. -Lucan Varius, Artifex Ignis"
             },
             "workbenches_name": "Workbenches",
-            "storage_name": "Storage",
+            "storage_name": "저장고",
             "vault_recipe": {
-               "description": "Massive storage for 256 items!",
+               "description": "256개의 아이템을 위한 거대한 저장고입니다!",
                "recipe_name": "Vault",
                "flavor": "Conceived by the brilliant Arci, Survivor of Chaat"
             },
@@ -8240,8 +8240,8 @@
                "flavor": "Incredibly protective. Small children play turtle underneath."
             },
             "knights_shield_recipe": {
-               "recipe_name": "Knight's Shield",
-               "description": "Required to promote a hearthling into a Knight"
+               "recipe_name": "기사의 방패",
+               "description": "하슬링을 기사로 전직시키기 위해 필요합니다."
             },
             "iron_helm_recipe": {
                "recipe_name": "Iron Helm",
@@ -8291,8 +8291,8 @@
                "flavor": "The iron workers insisted they had perfected the art, but the bronze workers argued their's was prettier."
             },
             "engineer_wrench_recipe": {
-               "description": "Required to promote a hearthling into an Engineer",
-               "recipe_name": "Engineer's Wrench"
+               "description": "하슬링을 기술자로 전직시키기 위해 필요합니다.",
+               "recipe_name": "기술자의 렌치"
             }
          }
       },
@@ -8329,133 +8329,133 @@
          },
          "carpenter_saw": {
             "display_name": "목수의 쇠톱",
-            "description": "Tools of the trade for a Carpenter.",
+            "description": "목수가 일하는데 쓰는 도구입니다.",
             "carpenter_saw_iconic": {
                "display_name": "목수의 쇠톱",
-               "description": "Basic level carpenter's saw."
+               "description": "기본적인 목수의 쇠톱입니다."
             },
             "carpenter_saw_talisman": {
                "display_name": "목수의 쇠톱",
-               "description": "Required to promote a hearthling into a Carpenter."
+               "description": "하슬링을 목수로 전직시키기 위해 필요합니다."
             }
          },
          "carpenter_workbench": {
             "carpenter_workbench_ghost": {
                "display_name": "목수의 작업대",
-               "description": "Used by the Carpenter for crafting."
+               "description": "목수의 작업에 사용됩니다."
             }
          },
          "carpenter_toolbench": {
             "carpenter_toolbench_ghost": {
                "display_name": "목수의 향상된 작업대",
-               "description": "Used to make fancier kinds of furniture."
+               "description": "고급 가구를 만드는데 사용됩니다."
             }
          },
          "recipes": {
             "arch_backed_chair_recipe": {
-               "description": "Just like a normal chair, except it impresses your neighbors. When sitting, food is 20% more satisfying.",
-               "recipe_name": "Cathedral-Arch Chair",
-               "flavor": "Design favored by the Church of Plenty."
+               "description": "평범한 의자 같지만 당신의 이웃은 감명받을 겁니다. 여기 앉아서 음식을 먹는다면 20% 더 만족스러울 것입니다.",
+               "recipe_name": "대성당의 아치형 의자",
+               "flavor": "풍요의 교회에서 인기있는 디자인이다."
             },
             "comfy_bed_recipe": {
-               "description": "Eight hours will leave you as refreshed as the day you were born.",
-               "recipe_name": "Comfy Bed",
-               "flavor": "Nobody ever wants to get out. It makes emergency evacuations awkward."
+               "description": "8시간이면 당신이 새로 태어난만큼 상쾌하게 만들기 충분합니다.",
+               "recipe_name": "편안한 침대",
+               "flavor": "아무도 일어나고 싶지 않아 해요. 심지어 응급상황을 만들 수도 있어요."
             },
             "comfy_chair_recipe": {
-               "description": "Its padded seat guarantees a 98% reduction in awkward splinters!",
-               "recipe_name": "Comfy Chair",
-               "flavor": "If pillows are good for the head, surely they're even better for the butt and back!"
+               "description": "98%의 충격 감소를 보장하는 패드를 깔았습니다!",
+               "recipe_name": "편안한 의자",
+               "flavor": "머리에 좋은 베개를 사용한다면 머리와 등이 확실히 더 좋아질거예요!"
             },
             "dining_table_recipe": {
-               "description": "Allows a group of people to all eat together. Like grown-ups.",
-               "recipe_name": "Dining Table",
-               "flavor": "Sitting down to eat is a sign of civilization."
+               "description": "모두가 함께 식사하도록 허용합니다. 어른들처럼요.",
+               "recipe_name": "식탁",
+               "flavor": "앉아서 먹는 것은 문명의 상징입니다."
             },
             "dresser_recipe": {
-               "description": "A chest of drawers for storing clothing and personal possessions.",
-               "recipe_name": "Wooden Dresser",
-               "flavor": "Step 2: acquire personal possessions..."
+               "description": "옷과 개인 소지품을 보관하기 위한 서랍장입니다.",
+               "recipe_name": "나무 서랍장",
+               "flavor": "2단계 : 개인적인 소지품을 얻습니다..."
             },
             "hoe_recipe": {
-               "description": "Required to promote a hearthling into a Farmer.",
-               "recipe_name": "Farmer's Hoe",
-               "flavor": "Hoedown time!!!!"
+               "description": "하슬링을 농부로 전직시키기 위해 필요합니다.",
+               "recipe_name": "농부의 호미",
+               "flavor": "호미질 시간!!!!"
             },
             "large_crate_recipe": {
-               "description": "For compactly storing up to 32 items",
-               "recipe_name": "Large Crate",
+               "description": "32개의 아이템까지 저장할 수 있습니다.",
+               "recipe_name": "큰 상자",
                "flavor": "Does the crate that stores all the things that do not store themselves, store itself?"
             },
             "leather_bound_chest_recipe": {
-               "description": "Stylishly stores up to 64 items.",
-               "recipe_name": "Leather Bound Chest",
-               "flavor": "Like the one my granda had!"
+               "description": "64개의 아이템을 저장할 수 있는 멋진 상자입니다.",
+               "recipe_name": "가죽으로 꾸민 상자",
+               "flavor": "나의 할머니가 그랬던 것처럼!"
             },
             "mason_chisel_recipe": {
-               "description": "Required to promote a hearthling into a Mason.",
-               "recipe_name": "Mason's Hammer & Chisel"
+               "description": "하슬링을 석공으로 전직시키기 위해 필요합니다.",
+               "recipe_name": "석공의 망치와 끌"
             },
             "not_much_of_a_bed_recipe": {
-               "description": "Slightly more comfortable than sleeping on a board.",
-               "recipe_name": "Mean Bed",
-               "flavor": "Mean as in poor, not cruel. Though it's that too."
+               "description": "바닥에서 자는 것보다는 좀 더 편안하다.",
+               "recipe_name": "일반적인 침대",
+               "flavor": "괴롭진 않지만 약간 부족하다. 딱 그 정도다."
             },
             "park_bench_recipe": {
-               "description": "Outdoor seating for moments of relaxation.",
-               "recipe_name": "Wooden Park Bench",
-               "flavor": "Life is like a plate of berries."
+               "description": "밖에 앉아서 휴식을 취할 수 있습니다",
+               "recipe_name": "나무 공원 벤치",
+               "flavor": "삶은 열매 한 접시와 같다."
             },
             "picket_fence_gate_recipe": {
-               "description": "Lets people through your picket fence.",
-               "recipe_name": "Picket Fence Gate",
-               "flavor": "Hope you like your neighbors!"
+               "description": "당신의 나무 울타리를 지나다닐 수 있게 해주세요.",
+               "recipe_name": "나무 울타리 입구",
+               "flavor": "당신이 이웃을 사랑하길 바래요!"
             },
             "picket_fence_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Picket Fence",
+               "description": "당신의 재산을 보호하세요.",
+               "recipe_name": "나무 울타리",
                "flavor": "If it's not white, is our life unfulfilled?"
             },
-            "tools_weapons_name": "Tools & Weapons",
-            "storage_name": "Storage",
-            "building_parts_name": "Building Parts",
-            "armor_name": "Weapons and Armor",
-            "furniture_name": "Furniture",
-            "workbench_name": "Workbenches",
-            "utility_name": "Utility",
+            "tools_weapons_name": "도구 & 무기",
+            "storage_name": "저장고",
+            "building_parts_name": "건축 자재",
+            "armor_name": "무기와 방어구",
+            "furniture_name": "가구",
+            "workbench_name": "작업대",
+            "utility_name": "유용한 물건",
             "shepherds_crook_recipe": {
-               "description": "Required to promote a hearthling into a Shepherd.",
-               "recipe_name": "Shepherd's Crook",
-               "flavor": "Can you tell me another story about The Shepard?"
+               "description": "하슬링을 양치기로 전직시키기 위해 필요합니다.",
+               "recipe_name": "양치기의 지팡이",
+               "flavor": "양치기에 관한 또 다른 이야기를 해줄 수 있나요?"
             },
             "simple_wooden_chair_recipe": {
-               "description": "When sitting, food is 20% more satisfying.",
-               "recipe_name": "Simple Wooden Chair",
-               "flavor": "Ten thousand years of research culminated in this four-legged design."
+               "description": "앉아서 음식을 먹는다면 20% 더 만족스러울 겁니다.",
+               "recipe_name": "간단한 나무 의자",
+               "flavor": "이 4개의 다리를 가지기까지 10,000년이나 걸렸습니다."
             },
             "small_crate_recipe": {
-               "description": "For compactly storing up to 8 items",
-               "recipe_name": "Small Crate",
+               "description": "8개의 아이템을 보관할 수 있습니다.",
+               "recipe_name": "작은 상자",
                "flavor": "Does the crate that stores all the things that do not store themselves, store itself?"
             },
             "table_for_one_recipe": {
-               "description": "Better than eating standing up. Unless you're watching your weight.",
-               "recipe_name": "Table for One",
-               "flavor": "Dining furniture for introverts."
+               "description": "서서 먹는 것보다는 낫습니다. 당신의 몸무게를 재는 게 아니라면요.",
+               "recipe_name": "1인용 식탁",
+               "flavor": "내성적인 사람들을 위한 식탁"
             },
             "weaver_spindle_recipe": {
-               "description": "Required to promote a hearthling into a Weaver.",
-               "recipe_name": "Weaver's Spindle",
-               "flavor": "From fiber, thread, from thread, fabric, from fabric, civilization."
+               "description": "하슬링을 방직공으로 전직시키기 위해 필요합니다.",
+               "recipe_name": "방직공의 주축",
+               "flavor": "섬유에서 실로, 실에서 옷감으로, 옷감에서 문명으로."
             },
             "window_box_brightbell_recipe": {
-               "description": "A planter box full of brightbell flowers, built to be placed below window frames.",
-               "recipe_name": "Brightbell Window Box",
-               "flavor": "A brightbell a day keeps the Ogres away!"
+               "description": "브라이트벨 꽃이 가득한 화분입니다. 창틀 아래에 배치해주세요.",
+               "recipe_name": "브라이트벨 창문 화분",
+               "flavor": "오거는 브라이트벨에 가까이 가지 않습니다."
             },
             "window_box_frostsnap_recipe": {
-               "description": "A planter box full of Frostsnap flowers, built to be placed below window frames.",
-               "recipe_name": "Frostsnap Window Box",
+               "description": "프로스트스냅 꽃이 가득한 화분입니다. 창틀 아래에 배치해주세요.",
+               "recipe_name": "프로스트스냅 창문 화분",
                "flavor": "The capstone of an civilized dwelling."
             },
             "wooden_buckler_recipe": {
@@ -8463,146 +8463,146 @@
                "recipe_name": "Wooden Buckler"
             },
             "wooden_diamond_window_recipe": {
-               "description": "A more stylish window.",
-               "recipe_name": "Wooden Diamond Window",
-               "flavor": "The 45 degree turn adds sophistication."
+               "description": "더욱 세련된 창입니다.",
+               "recipe_name": "다이아몬드 나무 창문",
+               "flavor": "45도 돌아간 세련된 창입니다."
             },
             "wooden_door_2_recipe": {
-               "description": "Stronger than your average door.",
-               "recipe_name": "Reinforced Wooden Door",
-               "flavor": "This here pattern, I learned from the Squarefolk."
+               "description": "평범한 문보다 훨씬 강하다.",
+               "recipe_name": "강화된 나무 문",
+               "flavor": "이 문양들은 스네이크포크로부터 배웠습니다."
             },
             "wooden_door_recipe": {
-               "description": "Minor obstacle for intruders.",
-               "recipe_name": "Wooden Door",
-               "flavor": "Privacy at last!"
+               "description": "침입자를 위한 최소한의 장애물",
+               "recipe_name": "나무 문",
+               "flavor": "최소한의 사생활!"
             },
             "wooden_double_door_recipe": {
-               "description": "Two doors are better than one",
-               "recipe_name": "Wooden Double Door",
-               "flavor": "Some people want to make an entrance... every day."
+               "description": "하나보단 둘이 낫다!",
+               "recipe_name": "나무 더블 문",
+               "flavor": "몇몇 사람들은 매일 문을 만들고 싶어한다..."
             },
             "wooden_garden_lantern_recipe": {
-               "description": "A small lantern that's placed on the ground. Suitable for lighting paths or small gardens.",
-               "recipe_name": "Wooden Garden Lantern",
-               "flavor": "Practical and romantic!"
+               "description": "땅에 놓는 작은 랜턴입니다. 길이나 작은 정원의 조명으로 적합합니다.",
+               "recipe_name": "나무 정원 랜턴",
+               "flavor": "실용적이면서 로맨틱해요!"
             },
             "wooden_shield_recipe": {
-               "description": "Crude and basic, but allows the holder to occasionally block attacks.",
-               "recipe_name": "Rough Wooden Shield",
-               "flavor": "Better than an improvized wooden branch!"
+               "description": "기본 중의 기본이지만 공격을 가끔 막아줍니다.",
+               "recipe_name": "거친 나무 방패",
+               "flavor": "나뭇가지보다 더 낫다!"
             },
             "wooden_sign_blacksmith_recipe": {
-               "description": "A sign with the mark of the blacksmith, to be placed on buildings.",
-               "recipe_name": "Blacksmith's Wall-Mounted Sign",
-               "flavor": "Specializing in heavy, pointy, dense things!"
+               "description": "대장장이의 상징이 새겨진 표지판이며 건물에 붙일 수 있습니다.",
+               "recipe_name": "대장장이의 벽걸이형 표지판",
+               "flavor": "무겁고 뾰족하고 밀도 높은 것에 특화되어 있습니다."
             },
             "wooden_sign_carpenter_recipe": {
-               "description": "A sign with the mark of the Carpenter, to be placed on buildings.",
-               "recipe_name": "Carpenter's Wall-Mounted Sign",
-               "flavor": "Get your wooden things right here!"
+               "description": "목수의 상징이 새겨진 표지판이며 건물에 붙일 수 있습니다.",
+               "recipe_name": "목수의 벽걸이형 표지판",
+               "flavor": "당장 목재를 가져와라!"
             },
             "wooden_sign_mason_recipe": {
-               "description": "A sign with the mark of the Mason, to be placed on buildings.",
-               "recipe_name": "Mason's Wall-Mounted Sign",
-               "flavor": "Dense beautiful things that sometimes contain things that burn."
+               "description": "석공의 상징이 새겨진 표지판이며 건물에 붙일 수 있습니다.",
+               "recipe_name": "석공의 벽걸이형 표지판",
+               "flavor": "때로는 불에 타는 것까지 포함하는 아름다움을 가졌습니다."
             },
             "wooden_sign_recipe": {
-               "description": "A generic sign, to identify your buildings",
-               "recipe_name": "Wooden Wall-Mounted Sign",
+               "description": "건물을 식별하기 위한 일반적인 표지판입니다.",
+               "recipe_name": "벽걸이형 나무 표지판",
                "flavor": "But if it's *generic*, how will...? NM. (-sdee)"
             },
             "wooden_sign_weaver_recipe": {
-               "description": "A sign with the mark of the Weaver, to be placed on buildings.",
-               "recipe_name": "Weaver's Wall-Mounted Sign",
-               "flavor": "Artisinally crafted fabrics and plushies!"
+               "description": "방직공의 상징이 새겨진 표지판이며 건물에 붙일 수 있습니다.",
+               "recipe_name": "방직공의 벽걸이형 표지판",
+               "flavor": "천과 옷감을 이용한 수공예품을 만듭니다!"
             },
             "wooden_sword_recipe": {
-               "description": "Required to promote a hearthling into a Footman.",
-               "recipe_name": "Wooden Practice Sword",
-               "flavor": "Just pointy enough to get the job done."
+               "description": "하슬링을 보병으로 전직시키기 위해 필요합니다.",
+               "recipe_name": "연습용 목검",
+               "flavor": "직업을 얻기 위한만큼의 날카로움을 가졌습니다."
             },
             "wooden_wall_lantern_recipe": {
-               "description": "A simple lantern. Place on buildings to provide light at night.",
-               "recipe_name": "Wooden Wall-Mounted Lantern",
-               "flavor": "So comfortinzzzzzzzz..."
+               "description": "작은 랜턴입니다. 건물 벽에 붙어서 밤에 빛을 비춰줍니다.",
+               "recipe_name": "벽걸이형 나무 랜턴",
+               "flavor": "매우 편안하군요... 쿨쿨쿨...."
             },
             "wooden_window_frame_recipe": {
-               "description": "Lets light into the room.",
-               "recipe_name": "Wooden Window Frame",
-               "flavor": "So much for privacy..."
+               "description": "방에 빛이 들어오게 하자.",
+               "recipe_name": "나무 창틀",
+               "flavor": "사생활에 대해서는..."
             },
             "writing_desk_recipe": {
-               "description": "Not at all like a raven.",
-               "recipe_name": "Writing Desk",
-               "flavor": "...Except it can produce a few notes, tho they are very flat."
+               "description": "윤기나는 그런 책상은 아닙니다.",
+               "recipe_name": "책상",
+               "flavor": "몇 개의 책들을 올릴 수 있는 것을 제외하곤 평평함 뿐입니다."
             },
             "carpenter_workbench_recipe": {
-               "description": "Required to produce most of the Carpenter's recipes.",
+               "description": "목수의 작업 중 대부분을 진행하기 위해서 필요합니다.",
                "recipe_name": "목수의 작업대",
-               "flavor": "A sturdy, well-organized place for tools and crafts."
+               "flavor": "튼튼하며, 도구들이 잘 정돈되어 있습니다."
             },
             "carpenter_toolbench_recipe": {
-               "description": "Fancier tools allow the carpenter to work with cloth and other civilized ingredients.",
+               "description": "천과 다른 문명화된 재료를들 이용하여 제작할 수 있는 향상된 도구입니다.",
                "recipe_name": "목수의 향상된 작업대",
-               "flavor": "A more elegant workstation, modeled on a more civilized time."
+               "flavor": "더욱 효율적인 시간을 위해 마련된 더욱 품격있는 작업대입니다."
             },
             "wooden_window_frame_tall_recipe": {
-               "description": "Extra height adds an air of elegance.",
-               "recipe_name": "Tall Wooden Window Frame"
+               "description": "우아한 분위기를 위해 더욱 높아졌습니다.",
+               "recipe_name": "긴 나무 창틀"
             },
             "wooden_window_frame_wide_recipe": {
-               "description": "It's got a panoramic view!",
-               "recipe_name": "Wide Wooden Window Frame"
+               "description": "파노라마 같이 볼 수 있어요!",
+               "recipe_name": "넓은 나무 창틀"
             },
             "herbalist_staff_recipe": {
-               "description": "Required to promote a hearthling to an herbalist, who creates healing tonics and bandages.",
-               "recipe_name": "Herbalist's Staff"
+               "description": "하슬링을 치료약을 만들고 치료를 해주는 약초사로 전직시키기 위해 필요합니다.",
+               "recipe_name": "약초사의 지팡이"
             },
             "safety_standard_recipe": {
-               "description": "Use to designate a safety point",
-               "recipe_name": "Wooden Safety Standard"
+               "description": "안전 구역을 지정할 때 사용됩니다.",
+               "recipe_name": "나무 안전 기준"
             },
             "wooden_tunnel_door_recipe": {
-               "recipe_name": "Wooden Tunnel Door",
-               "description": "Useful for blocking off tunnels"
+               "recipe_name": "나무 터널 문",
+               "description": "터널을 막기에 유용합니다."
             },
             "wooden_sign_cook_recipe": {
-               "description": "A sign with the mark of the Cook.",
-               "recipe_name": "Cook's Wall-Mounted Sign"
+               "description": "요리사의 상징이 새겨진 표지판입니다.",
+               "recipe_name": "요리사의 벽걸이형 표지판"
             },
             "wooden_sign_herbalist_recipe": {
-               "description": "A sign with the mark of the Herbalist.",
-               "recipe_name": "Herbalist's Wall-Mounted Sign"
+               "description": "약초사의 상징이 새겨진 표지판입니다.",
+               "recipe_name": "약초사의 벽걸이형 표지판"
             },
             "wooden_sign_inn_recipe": {
-               "description": "A sign marking a place for rest and revelry.",
-               "recipe_name": "Inn Wall-Mounted Sign"
+               "description": "휴식과 유흥의 상징이 새겨진 표지판입니다.",
+               "recipe_name": "벽걸이형 주막 표지판"
             },
             "wooden_sign_potter_recipe": {
-               "description": "A sign with the mark of the Potter.",
-               "recipe_name": "Potter's Wall-Mounted Sign"
+               "description": "도예가의 상징이 새겨진 표지판입니다.",
+               "recipe_name": "도예가의 벽걸이형 표지판"
             },
             "log_pile_recipe": {
-               "recipe_name": "Log Pile",
-               "description": "A pile of logs stacked together. An excellent way to store lots of wood for later use."
+               "recipe_name": "원목 더미",
+               "description": "원목들이 함께 쌓여있습니다. 수많은 목재들을 저장할 수 있는 훌륭한 방법입니다."
             },
             "wheat_pile_recipe": {
-               "recipe_name": "Large Wheat Bundle",
-               "description": "For when normal wheat bales are just too small. Good for efficiently storing a large amount of wheat"
+               "recipe_name": "큰 밀 더미 묶음",
+               "description": "일반적으로 밀 더미는 작기 때문에 효율적으로 저장하기 위해 하나로 묶었습니다."
             },
             "blue_market_stall_recipe": {
-               "description": "Merchants can visit this stall to buy and sell goods",
-               "recipe_name": "Blue Market Stall",
-               "flavor": "But who are these people? And where are they coming from?"
+               "description": "상인은 상품을 사고 팔기 위해 가판대에 방문합니다.",
+               "recipe_name": "파란색 가판대",
+               "flavor": "이 사람들은 누구일까요? 그리고 어디서 왔을까요?"
             },
             "archer_bow_recipe": {
-               "recipe_name": "Archer's Bow",
-               "description": "Required to promote a hearthling into an archer"
+               "recipe_name": "궁수의 활",
+               "description": "하슬링을 궁수로 전직시키기 위해 필요합니다."
             },
             "recurve_bow_recipe": {
-               "recipe_name": "Recurve Bow",
-               "description": "A bow that curves away from the wielder, allowing for stronger and faster arrow attacks"
+               "recipe_name": "구부러진 활",
+               "description": "더욱 강하고 빠르게 화살로 공격하기 위해 구부러진 활입니다."
             },
             "mountains_windchime_recipe": {
                "description": "Place to deter Mountain, Ogo's trained ogre",
@@ -8658,20 +8658,20 @@
          },
          "cook_spoon": {
             "display_name": "요리사의 국자",
-            "description": "Used by the cook",
+            "description": "요리에 사용됩니다.",
             "cook_spoon_iconic": {
                "display_name": "요리사의 국자",
-               "description": "Required to promote a hearthling into a Cook."
+               "description": "하슬링을 요리사로 전직시키기 위해 필요합니다."
             },
             "cook_spoon_talisman": {
                "display_name": "요리사의 국자",
-               "description": "Required to promote a hearthling into a Cook."
+               "description": "하슬링을 요리사로 전직시키기 위해 필요합니다."
             }
          },
          "cook_workbench": {
             "cook_workbench_ghost": {
                "display_name": "석재 가마솥",
-               "description": "Used by the Cook for delicious recipes."
+               "description": "더욱 맛있는 요리를 만들 때 사용됩니다."
             }
          },
          "recipes": {
@@ -8745,7 +8745,7 @@
                "recipe_name": "맷돌"
             },
             "cook_oven_recipe": {
-               "description": "Great for roasting",
+               "description": "굽는 것에 적합합니다.",
                "recipe_name": "석재 오븐"
             },
             "corn_meal_recipe": {
@@ -8771,13 +8771,13 @@
          "cook_mill": {
             "cook_mill_ghost": {
                "display_name": "맷돌",
-               "description": "Used by the cook to grind grains into flour."
+               "description": "곡물을 갈아버리는 요리에 사용됩니다."
             }
          },
          "cook_oven": {
             "cook_oven_ghost": {
                "display_name": "석재 오븐",
-               "description": "Great for roasting"
+               "description": "굽는 것에 적합합니다."
             }
          }
       },
@@ -8817,7 +8817,7 @@
          "engineer_wrench": {
             "engineer_wrench_talisman": {
                "display_name": "기술자의 렌치",
-               "description": "Required to promote a hearthling into an Engineer"
+               "description": "하슬링을 기술자로 전직시키기 위해 필요합니다."
             },
             "display_name": "기술자의 렌치",
             "description": "Tools of the trade for an Engineer"
@@ -8924,11 +8924,11 @@
             "description": "밭을 일구는데 유용합니다.",
             "farmer_hoe_iconic": {
                "display_name": "농부의 호미",
-               "description": "밭을 일구는데 유용합니다."
+               "description": "하슬링을 농부로 전직시키기 위해 필요합니다."
             },
             "farmer_hoe_talisman": {
                "display_name": "농부의 호미",
-               "description": "밭을 일구는데 유용합니다."
+               "description": "하슬링을 농부로 전직시키기 위해 필요합니다."
             }
          },
          "farmer_outfit": {
@@ -9043,7 +9043,7 @@
             "description": "석공의 거래 도구입니다.",
             "mason_chisel_talisman": {
                "display_name": "석공의 끌",
-               "description": "Required to promote a hearthling into a mason."
+               "description": "하슬링을 석공으로 전직시키기 위해 필요합니다."
             }
          },
          "mason_hammer": {
@@ -9051,13 +9051,13 @@
             "description": "석공의 거래 도구입니다."
          },
          "mason_outfit": {
-            "display_name": "Mason Smock",
+            "display_name": "석공의 작업복",
             "description": "Uniform for all masons"
          },
          "mason_workbench": {
             "mason_workbench_ghost": {
-               "display_name": "Mason Workbench",
-               "description": "Used by the Mason for crafting."
+               "display_name": "석공의 작업대",
+               "description": "석공의 작업에 사용됩니다."
             }
          },
          "mason_pedestal": {
@@ -9073,7 +9073,7 @@
                "flavor": "Not a chair."
             },
             "blacksmith_hammer_recipe": {
-               "description": "Required to promote a hearthling into a Blacksmith.",
+               "description": "하슬링을 대장장이로 전직시키기 위해 필요합니다.",
                "recipe_name": "Blacksmith's Hammer",
                "flavor": "From the dragon that lives in the forge, weapons and armor, defense and conquest."
             },
@@ -9093,8 +9093,8 @@
                "flavor": "Use the earth itself to form the walls of the pasture? Genius!"
             },
             "cook_spoon_recipe": {
-               "description": "Required to promote a hearthling into a Cook.",
-               "recipe_name": "Cook's Spoon",
+               "description": "하슬링을 요리사로 전직시키기 위해 필요합니다.",
+               "recipe_name": "요리사의 국자",
                "flavor": "COOKED FOOOOOOOOD!!!!!! --Alton The Bard"
             },
             "gargoyle_recipe": {
@@ -9102,21 +9102,21 @@
                "recipe_name": "Wall-Mounted Decorative Gargoyle",
                "flavor": "Remnants of the servants of Brelor, Crownless King."
             },
-            "tools_name": "Tools",
-            "storage_name": "Storage",
+            "tools_name": "도구",
+            "storage_name": "저장고",
             "signage_decoration_name": "Signage & Decoration",
-            "building_parts_name": "Building Parts",
-            "weapons_name": "Weapons",
-            "furniture_name": "Furniture",
+            "building_parts_name": "건축 자재",
+            "weapons_name": "무기",
+            "furniture_name": "가구",
             "stone_bench_recipe": {
                "description": "Outdoor seating for moments of relaxation.",
                "recipe_name": "Stone Bench",
                "flavor": "Pretty and functional. Matches the tombstones."
             },
             "stone_brazier_recipe": {
-               "description": "A small fire pit that provides comfort and warmth at night.",
-               "recipe_name": "Stone Brazier",
-               "flavor": "Warning: Do not drop anything in while it's lit."
+               "description": "밤에 편안함과 온기를 제공하는 작은 불등입니다.",
+               "recipe_name": "석조 화로",
+               "flavor": "경고 : 켜져 있는 동안 어떤 것도 떨어뜨리지 마세요."
             },
             "stone_bricks_recipe": {
                "description": "A key component of stone structures like castles and roads.",
@@ -9184,7 +9184,7 @@
             },
             "valor_statue_recipe": {
                "description": "A monument to your town's military might",
-               "recipe_name": "Cid의 용맹함",
+               "recipe_name": "시드의 용맹함",
                "flavor": "The shield for resiliance, and the sword for strength. -- Cid, Knight of the Old Ways"
             },
             "roadside_shrine_recipe": {
@@ -9245,7 +9245,7 @@
                "recipe_name": "Small Urn",
                "flavor": "Mischevious kids break these pots all the time, looking for treasure."
             },
-            "storage_name": "Storage",
+            "storage_name": "저장고",
             "large_urn_recipe": {
                "description": "For compactly storing up to 32 items",
                "recipe_name": "Large Urn",
@@ -9451,7 +9451,7 @@
             "description": "Used to form civilization from dirt!",
             "potter_cutter_talisman": {
                "display_name": "도예가의 칼",
-               "description": "Required to promote a hearthling into a Potter."
+               "description": "하슬링을 도예가로 전직시키기 위해 필요합니다."
             }
          },
          "potter_outfit": {
@@ -9485,11 +9485,11 @@
             "description": "양데를 모으기 위해 사용합니다.",
             "shepherd_crook_iconic": {
                "display_name": "양치기의 지팡이",
-               "description": "양데를 모으기 위해 사용합니다."
+               "description": "하슬링을 양치기로 전직시키기 위해 필요합니다."
             },
             "shepherd_crook_talisman": {
                "display_name": "양치기의 지팡이",
-               "description": "양데를 모으기 위해 사용합니다."
+               "description": "하슬링을 양치기로 전직시키기 위해 필요합니다."
             }
          },
          "shepherd_outfit": {
@@ -9570,7 +9570,7 @@
             },
             "trapper_knife_talisman": {
                "display_name": "사냥꾼의 단검",
-               "description": "Required to promote a hearthling into a Trapper."
+               "description": "하슬링을 사냥꾼으로 전직시키기 위해 필요합니다."
             }
          },
          "trapper_outfit": {
@@ -9759,7 +9759,7 @@
             },
             "weaver_spindle_talisman": {
                "display_name": "방직공의 주축",
-               "description": "Required to promote a hearthling into a Weaver"
+               "description": "하슬링을 방직공으로 전직시키기 위해 필요합니다."
             }
          },
          "weaver_spinning_wheel": {
@@ -9845,14 +9845,14 @@
          },
          "herbalist_staff": {
             "display_name": "약초사의 지팡이",
-            "description": "Required to promote a hearthling into an Herbalist",
+            "description": "하슬링을 약초사로 전직시키기 위해 필요합니다.",
             "herbalist_staff_iconic": {
                "display_name": "약초사의 지팡이",
-               "description": "Required to promote a hearthling into an Herbalist"
+               "description": "하슬링을 약초사로 전직시키기 위해 필요합니다."
             },
             "herbalist_staff_talisman": {
                "display_name": "약초사의 지팡이",
-               "description": "Required to promote a hearthling into an Herbalist"
+               "description": "하슬링을 약초사로 전직시키기 위해 필요합니다."
             }
          },
          "herbalist_workbench": {
@@ -9903,8 +9903,8 @@
             },
             "decorations_name": "Decorations",
             "cleric_tome_recipe": {
-               "recipe_name": "Cleric's Tome",
-               "description": "Required to promote a hearthling to a cleric"
+               "recipe_name": "성직자의 책",
+               "description": "하슬링을 성직자로 전직시키기 위해 필요합니다."
             },
             "tools_name": "Tools"
          },
@@ -9956,7 +9956,7 @@
          "cleric_tome": {
             "cleric_tome_talisman": {
                "display_name": "성직자의 책",
-               "description": "Required to promote a hearthling to a Cleric"
+               "description": "하슬링을 성직자로 전직시키기 위해 필요합니다."
             },
             "display_name": "Tome of Healing",
             "description": "Contains sacred texts on the way of the cleric"
@@ -10011,10 +10011,10 @@
          },
          "magmasmith_hammer": {
             "magmasmith_hammer_talisman": {
-               "display_name": "Magmasmith's Hammer",
-               "description": "Required to promote a hearthling to a Magmasmith"
+               "display_name": "용암장인의 망치",
+               "description": "하슬링을 용암장인으로 전직시키기 위해 필요합니다."
             },
-            "display_name": "Magmasmith's Hammer",
+            "display_name": "용암장인의 망치",
             "description": "Lava to the face"
          },
          "magmasmith_forge": {
