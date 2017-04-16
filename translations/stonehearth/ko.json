@@ -1891,7 +1891,7 @@
                               "001": "I envoy of Ogo Skullbonker, tamer of Mountains! Ogo demand many thing from all, include you, include your gold!",
                               "002": "My Chief-of-Chiefs, Ogo Skullbonker, soon rule take Glittering Army and rule all of Red Kiln! You next of many conquests. You become our goldfarmers!",
                               "003": "I am Bannergoblin of Ogo Skullbonker, rider of Mountain! My master demand you tribute, in form of all you have! You give everything! Or you pay!",
-                              "004": "나는 오고 Skullbonker의 기수다! 너가 우리의 족장을 돕는다면 Ogo의 눈은 너를 바라볼 것이다! 그리고 Ogo의 눈은 모든 것을 안다! 공물을 바쳐라, 아니면 눈은 너의 종말을 볼 것이다!"
+                              "004": "나는 오고 스컬본커의 기수다! 너가 우리의 족장을 돕는다면 Ogo의 눈은 너를 바라볼 것이다! 그리고 Ogo의 눈은 모든 것을 안다! 공물을 바쳐라, 아니면 눈은 너의 종말을 볼 것이다!"
                            },
                            "bulletin_title": "The goblin straightens",
                            "dialog_title": "오고의 기수"
@@ -1906,7 +1906,7 @@
                               "003": "Ogo Skullbonker, Master of Masters, have great destiny, to rule over all! Soothsayer say so; soothsayer never wrong. Soothsayer say, you will help!"
                            },
                            "bulletin_title": "The goblin's eyes glow with zeal",
-                           "dialog_title": "Ogo's Bannerman"
+                           "dialog_title": "오고의 기수"
                         },
                         "conclusion": {
                            "bulletin_message": {
@@ -1952,7 +1952,7 @@
                            "dialog_title": "[name(i18n_data.boss)]"
                         },
                         "information": {
-                           "choice_000": "Wow!",
+                           "choice_000": "와우!",
                            "choice_001": "Sounds ominous.",
                            "bulletin_message": {
                               "000": "You so funny. Because we friends, me tell you: Ogo pretty cool. A bit mean. Once ate a puppy. But... soothsayer say he fated! Meant to stomp on everyone! Me just little guy, you know? Though you littler. Anyways."
@@ -2248,7 +2248,7 @@
                               "wolf_cage": {
                                  "wolf_cage": {
                                     "display_name": "늑대 우리",
-                                    "description": "Property of Ogo Skullbonker"
+                                    "description": "오고 스컬본커의 소유물"
                                  },
                                  "trainer": {
                                     "description": "Whips the wolves into a dangerous frenzy"
@@ -2271,7 +2271,7 @@
                               },
                               "ogo": {
                                  "description": "Soothsayer say, Ogo Chosen One, Ogo Cycle-Breaker",
-                                 "display_name": "Ogo Skullbonker"
+                                 "display_name": "오고 스컬본커"
                               }
                            },
                            "ogo_throne": {
@@ -2283,7 +2283,7 @@
                            "wolf_kennel": {
                               "wolf_cage": {
                                  "display_name": "늑대 우리",
-                                 "description": "Property of Ogo Skullbonker"
+                                 "description": "오고 스컬본커의 소유물"
                               }
                            }
                         }
@@ -2423,14 +2423,14 @@
                                           "000": "Mountain! Fight... on...."
                                        },
                                        "bulletin_title": "Ogo Skullbonker falls to the ground",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "dialog_title": "오고 스컬본커"
                                     },
                                     "ogo_death_1": {
                                        "bulletin_message": {
                                           "000": "What? Ogo Skullbonker, defeated? What soothsayer say? What Mountain say? What about Khan? What about... next cycle?"
                                        },
                                        "bulletin_title": "Ogo Skullbonker falls to the ground",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "dialog_title": "오고 스컬본커"
                                     }
                                  }
                               }
@@ -2443,14 +2443,14 @@
                                           "000": "Mountain, ridiculous! This is war! For shinies! Forward!!!"
                                        },
                                        "bulletin_title": "Ogo looks indignant",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "dialog_title": "오고 스컬본커"
                                     },
                                     "renewed_attack": {
                                        "bulletin_message": {
                                           "000": "See Mountain? They refuse your offer of peace! Renewed attack!"
                                        },
                                        "bulletin_title": "Ogo raises his fist in triumph",
-                                       "dialog_title": "Ogo Skullbonker",
+                                       "dialog_title": "오고 스컬본커",
                                        "choice_000": "Attack!!"
                                     },
                                     "mountain_replies": {
@@ -2465,7 +2465,7 @@
                                           "000": "Arghhh!!! But the shinies! Fine. Mountain my friend; me no go where he no go. Your town safe... for now. We return when Khan is well!"
                                        },
                                        "bulletin_title": "Ogo stomps his foot in frustration",
-                                       "dialog_title": "Ogo Skullbonker",
+                                       "dialog_title": "오고 스컬본커",
                                        "choice_000": "See you later!"
                                     },
                                     "ogo_notices": {
@@ -2473,7 +2473,7 @@
                                           "000": "Mountain, why you stop fighting?"
                                        },
                                        "bulletin_title": "Ogo Skullbonker waves to get his ogre's attention",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "dialog_title": "오고 스컬본커"
                                     },
                                     "mountain_asks": {
                                        "bulletin_message": {
@@ -2515,14 +2515,14 @@
                                           "000": "Take all the things!!!!"
                                        },
                                        "bulletin_title": "The goblins raise their weapons",
-                                       "dialog_title": "Ogo's Bannerman"
+                                       "dialog_title": "오고의 기수"
                                     },
                                     "ogo_attacks": {
                                        "bulletin_message": {
                                           "000": "At last, we come to place of great shinies! Go forth, my minions! Go forth for Ogo Skullbonker's glory!"
                                        },
                                        "bulletin_title": "You Hear Goblin War Horns",
-                                       "dialog_title": "Ogo Skullbonker"
+                                       "dialog_title": "오고 스컬본커"
                                     },
                                     "mountain_replies": {
                                        "bulletin_message": {
@@ -4988,17 +4988,17 @@
          "knights_shield": {
             "shield_talisman": {
                "display_name": "기사의 방패",
-               "description": "Required to promote a hearthling to a knight"
+               "description": "하슬링을 기사로 전직시키기 위해 필요합니다."
             },
             "display_name": "기사의 방패",
-            "description": "For defending one's allies"
+            "description": "동맹국을 지키기 위하여"
          },
          "iron_shield": {
             "display_name": "무거운 철 방패",
-            "description": "Ooof. Heavy.",
+            "description": "오우. 무거워.",
             "iron_shield_iconic": {
-               "display_name": "Heavy Iron Shield",
-               "description": "Ooof. Heavy."
+               "display_name": "무거운 철 방패",
+               "description": "오우. 무거워."
             }
          },
          "bronze_breastplate": {
@@ -5427,7 +5427,7 @@
       "containers": {
          "large_crate": {
             "large_crate_ghost": {
-               "display_name": "Large Crate",
+               "display_name": "큰 상자",
                "description": "Storage container"
             }
          },
@@ -5445,13 +5445,13 @@
          },
          "small_crate": {
             "small_crate_ghost": {
-               "display_name": "Small Crate",
+               "display_name": "작은 상자",
                "description": "Storage container"
             }
          },
          "stone_chest": {
             "stone_chest_ghost": {
-               "display_name": "Stone Chest",
+               "display_name": "석재 상자",
                "description": "Storage container"
             }
          },
@@ -5522,17 +5522,17 @@
       },
       "critters": {
          "poyo": {
-            "display_name": "A Poyo",
-            "description": "Plump and tasty wild fowl",
+            "display_name": "포요",
+            "description": "포동포동하고 맛있어 보이는 야생의 새",
             "poyo_egg": {
-               "display_name": "Fertilized Poyo Egg",
-               "description": "Is it hatching yet?"
+               "display_name": "수정된 포요 알",
+               "description": "아직 부화하지 않았나요?"
             },
             "young": {
-               "display_name": "Poyo Chick",
-               "description": "Peep Peep!"
+               "display_name": "새끼 포요",
+               "description": "삐약! 삐약!"
             },
-            "species": "poyo"
+            "species": "포요"
          },
          "rabbit": {
             "display_name": "토끼",
@@ -6660,13 +6660,13 @@
          "arch_backed_chair": {
             "arch_backed_chair_ghost": {
                "display_name": "대성당의 아치형 의자",
-               "description": "Classy like piety."
+               "description": "경건한 세련됨을 가졌다."
             }
          },
          "arch_backed_chair_fine": {
             "arch_backed_chair_fine_ghost": {
                "display_name": "고품질의 대성당의 아치형 의자",
-               "description": "Classy like piety."
+               "description": "경건한 세련됨을 가졌다."
             }
          },
          "comfy_bed": {
@@ -6684,97 +6684,97 @@
          "comfy_chair": {
             "comfy_chair_ghost": {
                "display_name": "편안한 의자",
-               "description": "앉기를 위해서입니다!"
+               "description": "앉기 위해서!"
             }
          },
          "comfy_chair_fine": {
             "comfy_chair_fine_ghost": {
-               "display_name": "Fine Comfy Chair",
-               "description": "For sitting!"
+               "display_name": "고품질의 편안한 의자",
+               "description": "앉기 위해서!"
             }
          },
          "dining_table": {
             "dining_table_ghost": {
-               "display_name": "Dining Table",
-               "description": "Sitting down to eat is a sign of civilization."
+               "display_name": "식탁",
+               "description": "앉아서 먹는 것은 문명의 상징입니다."
             }
          },
          "dining_table_fine": {
             "dining_table_fine_ghost": {
-               "display_name": "Fine Dining Table",
-               "description": "Sitting down to eat is a sign of civilization."
+               "display_name": "고품질 식탁",
+               "description": "앉아서 먹는 것은 문명의 상징입니다."
             }
          },
          "dresser": {
             "dresser_ghost": {
-               "display_name": "Wooden Dresser",
-               "description": "Decorative in the absence of belongings."
+               "display_name": "나무 서랍장",
+               "description": "안이 비어있는 장식품"
             }
          },
          "dresser_fine": {
             "dresser_fine_ghost": {
-               "display_name": "Fine Dresser",
-               "description": "Decorative in the absence of belongings."
+               "display_name": "고품질 나무 서랍장",
+               "description": "안이 비어있는 장식품"
             }
          },
          "not_much_of_a_bed": {
             "not_much_of_a_bed_ghost": {
-               "display_name": "일반적인 침대",
+               "display_name": "평범한 침대",
                "description": "괴롭진 않지만 약간 부족하다. 딱 그 정도다."
             }
          },
          "park_bench": {
             "park_bench_ghost": {
-               "display_name": "Wooden Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "display_name": "나무 공원 벤치",
+               "description": "밖에 앉아서 휴식을 취할 수 있습니다."
             }
          },
          "park_bench_fine": {
             "park_bench_fine_ghost": {
-               "display_name": "Fine Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "display_name": "고품질 나무 공원 벤치",
+               "description": "밖에 앉아서 휴식을 취할 수 있습니다."
             }
          },
          "simple_wooden_chair": {
             "simple_wooden_chair_ghost": {
-               "display_name": "Simple Wooden Chair",
-               "description": "For sitting"
+               "display_name": "평범한 나무 의자",
+               "description": "앉기 위해서"
             }
          },
          "simple_wooden_chair_fine": {
             "simple_wooden_chair_fine_ghost": {
-               "display_name": "Fine Wooden Chair",
-               "description": "For sitting"
+               "display_name": "고품질 나무 의자",
+               "description": "앉기 위해서"
             }
          },
          "stone_bench": {
             "stone_bench_ghost": {
-               "display_name": "Stone Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "display_name": "석재 벤치",
+               "description": "밖에 앉아서 휴식을 취할 수 있습니다."
             }
          },
          "stone_chair": {
             "stone_chair_ghost": {
-               "display_name": "돌 의자",
-               "description": "앉는걸 위한겁니다."
+               "display_name": "석재 의자",
+               "description": "앉기 위해서"
             }
          },
          "stone_table": {
             "stone_table_ghost": {
-               "display_name": "Stone Table",
-               "description": "Its weight adds a sense of gravitas."
+               "display_name": "석재 테이블",
+               "description": "중압감을 더해주는 무게를 가졌다."
             }
          },
          "table_for_one": {
             "table_for_one_ghost": {
-               "display_name": "Table for One",
-               "description": "Dining furniture for introverts."
+               "display_name": "1인용 식탁",
+               "description": "내성적인 사람들을 위한 식탁"
             }
          },
          "table_for_one_fine": {
             "table_for_one_fine_ghost": {
-               "display_name": "Fine Table for One",
-               "description": "Dining furniture for introverts."
+               "display_name": "고품질 1인용 식탁",
+               "description": "내성적인 사람들을 위한 식탁"
             }
          },
          "tombstone": {
@@ -6783,65 +6783,65 @@
                "description": "[str(self.stonehearth:unit_info.custom_name)] will always be remembered."
             },
             "tombstone": {
-               "display_name": "Tombstone",
-               "description": "A memorial for the fallen"
+               "display_name": "묘비",
+               "description": "전사자를 위한 기념비"
             }
          },
          "writing_desk": {
             "writing_desk_ghost": {
-               "display_name": "Writing Desk",
-               "description": "Furniture"
+               "display_name": "책상",
+               "description": "가구"
             }
          },
          "writing_desk_fine": {
             "writing_desk_fine_ghost": {
-               "display_name": "Fine Writing Desk",
-               "description": "Furniture"
+               "display_name": "고품질의 책상",
+               "description": "가구"
             }
          },
          "clay_bed": {
             "clay_bed_ghost": {
-               "display_name": "Clay Bed",
-               "description": "Uncomfortable, but gets you off the ground!"
+               "display_name": "점토 침대",
+               "description": "당신을 바닥으로부터 떨어뜨려줍니다."
             }
          },
          "clay_dining_table": {
             "clay_dining_table_ghost": {
-               "display_name": "Clay Dining Table",
-               "description": "Gets your food off the floor"
+               "display_name": "점토 식탁",
+               "description": "당신의 음식을 바닥으로부터 떨어뜨려줍니다."
             }
          },
          "simple_clay_chair": {
             "simple_clay_chair_ghost": {
-               "display_name": "간단한 점토 의자",
-               "description": "Less dusty than sitting on the floor"
+               "display_name": "평범한 점토 의자",
+               "description": "바닥에 앉는 것보다 먼지가 덜 붙는다."
             }
          },
          "clay_dining_table_fine": {
             "clay_dining_table_fine_ghost": {
-               "display_name": "Fine Clay Dining Table",
-               "description": "Gets your food off the floor ... in style"
+               "display_name": "고품질의 점토 식탁",
+               "description": "당신의 음식을 바닥으로부터 떨어뜨려줍니다. 스타일 있게..."
             }
          },
          "simple_clay_chair_fine": {
             "simple_clay_chair_fine_ghost": {
                "display_name": "괜찮은 점토 의자",
-               "description": "Less dusty and more stylish than sitting on the floor"
+               "description": "바닥에 앉는 것보다 먼지가 덜 붙고 멋스럽다."
             }
          },
          "clay_bed_fine": {
             "clay_bed_fine_ghost": {
-               "display_name": "괜찮은 점토 침대",
+               "display_name": "고품질의 점토 침대",
                "description": "Gets you off the ground in style. Still uncomfortable, though"
             }
          },
          "blue_market_stall": {
             "blue_market_stall_ghost": {
                "display_name": "파란색 가판대",
-               "description": "Merchants can set up shop here"
+               "description": "상인들이 이 곳에서 상점을 설치할 수 있습니다."
             },
             "trader": {
-               "description": "A traveling merchant"
+               "description": "떠돌이 상인"
             }
          },
          "statue_of_cid_wanderer": {
@@ -6852,8 +6852,8 @@
          },
          "park_bench_red": {
             "park_bench_red_ghost": {
-               "display_name": "Red Wooden Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "display_name": "빨간 나무 공원 벤치",
+               "description": "밖에 앉아서 휴식을 취할 수 있습니다."
             }
          }
       },
@@ -6918,7 +6918,7 @@
          "gold": {
             "display_name": "금화 상자",
             "description": "[str(self.stonehearth:stacks.stacks)]개의 금화가 들어있습니다!",
-            "label": "gold"
+            "label": "황금"
          },
          "dusty_tome": {
             "display_name": "먼지투성이 책",
@@ -7099,7 +7099,7 @@
                "description": "Holds remains of the dead"
             },
             "tombstone": {
-               "display_name": "A Tombstone",
+               "display_name": "묘비",
                "description": "Where undead are born"
             },
             "stone_pillar_fence": {
@@ -7113,7 +7113,7 @@
          },
          "rabbit": {
             "display_name": "...",
-            "description": "A Rabbit"
+            "description": "토끼"
          },
          "ogres": {
             "ogre": {
@@ -7160,7 +7160,7 @@
          "dragon_whelp": {
             "display_name": "Rabbit",
             "description": "Om nom nom",
-            "species": "dragon"
+            "species": "용"
          },
          "kitten": {
             "display_name": "고양이",
@@ -7190,7 +7190,7 @@
                "description": "Lined up in neat rows."
             },
             "carrot_serving": {
-               "display_name": "A carrot",
+               "display_name": "당근",
                "description": "Tiny. Bitter."
             }
          },
@@ -7222,7 +7222,7 @@
                "description": "Juicy and exciting!"
             },
             "turnip_serving": {
-               "display_name": "A Turnip",
+               "display_name": "순무",
                "description": "Tiny. Bitter."
             }
          },
@@ -7792,10 +7792,10 @@
          },
          "bow": {
             "display_name": "활",
-            "description": "Used by an archer for shooting arrows",
+            "description": "궁수가 화살을 쏘기 위해 사용됩니다.",
             "bow_talisman": {
                "display_name": "궁수의 활",
-               "description": "Required to promote a Footman to an Archer"
+               "description": "보병을 궁수로 전직시키기 위해 필요합니다."
             }
          },
          "arrow": {
@@ -8081,7 +8081,7 @@
             },
             "blacksmith_hammer_talisman": {
                "display_name": "대장장이의 망치",
-               "description": "Required to promote a hearthling to a blacksmith."
+               "description": "하슬링을 대장장이로 전직시키기 위해 필요합니다."
             }
          },
          "blacksmith_outfit": {
@@ -8398,7 +8398,7 @@
             },
             "not_much_of_a_bed_recipe": {
                "description": "바닥에서 자는 것보다는 좀 더 편안하다.",
-               "recipe_name": "일반적인 침대",
+               "recipe_name": "평범한 침대",
                "flavor": "괴롭진 않지만 약간 부족하다. 딱 그 정도다."
             },
             "park_bench_recipe": {
@@ -8561,7 +8561,7 @@
             },
             "safety_standard_recipe": {
                "description": "안전 구역을 지정할 때 사용됩니다.",
-               "recipe_name": "나무 안전 기준"
+               "recipe_name": "안전 표지판"
             },
             "wooden_tunnel_door_recipe": {
                "recipe_name": "나무 터널 문",
@@ -9068,18 +9068,18 @@
          },
          "recipes": {
             "bird_bath_recipe": {
-               "description": "A decorative stone vase with water for the birdies.",
-               "recipe_name": "Bird Bath",
-               "flavor": "Not a chair."
+               "description": "새들을 위해 물을 받아둔 석재 물통입니다.",
+               "recipe_name": "새 물통",
+               "flavor": "의자가 필요하지 않습니다."
             },
             "blacksmith_hammer_recipe": {
                "description": "하슬링을 대장장이로 전직시키기 위해 필요합니다.",
-               "recipe_name": "Blacksmith's Hammer",
+               "recipe_name": "대장장이의 망치",
                "flavor": "From the dragon that lives in the forge, weapons and armor, defense and conquest."
             },
             "potter_cutter_recipe": {
-               "description": "Allows a hearthling to make tools and goods from clay.",
-               "recipe_name": "Potter's Cutter",
+               "description": "하슬링이 점토를 이용해 도구와 상품들을 만들도록 해줍니다.",
+               "recipe_name": "도예가의 칼",
                "flavor": "And Monkey struck the earth with his staff. 'For you are my children, he said, and you shall want for nothing.'"
             },
             "cobblestone_fence_gate_recipe": {
@@ -9109,9 +9109,9 @@
             "weapons_name": "무기",
             "furniture_name": "가구",
             "stone_bench_recipe": {
-               "description": "Outdoor seating for moments of relaxation.",
-               "recipe_name": "Stone Bench",
-               "flavor": "Pretty and functional. Matches the tombstones."
+               "description": "밖에 앉아서 휴식을 취할 수 있습니다",
+               "recipe_name": "석재 벤치",
+               "flavor": "예쁘고 실용적입니다. 비석과 어울립니다."
             },
             "stone_brazier_recipe": {
                "description": "밤에 편안함과 온기를 제공하는 작은 불등입니다.",
