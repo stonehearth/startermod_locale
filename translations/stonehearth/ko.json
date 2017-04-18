@@ -7420,7 +7420,7 @@
                "description": "나무로부터 나온 원목입니다."
             },
             "oak_log": {
-               "display_name": "오크나무 원목",
+               "display_name": "참나무 원목",
                "description": "나무로부터 나온 원목입니다."
             },
             "pine_log": {
@@ -7646,7 +7646,7 @@
                "description": "It radiates a mysterious aura"
             },
             "large_oak_tree": {
-               "display_name": "큰 오크 트리",
+               "display_name": "큰 참나무",
                "description": "몇백년은 됐군요. 안타까워..."
             },
             "medium_oak_tree": {
