@@ -765,56 +765,56 @@
                "wall": {
                   "material": "벽 재질",
                   "wood_resource": "나무 벽",
-                  "stone_resource": "석재 벽",
+                  "stone_resource": "석조 벽",
                   "clay_resource": "점토 벽",
                   "clay_brick_resource": "벽돌 벽"
                },
                "foundation": {
                   "material": "토대 재질",
                   "wood_resource": "나무 토대",
-                  "stone_resource": "석재 토대",
+                  "stone_resource": "석조 토대",
                   "clay_resource": "점토 토대",
                   "clay_brick_resource": "벽돌 토대"
                },
                "slab": {
                   "material": "블럭 재질",
                   "wood_resource": "나무 블럭",
-                  "stone_resource": "석재 블럭",
+                  "stone_resource": "석조 블럭",
                   "clay_resource": "점토 블럭",
                   "clay_brick_resource": "벽돌 블럭"
                },
                "floor": {
                   "material": "바닥 재질",
                   "wood_resource": "나무 바닥",
-                  "stone_resource": "석재 바닥",
+                  "stone_resource": "석조 바닥",
                   "clay_resource": "점토 바닥",
                   "clay_brick_resource": "벽돌 바닥"
                },
                "roof": {
                   "material": "지붕 재질",
                   "wood_resource": "나무 지붕",
-                  "stone_resource": "석재 지붕",
+                  "stone_resource": "석조 지붕",
                   "clay_resource": "점토 지붕",
                   "clay_brick_resource": "벽돌 지붕"
                },
                "column": {
                   "material": "기둥 재질",
                   "wood_resource": "나무 기둥",
-                  "stone_resource": "석재 기둥",
+                  "stone_resource": "석조 기둥",
                   "clay_resource": "점토 기둥",
                   "clay_brick_resource": "벽돌 기둥"
                },
                "road": {
                   "material": "길 재질",
                   "wood_resource": "나무 길",
-                  "stone_resource": "석재 길",
+                  "stone_resource": "석조 길",
                   "clay_resource": "점토 길",
                   "clay_brick_resource": "벽돌 길"
                },
                "stairs": {
                   "material": "계단 재질",
                   "wood_resource": "나무 계단",
-                  "stone_resource": "석재 계단",
+                  "stone_resource": "석조 계단",
                   "clay_resource": "점토 계단",
                   "clay_brick_resource": "벽돌 계단"
                }
@@ -5313,14 +5313,14 @@
          },
          "stone_tunnel_door": {
             "stone_tunnel_door_ghost": {
-               "display_name": "Stone Tunnel Door",
-               "description": "Useful for sealing off mine tunnels."
+               "display_name": "석조 터널 문",
+               "description": "광산 터널을 봉쇄할 때 유용하다."
             }
          },
          "clay_tunnel_door": {
             "clay_tunnel_door_ghost": {
-               "display_name": "Clay Tunnel Door",
-               "description": "Useful for sealing off mine tunnels"
+               "display_name": "점토 터널 문",
+               "description": "광산 터널을 봉쇄할 때 유용하다."
             }
          },
          "iron_door": {
@@ -5451,7 +5451,7 @@
          },
          "stone_chest": {
             "stone_chest_ghost": {
-               "display_name": "석재 상자",
+               "display_name": "석조 상자",
                "description": "Storage container"
             }
          },
@@ -6749,19 +6749,19 @@
          },
          "stone_bench": {
             "stone_bench_ghost": {
-               "display_name": "석재 벤치",
+               "display_name": "석조 벤치",
                "description": "밖에 앉아서 휴식을 취할 수 있습니다."
             }
          },
          "stone_chair": {
             "stone_chair_ghost": {
-               "display_name": "석재 의자",
+               "display_name": "석조 의자",
                "description": "앉기 위해서"
             }
          },
          "stone_table": {
             "stone_table_ghost": {
-               "display_name": "석재 테이블",
+               "display_name": "석조 테이블",
                "description": "중압감을 더해주는 무게를 가졌다."
             }
          },
@@ -7446,7 +7446,7 @@
                "description": "An herb commonly used for medicinal purposes"
             },
             "frostsnap": {
-               "display_name": "Frostsnap Flowers",
+               "display_name": "프로스트스냅 꽃",
                "description": "An herb that's chill to the touch"
             },
             "cactus_flower": {
@@ -7552,68 +7552,68 @@
       },
       "toys": {
          "ball": {
-            "display_name": "Leather ball"
+            "display_name": "가죽 공"
          },
          "plushie_toy_rabbit": {
             "plushie_toy_rabbit_ghost": {
-               "display_name": "Plushie Toy Rabbit",
-               "description": "A toy... for children of course."
+               "display_name": "부드러운 토끼 장난감",
+               "description": "장난감이야... 물론 아이들을 위한거지."
             }
          }
       },
       "trees": {
          "juniper_tree": {
             "ancient_juniper_tree": {
-               "display_name": "Ancient Juniper Tree",
-               "description": "It radiates a mysterious aura"
+               "display_name": "고대 향나무",
+               "description": "신비로운 기운을 내뿜고 있어."
             },
             "large_juniper_tree": {
-               "display_name": "Large Juniper Tree",
-               "description": "An impressive specimen."
+               "display_name": "큰 향나무",
+               "description": "인상적인 표본이야."
             },
             "medium_juniper_tree": {
-               "display_name": "Juniper Tree",
-               "description": "Strong and tall."
+               "display_name": "향나무",
+               "description": "강하고 커."
             },
             "small_juniper_tree": {
-               "display_name": "Small Juniper Tree",
-               "description": "Just a sapling."
+               "display_name": "작은 노간주나무",
+               "description": "아직 어려."
             }
          },
          "palm_tree": {
             "large_palm_tree": {
-               "display_name": "Large Palm Tree",
-               "description": "An impressive specimen."
+               "display_name": "큰 야자나무",
+               "description": "인상적인 표본이야."
             },
             "small_palm_tree": {
-               "display_name": "Small Palm Tree",
-               "description": "Just a sapling."
+               "display_name": "작은 야자나무",
+               "description": "아직 어려."
             }
          },
          "acacia_tree": {
             "large_acacia_tree": {
-               "display_name": "Large Acacia Tree",
-               "description": "It radiates a mysterious aura"
+               "display_name": "큰 아카시아 나무",
+               "description": "신비로운 기운을 내뿜고 있어."
             },
             "small_acacia_tree": {
-               "display_name": "Small Acacia Tree",
-               "description": "Young, but hearty"
+               "display_name": "작은 아카시아 나무",
+               "description": "어리지만 원기 왕성해."
             },
             "sapling_acacia_tree": {
-               "description": "Baby acacia tree.",
+               "description": "아기 아카시아 나무",
                "sapling_acacia_tree_ghost": {
-                  "display_name": "Acacia Tree Sapling",
-                  "description": "Baby acacia tree."
+                  "display_name": "아카시아 나무 묘목",
+                  "description": "아기 아카시아 나무"
                },
                "sapling_acacia_tree_iconic": {
-                  "description": "Plant it in the earth and watch it grow."
+                  "description": "땅에 심고 자라는 것을 지켜보자."
                }
             }
          },
          "joshua_tree": {
             "large_joshua_tree": {
-               "display_name": "Large Joshua Tree",
-               "description": "A curious tree"
+               "display_name": "큰 조슈아 나무",
+               "description": "기이한 나무야."
             }
          },
          "pine_tree": {
@@ -7622,18 +7622,18 @@
                "description": "몇백년은 됐군요. 안타까워.."
             },
             "medium_pine_tree": {
-               "display_name": "Medium Pine Tree",
-               "description": "Sturdy, in the prime of life."
+               "display_name": "중형 소나무",
+               "description": "튼튼함의 전성기에게 있어."
             },
             "small_pine_tree": {
-               "display_name": "Small Pine Tree",
-               "description": "Just a sapling."
+               "display_name": "작은 소나무",
+               "description": "아직 어려."
             }
          },
          "cactus_tree": {
             "large_cactus_tree": {
-               "display_name": "Large Cactus",
-               "description": "An impressive specimen."
+               "display_name": "큰 선인장",
+               "description": "인상적인 표본이야."
             },
             "small_cactus_tree": {
                "display_name": "작은 선인장",
@@ -7642,29 +7642,29 @@
          },
          "oak_tree": {
             "ancient_oak_tree": {
-               "display_name": "Ancient Oak Tree",
-               "description": "It radiates a mysterious aura"
+               "display_name": "고대 참나무",
+               "description": "신비로운 기운을 내뿜고 있어."
             },
             "large_oak_tree": {
                "display_name": "큰 참나무",
                "description": "몇백년은 됐군요. 안타까워..."
             },
             "medium_oak_tree": {
-               "display_name": "Medium Oak Tree",
-               "description": "Sturdy, in the prime of life."
+               "display_name": "중형 참나무",
+               "description": "튼튼함의 전성기에게 있어."
             },
             "small_oak_tree": {
-               "display_name": "Small Oak Tree",
-               "description": "Slightly larger than a sapling."
+               "display_name": "작은 참나무",
+               "description": "묘목보다 약간 더 크다."
             },
             "sapling_oak_tree": {
-               "description": "Plant it in the earth and watch it grow.",
+               "description": "아기 참나무",
                "sapling_oak_tree_ghost": {
-                  "display_name": "Oak Tree Sapling",
-                  "description": "Plant it in the earth and watch it grow."
+                  "display_name": "참나무 묘목",
+                  "description": "아기 참나무"
                },
                "sapling_oak_tree_iconic": {
-                  "description": "Plant it in the earth and watch it grow."
+                  "description": "땅에 심고 자라는 것을 지켜보자."
                }
             }
          }
@@ -8069,7 +8069,7 @@
          "blacksmith_forge": {
             "blacksmith_forge_ghost": {
                "display_name": "용광로",
-               "description": "금속을 녹이기 위한 석재 오븐"
+               "description": "금속을 녹이기 위한 석조 오븐"
             }
          },
          "blacksmith_hammer": {
@@ -8627,7 +8627,7 @@
             "description": "요리사는 채소와 고기로 맛있고 푸짐한 식사를 제공합니다.",
             "requirements": "석공으로 제작 가능.",
             "workshop": {
-               "name": "석재 가마솥",
+               "name": "석조 가마솥",
                "long_description": "엄청나고 무거운 냄비, 한 번에 잔치를 준비하는 데 적합합니다!"
             },
             "level_6_data": {
@@ -8670,7 +8670,7 @@
          },
          "cook_workbench": {
             "cook_workbench_ghost": {
-               "display_name": "석재 가마솥",
+               "display_name": "석조 가마솥",
                "description": "더욱 맛있는 요리를 만들 때 사용됩니다."
             }
          },
@@ -8737,7 +8737,7 @@
             "workbenches_name": "작업대",
             "cook_workbench_recipe": {
                "description": "영양가 가득한 스프와 스튜를 만들기 위해 사용됩니다.",
-               "recipe_name": "석재 가마솥",
+               "recipe_name": "석조 가마솥",
                "flavor": "돌로 만들어 음식을 오랫동안 따뜻하게 유지시켜 줍니다."
             },
             "cook_mill_recipe": {
@@ -8746,7 +8746,7 @@
             },
             "cook_oven_recipe": {
                "description": "굽는 것에 적합합니다.",
-               "recipe_name": "석재 오븐"
+               "recipe_name": "석조 오븐"
             },
             "corn_meal_recipe": {
                "description": "옥수수를 갈아서 좋은 가루로 만드세요.",
@@ -8776,7 +8776,7 @@
          },
          "cook_oven": {
             "cook_oven_ghost": {
-               "display_name": "석재 오븐",
+               "display_name": "석조 오븐",
                "description": "굽는 것에 적합합니다."
             }
          }
@@ -9068,7 +9068,7 @@
          },
          "recipes": {
             "bird_bath_recipe": {
-               "description": "새들을 위해 물을 받아둔 석재 물통입니다.",
+               "description": "새들을 위해 물을 받아둔 석조 물통입니다.",
                "recipe_name": "새 물통",
                "flavor": "의자가 필요하지 않습니다."
             },
@@ -9104,13 +9104,13 @@
             },
             "tools_name": "도구",
             "storage_name": "저장고",
-            "signage_decoration_name": "Signage & Decoration",
+            "signage_decoration_name": "신호 & 장식",
             "building_parts_name": "건축 자재",
             "weapons_name": "무기",
             "furniture_name": "가구",
             "stone_bench_recipe": {
                "description": "밖에 앉아서 휴식을 취할 수 있습니다",
-               "recipe_name": "석재 벤치",
+               "recipe_name": "석조 벤치",
                "flavor": "예쁘고 실용적입니다. 비석과 어울립니다."
             },
             "stone_brazier_recipe": {
@@ -9119,38 +9119,38 @@
                "flavor": "경고 : 켜져 있는 동안 어떤 것도 떨어뜨리지 마세요."
             },
             "stone_bricks_recipe": {
-               "description": "A key component of stone structures like castles and roads.",
+               "description": "성이나 길과 같은 석조 구조물의 핵심적인 재료이다.",
                "recipe_name": "Stack of Stone Bricks",
                "flavor": "Tis a lucky thing, boy, that the square is the natural shape within most rocks. --Garen Knapper"
             },
             "stone_chair_recipe": {
-               "description": "Not horribly comfortable, but a symbol of status.",
-               "recipe_name": "Stone Chair",
-               "flavor": "Outdoorsy!"
+               "description": "엄청 편안하지 않지만, 지위의 상징이다.",
+               "recipe_name": "석조 의자",
+               "flavor": "야외에 적합하다!"
             },
             "stone_chest_recipe": {
-               "description": "Imposing place to put up to 64 things.",
-               "recipe_name": "Stone Chest",
+               "description": "64개의 물건을 넣을 수 있는 인상적인 상자입니다.",
+               "recipe_name": "석조 상자",
                "flavor": "'Listen up, kid. All the chests in Hemgorir-Under-Mountain looked like this.'--Edolf, Wandering Bard"
             },
             "stone_garden_lantern_recipe": {
-               "description": "An ancient-looking lantern with great ambiance.",
-               "recipe_name": "Stone Garden Lantern",
-               "flavor": "Only slightly ominous looking."
+               "description": "좋은 분위기를 내는 고대의 느낌이 나는 랜턴이다.",
+               "recipe_name": "석조 정원 랜턴",
+               "flavor": "약간 불안한 표정이군요,"
             },
             "stone_maul_recipe": {
-               "description": "The perfect tool for bludgeoning",
+               "description": "패기 위한 완벽한 도구입니다.",
                "recipe_name": "Stone Maul",
-               "flavor": "A modern adaptation of an ancient weapon."
+               "flavor": "고대 무기의 현대적 각색"
             },
             "stone_table_recipe": {
                "description": "It's considerable weight gives it a sense of gravitas. For serious business only.",
-               "recipe_name": "Stone Table",
-               "flavor": "No lions were harmed in its construction."
+               "recipe_name": "석조",
+               "flavor": "어떠한 사자라도 이 것에 의해 다친다."
             },
             "stone_wall_lantern_recipe": {
-               "description": "Attaches to the walls of buildings, providing light",
-               "recipe_name": "Stone Wall-Mounted Lantern",
+               "description": "건물의 벽에 붙어서 빛을 제공한다.",
+               "recipe_name": "벽걸이형 석조 랜턴",
                "flavor": "Cons: Heavy. Pros: Unlikely to burn itself down."
             },
             "tower_brazier_recipe": {
@@ -9159,8 +9159,8 @@
                "flavor": "Great for lining garden paths and intimidating guests."
             },
             "mason_workbench_recipe": {
-               "description": "Required to produce most of the Mason's recipes.",
-               "recipe_name": "Mason Workbench",
+               "description": "석공의 작업 중 대부분을 진행하기 위해서 필요합니다.",
+               "recipe_name": "석공의 작업대",
                "flavor": "Tappety-tap; Make the earth sing, Raise Brelor's ghost, Watch the mountain take wing."
             },
             "mason_pedestal_recipe": {
@@ -9168,19 +9168,19 @@
                "recipe_name": "Mason's Pedestal",
                "flavor": "Snap and spark, hiss of coal, light the way, transmute the earth whole."
             },
-            "workbenches_name": "Workbenches",
+            "workbenches_name": "작업대",
             "stone_pile_recipe": {
-               "recipe_name": "Stone Pile",
-               "description": "A pile of rocks stacked together. An excellent way to store lots of stone for later use."
+               "recipe_name": "돌 더미",
+               "description": "돌들이 함께 쌓여있습니다. 수많은 돌들을 저장할 수 있는 훌륭한 방법입니다."
             },
             "stone_tunnel_door_recipe": {
-               "description": "Useful for sealing off mine tunnels.",
-               "recipe_name": "Stone Tunnel Door"
+               "description": "광산 터널을 봉쇄할 때 유용하다.",
+               "recipe_name": "석조 터널 문"
             },
             "firepit_recipe": {
-               "recipe_name": "Stone Firepit",
-               "description": "The heart of your town",
-               "flavor": "Fire is life, ashes are death, in these stones, the story of our people. -- Cid"
+               "recipe_name": "석조 화덕",
+               "description": "당신의 마을의 중심이다.",
+               "flavor": "불은 삶이고, 재는 죽음이다. 우리들의 이야기다. -- 시드"
             },
             "valor_statue_recipe": {
                "description": "A monument to your town's military might",
@@ -9401,8 +9401,8 @@
                "flavor": "'Cut off his hand? For theft? What would be the point?' --Talidor Roq, Knight of Mysteries "
             },
             "clay_tunnel_door_recipe": {
-               "description": "Useful for sealing off mine tunnels.",
-               "recipe_name": "Clay Tunnel Door",
+               "description": "광산 터널을 봉쇄할 때 유용하다.",
+               "recipe_name": "점토 터널 문",
                "flavor": "Speak friend and enter.... oh no wait it's not locked. - Eber, Potter's Apprentice"
             },
             "tan_latticed_window_recipe": {
