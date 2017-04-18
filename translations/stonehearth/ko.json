@@ -1044,7 +1044,7 @@
                "029": "규제를 조정하는 중...",
                "030": "양털을 깎는 중...",
                "031": "뇌를 자극하는 중...",
-               "032": "포요들이 삐져 나오는 중..."
+               "032": "닭들이 삐져 나오는 중..."
             },
             "tips": {
                "000": "만약 당신의 일꾼들이 갇힌다면, 당신은 사다리를 지어서 그들을 꺼낼 수 있습니다!",
@@ -1502,8 +1502,8 @@
                "000": "팔먼 사막"
             },
             "sandy_poyo": {
-               "display_name": "사막 포요",
-               "species": "포요"
+               "display_name": "사막 닭",
+               "species": "닭"
             },
             "fennec_fox": {
                "display_name": "사막 여우",
@@ -1891,7 +1891,7 @@
                               "001": "I envoy of Ogo Skullbonker, tamer of Mountains! Ogo demand many thing from all, include you, include your gold!",
                               "002": "My Chief-of-Chiefs, Ogo Skullbonker, soon rule take Glittering Army and rule all of Red Kiln! You next of many conquests. You become our goldfarmers!",
                               "003": "I am Bannergoblin of Ogo Skullbonker, rider of Mountain! My master demand you tribute, in form of all you have! You give everything! Or you pay!",
-                              "004": "나는 오고 스컬본커의 기수다! 너가 우리의 족장을 돕는다면 Ogo의 눈은 너를 바라볼 것이다! 그리고 Ogo의 눈은 모든 것을 안다! 공물을 바쳐라, 아니면 눈은 너의 종말을 볼 것이다!"
+                              "004": "나는 오고 스컬본커의 기수다! 너가 우리의 족장을 돕는다면 오고의 눈은 너를 바라볼 것이다! 그리고 오고의 눈은 모든 것을 안다! 공물을 바쳐라, 아니면 눈은 너의 종말을 볼 것이다!"
                            },
                            "bulletin_title": "The goblin straightens",
                            "dialog_title": "오고의 기수"
@@ -2324,8 +2324,8 @@
                                        },
                                        "bulletin_title": "Erdene considers",
                                        "dialog_title": "Erdene, Red Kiln Scout",
-                                       "choice_000": "Ogo's what?",
-                                       "choice_001": "Will you fight with us?"
+                                       "choice_000": "오고가 누군데?",
+                                       "choice_001": "우리랑 싸우고 싶어?"
                                     },
                                     "ogo_poem_2": {
                                        "bulletin_message": {
@@ -2398,7 +2398,7 @@
                                     },
                                     "mountain_notices_2": {
                                        "bulletin_message": {
-                                          "000": "Ogo?"
+                                          "000": "오고?"
                                        },
                                        "bulletin_title": "Mountain looks around in horror",
                                        "dialog_title": "Mountain the Ogre",
@@ -5522,17 +5522,17 @@
       },
       "critters": {
          "poyo": {
-            "display_name": "포요",
+            "display_name": "닭",
             "description": "포동포동하고 맛있어 보이는 야생의 새",
             "poyo_egg": {
-               "display_name": "수정된 포요 알",
+               "display_name": "수정된 달걀",
                "description": "아직 부화하지 않았나요?"
             },
             "young": {
-               "display_name": "새끼 포요",
+               "display_name": "병아리",
                "description": "삐약! 삐약!"
             },
-            "species": "포요"
+            "species": "닭"
          },
          "rabbit": {
             "display_name": "토끼",
@@ -5583,30 +5583,30 @@
             "species": "늑대"
          },
          "woodchuck": {
-            "display_name": "Woodchuck",
-            "description": "A voracious eater of almost everything, especially logs.",
-            "species": "woodchuck"
+            "display_name": "마못",
+            "description": "모든 것을 게걸스럽게 먹고, 특히 ",
+            "species": "마못"
          }
       },
       "crops": {
          "brightbell_crop": {
-            "display_name": "Brightbell Flower",
-            "description": "회복에 사용되는 허브",
+            "display_name": "브라이트벨 꽃",
+            "description": "약초에 사용할 수 있어.",
             "growth_stage": {
                "001": {
-                  "name": "Brightbell Sprout",
-                  "description": "Stubby."
+                  "name": "싹이 튼 브라이브벨",
+                  "description": "짤막해"
                },
                "003": {
-                  "name": "Brightbell",
-                  "description": "Beauty is its own reward."
+                  "name": "브라이트벨",
+                  "description": "아름다움 그 자체이다."
                },
                "000": {
-                  "name": "Brightbell Seedling",
-                  "description": "Full of potential."
+                  "name": "브라이트벨 모종",
+                  "description": "가능성이 가득해."
                },
                "002": {
-                  "name": "Brightbell Bud",
+                  "name": "브라이트벨 싹",
                   "description": "Awkward, gangly stage."
                }
             }
@@ -5664,24 +5664,24 @@
             }
          },
          "frostsnap_crop": {
-            "display_name": "Frostsnap Flower",
-            "description": "Can be used as a healing herb",
+            "display_name": "프로스트스냅 꽃",
+            "description": "약초에 사용할 수 있어.",
             "growth_stage": {
                "001": {
-                  "name": "Frostsnap Sprout",
-                  "description": "Stubby."
+                  "name": "싹이 튼 프로스트스냅",
+                  "description": "짤막해."
                },
                "003": {
-                  "name": "Frostsnap",
-                  "description": "Mysteriously cool."
+                  "name": "프로스트스냅",
+                  "description": "신비로원 시원함이 느껴져"
                },
                "000": {
-                  "name": "Frostsnap Seedling",
-                  "description": "Full of potential."
+                  "name": "프로스트스냅 모종",
+                  "description": "가능성이 가득해."
                },
                "002": {
-                  "name": "Frostsnap Bud",
-                  "description": "Like a baby snowflake."
+                  "name": "프로스트스냅 싹",
+                  "description": "아기 눈송이 같아."
                }
             }
          },
@@ -5742,53 +5742,53 @@
             "description": "자라는데 시간이 걸리지만, 먹는게 굉장히 즐겁습니다!",
             "growth_stage": {
                "003": {
-                  "name": "Ripe watermelon",
-                  "description": "Delicious!"
+                  "name": "잘 익은 수박",
+                  "description": "맛있어!"
                },
                "002": {
-                  "name": "Baby watermelon",
-                  "description": "Not edible yet!"
+                  "name": "아기 수박",
+                  "description": "아직은 먹지 못해."
                },
                "001": {
-                  "name": "Watermelon Sprout",
-                  "description": "Not edible yet!"
+                  "name": "싹이 튼 수박",
+                  "description": "아직은 먹지 못해."
                },
                "000": {
-                  "name": "Watermelon Seedling",
-                  "description": "A unrealized watermelon."
+                  "name": "수박 모종",
+                  "description": "아직 덜 자랐어."
                },
                "011": {
-                  "name": "Rotten watermelon",
+                  "name": "썩은 수박",
                   "description": "케케묵고 역겨워."
                }
             }
          },
          "silkweed_crop": {
-            "display_name": "Silkweed",
-            "description": "This plant's fiber can be spun into thread",
+            "display_name": "인주솜풀",
+            "description": "이 식물의 섬유는 실로 만들 수 있습니다.",
             "growth_stage": {
                "004": {
-                  "name": "Mature silkweed",
-                  "description": "Ready for weaving!"
+                  "name": "다 자란 인주솜풀",
+                  "description": "옷감을 짤 준비가 됐어요!"
                },
                "001": {
-                  "name": "Silkweed sprout",
-                  "description": "Sprout, little one!"
+                  "name": "싹이 튼 인주솜풀",
+                  "description": "작은 새싹!"
                },
                "000": {
-                  "name": "Silkweed seedling",
-                  "description": "Still a long way to grow."
+                  "name": "인주솜풀 모종",
+                  "description": "자라려면 아직 멀었어."
                },
                "019": {
-                  "name": "Rotten silkweed"
+                  "name": "썩은 인주솜풀"
                },
                "003": {
-                  "name": "Immature silkweed",
-                  "description": "Flossy hairs are beginning to emerge"
+                  "name": "덜 자란 인주솜풀",
+                  "description": "풀솜이 자라기 시작했어."
                },
                "002": {
-                  "name": "Stubby silkweed",
-                  "description": "Look at those follicles!"
+                  "name": "짤막한 인주솜풀",
+                  "description": "저 작은 것들을 봐!"
                }
             }
          },
@@ -5801,7 +5801,7 @@
                "growth_stage": {
                   "001": {
                      "name": "Ripe Tester",
-                     "description": "Delicious!"
+                     "description": "맛있어!"
                   },
                   "000": {
                      "name": "Tester Seedling",
@@ -5812,7 +5812,7 @@
             "growth_stage": {
                "001": {
                   "name": "Ripe Tester",
-                  "description": "Delicious!"
+                  "description": "맛있어!"
                },
                "000": {
                   "name": "Tester Seedling",
@@ -5839,22 +5839,22 @@
             "description": "This plant's fiber can be spun into thread",
             "growth_stage": {
                "004": {
-                  "name": "Mature silkweed"
+                  "name": "다 자란 인주솜풀"
                },
                "001": {
-                  "name": "Silkweed sprout"
+                  "name": "싹이 튼 인주솜풀"
                },
                "000": {
-                  "name": "Silkweed seedling"
+                  "name": "인주솜풀 모종"
                },
                "019": {
-                  "name": "Rotten silkweed"
+                  "name": "썩은 인주솜풀"
                },
                "003": {
-                  "name": "Immature silkweed"
+                  "name": "덜 자란 인주솜풀"
                },
                "002": {
-                  "name": "Stubby silkweed"
+                  "name": "짤막한 인주솜풀"
                }
             }
          },
@@ -5894,15 +5894,15 @@
                },
                "002": {
                   "name": "덜 익은 밀",
-                  "description": "수확할 준비가 되지 않았습니다."
+                  "description": "수확할 준비가 되지 않았어."
                },
                "001": {
                   "name": "싹이 튼 밀",
-                  "description": "수확할 준비가 되지 않았습니다."
+                  "description": "수확할 준비가 되지 않았어."
                },
                "000": {
                   "name": "밀 모종",
-                  "description": "수확할 준비가 되지 않았습니다."
+                  "description": "수확할 준비가 되지 않았어."
                },
                "011": {
                   "name": "밀 껍질",
@@ -5916,11 +5916,11 @@
             "growth_stage": {
                "001": {
                   "name": "참나무 모종",
-                  "description": "이제야 시작했습니다."
+                  "description": "이제 막 시작했어."
                },
                "003": {
                   "name": "참나무 묘목",
-                  "description": "더 큰 곳으로 갈 준비가 되었습니다."
+                  "description": "더 큰 곳으로 갈 준비가 됐어."
                },
                "000": {
                   "name": "도토리",
@@ -5928,85 +5928,85 @@
                },
                "002": {
                   "name": "싹이 튼 참나무",
-                  "description": "Reach for the sun, little oakling."
+                  "description": "태양으로 뻗어나가라, 작은 참나무야."
                }
             }
          },
          "acacia_tree_crop": {
-            "display_name": "Acacia Tree Sapling",
-            "description": "Out of trees? Get ready to participate in reforestation.",
+            "display_name": "아카시아 나무 묘목",
+            "description": "나무에서 떨어져 나왔냐고? 다시 심을 준비나 합시다.",
             "growth_stage": {
                "001": {
-                  "name": "Acacia Tree Seedling",
-                  "description": "It's just getting started."
+                  "name": "아카시아 나무 모종",
+                  "description": "이제 막 시작했어."
                },
                "003": {
-                  "name": "Acacia Tree Sapling",
-                  "description": "Ready to be transferred to a bigger plot."
+                  "name": "아카시아 나무 묘목",
+                  "description": "더 큰 곳으로 갈 준비가 됐어."
                },
                "000": {
                   "name": "Seed Pod",
-                  "description": "Even a mighty tree has humble beginnings."
+                  "description": "심지어 큰 나무도 초라한 시작을 한답니다."
                },
                "002": {
-                  "name": "Acacia Tree Sprout",
-                  "description": "Perfect size for a baby giraffe."
+                  "name": "싹이 튼 아카시아 나무",
+                  "description": "아기 기린 같은 완벽한 크기야."
                }
             }
          },
          "golden_gourd_crop": {
             "display_name": "Golden Gourd Crop",
-            "description": "Much prettier than it is tasty",
+            "description": "맛있는 것보다 더 매력적이야.",
             "growth_stage": {
                "003": {
-                  "name": "Green Gourds",
-                  "description": "Too bitter to eat"
+                  "name": "녹색 박",
+                  "description": "먹기엔 너무 써."
                },
                "002": {
                   "name": "Proto-Gourds",
-                  "description": "Full of promise"
+                  "description": "아주 잘 될 것 같아."
                },
                "005": {
-                  "name": "Golden Gourds",
-                  "description": "Harvest now!"
+                  "name": "황금 박",
+                  "description": "지금 수확해!"
                },
                "004": {
-                  "name": "Green Gourds",
-                  "description": "Almost ripe!"
+                  "name": "녹색 박",
+                  "description": "거의 다 익었어!"
                },
                "001": {
-                  "name": "Tiny Vine",
-                  "description": "Clingy"
+                  "name": "아주 작은 포도나무",
+                  "description": "들러붙어서 떨어지지 않아."
                },
                "000": {
                   "name": "Seedling!",
                   "description": "Just a tinly little stub"
                },
                "011": {
-                  "name": "Rotten Gourds",
+                  "name": "썩은 박",
                   "description": "Sadly inedible"
                }
             }
          },
          "cactus_flower_crop": {
-            "description": "The flowers have medicinal properties",
-            "display_name": "Cactus Flower",
+            "description": "이 꽃은 약효가 있어.",
+            "display_name": "선인장 꽃",
             "growth_stage": {
                "000": {
-                  "name": "Cactus Bud",
-                  "description": "Starting to grow"
+                  "name": "선인장 싹",
+                  "description": "자라기 시작했어."
                },
                "001": {
-                  "name": "Young Cactus",
-                  "description": "Starting to get prickly"
+                  "name": "어린 선인장",
+                  "description": "가시로 덮이기 시작했어."
                },
                "002": {
-                  "name": "Mature Cactus",
-                  "description": "Wait for its flower to bloom"
+                  "name": "다 자란 선인장",
+                  "description": "꽃이 필 때까지 기다려."
                },
                "003": {
-                  "name": "Flowering Cactus",
-                  "description": "Ready for harvesting"
+                  "name": "꽃이 핀 선인장",
+                  "description": "수확 준비 완료"
                }
             }
          }
@@ -6014,29 +6014,29 @@
       "decoration": {
          "banner_wall_big": {
             "banner_wall_big_ghost": {
-               "display_name": "Big Wall Banner",
-               "description": "Show your town pride with this banner."
+               "display_name": "큰 벽 배너",
+               "description": "이 배너로 여러분의 마을을 자랑하세요."
             }
          },
          "banner_wall_small": {
             "banner_wall_small_ghost": {
-               "display_name": "Small Wall Banner",
-               "description": "Show your town pride with this banner."
+               "display_name": "작은 벽 배너",
+               "description": "이 배너로 여러분의 마을을 자랑하세요."
             }
          },
          "bird_bath": {
             "bird_bath_ghost": {
-               "display_name": "Bird Bath",
-               "description": "Tranquil."
+               "display_name": "새 물통",
+               "description": "평온해."
             }
          },
          "crate": {
-            "display_name": "A crate"
+            "display_name": "상자"
          },
          "curtains": {
             "curtains_ghost": {
-               "display_name": "Curtains",
-               "description": "Dresses up a window."
+               "display_name": "커튼",
+               "description": "창문을 꾸며줍니다."
             }
          },
          "firepit": {
@@ -6952,17 +6952,17 @@
                "description": "And this is the smaller variety..."
             },
             "wolf": {
-               "display_name": "Untamed Wolf",
+               "display_name": "야생 늑대",
                "description": "으르르! 왈!"
             }
          },
          "goblins": {
             "decoration": {
                "banner": {
-                  "display_name": "A banner"
+                  "display_name": "배너"
                },
                "skull_stake": {
-                  "display_name": "A stake"
+                  "display_name": "말뚝"
                }
             },
             "goblin": {
@@ -8676,69 +8676,69 @@
          },
          "recipes": {
             "flour_recipe": {
-               "description": "A necessary ingredient for all kinds of bread.",
-               "recipe_name": "Sack of Flour"
+               "description": "모든 종류의 빵에 필요한 재료입니다.",
+               "recipe_name": "밀가루 한 포대"
             },
             "meat_stew_recipe": {
-               "description": "Hearty, satisfying, and perfect to ease the passing of a cold night.",
-               "recipe_name": "Savory Meat Stew",
+               "description": "추운 밤을 잊게 해주는 완벽한 편안함과 따뜻함 그리고 만족감을 줍니다.",
+               "recipe_name": "향긋한 고기 스튜",
                "flavor": "Before you ask, it's an assortment of meats."
             },
             "peasant_bread_recipe": {
-               "description": "A crusty, basic bread.",
-               "recipe_name": "Peasant Bread"
+               "description": "딱딱하고 기본적인 빵입니다.",
+               "recipe_name": "소작농의 빵"
             },
-            "food_name": "Food",
-            "ingredients_name": "Ingredients",
+            "food_name": "음식",
+            "ingredients_name": "재료",
             "veggie_stew_recipe": {
-               "description": "A warm, savory broth, fortified with braised pumpkin!",
-               "recipe_name": "Tasty Vegetable Stew",
-               "flavor": "Afterwards, you feel satisfied, but not heavy."
+               "description": "푹 삶은 호박이 들어간 따뜻하고 기운을 돋아주는 향긋한 스튜입니다.",
+               "recipe_name": "맛있는 야채 스튜",
+               "flavor": "나중에 만족감을 느끼겠지만 오래가지는 않습니다."
             },
             "corn_bread_recipe": {
-               "description": "A bread made from cornmeal.",
-               "recipe_name": "Corn Bread",
-               "flavor": "Like Ma used to make."
+               "description": "옥수수 가루로 만든 빵",
+               "recipe_name": "옥수수 빵",
+               "flavor": "엄마가 만들어준 것 같아."
             },
             "poyo_pot_pie_recipe": {
-               "description": "A tasty meat and veggie pie.",
-               "recipe_name": "Poyo Pot Pie",
-               "flavor": "Pie is always good."
+               "description": "맛있는 고기와 야채가 들어간 파이",
+               "recipe_name": "닭고기 파이",
+               "flavor": "파이는 항상 좋습니다."
             },
             "omelette_recipe": {
-               "description": "Veggies and meat wrapped in egg.",
+               "description": "계란에 쌓인 야채와 고기들",
                "recipe_name": "오믈렛",
-               "flavor": "Part of a hearty breakfast"
+               "flavor": "푸짐한 아침식사 중 하나"
             },
             "roast_poyo_recipe": {
                "description": "천천히 구워낸 닭고기",
                "recipe_name": "통닭구이",
-               "flavor": "Put 'nother poyo on the barby."
+               "flavor": "닭을 더 넣어주세요."
             },
             "fried_eggs_recipe": {
-               "description": "Eggs fried to order.",
+               "description": "달걀 프라이가 주문되었습니다.",
                "recipe_name": "달갈 프라이",
                "flavor": "Do you like yours sunnyside up?"
             },
             "animal_feed_name": "동물 사료",
             "sheep_feed_recipe": {
-               "description": "A supplement for a healthy sheep diet",
+               "description": "건강한 양을 위한 보충물",
                "recipe_name": "양 사료"
             },
             "poyo_feed_recipe": {
-               "description": "For feeding one's poyos",
+               "description": "닭을 위한 음식",
                "recipe_name": "닭 사료",
                "flavor": "꼬꼬댁 꼬꼬댁!"
             },
             "rabbit_feed_recipe": {
-               "description": "Food for rabbits",
+               "description": "토끼를 위한 음식",
                "recipe_name": "토끼 사료"
             },
-            "workbenches_name": "Workbenches",
+            "workbenches_name": "작업대",
             "cook_workbench_recipe": {
-               "description": "Use to cook nutritions soups and stews.",
+               "description": "영양가 가득한 스프와 스튜를 만들기 위해 사용됩니다.",
                "recipe_name": "석재 가마솥",
-               "flavor": "Stone, to keep the food hot for a long time."
+               "flavor": "돌로 만들어 음식을 오랫동안 따뜻하게 유지시켜 줍니다."
             },
             "cook_mill_recipe": {
                "description": "For grinding grains into flour",
@@ -8749,7 +8749,7 @@
                "recipe_name": "석재 오븐"
             },
             "corn_meal_recipe": {
-               "description": "Corn ground into a fine powder",
+               "description": "옥수수를 갈아서 좋은 가루로 만드세요.",
                "recipe_name": "옥수수 가루"
             },
             "decoration_name": "Decorations",
@@ -8824,8 +8824,8 @@
          },
          "engineer_workbench": {
             "engineer_workbench_ghost": {
-               "display_name": "Engineer's Workshop",
-               "description": "Used by engineers to create gadgets"
+               "display_name": "기술자의 작업대",
+               "description": "각종 도구들을 만들기 위해 기술자가 사용합니다."
             }
          },
          "engineer_outfit": {
@@ -8839,11 +8839,11 @@
             },
             "workbenches_name": "Workbenches",
             "bronze_gear_recipe": {
-               "description": "Used to craft basic gadgets",
-               "recipe_name": "Bronze Gear",
-               "flavor": "Luckily have teeth that don't requiring brushing"
+               "description": "일반적인 도구를 만드는데 사용됩니다.",
+               "recipe_name": "청동 기어",
+               "flavor": "운 좋게도 솔질 할 필요가 없는 것을 발견했다."
             },
-            "gadget_parts_name": "Gears and Parts",
+            "gadget_parts_name": "기어와 부품들",
             "small_turret_recipe": {
                "description": "After placed, shoots at enemies from a distance. Must be repaired after 20 uses.",
                "recipe_name": "Turret"
@@ -8932,8 +8932,8 @@
             }
          },
          "farmer_outfit": {
-            "display_name": "Farmer Smock",
-            "description": "Standard dress for all farmers"
+            "display_name": "농부의 작업복",
+            "description": "모든 농부들의 표준 작업복입니다."
          },
          "field": {
             "display_name": "농장 터",
@@ -9628,7 +9628,7 @@
                "flavor": "또한 풍요의 표시이기도 합니다."
             },
             "banner_wall_small_recipe": {
-               "description": "Show your town pride with this small banner.",
+               "description": "이 작은 배너로 여러분의 마을을 자랑하세요.",
                "recipe_name": "Small Wall-Mounted Banner",
                "flavor": "Quality craftsmanship at fine resolutions."
             },
