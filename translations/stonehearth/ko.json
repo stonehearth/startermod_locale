@@ -1738,7 +1738,7 @@
                         },
                         "conclusion2": {
                            "bulletin_message": {
-                              "000": "[str(i18n_data.town_name)]이여. 시드의 너그러움이 함께하길 빌겠습니다. 성장을 평가하기 위해 나를 불러야 하니 당신에게 새 한마리를 주고 떠나겠습니다!"
+                              "000": "[str(i18n_data.town_name)]이여. 시드의 관대함이 함께하길 빌겠습니다. 성장을 평가하기 위해 나를 불러야 하니 당신에게 새 한마리를 주고 떠나겠습니다!"
                            },
                            "bulletin_title": "Anwyn이 두루마리를 걷어 올렸다.",
                            "dialog_title": "명예로운 Anwyn Redelm",
@@ -5058,22 +5058,22 @@
             "description": "당신의 머리를 보호합니다",
             "bronze_circlet_iconic": {
                "display_name": "Leather Skull Cap",
-               "description": "Protection for your head"
+               "description": "당신의 머리를 보호합니다"
             }
          },
          "bronze_shield": {
             "display_name": "청동 방패",
-            "description": "Useful for blocking attacks",
+            "description": "공격을 방어하는데 유용하다.",
             "bronze_shield_iconic": {
-               "display_name": "Bronze Shield",
-               "description": "Useful for blocking attacks"
+               "display_name": "청동 방패",
+               "description": "공격을 방어하는데 유용하다."
             }
          },
          "iron_coif": {
-            "display_name": "Iron Coif",
+            "display_name": "철 두건",
             "description": "당신의 머리를 보호합니다",
             "iron_coif_iconic": {
-               "display_name": "Iron Coif",
+               "display_name": "철 두건",
                "description": "당신의 머리를 보호합니다"
             }
          },
@@ -5089,17 +5089,17 @@
             "display_name": "Plate Helm",
             "description": "당신의 머리를 보호합니다",
             "steel_helmet_iconic": {
-               "display_name": "Steel Helmet",
+               "display_name": "강철 헬멧",
                "description": "당신의 머리를 보호합니다"
             }
          },
          "steel_shield": {
-            "display_name": "Steel Shield",
+            "display_name": "강철 방패",
             "description": "A sturdy shield made from steel"
          },
          "iron_helm": {
-            "display_name": "Iron Helm",
-            "description": "Protection for your head"
+            "display_name": "철 헬멧",
+            "description": "당신의 머리를 보호합니다"
          },
          "iron_circlet": {
             "display_name": "Iron Circlet",
@@ -5126,19 +5126,19 @@
             "description": "Watch out for those corners!"
          },
          "silver_mail": {
-            "display_name": "Silver Mail",
-            "description": "The best armor... for now.",
+            "display_name": "은 갑옷",
+            "description": "좋은 방어구다... 지금은...",
             "silver_mail_iconic": {
-               "display_name": "Silver Mail",
-               "description": "The best armor... for now."
+               "display_name": "은 갑옷",
+               "description": "좋은 방어구다... 지금은..."
             }
          },
          "silver_helmet": {
-            "display_name": "Silver Helmet",
-            "description": "Quintessentially heroic",
+            "display_name": "은 헬멧",
+            "description": "영웅처럼 보인다.",
             "silver_helmet_iconic": {
-               "display_name": "Silver Helmet",
-               "description": "Quintessentially heroic"
+               "display_name": "은 헬멧",
+               "description": "영웅처럼 보인다."
             }
          },
          "cloth_padded_helmet": {
@@ -5150,44 +5150,44 @@
             }
          },
          "bronze_helm": {
-            "display_name": "Bronze Helm",
+            "display_name": "청동 헬멧",
             "description": "Pretty and protective"
          }
       },
       "boulders": {
          "large_boulder": {
             "large_boulder_1": {
-               "display_name": "Huge Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "대형 바위",
+               "description": "돌을 수확할 수 있습니다."
             },
             "large_boulder_2": {
-               "display_name": "Huge Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "대형 바위",
+               "description": "돌을 수확할 수 있습니다."
             }
          },
          "medium_boulder": {
             "medium_boulder_1": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "중형 바위",
+               "description": "돌을 수확할 수 있습니다."
             },
             "medium_boulder_2": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "중형 바위",
+               "description": "돌을 수확할 수 있습니다."
             },
             "medium_boulder_3": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "중형 바위",
+               "description": "돌을 수확할 수 있습니다."
             }
          },
          "small_boulder": {
-            "display_name": "Small Boulder",
-            "description": "Harvestable for stone"
+            "display_name": "소형 바위",
+            "description": "돌을 수확할 수 있습니다."
          }
       },
       "construction": {
          "clay_bricks": {
-            "display_name": "Clay Bricks",
-            "description": "Used for clay structures."
+            "display_name": "점토 벽돌",
+            "description": "점토 건축에 사용됩니다."
          },
          "cobblestone_fence": {
             "cobblestone_fence_ghost": {
@@ -5225,8 +5225,8 @@
          },
          "wooden_door": {
             "wooden_door_ghost": {
-               "display_name": "Wooden Door",
-               "description": "Privacy at last!"
+               "display_name": "나무 문",
+               "description": "최소한의 사생활!"
             }
          },
          "wooden_door_2": {
@@ -5337,8 +5337,8 @@
          },
          "wooden_door_fine": {
             "wooden_door_fine_ghost": {
-               "display_name": "Fine Wooden Door",
-               "description": "Privacy at last!"
+               "display_name": "고품질의 나무 문",
+               "description": "최소한의 사생활!"
             }
          },
          "wooden_door_2_fine": {
@@ -5355,19 +5355,19 @@
          },
          "wooden_window_frame_fine": {
             "wooden_window_frame_fine_ghost": {
-               "display_name": "Fine Wooden Window Frame",
+               "display_name": "고품질의 나무 창틀",
                "description": "So much for privacy..."
             }
          },
          "wooden_window_frame_tall_fine": {
             "wooden_window_frame_tall_fine_ghost": {
-               "display_name": "Fine Tall Window Frame",
+               "display_name": "고품질의 긴 창틀",
                "description": "Extra height adds an air of elegance"
             }
          },
          "wooden_window_frame_wide_fine": {
             "wooden_window_frame_wide_fine_ghost": {
-               "display_name": "Fine Wide Window Frame",
+               "display_name": "고품질의 넓은 창틀",
                "description": "It's a panoramic view!"
             }
          },
@@ -5390,7 +5390,7 @@
             }
          },
          "wooden_tunnel_door_fine": {
-            "display_name": "Fine Wooden Tunnel Door",
+            "display_name": "고품질의 나무 터널 문",
             "description": "Useful for blocking off tunnels"
          },
          "blue_latticed_window": {
@@ -5419,7 +5419,7 @@
          },
          "tall_clay_window": {
             "tall_clay_window_ghost": {
-               "display_name": "Tall Clay Window",
+               "display_name": "긴 점토 창문",
                "description": "Still lets in the soft desert air"
             }
          }
@@ -5433,7 +5433,7 @@
          },
          "large_urn": {
             "large_urn_ghost": {
-               "display_name": "Large Urn",
+               "display_name": "큰 항아리",
                "description": "Storage container"
             }
          },
@@ -5463,7 +5463,7 @@
          },
          "small_urn": {
             "small_urn_ghost": {
-               "display_name": "Small Urn",
+               "display_name": "작은 항아리",
                "description": "For storing things"
             }
          },
@@ -5567,7 +5567,7 @@
                "description": "Awww!"
             },
             "renewable_harvest_status_text": "shearing sheep",
-            "species": "sheep"
+            "species": "양"
          },
          "squirrel": {
             "display_name": "다람쥐",
@@ -5591,7 +5591,7 @@
       "crops": {
          "brightbell_crop": {
             "display_name": "브라이트벨 꽃",
-            "description": "약초에 사용할 수 있어.",
+            "description": "약초로 사용할 수 있어.",
             "growth_stage": {
                "001": {
                   "name": "싹이 튼 브라이브벨",
@@ -5621,7 +5621,7 @@
                },
                "002": {
                   "name": "어린 당근",
-                  "description": "작고. 써."
+                  "description": "작고 써."
                },
                "001": {
                   "name": "싹이 튼 당근",
@@ -5665,7 +5665,7 @@
          },
          "frostsnap_crop": {
             "display_name": "프로스트스냅 꽃",
-            "description": "약초에 사용할 수 있어.",
+            "description": "약초로 사용할 수 있어.",
             "growth_stage": {
                "001": {
                   "name": "싹이 튼 프로스트스냅",
@@ -5868,7 +5868,7 @@
                },
                "002": {
                   "name": "어린 순무",
-                  "description": "작고. 써."
+                  "description": "작고 써."
                },
                "001": {
                   "name": "싹이 튼 순무",
@@ -6053,8 +6053,8 @@
          },
          "fur_rug": {
             "fur_rug_ghost": {
-               "display_name": "Fur Rug",
-               "description": "Made from animal pelts."
+               "display_name": "모피 러그",
+               "description": "동물 가죽으로 만들었다."
             }
          },
          "gargoyle": {
@@ -6123,13 +6123,13 @@
          },
          "window_box_brightbell": {
             "window_box_brightbell_ghost": {
-               "display_name": "Brightbell planter",
+               "display_name": "브라이트벨 화분",
                "description": "A tidy home for the plant."
             }
          },
          "window_box_frostsnap": {
             "window_box_frostsnap_ghost": {
-               "display_name": "Frostsnap planter",
+               "display_name": "프로스트스냅 화분",
                "description": "A tidy home for the plant."
             }
          },
@@ -6150,32 +6150,32 @@
          },
          "wooden_sign": {
             "wooden_sign_ghost": {
-               "display_name": "Wooden Wall Sign",
-               "description": "An expression of future intent."
+               "display_name": "벽걸이형 나무 표지판",
+               "description": "미래의 목적을 위한 표현"
             }
          },
          "wooden_sign_blacksmith": {
             "wooden_sign_blacksmith_ghost": {
-               "display_name": "Blacksmith's Sign",
-               "description": "A sign with the mark of the blacksmith."
+               "display_name": "대장장이의 표지판",
+               "description": "대장장이의 상징이 새겨진 표지판입니다."
             }
          },
          "wooden_sign_carpenter": {
             "wooden_sign_carpenter_ghost": {
-               "display_name": "Carpenter's Sign",
-               "description": "A sign with the mark of the Carpenter."
+               "display_name": "목수의 표지판",
+               "description": "목수의 상징이 새겨진 표지판입니다."
             }
          },
          "wooden_sign_mason": {
             "wooden_sign_mason_ghost": {
-               "display_name": "Mason's Sign",
-               "description": "A sign with the mark of the Mason."
+               "display_name": "석공의 표지판",
+               "description": "석공의 상징이 새겨진 표지판입니다."
             }
          },
          "wooden_sign_weaver": {
             "wooden_sign_weaver_ghost": {
-               "display_name": "Weaver's Sign",
-               "description": "A sign with the mark of the Weaver."
+               "display_name": "방직공의 표지판",
+               "description": "방직공의 상징이 새겨진 표지판입니다."
             }
          },
          "wooden_wall_lantern": {
@@ -6270,32 +6270,32 @@
          },
          "wooden_sign_herbalist": {
             "wooden_sign_herbalist_ghost": {
-               "display_name": "Herbalist's sign",
-               "description": "A sign with the mark of the Herbalist"
+               "display_name": "약초사의 표지판",
+               "description": "약초사의 상징이 새겨진 표지판입니다."
             }
          },
          "wooden_sign_inn": {
             "wooden_sign_inn_ghost": {
-               "display_name": "Inn Sign",
-               "description": "A sign marking a place for rest and revelry."
+               "display_name": "여관 표지판",
+               "description": "휴식과 유흥의 상징이 새겨진 표지판입니다."
             }
          },
          "wooden_sign_potter": {
             "wooden_sign_potter_ghost": {
-               "display_name": "Potter's Sign",
-               "description": "A sign with the mark of the Potter"
+               "display_name": "도예가의 표지판",
+               "description": "도예가의 상징이 새겨진 표지판입니다."
             }
          },
          "wooden_sign_cook": {
             "wooden_sign_cook_ghost": {
-               "display_name": "Cook's Sign",
-               "description": "A sign with the mark of the cook"
+               "display_name": "요리사의 표지판",
+               "description": "요리사의 상징이 새겨진 표지판입니다."
             }
          },
          "clay_market_stall": {
             "clay_market_stall_ghost": {
-               "display_name": "Clay Market Stall",
-               "description": "Merchants can set up shop here"
+               "display_name": "점토 가판대",
+               "description": "상인들이 이 곳에서 상점을 설치할 수 있습니다."
             }
          },
          "decorative_elite_gong": {
@@ -6324,26 +6324,26 @@
          },
          "valor_statue": {
             "valor_statue_ghost": {
-               "display_name": "The Valor of Cid",
-               "description": "A monument to your town's military might"
+               "display_name": "시드의 용맹함",
+               "description": "당신의 마을의 군사력에 대한 기념비"
             }
          },
          "roadside_shrine": {
             "roadside_shrine_ghost": {
-               "display_name": "Fountain of Plenty",
-               "description": "Place to show generosity and faith"
+               "display_name": "풍요의 분수",
+               "description": "관대함과 믿음을 보여주는 곳"
             }
          },
          "craftsman_statue": {
             "craftsman_statue_ghost": {
-               "display_name": "The Guildmaster's Skill",
-               "description": "Place to show skill at crafting"
+               "display_name": "길드마스터의 기술",
+               "description": "제작 기술을 보여주는 곳"
             }
          },
          "wooden_sign_engineer": {
             "wooden_sign_engineer_ghost": {
-               "display_name": "Engineer's Sign",
-               "description": "A sign with the mark of the Engineer."
+               "display_name": "기술자의 표지판",
+               "description": "기술자의 상징이 새겨진 표지판입니다."
             }
          },
          "wooden_garden_lantern_red": {
@@ -6360,13 +6360,13 @@
          },
          "window_box_brightbell_fine": {
             "window_box_brightbell_fine_ghost": {
-               "display_name": "Fine Brightbell planter",
+               "display_name": "고품질의 브라이트벨 화분",
                "description": "A cozy home for the plant."
             }
          },
          "window_box_frostsnap_fine": {
             "window_box_frostsnap_fine_ghost": {
-               "display_name": "Fine Frostsnap planter",
+               "display_name": "고품질의 프로스트스냅 화분",
                "description": "A cozy home for the plant."
             }
          },
@@ -6380,7 +6380,7 @@
       "food": {
          "berries": {
             "berry_basket": {
-               "display_name": "Basket of Berries",
+               "display_name": "열매 바구니",
                "description": "Creme of the caveman diet."
             },
             "berry_serving": {
@@ -6491,12 +6491,12 @@
          },
          "poyo_pot_pie": {
             "poyo_pot_pie": {
-               "display_name": "Poyo Pot Pie",
-               "description": "Warm and delicious."
+               "display_name": "닭고기 파이",
+               "description": "따뜻하고 맛있어."
             },
             "poyo_pot_pie_serving": {
-               "display_name": "Slice of Poyo Pot Pie",
-               "description": "Mmm ... pie."
+               "display_name": "닭고기 파이 한 조각",
+               "description": "음음... 파이."
             }
          },
          "omelette": {
@@ -6521,7 +6521,7 @@
          "fried_eggs": {
             "fried_eggs": {
                "display_name": "달걀 프라이",
-               "description": "Fried and delicious"
+               "description": "프라이라서 더 맛있어."
             },
             "fried_eggs_serving": {
                "display_name": "Serving of Fried Eggs"
@@ -6532,34 +6532,34 @@
             "description": "Give to sheep for a supplement to grazing.",
             "sheep_feed_ground": {
                "display_name": "양 사료",
-               "description": "Food for sheep"
+               "description": "양을 위한 먹이"
             }
          },
          "poyo_feed": {
             "poyo_feed": {
                "display_name": "닭 사료",
-               "description": "For feeding poyos."
+               "description": "닭을 위한 먹이"
             },
             "poyo_feed_ground": {
                "display_name": "닭 사료",
-               "description": "Poyos love to eat this stuff."
+               "description": "닭들이 이걸 먹는 걸 굉장히 좋아해."
             }
          },
          "rabbit_feed": {
             "display_name": "토끼 사료",
             "description": "토끼를 위한겁니다.",
             "rabbit_feed_ground": {
-               "display_name": "Rabbit Feed",
-               "description": "Food for rabbits"
+               "display_name": "토끼 사료",
+               "description": "토끼를 위한 먹이"
             }
          },
          "prickly_pear": {
             "prickly_pear_basket": {
-               "display_name": "가시가 있는 배가 담긴 바구니",
+               "display_name": "백년초 바구니",
                "description": "조심히 먹어!"
             },
             "prickly_pear_serving": {
-               "display_name": "Prickly Pear Serving",
+               "display_name": "백년초",
                "description": "Ow! Was that a spine?"
             }
          },
@@ -6589,7 +6589,7 @@
          },
          "flat_bread": {
             "flat_bread": {
-               "display_name": "Flat Bread",
+               "display_name": "평평한 빵",
                "description": "Unleavened bread made from corn meal"
             },
             "flat_bread_serving": {
@@ -6627,8 +6627,8 @@
             "description": "심지어 육포도 결국 썩습니다. 이건 사실이고요."
          },
          "mutton": {
-            "display_name": "Raw Mutton",
-            "description": "Raw meat from a sheep"
+            "display_name": "생 양고기",
+            "description": "양으로부터 얻은 날 것의 고기"
          },
          "roast_mutton": {
             "roast_mutton": {
@@ -6933,23 +6933,23 @@
             },
             "entling": {
                "display_name": "엔틀링",
-               "description": "숲의 하인"
+               "description": "숲의 하수인"
             },
             "entling_mage": {
                "display_name": "엔틀링 마법사",
-               "description": "숲의 하인"
+               "description": "숲의 하수인"
             },
             "stone_golem": {
                "display_name": "돌 골렘",
-               "description": "단단하다."
+               "description": "단단해."
             },
             "little_stone_golem": {
-               "display_name": "Little Stone Golem",
-               "description": "그는 그저 조약돌입니다!"
+               "display_name": "작은 돌 골렘",
+               "description": "그냥 조약돌 같은거야."
             },
             "alligator": {
                "display_name": "Varanus",
-               "description": "And this is the smaller variety..."
+               "description": "그리고 이건 더 작아..."
             },
             "wolf": {
                "display_name": "야생 늑대",
@@ -7141,69 +7141,69 @@
          },
          "mammoth": {
             "mammoth": {
-               "display_name": "Mammoth",
-               "description": "Large Woolie Beastie"
+               "display_name": "매머디",
+               "description": "털이 많은 큰 짐승"
             }
          }
       },
       "peoples": {
          "hearthling": {
-            "species": "Hearthling"
+            "species": "하슬링"
          }
       },
       "pets": {
          "collie": {
-            "display_name": "Collie",
-            "description": "So brave!",
-            "species": "dog"
+            "display_name": "콜리",
+            "description": "용감해!",
+            "species": "개"
          },
          "dragon_whelp": {
-            "display_name": "Rabbit",
-            "description": "Om nom nom",
+            "display_name": "Dragon Whelp",
+            "description": "아기 용",
             "species": "용"
          },
          "kitten": {
             "display_name": "고양이",
-            "description": "그는 너무 귀여워!",
+            "description": "너무 귀여워!",
             "species": "고양이"
          },
          "mammoth": {
-            "display_name": "Baby Mammoth",
-            "description": "So furry!",
-            "species": "mammoth"
+            "display_name": "아기 매머드",
+            "description": "털이 많군!",
+            "species": "매머드"
          }
       },
       "plants": {
          "berry_bush": {
-            "display_name": "Berry Bush",
-            "description": "Harvestable for a meager food supply.",
-            "unripe_description": "Not yet ripe for harvest."
+            "display_name": "열매 덤불",
+            "description": "수확하기엔 아직 모자라.",
+            "unripe_description": "아직 덜 익었어."
          },
          "brightbell_plant": {
-            "display_name": "Wild Brightbell",
-            "description": "Can be harvested for healing herbs",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
+            "display_name": "야생 프라이트벨",
+            "description": "약초로써 수확할 수 있어.",
+            "unripe_description": "이 식물은 수확되었고 아직 덜 자랐어."
          },
          "carrot": {
             "carrot_basket": {
-               "display_name": "Basket of Carrots",
-               "description": "Lined up in neat rows."
+               "display_name": "당근 바구니",
+               "description": "깔끔하게 정리되어 있다."
             },
             "carrot_serving": {
                "display_name": "당근",
-               "description": "Tiny. Bitter."
+               "description": "작고 써."
             }
          },
          "frostsnap_plant": {
-            "display_name": "Wild Frost Snap",
-            "description": "Can be harvested for healing herbs",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
+            "display_name": "야생 프로스트스냅",
+            "description": "약초로써 수확할 수 있어.",
+            "unripe_description": "이 식물은 수확되었고 아직 덜 자랐어."
          },
          "silkweed": {
             "silkweed": {
-               "display_name": "Wild silkweed",
-               "description": "This plant's fiber can be spun into thread.",
-               "unripe_description": "This plant has been harvested and hasn't grown back yet."
+               "display_name": "야생 인주솜풀",
+               "description": "이 식물의 섬유는 실로 사용될 수 있습니다.",
+               "unripe_description": "이 식물은 수확되었고 아직 덜 자랐어."
             }
          },
          "tester": {
@@ -7218,72 +7218,72 @@
          },
          "turnip": {
             "turnip_basket": {
-               "display_name": "Basket of Turnips",
-               "description": "Juicy and exciting!"
+               "display_name": "순무 바구니",
+               "description": "즙이 많아보이고 흥분돼!"
             },
             "turnip_serving": {
                "display_name": "순무",
-               "description": "Tiny. Bitter."
+               "description": "작고 써."
             }
          },
          "cactus_plant": {
-            "display_name": "Wild Cactus",
-            "description": "Can be harvested for healing herbs",
-            "unripe_description": "This plant has been harvested and has not grown back yet"
+            "display_name": "야생 선인장",
+            "description": "약초로써 수확할 수 있어.",
+            "unripe_description": "이 식물은 수확되었고 아직 덜 자랐어."
          },
          "tumbleweed": {
-            "display_name": "Tumbleweed",
-            "description": "Source of coarse fibers"
+            "display_name": "회전초",
+            "description": "굵은 섬유의 원천"
          },
          "pear_cactus": {
-            "display_name": "Pear Cactus",
-            "description": "Harvest carefully for prickley pears.",
-            "unripe_description": "It's the invisible spines that really hurt"
+            "display_name": "백년초",
+            "description": "백년초를 수확할 땐 조심해야돼.",
+            "unripe_description": "진짜 아픈 가시가 숨어있어."
          },
          "foxlily_plant": {
             "foxlily_plant_ghost": {
-               "display_name": "Fox Lily",
-               "description": "Orange flowers bearing resemblance to fox tails"
+               "display_name": "여우 백합",
+               "description": "여우의 꼬리를 닮은 꽃"
             }
          },
          "sunflower_plant": {
             "sunflower_plant_ghost": {
-               "display_name": "Sunflower",
-               "description": "Bright and happy like the sun"
+               "display_name": "해바라기",
+               "description": "태양처럼 밝고 행복해보여"
             }
          }
       },
       "rabbit": {
          "lantern_relic": {
             "lantern_relic_ghost": {
-               "display_name": "Ancient Relic",
+               "display_name": "고대의 유물",
                "description": "Crumbling with age"
             }
          },
          "rabbit_statue": {
-            "display_name": "An Ancient Monument",
-            "description": "Mossy, but the stone is still good..."
+            "display_name": "고대의 건축물",
+            "description": "이끼가 끼여 있지만 여전히 돌은 쓸만하다."
          }
       },
       "refined": {
          "bronze_ingot": {
-            "display_name": "Bronze Ingot",
+            "display_name": "청동 주괴",
             "description": "A bar of pure bronze."
          },
          "cloth_bolt": {
-            "display_name": "Bolt of Cloth",
-            "description": "Soft and comforting."
+            "display_name": "피륙",
+            "description": "부드럽고 편안해."
          },
          "copper_ingot": {
-            "display_name": "Copper Ingot",
+            "display_name": "구리 주괴",
             "description": "A bar of pure copper.  "
          },
          "gold_ingot": {
-            "display_name": "Gold Ingot",
+            "display_name": "금 주괴",
             "description": "A bar of pure gold. A suitable material for crafted goods."
          },
          "iron_ingot": {
-            "display_name": "Iron Ingot",
+            "display_name": "철 주괴",
             "description": "A bar of pure iron."
          },
          "leather_bolt": {
@@ -7291,11 +7291,11 @@
             "description": "Supple but durable."
          },
          "silver_ingot": {
-            "display_name": "Silver Ingot",
+            "display_name": "은 주괴",
             "description": "A bar of pure silver."
          },
          "steel_ingot": {
-            "display_name": "Steel Ingot",
+            "display_name": "강철 주괴",
             "description": "A bar of pure steel."
          },
          "stone_bricks": {
@@ -7307,7 +7307,7 @@
             "description": "Spun from the wool of sheep. Or plants."
          },
          "tin_ingot": {
-            "display_name": "Tin Ingot",
+            "display_name": "주석 주괴",
             "description": "A bar of pure tin.  "
          },
          "bronze_gear": {
@@ -7328,7 +7328,7 @@
          },
          "copper": {
             "copper_ore": {
-               "display_name": "Copper Ore",
+               "display_name": "구리광석",
                "description": "A chunk of raw copper"
             }
          },
@@ -7348,13 +7348,13 @@
          },
          "gold": {
             "gold_ore": {
-               "display_name": "Gold Ore",
+               "display_name": "금광석",
                "description": "A chunk of raw gold"
             }
          },
          "iron": {
             "iron_ore": {
-               "display_name": "Iron Ore",
+               "display_name": "철광석",
                "description": "A chunk of raw iron"
             }
          },
@@ -7382,7 +7382,7 @@
          },
          "silver": {
             "silver_ore": {
-               "display_name": "Silver Ore",
+               "display_name": "은광석",
                "description": "A chunk of raw silver"
             }
          },
@@ -7410,7 +7410,7 @@
          },
          "tin": {
             "tin_ore": {
-               "display_name": "Tin Ore",
+               "display_name": "주석광석",
                "description": "A chunk of raw tin"
             }
          },
@@ -7460,20 +7460,20 @@
                "description": "Rough and scaly"
             },
             "ogre_bone": {
-               "display_name": "Ogre Bone",
-               "description": "Dense and strong"
+               "display_name": "오거 뼈",
+               "description": "밀도가 높고 강하다."
             }
          },
          "feathers": {
             "poyo_feathers": {
-               "display_name": "Poyo Feathers",
-               "description": "Feathers from a plump bird"
+               "display_name": "닭 깃털",
+               "description": "포동포동한 새의 깃털이다."
             }
          }
       },
       "terrain": {
          "mining_zone": {
-            "display_name": "Mining Zone",
+            "display_name": "광산 구역",
             "description": "This terrain is designated for removal."
          },
          "tall_grass": {
@@ -8577,7 +8577,7 @@
             },
             "wooden_sign_inn_recipe": {
                "description": "휴식과 유흥의 상징이 새겨진 표지판입니다.",
-               "recipe_name": "벽걸이형 주막 표지판"
+               "recipe_name": "벽걸이형 여과 표지판"
             },
             "wooden_sign_potter_recipe": {
                "description": "도예가의 상징이 새겨진 표지판입니다.",
@@ -9183,19 +9183,19 @@
                "flavor": "불은 삶이고, 재는 죽음이다. 우리들의 이야기다. -- 시드"
             },
             "valor_statue_recipe": {
-               "description": "A monument to your town's military might",
+               "description": "당신의 마을의 군사력에 대한 기념비",
                "recipe_name": "시드의 용맹함",
                "flavor": "The shield for resiliance, and the sword for strength. -- Cid, Knight of the Old Ways"
             },
             "roadside_shrine_recipe": {
                "recipe_name": "풍요의 분수",
-               "description": "Place to show generosity and faith",
+               "description": "관대함과 믿음이 가득한 장소",
                "flavor": "Cid fashioned his breastplate into a basket and brought the wealth of the rich to the bedsides of the poor --Edison Arn, Church of Plenty"
             },
             "craftsman_statue_recipe": {
                "recipe_name": "길드마스터의 기술",
-               "description": "Shows each craftsman at their best",
-               "flavor": "A good crafter never blames his tools, only the people who make his tools. --Otto Crankfrown, Guildmaster Emeritus"
+               "description": "최고의 장인들을 볼 수 있다.",
+               "flavor": "장인은 절대 도구 탓을 하지 않는다. 오직 사람들을 탓할 뿐이다. -- 명예 길드마스터, 오토 크랭크프라운"
             }
          }
       },
@@ -9297,17 +9297,17 @@
             },
             "red_clay_window_frame_recipe": {
                "description": "Matches red clay walls",
-               "recipe_name": "Red Clay Window",
+               "recipe_name": "적색 점토 창문",
                "flavor": ""
             },
             "blue_clay_door_recipe": {
                "description": "Blue like the dream of distant ocean.",
-               "recipe_name": "Blue Clay Door",
+               "recipe_name": "청점토 문",
                "flavor": "'It's a door. What more could we possibly say?' --Joni Iskender, Marketing Apprentice"
             },
             "green_clay_door_recipe": {
                "description": "Green, like the few scrub in the desert.",
-               "recipe_name": "Green Clay Door",
+               "recipe_name": "녹색 점토 문",
                "flavor": "'Can you make the hole a bit smaller? The point is to see who it is without giving away that I'm home.' --Vara Tenter, Irate Customer"
             },
             "blue_clay_window_frame_recipe": {
@@ -9327,17 +9327,17 @@
             },
             "clay_bed_recipe": {
                "description": "Uncomfortable, but it gets you off the ground",
-               "recipe_name": "Clay Bed",
+               "recipe_name": "점토 침대",
                "flavor": ""
             },
             "clay_dining_table_recipe": {
                "description": "Gets your food off the ground!",
-               "recipe_name": "Clay Dining Table",
+               "recipe_name": "점토 식탁",
                "flavor": ""
             },
             "simple_clay_chair_recipe": {
-               "description": "Somewhere to sit while eating",
-               "recipe_name": "Simple Clay Chair",
+               "description": "먹는동안 어디든 앉을 수 있다.",
+               "recipe_name": "간단한 점토 의자",
                "flavor": "'Nests with the tables, ooo, symbolic!' --Nestor Adya, Acolyte"
             },
             "decorative_teapot_recipe": {
@@ -9396,8 +9396,8 @@
                "flavor": "Amazing, honestly, that it comes apart again."
             },
             "clay_market_stall_recipe": {
-               "description": "Merchants can visit this stall to buy and sell goods",
-               "recipe_name": "Clay Market Stall",
+               "description": "상인은 상품을 사고 팔기 위해 가판대에 방문합니다.",
+               "recipe_name": "점토 가판대",
                "flavor": "'Cut off his hand? For theft? What would be the point?' --Talidor Roq, Knight of Mysteries "
             },
             "clay_tunnel_door_recipe": {
@@ -9411,7 +9411,7 @@
                "flavor": ""
             },
             "tall_clay_window_recipe": {
-               "recipe_name": "Tall Clay Window",
+               "recipe_name": "긴 점토 창문",
                "description": "Still lets in the soft desert air",
                "flavor": ""
             },
@@ -9442,13 +9442,13 @@
          },
          "potter_kiln": {
             "potter_kiln_ghost": {
-               "display_name": "Potter's Kiln",
-               "description": "Produces bricks and goods from clay."
+               "display_name": "도예가의 가마",
+               "description": "점토로 벽돌과 상품들을 생산한다."
             }
          },
          "potter_cutter": {
             "display_name": "도예가의 칼",
-            "description": "Used to form civilization from dirt!",
+            "description": "흙으로부터 문명화를 이루기 위해!",
             "potter_cutter_talisman": {
                "display_name": "도예가의 칼",
                "description": "하슬링을 도예가로 전직시키기 위해 필요합니다."
