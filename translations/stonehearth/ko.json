@@ -1546,11 +1546,11 @@
                            "bulletin_message": {
                               "000": "Welcome to the area, folks! Goodness, you people look starved. Here's something to help:",
                               "001": "Just celebrated Embarcation Day, eh? Buck up! You look like you'd really benefit from something tasty. How about I give you:",
-                              "002": "Embarkees! Praise Cid. Here's something to get you started.",
+                              "002": "시드를 찬양하라! 당신의 시작에 도움을 줄 것들을 가져왔습니다.",
                               "003": "Long journey over the mountains, eh? Well you're in a good place now. Here's a little something to get you started!",
                               "004": "Welcome to the area, Embarkees!! Here's a gift to get you started!"
                            },
-                           "bulletin_title": "A grizzled traveller approaches.",
+                           "bulletin_title": "백발의 여행가가 다가오고 있습니다.",
                            "dialog_title": "Mer Burlyhands"
                         }
                      }
@@ -4517,7 +4517,7 @@
          },
          "forest": {
             "insane_alligator": {
-               "description": "작은 바라누스들은 그 주위에 모이는 경향이 있습니다."
+               "description": "작은 왕도마뱀들은 그 주위에 모이는 경향이 있습니다."
             }
          }
       },
@@ -6948,7 +6948,7 @@
                "description": "그냥 조약돌 같은거야."
             },
             "alligator": {
-               "display_name": "Varanus",
+               "display_name": "왕도마뱀",
                "description": "그리고 이건 더 작아..."
             },
             "wolf": {
@@ -7176,7 +7176,7 @@
       "plants": {
          "berry_bush": {
             "display_name": "열매 덤불",
-            "description": "수확하기엔 아직 모자라.",
+            "description": "빈곤한 식량 공급을 위해 수확할 수 있습니다.",
             "unripe_description": "아직 덜 익었어."
          },
          "brightbell_plant": {
@@ -7329,7 +7329,7 @@
          "copper": {
             "copper_ore": {
                "display_name": "구리광석",
-               "description": "A chunk of raw copper"
+               "description": "가공되지 않은 구리 덩어리"
             }
          },
          "fiber": {
@@ -7349,47 +7349,47 @@
          "gold": {
             "gold_ore": {
                "display_name": "금광석",
-               "description": "A chunk of raw gold"
+               "description": "가공되지 않은 금 덩어리"
             }
          },
          "iron": {
             "iron_ore": {
                "display_name": "철광석",
-               "description": "A chunk of raw iron"
+               "description": "가공되지 않은 철 덩어리"
             }
          },
          "pelt": {
             "rabbit_pelt": {
-               "display_name": "Rabbit Pelt",
-               "description": "Soft, supple, and quite dead."
+               "display_name": "토끼 가죽",
+               "description": "부드럽고 유연하며 완전히 죽었다."
             },
             "racoon_pelt": {
-               "display_name": "Racoon pelt",
-               "description": "Soft, supple, and quite dead"
+               "display_name": "너구리 가죽",
+               "description": "부드럽고 유연하며 완전히 죽었다."
             },
             "red_fox_pelt": {
-               "display_name": "Fox pelt",
-               "description": "Soft, supple, and quite dead"
+               "display_name": "여우 가죽",
+               "description": "부드럽고 유연하며 완전히 죽었다."
             },
             "squirrel_pelt": {
-               "display_name": "Squirrel pelt",
-               "description": "Soft, supple, and quite dead"
+               "display_name": "다람쥐 가죽",
+               "description": "부드럽고 유연하며 완전히 죽었다."
             },
             "wolf_pelt": {
-               "display_name": "Wolf pelt",
-               "description": "From the hide of a terrifying creature"
+               "display_name": "늑대 가죽",
+               "description": "무서운 짐승의 가죽"
             }
          },
          "silver": {
             "silver_ore": {
                "display_name": "은광석",
-               "description": "A chunk of raw silver"
+               "description": "순수한 은 덩어리"
             }
          },
          "stone": {
             "hunk_of_stone": {
-               "display_name": "Hunk 'o Stone",
-               "description": "A heavy, ordinary rock"
+               "display_name": "돌 덩어리",
+               "description": "무겁고 일반적인 암석이다."
             }
          },
          "clay": {
@@ -7411,7 +7411,7 @@
          "tin": {
             "tin_ore": {
                "display_name": "주석광석",
-               "description": "A chunk of raw tin"
+               "description": "가공되지 않은 주석 덩어리"
             }
          },
          "wood": {
@@ -7443,21 +7443,21 @@
          "herb": {
             "brightbell": {
                "display_name": "브라이트벨 꽃",
-               "description": "An herb commonly used for medicinal purposes"
+               "description": "일반적으로 의료 목적에 사용됩니다."
             },
             "frostsnap": {
                "display_name": "프로스트스냅 꽃",
-               "description": "An herb that's chill to the touch"
+               "description": "이 꽃은 만지면 냉기가 느껴진다."
             },
             "cactus_flower": {
                "display_name": "선인장 꽃",
-               "description": "A beautiful desert bloom with healing properties"
+               "description": "치유의 성질을 가지는 사막의 아름다운 꽃입니다."
             }
          },
          "skin": {
             "varanus_skin": {
-               "display_name": "Varanus Skin",
-               "description": "Rough and scaly"
+               "display_name": "왕도마뱀 가죽",
+               "description": "거칠고 비늘로 덮여있어."
             },
             "ogre_bone": {
                "display_name": "오거 뼈",
@@ -7507,47 +7507,47 @@
          },
          "ui": {
             "coal_block": {
-               "display_name": "Coal Vein",
-               "description": "Provides coal when mined."
+               "display_name": "석탄 광맥",
+               "description": "채굴 시 석탄을 얻을 수 있습니다."
             },
             "copper_block": {
-               "display_name": "Copper Vein",
-               "description": "Provides copper ore when mined."
+               "display_name": "구리 광맥",
+               "description": "채굴 시 구리광석을 얻을 수 있습니다."
             },
             "gold_block": {
-               "display_name": "Gold Vein",
-               "description": "Provides gold ore when mined."
+               "display_name": "금 광맥",
+               "description": "채굴 시 금광석을 얻을 수 있습니다."
             },
             "iron_block": {
-               "display_name": "Iron Vein",
-               "description": "Provides iron ore when mined."
+               "display_name": "철 광맥",
+               "description": "채굴 시 철광석을 얻을 수 있습니다."
             },
             "ore_block": {
-               "display_name": "Ore block",
-               "description": "Mine to get ore"
+               "display_name": "광석 블럭",
+               "description": "광석을 얻기 위해 채굴하세요."
             },
             "silver_block": {
-               "display_name": "Silver Vein",
-               "description": "Provides silver ore when mined."
+               "display_name": "은 광맥",
+               "description": "채굴 시 은광석을 얻을 수 있습니다."
             },
             "tin_block": {
-               "display_name": "Tin Vein",
-               "description": "Provides tin ore when mined."
+               "display_name": "주석 광맥",
+               "description": "채굴 시 주석광석을 얻을 수 있습니다."
             }
          }
       },
       "tools": {
          "mining_pick": {
-            "display_name": "Mining Pick",
-            "description": "For mining and picking"
+            "display_name": "채굴 곡괭이",
+            "description": "채굴과 곡괭이질을 위하여"
          },
          "worker_axe": {
-            "display_name": "Worker's Axe",
+            "display_name": "일꾼의 도끼",
             "description": "..."
          },
          "worker_hammer": {
             "display_name": "일꾼의 망치",
-            "description": "Everything looks like a nail when all you have is a hammer"
+            "description": "모두가 망치를 가지고 있을 때 모든 것이 못을 박는 것처럼 보인다."
          }
       },
       "toys": {
@@ -10179,20 +10179,20 @@
                "ui_steps": {
                   "set1": {
                      "step001": {
-                        "title": "Click the Zones button",
-                        "description": "Zones define what happens where in your town"
+                        "title": "지역 지정 버튼을 클릭하세요.",
+                        "description": "지역 지정은 당신의 마을에 일어날 것들을 지정할 수 있습니다."
                      },
                      "step000": {
-                        "title": "We've harvested some wood",
-                        "description": "Now we need someplace to store it"
+                        "title": "나무를 수확했다.",
+                        "description": "이제 이것들을 저장해둘 장소가 필요하다."
                      },
                      "step003": {
-                        "title": "Click the check to confirm",
-                        "description": "Use the filters to determine what type of items you want to go into the stockpile"
+                        "title": "확인 버튼을 클릭하세요.",
+                        "description": "이 비축소에 저장할 아이템 종류들을 선택해주세요."
                      },
                      "step002": {
-                        "title": "Click the Create Stockpile button",
-                        "description": "Hearthlings store your items in stockpiles"
+                        "title": "비축소 버튼을 클릭하세요.",
+                        "description": "하슬링들이 비축소에 당신의 아이템을 저장합니다."
                      }
                   }
                }
@@ -10200,19 +10200,19 @@
             "harvest_logs": {
                "scenario_data": {
                   "message": "우리가 이 땅에 정착하기 위해서 많은 목재를 필요로 할 것입니다! 통나무를 얻기 위해 근처의 나무들을 잘라보세요.",
-                  "completed_message": "Congratulations! We've got some wood resources now. Logs and other natural resources can be used to construct buildings and craft items. They're the first building blocks for advancing your town.",
-                  "title": "[str(i18n_data.town_name)] Town: Initial Supplies",
-                  "resource_display_name": "Wooden logs"
+                  "completed_message": "축하합니다! 우리는 방금 나무 자원을 얻었습니다. 원목이나 다른 자연 재료들을 이용하면 건물 건축과 아이템 제작을 할 수 있습니다. 당신의 마을을 발전시킬 첫번째 건축 재료입니다.",
+                  "title": "[str(i18n_data.town_name)] 마을 : 초보들을 위한 보급품",
+                  "resource_display_name": "원목"
                },
                "ui_steps": {
                   "set1": {
                      "step001": {
-                        "title": "Click the Gather button",
-                        "description": "Use the gather button to chop down trees"
+                        "title": "수확 버튼을 클릭하세요.",
+                        "description": "수확 버튼을 이용하면 나무를 벨 수 있습니다."
                      },
                      "step000": {
-                        "title": "Click the Harvest menu button",
-                        "description": "Use the Harvest menu to gather resources from the world"
+                        "title": "채집 메뉴 버튼을 클릭하세요.",
+                        "description": "채집 메뉴를 이용하면 자원들을 모을 수 있습니다."
                      }
                   }
                }
@@ -10221,32 +10221,32 @@
                "ui_steps": {
                   "set1": {
                      "step006": {
-                        "title": "Click stamper to approve the promotion"
+                        "title": "도장을 찍어 전직을 허락해주세요."
                      },
                      "step005": {
-                        "title": "Click the Carpenter job button."
+                        "title": "목수 직업 버튼을 클릭하세요."
                      },
                      "step004": {
-                        "title": "Click Change Jobs to promote this hearthling to a different job"
+                        "title": "직업 변경을 클릭해 하슬링을 다른 직업으로 전직시키세요."
                      },
                      "step001": {
-                        "title": "Open the Citizens manager",
-                        "description": "Use this pane to manage all your citizens, view their stats, and set their task orders."
+                        "title": "시민 메뉴 버튼을 클릭하세요.",
+                        "description": "이 메뉴를 이용해 당신의 시민들을 관리하고, 상태를 볼 수 있으며, 그들의 일을 지정할 수 있습니다."
                      },
                      "step000": {
-                        "title": "Promote a Hearthling to a Carpenter",
-                        "description": "We have logs and a place to store goods, but the town is looking pretty empty. Fortunately, we've brought a saw along with us. Let's promote a citizen to a Carpenter!"
+                        "title": "하슬링을 목수로 전직시키자.",
+                        "description": "우리는 원목과 이것들을 저장할 장소가 있습니다. 하지만 마을은 텅 비어있군요. 운 좋게도, 우리를 위해 톱질을 할 수 있는 방법을 찾았습니다. 시민을 목수로 전직시켜 봅시다!"
                      },
                      "step007": {
-                        "title": "Town Crafters",
-                        "description": "Carpenters and other crafters can create various goods to help your settlement, from beds, to building materials, to weapons."
+                        "title": "마을의 제작가",
+                        "description": "목수와 다른 제작가들은 침대과 건축자재 그리고 무기들과 같은 당신의 정착에 도움을 줄 다양한 제품들을 만들 수 있습니다."
                      },
                      "step003": {
-                        "title": "Mouse over the numbers to learn what each attribute does",
-                        "description": "Each hearthling has a Mind, Body, and Spirit attribute that affects how well they do certain things."
+                        "title": "마우스를 가져가면 각각의 상태가 어떤 것들인지 확인할 수 있습니다.",
+                        "description": "각각의 하슬링들은 그들이 어떠한 일을 하는 것에 영향을 주는 사고, 신체, 정신 특성을 가지고 있습니다."
                      },
                      "step002": {
-                        "title": "Choose a citizen to promote"
+                        "title": "전직시킬 시민을 선택하세요."
                      }
                   }
                }
