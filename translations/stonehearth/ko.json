@@ -565,7 +565,7 @@
                   },
                   "herbalist": {
                      "display_name": "약초사 메뉴",
-                     "description": "허브를 통해 회복 아이템을 제작합니다.",
+                     "description": "허브를 통해 치료 용품을 제작합니다.",
                      "required_job_text": "약초사가 필요합니다."
                   },
                   "engineer": {
@@ -626,7 +626,7 @@
                "build_and_place": "건설 & 배치",
                "attain_net_worth": "순 자산:",
                "check_requirements": "요구 사항 점검",
-               "summon_herald": "헤럴드 소환!"
+               "summon_herald": "전령 소환!"
             },
             "level_up_bulletin": {
                "title": "[name(i18n_data.entity)]가 레벨업 하였습니다!",
@@ -1564,7 +1564,7 @@
                   "waiting_title": "상인이 [str(i18n_data.hour_counter)] [str(i18n_data.period)] 뒤에 돌아옵니다!",
                   "waiting_text": "상인은 [str(i18n_data.hour_counter)] 시간 뒤에 돌아올 것입니다. 만약 당신이 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 가지고 있다면 당신에게 [str(i18n_data.reward_item)] [str(i18n_data.reward_number)]개를 드리겠습니다.",
                   "return_title": "상인이 돌아왔습니다!",
-                  "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still willing to trade them to me? I'll give you [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange. Still sounds good?",
+                  "return_greetings_positive": "돌아왔습니다! 제가 요청했던 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준비했군요. 여전히 저와 거래할 마음이 있으신가요? 그렇다면 [str(i18n_data.reward_item)] [str(i18n_data.reward_number)]개를 드리겠습니다. 괜찮은 제안이죠?",
                   "return_greetings_negative": "돌아왔습니다, 하지만 당신은 제가 요청했던 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준비하지 못한 것 같군요. 아쉽군요! 아마 다음 기회가 있을겁니다!"
                },
                "returning_crop_trader_encounter": {
@@ -1574,7 +1574,7 @@
                   "waiting_text": "상인은 [str(i18n_data.hour_counter)] [str(i18n_data.period)] 뒤에 돌아와 [str(i18n_data.reward_item)]을(를) 줄 것입니다. 만약 당신이 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준비해두었다면요!",
                   "return_title": "상인이 돌아왔습니다!",
                   "return_greetings_positive": "돌아왔습니다! 제가 요청했던 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준비했군요. 여전히 저와 거래할 마음이 있으신가요? 그렇다면 [str(i18n_data.reward_item)]을(를) 드리겠습니다. 여전히 괜찮으신가요?",
-                  "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. That's too bad! Maybe next time!"
+                  "return_greetings_negative": "돌아왔습니다. 하지만 제가 요청했던 [str(i18n_data.want_item)] [str(i18n_data.want_number)]개를 준비하지 못한 것 같군요. 안타깝네요! 아마 다음 기회가 있을겁니다!"
                },
                "rugs_shop": {
                   "shop_info": {
@@ -1584,7 +1584,7 @@
                },
                "stonecutter_shop": {
                   "shop_info": {
-                     "name": "Rufus Garrow's Stonecutter Shop",
+                     "name": "Rufus Garrow의 석재 상점",
                      "title": "Rufus Garrow가 상품을 팔기 위해 도착했습니다."
                   }
                },
@@ -1596,12 +1596,12 @@
                },
                "woodcutter_shop": {
                   "shop_info": {
-                     "name": "Norm Windriser's Woodcutter Shop",
-                     "title": "Norm Windriser has arrived with wares to sell"
+                     "name": "Norm Windriser의 목재 상점",
+                     "title": "Norm Windriser가 상품을 거래하기 위해 도착했습니다."
                   }
                },
                "valor_tier_2_reached": {
-                  "title": "The Princess's Herald Returns",
+                  "title": "공주의 전령이 돌아왔다.",
                   "speaker_name": "명예로운 Anwyn Redelm",
                   "message": "Congratulations, [str(i18n_data.town_name)]! Word has spread of your martial prowess. Your town officially qualifies as a township! I have brought building materials and trade agreements, as is customary!",
                   "accept": "우후!",
@@ -2133,7 +2133,7 @@
                               "000": "Hahaha!! Your puny settlement now part of Glittering Territory! I deserve tribute of shinies!",
                               "001": "Human Peons! You no understand the might of the Glittering Army! You lucky to bow before me. Also, want some things to hold to at night; to sing me to sleep. ",
                               "002": "You got supplies? We take; we good. We have understanding?",
-                              "003": "Hahahah, you the new kid in the great Red Territory. This means me less-new-kid take your lunch. Lunch metaphor.  You make for us. Or else.",
+                              "003": "하하하, 위대한 붉은 영토의 새로운 꼬마군. 난 너의 점심을 뺏어먹을꺼야. 우릴 위해 만들어줘야게어. 아님 다른 것들이라도.",
                               "004": "You dumb bok, me big Glittering Chieftain! Natural order mean you give me stuff and I no dees-tro-i you. Me want supplies. Understand?"
                            },
                            "bulletin_title": "A goblin with a fancy hat swaggers into town",
@@ -2185,7 +2185,7 @@
                            "bulletin_message": {
                               "000": "What? You say no? Then we take! TAKE ALL THINGS!!!!",
                               "001": "No no no. You supposed to say 'Yes.' You supposed to feel grateful! Try again? No? Bad! Me fix badness!",
-                              "002": "No? Me brain breaking!! Me break you!",
+                              "002": "싫다고? 날 화나게 만드는군! 널 부숴버리겠어!",
                               "003": "What? Cannot believe?! Must kill!!!",
                               "004": "You no understand. Alternative: Death. Deeeaaaattth. DEAAATTTTTHHH!!!"
                            },
@@ -2722,7 +2722,7 @@
                "random_raid": {
                   "mission": {
                      "sighted_bulletin": {
-                        "title": "Invaders Approaching!"
+                        "title": "적이 쳐들어온다!"
                      }
                   }
                }
@@ -5002,19 +5002,19 @@
             }
          },
          "bronze_breastplate": {
-            "display_name": "Bronze Breastplate",
+            "display_name": "청동 흉갑",
             "description": "Armor",
             "bronze_breastplate_iconic": {
-               "display_name": "Bronze Breastplate",
+               "display_name": "청동 흉갑",
                "description": "Armor"
             }
          },
          "cloth_padded_vest": {
-            "display_name": "Padded Vest",
-            "description": "Provides light protection in a fight.",
+            "display_name": "푹신한 조끼",
+            "description": "전투 시 가벼운 방어 기능을 제공합니다.",
             "cloth_padded_vest_iconic": {
-               "display_name": "Padded Vest",
-               "description": "Provides light protection in a fight. Every little bit helps!"
+               "display_name": "푹신한 조끼",
+               "description": "전투 시 가벼운 방어 기능을 제공합니다. 아무리 하찮은 것이라도 쓸모가 있다!"
             }
          },
          "iron_mail": {
@@ -5428,31 +5428,31 @@
          "large_crate": {
             "large_crate_ghost": {
                "display_name": "큰 상자",
-               "description": "Storage container"
+               "description": "32개의 아이템을 저장할 수 있습니다."
             }
          },
          "large_urn": {
             "large_urn_ghost": {
                "display_name": "큰 항아리",
-               "description": "Storage container"
+               "description": "32개의 아이템을 저장할 수 있습니다."
             }
          },
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
                "display_name": "가죽으로 꾸민 상자",
-               "description": "Storage container"
+               "description": "64개의 아이템을 저장할 수 있습니다."
             }
          },
          "small_crate": {
             "small_crate_ghost": {
                "display_name": "작은 상자",
-               "description": "Storage container"
+               "description": "8개의 아이템을 저장할 수 있습니다."
             }
          },
          "stone_chest": {
             "stone_chest_ghost": {
                "display_name": "석조 상자",
-               "description": "Storage container"
+               "description": "64개의 아이템을 저장할 수 있습니다."
             }
          },
          "barrel": {
@@ -5464,13 +5464,13 @@
          "small_urn": {
             "small_urn_ghost": {
                "display_name": "작은 항아리",
-               "description": "For storing things"
+               "description": "8개의 아이템을 저장할 수 있습니다."
             }
          },
          "vault": {
             "vault_ghost": {
                "display_name": "The Vault",
-               "description": "거대한 저장고"
+               "description": "256개의 아이템을 저장할 수 있는 거대한 저장고입니다."
             }
          },
          "log_pile": {
@@ -5504,19 +5504,19 @@
          "small_crate_fine": {
             "small_crate_fine_ghost": {
                "display_name": "고품질의 작은 상자",
-               "description": "Storage container with style"
+               "description": "멋스러운 저장고입니다."
             }
          },
          "large_crate_fine": {
             "large_crate_fine_ghost": {
                "display_name": "고품질의 큰 상자",
-               "description": "Stores up to 32 items. With style."
+               "description": "32개의 아이템을 저장할 수 있는 멋스러운 저장고입니다."
             }
          },
          "leather_bound_chest_fine": {
             "leather_bound_chest_fine_ghost": {
                "display_name": "가죽으로 꾸민 고품질 상자",
-               "description": "Stores up to 64 items. With style."
+               "description": "64개의 아이템을 저장할 수 있는 멋스러운 저장고입니다."
             }
          }
       },
@@ -6060,13 +6060,13 @@
          "gargoyle": {
             "gargoyle_ghost": {
                "display_name": "Wall Gargoyle",
-               "description": "Gothic-style carving to decorate your walls."
+               "description": "당신의 벽을 장식할 고딕 스타일의 장식품"
             }
          },
          "gilded_crimson_rug": {
             "gilded_crimson_rug_ghost": {
-               "display_name": "Gilded Crimson Rug",
-               "description": "So regal"
+               "display_name": "금빛의 진홍색 러그",
+               "description": "장엄해"
             }
          },
          "loot_chest": {
@@ -6380,22 +6380,22 @@
       "food": {
          "berries": {
             "berry_basket": {
-               "display_name": "열매 바구니",
-               "description": "Creme of the caveman diet."
+               "display_name": "열매가 담긴 바구니",
+               "description": "원시시대 사람들이 먹던 크림"
             },
             "berry_serving": {
-               "display_name": "Plate of berries",
-               "description": "Todo: Invent whipped cream."
+               "display_name": "열매 한 접시",
+               "description": "할 일 : 휘핑크림 발명하기"
             }
          },
          "corn": {
             "amazing_corn_basket": {
-               "display_name": "Amazing Basket of Maize",
+               "display_name": "대단한 옥수수가 담긴 바구니",
                "description": "엄청난 영양소가 있는 옥수수."
             },
             "amazing_corn_serving": {
-               "display_name": "Amazing Maize",
-               "description": "Heavenly nutritious."
+               "display_name": "대단한 옥수수",
+               "description": "엄청나게 영양가가 높다."
             },
             "corn_basket": {
                "display_name": "옥수수가 담긴 바구니",
@@ -6616,7 +6616,7 @@
          },
          "rotten_basket": {
             "display_name": "썩은 음식이 담긴 바구니",
-            "description": "So rotten that it's lost all form and function."
+            "description": "너무 썩어서 모든 형태와 기능을 잃었어."
          },
          "rotten_egg": {
             "display_name": "썩은 알",
@@ -6832,7 +6832,7 @@
          "clay_bed_fine": {
             "clay_bed_fine_ghost": {
                "display_name": "고품질의 점토 침대",
-               "description": "Gets you off the ground in style. Still uncomfortable, though"
+               "description": "끌린다. 하지만 여전히 불편해."
             }
          },
          "blue_market_stall": {
@@ -6866,8 +6866,8 @@
       "gizmos": {
          "camp_standard": {
             "camp_standard_ghost": {
-               "display_name": "Camp Standard",
-               "description": "Use to mark territory, civilizedly."
+               "display_name": "주둔지 기준",
+               "description": "영토를 표시하기 위해 사용됩니다. 문명화합시다."
             }
          },
          "safety_standard": {
@@ -7186,7 +7186,7 @@
          },
          "carrot": {
             "carrot_basket": {
-               "display_name": "당근 바구니",
+               "display_name": "당근이 담긴 바구니",
                "description": "깔끔하게 정리되어 있다."
             },
             "carrot_serving": {
@@ -7218,7 +7218,7 @@
          },
          "turnip": {
             "turnip_basket": {
-               "display_name": "순무 바구니",
+               "display_name": "순무가 담긴 바구니",
                "description": "즙이 많아보이고 흥분돼!"
             },
             "turnip_serving": {
@@ -7268,7 +7268,7 @@
       "refined": {
          "bronze_ingot": {
             "display_name": "청동 주괴",
-            "description": "A bar of pure bronze."
+            "description": "순수한 청동괴"
          },
          "cloth_bolt": {
             "display_name": "피륙",
@@ -7276,27 +7276,27 @@
          },
          "copper_ingot": {
             "display_name": "구리 주괴",
-            "description": "A bar of pure copper.  "
+            "description": "순수한 구리괴"
          },
          "gold_ingot": {
             "display_name": "금 주괴",
-            "description": "A bar of pure gold. A suitable material for crafted goods."
+            "description": "순수한 금괴. 제작에 적합한 재료다."
          },
          "iron_ingot": {
             "display_name": "철 주괴",
-            "description": "A bar of pure iron."
+            "description": "순수한 철괴"
          },
          "leather_bolt": {
-            "display_name": "Bolt of Leather",
-            "description": "Supple but durable."
+            "display_name": "가죽",
+            "description": "부드럽고 오래간다."
          },
          "silver_ingot": {
             "display_name": "은 주괴",
-            "description": "A bar of pure silver."
+            "description": "순수한 은괴"
          },
          "steel_ingot": {
             "display_name": "강철 주괴",
-            "description": "A bar of pure steel."
+            "description": "순수한 강철괴"
          },
          "stone_bricks": {
             "display_name": "Stack of Stone Bricks",
@@ -7308,7 +7308,7 @@
          },
          "tin_ingot": {
             "display_name": "주석 주괴",
-            "description": "A bar of pure tin.  "
+            "description": "순수한 주석괴"
          },
          "bronze_gear": {
             "display_name": "Bronze Gear",
@@ -7322,8 +7322,8 @@
       "resources": {
          "coal": {
             "lump_of_coal": {
-               "display_name": "Lump 'o Coal",
-               "description": "A sizable chunk of solid coal."
+               "display_name": "석탄 덩어리",
+               "description": "크고 단단한 석탄 덩어리"
             }
          },
          "copper": {
@@ -7334,7 +7334,7 @@
          },
          "fiber": {
             "silkweed_bundle": {
-               "display_name": "Silkweed Bundle",
+               "display_name": "인주솜풀 묶음",
                "description": "Spinnable into thread"
             },
             "wool_bundle": {
@@ -7568,7 +7568,7 @@
                "description": "신비로운 기운을 내뿜고 있어."
             },
             "large_juniper_tree": {
-               "display_name": "큰 향나무",
+               "display_name": "대형 향나무",
                "description": "인상적인 표본이야."
             },
             "medium_juniper_tree": {
@@ -7576,27 +7576,27 @@
                "description": "강하고 커."
             },
             "small_juniper_tree": {
-               "display_name": "작은 노간주나무",
+               "display_name": "소형 노간주나무",
                "description": "아직 어려."
             }
          },
          "palm_tree": {
             "large_palm_tree": {
-               "display_name": "큰 야자나무",
+               "display_name": "대형 야자나무",
                "description": "인상적인 표본이야."
             },
             "small_palm_tree": {
-               "display_name": "작은 야자나무",
+               "display_name": "소형 야자나무",
                "description": "아직 어려."
             }
          },
          "acacia_tree": {
             "large_acacia_tree": {
-               "display_name": "큰 아카시아 나무",
+               "display_name": "대형 아카시아 나무",
                "description": "신비로운 기운을 내뿜고 있어."
             },
             "small_acacia_tree": {
-               "display_name": "작은 아카시아 나무",
+               "display_name": "소형 아카시아 나무",
                "description": "어리지만 원기 왕성해."
             },
             "sapling_acacia_tree": {
@@ -7612,13 +7612,13 @@
          },
          "joshua_tree": {
             "large_joshua_tree": {
-               "display_name": "큰 조슈아 나무",
+               "display_name": "대형 조슈아 나무",
                "description": "기이한 나무야."
             }
          },
          "pine_tree": {
             "large_pine_tree": {
-               "display_name": "큰 소나무",
+               "display_name": "대형 소나무",
                "description": "몇백년은 됐군요. 안타까워.."
             },
             "medium_pine_tree": {
@@ -7626,7 +7626,7 @@
                "description": "튼튼함의 전성기에게 있어."
             },
             "small_pine_tree": {
-               "display_name": "작은 소나무",
+               "display_name": "소형 소나무",
                "description": "아직 어려."
             }
          },
@@ -7646,7 +7646,7 @@
                "description": "신비로운 기운을 내뿜고 있어."
             },
             "large_oak_tree": {
-               "display_name": "큰 참나무",
+               "display_name": "대형 참나무",
                "description": "몇백년은 됐군요. 안타까워..."
             },
             "medium_oak_tree": {
@@ -7654,7 +7654,7 @@
                "description": "튼튼함의 전성기에게 있어."
             },
             "small_oak_tree": {
-               "display_name": "작은 참나무",
+               "display_name": "소형 참나무",
                "description": "묘목보다 약간 더 크다."
             },
             "sapling_oak_tree": {
@@ -7799,7 +7799,7 @@
             }
          },
          "arrow": {
-            "display_name": "Slowing Arrow",
+            "display_name": "슬로우 화살",
             "description": "Slows targets that it hits"
          },
          "recurve_bow": {
@@ -7823,7 +7823,7 @@
             }
          },
          "bullet": {
-            "display_name": "Bullet",
+            "display_name": "총알",
             "description": "Metal shelled projectile"
          },
          "turnip_bullet": {
@@ -7835,7 +7835,7 @@
             "description": "Bolt"
          },
          "fire_arrow": {
-            "display_name": "Fire Arrow",
+            "display_name": "불 화살",
             "description": "An arrow imbued with flames"
          }
       },
@@ -7920,8 +7920,8 @@
                "description": "Learn to grow wheat."
             },
             "silkweed_seeds": {
-               "display_name": "Silkweed Seeds",
-               "description": "Learn to grow silkweed."
+               "display_name": "인주솜풀 씨앗",
+               "description": "인주솜풀을 키우는 방법을 배우세요."
             }
          }
       },
@@ -8430,7 +8430,7 @@
             },
             "simple_wooden_chair_recipe": {
                "description": "앉아서 음식을 먹는다면 20% 더 만족스러울 겁니다.",
-               "recipe_name": "간단한 나무 의자",
+               "recipe_name": "평범한 나무 의자",
                "flavor": "이 4개의 다리를 가지기까지 10,000년이나 걸렸습니다."
             },
             "small_crate_recipe": {
@@ -9337,7 +9337,7 @@
             },
             "simple_clay_chair_recipe": {
                "description": "먹는동안 어디든 앉을 수 있다.",
-               "recipe_name": "간단한 점토 의자",
+               "recipe_name": "평범한 점토 의자",
                "flavor": "'Nests with the tables, ooo, symbolic!' --Nestor Adya, Acolyte"
             },
             "decorative_teapot_recipe": {
@@ -9543,15 +9543,15 @@
          },
          "snare_trap": {
             "display_name": "사냥용 덫",
-            "description": "Safely immobilizes its prey",
+            "description": "안전하게 사냥감을 고정시킨다.",
             "commands": {
                "harvest_trapped_beast": {
                   "display_name": "도축",
-                  "description": "Slay the trapped beast and harvest him for materials!"
+                  "description": "잡힌 짐승들을 죽이고 재료를 얻자!"
                },
                "tame_trapped_beast": {
                   "display_name": "길들이기",
-                  "description": "Make friends! Befriend the trapped beast and make it your pet."
+                  "description": "친구를 만들자! 잡힌 동물과 친해져서 펫으로 만들자."
                }
             }
          },
@@ -9578,7 +9578,7 @@
          },
          "trapping_grounds": {
             "display_name": "덫 설치 구역",
-            "description": "Trappers catch critters for food and resources in this zone."
+            "description": "사냥꾼은 이 구역에서 음식과 자원을 위해 동물을 잡습니다."
          }
       },
       "treasure_hunter": {
@@ -9634,17 +9634,17 @@
             },
             "bolt_of_cloth_recipe": {
                "description": "Used to create more comfortable furniture.",
-               "recipe_name": "Basic Bolt of Cloth",
+               "recipe_name": "평범한 피륙",
                "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
             },
             "cloth_bolt_recipe": {
                "description": "Used to create more comfortable furniture.",
-               "recipe_name": "Bolt of Cloth",
+               "recipe_name": "피륙",
                "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
             },
             "cloth_padded_vest_recipe": {
                "description": "This triple-quilted vest provides more protection to your combat units than mere clothing. Not a lot more, but every little bit helps, right?",
-               "recipe_name": "Padded Vest",
+               "recipe_name": "푹신한 조끼",
                "flavor": "Needs... thicker... padding!"
             },
             "curtains_recipe": {
@@ -9654,12 +9654,12 @@
             },
             "fur_rug_recipe": {
                "description": "A warm and cozy rug, sewn from various animal pelts.",
-               "recipe_name": "Fur Rug",
+               "recipe_name": "모피",
                "flavor": "Perfect for an evening by the fire."
             },
             "leather_bolt_recipe": {
                "description": "Prepared sheets of leather, ready to be put to good use.",
-               "recipe_name": "Bolt of Leather",
+               "recipe_name": "가죽",
                "flavor": "You can hardly see the individual sources."
             },
             "leather_vest_recipe": {
@@ -9669,12 +9669,12 @@
             },
             "plushie_toy_rabbit_recipe": {
                "description": "A toy... for children of course.",
-               "recipe_name": "Plushie Toy Rabbit",
-               "flavor": "She loves you!"
+               "recipe_name": "부드러운 토끼 장난감",
+               "flavor": "그녀는 널 사랑해!"
             },
-            "clothing_armor_name": "Clothing & Armor",
-            "toys_name": "Toys",
-            "decorations_name": "Decorations",
+            "clothing_armor_name": "옷 & 방어구",
+            "toys_name": "장난감",
+            "decorations_name": "장식",
             "crafting_materials_name": "Crafting Materials",
             "spool_of_thread_recipe": {
                "description": "Needed for cloth. Warm and fluffy",
@@ -9833,7 +9833,7 @@
             },
             "level_3_data": {
                "perk_000_name": "숙련된 아이템 사용",
-               "perk_000_description": "치료 물품의 효능을 50% 증대시킵니다."
+               "perk_000_description": "치료 용품의 효능을 50% 증대시킵니다."
             },
             "level_6_data": {
                "title": "일류 약초사"
@@ -9857,17 +9857,17 @@
          },
          "herbalist_workbench": {
             "herbalist_workbench_ghost": {
-               "display_name": "Herbalist Lab",
-               "description": "Used to craft healing items"
+               "display_name": "약초사의 실험실",
+               "description": "치료 용품 제작에 사용됩니다."
             }
          },
          "recipes": {
             "herbalist_workbench_recipe": {
-               "description": "Allows the Herbalist to craft healing balms and bandages.",
-               "recipe_name": "Herbalist Lab"
+               "description": "약초사가 치료약과 붕대를 만들도록 해줍니다.",
+               "recipe_name": "약초사의 실험실"
             },
-            "workbenches_name": "Workbenches",
-            "tonics_name": "Tonics",
+            "workbenches_name": "작업대",
+            "tonics_name": "강장제",
             "small_healing_tonic_recipe": {
                "description": "A medicinal drink that heals for a minuscule amount",
                "recipe_name": "Small Healing Tonic"
@@ -9880,7 +9880,7 @@
                "description": "Buffs muscle of all hearthlings for a short while",
                "recipe_name": "Strength Tonic"
             },
-            "bandages_name": "Bandages",
+            "bandages_name": "붕대",
             "coarse_bandage_recipe": {
                "recipe_name": "Coarse Bandage",
                "description": "Used by the herbalist to heal for a small amount"
@@ -9901,12 +9901,12 @@
                "description": "This tonic will make your town citizens less sleepy and move faster for a short while.",
                "recipe_name": "Energy Tonic"
             },
-            "decorations_name": "Decorations",
+            "decorations_name": "장식",
             "cleric_tome_recipe": {
                "recipe_name": "성직자의 책",
                "description": "하슬링을 성직자로 전직시키기 위해 필요합니다."
             },
-            "tools_name": "Tools"
+            "tools_name": "도구"
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
@@ -9917,8 +9917,8 @@
       },
       "cleric": {
          "cleric_outfit": {
-            "display_name": "Cleric's Robes",
-            "description": "Holy garb worn by the devout few"
+            "display_name": "성직자의 로브",
+            "description": "소수의 독실한 자들을 위한 신성한 의복입니다."
          },
          "cleric_description": {
             "display_name": "성직자",
@@ -9958,8 +9958,8 @@
                "display_name": "성직자의 책",
                "description": "하슬링을 성직자로 전직시키기 위해 필요합니다."
             },
-            "display_name": "Tome of Healing",
-            "description": "Contains sacred texts on the way of the cleric"
+            "display_name": "치유의 책",
+            "description": "성직자의 길에 대한 성스러운 글들이 적혀있습니다."
          },
          "cleric_buffs": {
             "heal_aura_1_buff": {
@@ -10035,7 +10035,7 @@
             "requirements": "Level 2 blacksmith and Magmasmith's hammer"
          },
          "recipes": {
-            "workbenches_name": "Workbenches"
+            "workbenches_name": "작업대"
          }
       },
       "knight": {
@@ -10143,13 +10143,13 @@
             },
             "egg": {
                "decay_1": {
-                  "description": "Starting to go bad. Better cook it soon."
+                  "description": "좋지 않은 시작이지만 요리하면 곧 좋아질거예요."
                }
             }
          },
          "jerky": {
             "display_name": "육포",
-            "description": "Stringy, but nutritious!"
+            "description": "질기지만 영양가는 많아!"
          }
       },
       "monster": {
@@ -10163,13 +10163,13 @@
       },
       "resources": {
          "fur_pelt": {
-            "display_name": "Fur pelt",
-            "description": "Soft, supple, and quite dead"
+            "display_name": "모피",
+            "description": "부드럽고 유연하며 완전히 죽었다."
          }
       },
       "base_human_npc": {
          "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
-         "description": "A guest of your town"
+         "description": "당신의 마을을 위한 퀘스트"
       }
    },
    "scenarios": {
