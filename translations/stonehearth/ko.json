@@ -1547,7 +1547,7 @@
                               "000": "Welcome to the area, folks! Goodness, you people look starved. Here's something to help:",
                               "001": "Just celebrated Embarcation Day, eh? Buck up! You look like you'd really benefit from something tasty. How about I give you:",
                               "002": "시드를 찬양하라! 당신의 시작에 도움을 줄 것들을 가져왔습니다.",
-                              "003": "Long journey over the mountains, eh? Well you're in a good place now. Here's a little something to get you started!",
+                              "003": "산 넘어 긴 여행을 하셨군요? 지금 이 장소는 좋아보이는군요. 당신의 시작을 도와줄 작은 선물을 가져왔습니다!",
                               "004": "Welcome to the area, Embarkees!! Here's a gift to get you started!"
                            },
                            "bulletin_title": "백발의 여행가가 다가오고 있습니다.",
@@ -5003,10 +5003,10 @@
          },
          "bronze_breastplate": {
             "display_name": "청동 흉갑",
-            "description": "Armor",
+            "description": "방어구",
             "bronze_breastplate_iconic": {
                "display_name": "청동 흉갑",
-               "description": "Armor"
+               "description": "방어구"
             }
          },
          "cloth_padded_vest": {
@@ -5018,11 +5018,11 @@
             }
          },
          "iron_mail": {
-            "display_name": "Iron Mail",
-            "description": "A full suit of iron armor",
+            "display_name": "철 갑옷",
+            "description": "든든한 철 방어구이다.",
             "iron_mail_iconic": {
-               "display_name": "Iron Mail",
-               "description": "A full suit of iron armor"
+               "display_name": "철 갑옷",
+               "description": "든든한 철 방어구이다."
             }
          },
          "leather_vest": {
@@ -5034,11 +5034,11 @@
             }
          },
          "steel_mail": {
-            "display_name": "Full Platemail",
-            "description": "A full suit of steel armor",
+            "display_name": "강철 갑옷",
+            "description": "든든한 강철 갑옷이다.",
             "steel_mail_iconic": {
-               "display_name": "Full Platemail",
-               "description": "A full suit of steel armor"
+               "display_name": "강철 갑옷",
+               "description": "든든한 강철 갑옷이다."
             }
          },
          "studded_leather_helmet": {
@@ -5046,18 +5046,18 @@
             "description": "당신의 머리를 보호합니다"
          },
          "wooden_shield": {
-            "display_name": "Rough Wooden Buckler",
-            "description": "Crude and basic",
+            "display_name": "거친 나무 방패",
+            "description": "기본 방패다.",
             "wooden_shield_iconic": {
-               "display_name": "Rough Wooden Buckler",
-               "description": "Crude and basic"
+               "display_name": "거친 나무 방패",
+               "description": "기본 방패다."
             }
          },
          "bronze_circlet": {
-            "display_name": "Bronze Circlet",
+            "display_name": "청동 관",
             "description": "당신의 머리를 보호합니다",
             "bronze_circlet_iconic": {
-               "display_name": "Leather Skull Cap",
+               "display_name": "청동 관",
                "description": "당신의 머리를 보호합니다"
             }
          },
@@ -5078,15 +5078,15 @@
             }
          },
          "leather_helmet": {
-            "display_name": "Leather Skull Cap",
+            "display_name": "가죽 헬멧",
             "description": "당신의 머리를 보호합니다",
             "leather_helmet_iconic": {
-               "display_name": "Leather Skull Cap",
+               "display_name": "가죽 헬멧",
                "description": "당신의 머리를 보호합니다"
             }
          },
          "steel_helmet": {
-            "display_name": "Plate Helm",
+            "display_name": "강철 헬멧",
             "description": "당신의 머리를 보호합니다",
             "steel_helmet_iconic": {
                "display_name": "강철 헬멧",
@@ -5102,12 +5102,12 @@
             "description": "당신의 머리를 보호합니다"
          },
          "iron_circlet": {
-            "display_name": "Iron Circlet",
+            "display_name": "철 관",
             "description": "Medium head protection"
          },
          "steel_circlet": {
-            "display_name": "Steel Circlet",
-            "description": "Light weight and strong protection for one's head"
+            "display_name": "강철 관",
+            "description": "가볍고 강한 머리 보호구입니다."
          },
          "simple_quiver": {
             "display_name": "뾰족한 화살통",
@@ -5142,11 +5142,11 @@
             }
          },
          "cloth_padded_helmet": {
-            "display_name": "Cloth Padded Helmet",
-            "description": "Extra padding for your noggin",
+            "display_name": "푹신한 천 헬멧",
+            "description": "당신의 머리를 조금 보호해준다.",
             "cloth_padded_helmet_iconic": {
-               "display_name": "Cloth Padded Helmet",
-               "description": "Extra padding for your noggin"
+               "display_name": "푹신한 천 헬멧",
+               "description": "당신의 머리를 조금 보호해준다."
             }
          },
          "bronze_helm": {
@@ -6300,25 +6300,25 @@
          },
          "decorative_elite_gong": {
             "decorative_elite_gong_ghost": {
-               "display_name": "Elite Gong",
+               "display_name": "엘리트 훈장",
                "description": "Inspired by the Elite Kobold Menace"
             }
          },
          "decorative_generals_gong": {
             "decorative_generals_gong_ghost": {
-               "display_name": "General's Golden Gong",
+               "display_name": "장군의 금빛 훈장",
                "description": "Inspired by the Kobold Archer General"
             }
          },
          "decorative_master_gong": {
             "decorative_master_gong_ghost": {
-               "display_name": "Master's Gong",
+               "display_name": "마스터 훈장",
                "description": "Inspired by the Kobold Master Archer"
             }
          },
          "decorative_scout_gong": {
             "decorative_scout_gong_ghost": {
-               "display_name": "Scout's Gong",
+               "display_name": "스카우트 훈장",
                "description": "Inspired by the Kobold Scout"
             }
          },
@@ -7303,8 +7303,8 @@
             "description": "A key component of stone buildings"
          },
          "thread": {
-            "display_name": "Spool of Thread",
-            "description": "Spun from the wool of sheep. Or plants."
+            "display_name": "실 한타래",
+            "description": "양털이나 식물로 짰다."
          },
          "tin_ingot": {
             "display_name": "주석 주괴",
@@ -7671,18 +7671,18 @@
       },
       "weapons": {
          "bronze_mace": {
-            "display_name": "Bronze Mace",
+            "display_name": "청동 메이스",
             "description": "Precisely engineered for maximum bashing.",
             "bronze_mace_iconic": {
-               "display_name": "Bronze Mace",
+               "display_name": "청동 메이스",
                "description": "For flattening faces"
             }
          },
          "bronze_sword": {
-            "display_name": "Bronze Short Sword",
+            "display_name": "짧은 청동 검",
             "description": "Basic, but better than fighting with a sharpened stick!",
             "bronze_sword_iconic": {
-               "display_name": "Bronze Sword",
+               "display_name": "청동 검",
                "description": "Pointy. Shiny."
             }
          },
@@ -7703,27 +7703,27 @@
             }
          },
          "giant_bone_mace": {
-            "display_name": "Giant Bone Mace",
+            "display_name": "거인 뼈 메이스",
             "description": "Heavy, it packs a wallop.",
             "giant_bone_mace_iconic": {
-               "display_name": "Giant Bone Mace",
+               "display_name": "거인 뼈 메이스",
                "description": "For flattening faces"
             }
          },
          "iron_mace": {
-            "display_name": "Iron Mace",
+            "display_name": "철 메이스",
             "description": "Heavy, it packs a wallop.",
             "iron_mace_iconic": {
-               "display_name": "Iron Mace",
+               "display_name": "철 메이스",
                "description": "For flattening faces"
             }
          },
          "iron_pike": {
-            "display_name": "Iron Pike",
-            "description": "Sharp. Long. Pointy.",
+            "display_name": "창",
+            "description": "날카롭고 길고 뾰족하다. (양손 무기)",
             "iron_pike_iconic": {
-               "display_name": "Iron pike",
-               "description": "Sharp. Long. Pointy."
+               "display_name": "창",
+               "description": "날카롭고 길고 뾰족하다."
             }
          },
          "jagged_cleaver": {
@@ -7735,11 +7735,11 @@
             }
          },
          "long_sword": {
-            "display_name": "Long Sword",
-            "description": "Sharp, with extra reach. A faithful weapon.",
+            "display_name": "긴 검",
+            "description": "날카롭고 길다. 믿음직한 무기다.",
             "long_sword_iconic": {
-               "display_name": "Long Sword",
-               "description": "Pointy. Shiny."
+               "display_name": "긴 검",
+               "description": "뾰족하고 반짝거린다."
             }
          },
          "npc_animal_prod": {
@@ -7747,10 +7747,10 @@
             "description": "Keeps the fuzzies in line"
          },
          "short_sword": {
-            "display_name": "Short Sword",
+            "display_name": "짧은 검",
             "description": "Stubby, but its steel blade keeps an edge.",
             "short_sword_iconic": {
-               "display_name": "Short Sword",
+               "display_name": "짧은 검",
                "description": "Pointy. Shiny."
             }
          },
@@ -7759,19 +7759,19 @@
             "description": "Nasty, pointy spikes"
          },
          "stone_maul": {
-            "display_name": "Stone Maul",
+            "display_name": "해머",
             "description": "The perfect tool for bludgeoning",
             "stone_maul_iconic": {
-               "display_name": "Stone Maul",
+               "display_name": "해머",
                "description": "For flattening faces"
             }
          },
          "two_handed_sword": {
-            "display_name": "Two Handed Sword",
-            "description": "Double the hands, double the trouble.",
+            "display_name": "양손 검",
+            "description": "양손을 이용해 두 배로 해결하라. (양손 무기)",
             "two_handed_sword_iconic": {
-               "display_name": "Two Handed Sword",
-               "description": "Double the hands, double the trouble."
+               "display_name": "양손 검",
+               "description": "양손을 이용해 두 배로 해결하라."
             }
          },
          "wooden_sword": {
@@ -7779,7 +7779,7 @@
             "description": "Thacks thine enemies with oaken might",
             "wooden_sword_iconic": {
                "display_name": "보병의 목검",
-               "description": "Basic wooden sword."
+               "description": "기본적인 목검이다."
             },
             "wooden_sword_talisman": {
                "display_name": "보병의 목검",
@@ -7787,7 +7787,7 @@
             }
          },
          "scythe": {
-            "display_name": "Scythe",
+            "display_name": "큰 낫",
             "description": "Preferred weapon for reaping"
          },
          "bow": {
@@ -8074,10 +8074,10 @@
          },
          "blacksmith_hammer": {
             "display_name": "대장장이의 망치",
-            "description": "Tools of the trade for a blacksmith.",
+            "description": "대장장이가 일하는데 쓰는 도구입니다.",
             "blacksmith_hammer_iconic": {
                "display_name": "대장장이의 망치",
-               "description": "Tools of the trade for a blacksmith."
+               "description": "대장장이가 일하는데 쓰는 도구입니다."
             },
             "blacksmith_hammer_talisman": {
                "display_name": "대장장이의 망치",
@@ -8090,34 +8090,34 @@
          },
          "blacksmith_workbench": {
             "blacksmith_workbench_ghost": {
-               "display_name": "Blacksmith Anvil",
-               "description": "Used by the Blacksmith for crafting."
+               "display_name": "대장장이의 모루",
+               "description": "대장장이의 작업에 사용됩니다."
             }
          },
          "recipes": {
             "iron_shield_recipe": {
-               "description": "Heavy, but effective.",
+               "description": "무겁지만 효과적이다.",
                "flavor": "'Buck up, recruit! Better the shield dent than you!' -Thredd, Man at Arms",
-               "recipe_name": "Iron Shield"
+               "recipe_name": "철 방패"
             },
             "bronze_breastplate_recipe": {
                "description": "Partial but sturdy coverage against blunt and edged weapons.",
-               "recipe_name": "Bronze Breastplate",
+               "recipe_name": "청동 흉갑",
                "flavor": "Design reminiscent of the Phoenix's Legions."
             },
             "bronze_ingot_recipe": {
-               "description": "A bar of pure bronze. A suitable material for crafted goods.",
-               "recipe_name": "Bronze Ingot",
+               "description": "순수한 청동괴. 제작에 적합한 재료다.",
+               "recipe_name": "청동 주괴",
                "flavor": "The masters of old considered its production, evidence of our triumph over the earth."
             },
             "bronze_mace_recipe": {
                "description": "Heavy, it packs a wallop.",
-               "recipe_name": "Bronze Mace",
+               "recipe_name": "청동 메이스",
                "flavor": "The good news: there is no pointy end."
             },
             "bronze_sword_recipe": {
                "description": "Basic, but better than fighting with a sharpened stick!",
-               "recipe_name": "Bronze Sword",
+               "recipe_name": "청동 검",
                "flavor": "Made in the shape of Braun's own blade."
             },
             "carpenter_saw_recipe": {
@@ -8126,167 +8126,167 @@
                "flavor": "Now the circle can begin anew."
             },
             "copper_ingot_recipe": {
-               "description": "A bar of pure copper. A suitable material for crafted goods.",
-               "recipe_name": "Copper Ingot",
+               "description": "순수한 구리괴. 제작에 적합한 재료다.",
+               "recipe_name": "구리 주괴",
                "flavor": "Smooth and silky to the touch"
             },
             "gold_ingot_recipe": {
-               "description": "A bar of pure gold. A suitable material for crafted goods.",
-               "recipe_name": "Gold Ingot",
+               "description": "순수한 금괴. 제작에 적합한 재료다.",
+               "recipe_name": "금 주괴",
                "flavor": "The most expensive bludgeon ever."
             },
             "iron_ingot_recipe": {
-               "description": "A bar of pure Iron. A suitable material for crafted goods.",
-               "recipe_name": "Iron Ingot",
+               "description": "순수한 철괴. 제작에 적합한 재료다.",
+               "recipe_name": "철 주괴",
                "flavor": "To both swords and plowshares, what an egg is to a chicken."
             },
             "iron_mace_recipe": {
                "description": "Heavy, it packs a wallop.",
-               "recipe_name": "Iron Mace",
+               "recipe_name": "철 메이스",
                "flavor": "And Erin rested her forehead upon it, and the iron stole away enchantment and memory, together."
             },
             "iron_mail_recipe": {
-               "description": "A full suit of heavy, durable iron armor.",
-               "recipe_name": "Iron Mail",
+               "description": "무겁지만 든든하고 오래가는 철 갑옷이다.",
+               "recipe_name": "철 갑옷",
                "flavor": "But he'd hidden his heart in an iron fortress, and no fey could touch it. --Songs of Evermarth"
             },
             "iron_pike_recipe": {
-               "description": "Sharp. Long. Pointy.",
-               "recipe_name": "Iron pike",
-               "flavor": "'Coward,' Elden spat. 'Face me blade to blade, or no knight be you.'"
+               "description": "날카롭고 길고 뾰족하다.",
+               "recipe_name": "창",
+               "flavor": "코워드 엘든이 말했다. '칼과 칼을 맞대지 않으면 넌 기사가 될 수 없어'"
             },
             "long_sword_recipe": {
-               "description": "Sharp, with extra reach. A faithful weapon.",
-               "recipe_name": "Long Sword",
-               "flavor": "'Hah! The only weapon worthy of specialization. --Lady Giest"
+               "description": "날카롭고 길다. 믿음직한 무기다.",
+               "recipe_name": "긴 검",
+               "flavor": "'하하하! 전문성이 뛰어난 유일한 칼이라 할 수 있지. - 레이디 기스트"
             },
-            "weapons_name": "Weapons",
-            "smelt_name": "Smelting",
-            "armor_name": "Armor",
-            "tools_name": "Tools",
+            "weapons_name": "무기",
+            "smelt_name": "제련",
+            "armor_name": "방어구",
+            "tools_name": "도구",
             "short_sword_recipe": {
-               "description": "Stubby, but its steel blade keeps an edge.",
-               "recipe_name": "Steel Short Sword",
-               "flavor": "But, does it glow when orcs are near?"
+               "description": "짤막하지만 끝은 강철 날이다.",
+               "recipe_name": "짧은 강철 검",
+               "flavor": "하지만 오크들이 가까이 있을 때 붉게 물들 수 있을까?"
             },
             "silver_ingot_recipe": {
-               "description": "A bar of pure silver. A suitable material for crafted goods.",
-               "recipe_name": "Silver Ingot",
-               "flavor": "A pair of silver shoes once started a Phoenix war over currency."
+               "description": "순수한 은괴. 제작에 적합한 재료다.",
+               "recipe_name": "은 주괴",
+               "flavor": "한 켤레의 은 신발이 한 때는 피닉스 전쟁을 유발시켰다."
             },
             "steel_ingot_recipe": {
-               "description": "A bar of pure steel. A suitable material for crafted goods.",
-               "recipe_name": "Steel Ingot",
-               "flavor": "The beginning of the modern age."
+               "description": "순수한 강철괴. 제작에 적합한 재료다.",
+               "recipe_name": "강철 주괴",
+               "flavor": "현대 사회의 시작이다."
             },
             "steel_mail_recipe": {
-               "description": "A full suit of heavy, durable steel armor.",
-               "recipe_name": "Full Platemail",
-               "flavor": "Full Metal Jacket"
+               "description": "무겁지만 든든하고 오래가는 강철 갑옷이다.",
+               "recipe_name": "강철 갑옷",
+               "flavor": "든든한 금속 갑옷이다."
             },
             "tin_ingot_recipe": {
-               "description": "A bar of pure tin. A suitable material for crafted goods.",
-               "recipe_name": "Tin Ingot",
-               "flavor": "Step 1: Beat thin. Step 2: Use to cover roof of town hall."
+               "description": "순수한 주석괴. 제작에 적합한 재료다.",
+               "recipe_name": "주석 주괴",
+               "flavor": "1단계: 얇게 만들어라. 2단계: 마을의 지붕으로 써라."
             },
             "trapper_knife_recipe": {
                "description": "하슬링을 사냥꾼으로 전직시키기 위해 필요합니다.",
                "recipe_name": "사냥꾼의 단검",
-               "flavor": "Keep your edge whisker sharp, boy, and cut quick. --Willard Foxghost"
+               "flavor": "소년이여, 칼은 항상 날카롭게 유지하고 빠르게 베어라. - 윌리드 폭스고스트"
             },
             "two_handed_sword_recipe": {
-               "description": "Double the hands, double the trouble.",
-               "recipe_name": "Two Handed Sword"
+               "description": "양손을 이용해 두 배로 해결하라.",
+               "recipe_name": "양손 검"
             },
             "blacksmith_forge_recipe": {
-               "description": "Smelt metals into ingots.",
-               "recipe_name": "Blacksmith's Forge",
-               "flavor": "In flame, purity, in purity, strength. -Lucan Varius, Artifex Ignis"
+               "description": "금속을 주괴로 제련한다.",
+               "recipe_name": "대장장이의 제철소",
+               "flavor": "불 속에서, 순수하고, 더욱 순수하게, 그럼 강해진다. - 불의 예술가, 루칸 베리어스"
             },
             "blacksmith_workbench_recipe": {
-               "description": "Used to create weapons and armor out of ingots.",
-               "recipe_name": "Blacksmith's Anvil",
+               "description": "주괴를 이용해 무기와 방어구를 만드는데 사용된다.",
+               "recipe_name": "대장장이의 모루",
                "flavor": "It is no coincidence that the metaphors of good character descend from work of the smith. -Lucan Varius, Artifex Ignis"
             },
-            "workbenches_name": "Workbenches",
+            "workbenches_name": "작업대",
             "storage_name": "저장고",
             "vault_recipe": {
                "description": "256개의 아이템을 위한 거대한 저장고입니다!",
-               "recipe_name": "Vault",
+               "recipe_name": "금고",
                "flavor": "Conceived by the brilliant Arci, Survivor of Chaat"
             },
             "iron_coif_recipe": {
-               "description": "Protection for your head",
-               "recipe_name": "Iron Coif"
+               "description": "당신의 머리를 보호합니다.",
+               "recipe_name": "철 두건"
             },
             "steel_helmet_recipe": {
                "description": "Extra protection for your noggin!",
-               "recipe_name": "Plate Helm",
+               "recipe_name": "강철 헬멧",
                "flavor": "Long considered the epitome of headgear; doubles as a fine soup pot - Roke Tastybakes II"
             },
             "bronze_circlet_recipe": {
-               "description": "Protection for your head!",
-               "recipe_name": "Bronze Circlet",
-               "flavor": "So regal. So stylish!"
+               "description": "당신의 머리를 보호합니다.",
+               "recipe_name": "청동 관",
+               "flavor": "장엄하고 멋져!"
             },
             "bronze_shield_recipe": {
-               "description": "Increase armor and blocks attacks!",
-               "recipe_name": "Bronze Shield"
+               "description": "방어구로 착용하면 공격을 막을 수 있어!",
+               "recipe_name": "청동 방패"
             },
-            "decoration_name": "Decorations",
+            "decoration_name": "장식",
             "steel_shield_recipe": {
-               "recipe_name": "Steel Shield",
-               "description": "Grants the ability to completely block attacks.",
-               "flavor": "Incredibly protective. Small children play turtle underneath."
+               "recipe_name": "강철 방패",
+               "description": "공격을 완벽히 막을 수 있는 능력을 줍니다.",
+               "flavor": "믿기 힘들 정도로 단단합니다. "
             },
             "knights_shield_recipe": {
                "recipe_name": "기사의 방패",
                "description": "하슬링을 기사로 전직시키기 위해 필요합니다."
             },
             "iron_helm_recipe": {
-               "recipe_name": "Iron Helm",
-               "description": "Protection for one's head"
+               "recipe_name": "철 헬멧",
+               "description": "당신의 머리를 보호합니다."
             },
             "iron_circlet_recipe": {
-               "recipe_name": "Iron Circlet",
-               "description": "It's quite heavy, but protects one's head"
+               "recipe_name": "철 관",
+               "description": "꽤 무겁지만, 당신의 머리를 보호해줍니다."
             },
             "steel_circlet_recipe": {
-               "recipe_name": "Steel Circlet",
-               "description": "Light weight and strong head protection"
+               "recipe_name": "강철 관",
+               "description": "가볍고 강한 머리 보호구입니다."
             },
             "decorative_elite_gong_recipe": {
                "description": "Inspired by the Elite Kobold Menace",
-               "recipe_name": "Decorative Elite Gong",
+               "recipe_name": "장식용 엘리트 훈장",
                "flavor": "As it turns out, their hats were very dense"
             },
             "decorative_generals_gong_recipe": {
                "description": "Enormous and decorative!",
-               "recipe_name": "General's Golden Gong",
+               "recipe_name": "장군의 금빛 훈장",
                "flavor": "The generals hat, when melted down, could have filled a lake with gold"
             },
             "decorative_master_gong_recipe": {
                "description": "Inspired by the Master Kobold Archer",
-               "recipe_name": "Decorative Master Gong",
+               "recipe_name": "장식용 마스터 훈장",
                "flavor": "Great for taunting master kobolds"
             },
             "decorative_scout_gong_recipe": {
                "description": "Inspired by the Kobold Scout",
-               "recipe_name": "Decorative Scout Gong",
+               "recipe_name": "장식용 스카우트 훈장",
                "flavor": "Even scouts are adorned with gold"
             },
             "silver_mail_recipe": {
-               "recipe_name": "Silver Mail",
-               "description": "The best armor... for now.",
+               "recipe_name": "은 갑옷",
+               "description": "좋은 방어구다... 지금은...",
                "flavor": "Cid loved the color of strawberries"
             },
             "silver_helmet_recipe": {
-               "recipe_name": "Silver Helmet",
+               "recipe_name": "은 헬멧",
                "description": "Quintessentially heroic",
                "flavor": "Inspired by the plumes of the Phoenix"
             },
             "bronze_helm_recipe": {
-               "recipe_name": "Bronze Helmet",
+               "recipe_name": "청동 헬멧",
                "description": "Pretty and protective",
                "flavor": "The iron workers insisted they had perfected the art, but the bronze workers argued their's was prettier."
             },
@@ -8752,7 +8752,7 @@
                "description": "옥수수를 갈아서 좋은 가루로 만드세요.",
                "recipe_name": "옥수수 가루"
             },
-            "decoration_name": "Decorations",
+            "decoration_name": "장식",
             "roast_mutton_recipe": {
                "recipe_name": "Roasted Rack of Mutton",
                "description": "Nutritious and delicious"
@@ -8820,7 +8820,7 @@
                "description": "하슬링을 기술자로 전직시키기 위해 필요합니다."
             },
             "display_name": "기술자의 렌치",
-            "description": "Tools of the trade for an Engineer"
+            "description": "기술자가 일하는데 쓰는 도구입니다."
          },
          "engineer_workbench": {
             "engineer_workbench_ghost": {
@@ -8873,7 +8873,7 @@
                "description": "Thick, sturdy iron door. Also comes with a thick, sturdy lock.",
                "recipe_name": "Ironclad Door"
             },
-            "decorations_name": "Decorations",
+            "decorations_name": "장식",
             "wooden_sign_engineer_recipe": {
                "description": "A sign with the mark of the Engineer.",
                "recipe_name": "Engineer's Wall-Mounted Sign"
@@ -9040,7 +9040,7 @@
          },
          "mason_chisel": {
             "display_name": "석공의 끌",
-            "description": "석공의 거래 도구입니다.",
+            "description": "석공이 일하는데 쓰는 도구입니다.",
             "mason_chisel_talisman": {
                "display_name": "석공의 끌",
                "description": "하슬링을 석공으로 전직시키기 위해 필요합니다."
@@ -9048,7 +9048,7 @@
          },
          "mason_hammer": {
             "display_name": "석공의 망치",
-            "description": "석공의 거래 도구입니다."
+            "description": "석공이 일하는데 쓰는 도구입니다."
          },
          "mason_outfit": {
             "display_name": "석공의 작업복",
@@ -9140,7 +9140,7 @@
             },
             "stone_maul_recipe": {
                "description": "패기 위한 완벽한 도구입니다.",
-               "recipe_name": "Stone Maul",
+               "recipe_name": "해머",
                "flavor": "고대 무기의 현대적 각색"
             },
             "stone_table_recipe": {
@@ -9267,8 +9267,8 @@
                "flavor": "Designed by Grandmaster crafter The_M"
             },
             "furniture_name": "Furniture and Decoration",
-            "decoration_name": "Decorations",
-            "utility_name": "Utility",
+            "decoration_name": "장식",
+            "utility_name": "도구",
             "potter_workbench_recipe": {
                "description": "Helps the potter create simple items from clay",
                "recipe_name": "Potter's Wheel",
@@ -9649,12 +9649,12 @@
             },
             "curtains_recipe": {
                "description": "Dresses up an otherwise ordinary window.",
-               "recipe_name": "Pretty Curtains",
+               "recipe_name": "매력적인 커튼",
                "flavor": "Light-blocking technology encourages sleeping-in."
             },
             "fur_rug_recipe": {
                "description": "A warm and cozy rug, sewn from various animal pelts.",
-               "recipe_name": "모피",
+               "recipe_name": "모피 러그",
                "flavor": "Perfect for an evening by the fire."
             },
             "leather_bolt_recipe": {
@@ -9664,21 +9664,21 @@
             },
             "leather_vest_recipe": {
                "description": "Hardened leather provides study protection against light weapons.",
-               "recipe_name": "Thick Leather Vest",
+               "recipe_name": "두꺼운 가죽 조끼",
                "flavor": "Insults bounce right off too!"
             },
             "plushie_toy_rabbit_recipe": {
-               "description": "A toy... for children of course.",
+               "description": "장난감이라... 아이들을 위해서.",
                "recipe_name": "부드러운 토끼 장난감",
                "flavor": "그녀는 널 사랑해!"
             },
             "clothing_armor_name": "옷 & 방어구",
             "toys_name": "장난감",
             "decorations_name": "장식",
-            "crafting_materials_name": "Crafting Materials",
+            "crafting_materials_name": "제작 재료",
             "spool_of_thread_recipe": {
                "description": "Needed for cloth. Warm and fluffy",
-               "recipe_name": "Spool of Thread",
+               "recipe_name": "실 한타래",
                "flavor": "Each gram of fiber yearns to become a sweater."
             },
             "tapestry_wall_recipe": {
@@ -9688,12 +9688,12 @@
             },
             "thread_recipe": {
                "description": "Needed for cloth. Warm and fluffy",
-               "recipe_name": "Spool of Thread",
+               "recipe_name": "실 한타래",
                "flavor": "Each gram of fiber yearns to become a sweater."
             },
             "throw_rug_recipe": {
                "description": "Brightens up that old dusty floor.",
-               "recipe_name": "Decorative Throw Rug",
+               "recipe_name": "장식용 천 러그",
                "flavor": "Too beautiful to step on."
             },
             "worker_outfit_2_recipe": {
@@ -9704,27 +9704,27 @@
             "worker_outfit_winter_recipe": {
                "description": "A heavy wool coat, for cold winter nights. The worker who dons this upgrade outfit will move faster.",
                "recipe_name": "Winter Worker Outfit",
-               "flavor": "Winter is coming!"
+               "flavor": "겨울이 오고있어!"
             },
-            "workbenches_name": "Workbenches",
+            "workbenches_name": "작업대",
             "weaver_loom_recipe": {
                "description": "Add thread to thread till cloth results.",
-               "recipe_name": "Loom",
+               "recipe_name": "베틀",
                "flavor": "Patient Spider, weaver, writer, draws the tapestry of fate tighter. --Rayya's Rhyme"
             },
             "weaver_spinning_wheel_recipe": {
                "description": "Spins prickly, scratchy, chaos into thread.",
-               "recipe_name": "Spinning Wheel",
+               "recipe_name": "물레",
                "flavor": "Spider smiles; all eight eyes glitter, 'Something from nothing, some sweet and some bitter.'"
             },
             "weaver_workbench_recipe": {
                "description": "Used to make complex crafts of thread and fabric.",
-               "recipe_name": "Weaver Workbench",
+               "recipe_name": "방직공 작업대",
                "flavor": "In the beginning there was nothing, and then there was Spider."
             },
             "leather_helmet_recipe": {
-               "description": "Light-weight protection for your head!",
-               "recipe_name": "Leather Skull Cap"
+               "description": "당신의 머리를 보호할 수 있는 가벼운 방어구입니다!",
+               "recipe_name": "가죽 헬멧"
             },
             "simple_quiver_recipe": {
                "recipe_name": "뾰족한 화살통",
@@ -9735,15 +9735,15 @@
                "description": "궁수가 사용가능하며, 지속적인 데미지를 줄 수 있는 불화살이 들어있습니다."
             },
             "cloth_padded_helmet_recipe": {
-               "recipe_name": "Cloth Padded Helmet",
-               "description": "Extra padding for your noggin",
-               "flavor": "Were they phoenix wings, or serpent wings?"
+               "recipe_name": "푹신한 천 헬멧",
+               "description": "당신의 머리를 조금 보호해준다.",
+               "flavor": "피닉스의 날개를 입었을까, 뱀의 날개를 입었을까?"
             }
          },
          "weaver_loom": {
             "weaver_loom_ghost": {
-               "display_name": "Loom",
-               "description": "Used to weave thread into cloth."
+               "display_name": "베틀",
+               "description": "실로 천을 짜기 위해 사용된다."
             }
          },
          "weaver_outfit": {
@@ -9752,10 +9752,10 @@
          },
          "weaver_spindle": {
             "display_name": "방직공의 주축",
-            "description": "For spinning fiber into thread",
+            "description": "섬유를 실로 짜기 위해",
             "weaver_spindle_iconic": {
                "display_name": "방직공의 주축",
-               "description": "For spinning fiber into thread"
+               "description": "섬유를 실로 짜기 위해"
             },
             "weaver_spindle_talisman": {
                "display_name": "방직공의 주축",
@@ -9765,13 +9765,13 @@
          "weaver_spinning_wheel": {
             "weaver_spinning_wheel_ghost": {
                "display_name": "물레",
-               "description": "Used to spin fiber into thread."
+               "description": "물레를 돌려 섬유를 실로 짜기 위해 사용된다."
             }
          },
          "weaver_workbench": {
             "weaver_workbench_ghost": {
                "display_name": "방직공의 작업대",
-               "description": "Used by the Weaver for crafting."
+               "description": "방직공의 작업에 사용된다."
             }
          }
       },
@@ -9786,7 +9786,7 @@
          },
          "winter_worker_outfit": {
             "display_name": "일꾼 동복 외투",
-            "description": "A heavy wool coat, for cold winter nights",
+            "description": "추운 겨울밤을 위한 무거운 털 코트다.",
             "winter_worker_outfit_iconic": {
                "display_name": "Winter Worker Outfit",
                "description": "매우 따뜻합니다..."
