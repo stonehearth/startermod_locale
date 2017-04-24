@@ -1460,7 +1460,7 @@
             "cloth_resource_name": "피륙",
             "wood_resource_name": "원목",
             "clay_resource_name": "점토 덩어리",
-            "clay_brick_resource_name": "벽돌",
+            "clay_brick_resource_name": "점토 벽돌",
             "thread_resource_name": "실",
             "leather_resource_name": "가죽",
             "fiber_resource_name": "섬유 묶음",
@@ -1544,11 +1544,11 @@
                         "simple_message": {
                            "choice_000": "정말 감사합니다!",
                            "bulletin_message": {
-                              "000": "Welcome to the area, folks! Goodness, you people look starved. Here's something to help:",
+                              "000": "여기 오신 걸 환영합니다, 여러분! 이런, 당장 굶어죽을 것 같군요. 여기 당신을 도와줄 것들이 있어요. :",
                               "001": "Just celebrated Embarcation Day, eh? Buck up! You look like you'd really benefit from something tasty. How about I give you:",
                               "002": "시드를 찬양하라! 당신의 시작에 도움을 줄 것들을 가져왔습니다.",
                               "003": "산 넘어 긴 여행을 하셨군요? 지금 이 장소는 좋아보이는군요. 당신의 시작을 도와줄 작은 선물을 가져왔습니다!",
-                              "004": "Welcome to the area, Embarkees!! Here's a gift to get you started!"
+                              "004": "여기 오신 걸 환영합니다, 항해사여!! 여기 당신의 시작을 위한 선물을 가져왔습니다!"
                            },
                            "bulletin_title": "백발의 여행가가 다가오고 있습니다.",
                            "dialog_title": "Mer Burlyhands"
@@ -1590,8 +1590,8 @@
                },
                "tannery_shop": {
                   "shop_info": {
-                     "name": "Jess Vexed의 ",
-                     "title": "A rugged survivalist stops by with her wares"
+                     "name": "Jess Vexed의 가죽공예품점",
+                     "title": "강인한 생존주의자가 그녀만의 전쟁을 가는 길에 잠시 들르다."
                   }
                },
                "woodcutter_shop": {
@@ -5237,12 +5237,12 @@
          },
          "wooden_tunnel_door": {
             "display_name": "나무 터널 문",
-            "description": "Useful for blocking off tunnels"
+            "description": "터널을 막기에 유용합니다."
          },
          "wooden_double_door": {
             "wooden_double_door_ghost": {
                "display_name": "나무 더블 문",
-               "description": "A larger door. It makes quite an impression."
+               "description": "큰 문이네요. 꽤 인상적이군요."
             }
          },
          "wooden_window_frame": {
@@ -5254,7 +5254,7 @@
          "wooden_window_frame_tall": {
             "wooden_window_frame_tall_ghost": {
                "display_name": "긴 나무 창틀",
-               "description": "Extra height adds an air of elegance"
+               "description": "우아한 분위기를 위해 더욱 높아졌습니다."
             }
          },
          "wooden_window_frame_wide": {
@@ -5271,43 +5271,43 @@
          },
          "red_clay_door": {
             "red_clay_door_ghost": {
-               "display_name": "Red Clay Door",
-               "description": "Keeps the indoors cool"
+               "display_name": "적색 점토 문",
+               "description": "실내 온도를 유지시킵니다."
             }
          },
          "red_clay_window_frame": {
             "red_clay_window_frame_ghost": {
-               "display_name": "Red Clay Window Frame",
-               "description": "Let's the sun in."
+               "display_name": "적색 점토 창틀",
+               "description": "햇빛을 쬐자."
             }
          },
          "blue_clay_door": {
             "blue_clay_door_ghost": {
-               "display_name": "Blue Clay Door",
-               "description": "Blue like a dream of ocean"
+               "display_name": "청색 점토 문",
+               "description": "바다의 꿈과 같은 푸른 색이다."
             }
          },
          "green_clay_door": {
             "green_clay_door_ghost": {
-               "display_name": "Green Clay Door",
-               "description": "Colored to match the desert"
+               "display_name": "녹색 점토 문",
+               "description": "사막의 색과 잘 어울린다."
             }
          },
          "blue_clay_window_frame": {
             "blue_clay_window_frame_ghost": {
-               "display_name": "Blue Clay Window Frame",
+               "display_name": "청색 점토 창틀",
                "description": "Lets in the desert air."
             }
          },
          "green_clay_window_frame": {
             "green_clay_window_frame_ghost": {
                "display_name": "Green Clay Window Frame",
-               "description": "Lets in the soft desert air."
+               "description": "부드러운 사막의 바람을 들여보내자."
             }
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
-               "display_name": "Latticed Clay Window Frame",
+               "display_name": "격자 점토 창틀",
                "description": "The lattice still lets the good air in."
             }
          },
@@ -5362,7 +5362,7 @@
          "wooden_window_frame_tall_fine": {
             "wooden_window_frame_tall_fine_ghost": {
                "display_name": "고품질의 긴 창틀",
-               "description": "Extra height adds an air of elegance"
+               "description": "우아한 분위기를 위해 더욱 높아졌습니다."
             }
          },
          "wooden_window_frame_wide_fine": {
@@ -5395,32 +5395,32 @@
          },
          "blue_latticed_window": {
             "blue_latticed_window_ghost": {
-               "display_name": "Blue Latticed Window",
+               "display_name": "청색 격자 창문",
                "description": "A soothing blue latticed window"
             }
          },
          "green_latticed_window": {
             "green_latticed_window_ghost": {
-               "display_name": "Green Latticed Window",
+               "display_name": "녹색 격자 창문",
                "description": "The latticed window you know and love, now in green!"
             }
          },
          "tan_clay_window_frame": {
             "tan_clay_window_frame_ghost": {
-               "display_name": "Tan Clay Window Frame",
-               "description": "Lets the sun in"
+               "display_name": "황색 점토 창틀",
+               "description": "햇빛을 쬐자."
             }
          },
          "tan_latticed_window": {
             "tan_latticed_window_ghost": {
-               "display_name": "Tan Latticed Window",
+               "display_name": "황색 격자 창문",
                "description": "The latticed window you know and love, in tan"
             }
          },
          "tall_clay_window": {
             "tall_clay_window_ghost": {
                "display_name": "긴 점토 창문",
-               "description": "Still lets in the soft desert air"
+               "description": "부드러운 사막의 바람을 들여보내자."
             }
          }
       },
@@ -5560,13 +5560,13 @@
          },
          "sheep": {
             "display_name": "양",
-            "description": "So fluffy!",
-            "unripe_description": "This sheep is still quite naked.",
+            "description": "복슬복슬하다!",
+            "unripe_description": "이 양은 아직 털이 없어.",
             "sheep_young": {
-               "display_name": "A Lamb",
-               "description": "Awww!"
+               "display_name": "새끼양",
+               "description": "아우우우!"
             },
-            "renewable_harvest_status_text": "shearing sheep",
+            "renewable_harvest_status_text": "양털 깎기",
             "species": "양"
          },
          "squirrel": {
@@ -5607,7 +5607,7 @@
                },
                "002": {
                   "name": "브라이트벨 싹",
-                  "description": "Awkward, gangly stage."
+                  "description": "흐느적거리고 어색한 단계야."
                }
             }
          },
@@ -5655,7 +5655,7 @@
                },
                "000": {
                   "name": "옥수수 모종",
-                  "description": "Slow-mo, high-stakes gambling."
+                  "description": "느리고 흥하든 망하든 도박이야."
                },
                "011": {
                   "name": "옥수수 껍질",
@@ -5955,7 +5955,7 @@
             }
          },
          "golden_gourd_crop": {
-            "display_name": "Golden Gourd Crop",
+            "display_name": "황금 박 ",
             "description": "맛있는 것보다 더 매력적이야.",
             "growth_stage": {
                "003": {
@@ -5979,7 +5979,7 @@
                   "description": "들러붙어서 떨어지지 않아."
                },
                "000": {
-                  "name": "Seedling!",
+                  "name": "모종이야!",
                   "description": "Just a tinly little stub"
                },
                "011": {
@@ -6192,67 +6192,67 @@
          },
          "clay_lamp": {
             "clay_lamp_ghost": {
-               "display_name": "Clay Oil Lamp",
+               "display_name": "점토 오일 램프",
                "description": "Its flame brings a warm glow at night."
             }
          },
          "clay_wall_lamp": {
             "clay_wall_lamp_ghost": {
-               "display_name": "Wall Clay Lamp",
+               "display_name": "벽걸이형 점토 램프",
                "description": "Provides a warm glow at night."
             }
          },
          "garden_gnome": {
             "garden_gnome_ghost": {
-               "display_name": "Garden Gnome",
-               "description": "Plant Guardians"
+               "display_name": "정원의 땅속 요정",
+               "description": "식물 수호자"
             }
          },
          "decorative_teapot": {
             "decorative_teapot_ghost": {
-               "display_name": "Decorative Teapot",
+               "display_name": "장식용 찻주전자",
                "description": "A reminder of humble beginnings"
             }
          },
          "decorative_tray": {
             "decorative_tray_ghost": {
-               "display_name": "Decorative Tray",
+               "display_name": "장식용 쟁반",
                "description": "Adds flash and hospitality"
             }
          },
          "potted_cactus": {
             "potted_cactus_ghost": {
-               "display_name": "Potted Cactus",
-               "description": "Careful, it's still prickly."
+               "display_name": "화분에 심은 선인장",
+               "description": "조심해, 가시가 있어."
             }
          },
          "blown_glass_vase": {
             "blown_glass_vase_ghost": {
-               "display_name": "Blown Glass Vase",
-               "description": "Miraculous"
+               "display_name": "분유리 꽃병",
+               "description": "기적이야."
             }
          },
          "decorative_vase": {
             "decorative_vase_ghost": {
-               "display_name": "Decorative Vase",
-               "description": "The metals of the earth reborn"
+               "display_name": "장식용 꽃병",
+               "description": "강철이 새로 태어났다."
             }
          },
          "sundial": {
             "sundial_ghost": {
-               "display_name": "Sundial",
-               "description": "Decorates gardens, marks time"
+               "display_name": "점토 해시계",
+               "description": "정원을 꾸며주고 시간을 기록합니다."
             }
          },
          "tile_floor_mosaic": {
             "tile_floor_mosaic_ghost": {
-               "display_name": "Tile Floor Mosaic",
+               "display_name": "모자이크 바닥 타일 ",
                "description": "Cool on the bare feet"
             }
          },
          "tile_wall_mosaic": {
             "tile_wall_mosaic_ghost": {
-               "display_name": "Tile Wall Mosaic",
+               "display_name": "모자이크 벽 타일",
                "description": "Soothing decorative patterns"
             }
          },
@@ -6565,22 +6565,22 @@
          },
          "golden_gourd": {
             "golden_gourd_basket": {
-               "display_name": "Golden Gourd Basket",
+               "display_name": "황금 박이 담긴 바구니",
                "description": "Edible when raw, barely"
             },
             "golden_gourd_serving": {
-               "display_name": "Raw Golden Gourd",
-               "description": "Raw gourd is... terrible"
+               "display_name": "황금 박",
+               "description": "생 박은... 끔찍해."
             }
          },
          "golden_gourd_curry": {
             "golden_gourd_curry": {
-               "display_name": "Golden Gourd Curry",
-               "description": "The spices make this dish edible."
+               "display_name": "황금 박 카레",
+               "description": "향신료는 먹음직스럽게 만들어준다."
             },
             "golden_gourd_curry_serving": {
-               "display_name": "Golden Gourd Curry",
-               "description": "Way better than raw golden gourd"
+               "display_name": "황금 박 카레",
+               "description": "생 황금 박보다 훨씬 낫다."
             }
          },
          "corn_meal": {
@@ -6779,8 +6779,8 @@
          },
          "tombstone": {
             "tombstone_ghost": {
-               "display_name": "R.I.P. [str(self.stonehearth:unit_info.custom_name)]",
-               "description": "[str(self.stonehearth:unit_info.custom_name)] will always be remembered."
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)] 여기에 잠들다.",
+               "description": "[str(self.stonehearth:unit_info.custom_name)] 은(는) 언제나 기억될 것입니다."
             },
             "tombstone": {
                "display_name": "묘비",
@@ -6846,8 +6846,8 @@
          },
          "statue_of_cid_wanderer": {
             "statue_of_cid_wanderer_ghost": {
-               "display_name": "Statue of Cid Wanderer",
-               "description": "Shows Cid in his later years"
+               "display_name": "시드의 조각상",
+               "description": "시드의 말년을 보여준다."
             }
          },
          "park_bench_red": {
@@ -6859,8 +6859,8 @@
       },
       "generic": {
          "default_object": {
-            "display_name": "Default object",
-            "description": "Mysterious"
+            "display_name": "기본 객체",
+            "description": "신비로워"
          }
       },
       "gizmos": {
@@ -6871,15 +6871,15 @@
             }
          },
          "safety_standard": {
-            "display_name": "Wooden Safety Standard",
+            "display_name": "안전 표지판",
             "clay_safety_standard": {
-               "display_name": "Clay Safety Standard"
+               "display_name": "안전 표지판"
             },
-            "description": "Mark a safety point to flee to in Town Alert mode"
+            "description": "마을의 경보가 울릴 때 대피할 안전 포인트입니다."
          },
          "mountains_windchime": {
             "mountains_windchime_ghost": {
-               "display_name": "Mountain's Windchime",
+               "display_name": "산의 풍경",
                "description": "Soothing happy notes"
             }
          },
@@ -7208,18 +7208,18 @@
          },
          "tester": {
             "tester_basket": {
-               "display_name": "Basket of Testers",
-               "description": "Juicy and exciting!"
+               "display_name": "테스터가 담긴 바구니",
+               "description": "즙이 많아보여 흥분돼!"
             },
             "tester_serving": {
-               "display_name": "A Tester",
-               "description": "Used as shields by princesses."
+               "display_name": "테스터",
+               "description": "공주의 방패로 사용된다."
             }
          },
          "turnip": {
             "turnip_basket": {
                "display_name": "순무가 담긴 바구니",
-               "description": "즙이 많아보이고 흥분돼!"
+               "description": "즙이 많아보여 흥분돼!"
             },
             "turnip_serving": {
                "display_name": "순무",
@@ -7257,7 +7257,7 @@
          "lantern_relic": {
             "lantern_relic_ghost": {
                "display_name": "고대의 유물",
-               "description": "Crumbling with age"
+               "description": "세월이 흘러 허물어지다."
             }
          },
          "rabbit_statue": {
@@ -7311,12 +7311,12 @@
             "description": "순수한 주석괴"
          },
          "bronze_gear": {
-            "display_name": "Bronze Gear",
-            "description": "Used to craft basic gadgetry"
+            "display_name": "청동 기어",
+            "description": "기본적인 기구 제작에 사용된다."
          },
          "iron_gear": {
-            "display_name": "Iron Gear",
-            "description": "Used to craft intermediate gadgetry"
+            "display_name": "철 기어",
+            "description": "중급 기구 제작에 사용된다."
          }
       },
       "resources": {
@@ -7342,8 +7342,8 @@
                "description": "실로 짤 수 있습니다."
             },
             "coarse_fiber_bundle": {
-               "display_name": "Coarse Fiber Bundle",
-               "description": "Rough and itchy"
+               "display_name": "거친 섬유 묶음",
+               "description": "거칠고 가렵다."
             }
          },
          "gold": {
@@ -7672,7 +7672,7 @@
       "weapons": {
          "bronze_mace": {
             "display_name": "청동 메이스",
-            "description": "Precisely engineered for maximum bashing.",
+            "description": "최고의 공격을 위해 정밀하게 만들어졌다.",
             "bronze_mace_iconic": {
                "display_name": "청동 메이스",
                "description": "얼굴을 납작하게 만들 수 있다."
@@ -7680,18 +7680,18 @@
          },
          "bronze_sword": {
             "display_name": "짧은 청동 검",
-            "description": "Basic, but better than fighting with a sharpened stick!",
+            "description": "기본적이지만 뾰족한 막대기로 싸우는 것보다 낫다!",
             "bronze_sword_iconic": {
                "display_name": "청동 검",
                "description": "뾰족하고 반짝인다."
             }
          },
          "dagger": {
-            "display_name": "Dagger",
-            "description": "Pointy. Dangerous.",
+            "display_name": "단도",
+            "description": "뾰족하고 위험하다.",
             "dagger_iconic": {
-               "display_name": "Dagger",
-               "description": "Pointy. Dangerous."
+               "display_name": "단도",
+               "description": "뾰족하고 위험하다."
             }
          },
          "giant_bone_axe": {
@@ -7776,7 +7776,7 @@
          },
          "wooden_sword": {
             "display_name": "보병의 목검",
-            "description": "Thacks thine enemies with oaken might",
+            "description": "오크 같은 당신의 적들을 때려라.",
             "wooden_sword_iconic": {
                "display_name": "보병의 목검",
                "description": "기본적인 목검이다."
@@ -7788,7 +7788,7 @@
          },
          "scythe": {
             "display_name": "큰 낫",
-            "description": "Preferred weapon for reaping"
+            "description": "수확보다 무기로 사용하는 편이 낫다."
          },
          "bow": {
             "display_name": "활",
@@ -7800,39 +7800,39 @@
          },
          "arrow": {
             "display_name": "슬로우 화살",
-            "description": "Slows targets that it hits"
+            "description": "여기 맞으면 목표는 느려진다."
          },
          "recurve_bow": {
-            "display_name": "Recurve Bow",
-            "description": "Curved for faster and stronger shots"
+            "display_name": "구부러진 활",
+            "description": "곡선의 모양이라 더 빠르고 강하게 쏠 수 있다."
          },
          "crude_metal_axe": {
-            "display_name": "Crude Metal Axe",
-            "description": "Simple but effective."
+            "display_name": "대충 만든 금속 도끼",
+            "description": "간단하지만 효과적이다."
          },
          "crude_wooden_club": {
-            "display_name": "Crude Wooden Club",
-            "description": "Pointy branch wrapped in cloth"
+            "display_name": "대충 만든 나무 클럽",
+            "description": "끝이 뾰족한 나뭇가지를 천으로 감쌌다."
          },
          "ogos_bone_mace": {
             "display_name": "The Bonker",
-            "description": "Designed by Ogo Skullbonker. (Two-handed)",
+            "description": "오고 스컬본커에 의해 디자인되었다. (양손 사용)",
             "ogos_bone_mace_iconic": {
                "display_name": "The Bonker",
-               "description": "Ex-property of Ogo Skullbonker"
+               "description": "오고 스컬본커이 소유했던 재산"
             }
          },
          "bullet": {
             "display_name": "총알",
-            "description": "Metal shelled projectile"
+            "description": "금속의 발사체"
          },
          "turnip_bullet": {
-            "display_name": "Turnip",
-            "description": "Weaponized vegetable."
+            "display_name": "순무",
+            "description": "무기화된 채소"
          },
          "bolt": {
-            "display_name": "Bolt",
-            "description": "Bolt"
+            "display_name": "볼트",
+            "description": "볼트"
          },
          "fire_arrow": {
             "display_name": "불 화살",
@@ -8606,12 +8606,12 @@
             },
             "mountains_windchime_recipe": {
                "description": "Place to deter Mountain, Ogo's trained ogre",
-               "recipe_name": "Mountain's Windchime",
+               "recipe_name": "산의 풍경",
                "flavor": "The melody evokes the stolen ogre's long-ago lullabye"
             },
             "statue_of_cid_wanderer_recipe": {
-               "recipe_name": "Statue of Cid Wanderer",
-               "description": "Shows Cid in later life",
+               "recipe_name": "시드의 조각상",
+               "description": "시드의 말년을 보여준다.",
                "flavor": "And where Cid wandered, the Church rose up in his footsteps..."
             },
             "poyo_weathervane_recipe": {
@@ -8834,10 +8834,10 @@
          },
          "recipes": {
             "engineer_workbench_recipe": {
-               "description": "Allows engineers to craft various gadgets and contraptions",
-               "recipe_name": "Engineer's Toolbench"
+               "description": "기술자가 다양한 도구와 기계를 제작하도록 해줍니다.",
+               "recipe_name": "기술자의 향상된 작업대"
             },
-            "workbenches_name": "Workbenches",
+            "workbenches_name": "작업대",
             "bronze_gear_recipe": {
                "description": "일반적인 도구를 만드는데 사용됩니다.",
                "recipe_name": "청동 기어",
@@ -9253,56 +9253,56 @@
             },
             "clay_lamp_recipe": {
                "description": "Its flame brings a warm glow at night.",
-               "recipe_name": "Clay Oil Lamp",
+               "recipe_name": "점토 오일 램프",
                "flavor": "And the Djinni said to Rayya: 'I have but one last wish to grant. Word it well.'"
             },
             "clay_wall_lamp_recipe": {
                "description": "Its flame brings a warm glow at night.",
-               "recipe_name": "Wall-Mounted Clay Oil Lamp",
+               "recipe_name": "벽걸이형 점토 오일 램프",
                "flavor": "'Close round us guard the spirits of night! As they dance and sway, free you'll be to dream the dark away.'"
             },
             "garden_gnome_recipe": {
                "description": "Fashioned after mythical forest spirits.",
-               "recipe_name": "Tiny Garden Guardian",
-               "flavor": "Designed by Grandmaster crafter The_M"
+               "recipe_name": "작은 정원 수호자",
+               "flavor": "최고의 장인 M에 의해 디자인되었다."
             },
-            "furniture_name": "Furniture and Decoration",
+            "furniture_name": "가구와 장식품",
             "decoration_name": "장식",
             "utility_name": "도구",
             "potter_workbench_recipe": {
-               "description": "Helps the potter create simple items from clay",
-               "recipe_name": "Potter's Wheel",
+               "description": "도예가가 점토로 간단한 아이템을 만드는 것을 도와준다.",
+               "recipe_name": "도예가의 물레",
                "flavor": "Where we've been before, we'll be again, round once more, for strength and then--"
             },
             "potter_kiln_recipe": {
                "description": "Hardens basic clay objects.",
-               "recipe_name": "Potter's Kiln",
+               "recipe_name": "도예가의 가마",
                "flavor": "'Through heat and hardship we realize our final selves.' -Silora, Acolyte of Rayya's Mystery "
             },
             "clay_safety_standard_recipe": {
-               "description": "Use to designate a safety point",
-               "recipe_name": "Clay Safety Standard",
+               "description": "안전 구역을 지정할 때 사용됩니다.",
+               "recipe_name": "안전 표지판",
                "flavor": "To achieve an ideal standard of living, find safety in numbers. --Mysteries and Proverbs, V"
             },
-            "building_parts_name": "Building Parts",
+            "building_parts_name": "건축 자재",
             "clay_bricks_recipe": {
                "description": "Used to make structures that stay cool even in great heat.",
-               "recipe_name": "Clay Bricks",
+               "recipe_name": "점토 벽돌",
                "flavor": "'And when Clay emerged from the Kiln, he had become Brick, and no matter how hard Sun blasted him, he remained cheerful.'"
             },
             "red_clay_door_recipe": {
-               "description": "Matches red clay walls",
-               "recipe_name": "Red Clay Door",
+               "description": "적색 점토 벽과 어울린다.",
+               "recipe_name": "적색 점토 문",
                "flavor": ""
             },
             "red_clay_window_frame_recipe": {
-               "description": "Matches red clay walls",
+               "description": "적색 점토 벽과 어울린다.",
                "recipe_name": "적색 점토 창문",
                "flavor": ""
             },
             "blue_clay_door_recipe": {
-               "description": "Blue like the dream of distant ocean.",
-               "recipe_name": "청점토 문",
+               "description": "깊은 바다의 꿈을 닮은 푸른 색이다.",
+               "recipe_name": "청색 점토 문",
                "flavor": "'It's a door. What more could we possibly say?' --Joni Iskender, Marketing Apprentice"
             },
             "green_clay_door_recipe": {
@@ -9312,12 +9312,12 @@
             },
             "blue_clay_window_frame_recipe": {
                "description": "Lets in the bright desert air.",
-               "recipe_name": "Blue Clay Window Frame",
+               "recipe_name": "청색 점토 창틀",
                "flavor": "The dye is named Santori, for an acolyte who longed for the ocean."
             },
             "green_clay_window_frame_recipe": {
-               "description": "Let's in the soft desert air.",
-               "recipe_name": "Green Clay Window Frame",
+               "description": "부드러운 사막의 바람을 들여보내자.",
+               "recipe_name": "녹색 점토 창틀",
                "flavor": "It's a window's dream of spring...?"
             },
             "latticed_clay_window_frame_recipe": {
@@ -9326,12 +9326,12 @@
                "flavor": "As the shadows move across the floor, child, see if you can find Monkey!"
             },
             "clay_bed_recipe": {
-               "description": "Uncomfortable, but it gets you off the ground",
+               "description": "불편하지만 당신을 바닥으로부터 떨어뜨려줍니다.",
                "recipe_name": "점토 침대",
                "flavor": ""
             },
             "clay_dining_table_recipe": {
-               "description": "Gets your food off the ground!",
+               "description": "당신을의 음식을 바닥으로부터 떨어뜨려줍니다.",
                "recipe_name": "점토 식탁",
                "flavor": ""
             },
@@ -9342,42 +9342,42 @@
             },
             "decorative_teapot_recipe": {
                "description": "Reminder of humble beginnings",
-               "recipe_name": "Decorative Teapot",
+               "recipe_name": "장식용 찻주전자",
                "flavor": "'Wherever she went, the teapot did too, and even when there was nothing but cold water to put in, always out poured steaming tea, redolent with the aroma of Elsewhere.'"
             },
             "decorative_tray_recipe": {
                "description": "Adds hospitality and flash",
-               "recipe_name": "Decorative Tray",
+               "recipe_name": "장식용 쟁반",
                "flavor": "'Sugar, spice, and blood of the earth: it is the tray that brings them, and us, together' --Rayya"
             },
             "potted_cactus_recipe": {
                "description": "Plant a cactus in a clay pot.",
-               "recipe_name": "Potted Cactus",
+               "recipe_name": "화분에 심은 선인장",
                "flavor": "YOWCH! --Every cactus potter, ever"
             },
             "blown_glass_vase_recipe": {
-               "description": "Miraculous",
-               "recipe_name": "Blown Glass Vase",
+               "description": "기적이야.",
+               "recipe_name": "분유리 꽃병",
                "flavor": "They say Monkey had one eye made of glass, and through it, he could see straight to the heart of things. --Master Orlen"
             },
             "decorative_vase_recipe": {
-               "description": "Transform metals into art",
-               "recipe_name": "Decorative Vase",
+               "description": "강철을 예술로 승화시키다.",
+               "recipe_name": "장식용 꽃병",
                "flavor": "It is the riches of the earth reborn"
             },
             "sundial_recipe": {
-               "description": "Decorates gardens, marks time",
-               "recipe_name": "Clay Sundial",
+               "description": "정원을 꾸며주고 시간을 기록합니다.",
+               "recipe_name": "점토 해시계",
                "flavor": "The secret to immortality is to make best of days last forever --Rayya"
             },
             "tile_floor_mosaic_recipe": {
                "description": "Decorates and cools the floor",
-               "recipe_name": "Tile Floor Mosaic",
+               "recipe_name": "모자이크 바닥 타일",
                "flavor": "Step over the painted flowers, and give thanks"
             },
             "tile_wall_mosaic_recipe": {
                "description": "Soothing decorative patterns",
-               "recipe_name": "Tile Wall Mosaic",
+               "recipe_name": "모자이크 벽 타일",
                "flavor": "Tile cools inside and out"
             },
             "golden_clay_wall_planter_recipe": {
@@ -9387,12 +9387,12 @@
             },
             "unfired_clay_vase_recipe": {
                "description": "A simple vase made on the pottery wheel that is used for more complex recipes.",
-               "recipe_name": "Unfired Clay Vase",
+               "recipe_name": "굽지 않은 점토 단지",
                "flavor": "'The First Pot was formed together by wind, earth, and fire, connecting the people to Hearth' --Master Orlen"
             },
             "clay_pile_recipe": {
-               "recipe_name": "Clay Pile",
-               "description": "A pile of clay stacked together. An excellent way to store lots of clay for later use.",
+               "recipe_name": "점토 더미",
+               "description": "점토들이 함께 쌓여있습니다. 수많은 점토들을 저장할 수 있는 훌륭한 방법입니다.",
                "flavor": "Amazing, honestly, that it comes apart again."
             },
             "clay_market_stall_recipe": {
@@ -9406,28 +9406,28 @@
                "flavor": "Speak friend and enter.... oh no wait it's not locked. - Eber, Potter's Apprentice"
             },
             "tan_latticed_window_recipe": {
-               "recipe_name": "Tan Latticed Window",
+               "recipe_name": "황색 격자 창문",
                "description": "The latticed window you know and love, in tan",
                "flavor": ""
             },
             "tall_clay_window_recipe": {
                "recipe_name": "긴 점토 창문",
-               "description": "Still lets in the soft desert air",
+               "description": "부드러운 사막의 바람을 들여보내자.",
                "flavor": ""
             },
             "tan_clay_window_frame_recipe": {
                "flavor": "",
-               "recipe_name": "Tan Clay Window Frame",
-               "description": "Lets the sun in"
+               "recipe_name": "황색 점토 창틀",
+               "description": "햇빛을 쬐자."
             },
             "green_latticed_window_recipe": {
-               "recipe_name": "Green Latticed Window",
+               "recipe_name": "녹색 격자 창문",
                "flavor": "Reminicent of a vine-covered treehouse window, faded into memory",
-               "description": "The latticed window you know and love, now in green!"
+               "description": "격자 모양의 창문을 알게 된다면 사랑에 빠질 것이다, 초록색으로 하자!"
             },
             "blue_latticed_window_recipe": {
-               "recipe_name": "Blue Latticed Window",
-               "description": "A soothing blue latticed window",
+               "recipe_name": "청색 격자 창문",
+               "description": "마음을 달래주는 격자 모양을 가진 푸른색의 창문이다.",
                "flavor": ""
             },
             "wooden_sign_potter_recipe": {
@@ -9436,8 +9436,8 @@
          },
          "potter_workbench": {
             "potter_workbench_ghost": {
-               "display_name": "Pottery Wheel",
-               "description": "For making symmetrical clay goods"
+               "display_name": "도예가의 물레",
+               "description": "대칭적인 점토 물건을 만들기 위해"
             }
          },
          "potter_kiln": {
