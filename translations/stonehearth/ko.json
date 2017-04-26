@@ -6967,44 +6967,44 @@
             },
             "goblin": {
                "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
-               "description": "Attracted to shiny things"
+               "description": "반짝이는 걸 좋아한다."
             },
             "goblin_barricade": {
-               "display_name": "A barricade"
+               "display_name": "장벽"
             },
             "goblin_boss_banner": {
                "goblin_boss_banner_ghost": {
-                  "display_name": "Ogo Skullbonker's Standard",
-                  "description": "Clearly indicates goblin-boss-status"
+                  "display_name": "오고 스컬본커 깃발",
+                  "description": "고블릭 족장 조각을 명확하게 나타낸다."
                }
             },
             "goblin_boss_hut": {
-               "display_name": "Boss Hut",
-               "description": "Dirty white, like the color of winter."
+               "display_name": "우두머리 오두막",
+               "description": "때 탄 흰색, 겨울같은 색이다."
             },
             "goblin_chief_hut": {
                "goblin_tent": {
                   "display_name": "고블린 텐트",
-                  "description": "Made from crudely-sewn animal hides"
+                  "description": "동물 가죽을 대충 기여 만들었다."
                }
             },
             "goblin_flute": {
                "broken_flute": {
-                  "display_name": "Broken Flute",
-                  "description": "Produces pathetically wheezy wailing."
+                  "display_name": "망가진 플루트",
+                  "description": "애처롭게 쌕쌕거리는 소리를 자아낸다."
                },
                "mountains_flute": {
-                  "display_name": "Mountain's Lullabye Flute",
-                  "description": "Pitched to soothe Mountain's soul."
+                  "display_name": "산 자장가 플루트",
+                  "description": "산의 영혼을 달랜다."
                },
                "mountains_flute_iconic": {
-                  "display_name": "Mountain's Lullabye Flute",
-                  "description": "Pitched to soothe Mountain's soul."
+                  "display_name": "산 자장가 플루트",
+                  "description": "산의 영혼을 다랜다."
                }
             },
             "goblin_hut": {
                "display_name": "고블린 텐트",
-               "description": "Made from coarsely chopped wodden boards"
+               "description": "거칠게 자른 나무 판자로 만들었다."
             },
             "goblin_large_totem": {
                "display_name": "큰 토템"
@@ -7017,30 +7017,30 @@
                "description": "고블, 고블, 고블..."
             },
             "goblin_soothsayer_tent": {
-               "display_name": "The Soothsayer's Tent",
-               "description": "Cobbled together out of luxurious scraps"
+               "display_name": "점쟁이 텐트",
+               "description": "고급천을 울퉁불퉁 기여 만들었다."
             },
             "goblin_tent": {
                "display_name": "텐트",
-               "description": "Made from crudely-sewn animal hides"
+               "description": "동물 가죽을 대충 기여 만들었다."
             },
             "goblin_throne": {
-               "display_name": "Goblin Throne",
-               "description": "Made of wood, bone, and ego"
+               "display_name": "고블린 옥자",
+               "description": "나무, 뼈, 그리고 자부심으로 만들어졌다."
             },
             "goblin_wolf": {
-               "display_name": "Goblin Raiding Wolf",
-               "description": "Bred to inspire terror"
+               "display_name": "고블린 탑승 늑대",
+               "description": "공포심을 야기한다."
             },
             "skull_trophy": {
                "skull_trophy_ghost": {
-                  "display_name": "Goblin honor token",
-                  "description": "Wooden badge of the goblin's clan"
+                  "display_name": "고블린 명예 토큰",
+                  "description": "몇 몇 고블린들은 되찾기를 강하게 소망한다."
                }
             },
             "wolf_cage": {
                "display_name": "늑대 우리",
-               "description": "Signals nappytime for its inhabitants."
+               "description": "오금이 저린다."
             },
             "goblin_cage": {
                "display_name": "큰 우리",
@@ -7050,29 +7050,29 @@
          "kobolds": {
             "kobold": {
                "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
-               "description": "Devotee of the Diamond Star"
+               "description": "다이아몬드 스타의 추종자"
             },
             "loot": {
                "elite_bling_hat": {
-                  "display_name": "Elite Kobold Hat",
-                  "description": "Kobolds love their bling!"
+                  "display_name": "정예 코볼드 모자",
+                  "description": "코볼드는 화려함을 사랑해!"
                },
                "generals_bling_hat": {
-                  "display_name": "General's Hat",
-                  "description": "Dropped by the kobold archer general"
+                  "display_name": "장군 모자",
+                  "description": "코볼드 궁수 장군의 전리품"
                },
                "masters_bling_hat": {
-                  "display_name": "Master's Bling Hat",
-                  "description": "Dropped by the kobold master archer"
+                  "display_name": "일류 코볼드 궁수의 화려한 모자",
+                  "description": "일류 코볼드 궁수의 전리품"
                },
                "scout_bling_hat": {
-                  "display_name": "Scout's Hat",
-                  "description": "Dropped by the kobold scout archer"
+                  "display_name": "스카우트의 모자",
+                  "description": "코볼드 스카우트의 전리품"
                }
             },
             "kobold_wolf": {
-               "display_name": "Kobold Wolf",
-               "description": "A Fearsome Wolf!"
+               "display_name": "코볼드 늑대",
+               "description": "무시무시한 늑대!"
             }
          },
          "undead": {
@@ -7091,24 +7091,24 @@
                }
             },
             "crypt": {
-               "display_name": "A Crypt",
-               "description": "What lies inside?"
+               "display_name": "묘지",
+               "description": "안에 뭐가 있는거지?"
             },
             "sarcophagus": {
-               "display_name": "A Sarcophagus",
-               "description": "Holds remains of the dead"
+               "display_name": "석관",
+               "description": "시체가 안치되어 있다."
             },
             "tombstone": {
                "display_name": "묘비",
-               "description": "Where undead are born"
+               "description": "언데드는 어디서 태어나는 거지?"
             },
             "stone_pillar_fence": {
-               "display_name": "Stone Pillar Fence",
-               "description": "Sturdy fence anchored by pillars."
+               "display_name": "돌 기둥 울타리",
+               "description": "딱딱한 울타리는 기둥에 고정되어 있다."
             },
             "necromancer": {
-               "display_name": "Necromancer",
-               "description": "Practitioner of the dark arts"
+               "display_name": "주술사",
+               "description": "어둠의 예술을 밤마다 펼친다."
             }
          },
          "rabbit": {
@@ -7131,12 +7131,12 @@
                "description": "Made to intimidate the weak hearted"
             },
             "orc_hut": {
-               "display_name": "Orc hut",
+               "display_name": "오크 오두막",
                "description": "Made from coarsely chopped wooden boards"
             },
             "orc_tent": {
-               "display_name": "Orc Tent",
-               "description": "Smells like old laundry."
+               "display_name": "오크 텐트",
+               "description": "오래된 빨랫감 냄새가 난다."
             }
          },
          "mammoth": {
