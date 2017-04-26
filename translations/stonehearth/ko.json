@@ -5026,11 +5026,11 @@
             }
          },
          "leather_vest": {
-            "display_name": "Thick Leather Vest",
-            "description": "Hardened leather provides sturdy protection.",
+            "display_name": "두꺼운 가죽 조끼",
+            "description": "두꺼워진 가죽은 튼튼하게 보호해줍니다.",
             "leather_vest_iconic": {
-               "display_name": "Thick Leather Vest",
-               "description": "Hardened leather provides study protection."
+               "display_name": "두꺼운 가죽 조끼",
+               "description": "두꺼워진 가죽은 튼튼하게 보호해줍니다."
             }
          },
          "steel_mail": {
@@ -5095,7 +5095,7 @@
          },
          "steel_shield": {
             "display_name": "강철 방패",
-            "description": "A sturdy shield made from steel"
+            "description": "강철로 만든 튼튼한 방패"
          },
          "iron_helm": {
             "display_name": "철 헬멧",
@@ -5103,7 +5103,7 @@
          },
          "iron_circlet": {
             "display_name": "철 관",
-            "description": "Medium head protection"
+            "description": "적당히 머리를 보호해줍니다."
          },
          "steel_circlet": {
             "display_name": "강철 관",
@@ -5118,12 +5118,12 @@
             "description": "적을 불태우며 지속적인 데미지를 줍니다"
          },
          "cracked_wooden_buckler": {
-            "display_name": "Cracked Wooden Buckler",
-            "description": "Has withstood many battles"
+            "display_name": "금이 간 나무 방패",
+            "description": "많은 전투를 이겨왔다."
          },
          "square_cracked_wooden_buckler": {
-            "display_name": "Square wooden buckler",
-            "description": "Watch out for those corners!"
+            "display_name": "사각형 나무 방패",
+            "description": "이 모서리를 조심해!"
          },
          "silver_mail": {
             "display_name": "은 갑옷",
@@ -5151,7 +5151,7 @@
          },
          "bronze_helm": {
             "display_name": "청동 헬멧",
-            "description": "Pretty and protective"
+            "description": "매력적이고 "
          }
       },
       "boulders": {
@@ -5265,8 +5265,8 @@
          },
          "golden_clay_doorframe": {
             "golden_clay_doorframe_ghost": {
-               "display_name": "Golden Clay Doorframe",
-               "description": "Matches a golden clay exterior wall"
+               "display_name": "금빛 점토 문틀",
+               "description": "금빛 점토 벽과 잘 어울린다."
             }
          },
          "red_clay_door": {
@@ -5301,14 +5301,14 @@
          },
          "green_clay_window_frame": {
             "green_clay_window_frame_ghost": {
-               "display_name": "Green Clay Window Frame",
+               "display_name": "녹색 점토 창틀",
                "description": "부드러운 사막의 바람을 들여보내자."
             }
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
                "display_name": "격자 점토 창틀",
-               "description": "The lattice still lets the good air in."
+               "description": "격자는 좋은 공기를 들여보내준다."
             }
          },
          "stone_tunnel_door": {
@@ -5343,14 +5343,14 @@
          },
          "wooden_door_2_fine": {
             "wooden_door_2_fine_ghost": {
-               "description": "Sturdier than your average door, and such a sweet pattern too.",
-               "display_name": "Fine Reinforced Wooden Door"
+               "description": "평범한 문보다 더 단단하고 좋은 패턴도 가지고 있다.",
+               "display_name": "고품질의 강화된 나무 문"
             }
          },
          "wooden_double_door_fine": {
             "wooden_double_door_fine_ghost": {
                "display_name": "고품질의 나무 더블 문",
-               "description": "A larger door with some extra style. All your friends will be envious."
+               "description": "스타일 좋은 큰 문이다. 당신의 모든 친구들은 부러워할 것입니다."
             }
          },
          "wooden_window_frame_fine": {
@@ -5391,7 +5391,7 @@
          },
          "wooden_tunnel_door_fine": {
             "display_name": "고품질의 나무 터널 문",
-            "description": "Useful for blocking off tunnels"
+            "description": "터널을 막기에 유용합니다."
          },
          "blue_latticed_window": {
             "blue_latticed_window_ghost": {
@@ -5402,7 +5402,7 @@
          "green_latticed_window": {
             "green_latticed_window_ghost": {
                "display_name": "녹색 격자 창문",
-               "description": "The latticed window you know and love, now in green!"
+               "description": "격자 모양의 창문을 알게 된다면 사랑에 빠질 것입니다. 초록색으로 하자!"
             }
          },
          "tan_clay_window_frame": {
@@ -5414,7 +5414,7 @@
          "tan_latticed_window": {
             "tan_latticed_window_ghost": {
                "display_name": "황색 격자 창문",
-               "description": "The latticed window you know and love, in tan"
+               "description": "격자 모양의 황색 창문을 알게 된다면 사랑에 빠질 것입니다."
             }
          },
          "tall_clay_window": {
@@ -5457,8 +5457,8 @@
          },
          "barrel": {
             "barrel_ghost": {
-               "display_name": "Square Barrel",
-               "description": "Storage container"
+               "display_name": "사각형 통",
+               "description": "보관함입니다."
             }
          },
          "small_urn": {
@@ -5476,35 +5476,35 @@
          "log_pile": {
             "log_pile_ghost": {
                "display_name": "원목 더미",
-               "description": "Harvest for a large number of logs"
+               "description": "많은 양의 원목을 수확하세요."
             },
             "log_pile_iconic": {
-               "description": "Harvestable for wood when placed."
+               "description": "설치하면 원목을 수확할 수 있습니다."
             }
          },
          "stone_pile": {
             "stone_pile": {
-               "description": "Harvest for many hunks of stone",
-               "display_name": "Stone Pile"
+               "description": "많은 돌덩이들을 수확하세요.",
+               "display_name": "돌 더미"
             },
             "stone_pile_iconic": {
-               "description": "Harvestable for stone when placed"
+               "description": "설치하면 돌을 수확할 수 있습니다."
             }
          },
          "clay_pile": {
-            "display_name": "Clay Pile",
-            "description": "Harvest for a large amount of clay",
-            "iconic_description": "Harvestable for clay when placed"
+            "display_name": "점토 더미",
+            "description": "많은 양의 점토들을 수확하세요.",
+            "iconic_description": "설치하면 점토를 수확할 수 있습니다."
          },
          "wheat_pile": {
-            "display_name": "Large Wheat Bundle",
-            "description": "Harvest for a large amount of wheat",
-            "iconic_description": "Harvestable for wheat when placed"
+            "display_name": "큰 밀 더미 묶음",
+            "description": "많은 양의 밀을 수확하세요.",
+            "iconic_description": "설치하면 밀을 수확할 수 있습니다."
          },
          "small_crate_fine": {
             "small_crate_fine_ghost": {
                "display_name": "고품질의 작은 상자",
-               "description": "멋스러운 저장고입니다."
+               "description": "멋스러운 보관함입니다."
             }
          },
          "large_crate_fine": {
@@ -5793,50 +5793,50 @@
             }
          },
          "tester_crop": {
-            "display_name": "Tester",
-            "description": "Steeped in the soil.",
+            "display_name": "테스트",
+            "description": "흙 속에 묻혀있어.",
             "tester_crop_slow": {
-               "display_name": "Tester_Slow",
-               "description": "Steeped in the soil.",
+               "display_name": "느린 테스터",
+               "description": "흙 속에 묻혀있어.",
                "growth_stage": {
                   "001": {
-                     "name": "Ripe Tester",
+                     "name": "잘 익은 테스터",
                      "description": "맛있어!"
                   },
                   "000": {
-                     "name": "Tester Seedling",
-                     "description": "A unrealized tester."
+                     "name": "테스터 모종",
+                     "description": "아직 덜 자랐어."
                   }
                }
             },
             "growth_stage": {
                "001": {
-                  "name": "Ripe Tester",
+                  "name": "잘 익은 테스터",
                   "description": "맛있어!"
                },
                "000": {
-                  "name": "Tester Seedling",
-                  "description": "A unrealized tester."
+                  "name": "테스터 모종",
+                  "description": "아직 덜 자랐어."
                }
             }
          },
          "tester_crop_2": {
-            "display_name": "Tester_Slow",
-            "description": "Steeped in the soil.",
+            "display_name": "느린 테스터",
+            "description": "흙 속에 묻혀있어.",
             "growth_stage": {
                "001": {
-                  "name": "Ripe Tester",
+                  "name": "잘 익은 테스터",
                   "description": "맛있어!"
                },
                "000": {
-                  "name": "Tester Seedling",
-                  "description": "A unrealized tester."
+                  "name": "테스터 모종",
+                  "description": "아직 덜 자랐어."
                }
             }
          },
          "tester_silkweed_crop": {
-            "display_name": "Tester Silkweed",
-            "description": "This plant's fiber can be spun into thread",
+            "display_name": "테스터 인주솜풀",
+            "description": "이 식물의 섬유는 실로 짤 수 있어.",
             "growth_stage": {
                "004": {
                   "name": "다 자란 인주솜풀"
@@ -5945,7 +5945,7 @@
                   "description": "더 큰 곳으로 갈 준비가 됐어."
                },
                "000": {
-                  "name": "Seed Pod",
+                  "name": "씨앗 꼬투리",
                   "description": "심지어 큰 나무도 초라한 시작을 한답니다."
                },
                "002": {
@@ -5963,7 +5963,7 @@
                   "description": "먹기엔 너무 써."
                },
                "002": {
-                  "name": "Proto-Gourds",
+                  "name": "원형의 박",
                   "description": "아주 잘 될 것 같아."
                },
                "005": {
@@ -5980,7 +5980,7 @@
                },
                "000": {
                   "name": "모종이야!",
-                  "description": "Just a tinly little stub"
+                  "description": "아주 짤막해."
                },
                "011": {
                   "name": "썩은 박",
@@ -6081,8 +6081,8 @@
          },
          "stone_floor_candle_holder": {
             "stone_floor_candle_holder_ghost": {
-               "display_name": "Stone Floor Candle Holder",
-               "description": "Let there be light!"
+               "display_name": "석조 바닥 촛대",
+               "description": "빛이 있으리라!"
             }
          },
          "stone_garden_lantern": {
@@ -6099,20 +6099,20 @@
          },
          "tapestry_wall": {
             "tapestry_wall_ghost": {
-               "display_name": "Wall-Mounted Tapestry",
-               "description": "A decorative scene, woven in colored thread and cord."
+               "display_name": "벽걸이형 태피스트리",
+               "description": "색이 있는 실과 끈으로 짠 장식용 직물"
             }
          },
          "throw_rug": {
             "throw_rug_ghost": {
                "display_name": "장식용 천 러그",
-               "description": "Brightens up that old dusty floor."
+               "description": "오래된 먼지 바닥을 밝혀준다."
             }
          },
          "tower_brazier": {
             "tower_brazier_ghost": {
                "display_name": "타워 화로",
-               "description": "Provides warm and cozy fire at night"
+               "description": "밤에 따뜻하고 아늑한 불을 제공합니다."
             }
          },
          "wall_crest": {
@@ -6135,17 +6135,17 @@
          },
          "wooden_garden_lantern": {
             "wooden_garden_lantern_ghost": {
-               "display_name": "Wooden Garden Lantern",
-               "description": "A compact source of light"
+               "display_name": "나무 정원 랜턴",
+               "description": "적은 양의 빛을 제공해줍니다."
             }
          },
          "wooden_garden_lantern_fine": {
             "wooden_garden_lantern_fine_ghost": {
-               "display_name": "Fine Garden Lantern",
-               "description": "A compact source of light"
+               "display_name": "고품질의 나무 정원 랜턴",
+               "description": "적은 양의 빛을 제공합니다."
             },
             "wooden_garden_lantern_red_ghost": {
-               "display_name": "wooden garden lantern red"
+               "display_name": "붉은 나무 정원 랜턴"
             }
          },
          "wooden_sign": {
@@ -6193,13 +6193,13 @@
          "clay_lamp": {
             "clay_lamp_ghost": {
                "display_name": "점토 오일 램프",
-               "description": "Its flame brings a warm glow at night."
+               "description": "이 불은 밤에 따뜻한 불을 가져다줍니다."
             }
          },
          "clay_wall_lamp": {
             "clay_wall_lamp_ghost": {
                "display_name": "벽걸이형 점토 램프",
-               "description": "Provides a warm glow at night."
+               "description": "밤에 따뜻한 불을 제공합니다."
             }
          },
          "garden_gnome": {
@@ -6247,25 +6247,25 @@
          "tile_floor_mosaic": {
             "tile_floor_mosaic_ghost": {
                "display_name": "모자이크 바닥 타일 ",
-               "description": "Cool on the bare feet"
+               "description": "맨 발로 있으면 시원하다."
             }
          },
          "tile_wall_mosaic": {
             "tile_wall_mosaic_ghost": {
                "display_name": "모자이크 벽 타일",
-               "description": "Soothing decorative patterns"
+               "description": "마음을 달래주는 장식용 패턴"
             }
          },
          "golden_clay_wall_planter": {
             "golden_clay_wall_planter_ghost": {
-               "display_name": "Golden Clay Planter",
+               "display_name": "금빛 점토 화분",
                "description": "Livens up walls"
             }
          },
          "unfired_clay_vase": {
             "unfired_clay_vase_ghost": {
-               "display_name": "Unfired Clay Vase",
-               "description": "A very simple vase"
+               "display_name": "굽지 않은 점토 꽃병",
+               "description": "매우 평범한 꽃병"
             }
          },
          "wooden_sign_herbalist": {
@@ -6348,8 +6348,8 @@
          },
          "wooden_garden_lantern_red": {
             "wooden_garden_lantern_red_ghost": {
-               "display_name": "Wooden Garden Lantern - in Red",
-               "description": "A compact source of light"
+               "display_name": "붉은 나무 정원 랜턴",
+               "description": "적은 양의 빛을 제공해줍니다."
             }
          },
          "wooden_wall_lantern_red": {
@@ -6361,13 +6361,13 @@
          "window_box_brightbell_fine": {
             "window_box_brightbell_fine_ghost": {
                "display_name": "고품질의 브라이트벨 화분",
-               "description": "A cozy home for the plant."
+               "description": "이 식물은 아늑한 집을 만들어 줍니다."
             }
          },
          "window_box_frostsnap_fine": {
             "window_box_frostsnap_fine_ghost": {
                "display_name": "고품질의 프로스트스냅 화분",
-               "description": "A cozy home for the plant."
+               "description": "이 식물은 아늑한 집을 만들어 줍니다."
             }
          },
          "poyo_weathervane": {
@@ -6449,7 +6449,7 @@
             }
          },
          "sheep_jerky": {
-            "display_name": "양고기 한 접시"
+            "display_name": "양고기"
          },
          "unknown_food": {
             "display_name": "Edible Matter"
@@ -6880,37 +6880,37 @@
          "mountains_windchime": {
             "mountains_windchime_ghost": {
                "display_name": "산의 풍경",
-               "description": "Soothing happy notes"
+               "description": "마음을 진정시켜주는 행복한 노트다."
             }
          },
          "small_turret": {
             "small_turret_ghost": {
-               "display_name": "Turret",
-               "description": "Shoots at enemies from a small distance"
+               "display_name": "터렛",
+               "description": "가까운 거리의 적을 쏜다."
             }
          },
          "clamp_trap": {
             "clamp_trap_ghost": {
-               "display_name": "Clamp Trap",
-               "description": "Damages and shortly stuns enemies that step on it"
+               "display_name": "클램프 트랩",
+               "description": "이걸 밟으면 적은 잠시 기절하고 데미지를 입는다."
             }
          },
          "turnip_shooter": {
             "turnip_shooter_ghost": {
-               "display_name": "Turnip Shooter",
-               "description": "Shoots turnips at enemies"
+               "display_name": "순무 발사기",
+               "description": "적에게 순무를 쏴라"
             }
          },
          "critter_trap": {
             "critter_trap_ghost": {
-               "display_name": "Critter Trap",
-               "description": "Repurposed for use against enemies."
+               "display_name": "생물 트랩",
+               "description": "적에 맞서기 위해 사용되도록 만들었다."
             }
          },
          "dummy_training": {
             "dummy_training_ghost": {
-               "display_name": "Training Dummy",
-               "description": "Its best to practice with this friendly guy."
+               "display_name": "훈련용 더미",
+               "description": "이 친절한 더미와 연습하는 것이 최고다."
             }
          }
       },
@@ -7158,7 +7158,7 @@
             "species": "개"
          },
          "dragon_whelp": {
-            "display_name": "Dragon Whelp",
+            "display_name": "새끼 용",
             "description": "아기 용",
             "species": "용"
          },
@@ -7815,10 +7815,10 @@
             "description": "끝이 뾰족한 나뭇가지를 천으로 감쌌다."
          },
          "ogos_bone_mace": {
-            "display_name": "The Bonker",
+            "display_name": "본커",
             "description": "오고 스컬본커에 의해 디자인되었다. (양손 사용)",
             "ogos_bone_mace_iconic": {
-               "display_name": "The Bonker",
+               "display_name": "본커",
                "description": "오고 스컬본커이 소유했던 재산"
             }
          },
@@ -7876,48 +7876,48 @@
          },
          "seeds": {
             "turnip_seeds": {
-               "display_name": "Turnip Seeds",
-               "description": "Learn to grow the mighty turnip."
+               "display_name": "순무 씨앗",
+               "description": "강한 순무를 키우는 방법을 배우세요."
             },
             "carrot_seeds": {
-               "display_name": "Carrot Seeds",
-               "description": "Learn to grow carrots."
+               "display_name": "당근 씨앗",
+               "description": "당근을 키우는 방법을 배우세요."
             },
             "pumpkin_seeds": {
-               "display_name": "Pumpkin Seeds",
-               "description": "Learn to grow pumpkins."
+               "display_name": "호박 씨앗",
+               "description": "호박을 키우는 방법을 배우세요."
             },
             "golden_gourd_seeds": {
-               "display_name": "Golden Gourd Seeds",
-               "description": "Learn to grow golden gourds."
+               "display_name": "황금 박 씨앗",
+               "description": "황금 박을 키우는 방법을 배우세요."
             },
             "watermelon_seeds": {
-               "display_name": "Watermelon Seeds",
-               "description": "Learn to grow delicious melons."
+               "display_name": "수박 씨앗",
+               "description": "맛있는 수박을 키우는 방법을 배우세요."
             },
             "cactus_flower_seeds": {
-               "display_name": "Cactus Flower Seeds",
-               "description": "Learn to grow delicious prickly flowers."
+               "display_name": "선인장 꽃 씨앗",
+               "description": "맛있는 선인장 꽃을 키우는 방법을 배우세요."
             },
             "acacia_tree_seeds": {
-               "display_name": "Acacia Seeds",
-               "description": "Learn to grow acacia trees."
+               "display_name": "아카시아 씨앗",
+               "description": "아카시아 나무를 키우는 방법을 배우세요."
             },
             "oak_tree_seeds": {
-               "display_name": "Acorns",
-               "description": "Learn to grow oak trees."
+               "display_name": "도토리",
+               "description": "참나무를 키우는 방법을 배우세요."
             },
             "brightbell_seeds": {
-               "display_name": "Brightbell Seeds",
-               "description": "Learn to grow brightbells."
+               "display_name": "브라이트벨 씨앗",
+               "description": "브라이트벨을 키우는 방법을 배우세요."
             },
             "frostsnap_seeds": {
-               "display_name": "Frostsnap Seeds",
-               "description": "Learn to grow frostsnaps."
+               "display_name": "프로스트스냅 씨앗",
+               "description": "프로스트스냅을 키우는 방법을 배우세요."
             },
             "wheat_seeds": {
-               "display_name": "Wheat Grain",
-               "description": "Learn to grow wheat."
+               "display_name": "밀 알갱이",
+               "description": "밀을 키우는 방법을 배우세요."
             },
             "silkweed_seeds": {
                "display_name": "인주솜풀 씨앗",
@@ -7927,21 +7927,21 @@
       },
       "outfits": {
          "trader_outfit": {
-            "display_name": "Trader Outfit",
-            "description": "Clothing of choice for traders"
+            "display_name": "상인 유니폼",
+            "description": "상인들을 위한 선택의 옷"
          }
       },
       "constructillon": {
          "wooden_door_2_fine": {
             "wooden_door_2_fine_ghost": {
-               "description": "Sturdier than your average door, and more polished too."
+               "description": "평범한 문보다 더 단단하고 더 세련됐다."
             }
          }
       },
       "ephemera": {
          "ball_of_wax": {
-            "display_name": "Ball of Ear Wax",
-            "description": "Gross, isn't it?"
+            "display_name": "귀지",
+            "description": "징그러워, 그렇지?"
          }
       }
    },
@@ -8615,8 +8615,8 @@
                "flavor": "And where Cid wandered, the Church rose up in his footsteps..."
             },
             "poyo_weathervane_recipe": {
-               "recipe_name": "Poyo Weathervane",
-               "description": "A weathervane in the image of a friendly yardbird",
+               "recipe_name": "풍향계",
+               "description": "친근한 느낌을 주는 풍향계다.",
                "flavor": "TODO"
             }
          }
@@ -8682,7 +8682,7 @@
             "meat_stew_recipe": {
                "description": "추운 밤을 잊게 해주는 완벽한 편안함과 따뜻함 그리고 만족감을 줍니다.",
                "recipe_name": "향긋한 고기 스튜",
-               "flavor": "Before you ask, it's an assortment of meats."
+               "flavor": "당신이 요청하기 전에는 이건 단순한 고기 모듬 밖에 되지않습니다."
             },
             "peasant_bread_recipe": {
                "description": "딱딱하고 기본적인 빵입니다.",
@@ -8713,12 +8713,12 @@
             "roast_poyo_recipe": {
                "description": "천천히 구워낸 닭고기",
                "recipe_name": "통닭구이",
-               "flavor": "닭을 더 넣어주세요."
+               "flavor": "닭을 더 주세요."
             },
             "fried_eggs_recipe": {
                "description": "달걀 프라이가 주문되었습니다.",
                "recipe_name": "달갈 프라이",
-               "flavor": "Do you like yours sunnyside up?"
+               "flavor": "한 쪽 면만 살짝 익혀서 먹는거 좋아해?"
             },
             "animal_feed_name": "동물 사료",
             "sheep_feed_recipe": {
@@ -8741,7 +8741,7 @@
                "flavor": "돌로 만들어 음식을 오랫동안 따뜻하게 유지시켜 줍니다."
             },
             "cook_mill_recipe": {
-               "description": "For grinding grains into flour",
+               "description": "곡물을 갈아버릴 때 사용된다.",
                "recipe_name": "맷돌"
             },
             "cook_oven_recipe": {
@@ -8754,13 +8754,13 @@
             },
             "decoration_name": "장식",
             "roast_mutton_recipe": {
-               "recipe_name": "Roasted Rack of Mutton",
-               "description": "Nutritious and delicious"
+               "recipe_name": "구운 양고기",
+               "description": "영양분이 많고 맛있어."
             },
             "donation_box_recipe": {
-               "recipe_name": "Donation to the Church of Plenty",
-               "description": "Care-package for those in greater need than you",
-               "flavor": "To the hungry, bread, to the driven, faith. --Cid the Wanderer"
+               "recipe_name": "풍요의 교회의 기부품",
+               "description": "당신보다 더 필요할 사람들을 위한 식품 꾸러미",
+               "flavor": "배고픈 이들을 위해 빵을 주고 믿음응 향해 달려가자. - 시드"
             },
             "kibble_recipe": {
                "recipe_name": "Kibble Recipe",
@@ -8846,7 +8846,7 @@
             "gadget_parts_name": "기어와 부품들",
             "small_turret_recipe": {
                "description": "After placed, shoots at enemies from a distance. Must be repaired after 20 uses.",
-               "recipe_name": "Turret"
+               "recipe_name": "터렛"
             },
             "iron_gear_recipe": {
                "description": "Used to craft intermediate gadgets",
@@ -8861,7 +8861,7 @@
             "traps_name": "Defensive Traps",
             "turnip_shooter_recipe": {
                "description": "Shoots turnips at enemies from a small distance. Must be repaired after 15 uses.",
-               "recipe_name": "Turnip Shooter",
+               "recipe_name": "순무 발사기",
                "flavor": "Don't like the taste of turnips? Don't worry, they're multi-functional."
             },
             "critter_trap_recipe": {
@@ -9063,7 +9063,7 @@
          "mason_pedestal": {
             "mason_pedestal_ghost": {
                "display_name": "석공의 받침대",
-               "description": "Craft in a well-lit space."
+               "description": "작업하기 위한 적당한 공간이 있다."
             }
          },
          "recipes": {
@@ -9382,12 +9382,12 @@
             },
             "golden_clay_wall_planter_recipe": {
                "description": "Brightens up a wall",
-               "recipe_name": "Golden Clay Wall Planter",
+               "recipe_name": "금빛 점토 화분",
                "flavor": "Where do the flowers come from? From the planter, of course! --Acolyte of Rayya's Mystery"
             },
             "unfired_clay_vase_recipe": {
                "description": "A simple vase made on the pottery wheel that is used for more complex recipes.",
-               "recipe_name": "굽지 않은 점토 단지",
+               "recipe_name": "굽지 않은 점토 꽃병",
                "flavor": "'The First Pot was formed together by wind, earth, and fire, connecting the people to Hearth' --Master Orlen"
             },
             "clay_pile_recipe": {
@@ -9407,7 +9407,7 @@
             },
             "tan_latticed_window_recipe": {
                "recipe_name": "황색 격자 창문",
-               "description": "The latticed window you know and love, in tan",
+               "description": "격자 모양의 황색 창문을 알게 된다면 사랑에 빠질 것입니다.",
                "flavor": ""
             },
             "tall_clay_window_recipe": {
@@ -9422,8 +9422,8 @@
             },
             "green_latticed_window_recipe": {
                "recipe_name": "녹색 격자 창문",
-               "flavor": "Reminicent of a vine-covered treehouse window, faded into memory",
-               "description": "격자 모양의 창문을 알게 된다면 사랑에 빠질 것이다, 초록색으로 하자!"
+               "flavor": "희미해진 기억 속에 있는 덩굴에 덮인 나무 집의 창문을 회상하게 한다.",
+               "description": "격자 모양의 창문을 알게 된다면 사랑에 빠질 것입니다. 초록색으로 하자!"
             },
             "blue_latticed_window_recipe": {
                "recipe_name": "청색 격자 창문",
@@ -9431,7 +9431,7 @@
                "flavor": ""
             },
             "wooden_sign_potter_recipe": {
-               "flavor": "Less fragile and easier than hanging a real pot!"
+               "flavor": "냄비로 만드는 것보다 덜 부서지고 쉽다."
             }
          },
          "potter_workbench": {
@@ -9679,20 +9679,20 @@
             "spool_of_thread_recipe": {
                "description": "천을 위해 필요합니다. 따뜻하고 보송보송합니다.",
                "recipe_name": "실타래",
-               "flavor": "Each gram of fiber yearns to become a sweater."
+               "flavor": "스웨터가 되고 싶어하는 섬유들"
             },
             "tapestry_wall_recipe": {
-               "description": "A decorative scene, woven in colored thread and cord.",
-               "recipe_name": "Wall-Mounted Tapestry",
+               "description": "색이 있는 실과 끈으로 짠 장식용 직물",
+               "recipe_name": "벽걸이형 태피스트리",
                "flavor": "What you see in its knotted depths tells you something about yourself."
             },
             "thread_recipe": {
                "description": "천을 위해 필요합니다. 따뜻하고 보송보송합니다.",
                "recipe_name": "실타래",
-               "flavor": "Each gram of fiber yearns to become a sweater."
+               "flavor": "스웨터가 되고 싶어하는 섬유들"
             },
             "throw_rug_recipe": {
-               "description": "Brightens up that old dusty floor.",
+               "description": "오래된 먼지 바닥을 밝혀준다.",
                "recipe_name": "장식용 천 러그",
                "flavor": "밟기엔 너무 아름답다."
             },
