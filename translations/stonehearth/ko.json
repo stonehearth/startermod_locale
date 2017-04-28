@@ -1157,7 +1157,7 @@
             "system": "시스템",
             "force_32_bit": "* 강제 32bit (재시작시 적용)",
             "force_32_bit_note": "* 문제가 있을 때만 강제 32bit로 변경하세요. 64bit는 더욱 빠르고 큰 도시를 지원합니다.",
-            "collect_profile": "Collect profile",
+            "collect_profile": "프로필 수집",
             "enable_lua_jit": "Lua JIT컴파일 (재시작시 적용)",
             "send_anon_data": "익명으로 피드백 보내기",
             "language_select": "언어(Language)",
@@ -1523,7 +1523,7 @@
                   "net_worth_label": "순 자산",
                   "conclusion_positive": "정착민이 당신의 마을에 정착하고 싶어 합니다!",
                   "conclusion_negative": "도로가 비어있습니다. 내일 되겠죠 아마!",
-                  "success_title": "[name(i18n_data.citizen)]가 [str(i18n_data.town_name)]마을에 정착했습니다!",
+                  "success_title": "[name(i18n_data.citizen)]이(가) [str(i18n_data.town_name)]마을에 정착했습니다!",
                   "messages": {
                      "000": "나는 당신의 도시에 대해 많이 들었습니다!",
                      "001": "나는 당신의 도시에 들어가고 싶습니다.",
@@ -1607,17 +1607,17 @@
                   "accept": "우후!",
                   "dialog_title": "Township Achieved!",
                   "tier_title": "마을",
-                  "reward_message": "By decree of Princess Dania of the Ascendancy, we recognize:",
-                  "reward_message_ctd": "For acts of incredibe valor in combat. The town is hereby eligible for:",
-                  "tier_2_bldg_template": "Tier 2 Building Templates",
-                  "tier_2_shops": "Tier 2 Shops",
-                  "tier_2_BGM": "Tier 2 BGM"
+                  "reward_message": "어센던시의 데니아 공주의 명에 따라 당신을 인정한다.",
+                  "reward_message_ctd": "전투에서의 믿을 수 없는 용맹함으로 인해 이 마을은 아래의 자격들을 갖게 되었습니다. :",
+                  "tier_2_bldg_template": "2 등급 건설 도면",
+                  "tier_2_shops": "2 등급 상점",
+                  "tier_2_BGM": "2 등급 BGM"
                },
                "generosity_tier_2_reached": {
-                  "reward_message_ctd": "For demonstrating great generosity to the needy. The town is hereby eligible for:"
+                  "reward_message_ctd": "어려운 자들을 위한 위대한 관대함을 증명했기에  아래의 자격들을 갖게 되었습니다. :"
                },
                "crafting_tier_2_reached": {
-                  "reward_message_ctd": "For excellence in craftsmanship. The town is hereby eligible for:"
+                  "reward_message_ctd": "탁월한 장인의 솜씨를 보여주었기에 아래의 자격들을 갖게 되었습니다. :"
                },
                "ascendancy_town_tier_quest": {
                   "title": "마을을 위한 퀘스트",
@@ -2100,16 +2100,16 @@
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "You no win. Ogo... coming. Soothsayer say... Ogo... crush everyone..."
+                              "00": "넌 이기지 않았어. 오고는... 다시 온다. 예언자는 말했다... 오고는... 모두를 부숴버릴꺼라고..."
                            },
-                           "bulletin_title": "[name(i18n_data.boss)] is Defeated!",
+                           "bulletin_title": "[name(i18n_data.boss)]가 패배했다!",
                            "dialog_title": "[name(i18n_data.boss)]"
                         },
                         "msg1": {
                            "bulletin_message": {
                               "00": "으... 다쳤어..."
                            },
-                           "bulletin_title": "[name(i18n_data.boss)] is Defeated!",
+                           "bulletin_title": "[name(i18n_data.boss)]가 패배했다!",
                            "dialog_title": "[name(i18n_data.boss)]"
                         }
                      }
@@ -2711,7 +2711,7 @@
                               },
                               "crypt_structures": {
                                  "floor_candle": {
-                                    "description": "Illuminates the crypt entrance"
+                                    "description": "지하성당의 입구를 밝힌다."
                                  }
                               }
                            }
@@ -6081,7 +6081,7 @@
          },
          "stone_floor_candle_holder": {
             "stone_floor_candle_holder_ghost": {
-               "display_name": "석조 바닥 촛대",
+               "display_name": "석조 촛대",
                "description": "빛이 있으리라!"
             }
          },
@@ -6211,13 +6211,13 @@
          "decorative_teapot": {
             "decorative_teapot_ghost": {
                "display_name": "장식용 찻주전자",
-               "description": "A reminder of humble beginnings"
+               "description": "초라한 시작을 상기시켜준다."
             }
          },
          "decorative_tray": {
             "decorative_tray_ghost": {
                "display_name": "장식용 쟁반",
-               "description": "Adds flash and hospitality"
+               "description": "반짝거리고 친절함이 느껴진다."
             }
          },
          "potted_cactus": {
@@ -6259,7 +6259,7 @@
          "golden_clay_wall_planter": {
             "golden_clay_wall_planter_ghost": {
                "display_name": "금빛 점토 화분",
-               "description": "Livens up walls"
+               "description": "벽에 활기를 불어넣어준다."
             }
          },
          "unfired_clay_vase": {
@@ -6354,7 +6354,7 @@
          },
          "wooden_wall_lantern_red": {
             "wooden_wall_lantern_fine_ghost": {
-               "display_name": "Wooden Wall Lantern - in Red",
+               "display_name": "벽걸이형 붉은 나무 랜턴",
                "description": "벽에 쉽게 부착할 수 있습니다."
             }
          },
@@ -6407,25 +6407,25 @@
             }
          },
          "flour": {
-            "display_name": "Sack of Flour",
-            "description": "Perfect for making bread"
+            "display_name": "밀가루 포대",
+            "description": "빵을 만들기 위한 완벽한 재료다."
          },
          "meat_stew": {
             "meat_stew": {
-               "display_name": "Savory Meat Stew",
-               "description": "Warm and delicious"
+               "display_name": "향긋한 고기 스튜",
+               "description": "따뜻하고 맛있어."
             },
             "meat_stew_serving": {
-               "display_name": "Bowl of Savory Meat Stew"
+               "display_name": "향긋한 고기 스튜 한 그릇"
             }
          },
          "peasant_bread": {
             "peasant_bread": {
-               "display_name": "Peasant Bread",
-               "description": "A crusty, basic bread."
+               "display_name": "소작농의 빵",
+               "description": "딱딱하지만 기본적인 빵입니다."
             },
             "peasant_bread_serving": {
-               "display_name": "Slice of Peasant Bread"
+               "display_name": "소작농의 빵 조각"
             }
          },
          "pumpkin": {
@@ -6445,7 +6445,7 @@
             },
             "watermelon_serving": {
                "display_name": "수박 조각",
-               "description": "Plus you can spit out the seeds!"
+               "description": "씨앗을 뱉을 수 있다!"
             }
          },
          "sheep_jerky": {
@@ -6457,7 +6457,7 @@
          "veggie_stew": {
             "veggie_stew": {
                "display_name": "야채 스튜",
-               "description": "따뜻하고 맛있습니다."
+               "description": "따뜻하고 맛있어."
             },
             "veggie_stew_serving": {
                "display_name": "야채 스튜 한 그릇",
@@ -6470,15 +6470,15 @@
          },
          "egg": {
             "display_name": "달걀",
-            "description": "An eggcellent ingredient for cooking."
+            "description": "요리를 위한 훌륭한 재료입니다."
          },
          "corn_bread": {
             "corn_bread": {
                "display_name": "옥수수 빵",
-               "description": "Toasty and golden brown."
+               "description": "노릇노릇하게 잘 구워졌다."
             },
             "corn_bread_serving": {
-               "display_name": "Piece of Corn Bread"
+               "display_name": "옥수수 빵 한 조각"
             }
          },
          "poyo_meat": {
@@ -6502,20 +6502,20 @@
          "omelette": {
             "omelette": {
                "display_name": "오믈렛",
-               "description": "Delicious egg wrapped meat and veggies"
+               "description": "맛있는 달걀로 싼 고기와 채소"
             },
             "omelette_serving": {
-               "display_name": "Serving of Omelette",
-               "description": "But why would you share?"
+               "display_name": "오믈렛 1인분",
+               "description": "이걸 왜 나눠먹어야 돼?"
             }
          },
          "roast_poyo": {
             "roast_poyo": {
                "display_name": "통닭구이",
-               "description": "Nice and juicy."
+               "description": "맛있고 육즙이 풍부해."
             },
             "roast_poyo_serving": {
-               "display_name": "Serving of Roast Poyo"
+               "display_name": "통닭구이 1인분"
             }
          },
          "fried_eggs": {
@@ -6524,12 +6524,12 @@
                "description": "프라이라서 더 맛있어."
             },
             "fried_eggs_serving": {
-               "display_name": "Serving of Fried Eggs"
+               "display_name": "달걀 프라이 1인분"
             }
          },
          "sheep_feed": {
             "display_name": "양 사료",
-            "description": "Give to sheep for a supplement to grazing.",
+            "description": "방목지의 양에게 가져다주자.",
             "sheep_feed_ground": {
                "display_name": "양 사료",
                "description": "양을 위한 먹이"
@@ -6560,13 +6560,13 @@
             },
             "prickly_pear_serving": {
                "display_name": "백년초",
-               "description": "Ow! Was that a spine?"
+               "description": "아우! 가시였어?"
             }
          },
          "golden_gourd": {
             "golden_gourd_basket": {
                "display_name": "황금 박이 담긴 바구니",
-               "description": "Edible when raw, barely"
+               "description": "익히지 않아도 먹을 수 있어. 간신히..."
             },
             "golden_gourd_serving": {
                "display_name": "황금 박",
@@ -6585,33 +6585,33 @@
          },
          "corn_meal": {
             "display_name": "옥수수 가루",
-            "description": "Corn ground into a fine powder"
+            "description": "옥수수를 고운 가루로 갈았다."
          },
          "flat_bread": {
             "flat_bread": {
-               "display_name": "평평한 빵",
-               "description": "Unleavened bread made from corn meal"
+               "display_name": "플랫브레드",
+               "description": "옥수수 가루로 만든 누룩 없는 빵"
             },
             "flat_bread_serving": {
-               "display_name": "Piece of Flat Bread"
+               "display_name": "플랫브레드 한 조각"
             }
          },
          "meat_tagine": {
             "meat_tagine": {
-               "display_name": "Meat Stew Tagine",
-               "description": "Meat and veggies simmered in a clay pot"
+               "display_name": "고기 스튜 타진",
+               "description": "고기와 야채를 점토 냄비로 끓였다."
             },
             "meat_tagine_serving": {
-               "display_name": "Bowl of Meat Stew"
+               "display_name": "고기 스튜 한 그릇"
             }
          },
          "vegetable_tagine": {
             "vegetable_tagine": {
-               "display_name": "Vegetable Stew Tagine",
-               "description": "Veggies simmered in a clay pot"
+               "display_name": "야채 스튜 타진",
+               "description": "야채를 점토 냄비로 끓였다."
             },
             "vegetable_tagine_serving": {
-               "display_name": "Bowl of Veggie Stew"
+               "display_name": "야채 스튜 한 그릇"
             }
          },
          "rotten_basket": {
@@ -6632,21 +6632,21 @@
          },
          "roast_mutton": {
             "roast_mutton": {
-               "display_name": "Rack of Roast Mutton",
-               "description": "Tenderly roasted to perfection"
+               "display_name": "구운 양고기",
+               "description": "더할 나위 없이 부드럽게 구웠다."
             },
             "roast_mutton_serving": {
-               "display_name": "Roasted Mutton Rack"
+               "display_name": "구운 양고기"
             }
          },
          "donation_box": {
             "donation_box": {
-               "display_name": "Food Donation Box",
-               "description": "Craft to show generosity and piety"
+               "display_name": "음식 기부 박스",
+               "description": "관대함과 경건함을 보여주는 기부품이다."
             },
             "donation_box_serving": {
-               "display_name": "Donation box serving",
-               "description": "A piece of plenty"
+               "display_name": "기부 박스 한 접시",
+               "description": "풍요의 한 조각"
             }
          },
          "kibble": {
@@ -8605,9 +8605,9 @@
                "description": "더욱 강하고 빠르게 화살로 공격하기 위해 구부러진 활입니다."
             },
             "mountains_windchime_recipe": {
-               "description": "Place to deter Mountain, Ogo's trained ogre",
-               "recipe_name": "산의 풍경",
-               "flavor": "The melody evokes the stolen ogre's long-ago lullabye"
+               "description": "오고에 의해 훈련받은 오거 마운틴을 저지할 장소",
+               "recipe_name": "마운틴의 윈드차임",
+               "flavor": "이 멜로디는 먼 옛날 오거의 자장가를 떠올리게 한다."
             },
             "statue_of_cid_wanderer_recipe": {
                "recipe_name": "시드의 조각상",
@@ -8677,7 +8677,7 @@
          "recipes": {
             "flour_recipe": {
                "description": "모든 종류의 빵에 필요한 재료입니다.",
-               "recipe_name": "밀가루 한 포대"
+               "recipe_name": "밀가루 포대"
             },
             "meat_stew_recipe": {
                "description": "추운 밤을 잊게 해주는 완벽한 편안함과 따뜻함 그리고 만족감을 줍니다.",
@@ -8685,7 +8685,7 @@
                "flavor": "당신이 요청하기 전에는 이건 단순한 고기 모듬 밖에 되지않습니다."
             },
             "peasant_bread_recipe": {
-               "description": "딱딱하고 기본적인 빵입니다.",
+               "description": "딱딱하지만 기본적인 빵입니다.",
                "recipe_name": "소작농의 빵"
             },
             "food_name": "음식",
@@ -9361,7 +9361,7 @@
                "flavor": "They say Monkey had one eye made of glass, and through it, he could see straight to the heart of things. --Master Orlen"
             },
             "decorative_vase_recipe": {
-               "description": "강철을 예술로 승화시키다.",
+               "description": "금속을 예술로 승화시키다.",
                "recipe_name": "장식용 꽃병",
                "flavor": "It is the riches of the earth reborn"
             },
@@ -10041,7 +10041,7 @@
       "knight": {
          "knight_outfit": {
             "display_name": "기사의 방패",
-            "description": "Metal armor worn by a knight"
+            "description": "기사가 착용하는 금속 방어구다."
          },
          "knight_description": {
             "display_name": "기사",
@@ -10087,7 +10087,7 @@
             },
             "health_1_buff": {
                "display_name": "용기 강화",
-               "description": "기사는 적들에게 더 위협적이되어 주목을 받습니다. 또한 스테미나와 체력 보너스를 받습니다."
+               "description": "기사는 적들에게 더 위협적이 되어 주목을 받습니다. 또한 스태미나와 체력 보너스를 받습니다."
             },
             "health_2_buff": {
                "display_name": "용기 강화 (랭크 2)",
@@ -10126,7 +10126,7 @@
          "job": {
             "starting_level_title": "수습 [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "레벨[str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_announcement": "[name(i18n_data.entity)]가 [str(i18n_data.job_name)]레벨 [str(i18n_data.level_number)]를 달성했습니다!",
+            "default_level_announcement": "[name(i18n_data.entity)]이(가) [str(i18n_data.job_name)]레벨 [str(i18n_data.level_number)]를 달성했습니다!",
             "level_up_perk_description": "최대 체력 +10",
             "attribute_up_desc": "모든 속성이 증가했습니다!"
          }
@@ -10156,7 +10156,7 @@
          "job": {
             "starting_level_title": "수습 [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "레벨 [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_announcement": "[name(i18n_data.entity)]가 [str(i18n_data.job_name)]레벨 [str(i18n_data.level_number)]를 달성했습니다!",
+            "default_level_announcement": "[name(i18n_data.entity)]이(가) [str(i18n_data.job_name)]레벨 [str(i18n_data.level_number)]를 달성했습니다!",
             "general_description_desc": "최대 체력이 증가했습니다!",
             "attribute_up_desc": "모든 속성이 증가했습니다!"
          }
