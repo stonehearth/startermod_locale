@@ -5042,7 +5042,7 @@
             }
          },
          "studded_leather_helmet": {
-            "display_name": "Studded Leather Helmet",
+            "display_name": "가죽 단추 헬멧",
             "description": "당신의 머리를 보호합니다"
          },
          "wooden_shield": {
@@ -5204,7 +5204,7 @@
          "picket_fence": {
             "picket_fence_ghost": {
                "display_name": "나무 울타리",
-               "description": "If it's not white, is our life unfulfilled?"
+               "description": "만약 이게 흰색이 아니라면, 우리의 삶은 만족스럽지 못할까?"
             }
          },
          "picket_fence_gate": {
@@ -5296,7 +5296,7 @@
          "blue_clay_window_frame": {
             "blue_clay_window_frame_ghost": {
                "display_name": "청색 점토 창틀",
-               "description": "Lets in the desert air."
+               "description": "사막의 바람을 들여보내자."
             }
          },
          "green_clay_window_frame": {
@@ -5325,14 +5325,14 @@
          },
          "iron_door": {
             "iron_door_ghost": {
-               "display_name": "Ironclad Door",
-               "description": "Studier than wooden or stone doors"
+               "display_name": "철 문",
+               "description": "나무나 돌 문보다 단단하다."
             }
          },
          "bronze_portcullis": {
             "bronze_portcullis_ghost": {
-               "display_name": "Bronze Portcullis",
-               "description": "Useful for fortifying town entrypoints"
+               "display_name": "청동 쇠창살문",
+               "description": "마을 입구의 요새화에 유용하다."
             }
          },
          "wooden_door_fine": {
@@ -5380,7 +5380,7 @@
          "picket_fence_fine": {
             "picket_fence_fine_ghost": {
                "display_name": "고품질의 나무 울타리",
-               "description": "If it's not white, is our life unfulfilled?"
+               "description": "만약 이게 흰색이 아니라면, 우리의 삶은 만족스럽지 못할까?"
             }
          },
          "picket_fence_gate_fine": {
@@ -5396,7 +5396,7 @@
          "blue_latticed_window": {
             "blue_latticed_window_ghost": {
                "display_name": "청색 격자 창문",
-               "description": "A soothing blue latticed window"
+               "description": "마음을 달래주는 격자 모양을 가진 푸른색의 창문이다."
             }
          },
          "green_latticed_window": {
@@ -8414,7 +8414,7 @@
             "picket_fence_recipe": {
                "description": "당신의 재산을 보호하세요.",
                "recipe_name": "나무 울타리",
-               "flavor": "If it's not white, is our life unfulfilled?"
+               "flavor": "만약 이게 흰색이 아니라면, 우리의 삶은 만족스럽지 못할까?"
             },
             "tools_weapons_name": "도구 & 무기",
             "storage_name": "저장고",
