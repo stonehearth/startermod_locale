@@ -1758,8 +1758,8 @@
                         },
                         "farming_supplies_shop": {
                            "shop_info": {
-                              "name": "Farmer Gem's Farm Supplies",
-                              "title": "Farmer Gem's supply cart rolls into town"
+                              "name": "농부 젬의 농작물 보급품",
+                              "title": "농부 젬의 공급 카트가 마을로 들어오고 있다."
                            }
                         },
                         "bakery_shop": {
@@ -1776,7 +1776,7 @@
                         },
                         "door_shop": {
                            "shop_info": {
-                              "name": "Edgar Planckton's Door Store",
+                              "name": "Edgar Planckton의 문 상점",
                               "title": "Edgar Planckton has arrived with doors for sale"
                            }
                         }
@@ -2677,7 +2677,7 @@
                "giant_wolf_raid_4": {
                   "wolf": {
                      "display_name": "거인 늑대",
-                     "description": "Terrifyingly large.. and toothy"
+                     "description": "끔직하게 크고... 이가 많다."
                   }
                },
                "entling_raid_7": {
@@ -2702,12 +2702,12 @@
                            },
                            "create_necromancer_crypt": {
                               "crypt": {
-                                 "display_name": "A Crypt",
-                                 "description": "Constructed by the Phoenix Empire"
+                                 "display_name": "지하성당",
+                                 "description": "피닉스 제국 때 건설되었다."
                               },
                               "sarcophagus": {
-                                 "display_name": "Stone Sacrophagus",
-                                 "description": "Here lies a member of the Black Cord"
+                                 "display_name": "석관",
+                                 "description": "많은 블랙 코드들이 누워있다."
                               },
                               "crypt_structures": {
                                  "floor_candle": {
@@ -2848,38 +2848,38 @@
                                  "dialog_nodes": {
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "You ask why? We offer to great Goddess Khulgana! Bring great riches after life. Now you know, you need give us treasure!"
+                                          "00": "왜냐고? 위대하신 여신 쿨가나에게 바칠 것이다! 삶이 끝난 뒤 많은 부를 가져다 주지. 이제 알았으니 보물을 내놔!"
                                        },
-                                       "bulletin_title": "Kobold Scout",
-                                       "dialog_title": "Kobold Scout",
-                                       "choice_000": "Nah"
+                                       "bulletin_title": "코볼드 스카우트",
+                                       "dialog_title": "코볼드 스카우트",
+                                       "choice_000": "싫어"
                                     },
                                     "msg4": {
                                        "bulletin_message": {
-                                          "000": "You no give shinies?! We take!!!",
-                                          "001": "Ha, we was just testing you! Of course we strong enough to take!",
-                                          "002": "We take all gold! We revenge for hat melting!!"
+                                          "000": "보물을 안 주겠다고?! 빼았자!!!",
+                                          "001": "하하하, 당신을 테스트해보겠어! 물론 우린 빼앗고도 남을만큼 힘이 세지!",
+                                          "002": "금을 다 빼앗을 것이다! 모자를 빼앗아간 것에 대한 복수다!!"
                                        },
-                                       "bulletin_title": "Kobold Scout",
-                                       "dialog_title": "Kobold Scout",
-                                       "choice_000": "Ok"
+                                       "bulletin_title": "코볼드 스카우트",
+                                       "dialog_title": "코볼드 스카우트",
+                                       "choice_000": "좋아"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "000": "Grek!! You notice me?",
-                                          "001": "Oo shinies! Gong! Emerald!"
+                                          "000": "그랴!! 눈치챘나?",
+                                          "001": "오 눈부셔! 공이군! 에메랄드가 박혀있어!"
                                        },
-                                       "bulletin_title": "A kobold stares longingly at your piles of gold.",
-                                       "dialog_title": "Kobold Scout",
-                                       "choice_000": "What are you doing?"
+                                       "bulletin_title": "코볼드가 당신의 금 더미들을 노려보고 있다.",
+                                       "dialog_title": "코볼드 스카우트",
+                                       "choice_000": "뭐하는거야?"
                                     },
                                     "msg2": {
                                        "bulletin_message": {
-                                          "000": "We see you many treasures in piles and boxes. Us need many, many loots. You share, yes?"
+                                          "000": "우리는 당신의 비축소나 상자에 많은 보물이 있는걸 봤다. 우리는 매우 매우 많은 약탈품을 원한다. 우리한테 좀 나눠줘라, 알겠지?"
                                        },
-                                       "bulletin_title": "Kobold Scout",
-                                       "dialog_title": "Kobold Scout",
-                                       "choice_000": "Why do you need so much loot?"
+                                       "bulletin_title": "코볼드 스카우트",
+                                       "dialog_title": "코볼드 스카우트",
+                                       "choice_000": "약탈품들이 왜 필요한데?"
                                     }
                                  }
                               }
@@ -2889,10 +2889,10 @@
                                  "dialog_nodes": {
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Us.. too weak.. Put out Elite Gong if you dares.."
+                                          "00": "우린... 너무 약해.. Put out Elite Gong if you dares.."
                                        },
-                                       "bulletin_title": "The Kobold Scout whimpers on the ground",
-                                       "dialog_title": "Kobold Scout"
+                                       "bulletin_title": "코볼드 스카우트가 땅 위에서 훌쩍 거리며 운다.",
+                                       "dialog_title": "코볼드 스카우트"
                                     }
                                  }
                               }
@@ -3103,19 +3103,19 @@
                                        },
                                        "bulletin_title": "The warchief nods humbly",
                                        "dialog_title": "대족장 오가르 노스윈드",
-                                       "choice_000": "No problem"
+                                       "choice_000": "문제없어"
                                     }
                                  }
                               }
                            },
                            "unlock_blue_token_recipe": {
-                              "bulletin_title": "The blacksmith has unlocked the Decorative Elite Gong recipe!"
+                              "bulletin_title": "대장장이가 장식용 엘리트 공 제조법을 얻었다!"
                            },
                            "unlock_purple_token_recipe": {
-                              "bulletin_title": "The Blacksmith has unlocked the General's Golden Gong recipe!"
+                              "bulletin_title": "대장장이가 장군의 금빛 공 제조법을 얻었다!"
                            },
                            "unlock_red_token_recipe": {
-                              "bulletin_title": "The Blacksmith has unlocked the Decorative Master Gong recipe!"
+                              "bulletin_title": "대장장이가 장식용 마스터 공 제조법을 얻었다!"
                            }
                         }
                      }
@@ -5325,7 +5325,7 @@
          },
          "iron_door": {
             "iron_door_ghost": {
-               "display_name": "철 문",
+               "display_name": "철갑 문",
                "description": "나무나 돌 문보다 단단하다."
             }
          },
@@ -6117,8 +6117,8 @@
          },
          "wall_crest": {
             "wall_crest_ghost": {
-               "display_name": "Wall Crest",
-               "description": "Just for show."
+               "display_name": "벽걸이형 문장",
+               "description": "그냥 보여주기 위한거야."
             }
          },
          "window_box_brightbell": {
@@ -6300,26 +6300,26 @@
          },
          "decorative_elite_gong": {
             "decorative_elite_gong_ghost": {
-               "display_name": "엘리트 훈장",
-               "description": "Inspired by the Elite Kobold Menace"
+               "display_name": "엘리트 공",
+               "description": "엘리트 코볼드 메너스에 의해 영감을 받았다."
             }
          },
          "decorative_generals_gong": {
             "decorative_generals_gong_ghost": {
-               "display_name": "장군의 금빛 훈장",
-               "description": "Inspired by the Kobold Archer General"
+               "display_name": "장군의 금빛 공",
+               "description": "코볼드 궁수 장군에 의해 영감을 받았다."
             }
          },
          "decorative_master_gong": {
             "decorative_master_gong_ghost": {
-               "display_name": "마스터 훈장",
-               "description": "Inspired by the Kobold Master Archer"
+               "display_name": "마스터 공",
+               "description": "코볼드 마스터 궁수에 의해 영감을 받았다."
             }
          },
          "decorative_scout_gong": {
             "decorative_scout_gong_ghost": {
-               "display_name": "스카우트 훈장",
-               "description": "Inspired by the Kobold Scout"
+               "display_name": "스카우트 공",
+               "description": "코볼드 스카우트에 의해 영감을 받았다."
             }
          },
          "valor_statue": {
@@ -6372,8 +6372,8 @@
          },
          "poyo_weathervane": {
             "poyo_weathervane_ghost": {
-               "display_name": "Poyo Weathervane",
-               "description": "A weathervane in the image of a friendly yardbird"
+               "display_name": "풍향계",
+               "description": "친숙한 닭의 이미지가 들어간 풍향계다."
             }
          }
       },
@@ -6651,8 +6651,8 @@
          },
          "kibble": {
             "kibble": {
-               "display_name": "Kibble",
-               "description": "Attracts cats"
+               "display_name": "키블",
+               "description": "고양이를 끌어들인다."
             }
          }
       },
@@ -6903,7 +6903,7 @@
          },
          "critter_trap": {
             "critter_trap_ghost": {
-               "display_name": "생물 트랩",
+               "display_name": "크리터 트랩",
                "description": "적에 맞서기 위해 사용되도록 만들었다."
             }
          },
@@ -7091,7 +7091,7 @@
                }
             },
             "crypt": {
-               "display_name": "묘지",
+               "display_name": "지하성당",
                "description": "안에 뭐가 있는거지?"
             },
             "sarcophagus": {
@@ -8123,7 +8123,7 @@
             "carpenter_saw_recipe": {
                "description": "하슬링을 목수로 전직시키기 위해 필요합니다.",
                "recipe_name": "목수의 톱",
-               "flavor": "Now the circle can begin anew."
+               "flavor": "새롭게 시작할 수 있다."
             },
             "copper_ingot_recipe": {
                "description": "순수한 구리괴. 제작에 적합한 재료다.",
@@ -8256,23 +8256,23 @@
                "description": "가볍고 강한 머리 보호구입니다."
             },
             "decorative_elite_gong_recipe": {
-               "description": "Inspired by the Elite Kobold Menace",
-               "recipe_name": "장식용 엘리트 훈장",
+               "description": "엘리트 코볼드 메너스에 의해 영감을 받았다.",
+               "recipe_name": "장식용 엘리트 공",
                "flavor": "As it turns out, their hats were very dense"
             },
             "decorative_generals_gong_recipe": {
                "description": "Enormous and decorative!",
-               "recipe_name": "장군의 금빛 훈장",
+               "recipe_name": "장군의 금빛 공",
                "flavor": "The generals hat, when melted down, could have filled a lake with gold"
             },
             "decorative_master_gong_recipe": {
-               "description": "Inspired by the Master Kobold Archer",
-               "recipe_name": "장식용 마스터 훈장",
+               "description": "코볼드 마스터 궁수에 의해 영감을 받았다.",
+               "recipe_name": "장식용 마스터 공",
                "flavor": "Great for taunting master kobolds"
             },
             "decorative_scout_gong_recipe": {
-               "description": "Inspired by the Kobold Scout",
-               "recipe_name": "장식용 스카우트 훈장",
+               "description": "코볼드 스카우트에 의해 영감을 받았다.",
+               "recipe_name": "장식용 스카우트 공",
                "flavor": "Even scouts are adorned with gold"
             },
             "silver_mail_recipe": {
@@ -8763,8 +8763,8 @@
                "flavor": "배고픈 이들을 위해 빵을 주고 믿음응 향해 달려가자. - 시드"
             },
             "kibble_recipe": {
-               "recipe_name": "Kibble Recipe",
-               "description": "For attracting furry friends",
+               "recipe_name": "키블 제조법",
+               "description": "털 많은 친구들을 유혹하기 위해",
                "flavor": "There is a hole in my heart the shape of a kitten. "
             }
          },
@@ -8850,15 +8850,15 @@
             },
             "iron_gear_recipe": {
                "description": "Used to craft intermediate gadgets",
-               "recipe_name": "Iron Gear",
+               "recipe_name": "철 기어",
                "flavor": "Not for use as a throwing star"
             },
             "clamp_trap_recipe": {
                "description": "Damages and shortly stuns enemies that step near it",
-               "recipe_name": "Clamp Trap"
+               "recipe_name": "클램프 트랩"
             },
-            "ranged_weapons_name": "Ranged Weapons",
-            "traps_name": "Defensive Traps",
+            "ranged_weapons_name": "범위기 무기",
+            "traps_name": "방어용 트랩",
             "turnip_shooter_recipe": {
                "description": "Shoots turnips at enemies from a small distance. Must be repaired after 15 uses.",
                "recipe_name": "순무 발사기",
@@ -8866,12 +8866,12 @@
             },
             "critter_trap_recipe": {
                "description": "Deals a small amount of damage and shortly stuns enemies.",
-               "recipe_name": "Critter Trap",
+               "recipe_name": "크리터 트랩",
                "flavor": "A slight annoyance for ogres. A death wish for mice."
             },
             "iron_door_recipe": {
                "description": "Thick, sturdy iron door. Also comes with a thick, sturdy lock.",
-               "recipe_name": "Ironclad Door"
+               "recipe_name": "철갑 문"
             },
             "decorations_name": "장식",
             "wooden_sign_engineer_recipe": {
@@ -9798,7 +9798,7 @@
          },
          "worker_outfit_2": {
             "display_name": "향상된 일꾼 유니폼",
-            "description": "Reinforced construction improves worker efficiency!",
+            "description": "강화된 건축품은 일꾼의 효율을 높여줍니다!",
             "worker_outfit_2_iconic": {
                "display_name": "향상된 일꾼 유니폼",
                "description": "튼튼한 공사는 일꾼의 생산성을 향상시킨다."
@@ -10006,8 +10006,8 @@
       },
       "magmasmith": {
          "magmasmith_outfit": {
-            "display_name": "Magmasmith Outfit",
-            "description": "Traditional uniform of the Magmasmith."
+            "display_name": "용암장인 유니폼",
+            "description": "용암장인의 전통 유니폼이다."
          },
          "magmasmith_hammer": {
             "magmasmith_hammer_talisman": {
@@ -10019,13 +10019,13 @@
          },
          "magmasmith_forge": {
             "magmasmith_forge_ghost": {
-               "display_name": "Magmasmith Forge",
-               "description": "Like a normal forge, except a lot hotter"
+               "display_name": "용암장인의 용광로",
+               "description": "더 뜨겁다는 것 말고는 평범한 용광로 같이 보인다."
             }
          },
          "magmasmith_workbench": {
             "magmasmith_workbench_ghost": {
-               "display_name": "Magmasmith Workbench",
+               "display_name": "용암장인의 작업대",
                "description": "Lava flows from within"
             }
          },
@@ -10125,8 +10125,8 @@
          "description": "마을의 시민",
          "job": {
             "starting_level_title": "수습 [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_title": "레벨[str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_announcement": "[name(i18n_data.entity)]이(가) [str(i18n_data.job_name)]레벨 [str(i18n_data.level_number)]를 달성했습니다!",
+            "default_level_title": "레벨 [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_announcement": "[name(i18n_data.entity)]이(가) [str(i18n_data.job_name)] 레벨 [str(i18n_data.level_number)]을(를) 달성했습니다!",
             "level_up_perk_description": "최대 체력 +10",
             "attribute_up_desc": "모든 속성이 증가했습니다!"
          }
@@ -10156,7 +10156,7 @@
          "job": {
             "starting_level_title": "수습 [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "레벨 [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_announcement": "[name(i18n_data.entity)]이(가) [str(i18n_data.job_name)]레벨 [str(i18n_data.level_number)]를 달성했습니다!",
+            "default_level_announcement": "[name(i18n_data.entity)]이(가) [str(i18n_data.job_name)] 레벨 [str(i18n_data.level_number)]을(를) 달성했습니다!",
             "general_description_desc": "최대 체력이 증가했습니다!",
             "attribute_up_desc": "모든 속성이 증가했습니다!"
          }
