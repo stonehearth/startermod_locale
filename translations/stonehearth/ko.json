@@ -1603,9 +1603,9 @@
                "valor_tier_2_reached": {
                   "title": "공주의 전령이 돌아왔다.",
                   "speaker_name": "명예로운 Anwyn Redelm",
-                  "message": "Congratulations, [str(i18n_data.town_name)]! Word has spread of your martial prowess. Your town officially qualifies as a township! I have brought building materials and trade agreements, as is customary!",
+                  "message": "축하드립니다, [str(i18n_data.town_name)]! 당신의 전투 기량은 널리 퍼졌습니다. 당신의 마을은 공식적으로 하나의 자치구로 인정받았습니다! 우리의 풍습대로 건축자재와 무역 협정을 준비해왔습니다.",
                   "accept": "우후!",
-                  "dialog_title": "Township Achieved!",
+                  "dialog_title": "마을을 위한 퀘스트 완료!",
                   "tier_title": "마을",
                   "reward_message": "어센던시의 데니아 공주의 명에 따라 당신을 인정한다.",
                   "reward_message_ctd": "전투에서의 믿을 수 없는 용맹함으로 인해 이 마을은 아래의 자격들을 갖게 되었습니다. :",
@@ -1646,7 +1646,7 @@
                            },
                            "bulletin_title": "Anwyn이 두루마리 뒤를 본다.",
                            "dialog_title": "명예로운 Anwyn Redelm",
-                           "choice_000": "석공 호!",
+                           "choice_000": "석공 예!",
                            "choice_001": "다시 한번 생각해봐도 될까요?"
                         },
                         "proc_details": {
@@ -1660,7 +1660,7 @@
                         },
                         "actual_meaning": {
                            "bulletin_message": {
-                              "000": "What does that actually mean? Well, mostly that we write you down in a ledger somewhere, in case we ever remember to come back and collect taxes."
+                              "000": "실제로 무엇을 의미할까요? 글쎄요... 주로 장부에 작성하는데, 그렇게 되면 우리가 다시 돌아와서 세금을 징수할 것이란걸 기억해주세요."
                            },
                            "bulletin_title": "Anwyn이 활짝 웃는다.",
                            "dialog_title": "명예로운 Anwyn Redelm",
@@ -1752,8 +1752,8 @@
                      "tier_2_shops": {
                         "weapon_armor_shop": {
                            "shop_info": {
-                              "name": "Sark Blackhammer's Armory Shop",
-                              "title": "Sark Blackhammer has arrived with equipment to sell"
+                              "name": "Sark Blackhammer의 전쟁 상점",
+                              "title": "Sark Blackhammer가 장비들을 팔기 위해 도착했다."
                            }
                         },
                         "farming_supplies_shop": {
@@ -1764,20 +1764,20 @@
                         },
                         "bakery_shop": {
                            "shop_info": {
-                              "name": "Jordan Sugarcane's Breads and Soups",
-                              "title": "Jordan Sugarcane has arrived with baked goods for sale"
+                              "name": "Jordan Sugarcane의 빵과 스프 전문점",
+                              "title": "Jordan Sugarcane이 구운 상품들을 팔기 위해 도착했다."
                            }
                         },
                         "container_shop": {
                            "shop_info": {
                               "name": "Jo Boxen's Container Barn",
-                              "title": "Jo Boxen arrives with a box of crates"
+                              "title": "Jo Boxen이 상자를 팔기 위해 도착했다."
                            }
                         },
                         "door_shop": {
                            "shop_info": {
                               "name": "Edgar Planckton의 문 상점",
-                              "title": "Edgar Planckton has arrived with doors for sale"
+                              "title": "Edgar Planckton이 문을 팔기 위해 도착했다."
                            }
                         }
                      }
@@ -1795,7 +1795,7 @@
             },
             "goblin_war": {
                "unlock_windchimes": {
-                  "bulletin_title": "The Carpenter has unlocked the Windchime recipe!"
+                  "bulletin_title": "목수가 풍겸 제조법을 얻었다!"
                },
                "erdenes_help": {
                   "dialog_tree_info": {
@@ -1827,16 +1827,16 @@
                               "002": "Me! I suppose you've earned your bit. I am an ember in the forge, a spark in the air. I watch, so that I may know when it is time for the fire to engulf us all.",
                               "003": "Me? Today, it matters not. Tomorrow, if you still live, you may call me Erdene, of the Red Kiln."
                            },
-                           "bulletin_title": "She smiles with a glint of teeth",
+                           "bulletin_title": "그녀가 이를 드러내며 웃는다.",
                            "dialog_title": "???"
                         },
                         "accept_offer": {
-                           "choice_000": "Wait! Who are you?",
+                           "choice_000": "기다려! 넌 누구야?",
                            "choice_001": "Huh.",
                            "bulletin_message": {
-                              "000": "Fight hard, little town. Fate is meaningless. But were it not, yours would be to rise."
+                              "000": "작은 마을이여, 열심히 싸워라. 운명은 무의미하다. 하지만 그렇지 않다면, 당신들은 떠오를 것이다."
                            },
-                           "bulletin_title": "She nods firmly",
+                           "bulletin_title": "그녀가 고개를 끄덕인다.",
                            "dialog_title": "???"
                         },
                         "flute_description": {
@@ -1850,9 +1850,9 @@
                         },
                         "departure": {
                            "bulletin_message": {
-                              "000": "Well then. Fight hard, little town."
+                              "000": "좋아. 작은 마을이여, 열심히 싸워라"
                            },
-                           "bulletin_title": "She shrugs",
+                           "bulletin_title": "그녀가 으쓱한다.",
                            "dialog_title": "???"
                         }
                      }
@@ -1877,8 +1877,8 @@
                            "choice_001": "Gagh!",
                            "bulletin_message": {
                               "000": "호, 작은 마을이군! 너에게 나쁜 소식을 전하기 위해 왔다!",
-                              "001": "Puny Town! Bow and tremble!",
-                              "002": "Muahahahahah! This? This your town? I laugh till I cry!"
+                              "001": "보잘 것 없는 마을이군! 엎드려 공포에 떨어라!",
+                              "002": "무하하하하하하! 이게? 이게 당신 마을이야? 눈물 나도록 웃기군!"
                            },
                            "bulletin_title": "A goblin with a officious smirk slithers into town",
                            "dialog_title": "오고의 기수"
@@ -1900,12 +1900,12 @@
                            "choice_000": "예언자?",
                            "choice_001": "뭐",
                            "bulletin_message": {
-                              "000": "예언자는 오고 Skullbonker가 영웅 중의 영웅이 될 것이라고 말한다! 그리고 너는 황금을 바칠 운명이다!",
+                              "000": "예언자는 오고 스컬본커가 영웅 중의 영웅이 될 것이라고 말한다! 그리고 너는 황금을 바칠 운명이다!",
                               "001": "Soothsayer little, but have big thoughts! Soothsayer never wrong. Soothsayer say you give Ogo gold, or Ogo will take it from you!",
                               "002": "Goblins long be shunned and forgotten. Soothsayer say that Ogo Skullbonker, my LittleChief, will soon change everything! For that, he need gold and labor!",
                               "003": "Ogo Skullbonker, Master of Masters, have great destiny, to rule over all! Soothsayer say so; soothsayer never wrong. Soothsayer say, you will help!"
                            },
-                           "bulletin_title": "The goblin's eyes glow with zeal",
+                           "bulletin_title": "고블린의 눈이 열정으로 빛난다.",
                            "dialog_title": "오고의 기수"
                         },
                         "conclusion": {
@@ -1943,7 +1943,7 @@
                   "dialog_tree_info": {
                      "dialog_nodes": {
                         "loot_final": {
-                           "choice_000": "(good riddance)",
+                           "choice_000": "(속이 후련하다)",
                            "choice_001": "Goodbye!",
                            "bulletin_message": {
                               "000": "Hahaha! Exactly. This for you, to remember our friendship."
@@ -1953,7 +1953,7 @@
                         },
                         "information": {
                            "choice_000": "와우!",
-                           "choice_001": "Sounds ominous.",
+                           "choice_001": "불길하게 들리네요.",
                            "bulletin_message": {
                               "000": "You so funny. Because we friends, me tell you: Ogo pretty cool. A bit mean. Once ate a puppy. But... soothsayer say he fated! Meant to stomp on everyone! Me just little guy, you know? Though you littler. Anyways."
                            },
@@ -1966,7 +1966,7 @@
                            "bulletin_message": {
                               "000": "Good news peons! Ogo Skullbonker, Chief-of-Chiefs-To-Be, calls us back to him. Time to go home, show him tribute! If you lucky, maybe we be back to visit... soon!"
                            },
-                           "bulletin_title": "The goblin returns magnanimously",
+                           "bulletin_title": "고블린이 고상하게 돌아온다.",
                            "dialog_title": "[name(i18n_data.boss)]"
                         }
                      }
@@ -2661,17 +2661,17 @@
                "zombie_chest_camp": {
                   "boss": {
                      "display_name": "거인 좀비",
-                     "description": "Blaarhgh.. don't touch Master's treasure!!"
+                     "description": "브라아하.. 마스터의 보물을 건드리지마!"
                   }
                },
                "wolf_pack_raid": {
                   "wolves": {
-                     "description": "Defending its territory"
+                     "description": "영역을 방어한다."
                   }
                },
                "giant_alligator_raid_6": {
                   "alligators": {
-                     "description": "The larger variety."
+                     "description": "더 큰 품종이야."
                   }
                },
                "giant_wolf_raid_4": {
@@ -6483,7 +6483,7 @@
          },
          "poyo_meat": {
             "display_name": "닭고기",
-            "description": "I hear it takes like poyo.",
+            "description": "닭을 잡았다고 들었어.",
             "rotten": {
                "display_name": "썩은 닭고기",
                "description": "냄새가 아주 고약해."
