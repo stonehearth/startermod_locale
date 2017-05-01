@@ -7118,7 +7118,7 @@
          "ogres": {
             "ogre": {
                "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
-               "description": "An orc gone terribly wrong"
+               "description": "한 오크가 끔찍한 잘못을 저질렀습니다."
             }
          },
          "orcs": {
