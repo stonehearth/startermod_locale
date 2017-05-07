@@ -1457,7 +1457,7 @@
             "food_veggie_raw_name": "야채",
             "stone_resource_name": "돌",
             "pelt_resource_name": "모피",
-            "cloth_resource_name": "피륙",
+            "cloth_resource_name": "옷감",
             "wood_resource_name": "원목",
             "clay_resource_name": "점토 덩어리",
             "clay_brick_resource_name": "점토 벽돌",
@@ -7271,7 +7271,7 @@
             "description": "순수한 청동괴"
          },
          "cloth_bolt": {
-            "display_name": "피륙",
+            "display_name": "옷감",
             "description": "부드럽고 편안해."
          },
          "copper_ingot": {
@@ -9634,12 +9634,12 @@
             },
             "bolt_of_cloth_recipe": {
                "description": "Used to create more comfortable furniture.",
-               "recipe_name": "평범한 피륙",
+               "recipe_name": "평범한 옷감",
                "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
             },
             "cloth_bolt_recipe": {
                "description": "Used to create more comfortable furniture.",
-               "recipe_name": "피륙",
+               "recipe_name": "옷감",
                "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
             },
             "cloth_padded_vest_recipe": {
