@@ -1457,7 +1457,7 @@
             "food_veggie_raw_name": "야채",
             "stone_resource_name": "돌",
             "pelt_resource_name": "모피",
-            "cloth_resource_name": "옷감",
+            "cloth_resource_name": "피륙",
             "wood_resource_name": "원목",
             "clay_resource_name": "점토 덩어리",
             "clay_brick_resource_name": "점토 벽돌",
@@ -4504,7 +4504,7 @@
          "kobolds": {
             "wolf_tank": {
                "kobold_wolf": {
-                  "display_name": "고블린 늑대",
+                  "display_name": "코볼드 늑대",
                   "description": "무시무시한 늑대입니다!"
                }
             }
@@ -6975,7 +6975,7 @@
             "goblin_boss_banner": {
                "goblin_boss_banner_ghost": {
                   "display_name": "오고 스컬본커 깃발",
-                  "description": "고블릭 족장 조각을 명확하게 나타냅니다."
+                  "description": "고블릭 족장 지위를 명확하게 나타냅니다."
                }
             },
             "goblin_boss_hut": {
@@ -7118,7 +7118,7 @@
          "ogres": {
             "ogre": {
                "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
-               "description": "한 오크가 끔찍한 잘못을 저질렀습니다."
+               "description": "저 오크는 재앙이야"
             }
          },
          "orcs": {
@@ -7163,7 +7163,7 @@
             "species": "용"
          },
          "kitten": {
-            "display_name": "고양이",
+            "display_name": "아기 고양이",
             "description": "너무 귀여워!",
             "species": "고양이"
          },
@@ -7271,7 +7271,7 @@
             "description": "순수한 청동괴"
          },
          "cloth_bolt": {
-            "display_name": "옷감",
+            "display_name": "피륙",
             "description": "부드럽고 편안해."
          },
          "copper_ingot": {
@@ -9634,12 +9634,12 @@
             },
             "bolt_of_cloth_recipe": {
                "description": "Used to create more comfortable furniture.",
-               "recipe_name": "평범한 옷감",
+               "recipe_name": "평범한 피륙",
                "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
             },
             "cloth_bolt_recipe": {
                "description": "Used to create more comfortable furniture.",
-               "recipe_name": "옷감",
+               "recipe_name": "피륙",
                "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
             },
             "cloth_padded_vest_recipe": {
