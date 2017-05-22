@@ -1530,7 +1530,7 @@
                      "002": "너희들은 정말 손을 쓸 수 있을 것 같구나!",
                      "003": "우와! 드디어 마을이! 저를 좀 도와주세요!"
                   },
-                  "outcome_statement": " A [str(i18n_data.job)] would like to join [str(i18n_data.town_name)]!"
+                  "outcome_statement": " [str(i18n_data.job)]가 [str(i18n_data.town_name)]에 들어오고 싶어한다!"
                }
             },
             "trader": {
@@ -1770,7 +1770,7 @@
                         },
                         "container_shop": {
                            "shop_info": {
-                              "name": "Jo Boxen's Container Barn",
+                              "name": "Jo Boxen의 컨테이너 상점",
                               "title": "Jo Boxen이 상자를 팔기 위해 도착했다."
                            }
                         },
@@ -1806,7 +1806,7 @@
                            "bulletin_message": {
                               "000": "용맹한 마을이여, 두려운가? 족장이라 불리는 오고가 곧 올 것이다. 당신을 위하여."
                            },
-                           "bulletin_title": "A figure with a sibilant voice appears beside your fire",
+                           "bulletin_title": "당신의 불 옆에서 쉬쉬 거리는 소리가 나기 시작했다.",
                            "dialog_title": "???"
                         },
                         "erdenes_help": {
@@ -1815,24 +1815,24 @@
                            "bulletin_message": {
                               "000": "To borrow strength to rise means to fall when strength fails. Ogo borrows his power not from his so-called-sayer, but from the babe he stole."
                            },
-                           "bulletin_title": "The figure tilts her head",
+                           "bulletin_title": "그녀의 머리가 갸우뚱거린다.",
                            "dialog_title": "???"
                         },
                         "erdene_description": {
                            "choice_000": "좋습니다!",
                            "choice_001": "재수없는 소리",
                            "bulletin_message": {
-                              "000": "Me? I am the one who watches. You. Him. For the star. For fate.",
-                              "001": "I? I am of the Red Kiln. We would have been your saviours, but your Cid parlayed hard in your stead. So now we watch. And wait for the day when your star rises.",
+                              "000": "저요? 저는 그저 지켜보는 사람입니다. 당신을. 그를. 별들을. 운명을...",
+                              "001": "전 레드 클린 중 한 명입니다. 당신의 시드 대신에 저희가 구원자가 되려고 합니다. 그래서 지금은 저희가 보고 있죠. 그리고 당신의 별이 떠오를 날을 기다리겠습니다.",
                               "002": "Me! I suppose you've earned your bit. I am an ember in the forge, a spark in the air. I watch, so that I may know when it is time for the fire to engulf us all.",
-                              "003": "Me? Today, it matters not. Tomorrow, if you still live, you may call me Erdene, of the Red Kiln."
+                              "003": "저요? 오늘은 아무 일도 일어나지 않았네요. 만약 내일도 살아있다면 레드 클린의 에어딘을 불러주세요."
                            },
                            "bulletin_title": "그녀가 이를 드러내며 웃는다.",
                            "dialog_title": "???"
                         },
                         "accept_offer": {
                            "choice_000": "기다려! 넌 누구야?",
-                           "choice_001": "Huh.",
+                           "choice_001": "허.",
                            "bulletin_message": {
                               "000": "작은 마을이여, 열심히 싸워라. 운명은 무의미하다. 하지만 그렇지 않다면, 당신들은 떠오를 것이다."
                            },
@@ -1845,7 +1845,7 @@
                            "bulletin_message": {
                               "000": "Upon this paper, you shall find the lullabye to sooth the Mountain's soul. Find a stolen flute. Bid your wood-worker pitch it to this melody. Grant it to your bravest sheep-singer, set him at Ogo's great mammoth, and watch self-importance meet it's just reward."
                            },
-                           "bulletin_title": "She offers a scrap of paper",
+                           "bulletin_title": "그녀가 종이 한 장을 나눠준다.",
                            "dialog_title": "???"
                         },
                         "departure": {
@@ -1869,12 +1869,12 @@
                               "001": "Soothsayer old, old snake. Speaks out with bones and scales. Sees future! Sees cycle ending, ending forever. Not sure what he mean, but good for Ogo!",
                               "002": "Soothsayer goblin, obviously! Goblin who can see future! He say old ones dying away, new star rising. Good for Ogo, bad for everyone else, you included!"
                            },
-                           "bulletin_title": "The goblin's eyes grow round",
+                           "bulletin_title": "고블린의 눈이 점점 커진다.",
                            "dialog_title": "오고의 기수"
                         },
                         "snooty_introduction": {
                            "choice_000": "허.",
-                           "choice_001": "Gagh!",
+                           "choice_001": "갸아!",
                            "bulletin_message": {
                               "000": "호, 작은 마을이군! 너에게 나쁜 소식을 전하기 위해 왔다!",
                               "001": "보잘 것 없는 마을이군! 엎드려 공포에 떨어라!",
@@ -1925,15 +1925,15 @@
                   "dialog_tree_info": {
                      "dialog_nodes": {
                         "msg1": {
-                           "choice_000": "Thank goodness!",
-                           "choice_001": "(good riddance)",
+                           "choice_000": "정말 다행이야!",
+                           "choice_001": "(속이 시원하다)",
                            "bulletin_message": {
                               "000": "Good news for you, pathetic humans! Ogo Skullbonker, Chief-of-Chiefs-To-Be, calls us to home for clan meet-meet. Been fun hanging with you! Maybe we tell friends, back soon for more fun taking your stuff!",
                               "001": "Humans no challenge. So sad. We hope to return home to our Chief-of-Chiefs, Ogo Skullbonker, with story of our glory, but there is no glory in defeating you. Maybe we come back when you stronger.",
                               "002": "We leaving now, humans. But we will be back.",
                               "003": "Well, was fun preying on you, pathetic humans! But fun times must end, we go home now to big clan meet-meet. While we gone, build more stuff, so when we come back, we can take more!"
                            },
-                           "bulletin_title": "The goblin sends a note",
+                           "bulletin_title": "고블린이 노트를 준다.",
                            "dialog_title": "[name(i18n_data.boss)]"
                         }
                      }
@@ -1944,9 +1944,9 @@
                      "dialog_nodes": {
                         "loot_final": {
                            "choice_000": "(속이 후련하다)",
-                           "choice_001": "Goodbye!",
+                           "choice_001": "안녕!",
                            "bulletin_message": {
-                              "000": "Hahaha! Exactly. This for you, to remember our friendship."
+                              "000": "하하하! 정확해. 우리의 우정을 기억하기 위한거야."
                            },
                            "bulletin_title": "The goblin places something on the ground with great care",
                            "dialog_title": "[name(i18n_data.boss)]"
@@ -1957,11 +1957,11 @@
                            "bulletin_message": {
                               "000": "You so funny. Because we friends, me tell you: Ogo pretty cool. A bit mean. Once ate a puppy. But... soothsayer say he fated! Meant to stomp on everyone! Me just little guy, you know? Though you littler. Anyways."
                            },
-                           "bulletin_title": "The goblin laughs",
+                           "bulletin_title": "고블린이 웃는다.",
                            "dialog_title": "[name(i18n_data.boss)]"
                         },
                         "msg1": {
-                           "choice_000": "Thank goodness!",
+                           "choice_000": "정말 다행이야!",
                            "choice_001": "오고가 누군데?",
                            "bulletin_message": {
                               "000": "Good news peons! Ogo Skullbonker, Chief-of-Chiefs-To-Be, calls us back to him. Time to go home, show him tribute! If you lucky, maybe we be back to visit... soon!"
@@ -2141,18 +2141,18 @@
                         },
                         "collection_due": {
                            "bulletin_message": {
-                              "000": "Glittering Army returns! Where iz stuff?",
-                              "001": "My stuff! Where iz?",
-                              "002": "We back. You pay tribute now. Where iz?",
+                              "000": "찬란한 군이 돌아왔다! 조공은 어딨지?",
+                              "001": "내꺼! 어딨어?",
+                              "002": "우리가 돌아왔다. 이제 조공을 바칠 시간이다. 어딨지?",
                               "003": "Me dreamed last night. In dream, you make me stuff; we like brothers only me no kill you. Got Stuff?",
                               "004": "Want stuff now. You make? We good! You no make? You die. We all friends!"
                            },
-                           "bulletin_title": "The goblin stomps back into town",
+                           "bulletin_title": "고블린이 마을로 다시 돌아왔다.",
                            "dialog_title": "[name(i18n_data.boss)]"
                         },
                         "collection_failed": {
                            "bulletin_message": {
-                              "000": "You forgot stuff? You no make? You stain Glittering Army Honor! You die now!",
+                              "000": "조공을 까먹었어? 만들지 않았다고? 찬란한 군의 명예를 더럽히는군! 죽을 준비나 해라!",
                               "001": "You dumb boks no make my stuff?! Dooooom!!! DOOM TO ALL!!!",
                               "002": "What? You no have my stuff? BLOOD, STABBITY, AND VEN-JENCE!",
                               "003": "Me want to be good chieftan. Me want to be friends! But you no listen. No. You no worthy. Me must kill you, then go home. Cry for could-have-been. You cry too, except you dead."
@@ -2162,10 +2162,10 @@
                         },
                         "collection_success": {
                            "bulletin_message": {
-                              "000": "That's right. You cooperate, we get along just fine.",
+                              "000": "맞아. 너가 협력만 한다면 좋게 해결될거야.",
                               "001": "You actually have stuff? I never--I mean, yes. You give me due.",
                               "002": "가진거 있어? 우리가 가진다. 우리는 좋다!",
-                              "003": "For me?! You bestest of best peons!",
+                              "003": "날 위해서?! 넌 최고의 일꾼이야!",
                               "004": "My stuff! I take home now and cuddle to sleep at night.",
                               "005": "Hahahahaha!!! Pretty stuff!! Beautiful stuff!! Mine mine mine!",
                               "006": "Stuff!! Me sheep be so happy.",
@@ -2242,7 +2242,7 @@
                               "goblin_tent": {
                                  "tent": {
                                     "display_name": "늑대 조련사 텐트",
-                                    "description": "Full of improbable makeshift devices."
+                                    "description": "희한한 임시 장치들로 가득차있다."
                                  }
                               },
                               "wolf_cage": {
@@ -2307,7 +2307,7 @@
                                           "000": "My Khan calls me home. Fare well, little town. To every equal, another day dawns."
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "dialog_title": "에어딘, 레드 클린 스카우트",
                                        "choice_000": "Goodbye!",
                                        "choice_001": "Thanks, I guess?"
                                     },
@@ -2316,14 +2316,14 @@
                                           "000": "Of lumber born and southstar driven, grew nest of hope in mountains riven"
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                       "dialog_title": "에어딘, 레드 클린 스카우트"
                                     },
                                     "red_kiln_description": {
                                        "bulletin_message": {
                                           "000": "My Khan has seen many years. He is ill. When his star falls, his men will look to the wilds, to grow their honor. Ogo's onus will pass to you, and they will come."
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "dialog_title": "에어딘, 레드 클린 스카우트",
                                        "choice_000": "오고가 누군데?",
                                        "choice_001": "우리랑 싸우고 싶어?"
                                     },
@@ -2332,22 +2332,22 @@
                                           "000": "Oh heroes come, and heroes go, but forever's found in the campfire's glow"
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                       "dialog_title": "에어딘, 레드 클린 스카우트"
                                     },
                                     "ogo_poem_4": {
                                        "bulletin_message": {
                                           "000": "The wink of the gem in the monkey's paw, the rebirth of the star the Gods foresaw"
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout"
+                                       "dialog_title": "에어딘, 레드 클린 스카우트"
                                     },
                                     "erdene_discusses": {
                                        "bulletin_message": {
                                           "000": "To the great, come the challenges of the great. Power seeks power. To defeat power... is to invite the attention of more."
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
-                                       "choice_000": "More?",
+                                       "dialog_title": "에어딘, 레드 클린 스카우트",
+                                       "choice_000": "더?",
                                        "choice_001": "We can take them!"
                                     },
                                     "ogo_poem_5": {
@@ -2355,7 +2355,7 @@
                                           "000": "Who can say? My people believe... well. It does not matter now. The cycles of the gods are not for the everyday considerations of men, lizardkin, monkey's folk or otherwise. Look to your tomorrow, little town, and prosper."
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "dialog_title": "에어딘, 레드 클린 스카우트",
                                        "choice_000": "That's not helpful",
                                        "choice_001": "Thanks, I guess?"
                                     },
@@ -2364,9 +2364,9 @@
                                           "000": "Cast the bones, Ogo's soothsayer did, over the cradle of this land. Would you hear his words?"
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
-                                       "choice_000": "Sure!",
-                                       "choice_001": "No thanks"
+                                       "dialog_title": "에어딘, 레드 클린 스카우트",
+                                       "choice_000": "물론이지!",
+                                       "choice_001": "아냐 괜찮아"
                                     }
                                  }
                               }
@@ -2379,8 +2379,8 @@
                                           "000": "Music remind Mountain of warm, safe place. Of food and fire. Me give you this to say thank you."
                                        },
                                        "bulletin_title": "Mountain leaves you a gift",
-                                       "dialog_title": "Mountain, the Ogre",
-                                       "choice_000": "Good Luck!"
+                                       "dialog_title": "오거 마운틴",
+                                       "choice_000": "행운을 빌어!"
                                     }
                                  }
                               }
@@ -2393,7 +2393,7 @@
                                           "000": "Ogo can you not hear the chimes? Like old memory! Me no want to fight anymore."
                                        },
                                        "bulletin_title": "Mountain the Ogre lifts his head to listen",
-                                       "dialog_title": "Mountain the Ogre",
+                                       "dialog_title": "오거 마운틴",
                                        "choice_000": "Huh."
                                     },
                                     "mountain_notices_2": {
@@ -2401,15 +2401,15 @@
                                           "000": "오고?"
                                        },
                                        "bulletin_title": "Mountain looks around in horror",
-                                       "dialog_title": "Mountain the Ogre",
-                                       "choice_000": "Uh Oh."
+                                       "dialog_title": "오거 마운틴",
+                                       "choice_000": "오오."
                                     },
                                     "mountain_notices_3": {
                                        "bulletin_message": {
-                                          "000": "OGO? YOU PEOPLE KILL OGO!!! SONG BE MEMORIAL FOR MOUNTAIN FRIEND!!!"
+                                          "000": "오고? 넌 오고를 죽였어!!! 마운틴의 친구를 기억하기 위해 노래를 불러라!!!"
                                        },
-                                       "bulletin_title": "Mountain beats his enormous chest",
-                                       "dialog_title": "Mountain the Ogre",
+                                       "bulletin_title": "마운틴이 그의 거대한 가슴을 두드린다.",
+                                       "dialog_title": "오거 마운틴",
                                        "choice_000": "Whoops. Attack!"
                                     }
                                  }
@@ -2451,14 +2451,14 @@
                                        },
                                        "bulletin_title": "Ogo raises his fist in triumph",
                                        "dialog_title": "오고 스컬본커",
-                                       "choice_000": "Attack!!"
+                                       "choice_000": "공격!"
                                     },
                                     "mountain_replies": {
                                        "bulletin_message": {
                                           "000": "Ogo can you not hear the chimes? Like old memory! Me no want to fight anymore."
                                        },
                                        "bulletin_title": "Mountain lifts his head to listen",
-                                       "dialog_title": "Mountain the Ogre"
+                                       "dialog_title": "오거 마운틴"
                                     },
                                     "ogo_relents": {
                                        "bulletin_message": {
@@ -2466,11 +2466,11 @@
                                        },
                                        "bulletin_title": "Ogo stomps his foot in frustration",
                                        "dialog_title": "오고 스컬본커",
-                                       "choice_000": "See you later!"
+                                       "choice_000": "다음에 또 보자!"
                                     },
                                     "ogo_notices": {
                                        "bulletin_message": {
-                                          "000": "Mountain, why you stop fighting?"
+                                          "000": "마운틴, 왜 그만 싸우고 싶어?"
                                        },
                                        "bulletin_title": "Ogo Skullbonker waves to get his ogre's attention",
                                        "dialog_title": "오고 스컬본커"
@@ -2480,9 +2480,9 @@
                                           "000": "No. Me no want to fight anymore. What about you, little people? If me no feel like fighting, what you do?"
                                        },
                                        "bulletin_title": "Mountain shakes his giant head",
-                                       "dialog_title": "Mountain the Ogre",
-                                       "choice_000": "No Way!",
-                                       "choice_001": "Let's be friends!"
+                                       "dialog_title": "오거 마운틴",
+                                       "choice_000": "절대 안돼!",
+                                       "choice_001": "친구가 되자!"
                                     }
                                  }
                               }
@@ -2529,7 +2529,7 @@
                                           "000": "For Ogo! For Shinies!"
                                        },
                                        "bulletin_title": "Mountain roars his approval",
-                                       "dialog_title": "Mountain the Ogre"
+                                       "dialog_title": "오거 마운틴"
                                     }
                                  }
                               }
@@ -2743,7 +2743,7 @@
                                           "003": "Our wilderness has been sacrificed for your lifestyle of excess. We will give you a chance to return our logs. I suggest you heed my warning.."
                                        },
                                        "bulletin_title": "The Ent has a request.",
-                                       "dialog_title": "Ent"
+                                       "dialog_title": "엔트"
                                     },
                                     "collection_failed": {
                                        "bulletin_message": {
@@ -2914,7 +2914,7 @@
                                        },
                                        "bulletin_title": "Some familiar looking goblins begin building huts near your town",
                                        "dialog_title": "Camp goblin",
-                                       "choice_000": "Maybe",
+                                       "choice_000": "아마",
                                        "choice_001": "No?"
                                     },
                                     "msg2": {
@@ -2924,7 +2924,7 @@
                                        },
                                        "bulletin_title": "Camp goblin",
                                        "dialog_title": "Camp goblin",
-                                       "choice_000": "Why?"
+                                       "choice_000": "왜?"
                                     }
                                  }
                               }
@@ -3046,7 +3046,7 @@
                                        },
                                        "bulletin_title": "Orc troop",
                                        "dialog_title": "Orc troop",
-                                       "choice_000": "Huh?"
+                                       "choice_000": "허?"
                                     },
                                     "msg3": {
                                        "bulletin_message": {
@@ -3054,7 +3054,7 @@
                                        },
                                        "bulletin_title": "Orc troop",
                                        "dialog_title": "Orc troop",
-                                       "choice_000": "Bye"
+                                       "choice_000": "안녕"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
@@ -3062,7 +3062,7 @@
                                        },
                                        "bulletin_title": "The orc respectfully bows at the outcome of the battle",
                                        "dialog_title": "Orc troop",
-                                       "choice_000": "Thanks"
+                                       "choice_000": "고마워"
                                     }
                                  }
                               }
@@ -3743,7 +3743,7 @@
                "logs": {
                   "generic": {
                      "000": "Ow! That really hurt!",
-                     "001": "I'm in danger!",
+                     "001": "위험해!",
                      "002": "Pain!",
                      "003": "Hurts! Must... keep going!",
                      "004": "Things are looking bad!",
@@ -3767,7 +3767,7 @@
                   "generic": {
                      "000": "Feels good to be alive!",
                      "001": "Another awesome day in town.",
-                     "002": "Peaceful!",
+                     "002": "평화로워!",
                      "003": "This seems like a pretty sheltered spot.",
                      "004": "I was amazingly productive today!",
                      "005": "Nothing much to do today but enjoy life!",
@@ -3809,9 +3809,9 @@
             "generic_panic": {
                "logs": {
                   "diligent_sweetheart": {
-                     "000": "Oh no! Monsters!",
+                     "000": "오 안돼! 몬스터야!",
                      "001": "Everyone, save yourselves!",
-                     "002": "AAAGH! MONSTERS!!!",
+                     "002": "으아아아! 몬스터다!!!",
                      "003": "AAAA! Please don't hurt us!!!",
                      "004": "If I can't see it, maybe it can't see me?",
                      "teacher": {
@@ -3860,7 +3860,7 @@
                   },
                   "lovable_rogue": {
                      "000": "Grab the goods and head for the hills!",
-                     "001": "Please, I don't want to die!",
+                     "001": "제발, 죽고싶지 안하!",
                      "002": "I have so many more things I need to do!!!!",
                      "003": "I can't die here!!!",
                      "004": "Must... escape!!!",
@@ -5151,7 +5151,7 @@
          },
          "bronze_helm": {
             "display_name": "청동 헬멧",
-            "description": "매력적이고 "
+            "description": "매력적인 방어구야"
          }
       },
       "boulders": {
@@ -6452,7 +6452,7 @@
             "display_name": "양고기"
          },
          "unknown_food": {
-            "display_name": "Edible Matter"
+            "display_name": "먹을 수 있는 물질"
          },
          "veggie_stew": {
             "veggie_stew": {
@@ -8108,7 +8108,7 @@
             "bronze_ingot_recipe": {
                "description": "순수한 청동괴. 제작에 적합한 재료다.",
                "recipe_name": "청동 주괴",
-               "flavor": "The masters of old considered its production, evidence of our triumph over the earth."
+               "flavor": "옛 선조들은 지구 위의 우리들의 승리에 대한 증거들을 위한 생산을 고려했다."
             },
             "bronze_mace_recipe": {
                "description": "무겁지만 강펀치를 먹일 수 있다.",
@@ -8148,7 +8148,7 @@
             "iron_mail_recipe": {
                "description": "무겁지만 든든하고 오래가는 철 갑옷이다.",
                "recipe_name": "철 갑옷",
-               "flavor": "But he'd hidden his heart in an iron fortress, and no fey could touch it. --Songs of Evermarth"
+               "flavor": "그러나 그의 심장은 철의 요새 안에 숨겨져있었고, 아무도 만질 수 없었다. --에버마스의 노래"
             },
             "iron_pike_recipe": {
                "description": "날카롭고 길고 뾰족하다.",
@@ -8278,7 +8278,7 @@
             "silver_mail_recipe": {
                "recipe_name": "은 갑옷",
                "description": "좋은 방어구다... 지금은...",
-               "flavor": "Cid loved the color of strawberries"
+               "flavor": "시드는 딸기 색을 좋아했어"
             },
             "silver_helmet_recipe": {
                "recipe_name": "은 헬멧",
@@ -8287,7 +8287,7 @@
             },
             "bronze_helm_recipe": {
                "recipe_name": "청동 헬멧",
-               "description": "Pretty and protective",
+               "description": "매력적인 방어구야",
                "flavor": "The iron workers insisted they had perfected the art, but the bronze workers argued their's was prettier."
             },
             "engineer_wrench_recipe": {
@@ -9351,7 +9351,7 @@
                "flavor": "'Sugar, spice, and blood of the earth: it is the tray that brings them, and us, together' --Rayya"
             },
             "potted_cactus_recipe": {
-               "description": "Plant a cactus in a clay pot.",
+               "description": "점토 화분에 선인장을 심자",
                "recipe_name": "화분에 심은 선인장",
                "flavor": "YOWCH! --Every cactus potter, ever"
             },
