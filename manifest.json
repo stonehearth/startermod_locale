@@ -1,8 +1,8 @@
 {
 	"info": {
-		"name": "korean",
+		"name": "stoneHearth_locale_kr",
 		"required": true,
-		"version": 210402
+		"version": 210521
 	},
 	
 	"mixintos": {
@@ -33,8 +33,8 @@
 		"stonehearth/ui/game/character_sheets/citizen_character_sheet/citizen_character_sheet.less" : "file(ui/game/character_sheets/citizen_character_sheet/citizen_character_sheet.less)",
 		"stonehearth/ui/game/town/town.less" : "file(ui/game/town/town.less)",
 		"stonehearth/ui/game/citizens/citizens.less" : "file(ui/game/citizens/citizens.less)",
-		"stonehearth/ui/game/show_workshop/show_team_workshop.less" : "file(ui/game/show_workshop/show_team_workshop.less)",
 		"stonehearth/ui/game/unit_frame/unit_frame.less" : "file(ui/game/unit_frame/unit_frame.less)",
+		"stonehearth/ui/game/show_workshop/show_team_workshop.less" : "file(ui/game/show_workshop/show_team_workshop.less)",
 		"stonehearth/ui/game/promotion_tree/promotion_tree.less" : "file(ui/game/promotion_tree/promotion_tree.less)",
 		"stonehearth/ui/game/widgets/red_alert/red_alert.less" : "file(ui/game/widgets/red_alert/red_alert.less)",
 		"stonehearth/ui/game/clock_widget/clock_widget.less" : "file(ui/game/clock_widget/clock_widget.less)",
