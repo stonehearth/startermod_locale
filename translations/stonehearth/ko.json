@@ -6402,8 +6402,8 @@
                "description": "달고 바삭합니다."
             },
             "corn_serving": {
-               "display_name": "옥수수대",
-               "description": "Crunch and spray."
+               "display_name": "옥수숫대",
+               "description": "으깨서 뿌려주세요."
             }
          },
          "flour": {
@@ -6966,7 +6966,7 @@
                }
             },
             "goblin": {
-               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)] ",
                "description": "반짝이는 걸 좋아합니다."
             },
             "goblin_barricade": {
@@ -7049,7 +7049,7 @@
          },
          "kobolds": {
             "kobold": {
-               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)] ",
                "description": "다이아몬드 스타의 추종자"
             },
             "loot": {
@@ -7077,15 +7077,15 @@
          },
          "undead": {
             "skeleton": {
-               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)] ",
                "description": "고기를 먹고싶어한다."
             },
             "zombie": {
-               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)] ",
                "description": "고기를 먹고싶어한다.",
                "male": {
                   "zombie_male": {
-                     "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+                     "display_name": "[str(self.stonehearth:unit_info.custom_name)] ",
                      "description": "고기를 먹고싶어한다."
                   }
                }
@@ -7112,18 +7112,18 @@
             }
          },
          "rabbit": {
-            "display_name": "...",
+            "display_name": "....",
             "description": "토끼"
          },
          "ogres": {
             "ogre": {
-               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)] ",
                "description": "저 오크는 재앙이야"
             }
          },
          "orcs": {
             "orc": {
-               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)] ",
                "description": "레드 클린의 전사"
             },
             "orc_boss_banner": {
@@ -7543,7 +7543,7 @@
          },
          "worker_axe": {
             "display_name": "일꾼의 도끼",
-            "description": "..."
+            "description": "...."
          },
          "worker_hammer": {
             "display_name": "일꾼의 망치",
@@ -7743,8 +7743,8 @@
             }
          },
          "npc_animal_prod": {
-            "display_name": "Wicked Animal Prod",
-            "description": "Keeps the fuzzies in line"
+            "display_name": "사악한 동물 신교도",
+            "description": "일렬로 보송보송함을 유지하고 있습니다."
          },
          "short_sword": {
             "display_name": "짧은 검",
@@ -7948,9 +7948,9 @@
    "jobs": {
       "animal_trainer": {
          "animal_trainer_description": {
-            "display_name": "???",
-            "description": "???",
-            "requirements": "???"
+            "display_name": "??? ",
+            "description": "??? ",
+            "requirements": "??? "
          }
       },
       "archer": {
@@ -8143,7 +8143,7 @@
             "iron_mace_recipe": {
                "description": "무겁지만 강펀치를 먹일 수 있다.",
                "recipe_name": "철 메이스",
-               "flavor": "And Erin rested her forehead upon it, and the iron stole away enchantment and memory, together."
+               "flavor": "그리고 에린은 그녀의 이마를 그 위에 올려 놓았고, 아이언은 함께 마법과 기억을 훔쳤습니다."
             },
             "iron_mail_recipe": {
                "description": "무겁지만 든든하고 오래가는 철 갑옷이다.",
@@ -8206,7 +8206,7 @@
             "blacksmith_workbench_recipe": {
                "description": "주괴를 이용해 무기와 방어구를 만드는데 사용된다.",
                "recipe_name": "대장장이의 모루",
-               "flavor": "It is no coincidence that the metaphors of good character descend from work of the smith. -Lucan Varius, Artifex Ignis"
+               "flavor": "훌륭한 은유가 대장장이의 일에서 내려온다는 것은 우연의 일치가 아니다. -Lucan Varius, Artifex Ignis"
             },
             "workbenches_name": "작업대",
             "storage_name": "저장고",
@@ -8385,7 +8385,7 @@
             "large_crate_recipe": {
                "description": "32개의 아이템을 보관할 수 있습니다.",
                "recipe_name": "큰 상자",
-               "flavor": "Does the crate that stores all the things that do not store themselves, store itself?"
+               "flavor": "모든 것을 저장할 수 있는 상자가 그 자체를 보관할 수 있을까요?"
             },
             "leather_bound_chest_recipe": {
                "description": "64개의 아이템을 저장할 수 있는 멋진 상자입니다.",
@@ -8436,7 +8436,7 @@
             "small_crate_recipe": {
                "description": "8개의 아이템을 보관할 수 있습니다.",
                "recipe_name": "작은 상자",
-               "flavor": "Does the crate that stores all the things that do not store themselves, store itself?"
+               "flavor": "모든 것을 저장할 수 있는 상자가 그 자체를 보관할 수 있을까요?"
             },
             "table_for_one_recipe": {
                "description": "서서 먹는 것보다는 낫습니다. 당신의 몸무게를 재는 게 아니라면요.",
