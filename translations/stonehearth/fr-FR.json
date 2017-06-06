@@ -539,9 +539,9 @@
                      "required_job_text": "Nécessite un menuisier"
                   },
                   "weaver": {
-                     "display_name": "Tisseur",
+                     "display_name": "Tisserand",
                      "description": "Pour confectionner des tissus,<br>vêtements ou éléments de décor.",
-                     "required_job_text": "Nécessite un tisseur"
+                     "required_job_text": "Nécessite un tisserand"
                   },
                   "mason": {
                      "display_name": "Tailleur de pierre",
@@ -854,7 +854,7 @@
                "sheep_pasture_name": "Pâturage de moutons",
                "rabbit_pasture_name": "Enclos de lapin",
                "poyo_pasture_name": "Poulailler de poyo",
-               "sheep_pasture_description": "Les moutons produisent de la laine, utilisé par le tisseur. L'abattage des moutons produira de la viande à cuisiner",
+               "sheep_pasture_description": "Les moutons produisent de la laine, utilisé par le tisserand. L'abattage des moutons produira de la viande à cuisiner",
                "rabbit_pasture_description": "Les lapins se reproduisent rapidement et peuvent être abattus pour leur viande et leur peau",
                "poyo_pasture_description": "Les poyos produisent des œufs, un ingrédient de cuisine précieux. L'abattage de poyo donnera de la viande et, parfois, des plumes pour l'artisanat",
                "num_animals": "Animaux :"
@@ -1055,7 +1055,7 @@
                "005": "Une ville bien nourrit est une ville heureuse.",
                "006": "Utilisez les touches < ou > pour faire tourner un objet ou un bâtiment avant de le placer.",
                "007": "Vos hearthlings se déplacent plus vite sur les routes.",
-               "008": "Le tisseur peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
+               "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
                "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
                "010": "Les bergers trouveront d'eux-même les moutons ou autres animaux pour remplir les pâturages.",
                "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands.",
@@ -4467,10 +4467,10 @@
                "text": "Sur le fuseau:",
                "logs": {
                   "psychopathic_misanthrope": {
-                     "000": "Tu veux que je sois un tisseur? Tout ce que je sais sur le tissage : planter le bout pointu dans une autre personne. Ceci devrait être intéressant."
+                     "000": "Tu veux que je sois un tisserand? Tout ce que je sais sur le tissage : planter le bout pointu dans une autre personne. Ceci devrait être intéressant."
                   },
                   "hopeless_optimist": {
-                     "000": "Wooaw ! Maintenant que je suis un tisseur, je vie pour faire des lits confortables pour tous !"
+                     "000": "Wooaw ! Maintenant que je suis un tisserand, je vie pour faire des lits confortables pour tous !"
                   },
                   "insufferable_academic": {
                      "000": "Il y a une grâce méditative dans le travail raffiné du tricot. Fixez, mes amis, jusqu'à ce que vos âmes m'appartienneeeeeeent."
@@ -4479,7 +4479,7 @@
                      "000": "Je ne sais pas... J'ai toujours espéré jouer un rôle plus épique dans la vie. Enfin, ceci est probablement bon pour ma pression sanguine."
                   },
                   "lovable_rogue": {
-                     "000": "Hmm... Si une araignée est une tisseuse, est-ce qu'un tisseur est comme une araignée? Tout le monde va dormir en sécurité dans ma toile. ...Est-ce trop étrange?"
+                     "000": "Hmm... Si une araignée est une tisseuse, est-ce qu'un tisserand est comme une araignée? Tout le monde va dormir en sécurité dans ma toile. ...Est-ce trop étrange?"
                   },
                   "diligent_sweetheart": {
                      "000": "Oh! Tout d'abord - il est temps de faire des nouveaux foulards d'hiver à tout le monde. "
@@ -6264,8 +6264,8 @@
          },
          "wooden_sign_weaver": {
             "wooden_sign_weaver_ghost": {
-               "display_name": "Enseigne murale de tisseur",
-               "description": "Enseigne avec le symbole du tisseur."
+               "display_name": "Enseigne murale de tisserand",
+               "description": "Enseigne avec le symbole du tisserand."
             }
          },
          "wooden_wall_lantern": {
@@ -8534,8 +8534,8 @@
                "flavor": "Matériel de repas pour introvertis."
             },
             "weaver_spindle_recipe": {
-               "description": "Requis pour promouvoir un hearthling en tisseur.",
-               "recipe_name": "Fuseau de tisseur",
+               "description": "Requis pour promouvoir un hearthling en tisserand.",
+               "recipe_name": "Fuseau de tisserand",
                "flavor": "De la fibre, au fil. Du fil, au tissu. Du tissu, à la civilisation."
             },
             "window_box_brightbell_recipe": {
@@ -9686,29 +9686,29 @@
       },
       "weaver": {
          "weaver_description": {
-            "display_name": "Tisseur",
-            "description": "Le tisseur fabrique du fil et des vêtements avec des fibres naturelles et des colorants.",
+            "display_name": "Tisserand",
+            "description": "Le tisserand fabrique du fil et des vêtements avec des fibres naturelles et des colorants.",
             "requirements": "Fabriqué par un charpentier",
             "level_6_data": {
-               "title": "Maître Tisseur",
+               "title": "Maître Tisserand",
                "perk_000_name": "10.000 heures (à venir)",
-               "perk_000_description": "La maîtrise de son Art permet au tisseur de réinventer la manière d'utiliser le tissu."
+               "perk_000_description": "La maîtrise de son Art permet au tisserand de réinventer la manière d'utiliser le tissu."
             },
             "level_2_data": {
                "perk_000_name": "Perspectives de collaboration",
-               "perk_000_description": "Le tisseur à maintenant assez de maîtrise pour utiliser des ressources provenant d'autres artisans."
+               "perk_000_description": "Le tisserand à maintenant assez de maîtrise pour utiliser des ressources provenant d'autres artisans."
             },
             "level_4_data": {
                "perk_000_name": "Amélioration de l'ingéniosité (à venir)",
-               "perk_000_description": "Le tisseur améliore les recettes de bases en y ajoutant plus de fonctionnalités."
+               "perk_000_description": "Le tisserand améliore les recettes de bases en y ajoutant plus de fonctionnalités."
             },
             "level_1_data": {
                "perk_000_name": "Catalogue standard",
-               "perk_000_description": "Le tisseur peut maintenant confectionner des vêtements et des éléments de décor simples."
+               "perk_000_description": "Le tisserand peut maintenant confectionner des vêtements et des éléments de décor simples."
             },
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l'inspiration frappe, le tisseur est capable d'obtenir des résultats surprenant."
+               "perk_000_description": "Quand l'inspiration frappe, le tisserand est capable d'obtenir des résultats surprenant."
             }
          },
          "recipes": {
@@ -9804,12 +9804,12 @@
             },
             "weaver_spinning_wheel_recipe": {
                "description": "Transforme ce qui est emmêlé en fil.",
-               "recipe_name": "Rouet de Tisseur",
+               "recipe_name": "Rouet de Tisserand",
                "flavor": "L'araignée sourit; ses huit yeux brillent. 'Quelque chose pour rien, certains sont doux et d'autres amers.'"
             },
             "weaver_workbench_recipe": {
                "description": "Utilisé pour des confections compliquées à partir de fils et de tissus.",
-               "recipe_name": "Banc de Tisseur",
+               "recipe_name": "Banc de Tisserand",
                "flavor": "Au commencement, il n'y avait rien et puis il y eu l'araignée."
             },
             "leather_helmet_recipe": {
@@ -9833,35 +9833,35 @@
          "weaver_loom": {
             "weaver_loom_ghost": {
                "display_name": "Métier à Tisser",
-               "description": "Un tisseur qualifié l'utilise pour tisser le fil en habit."
+               "description": "Un tisserand qualifié l'utilise pour tisser le fil en habit."
             }
          },
          "weaver_outfit": {
-            "display_name": "Habit de Tisseur",
-            "description": "Une tenue pour tous les tisseurs"
+            "display_name": "Habit de Tisserand",
+            "description": "Une tenue pour tous les tisserands"
          },
          "weaver_spindle": {
-            "display_name": "Fuseau de Tisseur",
+            "display_name": "Fuseau de Tisserand",
             "description": "Pour le filage de fibres en fil",
             "weaver_spindle_iconic": {
-               "display_name": "Fuseau de Tisseur",
+               "display_name": "Fuseau de Tisserand",
                "description": "Pour le filage de fibres en fil"
             },
             "weaver_spindle_talisman": {
-               "display_name": "Fuseau de Tisseur",
-               "description": "Requis pour promouvoir un hearthling en tisseur"
+               "display_name": "Fuseau de Tisserand",
+               "description": "Requis pour promouvoir un hearthling en tisserand"
             }
          },
          "weaver_spinning_wheel": {
             "weaver_spinning_wheel_ghost": {
-               "display_name": "Rouet de Tisseur",
-               "description": "Un tisseur qualifié l'utilise pour filer les fibres en fil."
+               "display_name": "Rouet de Tisserand",
+               "description": "Un tisserand qualifié l'utilise pour filer des fibres en fil."
             }
          },
          "weaver_workbench": {
             "weaver_workbench_ghost": {
-               "display_name": "Banc de Tisseur",
-               "description": "Utilisé par le tisseur pour travailler."
+               "display_name": "Banc de Tisserand",
+               "description": "Utilisé par le tisserand pour travailler."
             }
          }
       },
@@ -9959,7 +9959,7 @@
             "workbenches_name": "workbenches",
             "tonics_name": "Potions",
             "small_healing_tonic_recipe": {
-               "description": "Une boisson médicinale qui guérit un tout petit peu",
+               "description": "Une boisson médicinale qui guérit minimalement",
                "recipe_name": "Petite potion de soin"
             },
             "stamina_tonic_recipe": {
@@ -9967,7 +9967,7 @@
                "recipe_name": "Potion d'endurance"
             },
             "strength_tonic_recipe": {
-               "description": "Grande augmentation de la force pour faire plus de dégât lors de combat",
+               "description": "Grande augmentation de la force causant plus de dégât lors de combat",
                "recipe_name": "Potion de force"
             },
             "bandages_name": "Bandages",
@@ -9977,7 +9977,7 @@
             },
             "heavy_bandage_recipe": {
                "recipe_name": "Bandage épais",
-               "description": "Utilisé par l'herboriste pour guérir beaucoup. Bien pour les blessures graves."
+               "description": "Utilisé par l'herboriste pour guérir grandement. Bien pour les blessures graves."
             },
             "light_bandage_recipe": {
                "recipe_name": "Bandage léger",
@@ -9988,7 +9988,7 @@
                "recipe_name": "Potion de courage"
             },
             "energy_tonic_recipe": {
-               "description": "Ce tonique rendra vos citoyens de la ville moins somnolent et ils se déplaceront plus rapidement pendant une courte période.",
+               "description": "Ce tonique rendra vos citoyens moins somnolents, ils se déplaceront donc plus rapidement pendant une courte période.",
                "recipe_name": "Energie tonique"
             },
             "decorations_name": "Décorations",
@@ -10001,7 +10001,7 @@
          "herbalist_buffs": {
             "willpower_1_buff": {
                "display_name": "Régénération naturelle",
-               "description": "L'herboriste a amélioré la régénération de santé et volonté"
+               "description": "L'herboriste a amélioré la régénération de la santé et de la volonté"
             }
          }
       },
@@ -10013,7 +10013,7 @@
          "cleric_description": {
             "display_name": "Clerc",
             "description": "Un guérisseur de combat",
-            "requirements": "UFabriqué par un herboriste",
+            "requirements": "Fabriqué par un herboriste",
             "level_0_data": {
                "perk_000_name": "Aura de soin rang 1",
                "perk_000_description": "La présence du clerc guérit tout le monde autour d'eux périodiquement"
@@ -10028,7 +10028,7 @@
             },
             "level_3_data": {
                "perk_000_name": "Aura de soin rang 2",
-               "perk_000_description": "Puissance de l'aura de guérison augmenté ainsi que la porté du rayon"
+               "perk_000_description": "Puissance de l'aura de guérison a augmentée, ainsi que la porté du rayon"
             },
             "level_6_data": {
                "perk_000_name": "Maître de guérison",
@@ -10036,7 +10036,7 @@
             },
             "level_4_data": {
                "perk_000_name": "Aura de soin rang 3",
-               "perk_000_description": "Distance de l'aura de guérison augmenté"
+               "perk_000_description": "Distance de l'aura de guérison aggrandi"
             },
             "level_5_data": {
                "perk_000_name": "Force majeure",
@@ -10096,31 +10096,31 @@
       },
       "magmasmith": {
          "magmasmith_outfit": {
-            "display_name": "Magmasmith Outfit",
-            "description": "Traditional uniform of the Magmasmith."
+            "display_name": "Uniforme de Forgeron de lave",
+            "description": "Uniforme traditionnel pour le Forgeron de lave."
          },
          "magmasmith_hammer": {
             "magmasmith_hammer_talisman": {
-               "display_name": "Magmasmith's Hammer",
-               "description": "Required to promote a hearthling to a Magmasmith"
+               "display_name": "Marteau du Forgeron de Lave",
+               "description": "Requis pour promouvoir un hearthling en Forgeron de Lave"
             },
-            "display_name": "Magmasmith's Hammer",
-            "description": "Lava to the face"
+            "display_name": "Marteau du Forgeron de Lave",
+            "description": "Lave en pleine face"
          },
          "magmasmith_forge": {
             "magmasmith_forge_ghost": {
-               "display_name": "Magmasmith Forge",
-               "description": "Like a normal forge, except a lot hotter"
+               "display_name": "Forge de Lave",
+               "description": "Comme une forge normale, mais beaucoup plus chaude"
             }
          },
          "magmasmith_workbench": {
             "magmasmith_workbench_ghost": {
-               "display_name": "Magmasmith Workbench Table du ",
+               "display_name": "Table de travail du Forgeron de Lave",
                "description": "La lave coule en son sein"
             }
          },
          "magmasmith_description": {
-            "display_name": "Magmasmith",
+            "display_name": "Forgeron de Lave",
             "description": "Construit à partir de magma",
             "requirements": "Un forgeron niveau 2 et un marteau de Magmasmith"
          },
@@ -10139,11 +10139,11 @@
             "requirements": "Fabriqué par un forgeron",
             "level_1_data": {
                "perk_000_name": "Réduction de dégât niveau 1",
-               "perk_000_description": "Le chevalier gagne 10% de défense supplémentaire de l'équipement"
+               "perk_000_description": "Le chevalier gagne 10% de défense supplémentaire à l'équipement"
             },
             "level_4_data": {
                "perk_000_name": "Réduction de dégât niveau 2",
-               "perk_000_description": "Le chevalier réduit de beaucoup les dommages causés par les ennemis"
+               "perk_000_description": "Le chevalier réduit énormément les dommages causés par les ennemis"
             },
             "level_0_data": {
                "perk_000_name": "Fortifier",
@@ -10158,11 +10158,11 @@
                "perk_000_description": "Le chevalier stimule le courage pour tout le monde autour de lui"
             },
             "level_2_data": {
-               "perk_000_name": "Crie d'intimidation",
+               "perk_000_name": "Cri d'intimidation",
                "perk_000_description": "Le chevalier intimide ses adversaires, attirant l'attention des ennemis proches."
             },
             "level_6_data": {
-               "perk_000_name": "Cor de Heroes",
+               "perk_000_name": "Cor de Héros",
                "perk_000_description": "Le chevalier sonne le cor de combat, attirant l'attention des ennemis à la fois proche et lointain."
             }
          },
@@ -10225,7 +10225,7 @@
          "food_decay": {
             "food_decay": {
                "decay_1": {
-                  "description": "A commencer à pourrir. Il vaut mieux le manger rapidement."
+                  "description": "A commencé à pourrir. Il vaut mieux le manger rapidement."
                },
                "decay_2": {
                   "description": "Pourri. Beurk."
