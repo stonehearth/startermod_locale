@@ -53,7 +53,7 @@
             "healing_target": "guérit [name(data.target)]",
             "dig_foundation": "creuse des fondations",
             "unit_hold_location": "défendre la position",
-            "execute_conversation": "socialisation",
+            "talk": "parler à [name(data.target)]",
             "incapacitated": "à terre",
             "rescue_citizen": "aide [name(data.target)]",
             "recuperating": "est en convalescence"
@@ -413,7 +413,7 @@
                   },
                   "loot_item": {
                      "display_name": "Butin",
-                     "description": "Voler les objets d'un autre joueur.",
+                     "description": "Prenez des objets des ennemis",
                      "tip_title": "Cliquez et faites glisser pour piller les éléments du monde",
                      "tip_description": "Clique droite pour quitter ce mode"
                   },
@@ -1450,6 +1450,12 @@
             },
             "customization_lock": {
                "description": "Ce hearthling [str(customization)] sera sauvegardé pendant la relance trait et stat."
+            },
+            "customization_lock_all": {
+               "description": "Cliquez pour verrouiller toutes les options de nom et d'apparence."
+            },
+            "customization_unlock_all": {
+               "description": "Cliquez pour déverrouiller toutes les options de nom et d'apparence."
             }
          },
          "constants": {
@@ -4653,7 +4659,7 @@
          "animal_companion": {
             "animal_companion_trait": {
                "display_name": "Animaux de compagnie",
-               "description": "Ils ont été inséparables, depuis [name(i18n_data.savior)] sauvé leurs [str(i18n_data.species)] d'un danger mortel.",
+               "description": "Ils ont été inséparables, depuis [name(i18n_data.savior)], [name(i18n_data.savee)], sauvé leurs [str(i18n_data.species)] d'un danger mortel.",
                "default_species": "compagnon"
             }
          },
@@ -4699,11 +4705,10 @@
                "description": "[name(i18n_data.entity)] loves crafting things for others. If they don't make at least one thing a day, they feel the day is wasted."
             }
          },
-
          "professor": {
             "professor_trait": {
                "display_name": "Professeur",
-               "description": "[name(i18n_data.entity)] aime toujours donner des conseils aux autres sur la base de leurs observations, que le récepteur le veuille ou non."
+               "description": "[name(i18n_data.entity)] va aider les gens à acquérir de l'expérience dans les bases de leur classe, bien que leurs explications ont tendance à être un peu... de longue haleine."
             }
          },
          "featherweight": {
@@ -4758,6 +4763,30 @@
             "cultist_trait": {
                "display_name": "Cultiste",
                "description": "Ce hearthling conserve des murmures à propos de toute sorte de secret de \"dieu lapin\" sommeillant pour l'éternité. Ça parles de quoi ?"
+            }
+         },
+         "jokester": {
+            "jokester_trait": {
+               "display_name": "Plaisantin",
+               "description": "[name(i18n_data.entity)] aime raconter des blagues. Sont-ils bons? C'est difficile à dire, mais ils semblent souvent faire sourire les autres."
+            }
+         },
+         "charismatic": {
+            "charismatic_trait": {
+               "display_name": "Charismatique",
+               "description": "Quand [name(i18n_data.entity)] entre dans une pièce, les gens prennent toujours connaissance de sa personne."
+            }
+         },
+         "gregarious": {
+            "gregarious_trait": {
+               "display_name": "Sociable",
+               "description": "[name(i18n_data.entity)] aime interagir avec les autres, même s'ils se sentent seuls assez rapidement."
+            }
+         },
+         "loner": {
+            "loner_trait": {
+               "display_name": "Solitaire",
+               "description": "[name(i18n_data.entity)] ne s'occupe pas vraiment de la compagnie d'autrui. Ils préfèrent être eux-mêmes."
             }
          }
       },
@@ -4967,6 +4996,30 @@
                      "display_name": "Aime leur travail",
                      "tooltip": "C'est le travail parfait pour moi ! J'aime ce que je fais jour après jour."
                   }
+               },
+               "gregarious": {
+                  "values": {
+                     "lonely": {
+                        "display_name": "Solitaire",
+                        "tooltip": "Cela fait longtemps que je n'ai parlé à personne. J'ai vraiment besoin d'extraire ce que j'ai sur le coeur."
+                     },
+                     "enjoys_company": {
+                        "display_name": "Profite de la compagnie des autres",
+                        "tooltip": "C'est toujours génial de passer du temps avec mes compatriotes."
+                     }
+                  }
+               },
+               "loner": {
+                  "values": {
+                     "annoyed_with_others": {
+                        "display_name": "Mauvais avec les autres",
+                        "tooltip": "Pourquoi ces personnes continuent-elles à me parler? Cela me distrait de ce qui est important."
+                     },
+                     "alone_with_thoughts": {
+                        "display_name": "Seul avec mes propres pensées",
+                        "tooltip": "Être éloigné des autres m'a donné le temps de réfléchir et de libérer mon esprit."
+                     }
+                  }
                }
             },
             "violence": {
@@ -4978,6 +5031,42 @@
                   "pet_died": {
                      "display_name": "Mon animal est mort",
                      "tooltip": "Mon pauvre [str(pet_name)] est décédé récemment. il va un peu me manquer."
+                  }
+               }
+            },
+            "job": {
+               "values": {
+                  "gained_a_level": {
+                     "display_name": "Améliorer mes compétences",
+                     "tooltip": "Je fait ce travail depuis assez longtemps pour avoir de nouvelle idée ! Je peux me sentir mieux dans mon travail."
+                  }
+               }
+            },
+            "social": {
+               "values": {
+                  "unpleasant_talk": {
+                     "display_name": "A eu une conversation désagréable",
+                     "tooltip": "Je ne peux pas croire [str(target_name)] a dit ça!"
+                  },
+                  "great_talk": {
+                     "display_name": "A eu une excellente conversation",
+                     "tooltip": "Parler avec [str(target_name)] aujourd'hui était vraiment sympa."
+                  },
+                  "great_joke": {
+                     "display_name": "J'ai entendu une bonne blague",
+                     "tooltip": "Hahaha, je suis mort de rire rien qu'en repensant à la blague que m'a dit [str(target_name)]."
+                  },
+                  "tough_crowd": {
+                     "display_name": "Foule difficile",
+                     "tooltip": "[str(target_name)] ne riait pas de ma blague. Était-ce vraiment grave ?"
+                  },
+                  "inspired": {
+                     "display_name": "Inspiré",
+                     "tooltip": "[str(target_name)] est très bon esprit aujourd'hui. Ils sont vraiment agréables!"
+                  },
+                  "discouraged": {
+                     "display_name": "Découragé",
+                     "tooltip": "Beuhh, [str(target_name)] n'est pas amusant quand ils sont de mauvaise humeur."
                   }
                }
             }
