@@ -4995,6 +4995,14 @@
                   "loves_their_job": {
                      "display_name": "Loves Their Job",
                      "tooltip": "This is the perfect job for me! I love what I do day to day."
+                  },
+                  "inspired": {
+                     "display_name": "Inspired",
+                     "tooltip": "[str(target_name)] is in quite good spirits today. They're really pleasant to be around!"
+                  },
+                  "discouraged": {
+                     "display_name": "Discouraged",
+                     "tooltip": "Sheesh, [str(target_name)] is no fun when they're in a bad mood."
                   }
                },
                "gregarious": {
@@ -5059,14 +5067,6 @@
                   "tough_crowd": {
                      "display_name": "Tough crowd",
                      "tooltip": "[str(target_name)] didn't laugh at my joke. Was it really that bad?"
-                  },
-                  "inspired": {
-                     "display_name": "Inspired",
-                     "tooltip": "[str(target_name)] is in quite good spirits today. They're really pleasant to be around!"
-                  },
-                  "discouraged": {
-                     "display_name": "Discouraged",
-                     "tooltip": "Sheesh, [str(target_name)] is no fun when they're in a bad mood."
                   }
                }
             }

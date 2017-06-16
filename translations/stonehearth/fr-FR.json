@@ -4995,6 +4995,14 @@
                   "loves_their_job": {
                      "display_name": "Aime leur travail",
                      "tooltip": "C'est le travail parfait pour moi ! J'aime ce que je fais jour après jour."
+                  },
+                  "inspired": {
+                     "display_name": "Inspiré",
+                     "tooltip": "[str(target_name)] est très bon esprit aujourd'hui. Ils sont vraiment agréables !"
+                  },
+                  "discouraged": {
+                     "display_name": "Découragé",
+                     "tooltip": "Beuhh, [str(target_name)] n'est pas amusant quand ils sont de mauvaise humeur."
                   }
                },
                "gregarious": {
@@ -5059,14 +5067,6 @@
                   "tough_crowd": {
                      "display_name": "Foule difficile",
                      "tooltip": "[str(target_name)] ne riait pas de ma blague. Était-ce vraiment grave ?"
-                  },
-                  "inspired": {
-                     "display_name": "Inspiré",
-                     "tooltip": "[str(target_name)] est très bon esprit aujourd'hui. Ils sont vraiment agréables!"
-                  },
-                  "discouraged": {
-                     "display_name": "Découragé",
-                     "tooltip": "Beuhh, [str(target_name)] n'est pas amusant quand ils sont de mauvaise humeur."
                   }
                }
             }
