@@ -4788,6 +4788,12 @@
                "display_name": "Solitaire",
                "description": "[name(i18n_data.entity)] ne s'occupe pas vraiment de la compagnie d'autrui. Ils préfèrent être eux-mêmes."
             }
+         },
+         "empathetic": {
+            "empathetic_trait": {
+               "display_name": "Empathique",
+               "description": "[name(i18n_data.entity)] est très sensible à l'ambiance de la ville, et il semble toujours déteindre sur eux."
+            }
          }
       },
       "happiness": {
@@ -4961,7 +4967,7 @@
             "combat": {
                "values": {
                   "panicked": {
-                     "display_name": "Craint pour leur vie",
+                     "display_name": "Craint pour ma vie",
                      "tooltip": "Je ne suis pas fier de la façon dont j'ai agi quand les monstres sont venus, mais c'est tout ce que je pouvais penser faire."
                   }
                }
@@ -5026,6 +5032,18 @@
                      "alone_with_thoughts": {
                         "display_name": "Seul avec mes propres pensées",
                         "tooltip": "Être éloigné des autres m'a donné le temps de réfléchir et de libérer mon esprit."
+                     }
+                  }
+               },
+               "empathetic": {
+                  "values": {
+                     "everyone_worse_off": {
+                        "display_name": "Tout le monde semble pire",
+                        "tooltip": "En voyant tout le monde dans le pire des esprits, cela me fait tomber."
+                     },
+                     "everyone_happier": {
+                        "display_name": "Tout le monde semble plus heureux",
+                        "tooltip": "Tout le monde semble être dans une meilleure ambiance que moi. Peut-être devrais-je regarder les choses différemment."
                      }
                   }
                }
