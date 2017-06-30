@@ -4845,7 +4845,7 @@
          "carnivore": {
             "carnivore_trait": {
                "display_name": "Carnivore",
-               "description": "[name(i18n_data.entity)] ADORE les animaux! Surtout avec de la bonne sauce chaude."
+               "description": "[name(i18n_data.entity)] ADORE les animaux ! Surtout avec de la bonne sauce chaude."
             }
          },
          "courageous": {
@@ -4857,19 +4857,19 @@
          "excitable": {
             "excitable_trait": {
                "display_name": "Impulsive",
-               "description": "[name(i18n_data.entity)] ne peuvent jamais contenir leurs émotions, de sorte qu'ils deviennent heureux ou triste beaucoup plus vite que la normale."
+               "description": "[name(i18n_data.entity)] ne peut jamais contenir ses émotions, de sorte que le bonheur ou la tristesse arrive beaucoup plus vite que la normale."
             }
          },
          "green_thumb": {
             "green_thumb_trait": {
-               "display_name": "Pouce vert",
+               "display_name": "Main verte",
                "description": "[name(i18n_data.entity)] a une affinité indescriptible avec les plantes."
             }
          },
          "heart_of_a_crafter": {
             "heart_of_a_crafter_trait": {
-               "display_name": "Le coeur d'un bricoleur",
-               "description": "[name(i18n_data.entity)] Adore constuire des objets pour les autres. S'ils ne font pas au moins un objet par jour, ils sentent que leur journée est gâchée."
+               "display_name": "Âme de bricoleur",
+               "description": "[name(i18n_data.entity)] adore constuire des objets pour les autres. S'il ne fait pas au moins un objet par jour sa journée sera gâchée."
             }
          },
          "professor": {
@@ -4881,7 +4881,7 @@
          "featherweight": {
             "featherweight_trait": {
                "display_name": "Poids plume",
-               "description": "[name(i18n_data.entity)] aime marcher un peu plus vite que les autres, bien qu'ils tendent à porter moins en conséquence."
+               "description": "[name(i18n_data.entity)] aime marcher un peu plus vite que les autres, en contrepartie il transporte moins qu'eux."
             }
          },
          "pack_mule": {
@@ -4893,7 +4893,7 @@
          "glutton": {
             "glutton_trait": {
                "display_name": "Glouton",
-               "description": "[name(i18n_data.entity)] a un estomac qui pourrait bien être un portail vers d'autre monde tant il peut manger. Cependant, ceci explique peut-être un peu leur résilience."
+               "description": "[name(i18n_data.entity)] a un estomac qui pourrait bien être un portail vers d'autre monde tant il peut manger. Ça pourrait un peu expliquer son endurance, quoique."
             }
          },
          "hothead": {
@@ -4929,19 +4929,19 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "Cultiste",
-               "description": "Ce hearthling n'arrête pas de marmonner à propos d'un secret \"dieu lapin\" dormant pour l'éternité. Qu'est-ce que ça veut dire?"
+               "description": "Ce hearthling n'arrête pas de marmonner à propos d'un mystérieux \"dieu lapin\" dormant pour l'éternité. Qu'est-ce que ça veut dire?"
             }
          },
          "jokester": {
             "jokester_trait": {
                "display_name": "Plaisantin",
-               "description": "[name(i18n_data.entity)] aime raconter des blagues. Sont-ils bons? C'est difficile à dire, mais ils semblent souvent faire sourire les autres."
+               "description": "[name(i18n_data.entity)] aime raconter des blagues. Sont-elles drôles ? C'est difficile à dire, mais elles semblent souvent faire sourire les autres."
             }
          },
          "charismatic": {
             "charismatic_trait": {
                "display_name": "Charismatique",
-               "description": "Quand [name(i18n_data.entity)] entre dans une pièce, les gens prennent toujours connaissance de sa personne."
+               "description": "Quand [name(i18n_data.entity)] entre dans une pièce, les autres prennent toujours connaissance de sa personne."
             }
          },
          "gregarious": {
@@ -4953,13 +4953,13 @@
          "loner": {
             "loner_trait": {
                "display_name": "Solitaire",
-               "description": "[name(i18n_data.entity)] ne s'occupe pas vraiment de la compagnie d'autrui. Ils préfèrent être eux-mêmes."
+               "description": "[name(i18n_data.entity)] ne s'occupe pas vraiment de la compagnie d'autrui. Il préfère être avec lui même."
             }
          },
          "empathetic": {
             "empathetic_trait": {
                "display_name": "Empathique",
-               "description": "[name(i18n_data.entity)] est très sensible à l'ambiance de la ville, et il semble toujours déteindre sur eux."
+               "description": "[name(i18n_data.entity)] est très sensible à l'ambiance de la ville, et il semble toujours déteindre sur les autres."
             }
          },
          "opinionated": {
