@@ -5852,7 +5852,7 @@
          },
          "iron_door": {
             "iron_door_ghost": {
-               "display_name": "Porte à toute épreuve",
+               "display_name": "Porte en fer à toute épreuve",
                "description": "Plus robuste que les portes en bois ou en pierre"
             }
          },
@@ -5882,13 +5882,13 @@
          },
          "wooden_window_frame_fine": {
             "wooden_window_frame_fine_ghost": {
-               "display_name": "Bel encadrement de fenêtre en bois de qualité",
+               "display_name": "Encadrement de fenêtre en bois de qualité",
                "description": "Et voilà pour la vie privée ..."
             }
          },
          "wooden_window_frame_tall_fine": {
             "wooden_window_frame_tall_fine_ghost": {
-               "display_name": "Beau grand cadre de fenêtre",
+               "display_name": "Grand cadre de fenêtre de qualité",
                "description": "La hauteur supplémentaire ajoute un air d'élégance."
             }
          },
@@ -5900,7 +5900,7 @@
          },
          "wooden_diamond_window_fine": {
             "wooden_diamond_window_fine_ghost": {
-               "display_name": "Encadrement de fenêtre très fin avec des diamants",
+               "display_name": "Encadrement de fenêtre de qualité avec diamants",
                "description": "Et voilà pour la vie privée ..."
             }
          },
@@ -6309,18 +6309,18 @@
          },
          "watermelon_crop": {
             "display_name": "Pastèque",
-            "description": "Prend un certain temps à se développer, mais très amusant à manger !",
+            "description": "Prend un certain temps à se développer, mais très amusant à manger!",
             "growth_stage": {
                "003": {
                   "name": "Pastèque mûre",
                   "description": "Délicieux !"
                },
                "002": {
-                  "name": "Bébé pastèque",
+                  "name": "Pousse de pastèque",
                   "description": "Pas encore comestible !"
                },
                "001": {
-                  "name": "Watermelon Sprout",
+                  "name": "Bébé pastèque",
                   "description": "Pas encore comestible !"
                },
                "000": {
@@ -6585,13 +6585,13 @@
          "banner_wall_big": {
             "banner_wall_big_ghost": {
                "display_name": "Grande bannière murale",
-               "description": "Affichez votre sentiment de fierté envers votre ville avec cette bannière."
+               "description": "Affichez un sentiment de fierté envers votre ville avec cette bannière."
             }
          },
          "banner_wall_small": {
             "banner_wall_small_ghost": {
                "display_name": "Petite bannière murale",
-               "description": "Affichez votre sentiment de fierté envers votre ville avec cette bannière."
+               "description": "Affichez un sentiment de fierté envers votre ville avec cette bannière."
             }
          },
          "bird_bath": {
@@ -6918,14 +6918,14 @@
          },
          "wooden_garden_lantern_red": {
             "wooden_garden_lantern_red_ghost": {
-               "display_name": "Lanterne d'extérieur en bois peint en rouge",
+               "display_name": "Lanterne d'extérieur en bois rouge",
                "description": "Une source compacte de lumière"
             }
          },
          "wooden_wall_lantern_red": {
             "wooden_wall_lantern_fine_ghost": {
-               "display_name": "Lanterne murale en bois peint en rouge",
-               "description": "Facilement fixés aux murs"
+               "display_name": "Lanterne murale en bois rouge",
+               "description": "Facilement fixé aux murs"
             }
          },
          "window_box_brightbell_fine": {
@@ -7148,7 +7148,7 @@
          "golden_gourd": {
             "golden_gourd_basket": {
                "display_name": "Panier de Courge D'or",
-               "description": " À peine consommable crue"
+               "description": "À peine consommable crue"
             },
             "golden_gourd_serving": {
                "display_name": "Courge d'or crue",
@@ -7884,8 +7884,8 @@
          },
          "foxlily_plant": {
             "foxlily_plant_ghost": {
-               "display_name": "Lis des steppes géant",
-               "description": "Lis des steppes géant sont des grandes fleurs de lis orange ayant une ressemblance à des queues de renard."
+               "display_name": "Lis-des-steppes-géant",
+               "description": "Lis-des-steppes-géant sont des grandes fleurs de lis orange ayant une ressemblance à des queues de renard."
             }
          },
          "sunflower_plant": {
@@ -8047,7 +8047,7 @@
             },
             "terrain_dirt": {
                "display_name": "Grand tas de terre",
-               "description": "Un énorme monticule de terre excavée de la terre"
+               "description": "Un énorme monticule excavé de la terre"
             }
          },
          "tin": {
@@ -8137,7 +8137,7 @@
                   "description": "Ne pourra pas donner grand chose."
                },
                "furrow": {
-                  "display_name": "Sol retourné"
+                  "display_name": "Sol labouré"
                },
                "dirt_2": {
                   "display_name": "Terreau",
@@ -8160,11 +8160,11 @@
             },
             "copper_block": {
                "display_name": "Veine de cuivre",
-               "description": "Source de cuivre quand on mine juste ici."
+               "description": "Source de cuivre juste ici."
             },
             "gold_block": {
                "display_name": "Veine d'or",
-               "description": "Bingo !"
+               "description": "Bingo!"
             },
             "iron_block": {
                "display_name": "Veine de fer",
@@ -8248,10 +8248,10 @@
                "description": "Jeune, mais vigoureux"
             },
             "sapling_acacia_tree": {
-               "description": "Arbre bébé acacia.",
+               "description": "Bébé acacia.",
                "sapling_acacia_tree_ghost": {
                   "display_name": "Arbrisseau d'acacia",
-                  "description": "Arbre bébé acacia."
+                  "description": "Bébé acacia."
                },
                "sapling_acacia_tree_iconic": {
                   "description": "Plantez-le dans la terre et regardez-le grandir."
@@ -8274,7 +8274,7 @@
                "description": "Robuste, en pleine croissance."
             },
             "small_pine_tree": {
-               "display_name": "Petit pin",
+               "display_name": "Bébé pin",
                "description": "Juste un arbrisseau."
             }
          },
@@ -8306,13 +8306,13 @@
                "description": "A peine plus grand qu'un arbrisseau."
             },
             "sapling_oak_tree": {
-               "description": "Arbre bébé de chêne.",
+               "description": "Bébé chêne",
                "sapling_oak_tree_ghost": {
                   "display_name": "Pouce de chêne",
-                  "description": "Arbre bébé de chêne"
+                  "description": "Bébé chêne"
                },
                "sapling_oak_tree_iconic": {
-                  "description": "Plantez le en terre et regardez le pousser."
+                  "description": "Plantez-le en terre et regardez-le pousser."
                }
             }
          }
@@ -8391,8 +8391,8 @@
             }
          },
          "npc_animal_prod": {
-            "display_name": "Wicked Animal Prod",
-            "description": "Keeps the fuzzies in line"
+            "display_name": "Aiguillon acerbe pour animaux",
+            "description": "Garde les boules de poil en rang"
          },
          "short_sword": {
             "display_name": "Épée courte en acier",
@@ -8448,7 +8448,7 @@
          },
          "arrow": {
             "display_name": "Flèche à pointes",
-            "description": "Ralentit les cibles qu'elle frappe"
+            "description": "Ralentit les cibles qu'elle frappe."
          },
          "recurve_bow": {
             "display_name": "Arc recourbé",
@@ -8652,7 +8652,7 @@
             },
             "fire_arrow": {
                "display_name": "En feu",
-               "description": "Enflammée ! Prend des dégâts de feu toutes les 5 minutes pendant 15 minutes"
+               "description": "Enflammé! Prend des dégâts de feu toutes les 5 minutes pendant 15 minutes"
             }
          }
       },
@@ -8947,7 +8947,7 @@
       "carpenter": {
          "carpenter_description": {
             "display_name": "Menuisier",
-            "description": "Le menuisier fabrique des outils et des meubles à partir de bois. Les outils qu'il fabrique permettent de déverrouiller d'autres professions.",
+            "description": "Le menuisier fabrique des outils et des meubles fait de bois. Les outils qu'il fabrique permettent de déverrouiller d'autres professions.",
             "requirements": "Fabriquée par un forgeron",
             "level_6_data": {
                "title": "Maître menuisier",
@@ -9161,7 +9161,7 @@
             },
             "wooden_sign_recipe": {
                "description": "Une enseigne générique pour identifier vos bâtiments.",
-               "recipe_name": "Enseigne murale en bois",
+               "recipe_name": "Enseigne en bois murale",
                "flavor": "Mais si elle est *générique*, comment elle...? NM. (-sdee)"
             },
             "wooden_sign_weaver_recipe": {
@@ -9855,7 +9855,7 @@
             },
             "gargoyle_recipe": {
                "description": "Une sculpture de style gothique pour décorer vos murs.",
-               "recipe_name": "Gargouille murale décorative.",
+               "recipe_name": "Gargouille murale décorative",
                "flavor": "Restes des serviteurs de Brelor, Roi Sans-couronne."
             },
             "stone_bench_recipe": {
@@ -10983,7 +10983,7 @@
                "ui_steps": {
                   "set1": {
                      "step006": {
-                        "title": "Cliquez sur le tampon encreur pour approuver la promotion"
+                        "title": "Cliquez sur l'étampe pour approuver la promotion"
                      },
                      "step005": {
                         "title": "Cliquez sur le bouton emploi de Menuisier."
@@ -10996,19 +10996,19 @@
                         "description": "Utilisez ce volet pour gérer tous vos citoyens, voir leurs stats, et définir leurs commandes de tâches."
                      },
                      "step000": {
-                        "title": "Promouvoir une Hearthling en Menuisier",
-                        "description": "Nous avons les bûches et un endroit pour entreposer les marchandises, mais la ville est assez vide. Heureusement, j'ai apporté une scie avec nous. Nous allons promouvoir un citoyen en menuisier !"
+                        "title": "Promouvoir un Hearthling en Menuisier",
+                        "description": "Nous avons les bûches et un endroit pour entreposer la marchandise, mais la ville est assez vide. Heureusement, j'ai apporté une scie avec nous. Nous allons promouvoir un citoyen en menuisier !"
                      },
                      "step007": {
                         "title": "Artisans de ville",
-                        "description": "Les menuisiers et les autres artisans peuvent créer divers éléments pour aider votre village, du lits, aux matériaux de construction, aux armes."
+                        "description": "Les menuisiers et les autres artisans peuvent créer divers éléments pour aider votre village, de lits, aux matériaux de construction jusqu'aux armes."
                      },
                      "step003": {
                         "title": "Passez la souris sur les chiffres pour apprendre ce que fait chaque attribut",
                         "description": "Chaque hearthling possède un attribut intelligence, corps et esprit qui affecte la façon dont ils font les choses."
                      },
                      "step002": {
-                        "title": "Choisissez un citoyen pour promouvoir"
+                        "title": "Choisissez un citoyen à promouvoir"
                      }
                   }
                }
