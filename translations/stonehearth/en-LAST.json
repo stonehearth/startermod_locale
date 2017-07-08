@@ -208,7 +208,9 @@
             "remove": "Remove",
             "input_text_tooltip": "Click to edit",
             "days": "d",
-            "hours": "h"
+            "hours": "h",
+            "the": "the",
+            "empty_string": ""
          },
          "party": {
             "title": "Parties",
@@ -741,6 +743,7 @@
                   "cottage_for_two": "Cottage for Two",
                   "shared_sleeping_quarters": "Shared Sleeping Quarters",
                   "dining_hall": "Dining Hall",
+                  "herbalist_house": "Herbalist's House",
                   "little_clay_house": "Little Clay House",
                   "clay_house_for_two": "Clay House for Two",
                   "clay_dining_room": "Clay Dining Room",
@@ -4659,7 +4662,7 @@
          "animal_companion": {
             "animal_companion_trait": {
                "display_name": "Animal Companion",
-               "description": "Ever since [name(i18n_data.savior)] saved their [str(i18n_data.species)], [name(i18n_data.savee)], from mortal danger, they've been inseparable.",
+               "description": "Ever since [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)] saved their [str(i18n_data.savee_species)], [name(i18n_data.savee)], from mortal danger, they've been inseparable.",
                "default_species": "companion"
             }
          },
@@ -4793,6 +4796,12 @@
             "empathetic_trait": {
                "display_name": "Empathetic",
                "description": "[name(i18n_data.entity)] is really sensitive to the mood of the town, and it always seems to rub off on them."
+            }
+         },
+         "opinionated": {
+            "opinionated_trait": {
+               "display_name": "Opinionated",
+               "description": "[name(i18n_data.entity)] has an opinion on everything, and isn't shy about sharing it."
             }
          }
       },
@@ -4978,10 +4987,6 @@
                      "display_name": "Misses Companion",
                      "tooltip": "Although it's been awhile since they died, I still catch myself sometimes looking for my pet, [str(pet_name)]."
                   },
-                  "nuzzled": {
-                     "display_name": "Nuzzled",
-                     "tooltip": "Aww, [str(pet_name)] always manages to cheer me up."
-                  },
                   "plant_lover": {
                      "display_name": "Plant Lover",
                      "tooltip": "Everytime I interact with plants I feel a bit calmer."
@@ -5085,6 +5090,18 @@
                   "tough_crowd": {
                      "display_name": "Tough crowd",
                      "tooltip": "[str(target_name)] didn't laugh at my joke. Was it really that bad?"
+                  }
+               },
+               "animal": {
+                  "values": {
+                     "nuzzled": {
+                        "display_name": "Nuzzled",
+                        "tooltip": "Awww, my pet [str(target_name)] always manages to cheer me up."
+                     },
+                     "booped": {
+                        "display_name": "Booped",
+                        "tooltip": "A cute [str(species)] booped me today. It made me feel warm and fuzzy inside."
+                     }
                   }
                }
             }

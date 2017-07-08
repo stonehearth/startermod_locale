@@ -208,7 +208,9 @@
             "remove": "Retirer",
             "input_text_tooltip": "Cliquer pour modifier",
             "days": "j",
-            "hours": "h"
+            "hours": "h",
+            "the": "le",
+            "empty_string": ""
          },
          "party": {
             "title": "Groupes",
@@ -741,6 +743,7 @@
                   "cottage_for_two": "Maisonnette pour deux",
                   "shared_sleeping_quarters": "Dortoir",
                   "dining_hall": "Salle de banquet",
+                  "herbalist_house": "Maison d'Herboriste",
                   "little_clay_house": "Maisonnette en argile",
                   "clay_house_for_two": "Maison en argile pour deux",
                   "clay_dining_room": "Salle à manger en argile",
@@ -4659,7 +4662,7 @@
          "animal_companion": {
             "animal_companion_trait": {
                "display_name": "Animaux de compagnie",
-               "description": "Ils ont été inséparables, depuis [name(i18n_data.savior)], [name(i18n_data.savee)], sauvé leurs [str(i18n_data.species)] d'un danger mortel.",
+               "description": "Ils ont été inséparables, depuis [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)], sauvé leurs [str(i18n_data.savee_species)], [name(i18n_data.savee)], d'un danger mortel.",
                "default_species": "compagnon"
             }
          },
@@ -4793,6 +4796,12 @@
             "empathetic_trait": {
                "display_name": "Empathique",
                "description": "[name(i18n_data.entity)] est très sensible à l'ambiance de la ville, et il semble toujours déteindre sur eux."
+            }
+         },
+         "opinionated": {
+            "opinionated_trait": {
+               "display_name": "Dogmatique",
+               "description": "[name(i18n_data.entity)] a une opinion sur tout, et il n'est pas timide de le partager."
             }
          }
       },
@@ -4978,10 +4987,6 @@
                      "display_name": "Compagnon perdu",
                      "tooltip": "Bien qu'il a été un certain temps depuis leur mort, il arrive de me surprendre à rechercher mon animal de compagnie [str(pet_name)]."
                   },
-                  "nuzzled": {
-                     "display_name": "Fouineur",
-                     "tooltip": "Ho, [str(pet_name)] se débrouille toujours pour se réconforter."
-                  },
                   "plant_lover": {
                      "display_name": "Amoureux des plantes",
                      "tooltip": "Chaque fois que j'interagis avec les plantes je me sens un peu plus calme."
@@ -5085,6 +5090,18 @@
                   "tough_crowd": {
                      "display_name": "Foule difficile",
                      "tooltip": "[str(target_name)] ne riait pas de ma blague. Était-ce vraiment grave ?"
+                  }
+               },
+               "animal": {
+                  "values": {
+                     "nuzzled": {
+                        "display_name": "Reconforter",
+                        "tooltip": "Wow, mon animal de compagnie [str(target_name)] parvient toujours à me réconforter."
+                     },
+                     "booped": {
+                        "display_name": "Frotter",
+                        "tooltip": "C'est trop mignion, aujourd'hui [str(species)] c'est frotter à moi en signe d'affection."
+                     }
                   }
                }
             }
