@@ -2298,7 +2298,7 @@
                                           "000": "Well done, little town. You survive another night. Ogo, his mountain, and his soothsayer are disappeared from the earth, but you remain. Do you celebrate?"
                                        },
                                        "bulletin_title": "The cloaked orc scout appears",
-                                       "dialog_title": "Erdene, Red Kiln Scout",
+                                       "dialog_title": "에어딘, 레드 클린 정찰병",
                                        "choice_000": "Yup! It was pretty cool",
                                        "choice_001": "You look... sad?"
                                     },
@@ -2307,7 +2307,7 @@
                                           "000": "My Khan calls me home. Fare well, little town. To every equal, another day dawns."
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "에어딘, 레드 클린 스카우트",
+                                       "dialog_title": "에어딘, 레드 클린 정찰병",
                                        "choice_000": "Goodbye!",
                                        "choice_001": "Thanks, I guess?"
                                     },
@@ -2316,14 +2316,14 @@
                                           "000": "Of lumber born and southstar driven, grew nest of hope in mountains riven"
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "에어딘, 레드 클린 스카우트"
+                                       "dialog_title": "에어딘, 레드 클린 정찰병"
                                     },
                                     "red_kiln_description": {
                                        "bulletin_message": {
                                           "000": "My Khan has seen many years. He is ill. When his star falls, his men will look to the wilds, to grow their honor. Ogo's onus will pass to you, and they will come."
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "에어딘, 레드 클린 스카우트",
+                                       "dialog_title": "에어딘, 레드 클린 정찰병",
                                        "choice_000": "오고가 누군데?",
                                        "choice_001": "우리랑 싸우고 싶어?"
                                     },
@@ -2332,21 +2332,21 @@
                                           "000": "Oh heroes come, and heroes go, but forever's found in the campfire's glow"
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "에어딘, 레드 클린 스카우트"
+                                       "dialog_title": "에어딘, 레드 클린 정찰병"
                                     },
                                     "ogo_poem_4": {
                                        "bulletin_message": {
                                           "000": "The wink of the gem in the monkey's paw, the rebirth of the star the Gods foresaw"
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "에어딘, 레드 클린 스카우트"
+                                       "dialog_title": "에어딘, 레드 클린 정찰병"
                                     },
                                     "erdene_discusses": {
                                        "bulletin_message": {
                                           "000": "To the great, come the challenges of the great. Power seeks power. To defeat power... is to invite the attention of more."
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "에어딘, 레드 클린 스카우트",
+                                       "dialog_title": "에어딘, 레드 클린 정찰병",
                                        "choice_000": "더?",
                                        "choice_001": "We can take them!"
                                     },
@@ -2355,7 +2355,7 @@
                                           "000": "Who can say? My people believe... well. It does not matter now. The cycles of the gods are not for the everyday considerations of men, lizardkin, monkey's folk or otherwise. Look to your tomorrow, little town, and prosper."
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "에어딘, 레드 클린 스카우트",
+                                       "dialog_title": "에어딘, 레드 클린 정찰병",
                                        "choice_000": "That's not helpful",
                                        "choice_001": "Thanks, I guess?"
                                     },
@@ -2364,7 +2364,7 @@
                                           "000": "Cast the bones, Ogo's soothsayer did, over the cradle of this land. Would you hear his words?"
                                        },
                                        "bulletin_title": "Erdene considers",
-                                       "dialog_title": "에어딘, 레드 클린 스카우트",
+                                       "dialog_title": "에어딘, 레드 클린 정찰병",
                                        "choice_000": "물론이지!",
                                        "choice_001": "아냐 괜찮아"
                                     }
@@ -2850,8 +2850,8 @@
                                        "bulletin_message": {
                                           "00": "왜냐고? 위대하신 여신 쿨가나에게 바칠 것이다! 삶이 끝난 뒤 많은 부를 가져다 주지. 이제 알았으니 보물을 내놔!"
                                        },
-                                       "bulletin_title": "코볼드 스카우트",
-                                       "dialog_title": "코볼드 스카우트",
+                                       "bulletin_title": "코볼드 정찰병",
+                                       "dialog_title": "코볼드 정찰병",
                                        "choice_000": "싫어"
                                     },
                                     "msg4": {
@@ -2860,8 +2860,8 @@
                                           "001": "하하하, 당신을 테스트해보겠어! 물론 우린 빼앗고도 남을만큼 힘이 세지!",
                                           "002": "금을 다 빼앗을 것이다! 모자를 빼앗아간 것에 대한 복수다!!"
                                        },
-                                       "bulletin_title": "코볼드 스카우트",
-                                       "dialog_title": "코볼드 스카우트",
+                                       "bulletin_title": "코볼드 정찰병",
+                                       "dialog_title": "코볼드 정찰병",
                                        "choice_000": "좋아"
                                     },
                                     "msg1": {
@@ -2870,15 +2870,15 @@
                                           "001": "오 눈부셔! 공이군! 에메랄드가 박혀있어!"
                                        },
                                        "bulletin_title": "코볼드가 당신의 금 더미들을 노려보고 있다.",
-                                       "dialog_title": "코볼드 스카우트",
+                                       "dialog_title": "코볼드 정찰병",
                                        "choice_000": "뭐하는거야?"
                                     },
                                     "msg2": {
                                        "bulletin_message": {
                                           "000": "우리는 당신의 비축소나 상자에 많은 보물이 있는걸 봤다. 우리는 매우 매우 많은 약탈품을 원한다. 우리한테 좀 나눠줘라, 알겠지?"
                                        },
-                                       "bulletin_title": "코볼드 스카우트",
-                                       "dialog_title": "코볼드 스카우트",
+                                       "bulletin_title": "코볼드 정찰병",
+                                       "dialog_title": "코볼드 정찰병",
                                        "choice_000": "약탈품들이 왜 필요한데?"
                                     }
                                  }
@@ -2891,8 +2891,8 @@
                                        "bulletin_message": {
                                           "00": "우린... 너무 약해.. Put out Elite Gong if you dares.."
                                        },
-                                       "bulletin_title": "코볼드 스카우트가 땅 위에서 훌쩍 거리며 운다.",
-                                       "dialog_title": "코볼드 스카우트"
+                                       "bulletin_title": "코볼드 정찰병이 땅 위에서 훌쩍 거리며 운다.",
+                                       "dialog_title": "코볼드 정찰병"
                                     }
                                  }
                               }
@@ -6318,8 +6318,8 @@
          },
          "decorative_scout_gong": {
             "decorative_scout_gong_ghost": {
-               "display_name": "스카우트 공",
-               "description": "코볼드 스카우트에 의해 영감을 받았다."
+               "display_name": "정찰병의 공",
+               "description": "코볼드 정찰병에 의해 영감을 받았다."
             }
          },
          "valor_statue": {
@@ -7066,8 +7066,8 @@
                   "description": "일류 코볼드 궁수의 전리품"
                },
                "scout_bling_hat": {
-                  "display_name": "스카우트의 모자",
-                  "description": "코볼드 스카우트의 전리품"
+                  "display_name": "정찰병의 모자",
+                  "description": "코볼드 정찰병의 전리품"
                }
             },
             "kobold_wolf": {
@@ -8213,7 +8213,7 @@
             "vault_recipe": {
                "description": "256개의 아이템을 위한 거대한 저장고입니다!",
                "recipe_name": "금고",
-               "flavor": "Conceived by the brilliant Arci, Survivor of Chaat"
+               "flavor": "챠트의 생존자, 찬란한 아치로부터 구상됨"
             },
             "iron_coif_recipe": {
                "description": "당신의 머리를 보호합니다.",
@@ -8222,7 +8222,7 @@
             "steel_helmet_recipe": {
                "description": "당신의 머리를 꽤 보호해줍니다.",
                "recipe_name": "강철 헬멧",
-               "flavor": "Long considered the epitome of headgear; doubles as a fine soup pot - Roke Tastybakes II"
+               "flavor": "오랜 시간 고민되어 만들어진 완벽한 투구 : 아주 좋은 스프 냄비로도 쓰임 - 로크 테이스티베이크 2세"
             },
             "bronze_circlet_recipe": {
                "description": "당신의 머리를 보호합니다.",
@@ -8258,22 +8258,22 @@
             "decorative_elite_gong_recipe": {
                "description": "엘리트 코볼드 메너스에 의해 영감을 받았다.",
                "recipe_name": "장식용 엘리트 공",
-               "flavor": "As it turns out, their hats were very dense"
+               "flavor": "알려진 바로는 그들의 모자는 매우 단단했다고 한다."
             },
             "decorative_generals_gong_recipe": {
-               "description": "Enormous and decorative!",
+               "description": "거대하고 장식품으로 딱이군요!",
                "recipe_name": "장군의 금빛 공",
-               "flavor": "The generals hat, when melted down, could have filled a lake with gold"
+               "flavor": "장군의 모자를 녹일 때 호수는 금으로 가득 찼다."
             },
             "decorative_master_gong_recipe": {
                "description": "코볼드 마스터 궁수에 의해 영감을 받았다.",
                "recipe_name": "장식용 마스터 공",
-               "flavor": "Great for taunting master kobolds"
+               "flavor": "마스터 코볼트를"
             },
             "decorative_scout_gong_recipe": {
-               "description": "코볼드 스카우트에 의해 영감을 받았다.",
-               "recipe_name": "장식용 스카우트 공",
-               "flavor": "Even scouts are adorned with gold"
+               "description": "코볼드 정찰병에 의해 영감을 받았다.",
+               "recipe_name": "장식용 정찰병 공",
+               "flavor": "심지어 정찰병들도 금으로 꾸몄다."
             },
             "silver_mail_recipe": {
                "recipe_name": "은 갑옷",
@@ -8282,13 +8282,13 @@
             },
             "silver_helmet_recipe": {
                "recipe_name": "은 헬멧",
-               "description": "Quintessentially heroic",
-               "flavor": "Inspired by the plumes of the Phoenix"
+               "description": "완전한 영웅을 위하여",
+               "flavor": "피닉스의 깃털에 영감을 받았다."
             },
             "bronze_helm_recipe": {
                "recipe_name": "청동 헬멧",
                "description": "매력적인 방어구야",
-               "flavor": "The iron workers insisted they had perfected the art, but the bronze workers argued their's was prettier."
+               "flavor": "철 기술자는 자신이 완벽한 예술품을 만들었다 주장했지만, 청동 기술자들은 자신의 것이 더 예쁘다 주장했다."
             },
             "engineer_wrench_recipe": {
                "description": "하슬링을 기술자로 전직시키기 위해 필요합니다.",
