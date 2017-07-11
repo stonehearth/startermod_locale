@@ -1,0 +1,83 @@
+#calendar {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 165px;
+   height: 180px;
+
+   .celestial {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 107px;
+      height: 105px;
+   }
+
+   .ray {
+      display: none;
+   }
+
+   #clock {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 98px;
+      height: 110px;
+      .handCursor;
+      &:hover {
+         -webkit-filter: brightness(1.2);
+      }
+
+      #sun {
+         #ray16 { background: url('./images/sun_rays_16.png'); }
+         #ray15 { background: url('./images/sun_rays_15.png'); }
+         #ray14 { background: url('./images/sun_rays_14.png'); }
+         #ray13 { background: url('./images/sun_rays_13.png'); }
+         #ray12 { background: url('./images/sun_rays_12.png'); }
+         #ray11 { background: url('./images/sun_rays_11.png'); }
+         #ray10 { background: url('./images/sun_rays_10.png'); }
+         #ray9  { background: url('./images/sun_rays_9.png'); }
+         #ray8  { background: url('./images/sun_rays_8.png'); }
+         #ray7  { background: url('./images/sun_rays_7.png'); }
+         #ray6  { background: url('./images/sun_rays_6.png'); }
+         #ray5  { background: url('./images/sun_rays_5.png'); }
+         #ray4  { background: url('./images/sun_rays_4.png'); }
+         #ray3  { background: url('./images/sun_rays_3.png'); }
+         #ray2  { background: url('./images/sun_rays_2.png'); }
+         #ray1  { background: url('./images/sun_rays_1.png'); }
+
+         #body {
+            background: url('./images/sun.png');
+         }
+      }
+
+      #moon {
+         #ray8  { background: url('./images/moon_rays_8.png'); }
+         #ray7  { background: url('./images/moon_rays_7.png'); }
+         #ray6  { background: url('./images/moon_rays_6.png'); }
+         #ray5  { background: url('./images/moon_rays_5.png'); }
+         #ray4  { background: url('./images/moon_rays_4.png'); }
+         #ray3  { background: url('./images/moon_rays_3.png'); }
+         #ray2  { background: url('./images/moon_rays_2.png'); }
+         #ray1  { background: url('./images/moon_rays_1.png'); }
+
+         #body {
+            background: url('./images/moon.png');
+         }
+      }
+   }
+}
+
+#clockTooltip {
+   text-align: center;
+}
+
+#dateString {
+   .controlFont;
+   position: absolute;
+   top: 120px;
+   right: 0px;
+   width: 125px;
+   text-align: center;
+   font-size: 20px;
+}

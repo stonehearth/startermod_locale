@@ -1,8 +1,8 @@
 {
 	"info": {
-		"name": "korean",
+		"name": "stoneHearth_locale_kr",
 		"required": true,
-		"version": 210100
+		"version": 210521
 	},
 	
 	"mixintos": {
@@ -24,14 +24,20 @@
    	   "stonehearth/ui/root/css/fonts/autourone/AutourOne-Regular-webfont.woff" : "file(fonts/BMJUA.woff)",
    	   "stonehearth/ui/root/css/fonts/grobold/grobold-webfont.ttf" : "file(fonts/BMJUA.ttf)",
    	   "stonehearth/ui/root/css/fonts/grobold/grobold-webfont.woff" : "file(fonts/BMJUA.woff)",
-	   
-	    "stonehearth/ui/root/css/tooltipster.less" : "file(ui/root/css/tooltipster.less)",		
+	   	   
+	    "stonehearth/ui/root/css/tooltipster.less" : "file(ui/root/css/tooltipster.less)",
+		
    	    "stonehearth/ui/shell/select_roster/select_roster.less" : "file(ui/shell/select_roster/select_roster.less)",
+		"stonehearth/ui/shell/settings/settings.less" : "file(ui/shell/settings/settings.less)",
 		
 		"stonehearth/ui/game/character_sheets/citizen_character_sheet/citizen_character_sheet.less" : "file(ui/game/character_sheets/citizen_character_sheet/citizen_character_sheet.less)",
 		"stonehearth/ui/game/town/town.less" : "file(ui/game/town/town.less)",
 		"stonehearth/ui/game/citizens/citizens.less" : "file(ui/game/citizens/citizens.less)",
 		"stonehearth/ui/game/unit_frame/unit_frame.less" : "file(ui/game/unit_frame/unit_frame.less)",
+		"stonehearth/ui/game/show_workshop/show_team_workshop.less" : "file(ui/game/show_workshop/show_team_workshop.less)",
+		"stonehearth/ui/game/promotion_tree/promotion_tree.less" : "file(ui/game/promotion_tree/promotion_tree.less)",
+		"stonehearth/ui/game/widgets/red_alert/red_alert.less" : "file(ui/game/widgets/red_alert/red_alert.less)",
+		"stonehearth/ui/game/clock_widget/clock_widget.less" : "file(ui/game/clock_widget/clock_widget.less)",
 		"stonehearth/ui/game/save_view/save_view.less" : "file(ui/game/save_view/save_view.less)"
 	}
 }

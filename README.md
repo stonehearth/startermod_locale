@@ -24,6 +24,8 @@ http://codebeautify.org/jsonviewer  웹사이트를 사용하여 해당 데이�
 이 가이드는 [네이버 스톤하스 포럼 카페](http://cafe.naver.com/stonehearth)에서 작성되었습니다.<br>
 
 ### 6. 기여자
-  - Goldmetal: 관리, 개발 [#과거_커밋_목록](https://github.com/StonehearthForum/stoneHearth_locale_ko/commits/master?author=Goldmetal) [#커밋_목록](https://github.com/StonehearthForum/stoneHearth_locale_kr/commits/master?author=Goldmetal)
-  - kygn1998: 프로젝트 개설, 관리, 개발 [#과거_커밋_목록](https://github.com/StonehearthForum/stoneHearth_locale_ko/commits/master?author=malangbalam) [#커밋_목록](https://github.com/StonehearthForum/stoneHearth_locale_kr/commits/master?author=kygn1998)
+  - Goldmetal: 관리, 개발 [#과거](https://github.com/StonehearthForum/stoneHearth_locale_ko/commits/master?author=Goldmetal)
+  - kygn1998: 프로젝트 개설, 관리, 개발 [#과거](https://github.com/StonehearthForum/stoneHearth_locale_ko/commits/master?author=malangbalam)
   - oxchun: 번역 기여 [#과거_커밋_목록](https://github.com/StonehearthForum/stoneHearth_locale_ko/commits/master?author=oxchun)
+ - jine0th: 번역 기여
+ - creamizzing: 번역 기여
