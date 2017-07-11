@@ -2,7 +2,7 @@
 	"info": {
 		"name": "stoneHearth_locale_kr",
 		"required": true,
-		"version": 210521
+		"version": 220101
 	},
 	
 	"mixintos": {
@@ -14,10 +14,19 @@
 		"stonehearth/locales/ko.json": "file(translations/stonehearth/ko.json)",
 		"rayyas_children/locales/ko.json": "file(translations/rayyas_children/ko.json)",
 		
+		"stonehearth/services/server/population/data/animal_population.json": "file(translations/stonehearth/population/animal_population.json)",
 		"stonehearth/services/server/population/data/ascendancy_population.json": "file(translations/stonehearth/population/ascendancy_population.json)",
-		"stonehearth/services/server/population/data/undead_population.json": "file(translations/stonehearth/population/undead_population.json)",
+		"stonehearth/services/server/population/data/critter_task_groups.json": "file(translations/stonehearth/population/critter_task_groups.json)",
+		"stonehearth/services/server/population/data/forest_population.json": "file(translations/stonehearth/population/forest_population.json)",
 		"stonehearth/services/server/population/data/goblin_population.json": "file(translations/stonehearth/population/goblin_population.json)",
+		"stonehearth/services/server/population/data/human_npc_population.json": "file(translations/stonehearth/population/human_npc_population.json)",	
+		"stonehearth/services/server/population/data/humanoid_task_groups.json": "file(translations/stonehearth/population/humanoid_task_groups.json)",
+		"stonehearth/services/server/population/data/minimal_task_groups.json": "file(translations/stonehearth/population/minimal_task_groups.json)",
+		"stonehearth/services/server/population/data/northern_alliance_population.json": "file(translations/stonehearth/population/northern_alliance_population.json)",
 		"stonehearth/services/server/population/data/orc_population.json": "file(translations/stonehearth/population/orc_population.json)",
+		"stonehearth/services/server/population/data/player_task_groups.json": "file(translations/stonehearth/population/player_task_groups.json)",
+		"stonehearth/services/server/population/data/rabbit_population.json": "file(translations/stonehearth/population/rabbit_population.json)",
+		"stonehearth/services/server/population/data/undead_population.json": "file(translations/stonehearth/population/undead_population.json)",		
 		"rayyas_children/data/rayyas_children_population.json": "file(translations/rayyas_children/population/rayyas_children_population.json)",
 		
 	   "stonehearth/ui/root/css/fonts/autourone/AutourOne-Regular-webfont.ttf" : "file(fonts/BMJUA.ttf)",
