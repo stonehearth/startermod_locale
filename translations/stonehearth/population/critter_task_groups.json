@@ -1,0 +1,21 @@
+{
+   "type": "index",
+   "ai": {
+      "stonehearth:top": {
+         "children": {
+            "stonehearth:basic_needs": {
+               "type": "dispatcher",
+               "priority": 40
+            },
+            "stonehearth:free_time": {
+               "type": "dispatcher",
+               "priority": 2
+            },
+            "stonehearth:conversation": {
+               "type": "dispatcher",
+               "priority": 45
+            }
+         }
+      }
+   }
+}

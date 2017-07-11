@@ -1,0 +1,45 @@
+{
+   "type": "index",
+   "ai": {
+      "stonehearth:top": {
+         "children": {
+            "stonehearth:basic_needs": {
+               "type": "dispatcher",
+               "priority": 40
+            },
+            "stonehearth:work": {
+               "type": "dispatcher",
+               "priority": 20,
+               "children": {
+                  "stonehearth:task_group:placement": {
+                     "type": "task_group",
+                     "children": {
+                        "stonehearth:light_firepit": {
+                           "type": "tuning",
+                           "priority": 20
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:patrolling": {
+                     "type": "task_group",
+                     "children": {
+                        "stonehearth:patrol": {
+                           "type": "task",
+                           "priority": 10
+                        }
+                     }
+                  }
+               }
+            },
+            "stonehearth:unit_control" : {
+               "type" : "dispatcher",
+               "priority" : 1000
+            },
+            "stonehearth:compelled_behavior" : {
+               "type" : "dispatcher",
+               "priority" : 10000
+            }
+         }
+      }
+   }
+}

@@ -53,7 +53,7 @@
             "healing_target": "healing [name(data.target)]",
             "dig_foundation": "digging foundation",
             "unit_hold_location": "defending location",
-            "execute_conversation": "socializing",
+            "talk": "talking to [name(data.target)]",
             "incapacitated": "incapacitated",
             "rescue_citizen": "rescuing [name(data.target)]",
             "recuperating": "recuperating"
@@ -208,7 +208,9 @@
             "remove": "Remove",
             "input_text_tooltip": "Click to edit",
             "days": "d",
-            "hours": "h"
+            "hours": "h",
+            "the": "the",
+            "empty_string": ""
          },
          "party": {
             "title": "Parties",
@@ -413,7 +415,7 @@
                   },
                   "loot_item": {
                      "display_name": "Loot",
-                     "description": "Steal items from another player.",
+                     "description": "Take items from enemies",
                      "tip_title": "Click and drag to loot items from the world",
                      "tip_description": "Right click to exit this mode"
                   },
@@ -741,6 +743,7 @@
                   "cottage_for_two": "Cottage for Two",
                   "shared_sleeping_quarters": "Shared Sleeping Quarters",
                   "dining_hall": "Dining Hall",
+                  "herbalist_house": "Herbalist's House",
                   "little_clay_house": "Little Clay House",
                   "clay_house_for_two": "Clay House for Two",
                   "clay_dining_room": "Clay Dining Room",
@@ -1450,6 +1453,12 @@
             },
             "customization_lock": {
                "description": "This hearthling's [str(customization)] will be saved during trait and stat rerolls."
+            },
+            "customization_lock_all": {
+               "description": "Click to lock all name and appearance options."
+            },
+            "customization_unlock_all": {
+               "description": "Click to unlock all name and appearance options."
             }
          },
          "constants": {
@@ -4653,7 +4662,7 @@
          "animal_companion": {
             "animal_companion_trait": {
                "display_name": "Animal Companion",
-               "description": "Ever since [name(i18n_data.savior)] saved their [str(i18n_data.species)] from mortal danger, they've been inseparable.",
+               "description": "Ever since [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)] saved their [str(i18n_data.savee_species)], [name(i18n_data.savee)], from mortal danger, they've been inseparable.",
                "default_species": "companion"
             }
          },
@@ -4699,11 +4708,10 @@
                "description": "[name(i18n_data.entity)] loves crafting things for others. If they don't make at least one thing a day, they feel the day is wasted."
             }
          },
-
          "professor": {
             "professor_trait": {
                "display_name": "Professor",
-               "description": "[name(i18n_data.entity)] always likes to give advice to others based on their observations, whether the receiver wants it or not."
+               "description": "[name(i18n_data.entity)] will help people gain experience in the basics of their class, though their explanations tend to be a bit... long winded."
             }
          },
          "featherweight": {
@@ -4758,6 +4766,42 @@
             "cultist_trait": {
                "display_name": "Cultist",
                "description": "This hearthling keeps mumbling about some sort of secret \"bunny god\" sleeping eternally. What's that about?"
+            }
+         },
+         "jokester": {
+            "jokester_trait": {
+               "display_name": "Jokester",
+               "description": "[name(i18n_data.entity)] loves to tell jokes. Are they good? It's tough to say, but they frequently seem to leave others with a smile."
+            }
+         },
+         "charismatic": {
+            "charismatic_trait": {
+               "display_name": "Charismatic",
+               "description": "When [name(i18n_data.entity)] walks into a room, people always take notice."
+            }
+         },
+         "gregarious": {
+            "gregarious_trait": {
+               "display_name": "Gregarious",
+               "description": "[name(i18n_data.entity)] loves interacting with others, though they do get lonely pretty quickly."
+            }
+         },
+         "loner": {
+            "loner_trait": {
+               "display_name": "Loner",
+               "description": "[name(i18n_data.entity)] doesn't really care for the company of others. They prefer to be by themselves."
+            }
+         },
+         "empathetic": {
+            "empathetic_trait": {
+               "display_name": "Empathetic",
+               "description": "[name(i18n_data.entity)] is really sensitive to the mood of the town, and it always seems to rub off on them."
+            }
+         },
+         "opinionated": {
+            "opinionated_trait": {
+               "display_name": "Opinionated",
+               "description": "[name(i18n_data.entity)] has an opinion on everything, and isn't shy about sharing it."
             }
          }
       },
@@ -4932,7 +4976,7 @@
             "combat": {
                "values": {
                   "panicked": {
-                     "display_name": "Feared for their life",
+                     "display_name": "Feared for my life",
                      "tooltip": "I'm not proud of how I acted when the monsters came, but it's all I could think to do."
                   }
                }
@@ -4942,10 +4986,6 @@
                   "misses_pet": {
                      "display_name": "Misses Companion",
                      "tooltip": "Although it's been awhile since they died, I still catch myself sometimes looking for my pet, [str(pet_name)]."
-                  },
-                  "nuzzled": {
-                     "display_name": "Nuzzled",
-                     "tooltip": "Aww, [str(pet_name)] always manages to cheer me up."
                   },
                   "plant_lover": {
                      "display_name": "Plant Lover",
@@ -4966,6 +5006,50 @@
                   "loves_their_job": {
                      "display_name": "Loves Their Job",
                      "tooltip": "This is the perfect job for me! I love what I do day to day."
+                  },
+                  "inspired": {
+                     "display_name": "Inspired",
+                     "tooltip": "[str(target_name)] is in quite good spirits today. They're really pleasant to be around!"
+                  },
+                  "discouraged": {
+                     "display_name": "Discouraged",
+                     "tooltip": "Sheesh, [str(target_name)] is no fun when they're in a bad mood."
+                  }
+               },
+               "gregarious": {
+                  "values": {
+                     "lonely": {
+                        "display_name": "Lonely",
+                        "tooltip": "It's been awhile since I've talked to anyone. I really need to get some stuff off my chest."
+                     },
+                     "enjoys_company": {
+                        "display_name": "Enjoys the company of others",
+                        "tooltip": "It's always great to spend some time with my fellow town members."
+                     }
+                  }
+               },
+               "loner": {
+                  "values": {
+                     "annoyed_with_others": {
+                        "display_name": "Annoyed with others",
+                        "tooltip": "Why do these people keep talking to me? It keeps distracting me from what's important."
+                     },
+                     "alone_with_thoughts": {
+                        "display_name": "Alone with my own thoughts",
+                        "tooltip": "Being away from others has given me the time to reflect and clear my mind."
+                     }
+                  }
+               },
+               "empathetic": {
+                  "values": {
+                     "everyone_worse_off": {
+                        "display_name": "Everyone seems worse off",
+                        "tooltip": "Seeing everyone else in worse spirits just brings me down."
+                     },
+                     "everyone_happier": {
+                        "display_name": "Everyone seems happier",
+                        "tooltip": "Everyone else seems to be in a better mood than me. Maybe I should look at things differently."
+                     }
                   }
                }
             },
@@ -4978,6 +5062,46 @@
                   "pet_died": {
                      "display_name": "My pet died",
                      "tooltip": "My poor [str(pet_name)] passed away recently. I'll miss them quite a bit."
+                  }
+               }
+            },
+            "job": {
+               "values": {
+                  "gained_a_level": {
+                     "display_name": "Improved my skills",
+                     "tooltip": "I've been at this job long enough to gain a new insight! I can feel myself becoming better at my work."
+                  }
+               }
+            },
+            "social": {
+               "values": {
+                  "unpleasant_talk": {
+                     "display_name": "Had an unpleasant talk",
+                     "tooltip": "I can't believe [str(target_name)] said that!"
+                  },
+                  "great_talk": {
+                     "display_name": "Had a great talk",
+                     "tooltip": "Talking with [str(target_name)] today was really nice."
+                  },
+                  "great_joke": {
+                     "display_name": "Heard a great joke",
+                     "tooltip": "Hahaha, just thinking of the joke [str(target_name)] told makes me crack up!"
+                  },
+                  "tough_crowd": {
+                     "display_name": "Tough crowd",
+                     "tooltip": "[str(target_name)] didn't laugh at my joke. Was it really that bad?"
+                  }
+               },
+               "animal": {
+                  "values": {
+                     "nuzzled": {
+                        "display_name": "Nuzzled",
+                        "tooltip": "Awww, my pet [str(target_name)] always manages to cheer me up."
+                     },
+                     "booped": {
+                        "display_name": "Booped",
+                        "tooltip": "A cute [str(species)] booped me today. It made me feel warm and fuzzy inside."
+                     }
                   }
                }
             }

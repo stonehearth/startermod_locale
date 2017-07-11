@@ -1,0 +1,50 @@
+{
+   "type": "kingdom",
+   "kingdom_name": "Forest",
+   "kingdom_id": "forest",
+   "amenity_to_strangers": "hostile",
+   "roles": {
+      "entling": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:forest:entling"
+            ]
+         }
+      },
+      "entling_mage": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:forest:entling_mage"
+            ]
+         }
+      },
+      "stone_golem": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:forest:stone_golem"
+            ]
+         }
+      },
+      "little_stone_golem": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:forest:little_stone_golem"
+            ]
+         }
+      },
+      "alligator": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:forest:alligator"
+            ]
+         }
+      },
+      "wolf": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:forest:wolf"
+            ]
+         }
+      }
+   }
+}

@@ -238,8 +238,8 @@
          ],
          "attribute_distribution": {
             "allocated_points": {
-               "min": 6,
-               "max": 10
+               "min": 5,
+               "max": 9
             },
             "point_limits": {
                "mind": {
@@ -251,12 +251,115 @@
                   "max": 6
                },
                "spirit": {
-                  "min": 1,
+                  "min": 2,
                   "max": 6
                }
             }
          }
       }
+   },
+   "pet_names": {
+      "default": [
+         "Bob",
+         "Francis",
+         "Mark",
+         "Julie",
+         "Jack",
+         "Meggie",
+         "Mustaches",
+         "Mushroom",
+         "Cactus",
+         "Snuggles",
+         "Jasper",
+         "Allie",
+         "Hammy",
+         "Fluffy",
+         "Fuzzy",
+         "Bounder",
+         "Friend",
+         "Rocky",
+         "Ladybean",
+         "Apple",
+         "Puddles",
+         "Turtle",
+         "Joy",
+         "Bowtie",
+         "Paws",
+         "Yipper",
+         "Twinkle",
+         "March",
+         "Tails",
+         "Brush",
+         "Pipit",
+         "Ruffles",
+         "Bits",
+         "Fluff",
+         "Tayls",
+         "Moxi",
+         "Nibbles",
+         "Bocks",
+         "Nigel",
+         "Spot",
+         "Jaham",
+         "Hoppur",
+         "Murieta",
+         "Jerky",
+         "Turnip"
+      ],
+      "racoon": [
+         "Bandit",
+         "Napoleon",
+         "Onyx",
+         "Forest Cat",
+         "Patches",
+         "Wilder",
+         "Alyx",
+         "Panda",
+         "Galumph"
+      ],
+      "red_fox": [
+         "Tod",
+         "Socks",
+         "Boots",
+         "Ruby",
+         "Tom",
+         "Daisy",
+         "Marco",
+         "Kitkit",
+         "Kit",
+         "Ember"
+      ],
+      "rabbit": [
+         "Thumpy",
+         "Lulabelle",
+         "CinnaBun",
+         "Bonbon",
+         "Molly",
+         "Candi",
+         "Coco",
+         "Winnie",
+         "Cricket",
+         "Bun",
+         "Bunbun"
+      ],
+      "squirrel": [
+         "Lucy",
+         "Squeakers",
+         "Beans",
+         "Pea",
+         "Squeakpea",
+         "Chuck",
+         "Pip",
+         "Bounce",
+         "Daisy",
+         "Nippy",
+         "Dori",
+         "Nuts",
+         "Nutter",
+         "Acorn",
+         "Peanut",
+         "Quick"
+      ]
    },
    "town_pieces": {
       "optional_prefix": [

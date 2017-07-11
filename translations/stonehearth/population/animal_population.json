@@ -1,0 +1,7 @@
+{
+   "type": "kingdom",
+   "kingdom_name": "Animals",
+   "kingdom_id": "animals",
+   "amenity_to_strangers": "neutral",
+   "roles": {}
+}
