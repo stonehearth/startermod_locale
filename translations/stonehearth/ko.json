@@ -4765,13 +4765,13 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "광신자",
-               "description": " sleeping eternally. What's that about?"
+               "description": " 영원히 잠드는 것. 어떻게 생각하십니까?"
             }
          },
          "jokester": {
             "jokester_trait": {
                "display_name": "익살꾼",
-               "description": "[name(i18n_data.entity)]은(는) 농담하는 것을 좋아합니다. 그들은 좋아할까요? 말할 필요도 없지만 종종 다른 사람들의 미소를 지우는 것처럼 보입니다."
+               "description": "[name(i18n_data.entity)]은(는) 농담하는 것을 좋아합니다. 다른 이들은 좋아할까요? 말할 필요도 없겠지만 종종 다른 사람들의 미소를 지우는 것처럼 보입니다."
             }
          },
          "charismatic": {
@@ -4795,7 +4795,7 @@
          "empathetic": {
             "empathetic_trait": {
                "display_name": "감정 이입",
-               "description": "[name(i18n_data.entity)]은(는) 마을의 분위기에 정말로 민감하며, 항상 다른 이들에게 물들이는 것 같습니다."
+               "description": "[name(i18n_data.entity)]은(는) 마을의 분위기에 정말로 민감하며, 항상 다른 이들에게 물드는 것 같습니다."
             }
          },
          "opinionated": {
@@ -9418,12 +9418,12 @@
             "red_clay_door_recipe": {
                "description": "적색 점토 벽과 어울린다.",
                "recipe_name": "적색 점토 문",
-               "flavor": " -- Ember Iskender, Dept of Applied Poetry"
+               "flavor": ""
             },
             "red_clay_window_frame_recipe": {
                "description": "적색 점토 벽과 어울린다.",
                "recipe_name": "적색 점토 창문",
-               "flavor": " -- Jorya Iskender, Dyemaster"
+               "flavor": ""
             },
             "blue_clay_door_recipe": {
                "description": "깊은 바다의 꿈을 닮은 푸른 색이다.",
@@ -9453,12 +9453,12 @@
             "clay_bed_recipe": {
                "description": "불편하지만 당신을 바닥으로부터 떨어뜨려줍니다.",
                "recipe_name": "점토 침대",
-               "flavor": " - Clarence, Temporary Salesperson"
+               "flavor": ""
             },
             "clay_dining_table_recipe": {
                "description": "당신을의 음식을 바닥으로부터 떨어뜨려줍니다.",
                "recipe_name": "점토 식탁",
-               "flavor": " "
+               "flavor": ""
             },
             "simple_clay_chair_recipe": {
                "description": "먹는동안 어디든 앉을 수 있다.",
@@ -9533,15 +9533,15 @@
             "tan_latticed_window_recipe": {
                "recipe_name": "황색 격자 창문",
                "description": "격자 모양의 황색 창문을 알게 된다면 사랑에 빠질 것입니다.",
-               "flavor": " -- Drenkar Iskender, Ex-Marketing Associate"
+               "flavor": ""
             },
             "tall_clay_window_recipe": {
                "recipe_name": "긴 점토 창문",
                "description": "부드러운 사막의 바람을 들여보내자.",
-               "flavor": " -Aaryn, Pragmatist"
+               "flavor": ""
             },
             "tan_clay_window_frame_recipe": {
-               "flavor": " -Isfan Dorret, Inventor of Achromatism",
+               "flavor": "",
                "recipe_name": "황색 점토 창틀",
                "description": "햇빛을 쬐자."
             },
@@ -9553,7 +9553,7 @@
             "blue_latticed_window_recipe": {
                "recipe_name": "청색 격자 창문",
                "description": "마음을 달래주는 격자 모양을 가진 푸른색의 창문이다.",
-               "flavor": " -- Farah, Professional Bugcatcher"
+               "flavor": ""
             },
             "wooden_sign_potter_recipe": {
                "flavor": "냄비로 만드는 것보다 덜 부서지고 쉽다."
