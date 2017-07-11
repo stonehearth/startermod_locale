@@ -1,0 +1,155 @@
+#saveView {
+   .gui;
+   .nobr;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   #saves {
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+   
+   button {
+      display: inline-block;
+     height: 60px;
+   }
+   
+   #autoSaveSetting {
+      padding-top: 16px;
+   }
+}
+
+.screenshot_container {
+   display: inline-block;
+}
+
+#savelist_screenshot {
+   width: 600px;
+   height: 360px;
+
+   background: black;
+   border: 2px solid #000;
+   display: table-cell;
+   vertical-align: middle;
+
+   img {
+      width: 600px;
+      height: auto;
+      max-height: 360px;
+   }
+}
+
+.saveList {
+   #saves {
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+
+   #loadButton {     
+      width: 100%;
+   }
+
+   overflow-y: scroll;
+   width: 400px;
+   height: 360px;
+   max-height: 360px;
+   display: inline-block;
+
+   table {
+      border-collapse: collapse;
+   }
+
+   .differentVersion {
+      background-image: url(images/incompatible_save_bg.png);
+   }
+
+   .differentVersionText {
+      color: red;
+      font-size: 10px;
+   }
+
+   td {
+      padding: 10px;
+   }
+
+   .saveSlot {
+      .handCursor;
+      height: 90px;
+      position: relative;
+      vertical-align: top;
+      padding-left: 8px;
+      padding-top: 2px;
+
+      input {
+         .controlFont;
+         background: rgba(0,0,0,0.0);
+         border: 0px;
+         padding: 0px;
+         margin: 0px;
+         width: 100%;
+      }
+      .gameInfo {
+         div {
+            padding-bottom: 4px;
+         }
+
+         .time {
+            color: #aaa;
+         }
+
+         #jobs {
+            position: absolute;
+            top: 0px;
+            right: 6px;
+            width: 160px;
+
+            .counter {
+               float: right;
+               width: 32px;
+               height: 32px;
+               display: flex;
+
+               div {
+                  font-family: @controlFontFamily;
+                  font-size: 20px;
+                  margin-left: 12px;
+                  margin-top: 8px;
+               }
+            }
+
+            #workers {
+               background: url(../town/images/worker_count_bg.png);
+               background-size: cover;
+            }
+
+            #crafters {
+               background: url(../town/images/crafter_count_bg.png);
+               background-size: cover;
+            }
+
+            #soldiers {
+               background: url(../town/images/soldier_count_bg.png);
+               background-size: cover;
+            }
+         }
+      }
+   }
+}
+
+#savePopup {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   display: flex;
+
+   #message {
+      .control;
+      margin: auto;
+      font-size: 30px;
+      padding-top: 600px;
+   }
+}

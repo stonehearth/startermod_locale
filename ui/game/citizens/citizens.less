@@ -1,0 +1,338 @@
+.citizensManager {
+   position: relative;
+   margin: auto;
+
+   .window {
+      position: relative;
+      top: 40px;
+      width: 1310px;
+      height: 820px;
+      max-height: 900px;
+   }
+
+   .list {
+      height: 450px;
+   }
+
+   .workOrderPanel {
+      margin-top: 25px;
+      h2 {
+         font-size: 20px;
+      }
+   }
+
+   .hidden {
+      display: none;
+   }
+
+   #workerDetails {
+      width: 260px;
+      float: left;
+
+      h2 {
+         margin-left: 10px;
+      }
+
+      #workerDetailsInnerPane {
+         height: 610px;
+         text-align: center;
+         align: center;
+
+         button {
+            width: 200px;		
+         }
+
+         #selectedPortrait {
+            width: 100%;
+            height: 128px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+
+         #selectedName {
+            position: relative;
+            top: -10px;
+            .controlFont;
+            font-size: 24px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 240px;
+            overflow: hidden;
+         }
+
+         #selectedDescription {
+            position: relative;
+            top: -10px;
+            .controlFont;
+            font-size: 16px;
+            color: #cdc1a4;
+         }
+
+         #selectedClassIcon {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            left: 34px;
+            top: 315px;
+         }
+
+         #traits {
+            position: relative;
+            margin-top: 5px;
+
+            .item {
+               display: inline-block;
+            }
+         }
+
+         #expStat {
+            position: relative;
+            top: 3px;
+            left: 19px;
+
+            .label {
+               position: relative;
+               left: 11px;
+               top: -7px;
+               font-size: 15px;
+               color: @barleyBrownColor;
+               font-family: @controlFontFamily;
+            }
+
+            .bar {
+               position: relative;
+               width: 137px;
+               height: 15px;
+               display: inline-block;
+               border: 3px solid #000;
+               background: @darkGreyBlueColor;
+               text-align: right;
+            }
+
+            .expBar {
+               background: @expBarColor;
+               height: 100%;
+            }
+         }
+
+         .toolbar {
+            position: absolute;
+            width: 250px;
+            top: 510px;
+            left: 14px;
+         }
+      }
+   }
+
+   .workersList {
+      width: 1048px;
+      display: inline-block;
+
+      .workersListTableContainer {
+         height: 610px;
+         overflow-y: auto;
+      }
+   }
+
+   #tasksWorkersList {
+      .listTitle{
+         display: inline-block;
+         text-align: center;
+      }
+      #tasksTitleName {
+         width: 240px;
+         margin-right: 20px;
+         margin-left: 10px;
+         text-align: left;
+      }
+
+      #suspendButtons {
+         margin-left: 739px;
+
+         .suspendButton {
+            padding: 5px;
+            margin: 0px 9px 0px 8px;
+         }
+
+         .suspendButtonImg {
+            width: 26px;
+            height: 26px;
+         }
+
+         .showSuspendButton {
+            .backgroundContain(url(images/suspend.png));
+         }
+
+         .showResumeButton {
+            .backgroundContain(url(images/resume.png));
+         }
+      }
+
+      .statTitle {
+         margin-left: -3px;
+
+         .statButton {
+            &:hover:not(.disabled) {
+               // sorting isn't implemented yet, so remove highlighting on hover
+               -webkit-filter: brightness(1);
+            }
+            padding: 0px;
+            border-width: 6px 6px 8px 6px;
+         }
+
+         .statImg {
+            height: 27px;
+            width: 27px;
+            margin: -4px -2px -2px 0px;
+         }
+
+         .mind.statImg {
+            .backgroundContain(url(/stonehearth/ui/game/images/mind_stat.png));
+         }
+
+         .body.statImg {
+            .backgroundContain(url(/stonehearth/ui/game/images/body_stat.png));
+         }
+
+         .spirit.statImg {
+            .backgroundContain(url(/stonehearth/ui/game/images/spirit_stat.png));
+         }
+      }
+
+      .moodTitle {
+         margin-left: 22px; 
+      }
+
+      #activityTitle {
+         text-align: left;
+         width: 225px;
+         margin-left: 30px;
+         margin-right: 19px;
+      }
+
+      .workOrderTitle {
+         margin-right: 37px;
+      }
+   }
+
+   #groupsWorkersList {
+      .listTitle{
+         display: inline-block;
+         width: 350px;
+         text-align: center;
+      }
+      #groupsTitleName {
+         width: 210px;
+         text-align: left;
+      }
+   }
+
+   table {
+      width: 100%;
+      table-layout: fixed;
+
+      tr:nth-child(even) {
+         background: rgba(0,0,0,0.1);
+      }
+
+      td {
+         vertical-align: middle;
+         text-align: center;
+         padding-top: 4px;
+         padding-left: 10px;
+      }
+
+      td.red {
+         background: rgba(255,0.5,0,0.1);
+      }
+
+      tr {
+         .handCursor;
+         &:hover {
+            background-color: rgba(143, 120, 70, 0.3);
+         }
+      }
+
+      tr.selected {
+         background-color: rgba(143, 120, 70, 1.0);
+      }
+
+      .nameColumn {
+         width: 250px;
+         text-align: left;
+         vertical-align: middle;
+
+         .controlFont;
+         font-size: 20px;
+
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         overflow: hidden;
+         .classIcon {
+            vertical-align: middle;
+            width: 40px;
+            height: 40px;
+         }
+
+         .citizenName {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+         }
+      }
+
+      .statColumn {
+         .controlFont;
+         width: 90px;
+         padding: 0px 35px 0px 8px;
+         color: @barleyBrownColor;
+
+         .mindStat {
+            display: inline-block;
+            color: @mindStatColor;
+         }
+
+         .bodyStat {
+            display: inline-block;
+            color: @bodyStatColor;
+         }
+
+         .spiritStat {
+            display: inline-block;
+            color: @spiritStatColor;
+         }
+      }
+
+      .moodColumn {
+         width: 40px;
+
+         .moodIcon {
+            height: 40px;
+         }
+      }
+
+      .activityColumn {
+         white-space: nowrap;
+         width: 225px;
+         text-align: left;
+         padding-left: 43px;
+
+         .activity {
+            .nobr;
+            color: #93ef26;
+            display: inline-block;
+            font-size: 17px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 2px;
+            max-width: 220px;
+         }
+      }
+
+      .workOrderColumn {
+         width: 64px;
+      }
+   }
+}

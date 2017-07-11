@@ -1,0 +1,435 @@
+.newGameFlowBackground {
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#344a49), color-stop(60%,#1b302f), color-stop(100%,#000000));
+}
+
+#selectRoster {
+   @borderBoxShadow: 2px 2px 5px #6A5E48;
+
+   position: relative;
+   margin: auto;
+   width: 1920px;
+   height: 1080px;
+   background: url('./images/bg.png');
+   color: #fff;
+   padding: 0px;
+
+   .lockImg {
+      .handCursor;
+      .backgroundContain(url(images/unlock.png));
+      opacity: 0.60;
+      width: 24px;
+      height: 31px;
+
+      &:hover {
+         opacity: 0.8;
+      }
+
+      &.locked {
+         opacity: 1;
+         background-image: url(images/lock.png);
+         .hoverHighlight;
+      }
+   }
+
+   #citizens {
+      position: absolute;
+      top: 123px;
+      left: 62px;
+      width: 1080px;
+      height: 730px;
+      color: #000;
+
+      .roster {
+         overflow-y: auto;
+         overflow-x: hidden;
+
+         .rosterEntry {
+            position: relative;
+            width: 478px;
+            height: 193px;
+            display: inline-block;
+            background-color: #AA9C7A;
+            box-shadow: @borderBoxShadow;
+            border: #535046 solid 2px;
+            margin-left: 14px;
+            margin-right: 14px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+
+            .hidden {
+               display: none;
+            }
+
+            .lockImg {
+               position: absolute;
+               top: 4px;
+               left: 118px;
+            }
+
+            &.selected {
+               .selectedBorder {
+                  .highlightBorderBox;
+                  width: 103.2%;
+                  height: 110%;
+                  top: -8px;
+                  left: -7px;
+               }
+            }
+            .portrait {
+               position: relative;
+               float: left;
+               left: 12px;
+               top: 11px;
+               width: 122px;
+               height: 122px;
+               background: url(images/portrait_bg.png);
+               box-shadow: @borderBoxShadow;
+               padding: 1px;
+            }
+
+            .name {
+               .controlFont;
+               text-indent: 3px;
+               background: rgba(0,0,0,0.0);
+               font-size: 28px;
+               position: absolute;
+               left: 144px;
+               top: 10px;
+               border: 0px;
+               width: 260px;
+            }
+
+            #traits {
+               position: absolute;
+               left: 7px;
+               top: 145px;
+            }
+
+            .stats {
+               .controlFont;
+               position: absolute;
+               left: 161px;
+               top: 57px;
+               width:200px;
+               height:60px;
+
+               .statsImage {
+                  background: url(./images/stats_bg.png) no-repeat;
+                  background-size: 85%;
+                  width:200px;
+                  height:60px;
+               }
+
+               .lineSeparator {
+                  position: relative;
+                  width: 320px;
+                  border-top: 1px solid #7b755e;
+                  top: 20px;
+                  left: -12px;
+               }
+
+               .statsLabels {
+                  width: 60px;
+               }
+
+               .statValue {
+                  position: absolute;
+                  left: 40px;
+               }
+
+               .label {
+                  .noOutline;
+                  color: @baseFontColor;
+				   width: 90px;
+                  font-size: 19px;
+                  font-family: @baseFontFamily;
+                  font-weight: bold;
+                  text-align: center;
+                  position: absolute;
+                  top: 51px;
+                  left: -17px;
+               }
+
+               #mind {
+                  position: absolute;
+                  width: 51px;
+                  top: 0px;
+                  left: -3px;
+                  padding-top: 20px;
+                  text-align: right;
+                  color: #4bf600;
+               }
+               #body {
+                  position: absolute;
+                  width: 55px;
+                  top: 0px;
+                  left: 59px;
+                  padding-top: 20px;
+                  text-align: right;
+                  color: #ff405b
+               }
+               #spirit {
+                  position: absolute;
+                  width: 40px;
+                  top: 0px;
+                  left: 123px;
+                  padding-top: 20px;
+                  text-align: right;
+                  color: #00b9f6;
+               }
+            }
+
+            .rerollCitizenDice {
+               .control;
+               background: url(images/single_reroll_2d.png);
+               height: 34px;
+               width: 30px;
+               background-size: contain;
+               background-repeat: no-repeat;
+               position: absolute;
+               top: 9px;
+               left: 437px;
+
+               .hoverHighlight(1.1);
+            }
+         }
+      }
+   }
+
+   #customizePanel {
+      position: absolute;
+      left: 1154px;
+      top: 124px;
+      width: 676px;
+      height: 330px;
+
+      .name {
+         .controlFont;
+         text-indent: 3px;
+         position: absolute;
+         width: 441px;
+         height: 34px;
+         left: 205px;
+         top: 11px;
+         font-size: 30px;
+         background: #a39172;
+      }
+
+      .nameLock {
+         position: absolute;
+         top: 19px;
+         left: 628px;
+      }
+
+      .selectedPortrait {
+         position: relative;
+         float: left;
+         left: 12px;
+         top: -21px;
+         height: 162px;
+         width: 162px;
+         background: url(images/portrait_bg.png);
+         border: white 4px solid;
+         box-shadow: @borderBoxShadow;
+         padding: 1px;
+
+      }
+
+      #genderButtons {
+         position: absolute;
+         top: 166px;
+         left: 34px;
+
+         #male {
+            .handCursor;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 61px;
+            height: 66px;
+            background-image: url(images/male_selectable.png);
+
+            &.selected {
+               .arrowCursor;
+               background-image: url(images/male_selected.png);
+            }
+         }
+
+         #female {
+            .handCursor;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 61px;
+            height: 66px;
+            background-image: url(images/female_selectable.png);
+
+            &.selected {
+               .arrowCursor;
+               background-image: url(images/female_selected.png);
+            }
+         }
+      }
+
+      #randomize {
+         .control;
+         position: absolute;
+		 width: 200px;
+         top: 253px;
+         left: 35px;
+
+         #rerollAppearanceDice {
+            background: url(images/single_reroll.png);
+            width: 88px;
+            height: 105px;
+            background-size: contain;
+            background-repeat: no-repeat;
+         }
+
+         #randomizeText {
+            .control;
+            color: @vanillaColor;
+            font-size: 25px;
+            position: absolute;
+            top: 16px;
+            left: 74px;
+            text-align: left;
+         }
+      }
+
+      #customizeButtons {
+         position: absolute;
+         width: 447px;
+         left: 217px;
+         top: 96px;
+
+         .indexButton {
+            .borderImageBackground;
+            .outlined(#000) !important;
+            border-width: 9px 9px 13px 9px;
+            background-image: url(images/button_light_blue.png);
+            border-image: url(images/button_light_blue.png) 8 8 14 8 repeat;
+            border-style: solid;
+            font-family: @controlFontFamily;
+            font-size: 30px;
+            margin: 0px;
+            color: white;
+            width: 120px;
+            height: 38px;
+            text-align: center;
+            position: absolute;
+
+            &[locked="hidden"] {
+               display: none;
+            }
+         }
+
+         .lockImg {
+            position: absolute;
+            top: 4px;
+            left: 142px;
+         }
+
+         #hairStyle {
+            top: 0px;
+            left: 240px;
+         }
+
+         #faceHair {
+            top: 108px;
+            left: 240px;
+         }
+
+         #skinColor {
+            top: 108px;
+         }
+
+         #hairColor {
+         }
+
+         .arrowButton {
+            .control;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 16px;
+            height: 32px;
+         }
+
+         .increment {
+            background-image: url(images/increment_button.png);
+            top: 2px;
+            left: 100px;
+         }
+
+         .decrement {
+            background-image: url(images/decrement_button.png);
+            top: 2px;
+         }
+
+         .customizeLabel {
+            width: 142px;
+            font-family: @baseFontFamily;
+            font-size: 20px;
+            top: 64px;
+            left: -9px;
+            position: absolute;
+            text-align: center;
+         }
+      }
+   }
+
+   #traitDescriptions {
+      overflow: auto;
+      width: 677px;
+      height: 459px;	  
+      position: absolute;
+      top: 472px;
+      left: 1156px;
+
+      .traitDescription {
+         margin: 26px 24px 0px 24px;
+      }
+   }
+
+   #title {
+      .controlFont;
+      font-size: 32px;
+      padding: 20px;
+   }
+
+   #rerollCitizensButton {
+      .control;
+      z-index: 1;
+      position: absolute;
+      color: @vanillaColor;
+      top: 924px;
+      left: 788px;
+      font-size: 30px;
+      padding: 15px;
+      text-align: right;
+
+      #rerollCitizensDice {
+         background: url(images/party_reroll.png);
+         width: 167px;
+         height: 150px;
+         background-size: contain;
+         background-repeat: no-repeat;
+         position: absolute;
+         left: 204px;
+         top: -18px;
+      }
+   }
+
+   #acceptRosterButton {
+      position: absolute;
+	  font-size: 30px;
+      top: 948px;
+      right: 45px;
+   }
+}
+
+h2 {
+  padding-left: 2px;
+  right:0px;
+}

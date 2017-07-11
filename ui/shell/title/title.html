@@ -1,0 +1,73 @@
+<script type="text/x-handlebars" data-template-name="stonehearthTitleScreen">
+   <div id="radiant">
+   </div>
+   <div id="titlescreen" class="_dev_build">
+
+      <div id="menubar">
+         <a href="#" {{action 'exit' target="view"}}>{{i18n stonehearth:ui.shell.title_screen.exit}}</a>
+         <a href="#" {{action 'openModal' 'settings' 'mainMenu'}}>{{i18n stonehearth:ui.shell.title_screen.settings}}</a>
+         <a href="#" {{action 'openModal' 'about'}}>{{i18n stonehearth:ui.shell.title_screen.about}}</a>
+      </div>
+      <img id="logo">
+      <div id="controls">
+         <div id="continue">
+            <div class="gameInfo">
+               <div class="nameHeader">{{i18n stonehearth:ui.shell.title_screen.kingdom_of}}</div>
+               <div class="name">{{view.lastSave.gameinfo.town_name}}</div>
+               <div class="gameTime">{{i18n_key "stonehearth:ui.game.calendar.date_time_long_format" date=view.lastSave.gameinfo.game_date}}</div>
+               {{#if view.lastSave.gameinfo.differentVersions}}
+                  <div class="differentVersionText">{{i18n stonehearth:ui.game.save_view.game_different_version}}</div>
+               {{/if}}
+               <img class="banner" />
+               {{#if view.lastSave.gameinfo.jobs}}
+                  <div id="jobs">
+                     <div id="soldiers" class="counter">
+                        <div>{{view.lastSave.gameinfo.jobs.soldiers}}</div>
+                     </div>
+                     <div id="crafters" class="counter">
+                        <div>{{view.lastSave.gameinfo.jobs.crafters}}</div>
+                     </div>
+                     <div id="workers" class="counter">
+                        <div>{{view.lastSave.gameinfo.jobs.workers}}</div>
+                     </div>
+                  </div>
+               {{/if}}
+            </div>
+         </div>
+
+         <a href="#" {{action 'continueGame' target="view"}}>
+            <button id="continueGameButton" class="flat last" title="{{i18n stonehearth:ui.game.save_view.game_different_version}}" {{bind-attr class="view.lastSave.gameinfo.differentVersions:disabled"}}>{{i18n stonehearth:ui.shell.title_screen.continue_game}}</button>
+         </a>
+
+         <a href="#" {{action 'newGame' target="view"}}>
+            <button id="newGameButton" class="flat">{{i18n stonehearth:ui.shell.title_screen.new_game}}</button>
+         </a>
+
+         <a href="#" {{action 'openModal' 'save' 'hideSaveButtons'}}>
+            <button id="loadGameButton" class="flat">{{i18n stonehearth:ui.shell.title_screen.load_game}}</button>
+         </a>
+
+         <a href="#" {{action 'quickStart' target="view"}}>
+            <button id="quickStartButton" class="flat last">{{i18n stonehearth:ui.shell.title_screen.quick_start}}</button>
+         </a>
+      </div>
+
+      <div id="blog">
+         <div class="body">
+            <h1>{{view.productName}}</h1>
+            <br><br>
+            {{{view.releaseNotes}}}
+         </div>
+      </div>
+
+      <a href='#'>
+         <div id="about">
+            {{i18n stonehearth:ui.shell.title_screen.patch_notes}}<br>
+            {{view.productName}}
+         </div>
+      </a>
+
+      <div id="aboutDetails">
+      </div>
+   </div>
+</script>

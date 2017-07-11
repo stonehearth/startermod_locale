@@ -1,0 +1,348 @@
+#unitFrame {
+   position: absolute;
+   bottom: 0px;
+   left: 10px;
+   height: 100px;
+   z-index: 9;
+   //-webkit-transform: scale(0.5,0.5);
+
+   #buffs {
+      display: flex;
+      flex-wrap: wrap-reverse; /* child divs will stack from bottom to top */
+      position: absolute;
+      bottom: 106px;
+      left: 0px;
+      width: 194px;
+      z-index: 5;
+
+      .item {
+         float: left;
+         width: 40px;
+         height: 100%px;
+         margin-right: 4px;
+
+         img {
+            width: 40px;
+            height: 40px;
+         }
+      }
+   }
+
+   .thoughtBubble {
+      position: absolute;
+      background: white;
+      z-index: 5;
+      border: black solid 2px;
+      border-radius: 2px;
+   }
+
+   .bigBubble {
+      left: 7px;
+      bottom: 95px;
+      width: 10px;
+      height: 8px;
+   }
+
+   .smallBubble {
+      left: 14px;
+      bottom: 84px;
+      width: 6px;
+      height: 5px;
+   }
+
+   #info {
+      .controlFont;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      z-index: 4;
+      height: 62px;
+      background: #322f28;
+      border-width: 8px 8px 8px 8px;
+      border-image: url(images/bg_border.png) 8 8 8 8 repeat;
+      border-style: solid;
+      width: 550px;
+
+      font-size: 30px;
+      //line-height: 26px;
+      text-align: left;
+
+      .inner {
+         position: relative;
+         top: -16px;
+         left: 12px;
+
+         #portrait {
+            display: inline-block;
+            position:relative;
+            top: -40px;
+            left: -16px;
+            margin-right: -20px;
+            width: 128px;
+            height: 128px;
+            background-size: 128px, 128px;
+            background-repeat: no-repeat;
+         }
+
+         #portrait.clickable{
+            .button;
+         }
+
+         #portrait.hidden{
+            display: none;
+         }
+
+         #jobButton {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: -6px;
+
+            img {
+               width: 40px;
+               height: 40px;
+            }
+         }
+
+         #nameBlock {
+            display: inline-block;
+            vertical-align: top;
+         }
+
+         .name {
+            display: inline-block;
+            margin-top: 18px;
+            max-width: 350px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            .button;
+            white-space: nowrap;
+            font-size: 25px;
+            padding-left: 2px;
+            padding-right: 2px;
+         }
+
+         #descriptionDiv {
+            margin-top: -10px;
+         }
+
+         .description {
+            display: inline-block;
+            margin-top: 5px;
+            padding-left: 2px;
+            font-size: 20px;
+            color: #a8935d;
+            vertical-align: middle;
+         }
+      }
+   }
+
+   #commandButtons {
+      .nobr;
+      position: absolute;
+      top: 0px;
+      right: 8px;
+      z-index: 5;
+
+      .commandButton {
+         position: relative;
+         top: -20px;
+         width: 70px;
+         height: 76px;
+         background: url(images/command_button_bg.png);
+         border: 2px solid #000;
+         margin-left: 4px;
+
+         img {
+            width: 69px;
+         }
+
+         .active {
+            background: red !important;
+         }
+
+         #hotkey {
+            .hotkey;
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+         }
+      }
+
+      .buttonEnabled {
+         opacity: 1;
+      }
+
+      .buttonDisabled {
+         opacity: 0.6;
+      }
+
+      #inventory {
+         .controlFont;
+         position: relative;
+         top: -6px;
+         width: 69px;
+         height: 76px;
+         display: inline-block;
+         background: url(images/inventory_icon.png);
+         text-align: center;
+         vertical-align: bottom;
+         color: #fff;
+
+         div {
+            position: absolute;
+            font-size: 16px;
+            bottom: 0px;
+            width: 69px;
+         }
+
+         #full {
+            color: #ff0000;
+         }
+      }
+   }
+
+   #combatControls {
+      position: absolute;
+
+      right: -567px;
+      bottom: 80px;
+      z-index: 3;
+
+      width: 373px;
+      height: 64px;
+
+      background-image: url('./images/combat_base.png');
+      background-repeat: no-repeat;
+
+      display: none;
+
+      //display: none;
+
+         #combatButtonDiv {
+            height: 10px;
+            margin-right: 38px;
+         }
+
+         #partyButton {
+            position: absolute;
+            left: 30px;
+            bottom: 10px;
+            display: none;
+            width: 64px;
+            height: 79px;
+            background-repeat: no-repeat;
+         }
+
+         .combatButton {
+            width: 59px;
+            height: 54px;
+            background-image: url('./images/combat_buttons.png');
+            background-repeat: no-repeat;
+            float: right;
+            margin-left: 3px;
+            margin-top: -7px;
+
+            a {
+               width: 59px;
+               height: 54px;
+               display: block;
+               background-position: 50% 40%;
+               background-repeat: no-repeat;
+            }
+
+            #moveToLocation {
+               background-image: url('./images/move_to_icon.png');
+            }
+            #attackLocationOrEntity {
+               background-image: url('./images/attack_entity_or_place.png');
+            }
+            #defendLocation {
+               background-image: url('./images/defend_location.png');
+            }
+
+            #cancelOrders {
+               width: 47px;
+               background-image: url('./images/cancel_order.png');
+            }
+         }
+
+         #cancelCombatButton {
+            width: 47px;
+            background-image: url('./images/combat_button_narrow.png');
+         }
+
+   }
+
+   #equipmentPane {
+      .controlFont;
+      position: absolute;
+      right: -567px;
+      bottom: 80px;
+      display: none;
+      z-index: 3;
+
+      min-width: 100px;
+      height: 50px;
+
+      #acceptableClasses {
+         float: left;
+      }
+      #levelRequirement {
+         float: left;
+         padding-top: 20px;
+      }
+
+      .acceptableClassIcon {
+         float: left;
+         width: 50px;
+         height: 50px;
+      }
+   }
+
+   #siegePane {
+      .controlFont;
+      position: absolute;
+      top: -25px;
+      left: 400px;
+
+      #siegeNumUses {
+         white-space: nowrap;
+         float: left;
+         padding-left: 3px;
+      }
+   }
+
+   #itemLimitPane {
+      .controlFont;
+      position: absolute;
+      top: -25px;
+      left: 10px;
+
+      #limitInfo {
+         white-space: nowrap;
+         float: left;
+      }
+
+      .capitalize {
+         text-transform: capitalize;
+      }
+   }
+
+   #doorPane {
+      .controlFont;
+      position: absolute;
+      width: 300px;
+      top: -35px;
+      left: 30px;
+      #lockStatus {
+         color: @controlLightFontColor;
+         margin-top: 20px;
+         font-size: 20px;
+      }
+      #lockIcon {
+         height: 50px;
+         width: 50px;
+         float: left;
+      }
+   }
+}

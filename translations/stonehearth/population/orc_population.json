@@ -1,0 +1,261 @@
+{
+   "type": "kingdom",
+   "kingdom_name": "Orcs",
+   "kingdom_id": "orcs",
+   "amenity_to_strangers": "hostile",
+   "amenity_to": {
+      "goblins": "neutral"
+   },
+   "roles": {
+      "kobold": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:kobolds:kobold"
+            ],
+            "given_names": [
+               "Iksky",
+               "Yesvew",
+               "Wasster",
+               "Sekv",
+               "Eustar",
+               "Yanni",
+               "Yordl",
+               "Ento",
+               "Kaspin",
+               "Asnjis",
+               "Wol",
+               "Eteri",
+               "Kik",
+               "Ort",
+               "Balnok",
+               "Snag"
+            ]
+         },
+         "female": {
+            "uri": [
+               "stonehearth:monsters:kobolds:kobold"
+            ],
+            "given_names": [
+               "Kndl",
+               "Snuvz",
+               "Jyr",
+               "Blus",
+               "Konnon",
+               "Deekin",
+               "Oskas",
+               "Garboyt",
+               "Flankaar",
+               "Higar",
+               "Arkyn"
+            ]
+         },
+         "surnames": [
+            "Goldklink",
+            "Chimes",
+            "Blingg",
+            "the Golden",
+            "Diamondeye",
+            "Searchlight",
+            "Crilnusk",
+            "Gemkisser",
+            "Koinpurs",
+            "Silvertoe",
+            "Goldback",
+            "Shyniclaw",
+            "Glimmerklink",
+            "Gewls",
+            "Hoardeheym",
+            "Bronzefinger",
+            "Jemkutr",
+            "Midask",
+            "Geldersmelt",
+            "Midasktutch"
+         ]
+      },
+      "ogre": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:ogres:ogre"
+            ],
+            "given_names": [
+               "Bleg",
+               "Grot",
+               "Deruk",
+               "Bruk",
+               "Wog",
+               "Dud",
+               "Daurig",
+               "Trelog",
+               "Bor",
+               "Trolekog",
+               "Ock",
+               "Drizir",
+               "Terk",
+               "Krezirog",
+               "Klog"
+            ]
+         },
+         "female": {
+            "uri": [
+               "stonehearth:monsters:ogres:ogre"
+            ],
+            "given_names": [
+               "Kiv",
+               "Ginga",
+               "Wilg",
+               "Shiv",
+               "Ogl",
+               "Pavrm",
+               "Alka",
+               "Bom",
+               "Gim",
+               "Am"
+            ]
+         },
+         "surnames": [
+            "Rokthrow",
+            "Headbasher",
+            "Dullbrain",
+            "Bruteforce",
+            "Kigark",
+            "Brogrok",
+            "Ozk",
+            "Gologrok"
+         ]
+      },
+      "orc": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:orcs:orc_male"
+            ],
+            "given_names": [
+               "Vamug",
+               "Stugbu",
+               "Borug",
+               "Dulfish",
+               "Wurthu",
+               "Urbul",
+               "Gelub",
+               "Karthurg",
+               "Buugug",
+               "Omgig",
+               "Holkrug",
+               "Yargol",
+               "Xoku",
+               "Carguk",
+               "Womrik",
+               "Yerghu",
+               "Grik",
+               "Igg",
+               "Xepug",
+               "Hagul"
+            ]
+         },
+         "female": {
+            "uri": [
+               "stonehearth:monsters:orcs:orc_female"
+            ],
+            "given_names": [
+               "Opegha",
+               "Xuna",
+               "Bamul",
+               "Isagu",
+               "Yagak",
+               "Toda",
+               "Ulo",
+               "Bugdurash",
+               "Rulfi",
+               "Kharyu",
+               "Ghob",
+               "Yotul",
+               "Ghorza",
+               "Lasgh"
+            ]
+         },
+         "surnames": [
+            "Sharamph",
+            "Skullhand",
+            "Warhand",
+            "Axerunner",
+            "Tuskhorn",
+            "Gorebringer",
+            "Fistbleeder",
+            "Redbingder",
+            "Kavlash",
+            "Oroder",
+            "At'Gar",
+            "Trakvar",
+            "Mukmur",
+            "Oko'Tar",
+            "Gruuk",
+            "Mognurron",
+            "Kilul",
+            "Firehorn",
+            "Warhammer",
+            "Deatharm",
+            "Dreamfury",
+            "Skullsong"
+         ]
+      },
+      "wolf": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:kobolds:kobold_wolf"
+            ],
+            "given_names": [
+               "Upear",
+               "Fastpaw",
+               "Brownruff",
+               "Bitey",
+               "Blaze",
+               "Toothy",
+               "Antonio",
+               "Grarghfng",
+               "Growlie",
+               "Puppy",
+               "Yellow",
+               "Ruff",
+               "Barkspawn",
+               "Edwina",
+               "Ember",
+               "Growlkhang",
+               "Jeff",
+               "Dumbrawrrrr",
+               "Cliffy",
+               "Lancer",
+               "Spike",
+               "Toothy"
+            ]
+         },
+         "surnames": [
+            "the Ferocious",
+            "Chases-the-Sky",
+            "Gruffbarker",
+            "the Frothing",
+            "the Intimidating",
+            "the Manic",
+            "the Rabid",
+            "the Fearsome",
+            "the Cuddly",
+            "the Favorite",
+            "Peopleeater",
+            "the Friendly"
+         ]
+      }
+   },
+   "town_pieces": {
+      "optional_prefix": [
+         "Ay"
+      ],
+      "town_name": [
+         "Tak",
+         "Leiv"
+      ],
+      "suffix": [
+         "stuf"
+      ]
+   },
+   "task_groups": {
+      "stonehearth:task_group:restock": "stonehearth:simple_labor"
+   }
+}
