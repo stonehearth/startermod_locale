@@ -4765,7 +4765,7 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "광신자",
-               "description": " 영원히 잠드는 것. 어떻게 생각하십니까?"
+               "description": ""
             }
          },
          "jokester": {
@@ -8581,11 +8581,11 @@
             "window_box_frostsnap_recipe": {
                "description": "프로스트스냅 꽃이 가득한 화분입니다. 창틀 아래에 배치해주세요.",
                "recipe_name": "프로스트스냅 창문 화분",
-               "flavor": "The capstone of an civilized dwelling."
+               "flavor": "문명화된 주택의 최고의 업적"
             },
             "wooden_buckler_recipe": {
-               "description": "Toughen up your foot soldiers... when you can actually equip them in a future alpha!",
-               "recipe_name": "Wooden Buckler"
+               "description": "보병은 강해질 것이다... 앞으로 최고의 장비를 착용할 수 있다면!",
+               "recipe_name": "나무 방패"
             },
             "wooden_diamond_window_recipe": {
                "description": "더욱 세련된 창입니다.",
@@ -8635,7 +8635,7 @@
             "wooden_sign_recipe": {
                "description": "건물을 식별하기 위한 일반적인 표지판입니다.",
                "recipe_name": "벽걸이형 나무 표지판",
-               "flavor": "But if it's *generic*, how will...? NM. (-sdee)"
+               "flavor": "만약 이것이 평범한 것이라면, 어떻게 하실건가요...? 신경쓰지 마세요. "
             },
             "wooden_sign_weaver_recipe": {
                "description": "방직공의 상징이 새겨진 표지판이며 건물에 붙일 수 있습니다.",
@@ -8737,12 +8737,12 @@
             "statue_of_cid_wanderer_recipe": {
                "recipe_name": "시드의 조각상",
                "description": "시드의 말년을 보여준다.",
-               "flavor": "And where Cid wandered, the Church rose up in his footsteps..."
+               "flavor": "시드가 방황하던 곳에서, 그의 발자취를 따라 교회가 세워졌다."
             },
             "poyo_weathervane_recipe": {
                "recipe_name": "풍향계",
                "description": "친근한 느낌을 주는 풍향계다.",
-               "flavor": "TODO"
+               "flavor": "정말 난리다"
             }
          }
       },
@@ -8890,7 +8890,7 @@
             "kibble_recipe": {
                "recipe_name": "키블 제조법",
                "description": "털 많은 친구들을 유혹하기 위해",
-               "flavor": "There is a hole in my heart the shape of a kitten. "
+               "flavor": "키블 모양의 심장이 내 안에 있다."
             }
          },
          "cook_mill": {
