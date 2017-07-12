@@ -8970,32 +8970,32 @@
             },
             "gadget_parts_name": "기어와 부품들",
             "small_turret_recipe": {
-               "description": "After placed, shoots at enemies from a distance. Must be repaired after 20 uses.",
+               "description": "설치 후, 멀리서 적을 향해 쏩니다. 20번 사용 후 반드시 수리해야 합니다.",
                "recipe_name": "터렛"
             },
             "iron_gear_recipe": {
-               "description": "Used to craft intermediate gadgets",
+               "description": "중급 도구를 만드는데 사용됩니다.",
                "recipe_name": "철 기어",
-               "flavor": "Not for use as a throwing star"
+               "flavor": "별을 향해 쏠 순 없습니다."
             },
             "clamp_trap_recipe": {
-               "description": "Damages and shortly stuns enemies that step near it",
+               "description": "가까운 거리의 적에게 데미지를 주고 짧게 기절시킵니다.",
                "recipe_name": "클램프 트랩"
             },
             "ranged_weapons_name": "범위기 무기",
             "traps_name": "방어용 트랩",
             "turnip_shooter_recipe": {
-               "description": "Shoots turnips at enemies from a small distance. Must be repaired after 15 uses.",
+               "description": "짧은 거리의 적에게 순무를 쏩니다. 15번 사용 후 반드시 수리해야 합니다.",
                "recipe_name": "순무 발사기",
-               "flavor": "Don't like the taste of turnips? Don't worry, they're multi-functional."
+               "flavor": "순무가 맛이 없나요? 걱정마세요. 다용도로 사용가능하니까요."
             },
             "critter_trap_recipe": {
-               "description": "Deals a small amount of damage and shortly stuns enemies.",
+               "description": "적에게 낮은 데미지를 주며 기절시킵니다.",
                "recipe_name": "크리터 트랩",
-               "flavor": "A slight annoyance for ogres. A death wish for mice."
+               "flavor": "오거를 약간 짜증내게 할 수 있습니다. 쥐는 죽일 수 있습니다."
             },
             "iron_door_recipe": {
-               "description": "Thick, sturdy iron door. Also comes with a thick, sturdy lock.",
+               "description": "철로 만든 두껍고 튼튼한 문입니다. 또한 두껍고 튼튼한 자물쇠도 함께 딸려있습니다.",
                "recipe_name": "철갑 문"
             },
             "decorations_name": "장식",
