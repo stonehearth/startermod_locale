@@ -143,7 +143,9 @@
             "backpack_tab_name": "Backpack",
             "journal_no_entries": "no entries",
             "retired": "Retired at:",
-            "traits": "Traits"
+            "traits": "Traits",
+            "no_unhappy_thoughts": "No unhappy thoughts so far!",
+            "no_happy_thoughts": "No happy thoughts yet!"
          },
          "pet_character_sheet": {
             "title": "Pet Info",
@@ -158,18 +160,18 @@
          "tutorials": {
             "camera": {
                "camera_pan_title": "To move the camera",
-               "camera_pan_1": "Hold down the space bar, then move the mouse",
-               "camera_pan_2": "Or use the WASD keys",
+               "camera_pan_1": "Hold, then move the mouse",
+               "camera_pan_2": "Or use the keyboard",
                "camera_pan_3": "Or press the mouse wheel and move the mouse",
                "camera_orbit_title": "To rotate the camera",
                "camera_orbit_1": "Right click and drag to rotate the camera",
-               "camera_orbit_2": "Q and E work too",
+               "camera_orbit_2": "Les touches fonctionne aussi",
                "camera_zoom_title": "To zoom in and out",
                "camera_zoom_1": "Use the mouse scroll wheel",
-               "camera_zoom_2": "Or use the + and - keys",
+               "camera_zoom_2": "Or use the keys",
                "camera_follow_title": "To follow a Hearthling",
                "camera_follow_1": "Select the Hearthling you wish to follow",
-               "camera_follow_2": "Press the J key"
+               "camera_follow_2": "Press the key"
             }
          },
          "save_view": {
@@ -486,7 +488,7 @@
                      "display_name": "Place Item",
                      "description": "Place items like furniture and decoration",
                      "tip_title": "Click to place this item",
-                     "tip_description": "Rotate with , and . keys"
+                     "tip_description": "Rotate with [str(left_binding)] and [str(right_binding)] keys"
                   },
                   "cannot_place_item": {
                      "tip_title": "Cannot place this item",
@@ -696,11 +698,11 @@
                "doodad_tip_title": "Click a wall to place the door or window",
                "doodad_tip_description": "Right click to exit",
                "draw_template_title": "Click to build template",
-               "draw_template_description": "Rotate with , and . keys",
+               "draw_template_description": "Rotate with [str(left_binding)] and [str(right_binding)] keys",
                "build_road_tip_title": "Click and drag to build road",
                "build_road_tip_description": "Right click to exit",
                "stairs_tip_title": "Click to place stairs",
-               "stairs_tip_description": "Right click to exit. Rotate with , and . keys"
+               "stairs_tip_description": "Right click to exit. Rotate with [str(left_binding)] and [str(right_binding)] keys"
             },
             "building_cost": {
                "required_item": "Needed Items"
@@ -1131,11 +1133,12 @@
             "title": "Settings",
             "graphics": "Graphics",
             "gameplay": "Gameplay",
+            "controls": "Controls",
             "card": "Display Adapter: ",
             "gfx_cardinfo": "[str(gpuRenderer)] ([str(gpuDriver)])",
             "gfx_enable_shadows": "Enable Shadows",
             "gfx_enable_vsync": "Enable Vertical Sync",
-            "gfx_enable_fullscreen": "Fullscreen (Requires Restart)",
+            "gfx_enable_fullscreen": "Fullscreen",
             "gfx_msaa": "Anti-Aliasing Level",
             "gfx_shadows": "Shadow Detail",
             "gfx_max_lights": "Maximum Number of Lights",
@@ -1164,11 +1167,15 @@
             "enable_lua_jit": "Use Lua JIT (Requires Restart)",
             "send_anon_data": "Send anonymous feedback to help improve Stonehearth!",
             "language_select": "Language",
+            "unsaved_changes_dialog": {
+               "title": "Discard Changes?",
+               "message": "Do you want to discard unsaved changes?"
+            },
             "gameplay_tab": {
                "title": "Gameplay",
                "experimental": "Experimental",
                "experimental_description": "These settings are still under development and may not be stable! Enable at your own risk!",
-               "enable_speed_3": "Enable Game Speed 3 (Requires UI Refresh)",
+               "enable_speed_3": "Enable Game Speed 3",
                "enable_speed_3_note": "Note: Game performance might be slow with larger towns on speed 3. Be warned!",
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Storage filter defaults to None",
@@ -1196,6 +1203,117 @@
                   "message": "The game needs to reload to apply module changes. Reload now?",
                   "accept": "Ok",
                   "cancel": "Cancel"
+               }
+            },
+            "controls_tab": {
+               "key_binding_prompt": "Press Del to unbind",
+               "reset_to_defaults": "Reset to Defaults",
+               "unbound": "unbound",
+               "conflict_dialog": {
+                  "title": "Binding Conflict",
+                  "message": "\"<strong>[str(combo)]</strong>\" is already used by [str(conflicts)].",
+                  "choice_replace": "Unbind Existing",
+                  "choice_keep": "Keep All",
+                  "choice_cancel": "Cancel"
+               },
+               "key_category_names": {
+                  "other": "Other",
+                  "camera": "Camera",
+                  "vision": "Vision",
+                  "speed": "Speed",
+                  "menus": "Menus",
+                  "harvest": "Tools",
+                  "zone": "Zoning",
+                  "build": "Building",
+                  "craft": "Crafting",
+                  "fight": "Combat",
+                  "ui": "User Interface",
+                  "debug": "Debug"
+               },
+               "key_binding_names": {
+                  "cam_drag": "Drag Camera",
+                  "cam_home": "Recenter Camera",
+                  "cam_pan_fwrd": "Pan Camera Up",
+                  "cam_pan_back": "Pan Camera Down",
+                  "cam_pan_left": "Pan Camera Left",
+                  "cam_pan_right": "Pan Camera Right",
+                  "cam_orb_left": "Rotate Camera Left",
+                  "cam_orb_right": "Rotate Camera Right",
+                  "cam_orb_up": "Rotate Camera Up",
+                  "cam_orb_down": "Rotate Camera Down",
+                  "cam_zoom_in": "Zoom In",
+                  "cam_zoom_out": "Zoom Out",
+                  "cam_follow": "Follow Camera",
+                  "vision_building_toggle": "Switch Building Vision",
+                  "vision_xray_toggle": "Toggle Terrain X-Ray Vision",
+                  "vision_slice_toggle": "Toggle Terrain Slice Vision",
+                  "vision_slice_up": "Terrain Slice Up",
+                  "vision_slice_down": "Terrain Slice Down",
+                  "speed_pause": "Pause",
+                  "speed_toggle_pause": "Toggle Pause",
+                  "speed_play": "Normal Speed",
+                  "speed_ff": "Double Speed",
+                  "speed_three": "Super Speed",
+                  "town_overview": "Town Info Menu",
+                  "citizen_manager": "Citizens Menu",
+                  "harvest_menu": "Harvest Menu",
+                  "harvest_harvest": "Harvest Tool",
+                  "harvest_mine": "Mine Tool",
+                  "harvest_mine_block": "Mine Block Tool",
+                  "harvest_cancel": "Cancel Task Tool",
+                  "harvest_loot": "Loot Tool",
+                  "harvest_clear": "Clear Tool",
+                  "zone_menu": "Zone Menu",
+                  "zone_stockpile": "Stockpile Tool",
+                  "zone_farm": "Farm Tool",
+                  "zone_trapping": "Trapping Zone Tool",
+                  "zone_pasture": "Pasture Tool",
+                  "build_menu": "Build Menu",
+                  "build_template": "Place Building",
+                  "build_custom": "Design Building",
+                  "build_place": "Place Item",
+                  "build_ladder": "Build Ladder",
+                  "build_rotate_left": "Rotate Item Left",
+                  "build_rotate_right": "Rotate Item Right",
+                  "craft_menu": "Crafting Menu",
+                  "craft_carpenter": "Carpenter Menu",
+                  "craft_weaver": "Weaver Menu",
+                  "craft_mason": "Mason Menu",
+                  "craft_blacksmith": "Blacksmith Menu",
+                  "craft_cook": "Cook Menu",
+                  "craft_potter": "Potter Menu",
+                  "craft_herbalist": "Herbalist Menu",
+                  "craft_engineer": "Engineer Menu",
+                  "fight_menu": "Fight Menu",
+                  "fight_alert": "Town Alert",
+                  "fight_party_1": "Combat Party 1",
+                  "fight_party_2": "Combat Party 2",
+                  "fight_party_3": "Combat Party 3",
+                  "fight_party_4": "Combat Party 4",
+                  "bulletin_manager": "Notifications Menu",
+                  "ui_quicksave": "Quick Save",
+                  "ui_quickload": "Quick Load",
+                  "ui_refresh": "Refresh",
+                  "toggle_fullscreen": "Toggle Fullscreen",
+                  "toggle": "Toggle UI",
+                  "ui_print_screen": "Take Screenshot",
+                  "debug_console": "Stonehearth Console",
+                  "debug_navgrid": "Show/Hide Navgrid",
+                  "debug_navgrid_water_tight": "Show/Hide Watertight Navgrid",
+                  "debug_lifetime_tracking": "Toggle Lifetime Tracking",
+                  "debug_toggle_step_paths": "Step Pathfinder Service",
+                  "debug_step_topology": "Step Topology Service",
+                  "debug_reload": "Save & Reload",
+                  "debug_toggle_save_stress_test": "Toggle Save Stress Test",
+                  "debug_toggle_debug_nodes": "Toggle Debug Nodes",
+                  "debug_toggle_perfhud": "Toggle Perf HUD",
+                  "debug_toggle_flame_graph": "Toggle Flame Graph",
+                  "debug_switch_debug_shapes": "Switch Debug Shapes View",
+                  "debug_crash": "Force Crash",
+                  "debug_toggle_cpu_profiler": "Toggle Lua Profiler",
+                  "debug_render_show_stats": "Show Rendering Stats",
+                  "debug_render_debug_view": "Renderer Debug View",
+                  "debug_show_terrain_coordinates": "Show Terrain Coordinates"
                }
             }
          },
@@ -4803,6 +4921,30 @@
                "display_name": "Opinionated",
                "description": "[name(i18n_data.entity)] has an opinion on everything, and isn't shy about sharing it."
             }
+         },
+         "magnificent_beard": {
+            "magnificent_beard_trait": {
+               "display_name": "Magnificent Beard",
+               "description": "This hearthling has a truly magnificent beard."
+            }
+         },
+         "stoic": {
+            "stoic_trait": {
+               "display_name": "Stoic",
+               "description": "Due to their even temperament, it takes a lot to make this Hearthling happy or sad."
+            }
+         },
+         "gourmand": {
+            "gourmand_trait": {
+               "display_name": "Gourmand",
+               "description": "Only the tastiest of foods are welcome to [name(i18n_data.entity)]'s palate. They benefit more from tasty and cooked food, but become more unhappy when their food is raw and bland."
+            }
+         },
+         "goat": {
+            "goat_trait": {
+               "display_name": "Goat",
+               "description": "[name(i18n_data.entity)] will basically eat anything presented to them. They are not picky at all, sometimes to the disgust of those around them."
+            }
          }
       },
       "happiness": {
@@ -4882,13 +5024,17 @@
                   "display_name": "Slept in a shared room",
                   "tooltip": "I'm sharing my room with someone else right now. I could use a little more privacy."
                },
+               "well_rested": {
+                  "display_name": "Well rested",
+                  "tooltip": "Ahh, sleeping in my own bed without hearing other people snoring always leaves me refreshed."
+               },                             
                "slept_outside": {
                   "display_name": "Slept outside",
                   "tooltip": "I wish I had some shelter and protection from the elements."
                },
                "slept_in_comfy_bed": {
                   "display_name": "Slept in a comfy bed",
-                  "tooltip": "My bed is really comfortable. I felt refreshed when I woke up!"
+                  "tooltip": "My bed is really comfortable. I almost didn't want to leave it!"
                }
             },
             "eating": {
@@ -4903,6 +5049,14 @@
                "carnivore_ate_veggies": {
                   "display_name": "I ate a plant! Bleh!",
                   "tooltip": "There's been a mistake.  I've accidentally eaten food that my food eats."
+               },
+               "offended_palate": {
+                  "display_name": "Offended Palate",
+                  "tooltip": "Bleh, I hate eating stuff like [str(foodname)]. There's just no \"zazz\" to it!"
+               },
+               "pleased_palate": {
+                  "display_name": "Pleased Palate",
+                  "tooltip": "Mmm, my my. I really should tell the others how good [str(foodname)] was today!"
                },
                "ate_fine": {
                   "display_name": "Ate a fine meal",
@@ -5014,6 +5168,10 @@
                   "discouraged": {
                      "display_name": "Discouraged",
                      "tooltip": "Sheesh, [str(target_name)] is no fun when they're in a bad mood."
+                  },
+                  "deeper_understanding": {
+                     "display_name": "A deeper understanding",
+                     "tooltip": "[str(target_name)] really has his priorities straight."
                   }
                },
                "gregarious": {
@@ -5049,6 +5207,18 @@
                      "everyone_happier": {
                         "display_name": "Everyone seems happier",
                         "tooltip": "Everyone else seems to be in a better mood than me. Maybe I should look at things differently."
+                     }
+                  }
+               },
+               "goat": {
+                  "values": {
+                     "ate_not_bad_food": {
+                        "display_name": "Mmm, not bad",
+                        "tooltip": "My [str(foodname)] today was a little tasty, but didn't seem that different from what I normally eat."
+                     },
+                     "ate_some_food": {
+                        "display_name": "Ate some food",
+                        "tooltip": "I had some [str(foodname)] today. It was alright, but I don't see what the big deal is."
                      }
                   }
                }
@@ -9668,17 +9838,7 @@
          },
          "snare_trap": {
             "display_name": "Snare Trap",
-            "description": "Safely immobilizes its prey",
-            "commands": {
-               "harvest_trapped_beast": {
-                  "display_name": "Harvest Beast",
-                  "description": "Slay the trapped beast and harvest him for materials!"
-               },
-               "tame_trapped_beast": {
-                  "display_name": "Tame Beast",
-                  "description": "Make friends! Befriend the trapped beast and make it your pet."
-               }
-            }
+            "description": "Safely immobilizes its prey"
          },
          "trapper_buffs": {
             "speed_1_buff": {

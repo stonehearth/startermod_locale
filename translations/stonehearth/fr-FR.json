@@ -143,7 +143,9 @@
             "backpack_tab_name": "Sac à dos",
             "journal_no_entries": "Aucune note",
             "retired": "Mort le :",
-            "traits": "Traits"
+            "traits": "Traits",
+            "no_unhappy_thoughts": "Pas de pensées malheureuses à ce jour !",
+            "no_happy_thoughts": "Pas encore de pensées heureuses !"
          },
          "pet_character_sheet": {
             "title": "Informations du familier",
@@ -158,18 +160,18 @@
          "tutorials": {
             "camera": {
                "camera_pan_title": "Pour déplacer la caméra",
-               "camera_pan_1": "Gardez la touche espace enfoncée, et déplacez votre souris",
-               "camera_pan_2": "Ou utilisez les touches WASD",
+               "camera_pan_1": "Tenez, puis déplacez la souris",
+               "camera_pan_2": "Ou utilisez le clavier",
                "camera_pan_3": "Ou maintenez la molette de la souris enfoncée et déplacez la souris",
                "camera_orbit_title": "Pour orienter la caméra",
                "camera_orbit_1": "Cliquez droit et déplacez pour orienter la caméra",
                "camera_orbit_2": "Q et E fonctionnent aussi",
                "camera_zoom_title": "Pour zoomer et dézoomer",
                "camera_zoom_1": "Utilisez la molette de la souris",
-               "camera_zoom_2": "Ou utilisez les touches + et - ",
+               "camera_zoom_2": "Ou utilisez les touches",
                "camera_follow_title": "Suivre un Hearthling",
                "camera_follow_1": "Sélectionnez le Hearthling que vous souhaitez suivre",
-               "camera_follow_2": "Appuyer sur la touche J"
+               "camera_follow_2": "Appuyer sur la touche"
             }
          },
          "save_view": {
@@ -486,7 +488,7 @@
                      "display_name": "Placer un objet",
                      "description": "Placez un objet comme un meuble<br>ou une décoration.",
                      "tip_title": "Cliquez pour placer cet objet",
-                     "tip_description": "Faire une rotation avec les touches , et ."
+                     "tip_description": "Tournez avec les touches [str(left_binding)] et [str(right_binding)]"
                   },
                   "cannot_place_item": {
                      "tip_title": "Vous ne pouvez pas placer cet article",
@@ -696,11 +698,11 @@
                "doodad_tip_title": "Cliquez sur un mur pour placer une fenêtre.",
                "doodad_tip_description": "Clique droit pour sortir",
                "draw_template_title": "Cliquez pour positionner un plan.",
-               "draw_template_description": "Faire une rotation avec les touches , et .",
+               "draw_template_description": "Tournez avec les touches [str(left_binding)] et [str(right_binding)]",
                "build_road_tip_title": "Cliquez et tirez pour construire une route.",
                "build_road_tip_description": "Clique droit pour sortir",
                "stairs_tip_title": "Cliquez pour placer les escaliers",
-               "stairs_tip_description": "Faites un clic droit pour quitter. Tourner avec les touches , et . "
+               "stairs_tip_description": "Faites un clic droit pour quitter. Tournez avec les touches [str(left_binding)] et [str(right_binding)]"
             },
             "building_cost": {
                "required_item": "Eléments nécessaires"
@@ -1131,11 +1133,12 @@
             "title": "Préférences",
             "graphics": "Graphismes",
             "gameplay": "Jouabilité",
+            "controls": "Contrôles",
             "card": "Carte graphique : ",
             "gfx_cardinfo": "[str(gpuRenderer)] ([str(gpuDriver)])",
             "gfx_enable_shadows": "Activer les ombres",
             "gfx_enable_vsync": "Activer la synchronisation verticale",
-            "gfx_enable_fullscreen": "Plein écran (redémarrage requis)",
+            "gfx_enable_fullscreen": "Plein écran",
             "gfx_msaa": "Niveau de l'anticrénelage",
             "gfx_shadows": "Qualité des ombres",
             "gfx_max_lights": "Nombre maximum de sources lumineuses",
@@ -1164,11 +1167,15 @@
             "enable_lua_jit": "Utiliser Lua JIT (redémarrage requis)",
             "send_anon_data": "Envoyer des données anonymes pour améliorer Stonehearth !",
             "language_select": "Langue",
+            "unsaved_changes_dialog": {
+               "title": "Annuler les modifications ?",
+               "message": "Voulez-vous supprimer les modifications non enregistrées ?"
+            },
             "gameplay_tab": {
                "title": "Gameplay",
                "experimental": "Expérimental",
                "experimental_description": "Ces paramètres sont en cours de développement et peuvent ne pas être stable ! Activer à vos propres risques !",
-               "enable_speed_3": "Activer la vitesse x3 (Demande un rafraîchissement de l'interface)",
+               "enable_speed_3": "Activer la vitesse x3",
                "enable_speed_3_note": "Une baisse de performances peut être rencontrée avec de grands villages en vitesse x3. On vous aura prévenu !",
                "enable_speed_3_description": "Ajoute une nouvelle option de vitesse dans le panneau en bas à droite qui fera fonctionner le jeu à la vitesse 4x !",
                "default_storage_filter_none": "Désactiver les filtres de stockage par défaut",
@@ -1196,6 +1203,117 @@
                   "message": "Le jeu a besoin d'être rechargé pour appliquer les modifications du module. Recharger maintenant ?",
                   "accept": "Ok",
                   "cancel": "Annuler"
+               }
+            },
+            "controls_tab": {
+               "key_binding_prompt": "Appuyez sur Del(Suppr) pour détacher",
+               "reset_to_defaults": "Réinitialiser les paramètres par défaut",
+               "unbound": "non lié",
+               "conflict_dialog": {
+                  "title": "Conflit contraignant",
+                  "message": "\"<strong>[str(combo)]</strong>\" est déjà utilisé par [str(conflicts)].",
+                  "choice_replace": "Délié existant",
+                  "choice_keep": "Garde tout",
+                  "choice_cancel": "Annuler"
+               },
+               "key_category_names": {
+                  "other": "Autre",
+                  "camera": "Caméra",
+                  "vision": "Vision",
+                  "speed": "Rapidité",
+                  "menus": "Menus",
+                  "harvest": "Outils",
+                  "zone": "Zonage",
+                  "build": "Construction",
+                  "craft": "Artisanat",
+                  "fight": "Combat",
+                  "ui": "Interface utilisateur",
+                  "debug": "Debug"
+               },
+               "key_binding_names": {
+                  "cam_drag": "Glisser la caméra",
+                  "cam_home": "Recentrer la Camera",
+                  "cam_pan_fwrd": "Pan Caméra vers le Haut",
+                  "cam_pan_back": "Pan Caméra vers le Bas",
+                  "cam_pan_left": "Pan Caméra vers la Gauche",
+                  "cam_pan_right": "Pan Caméra vers la Droite",
+                  "cam_orb_left": "Rotation Caméra vers la Gauche",
+                  "cam_orb_right": "Rotation Caméra vers la Droite",
+                  "cam_orb_up": "Rotation Caméra vers le Haut",
+                  "cam_orb_down": "Rotation Caméra vers le Bas",
+                  "cam_zoom_in": "Zoomer",
+                  "cam_zoom_out": "Dézoomer",
+                  "cam_follow": "Suivre la caméra",
+                  "vision_building_toggle": "Changer à la vision du bâtiment",
+                  "vision_xray_toggle": "Basculer en vision Rayon X du terrain",
+                  "vision_slice_toggle": "Basculer en vison de tranche du terrain",
+                  "vision_slice_up": "Terrain coupé vers le haut",
+                  "vision_slice_down": "Terrain coupé vers le bas",
+                  "speed_pause": "Pause",
+                  "speed_toggle_pause": "Basculer en pause",
+                  "speed_play": "Rapidité Normal",
+                  "speed_ff": "Rapidité Doublé",
+                  "speed_three": "Rapidité Triplé",
+                  "town_overview": "Menu info de la ville",
+                  "citizen_manager": "Menu des citoyens",
+                  "harvest_menu": "Menu des récoltes",
+                  "harvest_harvest": "Outil de récolte",
+                  "harvest_mine": "Outil de minage",
+                  "harvest_mine_block": "Outil de blocage des mines",
+                  "harvest_cancel": "Annuler la tache d'outil",
+                  "harvest_loot": "Outil de butin",
+                  "harvest_clear": "Outil de nettoyage",
+                  "zone_menu": "Menu Zone",
+                  "zone_stockpile": "Outil de stockage",
+                  "zone_farm": "Outil de ferme",
+                  "zone_trapping": "Outil de zone de piégeage",
+                  "zone_pasture": "Outil de pâturage",
+                  "build_menu": "Menu de construction",
+                  "build_template": "Lieu de construction",
+                  "build_custom": "Bâtiment de conception",
+                  "build_place": "Placez l'article",
+                  "build_ladder": "Échelle de construction",
+                  "build_rotate_left": "Tourner l'objet à gauche",
+                  "build_rotate_right": "Tourner l'objet à droite",
+                  "craft_menu": "Menu d'artisanat",
+                  "craft_carpenter": "Menu de charpentier",
+                  "craft_weaver": "Menu de tisserand",
+                  "craft_mason": "Menu de maçon",
+                  "craft_blacksmith": "Menu de forgeron",
+                  "craft_cook": "Menu de cuisinier",
+                  "craft_potter": "Menu de potier",
+                  "craft_herbalist": "Menu d'herbaliste",
+                  "craft_engineer": "Menu d'ingénieur",
+                  "fight_menu": "Menu de combat",
+                  "fight_alert": "Alerte de la ville",
+                  "fight_party_1": "Combat partie 1",
+                  "fight_party_2": "Combat partie 2",
+                  "fight_party_3": "Combat partie 3",
+                  "fight_party_4": "Combat partie 4",
+                  "bulletin_manager": "Menu des notifications",
+                  "ui_quicksave": "Sauvegarde rapide",
+                  "ui_quickload": "Chargement rapide",
+                  "ui_refresh": "Rafraîchir",
+                  "toggle_fullscreen": "Basculer en plein écran",
+                  "toggle": "Basculer l'IU",
+                  "ui_print_screen": "Prendre un Screenshot",
+                  "debug_console": "Console Stonehearth",
+                  "debug_navgrid": "Montrer/Cacher Navgrid",
+                  "debug_navgrid_water_tight": "Montrer/Cacher Watertight Navgrid",
+                  "debug_lifetime_tracking": "Basculer le suivi de durée de vie",
+                  "debug_toggle_step_paths": "Service de recherche par étapes",
+                  "debug_step_topology": "Service de topologie échelonnée",
+                  "debug_reload": "Sauvegarder & Recharger",
+                  "debug_toggle_save_stress_test": "Basculer la sauvegarde du test de stress",
+                  "debug_toggle_debug_nodes": "Basculer les noeuds de débogage",
+                  "debug_toggle_perfhud": "Basculer le perf HUD",
+                  "debug_toggle_flame_graph": "Basculer le graphique de la flamme",
+                  "debug_switch_debug_shapes": "Affichage des formes de débogage du commutateur",
+                  "debug_crash": "Forcer le crash",
+                  "debug_toggle_cpu_profiler": "Basculer sur le Lua Profiler",
+                  "debug_render_show_stats": "Afficher les statistiques de rendu",
+                  "debug_render_debug_view": "Vue de débogage du rendu",
+                  "debug_show_terrain_coordinates": "Afficher les coordonnées du terrain"
                }
             }
          },
@@ -4803,6 +4921,30 @@
                "display_name": "Dogmatique",
                "description": "[name(i18n_data.entity)] a une opinion sur tout, et il n'est pas timide de le partager."
             }
+         },
+         "magnificent_beard": {
+            "magnificent_beard_trait": {
+               "display_name": "Magnifique barbe",
+               "description": "Ce hearthling a une barbe vraiment magnifique."
+            }
+         },
+         "stoic": {
+            "stoic_trait": {
+               "display_name": "Stoïque",
+               "description": "En raison de leur tempérament uniforme, il faut beaucoup de choses pour rendre ce foyer heureux ou triste."
+            }
+         },
+         "gourmand": {
+            "gourmand_trait": {
+               "display_name": "Gourmand",
+               "description": "Seuls les aliments les plus savoureux sont les bienvenus à leur palais [name(i18n_data.entity)]. Ils profitent davantage de la nourriture savoureuse et cuit, mais deviennent plus malheureux quand leur nourriture est crue et fade."
+            }
+         },
+         "goat": {
+            "goat_trait": {
+               "display_name": "Chèvre",
+               "description": "[name(i18n_data.entity)] mangera essentiellement tout ce qui leur est présenté. Ils ne sont pas difficiles, parfois au dégoût de ceux qui les entourent."
+            }
          }
       },
       "happiness": {
@@ -4882,13 +5024,17 @@
                   "display_name": "Couché dans une chambre partagée",
                   "tooltip": "Je partage ma chambre avec quelqu'un d'autre en ce moment. J'aimerais avoir un peu plus d'intimité."
                },
+               "well_rested": {
+                  "display_name": "Bien reposé",
+                  "tooltip": "Ahh, dormir dans mon lit sans entendre le ronflement d'autres personnes, me laisse toujours très frais."
+               },   
                "slept_outside": {
                   "display_name": "Couché à l'extérieur",
                   "tooltip": "Je voudrais avoir un abri et une protection contre les éléments."
                },
                "slept_in_comfy_bed": {
                   "display_name": "Dormi dans un lit confortable",
-                  "tooltip": "Mon lit est vraiment confortable. Je me suis senti rafraîchi à mon réveille !"
+                  "tooltip": "Mon lit est vraiment confortable. Je ne voulais presque pas le laisser !"
                }
             },
             "eating": {
@@ -4903,6 +5049,14 @@
                "carnivore_ate_veggies": {
                   "display_name": "J'ai mangé une plante ! Beurk !",
                   "tooltip": "Il y a eu une erreur. J'ai accidentellement mangé la nourriture que ma nourriture mange."
+               },
+               "offended_palate": {
+                  "display_name": "Palais offensé",
+                  "tooltip": "Beurk, je déteste manger des choses comme [str(foodname)]. Il n'y a rien à faire !"
+               },
+               "pleased_palate": {
+                  "display_name": "Palais heureux",
+                  "tooltip": "Mmm, miam miam. Je devrais vraiment dire aux autres comment [str(foodname)] était bon aujourd'hui !"
                },
                "ate_fine": {
                   "display_name": "A mangé un bon repas",
@@ -5014,6 +5168,10 @@
                   "discouraged": {
                      "display_name": "Découragé",
                      "tooltip": "Beuhh, [str(target_name)] n'est pas amusant quand ils sont de mauvaise humeur."
+                  },
+                  "deeper_understanding": {
+                     "display_name": "Une compréhension plus profonde",
+                     "tooltip": "[str(target_name)] a vraiment ces ordres de priorités."
                   }
                },
                "gregarious": {
@@ -5049,6 +5207,18 @@
                      "everyone_happier": {
                         "display_name": "Tout le monde semble plus heureux",
                         "tooltip": "Tout le monde semble être dans une meilleure ambiance que moi. Peut-être devrais-je regarder les choses différemment."
+                     }
+                  }
+               },
+               "goat": {
+                  "values": {
+                     "ate_not_bad_food": {
+                        "display_name": "Mmm, pas mauvais",
+                        "tooltip": "Mes [str(foodname)] aujourd'hui étaient bon, mais ne semblaient pas différentes de ce que je mange normalement."
+                     },
+                     "ate_some_food": {
+                        "display_name": "A mangé de la nourriture",
+                        "tooltip": "J'avais quelques [str(foodname)] aujourd'hui. C'était bien, mais ce n'était pas un festin."
                      }
                   }
                }
@@ -9668,17 +9838,7 @@
          },
          "snare_trap": {
             "display_name": "Piège en cage",
-            "description": "Immobilise de manière sûre sa proie.",
-            "commands": {
-               "harvest_trapped_beast": {
-                  "display_name": "Braconnage",
-                  "description": "Ou comment bien sacrifier l'animal capturé pour ses ressources."
-               },
-               "tame_trapped_beast": {
-                  "display_name": "Apprivoiser",
-                  "description": "Méthode pour se faire des amis! Faites de la bête capturée une peluche vivante."
-               }
-            }
+            "description": "Immobilise de manière sûre sa proie."
          },
          "trapper_buffs": {
             "speed_1_buff": {
