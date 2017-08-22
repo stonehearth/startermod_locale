@@ -165,7 +165,7 @@
                "camera_pan_3": "Or press the mouse wheel and move the mouse",
                "camera_orbit_title": "To rotate the camera",
                "camera_orbit_1": "Right click and drag to rotate the camera",
-               "camera_orbit_2": "Les touches fonctionne aussi",
+               "camera_orbit_2": "Keys works too",
                "camera_zoom_title": "To zoom in and out",
                "camera_zoom_1": "Use the mouse scroll wheel",
                "camera_zoom_2": "Or use the keys",
@@ -1407,7 +1407,7 @@
          },
          "error_dialog_js": {
             "title": "UI Error",
-            "reset_hint": "Press F5 to Reset the UI.",
+            "reset_button": "Reload UI",
             "copy_button": "Copy to Clipboard"
          }
       },
@@ -4937,13 +4937,13 @@
          "gourmand": {
             "gourmand_trait": {
                "display_name": "Gourmand",
-               "description": "Only the tastiest of foods are welcome to [name(i18n_data.entity)]'s palate. They benefit more from tasty and cooked food, but become more unhappy when their food is raw and bland."
+               "description": "Only the tastiest of foods are welcome to [name(i18n_data.entity)]'s palate. They become happy when they eat higher quality food, but low quality meals are quite distasteful."
             }
          },
          "goat": {
             "goat_trait": {
                "display_name": "Goat",
-               "description": "[name(i18n_data.entity)] will basically eat anything presented to them. They are not picky at all, sometimes to the disgust of those around them."
+               "description": "[name(i18n_data.entity)] will basically eat anything. They are not picky at all, sometimes to the disgust of those around them."
             }
          }
       },
@@ -5027,7 +5027,7 @@
                "well_rested": {
                   "display_name": "Well rested",
                   "tooltip": "Ahh, sleeping in my own bed without hearing other people snoring always leaves me refreshed."
-               },                             
+               },
                "slept_outside": {
                   "display_name": "Slept outside",
                   "tooltip": "I wish I had some shelter and protection from the elements."
@@ -5232,6 +5232,10 @@
                   "pet_died": {
                      "display_name": "My pet died",
                      "tooltip": "My poor [str(pet_name)] passed away recently. I'll miss them quite a bit."
+                  },
+                  "saved_from_mortal_wounds": {
+                     "display_name": "Saved from mortal wounds",
+                     "tooltip": "I would have died back there were it not for those around me! I'm grateful for this second chance."
                   }
                }
             },
@@ -5274,6 +5278,73 @@
                      }
                   }
                }
+            }  
+         }
+      },
+      "hotkeys": {
+         "keys": {
+            "build_roof": {
+               "display_name": "Roof Tool"
+            },
+            "build_slab": {
+               "display_name": "Slab Tool"
+            },
+            "build_erase": {
+               "display_name": "Erase Tool"
+            },
+            "ui_character": {
+               "display_name": "Character Sheet"
+            },
+            "fight_move": {
+               "display_name": "Move to Location"
+            },
+            "ui_move_place_item": {
+               "display_name": "Move/Place Item"
+            },
+            "fight_cancelOrders": {
+               "display_name": "Cancel Combat Order"
+            },
+            "build_wall": {
+               "display_name": "Free Standing Wall Tool"
+            },
+            "fight_defend": {
+               "display_name": "Defend Location"
+            },
+            "build_floor_grow": {
+               "display_name": "Floor Tool"
+            },
+            "build_decoration": {
+               "display_name": "Decoration Tool"
+            },
+            "build_furniture": {
+               "display_name": "Furniture Tool"
+            },
+            "build_stair": {
+               "display_name": "Stair Tool"
+            },
+            "build_window": {
+               "display_name": "Window Tool"
+            },
+            "build_floor": {
+               "display_name": "Foundation Tool"
+            },
+            "build_road": {
+               "display_name": "Road Tool"
+            },
+            "build_door": {
+               "display_name": "Door Tool"
+            },
+            "build_wall_grow": {
+               "display_name": "Wall Tool"
+            },
+            "fight_attack": {
+               "display_name": "Attack Move"
+            },
+            "ui_notification_popup": {
+               "display_name": "Open Notification Popup"
+            },
+            "ui_undeploy_item": {
+               "display_name": "Undeploy Item"
             }
          }
       }

@@ -165,7 +165,7 @@
                "camera_pan_3": "Ou maintenez la molette de la souris enfoncée et déplacez la souris",
                "camera_orbit_title": "Pour orienter la caméra",
                "camera_orbit_1": "Cliquez droit et déplacez pour orienter la caméra",
-               "camera_orbit_2": "Q et E fonctionnent aussi",
+               "camera_orbit_2": "Les touches fonctionnent aussi",
                "camera_zoom_title": "Pour zoomer et dézoomer",
                "camera_zoom_1": "Utilisez la molette de la souris",
                "camera_zoom_2": "Ou utilisez les touches",
@@ -1407,7 +1407,7 @@
          },
          "error_dialog_js": {
             "title": "Erreur d'IU",
-            "reset_hint": "Appuyez sur F5 pour relancer l'IU",
+            "reset_button": "Recharge l'IU",
             "copy_button": "Copier dans le presse-papier"
          }
       },
@@ -4937,13 +4937,13 @@
          "gourmand": {
             "gourmand_trait": {
                "display_name": "Gourmand",
-               "description": "Seuls les aliments les plus savoureux sont les bienvenus à leur palais [name(i18n_data.entity)]. Ils profitent davantage de la nourriture savoureuse et cuit, mais deviennent plus malheureux quand leur nourriture est crue et fade."
+               "description": "Seuls les aliments les plus savoureux sont les bienvenus à leur palais [name(i18n_data.entity)]. Ils deviennent heureux quand ils mangent des aliments de meilleure qualité, mais les viandes de mauvaise qualité sont plutôt désagréables."
             }
          },
          "goat": {
             "goat_trait": {
                "display_name": "Chèvre",
-               "description": "[name(i18n_data.entity)] mangera essentiellement tout ce qui leur est présenté. Ils ne sont pas difficiles, parfois au dégoût de ceux qui les entourent."
+               "description": "[name(i18n_data.entity)] mangera essentiellement tout. Ils ne sont pas difficiles, parfois au dégoût de ceux qui les entourent."
             }
          }
       },
@@ -5027,7 +5027,7 @@
                "well_rested": {
                   "display_name": "Bien reposé",
                   "tooltip": "Ahh, dormir dans mon lit sans entendre le ronflement d'autres personnes, me laisse toujours très frais."
-               },   
+               },
                "slept_outside": {
                   "display_name": "Couché à l'extérieur",
                   "tooltip": "Je voudrais avoir un abri et une protection contre les éléments."
@@ -5232,6 +5232,10 @@
                   "pet_died": {
                      "display_name": "Mon animal est mort",
                      "tooltip": "Mon pauvre [str(pet_name)] est décédé récemment. Il va me manquer."
+                  },
+                  "saved_from_mortal_wounds": {
+                     "display_name": "Sauvés des blessures mortelles",
+                     "tooltip": "Je serais mort en retour, il n'y avait pas pour ceux qui m'entouraient ! Je suis reconnaissant pour cette deuxième chance."
                   }
                }
             },
@@ -5274,6 +5278,73 @@
                      }
                   }
                }
+            }
+         }
+      },
+      "hotkeys": {
+         "keys": {
+            "build_roof": {
+               "display_name": "Outil de toit"
+            },
+            "build_slab": {
+               "display_name": "Outil de dalle"
+            },
+            "build_erase": {
+               "display_name": "Effacer l'outil"
+            },
+            "ui_character": {
+               "display_name": "Feuille de personnage"
+            },
+            "fight_move": {
+               "display_name": "Passer à l'emplacement"
+            },
+            "ui_move_place_item": {
+               "display_name": "Déplacer / placer l'élément"
+            },
+            "fight_cancelOrders": {
+               "display_name": "Annuler commande de combat"
+            },
+            "build_wall": {
+               "display_name": "Outil de mur libre"
+            },
+            "fight_defend": {
+               "display_name": "Défendre l'emplacement"
+            },
+            "build_floor_grow": {
+               "display_name": "Outil de plancher"
+            },
+            "build_decoration": {
+               "display_name": "Outil de décoration"
+            },
+            "build_furniture": {
+               "display_name": "Outil de meuble"
+            },
+            "build_stair": {
+               "display_name": "Outil d'escalier"
+            },
+            "build_window": {
+               "display_name": "Outil de fenêtre"
+            },
+            "build_floor": {
+               "display_name": "Outil de fondation"
+            },
+            "build_road": {
+               "display_name": "Outil routier"
+            },
+            "build_door": {
+               "display_name": "Outil de porte"
+            },
+            "build_wall_grow": {
+               "display_name": "Outil mural"
+            },
+            "fight_attack": {
+               "display_name": "Déplacement d'attaque"
+            },
+            "ui_notification_popup": {
+               "display_name": "Popup de notification ouverte"
+            },
+            "ui_undeploy_item": {
+               "display_name": "Déployer l'objet"
             }
          }
       }
