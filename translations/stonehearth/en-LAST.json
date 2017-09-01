@@ -144,6 +144,9 @@
             "journal_no_entries": "no entries",
             "retired": "Retired at:",
             "traits": "Traits",
+            "above": "above",
+            "below": "below",
+            "currently": "Currently:",
             "no_unhappy_thoughts": "No unhappy thoughts so far!",
             "no_happy_thoughts": "No happy thoughts yet!"
          },
@@ -1534,23 +1537,28 @@
             },
             "content": {
                "display_name": "Content",
-               "town_description": "Your citizens are satisfied with the way things have been going."
+               "town_description": "Your citizens are generally satisfied with how things are.",
+               "description": "Nothing good, nothing bad."
             },
             "jubilant": {
                "display_name": "Jubilant",
-               "town_description": "Your citizens are incredibly happy living here!"
+               "town_description": "Your citizens are incredibly happy living here!",
+               "description": "Movement speed is increased by 10%."
             },
             "forlorn": {
                "display_name": "Forlorn",
-               "town_description": "Your citizens have been having an incredibly hard time lately."
+               "town_description": "Your citizens have been having an really hard time lately.",
+               "description": "Movement speed is reduced by 10%."
             },
             "merry": {
                "display_name": "Merry",
-               "town_description": "Your citizens are generally happy."
+               "town_description": "Your citizens are pretty happy on the whole.",
+               "description": "Movement speed is increased by 5%."
             },
             "glum": {
                "display_name": "Glum",
-               "town_description": "Your citizens aren't feeling great, overall."
+               "town_description": "Your citizens aren't feeling great, overall.",
+               "description": "Movement speed is reduced by 5%."
             },
             "exp_bar": {
                "description": "This hearthling's progress to next level."
@@ -5278,7 +5286,7 @@
                      }
                   }
                }
-            }  
+            }
          }
       },
       "hotkeys": {

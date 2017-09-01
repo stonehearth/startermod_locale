@@ -144,6 +144,9 @@
             "journal_no_entries": "Aucune note",
             "retired": "Mort le :",
             "traits": "Traits",
+            "above": "Au dessus",
+            "below": "Au dessous de",
+            "currently": "Actuellement:",
             "no_unhappy_thoughts": "Pas de pensées malheureuses à ce jour !",
             "no_happy_thoughts": "Pas encore de pensées heureuses !"
          },
@@ -1534,23 +1537,28 @@
             },
             "content": {
                "display_name": "Satisfait",
-               "town_description": "Vos hearthlings sont satisfaits de la façon dont les choses se sont passées."
+               "town_description": "Vos hearthlings sont généralement satisfaits de la façon dont ils sont.",
+               "description": "Rien de bon, rien de mal."
             },
             "jubilant": {
                "display_name": "Heureux",
-               "town_description": "Vos hearthlings sont incroyablement heureux de vivre ici !"
+               "town_description": "Vos hearthlings sont incroyablement heureux de vivre ici !",
+               "description": "La vitesse de déplacement est augmenté de 10%."
             },
             "forlorn": {
                "display_name": "Désespéré",
-               "town_description": "Vos hearthlings ont eu des moments incroyablement difficiles ces derniers temps."
+               "town_description": "Vos hearthlings ont eu des moments vraiment difficiles ces derniers temps.",
+               "description": "La vitesse de déplacement est réduite de 10%."
             },
             "merry": {
                "display_name": "Joyeux",
-               "town_description": "Vos hearthlings sont généralement heureux."
+               "town_description": "Vos citoyens sont assez heureux dans l'ensemble.",
+               "description": "La vitesse de déplacement augmente de 5%."
             },
             "glum": {
                "display_name": "Maussade",
-               "town_description": "Vos hearthlings ne se sentent pas très bien, dans l'ensemble."
+               "town_description": "Vos hearthlings ne se sentent pas très bien, dans l'ensemble.",
+               "description": "La vitesse de déplacement est réduite de 5%."
             },
             "exp_bar": {
                "description": "Ce hearthling passe au prochain niveau."
