@@ -127,12 +127,16 @@
             "level_abbreviation": "Lvl",
             "locked_status": " (Locked)",
             "apprentice": "Apprentice",
+            "journeyman": "Journeyman",
+            "master": "Master",
             "journal": "Journal",
             "thoughts": "Thoughts",
             "morale_meter": "Morale Meter",
             "attributes": "Attributes",
             "equipment": "Equipment",
             "abilities": "Job Abilities",
+            "appeal": "Appeal",
+            "unknown_item": "Undiscovered Preference",
             "morale_title": "Morale",
             "overall_morale": "Overall Morale",
             "morale_food": "Food",
@@ -148,7 +152,14 @@
             "below": "below",
             "currently": "Currently:",
             "no_unhappy_thoughts": "No unhappy thoughts so far!",
-            "no_happy_thoughts": "No happy thoughts yet!"
+            "no_happy_thoughts": "No happy thoughts yet!",
+            "appeal_headings": {
+               "like": "Like",
+               "love": "Love",
+               "dislike": "Dislike",
+               "current_and_target_bar": "Overall Opinion",
+               "item_preferences": "[str(self.stonehearth:unit_info.custom_name)]'s Tastes"
+            }
          },
          "pet_character_sheet": {
             "title": "Pet Info",
@@ -377,6 +388,7 @@
             "tooltip_combat_base_damage": "Atk:",
             "tooltip_combat_base_damage_reduction": "Def:",
             "tooltip_num_undeployed": "Undeployed: [str(num_undeployed)]",
+            "tooltip_deprecated": "Legacy Item: this item is no longer obtainable in the game.",
             "death_notification": "[name(i18n_data.entity)] has died.",
             "imminent_death_notification": "[name(i18n_data.citizen)] is severely low on health!",
             "starving_notification": "[name(i18n_data.citizen)] is starving!",
@@ -639,6 +651,10 @@
                "title": "[name(i18n_data.entity)] has Leveled Up!",
                "show_char_sheet": "Character Sheet"
             },
+            "promote_bulletin": {
+               "title": "[name(i18n_data.entity)] has been Promoted!",
+               "show_char_sheet": "Character Sheet"
+            },
             "immigration_report": {
                "title": "Daily Update",
                "immigration_report_title": "Immigration Report",
@@ -743,6 +759,7 @@
             "building_templates": {
                "title": "Building Templates",
                "design_custom_building": "Design Custom Building",
+               "search_placeholder": "Search templates...",
                "template_names": {
                   "tiny_cottage": "Tiny Cottage",
                   "cottage_for_two": "Cottage for Two",
@@ -757,6 +774,8 @@
                "set_template_name_title": "Template Name",
                "template_default_name": "My new building template",
                "set_template_name_prompt": "Enter a name for this template",
+               "ignore_quality": "Ignore Quality",
+               "ignore_quality_tooltip": "Treat all items in the template as standard quality (rather than Fine, Excellent, etc.).",
                "remove_template_confirm": {
                   "title": "Delete Template",
                   "message": "Are you sure you want to delete this building template?",
@@ -949,7 +968,8 @@
             "queue_anyway": "Queue Order Anyway",
             "recipe_tab": "Recipes",
             "orders_tab": "Orders",
-            "missing_ingredients": "Missing ingredients: "
+            "missing_ingredients": "Missing ingredients: ",
+            "tooltip_appeal_stat":  "Appeal"
          },
          "town_overview": {
             "title": "Town Overview",
@@ -1028,7 +1048,7 @@
                "005": "terracing terrain...",
                "006": "stocking piles...",
                "007": "inflating trees...",
-               "008": "rising sun...",
+               "008": "raising sun...",
                "009": "floating clouds...",
                "010": "burlying hands...",
                "011": "bushing berries...",
@@ -1704,7 +1724,7 @@
                },
                "returning_crop_trader_encounter": {
                   "title": "A trader brings seeds from a distant land.",
-                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_item)] in exchange. Sound good?",
+                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong>, I'll be back in [str(i18n_data.num_days)] days and might be able to get you <strong>[str(i18n_data.reward_item)]</strong> in exchange. Sound good?",
                   "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)]!",
                   "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] to give you [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
                   "return_title": "The trader returns!",
@@ -4801,7 +4821,7 @@
          "callous": {
             "callous_trait": {
                "display_name": "Callous",
-               "description": "[name(i18n_data.entity)]  keeps everyone at arms length. This helps them to not be as hurt when tragedy occurs around them, but their constant guarded composure makes them slow to make friends."
+               "description": "[name(i18n_data.entity)] never really connects with others. This helps them to not be as hurt when a tragedy strikes, but their constant guarded composure makes them slow to make friends."
             }
          },
          "carnivore": {
@@ -4909,7 +4929,7 @@
          "gregarious": {
             "gregarious_trait": {
                "display_name": "Gregarious",
-               "description": "[name(i18n_data.entity)] loves interacting with others, though they do get lonely pretty quickly."
+               "description": "[name(i18n_data.entity)] loves discussing the day's events with others and gets a bit lonely when they don't."
             }
          },
          "loner": {
@@ -5284,6 +5304,34 @@
                         "display_name": "Booped",
                         "tooltip": "A cute [str(species)] booped me today. It made me feel warm and fuzzy inside."
                      }
+                  }
+               }
+            },
+            "appeal": {
+               "thresholds": {
+                  "horrendous": {
+                     "display_name": "Horrid Aesthetics",
+                     "tooltip": "Everywhere I look I see something terrible!"
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Aesthetics",
+                     "tooltip": "The decor around here is really great. A lot of hard work must have gone into making it look this nice."
+                  },
+                  "ugly": {
+                     "display_name": "Ugly Aesthetics",
+                     "tooltip": "Sheesh, it's really ugly around here. We definitely can make this look better!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Aesthetics",
+                     "tooltip": "This place... it's... beautiful..."
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasing Aesthetics",
+                     "tooltip": "It's pretty nice looking around here."
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Aesthetics",
+                     "tooltip": "Wow, everywhere I look is gorgeous! The attention to detail is amazing!"
                   }
                }
             }
@@ -5863,6 +5911,15 @@
             },
             "stone_pile_iconic": {
                "description": "Harvestable for stone when placed"
+            }
+         },
+         "ore_pile": {
+            "ore_pile": {
+               "description": "Harvest for many hunks of ore",
+               "display_name": "Ore Pile"
+            },
+            "ore_pile_iconic": {
+               "description": "Harvestable for ore when placed"
             }
          },
          "clay_pile": {
@@ -8341,16 +8398,14 @@
             "description": "A ranged combat unit that shoots foes with arrows",
             "requirements": "Crafted by Carpenter",
             "level_1_data": {
-               "perk_000_name": "Increased Draw Strength",
-               "perk_000_description": "The archer's damage is increased"
+               "perk_000_name": "Bow Proficiency",
+               "perk_001_name": "Increased Draw Strength",
+               "perk_000_description": "The archer is able to use a bow to shoot arrows at enemies",
+               "perk_001_description": "The archer's damage is increased"
             },
             "level_2_data": {
                "perk_000_name": "Armor Piercing Arrows",
                "perk_000_description": "The archer's shots ignore 50% of the target's armor"
-            },
-            "level_0_data": {
-               "perk_000_name": "Bow Proficiency",
-               "perk_000_description": "The archer is able to use a bow to shoot arrows at enemies"
             },
             "level_3_data": {
                "perk_000_name": "Range Increase",
@@ -8389,13 +8444,11 @@
             "display_name": "Architect",
             "description": "???",
             "requirements": "???",
-            "level_0_data": {
-               "perk_000_name": "Fast Construction",
-               "perk_000_description": "Build faster!"
-            },
             "level_1_data": {
-               "perk_000_name": "Conservation of Materials",
-               "perk_000_description": "Have a chance every fabrication to not consume a stack of building material."
+               "perk_000_name": "Fast Construction",
+               "perk_001_name": "Conservation of Materials",
+               "perk_000_description": "Build faster!",
+               "perk_001_description": "Have a chance every fabrication to not consume a stack of building material."
             }
          }
       },
@@ -8421,11 +8474,11 @@
             "level_6_data": {
                "title": "Master Blacksmith",
                "perk_000_name": "The Armory",
-               "perk_000_description": "The blacksmith's mastery of his trade allows him to create the finest weapons and armors seen since the forgotten Phoenix Empire."
+               "perk_000_description": "The Blacksmith's mastery of their trade allows them to create the finest weapons and armors seen since the forgotten Phoenix Empire."
             },
             "level_2_data": {
                "perk_000_name": "Iron Age!",
-               "perk_000_description": "The blacksmith is now skilled enough to forge heavy items made of iron."
+               "perk_000_description": "The Blacksmith is now skilled enough to forge heavy items made of iron."
             },
             "level_4_data": {
                "perk_000_name": "Cold Steel",
@@ -8433,11 +8486,15 @@
             },
             "level_1_data": {
                "perk_000_name": "Bronze Age!",
-               "perk_000_description": "The secrets of bronze are now available to the blacksmith."
+               "perk_000_description": "The secrets of bronze are now available to the Blacksmith."
             },
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the blacksmith may embellish his works in unexpected ways."
+               "perk_000_description": "When inspiration strikes, the Blacksmith may now craft an especially Fine quality of item.  (Not implemented for equipment yet!)"
+            },
+			   "level_5_data": {
+               "perk_000_name": "Artistic Excellence",
+               "perk_000_description": "The Blacksmith can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for equipment yet!)"
             }
          },
          "blacksmith_forge": {
@@ -8673,28 +8730,32 @@
       "carpenter": {
          "carpenter_description": {
             "display_name": "Carpenter",
-            "description": "The carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
+            "description": "The Carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
             "requirements": "Crafted by Blacksmith",
             "level_6_data": {
                "title": "Master Carpenter",
                "perk_000_name": "10,000 Hours",
-               "perk_000_description": "The carpenter's mastery of his trade allows him access to recipes that expand your town's opportunities."
+               "perk_000_description": "The Carpenter's mastery of his trade allows them access to recipes that expand your town's opportunities."
             },
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The carpenter is now skillful enough to use materials created by other crafters."
+               "perk_000_description": "The Carpenter is now skillful enough to use materials created by other crafters."
             },
             "level_4_data": {
                "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The carpenter now has the courage to try more elaborate projects."
+               "perk_000_description": "The Carpenter now has the courage to try more elaborate projects."
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The carpenter can now make a solid array of basic furniture."
+               "perk_000_description": "The Carpenter can now make a solid array of basic furniture."
             },
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the carpenter may embellish his works in unexpected ways."
+               "perk_000_description": "When inspiration strikes, the Carpenter may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Artistic Excellence",
+               "perk_000_description": "The Carpenter can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "carpenter_outfit": {
@@ -8998,7 +9059,7 @@
       "cook": {
          "cook_description": {
             "display_name": "Cook",
-            "description": "The cook makes delicious, hearty meals from base vegetables and meats.",
+            "description": "The Cook makes delicious, hearty meals from base vegetables and meats.",
             "requirements": "Crafted by Mason",
             "workshop": {
                "name": "Stone Cauldron",
@@ -9007,23 +9068,27 @@
             "level_6_data": {
                "title": "Master Cook",
                "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The cook's dishes are now so good for you they have unexpected effects."
+               "perk_000_description": "The Cook's dishes are now so good for you that they may have unexpected effects."
             },
             "level_2_data": {
                "perk_000_name": "Kitchen Chemistry",
-               "perk_000_description": "The cook has learned to make slightly fancier recipes."
+               "perk_000_description": "The Cook has learned to make slightly fancier recipes."
             },
             "level_4_data": {
                "perk_000_name": "Ingenuity Enhancements (not implemented)",
-               "perk_000_description": "The cook adds new levels of functionality to classic recipes."
+               "perk_000_description": "The Cook adds new levels of functionality to classic recipes."
             },
             "level_1_data": {
                "perk_000_name": "Camp Cooking",
-               "perk_000_description": "The cook can make basic, nutritious recipes."
+               "perk_000_description": "The Cook can make basic, nutritious recipes."
             },
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the cook may embellish his works in unexpected ways."
+               "perk_000_description": "When inspiration strikes, the Cook may now craft an especially Fine quality of item. (Not implemented for food yet!)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Artistic Excellence (not implemented for food)",
+               "perk_000_description": "The Cook can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for food yet!)"
             }
          },
          "cook_outfit": {
@@ -9158,34 +9223,34 @@
       "engineer": {
          "engineer_description": {
             "display_name": "Engineer",
-            "description": "The engineer creates advanced contraptions and defensive weaponry.",
+            "description": "The Engineer creates advanced contraptions and defensive weaponry.",
             "requirements": "Crafted by Blacksmith",
             "level_6_data": {
                "title": "Master Engineer",
                "perk_000_name": "General of Defense",
-               "perk_000_description": "This engineer can place up to twelve traps and eight turrets"
+               "perk_000_description": "This Engineer can place up to twelve traps and eight turrets"
             },
             "level_2_data": {
                "perk_000_name": "Improved Inventiveness",
-               "perk_000_description": "The engineer can repair broken doors and gates more efficiently"
+               "perk_000_description": "The Engineer can repair broken doors and gates more efficiently"
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
                "perk_001_name": "Junior Defender",
-               "perk_000_description": "The engineer can now make basic gadgets and decorations.",
-               "perk_001_description": "This engineer can place up to four traps and two turrets"
-            },
-            "level_4_data": {
-               "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The engineer now has the courage to create more complex gadgets."
-            },
-            "level_0_data": {
-               "perk_000_name": "Handyman",
-               "perk_000_description": "The engineer can repair broken doors, gates and other fixable structures."
+               "perk_002_name": "Handyman",
+               "perk_000_description": "The Engineer can now make basic gadgets and decorations.",
+               "perk_001_description": "This Engineer can place up to four traps and two turrets",
+               "perk_002_description": "The Engineer can repair broken doors, gates and other fixable structures."
             },
             "level_3_data": {
                "perk_000_name": "Town Defender",
-               "perk_000_description": "This engineer can place up to eight traps and four turrets"
+               "perk_000_description": "This Engineer can place up to eight traps and four turrets. ",
+			      "perk_001_name": "Artistic Inspiration",
+               "perk_001_description": "When inspiration strikes, the Engineer may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Artistic Excellence",
+               "perk_000_description": "The Engineer can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "engineer_wrench": {
@@ -9393,23 +9458,27 @@
             "level_6_data": {
                "title": "Master Mason",
                "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The mason's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_description": "The Mason's mastery of their trade allows them to come up with completely new ways of using stone."
             },
             "level_2_data": {
                "perk_000_name": "Fancy Rocks",
-               "perk_000_description": "The mason can now make more elaborate items froms stone."
+               "perk_000_description": "The Mason can now make more elaborate items froms stone."
             },
             "level_4_data": {
                "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The mason ventures from the realm of the functional into... art."
+               "perk_000_description": "The Mason ventures from the realm of the functional into... art."
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The mason can now make a solid array of basic furniture."
+               "perk_000_description": "The Mason can now make a solid array of basic furniture."
             },
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the mason may embellish his works in unexpected ways."
+               "perk_000_description": "When inspiration strikes, the Mason may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Artistic Excellence",
+               "perk_000_description": "The Mason can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "mason_chisel": {
@@ -9592,24 +9661,28 @@
             },
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the potter may embellish his/her works in unexpected ways."
+               "perk_000_description": "When inspiration strikes, the Potter may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Artistic Excellence",
+               "perk_000_description": "The Potter can now create items of Excellent quality, and will make Fine quality items more often."
             },
             "level_6_data": {
                "title": "Master Potter",
                "perk_000_name": "Master Potter",
-               "perk_000_description": "The potter has rediscovered ancient secrets of the Phoenix..."
+               "perk_000_description": "The Potter has rediscovered ancient secrets of the Phoenix..."
             },
             "level_2_data": {
                "perk_000_name": "Art for Sale",
-               "perk_000_description": "The potter can now make decorative items to liven up the town or sell for money."
+               "perk_000_description": "The Potter can now make decorative items to liven up the town or sell for money."
             },
             "level_4_data": {
                "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The potter can now add precious metals to vases and tiles."
+               "perk_000_description": "The Potter can now add precious metals to vases and tiles."
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The potter can now make basic furniture and building adornments."
+               "perk_000_description": "The Potter can now make basic furniture and building adornments."
             }
          },
          "recipes": {
@@ -9966,23 +10039,27 @@
             "level_6_data": {
                "title": "Master Weaver",
                "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The weaver's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_description": "The Weaver's mastery of their trade allows them to come up with completely new ways of using cloth and thread."
             },
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The weaver is now skillful enough to use materials created by other crafters."
-            },
+               "perk_000_description": "The Weaver is now skillful enough to use materials created by other crafters."
+            }, 	
             "level_4_data": {
                "perk_000_name": "Ingenuity Enhancements (not implemented)",
-               "perk_000_description": "The weaver adds new levels of functionality to classic recipes."
+               "perk_000_description": "The Weaver adds new levels of functionality to classic recipes."
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The weaver can now make basic hangings and decor."
+               "perk_000_description": "The Weaver can now make basic hangings and decor."
             },
             "level_3_data": {
                "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the weaver may embellish his works in unexpected ways."
+               "perk_000_description": "When inspiration strikes, the Weaver may now craft an especially Fine quality of item. (Not implemented for clothing yet!)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Artistic Excellence",
+               "perk_000_description": "The Weaver can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for clothing yet!)"
             }
          },
          "recipes": {
@@ -10180,24 +10257,28 @@
                "long_description": "Allows the Herbalist to craft healing balms and bandages."
             },
             "level_1_data": {
-               "perk_000_name": "Natural Regeneration",
-               "perk_000_description": "The herbalist channels the spirits of the forest and gains natural regeneration. Willpower and Diligence increased."
+               "perk_000_name": "Junior Practitioner",
+               "perk_001_name": "Natural Regeneration",
+               "perk_000_description": "The Herbalist can attend to 2 hurt hearthlings at a time.",
+               "perk_001_description": "The Herbalist channels the spirits of the forest and gains natural regeneration. Willpower and Diligence increased."
             },
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The herbalist is now skillful enough to use materials created by the other crafters."
+               "perk_000_description": "The Herbalist is now skillful enough to use materials created by the other crafters."
             },
             "level_4_data": {
                "perk_000_name": "Power Medic",
-               "perk_000_description": "The herbalist can now attend to up to 4 hearthlings at a time."
-            },
-            "level_0_data": {
-               "perk_000_name": "Junior Practitioner",
-               "perk_000_description": "The herbalist can attend to 2 hurt hearthlings at a time."
+               "perk_000_description": "The Herbalist can now attend to up to 4 hearthlings at a time."
             },
             "level_3_data": {
                "perk_000_name": "Item Proficiency",
-               "perk_000_description": "The herbalist's medical prowess increases the effectiveness of healing items by 50%."
+               "perk_000_description": "The Herbalist's medical prowess increases the effectiveness of healing items by 50%.",
+			      "perk_001_name": "Artistic Inspiration",
+               "perk_001_description": "When inspiration strikes, the Herbalist may now craft an especially Fine quality of item.  (Not implemented for healing items yet!)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Artistic Excellence",
+               "perk_000_description": "The Herbalist can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for healing items yet!)"
             },
             "level_6_data": {
                "title": "Master Herbalist"
@@ -10288,13 +10369,11 @@
             "display_name": "Cleric",
             "description": "A combat healer",
             "requirements": "Crafted by Herbalist",
-            "level_0_data": {
-               "perk_000_name": "Healing Aura",
-               "perk_000_description": "The cleric's presence heals everyone around them periodically"
-            },
             "level_1_data": {
-               "perk_000_name": "Minor Strength",
-               "perk_000_description": "The cleric's presence improves the muscle of those around them"
+               "perk_000_name": "Healing Aura",
+               "perk_001_name": "Minor Strength",
+               "perk_000_description": "The cleric's presence heals everyone around them periodically",
+               "perk_001_description": "The cleric's presence improves the muscle of those around them"
             },
             "level_2_data": {
                "perk_000_name": "Compassion Up",
@@ -10412,16 +10491,14 @@
             "description": "A defensive combatant focused on protecting allies from harm.",
             "requirements": "Crafted by Blacksmith",
             "level_1_data": {
-               "perk_000_name": "Damage Reduction Rank 1",
-               "perk_000_description": "The knight gains an additional 10% defense from equipment"
+               "perk_000_name": "Fortify",
+               "perk_001_name": "Damage Reduction Rank 1",
+               "perk_000_description": "Increases Stamina, Courage, and draws attention from monsters",
+               "perk_001_description": "The knight gains an additional 10% defense from equipment"
             },
             "level_4_data": {
                "perk_000_name": "Damage Reduction Rank 2",
                "perk_000_description": "The knight gains an additional 20% armor from equipment"
-            },
-            "level_0_data": {
-               "perk_000_name": "Fortify",
-               "perk_000_description": "Increases Stamina, Courage, and draws attention from monsters"
             },
             "level_3_data": {
                "perk_000_name": "Fortify (Rank 2)",
@@ -10476,7 +10553,7 @@
             "npc_thief_description": {
                "display_name": "Thief",
                "description": "Steals items from stockpiles",
-               "level_0_data": {
+               "level_1_data": {
                   "title": "Thief"
                }
             }
@@ -10488,9 +10565,12 @@
          "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
          "description": "Citizen of your town",
          "job": {
-            "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
+            "starting_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Apprentice [str(self.stonehearth:job.curr_job_name)]",
+            "mid_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Journeyman [str(self.stonehearth:job.curr_job_name)]",
+            "max_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Master [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_title": "Lvl [str(i18n_data.level_number)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
+            "default_promote_announcement": "[name(i18n_data.entity)] is now a Level [str(i18n_data.level_number)] [str(i18n_data.job_name)]!",
             "level_up_perk_description": "Max Health +10",
             "attribute_up_desc": "All attributes increased!"
          }
@@ -10521,6 +10601,7 @@
             "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
+            "default_promote_announcement": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_promote_announcement)",
             "general_description_desc": "Max Health increased!",
             "attribute_up_desc": "All attributes increased!"
          }

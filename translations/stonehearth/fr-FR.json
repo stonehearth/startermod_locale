@@ -127,12 +127,16 @@
             "level_abbreviation": "Niv",
             "locked_status": " (Verrouillé)",
             "apprentice": "Apprenti",
+            "journeyman": "Compagnon",
+            "master": "Maitre",
             "journal": "Journal",
             "thoughts": "Pensées",
             "morale_meter": "État du moral",
             "attributes": "Attributs",
             "equipment": "Équipement",
             "abilities": "Compétences",
+            "appeal": "Charme",
+            "unknown_item": "Préférence non découverte",
             "morale_title": "Moral",
             "overall_morale": "Moral général",
             "morale_food": "Nourriture",
@@ -148,7 +152,14 @@
             "below": "Au dessous de",
             "currently": "Actuellement:",
             "no_unhappy_thoughts": "Pas de pensées malheureuses à ce jour !",
-            "no_happy_thoughts": "Pas encore de pensées heureuses !"
+            "no_happy_thoughts": "Pas de pensées heureuses pour le moment !",
+            "appeal_headings": {
+               "like": "Aimer",
+               "love": "Adorer",
+               "dislike": "Ne pas aimer",
+               "current_and_target_bar": "Opinion générale",
+               "item_preferences": "Préférence [str(self.stonehearth:unit_info.custom_name)]"
+            }
          },
          "pet_character_sheet": {
             "title": "Informations du familier",
@@ -377,6 +388,7 @@
             "tooltip_combat_base_damage": "Atq :",
             "tooltip_combat_base_damage_reduction": "Déf :",
             "tooltip_num_undeployed": "Non déployé: [str(num_undeployed)]",
+            "tooltip_deprecated": "Objet Héritage: cet objet n'est plus disponible dans le jeu.",
             "death_notification": "[name(i18n_data.entity)] est mort.",
             "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !",
             "starving_notification": "[name(i18n_data.citizen)] est affamé !",
@@ -639,6 +651,10 @@
                "title": "[name(i18n_data.entity)] a gagné un niveau !",
                "show_char_sheet": "Feuille de personnage"
             },
+            "promote_bulletin": {
+               "title": "[name(i18n_data.entity)] a été promu !",
+               "show_char_sheet": "Feuille de personnage"
+            },
             "immigration_report": {
                "title": "Résumé quotidien",
                "immigration_report_title": "Rapport d'immigration",
@@ -743,6 +759,7 @@
             "building_templates": {
                "title": "Bibliothèque de plans",
                "design_custom_building": "Dessinez vos propres bâtiments",
+               "search_placeholder": "Rechercher des modèles...",
                "template_names": {
                   "tiny_cottage": "Maisonnette",
                   "cottage_for_two": "Maisonnette pour deux",
@@ -757,6 +774,8 @@
                "set_template_name_title": "Nom du plan",
                "template_default_name": "Mon dernier plan",
                "set_template_name_prompt": "Saisissez un nom pour ce plan",
+               "ignore_quality": "Ignorer la qualité",
+               "ignore_quality_tooltip": "Traitez tous les éléments du modèle comme étant de qualité standard (plutôt que Fine, Excellent, etc.).",
                "remove_template_confirm": {
                   "title": "Supprimer le modèle",
                   "message": "Êtes-vous sûr de vouloir supprimer ce modèle de bâtiment ?",
@@ -949,7 +968,8 @@
             "queue_anyway": "Mettre en attente tout de même",
             "recipe_tab": "Recettes",
             "orders_tab": "Ordres",
-            "missing_ingredients": "Ingrédients manquants&nbsp;: "
+            "missing_ingredients": "Ingrédients manquants&nbsp;: ",
+            "tooltip_appeal_stat":  "Charme"
          },
          "town_overview": {
             "title": "Rapport sur la ville",
@@ -1028,7 +1048,7 @@
                "005": "terrassement du terrain ...",
                "006": "range le désordre ...",
                "007": "gonflage des arbres ...",
-               "008": "lève le soleil ...",
+               "008": "soleil levant ...",
                "009": "fait flotter les nuages ...",
                "010": "malmène de petite choses ...",
                "011": "plante les baies ...",
@@ -1704,7 +1724,7 @@
                },
                "returning_crop_trader_encounter": {
                   "title": "Un commerçant apporte des graines provenant d'un pays lointain.",
-                  "trade_details": "Salut [str(i18n_data.town_name)] ! Je ne fais que passer, mais nous pourrions peut-être faire un peu d'échange de service si cela vous intéresses ? Si vous pouvez m'avoir [str(i18n_data.want_number)] [str(i18n_data.want_item)], je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir [str(i18n_data.reward_item)] en échange. Qu'en dites vous ?",
+                  "trade_details": "Salut [str(i18n_data.town_name)] ! Je ne fais que passer, mais nous pourrions peut-être faire un peu d'échange de service si cela vous intéresses ? Si vous pouvez m'avoir <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong>, je serais de retour dans [str(i18n_data.num_days)] jours et je pourrais vous fournir <strong>[str(i18n_data.reward_item)]</strong> en échange. Qu'en dites vous ?",
                   "waiting_title": "Le commerçant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
                   "waiting_text": "Le commerçant sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous échanger [str(i18n_data.reward_item)] si vous avez [str(i18n_data.want_number)] [str(i18n_data.want_item)] prêt pour lui !",
                   "return_title": "Le commerçant est de retour !",
@@ -4801,7 +4821,7 @@
          "callous": {
             "callous_trait": {
                "display_name": "Insensible",
-               "description": "[name(i18n_data.entity)] garde tout le monde à distance sécuritaire. Ça les aide à ne pas être blessé quand une tragédie arrive, mais sa constante impassibilité les rends plus lent à se faire des amis."
+               "description": "[name(i18n_data.entity)] ne se connecte jamais vraiment avec les autres. Cela les aide à ne pas être aussi blessé lorsqu'une tragédie frappe, mais le fait qu'il soit constament sur leur garde les rend lents à se faire des amis."
             }
          },
          "carnivore": {
@@ -4909,7 +4929,7 @@
          "gregarious": {
             "gregarious_trait": {
                "display_name": "Sociable",
-               "description": "[name(i18n_data.entity)] aime interagir avec les autres, même s'ils se sentent seuls assez rapidement."
+               "description": "[name(i18n_data.entity)] aime discuter des événements de la journée avec les autres et devient un peu seul quand ils ne le font pas."
             }
          },
          "loner": {
@@ -5284,6 +5304,34 @@
                         "display_name": "Frotter",
                         "tooltip": "C'est trop mignion, aujourd'hui [str(species)] c'est frotter à moi en signe d'affection."
                      }
+                  }
+               }
+            },
+            "appeal": {
+               "thresholds": {
+                  "horrendous": {
+                     "display_name": "Esthétique épouvantable",
+                     "tooltip": "Partout où je regarde, je vois quelque chose de horrible !"
+                  },
+                  "beautiful": {
+                     "display_name": "Belle esthétique",
+                     "tooltip": "Le décor est vraiment génial. Il a fallu beaucoup de travail acharné pour que ça soit aussi beau."
+                  },
+                  "ugly": {
+                     "display_name": "Esthétique laid",
+                     "tooltip": "Beurk, c'est vraiment moche par ici. Nous pouvons définitivement améliorer ce look !"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Esthétique inspirante",
+                     "tooltip": "Cet endroit... il est... beau..."
+                  },
+                  "pleasing": {
+                     "display_name": "Esthétique agréable",
+                     "tooltip": "C'est plutôt agréable de regarder autour d'ici."
+                  },
+                  "breathtaking": {
+                     "display_name": "Esthétique époustouflante",
+                     "tooltip": "Wow, partout où je regarde est magnifique ! L'attention aux détails est incroyable !"
                   }
                }
             }
@@ -5863,6 +5911,15 @@
             },
             "stone_pile_iconic": {
                "description": "Pierres ramassables si marqués."
+            }
+         },
+         "ore_pile": {
+            "ore_pile": {
+               "description": "Récolter pour obtenir plusieurs morceaux de minerai",
+               "display_name": "Tas de minerai"
+            },
+            "ore_pile_iconic": {
+               "description": "Minerai ramassables si marqués"
             }
          },
          "clay_pile": {
@@ -8341,16 +8398,14 @@
             "description": "Une unité de combat à distance qui tire sur les ennemis avec des flèches",
             "requirements": "Fabriqué par un charpentier",
             "level_1_data": {
-               "perk_000_name": "Augmente la force de tir",
-               "perk_000_description": "Les dégâts de l'archer sont augmentés"
+               "perk_000_name": "Maîtrise de l'arc",
+               "perk_001_name": "Augmente la force de tir",
+               "perk_000_description": "L'archer est capable d'utiliser un arc pour tirer des flèches sur les ennemis",
+               "perk_001_description": "Les dégâts de l'archer sont augmentés"
             },
             "level_2_data": {
                "perk_000_name": "Flèche perforante",
                "perk_000_description": "Les tirs de l'archer ignorent 50% de l'armure de la cible"
-            },
-            "level_0_data": {
-               "perk_000_name": "Maîtrise de l'arc",
-               "perk_000_description": "L'archer est capable d'utiliser un arc pour tirer des flèches sur les ennemis"
             },
             "level_3_data": {
                "perk_000_name": "Distance maximum augmentée",
@@ -8389,13 +8444,11 @@
             "display_name": "Architecte",
             "description": "???",
             "requirements": "???",
-            "level_0_data": {
-               "perk_000_name": "Construction rapide",
-               "perk_000_description": "Construit plus rapidement !"
-            },
             "level_1_data": {
-               "perk_000_name": "Conservation des matériaux",
-               "perk_000_description": "A une chance à chaque fabrication de ne pas consommer une pile de matériaux de construction."
+               "perk_000_name": "Construction rapide",
+               "perk_001_name": "Conservation des matériaux",
+               "perk_000_description": "Construit plus rapidement !",
+               "perk_001_description": "A une chance à chaque fabrication de ne pas consommer une pile de matériaux de construction."
             }
          }
       },
@@ -8438,6 +8491,10 @@
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
                "perk_000_description": "Quand l'inspiration frappe, le forgeron peut embellir ses œuvres de manière inattendue."
+            },
+            "level_5_data": {
+               "perk_000_name": "Excellence artistique",
+               "perk_000_description": "Le forgeron peut désormais créer des objets d'excellente qualité et fabriquer des articles de qualité supérieure plus souvent. (Pas encore implémenté pour l'équipement !)"
             }
          },
          "blacksmith_forge": {
@@ -8695,6 +8752,10 @@
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
                "perk_000_description": "Quand l'inspiration frappe, le menuisier est capable d'obtenir des résultats surprenant."
+            },
+            "level_5_data": {
+               "perk_000_name": "Excellence artistique",
+               "perk_000_description": "Le charpentier peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité plus souvent."
             }
          },
          "carpenter_outfit": {
@@ -9024,6 +9085,10 @@
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
                "perk_000_description": "Quand l'inspiration frappe, le cuisinier est capable d'obtenir des résultats surprenant."
+            },
+            "level_5_data": {
+               "perk_000_name": "Excellence artistique",
+               "perk_000_description": "Le cuisinier peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent. (Pas encore implémenté pour la nourriture !)"
             }
          },
          "cook_outfit": {
@@ -9172,21 +9237,21 @@
             "level_1_data": {
                "perk_000_name": "Catalogue standard",
                "perk_001_name": "Défenseur junior",
+               "perk_002_name": "Bricoleur",
                "perk_000_description": "L'ingénieur peut maintenant faire des gadgets et des décorations de base.",
-               "perk_001_description": "Cet ingénieur peut placer jusqu'à quatre pièges et deux tourelles"
-            },
-            "level_4_data": {
-               "perk_000_name": "Catalogue étendu",
-               "perk_000_description": "L'ingénieur a maintenant le courage de créer des gadgets plus complexes."
-            },
-            "level_0_data": {
-               "perk_000_name": "Bricoleur",
-               "perk_000_description": "L'ingénieur peut réparer les portes cassées, des portes et d'autres structures réparables."
+               "perk_001_description": "Cet ingénieur peut placer jusqu'à quatre pièges et deux tourelles",
+               "perk_002_description": "L'ingénieur peut réparer les portes cassées, des portes et d'autres structures réparables."
             },
             "level_3_data": {
                "perk_000_name": "Défenseur de la ville",
-               "perk_000_description": "Cet ingénieur peut placer jusqu'à huit pièges et quatre tourelles"
-            }
+               "perk_001_name": "Inspiration artistique",
+               "perk_000_description": "Cet ingénieur peut placer jusqu'à huit pièges et quatre tourelles",
+               "perk_001_description": "Lorsque l'inspiration frappe, l'Ingénieur peut maintenant créer un objet de qualité particulièrement fine."
+            },
+            "level_5_data": {
+               "perk_000_name": "Excellence artistique",
+               "perk_000_description": "L'Ingénieur peut maintenant créer des articles de qualité Excellente, et fera des articles de qualité Fine plus souvent."
+            },
          },
          "engineer_wrench": {
             "engineer_wrench_talisman": {
@@ -9341,7 +9406,7 @@
             },
             "level_5_data": {
                "perk_000_name": "Fendre",
-               "perk_000_description": "A slashing strike that deals damage to up to 4 enemies around the footman's target"
+               "perk_000_description": "Coup de fouet infligeant des dégâts jusqu'à 4 ennemis autour de la cible du soldat"
             }
          },
          "footman_buffs": {
@@ -9409,7 +9474,11 @@
             },
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l'inspiration frappe, le tailleur de pierre est capable d'obtenir des résultats surprenant."
+               "perk_000_description": "Quand l'inspiration frappe, le tailleur de pierre est capable de fabriquer une qualité particulièrement fine."
+            },
+            "level_5_data": {
+               "perk_000_name": "Excellence artistique",
+               "perk_000_description": "Le tailleur peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent."
             }
          },
          "mason_chisel": {
@@ -9592,7 +9661,11 @@
             },
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l'inspiration frappe, le potier peut embellir ses travaux de manière inattendue."
+               "perk_000_description": "Quand l'inspiration frappe, le potier peut fabriquer une qualité particulièrement fine."
+            },
+            "level_5_data": {
+               "perk_000_name": "Excellence artistique",
+               "perk_000_description": "Le potier peut maintenant créer des articles de qualité excellente, et fera des articles de qualité fine plus souvent."
             },
             "level_6_data": {
                "title": "Maître potier",
@@ -9982,7 +10055,11 @@
             },
             "level_3_data": {
                "perk_000_name": "Inspiration artistique",
-               "perk_000_description": "Quand l'inspiration frappe, le tisserand est capable d'obtenir des résultats surprenant."
+               "perk_000_description": "Quand l'inspiration frappe, le tisserand peut maintenant fabriquer un article de qualité particulièrement fine. (Pas encore implémenté pour les vêtements !)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Excellence artistique",
+               "perk_000_description": "Le tisserand peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent. (Pas encore implémenté pour les vêtements !)"
             }
          },
          "recipes": {
@@ -10180,8 +10257,10 @@
                "long_description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages."
             },
             "level_1_data": {
-               "perk_000_name": "Régénération naturelle",
-               "perk_000_description": "L'herboriste ouvre un canal spirituel avec la forêt et gagne de la régénération naturelle. Volonté augmentée."
+               "perk_000_name": "Praticien débutant",
+               "perk_001_name": "Régénération naturelle",
+               "perk_000_description": "L'herboriste canalise les esprits de la forêt et obtient une régénération naturelle. Volonté et diligence ont augmenté.",
+               "perk_001_description": "L'herboriste ouvre un canal spirituel avec la forêt et gagne de la régénération naturelle. Volonté augmentée."
             },
             "level_2_data": {
                "perk_000_name": "Perspectives de collaboration",
@@ -10191,13 +10270,15 @@
                "perk_000_name": "Médecin puissant",
                "perk_000_description": "L'herboriste peut s'occuper de 4 hearthlings en même temps."
             },
-            "level_0_data": {
-               "perk_000_name": "Praticien débutant",
-               "perk_000_description": "L'herboriste peut s'occuper de 2 hearthlings en même tempss."
-            },
             "level_3_data": {
                "perk_000_name": "Maîtrise des objets",
-               "perk_000_description": "Les prouesses médicales de l'herboriste augmentent l'efficacité des objets de guérison de 50%."
+               "perk_001_name": "Inspiration artistique",
+               "perk_000_description": "Les prouesses médicales de l'herboriste augmentent l'efficacité des objets de guérison de 50%.",
+               "perk_001_description": "Lorsque l'inspiration frappe, l'herboriste peut maintenant fabriquer un article de qualité particulièrement fine. (Pas encore implémenté pour les objets de guérison !)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Excellence artistique",
+               "perk_000_description": "L'herboriste peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent. (Pas encore implémenté pour les objets de guérison !)"
             },
             "level_6_data": {
                "title": "Maître Herboriste"
@@ -10288,13 +10369,11 @@
             "display_name": "Clerc",
             "description": "Un guérisseur de combat",
             "requirements": "Fabriqué par un herboriste",
-            "level_0_data": {
-               "perk_000_name": "Aura de soin rang 1",
-               "perk_000_description": "La présence du clerc guérit tout le monde autour d'eux périodiquement"
-            },
             "level_1_data": {
-               "perk_000_name": "Force mineure",
-               "perk_000_description": "La présence du clerc améliore les muscles de ceux qui les entourent"
+               "perk_000_name": "Aura de soin",
+               "perk_001_name": "Force mineure",
+               "perk_000_description": "La présence du clerc guérit tout le monde autour d'eux périodiquement",
+               "perk_001_description": "La présence du clerc améliore les muscles de ceux qui les entourent"
             },
             "level_2_data": {
                "perk_000_name": "Compassion augmenté",
@@ -10412,16 +10491,14 @@
             "description": "Un combattant défensif, qui a pour priorité de protéger ses alliés du mal.",
             "requirements": "Fabriqué par un forgeron",
             "level_1_data": {
-               "perk_000_name": "Réduction de dégât niveau 1",
-               "perk_000_description": "Le chevalier gagne 10% de défense supplémentaire à l'équipement"
+               "perk_000_name": "Fortifier",
+               "perk_001_name": "Réduction de dégât niveau 1",
+               "perk_000_description": "Augmente l'endurance, le courage, et attire l'attention des monstres",
+               "perk_001_description": "Le chevalier gagne 10% de défense supplémentaire à l'équipement"
             },
             "level_4_data": {
                "perk_000_name": "Réduction de dégât niveau 2",
                "perk_000_description": "Le chevalier réduit énormément les dommages causés par les ennemis"
-            },
-            "level_0_data": {
-               "perk_000_name": "Fortifier",
-               "perk_000_description": "Augmente l'endurance, le courage, et attire l'attention des monstres"
             },
             "level_3_data": {
                "perk_000_name": "Fortifier (Rang 2)",
@@ -10476,7 +10553,7 @@
             "npc_thief_description": {
                "display_name": "Voleur",
                "description": "Vole les articles de la réserve",
-               "level_0_data": {
+               "level_1_data": {
                   "title": "Voleur"
                }
             }
@@ -10488,9 +10565,12 @@
          "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
          "description": "Hearthlings",
          "job": {
-            "starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_title": "[str(self.stonehearth:job.curr_job_name)] niveau [str(self.stonehearth:job.curr_job_level)]",
-            "default_level_announcement": "[name(i18n_data.entity)] est devenu [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
+            "starting_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Apprenti [str(self.stonehearth:job.curr_job_name)]",
+            "mid_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Compagnon [str(self.stonehearth:job.curr_job_name)]",
+            "max_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Maitre [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_title": "Lvl [str(i18n_data.level_number)] [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_announcement": "[name(i18n_data.entity)] a réussi [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
+            "default_promote_announcement": "[name(i18n_data.entity)] est maintenant du niveau [str(i18n_data.level_number)] [str(i18n_data.job_name)]!",
             "level_up_perk_description": "Santé max. +10",
             "attribute_up_desc": "Tous les attributs ont augmentés !"
          }
@@ -10521,6 +10601,7 @@
             "starting_level_title": "Apprenti [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "[str(self.stonehearth:job.curr_job_name)] niveau [str(self.stonehearth:job.curr_job_level)]",
             "default_level_announcement": "[name(i18n_data.entity)] à atteint [str(i18n_data.job_name)] niveau [str(i18n_data.level_number)] !",
+            "default_promote_announcement": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_promote_announcement)",
             "general_description_desc": "Santé maximum augmentée!",
             "attribute_up_desc": "Tous les attributs augmentés!"
          }
