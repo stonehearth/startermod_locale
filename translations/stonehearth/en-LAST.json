@@ -155,9 +155,15 @@
             "no_happy_thoughts": "No happy thoughts yet!",
             "appeal_headings": {
                "like": "Like",
+               "like_tooltip": "A space is viewed as more beautiful for every liked item present, up to three.",
                "love": "Love",
+               "love_tooltip": "Seeing one of these loved items will drastically improve [str(self.stonehearth:unit_info.custom_name)]'s the opinion of an area.",
                "dislike": "Dislike",
+               "dislike_tooltip": "[str(self.stonehearth:unit_info.custom_name)] dislikes these items and will always find them unappealing, regardless of quality.",
                "current_and_target_bar": "Overall Opinion",
+               "current_and_target_bar_tooltip": "[str(self.stonehearth:unit_info.custom_name)]'s opinion of their surroundings and recently visited areas.",
+               "current_arrow_tooltip": "[str(self.stonehearth:unit_info.custom_name)]'s overall opinion of the town's appeal. This affects their mood.",
+               "target_arrow_tooltip": "How [str(self.stonehearth:unit_info.custom_name)] views their immediate surroundings.  This affects their overall opinion of the town with time.",
                "item_preferences": "[str(self.stonehearth:unit_info.custom_name)]'s Tastes"
             }
          },
@@ -253,6 +259,8 @@
                "display_name": "Attack Move",
                "description": "Attack a specific target or location."
             },
+            "crafted_by": "Crafted by [str(author_name)]",
+            "crafted_in": "Crafted in [str(author_name)]",
             "defend_location": {
                "display_name": "Defend Location",
                "description": "Defend a location from enemies."
@@ -270,6 +278,7 @@
                "description": "Cancels active combat orders."
             },
             "level": "Lv: ",
+            "Lvl": "Lvl",
             "class_lv_title": "Class and Level Requirements",
             "no_requirements": "None!",
             "equipment_description": "Equippable by: [str(class_list)]",
@@ -280,6 +289,11 @@
             "placement_tags": {
                "turret": "Turrets",
                "trap": "Traps"
+            },
+            "quality": {
+               "quality-2": "Fine Quality",
+               "quality-3": "Excellent Quality",
+               "quality-4": "Master Quality!"
             }
          },
          "citizens": {
@@ -3649,6 +3663,10 @@
             "display_name": "Move item",
             "description": "Move this thing somewhere else in the world.",
             "disabled_description": "This item is in use. Try moving it later."
+         },
+         "open_character_sheet": {
+            "display_name": "Open Character Sheet",
+            "description": "Get a closer look at this hearthling"
          },
          "place_item": {
             "display_name": "Place item",
@@ -8489,11 +8507,11 @@
                "perk_000_description": "The secrets of bronze are now available to the Blacksmith."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
+               "perk_000_name": "Journeyman's Knowledge",
                "perk_000_description": "When inspiration strikes, the Blacksmith may now craft an especially Fine quality of item.  (Not implemented for equipment yet!)"
             },
-			   "level_5_data": {
-               "perk_000_name": "Artistic Excellence",
+			"level_5_data": {
+               "perk_000_name": "Master's Insight",
                "perk_000_description": "The Blacksmith can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for equipment yet!)"
             }
          },
@@ -8750,11 +8768,11 @@
                "perk_000_description": "The Carpenter can now make a solid array of basic furniture."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
+               "perk_000_name": "Journeyman's Knowledge",
                "perk_000_description": "When inspiration strikes, the Carpenter may now craft an especially Fine quality of item."
             },
             "level_5_data": {
-               "perk_000_name": "Artistic Excellence",
+               "perk_000_name": "Master's Insight",
                "perk_000_description": "The Carpenter can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
@@ -9083,11 +9101,11 @@
                "perk_000_description": "The Cook can make basic, nutritious recipes."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
+               "perk_000_name": "Journeyman's Knowledge",
                "perk_000_description": "When inspiration strikes, the Cook may now craft an especially Fine quality of item. (Not implemented for food yet!)"
             },
             "level_5_data": {
-               "perk_000_name": "Artistic Excellence (not implemented for food)",
+               "perk_000_name": "Master's Insight (not implemented for food)",
                "perk_000_description": "The Cook can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for food yet!)"
             }
          },
@@ -9245,11 +9263,11 @@
             "level_3_data": {
                "perk_000_name": "Town Defender",
                "perk_000_description": "This Engineer can place up to eight traps and four turrets. ",
-			      "perk_001_name": "Artistic Inspiration",
+			   "perk_001_name": "Journeyman's Knowledge",
                "perk_001_description": "When inspiration strikes, the Engineer may now craft an especially Fine quality of item."
             },
             "level_5_data": {
-               "perk_000_name": "Artistic Excellence",
+               "perk_000_name": "Master's Insight",
                "perk_000_description": "The Engineer can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
@@ -9473,11 +9491,11 @@
                "perk_000_description": "The Mason can now make a solid array of basic furniture."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
+               "perk_000_name": "Journeyman's Knowledge",
                "perk_000_description": "When inspiration strikes, the Mason may now craft an especially Fine quality of item."
             },
             "level_5_data": {
-               "perk_000_name": "Artistic Excellence",
+               "perk_000_name": "Master's Insight",
                "perk_000_description": "The Mason can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
@@ -9660,11 +9678,11 @@
                "long_description": "The Potter crafts useful goods and decorative items from clay."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
+               "perk_000_name": "Journeyman's Knowledge",
                "perk_000_description": "When inspiration strikes, the Potter may now craft an especially Fine quality of item."
             },
             "level_5_data": {
-               "perk_000_name": "Artistic Excellence",
+               "perk_000_name": "Master's Insight",
                "perk_000_description": "The Potter can now create items of Excellent quality, and will make Fine quality items more often."
             },
             "level_6_data": {
@@ -10054,11 +10072,11 @@
                "perk_000_description": "The Weaver can now make basic hangings and decor."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
+               "perk_000_name": "Journeyman's Knowledge",
                "perk_000_description": "When inspiration strikes, the Weaver may now craft an especially Fine quality of item. (Not implemented for clothing yet!)"
             },
             "level_5_data": {
-               "perk_000_name": "Artistic Excellence",
+               "perk_000_name": "Master's Insight",
                "perk_000_description": "The Weaver can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for clothing yet!)"
             }
          },
@@ -10273,11 +10291,11 @@
             "level_3_data": {
                "perk_000_name": "Item Proficiency",
                "perk_000_description": "The Herbalist's medical prowess increases the effectiveness of healing items by 50%.",
-			      "perk_001_name": "Artistic Inspiration",
+			   "perk_001_name": "Journeyman's Knowledge",
                "perk_001_description": "When inspiration strikes, the Herbalist may now craft an especially Fine quality of item.  (Not implemented for healing items yet!)"
             },
             "level_5_data": {
-               "perk_000_name": "Artistic Excellence",
+               "perk_000_name": "Master's Insight",
                "perk_000_description": "The Herbalist can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for healing items yet!)"
             },
             "level_6_data": {

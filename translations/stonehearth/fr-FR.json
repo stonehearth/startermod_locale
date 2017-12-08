@@ -155,9 +155,15 @@
             "no_happy_thoughts": "Pas de pensées heureuses pour le moment !",
             "appeal_headings": {
                "like": "Aimer",
+               "like_tooltip": "Un espace est considéré comme plus beau quand il y a plus de 3 objets aimé",
                "love": "Adorer",
+               "love_tooltip": "Voir un de ces objets aimés améliorera drastiquement [str(self.stonehearth:unit_info.custom_name)] l'opinion d'une région.",
                "dislike": "Ne pas aimer",
+               "dislike_tooltip": "[str(self.stonehearth:unit_info.custom_name)] n'aime pas ces articles et les trouvera toujours désagréables, peu importe leur qualité.",
                "current_and_target_bar": "Opinion générale",
+               "current_and_target_bar_tooltip": "[str(self.stonehearth:unit_info.custom_name)] est l'opinion de l'environnement et des zones récemment visitées.",
+               "current_arrow_tooltip": "[str(self.stonehearth:unit_info.custom_name)] est l'opinion générale de l'appel de la ville. Cela affecte leur humeur.",
+               "target_arrow_tooltip": "Comment [str(self.stonehearth:unit_info.custom_name)] voit l'environnement immédiat. Cela affecte leur opinion globale de la ville avec le temps.",
                "item_preferences": "Préférence [str(self.stonehearth:unit_info.custom_name)]"
             }
          },
@@ -253,6 +259,8 @@
                "display_name": "Attaquer en mouvement",
                "description": "Attaquer une cible ou un emplacement spécifique."
             },
+            "crafted_by": "Fabriqué par [str(author_name)]",
+            "crafted_in": "Fabriqué en [str(author_name)]",
             "defend_location": {
                "display_name": "Défendre un lieu",
                "description": "Défendre un emplacement des ennemis."
@@ -270,6 +278,7 @@
                "description": "Annule les ordres de combat en cours."
             },
             "level": "Lv: ",
+            "Lvl": "Lvl",
             "class_lv_title": "Classe et niveau requis",
             "no_requirements": "Aucun !",
             "equipment_description": "Portable par : [str(class_list)]",
@@ -280,6 +289,11 @@
             "placement_tags": {
                "turret": "Tourelles",
                "trap": "Pièges"
+            },
+            "quality": {
+               "quality-2": "Belle qualité",
+               "quality-3": "Excellente qualité",
+               "quality-4": "Qualité de Maitre !"
             }
          },
          "citizens": {
@@ -3649,6 +3663,10 @@
             "display_name": "Déplacer un objet",
             "description": "Déplacer cet objet ailleurs dans le monde.",
             "disabled_description": "Cet objet est utilisé. Essayé de le bouger plus tard."
+         },
+         "open_character_sheet": {
+            "display_name": "Ouvrir une feuille de personnage",
+            "description": "Regardez de plus près cet hearthling"
          },
          "place_item": {
             "display_name": "Placer un objet",
@@ -8489,11 +8507,11 @@
                "perk_000_description": "Les secrets du bronze sont désormais disponibles au forgeron."
             },
             "level_3_data": {
-               "perk_000_name": "Inspiration artistique",
+               "perk_000_name": "Connaissance de compagnon",
                "perk_000_description": "Quand l'inspiration frappe, le forgeron peut embellir ses œuvres de manière inattendue."
             },
             "level_5_data": {
-               "perk_000_name": "Excellence artistique",
+               "perk_000_name": "Point de vue du maître",
                "perk_000_description": "Le forgeron peut désormais créer des objets d'excellente qualité et fabriquer des articles de qualité supérieure plus souvent. (Pas encore implémenté pour l'équipement !)"
             }
          },
@@ -8750,11 +8768,11 @@
                "perk_000_description": "Le menuisier a maintenant une gamme solide de mobilier de base."
             },
             "level_3_data": {
-               "perk_000_name": "Inspiration artistique",
+               "perk_000_name": "Connaissance de compagnon",
                "perk_000_description": "Quand l'inspiration frappe, le menuisier est capable d'obtenir des résultats surprenant."
             },
             "level_5_data": {
-               "perk_000_name": "Excellence artistique",
+               "perk_000_name": "Point de vue du maître",
                "perk_000_description": "Le charpentier peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité plus souvent."
             }
          },
@@ -9079,15 +9097,15 @@
                "perk_000_description": "Le cuisinier améliore les recettes classiques."
             },
             "level_1_data": {
-               "perk_000_name": "Camp Cooking -- XXX TOM, REVISIT THE COOK PERKS!!!!!!",
+               "perk_000_name": "Camp de cuisine",
                "perk_000_description": "Le cuisiner peut faire des choses basiques, bien nutritive."
             },
             "level_3_data": {
-               "perk_000_name": "Inspiration artistique",
+               "perk_000_name": "Connaissance de compagnon",
                "perk_000_description": "Quand l'inspiration frappe, le cuisinier est capable d'obtenir des résultats surprenant."
             },
             "level_5_data": {
-               "perk_000_name": "Excellence artistique",
+               "perk_000_name": "Point de vue du maître (Pas encore implémenté pour la nourriture)",
                "perk_000_description": "Le cuisinier peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent. (Pas encore implémenté pour la nourriture !)"
             }
          },
@@ -9244,12 +9262,12 @@
             },
             "level_3_data": {
                "perk_000_name": "Défenseur de la ville",
-               "perk_001_name": "Inspiration artistique",
                "perk_000_description": "Cet ingénieur peut placer jusqu'à huit pièges et quatre tourelles",
+               "perk_001_name": "Connaissance de compagnon",
                "perk_001_description": "Lorsque l'inspiration frappe, l'Ingénieur peut maintenant créer un objet de qualité particulièrement fine."
             },
             "level_5_data": {
-               "perk_000_name": "Excellence artistique",
+               "perk_000_name": "Point de vue du maître",
                "perk_000_description": "L'Ingénieur peut maintenant créer des articles de qualité Excellente, et fera des articles de qualité Fine plus souvent."
             },
          },
@@ -9473,11 +9491,11 @@
                "perk_000_description": "Le tailleur a maintenant une gamme solide de meubles à son catalogue."
             },
             "level_3_data": {
-               "perk_000_name": "Inspiration artistique",
+               "perk_000_name": "Connaissance de compagnon",
                "perk_000_description": "Quand l'inspiration frappe, le tailleur de pierre est capable de fabriquer une qualité particulièrement fine."
             },
             "level_5_data": {
-               "perk_000_name": "Excellence artistique",
+               "perk_000_name": "Point de vue du maître",
                "perk_000_description": "Le tailleur peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent."
             }
          },
@@ -9660,11 +9678,11 @@
                "long_description": "Le potier fabrique des objets et des décorations à partir d'argile."
             },
             "level_3_data": {
-               "perk_000_name": "Inspiration artistique",
+               "perk_000_name": "Connaissance de compagnon",
                "perk_000_description": "Quand l'inspiration frappe, le potier peut fabriquer une qualité particulièrement fine."
             },
             "level_5_data": {
-               "perk_000_name": "Excellence artistique",
+               "perk_000_name": "Point de vue du maître",
                "perk_000_description": "Le potier peut maintenant créer des articles de qualité excellente, et fera des articles de qualité fine plus souvent."
             },
             "level_6_data": {
@@ -10054,11 +10072,11 @@
                "perk_000_description": "Le tisserand peut maintenant confectionner des vêtements et des éléments de décor simples."
             },
             "level_3_data": {
-               "perk_000_name": "Inspiration artistique",
+               "perk_000_name": "Connaissance de compagnon",
                "perk_000_description": "Quand l'inspiration frappe, le tisserand peut maintenant fabriquer un article de qualité particulièrement fine. (Pas encore implémenté pour les vêtements !)"
             },
             "level_5_data": {
-               "perk_000_name": "Excellence artistique",
+               "perk_000_name": "Point de vue du maître",
                "perk_000_description": "Le tisserand peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent. (Pas encore implémenté pour les vêtements !)"
             }
          },
@@ -10272,12 +10290,12 @@
             },
             "level_3_data": {
                "perk_000_name": "Maîtrise des objets",
-               "perk_001_name": "Inspiration artistique",
                "perk_000_description": "Les prouesses médicales de l'herboriste augmentent l'efficacité des objets de guérison de 50%.",
+               "perk_001_name": "Connaissance de compagnon",
                "perk_001_description": "Lorsque l'inspiration frappe, l'herboriste peut maintenant fabriquer un article de qualité particulièrement fine. (Pas encore implémenté pour les objets de guérison !)"
             },
             "level_5_data": {
-               "perk_000_name": "Excellence artistique",
+               "perk_000_name": "Point de vue du maître",
                "perk_000_description": "L'herboriste peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent. (Pas encore implémenté pour les objets de guérison !)"
             },
             "level_6_data": {
