@@ -9269,7 +9269,7 @@
             "level_5_data": {
                "perk_000_name": "Point de vue du maître",
                "perk_000_description": "L'Ingénieur peut maintenant créer des articles de qualité Excellente, et fera des articles de qualité Fine plus souvent."
-            },
+            }
          },
          "engineer_wrench": {
             "engineer_wrench_talisman": {
