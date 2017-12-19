@@ -85,7 +85,10 @@
             "terrain_xray_vision": "Terrain x-ray vision",
             "terrain_xray_vision_description": "See through the terrain. Change between full and flat view to show underground walls.",
             "terrain_xray_vision_flat": "flat",
-            "terrain_xray_vision_full": "full"
+            "terrain_xray_vision_full": "full",
+            "appeal_vision_icon_name": "appeal",
+            "appeal_vision": "Appeal Vision",
+            "appeal_vision_description": "See how appealing hearthlings find the world."
          },
          "promotion_tree": {
             "title": "Change Job -",
@@ -157,7 +160,7 @@
                "like": "Like",
                "like_tooltip": "A space is viewed as more beautiful for every liked item present, up to three.",
                "love": "Love",
-               "love_tooltip": "Seeing one of these loved items will drastically improve [str(self.stonehearth:unit_info.custom_name)]'s the opinion of an area.",
+               "love_tooltip": "Seeing one of these loved items will drastically improve [str(self.stonehearth:unit_info.custom_name)]'s opinion of an area.",
                "dislike": "Dislike",
                "dislike_tooltip": "[str(self.stonehearth:unit_info.custom_name)] dislikes these items and will always find them unappealing, regardless of quality.",
                "current_and_target_bar": "Overall Opinion",
@@ -905,7 +908,8 @@
                "contents": "Contents",
                "filter": "Filter",
                "help": "Click the icons to choose what to store in this stockpile.",
-               "used_space": "Used space:",
+               "help_single_filter": "Click an icon to choose the item type to store in this container.",
+               "used_space": "Used:",
                "filters": {
                   "all": "All",
                   "none": "None",
@@ -926,9 +930,9 @@
                   "tooltip_portal": "Doors & Windows",
                   "tooltip_furniture": "Furniture",
                   "tooltip_defense": "Defenses",
-                  "tooltip_light": "torches & lights",
+                  "tooltip_light": "Torches & Lights",
                   "tooltip_decoration": "Decorations",
-                  "tooltip_refined_weaver": "Thread, Cloth, and Leather",
+                  "tooltip_refined_weaver": "Cloth, etc.",
                   "tooltip_refined_craftables": "Refined Craftables",
                   "tooltip_refined_animal_part": "goods produced from bits of animals",
                   "tooltip_refined_ore": "Metal Bars",
@@ -943,7 +947,9 @@
                   "tooltip_raw_food": "Raw Foods",
                   "tooltip_prepared_food": "Cooked Foods",
                   "tooltip_cooking_ingredients": "Cooking Ingredients and Animal Feed",
-                  "tooltip_consumables": "Healing Items and Other Consumables"
+                  "tooltip_cooking": "Cooking",
+                  "tooltip_consumables": "Healing Items and Other Consumables",
+                  "tooltip_animal_parts": "Animal Parts"
                }
             }
          },
@@ -983,7 +989,7 @@
             "recipe_tab": "Recipes",
             "orders_tab": "Orders",
             "missing_ingredients": "Missing ingredients: ",
-            "tooltip_appeal_stat":  "Appeal"
+            "tooltip_appeal_stat": "Appeal"
          },
          "town_overview": {
             "title": "Town Overview",
@@ -1286,6 +1292,7 @@
                   "vision_slice_toggle": "Toggle Terrain Slice Vision",
                   "vision_slice_up": "Terrain Slice Up",
                   "vision_slice_down": "Terrain Slice Down",
+                  "vision_appeal_toggle": "Toggle Appeal Vision",
                   "speed_pause": "Pause",
                   "speed_toggle_pause": "Toggle Pause",
                   "speed_play": "Normal Speed",
@@ -1464,6 +1471,14 @@
                   "000": "Every 2 points increases chance to craft a fine item by 1%"
                }
             },
+            "inspiration": {
+               "display_name": "Inspiration",
+               "description": "A flat modifier to this hearthing's chance to create items with Fine and Excellent quality.",
+               "bullet_points": {
+               "000": "A hearthling must be at least a Journeyman to create Fine quality items, and a Master to create Excellent items</br>",
+               "001": "Ranges from -2% to +3%, based on the hearthling's Spirit"
+               }
+            },
             "shelter": {
                "display_name": "Shelter",
                "description": "Make sure your hearthlings have a comfortable bed to sleep in.",
@@ -1487,7 +1502,8 @@
                "display_name": "Diligence",
                "description": "How long this hearthling can work before needing rest.",
                "bullet_points": {
-                  "000": "Determines sleep duration"
+                  "000": "Determines sleep duration",
+                  "001": "Determines Engineer repair speed"
                }
             },
             "willpower": {
@@ -1526,7 +1542,7 @@
             },
             "body": {
                "display_name": "Body",
-               "description": "Competence at physical activities. Hearthlings with a high Body stat will move a bit faster, attack harder, and live longer. Influences Muscle, Speed, Stamina."
+               "description": "Competence at physical activities.</br></br>Hearthlings with a high Body stat will move a bit faster, attack harder, and live longer.</br></br>Influences Muscle, Speed, Stamina."
             },
             "edibles": {
                "display_name": "Edibles",
@@ -1535,7 +1551,7 @@
             },
             "mind": {
                "display_name": "Mind",
-               "description": "The ability to think intelligently. A high Mind stat allows a hearthling to excel in complex mental activities such as crafting. Influences Diligence, Curiosity, Inventiveness."
+               "description": "The ability to think intelligently.</br></br>A high Mind stat allows a hearthling to quickly grasp mental activities such as crafting, and keep their head clear.</br></br>Influences Diligence, Curiosity."
             },
             "curiosity": {
                "display_name": "Curiosity",
@@ -1546,7 +1562,7 @@
             },
             "spirit": {
                "display_name": "Spirit",
-               "description": "Faith in other people. A high Spirit hearthling will easily befriend animals and stand strong against enemies. Influences Courage, Willpower, Compassion."
+               "description": "Faith in other people and themselves.</br></br>A high Spirit hearthling will easily befriend animals, stand strong against enemies, and craft exceptional things more often.</br></br>Influences Courage, Willpower, Compassion, Inspiration."
             },
             "safety": {
                "display_name": "Safety",
@@ -3665,7 +3681,7 @@
             "disabled_description": "This item is in use. Try moving it later."
          },
          "open_character_sheet": {
-            "display_name": "Open Character Sheet",
+            "display_name": "Character Sheet",
             "description": "Get a closer look at this hearthling"
          },
          "place_item": {
@@ -5335,6 +5351,9 @@
                      "display_name": "Beautiful Aesthetics",
                      "tooltip": "The decor around here is really great. A lot of hard work must have gone into making it look this nice."
                   },
+                  "neutral": {
+                     "display_name": "Neutral Aesthetics"
+                  },
                   "ugly": {
                      "display_name": "Ugly Aesthetics",
                      "tooltip": "Sheesh, it's really ugly around here. We definitely can make this look better!"
@@ -5350,6 +5369,74 @@
                   "breathtaking": {
                      "display_name": "Breath-Taking Aesthetics",
                      "tooltip": "Wow, everywhere I look is gorgeous! The attention to detail is amazing!"
+                  }
+               }
+            },
+            "appeal_crafting": {
+               "values": {
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Workshop",
+                     "tooltip": "I love crafting in my workshop; it's so well decorated!"
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasant Workshop",
+                     "tooltip": "A well-maintained work space brightens my mood."
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Workshop",
+                     "tooltip": "The area around my workbench is looking good, everything is in its place."
+                  },
+                  "ugly": {
+                     "display_name": "Unkempt Workshop",
+                     "tooltip": "It's frustrating that my work space is so grungy."
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Workshop",
+                     "tooltip": "My workshop looks so amazing! It's an inspiration!"
+                  }
+               }
+            },
+            "appeal_bedroom": {
+               "values": {
+                  "pleasing": {
+                     "display_name": "Pleasant Bedroom",
+                     "tooltip": "Where I slept last night was pretty nice."
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Bedroom",
+                     "tooltip": "My bedroom is really shaping up; I like it!"
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Bedroom",
+                     "tooltip": "I love sleeping in such a wonderful bedroom!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Bedroom",
+                     "tooltip": "When I went to bed last night, I felt like royalty."
+                  }
+               }
+            },
+            "appeal_dining": {
+               "values": {
+                  "beautiful": {
+                     "display_name": "Beautiful Dining",
+                     "tooltip": "I was happy to eat in such an attractive spot!"
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Dining",
+                     "tooltip": "Someone really spent some effort decorating our dining room!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Dining",
+                     "tooltip": "The decor was so great, dinner was a feast for both my eyes and my stomach!"
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasant Dining",
+                     "tooltip": "It was nice to eat my meal in a comfortable space."
+                  },
+                  "ugly": {
+                     "display_name": "Dreary Dining",
+                     "tooltip": "The ugly surroundings made it difficult to enjoy my last meal."
                   }
                }
             }
@@ -5862,6 +5949,34 @@
                "display_name": "Tall Clay Window",
                "description": "Still lets in the soft desert air"
             }
+         },
+         "ornate_picket_fence": {
+            "ornate_picket_fence_ghost": {
+               "display_name": "Ornate Picket Fence",
+               "description": "If it's not white, is our life unfulfilled?"
+            }
+         },
+         "ornate_picket_fence_gate": {
+            "ornate_picket_fence_gate_ghost": {
+               "display_name": "Ornate Picket Fence Gate",
+               "description": "Don't like your neighbors? Don't install."
+            }
+         },
+         "ornate_wooden_door": {
+            "ornate_wooden_door_ghost": {
+               "display_name": "Ornate Wooden Door",
+               "description": "Sturdier than your average door, and such a sweet pattern too."
+            }
+         },
+         "ornate_wooden_double_door": {
+            "ornate_wooden_double_door_ghost": {
+               "display_name": "Ornate Wooden Double Door",
+               "description": "A larger door with some extra style. All your friends will be envious."
+            }
+         },
+         "ornate_wooden_tunnel_door": {
+            "display_name": "Ornate Wooden Tunnel Door",
+            "description": "Useful for blocking off tunnels"
          }
       },
       "containers": {
@@ -5933,11 +6048,11 @@
          },
          "ore_pile": {
             "ore_pile": {
-               "description": "Harvest for many hunks of ore",
+               "description": "Container for many hunks of ore",
                "display_name": "Ore Pile"
             },
             "ore_pile_iconic": {
-               "description": "Harvestable for ore when placed"
+               "description": "Container for many hunks of ore"
             }
          },
          "clay_pile": {
@@ -5965,6 +6080,12 @@
          "leather_bound_chest_fine": {
             "leather_bound_chest_fine_ghost": {
                "display_name": "Fine Leather Bound Chest",
+               "description": "Stores up to 64 items. With style."
+            }
+         },
+         "ornate_leather_bound_chest": {
+            "ornate_leather_bound_chest_ghost": {
+               "display_name": "Ornate Leather Bound Chest",
                "description": "Stores up to 64 items. With style."
             }
          }
@@ -6824,6 +6945,18 @@
                "display_name": "Poyo Weathervane",
                "description": "A weathervane in the image of a friendly yardbird"
             }
+         },
+         "ornate_wooden_garden_lantern": {
+            "ornate_wooden_garden_lantern_ghost": {
+               "description": "A compact source of light, with a little bit of flair.",
+               "display_name": "Ornate Wooden Garden Lantern"
+            }
+         },
+         "ornate_wooden_wall_lantern": {
+            "ornate_wooden_wall_lantern_ghost": {
+               "description": "Easily attached to walls",
+               "display_name": "Ornate Wooden Wall Lantern"
+            }
          }
       },
       "food": {
@@ -7169,31 +7302,37 @@
          "not_much_of_a_bed": {
             "not_much_of_a_bed_ghost": {
                "display_name": "Mean Bed",
-               "description": "Mean as in poor, not cruel"
+               "description": "Mean as in poor, not cruel."
             }
          },
          "park_bench": {
             "park_bench_ghost": {
                "display_name": "Wooden Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "description": "Outdoor seating for moments of relaxation."
             }
          },
          "park_bench_fine": {
             "park_bench_fine_ghost": {
                "display_name": "Fine Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "description": "Outdoor seating for moments of relaxation."
+            }
+         },
+         "ornate_bench": {
+            "ornate_bench_ghost": {
+               "display_name": "Ornate Park Bench",
+               "description": "Outdoor seating for moments of relaxation."
             }
          },
          "simple_wooden_chair": {
             "simple_wooden_chair_ghost": {
                "display_name": "Simple Wooden Chair",
-               "description": "For sitting"
+               "description": "For sitting."
             }
          },
          "simple_wooden_chair_fine": {
             "simple_wooden_chair_fine_ghost": {
                "display_name": "Fine Wooden Chair",
-               "description": "For sitting"
+               "description": "For sitting."
             }
          },
          "stone_bench": {
@@ -7239,7 +7378,7 @@
          "writing_desk": {
             "writing_desk_ghost": {
                "display_name": "Writing Desk",
-               "description": "Furniture"
+               "description": "A peaceful place to write letters to home."
             }
          },
          "writing_desk_fine": {
@@ -7303,6 +7442,60 @@
             "park_bench_red_ghost": {
                "display_name": "Red Wooden Park Bench",
                "description": "Outdoor seating for moments of relaxation"
+            }
+         },
+         "ornate_table_for_one": {
+            "ornate_table_for_one_ghost": {
+               "display_name": "Ornate Table for One",
+               "description": "Dining furniture for introverts."
+            }
+         },
+         "ornate_comfy_bed": {
+            "ornate_comfy_bed_ghost": {
+               "display_name": "Ornate Comfy Bed",
+               "description": "I dreamed... of flying sheep."
+            }
+         },
+         "ornate_dining_table": {
+            "ornate_dining_table_ghost": {
+               "description": "Sitting down to eat is a sign of civilization.",
+               "display_name": "Ornate Dining Table"
+            }
+         },
+         "ornate_dresser": {
+            "ornate_dresser_ghost": {
+               "description": "Decorative in the absence of belongings.",
+               "display_name": "Ornate Dresser"
+            }
+         },
+         "ornate_writing_desk": {
+            "ornate_writing_desk_ghost": {
+               "description": "A stylish place to write letters to home.",
+               "display_name": "Ornate Writing Desk"
+            }
+         },
+         "ornate_comfy_chair": {
+            "ornate_comfy_chair_ghost": {
+               "description": "For comfortable sitting!",
+               "display_name": "Ornate Comfy Chair"
+            }
+         },
+         "bench": {
+            "bench_ghost": {
+               "display_name": "Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation."
+            }
+         },
+         "wooden_chair": {
+            "wooden_chair_ghost": {
+               "display_name": "Wooden Chair",
+               "description": "For a little more class while sitting."
+            }
+         },
+         "ornate_wooden_chair": {
+            "ornate_wooden_chair_ghost": {
+               "display_name": "Ornate Wooden Chair",
+               "description": "For even more style while sitting."
             }
          }
       },
@@ -7918,6 +8111,12 @@
                "display_name": "Poyo Feathers",
                "description": "Feathers from a plump bird"
             }
+         },
+         "refined": {
+            "gold_flakes": {
+               "display_name": "Gold Flakes",
+               "description": "Use when crafting furniture to make it really pretty!"
+            }
          }
       },
       "terrain": {
@@ -8510,7 +8709,7 @@
                "perk_000_name": "Journeyman's Knowledge",
                "perk_000_description": "When inspiration strikes, the Blacksmith may now craft an especially Fine quality of item.  (Not implemented for equipment yet!)"
             },
-			"level_5_data": {
+            "level_5_data": {
                "perk_000_name": "Master's Insight",
                "perk_000_description": "The Blacksmith can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for equipment yet!)"
             }
@@ -9013,12 +9212,12 @@
                "recipe_name": "Herbalist's Staff"
             },
             "safety_standard_recipe": {
-               "description": "Use to designate a safety point",
+               "description": "Use to designate a safety point.",
                "recipe_name": "Wooden Safety Standard"
             },
             "wooden_tunnel_door_recipe": {
                "recipe_name": "Wooden Tunnel Door",
-               "description": "Useful for blocking off tunnels"
+               "description": "Useful for blocking off tunnels."
             },
             "wooden_sign_cook_recipe": {
                "description": "A sign with the mark of the Cook.",
@@ -9071,6 +9270,95 @@
                "recipe_name": "Poyo Weathervane",
                "description": "A weathervane in the image of a friendly yardbird",
                "flavor": "TODO"
+            },
+            "ornate_leather_bound_chest_recipe": {
+               "recipe_name": "Ornate Leather Bound Chest",
+               "description": "Stylishly stores up to 64 items.",
+               "flavor": "Like the one my granda had!"
+            },
+            "ornate_table_for_one_recipe": {
+               "recipe_name": "Ornate Table for One",
+               "description": "Better than eating standing up. Unless you're watching your weight.",
+               "flavor": "Dining furniture for introverts."
+            },
+            "ornate_dining_table_recipe": {
+               "recipe_name": "Ornate Dining Table",
+               "description": "Allows a group of people to all eat together. Like grown-ups.",
+               "flavor": "Sitting down to eat is a sign of civilization."
+            },
+            "ornate_comfy_bed_recipe": {
+               "recipe_name": "Ornate Comfy Bed",
+               "description": "Eight hours will leave you as refreshed as the day you were born.",
+               "flavor": "Nobody ever wants to get out. It makes emergency evacuations awkward."
+            },
+            "ornate_dresser_recipe": {
+               "recipe_name": "Ornate Wooden Dresser",
+               "description": "A chest of drawers for storing clothing and personal possessions.",
+               "flavor": "Step 2: acquire personal possessions..."
+            },
+            "bench_recipe": {
+               "recipe_name": "Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation.",
+               "flavor": "Life is like a plate of berries."
+            },
+            "ornate_bench_recipe": {
+               "recipe_name": "Ornate Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation.",
+               "flavor": "Life is like a plate of berries."
+            },
+            "ornate_writing_desk_recipe": {
+               "recipe_name": "Ornate Writing Desk",
+               "description": "Not at all like a raven.",
+               "flavor": "...Except it can produce a few notes, tho they are very flat."
+            },
+            "ornate_comfy_chair_recipe": {
+               "recipe_name": "Ornate Comfy Chair",
+               "description": "Its padded seat guarantees a 98% reduction in awkward splinters!",
+               "flavor": "If pillows are good for the head, surely they're even better for the butt and back!"
+            },
+            "ornate_wooden_tunnel_door_recipe": {
+               "recipe_name": "Ornate Wooden Tunnel Door",
+               "description": "Useful for blocking off tunnels in style."
+            },
+            "ornate_picket_fence_gate_recipe": {
+               "recipe_name": "Ornate Picket Fence Gate",
+               "description": "Lets people through your picket fence.",
+               "flavor": "Hope you like your neighbors!"
+            },
+            "ornate_picket_fence_recipe": {
+               "recipe_name": "Ornate Picket Fence",
+               "description": "Keeps people off your property.",
+               "flavor": "If it's not white, is our life unfulfilled?"
+            },
+            "ornate_wooden_garden_lantern_recipe": {
+               "recipe_name": "Ornate Wooden Garden Lantern",
+               "description": "A small lantern that's placed on the ground. Suitable for lighting paths or small gardens.",
+               "flavor": "Practical and romantic!"
+            },
+            "ornate_wooden_wall_lantern_recipe": {
+               "flavor": "So comfortinzzzzzzzz...",
+               "recipe_name": "Wooden Wall-Mounted Lantern",
+               "description": "A simple lantern. Place on buildings to provide light at night."
+            },
+            "ornate_wooden_double_door_recipe": {
+               "recipe_name": "Ornate Wooden Double Door",
+               "description": "Two doors are better than one.",
+               "flavor": "Some people want to make an entrance... every day."
+            },
+            "ornate_wooden_door_recipe": {
+               "recipe_name": "Ornate Reinforced Wooden Door",
+               "description": "Stronger than your average door.",
+               "flavor": "This here pattern, I learned from the Squarefolk."
+            },
+            "wooden_chair_recipe": {
+               "description": "When sitting, food is 20% more satisfying.",
+               "flavor": "Ten thousand years of research culminated in this four-legged design.",
+               "recipe_name": "Wooden Chair"
+            },
+            "ornate_wooden_chair_recipe": {
+               "description": "When sitting, food is 20% more satisfying.",
+               "flavor": "Ten thousand years of research culminated in this four-legged design.",
+               "recipe_name": "Ornate Wooden Chair"
             }
          }
       },
@@ -9249,7 +9537,7 @@
                "perk_000_description": "This Engineer can place up to twelve traps and eight turrets"
             },
             "level_2_data": {
-               "perk_000_name": "Improved Inventiveness",
+               "perk_000_name": "Improved Diligence",
                "perk_000_description": "The Engineer can repair broken doors and gates more efficiently"
             },
             "level_1_data": {
@@ -9263,7 +9551,7 @@
             "level_3_data": {
                "perk_000_name": "Town Defender",
                "perk_000_description": "This Engineer can place up to eight traps and four turrets. ",
-			   "perk_001_name": "Journeyman's Knowledge",
+               "perk_001_name": "Journeyman's Knowledge",
                "perk_001_description": "When inspiration strikes, the Engineer may now craft an especially Fine quality of item."
             },
             "level_5_data": {
@@ -9337,8 +9625,8 @@
             }
          },
          "engineer_buffs": {
-            "inventiveness_2_buff": {
-               "display_name": "Inventiveness +50",
+            "diligence_2_buff": {
+               "display_name": "Diligence +50",
                "description": "The engineer can repair doors more efficiently"
             }
          },
@@ -9528,6 +9816,13 @@
             }
          },
          "recipes": {
+            "tools_name": "Tools",
+            "storage_name": "Storage",
+            "signage_decoration_name": "Signage & Decoration",
+            "building_parts_name": "Building Parts",
+            "weapons_name": "Weapons",
+            "furniture_name": "Furniture",
+            "refined_name": "Refinement",
             "bird_bath_recipe": {
                "description": "A decorative stone vase with water for the birdies.",
                "recipe_name": "Bird Bath",
@@ -9563,12 +9858,6 @@
                "recipe_name": "Wall-Mounted Decorative Gargoyle",
                "flavor": "Remnants of the servants of Brelor, Crownless King."
             },
-            "tools_name": "Tools",
-            "storage_name": "Storage",
-            "signage_decoration_name": "Signage & Decoration",
-            "building_parts_name": "Building Parts",
-            "weapons_name": "Weapons",
-            "furniture_name": "Furniture",
             "stone_bench_recipe": {
                "description": "Outdoor seating for moments of relaxation.",
                "recipe_name": "Stone Bench",
@@ -9657,6 +9946,16 @@
                "recipe_name": "The Guildmaster's Skill",
                "description": "Shows each craftsman at their best",
                "flavor": "A good crafter never blames his tools, only the people who make his tools. --Otto Crankfrown, Guildmaster Emeritus"
+            },
+            "gold_flakes_recipe": {
+               "recipe_name": "Gold Flakes",
+               "description": "Used when crafting furniture to make it really pretty!",
+               "flavor": "So Shine!"
+            },
+            "gold_flakes_times_three_recipe": {
+               "recipe_name": "Gold Flakes (x3)",
+               "description": "Smash up a Gold Bar to get the Flakes back out of it!",
+               "flavor": "So many Shine!"
             }
          }
       },
@@ -10062,7 +10361,7 @@
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
                "perk_000_description": "The Weaver is now skillful enough to use materials created by other crafters."
-            }, 	
+            },
             "level_4_data": {
                "perk_000_name": "Ingenuity Enhancements (not implemented)",
                "perk_000_description": "The Weaver adds new levels of functionality to classic recipes."
@@ -10291,7 +10590,7 @@
             "level_3_data": {
                "perk_000_name": "Item Proficiency",
                "perk_000_description": "The Herbalist's medical prowess increases the effectiveness of healing items by 50%.",
-			   "perk_001_name": "Journeyman's Knowledge",
+               "perk_001_name": "Journeyman's Knowledge",
                "perk_001_description": "When inspiration strikes, the Herbalist may now craft an especially Fine quality of item.  (Not implemented for healing items yet!)"
             },
             "level_5_data": {

@@ -85,7 +85,10 @@
             "terrain_xray_vision": "Vision rayon X",
             "terrain_xray_vision_description": "Vue traversant les terrains. Alternez la vue complète et plate pour voir les murs souterrains.",
             "terrain_xray_vision_flat": "Tronqué",
-            "terrain_xray_vision_full": "Complet"
+            "terrain_xray_vision_full": "Complet",
+            "appeal_vision_icon_name": "Charme",
+            "appeal_vision": "Vision d'intérêt",
+            "appeal_vision_description": "Voyez la vision attractive du monde des hearthlings "
          },
          "promotion_tree": {
             "title": "Choisir une profession -",
@@ -905,6 +908,7 @@
                "contents": "Contenu",
                "filter": "Filtre",
                "help": "Cliquez sur les icônes pour choisir quoi ranger",
+               "help_single_filter": "Cliquez sur une icône pour choisir le type d'élément à stocker dans ce conteneur.",
                "used_space": "Espace utilisé :",
                "filters": {
                   "all": "Tout",
@@ -928,7 +932,7 @@
                   "tooltip_defense": "Défenses",
                   "tooltip_light": "Torches et éclairages",
                   "tooltip_decoration": "Décorations",
-                  "tooltip_refined_weaver": "Fil, tissu et cuir",
+                  "tooltip_refined_weaver": "Tissu, etc.",
                   "tooltip_refined_craftables": "Craftables raffinés",
                   "tooltip_refined_animal_part": "Biens fabriqués à partir d'animaux",
                   "tooltip_refined_ore": "Barres de métal",
@@ -943,7 +947,9 @@
                   "tooltip_raw_food": "Nourriture crue",
                   "tooltip_prepared_food": "Plats cuisinés",
                   "tooltip_cooking_ingredients": "Ingrédients de cuisson et aliments pour animaux",
-                  "tooltip_consumables": "Articles de guérison et autres consommables"
+                  "tooltip_cooking": "Cuisine",
+                  "tooltip_consumables": "Articles de guérison et autres consommables",
+                  "tooltip_animal_parts": "Parties d'animaux"
                }
             }
          },
@@ -983,7 +989,7 @@
             "recipe_tab": "Recettes",
             "orders_tab": "Ordres",
             "missing_ingredients": "Ingrédients manquants&nbsp;: ",
-            "tooltip_appeal_stat":  "Charme"
+            "tooltip_appeal_stat": "Charme"
          },
          "town_overview": {
             "title": "Rapport sur la ville",
@@ -1286,6 +1292,7 @@
                   "vision_slice_toggle": "Basculer en vison de tranche du terrain",
                   "vision_slice_up": "Terrain coupé vers le haut",
                   "vision_slice_down": "Terrain coupé vers le bas",
+                  "vision_appeal_toggle": "Basculer en vision d'intérêt",
                   "speed_pause": "Pause",
                   "speed_toggle_pause": "Basculer en pause",
                   "speed_play": "Rapidité Normal",
@@ -1464,6 +1471,14 @@
                   "000": "Tous les 2 points augmente la chance de fabriquer des objets de qualité de 1%"
                }
             },
+            "inspiration": {
+               "display_name": "Inspiration",
+               "description": "Une part de chance de ce hearthling peut créer des articles avec la qualité fine et excellente",
+               "bullet_points": {
+               "000": "Un hearthling doit être au moins un compagnon pour créer des objets de qualité, et un maître pour créer d'excellents articles </ br>",
+               "001": "Qui va de-2% à +3%, basé sur l'esprit du hearthling"
+               }
+            },
             "shelter": {
                "display_name": "Habitat",
                "description": "Soyez sur que vos hearthlings aient des lits confortables pour se reposer.",
@@ -1487,7 +1502,8 @@
                "display_name": "Concentration",
                "description": "Une forte concentration permet d'exécuter de longues tâches sans se faire distraire.",
                "bullet_points": {
-                  "000": "Augmente la vitesse de fabrication"
+                  "000": "Augmente la vitesse de fabrication",
+                  "001": "Détermine la vitesse de réparation de l'ingénieur"
                }
             },
             "willpower": {
@@ -1526,7 +1542,7 @@
             },
             "body": {
                "display_name": "Corps",
-               "description": "Influence les activités physiques. Avec un indice physique haut, les hearthlings se déplacent plus vite. Influence la force, la vitesse et l'endurance."
+               "description": "Influence les activités physiques. </br></br>Avec un indice physique haut, les hearthlings se déplacent plus vite. </br></br>Influence la force, la vitesse et l'endurance."
             },
             "edibles": {
                "display_name": "Comestibles",
@@ -1535,7 +1551,7 @@
             },
             "mind": {
                "display_name": "Esprit",
-               "description": "Faculté à raisonner brillamment. Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes comme l'artisanat. Influence la concentration, la curiosité et la créativité"
+               "description": "Faculté à raisonner brillamment. </br></br>Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes comme l'artisanat. </br></br>Influence la concentration, la curiosité et la créativité"
             },
             "curiosity": {
                "display_name": "Curiosité",
@@ -1546,7 +1562,7 @@
             },
             "spirit": {
                "display_name": "Âme",
-               "description": "Foie dans le prochain. Un hearthling d'une grande âme sera apprécié par les animaux et sera un rempart contre l'ennemi. Influence le courage, la volonté et la compassion"
+               "description": "Foie dans le prochain et d'eux-mêmes. </br></br>Un hearthling d'une grande âme sera apprécié par les animaux et sera un rempart contre l'ennemi. </br></br>Influence le courage, la volonté et la compassion"
             },
             "safety": {
                "display_name": "Sécurité",
@@ -3665,7 +3681,7 @@
             "disabled_description": "Cet objet est utilisé. Essayé de le bouger plus tard."
          },
          "open_character_sheet": {
-            "display_name": "Ouvrir une feuille de personnage",
+            "display_name": "Feuille de personnage",
             "description": "Regardez de plus près cet hearthling"
          },
          "place_item": {
@@ -5335,6 +5351,9 @@
                      "display_name": "Belle esthétique",
                      "tooltip": "Le décor est vraiment génial. Il a fallu beaucoup de travail acharné pour que ça soit aussi beau."
                   },
+                  "neutral": {
+                     "display_name": "Esthétique neutre"
+                  },
                   "ugly": {
                      "display_name": "Esthétique laid",
                      "tooltip": "Beurk, c'est vraiment moche par ici. Nous pouvons définitivement améliorer ce look !"
@@ -5350,6 +5369,74 @@
                   "breathtaking": {
                      "display_name": "Esthétique époustouflante",
                      "tooltip": "Wow, partout où je regarde est magnifique ! L'attention aux détails est incroyable !"
+                  }
+               }
+            },
+            "appeal_crafting": {
+               "values": {
+                  "breathtaking": {
+                     "display_name": "Atelier à couper le souffle",
+                     "tooltip": "J'aime travailler dans mon atelier; C'est tellement bien décoré !"
+                  },
+                  "pleasing": {
+                     "display_name": "Atelier agréable",
+                     "tooltip": "Un espace de travail bien entretenu éclaircit mon humeur."
+                  },
+                  "beautiful": {
+                     "display_name": "Bel atelier",
+                     "tooltip": "La zone autour de mon établi a l'air bien, tout est à sa place."
+                  },
+                  "ugly": {
+                     "display_name": "Atelier débraillé",
+                     "tooltip": "C'est frustrant que mon espace de travail soit si fouilli."
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Atelier grandiose",
+                     "tooltip": "Mon atelier a l'air si incroyable ! C'est une inspiration !"
+                  }
+               }
+            },
+            "appeal_bedroom": {
+               "values": {
+                  "pleasing": {
+                     "display_name": "Chambre agréable",
+                     "tooltip": "Là où j'ai dormi hier soir était vraiment sympa"
+                  },
+                  "beautiful": {
+                     "display_name": "Belle chambre",
+                     "tooltip": "Ma chambre a vraiment du charme; J'aime ça !"
+                  },
+                  "breathtaking": {
+                     "display_name": "Chambre à couper le souffle",
+                     "tooltip": "J'aime dormir dans une chambre si magnifique !"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Chambre impressionnante",
+                     "tooltip": "Quand je suis allé au lit la nuit dernière, je me suis senti comme un roi."
+                  }
+               }
+            },
+            "appeal_dining": {
+               "values": {
+                  "beautiful": {
+                     "display_name": "Belle salle de repas",
+                     "tooltip": "J'étais heureux de manger dans un endroit si attrayant !"
+                  },
+                  "breathtaking": {
+                     "display_name": "Salle de repas à couper le souffle",
+                     "tooltip": "Quelqu'un a vraiment fait des efforts pour décorer notre salle à manger !"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Salle de repas grandiose",
+                     "tooltip": "La décoration était géniale, le dîner était un régal pour mes yeux et mon estomac !"
+                  },
+                  "pleasing": {
+                     "display_name": "Salle de repas aggréable",
+                     "tooltip": "C'était agréable de manger mon repas dans un espace confortable."
+                  },
+                  "ugly": {
+                     "display_name": "Salle de repas lugubre",
+                     "tooltip": "L'environnement moche fait qu'il est difficile de profiter de mon dernier repas."
                   }
                }
             }
@@ -5862,6 +5949,34 @@
                "display_name": "Fenêtre brun pale en argile",
                "description": "Donne de la douceur à l'air du désert"
             }
+         },
+         "ornate_picket_fence": {
+            "ornate_picket_fence_ghost": {
+               "display_name": "Clôture ornée",
+               "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
+            }
+         },
+         "ornate_picket_fence_gate": {
+            "ornate_picket_fence_gate_ghost": {
+               "display_name": "Porte palissade de clôture ornée",
+               "description": "Vous n'aimez pas vos voisins? Ne pas installer."
+            }
+         },
+         "ornate_wooden_door": {
+            "ornate_wooden_door_ghost": {
+               "display_name": "Porte en bois ornée",
+               "description": "Etudier pour que votre porte moyenne soit résistante, et joli."
+            }
+         },
+         "ornate_wooden_double_door": {
+            "ornate_wooden_double_door_ghost": {
+               "display_name": "Porte double en bois ornée",
+               "description": "Une plus grande porte avec un style supplémentaire pour que tous vos amis en soit envieux."
+            }
+         },
+         "ornate_wooden_tunnel_door": {
+            "display_name": "Porte de tunnel en bois orné",
+            "description": "Utile pour bloquer les tunnels"
          }
       },
       "containers": {
@@ -5933,11 +6048,11 @@
          },
          "ore_pile": {
             "ore_pile": {
-               "description": "Récolter pour obtenir plusieurs morceaux de minerai",
+               "description": "Conteneur pour beaucoup de gros morceaux de minerai",
                "display_name": "Tas de minerai"
             },
             "ore_pile_iconic": {
-               "description": "Minerai ramassables si marqués"
+               "description": "Conteneur pour beaucoup de gros morceaux de minerai"
             }
          },
          "clay_pile": {
@@ -5966,6 +6081,12 @@
             "leather_bound_chest_fine_ghost": {
                "display_name": "Beau coffre en cuir lié",
                "description": "Entrepose jusqu'à 64 articles, avec du style"
+            }
+         },
+         "ornate_leather_bound_chest": {
+            "ornate_leather_bound_chest_ghost": {
+               "display_name": "Coffre en cuir orné",
+               "description": "Stocke jusqu'à 64 articles. Avec style."
             }
          }
       },
@@ -6824,6 +6945,18 @@
                "display_name": "Girouette Poyo",
                "description": "Une girouette à l'image d'une volaille amical"
             }
+         },
+         "ornate_wooden_garden_lantern": {
+            "ornate_wooden_garden_lantern_ghost": {
+               "description": "Une source de lumière compacte, avec un peu de style.",
+               "display_name": "Lanterne de jardin en bois ornée"
+            }
+         },
+         "ornate_wooden_wall_lantern": {
+            "ornate_wooden_wall_lantern_ghost": {
+               "description": "Facilement fixé aux murs",
+               "display_name": "Lanterne murale en bois ornée"
+            }
          }
       },
       "food": {
@@ -7184,6 +7317,12 @@
                "description": "Siège d'extérieur pour des moments de détente."
             }
          },
+         "ornate_bench": {
+            "ornate_bench_ghost": {
+               "display_name": "Banc de parc orné",
+               "description": "Des banc de plein air pour des bons moments de détente."
+            }
+         },
          "simple_wooden_chair": {
             "simple_wooden_chair_ghost": {
                "display_name": "Chaise en bois",
@@ -7303,6 +7442,60 @@
             "park_bench_red_ghost": {
                "display_name": "Banc de parc en bois rouge",
                "description": "Terrasse extérieure pour des moments de détente"
+            }
+         },
+         "ornate_table_for_one": {
+            "ornate_table_for_one_ghost": {
+               "display_name": "Table ornée pour un",
+               "description": "Meubles à manger pour les introvertis."
+            }
+         },
+         "ornate_comfy_bed": {
+            "ornate_comfy_bed_ghost": {
+               "display_name": "Lit confortable orné",
+               "description": "J'ai rêvé ... de mouton volant."
+            }
+         },
+         "ornate_dining_table": {
+            "ornate_dining_table_ghost": {
+               "display_name": "Table de salle à manger ornée",
+               "description": "S'asseoir pour manger est un signe de civilisation."
+            }
+         },
+         "ornate_dresser": {
+            "ornate_dresser_ghost": {
+               "display_name": "Commode ornée",
+               "description": "Décoratif en l'absence d'effets personnels."
+            }
+         },
+         "ornate_writing_desk": {
+            "ornate_writing_desk_ghost": {
+               "display_name": "Bureau orné",
+               "description": "Un endroit élégant pour écrire des lettres à la maison."
+            }
+         },
+         "ornate_comfy_chair": {
+            "ornate_comfy_chair_ghost": {
+               "display_name": "Chaise confortable ornée",
+               "description": "Pour une assise confortable !"
+            }
+         },
+         "bench": {
+            "bench_ghost": {
+               "display_name": "Banc de parc en bois",
+               "description": "Des sièges en plein air pour des moments de détente."
+            }
+         },
+         "wooden_chair": {
+            "wooden_chair_ghost": {
+               "display_name": "Chaise en bois",
+               "description": "Pour un peu plus de classe en étant assis."
+            }
+         },
+         "ornate_wooden_chair": {
+            "ornate_wooden_chair_ghost": {
+               "display_name": "Chaise en bois ornée",
+               "description": "Pour encore plus de style en position assise."
             }
          }
       },
@@ -7917,6 +8110,12 @@
             "poyo_feathers": {
                "display_name": "Plumes de poyo",
                "description": "Plumes d'un oiseau dodu"
+            }
+         },
+         "refined": {
+            "gold_flakes": {
+               "display_name": "Paillettes d'or",
+               "description": "A utiliser lors de la fabrication de meubles pour les rendre vraiment joli !"
             }
          }
       },
@@ -9013,12 +9212,12 @@
                "recipe_name": "Bâton d'herboriste"
             },
             "safety_standard_recipe": {
-               "description": "Utilisé pour désigner un point de sécurité",
+               "description": "Utilisé pour désigner un point de sécurité.",
                "recipe_name": "Étendard de sécurité en bois"
             },
             "wooden_tunnel_door_recipe": {
                "recipe_name": "Porte de tunnel en bois",
-               "description": "Utile pour bloquer les tunnels"
+               "description": "Utile pour bloquer les tunnels."
             },
             "wooden_sign_cook_recipe": {
                "description": "Une enseigne avec la marque d'un cuisinier.",
@@ -9071,6 +9270,95 @@
                "recipe_name": "Girouette Poyo",
                "description": "Une girouette à l'image d'une volaille amical",
                "flavor": "TODO"
+            },
+            "ornate_leather_bound_chest_recipe": {
+               "recipe_name": "Coffre en cuir orné",
+               "description": "Stocke élégamment jusqu'à 64 articles.",
+               "flavor": "Comme celui que mon grand-père avait !"
+            },
+            "ornate_table_for_one_recipe": {
+               "recipe_name": "Table ornée pour un",
+               "description": "Mieux que de manger debout. Sauf si vous surveillez votre poids.",
+               "flavor": "Meubles à manger pour les introvertis."
+            },
+            "ornate_dining_table_recipe": {
+               "recipe_name": "Table à manger ornée",
+               "description": "Permet à un groupe de personnes de manger ensemble. Comme les adultes.",
+               "flavor": "S'asseoir pour manger est un signe de civilisation."
+            },
+            "ornate_comfy_bed_recipe": {
+               "recipe_name": "Lit confortable orné",
+               "description": "Huit heures vous laisseront aussi frais que le jour de votre naissance.",
+               "flavor": "Personne ne veut jamais sortir. Il rend les évacuations d'urgence difficiles."
+            },
+            "ornate_dresser_recipe": {
+               "recipe_name": "Commode en bois ornée",
+               "description": "Une commode pour ranger les vêtements et les effets personnels.",
+               "flavor": "Étape 2: acquérir des biens personnels ..."
+            },
+            "bench_recipe": {
+               "recipe_name": "Banc de parc en bois",
+               "description": "Des sièges en plein air pour des moments de détente.",
+               "flavor": "La vie est comme une assiette de baies."
+            },
+            "ornate_bench_recipe": {
+               "recipe_name": "Banc de parc en bois orné",
+               "description": "Des sièges en plein air pour des moments de détente.",
+               "flavor": "La vie est comme une assiette de baies."
+            },
+            "ornate_writing_desk_recipe": {
+               "recipe_name": "Bureau Orné",
+               "description": "Pas du tout comme un corbeau.",
+               "flavor": "... Sauf qu'il peut produire quelques notes, elles sont très plates."
+            },
+            "ornate_comfy_chair_recipe": {
+               "recipe_name": "Chaise confortable ornée",
+               "description": "Son siège rembourré garantit une réduction de 98% des maladroites échardes !",
+               "flavor": "Si les oreillers sont bons pour la tête, ils sont sûrement encore meilleurs pour les fesses et le dos !"
+            },
+            "ornate_wooden_tunnel_door_recipe": {
+               "recipe_name": "Porte de tunnel en bois orné",
+               "description": "Utile pour bloquer les tunnels avec style."
+            },
+            "ornate_picket_fence_gate_recipe": {
+               "recipe_name": "Porte de clôture ornée",
+               "description": "Permet aux gens de passer à travers votre clôture.",
+               "flavor": "J'espère que vous aimez vos voisins !"
+            },
+            "ornate_picket_fence_recipe": {
+               "recipe_name": "Clôture ornée",
+               "description": "Maintient les gens hors de votre propriété.",
+               "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
+            },
+            "ornate_wooden_garden_lantern_recipe": {
+               "recipe_name": "Lanterne de jardin en bois ornée",
+               "description": "Une petite lanterne posée sur le sol. Convient pour les sentiers d'éclairage ou de petits jardins.",
+               "flavor": "Pratique et romantique !"
+            },
+            "ornate_wooden_wall_lantern_recipe": {
+               "recipe_name": "Lanterne murale en bois",
+               "description": "Une lanterne simple. Placer sur les bâtiments pour fournir de la lumière la nuit.",
+               "flavor": "Tellement réconfortant... !"
+            },
+            "ornate_wooden_double_door_recipe": {
+               "recipe_name": "Porte double en bois ornée",
+               "description": "Deux portes valent mieux qu'une.",
+               "flavor": "Certaines personnes veulent faire une entrée ... tous les jours."
+            },
+            "ornate_wooden_door_recipe": {
+               "recipe_name": "Porte en bois renforcée ornée",
+               "description": "Plus fort que votre porte moyenne.",
+               "flavor": "Ce modèle ici, je l'ai appris de la place populaire."
+            },
+            "wooden_chair_recipe": {
+               "recipe_name": "Chaise en bois",
+               "description": "En position assise, la nourriture est 20% plus satisfaisante.",
+               "flavor": "Dix mille ans de recherche ont abouti à ce design à quatre pattes."
+            },
+            "ornate_wooden_chair_recipe": {
+               "recipe_name": "Chaise en bois ornée",
+               "description": "En position assise, la nourriture est 20% plus satisfaisante.",
+               "flavor": "Dix mille ans de recherche ont abouti à ce design à quatre pattes."
             }
          }
       },
@@ -9249,7 +9537,7 @@
                "perk_000_description": "Cet ingénieur peut placer jusqu'à douze pièges et huit tourelles"
             },
             "level_2_data": {
-               "perk_000_name": "Amélioration de l'inventivité",
+               "perk_000_name": "Amélioration de l'assiduité",
                "perk_000_description": "L'ingénieur peut réparer les portes cassées et des portes plus efficacement"
             },
             "level_1_data": {
@@ -9337,8 +9625,8 @@
             }
          },
          "engineer_buffs": {
-            "inventiveness_2_buff": {
-               "display_name": "Inventivité +50",
+            "diligence_2_buff": {
+               "display_name": "Assiduité +50",
                "description": "L'ingénieur peut réparer les portes plus efficacement"
             }
          },
@@ -9528,6 +9816,13 @@
             }
          },
          "recipes": {
+            "tools_name": "Outils",
+            "storage_name": "Rangement",
+            "signage_decoration_name": "Signalétique et décoration",
+            "building_parts_name": "Pièces de construction",
+            "weapons_name": "Armes",
+            "furniture_name": "Mobilier",
+            "refined_name": "Raffinement",
             "bird_bath_recipe": {
                "description": "Une vasque décorative avec de l'eau pour les oiseaux.",
                "recipe_name": "Bain pour oiseaux",
@@ -9563,12 +9858,6 @@
                "recipe_name": "Gargouille murale décorative.",
                "flavor": "Restes des serviteurs de Brelor, Roi Sans-couronne."
             },
-            "tools_name": "Outils",
-            "storage_name": "Rangement",
-            "signage_decoration_name": "Signalétique et décoration",
-            "building_parts_name": "Éléments de construction",
-            "weapons_name": "Armes",
-            "furniture_name": "Mobilier",
             "stone_bench_recipe": {
                "description": "Siège d'extérieur pour des moments de détente.",
                "recipe_name": "Banc en pierre",
@@ -9657,6 +9946,16 @@
                "recipe_name": "L'habileté du maître de guilde",
                "description": "Affiche chaque artisan sur leur meilleur profil",
                "flavor": "Un bon artisan ne blâme ses outils, seuls les gens qui font ses outils. --Otto Crankfrown, Honorable Maître de Guilde"
+            },
+            "gold_flakes_recipe": {
+               "recipe_name": "Paillettes d'or",
+               "description": "Utilisé lors de la fabrication de meubles pour les rendre vraiment joli !",
+               "flavor": "Tres brillant !"
+            },
+            "gold_flakes_times_three_recipe": {
+               "recipe_name": "Paillettes d'or (x3)",
+               "description": "Fracas un lingots d'or pour obtenir des paillettes en retour!",
+               "flavor": "Tant de brillance !"
             }
          }
       },
