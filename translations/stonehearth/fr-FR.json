@@ -2,61 +2,61 @@
    "ai": {
       "actions": {
          "status_text": {
-            "chase_entity": "poursuit [name(data.target)]",
-            "eat_item": "mange [name(data.target)]",
-            "fill_storage": "rempli [name(data.target)]",
-            "harvest_crop": "récolte [name(data.target)]",
-            "harvest_resource": "récolte [name(data.target)]",
+            "chase_entity": "Poursuit [name(data.target)]",
+            "eat_item": "Mange un/une [name(data.target)]",
+            "fill_storage": "Rempli [name(data.target)]",
+            "harvest_crop": "Récolte un/une [name(data.target)]",
+            "harvest_resource": "Récolte un/une [name(data.target)]",
             "harvest_resource_node": "récolte [name(data.target)]",
-            "light_firepit": "allume [name(data.target)]",
+            "light_firepit": "Allume [name(data.target)]",
             "place_item_on_structure": "place [name(data.target)]",
-            "work_at_workshop": "fabrique [str(data.craftable_name)]",
+            "work_at_workshop": "Fabrique [str(data.craftable_name)]",
             "attack_melee_adjacent": "attaque [name(data.target)]",
-            "heal_ranged_in_sight": "soigne [name(data.target)]",
-            "wait_at_safety_point": "attend une bannière de ralliement",
-            "repair_entity": "réparation [name(data.target)]",
-            "resting_by_fire": "se repose prêt du feu",
-            "claiming_animal": "apprivoise un animal",
-            "looking_for_animals": "cherche des animaux",
-            "collect_ingredient": "rassemble des ingrédients",
-            "build_workshop": "construit un atelier",
-            "death": "se meurt",
-            "eat": "cherche de quoi manger",
-            "find_stray_animal": "cherche des animaux errants",
-            "harvest_field": "récolte un champ",
-            "idle": "inoccupé",
-            "patrol": "patrouille",
-            "plant_crop": "ensemence un champ",
-            "return_animals": "retourne au pâturage",
-            "combat": "est engagé en combat",
-            "cower": "est tétanisé",
-            "flee": "s'enfuit",
-            "panic": "panique",
-            "mine": "mine",
-            "sleep_in_bed": "dort",
-            "sleep_on_ground": "dort par terre",
-            "check_bait_trap": "vérifie ses pièges",
-            "set_bait_trap": "pose des pièges",
-            "survey_trapping_grounds": "surveille la zone de chasse",
-            "steal_bait": "vole un appât",
-            "build_ladder": "construit une échelle",
-            "promote": "change de profession",
-            "move_item_to_storage": "emmène un objet en réserve",
-            "teardown_ladder": "démonte une échelle",
-            "drop_item_near_workshop": "retire un atelier",
-            "fabricate_structure": "construit",
-            "teardown_structure": "démonte des structures",
-            "feed_pasture_animals": "nourrit les animaux",
-            "restock": "range des objets",
-            "resting_from_injuries": "a besoin de soins",
-            "healing": "traite des blessures",
-            "healing_target": "guérit [name(data.target)]",
-            "dig_foundation": "creuse des fondations",
-            "unit_hold_location": "défendre la position",
-            "talk": "parler à [name(data.target)]",
-            "incapacitated": "à terre",
-            "rescue_citizen": "aide [name(data.target)]",
-            "recuperating": "est en convalescence"
+            "heal_ranged_in_sight": "Soigne [name(data.target)]",
+            "wait_at_safety_point": "Attend près d'une bannière de ralliement",
+            "repair_entity": "Réparation [name(data.target)]",
+            "resting_by_fire": "Se repose prêt du feu",
+            "claiming_animal": "Apprivoise un animal",
+            "looking_for_animals": "Cherche des animaux",
+            "collect_ingredient": "Rassemble des ingrédients",
+            "build_workshop": "Construit un atelier",
+            "death": "Se meurt",
+            "eat": "Cherche quoi manger",
+            "find_stray_animal": "Cherche des animaux errants",
+            "harvest_field": "Récolte un champ",
+            "idle": "Inoccupé",
+            "patrol": "Patrouille",
+            "plant_crop": "Plante des graines",
+            "return_animals": "Retourne au pâturage",
+            "combat": "Engagé en combat",
+            "cower": "Est tétanisé",
+            "flee": "S'enfuit",
+            "panic": "Panique",
+            "mine": "Mine",
+            "sleep_in_bed": "Dort",
+            "sleep_on_ground": "Dort par terre",
+            "check_bait_trap": "Vérifie ses pièges",
+            "set_bait_trap": "Pose des pièges",
+            "survey_trapping_grounds": "Surveille la zone de chasse",
+            "steal_bait": "Vole un appât",
+            "build_ladder": "Construit une échelle",
+            "promote": "Change de profession",
+            "move_item_to_storage": "Emmène un objet en réserve",
+            "teardown_ladder": "Démonte une échelle",
+            "drop_item_near_workshop": "Retire un atelier",
+            "fabricate_structure": "Construit",
+            "teardown_structure": "Démonte des structures",
+            "feed_pasture_animals": "Nourrit les animaux",
+            "restock": "Range des objets",
+            "resting_from_injuries": "A1 besoin de soins",
+            "healing": "Traite des blessures",
+            "healing_target": "Guérit [name(data.target)]",
+            "dig_foundation": "Creuse des fondations",
+            "unit_hold_location": "Défend la position",
+            "talk": "Parle à [name(data.target)]",
+            "incapacitated": "À terre",
+            "rescue_citizen": "Aide [name(data.target)]",
+            "recuperating": "Est en convalescence"
          }
       }
    },
@@ -93,7 +93,7 @@
          "promotion_tree": {
             "title": "Choisir une profession -",
             "promotion_title": "Promouvoir en [str(job_name)]",
-            "text_1": "En l'honneur de ses efforts inébranlables et de votre rigueur, nous vous annonçons par la présente :",
+            "text_1": "En l'honneur de ses efforts inébranlables et de sa rigueur, nous vous annonçons par la présente :",
             "text_current": "C'est le travail actuel des hearthlings.",
             "choose": "Choisissez un hearthling...",
             "text_2": "[str(date)]",
@@ -139,7 +139,7 @@
             "equipment": "Équipement",
             "abilities": "Compétences",
             "appeal": "Charme",
-            "unknown_item": "Préférence non découverte",
+            "unknown_item": "Préférence inconnue",
             "morale_title": "Moral",
             "overall_morale": "Moral général",
             "morale_food": "Nourriture",
@@ -157,15 +157,15 @@
             "no_unhappy_thoughts": "Pas de pensées malheureuses à ce jour !",
             "no_happy_thoughts": "Pas de pensées heureuses pour le moment !",
             "appeal_headings": {
-               "like": "Aimer",
-               "like_tooltip": "Un espace est considéré comme plus beau quand il y a plus de 3 objets aimé",
-               "love": "Adorer",
-               "love_tooltip": "Voir un de ces objets aimés améliorera drastiquement [str(self.stonehearth:unit_info.custom_name)] l'opinion d'une région.",
-               "dislike": "Ne pas aimer",
+               "like": "Aime",
+               "like_tooltip": "Un espace est considéré plus beau lorsqu'il y a plus de 3 objets aimés",
+               "love": "Adore",
+               "love_tooltip": "Voir un objets de ces objets améliorera drastiquement [str(self.stonehearth:unit_info.custom_name)] l'opinion d'une région.",
+               "dislike": "N'aime pas",
                "dislike_tooltip": "[str(self.stonehearth:unit_info.custom_name)] n'aime pas ces articles et les trouvera toujours désagréables, peu importe leur qualité.",
                "current_and_target_bar": "Opinion générale",
-               "current_and_target_bar_tooltip": "[str(self.stonehearth:unit_info.custom_name)] est l'opinion de l'environnement et des zones récemment visitées.",
-               "current_arrow_tooltip": "[str(self.stonehearth:unit_info.custom_name)] est l'opinion générale de l'appel de la ville. Cela affecte leur humeur.",
+               "current_and_target_bar_tooltip": "[str(self.stonehearth:unit_info.custom_name)] a cet opinion sur l'environnement et les zones récemment visitées.",
+               "current_arrow_tooltip": "[str(self.stonehearth:unit_info.custom_name)] est l'opinion générale de l'appel de la ville. Cela affecte l'humeur.",
                "target_arrow_tooltip": "Comment [str(self.stonehearth:unit_info.custom_name)] voit l'environnement immédiat. Cela affecte leur opinion globale de la ville avec le temps.",
                "item_preferences": "Préférence [str(self.stonehearth:unit_info.custom_name)]"
             }
@@ -249,7 +249,7 @@
             "remove_party_member_button": "Retirer",
             "not_in_party": "sans groupe",
             "party_help": "Les membres du groupe peuvent se déplacer ensembles et êtres dirigés sur le champ de bataille.",
-            "party_editor_help": "Utilisez cet écran pour ajouter des hearthlings aux groupes.",
+            "party_editor_help": "Utilisez cet écran pour ajouter des hearthlings a ce groupe.",
             "attack_banner_button": "Ordre d'attaque",
             "attack_banner_button_help": "Envois le groupe attaquer une position",
             "defend_banner_button": "Ralliement et ordre de défense",
@@ -305,17 +305,17 @@
             "worker_details": "Détails",
             "workers_list_headers": {
                "name": "Nom",
-               "haul": "Transport",
-               "build": "Bâtiment",
+               "haul": "Déplace",
+               "build": "Construction",
                "mine": "Mine",
-               "job": "Job",
+               "job": "Travail",
                "current_activity": "Activité",
                "status": "Statut",
                "morale": "Moral"
             },
             "show_character_sheet": "Feuille de personnage",
-            "button_suspend": "stopper",
-            "button_resume": "lancer",
+            "button_suspend": "suspendre",
+            "button_resume": "reprendre",
             "tab": {
                "tasks": "Tâches",
                "groups": "Groupes"
@@ -327,9 +327,9 @@
             }
          },
          "create_camp": {
-            "new_game_place_banner": "Cliquez-moi pour placer la bannière de la colonie",
+            "new_game_place_banner": "Cliquez ici pour placer la colonie",
             "click_banner_tip": "Cliquez sur la bannière pour choisir l'emplacement de votre colonie",
-            "select_camp_tip": "Maintenant, cliquez quelque part dans le monde",
+            "select_camp_tip": "Maintenant, cliquez n'importe où dans le monde",
             "name_camp_title": "Nommez votre colonie",
             "name_camp_prompt": "Entrez un nom pour votre colonie!"
          },
@@ -423,7 +423,7 @@
             },
             "citizen_manager": {
                "display_name": "Hearthlings",
-               "description": "Managez vos hearthlings et changez leur professions."
+               "description": "Gérer vos hearthlings et changez leur profession."
             },
             "harvest_menu": {
                "display_name": "Ressource naturelle",
@@ -558,7 +558,7 @@
                      "display_name": "Groupe de combat",
                      "description": "Envoi directement des hearthlings avec des emplois de combat dans la bataille ! Les unités de combat promus sont automatiquement ajoutés ici.",
                      "tip_title": "Le groupe est sélectionné dans le 'cadre de l'unité'.",
-                     "tip_description": "Utilisez les commandes dans le 'cadre de l'unité' pour diriger le peuple dans le groupe."
+                     "tip_description": "Utilisez les commandes dans le 'cadre de l'unité' pour diriger le groupe."
                   },
                   "party": {
                      "required_job_text": "Nécessite un emploi de combattant"
@@ -636,7 +636,7 @@
                "paused": "en pause"
             },
             "warnings": {
-               "town_inventory_full": "Objets de la ville plein"
+               "town_inventory_full": "Inventaire de la ville plein"
             }
          },
          "bulletin": {
@@ -883,12 +883,12 @@
                "fallow_description": "Ne rien semer et laisser le sol se régénérer seul."
             },
             "mining": {
-               "help": "L'extraction minière permet de creuser le sol et les montagnes et ainsi de trouver des ressources spécifiques.",
+               "help": "L'extraction minière permet de creuser le sol et les montagnes afin de trouver des ressources spécifiques.",
                "disable": "Suspendre l'extraction",
                "enable": "Reprendre l'extraction"
             },
             "trapping_grounds": {
-               "help": "Les chasseurs disposeront des pièges dans leurs zones affectés afin de capture du gibier.",
+               "help": "Les chasseurs disperseront des pièges dans leurs zones affectés afin de capture du gibier.",
                "disable": "Suspendre la pose de piège",
                "enable": "Reprendre la pose de piège"
             },
@@ -936,7 +936,7 @@
                   "tooltip_refined_craftables": "Craftables raffinés",
                   "tooltip_refined_animal_part": "Biens fabriqués à partir d'animaux",
                   "tooltip_refined_ore": "Barres de métal",
-                  "tooltip_weapons": "Armes de mêlée",
+                  "tooltip_weapons": "Armes de corps à corps",
                   "tooltip_ranged_weapon": "Armes à distance",
                   "tooltip_equipment": "Armure et autre équipement",
                   "tooltip_heavy_armor": "Armure lourde",
@@ -1136,7 +1136,7 @@
                "trees_and_plants_title": "Arbres et plantes",
                "trees_and_plants_description": "Le bois est la ressource principale pour la construction. Vous en aurez besoin afin de construire vos bâtiments et vos objets artisanaux.",
                "wildlife_title": "Faune",
-               "wildlife_description": "La faune locale peut être chassé pour la nourriture et les matériaux d'artisanat.",
+               "wildlife_description": "La faune locale peut être chassé pour de la nourriture et des matériaux d'artisanat.",
                "minerals_title": "Minerais",
                "minerals_description": "Vous aurez besoin de minerais pour fabriquer des objets en pierre ou en métal."
             },
@@ -1173,7 +1173,7 @@
             }
          },
          "settings": {
-            "title": "Préférences",
+            "title": "Paramètres",
             "graphics": "Graphismes",
             "gameplay": "Jouabilité",
             "controls": "Contrôles",
@@ -1340,7 +1340,7 @@
                   "ui_refresh": "Rafraîchir",
                   "toggle_fullscreen": "Basculer en plein écran",
                   "toggle": "Basculer l'IU",
-                  "ui_print_screen": "Prendre un Screenshot",
+                  "ui_print_screen": "Prendre une capture d'écran",
                   "debug_console": "Console Stonehearth",
                   "debug_navgrid": "Montrer/Cacher Navgrid",
                   "debug_navgrid_water_tight": "Montrer/Cacher Watertight Navgrid",
@@ -1542,7 +1542,7 @@
             },
             "body": {
                "display_name": "Corps",
-               "description": "Influence les activités physiques. </br></br>Avec un indice physique haut, les hearthlings se déplacent plus vite. </br></br>Influence la force, la vitesse et l'endurance."
+               "description": "Influence les activités physiques. </br></br>Avec un indice physique haut, les hearthlings se déplacent plus vite et ont plus de vie. </br></br>Influence la force, la vitesse et l'endurance."
             },
             "edibles": {
                "display_name": "Comestibles",
@@ -1551,7 +1551,7 @@
             },
             "mind": {
                "display_name": "Esprit",
-               "description": "Faculté à raisonner brillamment. </br></br>Un esprit de qualité permettra au hearthling d'exceller dans des tâches mentales complexes comme l'artisanat. </br></br>Influence la concentration, la curiosité et la créativité"
+               "description": "Faculté de raisonnement brillant. </br></br>Un esprit de qualité permettra au hearthling d'exceller dans les tâches mentales complexes, comme l'artisanat. </br></br>Influence la concentration, la curiosité et la créativité"
             },
             "curiosity": {
                "display_name": "Curiosité",
@@ -1562,7 +1562,7 @@
             },
             "spirit": {
                "display_name": "Âme",
-               "description": "Foie dans le prochain et d'eux-mêmes. </br></br>Un hearthling d'une grande âme sera apprécié par les animaux et sera un rempart contre l'ennemi. </br></br>Influence le courage, la volonté et la compassion"
+               "description": "Foie en son prochain et en eux-même. </br></br>Un hearthling d'une grande âme sera apprécié par les animaux et sera un rempart contre l'ennemi. </br></br>Influence le courage, la volonté et la compassion"
             },
             "safety": {
                "display_name": "Sécurité",
@@ -1611,7 +1611,7 @@
                "description": "La vitesse de déplacement est réduite de 5%."
             },
             "exp_bar": {
-               "description": "Ce hearthling passe au prochain niveau."
+               "description": "Ce hearthling passe au prochain niveau dans..."
             },
             "health_status": {
                "description": "L'état de santé actuel de ce hearthling."
@@ -3682,7 +3682,7 @@
          },
          "open_character_sheet": {
             "display_name": "Feuille de personnage",
-            "description": "Regardez de plus près cet hearthling"
+            "description": "Regardez de plus près ce hearthling"
          },
          "place_item": {
             "display_name": "Placer un objet",
@@ -4842,7 +4842,7 @@
          "animal_companion": {
             "animal_companion_trait": {
                "display_name": "Animaux de compagnie",
-               "description": "Ils ont été inséparables, depuis [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)], sauvé leurs [str(i18n_data.savee_species)], [name(i18n_data.savee)], d'un danger mortel.",
+               "description": "Ils ont été inséparables, depuis que [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)] à sauvé le [str(i18n_data.savee_species)], [name(i18n_data.savee)], d'un danger mortel.",
                "default_species": "compagnon"
             }
          },
@@ -4855,7 +4855,7 @@
          "callous": {
             "callous_trait": {
                "display_name": "Insensible",
-               "description": "[name(i18n_data.entity)] ne se connecte jamais vraiment avec les autres. Cela les aide à ne pas être aussi blessé lorsqu'une tragédie frappe, mais le fait qu'il soit constament sur leur garde les rend lents à se faire des amis."
+               "description": "[name(i18n_data.entity)] a rarement une connection avec les autres. Cela l'aide à ne pas être aussi blessé lorsqu'une tragédie frappe, mais le fait qu'il soit constament sur ses garde le rend lents à se faire des amis."
             }
          },
          "carnivore": {
@@ -4867,12 +4867,12 @@
          "courageous": {
             "courageous_trait": {
                "display_name": "Courageux",
-               "description": "[name(i18n_data.entity)] aimes sauver les autres, et la sécurité de la ville est sa priorité!"
+               "description": "[name(i18n_data.entity)] aimes se porter au secours des autres. La sécurité de la ville est sa priorité!"
             }
          },
          "excitable": {
             "excitable_trait": {
-               "display_name": "Impulsive",
+               "display_name": "Impulsivité",
                "description": "[name(i18n_data.entity)] ne peut jamais contenir ses émotions, de sorte que le bonheur ou la tristesse arrive beaucoup plus vite que la normale."
             }
          },
@@ -4885,13 +4885,13 @@
          "heart_of_a_crafter": {
             "heart_of_a_crafter_trait": {
                "display_name": "Âme de bricoleur",
-               "description": "[name(i18n_data.entity)] adore constuire des objets pour les autres. S'il ne fait pas au moins un objet par jour sa journée sera gâchée."
+               "description": "[name(i18n_data.entity)] adore constuire des objets pour les autres. S'il ne fait pas au moins un objet par jour, sa journée sera gâchée."
             }
          },
          "professor": {
             "professor_trait": {
                "display_name": "Professeur",
-               "description": "[name(i18n_data.entity)] va aider les gens à acquérir de l'expérience dans les bases de leur classe, bien que leurs explications ont tendance à être un peu... de longue haleine."
+               "description": "[name(i18n_data.entity)] va aider les gens à acquérir de l'expérience dans les bases de leur classe, bien que ses explications ont tendance à être un peu... de longue haleine."
             }
          },
          "featherweight": {
@@ -4903,25 +4903,25 @@
          "pack_mule": {
             "pack_mule_trait": {
                "display_name": "Mule",
-               "description": "Ce hearthling peut transporter des montagnes! Il peut transporter plus dans son sac, mais marche plus lentement lorsque celui-ci est plein."
+               "description": "Ce hearthling peut transporter des montagnes! Il peut remplir davantage son sac, mais marche plus lentement lorsque celui-ci est plein."
             }
          },
          "glutton": {
             "glutton_trait": {
                "display_name": "Glouton",
-               "description": "[name(i18n_data.entity)] a un estomac qui pourrait bien être un portail vers d'autre monde tant il peut manger. Ça pourrait un peu expliquer son endurance, quoique."
+               "description": "[name(i18n_data.entity)] a un estomac qui pourrait bien être un portail vers d'autre monde tant il peut manger. Cela expliquerait son endurance plus élevée."
             }
          },
          "hothead": {
             "hothead_trait": {
                "display_name": "Tête brulée",
-               "description": "[name(i18n_data.entity)] ne se retire jamais volontairement d'un combat. Même de ceux qu'ils devraient probablement..."
+               "description": "[name(i18n_data.entity)] ne se retire jamais volontairement d'un combat. Même de ceux qu'il devrait probablement..."
             }
          },
          "night_owl": {
             "night_owl_trait": {
                "display_name": "Oiseau de nuit",
-               "description": "Le jour commence vraiment une fois que le soleil s'est couché."
+               "description": "Le jour commence seulement une fois que le soleil est couché."
             }
          },
          "optimistic": {
@@ -4951,19 +4951,19 @@
          "jokester": {
             "jokester_trait": {
                "display_name": "Plaisantin",
-               "description": "[name(i18n_data.entity)] aime raconter des blagues. Sont-elles drôles ? C'est difficile à dire, mais elles semblent souvent faire sourire les autres."
+               "description": "[name(i18n_data.entity)] aime raconter des blagues. Sont-elles drôles ? Difficile à dire, mais elles semblent souvent faire sourire les autres."
             }
          },
          "charismatic": {
             "charismatic_trait": {
                "display_name": "Charismatique",
-               "description": "Quand [name(i18n_data.entity)] entre dans une pièce, les autres prennent toujours connaissance de sa personne."
+               "description": "Quand [name(i18n_data.entity)] entre dans une pièce, les autres remarqunte toujours de sa présence."
             }
          },
          "gregarious": {
             "gregarious_trait": {
                "display_name": "Sociable",
-               "description": "[name(i18n_data.entity)] aime discuter des événements de la journée avec les autres et devient un peu seul quand ils ne le font pas."
+               "description": "[name(i18n_data.entity)] aime discuter des événements de la journée avec les autres et se sent seul quand il ne le fait pas."
             }
          },
          "loner": {
@@ -4975,13 +4975,13 @@
          "empathetic": {
             "empathetic_trait": {
                "display_name": "Empathique",
-               "description": "[name(i18n_data.entity)] est très sensible à l'ambiance de la ville, et il semble toujours déteindre sur les autres."
+               "description": "[name(i18n_data.entity)] est très sensible à l'ambiance de la ville, et celle-ci semble toujours déteindre sur eux."
             }
          },
          "opinionated": {
             "opinionated_trait": {
                "display_name": "Dogmatique",
-               "description": "[name(i18n_data.entity)] a une opinion sur tout, et il n'est pas timide de le partager."
+               "description": "[name(i18n_data.entity)] a une opinion sur tout et n'a pas peur de le partager."
             }
          },
          "magnificent_beard": {
@@ -4993,19 +4993,19 @@
          "stoic": {
             "stoic_trait": {
                "display_name": "Stoïque",
-               "description": "En raison de leur tempérament uniforme, il faut beaucoup de choses pour rendre ce foyer heureux ou triste."
+               "description": "En raison de son impassibilité, il en faut beaucoup plus pour rendre ce hearthling heureux ou triste."
             }
          },
          "gourmand": {
             "gourmand_trait": {
                "display_name": "Gourmand",
-               "description": "Seuls les aliments les plus savoureux sont les bienvenus à leur palais [name(i18n_data.entity)]. Ils deviennent heureux quand ils mangent des aliments de meilleure qualité, mais les viandes de mauvaise qualité sont plutôt désagréables."
+               "description": "Seuls les aliments les plus savoureux sont les bienvenus dans leur assiette [name(i18n_data.entity)]. Ils deviennent heureux quand ils mangent des aliments de meilleure qualité, mais les viandes de mauvaise qualité sont plutôt désagréables."
             }
          },
          "goat": {
             "goat_trait": {
                "display_name": "Chèvre",
-               "description": "[name(i18n_data.entity)] mangera essentiellement tout. Ils ne sont pas difficiles, parfois au dégoût de ceux qui les entourent."
+               "description": "[name(i18n_data.entity)] mangera essentiellement n'importe quoi. N'est pas difficile, parfois au dégoût de ceux qui l'entourent."
             }
          }
       },
@@ -5014,7 +5014,7 @@
             "hunger": {
                "hungry": {
                   "display_name": "Faim",
-                  "tooltip": "Je pourrais vraiment partir pour un bon repas."
+                  "tooltip": "J'ai faim pour un bon repas."
                },
                "famished": {
                   "display_name": "Affamé",
@@ -5126,11 +5126,11 @@
                },
                "ate_tasty": {
                   "display_name": "A mangé un repas savoureux",
-                  "tooltip": "Le [str(foodname)] que j'ai mangé était assez savoureux ! Je me souviens encore de la combinaison des saveurs.."
+                  "tooltip": "J'ai mangé un/une [str(foodname)] et c'était assez savoureux! Je me souviens encore de la combinaison des saveurs.."
                },
                "ate_raw": {
                   "display_name": "Mon repas était cru",
-                  "tooltip": "J'ai récemment mangé [str(foodname)] brut.  Je peux seulement imaginer combien cela aurait été savoureux si cela avait été cuit."
+                  "tooltip": "J'ai récemment mangé un/une [str(foodname)] brut. Je peux seulement imaginer à quel point ça aurait été savoureux si c'était cuit."
                },
                "ate_bland": {
                   "display_name": "A mangé un repas fade",
@@ -5147,23 +5147,23 @@
                "founding": {
                   "pioneering_spirit": {
                      "display_name": "Esprit pionnier",
-                     "tooltip": "Nous avons quitté notre maison pour en construire une nouvelle. Nous le ferons mieux qu'avant!"
+                     "tooltip": "Nous avons quitté notre maison pour en construire une nouvelle. Nous la ferons mieux qu'avant!"
                   },
                   "settling_in": {
                      "display_name": "S'installe",
-                     "tooltip": "Je commence à me sentir chez moi, mais il reste du travail à faire."
+                     "tooltip": "Je commence à me sentir chez moi, mais il reste du travail à faire!"
                   }
                },
                "township": {
                   "level_2": {
                      "display_name": "Fête du canton",
-                     "tooltip": "Nous avons été reconnus comme un canton à part entière ! Notre travail commence à porter ses fruits."
+                     "tooltip": "Nous avons été reconnus comme un canton à part entier! Notre travail commence à porter ses fruits."
                   }
                },
                "safety": {
                   "lack_of_safety": {
                      "display_name": "Insécurité",
-                     "tooltip": "Sans une certaine forme de garde en ville, je ne me sens pas à l'aise dans ce désert."
+                     "tooltip": "Sans une certaine forme de garde en ville, je ne me sens pas à l'aise dans cet endroit."
                   }
                },
                "theft": {
@@ -5181,7 +5181,7 @@
                   },
                   "exhausted": {
                      "display_name": "Épuisé",
-                     "tooltip": "Je me sens toujours bien depuis que j'ai dormi .. Mais je peux à peine garder les yeux ouverts."
+                     "tooltip": "Je me sens toujours bien quand j'ai dormi .. Mais je peux à peine garder les yeux ouverts."
                   },
                   "fatigued": {
                      "display_name": "Exténué",
@@ -5243,7 +5243,7 @@
                         "tooltip": "Cela fait longtemps que je n'ai parlé à personne. J'ai vraiment besoin d'extraire ce que j'ai sur le coeur."
                      },
                      "enjoys_company": {
-                        "display_name": "Profite de la compagnie des autres",
+                        "display_name": "Aime la compagnie des autres",
                         "tooltip": "C'est toujours génial de passer du temps avec mes compatriotes."
                      }
                   }
@@ -5297,7 +5297,7 @@
                   },
                   "saved_from_mortal_wounds": {
                      "display_name": "Sauvés des blessures mortelles",
-                     "tooltip": "Je serais mort en retour, il n'y avait pas pour ceux qui m'entouraient ! Je suis reconnaissant pour cette deuxième chance."
+                     "tooltip": "Je serais mort si ce n'était pas de ceux qui m'entouraient ! Je suis vraiment reconnaissant pour cette deuxième chance."
                   }
                }
             },
@@ -5313,11 +5313,11 @@
                "values": {
                   "unpleasant_talk": {
                      "display_name": "A eu une conversation désagréable",
-                     "tooltip": "Je ne peux pas croire [str(target_name)] a dit ça!"
+                     "tooltip": "Je ne peux pas croire que [str(target_name)] a dit ça!"
                   },
                   "great_talk": {
                      "display_name": "A eu une excellente conversation",
-                     "tooltip": "Parler avec [str(target_name)] aujourd'hui était vraiment sympa."
+                     "tooltip": "Parler avec [str(target_name)] aujourd'hui était vraiment agréable."
                   },
                   "great_joke": {
                      "display_name": "J'ai entendu une bonne blague",
@@ -5336,7 +5336,7 @@
                      },
                      "booped": {
                         "display_name": "Frotter",
-                        "tooltip": "C'est trop mignion, aujourd'hui [str(species)] c'est frotter à moi en signe d'affection."
+                        "tooltip": "C'est trop mignion, aujourd'hui [str(species)] s'est frotter à moi en signe d'affection."
                      }
                   }
                }
@@ -5345,7 +5345,7 @@
                "thresholds": {
                   "horrendous": {
                      "display_name": "Esthétique épouvantable",
-                     "tooltip": "Partout où je regarde, je vois quelque chose de horrible !"
+                     "tooltip": "Partout où je regarde, je vois quelque chose d'horrible !"
                   },
                   "beautiful": {
                      "display_name": "Belle esthétique",
@@ -5356,7 +5356,7 @@
                   },
                   "ugly": {
                      "display_name": "Esthétique laid",
-                     "tooltip": "Beurk, c'est vraiment moche par ici. Nous pouvons définitivement améliorer ce look !"
+                     "tooltip": "Beurk, c'est vraiment moche par ici. Nous pouvons définitivement améliorer ce décors !"
                   },
                   "awe_inspiring": {
                      "display_name": "Esthétique inspirante",
@@ -5368,7 +5368,7 @@
                   },
                   "breathtaking": {
                      "display_name": "Esthétique époustouflante",
-                     "tooltip": "Wow, partout où je regarde est magnifique ! L'attention aux détails est incroyable !"
+                     "tooltip": "Wow, partout où je regarde c'est magnifique! L'attention aux détails est incroyable!"
                   }
                }
             },
@@ -5380,7 +5380,7 @@
                   },
                   "pleasing": {
                      "display_name": "Atelier agréable",
-                     "tooltip": "Un espace de travail bien entretenu éclaircit mon humeur."
+                     "tooltip": "Un espace de travail bien entretenu améliore mon humeur."
                   },
                   "beautiful": {
                      "display_name": "Bel atelier",
@@ -5388,7 +5388,7 @@
                   },
                   "ugly": {
                      "display_name": "Atelier débraillé",
-                     "tooltip": "C'est frustrant que mon espace de travail soit si fouilli."
+                     "tooltip": "C'est frustrant que mon espace de travail soit si encombré."
                   },
                   "awe_inspiring": {
                      "display_name": "Atelier grandiose",
@@ -5400,7 +5400,7 @@
                "values": {
                   "pleasing": {
                      "display_name": "Chambre agréable",
-                     "tooltip": "Là où j'ai dormi hier soir était vraiment sympa"
+                     "tooltip": "L'endroit où j'ai dormi hier soir était vraiment confortable."
                   },
                   "beautiful": {
                      "display_name": "Belle chambre",
@@ -6108,15 +6108,15 @@
             "display_name": "Lapin",
             "description": "Om nom nom",
             "rabbit_jerky": {
-               "display_name": "Lapin séché"
+               "display_name": "Morceau de lapin séché"
             },
             "species": "lapin"
          },
          "racoon": {
             "display_name": "Raton laveur",
-            "description": "Petite créature de la forêt",
+            "description": "Petite créature de la forêt, aussi appelé «panda des poubelles».",
             "racoon_jerky": {
-               "display_name": "Raton laveur séché"
+               "display_name": "Morceau de raton laveur séché"
             },
             "species": "raton laveur"
          },
@@ -7302,7 +7302,7 @@
          "not_much_of_a_bed": {
             "not_much_of_a_bed_ghost": {
                "display_name": "Lit miteux",
-               "description": "Ce qui veut dire mauvais, pas cruel."
+               "description": "Ce qui veut dire pathétique, pas plein de puces..."
             }
          },
          "park_bench": {
@@ -8186,8 +8186,8 @@
       },
       "tools": {
          "mining_pick": {
-            "display_name": "Pique de mine",
-            "description": "Pour miner et piquer."
+            "display_name": "Pioche",
+            "description": "Pour miner les roches."
          },
          "worker_axe": {
             "display_name": "Hache commune",
@@ -8686,7 +8686,7 @@
       "blacksmith": {
          "blacksmith_description": {
             "display_name": "Forgeron",
-            "description": "Le forgeron raffine le minerai en barre de métal pour les utiliser dans la fabrication d'armes et d'armures.",
+            "description": "Le forgeron raffine le minerai en lingot pour les utiliser afin de fabriquer des armes et des armures.",
             "requirements": "Fabriqué par un maçon",
             "level_6_data": {
                "title": "Maître forgeron",
@@ -9688,7 +9688,7 @@
       "footman": {
          "footman_description": {
             "display_name": "Fantassin",
-            "description": "Le fantassin est un combattant de mêlée. Un bon choix pour la base de la défense de votre ville.",
+            "description": "Le fantassin est un combattant de corps à corps. Un bon choix de base pour de la défense de votre ville.",
             "requirements": "Fabriqué par un charpentier",
             "level_4_data": {
                "perk_000_name": "40% de dommages supplémentaires",
@@ -10275,7 +10275,7 @@
       "trapper": {
          "trapper_description": {
             "display_name": "Trappeur",
-            "description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fournitures.",
+            "description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fourures.",
             "requirements": "Fabriqué par un maçon",
             "level_1_data": {
                "perk_000_name": "Gain de vitesse",
@@ -10536,7 +10536,7 @@
       "worker": {
          "worker_description": {
             "display_name": "Travailleur",
-            "description": "Les travailleurs effectuent des tâches diverses, comme la récolte des ressources, la logistique, et la construction de bâtiments.",
+            "description": "Les travailleurs effectuent des tâches diverses comme la récolte des ressources, la logistique et la construction de bâtiments.",
             "requirements": "Aucun, seulement du travail et des tripes.",
             "level_0_data": {
                "title": "Travailleur"
@@ -10887,7 +10887,7 @@
             "max_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Maitre [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "Lvl [str(i18n_data.level_number)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] a réussi [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
-            "default_promote_announcement": "[name(i18n_data.entity)] est maintenant du niveau [str(i18n_data.level_number)] [str(i18n_data.job_name)]!",
+            "default_promote_announcement": "[name(i18n_data.entity)] est maintenant un [str(i18n_data.job_name)] de niveau [str(i18n_data.level_number)] !",
             "level_up_perk_description": "Santé max. +10",
             "attribute_up_desc": "Tous les attributs ont augmentés !"
          }
