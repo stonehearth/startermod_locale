@@ -48,7 +48,7 @@
             "teardown_structure": "Démonte des structures",
             "feed_pasture_animals": "Nourrit les animaux",
             "restock": "Range des objets",
-            "resting_from_injuries": "A1 besoin de soins",
+            "resting_from_injuries": "A besoin de soins",
             "healing": "Traite des blessures",
             "healing_target": "Guérit [name(data.target)]",
             "dig_foundation": "Creuse des fondations",
@@ -164,7 +164,7 @@
                "dislike": "N'aime pas",
                "dislike_tooltip": "[str(self.stonehearth:unit_info.custom_name)] n'aime pas ces articles et les trouvera toujours désagréables, peu importe leur qualité.",
                "current_and_target_bar": "Opinion générale",
-               "current_and_target_bar_tooltip": "[str(self.stonehearth:unit_info.custom_name)] a cet opinion sur l'environnement et les zones récemment visitées.",
+               "current_and_target_bar_tooltip": "[str(self.stonehearth:unit_info.custom_name)] à cet opinion sur l'environnement et les zones récemment visitées.",
                "current_arrow_tooltip": "[str(self.stonehearth:unit_info.custom_name)] est l'opinion générale de l'appel de la ville. Cela affecte l'humeur.",
                "target_arrow_tooltip": "Comment [str(self.stonehearth:unit_info.custom_name)] voit l'environnement immédiat. Cela affecte leur opinion globale de la ville avec le temps.",
                "item_preferences": "Préférence [str(self.stonehearth:unit_info.custom_name)]"
@@ -249,7 +249,7 @@
             "remove_party_member_button": "Retirer",
             "not_in_party": "sans groupe",
             "party_help": "Les membres du groupe peuvent se déplacer ensembles et êtres dirigés sur le champ de bataille.",
-            "party_editor_help": "Utilisez cet écran pour ajouter des hearthlings a ce groupe.",
+            "party_editor_help": "Utilisez cet écran pour ajouter des hearthlings à ce groupe.",
             "attack_banner_button": "Ordre d'attaque",
             "attack_banner_button_help": "Envois le groupe attaquer une position",
             "defend_banner_button": "Ralliement et ordre de défense",
@@ -4957,7 +4957,7 @@
          "charismatic": {
             "charismatic_trait": {
                "display_name": "Charismatique",
-               "description": "Quand [name(i18n_data.entity)] entre dans une pièce, les autres remarqunte toujours de sa présence."
+               "description": "Quand [name(i18n_data.entity)] entre dans une pièce, les autres remarquent toujours de sa présence."
             }
          },
          "gregarious": {
@@ -5147,17 +5147,17 @@
                "founding": {
                   "pioneering_spirit": {
                      "display_name": "Esprit pionnier",
-                     "tooltip": "Nous avons quitté notre maison pour en construire une nouvelle. Nous la ferons mieux qu'avant!"
+                     "tooltip": "Nous avons quitté notre maison pour en construire une nouvelle. Nous la ferons mieux qu'avant !"
                   },
                   "settling_in": {
                      "display_name": "S'installe",
-                     "tooltip": "Je commence à me sentir chez moi, mais il reste du travail à faire!"
+                     "tooltip": "Je commence à me sentir chez moi, mais il reste du travail à faire !"
                   }
                },
                "township": {
                   "level_2": {
                      "display_name": "Fête du canton",
-                     "tooltip": "Nous avons été reconnus comme un canton à part entier! Notre travail commence à porter ses fruits."
+                     "tooltip": "Nous avons été reconnus comme un canton à part entier ! Notre travail commence à porter ses fruits."
                   }
                },
                "safety": {
@@ -10275,7 +10275,7 @@
       "trapper": {
          "trapper_description": {
             "display_name": "Trappeur",
-            "description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fourures.",
+            "description": "Le trappeur chasse aux collets pour capturer de petites bestioles. C'est un apport fiable de nourriture et de fourrure.",
             "requirements": "Fabriqué par un maçon",
             "level_1_data": {
                "perk_000_name": "Gain de vitesse",
