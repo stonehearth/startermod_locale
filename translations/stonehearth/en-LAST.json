@@ -799,6 +799,7 @@
                   "keep_template": "Keep this template",
                   "remove_template": "Delete it!"
                },
+               "template_description_tooltip": "Filename: [str(filename)]",
                "remove_template_button": "Delete Template",
                "build_template_button": "Build"
             },
@@ -935,7 +936,7 @@
                   "tooltip_refined_weaver": "Cloth, etc.",
                   "tooltip_refined_craftables": "Refined Craftables",
                   "tooltip_refined_animal_part": "goods produced from bits of animals",
-                  "tooltip_refined_ore": "Metal Bars",
+                  "tooltip_refined_ore": "Refined Metal",
                   "tooltip_weapons": "Weapons",
                   "tooltip_ranged_weapon": "ranged weapons",
                   "tooltip_equipment": "Armor and Other Equipment",
@@ -1411,7 +1412,7 @@
                }
             },
             "biome_warning_title": "Beware, Traveler...",
-            "biome_warning_text": "Crafting resources can be hard to find when choosing The Ascendancy to settle in the Desert Biome or Rayya?s Children in the Temperate Biome. An issue we hope to fix soon.<br><br>Do you still want to continue with your current selection?",
+            "biome_warning_text": "Crafting resources can be hard to find when choosing The Ascendancy to settle in the Desert Biome or Rayya's Children in the Temperate Biome. An issue we hope to fix soon.<br><br>Do you still want to continue with your current selection?",
             "begin_button": "Select Roster"
          },
          "select_roster": {
@@ -1475,8 +1476,8 @@
                "display_name": "Inspiration",
                "description": "A flat modifier to this hearthing's chance to create items with Fine and Excellent quality.",
                "bullet_points": {
-               "000": "A hearthling must be at least a Journeyman to create Fine quality items, and a Master to create Excellent items</br>",
-               "001": "Ranges from -2% to +3%, based on the hearthling's Spirit"
+                  "000": "A hearthling must be at least a Journeyman to create Fine quality items, and a Master to create Excellent items</br>",
+                  "001": "Ranges from -2% to +3%, based on the hearthling's Spirit"
                }
             },
             "shelter": {
@@ -6088,6 +6089,174 @@
                "display_name": "Ornate Leather Bound Chest",
                "description": "Stores up to 64 items. With style."
             }
+         },
+         "output_box_wood": {
+            "output_box_wood_ghost": {
+               "display_name": "Wood Finished Work Shelf",
+               "description": "Temporary storage for crafted items."
+            }
+         },
+         "output_box_clay": {
+            "output_box_clay_ghost": {
+               "description": "Temporary storage for crafted items.",
+               "display_name": "Clay Finished Work Shelf"
+            }
+         },
+         "output_box_stone": {
+            "output_box_stone_ghost": {
+               "description": "Temporary storage for crafted items.",
+               "display_name": "Stone Finished Work Shelf"
+            }
+         },
+         "input_bin_clay": {
+            "input_bin_clay_ghost": {
+               "display_name": "Ceramic Supply Basin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven": {
+            "input_bin_woven_ghost": {
+               "display_name": "Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_wood": {
+            "input_bin_wood_ghost": {
+               "display_name": "Wooden Supply Crate",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_stone": {
+            "input_bin_stone_ghost": {
+               "display_name": "Stonework Supply Bin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_iron": {
+            "input_bin_iron_ghost": {
+               "display_name": "Iron-Banded Supply Bin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_wall_clay": {
+            "input_shelf_wall_clay_ghost": {
+               "display_name": "Ceramic Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_shelf_wall_stone": {
+            "input_shelf_wall_stone_ghost": {
+               "display_name": "Stonework Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_shelf_ground_clay": {
+            "input_shelf_ground_clay_ghost": {
+               "display_name": "Ceramic Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_ground_stone": {
+            "input_shelf_ground_stone_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Stonework Supply Rack"
+            }
+         },
+         "input_shelf_ground_wood": {
+            "input_shelf_ground_wood_ghost": {
+               "display_name": "Wooden Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_wall_wood": {
+            "input_shelf_wall_wood_ghost": {
+               "display_name": "Wooden Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_table_ground_iron": {
+            "input_table_ground_iron_ghost": {
+               "display_name": "Iron-Studded Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_wood": {
+            "input_corner_ground_wood_ghost": {
+               "display_name": "Wooden Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_stone": {
+            "input_corner_ground_stone_ghost": {
+               "display_name": "Stonework Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_wood": {
+            "input_table_ground_wood_ghost": {
+               "display_name": "Wooden Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_stone": {
+            "input_table_ground_stone_ghost": {
+               "display_name": "Stonework Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_clay": {
+            "input_table_ground_clay_ghost": {
+               "display_name": "Ceramic Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_clay": {
+            "input_corner_ground_clay_ghost": {
+               "display_name": "Ceramic Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_clay_blue": {
+            "input_bin_clay_blue_ghost": {
+               "display_name": "Blue Ceramic Supply Basin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_clay_green": {
+            "input_bin_clay_green_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Green Ceramic Supply Basin"
+            }
+         },
+         "input_bin_clay_red": {
+            "input_bin_clay_red_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Red Ceramic Supply Basin"
+            }
+         },
+         "input_bin_woven_blue": {
+            "input_bin_woven_blue_ghost": {
+               "display_name": "Blue Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven_green": {
+            "input_bin_woven_green_ghost": {
+               "display_name": "Green Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven_red": {
+            "input_bin_woven_red_ghost": {
+               "display_name": "Red Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_iron": {
+            "input_corner_ground_iron_ghost": {
+               "display_name": "Iron Corner Supply Shelf",
+               "description": "A supply container, for quicker crafting."
+            }
          }
       },
       "critters": {
@@ -6156,6 +6325,48 @@
             "display_name": "Woodchuck",
             "description": "A voracious eater of almost everything, especially logs.",
             "species": "woodchuck"
+         },
+         "deer": {
+            "deer_jerky": {
+               "display_name": "Deer Jerky"
+            },
+            "species": "deer",
+            "description": "Om nom nom",
+            "display_name": "Deer"
+         },
+         "boar": {
+            "display_name": "A boar",
+            "species": "boar",
+            "description": "Smells like something.."
+         },
+         "beetle": {
+            "species": "beetle",
+            "display_name": "Beetle",
+            "description": "Cute little insect",
+            "beetle_jerky": {
+               "display_name": "Beetle Bug Meat"
+            }
+         },
+         "bitsy_ant": {
+            "description": "Cute little insect",
+            "display_name": "Bitsy Ant",
+            "species": "bitsy ant",
+            "bitsy_ant_jerky": {
+               "display_name": "Small Ant Bug Meat"
+            }
+         },
+         "doodles": {
+            "display_name": "Doodles",
+            "description": "Cute little insect",
+            "species": "doodles",
+            "doodles_jerky": {
+               "display_name": "Doodles Bug Meat"
+            }
+         },
+         "red_fox_wolf": {
+            "species": "fox",
+            "description": "Small forest creature",
+            "display_name": "Fox"
          }
       },
       "crops": {
@@ -6957,6 +7168,18 @@
                "description": "Easily attached to walls",
                "display_name": "Ornate Wooden Wall Lantern"
             }
+         },
+         "wet_stone": {
+            "wet_stone_ghost": {
+               "display_name": "Wet Stone",
+               "description": "This stone has been blessed by the tears of Rayya!"
+            }
+         },
+         "dry_stone": {
+            "dry_stone_ghost": {
+               "description": "This stone has been blessed by the heat of Pal'Mum!",
+               "display_name": "Dry Stone"
+            }
          }
       },
       "food": {
@@ -7236,6 +7459,14 @@
                "display_name": "Kibble",
                "description": "Attracts cats"
             }
+         },
+         "pork": {
+            "display_name": "Raw Pork",
+            "description": "Raw meat from a boar"
+         },
+         "rotten_bug_meat": {
+            "description": "Bug meat goes bad just like other meat",
+            "display_name": "Rotten Bug Meat"
          }
       },
       "furniture": {
@@ -7596,6 +7827,14 @@
             "wolf": {
                "display_name": "Feral Wolf",
                "description": "Grrr! Rwar!"
+            },
+            "zilla": {
+               "display_name": "Zilla",
+               "description": "The ground rumbles when Zilla comes around."
+            },
+            "cougar": {
+               "display_name": "Cougar",
+               "description": "A large cat"
             }
          },
          "goblins": {
@@ -7751,6 +7990,10 @@
             "necromancer": {
                "display_name": "Necromancer",
                "description": "Practitioner of the dark arts"
+            },
+            "wolf_skeleton": {
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "description": "Its animal instincts are all that remain.."
             }
          },
          "rabbit": {
@@ -7785,6 +8028,22 @@
             "mammoth": {
                "display_name": "Mammoth",
                "description": "Large Woolie Beastie"
+            }
+         },
+         "evil": {
+            "loot_chest_fake": {
+               "display_name": "Evil Chest",
+               "description": "Its one of those things that goes bump in the night."
+            }
+         },
+         "avian": {
+            "ostrich": {
+               "display_name": "Ostrich",
+               "description": "Flightless avian"
+            },
+            "duckduck": {
+               "display_name": "DuckDuck",
+               "description": "Flightless avian"
             }
          }
       },
@@ -7843,7 +8102,7 @@
          },
          "silkweed": {
             "silkweed": {
-               "display_name": "Wild silkweed",
+               "display_name": "Wild Silkweed",
                "description": "This plant's fiber can be spun into thread.",
                "unripe_description": "This plant has been harvested and hasn't grown back yet."
             }
@@ -7893,6 +8152,27 @@
                "display_name": "Sunflower",
                "description": "Bright and happy like the sun"
             }
+         },
+         "brightbell_seed_plant": {
+            "unripe_description": "This seed will grow into a real plant someday",
+            "description": "Can be planted to grow healing herbs",
+            "display_name": "Wild Brightbell Seed"
+         },
+         "berry_bush_seed_plant": {
+            "display_name": "Berry Bush Seed",
+            "description": "Can be planted to grow a meager food supply"
+         },
+         "silkweed_seed_plant": {
+            "description": "Can be planted to grow fiber which can be spun into thread.",
+            "display_name": "Wild Silkweed Seed"
+         },
+         "pear_cactus_seed_plant": {
+            "description": "Can be planted to grow some prickly pears.",
+            "display_name": "Pear Cactus Seed"
+         },
+         "frostsnap_seed_plant": {
+            "display_name": "Wild Frostsnap Seed",
+            "description": "Can be planted to grow healing herbs"
          }
       },
       "rabbit": {
@@ -8020,6 +8300,26 @@
             "wolf_pelt": {
                "display_name": "Wolf pelt",
                "description": "From the hide of a terrifying creature"
+            },
+            "deer_pelt": {
+               "display_name": "Deer Pelt",
+               "description": "Soft, supple, and quite dead"
+            },
+            "cougar_pelt": {
+               "display_name": "Cougar Pelt",
+               "description": "Soft, supple, and quite dead"
+            },
+            "beetle_pelt": {
+               "display_name": "Beetle Chitin",
+               "description": "Hard, shiny, and quite dead"
+            },
+            "bitsy_ant_pelt": {
+               "description": "Hard, shiny, and quite dead",
+               "display_name": "Small Ant Chitin"
+            },
+            "doodles_pelt": {
+               "description": "Hard, shiny, and quite dead",
+               "display_name": "Doodle Chitin"
             }
          },
          "silver": {
@@ -8941,6 +9241,21 @@
             "engineer_wrench_recipe": {
                "description": "Required to promote a hearthling into an Engineer",
                "recipe_name": "Engineer's Wrench"
+            },
+            "input_bin_iron_recipe": {
+               "recipe_name": "Iron-Banded Supply Bin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_iron_recipe": {
+               "recipe_name": "Iron-Studded Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_iron_recipe": {
+               "recipe_name": "Iron-Framed Corner Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
@@ -9359,6 +9674,36 @@
                "description": "When sitting, food is 20% more satisfying.",
                "flavor": "Ten thousand years of research culminated in this four-legged design.",
                "recipe_name": "Ornate Wooden Chair"
+            },
+            "output_box_wood_recipe": {
+               "recipe_name": "Wood Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_wood_recipe": {
+               "recipe_name": "Wooden Supply Crate",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_wood_recipe": {
+               "recipe_name": "Wooden Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_wood_recipe": {
+               "recipe_name": "Wooden Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_wood_recipe": {
+               "recipe_name": "Wooden Corner Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_wood_recipe": {
+               "recipe_name": "Wooden Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
@@ -9956,6 +10301,41 @@
                "recipe_name": "Gold Flakes (x3)",
                "description": "Smash up a Gold Bar to get the Flakes back out of it!",
                "flavor": "So many Shine!"
+            },
+            "wet_stone_recipe": {
+               "recipe_name": "Wet Stone",
+               "flavor": "This stone has been blessed with the tears of Rayya!",
+               "description": "This stone will shed water around itself."
+            },
+            "output_box_stone_recipe": {
+               "recipe_name": "Stone Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_stone_recipe": {
+               "recipe_name": "Stonework Supply Bin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_stone_recipe": {
+               "recipe_name": "Stonework Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_stone_recipe": {
+               "recipe_name": "Stonework Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_stone_recipe": {
+               "recipe_name": "Stonework Corner Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_stone_recipe": {
+               "recipe_name": "Stonework Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
@@ -10050,7 +10430,7 @@
             },
             "building_parts_name": "Building Parts",
             "clay_bricks_recipe": {
-               "description": "Used to make structures that stay cool even in great heat.",
+               "description": "A stack of bricks, used to make clay structures.",
                "recipe_name": "Clay Bricks",
                "flavor": "'And when Clay emerged from the Kiln, he had become Brick, and no matter how hard Sun blasted him, he remained cheerful.'"
             },
@@ -10196,6 +10576,46 @@
             },
             "wooden_sign_potter_recipe": {
                "flavor": "Less fragile and easier than hanging a real pot!"
+            },
+            "output_box_clay_recipe": {
+               "recipe_name": "Clay Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_clay_recipe": {
+               "recipe_name": "Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_clay_recipe": {
+               "recipe_name": "Ceramic Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_clay_recipe": {
+               "recipe_name": "Ceramic Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_clay_recipe": {
+               "recipe_name": "Ceramic Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_blue_recipe": {
+               "recipe_name": "Blue Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_red_recipe": {
+               "recipe_name": "Red Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_green_recipe": {
+               "recipe_name": "Green Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          },
          "potter_workbench": {
@@ -10432,6 +10852,7 @@
             },
             "clothing_armor_name": "Clothing & Armor",
             "toys_name": "Toys",
+            "storage_name": "Storage",
             "decorations_name": "Decorations",
             "crafting_materials_name": "Crafting Materials",
             "spool_of_thread_recipe": {
@@ -10496,6 +10917,26 @@
                "recipe_name": "Cloth Padded Helmet",
                "description": "Extra padding for your noggin",
                "flavor": "Were they phoenix wings, or serpent wings?"
+            },
+            "input_bin_woven_recipe": {
+               "recipe_name": "Woven Supply Basket",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "flavor": "Nothing quite like a well-supplied workshop!"
+            },
+            "input_bin_woven_blue_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Blue Woven Supply Basket"
+            },
+            "input_bin_woven_green_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Green Woven Supply Basket"
+            },
+            "input_bin_woven_red_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Red Woven Supply Basket"
             }
          },
          "weaver_loom": {
@@ -10911,6 +11352,10 @@
          "jerky": {
             "display_name": "Jerky",
             "description": "Stringy, but nutritious!"
+         },
+         "bug_meat": {
+            "description": "Sticky, but nutritious!",
+            "display_name": "Bug Meat"
          }
       },
       "monster": {

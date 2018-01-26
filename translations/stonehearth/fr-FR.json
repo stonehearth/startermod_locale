@@ -799,6 +799,7 @@
                   "keep_template": "Gardez ce modèle",
                   "remove_template": "Supprime-le !"
                },
+               "template_description_tooltip": "Nom de fichier : [str(filename)]",
                "remove_template_button": "Supprimer le modèle",
                "build_template_button": "Construire"
             },
@@ -935,7 +936,7 @@
                   "tooltip_refined_weaver": "Tissu, etc.",
                   "tooltip_refined_craftables": "Craftables raffinés",
                   "tooltip_refined_animal_part": "Biens fabriqués à partir d'animaux",
-                  "tooltip_refined_ore": "Barres de métal",
+                  "tooltip_refined_ore": "Métal Raffiné",
                   "tooltip_weapons": "Armes de corps à corps",
                   "tooltip_ranged_weapon": "Armes à distance",
                   "tooltip_equipment": "Armure et autre équipement",
@@ -1475,8 +1476,8 @@
                "display_name": "Inspiration",
                "description": "Une part de chance de ce hearthling peut créer des articles avec la qualité fine et excellente",
                "bullet_points": {
-               "000": "Un hearthling doit être au moins un compagnon pour créer des objets de qualité, et un maître pour créer d'excellents articles </ br>",
-               "001": "Qui va de-2% à +3%, basé sur l'esprit du hearthling"
+                  "000": "Un hearthling doit être au moins un compagnon pour créer des objets de qualité, et un maître pour créer d'excellents articles </ br>",
+                  "001": "Qui va de-2% à +3%, basé sur l'esprit du hearthling"
                }
             },
             "shelter": {
@@ -6088,6 +6089,174 @@
                "display_name": "Coffre en cuir orné",
                "description": "Stocke jusqu'à 64 articles. Avec style."
             }
+         },
+         "output_box_wood": {
+            "output_box_wood_ghost": {
+               "display_name": "Plateau de travail de finition du bois",
+               "description": "Stockage temporaire pour les objets artisanaux."
+            }
+         },
+         "output_box_clay": {
+            "output_box_clay_ghost": {
+               "description": "Stockage temporaire pour les objets artisanaux.",
+               "display_name": "Plateau de travail de finition de l'argile"
+            }
+         },
+         "output_box_stone": {
+            "output_box_stone_ghost": {
+               "description": "Stockage temporaire pour les objets artisanaux.",
+               "display_name": "Plateau de travail de finition de la pierre"
+            }
+         },
+         "input_bin_clay": {
+            "input_bin_clay_ghost": {
+               "display_name": "Bassin d'approvisionnement en céramique",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_bin_woven": {
+            "input_bin_woven_ghost": {
+               "display_name": "Panier d'approvisionnement tissé",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_bin_wood": {
+            "input_bin_wood_ghost": {
+               "display_name": "Caisse d'approvisionnement en bois",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_bin_stone": {
+            "input_bin_stone_ghost": {
+               "display_name": "Caisse d'approvisionnement en pierre",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_bin_iron": {
+            "input_bin_iron_ghost": {
+               "display_name": "Caisse d'approvisionnement en fer-fasciée",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_shelf_wall_clay": {
+            "input_shelf_wall_clay_ghost": {
+               "display_name": "Tablette d'approvisionnement murale en céramique",
+               "description": "Assurez-vous que ce soit à portée de main !"
+            }
+         },
+         "input_shelf_wall_stone": {
+            "input_shelf_wall_stone_ghost": {
+               "display_name": "Étagère murale en pierre",
+               "description": "Assurez-vous que ce soit à portée de main !"
+            }
+         },
+         "input_shelf_ground_clay": {
+            "input_shelf_ground_clay_ghost": {
+               "display_name": "Support d'approvisionnement en céramique",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_shelf_ground_stone": {
+            "input_shelf_ground_stone_ghost": {
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
+               "display_name": "Support d'approvisionnement en pierre"
+            }
+         },
+         "input_shelf_ground_wood": {
+            "input_shelf_ground_wood_ghost": {
+               "display_name": "Support d'approvisionnemet en bois",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_shelf_wall_wood": {
+            "input_shelf_wall_wood_ghost": {
+               "display_name": "Tablette d'approvisionnement murale en bois",
+               "description": "Assurez-vous que ce soit à portée de main !"
+            }
+         },
+         "input_table_ground_iron": {
+            "input_table_ground_iron_ghost": {
+               "display_name": "Tablette d'approvisionnement en fer-clouté",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_corner_ground_wood": {
+            "input_corner_ground_wood_ghost": {
+               "display_name": "Étagère d'approvisionnement de coin en bois",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_corner_ground_stone": {
+            "input_corner_ground_stone_ghost": {
+               "display_name": "Étagère d'approvisionnement de coin en pierre",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_table_ground_wood": {
+            "input_table_ground_wood_ghost": {
+               "display_name": "Table d'approvisionnement en bois",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_table_ground_stone": {
+            "input_table_ground_stone_ghost": {
+               "display_name": "Table d'approvisionnement en pierre",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_table_ground_clay": {
+            "input_table_ground_clay_ghost": {
+               "display_name": "Table d'approvisionnement céramique",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_corner_ground_clay": {
+            "input_corner_ground_clay_ghost": {
+               "display_name": "Étagère d'approvisionnement de coin en céramique",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_bin_clay_blue": {
+            "input_bin_clay_blue_ghost": {
+               "display_name": "Bassin d'approvisionnement en céramique bleue",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_bin_clay_green": {
+            "input_bin_clay_green_ghost": {
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
+               "display_name": "Bassin d'approvisionnement en céramique vert"
+            }
+         },
+         "input_bin_clay_red": {
+            "input_bin_clay_red_ghost": {
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
+               "display_name": "Bassin d'approvisionnement en céramique rouge"
+            }
+         },
+         "input_bin_woven_blue": {
+            "input_bin_woven_blue_ghost": {
+               "display_name": "Panier d'approvisionnement tissé bleu",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_bin_woven_green": {
+            "input_bin_woven_green_ghost": {
+               "display_name": "Panier d'approvisionnement tissé vert",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_bin_woven_red": {
+            "input_bin_woven_red_ghost": {
+               "display_name": "Panier d'approvisionnement tissé rouge",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
+         },
+         "input_corner_ground_iron": {
+            "input_corner_ground_iron_ghost": {
+               "display_name": "Étagère d'approvisionnement de coin en fer",
+               "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
+            }
          }
       },
       "critters": {
@@ -6156,6 +6325,48 @@
             "display_name": "Marmotte",
             "description": "Un mangeur vorace de presque tout, en particulier le bois.",
             "species": "marmotte"
+         },
+         "deer": {
+            "deer_jerky": {
+               "display_name": "Cerf séché"
+            },
+            "species": "cerf",
+            "description": "Om nom nom",
+            "display_name": "cerf"
+         },
+         "boar": {
+            "display_name": "Un sanglier",
+            "species": "sanglier",
+            "description": "Cela semble sentir bon..."
+         },
+         "beetle": {
+            "species": "scarabée",
+            "display_name": "Scarabée",
+            "description": "Mignon petit insecte",
+            "beetle_jerky": {
+               "display_name": "Viande de scarabée"
+            }
+         },
+         "bitsy_ant": {
+            "description": "Mignon petit insecte",
+            "display_name": "Fourmi",
+            "species": "fourmi",
+            "bitsy_ant_jerky": {
+               "display_name": "Petite viande de fourmi"
+            }
+         },
+         "doodles": {
+            "display_name": "Doodles",
+            "description": "Mignon petit insecte",
+            "species": "doodles",
+            "doodles_jerky": {
+               "display_name": "Petite viande d'insecte"
+            }
+         },
+         "red_fox_wolf": {
+            "species": "renard",
+            "description": "Petite créature de la forêt",
+            "display_name": "Renard"
          }
       },
       "crops": {
@@ -6957,6 +7168,18 @@
                "description": "Facilement fixé aux murs",
                "display_name": "Lanterne murale en bois ornée"
             }
+         },
+         "wet_stone": {
+            "wet_stone_ghost": {
+               "display_name": "Pierre humide",
+               "description": "Cette pierre a été bénite par les larmes de Rayya !"
+            }
+         },
+         "dry_stone": {
+            "dry_stone_ghost": {
+               "description": "Cette pierre a été bénie par la chaleur de Pal'Mum !",
+               "display_name": "Pierre sèche"
+            }
          }
       },
       "food": {
@@ -7236,6 +7459,14 @@
                "display_name": "Croquettes",
                "description": "Attire les chats"
             }
+         },
+         "pork": {
+            "display_name": "Porc cru",
+            "description": "Viande crue d'un sanglier"
+         },
+         "rotten_bug_meat": {
+            "description": "La viande d'insecte est mauvaise par rapport à d'autres viandes",
+            "display_name": "Viande d'insecte pourrie"
          }
       },
       "furniture": {
@@ -7596,6 +7827,14 @@
             "wolf": {
                "display_name": "Loup sauvage",
                "description": "Grrr! Rwar!"
+            },
+            "zilla": {
+               "display_name": "GodZilla",
+               "description": "Le sol gronde quand GodZilla arrive."
+            },
+            "cougar": {
+               "display_name": "Puma",
+               "description": "Un gros chat"
             }
          },
          "goblins": {
@@ -7751,6 +7990,10 @@
             "necromancer": {
                "display_name": "Nécromancien",
                "description": "Pratiquant des arts maléfiques."
+            },
+            "wolf_skeleton": {
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "description": "Ses instincts d'animaux sont tout ce qui reste.."
             }
          },
          "rabbit": {
@@ -7785,6 +8028,22 @@
             "mammoth": {
                "display_name": "Mammouth",
                "description": "Animal large"
+            }
+         },
+         "evil": {
+            "loot_chest_fake": {
+               "display_name": "Coffre maléfique",
+               "description": "C'est l'une de ces choses qui bosse la nuit."
+            }
+         },
+         "avian": {
+            "ostrich": {
+               "display_name": "Autruche",
+               "description": "Aviaire sans le vol"
+            },
+            "duckduck": {
+               "display_name": "DuckDuck",
+               "description": "Aviaire sans le vol"
             }
          }
       },
@@ -7893,6 +8152,27 @@
                "display_name": "Tournesol",
                "description": "Lumineux et heureux comme le soleil"
             }
+         },
+         "brightbell_seed_plant": {
+            "unripe_description": "Cette graine va devenir une vrai plante un jour",
+            "description": "Peut être planté pour faire pousser des herbes médicinales",
+            "display_name": "Graine sauvage"
+         },
+         "berry_bush_seed_plant": {
+            "display_name": "Graines de petits fruits",
+            "description": "Peut être planté pour faire pousser un maigre approvisionnement alimentaire"
+         },
+         "silkweed_seed_plant": {
+            "description": "Peut être planté pour faire pousser des fibres qui peuvent être filées en fil.",
+            "display_name": "Graine de soie sauvage"
+         },
+         "pear_cactus_seed_plant": {
+            "description": "Peut être planté pour pousser quelques poires épineuses.",
+            "display_name": "Graine de cactus de poire"
+         },
+         "frostsnap_seed_plant": {
+            "display_name": "Graine de grenouille sauvage",
+            "description": "Peut être planté pour faire pousser des herbes médicinales"
          }
       },
       "rabbit": {
@@ -8020,6 +8300,26 @@
             "wolf_pelt": {
                "display_name": "Peau de loup",
                "description": "Prélevée sur une créature terrifiante."
+            },
+            "deer_pelt": {
+               "display_name": "Peau de cerf",
+               "description": "Soft, supple, and quite dead"
+            },
+            "cougar_pelt": {
+               "display_name": "Peau de cougar",
+               "description": "Soft, supple, and quite dead"
+            },
+            "beetle_pelt": {
+               "display_name": "Chitine de coléoptère",
+               "description": "Dur, brillant et un peu mort"
+            },
+            "bitsy_ant_pelt": {
+               "description": "Dur, brillant et un peu mort",
+               "display_name": "Petite chitine de fourmi"
+            },
+            "doodles_pelt": {
+               "description": "Dur, brillant et un peu mort",
+               "display_name": "Doodle Chitin"
             }
          },
          "silver": {
@@ -8941,6 +9241,21 @@
             "engineer_wrench_recipe": {
                "description": "Requis pour promouvoir un hearthling en ingénieur",
                "recipe_name": "Clé d'ingénieur"
+            },
+            "input_bin_iron_recipe": {
+               "recipe_name": "Corbeille d'approvisionnement en fer-clouté",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_table_ground_iron_recipe": {
+               "recipe_name": "Table d'approvisionnement en fer-clouté",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_corner_ground_iron_recipe": {
+               "recipe_name": "Iron-Framed Corner Supply Shelf",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             }
          }
       },
@@ -9359,6 +9674,36 @@
                "recipe_name": "Chaise en bois ornée",
                "description": "En position assise, la nourriture est 20% plus satisfaisante.",
                "flavor": "Dix mille ans de recherche ont abouti à ce design à quatre pattes."
+            },
+            "output_box_wood_recipe": {
+               "recipe_name": "Plateau de travail fini en bois",
+               "description": "Stockage temporaire pour les articles fraîchement fabriqués.",
+               "flavor": "Les artisans aiment montrer leur travail !"
+            },
+            "input_bin_wood_recipe": {
+               "recipe_name": "Caisse d'approvisionnement en bois",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_shelf_ground_wood_recipe": {
+               "recipe_name": "Support d'approvisionnement en bois",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_shelf_wall_wood_recipe": {
+               "recipe_name": "Tablette d'approvisionnement murale en bois",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_corner_ground_wood_recipe": {
+               "recipe_name": "Support d'approvisionnement de coin en bois",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_table_ground_wood_recipe": {
+               "recipe_name": "Table d'approvisionnement en bois",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             }
          }
       },
@@ -9956,6 +10301,41 @@
                "recipe_name": "Paillettes d'or (x3)",
                "description": "Fracasser un lingot d'or pour obtenir des paillettes en retour!",
                "flavor": "Tant de brillance !"
+            },
+            "wet_stone_recipe": {
+               "recipe_name": "Pierre humide",
+               "flavor": "Cette pierre a été béni avec les larmes de Rayya !",
+               "description": "Cette pierre répandra de l'eau autour d'elle-même."
+            },
+            "output_box_stone_recipe": {
+               "recipe_name": "Tablette de travail en pierre",
+               "description": "Stock temporaire pour les articles fraîchement fabriqués.",
+               "flavor": "Les artisans aiment montrer leur travail !"
+            },
+            "input_bin_stone_recipe": {
+               "recipe_name": "Corbeille d'approvisionnement en pierre",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_shelf_wall_stone_recipe": {
+               "recipe_name": "Étagère murale en pierre",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_shelf_ground_stone_recipe": {
+               "recipe_name": "Support d'approvisionnement en pierre",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_corner_ground_stone_recipe": {
+               "recipe_name": "Support d'approvisionnement de coin en pierre",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_table_ground_stone_recipe": {
+               "recipe_name": "Table d'approvisionnement en maçonnerie",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             }
          }
       },
@@ -10050,7 +10430,7 @@
             },
             "building_parts_name": "Parties de la Structure",
             "clay_bricks_recipe": {
-               "description": "Utilisé pour faire des structures qui restent fraiche même en période de grande chaleur.",
+               "description": "Une pile de briques, utilisée pour fabriquer des structures en argile.",
                "recipe_name": "Briques d'Argile",
                "flavor": "'Et quand l'argile sortie du four, elle était devenue brique, et peu importe comment le soleil a brillé, elle restait consistante.'"
             },
@@ -10196,6 +10576,46 @@
             },
             "wooden_sign_potter_recipe": {
                "flavor": "Moins fragile et plus facile que de traîner un vrai pot !"
+            },
+            "output_box_clay_recipe": {
+               "recipe_name": "Étagère de travail en argile",
+               "description": "Stockage temporaire pour les articles fraîchement fabriqués.",
+               "flavor": "Les artisans aiment montrer leur travail !"
+            },
+            "input_bin_clay_recipe": {
+               "recipe_name": "Bassin d'approvisionnement en céramique",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_shelf_ground_clay_recipe": {
+               "recipe_name": "Support d'approvisionnement en céramique",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_shelf_wall_clay_recipe": {
+               "recipe_name": "Tablette d'approvisionnement murale en céramique",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_table_ground_clay_recipe": {
+               "recipe_name": "Table d'approvisionnement en céramique",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_bin_clay_blue_recipe": {
+               "recipe_name": "Bassin d'approvisionnement en céramique bleue",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_bin_clay_red_recipe": {
+               "recipe_name": "Bassin d'approvisionnement en céramique rouge",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "input_bin_clay_green_recipe": {
+               "recipe_name": "Bassin d'approvisionnement en céramique vert",
+               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             }
          },
          "potter_workbench": {
@@ -10432,6 +10852,7 @@
             },
             "clothing_armor_name": "Vêtements et armures",
             "toys_name": "Jouets",
+            "storage_name": "Storage",
             "decorations_name": "Décorations",
             "crafting_materials_name": "Ressources pour artisans",
             "spool_of_thread_recipe": {
@@ -10496,6 +10917,26 @@
                "recipe_name": "Casque de tissu matelassé",
                "description": "Rembourrage supplémentaire pour votre caboche",
                "flavor": "Étaient-elles des ailes de Phénix, ou des ailes de serpent ?"
+            },
+            "input_bin_woven_recipe": {
+               "recipe_name": "Panier d'approvisionnement tissé",
+               "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
+               "flavor": "Rien de tel qu'un atelier bien fourni !"
+            },
+            "input_bin_woven_blue_recipe": {
+               "flavor": "Rien de tel qu'un atelier bien fourni !",
+               "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
+               "recipe_name": "Panier d'approvisionnement tissé bleu"
+            },
+            "input_bin_woven_green_recipe": {
+               "flavor": "Rien de tel qu'un atelier bien fourni !",
+               "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
+               "recipe_name": "Panier d'approvisionnement tissé vert"
+            },
+            "input_bin_woven_red_recipe": {
+               "flavor": "Rien de tel qu'un atelier bien fourni !",
+               "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
+               "recipe_name": "Panier d'approvisionnement tissé rouge"
             }
          },
          "weaver_loom": {
@@ -10911,6 +11352,10 @@
          "jerky": {
             "display_name": "Viande séchée",
             "description": "Filandreuse, mais nourrissante !"
+         },
+         "bug_meat": {
+            "description": "Collant, mais nutritif!",
+            "display_name": "Viande d'insecte"
          }
       },
       "monster": {
