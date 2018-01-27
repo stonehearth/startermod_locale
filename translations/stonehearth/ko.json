@@ -1006,7 +1006,7 @@
                "gripe_empty": "우와, 저는 아무도 불만이 없다고 생각합니다."
             },
             "networth": {
-               "town_description": "The [str(descriptor)] [str(noun)] of [str(town_name)]",
+               "town_description": "[str(town_name)]의 [str(descriptor)] [str(noun)]",
                "size": {
                   "camp": "캠프",
                   "settlement": "정착지",
@@ -1255,7 +1255,7 @@
                "unbound": "unbound",
                "conflict_dialog": {
                   "title": "Binding Conflict",
-                  "message": " is already used by [str(conflicts)].",
+                  "message": "",
                   "choice_replace": "Unbind Existing",
                   "choice_keep": "Keep All",
                   "choice_cancel": "Cancel"
@@ -1504,7 +1504,7 @@
                "description": "휴식 시간이 필요하기 전, 오랫동안 일하는 시간입니다.<br>사고 지수에 영향을 받습니다.",
                "bullet_points": {
                   "000": "수면 시간을 결정합니다.",
-                  "001": "Determines Engineer repair speed"
+                  "001": "엔지니어의 수리 속도를 결정하는 지수입니다."
                }
             },
             "willpower": {
@@ -4943,7 +4943,7 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "광신자",
-               "description": " sleeping eternally. What's that about?"
+               "description": ""
             }
          },
          "jokester": {
@@ -5112,7 +5112,7 @@
                },
                "offended_palate": {
                   "display_name": "Offended Palate",
-                  "tooltip": " to it!"
+                  "tooltip": ""
                },
                "pleased_palate": {
                   "display_name": "Pleased Palate",
@@ -10434,12 +10434,12 @@
             "red_clay_door_recipe": {
                "description": "적색 점토 벽과 어울린다.",
                "recipe_name": "적색 점토 문",
-               "flavor": " -- Ember Iskender, Dept of Applied Poetry"
+               "flavor": ""
             },
             "red_clay_window_frame_recipe": {
                "description": "적색 점토 벽과 어울린다.",
                "recipe_name": "적색 점토 창문",
-               "flavor": " -- Jorya Iskender, Dyemaster"
+               "flavor": ""
             },
             "blue_clay_door_recipe": {
                "description": "깊은 바다의 꿈을 닮은 푸른 색이다.",
@@ -10469,12 +10469,12 @@
             "clay_bed_recipe": {
                "description": "불편하지만 당신을 바닥으로부터 떨어뜨려줍니다.",
                "recipe_name": "점토 침대",
-               "flavor": " - Clarence, Temporary Salesperson"
+               "flavor": ""
             },
             "clay_dining_table_recipe": {
                "description": "당신을의 음식을 바닥으로부터 떨어뜨려줍니다.",
                "recipe_name": "점토 식탁",
-               "flavor": " "
+               "flavor": ""
             },
             "simple_clay_chair_recipe": {
                "description": "먹는동안 어디든 앉을 수 있다.",
@@ -10549,15 +10549,15 @@
             "tan_latticed_window_recipe": {
                "recipe_name": "황색 격자 창문",
                "description": "격자 모양의 황색 창문을 알게 된다면 사랑에 빠질 것입니다.",
-               "flavor": " -- Drenkar Iskender, Ex-Marketing Associate"
+               "flavor": ""
             },
             "tall_clay_window_recipe": {
                "recipe_name": "긴 점토 창문",
                "description": "부드러운 사막의 바람을 들여보내자.",
-               "flavor": " -Aaryn, Pragmatist"
+               "flavor": ""
             },
             "tan_clay_window_frame_recipe": {
-               "flavor": " -Isfan Dorret, Inventor of Achromatism",
+               "flavor": "",
                "recipe_name": "황색 점토 창틀",
                "description": "햇빛을 쬐자."
             },
@@ -10569,7 +10569,7 @@
             "blue_latticed_window_recipe": {
                "recipe_name": "청색 격자 창문",
                "description": "마음을 달래주는 격자 모양을 가진 푸른색의 창문이다.",
-               "flavor": " -- Farah, Professional Bugcatcher"
+               "flavor": ""
             },
             "wooden_sign_potter_recipe": {
                "flavor": "냄비로 만드는 것보다 덜 부서지고 쉽다."
