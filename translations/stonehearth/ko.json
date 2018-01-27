@@ -53,7 +53,7 @@
             "healing_target": "[name(data.target)]을 치료하는 중",
             "dig_foundation": "부지 공사 중",
             "unit_hold_location": "지역 방어 중",
-            "execute_conversation": "이야기 나누는 중",
+            "talk": "[name(data.target)]에게 말하는 중",
             "incapacitated": "행동 불능",
             "rescue_citizen": "[name(data.target)] 구하는 중",
             "recuperating": "회복 중"
@@ -208,7 +208,9 @@
             "remove": "삭제",
             "input_text_tooltip": "클릭해서 편집",
             "days": "일",
-            "hours": "시간"
+            "hours": "시간",
+            "the": "그",
+            "empty_string": ""
          },
          "party": {
             "title": "파티",
@@ -741,6 +743,7 @@
                   "cottage_for_two": "2인용 집",
                   "shared_sleeping_quarters": "4인용 집",
                   "dining_hall": "식당",
+                  "herbalist_house": "약초사의 집",
                   "little_clay_house": "점토로 만든 작은 집",
                   "clay_house_for_two": "점토로 만든 2인용 집",
                   "clay_dining_room": "점토로 만든 식당",
@@ -1450,6 +1453,12 @@
             },
             "customization_lock": {
                "description": "이 하슬링의 [str(customization)]는 특성 및 상태를 돌리는 동안 저장됩니다."
+            },
+            "customization_lock_all": {
+               "description": "Click to lock all name and appearance options."
+            },
+            "customization_unlock_all": {
+               "description": "Click to unlock all name and appearance options."
             }
          },
          "constants": {
@@ -4758,6 +4767,42 @@
                "display_name": "광신자",
                "description": ""
             }
+         },
+         "jokester": {
+            "jokester_trait": {
+               "display_name": "익살꾼",
+               "description": "[name(i18n_data.entity)]은(는) 농담하는 것을 좋아합니다. 다른 이들은 좋아할까요? 말할 필요도 없겠지만 종종 다른 사람들의 미소를 지우는 것처럼 보입니다."
+            }
+         },
+         "charismatic": {
+            "charismatic_trait": {
+               "display_name": "카리스마",
+               "description": "[name(i18n_data.entity)]가 방 안으로 들어오면, 사람들은 항상 주의를 기울입니다."
+            }
+         },
+         "gregarious": {
+            "gregarious_trait": {
+               "display_name": "사교적",
+               "description": "[name(i18n_data.entity)]은(는) 다른 사람들과 상호 작용하는 것을 좋아하지만 그만큼 빨리 외로움을 탑니다."
+            }
+         },
+         "loner": {
+            "loner_trait": {
+               "display_name": "외톨이",
+               "description": "[name(i18n_data.entity)]은(는) 정말 다른 사람들을 신경쓰지 않으며, 혼자 있는 것을 선호합니다."
+            }
+         },
+         "empathetic": {
+            "empathetic_trait": {
+               "display_name": "감정 이입",
+               "description": "[name(i18n_data.entity)]은(는) 마을의 분위기에 정말로 민감하며, 항상 다른 이들에게 물드는 것 같습니다."
+            }
+         },
+         "opinionated": {
+            "opinionated_trait": {
+               "display_name": "독선적",
+               "description": "[name(i18n_data.entity)]은(는) 모든 것에 대해 의견을 갖고 있으며 공유하는 것에 대해 수줍어하지 않습니다."
+            }
          }
       },
       "happiness": {
@@ -4942,10 +4987,6 @@
                      "display_name": "동반자를 잃음",
                      "tooltip": "비록 죽은 지 꽤 되었지만, 아직도 가끔씩 저의 애완동물을 찾고 있는 제 자신을 발견하고 있어요."
                   },
-                  "nuzzled": {
-                     "display_name": "애완동물과 교감을 나눔",
-                     "tooltip": "헤헤, [str(pet_name)]은(는) 항상 저를 격려해 주고 있어요."
-                  },
                   "plant_lover": {
                      "display_name": "식물 애호가",
                      "tooltip": "저는 식물들과 이야기할 때, 차분함을 느껴요."
@@ -4965,6 +5006,50 @@
                   "loves_their_job": {
                      "display_name": "자신의 직업을 사랑함",
                      "tooltip": "이것은 저에게 완벽한 직업입니다! 날마다 하는 일이 사랑스럽다니까요."
+                  },
+                  "inspired": {
+                     "display_name": "탁월함",
+                     "tooltip": "오늘의 [str (target_name)]은(는) 아주 좋은 정신을 지녔습니다. 그 주변에 있으면 정말로 즐겁습니다!"
+                  },
+                  "discouraged": {
+                     "display_name": "낙담한",
+                     "tooltip": "칫, 그들의 나쁜 분위기에 [str (target_name)]은(는) 전혀 재미있지 않습니다."
+                  }
+               },
+               "gregarious": {
+                  "values": {
+                     "lonely": {
+                        "display_name": "외로움",
+                        "tooltip": "누군가와 이야기 한 지 오래되었습니다. 내 마음의 응어리를 풀고 싶네요."
+                     },
+                     "enjoys_company": {
+                        "display_name": "Enjoys the company of others",
+                        "tooltip": "It's always great to spend some time with my fellow town members."
+                     }
+                  }
+               },
+               "loner": {
+                  "values": {
+                     "annoyed_with_others": {
+                        "display_name": "Annoyed with others",
+                        "tooltip": "Why do these people keep talking to me? It keeps distracting me from what's important."
+                     },
+                     "alone_with_thoughts": {
+                        "display_name": "Alone with my own thoughts",
+                        "tooltip": "Being away from others has given me the time to reflect and clear my mind."
+                     }
+                  }
+               },
+               "empathetic": {
+                  "values": {
+                     "everyone_worse_off": {
+                        "display_name": "Everyone seems worse off",
+                        "tooltip": "Seeing everyone else in worse spirits just brings me down."
+                     },
+                     "everyone_happier": {
+                        "display_name": "Everyone seems happier",
+                        "tooltip": "Everyone else seems to be in a better mood than me. Maybe I should look at things differently."
+                     }
                   }
                }
             },
@@ -4977,6 +5062,46 @@
                   "pet_died": {
                      "display_name": "애완동물이 무지개 다리를 건넘",
                      "tooltip": "불쌍한 애완 동물이 최근에 세상을 떠났어요...꽤 그리울 겁니다."
+                  }
+               }
+            },
+            "job": {
+               "values": {
+                  "gained_a_level": {
+                     "display_name": "Improved my skills",
+                     "tooltip": "I've been at this job long enough to gain a new insight! I can feel myself becoming better at my work."
+                  }
+               }
+            },
+            "social": {
+               "values": {
+                  "unpleasant_talk": {
+                     "display_name": "Had an unpleasant talk",
+                     "tooltip": "I can't believe [str(target_name)] said that!"
+                  },
+                  "great_talk": {
+                     "display_name": "Had a great talk",
+                     "tooltip": "Talking with [str(target_name)] today was really nice."
+                  },
+                  "great_joke": {
+                     "display_name": "Heard a great joke",
+                     "tooltip": "Hahaha, just thinking of the joke [str(target_name)] told makes me crack up!"
+                  },
+                  "tough_crowd": {
+                     "display_name": "Tough crowd",
+                     "tooltip": "[str(target_name)] didn't laugh at my joke. Was it really that bad?"
+                  }
+               },
+               "animal": {
+                  "values": {
+                     "nuzzled": {
+                        "display_name": "Nuzzled",
+                        "tooltip": "Awww, my pet [str(target_name)] always manages to cheer me up."
+                     },
+                     "booped": {
+                        "display_name": "Booped",
+                        "tooltip": "A cute [str(species)] booped me today. It made me feel warm and fuzzy inside."
+                     }
                   }
                }
             }
@@ -8456,11 +8581,11 @@
             "window_box_frostsnap_recipe": {
                "description": "프로스트스냅 꽃이 가득한 화분입니다. 창틀 아래에 배치해주세요.",
                "recipe_name": "프로스트스냅 창문 화분",
-               "flavor": "The capstone of an civilized dwelling."
+               "flavor": "문명화된 주택의 최고의 업적"
             },
             "wooden_buckler_recipe": {
-               "description": "Toughen up your foot soldiers... when you can actually equip them in a future alpha!",
-               "recipe_name": "Wooden Buckler"
+               "description": "보병은 강해질 것이다... 앞으로 최고의 장비를 착용할 수 있다면!",
+               "recipe_name": "나무 방패"
             },
             "wooden_diamond_window_recipe": {
                "description": "더욱 세련된 창입니다.",
@@ -8510,7 +8635,7 @@
             "wooden_sign_recipe": {
                "description": "건물을 식별하기 위한 일반적인 표지판입니다.",
                "recipe_name": "벽걸이형 나무 표지판",
-               "flavor": "But if it's *generic*, how will...? NM. (-sdee)"
+               "flavor": "만약 이것이 평범한 것이라면, 어떻게 하실건가요...? 신경쓰지 마세요. "
             },
             "wooden_sign_weaver_recipe": {
                "description": "방직공의 상징이 새겨진 표지판이며 건물에 붙일 수 있습니다.",
@@ -8612,12 +8737,12 @@
             "statue_of_cid_wanderer_recipe": {
                "recipe_name": "시드의 조각상",
                "description": "시드의 말년을 보여준다.",
-               "flavor": "And where Cid wandered, the Church rose up in his footsteps..."
+               "flavor": "시드가 방황하던 곳에서, 그의 발자취를 따라 교회가 세워졌다."
             },
             "poyo_weathervane_recipe": {
                "recipe_name": "풍향계",
                "description": "친근한 느낌을 주는 풍향계다.",
-               "flavor": "TODO"
+               "flavor": "정말 난리다"
             }
          }
       },
@@ -8765,7 +8890,7 @@
             "kibble_recipe": {
                "recipe_name": "키블 제조법",
                "description": "털 많은 친구들을 유혹하기 위해",
-               "flavor": "There is a hole in my heart the shape of a kitten. "
+               "flavor": "키블 모양의 심장이 내 안에 있다."
             }
          },
          "cook_mill": {
@@ -8845,32 +8970,32 @@
             },
             "gadget_parts_name": "기어와 부품들",
             "small_turret_recipe": {
-               "description": "After placed, shoots at enemies from a distance. Must be repaired after 20 uses.",
+               "description": "설치 후, 멀리서 적을 향해 쏩니다. 20번 사용 후 반드시 수리해야 합니다.",
                "recipe_name": "터렛"
             },
             "iron_gear_recipe": {
-               "description": "Used to craft intermediate gadgets",
+               "description": "중급 도구를 만드는데 사용됩니다.",
                "recipe_name": "철 기어",
-               "flavor": "Not for use as a throwing star"
+               "flavor": "별을 향해 쏠 순 없습니다."
             },
             "clamp_trap_recipe": {
-               "description": "Damages and shortly stuns enemies that step near it",
+               "description": "가까운 거리의 적에게 데미지를 주고 짧게 기절시킵니다.",
                "recipe_name": "클램프 트랩"
             },
             "ranged_weapons_name": "범위기 무기",
             "traps_name": "방어용 트랩",
             "turnip_shooter_recipe": {
-               "description": "Shoots turnips at enemies from a small distance. Must be repaired after 15 uses.",
+               "description": "짧은 거리의 적에게 순무를 쏩니다. 15번 사용 후 반드시 수리해야 합니다.",
                "recipe_name": "순무 발사기",
-               "flavor": "Don't like the taste of turnips? Don't worry, they're multi-functional."
+               "flavor": "순무가 맛이 없나요? 걱정마세요. 다용도로 사용가능하니까요."
             },
             "critter_trap_recipe": {
-               "description": "Deals a small amount of damage and shortly stuns enemies.",
+               "description": "적에게 낮은 데미지를 주며 기절시킵니다.",
                "recipe_name": "크리터 트랩",
-               "flavor": "A slight annoyance for ogres. A death wish for mice."
+               "flavor": "오거를 약간 짜증내게 할 수 있습니다. 쥐는 죽일 수 있습니다."
             },
             "iron_door_recipe": {
-               "description": "Thick, sturdy iron door. Also comes with a thick, sturdy lock.",
+               "description": "철로 만든 두껍고 튼튼한 문입니다. 또한 두껍고 튼튼한 자물쇠도 함께 딸려있습니다.",
                "recipe_name": "철갑 문"
             },
             "decorations_name": "장식",

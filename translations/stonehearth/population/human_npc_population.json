@@ -1,0 +1,79 @@
+{
+   "type": "kingdom",
+   "kingdom_name": "Human NPCs",
+   "kingdom_id": "human_npcs",
+   "amenity_to_strangers": "neutral",
+   "roles": {
+      "default": {
+         "male": {
+            "uri": [
+               "stonehearth:male_npc_1"
+            ],
+            "given_names": [
+               "Amiot",
+               "Joren",
+               "Thorald",
+               "Lycus",
+               "Odin",
+               "Tristen",
+               "Ur",
+               "Lyell",
+               "Vitel",
+               "Josepe",
+               "Rollo",
+               "Osmond",
+               "Hamett"
+            ]
+         },
+         "female": {
+            "uri": [
+               "stonehearth:female_npc_1"
+            ],
+            "given_names": [
+               "Acelina",
+               "Elisot",
+               "Lucette",
+               "Joy",
+               "Anna",
+               "Sisilla",
+               "Erta",
+               "Alice",
+               "Cecely",
+               "Ladina",
+               "Santia",
+               "Elene",
+               "Felicia",
+               "Odela"
+            ]
+         },
+         "surnames": [
+            "Garin",
+            "Corot",
+            "Kramer",
+            "Essig",
+            "Bergen",
+            "de Meo",
+            "Piller",
+            "Kumblin",
+            "Coste",
+            "Magica",
+            "Raev",
+            "Mediate",
+            "Armbruster",
+            "Arts",
+            "Arbied",
+            "Boon",
+            "Borbely",
+            "Knopf",
+            "Koeman",
+            "Marchand",
+            "Paqet",
+            "Sanna",
+            "Polzin",
+            "Mercier",
+            "Zsoldos"
+         ]
+      },
+      "task_groups": {}
+   }
+}

@@ -1,0 +1,313 @@
+{
+   "type": "index",
+   "ai": {
+      "stonehearth:top": {
+         "children": {
+            "stonehearth:work": {
+               "type": "dispatcher",
+               "priority": 20,
+               "children": {
+                  "stonehearth:task_group:build": {
+                     "type": "task_group",
+                     "work_order": "build",
+                     "children": {
+                        "stonehearth:fabricate_structure": {
+                           "type": "tuning",
+                           "priority": 5
+                        },
+                        "stonehearth:fabricate_structure_free": {
+                           "type": "tuning",
+                           "priority": 5
+                        },
+                        "stonehearth:teardown_structure": {
+                           "type": "tuning",
+                           "priority": 7
+                        },
+                        "stonehearth:dig_foundation": {
+                           "type": "tuning",
+                           "priority": 6
+                        },
+                        "stonehearth:build_ladder": {
+                           "type": "tuning",
+                           "priority": 5
+                        },
+                        "stonehearth:teardown_ladder": {
+                           "type": "tuning",
+                           "priority": 6
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:common_tasks": {
+                     "type": "task_group",
+                     "work_order": "job",
+                     "children": {
+                        "stonehearth:build_ladder": {
+                           "type": "task",
+                           "args": {
+                              "category": "common"
+                           },
+                           "priority": 2
+                        },
+                        "stonehearth:teardown_ladder": {
+                           "type": "task",
+                           "args": {
+                              "category": "common"
+                           },
+                           "priority": 2
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:patrolling": {
+                     "type": "task_group",
+                     "work_order": "job",
+                     "children": {
+                        "stonehearth:patrol": {
+                           "type": "task",
+                           "priority": 10
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:placement": {
+                     "type": "task_group",
+                     "work_order": "haul",
+                     "children": {
+                        "stonehearth:place_item_on_structure": {
+                           "type": "task",
+                           "priority": 5
+                        },
+                        "stonehearth:place_item_type_on_structure": {
+                           "type": "tuning",
+                           "priority": 5
+                        },
+                        "stonehearth:light_firepit": {
+                           "type": "tuning",
+                           "priority": 20
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:trapping": {
+                     "type": "task_group",
+                     "work_order": "job",
+                     "children": {
+                        "stonehearth:trapping:set_bait_trap": {
+                           "type": "tuning",
+                           "priority": 2
+                        },
+                        "stonehearth:trapping:check_bait_trap": {
+                           "type": "tuning",
+                           "priority": 3
+                        },
+                        "stonehearth:trapping:survey_trapping_grounds": {
+                           "type": "tuning",
+                           "priority": 1
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:repairing" : {
+                     "type" : "task_group",
+                     "work_order" : "job",
+                     "children": {
+                        "stonehearth:repair" : {
+                           "type": "task",
+                           "priority" : 1
+                        },
+                        "stonehearth:refill_ammo" : {
+                           "type": "task",
+                           "priority" : 2
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:healing" : {
+                     "type" : "task_group",
+                     "work_order" : "job",
+                     "children" : {
+                        "stonehearth:healing" : {
+                           "type" : "task",
+                           "priority" : 11
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:farming": {
+                     "type": "task_group",
+                     "work_order": "job",
+                     "children": {
+                        "stonehearth:farm": {
+                           "type": "task",
+                           "priority": 6
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:crafting": {
+                     "type": "task_group",
+                     "work_order": "job",
+                     "children": {
+                        "stonehearth:crafting": {
+                           "type": "task",
+                           "priority": 10
+                        }
+                     }
+                  },
+                  "stonehearth:task_group:herding": {
+                     "type": "task_group",
+                     "work_order": "job",
+                     "children": {
+                        "stonehearth:harvest_resource": {
+                           "type": "task",
+                           "args": {
+                              "category": "herding"
+                           },
+                           "priority": 5
+                        },
+                        "stonehearth:harvest_renewable_resource": {
+                           "type": "task",
+                           "args": {
+                              "category": "herding"
+                           },
+                           "priority": 3
+                        },
+                        "stonehearth:collect_animals_for_pasture": {
+                           "type": "task",
+                           "priority": 3
+                        },
+                        "stonehearth:feed_pasture_animals": {
+                           "type": "tuning",
+                           "priority": 5
+                        },
+                        "stonehearth:find_stray_animal": {
+                           "type": "tuning",
+                           "priority": 4
+                        },
+                        "stonehearth:return_trailing_animals_to_pasture": {
+                           "type": "task",
+                           "priority": 4
+                        }
+                     }
+                  },
+                  "stonehearth:simple_labor": {
+                     "type": "dispatcher",
+                     "priority": 1,
+                     "disable_preemption": true,
+                     "children": {
+                        "stonehearth:task_group:mining": {
+                           "type": "task_group",
+                           "work_order": "mine",
+                           "children": {
+                              "stonehearth:mine": {
+                                 "type": "tuning",
+                                 "priority": 2
+                              }
+                           }
+                        },
+                        "stonehearth:task_group:restock": {
+                           "type": "task_group",
+                           "work_order": "haul",
+                           "children": {
+                              "stonehearth:restock_storage": {
+                                 "type": "tuning",
+                                 "priority": 1
+                              }
+                           }
+                        },
+                        "stonehearth:task_group:harvest": {
+                           "type": "task_group",
+                           "work_order": "haul",
+                           "children": {
+                              "stonehearth:clear_item": {
+                                 "type": "task",
+                                 "priority": 3
+                              },
+                              "stonehearth:harvest_resource": {
+                                 "type": "task",
+                                 "args": {
+                                    "category": "harvest"
+                                 },
+                                 "priority": 4
+                              },
+                              "stonehearth:harvest_renewable_resource": {
+                                 "type": "task",
+                                 "args": {
+                                    "category": "harvest"
+                                 },
+                                 "priority": 4
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+            "stonehearth:free_time": {
+               "type": "dispatcher",
+               "priority": 2,
+               "children": {
+                  "stonehearth:task_group:free_time": {
+                     "type": "task_group",
+                     "children": {
+                        "stonehearth:admire_item_type" : {
+                           "type": "tuning",
+                           "priority": 2
+                        },
+                        "stonehearth:admire_fire" : {
+                           "type": "tuning",
+                           "priority": 4
+                        }
+                     }
+                  }
+               }
+            },
+            "stonehearth:basic_needs": {
+               "type": "dispatcher",
+               "priority": 40
+            },
+            "stonehearth:urgent": {
+               "type": "dispatcher",
+               "priority": 80,
+               "children": {
+                  "stonehearth:task_group:rescue": {
+                     "type": "task_group",
+                     "work_order" : "rescue",
+                     "children" : {
+                        "stonehearth:rescue_citizen": {
+                           "type": "tuning",
+                           "priority": 27
+                        }
+                     }
+                  }
+               }
+            },
+            "__comment": "the town alert tasks need to be under the same priority as combat in order to work properly with combat actions",
+            "stonehearth:combat": {
+               "type": "placeholder",
+               "children": {
+                  "stonehearth:task_group:town_alert": {
+                     "type": "task_group",
+                     "work_order": "alert_mode",
+                     "children": {
+                        "stonehearth:town_alert:run_to_safety": {
+                           "type": "tuning",
+                           "priority": 26
+                        },
+                        "stonehearth:town_alert:stand_ground": {
+                           "type": "tuning",
+                           "priority": 1
+                        }
+                     }
+                  }
+               }
+            },
+            "stonehearth:conversation": {
+               "type": "dispatcher",
+               "priority": 45
+            },
+            "stonehearth:unit_control": {
+               "type": "dispatcher",
+               "priority": 1000
+            },
+            "stonehearth:compelled_behavior": {
+               "type": "dispatcher",
+               "priority": 10000
+            }
+         }
+      }
+   }
+}

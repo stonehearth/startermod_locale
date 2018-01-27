@@ -30,7 +30,22 @@
          .hoverHighlight;
       }
    }
-
+   
+   .lightBlueButton {
+      .handCursor;
+      .borderImageBackground;
+      .outlined(#000) !important;
+      border-width: 9px 9px 13px 9px;
+      background-image: url(images/button_light_blue.png);
+      border-image: url(images/button_light_blue.png) 8 8 14 8 repeat;
+      border-style: solid;
+      font-family: @controlFontFamily;
+      font-size: 30px;
+      margin: 0px;
+      color: white;
+      text-align: center;
+   }
+   
    #citizens {
       position: absolute;
       top: 123px;
@@ -220,7 +235,28 @@
          top: 19px;
          left: 628px;
       }
+	  
+	.lockAllImg {
+         .backgroundContain(url(images/unlock.png));
+         width: 30px;
+         height: 41px;
+      }
 
+      .unlockAllImg {
+         .backgroundContain(url(images/lock.png));
+         width: 30px;
+         height: 41px;
+      }
+
+      .lockAllButton {
+         .lightBlueButton;
+         position: absolute;
+         z-index: 1;
+         left: -16px;
+         top: -35px;
+         padding: 3px 7px 2px 7px;
+      }
+	  
       .selectedPortrait {
          position: relative;
          float: left;
@@ -286,7 +322,7 @@
             background-repeat: no-repeat;
          }
 
-         #randomizeText {
+         #randomizeText _OLD{
             .control;
             color: @vanillaColor;
             font-size: 25px;
@@ -294,6 +330,17 @@
             top: 16px;
             left: 74px;
             text-align: left;
+         }
+		 
+		#randomizeText {
+            .controlFont;
+            .noOutline;
+            color: black;
+            font-size: 18px;
+            position: absolute;
+            top: 15px;
+            left: 74px;
+            text-align: center;
          }
       }
 
@@ -303,7 +350,7 @@
          left: 217px;
          top: 96px;
 
-         .indexButton {
+         .indexButton_OLD {
             .borderImageBackground;
             .outlined(#000) !important;
             border-width: 9px 9px 13px 9px;
@@ -324,6 +371,17 @@
             }
          }
 
+		 .indexButton {
+            .lightBlueButton;
+            width: 120px;
+            height: 38px;
+            position: absolute;
+
+            &[locked="hidden"] {
+               display: none;
+            }
+         }
+		 
          .lockImg {
             position: absolute;
             top: 4px;

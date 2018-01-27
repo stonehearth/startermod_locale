@@ -1,0 +1,115 @@
+{
+   "type": "kingdom",
+   "kingdom_name": "Northern Alliance",
+   "kingdom_id": "northern_alliance",
+   "roles": {
+      "default": {
+         "male": [
+            "stonehearth:male_1",
+            "stonehearth:male_2"
+         ],
+         "female": [
+            "stonehearth:female_1",
+            "stonehearth:female_2"
+         ]
+      }
+   },
+   "surnames": [
+      "Finn",
+      "Odilep",
+      "Ketil",
+      "Haft",
+      "Sovi",
+      "Guthrum",
+      "Igurd",
+      "Moror",
+      "Erlinn",
+      "Vemund",
+      "Oldra",
+      "Tharon",
+      "Forthwind",
+      "Aldor",
+      "Gunnar"
+   ],
+   "given_names": {
+      "male": [
+         "Thule",
+         "Kiran",
+         "Sel",
+         "Jos",
+         "Gurd",
+         "Karr",
+         "Skarf",
+         "Valin",
+         "Lovil",
+         "Sineus",
+         "Hakon",
+         "Ragnar",
+         "Ulf",
+         "Levii",
+         "Elwind",
+         "Snorii",
+         "Usar",
+         "Regnar",
+         "Toralf",
+         "Andar",
+         "Roan",
+         "Vodyr",
+         "Bjoyyrn",
+         "Leon",
+         "Thurden",
+         "Vogarr",
+         "Vlad",
+         "Bojerm",
+         "Borj"
+      ],
+      "female": [
+         "Volka",
+         "Braidyn",
+         "Kendra",
+         "Geira",
+         "Asta",
+         "Olva",
+         "Tovi",
+         "Indunna",
+         "Finna",
+         "Jodis",
+         "Mora",
+         "Brynn",
+         "Katla",
+         "Karri",
+         "Nori",
+         "Feli",
+         "Lvy",
+         "Eerika",
+         "Yura",
+         "Skari",
+         "Eira",
+         "Ina",
+         "Mara",
+         "Limnar",
+         "Luna",
+         "Silkia"
+      ]
+   },
+   "town_pieces": {
+      "optional_prefix": [
+         "Kas",
+         "Hont",
+         "Svar",
+         "Ther"
+      ],
+      "town_name": [
+         "Astor",
+         "Frijd",
+         "Rhek",
+         "Aarmar"
+      ],
+      "suffix": [
+         "el",
+         "os",
+         "ver",
+         "sled"
+      ]
+   }
+}

@@ -1,0 +1,49 @@
+{
+   "type": "kingdom",
+   "kingdom_name": "Rabbit People XXX need a real name",
+   "kingdom_id": "rabbit",
+   "amenity_to_strangers": "neutral",
+   "roles": {
+      "default": {
+         "male": {
+            "uri": [
+               "stonehearth:monsters:rabbit:rabbit"
+            ],
+            "given_names": [
+               "Peter",
+               "Cotton",
+               "Snuggles"
+            ]
+         },
+         "female": {
+            "uri": [
+               "stonehearth:monsters:rabbit:rabbit_female"
+            ],
+            "given_names": [
+               "Peter",
+               "Cotton",
+               "Snuggles"
+            ]
+         },
+         "surnames": [
+            "the Fluffy",
+            "Briarweaver",
+            "the Elder"
+         ]
+      }
+   },
+   "town_pieces": {
+      "optional_prefix": [
+         "Ay"
+      ],
+      "town_name": [
+         "Pohk"
+      ],
+      "suffix": [
+         "yu"
+      ]
+   },
+   "task_groups": {
+      "stonehearth:task_group:restock": "stonehearth:simple_labor"
+   }
+}
