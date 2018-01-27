@@ -53,7 +53,7 @@
             "healing_target": "healing [name(data.target)]",
             "dig_foundation": "digging foundation",
             "unit_hold_location": "defending location",
-            "execute_conversation": "socializing",
+            "talk": "talking to [name(data.target)]",
             "incapacitated": "incapacitated",
             "rescue_citizen": "rescuing [name(data.target)]",
             "recuperating": "recuperating"
@@ -85,7 +85,10 @@
             "terrain_xray_vision": "Terrain x-ray vision",
             "terrain_xray_vision_description": "See through the terrain. Change between full and flat view to show underground walls.",
             "terrain_xray_vision_flat": "flat",
-            "terrain_xray_vision_full": "full"
+            "terrain_xray_vision_full": "full",
+            "appeal_vision_icon_name": "appeal",
+            "appeal_vision": "Appeal Vision",
+            "appeal_vision_description": "See how appealing hearthlings find the world."
          },
          "promotion_tree": {
             "title": "Change Job -",
@@ -127,12 +130,16 @@
             "level_abbreviation": "Lvl",
             "locked_status": " (Locked)",
             "apprentice": "Apprentice",
+            "journeyman": "Journeyman",
+            "master": "Master",
             "journal": "Journal",
             "thoughts": "Thoughts",
             "morale_meter": "Morale Meter",
             "attributes": "Attributes",
             "equipment": "Equipment",
             "abilities": "Job Abilities",
+            "appeal": "Appeal",
+            "unknown_item": "Undiscovered Preference",
             "morale_title": "Morale",
             "overall_morale": "Overall Morale",
             "morale_food": "Food",
@@ -143,7 +150,25 @@
             "backpack_tab_name": "Backpack",
             "journal_no_entries": "no entries",
             "retired": "Retired at:",
-            "traits": "Traits"
+            "traits": "Traits",
+            "above": "above",
+            "below": "below",
+            "currently": "Currently:",
+            "no_unhappy_thoughts": "No unhappy thoughts so far!",
+            "no_happy_thoughts": "No happy thoughts yet!",
+            "appeal_headings": {
+               "like": "Like",
+               "like_tooltip": "A space is viewed as more beautiful for every liked item present, up to three.",
+               "love": "Love",
+               "love_tooltip": "Seeing one of these loved items will drastically improve [str(self.stonehearth:unit_info.custom_name)]'s opinion of an area.",
+               "dislike": "Dislike",
+               "dislike_tooltip": "[str(self.stonehearth:unit_info.custom_name)] dislikes these items and will always find them unappealing, regardless of quality.",
+               "current_and_target_bar": "Overall Opinion",
+               "current_and_target_bar_tooltip": "[str(self.stonehearth:unit_info.custom_name)]'s opinion of their surroundings and recently visited areas.",
+               "current_arrow_tooltip": "[str(self.stonehearth:unit_info.custom_name)]'s overall opinion of the town's appeal. This affects their mood.",
+               "target_arrow_tooltip": "How [str(self.stonehearth:unit_info.custom_name)] views their immediate surroundings.  This affects their overall opinion of the town with time.",
+               "item_preferences": "[str(self.stonehearth:unit_info.custom_name)]'s Tastes"
+            }
          },
          "pet_character_sheet": {
             "title": "Pet Info",
@@ -158,18 +183,18 @@
          "tutorials": {
             "camera": {
                "camera_pan_title": "To move the camera",
-               "camera_pan_1": "Hold down the space bar, then move the mouse",
-               "camera_pan_2": "Or use the WASD keys",
+               "camera_pan_1": "Hold, then move the mouse",
+               "camera_pan_2": "Or use the keyboard",
                "camera_pan_3": "Or press the mouse wheel and move the mouse",
                "camera_orbit_title": "To rotate the camera",
                "camera_orbit_1": "Right click and drag to rotate the camera",
-               "camera_orbit_2": "Q and E work too",
+               "camera_orbit_2": "Keys works too",
                "camera_zoom_title": "To zoom in and out",
                "camera_zoom_1": "Use the mouse scroll wheel",
-               "camera_zoom_2": "Or use the + and - keys",
+               "camera_zoom_2": "Or use the keys",
                "camera_follow_title": "To follow a Hearthling",
                "camera_follow_1": "Select the Hearthling you wish to follow",
-               "camera_follow_2": "Press the J key"
+               "camera_follow_2": "Press the key"
             }
          },
          "save_view": {
@@ -208,7 +233,9 @@
             "remove": "Remove",
             "input_text_tooltip": "Click to edit",
             "days": "d",
-            "hours": "h"
+            "hours": "h",
+            "the": "the",
+            "empty_string": ""
          },
          "party": {
             "title": "Parties",
@@ -235,6 +262,8 @@
                "display_name": "Attack Move",
                "description": "Attack a specific target or location."
             },
+            "crafted_by": "Crafted by [str(author_name)]",
+            "crafted_in": "Crafted in [str(author_name)]",
             "defend_location": {
                "display_name": "Defend Location",
                "description": "Defend a location from enemies."
@@ -252,6 +281,7 @@
                "description": "Cancels active combat orders."
             },
             "level": "Lv: ",
+            "Lvl": "Lvl",
             "class_lv_title": "Class and Level Requirements",
             "no_requirements": "None!",
             "equipment_description": "Equippable by: [str(class_list)]",
@@ -262,6 +292,11 @@
             "placement_tags": {
                "turret": "Turrets",
                "trap": "Traps"
+            },
+            "quality": {
+               "quality-2": "Fine Quality",
+               "quality-3": "Excellent Quality",
+               "quality-4": "Master Quality!"
             }
          },
          "citizens": {
@@ -370,6 +405,7 @@
             "tooltip_combat_base_damage": "Atk:",
             "tooltip_combat_base_damage_reduction": "Def:",
             "tooltip_num_undeployed": "Undeployed: [str(num_undeployed)]",
+            "tooltip_deprecated": "Legacy Item: this item is no longer obtainable in the game.",
             "death_notification": "[name(i18n_data.entity)] has died.",
             "imminent_death_notification": "[name(i18n_data.citizen)] is severely low on health!",
             "starving_notification": "[name(i18n_data.citizen)] is starving!",
@@ -413,7 +449,7 @@
                   },
                   "loot_item": {
                      "display_name": "Loot",
-                     "description": "Steal items from another player.",
+                     "description": "Take items from enemies",
                      "tip_title": "Click and drag to loot items from the world",
                      "tip_description": "Right click to exit this mode"
                   },
@@ -484,7 +520,7 @@
                      "display_name": "Place Item",
                      "description": "Place items like furniture and decoration",
                      "tip_title": "Click to place this item",
-                     "tip_description": "Rotate with , and . keys"
+                     "tip_description": "Rotate with [str(left_binding)] and [str(right_binding)] keys"
                   },
                   "cannot_place_item": {
                      "tip_title": "Cannot place this item",
@@ -632,6 +668,10 @@
                "title": "[name(i18n_data.entity)] has Leveled Up!",
                "show_char_sheet": "Character Sheet"
             },
+            "promote_bulletin": {
+               "title": "[name(i18n_data.entity)] has been Promoted!",
+               "show_char_sheet": "Character Sheet"
+            },
             "immigration_report": {
                "title": "Daily Update",
                "immigration_report_title": "Immigration Report",
@@ -694,11 +734,11 @@
                "doodad_tip_title": "Click a wall to place the door or window",
                "doodad_tip_description": "Right click to exit",
                "draw_template_title": "Click to build template",
-               "draw_template_description": "Rotate with , and . keys",
+               "draw_template_description": "Rotate with [str(left_binding)] and [str(right_binding)] keys",
                "build_road_tip_title": "Click and drag to build road",
                "build_road_tip_description": "Right click to exit",
                "stairs_tip_title": "Click to place stairs",
-               "stairs_tip_description": "Right click to exit. Rotate with , and . keys"
+               "stairs_tip_description": "Right click to exit. Rotate with [str(left_binding)] and [str(right_binding)] keys"
             },
             "building_cost": {
                "required_item": "Needed Items"
@@ -736,11 +776,13 @@
             "building_templates": {
                "title": "Building Templates",
                "design_custom_building": "Design Custom Building",
+               "search_placeholder": "Search templates...",
                "template_names": {
                   "tiny_cottage": "Tiny Cottage",
                   "cottage_for_two": "Cottage for Two",
                   "shared_sleeping_quarters": "Shared Sleeping Quarters",
                   "dining_hall": "Dining Hall",
+                  "herbalist_house": "Herbalist's House",
                   "little_clay_house": "Little Clay House",
                   "clay_house_for_two": "Clay House for Two",
                   "clay_dining_room": "Clay Dining Room",
@@ -749,12 +791,15 @@
                "set_template_name_title": "Template Name",
                "template_default_name": "My new building template",
                "set_template_name_prompt": "Enter a name for this template",
+               "ignore_quality": "Ignore Quality",
+               "ignore_quality_tooltip": "Treat all items in the template as standard quality (rather than Fine, Excellent, etc.).",
                "remove_template_confirm": {
                   "title": "Delete Template",
                   "message": "Are you sure you want to delete this building template?",
                   "keep_template": "Keep this template",
                   "remove_template": "Delete it!"
                },
+               "template_description_tooltip": "Filename: [str(filename)]",
                "remove_template_button": "Delete Template",
                "build_template_button": "Build"
             },
@@ -864,7 +909,8 @@
                "contents": "Contents",
                "filter": "Filter",
                "help": "Click the icons to choose what to store in this stockpile.",
-               "used_space": "Used space:",
+               "help_single_filter": "Click an icon to choose the item type to store in this container.",
+               "used_space": "Used:",
                "filters": {
                   "all": "All",
                   "none": "None",
@@ -885,12 +931,12 @@
                   "tooltip_portal": "Doors & Windows",
                   "tooltip_furniture": "Furniture",
                   "tooltip_defense": "Defenses",
-                  "tooltip_light": "torches & lights",
+                  "tooltip_light": "Torches & Lights",
                   "tooltip_decoration": "Decorations",
-                  "tooltip_refined_weaver": "Thread, Cloth, and Leather",
+                  "tooltip_refined_weaver": "Cloth, etc.",
                   "tooltip_refined_craftables": "Refined Craftables",
                   "tooltip_refined_animal_part": "goods produced from bits of animals",
-                  "tooltip_refined_ore": "Metal Bars",
+                  "tooltip_refined_ore": "Refined Metal",
                   "tooltip_weapons": "Weapons",
                   "tooltip_ranged_weapon": "ranged weapons",
                   "tooltip_equipment": "Armor and Other Equipment",
@@ -902,7 +948,9 @@
                   "tooltip_raw_food": "Raw Foods",
                   "tooltip_prepared_food": "Cooked Foods",
                   "tooltip_cooking_ingredients": "Cooking Ingredients and Animal Feed",
-                  "tooltip_consumables": "Healing Items and Other Consumables"
+                  "tooltip_cooking": "Cooking",
+                  "tooltip_consumables": "Healing Items and Other Consumables",
+                  "tooltip_animal_parts": "Animal Parts"
                }
             }
          },
@@ -941,7 +989,8 @@
             "queue_anyway": "Queue Order Anyway",
             "recipe_tab": "Recipes",
             "orders_tab": "Orders",
-            "missing_ingredients": "Missing ingredients: "
+            "missing_ingredients": "Missing ingredients: ",
+            "tooltip_appeal_stat": "Appeal"
          },
          "town_overview": {
             "title": "Town Overview",
@@ -1020,7 +1069,7 @@
                "005": "terracing terrain...",
                "006": "stocking piles...",
                "007": "inflating trees...",
-               "008": "rising sun...",
+               "008": "raising sun...",
                "009": "floating clouds...",
                "010": "burlying hands...",
                "011": "bushing berries...",
@@ -1128,11 +1177,12 @@
             "title": "Settings",
             "graphics": "Graphics",
             "gameplay": "Gameplay",
+            "controls": "Controls",
             "card": "Display Adapter: ",
             "gfx_cardinfo": "[str(gpuRenderer)] ([str(gpuDriver)])",
             "gfx_enable_shadows": "Enable Shadows",
             "gfx_enable_vsync": "Enable Vertical Sync",
-            "gfx_enable_fullscreen": "Fullscreen (Requires Restart)",
+            "gfx_enable_fullscreen": "Fullscreen",
             "gfx_msaa": "Anti-Aliasing Level",
             "gfx_shadows": "Shadow Detail",
             "gfx_max_lights": "Maximum Number of Lights",
@@ -1161,11 +1211,15 @@
             "enable_lua_jit": "Use Lua JIT (Requires Restart)",
             "send_anon_data": "Send anonymous feedback to help improve Stonehearth!",
             "language_select": "Language",
+            "unsaved_changes_dialog": {
+               "title": "Discard Changes?",
+               "message": "Do you want to discard unsaved changes?"
+            },
             "gameplay_tab": {
                "title": "Gameplay",
                "experimental": "Experimental",
                "experimental_description": "These settings are still under development and may not be stable! Enable at your own risk!",
-               "enable_speed_3": "Enable Game Speed 3 (Requires UI Refresh)",
+               "enable_speed_3": "Enable Game Speed 3",
                "enable_speed_3_note": "Note: Game performance might be slow with larger towns on speed 3. Be warned!",
                "enable_speed_3_description": "Adds a new speed option in the bottom right panel that will run the game at 4x speed!",
                "default_storage_filter_none": "Storage filter defaults to None",
@@ -1193,6 +1247,118 @@
                   "message": "The game needs to reload to apply module changes. Reload now?",
                   "accept": "Ok",
                   "cancel": "Cancel"
+               }
+            },
+            "controls_tab": {
+               "key_binding_prompt": "Press Del to unbind",
+               "reset_to_defaults": "Reset to Defaults",
+               "unbound": "unbound",
+               "conflict_dialog": {
+                  "title": "Binding Conflict",
+                  "message": "\"<strong>[str(combo)]</strong>\" is already used by [str(conflicts)].",
+                  "choice_replace": "Unbind Existing",
+                  "choice_keep": "Keep All",
+                  "choice_cancel": "Cancel"
+               },
+               "key_category_names": {
+                  "other": "Other",
+                  "camera": "Camera",
+                  "vision": "Vision",
+                  "speed": "Speed",
+                  "menus": "Menus",
+                  "harvest": "Tools",
+                  "zone": "Zoning",
+                  "build": "Building",
+                  "craft": "Crafting",
+                  "fight": "Combat",
+                  "ui": "User Interface",
+                  "debug": "Debug"
+               },
+               "key_binding_names": {
+                  "cam_drag": "Drag Camera",
+                  "cam_home": "Recenter Camera",
+                  "cam_pan_fwrd": "Pan Camera Up",
+                  "cam_pan_back": "Pan Camera Down",
+                  "cam_pan_left": "Pan Camera Left",
+                  "cam_pan_right": "Pan Camera Right",
+                  "cam_orb_left": "Rotate Camera Left",
+                  "cam_orb_right": "Rotate Camera Right",
+                  "cam_orb_up": "Rotate Camera Up",
+                  "cam_orb_down": "Rotate Camera Down",
+                  "cam_zoom_in": "Zoom In",
+                  "cam_zoom_out": "Zoom Out",
+                  "cam_follow": "Follow Camera",
+                  "vision_building_toggle": "Switch Building Vision",
+                  "vision_xray_toggle": "Toggle Terrain X-Ray Vision",
+                  "vision_slice_toggle": "Toggle Terrain Slice Vision",
+                  "vision_slice_up": "Terrain Slice Up",
+                  "vision_slice_down": "Terrain Slice Down",
+                  "vision_appeal_toggle": "Toggle Appeal Vision",
+                  "speed_pause": "Pause",
+                  "speed_toggle_pause": "Toggle Pause",
+                  "speed_play": "Normal Speed",
+                  "speed_ff": "Double Speed",
+                  "speed_three": "Super Speed",
+                  "town_overview": "Town Info Menu",
+                  "citizen_manager": "Citizens Menu",
+                  "harvest_menu": "Harvest Menu",
+                  "harvest_harvest": "Harvest Tool",
+                  "harvest_mine": "Mine Tool",
+                  "harvest_mine_block": "Mine Block Tool",
+                  "harvest_cancel": "Cancel Task Tool",
+                  "harvest_loot": "Loot Tool",
+                  "harvest_clear": "Clear Tool",
+                  "zone_menu": "Zone Menu",
+                  "zone_stockpile": "Stockpile Tool",
+                  "zone_farm": "Farm Tool",
+                  "zone_trapping": "Trapping Zone Tool",
+                  "zone_pasture": "Pasture Tool",
+                  "build_menu": "Build Menu",
+                  "build_template": "Place Building",
+                  "build_custom": "Design Building",
+                  "build_place": "Place Item",
+                  "build_ladder": "Build Ladder",
+                  "build_rotate_left": "Rotate Item Left",
+                  "build_rotate_right": "Rotate Item Right",
+                  "craft_menu": "Crafting Menu",
+                  "craft_carpenter": "Carpenter Menu",
+                  "craft_weaver": "Weaver Menu",
+                  "craft_mason": "Mason Menu",
+                  "craft_blacksmith": "Blacksmith Menu",
+                  "craft_cook": "Cook Menu",
+                  "craft_potter": "Potter Menu",
+                  "craft_herbalist": "Herbalist Menu",
+                  "craft_engineer": "Engineer Menu",
+                  "fight_menu": "Fight Menu",
+                  "fight_alert": "Town Alert",
+                  "fight_party_1": "Combat Party 1",
+                  "fight_party_2": "Combat Party 2",
+                  "fight_party_3": "Combat Party 3",
+                  "fight_party_4": "Combat Party 4",
+                  "bulletin_manager": "Notifications Menu",
+                  "ui_quicksave": "Quick Save",
+                  "ui_quickload": "Quick Load",
+                  "ui_refresh": "Refresh",
+                  "toggle_fullscreen": "Toggle Fullscreen",
+                  "toggle": "Toggle UI",
+                  "ui_print_screen": "Take Screenshot",
+                  "debug_console": "Stonehearth Console",
+                  "debug_navgrid": "Show/Hide Navgrid",
+                  "debug_navgrid_water_tight": "Show/Hide Watertight Navgrid",
+                  "debug_lifetime_tracking": "Toggle Lifetime Tracking",
+                  "debug_toggle_step_paths": "Step Pathfinder Service",
+                  "debug_step_topology": "Step Topology Service",
+                  "debug_reload": "Save & Reload",
+                  "debug_toggle_save_stress_test": "Toggle Save Stress Test",
+                  "debug_toggle_debug_nodes": "Toggle Debug Nodes",
+                  "debug_toggle_perfhud": "Toggle Perf HUD",
+                  "debug_toggle_flame_graph": "Toggle Flame Graph",
+                  "debug_switch_debug_shapes": "Switch Debug Shapes View",
+                  "debug_crash": "Force Crash",
+                  "debug_toggle_cpu_profiler": "Toggle Lua Profiler",
+                  "debug_render_show_stats": "Show Rendering Stats",
+                  "debug_render_debug_view": "Renderer Debug View",
+                  "debug_show_terrain_coordinates": "Show Terrain Coordinates"
                }
             }
          },
@@ -1246,7 +1412,7 @@
                }
             },
             "biome_warning_title": "Beware, Traveler...",
-            "biome_warning_text": "Crafting resources can be hard to find when choosing The Ascendancy to settle in the Desert Biome or Rayya?s Children in the Temperate Biome. An issue we hope to fix soon.<br><br>Do you still want to continue with your current selection?",
+            "biome_warning_text": "Crafting resources can be hard to find when choosing The Ascendancy to settle in the Desert Biome or Rayya's Children in the Temperate Biome. An issue we hope to fix soon.<br><br>Do you still want to continue with your current selection?",
             "begin_button": "Select Roster"
          },
          "select_roster": {
@@ -1286,7 +1452,7 @@
          },
          "error_dialog_js": {
             "title": "UI Error",
-            "reset_hint": "Press F5 to Reset the UI.",
+            "reset_button": "Reload UI",
             "copy_button": "Copy to Clipboard"
          }
       },
@@ -1304,6 +1470,14 @@
                "description": "How good this hearthling is at creating things. Good inventors are more likely to create fine craftables.",
                "bullet_points": {
                   "000": "Every 2 points increases chance to craft a fine item by 1%"
+               }
+            },
+            "inspiration": {
+               "display_name": "Inspiration",
+               "description": "A flat modifier to this hearthing's chance to create items with Fine and Excellent quality.",
+               "bullet_points": {
+                  "000": "A hearthling must be at least a Journeyman to create Fine quality items, and a Master to create Excellent items</br>",
+                  "001": "Ranges from -2% to +3%, based on the hearthling's Spirit"
                }
             },
             "shelter": {
@@ -1329,7 +1503,8 @@
                "display_name": "Diligence",
                "description": "How long this hearthling can work before needing rest.",
                "bullet_points": {
-                  "000": "Determines sleep duration"
+                  "000": "Determines sleep duration",
+                  "001": "Determines Engineer repair speed"
                }
             },
             "willpower": {
@@ -1368,7 +1543,7 @@
             },
             "body": {
                "display_name": "Body",
-               "description": "Competence at physical activities. Hearthlings with a high Body stat will move a bit faster, attack harder, and live longer. Influences Muscle, Speed, Stamina."
+               "description": "Competence at physical activities.</br></br>Hearthlings with a high Body stat will move a bit faster, attack harder, and live longer.</br></br>Influences Muscle, Speed, Stamina."
             },
             "edibles": {
                "display_name": "Edibles",
@@ -1377,7 +1552,7 @@
             },
             "mind": {
                "display_name": "Mind",
-               "description": "The ability to think intelligently. A high Mind stat allows a hearthling to excel in complex mental activities such as crafting. Influences Diligence, Curiosity, Inventiveness."
+               "description": "The ability to think intelligently.</br></br>A high Mind stat allows a hearthling to quickly grasp mental activities such as crafting, and keep their head clear.</br></br>Influences Diligence, Curiosity."
             },
             "curiosity": {
                "display_name": "Curiosity",
@@ -1388,7 +1563,7 @@
             },
             "spirit": {
                "display_name": "Spirit",
-               "description": "Faith in other people. A high Spirit hearthling will easily befriend animals and stand strong against enemies. Influences Courage, Willpower, Compassion."
+               "description": "Faith in other people and themselves.</br></br>A high Spirit hearthling will easily befriend animals, stand strong against enemies, and craft exceptional things more often.</br></br>Influences Courage, Willpower, Compassion, Inspiration."
             },
             "safety": {
                "display_name": "Safety",
@@ -1413,23 +1588,28 @@
             },
             "content": {
                "display_name": "Content",
-               "town_description": "Your citizens are satisfied with the way things have been going."
+               "town_description": "Your citizens are generally satisfied with how things are.",
+               "description": "Nothing good, nothing bad."
             },
             "jubilant": {
                "display_name": "Jubilant",
-               "town_description": "Your citizens are incredibly happy living here!"
+               "town_description": "Your citizens are incredibly happy living here!",
+               "description": "Movement speed is increased by 10%."
             },
             "forlorn": {
                "display_name": "Forlorn",
-               "town_description": "Your citizens have been having an incredibly hard time lately."
+               "town_description": "Your citizens have been having an really hard time lately.",
+               "description": "Movement speed is reduced by 10%."
             },
             "merry": {
                "display_name": "Merry",
-               "town_description": "Your citizens are generally happy."
+               "town_description": "Your citizens are pretty happy on the whole.",
+               "description": "Movement speed is increased by 5%."
             },
             "glum": {
                "display_name": "Glum",
-               "town_description": "Your citizens aren't feeling great, overall."
+               "town_description": "Your citizens aren't feeling great, overall.",
+               "description": "Movement speed is reduced by 5%."
             },
             "exp_bar": {
                "description": "This hearthling's progress to next level."
@@ -1450,6 +1630,12 @@
             },
             "customization_lock": {
                "description": "This hearthling's [str(customization)] will be saved during trait and stat rerolls."
+            },
+            "customization_lock_all": {
+               "description": "Click to lock all name and appearance options."
+            },
+            "customization_unlock_all": {
+               "description": "Click to unlock all name and appearance options."
             }
          },
          "constants": {
@@ -1569,7 +1755,7 @@
                },
                "returning_crop_trader_encounter": {
                   "title": "A trader brings seeds from a distant land.",
-                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me [str(i18n_data.want_number)] [str(i18n_data.want_item)], I'll be back in [str(i18n_data.num_days)] days and might be able to get you [str(i18n_data.reward_item)] in exchange. Sound good?",
+                  "trade_details": "Hello [str(i18n_data.town_name)]! I'm just passing through, but I'd be willing to make a trade or two, if you're interested. If you make me <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong>, I'll be back in [str(i18n_data.num_days)] days and might be able to get you <strong>[str(i18n_data.reward_item)]</strong> in exchange. Sound good?",
                   "waiting_title": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)]!",
                   "waiting_text": "The trader will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] to give you [str(i18n_data.reward_item)] if you have [str(i18n_data.want_number)] [str(i18n_data.want_item)] ready for him!",
                   "return_title": "The trader returns!",
@@ -2796,9 +2982,6 @@
                                     "title": "An angry entling army approaches!"
                                  }
                               }
-                           },
-                           "happiness_intro": {
-                              "title": "Hearthling Morale"
                            }
                         }
                      }
@@ -3495,6 +3678,10 @@
             "description": "Move this thing somewhere else in the world.",
             "disabled_description": "This item is in use. Try moving it later."
          },
+         "open_character_sheet": {
+            "display_name": "Character Sheet",
+            "description": "Get a closer look at this hearthling"
+         },
          "place_item": {
             "display_name": "Place item",
             "description": "Place this item in the world."
@@ -3692,7 +3879,7 @@
                      "003": "Top reason chopping trees is fun: perfecting the swing of the axe. May be useful one day!",
                      "004": "Top reason carrying wood is fun: can't think of one.",
                      "005": "I wonder how much I could sell this wood for back home. ...Nothing, probably.",
-                     "006": "I wonder if I could get out of chopping wood by pretending to have a splinter? Oh right, it woudln't be pretending.",
+                     "006": "I wonder if I could get out of chopping wood by pretending to have a splinter? Oh right, it wouldn't be pretending.",
                      "007": "Ow! Blister! Why am I doing this to myself? An at-will employment contract is pretty much beside the point when you're OUT IN THE MIDDLE OF NOWHERE.",
                      "008": "Splinters! Everywhere! Ok, calming breath. Calming breath. Anyone got tweezers?"
                   },
@@ -4653,7 +4840,7 @@
          "animal_companion": {
             "animal_companion_trait": {
                "display_name": "Animal Companion",
-               "description": "Ever since [name(i18n_data.savior)] saved their [str(i18n_data.species)] from mortal danger, they've been inseparable.",
+               "description": "Ever since [name(i18n_data.savior)] [str(i18n_data.maybe_determiner)] [str(i18n_data.maybe_savior_species)] saved their [str(i18n_data.savee_species)], [name(i18n_data.savee)], from mortal danger, they've been inseparable.",
                "default_species": "companion"
             }
          },
@@ -4666,7 +4853,7 @@
          "callous": {
             "callous_trait": {
                "display_name": "Callous",
-               "description": "[name(i18n_data.entity)]  keeps everyone at arms length. This helps them to not be as hurt when tragedy occurs around them, but their constant guarded composure makes them slow to make friends."
+               "description": "[name(i18n_data.entity)] never really connects with others. This helps them to not be as hurt when a tragedy strikes, but their constant guarded composure makes them slow to make friends."
             }
          },
          "carnivore": {
@@ -4699,11 +4886,10 @@
                "description": "[name(i18n_data.entity)] loves crafting things for others. If they don't make at least one thing a day, they feel the day is wasted."
             }
          },
-
          "professor": {
             "professor_trait": {
                "display_name": "Professor",
-               "description": "[name(i18n_data.entity)] always likes to give advice to others based on their observations, whether the receiver wants it or not."
+               "description": "[name(i18n_data.entity)] will help people gain experience in the basics of their class, though their explanations tend to be a bit... long winded."
             }
          },
          "featherweight": {
@@ -4758,6 +4944,66 @@
             "cultist_trait": {
                "display_name": "Cultist",
                "description": "This hearthling keeps mumbling about some sort of secret \"bunny god\" sleeping eternally. What's that about?"
+            }
+         },
+         "jokester": {
+            "jokester_trait": {
+               "display_name": "Jokester",
+               "description": "[name(i18n_data.entity)] loves to tell jokes. Are they good? It's tough to say, but they frequently seem to leave others with a smile."
+            }
+         },
+         "charismatic": {
+            "charismatic_trait": {
+               "display_name": "Charismatic",
+               "description": "When [name(i18n_data.entity)] walks into a room, people always take notice."
+            }
+         },
+         "gregarious": {
+            "gregarious_trait": {
+               "display_name": "Gregarious",
+               "description": "[name(i18n_data.entity)] loves discussing the day's events with others and gets a bit lonely when they don't."
+            }
+         },
+         "loner": {
+            "loner_trait": {
+               "display_name": "Loner",
+               "description": "[name(i18n_data.entity)] doesn't really care for the company of others. They prefer to be by themselves."
+            }
+         },
+         "empathetic": {
+            "empathetic_trait": {
+               "display_name": "Empathetic",
+               "description": "[name(i18n_data.entity)] is really sensitive to the mood of the town, and it always seems to rub off on them."
+            }
+         },
+         "opinionated": {
+            "opinionated_trait": {
+               "display_name": "Opinionated",
+               "description": "[name(i18n_data.entity)] has an opinion on everything, and isn't shy about sharing it."
+            }
+         },
+         "magnificent_beard": {
+            "magnificent_beard_trait": {
+               "display_name": "Magnificent Beard",
+               "description": "This hearthling has a truly magnificent beard."
+            }
+         },
+         "stoic": {
+            "stoic_trait": {
+               "display_name": "Stoic",
+               "description": "Due to their even temperament, it takes a lot to make this Hearthling happy or sad."
+            }
+         },
+         "gourmand": {
+            "gourmand_trait": {
+               "display_name": "Gourmand",
+               "description": "Only the tastiest of foods are welcome to [name(i18n_data.entity)]'s palate. They become happy when they eat higher quality food, but low quality meals are quite distasteful."
+            }
+         },
+         "goat": {
+            "goat_trait": {
+               "display_name": "Goat",
+               "description": "[name(i18n_data.entity)] will basically eat anything. They are not picky at all, sometimes to the disgust of those around them."
             }
          }
       },
@@ -4838,13 +5084,17 @@
                   "display_name": "Slept in a shared room",
                   "tooltip": "I'm sharing my room with someone else right now. I could use a little more privacy."
                },
+               "well_rested": {
+                  "display_name": "Well rested",
+                  "tooltip": "Ahh, sleeping in my own bed without hearing other people snoring always leaves me refreshed."
+               },
                "slept_outside": {
                   "display_name": "Slept outside",
                   "tooltip": "I wish I had some shelter and protection from the elements."
                },
                "slept_in_comfy_bed": {
                   "display_name": "Slept in a comfy bed",
-                  "tooltip": "My bed is really comfortable. I felt refreshed when I woke up!"
+                  "tooltip": "My bed is really comfortable. I almost didn't want to leave it!"
                }
             },
             "eating": {
@@ -4859,6 +5109,14 @@
                "carnivore_ate_veggies": {
                   "display_name": "I ate a plant! Bleh!",
                   "tooltip": "There's been a mistake.  I've accidentally eaten food that my food eats."
+               },
+               "offended_palate": {
+                  "display_name": "Offended Palate",
+                  "tooltip": "Bleh, I hate eating stuff like [str(foodname)]. There's just no \"zazz\" to it!"
+               },
+               "pleased_palate": {
+                  "display_name": "Pleased Palate",
+                  "tooltip": "Mmm, my my. I really should tell the others how good [str(foodname)] was today!"
                },
                "ate_fine": {
                   "display_name": "Ate a fine meal",
@@ -4932,7 +5190,7 @@
             "combat": {
                "values": {
                   "panicked": {
-                     "display_name": "Feared for their life",
+                     "display_name": "Feared for my life",
                      "tooltip": "I'm not proud of how I acted when the monsters came, but it's all I could think to do."
                   }
                }
@@ -4942,10 +5200,6 @@
                   "misses_pet": {
                      "display_name": "Misses Companion",
                      "tooltip": "Although it's been awhile since they died, I still catch myself sometimes looking for my pet, [str(pet_name)]."
-                  },
-                  "nuzzled": {
-                     "display_name": "Nuzzled",
-                     "tooltip": "Aww, [str(pet_name)] always manages to cheer me up."
                   },
                   "plant_lover": {
                      "display_name": "Plant Lover",
@@ -4966,6 +5220,66 @@
                   "loves_their_job": {
                      "display_name": "Loves Their Job",
                      "tooltip": "This is the perfect job for me! I love what I do day to day."
+                  },
+                  "inspired": {
+                     "display_name": "Inspired",
+                     "tooltip": "[str(target_name)] is in quite good spirits today. They're really pleasant to be around!"
+                  },
+                  "discouraged": {
+                     "display_name": "Discouraged",
+                     "tooltip": "Sheesh, [str(target_name)] is no fun when they're in a bad mood."
+                  },
+                  "deeper_understanding": {
+                     "display_name": "A deeper understanding",
+                     "tooltip": "[str(target_name)] really has his priorities straight."
+                  }
+               },
+               "gregarious": {
+                  "values": {
+                     "lonely": {
+                        "display_name": "Lonely",
+                        "tooltip": "It's been awhile since I've talked to anyone. I really need to get some stuff off my chest."
+                     },
+                     "enjoys_company": {
+                        "display_name": "Enjoys the company of others",
+                        "tooltip": "It's always great to spend some time with my fellow town members."
+                     }
+                  }
+               },
+               "loner": {
+                  "values": {
+                     "annoyed_with_others": {
+                        "display_name": "Annoyed with others",
+                        "tooltip": "Why do these people keep talking to me? It keeps distracting me from what's important."
+                     },
+                     "alone_with_thoughts": {
+                        "display_name": "Alone with my own thoughts",
+                        "tooltip": "Being away from others has given me the time to reflect and clear my mind."
+                     }
+                  }
+               },
+               "empathetic": {
+                  "values": {
+                     "everyone_worse_off": {
+                        "display_name": "Everyone seems worse off",
+                        "tooltip": "Seeing everyone else in worse spirits just brings me down."
+                     },
+                     "everyone_happier": {
+                        "display_name": "Everyone seems happier",
+                        "tooltip": "Everyone else seems to be in a better mood than me. Maybe I should look at things differently."
+                     }
+                  }
+               },
+               "goat": {
+                  "values": {
+                     "ate_not_bad_food": {
+                        "display_name": "Mmm, not bad",
+                        "tooltip": "My [str(foodname)] today was a little tasty, but didn't seem that different from what I normally eat."
+                     },
+                     "ate_some_food": {
+                        "display_name": "Ate some food",
+                        "tooltip": "I had some [str(foodname)] today. It was alright, but I don't see what the big deal is."
+                     }
                   }
                }
             },
@@ -4978,8 +5292,218 @@
                   "pet_died": {
                      "display_name": "My pet died",
                      "tooltip": "My poor [str(pet_name)] passed away recently. I'll miss them quite a bit."
+                  },
+                  "saved_from_mortal_wounds": {
+                     "display_name": "Saved from mortal wounds",
+                     "tooltip": "I would have died back there were it not for those around me! I'm grateful for this second chance."
                   }
                }
+            },
+            "job": {
+               "values": {
+                  "gained_a_level": {
+                     "display_name": "Improved my skills",
+                     "tooltip": "I've been at this job long enough to gain a new insight! I can feel myself becoming better at my work."
+                  }
+               }
+            },
+            "social": {
+               "values": {
+                  "unpleasant_talk": {
+                     "display_name": "Had an unpleasant talk",
+                     "tooltip": "I can't believe [str(target_name)] said that!"
+                  },
+                  "great_talk": {
+                     "display_name": "Had a great talk",
+                     "tooltip": "Talking with [str(target_name)] today was really nice."
+                  },
+                  "great_joke": {
+                     "display_name": "Heard a great joke",
+                     "tooltip": "Hahaha, just thinking of the joke [str(target_name)] told makes me crack up!"
+                  },
+                  "tough_crowd": {
+                     "display_name": "Tough crowd",
+                     "tooltip": "[str(target_name)] didn't laugh at my joke. Was it really that bad?"
+                  }
+               },
+               "animal": {
+                  "values": {
+                     "nuzzled": {
+                        "display_name": "Nuzzled",
+                        "tooltip": "Awww, my pet [str(target_name)] always manages to cheer me up."
+                     },
+                     "booped": {
+                        "display_name": "Booped",
+                        "tooltip": "A cute [str(species)] booped me today. It made me feel warm and fuzzy inside."
+                     }
+                  }
+               }
+            },
+            "appeal": {
+               "thresholds": {
+                  "horrendous": {
+                     "display_name": "Horrid Aesthetics",
+                     "tooltip": "Everywhere I look I see something terrible!"
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Aesthetics",
+                     "tooltip": "The decor around here is really great. A lot of hard work must have gone into making it look this nice."
+                  },
+                  "neutral": {
+                     "display_name": "Neutral Aesthetics"
+                  },
+                  "ugly": {
+                     "display_name": "Ugly Aesthetics",
+                     "tooltip": "Sheesh, it's really ugly around here. We definitely can make this look better!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Aesthetics",
+                     "tooltip": "This place... it's... beautiful..."
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasing Aesthetics",
+                     "tooltip": "It's pretty nice looking around here."
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Aesthetics",
+                     "tooltip": "Wow, everywhere I look is gorgeous! The attention to detail is amazing!"
+                  }
+               }
+            },
+            "appeal_crafting": {
+               "values": {
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Workshop",
+                     "tooltip": "I love crafting in my workshop; it's so well decorated!"
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasant Workshop",
+                     "tooltip": "A well-maintained work space brightens my mood."
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Workshop",
+                     "tooltip": "The area around my workbench is looking good, everything is in its place."
+                  },
+                  "ugly": {
+                     "display_name": "Unkempt Workshop",
+                     "tooltip": "It's frustrating that my work space is so grungy."
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Workshop",
+                     "tooltip": "My workshop looks so amazing! It's an inspiration!"
+                  }
+               }
+            },
+            "appeal_bedroom": {
+               "values": {
+                  "pleasing": {
+                     "display_name": "Pleasant Bedroom",
+                     "tooltip": "Where I slept last night was pretty nice."
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Bedroom",
+                     "tooltip": "My bedroom is really shaping up; I like it!"
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Bedroom",
+                     "tooltip": "I love sleeping in such a wonderful bedroom!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Bedroom",
+                     "tooltip": "When I went to bed last night, I felt like royalty."
+                  }
+               }
+            },
+            "appeal_dining": {
+               "values": {
+                  "beautiful": {
+                     "display_name": "Beautiful Dining",
+                     "tooltip": "I was happy to eat in such an attractive spot!"
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Dining",
+                     "tooltip": "Someone really spent some effort decorating our dining room!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Dining",
+                     "tooltip": "The decor was so great, dinner was a feast for both my eyes and my stomach!"
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasant Dining",
+                     "tooltip": "It was nice to eat my meal in a comfortable space."
+                  },
+                  "ugly": {
+                     "display_name": "Dreary Dining",
+                     "tooltip": "The ugly surroundings made it difficult to enjoy my last meal."
+                  }
+               }
+            }
+         }
+      },
+      "hotkeys": {
+         "keys": {
+            "build_roof": {
+               "display_name": "Roof Tool"
+            },
+            "build_slab": {
+               "display_name": "Slab Tool"
+            },
+            "build_erase": {
+               "display_name": "Erase Tool"
+            },
+            "ui_character": {
+               "display_name": "Character Sheet"
+            },
+            "fight_move": {
+               "display_name": "Move to Location"
+            },
+            "ui_move_place_item": {
+               "display_name": "Move/Place Item"
+            },
+            "fight_cancelOrders": {
+               "display_name": "Cancel Combat Order"
+            },
+            "build_wall": {
+               "display_name": "Free Standing Wall Tool"
+            },
+            "fight_defend": {
+               "display_name": "Defend Location"
+            },
+            "build_floor_grow": {
+               "display_name": "Floor Tool"
+            },
+            "build_decoration": {
+               "display_name": "Decoration Tool"
+            },
+            "build_furniture": {
+               "display_name": "Furniture Tool"
+            },
+            "build_stair": {
+               "display_name": "Stair Tool"
+            },
+            "build_window": {
+               "display_name": "Window Tool"
+            },
+            "build_floor": {
+               "display_name": "Foundation Tool"
+            },
+            "build_road": {
+               "display_name": "Road Tool"
+            },
+            "build_door": {
+               "display_name": "Door Tool"
+            },
+            "build_wall_grow": {
+               "display_name": "Wall Tool"
+            },
+            "fight_attack": {
+               "display_name": "Attack Move"
+            },
+            "ui_notification_popup": {
+               "display_name": "Open Notification Popup"
+            },
+            "ui_undeploy_item": {
+               "display_name": "Undeploy Item"
             }
          }
       }
@@ -5423,6 +5947,34 @@
                "display_name": "Tall Clay Window",
                "description": "Still lets in the soft desert air"
             }
+         },
+         "ornate_picket_fence": {
+            "ornate_picket_fence_ghost": {
+               "display_name": "Ornate Picket Fence",
+               "description": "If it's not white, is our life unfulfilled?"
+            }
+         },
+         "ornate_picket_fence_gate": {
+            "ornate_picket_fence_gate_ghost": {
+               "display_name": "Ornate Picket Fence Gate",
+               "description": "Don't like your neighbors? Don't install."
+            }
+         },
+         "ornate_wooden_door": {
+            "ornate_wooden_door_ghost": {
+               "display_name": "Ornate Wooden Door",
+               "description": "Sturdier than your average door, and such a sweet pattern too."
+            }
+         },
+         "ornate_wooden_double_door": {
+            "ornate_wooden_double_door_ghost": {
+               "display_name": "Ornate Wooden Double Door",
+               "description": "A larger door with some extra style. All your friends will be envious."
+            }
+         },
+         "ornate_wooden_tunnel_door": {
+            "display_name": "Ornate Wooden Tunnel Door",
+            "description": "Useful for blocking off tunnels"
          }
       },
       "containers": {
@@ -5492,6 +6044,15 @@
                "description": "Harvestable for stone when placed"
             }
          },
+         "ore_pile": {
+            "ore_pile": {
+               "description": "Container for many hunks of ore",
+               "display_name": "Ore Pile"
+            },
+            "ore_pile_iconic": {
+               "description": "Container for many hunks of ore"
+            }
+         },
          "clay_pile": {
             "display_name": "Clay Pile",
             "description": "Harvest for a large amount of clay",
@@ -5518,6 +6079,180 @@
             "leather_bound_chest_fine_ghost": {
                "display_name": "Fine Leather Bound Chest",
                "description": "Stores up to 64 items. With style."
+            }
+         },
+         "ornate_leather_bound_chest": {
+            "ornate_leather_bound_chest_ghost": {
+               "display_name": "Ornate Leather Bound Chest",
+               "description": "Stores up to 64 items. With style."
+            }
+         },
+         "output_box_wood": {
+            "output_box_wood_ghost": {
+               "display_name": "Wood Finished Work Shelf",
+               "description": "Temporary storage for crafted items."
+            }
+         },
+         "output_box_clay": {
+            "output_box_clay_ghost": {
+               "description": "Temporary storage for crafted items.",
+               "display_name": "Clay Finished Work Shelf"
+            }
+         },
+         "output_box_stone": {
+            "output_box_stone_ghost": {
+               "description": "Temporary storage for crafted items.",
+               "display_name": "Stone Finished Work Shelf"
+            }
+         },
+         "input_bin_clay": {
+            "input_bin_clay_ghost": {
+               "display_name": "Ceramic Supply Basin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven": {
+            "input_bin_woven_ghost": {
+               "display_name": "Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_wood": {
+            "input_bin_wood_ghost": {
+               "display_name": "Wooden Supply Crate",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_stone": {
+            "input_bin_stone_ghost": {
+               "display_name": "Stonework Supply Bin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_iron": {
+            "input_bin_iron_ghost": {
+               "display_name": "Iron-Banded Supply Bin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_wall_clay": {
+            "input_shelf_wall_clay_ghost": {
+               "display_name": "Ceramic Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_shelf_wall_stone": {
+            "input_shelf_wall_stone_ghost": {
+               "display_name": "Stonework Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_shelf_ground_clay": {
+            "input_shelf_ground_clay_ghost": {
+               "display_name": "Ceramic Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_ground_stone": {
+            "input_shelf_ground_stone_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Stonework Supply Rack"
+            }
+         },
+         "input_shelf_ground_wood": {
+            "input_shelf_ground_wood_ghost": {
+               "display_name": "Wooden Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_wall_wood": {
+            "input_shelf_wall_wood_ghost": {
+               "display_name": "Wooden Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_table_ground_iron": {
+            "input_table_ground_iron_ghost": {
+               "display_name": "Iron-Studded Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_wood": {
+            "input_corner_ground_wood_ghost": {
+               "display_name": "Wooden Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_stone": {
+            "input_corner_ground_stone_ghost": {
+               "display_name": "Stonework Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_wood": {
+            "input_table_ground_wood_ghost": {
+               "display_name": "Wooden Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_stone": {
+            "input_table_ground_stone_ghost": {
+               "display_name": "Stonework Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_clay": {
+            "input_table_ground_clay_ghost": {
+               "display_name": "Ceramic Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_clay": {
+            "input_corner_ground_clay_ghost": {
+               "display_name": "Ceramic Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_clay_blue": {
+            "input_bin_clay_blue_ghost": {
+               "display_name": "Blue Ceramic Supply Basin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_clay_green": {
+            "input_bin_clay_green_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Green Ceramic Supply Basin"
+            }
+         },
+         "input_bin_clay_red": {
+            "input_bin_clay_red_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Red Ceramic Supply Basin"
+            }
+         },
+         "input_bin_woven_blue": {
+            "input_bin_woven_blue_ghost": {
+               "display_name": "Blue Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven_green": {
+            "input_bin_woven_green_ghost": {
+               "display_name": "Green Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven_red": {
+            "input_bin_woven_red_ghost": {
+               "display_name": "Red Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_iron": {
+            "input_corner_ground_iron_ghost": {
+               "display_name": "Iron Corner Supply Shelf",
+               "description": "A supply container, for quicker crafting."
             }
          }
       },
@@ -5587,6 +6322,48 @@
             "display_name": "Woodchuck",
             "description": "A voracious eater of almost everything, especially logs.",
             "species": "woodchuck"
+         },
+         "deer": {
+            "deer_jerky": {
+               "display_name": "Deer Jerky"
+            },
+            "species": "deer",
+            "description": "Om nom nom",
+            "display_name": "Deer"
+         },
+         "boar": {
+            "display_name": "A boar",
+            "species": "boar",
+            "description": "Smells like something.."
+         },
+         "beetle": {
+            "species": "beetle",
+            "display_name": "Beetle",
+            "description": "Cute little insect",
+            "beetle_jerky": {
+               "display_name": "Beetle Bug Meat"
+            }
+         },
+         "bitsy_ant": {
+            "description": "Cute little insect",
+            "display_name": "Bitsy Ant",
+            "species": "bitsy ant",
+            "bitsy_ant_jerky": {
+               "display_name": "Small Ant Bug Meat"
+            }
+         },
+         "doodles": {
+            "display_name": "Doodles",
+            "description": "Cute little insect",
+            "species": "doodles",
+            "doodles_jerky": {
+               "display_name": "Doodles Bug Meat"
+            }
+         },
+         "red_fox_wolf": {
+            "species": "fox",
+            "description": "Small forest creature",
+            "display_name": "Fox"
          }
       },
       "crops": {
@@ -6376,6 +7153,30 @@
                "display_name": "Poyo Weathervane",
                "description": "A weathervane in the image of a friendly yardbird"
             }
+         },
+         "ornate_wooden_garden_lantern": {
+            "ornate_wooden_garden_lantern_ghost": {
+               "description": "A compact source of light, with a little bit of flair.",
+               "display_name": "Ornate Wooden Garden Lantern"
+            }
+         },
+         "ornate_wooden_wall_lantern": {
+            "ornate_wooden_wall_lantern_ghost": {
+               "description": "Easily attached to walls",
+               "display_name": "Ornate Wooden Wall Lantern"
+            }
+         },
+         "wet_stone": {
+            "wet_stone_ghost": {
+               "display_name": "Wet Stone",
+               "description": "This stone has been blessed by the tears of Rayya!"
+            }
+         },
+         "dry_stone": {
+            "dry_stone_ghost": {
+               "description": "This stone has been blessed by the heat of Pal'Mum!",
+               "display_name": "Dry Stone"
+            }
          }
       },
       "food": {
@@ -6655,6 +7456,14 @@
                "display_name": "Kibble",
                "description": "Attracts cats"
             }
+         },
+         "pork": {
+            "display_name": "Raw Pork",
+            "description": "Raw meat from a boar"
+         },
+         "rotten_bug_meat": {
+            "description": "Bug meat goes bad just like other meat",
+            "display_name": "Rotten Bug Meat"
          }
       },
       "furniture": {
@@ -6721,31 +7530,37 @@
          "not_much_of_a_bed": {
             "not_much_of_a_bed_ghost": {
                "display_name": "Mean Bed",
-               "description": "Mean as in poor, not cruel"
+               "description": "Mean as in poor, not cruel."
             }
          },
          "park_bench": {
             "park_bench_ghost": {
                "display_name": "Wooden Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "description": "Outdoor seating for moments of relaxation."
             }
          },
          "park_bench_fine": {
             "park_bench_fine_ghost": {
                "display_name": "Fine Park Bench",
-               "description": "Outdoor seating for moments of relaxation"
+               "description": "Outdoor seating for moments of relaxation."
+            }
+         },
+         "ornate_bench": {
+            "ornate_bench_ghost": {
+               "display_name": "Ornate Park Bench",
+               "description": "Outdoor seating for moments of relaxation."
             }
          },
          "simple_wooden_chair": {
             "simple_wooden_chair_ghost": {
                "display_name": "Simple Wooden Chair",
-               "description": "For sitting"
+               "description": "For sitting."
             }
          },
          "simple_wooden_chair_fine": {
             "simple_wooden_chair_fine_ghost": {
                "display_name": "Fine Wooden Chair",
-               "description": "For sitting"
+               "description": "For sitting."
             }
          },
          "stone_bench": {
@@ -6791,7 +7606,7 @@
          "writing_desk": {
             "writing_desk_ghost": {
                "display_name": "Writing Desk",
-               "description": "Furniture"
+               "description": "A peaceful place to write letters to home."
             }
          },
          "writing_desk_fine": {
@@ -6855,6 +7670,60 @@
             "park_bench_red_ghost": {
                "display_name": "Red Wooden Park Bench",
                "description": "Outdoor seating for moments of relaxation"
+            }
+         },
+         "ornate_table_for_one": {
+            "ornate_table_for_one_ghost": {
+               "display_name": "Ornate Table for One",
+               "description": "Dining furniture for introverts."
+            }
+         },
+         "ornate_comfy_bed": {
+            "ornate_comfy_bed_ghost": {
+               "display_name": "Ornate Comfy Bed",
+               "description": "I dreamed... of flying sheep."
+            }
+         },
+         "ornate_dining_table": {
+            "ornate_dining_table_ghost": {
+               "description": "Sitting down to eat is a sign of civilization.",
+               "display_name": "Ornate Dining Table"
+            }
+         },
+         "ornate_dresser": {
+            "ornate_dresser_ghost": {
+               "description": "Decorative in the absence of belongings.",
+               "display_name": "Ornate Dresser"
+            }
+         },
+         "ornate_writing_desk": {
+            "ornate_writing_desk_ghost": {
+               "description": "A stylish place to write letters to home.",
+               "display_name": "Ornate Writing Desk"
+            }
+         },
+         "ornate_comfy_chair": {
+            "ornate_comfy_chair_ghost": {
+               "description": "For comfortable sitting!",
+               "display_name": "Ornate Comfy Chair"
+            }
+         },
+         "bench": {
+            "bench_ghost": {
+               "display_name": "Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation."
+            }
+         },
+         "wooden_chair": {
+            "wooden_chair_ghost": {
+               "display_name": "Wooden Chair",
+               "description": "For a little more class while sitting."
+            }
+         },
+         "ornate_wooden_chair": {
+            "ornate_wooden_chair_ghost": {
+               "display_name": "Ornate Wooden Chair",
+               "description": "For even more style while sitting."
             }
          }
       },
@@ -6955,6 +7824,14 @@
             "wolf": {
                "display_name": "Feral Wolf",
                "description": "Grrr! Rwar!"
+            },
+            "zilla": {
+               "display_name": "Zilla",
+               "description": "The ground rumbles when Zilla comes around."
+            },
+            "cougar": {
+               "display_name": "Cougar",
+               "description": "A large cat"
             }
          },
          "goblins": {
@@ -7110,6 +7987,10 @@
             "necromancer": {
                "display_name": "Necromancer",
                "description": "Practitioner of the dark arts"
+            },
+            "wolf_skeleton": {
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "description": "Its animal instincts are all that remain.."
             }
          },
          "rabbit": {
@@ -7144,6 +8025,22 @@
             "mammoth": {
                "display_name": "Mammoth",
                "description": "Large Woolie Beastie"
+            }
+         },
+         "evil": {
+            "loot_chest_fake": {
+               "display_name": "Evil Chest",
+               "description": "Its one of those things that goes bump in the night."
+            }
+         },
+         "avian": {
+            "ostrich": {
+               "display_name": "Ostrich",
+               "description": "Flightless avian"
+            },
+            "duckduck": {
+               "display_name": "DuckDuck",
+               "description": "Flightless avian"
             }
          }
       },
@@ -7202,7 +8099,7 @@
          },
          "silkweed": {
             "silkweed": {
-               "display_name": "Wild silkweed",
+               "display_name": "Wild Silkweed",
                "description": "This plant's fiber can be spun into thread.",
                "unripe_description": "This plant has been harvested and hasn't grown back yet."
             }
@@ -7252,6 +8149,27 @@
                "display_name": "Sunflower",
                "description": "Bright and happy like the sun"
             }
+         },
+         "brightbell_seed_plant": {
+            "unripe_description": "This seed will grow into a real plant someday",
+            "description": "Can be planted to grow healing herbs",
+            "display_name": "Wild Brightbell Seed"
+         },
+         "berry_bush_seed_plant": {
+            "display_name": "Berry Bush Seed",
+            "description": "Can be planted to grow a meager food supply"
+         },
+         "silkweed_seed_plant": {
+            "description": "Can be planted to grow fiber which can be spun into thread.",
+            "display_name": "Wild Silkweed Seed"
+         },
+         "pear_cactus_seed_plant": {
+            "description": "Can be planted to grow some prickly pears.",
+            "display_name": "Pear Cactus Seed"
+         },
+         "frostsnap_seed_plant": {
+            "display_name": "Wild Frostsnap Seed",
+            "description": "Can be planted to grow healing herbs"
          }
       },
       "rabbit": {
@@ -7379,6 +8297,26 @@
             "wolf_pelt": {
                "display_name": "Wolf pelt",
                "description": "From the hide of a terrifying creature"
+            },
+            "deer_pelt": {
+               "display_name": "Deer Pelt",
+               "description": "Soft, supple, and quite dead"
+            },
+            "cougar_pelt": {
+               "display_name": "Cougar Pelt",
+               "description": "Soft, supple, and quite dead"
+            },
+            "beetle_pelt": {
+               "display_name": "Beetle Chitin",
+               "description": "Hard, shiny, and quite dead"
+            },
+            "bitsy_ant_pelt": {
+               "description": "Hard, shiny, and quite dead",
+               "display_name": "Small Ant Chitin"
+            },
+            "doodles_pelt": {
+               "description": "Hard, shiny, and quite dead",
+               "display_name": "Doodle Chitin"
             }
          },
          "silver": {
@@ -7469,6 +8407,12 @@
             "poyo_feathers": {
                "display_name": "Poyo Feathers",
                "description": "Feathers from a plump bird"
+            }
+         },
+         "refined": {
+            "gold_flakes": {
+               "display_name": "Gold Flakes",
+               "description": "Use when crafting furniture to make it really pretty!"
             }
          }
       },
@@ -7968,16 +8912,14 @@
             "description": "A ranged combat unit that shoots foes with arrows",
             "requirements": "Crafted by Carpenter",
             "level_1_data": {
-               "perk_000_name": "Increased Draw Strength",
-               "perk_000_description": "The archer's damage is increased"
+               "perk_000_name": "Bow Proficiency",
+               "perk_001_name": "Increased Draw Strength",
+               "perk_000_description": "The archer is able to use a bow to shoot arrows at enemies",
+               "perk_001_description": "The archer's damage is increased"
             },
             "level_2_data": {
                "perk_000_name": "Armor Piercing Arrows",
                "perk_000_description": "The archer's shots ignore 50% of the target's armor"
-            },
-            "level_0_data": {
-               "perk_000_name": "Bow Proficiency",
-               "perk_000_description": "The archer is able to use a bow to shoot arrows at enemies"
             },
             "level_3_data": {
                "perk_000_name": "Range Increase",
@@ -8016,13 +8958,11 @@
             "display_name": "Architect",
             "description": "???",
             "requirements": "???",
-            "level_0_data": {
-               "perk_000_name": "Fast Construction",
-               "perk_000_description": "Build faster!"
-            },
             "level_1_data": {
-               "perk_000_name": "Conservation of Materials",
-               "perk_000_description": "Have a chance every fabrication to not consume a stack of building material."
+               "perk_000_name": "Fast Construction",
+               "perk_001_name": "Conservation of Materials",
+               "perk_000_description": "Build faster!",
+               "perk_001_description": "Have a chance every fabrication to not consume a stack of building material."
             }
          }
       },
@@ -8048,11 +8988,11 @@
             "level_6_data": {
                "title": "Master Blacksmith",
                "perk_000_name": "The Armory",
-               "perk_000_description": "The blacksmith's mastery of his trade allows him to create the finest weapons and armors seen since the forgotten Phoenix Empire."
+               "perk_000_description": "The Blacksmith's mastery of their trade allows them to create the finest weapons and armors seen since the forgotten Phoenix Empire."
             },
             "level_2_data": {
                "perk_000_name": "Iron Age!",
-               "perk_000_description": "The blacksmith is now skilled enough to forge heavy items made of iron."
+               "perk_000_description": "The Blacksmith is now skilled enough to forge heavy items made of iron."
             },
             "level_4_data": {
                "perk_000_name": "Cold Steel",
@@ -8060,11 +9000,15 @@
             },
             "level_1_data": {
                "perk_000_name": "Bronze Age!",
-               "perk_000_description": "The secrets of bronze are now available to the blacksmith."
+               "perk_000_description": "The secrets of bronze are now available to the Blacksmith."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the blacksmith may embellish his works in unexpected ways."
+               "perk_000_name": "Journeyman's Knowledge",
+               "perk_000_description": "When inspiration strikes, the Blacksmith may now craft an especially Fine quality of item.  (Not implemented for equipment yet!)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Blacksmith can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for equipment yet!)"
             }
          },
          "blacksmith_forge": {
@@ -8294,34 +9238,53 @@
             "engineer_wrench_recipe": {
                "description": "Required to promote a hearthling into an Engineer",
                "recipe_name": "Engineer's Wrench"
+            },
+            "input_bin_iron_recipe": {
+               "recipe_name": "Iron-Banded Supply Bin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_iron_recipe": {
+               "recipe_name": "Iron-Studded Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_iron_recipe": {
+               "recipe_name": "Iron-Framed Corner Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
       "carpenter": {
          "carpenter_description": {
             "display_name": "Carpenter",
-            "description": "The carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
+            "description": "The Carpenter crafts tools and furniture from wood. The tools he makes unlocks several other jobs.",
             "requirements": "Crafted by Blacksmith",
             "level_6_data": {
                "title": "Master Carpenter",
                "perk_000_name": "10,000 Hours",
-               "perk_000_description": "The carpenter's mastery of his trade allows him access to recipes that expand your town's opportunities."
+               "perk_000_description": "The Carpenter's mastery of his trade allows them access to recipes that expand your town's opportunities."
             },
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The carpenter is now skillful enough to use materials created by other crafters."
+               "perk_000_description": "The Carpenter is now skillful enough to use materials created by other crafters."
             },
             "level_4_data": {
                "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The carpenter now has the courage to try more elaborate projects."
+               "perk_000_description": "The Carpenter now has the courage to try more elaborate projects."
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The carpenter can now make a solid array of basic furniture."
+               "perk_000_description": "The Carpenter can now make a solid array of basic furniture."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the carpenter may embellish his works in unexpected ways."
+               "perk_000_name": "Journeyman's Knowledge",
+               "perk_000_description": "When inspiration strikes, the Carpenter may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Carpenter can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "carpenter_outfit": {
@@ -8561,12 +9524,12 @@
                "recipe_name": "Herbalist's Staff"
             },
             "safety_standard_recipe": {
-               "description": "Use to designate a safety point",
+               "description": "Use to designate a safety point.",
                "recipe_name": "Wooden Safety Standard"
             },
             "wooden_tunnel_door_recipe": {
                "recipe_name": "Wooden Tunnel Door",
-               "description": "Useful for blocking off tunnels"
+               "description": "Useful for blocking off tunnels."
             },
             "wooden_sign_cook_recipe": {
                "description": "A sign with the mark of the Cook.",
@@ -8619,13 +9582,132 @@
                "recipe_name": "Poyo Weathervane",
                "description": "A weathervane in the image of a friendly yardbird",
                "flavor": "TODO"
+            },
+            "ornate_leather_bound_chest_recipe": {
+               "recipe_name": "Ornate Leather Bound Chest",
+               "description": "Stylishly stores up to 64 items.",
+               "flavor": "Like the one my granda had!"
+            },
+            "ornate_table_for_one_recipe": {
+               "recipe_name": "Ornate Table for One",
+               "description": "Better than eating standing up. Unless you're watching your weight.",
+               "flavor": "Dining furniture for introverts."
+            },
+            "ornate_dining_table_recipe": {
+               "recipe_name": "Ornate Dining Table",
+               "description": "Allows a group of people to all eat together. Like grown-ups.",
+               "flavor": "Sitting down to eat is a sign of civilization."
+            },
+            "ornate_comfy_bed_recipe": {
+               "recipe_name": "Ornate Comfy Bed",
+               "description": "Eight hours will leave you as refreshed as the day you were born.",
+               "flavor": "Nobody ever wants to get out. It makes emergency evacuations awkward."
+            },
+            "ornate_dresser_recipe": {
+               "recipe_name": "Ornate Wooden Dresser",
+               "description": "A chest of drawers for storing clothing and personal possessions.",
+               "flavor": "Step 2: acquire personal possessions..."
+            },
+            "bench_recipe": {
+               "recipe_name": "Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation.",
+               "flavor": "Life is like a plate of berries."
+            },
+            "ornate_bench_recipe": {
+               "recipe_name": "Ornate Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation.",
+               "flavor": "Life is like a plate of berries."
+            },
+            "ornate_writing_desk_recipe": {
+               "recipe_name": "Ornate Writing Desk",
+               "description": "Not at all like a raven.",
+               "flavor": "...Except it can produce a few notes, tho they are very flat."
+            },
+            "ornate_comfy_chair_recipe": {
+               "recipe_name": "Ornate Comfy Chair",
+               "description": "Its padded seat guarantees a 98% reduction in awkward splinters!",
+               "flavor": "If pillows are good for the head, surely they're even better for the butt and back!"
+            },
+            "ornate_wooden_tunnel_door_recipe": {
+               "recipe_name": "Ornate Wooden Tunnel Door",
+               "description": "Useful for blocking off tunnels in style."
+            },
+            "ornate_picket_fence_gate_recipe": {
+               "recipe_name": "Ornate Picket Fence Gate",
+               "description": "Lets people through your picket fence.",
+               "flavor": "Hope you like your neighbors!"
+            },
+            "ornate_picket_fence_recipe": {
+               "recipe_name": "Ornate Picket Fence",
+               "description": "Keeps people off your property.",
+               "flavor": "If it's not white, is our life unfulfilled?"
+            },
+            "ornate_wooden_garden_lantern_recipe": {
+               "recipe_name": "Ornate Wooden Garden Lantern",
+               "description": "A small lantern that's placed on the ground. Suitable for lighting paths or small gardens.",
+               "flavor": "Practical and romantic!"
+            },
+            "ornate_wooden_wall_lantern_recipe": {
+               "flavor": "So comfortinzzzzzzzz...",
+               "recipe_name": "Wooden Wall-Mounted Lantern",
+               "description": "A simple lantern. Place on buildings to provide light at night."
+            },
+            "ornate_wooden_double_door_recipe": {
+               "recipe_name": "Ornate Wooden Double Door",
+               "description": "Two doors are better than one.",
+               "flavor": "Some people want to make an entrance... every day."
+            },
+            "ornate_wooden_door_recipe": {
+               "recipe_name": "Ornate Reinforced Wooden Door",
+               "description": "Stronger than your average door.",
+               "flavor": "This here pattern, I learned from the Squarefolk."
+            },
+            "wooden_chair_recipe": {
+               "description": "When sitting, food is 20% more satisfying.",
+               "flavor": "Ten thousand years of research culminated in this four-legged design.",
+               "recipe_name": "Wooden Chair"
+            },
+            "ornate_wooden_chair_recipe": {
+               "description": "When sitting, food is 20% more satisfying.",
+               "flavor": "Ten thousand years of research culminated in this four-legged design.",
+               "recipe_name": "Ornate Wooden Chair"
+            },
+            "output_box_wood_recipe": {
+               "recipe_name": "Wood Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_wood_recipe": {
+               "recipe_name": "Wooden Supply Crate",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_wood_recipe": {
+               "recipe_name": "Wooden Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_wood_recipe": {
+               "recipe_name": "Wooden Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_wood_recipe": {
+               "recipe_name": "Wooden Corner Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_wood_recipe": {
+               "recipe_name": "Wooden Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
       "cook": {
          "cook_description": {
             "display_name": "Cook",
-            "description": "The cook makes delicious, hearty meals from base vegetables and meats.",
+            "description": "The Cook makes delicious, hearty meals from base vegetables and meats.",
             "requirements": "Crafted by Mason",
             "workshop": {
                "name": "Stone Cauldron",
@@ -8634,23 +9716,27 @@
             "level_6_data": {
                "title": "Master Cook",
                "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The cook's dishes are now so good for you they have unexpected effects."
+               "perk_000_description": "The Cook's dishes are now so good for you that they may have unexpected effects."
             },
             "level_2_data": {
                "perk_000_name": "Kitchen Chemistry",
-               "perk_000_description": "The cook has learned to make slightly fancier recipes."
+               "perk_000_description": "The Cook has learned to make slightly fancier recipes."
             },
             "level_4_data": {
                "perk_000_name": "Ingenuity Enhancements (not implemented)",
-               "perk_000_description": "The cook adds new levels of functionality to classic recipes."
+               "perk_000_description": "The Cook adds new levels of functionality to classic recipes."
             },
             "level_1_data": {
                "perk_000_name": "Camp Cooking",
-               "perk_000_description": "The cook can make basic, nutritious recipes."
+               "perk_000_description": "The Cook can make basic, nutritious recipes."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the cook may embellish his works in unexpected ways."
+               "perk_000_name": "Journeyman's Knowledge",
+               "perk_000_description": "When inspiration strikes, the Cook may now craft an especially Fine quality of item. (Not implemented for food yet!)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight (not implemented for food)",
+               "perk_000_description": "The Cook can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for food yet!)"
             }
          },
          "cook_outfit": {
@@ -8785,34 +9871,34 @@
       "engineer": {
          "engineer_description": {
             "display_name": "Engineer",
-            "description": "The engineer creates advanced contraptions and defensive weaponry.",
+            "description": "The Engineer creates advanced contraptions and defensive weaponry.",
             "requirements": "Crafted by Blacksmith",
             "level_6_data": {
                "title": "Master Engineer",
                "perk_000_name": "General of Defense",
-               "perk_000_description": "This engineer can place up to twelve traps and eight turrets"
+               "perk_000_description": "This Engineer can place up to twelve traps and eight turrets"
             },
             "level_2_data": {
-               "perk_000_name": "Improved Inventiveness",
-               "perk_000_description": "The engineer can repair broken doors and gates more efficiently"
+               "perk_000_name": "Improved Diligence",
+               "perk_000_description": "The Engineer can repair broken doors and gates more efficiently"
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
                "perk_001_name": "Junior Defender",
-               "perk_000_description": "The engineer can now make basic gadgets and decorations.",
-               "perk_001_description": "This engineer can place up to four traps and two turrets"
-            },
-            "level_4_data": {
-               "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The engineer now has the courage to create more complex gadgets."
-            },
-            "level_0_data": {
-               "perk_000_name": "Handyman",
-               "perk_000_description": "The engineer can repair broken doors, gates and other fixable structures."
+               "perk_002_name": "Handyman",
+               "perk_000_description": "The Engineer can now make basic gadgets and decorations.",
+               "perk_001_description": "This Engineer can place up to four traps and two turrets",
+               "perk_002_description": "The Engineer can repair broken doors, gates and other fixable structures."
             },
             "level_3_data": {
                "perk_000_name": "Town Defender",
-               "perk_000_description": "This engineer can place up to eight traps and four turrets"
+               "perk_000_description": "This Engineer can place up to eight traps and four turrets. ",
+               "perk_001_name": "Journeyman's Knowledge",
+               "perk_001_description": "When inspiration strikes, the Engineer may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Engineer can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "engineer_wrench": {
@@ -8881,8 +9967,8 @@
             }
          },
          "engineer_buffs": {
-            "inventiveness_2_buff": {
-               "display_name": "Inventiveness +50",
+            "diligence_2_buff": {
+               "display_name": "Diligence +50",
                "description": "The engineer can repair doors more efficiently"
             }
          },
@@ -9020,23 +10106,27 @@
             "level_6_data": {
                "title": "Master Mason",
                "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The mason's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_description": "The Mason's mastery of their trade allows them to come up with completely new ways of using stone."
             },
             "level_2_data": {
                "perk_000_name": "Fancy Rocks",
-               "perk_000_description": "The mason can now make more elaborate items froms stone."
+               "perk_000_description": "The Mason can now make more elaborate items froms stone."
             },
             "level_4_data": {
                "perk_000_name": "Extended Catalog",
-               "perk_000_description": "The mason ventures from the realm of the functional into... art."
+               "perk_000_description": "The Mason ventures from the realm of the functional into... art."
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The mason can now make a solid array of basic furniture."
+               "perk_000_description": "The Mason can now make a solid array of basic furniture."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the mason may embellish his works in unexpected ways."
+               "perk_000_name": "Journeyman's Knowledge",
+               "perk_000_description": "When inspiration strikes, the Mason may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Mason can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "mason_chisel": {
@@ -9068,6 +10158,13 @@
             }
          },
          "recipes": {
+            "tools_name": "Tools",
+            "storage_name": "Storage",
+            "signage_decoration_name": "Signage & Decoration",
+            "building_parts_name": "Building Parts",
+            "weapons_name": "Weapons",
+            "furniture_name": "Furniture",
+            "refined_name": "Refinement",
             "bird_bath_recipe": {
                "description": "A decorative stone vase with water for the birdies.",
                "recipe_name": "Bird Bath",
@@ -9103,12 +10200,6 @@
                "recipe_name": "Wall-Mounted Decorative Gargoyle",
                "flavor": "Remnants of the servants of Brelor, Crownless King."
             },
-            "tools_name": "Tools",
-            "storage_name": "Storage",
-            "signage_decoration_name": "Signage & Decoration",
-            "building_parts_name": "Building Parts",
-            "weapons_name": "Weapons",
-            "furniture_name": "Furniture",
             "stone_bench_recipe": {
                "description": "Outdoor seating for moments of relaxation.",
                "recipe_name": "Stone Bench",
@@ -9197,6 +10288,51 @@
                "recipe_name": "The Guildmaster's Skill",
                "description": "Shows each craftsman at their best",
                "flavor": "A good crafter never blames his tools, only the people who make his tools. --Otto Crankfrown, Guildmaster Emeritus"
+            },
+            "gold_flakes_recipe": {
+               "recipe_name": "Gold Flakes",
+               "description": "Used when crafting furniture to make it really pretty!",
+               "flavor": "So Shine!"
+            },
+            "gold_flakes_times_three_recipe": {
+               "recipe_name": "Gold Flakes (x3)",
+               "description": "Smash up a Gold Bar to get the Flakes back out of it!",
+               "flavor": "So many Shine!"
+            },
+            "wet_stone_recipe": {
+               "recipe_name": "Wet Stone",
+               "flavor": "This stone has been blessed with the tears of Rayya!",
+               "description": "This stone will shed water around itself."
+            },
+            "output_box_stone_recipe": {
+               "recipe_name": "Stone Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_stone_recipe": {
+               "recipe_name": "Stonework Supply Bin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_stone_recipe": {
+               "recipe_name": "Stonework Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_stone_recipe": {
+               "recipe_name": "Stonework Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_stone_recipe": {
+               "recipe_name": "Stonework Corner Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_stone_recipe": {
+               "recipe_name": "Stonework Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
@@ -9218,25 +10354,29 @@
                "long_description": "The Potter crafts useful goods and decorative items from clay."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the potter may embellish his/her works in unexpected ways."
+               "perk_000_name": "Journeyman's Knowledge",
+               "perk_000_description": "When inspiration strikes, the Potter may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Potter can now create items of Excellent quality, and will make Fine quality items more often."
             },
             "level_6_data": {
                "title": "Master Potter",
                "perk_000_name": "Master Potter",
-               "perk_000_description": "The potter has rediscovered ancient secrets of the Phoenix..."
+               "perk_000_description": "The Potter has rediscovered ancient secrets of the Phoenix..."
             },
             "level_2_data": {
                "perk_000_name": "Art for Sale",
-               "perk_000_description": "The potter can now make decorative items to liven up the town or sell for money."
+               "perk_000_description": "The Potter can now make decorative items to liven up the town or sell for money."
             },
             "level_4_data": {
                "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The potter can now add precious metals to vases and tiles."
+               "perk_000_description": "The Potter can now add precious metals to vases and tiles."
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The potter can now make basic furniture and building adornments."
+               "perk_000_description": "The Potter can now make basic furniture and building adornments."
             }
          },
          "recipes": {
@@ -9287,7 +10427,7 @@
             },
             "building_parts_name": "Building Parts",
             "clay_bricks_recipe": {
-               "description": "Used to make structures that stay cool even in great heat.",
+               "description": "A stack of bricks, used to make clay structures.",
                "recipe_name": "Clay Bricks",
                "flavor": "'And when Clay emerged from the Kiln, he had become Brick, and no matter how hard Sun blasted him, he remained cheerful.'"
             },
@@ -9433,6 +10573,46 @@
             },
             "wooden_sign_potter_recipe": {
                "flavor": "Less fragile and easier than hanging a real pot!"
+            },
+            "output_box_clay_recipe": {
+               "recipe_name": "Clay Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_clay_recipe": {
+               "recipe_name": "Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_clay_recipe": {
+               "recipe_name": "Ceramic Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_clay_recipe": {
+               "recipe_name": "Ceramic Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_clay_recipe": {
+               "recipe_name": "Ceramic Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_blue_recipe": {
+               "recipe_name": "Blue Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_red_recipe": {
+               "recipe_name": "Red Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_green_recipe": {
+               "recipe_name": "Green Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          },
          "potter_workbench": {
@@ -9544,17 +10724,7 @@
          },
          "snare_trap": {
             "display_name": "Snare Trap",
-            "description": "Safely immobilizes its prey",
-            "commands": {
-               "harvest_trapped_beast": {
-                  "display_name": "Harvest Beast",
-                  "description": "Slay the trapped beast and harvest him for materials!"
-               },
-               "tame_trapped_beast": {
-                  "display_name": "Tame Beast",
-                  "description": "Make friends! Befriend the trapped beast and make it your pet."
-               }
-            }
+            "description": "Safely immobilizes its prey"
          },
          "trapper_buffs": {
             "speed_1_buff": {
@@ -9603,23 +10773,27 @@
             "level_6_data": {
                "title": "Master Weaver",
                "perk_000_name": "10,000 Hours (not implemented)",
-               "perk_000_description": "The weaver's mastery of his trade allows him to come up with completely new ways of using wood."
+               "perk_000_description": "The Weaver's mastery of their trade allows them to come up with completely new ways of using cloth and thread."
             },
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The weaver is now skillful enough to use materials created by other crafters."
+               "perk_000_description": "The Weaver is now skillful enough to use materials created by other crafters."
             },
             "level_4_data": {
                "perk_000_name": "Ingenuity Enhancements (not implemented)",
-               "perk_000_description": "The weaver adds new levels of functionality to classic recipes."
+               "perk_000_description": "The Weaver adds new levels of functionality to classic recipes."
             },
             "level_1_data": {
                "perk_000_name": "Standard Catalog",
-               "perk_000_description": "The weaver can now make basic hangings and decor."
+               "perk_000_description": "The Weaver can now make basic hangings and decor."
             },
             "level_3_data": {
-               "perk_000_name": "Artistic Inspiration",
-               "perk_000_description": "When inspiration strikes, the weaver may embellish his works in unexpected ways."
+               "perk_000_name": "Journeyman's Knowledge",
+               "perk_000_description": "When inspiration strikes, the Weaver may now craft an especially Fine quality of item. (Not implemented for clothing yet!)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Weaver can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for clothing yet!)"
             }
          },
          "recipes": {
@@ -9675,6 +10849,7 @@
             },
             "clothing_armor_name": "Clothing & Armor",
             "toys_name": "Toys",
+            "storage_name": "Storage",
             "decorations_name": "Decorations",
             "crafting_materials_name": "Crafting Materials",
             "spool_of_thread_recipe": {
@@ -9739,6 +10914,26 @@
                "recipe_name": "Cloth Padded Helmet",
                "description": "Extra padding for your noggin",
                "flavor": "Were they phoenix wings, or serpent wings?"
+            },
+            "input_bin_woven_recipe": {
+               "recipe_name": "Woven Supply Basket",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "flavor": "Nothing quite like a well-supplied workshop!"
+            },
+            "input_bin_woven_blue_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Blue Woven Supply Basket"
+            },
+            "input_bin_woven_green_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Green Woven Supply Basket"
+            },
+            "input_bin_woven_red_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Red Woven Supply Basket"
             }
          },
          "weaver_loom": {
@@ -9817,24 +11012,28 @@
                "long_description": "Allows the Herbalist to craft healing balms and bandages."
             },
             "level_1_data": {
-               "perk_000_name": "Natural Regeneration",
-               "perk_000_description": "The herbalist channels the spirits of the forest and gains natural regeneration. Willpower and Diligence increased."
+               "perk_000_name": "Junior Practitioner",
+               "perk_001_name": "Natural Regeneration",
+               "perk_000_description": "The Herbalist can attend to 2 hurt hearthlings at a time.",
+               "perk_001_description": "The Herbalist channels the spirits of the forest and gains natural regeneration. Willpower and Diligence increased."
             },
             "level_2_data": {
                "perk_000_name": "Collaborative Insight",
-               "perk_000_description": "The herbalist is now skillful enough to use materials created by the other crafters."
+               "perk_000_description": "The Herbalist is now skillful enough to use materials created by the other crafters."
             },
             "level_4_data": {
                "perk_000_name": "Power Medic",
-               "perk_000_description": "The herbalist can now attend to up to 4 hearthlings at a time."
-            },
-            "level_0_data": {
-               "perk_000_name": "Junior Practitioner",
-               "perk_000_description": "The herbalist can attend to 2 hurt hearthlings at a time."
+               "perk_000_description": "The Herbalist can now attend to up to 4 hearthlings at a time."
             },
             "level_3_data": {
                "perk_000_name": "Item Proficiency",
-               "perk_000_description": "The herbalist's medical prowess increases the effectiveness of healing items by 50%."
+               "perk_000_description": "The Herbalist's medical prowess increases the effectiveness of healing items by 50%.",
+               "perk_001_name": "Journeyman's Knowledge",
+               "perk_001_description": "When inspiration strikes, the Herbalist may now craft an especially Fine quality of item.  (Not implemented for healing items yet!)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Herbalist can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for healing items yet!)"
             },
             "level_6_data": {
                "title": "Master Herbalist"
@@ -9925,13 +11124,11 @@
             "display_name": "Cleric",
             "description": "A combat healer",
             "requirements": "Crafted by Herbalist",
-            "level_0_data": {
-               "perk_000_name": "Healing Aura",
-               "perk_000_description": "The cleric's presence heals everyone around them periodically"
-            },
             "level_1_data": {
-               "perk_000_name": "Minor Strength",
-               "perk_000_description": "The cleric's presence improves the muscle of those around them"
+               "perk_000_name": "Healing Aura",
+               "perk_001_name": "Minor Strength",
+               "perk_000_description": "The cleric's presence heals everyone around them periodically",
+               "perk_001_description": "The cleric's presence improves the muscle of those around them"
             },
             "level_2_data": {
                "perk_000_name": "Compassion Up",
@@ -10049,16 +11246,14 @@
             "description": "A defensive combatant focused on protecting allies from harm.",
             "requirements": "Crafted by Blacksmith",
             "level_1_data": {
-               "perk_000_name": "Damage Reduction Rank 1",
-               "perk_000_description": "The knight gains an additional 10% defense from equipment"
+               "perk_000_name": "Fortify",
+               "perk_001_name": "Damage Reduction Rank 1",
+               "perk_000_description": "Increases Stamina, Courage, and draws attention from monsters",
+               "perk_001_description": "The knight gains an additional 10% defense from equipment"
             },
             "level_4_data": {
                "perk_000_name": "Damage Reduction Rank 2",
                "perk_000_description": "The knight gains an additional 20% armor from equipment"
-            },
-            "level_0_data": {
-               "perk_000_name": "Fortify",
-               "perk_000_description": "Increases Stamina, Courage, and draws attention from monsters"
             },
             "level_3_data": {
                "perk_000_name": "Fortify (Rank 2)",
@@ -10113,7 +11308,7 @@
             "npc_thief_description": {
                "display_name": "Thief",
                "description": "Steals items from stockpiles",
-               "level_0_data": {
+               "level_1_data": {
                   "title": "Thief"
                }
             }
@@ -10125,9 +11320,12 @@
          "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
          "description": "Citizen of your town",
          "job": {
-            "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
-            "default_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
+            "starting_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Apprentice [str(self.stonehearth:job.curr_job_name)]",
+            "mid_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Journeyman [str(self.stonehearth:job.curr_job_name)]",
+            "max_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Master [str(self.stonehearth:job.curr_job_name)]",
+            "default_level_title": "Lvl [str(i18n_data.level_number)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
+            "default_promote_announcement": "[name(i18n_data.entity)] is now a Level [str(i18n_data.level_number)] [str(i18n_data.job_name)]!",
             "level_up_perk_description": "Max Health +10",
             "attribute_up_desc": "All attributes increased!"
          }
@@ -10151,6 +11349,10 @@
          "jerky": {
             "display_name": "Jerky",
             "description": "Stringy, but nutritious!"
+         },
+         "bug_meat": {
+            "description": "Sticky, but nutritious!",
+            "display_name": "Bug Meat"
          }
       },
       "monster": {
@@ -10158,6 +11360,7 @@
             "starting_level_title": "Apprentice [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "Level [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)] has achieved [str(i18n_data.job_name)] Level [str(i18n_data.level_number)]!",
+            "default_promote_announcement": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_promote_announcement)",
             "general_description_desc": "Max Health increased!",
             "attribute_up_desc": "All attributes increased!"
          }

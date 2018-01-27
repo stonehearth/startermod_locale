@@ -2,7 +2,7 @@
 	"info": {
 		"name": "stoneHearth_locale_kr",
 		"required": true,
-		"version": 210521
+		"version": 230127
 	},
 	
 	"mixintos": {
@@ -14,17 +14,11 @@
 		"stonehearth/locales/ko.json": "file(translations/stonehearth/ko.json)",
 		"rayyas_children/locales/ko.json": "file(translations/rayyas_children/ko.json)",
 		
-		"stonehearth/services/server/population/data/ascendancy_population.json": "file(translations/stonehearth/population/ascendancy_population.json)",
-		"stonehearth/services/server/population/data/undead_population.json": "file(translations/stonehearth/population/undead_population.json)",
-		"stonehearth/services/server/population/data/goblin_population.json": "file(translations/stonehearth/population/goblin_population.json)",
-		"stonehearth/services/server/population/data/orc_population.json": "file(translations/stonehearth/population/orc_population.json)",
-		"rayyas_children/data/rayyas_children_population.json": "file(translations/rayyas_children/population/rayyas_children_population.json)",
-		
 	   "stonehearth/ui/root/css/fonts/autourone/AutourOne-Regular-webfont.ttf" : "file(fonts/BMJUA.ttf)",
    	   "stonehearth/ui/root/css/fonts/autourone/AutourOne-Regular-webfont.woff" : "file(fonts/BMJUA.woff)",
    	   "stonehearth/ui/root/css/fonts/grobold/grobold-webfont.ttf" : "file(fonts/BMJUA.ttf)",
    	   "stonehearth/ui/root/css/fonts/grobold/grobold-webfont.woff" : "file(fonts/BMJUA.woff)",
-	   	   
+	   
 	    "stonehearth/ui/root/css/tooltipster.less" : "file(ui/root/css/tooltipster.less)",
 		
    	    "stonehearth/ui/shell/select_roster/select_roster.less" : "file(ui/shell/select_roster/select_roster.less)",

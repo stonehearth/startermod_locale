@@ -325,53 +325,39 @@
          .controlFont;
          position: absolute;
          top: 70px;
-         right: 20px;
+         right: 10px;
+         width: 64px;
+         height: 66px;
          color: #fff;
          font-size: 24px;
          line-height: 16px;
+         display: none;
+         align-items: center;
+         justify-content: center;
 
-         .stat {
-            width: 64px;
-            height: 34px;
-            padding: 16px 0 14px 0;
+         div {
             text-align: center;
-
-            .name {
-               font-size: 12px;
-               line-height: 12px;
-            }
          }
 
-         .stat.damage {
-            background: url(images/stat_damage_bg.png);
+         .name {
+            font-size: 12px;
+            line-height: 12px;
          }
+      }
 
-         .stat.armor {
-            background: url(images/stat_armor_bg.png);
-         }
+      #stats.damage {
+         display: flex;
+         background: url(images/stat_damage_bg.png);
+      }
 
-         .stat.appeal {
-            background: #dad5bb;
-            border: 3px black solid;
-            border-radius: 15px;
-            color: black;
-            text-shadow: none;
-            font-size: 17px;
-            font-family: 'GroboldRegular';
-            width: auto;
-            height: auto;
-            padding: 10px 10px 5px 40px;
-            background-image: url(images/stat_appeal_icon.png);
-            background-repeat: no-repeat;
-            background-position: 4px 1px;
-            line-height: 22px;
-         }
+      #stats.armor {
+         display: flex;
+         background: url(images/stat_armor_bg.png);
       }
 
       #recipeEquipmentPane {
          .controlFont;
          position: absolute;
-		 top: 47px;
          display: none;
 
          min-width: 100px;

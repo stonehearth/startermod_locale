@@ -53,7 +53,7 @@
             "healing_target": "[name(data.target)]을 치료하는 중",
             "dig_foundation": "부지 공사 중",
             "unit_hold_location": "지역 방어 중",
-            "execute_conversation": "이야기 나누는 중",
+            "talk": "[name(data.target)]와 대화 중",
             "incapacitated": "행동 불능",
             "rescue_citizen": "[name(data.target)] 구하는 중",
             "recuperating": "회복 중"
@@ -85,7 +85,10 @@
             "terrain_xray_vision": "지형 X-선 투시",
             "terrain_xray_vision_description": "지형을 통과하여 볼 수 있습니다. 전체 혹은 편평으로 바꾸어 지하 벽을 볼 수 있습니다.",
             "terrain_xray_vision_flat": "편평",
-            "terrain_xray_vision_full": "전체"
+            "terrain_xray_vision_full": "전체",
+            "appeal_vision_icon_name": "매력",
+            "appeal_vision": "매력 비전",
+            "appeal_vision_description": "하슬링들이 느끼는 매력 수치를 볼 수 있습니다."
          },
          "promotion_tree": {
             "title": "직업 선택 - ",
@@ -127,12 +130,16 @@
             "level_abbreviation": "레벨 ",
             "locked_status": " (잠김)",
             "apprentice": "견습생",
+            "journeyman": "숙련공",
+            "master": "장인",
             "journal": "일기",
             "thoughts": "생각들",
             "morale_meter": "만족 수치",
             "attributes": "특성",
             "equipment": "장비",
             "abilities": "스킬",
+            "appeal": "매력",
+            "unknown_item": "발견되지 않음",
             "morale_title": "만족도",
             "overall_morale": "종합 만족도",
             "morale_food": "음식",
@@ -143,7 +150,25 @@
             "backpack_tab_name": "가방",
             "journal_no_entries": "존재하지 않음",
             "retired": "퇴직:",
-            "traits": "특성들"
+            "traits": "특성들",
+            "above": "이상",
+            "below": "이하",
+            "currently": "현재:",
+            "no_unhappy_thoughts": "아직 불행하지 않아요!",
+            "no_happy_thoughts": "아직 행복하지 않아요!",
+            "appeal_headings": {
+               "like": "좋아함",
+               "like_tooltip": "해당 아이템에 대해서 더욱 아름답게 보입니다. (한 공간에 최대 3개)",
+               "love": "사랑함",
+               "love_tooltip": "해당 아이템은 이 공간에 대한 [str(self.stonehearth:unit_info.custom_name)]의 의견을 크게 향상시킬 것입니다.",
+               "dislike": "싫어함",
+               "dislike_tooltip": "[str(self.stonehearth:unit_info.custom_name)]은(는) 품질에 관계 없이 언제나 매력적이지 않다고 생각합니다.",
+               "current_and_target_bar": "전반적인 의견",
+               "current_and_target_bar_tooltip": "[str(self.stonehearth:unit_info.custom_name)]'s opinion of their surroundings and recently visited areas.",
+               "current_arrow_tooltip": "[str(self.stonehearth:unit_info.custom_name)]'s overall opinion of the town's appeal. This affects their mood.",
+               "target_arrow_tooltip": "How [str(self.stonehearth:unit_info.custom_name)] views their immediate surroundings.  This affects their overall opinion of the town with time.",
+               "item_preferences": "[str(self.stonehearth:unit_info.custom_name)]'s Tastes"
+            }
          },
          "pet_character_sheet": {
             "title": "애완동물 정보",
@@ -208,7 +233,9 @@
             "remove": "삭제",
             "input_text_tooltip": "클릭해서 편집",
             "days": "일",
-            "hours": "시간"
+            "hours": "시간",
+            "the": " ",
+            "empty_string": ""
          },
          "party": {
             "title": "파티",
@@ -235,6 +262,8 @@
                "display_name": "공격 대상 선택",
                "description": "특정 목표를 향해 공격합니다."
             },
+            "crafted_by": "[str(author_name)]에 의해 생산됨",
+            "crafted_in": "[str(author_name)]에서 생산됨",
             "defend_location": {
                "display_name": "지역 방어",
                "description": "적들에게서 해당 장소를 방어합니다."
@@ -252,6 +281,7 @@
                "description": "실행 중인 전투 명령을 취소합니다."
             },
             "level": "레벨:",
+            "Lvl": "레벨",
             "class_lv_title": "직업 및 레벨 요구 사항",
             "no_requirements": "없음!",
             "equipment_description": "[str(class_list)] 장착 가능",
@@ -262,6 +292,11 @@
             "placement_tags": {
                "turret": "터렛",
                "trap": "덫"
+            },
+            "quality": {
+               "quality-2": "좋은 품질",
+               "quality-3": "상당히 좋은 품질",
+               "quality-4": "최고의 품질"
             }
          },
          "citizens": {
@@ -370,6 +405,7 @@
             "tooltip_combat_base_damage": "공격력:",
             "tooltip_combat_base_damage_reduction": "방어력:",
             "tooltip_num_undeployed": "배치되지 않음: [str(num_undeployed)]",
+            "tooltip_deprecated": "레거시 항목:이 항목은 더 이상 게임에서 사용할 수 없습니다.",
             "death_notification": "[name(i18n_data.entity)]가 무지개 다리를 건넜습니다.",
             "imminent_death_notification": "[name(i18n_data.citizen)]은(는) 위독합니다!",
             "starving_notification": "[name(i18n_data.citizen)]은(는) 굶었습니다!",
@@ -632,6 +668,10 @@
                "title": "[name(i18n_data.entity)]가 레벨업 하였습니다!",
                "show_char_sheet": "캐릭터 정보"
             },
+            "promote_bulletin": {
+               "title": "[name(i18n_data.entity)]은(는) 이미 승급했습니다!",
+               "show_char_sheet": "캐릭터 정보"
+            },
             "immigration_report": {
                "title": "일일 보고서",
                "immigration_report_title": "이민 보고서",
@@ -736,11 +776,13 @@
             "building_templates": {
                "title": "건설 도면",
                "design_custom_building": "커스텀 건물 디자인하기",
+               "search_placeholder": "도면 검색중...",
                "template_names": {
                   "tiny_cottage": "작은 집",
                   "cottage_for_two": "2인용 집",
                   "shared_sleeping_quarters": "4인용 집",
                   "dining_hall": "식당",
+                  "herbalist_house": "약초사의 집",
                   "little_clay_house": "점토로 만든 작은 집",
                   "clay_house_for_two": "점토로 만든 2인용 집",
                   "clay_dining_room": "점토로 만든 식당",
@@ -749,12 +791,15 @@
                "set_template_name_title": "도면 이름",
                "template_default_name": "새로운 건설 도면",
                "set_template_name_prompt": "도면의 이름을 입력하세요.",
+               "ignore_quality": "품질 무시",
+               "ignore_quality_tooltip": "도면의 모든 항목을 기본 품질로 처리합니다.",
                "remove_template_confirm": {
                   "title": "도면 버리기",
                   "message": "정말로 이 건설 도면을 버리겠습니까?",
                   "keep_template": "계속 갖고 있겠습니다.",
                   "remove_template": "버려주세요!"
                },
+               "template_description_tooltip": "파일 이름: [str(filename)]",
                "remove_template_button": "도면 삭제",
                "build_template_button": "건설하기"
             },
@@ -864,6 +909,7 @@
                "contents": "물품",
                "filter": "필터",
                "help": "체크박스나 아이콘을 눌러서 저장할 물품의 종류를 선택할 수 있습니다.",
+               "help_single_filter": "이곳에 저장할 항목 유형을 선택하려면 아이콘을 클릭하십시오.",
                "used_space": "저장량:",
                "filters": {
                   "all": "모두",
@@ -902,7 +948,9 @@
                   "tooltip_raw_food": "생식",
                   "tooltip_prepared_food": "조리된 음식",
                   "tooltip_cooking_ingredients": "요리 재료와 동물 사료",
-                  "tooltip_consumables": "치료 용품 및 기타 소모품"
+                  "tooltip_cooking": "요리",
+                  "tooltip_consumables": "치료 용품 및 기타 소모품",
+                  "tooltip_animal_parts": "동물성 부품"
                }
             }
          },
@@ -941,7 +989,8 @@
             "queue_anyway": "작업 대기",
             "recipe_tab": "제작법",
             "orders_tab": "제작 중",
-            "missing_ingredients": "재료 부족 : "
+            "missing_ingredients": "재료 부족 : ",
+            "tooltip_appeal_stat": "매력"
          },
          "town_overview": {
             "title": "마을 정보",
@@ -1128,6 +1177,7 @@
             "title": "설정",
             "graphics": "그래픽",
             "gameplay": "게임플레이",
+            "controls": "컨트롤",
             "card": "그래픽 카드: ",
             "gfx_cardinfo": "[str(gpuRenderer)] ([str(gpuDriver)])",
             "gfx_enable_shadows": "그림자 활성화",
@@ -1161,6 +1211,10 @@
             "enable_lua_jit": "Lua JIT컴파일 (재시작시 적용)",
             "send_anon_data": "익명으로 피드백 보내기",
             "language_select": "언어(Language)",
+            "unsaved_changes_dialog": {
+               "title": "변경 취소",
+               "message": "변경 사항을 취소하고 돌아갑니까?"
+            },
             "gameplay_tab": {
                "title": "게임플레이",
                "experimental": "실험실",
@@ -1193,6 +1247,118 @@
                   "message": "모듈 변경사항을 적용하기 위해서는 게임을 재시작해야 합니다. 재시작하시겠습니까?",
                   "accept": "네",
                   "cancel": "아니요"
+               }
+            },
+            "controls_tab": {
+               "key_binding_prompt": "Press Del to unbind",
+               "reset_to_defaults": "Reset to Defaults",
+               "unbound": "unbound",
+               "conflict_dialog": {
+                  "title": "Binding Conflict",
+                  "message": " is already used by [str(conflicts)].",
+                  "choice_replace": "Unbind Existing",
+                  "choice_keep": "Keep All",
+                  "choice_cancel": "Cancel"
+               },
+               "key_category_names": {
+                  "other": "Other",
+                  "camera": "Camera",
+                  "vision": "Vision",
+                  "speed": "Speed",
+                  "menus": "Menus",
+                  "harvest": "Tools",
+                  "zone": "Zoning",
+                  "build": "Building",
+                  "craft": "Crafting",
+                  "fight": "Combat",
+                  "ui": "User Interface",
+                  "debug": "Debug"
+               },
+               "key_binding_names": {
+                  "cam_drag": "Drag Camera",
+                  "cam_home": "Recenter Camera",
+                  "cam_pan_fwrd": "Pan Camera Up",
+                  "cam_pan_back": "Pan Camera Down",
+                  "cam_pan_left": "Pan Camera Left",
+                  "cam_pan_right": "Pan Camera Right",
+                  "cam_orb_left": "Rotate Camera Left",
+                  "cam_orb_right": "Rotate Camera Right",
+                  "cam_orb_up": "Rotate Camera Up",
+                  "cam_orb_down": "Rotate Camera Down",
+                  "cam_zoom_in": "Zoom In",
+                  "cam_zoom_out": "Zoom Out",
+                  "cam_follow": "Follow Camera",
+                  "vision_building_toggle": "Switch Building Vision",
+                  "vision_xray_toggle": "Toggle Terrain X-Ray Vision",
+                  "vision_slice_toggle": "Toggle Terrain Slice Vision",
+                  "vision_slice_up": "Terrain Slice Up",
+                  "vision_slice_down": "Terrain Slice Down",
+                  "vision_appeal_toggle": "Toggle Appeal Vision",
+                  "speed_pause": "Pause",
+                  "speed_toggle_pause": "Toggle Pause",
+                  "speed_play": "Normal Speed",
+                  "speed_ff": "Double Speed",
+                  "speed_three": "Super Speed",
+                  "town_overview": "Town Info Menu",
+                  "citizen_manager": "Citizens Menu",
+                  "harvest_menu": "Harvest Menu",
+                  "harvest_harvest": "Harvest Tool",
+                  "harvest_mine": "Mine Tool",
+                  "harvest_mine_block": "Mine Block Tool",
+                  "harvest_cancel": "Cancel Task Tool",
+                  "harvest_loot": "Loot Tool",
+                  "harvest_clear": "Clear Tool",
+                  "zone_menu": "Zone Menu",
+                  "zone_stockpile": "Stockpile Tool",
+                  "zone_farm": "Farm Tool",
+                  "zone_trapping": "Trapping Zone Tool",
+                  "zone_pasture": "Pasture Tool",
+                  "build_menu": "Build Menu",
+                  "build_template": "Place Building",
+                  "build_custom": "Design Building",
+                  "build_place": "Place Item",
+                  "build_ladder": "Build Ladder",
+                  "build_rotate_left": "Rotate Item Left",
+                  "build_rotate_right": "Rotate Item Right",
+                  "craft_menu": "Crafting Menu",
+                  "craft_carpenter": "Carpenter Menu",
+                  "craft_weaver": "Weaver Menu",
+                  "craft_mason": "Mason Menu",
+                  "craft_blacksmith": "Blacksmith Menu",
+                  "craft_cook": "Cook Menu",
+                  "craft_potter": "Potter Menu",
+                  "craft_herbalist": "Herbalist Menu",
+                  "craft_engineer": "Engineer Menu",
+                  "fight_menu": "Fight Menu",
+                  "fight_alert": "Town Alert",
+                  "fight_party_1": "Combat Party 1",
+                  "fight_party_2": "Combat Party 2",
+                  "fight_party_3": "Combat Party 3",
+                  "fight_party_4": "Combat Party 4",
+                  "bulletin_manager": "Notifications Menu",
+                  "ui_quicksave": "Quick Save",
+                  "ui_quickload": "Quick Load",
+                  "ui_refresh": "Refresh",
+                  "toggle_fullscreen": "Toggle Fullscreen",
+                  "toggle": "Toggle UI",
+                  "ui_print_screen": "Take Screenshot",
+                  "debug_console": "Stonehearth Console",
+                  "debug_navgrid": "Show&frasl;Hide Navgrid",
+                  "debug_navgrid_water_tight": "Show&frasl;Hide Watertight Navgrid",
+                  "debug_lifetime_tracking": "Toggle Lifetime Tracking",
+                  "debug_toggle_step_paths": "Step Pathfinder Service",
+                  "debug_step_topology": "Step Topology Service",
+                  "debug_reload": "Save & Reload",
+                  "debug_toggle_save_stress_test": "Toggle Save Stress Test",
+                  "debug_toggle_debug_nodes": "Toggle Debug Nodes",
+                  "debug_toggle_perfhud": "Toggle Perf HUD",
+                  "debug_toggle_flame_graph": "Toggle Flame Graph",
+                  "debug_switch_debug_shapes": "Switch Debug Shapes View",
+                  "debug_crash": "Force Crash",
+                  "debug_toggle_cpu_profiler": "Toggle Lua Profiler",
+                  "debug_render_show_stats": "Show Rendering Stats",
+                  "debug_render_debug_view": "Renderer Debug View",
+                  "debug_show_terrain_coordinates": "Show Terrain Coordinates"
                }
             }
          },
@@ -1286,7 +1452,7 @@
          },
          "error_dialog_js": {
             "title": "UI 에러",
-            "reset_hint": "F5키를 이용해서 UI를 리셋시킬 수 있습니다.",
+            "reset_button": "Reload UI",
             "copy_button": "클립보드에 복사"
          }
       },
@@ -1304,6 +1470,14 @@
                "description": "하슬링이 만드는 제작품의 품질 지수입니다.<br>사고 지수에 영향을 받습니다.",
                "bullet_points": {
                   "000": "매 2 포인트마다 고품질 아이템을 만들 확률이 1% 증가합니다."
+               }
+            },
+            "inspiration": {
+               "display_name": "Inspiration",
+               "description": "A flat modifier to this hearthing's chance to create items with Fine and Excellent quality.",
+               "bullet_points": {
+                  "000": "A hearthling must be at least a Journeyman to create Fine quality items, and a Master to create Excellent items<&frasl;br>",
+                  "001": "Ranges from -2% to +3%, based on the hearthling's Spirit"
                }
             },
             "shelter": {
@@ -1329,7 +1503,8 @@
                "display_name": "근면",
                "description": "휴식 시간이 필요하기 전, 오랫동안 일하는 시간입니다.<br>사고 지수에 영향을 받습니다.",
                "bullet_points": {
-                  "000": "수면 시간을 결정합니다."
+                  "000": "수면 시간을 결정합니다.",
+                  "001": "Determines Engineer repair speed"
                }
             },
             "willpower": {
@@ -1413,23 +1588,28 @@
             },
             "content": {
                "display_name": "만족함",
-               "town_description": "당신의 시민들은 일이 진행되는 방식에 만족하고 있습니다."
+               "town_description": "당신의 시민들은 일이 진행되는 방식에 만족하고 있습니다.",
+               "description": "Nothing good, nothing bad."
             },
             "jubilant": {
                "display_name": "기쁨",
-               "town_description": "당신의 시민들은 엄청나게 행복합니다!"
+               "town_description": "당신의 시민들은 엄청나게 행복합니다!",
+               "description": "Movement speed is increased by 10%."
             },
             "forlorn": {
                "display_name": "쓸쓸함",
-               "town_description": "요즘 당신의 시민들은 엄청나게 힘든 시간을 보내고 있어요."
+               "town_description": "요즘 당신의 시민들은 엄청나게 힘든 시간을 보내고 있어요.",
+               "description": "Movement speed is reduced by 10%."
             },
             "merry": {
                "display_name": "즐거움",
-               "town_description": "당신의 시민들은 일반적으로 행복합니다."
+               "town_description": "당신의 시민들은 일반적으로 행복합니다.",
+               "description": "Movement speed is increased by 5%."
             },
             "glum": {
                "display_name": "침울함",
-               "town_description": "당신의 시민들은 전반적으로 기분이 좋지 않습니다."
+               "town_description": "당신의 시민들은 전반적으로 기분이 좋지 않습니다.",
+               "description": "Movement speed is reduced by 5%."
             },
             "exp_bar": {
                "description": "이 하슬링의 다음 레벨입니다."
@@ -1450,6 +1630,12 @@
             },
             "customization_lock": {
                "description": "이 하슬링의 [str(customization)]는 특성 및 상태를 돌리는 동안 저장됩니다."
+            },
+            "customization_lock_all": {
+               "description": "Click to lock all name and appearance options."
+            },
+            "customization_unlock_all": {
+               "description": "Click to unlock all name and appearance options."
             }
          },
          "constants": {
@@ -2796,9 +2982,6 @@
                                     "title": "성난 엔틀링 군대가 오고있다!"
                                  }
                               }
-                           },
-                           "happiness_intro": {
-                              "title": "Hearthling Morale"
                            }
                         }
                      }
@@ -3494,6 +3677,10 @@
             "display_name": "아이템 이동",
             "description": "이 세상 어디든 옮길 수 있습니다.",
             "disabled_description": "이 아이템은 사용중입니다. 다시 시도하세요."
+         },
+         "open_character_sheet": {
+            "display_name": "캐릭터 정보",
+            "description": "하슬링에 대한 자세한 정보를 볼 수 있습니다."
          },
          "place_item": {
             "display_name": "아이템 설치",
@@ -4756,7 +4943,67 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "광신자",
-               "description": ""
+               "description": " sleeping eternally. What's that about?"
+            }
+         },
+         "jokester": {
+            "jokester_trait": {
+               "display_name": "Jokester",
+               "description": "[name(i18n_data.entity)] loves to tell jokes. Are they good? It's tough to say, but they frequently seem to leave others with a smile."
+            }
+         },
+         "charismatic": {
+            "charismatic_trait": {
+               "display_name": "Charismatic",
+               "description": "When [name(i18n_data.entity)] walks into a room, people always take notice."
+            }
+         },
+         "gregarious": {
+            "gregarious_trait": {
+               "display_name": "Gregarious",
+               "description": "[name(i18n_data.entity)] loves discussing the day's events with others and gets a bit lonely when they don't."
+            }
+         },
+         "loner": {
+            "loner_trait": {
+               "display_name": "Loner",
+               "description": "[name(i18n_data.entity)] doesn't really care for the company of others. They prefer to be by themselves."
+            }
+         },
+         "empathetic": {
+            "empathetic_trait": {
+               "display_name": "Empathetic",
+               "description": "[name(i18n_data.entity)] is really sensitive to the mood of the town, and it always seems to rub off on them."
+            }
+         },
+         "opinionated": {
+            "opinionated_trait": {
+               "display_name": "Opinionated",
+               "description": "[name(i18n_data.entity)] has an opinion on everything, and isn't shy about sharing it."
+            }
+         },
+         "magnificent_beard": {
+            "magnificent_beard_trait": {
+               "display_name": "Magnificent Beard",
+               "description": "This hearthling has a truly magnificent beard."
+            }
+         },
+         "stoic": {
+            "stoic_trait": {
+               "display_name": "Stoic",
+               "description": "Due to their even temperament, it takes a lot to make this Hearthling happy or sad."
+            }
+         },
+         "gourmand": {
+            "gourmand_trait": {
+               "display_name": "Gourmand",
+               "description": "Only the tastiest of foods are welcome to [name(i18n_data.entity)]'s palate. They become happy when they eat higher quality food, but low quality meals are quite distasteful."
+            }
+         },
+         "goat": {
+            "goat_trait": {
+               "display_name": "Goat",
+               "description": "[name(i18n_data.entity)] will basically eat anything. They are not picky at all, sometimes to the disgust of those around them."
             }
          }
       },
@@ -4837,6 +5084,10 @@
                   "display_name": "공동 주택에서 잠",
                   "tooltip": "지금 다른 사람이랑 방을 같이 쓰고 있어요. 제 사생활을 조금 더 지켜주었으면 합니다."
                },
+               "well_rested": {
+                  "display_name": "Well rested",
+                  "tooltip": "Ahh, sleeping in my own bed without hearing other people snoring always leaves me refreshed."
+               },
                "slept_outside": {
                   "display_name": "실외에서 잠",
                   "tooltip": "비바람에 대비해 약간의 보호 시설을 갖추고 있었으면 좋겠네요."
@@ -4858,6 +5109,14 @@
                "carnivore_ate_veggies": {
                   "display_name": "풀떼기를 먹어버렸어요! 젠장!",
                   "tooltip": "실수가 있었습니다. 제 음식에 우연히 들어있었다구요."
+               },
+               "offended_palate": {
+                  "display_name": "Offended Palate",
+                  "tooltip": " to it!"
+               },
+               "pleased_palate": {
+                  "display_name": "Pleased Palate",
+                  "tooltip": "Mmm, my my. I really should tell the others how good [str(foodname)] was today!"
                },
                "ate_fine": {
                   "display_name": "맛있는 식사를 함",
@@ -4942,10 +5201,6 @@
                      "display_name": "동반자를 잃음",
                      "tooltip": "비록 죽은 지 꽤 되었지만, 아직도 가끔씩 저의 애완동물을 찾고 있는 제 자신을 발견하고 있어요."
                   },
-                  "nuzzled": {
-                     "display_name": "애완동물과 교감을 나눔",
-                     "tooltip": "헤헤, [str(pet_name)]은(는) 항상 저를 격려해 주고 있어요."
-                  },
                   "plant_lover": {
                      "display_name": "식물 애호가",
                      "tooltip": "저는 식물들과 이야기할 때, 차분함을 느껴요."
@@ -4965,6 +5220,66 @@
                   "loves_their_job": {
                      "display_name": "자신의 직업을 사랑함",
                      "tooltip": "이것은 저에게 완벽한 직업입니다! 날마다 하는 일이 사랑스럽다니까요."
+                  },
+                  "inspired": {
+                     "display_name": "Inspired",
+                     "tooltip": "[str(target_name)] is in quite good spirits today. They're really pleasant to be around!"
+                  },
+                  "discouraged": {
+                     "display_name": "Discouraged",
+                     "tooltip": "Sheesh, [str(target_name)] is no fun when they're in a bad mood."
+                  },
+                  "deeper_understanding": {
+                     "display_name": "A deeper understanding",
+                     "tooltip": "[str(target_name)] really has his priorities straight."
+                  }
+               },
+               "gregarious": {
+                  "values": {
+                     "lonely": {
+                        "display_name": "Lonely",
+                        "tooltip": "It's been awhile since I've talked to anyone. I really need to get some stuff off my chest."
+                     },
+                     "enjoys_company": {
+                        "display_name": "Enjoys the company of others",
+                        "tooltip": "It's always great to spend some time with my fellow town members."
+                     }
+                  }
+               },
+               "loner": {
+                  "values": {
+                     "annoyed_with_others": {
+                        "display_name": "Annoyed with others",
+                        "tooltip": "Why do these people keep talking to me? It keeps distracting me from what's important."
+                     },
+                     "alone_with_thoughts": {
+                        "display_name": "Alone with my own thoughts",
+                        "tooltip": "Being away from others has given me the time to reflect and clear my mind."
+                     }
+                  }
+               },
+               "empathetic": {
+                  "values": {
+                     "everyone_worse_off": {
+                        "display_name": "Everyone seems worse off",
+                        "tooltip": "Seeing everyone else in worse spirits just brings me down."
+                     },
+                     "everyone_happier": {
+                        "display_name": "Everyone seems happier",
+                        "tooltip": "Everyone else seems to be in a better mood than me. Maybe I should look at things differently."
+                     }
+                  }
+               },
+               "goat": {
+                  "values": {
+                     "ate_not_bad_food": {
+                        "display_name": "Mmm, not bad",
+                        "tooltip": "My [str(foodname)] today was a little tasty, but didn't seem that different from what I normally eat."
+                     },
+                     "ate_some_food": {
+                        "display_name": "Ate some food",
+                        "tooltip": "I had some [str(foodname)] today. It was alright, but I don't see what the big deal is."
+                     }
                   }
                }
             },
@@ -4977,8 +5292,218 @@
                   "pet_died": {
                      "display_name": "애완동물이 무지개 다리를 건넘",
                      "tooltip": "불쌍한 애완 동물이 최근에 세상을 떠났어요...꽤 그리울 겁니다."
+                  },
+                  "saved_from_mortal_wounds": {
+                     "display_name": "Saved from mortal wounds",
+                     "tooltip": "I would have died back there were it not for those around me! I'm grateful for this second chance."
                   }
                }
+            },
+            "job": {
+               "values": {
+                  "gained_a_level": {
+                     "display_name": "Improved my skills",
+                     "tooltip": "I've been at this job long enough to gain a new insight! I can feel myself becoming better at my work."
+                  }
+               }
+            },
+            "social": {
+               "values": {
+                  "unpleasant_talk": {
+                     "display_name": "Had an unpleasant talk",
+                     "tooltip": "I can't believe [str(target_name)] said that!"
+                  },
+                  "great_talk": {
+                     "display_name": "Had a great talk",
+                     "tooltip": "Talking with [str(target_name)] today was really nice."
+                  },
+                  "great_joke": {
+                     "display_name": "Heard a great joke",
+                     "tooltip": "Hahaha, just thinking of the joke [str(target_name)] told makes me crack up!"
+                  },
+                  "tough_crowd": {
+                     "display_name": "Tough crowd",
+                     "tooltip": "[str(target_name)] didn't laugh at my joke. Was it really that bad?"
+                  }
+               },
+               "animal": {
+                  "values": {
+                     "nuzzled": {
+                        "display_name": "Nuzzled",
+                        "tooltip": "Awww, my pet [str(target_name)] always manages to cheer me up."
+                     },
+                     "booped": {
+                        "display_name": "Booped",
+                        "tooltip": "A cute [str(species)] booped me today. It made me feel warm and fuzzy inside."
+                     }
+                  }
+               }
+            },
+            "appeal": {
+               "thresholds": {
+                  "horrendous": {
+                     "display_name": "Horrid Aesthetics",
+                     "tooltip": "Everywhere I look I see something terrible!"
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Aesthetics",
+                     "tooltip": "The decor around here is really great. A lot of hard work must have gone into making it look this nice."
+                  },
+                  "neutral": {
+                     "display_name": "Neutral Aesthetics"
+                  },
+                  "ugly": {
+                     "display_name": "Ugly Aesthetics",
+                     "tooltip": "Sheesh, it's really ugly around here. We definitely can make this look better!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Aesthetics",
+                     "tooltip": "This place... it's... beautiful..."
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasing Aesthetics",
+                     "tooltip": "It's pretty nice looking around here."
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Aesthetics",
+                     "tooltip": "Wow, everywhere I look is gorgeous! The attention to detail is amazing!"
+                  }
+               }
+            },
+            "appeal_crafting": {
+               "values": {
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Workshop",
+                     "tooltip": "I love crafting in my workshop; it's so well decorated!"
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasant Workshop",
+                     "tooltip": "A well-maintained work space brightens my mood."
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Workshop",
+                     "tooltip": "The area around my workbench is looking good, everything is in its place."
+                  },
+                  "ugly": {
+                     "display_name": "Unkempt Workshop",
+                     "tooltip": "It's frustrating that my work space is so grungy."
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Workshop",
+                     "tooltip": "My workshop looks so amazing! It's an inspiration!"
+                  }
+               }
+            },
+            "appeal_bedroom": {
+               "values": {
+                  "pleasing": {
+                     "display_name": "Pleasant Bedroom",
+                     "tooltip": "Where I slept last night was pretty nice."
+                  },
+                  "beautiful": {
+                     "display_name": "Beautiful Bedroom",
+                     "tooltip": "My bedroom is really shaping up; I like it!"
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Bedroom",
+                     "tooltip": "I love sleeping in such a wonderful bedroom!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Bedroom",
+                     "tooltip": "When I went to bed last night, I felt like royalty."
+                  }
+               }
+            },
+            "appeal_dining": {
+               "values": {
+                  "beautiful": {
+                     "display_name": "Beautiful Dining",
+                     "tooltip": "I was happy to eat in such an attractive spot!"
+                  },
+                  "breathtaking": {
+                     "display_name": "Breath-Taking Dining",
+                     "tooltip": "Someone really spent some effort decorating our dining room!"
+                  },
+                  "awe_inspiring": {
+                     "display_name": "Awe-Inspiring Dining",
+                     "tooltip": "The decor was so great, dinner was a feast for both my eyes and my stomach!"
+                  },
+                  "pleasing": {
+                     "display_name": "Pleasant Dining",
+                     "tooltip": "It was nice to eat my meal in a comfortable space."
+                  },
+                  "ugly": {
+                     "display_name": "Dreary Dining",
+                     "tooltip": "The ugly surroundings made it difficult to enjoy my last meal."
+                  }
+               }
+            }
+         }
+      },
+      "hotkeys": {
+         "keys": {
+            "build_roof": {
+               "display_name": "Roof Tool"
+            },
+            "build_slab": {
+               "display_name": "Slab Tool"
+            },
+            "build_erase": {
+               "display_name": "Erase Tool"
+            },
+            "ui_character": {
+               "display_name": "Character Sheet"
+            },
+            "fight_move": {
+               "display_name": "Move to Location"
+            },
+            "ui_move_place_item": {
+               "display_name": "Move&frasl;Place Item"
+            },
+            "fight_cancelOrders": {
+               "display_name": "Cancel Combat Order"
+            },
+            "build_wall": {
+               "display_name": "Free Standing Wall Tool"
+            },
+            "fight_defend": {
+               "display_name": "Defend Location"
+            },
+            "build_floor_grow": {
+               "display_name": "Floor Tool"
+            },
+            "build_decoration": {
+               "display_name": "Decoration Tool"
+            },
+            "build_furniture": {
+               "display_name": "Furniture Tool"
+            },
+            "build_stair": {
+               "display_name": "Stair Tool"
+            },
+            "build_window": {
+               "display_name": "Window Tool"
+            },
+            "build_floor": {
+               "display_name": "Foundation Tool"
+            },
+            "build_road": {
+               "display_name": "Road Tool"
+            },
+            "build_door": {
+               "display_name": "Door Tool"
+            },
+            "build_wall_grow": {
+               "display_name": "Wall Tool"
+            },
+            "fight_attack": {
+               "display_name": "Attack Move"
+            },
+            "ui_notification_popup": {
+               "display_name": "Open Notification Popup"
+            },
+            "ui_undeploy_item": {
+               "display_name": "Undeploy Item"
             }
          }
       }
@@ -5422,6 +5947,34 @@
                "display_name": "긴 점토 창문",
                "description": "부드러운 사막의 바람을 들여보내자."
             }
+         },
+         "ornate_picket_fence": {
+            "ornate_picket_fence_ghost": {
+               "display_name": "Ornate Picket Fence",
+               "description": "If it's not white, is our life unfulfilled?"
+            }
+         },
+         "ornate_picket_fence_gate": {
+            "ornate_picket_fence_gate_ghost": {
+               "display_name": "Ornate Picket Fence Gate",
+               "description": "Don't like your neighbors? Don't install."
+            }
+         },
+         "ornate_wooden_door": {
+            "ornate_wooden_door_ghost": {
+               "display_name": "Ornate Wooden Door",
+               "description": "Sturdier than your average door, and such a sweet pattern too."
+            }
+         },
+         "ornate_wooden_double_door": {
+            "ornate_wooden_double_door_ghost": {
+               "display_name": "Ornate Wooden Double Door",
+               "description": "A larger door with some extra style. All your friends will be envious."
+            }
+         },
+         "ornate_wooden_tunnel_door": {
+            "display_name": "Ornate Wooden Tunnel Door",
+            "description": "Useful for blocking off tunnels"
          }
       },
       "containers": {
@@ -5491,6 +6044,15 @@
                "description": "설치하면 돌을 수확할 수 있습니다."
             }
          },
+         "ore_pile": {
+            "ore_pile": {
+               "description": "Container for many hunks of ore",
+               "display_name": "Ore Pile"
+            },
+            "ore_pile_iconic": {
+               "description": "Container for many hunks of ore"
+            }
+         },
          "clay_pile": {
             "display_name": "점토 더미",
             "description": "많은 양의 점토들을 수확하세요.",
@@ -5517,6 +6079,180 @@
             "leather_bound_chest_fine_ghost": {
                "display_name": "가죽으로 꾸민 고품질 상자",
                "description": "64개의 아이템을 저장할 수 있는 멋스러운 저장고입니다."
+            }
+         },
+         "ornate_leather_bound_chest": {
+            "ornate_leather_bound_chest_ghost": {
+               "display_name": "Ornate Leather Bound Chest",
+               "description": "Stores up to 64 items. With style."
+            }
+         },
+         "output_box_wood": {
+            "output_box_wood_ghost": {
+               "display_name": "Wood Finished Work Shelf",
+               "description": "Temporary storage for crafted items."
+            }
+         },
+         "output_box_clay": {
+            "output_box_clay_ghost": {
+               "description": "Temporary storage for crafted items.",
+               "display_name": "Clay Finished Work Shelf"
+            }
+         },
+         "output_box_stone": {
+            "output_box_stone_ghost": {
+               "description": "Temporary storage for crafted items.",
+               "display_name": "Stone Finished Work Shelf"
+            }
+         },
+         "input_bin_clay": {
+            "input_bin_clay_ghost": {
+               "display_name": "Ceramic Supply Basin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven": {
+            "input_bin_woven_ghost": {
+               "display_name": "Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_wood": {
+            "input_bin_wood_ghost": {
+               "display_name": "Wooden Supply Crate",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_stone": {
+            "input_bin_stone_ghost": {
+               "display_name": "Stonework Supply Bin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_iron": {
+            "input_bin_iron_ghost": {
+               "display_name": "Iron-Banded Supply Bin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_wall_clay": {
+            "input_shelf_wall_clay_ghost": {
+               "display_name": "Ceramic Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_shelf_wall_stone": {
+            "input_shelf_wall_stone_ghost": {
+               "display_name": "Stonework Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_shelf_ground_clay": {
+            "input_shelf_ground_clay_ghost": {
+               "display_name": "Ceramic Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_ground_stone": {
+            "input_shelf_ground_stone_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Stonework Supply Rack"
+            }
+         },
+         "input_shelf_ground_wood": {
+            "input_shelf_ground_wood_ghost": {
+               "display_name": "Wooden Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_shelf_wall_wood": {
+            "input_shelf_wall_wood_ghost": {
+               "display_name": "Wooden Wall Supply Shelf",
+               "description": "Make sure it's within reach!"
+            }
+         },
+         "input_table_ground_iron": {
+            "input_table_ground_iron_ghost": {
+               "display_name": "Iron-Studded Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_wood": {
+            "input_corner_ground_wood_ghost": {
+               "display_name": "Wooden Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_stone": {
+            "input_corner_ground_stone_ghost": {
+               "display_name": "Stonework Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_wood": {
+            "input_table_ground_wood_ghost": {
+               "display_name": "Wooden Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_stone": {
+            "input_table_ground_stone_ghost": {
+               "display_name": "Stonework Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_table_ground_clay": {
+            "input_table_ground_clay_ghost": {
+               "display_name": "Ceramic Supply Table",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_clay": {
+            "input_corner_ground_clay_ghost": {
+               "display_name": "Ceramic Corner Supply Rack",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_clay_blue": {
+            "input_bin_clay_blue_ghost": {
+               "display_name": "Blue Ceramic Supply Basin",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_clay_green": {
+            "input_bin_clay_green_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Green Ceramic Supply Basin"
+            }
+         },
+         "input_bin_clay_red": {
+            "input_bin_clay_red_ghost": {
+               "description": "A supply container, for quicker crafting.",
+               "display_name": "Red Ceramic Supply Basin"
+            }
+         },
+         "input_bin_woven_blue": {
+            "input_bin_woven_blue_ghost": {
+               "display_name": "Blue Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven_green": {
+            "input_bin_woven_green_ghost": {
+               "display_name": "Green Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_bin_woven_red": {
+            "input_bin_woven_red_ghost": {
+               "display_name": "Red Woven Supply Basket",
+               "description": "A supply container, for quicker crafting."
+            }
+         },
+         "input_corner_ground_iron": {
+            "input_corner_ground_iron_ghost": {
+               "display_name": "Iron Corner Supply Shelf",
+               "description": "A supply container, for quicker crafting."
             }
          }
       },
@@ -5586,6 +6322,48 @@
             "display_name": "마못",
             "description": "모든 것을 게걸스럽게 먹고, 특히 ",
             "species": "마못"
+         },
+         "deer": {
+            "deer_jerky": {
+               "display_name": "Deer Jerky"
+            },
+            "species": "deer",
+            "description": "Om nom nom",
+            "display_name": "Deer"
+         },
+         "boar": {
+            "display_name": "A boar",
+            "species": "boar",
+            "description": "Smells like something.."
+         },
+         "beetle": {
+            "species": "beetle",
+            "display_name": "Beetle",
+            "description": "Cute little insect",
+            "beetle_jerky": {
+               "display_name": "Beetle Bug Meat"
+            }
+         },
+         "bitsy_ant": {
+            "description": "Cute little insect",
+            "display_name": "Bitsy Ant",
+            "species": "bitsy ant",
+            "bitsy_ant_jerky": {
+               "display_name": "Small Ant Bug Meat"
+            }
+         },
+         "doodles": {
+            "display_name": "Doodles",
+            "description": "Cute little insect",
+            "species": "doodles",
+            "doodles_jerky": {
+               "display_name": "Doodles Bug Meat"
+            }
+         },
+         "red_fox_wolf": {
+            "species": "fox",
+            "description": "Small forest creature",
+            "display_name": "Fox"
          }
       },
       "crops": {
@@ -6375,6 +7153,30 @@
                "display_name": "풍향계",
                "description": "친숙한 닭의 이미지가 들어간 풍향계다."
             }
+         },
+         "ornate_wooden_garden_lantern": {
+            "ornate_wooden_garden_lantern_ghost": {
+               "description": "A compact source of light, with a little bit of flair.",
+               "display_name": "Ornate Wooden Garden Lantern"
+            }
+         },
+         "ornate_wooden_wall_lantern": {
+            "ornate_wooden_wall_lantern_ghost": {
+               "description": "Easily attached to walls",
+               "display_name": "Ornate Wooden Wall Lantern"
+            }
+         },
+         "wet_stone": {
+            "wet_stone_ghost": {
+               "display_name": "Wet Stone",
+               "description": "This stone has been blessed by the tears of Rayya!"
+            }
+         },
+         "dry_stone": {
+            "dry_stone_ghost": {
+               "description": "This stone has been blessed by the heat of Pal'Mum!",
+               "display_name": "Dry Stone"
+            }
          }
       },
       "food": {
@@ -6654,6 +7456,14 @@
                "display_name": "키블",
                "description": "고양이를 끌어들인다."
             }
+         },
+         "pork": {
+            "display_name": "Raw Pork",
+            "description": "Raw meat from a boar"
+         },
+         "rotten_bug_meat": {
+            "description": "Bug meat goes bad just like other meat",
+            "display_name": "Rotten Bug Meat"
          }
       },
       "furniture": {
@@ -6733,6 +7543,12 @@
             "park_bench_fine_ghost": {
                "display_name": "고품질 나무 공원 벤치",
                "description": "밖에 앉아서 휴식을 취할 수 있습니다."
+            }
+         },
+         "ornate_bench": {
+            "ornate_bench_ghost": {
+               "display_name": "Ornate Park Bench",
+               "description": "Outdoor seating for moments of relaxation."
             }
          },
          "simple_wooden_chair": {
@@ -6855,6 +7671,60 @@
                "display_name": "빨간 나무 공원 벤치",
                "description": "밖에 앉아서 휴식을 취할 수 있습니다."
             }
+         },
+         "ornate_table_for_one": {
+            "ornate_table_for_one_ghost": {
+               "display_name": "Ornate Table for One",
+               "description": "Dining furniture for introverts."
+            }
+         },
+         "ornate_comfy_bed": {
+            "ornate_comfy_bed_ghost": {
+               "display_name": "Ornate Comfy Bed",
+               "description": "I dreamed... of flying sheep."
+            }
+         },
+         "ornate_dining_table": {
+            "ornate_dining_table_ghost": {
+               "description": "Sitting down to eat is a sign of civilization.",
+               "display_name": "Ornate Dining Table"
+            }
+         },
+         "ornate_dresser": {
+            "ornate_dresser_ghost": {
+               "description": "Decorative in the absence of belongings.",
+               "display_name": "Ornate Dresser"
+            }
+         },
+         "ornate_writing_desk": {
+            "ornate_writing_desk_ghost": {
+               "description": "A stylish place to write letters to home.",
+               "display_name": "Ornate Writing Desk"
+            }
+         },
+         "ornate_comfy_chair": {
+            "ornate_comfy_chair_ghost": {
+               "description": "For comfortable sitting!",
+               "display_name": "Ornate Comfy Chair"
+            }
+         },
+         "bench": {
+            "bench_ghost": {
+               "display_name": "Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation."
+            }
+         },
+         "wooden_chair": {
+            "wooden_chair_ghost": {
+               "display_name": "Wooden Chair",
+               "description": "For a little more class while sitting."
+            }
+         },
+         "ornate_wooden_chair": {
+            "ornate_wooden_chair_ghost": {
+               "display_name": "Ornate Wooden Chair",
+               "description": "For even more style while sitting."
+            }
          }
       },
       "generic": {
@@ -6954,6 +7824,14 @@
             "wolf": {
                "display_name": "야생 늑대",
                "description": "으르르! 왈!"
+            },
+            "zilla": {
+               "display_name": "Zilla",
+               "description": "The ground rumbles when Zilla comes around."
+            },
+            "cougar": {
+               "display_name": "Cougar",
+               "description": "A large cat"
             }
          },
          "goblins": {
@@ -7109,6 +7987,10 @@
             "necromancer": {
                "display_name": "주술사",
                "description": "어둠의 예술을 밤마다 펼친다."
+            },
+            "wolf_skeleton": {
+               "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
+               "description": "Its animal instincts are all that remain.."
             }
          },
          "rabbit": {
@@ -7143,6 +8025,22 @@
             "mammoth": {
                "display_name": "매머디",
                "description": "털이 많은 큰 짐승"
+            }
+         },
+         "evil": {
+            "loot_chest_fake": {
+               "display_name": "Evil Chest",
+               "description": "Its one of those things that goes bump in the night."
+            }
+         },
+         "avian": {
+            "ostrich": {
+               "display_name": "Ostrich",
+               "description": "Flightless avian"
+            },
+            "duckduck": {
+               "display_name": "DuckDuck",
+               "description": "Flightless avian"
             }
          }
       },
@@ -7251,6 +8149,27 @@
                "display_name": "해바라기",
                "description": "태양처럼 밝고 행복해보여"
             }
+         },
+         "brightbell_seed_plant": {
+            "unripe_description": "This seed will grow into a real plant someday",
+            "description": "Can be planted to grow healing herbs",
+            "display_name": "Wild Brightbell Seed"
+         },
+         "berry_bush_seed_plant": {
+            "display_name": "Berry Bush Seed",
+            "description": "Can be planted to grow a meager food supply"
+         },
+         "silkweed_seed_plant": {
+            "description": "Can be planted to grow fiber which can be spun into thread.",
+            "display_name": "Wild Silkweed Seed"
+         },
+         "pear_cactus_seed_plant": {
+            "description": "Can be planted to grow some prickly pears.",
+            "display_name": "Pear Cactus Seed"
+         },
+         "frostsnap_seed_plant": {
+            "display_name": "Wild Frostsnap Seed",
+            "description": "Can be planted to grow healing herbs"
          }
       },
       "rabbit": {
@@ -7378,6 +8297,26 @@
             "wolf_pelt": {
                "display_name": "늑대 가죽",
                "description": "무서운 짐승의 가죽"
+            },
+            "deer_pelt": {
+               "display_name": "Deer Pelt",
+               "description": "Soft, supple, and quite dead"
+            },
+            "cougar_pelt": {
+               "display_name": "Cougar Pelt",
+               "description": "Soft, supple, and quite dead"
+            },
+            "beetle_pelt": {
+               "display_name": "Beetle Chitin",
+               "description": "Hard, shiny, and quite dead"
+            },
+            "bitsy_ant_pelt": {
+               "description": "Hard, shiny, and quite dead",
+               "display_name": "Small Ant Chitin"
+            },
+            "doodles_pelt": {
+               "description": "Hard, shiny, and quite dead",
+               "display_name": "Doodle Chitin"
             }
          },
          "silver": {
@@ -7468,6 +8407,12 @@
             "poyo_feathers": {
                "display_name": "닭 깃털",
                "description": "포동포동한 새의 깃털이다."
+            }
+         },
+         "refined": {
+            "gold_flakes": {
+               "display_name": "Gold Flakes",
+               "description": "Use when crafting furniture to make it really pretty!"
             }
          }
       },
@@ -7968,15 +8913,13 @@
             "requirements": "목수로 제작 가능.",
             "level_1_data": {
                "perk_000_name": "당김 힘 증가",
-               "perk_000_description": "궁수의 공격력이 증가합니다."
+               "perk_001_name": "Increased Draw Strength",
+               "perk_000_description": "궁수의 공격력이 증가합니다.",
+               "perk_001_description": "The archer's damage is increased"
             },
             "level_2_data": {
                "perk_000_name": "장갑 관통 화살",
                "perk_000_description": "화살이 50% 확률로 목표의 방어력을 무시합니다."
-            },
-            "level_0_data": {
-               "perk_000_name": "숙련된 활 사용",
-               "perk_000_description": "궁수가 활을 사용하여 적을 공격할 수 있습니다."
             },
             "level_3_data": {
                "perk_000_name": "사거리 증가",
@@ -8015,13 +8958,11 @@
             "display_name": "건축가",
             "description": "??? ",
             "requirements": "??? ",
-            "level_0_data": {
-               "perk_000_name": "빠른 건설",
-               "perk_000_description": "남들보다 빠르게 건설합니다."
-            },
             "level_1_data": {
                "perk_000_name": "재료 보존",
-               "perk_000_description": "일정 확률로 모든 구조물이 건축 자재 더미를 소비하지 않게 됩니다."
+               "perk_001_name": "Conservation of Materials",
+               "perk_000_description": "일정 확률로 모든 구조물이 건축 자재 더미를 소비하지 않게 됩니다.",
+               "perk_001_description": "Have a chance every fabrication to not consume a stack of building material."
             }
          }
       },
@@ -8064,6 +9005,10 @@
             "level_3_data": {
                "perk_000_name": "예술적 영감",
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Blacksmith can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for equipment yet!)"
             }
          },
          "blacksmith_forge": {
@@ -8293,6 +9238,21 @@
             "engineer_wrench_recipe": {
                "description": "하슬링을 기술자로 전직시키기 위해 필요합니다.",
                "recipe_name": "기술자의 렌치"
+            },
+            "input_bin_iron_recipe": {
+               "recipe_name": "Iron-Banded Supply Bin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_iron_recipe": {
+               "recipe_name": "Iron-Studded Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_iron_recipe": {
+               "recipe_name": "Iron-Framed Corner Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
@@ -8321,6 +9281,10 @@
             "level_3_data": {
                "perk_000_name": "예술적 영감",
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Carpenter can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "carpenter_outfit": {
@@ -8618,6 +9582,125 @@
                "recipe_name": "풍향계",
                "description": "친근한 느낌을 주는 풍향계다.",
                "flavor": "TODO"
+            },
+            "ornate_leather_bound_chest_recipe": {
+               "recipe_name": "Ornate Leather Bound Chest",
+               "description": "Stylishly stores up to 64 items.",
+               "flavor": "Like the one my granda had!"
+            },
+            "ornate_table_for_one_recipe": {
+               "recipe_name": "Ornate Table for One",
+               "description": "Better than eating standing up. Unless you're watching your weight.",
+               "flavor": "Dining furniture for introverts."
+            },
+            "ornate_dining_table_recipe": {
+               "recipe_name": "Ornate Dining Table",
+               "description": "Allows a group of people to all eat together. Like grown-ups.",
+               "flavor": "Sitting down to eat is a sign of civilization."
+            },
+            "ornate_comfy_bed_recipe": {
+               "recipe_name": "Ornate Comfy Bed",
+               "description": "Eight hours will leave you as refreshed as the day you were born.",
+               "flavor": "Nobody ever wants to get out. It makes emergency evacuations awkward."
+            },
+            "ornate_dresser_recipe": {
+               "recipe_name": "Ornate Wooden Dresser",
+               "description": "A chest of drawers for storing clothing and personal possessions.",
+               "flavor": "Step 2: acquire personal possessions..."
+            },
+            "bench_recipe": {
+               "recipe_name": "Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation.",
+               "flavor": "Life is like a plate of berries."
+            },
+            "ornate_bench_recipe": {
+               "recipe_name": "Ornate Wooden Park Bench",
+               "description": "Outdoor seating for moments of relaxation.",
+               "flavor": "Life is like a plate of berries."
+            },
+            "ornate_writing_desk_recipe": {
+               "recipe_name": "Ornate Writing Desk",
+               "description": "Not at all like a raven.",
+               "flavor": "...Except it can produce a few notes, tho they are very flat."
+            },
+            "ornate_comfy_chair_recipe": {
+               "recipe_name": "Ornate Comfy Chair",
+               "description": "Its padded seat guarantees a 98% reduction in awkward splinters!",
+               "flavor": "If pillows are good for the head, surely they're even better for the butt and back!"
+            },
+            "ornate_wooden_tunnel_door_recipe": {
+               "recipe_name": "Ornate Wooden Tunnel Door",
+               "description": "Useful for blocking off tunnels in style."
+            },
+            "ornate_picket_fence_gate_recipe": {
+               "recipe_name": "Ornate Picket Fence Gate",
+               "description": "Lets people through your picket fence.",
+               "flavor": "Hope you like your neighbors!"
+            },
+            "ornate_picket_fence_recipe": {
+               "recipe_name": "Ornate Picket Fence",
+               "description": "Keeps people off your property.",
+               "flavor": "If it's not white, is our life unfulfilled?"
+            },
+            "ornate_wooden_garden_lantern_recipe": {
+               "recipe_name": "Ornate Wooden Garden Lantern",
+               "description": "A small lantern that's placed on the ground. Suitable for lighting paths or small gardens.",
+               "flavor": "Practical and romantic!"
+            },
+            "ornate_wooden_wall_lantern_recipe": {
+               "flavor": "So comfortinzzzzzzzz...",
+               "recipe_name": "Wooden Wall-Mounted Lantern",
+               "description": "A simple lantern. Place on buildings to provide light at night."
+            },
+            "ornate_wooden_double_door_recipe": {
+               "recipe_name": "Ornate Wooden Double Door",
+               "description": "Two doors are better than one.",
+               "flavor": "Some people want to make an entrance... every day."
+            },
+            "ornate_wooden_door_recipe": {
+               "recipe_name": "Ornate Reinforced Wooden Door",
+               "description": "Stronger than your average door.",
+               "flavor": "This here pattern, I learned from the Squarefolk."
+            },
+            "wooden_chair_recipe": {
+               "description": "When sitting, food is 20% more satisfying.",
+               "flavor": "Ten thousand years of research culminated in this four-legged design.",
+               "recipe_name": "Wooden Chair"
+            },
+            "ornate_wooden_chair_recipe": {
+               "description": "When sitting, food is 20% more satisfying.",
+               "flavor": "Ten thousand years of research culminated in this four-legged design.",
+               "recipe_name": "Ornate Wooden Chair"
+            },
+            "output_box_wood_recipe": {
+               "recipe_name": "Wood Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_wood_recipe": {
+               "recipe_name": "Wooden Supply Crate",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_wood_recipe": {
+               "recipe_name": "Wooden Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_wood_recipe": {
+               "recipe_name": "Wooden Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_wood_recipe": {
+               "recipe_name": "Wooden Corner Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_wood_recipe": {
+               "recipe_name": "Wooden Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
@@ -8650,6 +9733,10 @@
             "level_3_data": {
                "perk_000_name": "예술적 영감",
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight (not implemented for food)",
+               "perk_000_description": "The Cook can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for food yet!)"
             }
          },
          "cook_outfit": {
@@ -8798,20 +9885,20 @@
             "level_1_data": {
                "perk_000_name": "표준 목록",
                "perk_001_name": "국지 방어",
+               "perk_002_name": "Handyman",
                "perk_000_description": "이제 기본적인 기계와 장식품을 만들 수 있습니다.",
-               "perk_001_description": "최대 4개의 트랩과 2개의 트랩을 배치할 수 있습니다."
-            },
-            "level_4_data": {
-               "perk_000_name": "확장 목록",
-               "perk_000_description": "이제 더욱 복잡한 장치를 만들 용기가 생겼습니다."
-            },
-            "level_0_data": {
-               "perk_000_name": "핸디맨",
-               "perk_000_description": "고장난 자동문과 문, 그리고 기타 고정식 구조물을 수리할 수 ​있습니다."
+               "perk_001_description": "최대 4개의 트랩과 2개의 트랩을 배치할 수 있습니다.",
+               "perk_002_description": "The Engineer can repair broken doors, gates and other fixable structures."
             },
             "level_3_data": {
                "perk_000_name": "도시 방어",
-               "perk_000_description": "최대 8개의 트랩과 4개의 터렛을 배치할 수 있습니다."
+               "perk_000_description": "최대 8개의 트랩과 4개의 터렛을 배치할 수 있습니다.",
+               "perk_001_name": "Journeyman's Knowledge",
+               "perk_001_description": "When inspiration strikes, the Engineer may now craft an especially Fine quality of item."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Engineer can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "engineer_wrench": {
@@ -8880,9 +9967,9 @@
             }
          },
          "engineer_buffs": {
-            "inventiveness_2_buff": {
-               "display_name": "창의력 +50",
-               "description": "문을 보다 효율적으로 수리할 수 있습니다."
+            "diligence_2_buff": {
+               "display_name": "Diligence +50",
+               "description": "The engineer can repair doors more efficiently"
             }
          },
          "engineer_helm": {
@@ -9036,6 +10123,10 @@
             "level_3_data": {
                "perk_000_name": "예술적 영감",
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Mason can now create items of Excellent quality, and will make Fine quality items more often."
             }
          },
          "mason_chisel": {
@@ -9067,6 +10158,13 @@
             }
          },
          "recipes": {
+            "tools_name": "도구",
+            "storage_name": "저장고",
+            "signage_decoration_name": "신호 & 장식",
+            "building_parts_name": "건축 자재",
+            "weapons_name": "무기",
+            "furniture_name": "가구",
+            "refined_name": "Refinement",
             "bird_bath_recipe": {
                "description": "새들을 위해 물을 받아둔 석조 물통입니다.",
                "recipe_name": "새 물통",
@@ -9102,12 +10200,6 @@
                "recipe_name": "벽걸이형 가고길 장식품",
                "flavor": "Remnants of the servants of Brelor, Crownless King."
             },
-            "tools_name": "도구",
-            "storage_name": "저장고",
-            "signage_decoration_name": "신호 & 장식",
-            "building_parts_name": "건축 자재",
-            "weapons_name": "무기",
-            "furniture_name": "가구",
             "stone_bench_recipe": {
                "description": "밖에 앉아서 휴식을 취할 수 있습니다",
                "recipe_name": "석조 벤치",
@@ -9196,6 +10288,51 @@
                "recipe_name": "길드마스터의 기술",
                "description": "최고의 장인들을 볼 수 있다.",
                "flavor": "장인은 절대 도구 탓을 하지 않는다. 오직 사람들을 탓할 뿐이다. -- 명예 길드마스터, 오토 크랭크프라운"
+            },
+            "gold_flakes_recipe": {
+               "recipe_name": "Gold Flakes",
+               "description": "Used when crafting furniture to make it really pretty!",
+               "flavor": "So Shine!"
+            },
+            "gold_flakes_times_three_recipe": {
+               "recipe_name": "Gold Flakes (x3)",
+               "description": "Smash up a Gold Bar to get the Flakes back out of it!",
+               "flavor": "So many Shine!"
+            },
+            "wet_stone_recipe": {
+               "recipe_name": "Wet Stone",
+               "flavor": "This stone has been blessed with the tears of Rayya!",
+               "description": "This stone will shed water around itself."
+            },
+            "output_box_stone_recipe": {
+               "recipe_name": "Stone Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_stone_recipe": {
+               "recipe_name": "Stonework Supply Bin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_stone_recipe": {
+               "recipe_name": "Stonework Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_stone_recipe": {
+               "recipe_name": "Stonework Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_corner_ground_stone_recipe": {
+               "recipe_name": "Stonework Corner Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_stone_recipe": {
+               "recipe_name": "Stonework Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          }
       },
@@ -9219,6 +10356,10 @@
             "level_3_data": {
                "perk_000_name": "예술적 영감",
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Potter can now create items of Excellent quality, and will make Fine quality items more often."
             },
             "level_6_data": {
                "title": "일류 도예가",
@@ -9293,12 +10434,12 @@
             "red_clay_door_recipe": {
                "description": "적색 점토 벽과 어울린다.",
                "recipe_name": "적색 점토 문",
-               "flavor": ""
+               "flavor": " -- Ember Iskender, Dept of Applied Poetry"
             },
             "red_clay_window_frame_recipe": {
                "description": "적색 점토 벽과 어울린다.",
                "recipe_name": "적색 점토 창문",
-               "flavor": ""
+               "flavor": " -- Jorya Iskender, Dyemaster"
             },
             "blue_clay_door_recipe": {
                "description": "깊은 바다의 꿈을 닮은 푸른 색이다.",
@@ -9328,12 +10469,12 @@
             "clay_bed_recipe": {
                "description": "불편하지만 당신을 바닥으로부터 떨어뜨려줍니다.",
                "recipe_name": "점토 침대",
-               "flavor": ""
+               "flavor": " - Clarence, Temporary Salesperson"
             },
             "clay_dining_table_recipe": {
                "description": "당신을의 음식을 바닥으로부터 떨어뜨려줍니다.",
                "recipe_name": "점토 식탁",
-               "flavor": ""
+               "flavor": " "
             },
             "simple_clay_chair_recipe": {
                "description": "먹는동안 어디든 앉을 수 있다.",
@@ -9408,15 +10549,15 @@
             "tan_latticed_window_recipe": {
                "recipe_name": "황색 격자 창문",
                "description": "격자 모양의 황색 창문을 알게 된다면 사랑에 빠질 것입니다.",
-               "flavor": ""
+               "flavor": " -- Drenkar Iskender, Ex-Marketing Associate"
             },
             "tall_clay_window_recipe": {
                "recipe_name": "긴 점토 창문",
                "description": "부드러운 사막의 바람을 들여보내자.",
-               "flavor": ""
+               "flavor": " -Aaryn, Pragmatist"
             },
             "tan_clay_window_frame_recipe": {
-               "flavor": "",
+               "flavor": " -Isfan Dorret, Inventor of Achromatism",
                "recipe_name": "황색 점토 창틀",
                "description": "햇빛을 쬐자."
             },
@@ -9428,10 +10569,50 @@
             "blue_latticed_window_recipe": {
                "recipe_name": "청색 격자 창문",
                "description": "마음을 달래주는 격자 모양을 가진 푸른색의 창문이다.",
-               "flavor": ""
+               "flavor": " -- Farah, Professional Bugcatcher"
             },
             "wooden_sign_potter_recipe": {
                "flavor": "냄비로 만드는 것보다 덜 부서지고 쉽다."
+            },
+            "output_box_clay_recipe": {
+               "recipe_name": "Clay Finished Work Shelf",
+               "description": "Temporary storage for freshly-crafted items.",
+               "flavor": "Crafters love to show off their work!"
+            },
+            "input_bin_clay_recipe": {
+               "recipe_name": "Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_ground_clay_recipe": {
+               "recipe_name": "Ceramic Supply Rack",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_shelf_wall_clay_recipe": {
+               "recipe_name": "Ceramic Wall Supply Shelf",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_table_ground_clay_recipe": {
+               "recipe_name": "Ceramic Supply Table",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_blue_recipe": {
+               "recipe_name": "Blue Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_red_recipe": {
+               "recipe_name": "Red Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
+            },
+            "input_bin_clay_green_recipe": {
+               "recipe_name": "Green Ceramic Supply Basin",
+               "description": "A versatile container for any resource, to help keep crafters supplied.",
+               "flavor": "Think of what we can achieve when Hearthlings work together!"
             }
          },
          "potter_workbench": {
@@ -9543,17 +10724,7 @@
          },
          "snare_trap": {
             "display_name": "사냥용 덫",
-            "description": "안전하게 사냥감을 고정시킨다.",
-            "commands": {
-               "harvest_trapped_beast": {
-                  "display_name": "도축",
-                  "description": "잡힌 짐승들을 죽이고 재료를 얻자!"
-               },
-               "tame_trapped_beast": {
-                  "display_name": "길들이기",
-                  "description": "친구를 만들자! 잡힌 동물과 친해져서 펫으로 만들자."
-               }
-            }
+            "description": "안전하게 사냥감을 고정시킨다."
          },
          "trapper_buffs": {
             "speed_1_buff": {
@@ -9619,6 +10790,10 @@
             "level_3_data": {
                "perk_000_name": "예술적 영감",
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Weaver can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for clothing yet!)"
             }
          },
          "recipes": {
@@ -9674,6 +10849,7 @@
             },
             "clothing_armor_name": "옷 & 방어구",
             "toys_name": "장난감",
+            "storage_name": "Storage",
             "decorations_name": "장식",
             "crafting_materials_name": "제작 재료",
             "spool_of_thread_recipe": {
@@ -9738,6 +10914,26 @@
                "recipe_name": "푹신한 천 헬멧",
                "description": "당신의 머리를 조금 보호해줍니다.",
                "flavor": "피닉스의 날개를 입었을까, 뱀의 날개를 입었을까?"
+            },
+            "input_bin_woven_recipe": {
+               "recipe_name": "Woven Supply Basket",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "flavor": "Nothing quite like a well-supplied workshop!"
+            },
+            "input_bin_woven_blue_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Blue Woven Supply Basket"
+            },
+            "input_bin_woven_green_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Green Woven Supply Basket"
+            },
+            "input_bin_woven_red_recipe": {
+               "flavor": "Nothing quite like a well-supplied workshop!",
+               "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
+               "recipe_name": "Red Woven Supply Basket"
             }
          },
          "weaver_loom": {
@@ -9817,7 +11013,9 @@
             },
             "level_1_data": {
                "perk_000_name": "자연 회복",
-               "perk_000_description": "약초사는 숲의 정령과 교감하여 자연 재생을 이룹니다. 의지와 근면이 증가합니다."
+               "perk_001_name": "Natural Regeneration",
+               "perk_000_description": "약초사는 숲의 정령과 교감하여 자연 재생을 이룹니다. 의지와 근면이 증가합니다.",
+               "perk_001_description": "The Herbalist channels the spirits of the forest and gains natural regeneration. Willpower and Diligence increased."
             },
             "level_2_data": {
                "perk_000_name": "협업적 통찰력",
@@ -9827,13 +11025,15 @@
                "perk_000_name": "파워 메딕",
                "perk_000_description": "이제 한번에 4명까지의 부상자를 돌볼 수 있습니다."
             },
-            "level_0_data": {
-               "perk_000_name": "수습 의사",
-               "perk_000_description": "한번에 2명의 부상자를 돌볼 수 있습니다."
-            },
             "level_3_data": {
                "perk_000_name": "숙련된 아이템 사용",
-               "perk_000_description": "치료 용품의 효능을 50% 증대시킵니다."
+               "perk_000_description": "치료 용품의 효능을 50% 증대시킵니다.",
+               "perk_001_name": "Journeyman's Knowledge",
+               "perk_001_description": "When inspiration strikes, the Herbalist may now craft an especially Fine quality of item.  (Not implemented for healing items yet!)"
+            },
+            "level_5_data": {
+               "perk_000_name": "Master's Insight",
+               "perk_000_description": "The Herbalist can now create items of Excellent quality, and will make Fine quality items more often.  (Not implemented for healing items yet!)"
             },
             "level_6_data": {
                "title": "일류 약초사"
@@ -9924,13 +11124,11 @@
             "display_name": "성직자",
             "description": "전장을 뛰는 전투 치유사입니다.",
             "requirements": "약초사로 제작 가능.",
-            "level_0_data": {
-               "perk_000_name": "치유 아우라",
-               "perk_000_description": "성직자 주변 하슬링들을 정기적으로 치유합니다."
-            },
             "level_1_data": {
                "perk_000_name": "경미한 기운",
-               "perk_000_description": "성직자 주변 하슬링들의 근력을 미약하게 증가시킵니다."
+               "perk_001_name": "Minor Strength",
+               "perk_000_description": "성직자 주변 하슬링들의 근력을 미약하게 증가시킵니다.",
+               "perk_001_description": "The cleric's presence improves the muscle of those around them"
             },
             "level_2_data": {
                "perk_000_name": "동정심 상승",
@@ -10049,15 +11247,13 @@
             "requirements": "대장장이로 제작 가능.",
             "level_1_data": {
                "perk_000_name": "피해량 감소",
-               "perk_000_description": "장비 방어력의 10%를 추가로 얻습니다."
+               "perk_001_name": "Damage Reduction Rank 1",
+               "perk_000_description": "장비 방어력의 10%를 추가로 얻습니다.",
+               "perk_001_description": "The knight gains an additional 10% defense from equipment"
             },
             "level_4_data": {
                "perk_000_name": "피해량 감소 (랭크 2)",
                "perk_000_description": "장비 방어력의 20%를 추가로 얻습니다."
-            },
-            "level_0_data": {
-               "perk_000_name": "용기 강화",
-               "perk_000_description": "스태미나 및 용기가 상승하며, 몬스터들의 시선을 집중시킵니다."
             },
             "level_3_data": {
                "perk_000_name": "용기 강화 (랭크 2)",
@@ -10112,8 +11308,8 @@
             "npc_thief_description": {
                "display_name": "도적",
                "description": "비축소의 자원들을 훔칩니다.",
-               "level_0_data": {
-                  "title": "도적"
+               "level_1_data": {
+                  "title": "Thief"
                }
             }
          }
@@ -10125,8 +11321,11 @@
          "description": "마을의 시민",
          "job": {
             "starting_level_title": "수습 [str(self.stonehearth:job.curr_job_name)]",
+            "mid_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Journeyman [str(self.stonehearth:job.curr_job_name)]",
+            "max_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] Master [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "레벨 [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)]이(가) [str(i18n_data.job_name)] 레벨 [str(i18n_data.level_number)]을(를) 달성했습니다!",
+            "default_promote_announcement": "[name(i18n_data.entity)] is now a Level [str(i18n_data.level_number)] [str(i18n_data.job_name)]!",
             "level_up_perk_description": "최대 체력 +10",
             "attribute_up_desc": "모든 속성이 증가했습니다!"
          }
@@ -10150,6 +11349,10 @@
          "jerky": {
             "display_name": "육포",
             "description": "질기지만 영양가는 많아!"
+         },
+         "bug_meat": {
+            "description": "Sticky, but nutritious!",
+            "display_name": "Bug Meat"
          }
       },
       "monster": {
@@ -10157,6 +11360,7 @@
             "starting_level_title": "수습 [str(self.stonehearth:job.curr_job_name)]",
             "default_level_title": "레벨 [str(self.stonehearth:job.curr_job_level)] [str(self.stonehearth:job.curr_job_name)]",
             "default_level_announcement": "[name(i18n_data.entity)]이(가) [str(i18n_data.job_name)] 레벨 [str(i18n_data.level_number)]을(를) 달성했습니다!",
+            "default_promote_announcement": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_promote_announcement)",
             "general_description_desc": "최대 체력이 증가했습니다!",
             "attribute_up_desc": "모든 속성이 증가했습니다!"
          }

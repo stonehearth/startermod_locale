@@ -113,7 +113,7 @@
             height: 111px;
             margin-left: 39px;
             margin-top: -17px;
-            background-repeat: no-repeat; 
+            background-repeat: no-repeat;
             background-size: contain;
          }
 
@@ -354,126 +354,6 @@
       #backpackTab {
          display: none;
       }
-
-      #appealTab {
-         display: none;
-         padding-left: 20px;
-
-         .item-preference-title {
-            .controlFont;
-            font-size: 23px;
-            color: #bca058;
-            padding: 10px 0px;
-         }
-
-         .sentiment-title {
-            .controlFont;
-            font-size: 19px;
-            background-position: left center;
-            background-repeat: no-repeat;
-            background-size: 40px 40px;
-            display: inline-block;
-            vertical-align: text-bottom;
-            padding-left: 50px;
-            width: 80px;
-            height: 68px;
-            line-height: 68px;
-
-            &.sentiment-love {
-               color: #ef92bd;
-               background-image: url('images/item_preference_love.png');
-            }
-
-            &.sentiment-like {
-               color: #efde7f;
-               background-image: url('images/item_preference_like.png');
-            }
-
-            &.sentiment-dislike {
-               color: #8193cb;
-               background-image: url('images/item_preference_dislike.png');
-            }
-         }
-         
-         #itemPreferences {
-            padding-bottom: 6px;
-
-            .item {
-               display: inline-block;
-               position: relative;
-               
-               .icon-unrevealed {
-                  width: 68px;
-                  height: 68px;
-               }
-               .icon-revealed {
-                  width: 60px;
-                  height: 60px;
-                  padding: 4px;
-                  background-image: url('images/item_background.png');
-               }
-               .sentiment {
-                  width: 24px;
-                  height: 24px;
-                  position: absolute;
-                  bottom: 0;
-                  right: 0;
-               }
-
-               .appeal-notification-pip {
-                  position: absolute;
-                  top: 0px;
-                  right: 0px;
-               }
-            }
-         }
-
-         .appeal-bar-title {
-            .controlFont;
-            font-size: 19px;
-            color: #bca058;
-            padding-top: 15px;
-            padding-bottom: 5px;
-            display: inline-block;
-         }
-         
-         #appealBar {
-            text-align: center;
-            position: relative;
-            height: 12px;
-             
-            .barSection {
-               display: inline-block;
-               height: 100%;
-               position: absolute;
-               outline: 3px black solid;
-                
-               &.positive {
-                  background: #bda25d;
-               }
-               &.neutral {
-                  background: #949494;
-               }
-               &.negative {
-                  background: #516590;
-               }
-            }
-         }
-         
-         .appealArrows {
-            height: 40px;
-            position: relative;
-            text-align: center;
-            .arrow {
-               position: absolute;
-               width: 38px;
-               span, img {
-                  position: relative;
-                  left: -19px;
-               }
-            }
-         }
-      }
    }
 
    .statsTable {
@@ -533,25 +413,23 @@
          left: 17px;
       }
 
-    
-
-
-
-
-
-
-
-
-
+      #happinessBarFrame {
+         position: absolute;
+         width: 518px;
+         height: 79px;
+         left: 93px;
+         bottom: 20px;
+         background-image: url(http://radiant/stonehearth/ui/game/character_sheets/citizen_character_sheet/images/morale_bar.png);
+         background-repeat: no-repeat;
+         z-index: 2;
+      }
 
       #happinessBar {
          position: absolute;
          height: 50px;
          left: 102px;
          bottom: 39px;
-         border-width: 10px 9px 20px 9px;
-         border-image: url(images/morale_bar.png) 11 8 20 8;
-         border-style: solid;
+         width: 500px;
 
          .moodBarSegment {
             float: left;
@@ -632,7 +510,6 @@
    #thoughtsSection {
       font-size: 15px;
       height: 238px;
-	  text-shadow: none;
 
       #thoughtEntries {
          margin-left: 10px;
@@ -656,17 +533,15 @@
          margin-right: 22px;
       }
 
-      .happinessDelta {
-         .outlined(black, 1.5px, 1px);
-         font-size: 14px;
-         float: right;
-         margin-top: 7px;
+      .happinessDeltaSymbol {
+         font-size: 22px;
+         float: left;
+         margin-top: 1px;
+         margin-left: 5px;
+         letter-spacing: 1.5px;
       }
 
       .thoughtEntryRow {
-        &:hover:not(.disabled) {
-            -webkit-filter: brightness(1.4);
-         }
          background-image: url(images/thought_entry_bg.png);
          background-repeat: no-repeat;
          height: 44px;
@@ -675,31 +550,24 @@
       .thoughtEntryData {
          height: 37px;
          padding-bottom: 11px;
- 		 padding-left: 11px;
-         padding-right: 11px;
          position: relative;
       }
 
       .thoughtDisplayName {
-         .outlined(black, 1.5px, 1px);
-         font-size: 13px;
-         color: white;
+         font-size: 18px;
+         margin-left: 10px;
          margin-top: 7px;
-         margin-left: 6px;
          float: left;
       }
 
-      .duration { 
-         float: left;
-         width: 30px;
+      .duration {
+         float: right;
          font-size: 13px;
-         font-weight: bold;
-         color: @mudBrownColor;
-         margin-top: 7px;
+         margin-right: 12px;
+         margin-top: 8px;
       }
 
       .thoughtStack {
-		.outlined(black, 1.5px, 1px);
          position: absolute;
          right: 262px;
          top: 30px;
@@ -749,24 +617,14 @@
    #tabs {
       position: absolute;
       top: -52px;
-
-      .tab {
-          height: 23px;
-          font-size: 17px !important;
-
-          .appeal-notification-pip {
-            position: absolute;
-            top: -5px;
-            right: -5px;
-         }
-      }
    }
+
 }
 
 .buffTooltip {
    .outlined;
-   font-size: 12px;
-   margin-top: 10px;
+   font-size: 17px;
+   margin-top: 1px;
 
    .buffTooltipImg {
       width: 29px;
@@ -804,65 +662,6 @@
    }
 }
 
-.moodBarTooltip {
-   width: 350px;
-
-   .moodTitle {
-      .controlFont;
-      display: inline-block;
-      font-size: 17px;
-      position: absolute;
-      top: 8px;
-      left: 10px;
-      bottom: 28px;
-   }
-   .currentMood {
-      font-size: 17px;
-      left: 100px;
-      color: white;
-   }
-   .hoveredMoodDescription {
-      display: block;
-      background-color: @darkGreyBrownColor;
-      height: 66px;
-      width: 350px;
-      margin-top: 22px;
-      padding-top: 8px;
-      color: #989898;
-
-      .hoveredMoodTitle {
-         position: relative;
-         margin-left: 8px;
-         margin-right: 8px;
-         color: @barleyBrownColor;
-
-         .name {
-            display: inline-block;
-            font-family: @controlFontFamily;
-            float: left;
-            color: @barleyBrownColor;
-         }
-         .threshold {
-            display: inline-block;
-            font-size: 12px;
-            font-family: @baseFontFamily;
-            float: right;
-            color: #b8a26c;
-         }
-      }
-
-      .gameplayText {
-         display: block;
-         position: relative;
-         margin-top: 28px;
-         margin-left: 10px;
-         font-size: 13px;
-         font-weight: bold;
-         clear: both;
-         font-family: @baseFontFamily;
-      }
-   }
-}
 .lockedTooltipLabel {
    color: gray;
 }

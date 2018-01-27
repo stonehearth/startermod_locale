@@ -4,20 +4,15 @@
    left: 0px;
    right: 0px;
    bottom: 0px;
-   background-color: black;
-   background-image: url('./images/bg.jpg');
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: center center;
+   background: url('./images/bg.jpg');
+   background-size: cover;
    color: #fff;
    padding: 20px;
    display: flex;
 
    #randomScreen {
       position: absolute;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center center;
+      background-size: cover;
       left: 0px;
       top: 0px;
       width: 100%;

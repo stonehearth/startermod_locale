@@ -99,7 +99,6 @@
             width: 45px;
             height: 45px;
             background-size: contain;
-		    background-repeat: no-repeat;
          }
       }
    }

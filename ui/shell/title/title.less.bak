@@ -4,12 +4,19 @@
    left: 0;
    right: 0;
    bottom: 0;
-   background-color: black;
    background-image: url(./images/radiant.png);
    background-position: center center;
    background-repeat: no-repeat;
    display: none;
 }
+
+.dev_build {
+   background-image: url(./images/dev-background.jpg) !important;
+
+   #logo {
+      content: url(./images/stonehearth_logo_unstable.png)  !important;
+   }
+};
 
 #titlescreen {
    //background: #529864;
@@ -23,38 +30,6 @@
    bottom: 0;
    text-align: center;
    display: none;
-
-   &.dev_build {
-      #splashForeground {
-         background-image: url(./images/dev_foreground.png) !important;
-      }
-
-      #logo {
-         content: url(./images/stonehearth_logo_unstable.png) !important;
-      }
-   }
-
-   #splashForeground, #splashVignette {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-   }
-
-   #splashForeground {
-      background: url(./images/foreground.png);
-      background-size: contain;
-      background-position: bottom left;
-      background-repeat: no-repeat;
-   }
-
-   #splashVignette {
-      background: url(./images/vignette.png);
-      background-size: 100% 100%;
-      background-position: center center;
-      background-repeat: no-repeat;
-   }
 
    .differentVersionText {
       color: red;
