@@ -1255,7 +1255,7 @@
                "unbound": "unbound",
                "conflict_dialog": {
                   "title": "Binding Conflict",
-                  "message": "",
+                  "message": "[str(conflicts)]가 이미 <strong>[str(combo)]<&frasl;strong>를 사용하고 있습니다.",
                   "choice_replace": "Unbind Existing",
                   "choice_keep": "Keep All",
                   "choice_cancel": "Cancel"
@@ -4943,67 +4943,67 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "광신자",
-               "description": ""
+               "description": "이 하슬링은 무슨 비밀스러운 토끼 신에 대해 계속 중얼거리고 있어요. 영원히 말이죠. 무슨 일이죠?"
             }
          },
          "jokester": {
             "jokester_trait": {
-               "display_name": "Jokester",
-               "description": "[name(i18n_data.entity)] loves to tell jokes. Are they good? It's tough to say, but they frequently seem to leave others with a smile."
+               "display_name": "익살꾼",
+               "description": "[name(i18n_data.entity)]은(는) 농담하는 것을 좋아합니다. 그들은 좋은 사람인가요? 말할 필요도 없지만 종종 다른 사람들의 미소를 지우는 것처럼 보입니다."
             }
          },
          "charismatic": {
             "charismatic_trait": {
-               "display_name": "Charismatic",
-               "description": "When [name(i18n_data.entity)] walks into a room, people always take notice."
+               "display_name": "카리스마",
+               "description": "[name(i18n_data.entity)]가 방 안으로 들어가면, 사람들은 항상 주의를 기울입니다."
             }
          },
          "gregarious": {
             "gregarious_trait": {
-               "display_name": "Gregarious",
-               "description": "[name(i18n_data.entity)] loves discussing the day's events with others and gets a bit lonely when they don't."
+               "display_name": "사교적",
+               "description": "[name(i18n_data.entity)]는 다른 사람들과 이야기하는 것을 좋아하지만, 그렇지 않을 때는 좀 외롭습니다."
             }
          },
          "loner": {
             "loner_trait": {
-               "display_name": "Loner",
-               "description": "[name(i18n_data.entity)] doesn't really care for the company of others. They prefer to be by themselves."
+               "display_name": "고독한 사람",
+               "description": "[name(i18n_data.entity)]은(는) 다른 이들을 전혀 살펴보지 않습니다. 오직 자기 자신만을 선호합니다."
             }
          },
          "empathetic": {
             "empathetic_trait": {
-               "display_name": "Empathetic",
-               "description": "[name(i18n_data.entity)] is really sensitive to the mood of the town, and it always seems to rub off on them."
+               "display_name": "감정적",
+               "description": "[name(i18n_data.entity)]은(는) 마을의 분위기에 정말로 민감합니다. 그리고 그 분위기에 휩쓸리곤 합니다."
             }
          },
          "opinionated": {
             "opinionated_trait": {
-               "display_name": "Opinionated",
-               "description": "[name(i18n_data.entity)] has an opinion on everything, and isn't shy about sharing it."
+               "display_name": "독선적",
+               "description": "[name(i18n_data.entity)]은(는) 모든 것에 대해 의견을 갖고 있으며 공유하는 것에 대해 수줍어하지 않습니다."
             }
          },
          "magnificent_beard": {
             "magnificent_beard_trait": {
-               "display_name": "Magnificent Beard",
-               "description": "This hearthling has a truly magnificent beard."
+               "display_name": "정말 멋진 수염",
+               "description": "이 하슬링은 정말로 멋지고 멋진 수염을 가지고 있습니다."
             }
          },
          "stoic": {
             "stoic_trait": {
-               "display_name": "Stoic",
-               "description": "Due to their even temperament, it takes a lot to make this Hearthling happy or sad."
+               "display_name": "금욕주의",
+               "description": "이 하슬링을 행복하게 또는 슬프게 만드는 데는 많은 시간이 걸립니다."
             }
          },
          "gourmand": {
             "gourmand_trait": {
-               "display_name": "Gourmand",
-               "description": "Only the tastiest of foods are welcome to [name(i18n_data.entity)]'s palate. They become happy when they eat higher quality food, but low quality meals are quite distasteful."
+               "display_name": "미식가",
+               "description": "오직 최상의 음식만이 [name(i18n_data.entity)]의 입맛을 만족시킵니다. 고품질의 음식은 행복하게 하지만, 저품질 음식은 매우 맛 없어 합니다.."
             }
          },
          "goat": {
             "goat_trait": {
-               "display_name": "Goat",
-               "description": "[name(i18n_data.entity)] will basically eat anything. They are not picky at all, sometimes to the disgust of those around them."
+               "display_name": "역대급",
+               "description": "[name(i18n_data.entity)]은(는) 기본적으로 무엇이든지 잘 먹습니다. 그들은 전혀 까다롭지 않지만, 때때로 주변 사람들을 싫어합니다."
             }
          }
       },
@@ -5085,8 +5085,8 @@
                   "tooltip": "지금 다른 사람이랑 방을 같이 쓰고 있어요. 제 사생활을 조금 더 지켜주었으면 합니다."
                },
                "well_rested": {
-                  "display_name": "Well rested",
-                  "tooltip": "Ahh, sleeping in my own bed without hearing other people snoring always leaves me refreshed."
+                  "display_name": "숙면을 취함",
+                  "tooltip": "아, 다른 사람의 코골이가 없는 내 침대에서 자고 일어나면 매우 상쾌해집니다."
                },
                "slept_outside": {
                   "display_name": "실외에서 잠",

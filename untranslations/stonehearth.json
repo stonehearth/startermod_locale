@@ -1255,7 +1255,7 @@
                "unbound": "unbound",
                "conflict_dialog": {
                   "title": "Binding Conflict",
-                  "message": "\"<strong>[str(combo)]</strong>\" is already used by [str(conflicts)].",
+                  "message": "<strong>[str(combo)]</strong> is already used by [str(conflicts)].",
                   "choice_replace": "Unbind Existing",
                   "choice_keep": "Keep All",
                   "choice_cancel": "Cancel"
@@ -4943,7 +4943,7 @@
          "cultist": {
             "cultist_trait": {
                "display_name": "Cultist",
-               "description": "This hearthling keeps mumbling about some sort of secret \"bunny god\" sleeping eternally. What's that about?"
+               "description": "This hearthling keeps mumbling about some sort of secret  bunny god sleeping eternally. What's that about?"
             }
          },
          "jokester": {
@@ -5112,7 +5112,7 @@
                },
                "offended_palate": {
                   "display_name": "Offended Palate",
-                  "tooltip": "Bleh, I hate eating stuff like [str(foodname)]. There's just no \"zazz\" to it!"
+                  "tooltip": "Bleh, I hate eating stuff like [str(foodname)]. There's just no  zazz to it!"
                },
                "pleased_palate": {
                   "display_name": "Pleased Palate",
@@ -10434,12 +10434,12 @@
             "red_clay_door_recipe": {
                "description": "Matches red clay walls",
                "recipe_name": "Red Clay Door",
-               "flavor": "\"The red hints at a mystery, allure. What lies beyond yon red door?\" -- Ember Iskender, Dept of Applied Poetry"
+               "flavor": "The red hints at a mystery, allure. What lies beyond yon red door? -- Ember Iskender, Dept of Applied Poetry"
             },
             "red_clay_window_frame_recipe": {
                "description": "Matches red clay walls",
                "recipe_name": "Red Clay Window",
-               "flavor": "\"Industry standard for a reason\" -- Jorya Iskender, Dyemaster"
+               "flavor": "Industry standard for a reason -- Jorya Iskender, Dyemaster"
             },
             "blue_clay_door_recipe": {
                "description": "Blue like the dream of distant ocean.",
@@ -10469,12 +10469,12 @@
             "clay_bed_recipe": {
                "description": "Uncomfortable, but it gets you off the ground",
                "recipe_name": "Clay Bed",
-               "flavor": "\"It's like a pot, for sleeping!\" - Clarence, Temporary Salesperson"
+               "flavor": "It's like a pot, for sleeping! - Clarence, Temporary Salesperson"
             },
             "clay_dining_table_recipe": {
                "description": "Gets your food off the ground!",
                "recipe_name": "Clay Dining Table",
-               "flavor": "\"An elevated environment for elevated conversation\" "
+               "flavor": "An elevated environment for elevated conversation "
             },
             "simple_clay_chair_recipe": {
                "description": "Somewhere to sit while eating",
@@ -10549,15 +10549,15 @@
             "tan_latticed_window_recipe": {
                "recipe_name": "Tan Latticed Window",
                "description": "The latticed window you know and love, in tan",
-               "flavor": "\"Lets in the bugs, but at least not the really big ones!\" -- Drenkar Iskender, Ex-Marketing Associate"
+               "flavor": "Lets in the bugs, but at least not the really big ones! -- Drenkar Iskender, Ex-Marketing Associate"
             },
             "tall_clay_window_recipe": {
                "recipe_name": "Tall Clay Window",
                "description": "Still lets in the soft desert air",
-               "flavor": "\"Windowsill can cool a really tall pie\" -Aaryn, Pragmatist"
+               "flavor": "Windowsill can cool a really tall pie -Aaryn, Pragmatist"
             },
             "tan_clay_window_frame_recipe": {
-               "flavor": "\"No, I didn't forget the dye.\" -Isfan Dorret, Inventor of Achromatism",
+               "flavor": "No, I didn't forget the dye. -Isfan Dorret, Inventor of Achromatism",
                "recipe_name": "Tan Clay Window Frame",
                "description": "Lets the sun in"
             },
@@ -10569,7 +10569,7 @@
             "blue_latticed_window_recipe": {
                "recipe_name": "Blue Latticed Window",
                "description": "A soothing blue latticed window",
-               "flavor": "\"No but really, where is this dye coming from?\" -- Farah, Professional Bugcatcher"
+               "flavor": "No but really, where is this dye coming from? -- Farah, Professional Bugcatcher"
             },
             "wooden_sign_potter_recipe": {
                "flavor": "Less fragile and easier than hanging a real pot!"
