@@ -5,6 +5,9 @@
       },
       "en-DEV": {
          "display_name": "English(Dev)"
+      },
+      "fr-FR": {
+         "display_name": "Français"
       }
    }
 }
