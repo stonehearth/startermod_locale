@@ -1,4 +1,15 @@
 # startermod_locale
+
+## Summary
+
+- [About](#about)
+- [How it works](#how-it-works)
+- [Note](#note)
+- [How to translate en.json](#how-to-translate-enjson)
+- [How to contribute to french translation?](#how-to-contribute-to-french-translation)
+   - [Contributing?](#how-to-contribute-to-french-translation)
+   - [Instructions?](#instructions)
+
 ##Update:
 
 The overrides method allows any mod to provide a translation for any other mod.
@@ -100,3 +111,31 @@ The Chinese file might look like:<br>
       "status_text": {
          "chase_entity": "追逐[name(data.target)]",
   ````
+
+##How to contribute to french translation?
+
+**Contributing "not collaborator"** | **Contributing collaborator**
+--- | ---
+1. Fork it!<br> 2. Create your feature branch: `git checkout -b my-new-feature`<br> 3. Commit your changes: `git commit -m "Add your new feature"`<br> 4. Push to the branch: `git push origin my-new-feature`<br> 5. Submit a pull request. | 1. Create your feature branch: `git checkout -b my-new-feature`<br> 2. Commit your changes: `git commit -m 'Add some new feature'`<br> 3. Push to the branch: `git push origin my-new-feature`<br> 4. Submit a pull request.<br> Optional : Add/Set labels and milestone =)
+
+###Instructions
+
+* Don't forget in french language a space before a punctuation `;:!?`
+* In French language a uppercase it's only: the beginning of the sentence and for proper names.
+* UTF8 encoding (without BOM)
+* Particular word (translation) : 
+
+**English** | **French**
+--- | ---
+Goblins | Gobelins
+hearthling/citizen | hearthling
+frostsnap | perce-neige
+silkweed | fil-de-soie
+brightbell | jacinthe rose
+Diamond Star | Étoile Diamant
+Kobold | kobold
+Red Kiln | Kiln Rouge
+Poyo | poyo
+Carpenter | Menuisier
+Phoenix Empire | empire Phénix
+Phoenix | empire Phénix
