@@ -10290,49 +10290,49 @@
                "flavor": "장인은 절대 도구 탓을 하지 않는다. 오직 사람들을 탓할 뿐이다. -- 명예 길드마스터, 오토 크랭크프라운"
             },
             "gold_flakes_recipe": {
-               "recipe_name": "Gold Flakes",
-               "description": "Used when crafting furniture to make it really pretty!",
-               "flavor": "So Shine!"
+               "recipe_name": "금 가루",
+               "description": "가구를 만들 때 씁니다 금가루는 정말 예뻐요!",
+               "flavor": "정말 빛나!"
             },
             "gold_flakes_times_three_recipe": {
-               "recipe_name": "Gold Flakes (x3)",
-               "description": "Smash up a Gold Bar to get the Flakes back out of it!",
-               "flavor": "So many Shine!"
+               "recipe_name": "금 가루 (x3)",
+               "description": "금 주괴를 부서 금 가루로 냈어!",
+               "flavor": "엄청 많이 빛나!"
             },
             "wet_stone_recipe": {
-               "recipe_name": "Wet Stone",
-               "flavor": "This stone has been blessed with the tears of Rayya!",
-               "description": "This stone will shed water around itself."
+               "recipe_name": "젖은 돌",
+               "flavor": "이 돌은 라야의 눈물 축복을 받았어!",
+               "description": "이 돌은 주변에 물을 보관할거야"
             },
             "output_box_stone_recipe": {
-               "recipe_name": "Stone Finished Work Shelf",
-               "description": "Temporary storage for freshly-crafted items.",
-               "flavor": "Crafters love to show off their work!"
+               "recipe_name": "돌로 마감된 작업 선반",
+               "description": "막 만들어진 제품을 위한 임시 저장소",
+               "flavor": "공예가들은 그들의 결과물을 보는걸 좋아합니다."
             },
             "input_bin_stone_recipe": {
-               "recipe_name": "Stonework Supply Bin",
-               "description": "A versatile container for any resource, to help keep crafters supplied.",
-               "flavor": "Think of what we can achieve when Hearthlings work together!"
+               "recipe_name": "석조 공급 통",
+               "description": "어떤 자원이라도 담을 수 있는 다용도 저장소, 공예가들에게 재료를 제공해 줍니다.",
+               "flavor": "하슬링이 함께 일했을 때 무엇을 성취할 수 있을지 생각해보세요!"
             },
             "input_shelf_wall_stone_recipe": {
-               "recipe_name": "Stonework Wall Supply Shelf",
-               "description": "A versatile container for any resource, to help keep crafters supplied.",
-               "flavor": "Think of what we can achieve when Hearthlings work together!"
+               "recipe_name": "석조 벽 공급 선반",
+               "description": "어떤 자원이라도 담을 수 있는 다용도 저장소, 공예가들에게 재료를 제공해 줍니다.",
+               "flavor": "하슬링이 함께 일했을 때 무엇을 성취할 수 있을지 생각해보세요!"
             },
             "input_shelf_ground_stone_recipe": {
-               "recipe_name": "Stonework Supply Rack",
-               "description": "A versatile container for any resource, to help keep crafters supplied.",
-               "flavor": "Think of what we can achieve when Hearthlings work together!"
+               "recipe_name": "석조 공급 받침대",
+               "description": "어떤 자원이라도 담을 수 있는 다용도 저장소, 공예가들에게 재료를 제공해 줍니다.",
+               "flavor": "하슬링이 함께 일했을 때 무엇을 성취할 수 있을지 생각해보세요!"
             },
             "input_corner_ground_stone_recipe": {
-               "recipe_name": "Stonework Corner Supply Rack",
-               "description": "A versatile container for any resource, to help keep crafters supplied.",
-               "flavor": "Think of what we can achieve when Hearthlings work together!"
+               "recipe_name": "석조 코너 공급 받침대",
+               "description": "어떤 자원이라도 담을 수 있는 다용도 저장소, 공예가들에게 재료를 제공해 줍니다.",
+               "flavor": "하슬링이 함께 일했을 때 무엇을 성취할 수 있을지 생각해보세요!"
             },
             "input_table_ground_stone_recipe": {
-               "recipe_name": "Stonework Supply Table",
-               "description": "A versatile container for any resource, to help keep crafters supplied.",
-               "flavor": "Think of what we can achieve when Hearthlings work together!"
+               "recipe_name": "석조 공급 상",
+               "description": "어떤 자원이라도 담을 수 있는 다용도 저장소, 공예가들에게 재료를 제공해 줍니다.",
+               "flavor": "하슬링이 함께 일했을 때 무엇을 성취할 수 있을지 생각해보세요!"
             }
          }
       },
