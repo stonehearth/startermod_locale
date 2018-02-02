@@ -10125,8 +10125,8 @@
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             },
             "level_5_data": {
-               "perk_000_name": "Master's Insight",
-               "perk_000_description": "The Mason can now create items of Excellent quality, and will make Fine quality items more often."
+               "perk_000_name": "장인의 시야",
+               "perk_000_description": "석공은 이제 훌륭한 제품을 만들 수 있습니다. 그리고 좋은 제품들을 더 자주 만들어 냅니다."
             }
          },
          "mason_chisel": {
@@ -10188,7 +10188,7 @@
             "cobblestone_fence_recipe": {
                "description": "투박하고 튼튼한 벽입니다.",
                "recipe_name": "코블스톤 울타리",
-               "flavor": "Use the earth itself to form the walls of the pasture? Genius!"
+               "flavor": "땅은 이용해 목장 벽을 만들라고? 천재적이야!"
             },
             "cook_spoon_recipe": {
                "description": "하슬링을 요리사로 전직시키기 위해 필요합니다.",
@@ -10213,7 +10213,7 @@
             "stone_bricks_recipe": {
                "description": "성이나 길과 같은 석조 구조물의 핵심적인 재료이다.",
                "recipe_name": "돌 벽돌 무더기",
-               "flavor": "Tis a lucky thing, boy, that the square is the natural shape within most rocks. --Garen Knapper"
+               "flavor": "이건 행운의 물건이야, 꼬마야, 저 광장은 자연적인 대부분의 돌과 같지--Garen Knapper"
             },
             "stone_chair_recipe": {
                "description": "엄청 편안하지 않지만, 지위의 상징이다.",
@@ -10223,7 +10223,7 @@
             "stone_chest_recipe": {
                "description": "64개의 물건을 넣을 수 있는 인상적인 상자입니다.",
                "recipe_name": "석조 상자",
-               "flavor": "'Listen up, kid. All the chests in Hemgorir-Under-Mountain looked like this.'--Edolf, Wandering Bard"
+               "flavor": "'잘 들어, 꼬마야, 헴고리르 밑의 산에 모든 상자는 모두 이렇게 생겼어' --이돌프, 방랑 시인"
             },
             "stone_garden_lantern_recipe": {
                "description": "좋은 분위기를 내는 고대의 느낌이 나는 랜턴이다.",
@@ -10236,7 +10236,7 @@
                "flavor": "고대 무기의 현대적 각색"
             },
             "stone_table_recipe": {
-               "description": "It's considerable weight gives it a sense of gravitas. For serious business only.",
+               "description": "상당한 무게가 중력을 느끼게 합니다. 심각한 일만 논합니다.",
                "recipe_name": "석조",
                "flavor": "어떠한 사자라도 이 것에 의해 다친다."
             },
@@ -10246,14 +10246,14 @@
                "flavor": "반대 : 무겁다. 찬성 : 불이 나지 않을 것 같다."
             },
             "tower_brazier_recipe": {
-               "description": "Fashioned after a castle tower, it provides a strong beacon at night.",
+               "description": "성 탑 위를 꾸미고, 밤에 밝은 봉화를 피웁니다.",
                "recipe_name": "타워 화로",
-               "flavor": "Great for lining garden paths and intimidating guests."
+               "flavor": "오솔길의 길을 밝히고 적을 현혹시킵니다."
             },
             "mason_workbench_recipe": {
                "description": "석공의 작업 중 대부분을 진행하기 위해서 필요합니다.",
                "recipe_name": "석공의 작업대",
-               "flavor": "Tappety-tap; Make the earth sing, Raise Brelor's ghost, Watch the mountain take wing."
+               "flavor": "쾅 -쾅; 땅이 노래하게, 날아오르는 브렐로의 유령, 지켜보던 산은 날개를 붙잡네"
             },
             "mason_pedestal_recipe": {
                "description": "돌로 작품을 만들기 위한 충분한 공간이 있습니다.",
@@ -10282,7 +10282,7 @@
             "roadside_shrine_recipe": {
                "recipe_name": "풍요의 분수",
                "description": "관대함과 믿음이 가득한 장소",
-               "flavor": "Cid fashioned his breastplate into a basket and brought the wealth of the rich to the bedsides of the poor --Edison Arn, Church of Plenty"
+               "flavor": "시드 풍의 그의 갑옷을 부자들의 부를 가난한 사람들의 곁으로 가져왔습니다 -- 에디슨 안, 교회의 기부"
             },
             "craftsman_statue_recipe": {
                "recipe_name": "길드마스터의 기술",
