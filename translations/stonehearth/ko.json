@@ -10193,7 +10193,7 @@
             "cook_spoon_recipe": {
                "description": "하슬링을 요리사로 전직시키기 위해 필요합니다.",
                "recipe_name": "요리사의 국자",
-               "flavor": "요리하자!!!!!! -- 알톤 시인"
+               "flavor": "요리하자!!!!!! -- 시인 알톤"
             },
             "gargoyle_recipe": {
                "description": "벽들을 장식하기 위한 고딕 양식의 조각",
@@ -10674,7 +10674,7 @@
             }
          },
          "shepherd_outfit": {
-            "display_name": "양차기 유니폼",
+            "display_name": "양치기 유니폼",
             "description": "모든 양치기들을 위한 유니폼"
          },
          "shepherd_pasture": {
@@ -10824,7 +10824,7 @@
             },
             "curtains_recipe": {
                "description": "Dresses up an otherwise ordinary window.",
-               "recipe_name": "매력적인 커튼",
+               "recipe_name": "예쁜 커튼",
                "flavor": "Light-blocking technology encourages sleeping-in."
             },
             "fur_rug_recipe": {
