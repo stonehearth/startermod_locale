@@ -10125,7 +10125,7 @@
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             },
             "level_5_data": {
-               "perk_000_name": "장인의 시야",
+               "perk_000_name": "장인의 통찰력",
                "perk_000_description": "석공은 이제 훌륭한 제품을 만들 수 있습니다. 그리고 좋은 제품들을 더 자주 만들어 냅니다."
             }
          },
@@ -10792,8 +10792,8 @@
                "perk_000_description": "영감이 떠올라서, 뜻하지 않은 방법으로 멋진 장식할 수 있습니다."
             },
             "level_5_data": {
-               "perk_000_name": "Master's Insight",
-               "perk_000_description": "The Weaver can now create items of Excellent quality, and will make Fine quality items more often. (Not implemented for clothing yet!)"
+               "perk_000_name": "장인의 통찰력",
+               "perk_000_description": "방직공은 이제 훌륭한 제품을 만들 수 있습니다. 그리고 좋은 제품들을 더 자주 만들어 냅니다."
             }
          },
          "recipes": {
@@ -10809,7 +10809,7 @@
             },
             "bolt_of_cloth_recipe": {
                "description": "Used to create more comfortable furniture.",
-               "recipe_name": "평범한 옷감",
+               "recipe_name": "기본 옷감",
                "flavor": "To make thicker by the width of one string: add string. Repeat 1,000,000 times."
             },
             "cloth_bolt_recipe": {
@@ -10849,7 +10849,7 @@
             },
             "clothing_armor_name": "옷 & 방어구",
             "toys_name": "장난감",
-            "storage_name": "Storage",
+            "storage_name": "저장고",
             "decorations_name": "장식",
             "crafting_materials_name": "제작 재료",
             "spool_of_thread_recipe": {
@@ -10878,7 +10878,7 @@
                "flavor": "당신의 마을은 당신을 좋아해!"
             },
             "worker_outfit_winter_recipe": {
-               "description": "A heavy wool coat, for cold winter nights. The worker who dons this upgrade outfit will move faster.",
+               "description": "추운 겨울밤을 위한 두꺼운 울 코트. 일꾼들은 향상된 이 옷을 입고 빠르게 움직입니다.",
                "recipe_name": "일꾼의 동복",
                "flavor": "겨울이 오고있어!"
             },
@@ -10916,7 +10916,7 @@
                "flavor": "피닉스의 날개를 입었을까, 뱀의 날개를 입었을까?"
             },
             "input_bin_woven_recipe": {
-               "recipe_name": "Woven Supply Basket",
+               "recipe_name": "방적물 공급 바구니",
                "description": "A versatile container that Hearthlings will try to keep full, so your crafters can keep on working!",
                "flavor": "Nothing quite like a well-supplied workshop!"
             },
