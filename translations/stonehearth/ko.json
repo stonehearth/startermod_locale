@@ -10164,7 +10164,7 @@
             "building_parts_name": "건축 자재",
             "weapons_name": "무기",
             "furniture_name": "가구",
-            "refined_name": "Refinement",
+            "refined_name": "개량",
             "bird_bath_recipe": {
                "description": "새들을 위해 물을 받아둔 석조 물통입니다.",
                "recipe_name": "새 물통",
@@ -10173,7 +10173,7 @@
             "blacksmith_hammer_recipe": {
                "description": "하슬링을 대장장이로 전직시키기 위해 필요합니다.",
                "recipe_name": "대장장이의 망치",
-               "flavor": "From the dragon that lives in the forge, weapons and armor, defense and conquest."
+               "flavor": "대장간에 사는 용으로부터, 무기와 방어구, 수비와 정복"
             },
             "potter_cutter_recipe": {
                "description": "하슬링이 점토를 이용해 도구와 상품들을 만들도록 해줍니다.",
@@ -10196,9 +10196,9 @@
                "flavor": "요리하자!!!!!! --Alton The Bard"
             },
             "gargoyle_recipe": {
-               "description": "Gothic-style carving to decorate your walls.",
+               "description": "벽들을 장식하기 위한 고딕 양식의 조각",
                "recipe_name": "벽걸이형 가고길 장식품",
-               "flavor": "Remnants of the servants of Brelor, Crownless King."
+               "flavor": "왕관 없는 왕, 브렐로의 하인들의 잔재"
             },
             "stone_bench_recipe": {
                "description": "밖에 앉아서 휴식을 취할 수 있습니다",
@@ -10277,7 +10277,7 @@
             "valor_statue_recipe": {
                "description": "당신의 마을의 군사력에 대한 기념비",
                "recipe_name": "시드의 용맹함",
-               "flavor": "The shield for resiliance, and the sword for strength. -- Cid, Knight of the Old Ways"
+               "flavor": "탄력의 방패, 힘의 칼. -- 시드, 기사의 오래된 양식"
             },
             "roadside_shrine_recipe": {
                "recipe_name": "풍요의 분수",
