@@ -10193,7 +10193,7 @@
             "cook_spoon_recipe": {
                "description": "하슬링을 요리사로 전직시키기 위해 필요합니다.",
                "recipe_name": "요리사의 국자",
-               "flavor": "요리하자!!!!!! --Alton The Bard"
+               "flavor": "요리하자!!!!!! -- 알톤 시인"
             },
             "gargoyle_recipe": {
                "description": "벽들을 장식하기 위한 고딕 양식의 조각",
@@ -10223,7 +10223,7 @@
             "stone_chest_recipe": {
                "description": "64개의 물건을 넣을 수 있는 인상적인 상자입니다.",
                "recipe_name": "석조 상자",
-               "flavor": "'잘 들어, 꼬마야, 헴고리르 밑의 산에 모든 상자는 모두 이렇게 생겼어' --이돌프, 방랑 시인"
+               "flavor": "'잘 들어, 꼬마야, 헴고리르 산 밑 모든 상자는 모두 이렇게 생겼어' --이돌프, 방랑 시인"
             },
             "stone_garden_lantern_recipe": {
                "description": "좋은 분위기를 내는 고대의 느낌이 나는 랜턴이다.",
@@ -10282,7 +10282,7 @@
             "roadside_shrine_recipe": {
                "recipe_name": "풍요의 분수",
                "description": "관대함과 믿음이 가득한 장소",
-               "flavor": "시드 풍의 그의 갑옷을 부자들의 부를 가난한 사람들의 곁으로 가져왔습니다 -- 에디슨 안, 교회의 기부"
+               "flavor": "시드 풍의 그의 갑옷을 바구니에 넣고 부자들의 부를 가난한 사람들의 곁으로 가져왔습니다 -- 에디슨 안, 교회의 기부"
             },
             "craftsman_statue_recipe": {
                "recipe_name": "길드마스터의 기술",
