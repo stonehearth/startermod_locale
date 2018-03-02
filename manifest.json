@@ -1,6 +1,8 @@
 {
    "info" : {
       "name" : "Example mod for adding languages.", 
+      "namespace": "startermod_locale",
+      "is_localization_mod": true,
       "version" : 3
    },
    "mixintos" : {
