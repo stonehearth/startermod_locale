@@ -21,6 +21,7 @@
             "collect_ingredient": "Rassemble des ingrédients",
             "build_workshop": "Construit un atelier",
             "death": "Se meurt",
+            "away_from_town": "Loin de la ville",
             "eat": "Cherche quoi manger",
             "find_stray_animal": "Cherche des animaux errants",
             "harvest_field": "Récolte un champ",
@@ -56,12 +57,38 @@
             "talk": "Parle à [name(data.target)]",
             "incapacitated": "À terre",
             "rescue_citizen": "Aide [name(data.target)]",
-            "recuperating": "Est en convalescence"
+            "recuperating": "Est en convalescence",
+            "celebrating": "Célébrer"
          }
       }
    },
    "ui": {
       "game": {
+         "build2": {
+            "tool_status": {
+               "eraseTool": "Effacement",
+               "roofTool": "Placer le toit",
+               "blocksTool": "Blocs de dessin",
+               "paintTool": "Peinture voxels",
+               "wallTool": "Placer les murs",
+               "stairsTool": "Placer les escaliers",
+               "holeTool": "Faire des trous",
+               "splitWallTool": "Fractionnement des murs",
+               "roomTool": "Placer la pièce"
+            },
+            "place_build_banner": "Placez la bannière à un endroit accessible aux hearthlings près de votre bâtiment.",
+            "new_building_confirm": {
+               "title": "Créer un nouveau bâtiment",
+               "message": "Voulez vous commencer un nouveau projet de bâtiment ?",
+               "yes": "Oui !",
+               "no": "Non"
+            },
+            "plan_job_status": {
+               "COMPLETE": "La construction est déjà en cours !",
+               "INVALID_BLUEPRINTS": "Ce bâtiment contient des structures invalides. Assurez-vous qu'aucune structure ne soit en rouge!",
+               "PLANNING_ERROR_GENERIC": "Vos Hearthlings ne peuvent pas comprendre comment construire votre bâtiment! Veuillez envoyer votre modèle de construction à l'équipe Stonehearth pour enquête."
+            }
+         },
          "game_speed": {
             "pause_title": "Pause",
             "pause_description": "Met le jeu en pause",
@@ -90,6 +117,20 @@
             "appeal_vision": "Vision d'intérêt",
             "appeal_vision_description": "Voyez la vision attractive du monde des hearthlings "
          },
+         "trade_menu": {
+            "title": "Echanger avec [str(town_name)]",
+            "you": "[str(town_name)] (Vous !)",
+            "offering": "Vous offrez: ",
+            "requesting": "Vous demandez:",
+            "give_1": "Donner 1",
+            "give_10": "Donner 10",
+            "request_1": "Demander 1",
+            "request_10": "Demander 10",
+            "remove_1": "Enlever 1",
+            "remove_10": "Enlever 10",
+            "cancel": "Annuler l'échange",
+            "send": "Envoyer la requête d'échange"
+         },
          "promotion_tree": {
             "title": "Choisir une profession -",
             "promotion_title": "Promouvoir en [str(job_name)]",
@@ -110,6 +151,40 @@
             "select_person": "Sélectionner",
             "ownership_current_owner_tooltip": "Propriétaire actuel",
             "ownership_owns_another_tooltip": "Possède déjà un objet similaire"
+         },
+         "multiplayer_menu": {
+            "display_name": "Menu multijoueur",
+            "description": "Afficher et gérer les autres joueurs connectés",
+            "host": "hôte",
+            "client": "client",
+            "online": "en ligne",
+            "offline": "hors ligne",
+            "embarking": "embarquer",
+            "player": "Joueur",
+            "players": "Joueurs",
+            "disconnect_player": "Joueur déconnecter",
+            "erase_player": "Détruire les biens",
+            "remote_connections_disabled": "Multijoueur non activé",
+            "remote_connections_disabled_description": "Activer le multijoueur dans les paramètres pour permettre aux autres joueurs de rejoindre votre jeu",
+            "settings": "Paramètres",
+            "trade": "Echanger",
+            "transfer_player": "Transfert des biens",
+            "confirm": {
+               "cancel": "Annuler",
+               "continue": "Continuer",
+               "disconnect_player": {
+                  "title": "Déconnecter ce joueur",
+                  "message": "Êtes-vous sûr de vouloir déconnecter ce joueur ?"
+               },
+               "erase_player": {
+                  "title": "Détruire les effets personnels du joueur",
+                  "message": "Êtes-vous sûr de vouloir détruire tous les biens de ce joueur ? Cela supprimera également la ville de ce joueur de la partie. Vous ne pouvez pas annuler cette action."
+               },
+               "transfer_player": {
+                  "title": "Réclamer les effets personnels du joueur",
+                  "message": "Êtes-vous sûr de vouloir prendre toutes les affaires de ce joueur ? Cela supprimera également la ville de ce joueur de la partie. Vous ne pouvez pas annuler cette action."
+               }
+            }
          },
          "build_workshop": {
             "title": "Construire l'atelier",
@@ -202,7 +277,7 @@
             "confim_delete_title": "Confirmer la suppression",
             "confirm_delete_message": "Voulez-vous vraiment supprimer cette sauvegarde?",
             "confim_overwrite_title": "Confirmer le remplacement de la sauvegarde",
-            "confirm_overwrite_message": "Voulez-vous vraiment complètement, irrémédiablement remplacer cette sauvegarde?",
+            "confirm_overwrite_message": "Voulez-vous vraiment complètement, irrévocablement remplacer cette sauvegarde?",
             "save_autosave": "Sauvegarde automatique périodique",
             "auto_save_prefix": "Sauvegarde automatique: ",
             "save_in_progress": "Sauvegarde...",
@@ -236,6 +311,35 @@
             "hours": "h",
             "the": "le",
             "empty_string": ""
+         },
+         "multiplayer_settings": {
+            "create_new_multiplayer_game": "Créer une nouvelle partie multijoueur",
+            "open_game_to_multiplayer": "Ouvrir une partie multijoueur",
+            "allow_remote_connections": "Activer le mode multijoueur",
+            "allow_remote_connections_description": "Autoriser les autres joueurs à rejoindre votre partie",
+            "start": "Commencer",
+            "settings": "Paramètres multijoueur",
+            "max_players": "Max Joueurs",
+            "max_players_description": "Définir le nombre maximum de joueurs pouvant rejoindre"
+         },
+         "multiplayer_status_text": {
+            "status": {
+               "connected": "connecté",
+               "disconnected": "déconnecter",
+               "removed": "retiré du jeu",
+               "placed_camp": "placé leur camp",
+               "changed_town_name": "définir leur nom de ville"
+            }
+         },
+         "disconnected": {
+            "disconnected": "Vous avez été déconnecté",
+            "reasons": {
+               "error": "Quelque chose a mal tourné. Vous avez perdu la connexion au serveur.",
+               "kick": "Vous avez été déconnecté par l'hôte.",
+               "shutdown": "Le serveur a été arrêté.",
+               "closed": "Le serveur refuse les connexions",
+               "full": "Le serveur est plein"
+            }
          },
          "party": {
             "title": "Groupes",
@@ -296,7 +400,7 @@
             "quality": {
                "quality-2": "Belle qualité",
                "quality-3": "Excellente qualité",
-               "quality-4": "Qualité de Maitre !"
+               "quality-4": "De qualité chef-d'oeuvre!"
             }
          },
          "citizens": {
@@ -400,6 +504,7 @@
                "storage": "Réserve",
                "defense": "Défense",
                "trophy": "Trophées",
+               "seed": "Graines",
                "none": "Aucune"
             },
             "tooltip_combat_base_damage": "Atq :",
@@ -516,6 +621,10 @@
                      "display_name": "Concevoir un bâtiment",
                      "description": "Concevez vos propres bâtiments"
                   },
+                  "broken_building": {
+                     "display_name": "Vieux et cassé",
+                     "description": "Tenter le destin avec l'ancien éditeur de bâtiment !"
+                  },
                   "place_item": {
                      "display_name": "Placer un objet",
                      "description": "Placez un objet comme un meuble<br>ou une décoration.",
@@ -580,9 +689,9 @@
                      "required_job_text": "Nécessite un tisserand"
                   },
                   "mason": {
-                     "display_name": "Tailleur de pierre",
-                     "description": "Pour tailler des armes, des meubles<br>et des décorations de pierre.",
-                     "required_job_text": "Nécessite un tailleur de pierre"
+                     "display_name": "Maçonnerie",
+                     "description": "Armes et meubles en pierre ciselée",
+                     "required_job_text": "Requiert un maçon"
                   },
                   "blacksmith": {
                      "display_name": "Forgeron",
@@ -605,7 +714,7 @@
                      "required_job_text": "Nécessite un herboriste"
                   },
                   "engineer": {
-                     "display_name": "Menu des plans de construction d'ingénieur",
+                     "display_name": "Ingénieur",
                      "description": "Faire des engins et des armes défensives",
                      "required_job_text": "Nécessite un ingénieur"
                   }
@@ -655,6 +764,21 @@
                "not_enough_gold_tooltip": "Pas assez d'or !",
                "shopkeeper_not_enough_gold_tooltip": "Le commerçant n'a pas assez d'or"
             },
+            "trade": {
+               "target_title": "Offre commerciale de [str(i18n_data.town_name)]",
+               "source_title": "Offre commerciale pour [str(i18n_data.town_name)]",
+               "offering": "Offre:",
+               "exchange": "En l'échange de:",
+               "request": "Demander:",
+               "cancelled": "[str(i18n_data.town_name)] Annulation de l'échange",
+               "accepted": "[str(i18n_data.town_name)] Acceptation de l'échange",
+               "declined": "[str(i18n_data.town_name)] Déclinaison de l'échange",
+               "fail": {
+                  "title": "Le commerce n'a pas pu être terminé",
+                  "source": "L'autre ville n'a plus assez de ressources offertes pour compléter ce commerce.",
+                  "target": "Vous n'avez pas assez de ressources pour compléter ce commerce."
+               }
+            },
             "city_dialog": {
                "proclamation": "PROCLAMATION DE"
             },
@@ -671,6 +795,35 @@
             "promote_bulletin": {
                "title": "[name(i18n_data.entity)] a été promu !",
                "show_char_sheet": "Feuille de personnage"
+            },
+            "delivery_quest": {
+               "complete": "Achevée",
+               "abandon": "Abandonnée",
+               "happiness_requirement_label": "[str(value)] citoyens sont au moins [str(moodName)]",
+               "happiness_requirement_label_all": "Tous les citoyens sont au moins [str(moodName)]",
+               "happiness_requirement_all": "[str(value)] (tous)",
+               "gold_label": {
+                  "give": "Or",
+                  "have": "Or en main",
+                  "spent": "Or dépensé via le commerce",
+                  "earned": "Or gagné via le commerce"
+               },
+               "quality_label": {
+                  "quality_2": "Objets de qualité fine possédés",
+                  "quality_3": "Objets d'excellente qualité possédés",
+                  "quality_4": "Articles de qualité chef d'oeuvre détenus"
+               }
+            },
+            "dispatch_quest": {
+               "abandon": "Abandonner",
+               "dispatch": "Envoi"
+            },
+            "town_founding": {
+               "title": "Déclaration de fondation du règlement officiel",
+               "name_header": "Choisissez un nom pour votre règlement !",
+               "name_prompt": "Nom:",
+               "banner_prompt": "Choisissez son chemin:",
+               "complete": "Emettre une déclaration et célébrer !"
             },
             "immigration_report": {
                "title": "Résumé quotidien",
@@ -690,6 +843,35 @@
             "inventory_full": {
                "title": "Objets de la ville plein",
                "message": "La capacité d'objet de votre ville est au maximum ! Les hearthlings détestent les villes encombrés et ne vont plus collecter de ressource. Les conteneurs de stockage comptent comme des objets et n'augmente pas votre limite d'objet par ville. Vendez ou détruisez les objets à l'aide de l'outil de suppression."
+            }
+         },
+         "build_mode2": {
+            "tooltips": {
+               "room_tool": "Pièces",
+               "wall_tool": "Murs",
+               "split_wall_tool": "Murs fendus",
+               "roof_tool": "Toits",
+               "blocks_tool": "Blocs",
+               "paint_tool": "Peinture",
+               "hole_tool": "Trous",
+               "stairs_tool": "Escaliers",
+               "road_tool": "Routes",
+               "fence_tool": "Clôtures",
+               "terrain_tool": "Terrain",
+               "windows": "Fenêtres",
+               "furniture": "Fournitures",
+               "doors": "Portes",
+               "decorations": "Décorations",
+               "erase_tool": "Ecraser",
+               "undo_tool": "Défaire",
+               "redo_tool": "Refaire",
+               "new_building": "Nouveau bâtiment",
+               "save_building": "Sauvegarde du bâtiment",
+               "template_list": "Modèles",
+               "destroy": "Détruire le bâtiment",
+               "wood_resource": "Bois",
+               "clay_resource": "Argile",
+               "stone_resource": "Pierre"
             }
          },
          "build_mode": {
@@ -756,6 +938,9 @@
                "build_complete_title": "Félicitations!",
                "build_complete_description": "Ce bâtiment est terminé",
                "compute_scaffolding": "Planification de construction"
+            },
+            "roof": {
+               "title": "Menu toiture - [str(building_name)]"
             },
             "roof_shape": {
                "title": "Pente, direction et taille",
@@ -995,6 +1180,7 @@
          "town_overview": {
             "title": "Rapport sur la ville",
             "town_morale": "Morale de la ville",
+            "initial_town_name": "Expédition [str(town_number)]",
             "journal": {
                "default_message": "Pas encore d'entrée&nbsp;!",
                "signature": "--[name(entry.person)]",
@@ -1301,6 +1487,7 @@
                   "speed_three": "Rapidité Triplé",
                   "town_overview": "Menu info de la ville",
                   "citizen_manager": "Menu des citoyens",
+                  "multiplayer_menu": "Menu multijoueur",
                   "harvest_menu": "Menu des récoltes",
                   "harvest_harvest": "Outil de récolte",
                   "harvest_mine": "Outil de minage",
@@ -1369,6 +1556,8 @@
             "kingdom_of": "Le royaume de",
             "continue_game": "Continuer",
             "new_game": "Nouvelle partie",
+            "singleplayer_game": "Un joueur",
+            "multiplayer_game": "Multijoueur",
             "load_game": "Charger une partie",
             "quick_start": "Démarrage rapide",
             "patch_notes": "Afficher les notes de mise à jour",
@@ -1641,6 +1830,7 @@
          "constants": {
             "food_meat_raw_name": "Viande fraiche",
             "food_veggie_raw_name": "Légumes crus",
+            "food_bug_meat_raw_name": "Viande crue d'insecte",
             "stone_resource_name": "Pierre",
             "pelt_resource_name": "Peau",
             "cloth_resource_name": "Rouleau de tissu",
@@ -1652,6 +1842,10 @@
             "fiber_resource_name": "Lot de fibres",
             "ingot_resource_name": "Lingot de métal",
             "herb_resource_name": "Herbe",
+            "food_container_resource_name": "Nourriture",
+            "prepared_food_resource_name": "Nourriture préparée",
+            "prepared_dessert_resource_name": "Dessert preparée",
+            "gear_resource_name": "Équipement",
             "ore_resource_name": "Minerai",
             "dirt_resource_name": "Tas de terre"
          }
@@ -1663,7 +1857,8 @@
             "display_name": "les Ascendants",
             "quote": "Moutons? Vérifiez. Houe? Vérifiez. Glaives? Vérifiez. Embarquez!",
             "description": "Sérieux et travailleur, fidèle et bien arrondi. Les hearthlings de la famille des Ascendants, construisent et cultivent, confiant que le monde connu est là pour être habité.",
-            "post_selection_description": ", un royaume prospère et travailleur."
+            "post_selection_description": ", un royaume prospère et travailleur.",
+            "initial_town_name": "Expédition [str(town_number)]"
          }
       },
       "biome": {
@@ -1797,13 +1992,26 @@
                   "reward_message_ctd": "Pour les actes de bravoure incroyable dans le combat. La ville est par les présentes éligible pour:",
                   "tier_2_bldg_template": "Modèles de construction niveau 2",
                   "tier_2_shops": "Magasins niveau 2",
-                  "tier_2_BGM": "BGM niveau 2"
+                  "tier_2_BGM": "BGM niveau 2",
+                  "recipe_unlock_engineer": "Nouvelle recette de herse pour Ingénieur !",
+                  "recipe_unlock_mason": "Nouvelle recette de décoration pour Maçon !",
+                  "recipe_unlock_blacksmith": "Nouvelles recettes de décoration pour forgeron !",
+                  "recipe_unlock_weapons_1": "<WIP, pas encore> Nouvelle recette d'épée légendaire - collaboration entre tisserand, potier et collaboration de forgeron !",
+                  "recipe_unlock_weapons_2": "<WIP, pas encore> Nouvelle recette de bouclier légendaire - collaboration entre forgeron, charpentier, et maçon !",
+                  "recipe_unlock_weapons_3": "<WIP, pas encore> Nouvelle recette d'archer légendaire - collaboration entre ingénieur, tisserand, et charpentier !"
                },
                "generosity_tier_2_reached": {
-                  "reward_message_ctd": "Comme preuve d'une grande générosité envers les plus démunis. La ville est par les présentes éligible pour:"
+                  "reward_message_ctd": "Comme preuve d'une grande générosité envers les plus démunis. La ville est par les présentes éligible pour:",
+                  "recipe_unlock_mason": "Nouvelle recette de fontaine souhaitante pour maçon !",
+                  "recipe_unlock_herbalist": "Nouvelle décoration d'arbustes pour herboriste !",
+                  "recipe_unlock_blacksmith": "Nouvelle recette de décoration pour forgeron !"
                },
                "crafting_tier_2_reached": {
-                  "reward_message_ctd": "Pour l'excellence dans l'artisanat. La ville est par les présentes éligible pour:"
+                  "reward_message_ctd": "Pour l'excellence dans l'artisanat. La ville est par les présentes éligible pour:",
+                  "recipe_unlock_mason": "Nouvelle recette de fontaine et statue pour maçon !",
+                  "recipe_unlock_carpenter": "Nouvelles décorations et clôtures pour charpentier !",
+                  "recipe_unlock_herbalist": "Nouvelle décoration d'arbustes pour herboriste !",
+                  "recipe_unlock_blacksmith": "Nouvelle recette pour forgeron !"
                },
                "ascendancy_town_tier_quest": {
                   "title": "Quête de Canton",
@@ -1837,7 +2045,7 @@
                         },
                         "proc_details": {
                            "bulletin_message": {
-                              "000": "Tous les établissements qui obtiennent la renommée locale seront reconnues comme officielles du Cantons de Ascendancy, avec les droits, privilèges et avantages de celle-ci."
+                              "000": "Tous les colonies qui obtiennent la renommée locale seront reconnues comme officielles du Cantons de Ascendancy, avec les droits, privilèges et avantages de celle-ci."
                            },
                            "bulletin_title": "Anwyn lit",
                            "dialog_title": "L'honorable Anwyn Redelm",
@@ -1965,18 +2173,30 @@
                               "name": "Le magasin de porte d'Edgar Planckton",
                               "title": "Edgar Planckton est arrivé avec des portes à vendre"
                            }
+                        },
+                        "rugs_shop2": {
+                           "shop_info": {
+                              "name": "Les beaux tapis et les vêtements de Havaad",
+                              "title": "Un marchand exotique est arrivé avec des marchandises exquises à vendre"
+                           }
+                        },
+                        "woodcutter_shop2": {
+                           "shop_info": {
+                              "name": "La boutique du bûcherons de Norm Windriser",
+                              "title": "Norm Windriser est arrivé avec de très bonnes marchandises à vendre"
+                           }
+                        },
+                        "stonecutter_shop2": {
+                           "shop_info": {
+                              "name": "Le magasin de tailleurs de pierre de Rufus Garrow",
+                              "title": "Rufus Garrow est arrivé avec quelques marchandises exceptionnelles à vendre"
+                           }
                         }
                      }
                   }
                },
-               "unlock_craftsman_statue_recipe": {
-                  "bulletin_title": "Recette Maçon Débloquée: L'habileté du maître de guilde"
-               },
-               "unlock_roadside_shrine_recipe": {
-                  "bulletin_title": "Recette Maçon Débloquée: Fontaine d'abondance"
-               },
-               "unlock_valor_statue_recipe": {
-                  "bulletin_title": "Recette Maçon Débloquée: La valeur du Cid"
+               "shrine_unlock_recipes": {
+                  "bulletin_title": "Recettes de maçon débloqué: Sanctuaires"
                }
             },
             "goblin_war": {
@@ -3140,9 +3360,9 @@
                                     "collection_success": {
                                        "bulletin_message": {
                                           "000": "Trésors! Provisions! Peut-être que ce travail est mieux que le travail pour le chef. Merci, humains. Si vous êtes partant, sorter le Gong Maître rouge. Ogre prendre sa comme signe de défi.",
-                                          "001": "You that scared of orc boks? Well, good for me! Don't put out red Gong or even bigger, dumber boks might come.",
-                                          "002": "Stuffs!! You should hire we full-time. You ask what we do for you? ..We can discuss in contract. Maybe you need us if you display Master Gong and giant ogre bok come.",
-                                          "003": "You give good stuffs! Me wolf will be so happy! Have you met ogre chief yet? They like color red. Like on Gong. Ask you blacksmith."
+                                          "001": "T'as peur des orcs boks? Eh bien, bon pour moi ! Ne pas éteindre le Gong rouge ou encore plus gros, les boks débiles pourraient venir.",
+                                          "002": "Des choses !! Vous devriez embaucher nous à temps plein. Vous demandez ce que nous faisons pour vous ? ..Nous pouvons discuter dans le contrat. Peut-être avez-vous besoin de nous si vous montrez Maître Gong et le géant ogre bok.",
+                                          "003": "Vous donnez de bonnes choses ! Moi le loup sera si heureux ! Avez-vous déjà rencontré le chef ogre ? Ils aiment la couleur rouge. Comme sur Gong. Demandez votre forgeron."
                                        },
                                        "bulletin_title": "Le gobelin sourit, montrant ses dents",
                                        "dialog_title": "Camp gobelin"
@@ -3225,7 +3445,7 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "For us, there are many roads for advancement. This is but one, yet fruitful in itself."
+                                          "00": "Pour nous, il y a beaucoup de routes pour l'avancement. Ce n'est qu'un, mais fécond en soi."
                                        },
                                        "bulletin_title": "Troupe d'orc",
                                        "dialog_title": "Troupe d'orc",
@@ -3233,7 +3453,7 @@
                                     },
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "Perhaps you would not understand what fortuity this experience has given us, in this period of political upheaval. But that matters not. The Warchief will wish to meet you again. For now, I bid you well, human."
+                                          "00": "Peut-être ne comprendriez-vous pas quelle fortuité cette expérience nous a donnée, en cette période de bouleversement politique. Mais cela ne compte pas. Le chef de guerre voudra vous rencontrer à nouveau. Pour l'instant, je vous souhaite bonne chance, humain."
                                        },
                                        "bulletin_title": "Troupe d'orc",
                                        "dialog_title": "Troupe d'orc",
@@ -3241,7 +3461,7 @@
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "I commend you on your victory. You have proven yourself a skilled and honorable foe."
+                                          "00": "Je vous félicite pour votre victoire. Vous avez fait vos preuves en tant qu'ennemi compétent et honorable."
                                        },
                                        "bulletin_title": "Les orcs se prosterne respectueusement au résultat de ce combat",
                                        "dialog_title": "Troupe d'orc",
@@ -3255,7 +3475,7 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "The defeat of my chiefs and warriors demands from us recognition of your strength. Let us contend in battle and the greater of equals shall come forth with honor and valiance."
+                                          "00": "La défaite de mes chefs et de nos guerriers exige de nous la reconnaissance de votre force. Laissez-nous combattre dans la bataille et le plus grand des égaux viendra avec honneur et vaillance."
                                        },
                                        "bulletin_title": "Chef de guerre Oghar Ventfroid",
                                        "dialog_title": "Chef de guerre Oghar Ventfroid"
@@ -3275,14 +3495,14 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "I now return home. Word comes to me that bereft of our Khan's wisdom, our shaman have delved too far into dark, unknowable things. Nonetheless, if you ever wish to spar again and improve your skills, put out any gong of the Four Colors and we will gladly return to meet your challenge."
+                                          "00": "Je retourne maintenant à la maison. Le mot vient à moi que dépourvu de la sagesse de notre Khan, notre chaman s'est trop avancé dans les choses sombres et inconnaissables. Néanmoins, si jamais vous souhaitez encore vous battre et améliorer vos compétences, mettez un gong des Quatre Couleurs et nous reviendrons avec plaisir pour relever votre défi."
                                        },
                                        "bulletin_title": "Chef de guerre Oghar Ventfroid",
                                        "dialog_title": "Chef de guerre Oghar Ventfroid"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Erdene was right about you. You are a worthy opponent indead. We will not forget the strength that you have helped us gain."
+                                          "00": "Erdene avait raison à propos de toi. Vous êtes un adversaire digne de mort. Nous n'oublierons pas la force que vous nous avez aidés à gagner."
                                        },
                                        "bulletin_title": "Le chef de guerre hoche humblement de la tête",
                                        "dialog_title": "Chef de guerre Oghar Ventfroid",
@@ -3300,6 +3520,384 @@
                            "unlock_red_token_recipe": {
                               "bulletin_title": "Le forgeron a débloqué la recette de la décoration du maître Gong !"
                            }
+                        }
+                     }
+                  }
+               }
+            },
+            "town_progression": {
+               "arcs": {
+                  "trigger": {
+                     "town_progression": {
+                        "encounters": {
+                           "hearth_choice": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg_final": {
+                                       "bulletin_message": {
+                                          "00": "Quel foyer allez-vous poursuivre ?<br><br><font size=-1>(Note: Si une quête de foyer s'avère trop difficile, vous pouvez l'abandonner et choisir à nouveau)</font>"
+                                       },
+                                       "choice_000": "Gloire - nous sommes forts !",
+                                       "choice_001": "Gaieté - nous sommes une maison heureuse !",
+                                       "choice_002": "Les fabricants - compétence et prospérité !",
+                                       "bulletin_title": "Choisissez une mise à niveau du foyer",
+                                       "dialog_title": "Choisissez une mise à niveau du foyer"
+                                    },
+                                    "cheer": {
+                                       "bulletin_message": {
+                                          "00": "Pour construire un <i>foyer de la joie</i>, vous devrez prouver que vous avez des citoyens heureux et bien nourris, et des endroits agréables où vivre.<br><br>Une fois construit, le <i>foyer de joie</i> augmentera votre valeur de mise à jour quotidienne basée sur le moral global de vos citoyens."
+                                       },
+                                       "bulletin_title": "Foyer de joie",
+                                       "dialog_title": "Foyer de joie",
+                                       "choice_000": "Ça m'a l'air bien !",
+                                       "choice_001": "Autre foyers..."
+                                    },
+                                    "glory": {
+                                       "bulletin_message": {
+                                          "00": "Pour construire un <i>foyer de la gloire</i>, vous devrez montrer que vous avez la force militaire, et que vous êtes prêt à le garder sur ses pieds. Une fois construit, le <i>foyer de la gloire</ i> confère la capacité d'invoquer ennemis de plus en plus difficiles à prouver votre courage. Chaque rang défait augmente votre valeur de mise à jour quotidienne."
+                                       },
+                                       "bulletin_title": "Foyer de gloire",
+                                       "dialog_title": "Foyer de gloire",
+                                       "choice_000": "Ça m'a l'air bien !",
+                                       "choice_001": "Autre foyers..."
+                                    },
+                                    "makers": {
+                                       "bulletin_message": {
+                                          "00": "Pour construire un <i>foyer des fabricants</i>, vous devrez prouver que l'or a coulé dans votre colonie, et que vous avez de bons artisans (ou, au moins, de belles choses).<br><br>Une fois construit, le <i>foyer des fabricants</i> générera un intérêt quotidien de 5% sur toutes les pièces d'or que vous avez en main, et augmentera votre valeur de mise à jour quotidienne basée sur ces pièces d'or."
+                                       },
+                                       "bulletin_title": "Foyer des fabricants",
+                                       "dialog_title": "Foyer des fabricants",
+                                       "choice_000": "Ça m'a l'air bien !",
+                                       "choice_001": "Autre foyers..."
+                                    }
+                                 }
+                              }
+                           },
+                           "hearth_choice_explanation": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "cheer": {
+                                       "bulletin_message": {
+                                          "00": "Par ce cas, un <i>foyer de joie</i> est pour ceux qui croient que la valeur d'une ville est trouvée dans une maison heureuse pour ses citoyens."
+                                       },
+                                       "bulletin_title": "Un choix joyeux",
+                                       "dialog_title": "Un choix joyeux",
+                                       "choice_000": "Ça semble original"
+                                    },
+                                    "makers": {
+                                       "bulletin_message": {
+                                          "00": "D'un autre côté, un <i>foyer de fabricants</i> est pour ceux qui croient que la valeur d'une ville est son travail, et que son travail est mieux mesuré en or."
+                                       },
+                                       "bulletin_title": "Marque du fabricant",
+                                       "dialog_title": "Marque du fabricant",
+                                       "choice_000": "Ça semble productif"
+                                    },
+                                    "intro": {
+                                       "bulletin_message": {
+                                          "00": "Amicalement mes salutations ! Enfin, je peux voir votre établissement en personne. Vous avez développé encore plus vite que prévu, vous devez tous être très fiers !"
+                                       },
+                                       "bulletin_title": "Un personne à l'allure officielle approche !",
+                                       "dialog_title": "Pas un oiseau cette fois",
+                                       "choice_000": "Je vous remercie !"
+                                    },
+                                    "glory": {
+                                       "bulletin_message": {
+                                          "00": "Enfin, un <i>foyer de gloire</i> est pour ceux qui croient que leur destin est de rester forts dans un monde hostile, comme l'a fait le Chevalier Cid lors de la fondation de l'Ascendance."
+                                       },
+                                       "bulletin_title": "Des tripes et de la gloire",
+                                       "dialog_title": "Des tripes et de la gloire",
+                                       "choice_000": "Ça semble héroïque"
+                                    },
+                                    "final": {
+                                       "bulletin_message": {
+                                          "00": "Joie, gloire, ou fabricants - le choix est entièrement à vous. Imaginez ce que votre ville sera un jour, et suivez cette balise dans le futur !"
+                                       },
+                                       "bulletin_title": "Un choix",
+                                       "dialog_title": "Un choix",
+                                       "choice_000": "Je choisis..."
+                                    },
+                                    "intro2": {
+                                       "bulletin_message": {
+                                          "00": "Je suis venu personnellement pour vous aider dans votre dernière étape vers un véritable établissement de l'Ascendance !<br><br>Vous êtes devenu assez grand maintenant qu'il est temps de choisir quel foyer représentera votre ville, comme le veut la tradition."
+                                       },
+                                       "bulletin_title": "Flot continue",
+                                       "dialog_title": "Burlyhands",
+                                       "choice_000": "Tradition ?"
+                                    },
+                                    "intro3": {
+                                       "bulletin_message": {
+                                          "00": "Indeed, Hearths have served as shining beacons for Towns all the way back to the Phoenix Empire.<br><br>Their glow attracts settlers and prosperity, and the particular qualities of a chosen Hearth reflect where a Town finds its value."
+                                       },
+                                       "bulletin_title": "Flot continue",
+                                       "dialog_title": "Burlyhands",
+                                       "choice_000": "Valeur ?"
+                                    }
+                                 }
+                              }
+                           },
+                           "banner_celebration_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_title": "Bannière de Célébration",
+                                       "dialog_title": "Bannière de Célébration"
+                                    }
+                                 }
+                              }
+                           },
+                           "banner_upgrade_cunning": {
+                              "title": "Avant-poste établi",
+                              "dialog_title": "Avant-poste établi !",
+                              "tier_title": "Avant-poste",
+                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message_ctd": "Votre avant-poste devrait avoir des routes pavé pour devenir un hub commercial.",
+                              "achievements": {
+                                 "001": "Les articles se vendent 50% plus chère",
+                                 "000": "Les routes boostent de 3x la vitesse normal",
+                                 "002": "Les commerçants apporteront 2x plus de marchandises et d'or"
+                              }
+                           },
+                           "banner_upgrade_strength": {
+                              "title": "Avant-poste établi",
+                              "dialog_title": "Avant-poste établi !",
+                              "tier_title": "Avant-poste",
+                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message_ctd": "Votre avant-poste est en voie de devenir un refuge pour tous.",
+                              "achievements": {
+                                 "001": "Les Hearthlings ne se soucient plus des espaces exigus",
+                                 "000": "L'exploitation minière donne 50% de plus de minerai, de pierre et d'argile"
+                              }
+                           },
+                           "banner_upgrade_vitality": {
+                              "title": "Avant-poste établi",
+                              "dialog_title": "Avant-poste établi !",
+                              "tier_title": "Avant-poste",
+                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message_ctd": "Votre avant-poste s'efforçant d'être un avec l'environnement.",
+                              "achievements": {
+                                 "001": "Les plantes et les cultures poussent 25% plus vite",
+                                 "000": "Les arbres produisent 25% de plus de bois",
+                                 "002": "Les plantes poussent 2x plus vite que la normal"
+                              }
+                           },
+                           "hearth_upgrade_makers": {
+                              "title": "Colonie établi",
+                              "dialog_title": "Colonie établi !",
+                              "tier_title": "Colonie",
+                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message_ctd": "Votre colonie devrait prouver que ses richesses et son artisanat sont inégalés.",
+                              "achievements": {
+                                 "001": "Augmentez votre valeur de mise à jour quotidienne basée sur l'or",
+                                 "000": "Générer 5% d'intérêt quotidien sur l'or en main"
+                              }
+                           },
+                           "hearth_upgrade_glory": {
+                              "title": "Colonie établi",
+                              "dialog_title": "Colonie établi !",
+                              "tier_title": "Colonie",
+                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message_ctd": "Votre colonie devrait prouver qu'il a une force militaire inégalée.",
+                              "achievements": {
+                                 "001": "Augmentez votre valeur de mise à jour quotidienne en fonction des ennemis vaincus",
+                                 "000": "Capacité d'invoquer des ennemis pour prouver votre courage."
+                              }
+                           },
+                           "hearth_upgrade_cheer": {
+                              "title": "Colonie établi",
+                              "dialog_title": "Colonie établi !",
+                              "tier_title": "Colonie",
+                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message_ctd": "Votre colonie devrait prouver qu'il a les citoyens les plus heureux, les mieux nourris, et les endroits les plus agréables à vivre.",
+                              "achievements": {
+                                 "000": "Augmentez votre valeur de mise à jour quotidienne basée sur Morale"
+                              }
+                           }
+                        }
+                     }
+                  }
+               },
+               "hearth_foreshadow_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg4": {
+                           "bulletin_message": {
+                              "00": "Prenez le temps de réfléchir à ce que vous considérez comme le plus important, à ce que vous souhaitez que cette balise représente. La prospérité ? Bonheur ? Force ? Chacune est une noble poursuite.<br><br>Nous vous souhaitons bonne chance ! <br><br>Votre capitale,<br> Burlyhands<br><br><font size=-1>P.S. Un petit cadeau pour vous de mon jardin personnel <font size=+2>❀</font></font>"
+                           },
+                           "bulletin_title": "À prendre en considération",
+                           "dialog_title": "À prendre en considération",
+                           "choice_000": "Graines de Perce-neige ! Merci !"
+                        },
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Félicitations pour votre fondation !<br><br>Votre avant-poste a été inscrit au registre - considérez-vous comme officiel ! \"L'avant-poste de [str(i18n_data.town_name)] de sa Majesté\" - Cela sonne bien, Je pense. Une conception de bannière inspirante, serait bien !<br><br> Nous sommes tous impatients d'entendre parler de votre succès !"
+                           },
+                           "bulletin_title": "Une réponse",
+                           "dialog_title": "Une réponse",
+                           "choice_000": "La lettre continue"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "Au fur et à mesure que votre avant-poste se développera vers le statut de règlement, vous commencerez à attirer de nouveaux immigrants.<br/><br/>Votre foyer n'est maintenant qu'une étincelle de ce qu'il deviendra un jour - J'ai la foi que ce sera un phare vu de tous à travers l'Ascendance."
+                           },
+                           "bulletin_title": "Une vue vers l'avenir",
+                           "dialog_title": "Une vue vers l'avenir",
+                           "choice_000": "En conclusion..."
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "L'oiseau messager revient, avec une réponse de Burlyhands.<br><br><p align='right'><font size=-6 color='#cccccc'>La lettre a des marques de morsure, et est légèrement baveuse. Harold fait de son mieux.</font></p>"
+                           },
+                           "bulletin_title": "L'oiseau revient !",
+                           "dialog_title": "Une autre lettre !",
+                           "choice_000": "Ouvrez la lettre"
+                        }
+                     }
+                  }
+               },
+               "post_shrine_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Félicitations pour la construction d'un sanctuaire ! <br><br>Finalement, vous serez en mesure de construire les deux autres pour l'embellir, mais nous ne sommes pas de la partie pour de nouveau frais."
+                           },
+                           "bulletin_title": "C'est encore moi !",
+                           "dialog_title": "Une dernière chose",
+                           "choice_000": "Ah... Mais merci !"
+                        }
+                     }
+                  }
+               },
+               "shrine_choice": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg_final": {
+                           "bulletin_message": {
+                              "00": "Quel sanctuaire construisez-vous pour indiquer l'ascension de votre établissement dans le canton ?<br>[Ceci utilise toujours l'ancienne de la quête Tier 2 ! Nous allons l'embellir bientôt !]<br><br><font size=-1>Sanctuaire de la Fortune (donne des buffs aléatoires à l'échelle de la ville !)<br><br>Sanctuaire du Courage ([WIP, pas encore disponible !] armes légendaires)<br><br>Sanctuaire du chef-d'oeuvre (Déverrouille l'artisanat de niveau Chef-d'oeuvre ! Quatre fois aussi attrayant et cher qu'excellent !)</font>"
+                           },
+                           "bulletin_title": "Choisissez un sanctuaire !",
+                           "dialog_title": "Choisissez un sanctuaire !",
+                           "choice_000": "Fortune",
+                           "choice_001": "Courage",
+                           "choice_002": "Chef-d'oeuvre"
+                        }
+                     }
+                  }
+               },
+               "shrine_choice_explanation": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Il est temps de choisir un sanctuaire! Les gens de la capitale m'ont dit de dire que c'est un 'Texte d'espace réservé,' peu importe ce que cela signifie ! <br><br>Vos options sont:<br><br>Sanctuaire de la Fortune (donne des buffs aléatoires à l'échelle de la ville!)<br><br>Sanctuaire du Courage ([WIP, pas encore disponible !] armes légendaires)<br><br>Sanctuaire du chef-d'oeuvre (Déverrouille l'artisanat de niveau Chef-d'oeuvre ! Quatre fois aussi attrayant et cher qu'excellent !)<br><br><font size=-1>J'espère avoir quelque chose de plus intéressant à dire à un moment donné !</font>"
+                           },
+                           "bulletin_title": "Sanctuaire du temps",
+                           "dialog_title": "Sanctuaire du temps",
+                           "choice_000": "Propre"
+                        }
+                     }
+                  }
+               },
+               "shrine_foreshadow_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg4": {
+                           "bulletin_message": {
+                              "00": "La prochaine fois que je vous rendrai visite, une fois que tout sera en ordre ici, nous pourrons discuter de la dernière étape - construire et dédier un Sanctuaire pour prouver votre excellence au monde. Jusque-là !<br><br>Votre capital,<br>&nbsp;- Burlyhands"
+                           },
+                           "bulletin_title": "Une lettre",
+                           "dialog_title": "Une lettre",
+                           "choice_000": "Jusque là"
+                        },
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Beaucoup de mot circule autour de la capital comme quoi de plus en plus de gens font leurs bagages pour aller à <town_name> tous les jours ! De nouvelles excitantes, qui m'a pousser à vous envoyer de la paperasserie !"
+                           },
+                           "bulletin_title": "Une lettre",
+                           "dialog_title": "Une lettre",
+                           "choice_000": "La paperasserie, c'est excitant..."
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "Je sais, tu dois te dire 'Encore de la paperasserie, comme c'est passionnant', mais écoutez-moi - je pense qu'il est presque temps d'appeler votre petite ville une véritable ville ! Vous êtes sur le point de réaliser ce rêve que vous avez défini il y a si longtemps."
+                           },
+                           "bulletin_title": "Une lettre",
+                           "dialog_title": "Une lettre",
+                           "choice_000": "Oh, wow !"
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "On dirait que le seigneur nous contacter à nouveau."
+                           },
+                           "bulletin_title": "Cet oiseau étrange encore !",
+                           "dialog_title": "Une autre lettre !",
+                           "choice_000": "L'ouvrir"
+                        }
+                     }
+                  }
+               },
+               "town_founding_explanation": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "read_letter3": {
+                           "bulletin_message": {
+                              "00": "Gardez dans votre esprit une vision de ce que votre ville sera un jour. Votre bannière définira ce cours, mais c'est à vous de le terminer. <p>Choisissez bien, mes amis. J'attends avec impatience votre réponse.</p><br><p>Yours,</p><p>&nbsp;Burlyhands</p>"
+                           },
+                           "bulletin_title": "La lettre continue",
+                           "dialog_title": "La lettre continue...",
+                           "choice_000": "Que devons-nous choisir..."
+                        },
+                        "open_letter": {
+                           "bulletin_message": {
+                              "00": "Un oiseau étrange arrive avec une lettre dans son bec, estampillé du sceau officiel de l'ascendance. <br><br><p align='right'><font size=-6 color='#cccccc'>L'oiseau porte aussi un insigne, qui se lit 'Harold' </font></p>"
+                           },
+                           "bulletin_title": "Un étrange oiseau !",
+                           "dialog_title": "Un oiseau... messager ?",
+                           "choice_000": "Ouvrez la lettre"
+                        },
+                        "read_letter": {
+                           "bulletin_message": {
+                              "00": "Chère expédition [str(i18n_data.town_serial_number)],<p>J'espère que cette lettre t'arrivera bien. À mon avis, vous avez probablement déjà installer votre campement.</p><p>À titre de liaison avec la capitale, j'ai l'honneur de présider, de loin, à la fondation officielle de votre avant-poste ! Je crois que vous avez eu amplement le temps de choisir un nom pour votre expédition.</p>"
+                           },
+                           "bulletin_title": "Une lettre de la capitale !",
+                           "dialog_title": "Une lettre de la capitale !",
+                           "choice_000": "Fonder ?"
+                        },
+                        "read_letter2": {
+                           "bulletin_message": {
+                              "00": "Comme vous le savez, chaque nouveau établissement doit choisir une bannière.<p>Cette bannière reflète votre esprit et votre vision, le facteur d'union qui a réuni l'expédition !</p><p>Quel avenir aviez-vous prévu lorsque vous vous êtes lancé dans votre quête du canton ?</p> "
+                           },
+                           "bulletin_title": "La lettre continue",
+                           "dialog_title": "La lettre continue...",
+                           "choice_000": "Bannière... Hmm..."
+                        }
+                     }
+                  }
+               },
+               "bird_departs": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "L'oiseau messager étrange se précipite avec votre déclaration de fondation officielle dans son bec, le portant dans la vague direction de la capitale"
+                           },
+                           "bulletin_title": "L'oiseau part",
+                           "dialog_title": "L'oiseau part",
+                           "choice_000": "Adieu !"
+                        }
+                     }
+                  }
+               },
+               "town_founding_food_donation": {
+                  "donation_dialog_info": {
+                     "dialog_nodes": {
+                        "simple_message": {
+                           "bulletin_message": {
+                              "00": "Vous ne savez pas comment vous l'avez manqué avant, mais l'oiseau porte un minuscule sac à dos.<br><br>Il contient une note, qui dit '<i> Un petit quelque chose pour vous aider à célébrer </i>' avec:"
+                           },
+                           "bulletin_title": "Les cris d'oiseaux",
+                           "dialog_title": "Un minuscule sac à dos",
+                           "choice_000": "Délicieux !"
                         }
                      }
                   }
@@ -3733,6 +4331,11 @@
             "description": "Sacrifie cet animal pour sa viande.",
             "disabled_description": "Cet animal à été si mal nourris qu'il n'a pas de viande. C'est juste un sac d'os."
          },
+         "spawn_glory_wave": {
+            "display_name": "Invocation d'une vague ennemie",
+            "description": "Invoquez la prochaine vague d'ennemis pour réclamer plus de gloire.",
+            "disabled_description": "Aucun nouveau ennemis frappent à votre porte pour le moment."
+         },
          "undeploy_item": {
             "display_name": "Ranger",
             "description": "Ranger cet objet dans une réserve.",
@@ -3819,6 +4422,10 @@
             "display_name": "Attribuer un propriétaire",
             "description": "Attribuer cet objet à un nouveau propriétaire"
          },
+         "destroy_item": {
+            "display_name": "Annuler le placement",
+            "description": "Supprimer le placement de la tâche"
+         },
          "toggle_lock": {
             "display_name": "Serrure à bascule",
             "description": "Verrouiller ou déverrouiller cette porte"
@@ -3826,6 +4433,11 @@
          "rescue": {
             "display_name": "Porter secours",
             "description": "Donnez l'ordre à un non-combattant d'essayer de sauver ce hearthling"
+         },
+         "abandon_glory_wave": {
+            "display_name": "Abandonner !",
+            "description": "Désengage la vague ennemie actuelle, sans gagner de gloire.",
+            "disabled_description": "Aucun défi d'ennemis à partir de maintenant."
          }
       },
       "personality": {
@@ -4705,6 +5317,9 @@
          "forest": {
             "insane_alligator": {
                "description": "Les petits varanuses ont tendance à affluer autour d'elles."
+            },
+            "zilla": {
+               "description": "Méfie-toi de Zilla !"
             }
          }
       },
@@ -5168,6 +5783,22 @@
                   "petty_theft": {
                      "display_name": "Vol",
                      "tooltip": "Quelqu'un a volé quelque chose dans nos réserve! Nous avons besoin de meilleures défenses."
+                  }
+               },
+               "progression": {
+                  "values": {
+                     "outpost": {
+                        "display_name": "Établir un avant-poste",
+                        "tooltip": "Nous venons d'établir un avant-poste ! Il est temps de travailler dessus !"
+                     },
+                     "settlement": {
+                        "display_name": "Établir une colonie",
+                        "tooltip": "Notre avant-poste est maintenant une colonie à part entière ! Hourra !"
+                     },
+                     "town": {
+                        "display_name": "Fête du canton",
+                        "tooltip": "Nous avons été reconnus comme une ville ! Notre travail commence à porter ses fruits !"
+                     }
                   }
                }
             },
@@ -5832,7 +6463,7 @@
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre treillis en argile",
+               "display_name": "Cadre de fenêtre en argile rouge",
                "description": "Le treillis permet toujours de faire rentrer le bon air."
             }
          },
@@ -5857,7 +6488,7 @@
          "bronze_portcullis": {
             "bronze_portcullis_ghost": {
                "display_name": "Herse en Bronze",
-               "description": "Grille de fermeture de porte, utile pour fortifier les points d'entrée de ville"
+               "description": "Grille de fermeture de porte, utile pour fortifier les points d'entrée de ville."
             }
          },
          "wooden_door_fine": {
@@ -6364,6 +6995,11 @@
             "species": "renard",
             "description": "Petite créature de la forêt",
             "display_name": "Renard"
+         },
+         "deer_horned": {
+            "species": "cerf",
+            "description": "Om nom nom",
+            "display_name": "Cerf"
          }
       },
       "crops": {
@@ -6787,6 +7423,50 @@
                   "description": "Prêt à être récolté"
                }
             }
+         },
+         "cactus_tree_crop": {
+            "display_name": "Arbre de cactus",
+            "description": "Loin des cactus ? Préparez-vous à replanter ce beau paysage du désert.",
+            "growth_stage": {
+               "001": {
+                  "name": "Cactus semis",
+                  "description": "C'est juste commencé."
+               },
+               "003": {
+                  "name": "Arbre de cactus",
+                  "description": "Prêt à être transféré sur un plus grand terrain."
+               },
+               "000": {
+                  "name": "Gousse de fleur pollinisée",
+                  "description": "Même un cactus puissant a des débuts humbles."
+               },
+               "002": {
+                  "name": "Pousses de cactus",
+                  "description": "Taille parfaite pour un bébé lézard."
+               }
+            }
+         },
+         "juniper_tree_crop": {
+            "display_name": "Genévrier",
+            "description": "La forêt est-elle mince ? Plantez certains de ces magnifiques genévriers.",
+            "growth_stage": {
+               "001": {
+                  "name": "Jeune plant de genévrier",
+                  "description": "C'est juste commencé."
+               },
+               "003": {
+                  "name": "Genévrier",
+                  "description": "Prêt à être transféré sur un plus grand terrain."
+               },
+               "000": {
+                  "name": "Baie de genièvre",
+                  "description": "Même un puissant genévrier a des débuts humbles."
+               },
+               "002": {
+                  "name": "Pousse de genévrier",
+                  "description": "Taille parfaite pour un lapin à cacher."
+               }
+            }
          }
       },
       "decoration": {
@@ -6821,6 +7501,12 @@
             "firepit_ghost": {
                "display_name": "Feu de camp",
                "description": "Fournit chaleur et lumière."
+            }
+         },
+         "firepit_hearth": {
+            "firepit_hearth_ghost": {
+               "display_name": "Foyer",
+               "description": "Fournit de la chaleur, de la lumière et du confort"
             }
          },
          "firepit_skulls": {
@@ -6946,8 +7632,8 @@
          },
          "wooden_sign_mason": {
             "wooden_sign_mason_ghost": {
-               "display_name": "Enseigne murale de tailleur de pierre",
-               "description": "Enseigne avec le symbole du tailleur de pierre."
+               "display_name": "Enseigne murale de maçon",
+               "description": "Enseigne avec le symbole du maçon."
             }
          },
          "wooden_sign_weaver": {
@@ -7104,18 +7790,286 @@
             "valor_statue_ghost": {
                "display_name": "La valeur du Cid",
                "description": "Un monument à la puissance militaire de votre ville"
+            },
+            "brazier_large_ghost": {
+               "display_name": "Grand brasero",
+               "description": "Un phare de lumière pour protéger votre ville."
+            },
+            "window_frame_xlarge": {
+               "window_frame_xlarge_ghost": {
+                  "display_name": "Cadre de fenêtre en pierre extra-large",
+                  "description": "Pour ceux qui apprécient des vues larges expansives."
+               }
+            },
+            "torch": {
+               "torch_ghost": {
+                  "display_name": "Torche en bois",
+                  "description": "Sa flamme apporte une chaude sensation de fierté dans tout ce que nous avons accompli."
+               }
+            },
+            "portcullis_valor": {
+               "portcullis_valor_ghost": {
+                  "display_name": "Château Portcullis",
+                  "description": "Pour les temps où seule la porte sera la plus forte."
+               }
+            },
+            "window_arrow_tall": {
+               "window_arrow_tall_ghost": {
+                  "display_name": "Grande meurtrière pour flèche en pierre",
+                  "description": "Pour ceux qui aiment les petites vues compressées."
+               }
+            },
+            "window_arrow_short": {
+               "window_arrow_short_ghost": {
+                  "display_name": "Meurtrière pour flèche courte en pierre",
+                  "description": "Pour ceux qui aiment les petites vues compressées."
+               }
+            },
+            "statue_knight": {
+               "statue_knight_ghost": {
+                  "display_name": "Statue de chevalier",
+                  "description": "Noble chevalier en pierre"
+               }
+            },
+            "statue_knight_male": {
+               "statue_knight_male_ghost": {
+                  "display_name": "Statue de chevalier",
+                  "description": "Noble chevalier en pierre"
+               }
+            },
+            "window_frame_barred": {
+               "window_frame_barred_ghost": {
+                  "display_name": "Cadre de fenêtre en pierre barrée",
+                  "description": "Pour ceux qui aiment regarder en toute sécurité derrière les barreaux."
+               }
             }
          },
          "roadside_shrine": {
             "roadside_shrine_ghost": {
                "display_name": "Fontaine d'abondance",
-               "description": "Place en preuve de la générosité et de la foi"
+               "description": "Endroit pour montrer la générosité et la foi"
+            },
+            "fountain_wishing": {
+               "fountain_wishing_ghost": {
+                  "display_name": "Bassin scintillant",
+                  "description": "Échange de l'or pour les voeux"
+               }
+            },
+            "lamppost_upscale": {
+               "lamppost_upscale_ghost": {
+                  "display_name": "Lampadaire en fer",
+                  "description": "Bel éclairage pour tout chemin ou promenade"
+               }
+            },
+            "lamppost_upscale_double": {
+               "lamppost_upscale_double_ghost": {
+                  "display_name": "Lampadaire double en fer",
+                  "description": "Bel éclairage pour tout chemin ou promenade"
+               }
+            },
+            "lantern_poyo": {
+               "lantern_poyo_ghost": {
+                  "display_name": "Lanterne Poyo",
+                  "description": "Bonne lumière bronze"
+               }
+            },
+            "pot_goldrose": {
+               "pot_goldrose_ghost": {
+                  "display_name": "Rosier d'or",
+                  "description": "Fleurs jaunes copieuses"
+               }
+            },
+            "pot_moondrop": {
+               "pot_moondrop_ghost": {
+                  "display_name": "Lune brousse",
+                  "description": "Argenté et serein"
+               }
+            },
+            "pot_redbloom": {
+               "pot_redbloom_ghost": {
+                  "display_name": "Buisson de fleurs rouges",
+                  "description": "Un arbuste rose"
+               }
+            },
+            "tree_goldrose": {
+               "tree_goldrose_ghost": {
+                  "display_name": "Arbuste de Rosier d'or",
+                  "description": "Une lueur avec des fleurs d'or"
+               }
+            },
+            "tree_moondrop": {
+               "tree_moondrop_ghost": {
+                  "display_name": "Arbuste de Lune brousse",
+                  "description": "Éblouissant dans le moment"
+               }
+            },
+            "tree_redbloom": {
+               "tree_redbloom_ghost": {
+                  "display_name": "Arbuste de fleur rouge",
+                  "description": "Méticuleusement soigné et couvert de fleurs"
+               }
+            },
+            "weathervane_poyo": {
+               "weathervane_poyo_ghost": {
+                  "display_name": "Oiseau virevoltant",
+                  "description": "Une girouette ressemblant à un poyo"
+               }
             }
          },
          "craftsman_statue": {
             "craftsman_statue_ghost": {
                "display_name": "L'habileté du Maître de Guilde",
                "description": "Place en preuve de l'habileté à l'artisanat"
+            },
+            "candle_iron": {
+               "candle_iron_ghost": {
+                  "display_name": "Bougeoir en fer",
+                  "description": "Que la lumière soit !"
+               }
+            },
+            "candle_iron_double": {
+               "candle_iron_double_ghost": {
+                  "display_name": "Candélabre en fer",
+                  "description": "Qu'il y ait encore plus de lumière !"
+               }
+            },
+            "door_blacksmith": {
+               "door_blacksmith_ghost": {
+                  "display_name": "Porte du forgeron",
+                  "description": "Convient pour un atelier de maître forgeron"
+               }
+            },
+            "door_carpenter": {
+               "door_carpenter_ghost": {
+                  "display_name": "Porte de menuisier",
+                  "description": "Convient pour un atelier de maître menuisier"
+               }
+            },
+            "door_mason": {
+               "door_mason_ghost": {
+                  "display_name": "Porte de maçon",
+                  "description": "Convient pour un atelier de maître maçon"
+               }
+            },
+            "fence_brightbell": {
+               "fence_brightbell_ghost": {
+                  "display_name": "Clôture fleurie rose",
+                  "description": "Une clôture avec des clochettes qui dépassent"
+               }
+            },
+            "fence_frostsnap": {
+               "fence_frostsnap_ghost": {
+                  "display_name": "Clôture à fleurs bleues",
+                  "description": "Une clôture avec des perçe-neiges"
+               }
+            },
+            "fountain": {
+               "fountain_ghost": {
+                  "display_name": "Fontaine en pierre",
+                  "description": "Simple, animé et pétillant"
+               }
+            },
+            "fountain_garden": {
+               "fountain_garden_ghost": {
+                  "display_name": "Bassin de Lilypad",
+                  "description": "Un petit jardin flottant pour un coin tranquille"
+               }
+            },
+            "fountain_tiered": {
+               "fountain_tiered_ghost": {
+                  "display_name": "Bassin de cascade",
+                  "description": "Une cascade miniature"
+               }
+            },
+            "gate_iron": {
+               "gate_iron_ghost": {
+                  "display_name": "Porte en fer forgé",
+                  "description": "Ça a l'air lourd, mais vous pourriez juste passer à travers si vous vouliez"
+               }
+            },
+            "lamppost_rustic": {
+               "lamppost_rustic_ghost": {
+                  "display_name": "Lampadaire rustique",
+                  "description": "Illumine humblement tout chemin ou terrasse"
+               }
+            },
+            "lamppost_rustic_double": {
+               "lamppost_rustic_double_ghost": {
+                  "display_name": "Poteau de lampe rustique jumeau",
+                  "description": "Allume le chemin plus audacieusement"
+               }
+            },
+            "lantern_iron": {
+               "lantern_iron_ghost": {
+                  "display_name": "Lanterne murale en fer",
+                  "description": "Brille comme le coeur de la forge"
+               }
+            },
+            "pot_berry_bush": {
+               "pot_berry_bush_ghost": {
+                  "display_name": "Buisson de baies en pot",
+                  "description": "Un ami soigneusement conçu"
+               }
+            },
+            "sign_blacksmith": {
+               "sign_blacksmith_ghost": {
+                  "display_name": "Panneau de magasin de forgeron",
+                  "description": "Un panneau en fer forgé à exposer devant un atelier de forgeron"
+               }
+            },
+            "sign_carpenter": {
+               "sign_carpenter_ghost": {
+                  "display_name": "Panneau de magasin de menuisier",
+                  "description": "Une enseigne savamment sculptée, devant être exposée à l'extérieur de l'atelier d'un menuisier"
+               }
+            },
+            "sign_mason": {
+               "sign_mason_ghost": {
+                  "display_name": "Panneau de magasin de maçon",
+                  "description": "Un signe de pierre robuste, à afficher à l'extérieur de l'atelier d'un maçon"
+               }
+            },
+            "statue_rabbit": {
+               "statue_rabbit_ghost": {
+                  "display_name": "Statue de lapin",
+                  "description": "Oreilles levé !"
+               }
+            },
+            "statue_rabbit_flat": {
+               "statue_rabbit_flat_ghost": {
+                  "display_name": "Lapin plat en pierre",
+                  "description": "Oreilles baissé !"
+               }
+            },
+            "topiary_fox": {
+               "topiary_fox_ghost": {
+                  "display_name": "Renard en baie",
+                  "description": "Art topiaire moyen"
+               }
+            },
+            "topiary_mammoth": {
+               "topiary_mammoth_ghost": {
+                  "display_name": "Mammouth en baie",
+                  "description": "Art topiaire massive"
+               }
+            },
+            "topiary_rabbit": {
+               "topiary_rabbit_ghost": {
+                  "display_name": "Petit lapin en baie",
+                  "description": "Art topiaire petit"
+               }
+            },
+            "wall_hanging_berrywreath": {
+               "wall_hanging_berrywreath_ghost": {
+                  "display_name": "Couronne de baies",
+                  "description": "Parfaite pour toute occasion"
+               }
+            },
+            "wall_hanging_plaque": {
+               "wall_hanging_plaque_ghost": {
+                  "display_name": "Épée et bouclier en plaque",
+                  "description": "Tout comme l'épée des Grand-Papa !"
+               }
             }
          },
          "wooden_sign_engineer": {
@@ -7176,6 +8130,64 @@
             "dry_stone_ghost": {
                "description": "Cette pierre a été bénie par la chaleur de Pal'Mum !",
                "display_name": "Pierre sèche"
+            }
+         },
+         "hearth_bunny": {
+            "hearth_bunny_ghost": {
+               "display_name": "Le foyer de lapin",
+               "description": "Je suis un texte incroyable sur ce beau foyer"
+            }
+         },
+         "hearth_fountain": {
+            "hearth_fountain_ghost": {
+               "display_name": "Le foyer de la fontaine",
+               "description": "Je suis un texte incroyable sur ce beau foyer"
+            }
+         },
+         "hearth_stump": {
+            "hearth_stump_ghost": {
+               "display_name": "Le foyer de moignon",
+               "description": "Je suis un texte incroyable sur ce beau foyer"
+            }
+         },
+         "stall_progression": {
+            "stall_progression_ghost": {
+               "display_name": "Un stand de fête",
+               "description": "Ici, les Hearthlings peuvent saisir la savoureuse nourriture !"
+            }
+         },
+         "chest_cheat": {
+            "display_name": "Triche - élément de débogage",
+            "description": "Ceci est un élément de débogage avec des éléments de triche par défaut."
+         },
+         "dirt_stone": {
+            "dirt_stone_ghost": {
+               "display_name": "Pierre de terre",
+               "description": "Cette pierre renferme une magie prête à éclater !"
+            },
+            "chimney_rock": {
+               "chimney_rock_ghost": {
+                  "display_name": "Pierre de roche de cheminée",
+                  "description": "Cette pierre entoure une tour magique de pierre prête à éclater !"
+               }
+            },
+            "marking_stones": {
+               "marking_stones_ghost": {
+                  "display_name": "Pierres de marquage",
+                  "description": "Cette pierre renferme une série de vieilles pierres prêtes à éclater !"
+               }
+            },
+            "rabbit": {
+               "rabbit_ghost": {
+                  "display_name": "Pierre de lapin",
+                  "description": "Cette pierre enveloppe une ancienne douceur prête à éclater !"
+               }
+            }
+         },
+         "void_stone": {
+            "void_stone_ghost": {
+               "display_name": "Pierre vide",
+               "description": "Cette pierre renferme une magie qui a faim de masse !"
             }
          }
       },
@@ -7409,8 +8421,8 @@
          },
          "vegetable_tagine": {
             "vegetable_tagine": {
-               "display_name": "Vegetable Stew Tagine",
-               "description": "Veggies simmered in a clay pot"
+               "display_name": "Tajine de ragoût de légumes",
+               "description": "Légumes mijotés dans un pot en argile"
             },
             "vegetable_tagine_serving": {
                "display_name": "Bol de ragout de légumes"
@@ -7464,6 +8476,163 @@
          "rotten_bug_meat": {
             "description": "La viande d'insecte est mauvaise par rapport à d'autres viandes",
             "display_name": "Viande d'insecte pourrie"
+         },
+         "roast_pork": {
+            "roast_pork": {
+               "description": "Tendrement rôti à la perfection",
+               "display_name": "Gigot de porc rôti"
+            },
+            "roast_pork_serving": {
+               "display_name": "Tranche de porc rôti"
+            }
+         },
+         "egg_large": {
+            "display_name": "Gros œuf",
+            "description": "Un oeuf, ingrédient pour la cuisine"
+         },
+         "rotten_egg_large": {
+            "description": "Répugnant",
+            "display_name": "Grand oeuf pourri"
+         },
+         "varanus_meat": {
+            "display_name": "Viande de varanus",
+            "description": "Plus gouteux qu'un poyo peut l'être avec un poyo."
+         },
+         "rotten_varanus_meat": {
+            "description": "Ça sent mieux maintenant",
+            "display_name": "Viande de Varanus pourrie"
+         },
+         "roast_varanus": {
+            "roast_varanus": {
+               "description": "Rôti à la perfection",
+               "display_name": "Plaque de varanus rôti"
+            },
+            "roast_varanus_serving": {
+               "display_name": "Portion de rôti Varanus"
+            }
+         },
+         "roast_zilla": {
+            "roast_zilla": {
+               "display_name": "Morceau de Zilla rôti",
+               "description": "Transformativement torréfié à la perfection"
+            },
+            "roast_zilla_serving": {
+               "display_name": "Portion de Rôti Zilla"
+            }
+         },
+         "rotten_pork_meat": {
+            "display_name": "Viande de porc pourri",
+            "description": "Cela a définitivement mal tourné"
+         },
+         "rotten_poultry_large_meat": {
+            "display_name": "Viande de volaille pourrie",
+            "description": "Pouaaaaww !"
+         },
+         "poultry_large": {
+            "display_name": "Volaille crue",
+            "description": "Viande crue d'un gros oiseau"
+         },
+         "roast_poultry": {
+            "roast_poultry": {
+               "display_name": "Pilon de volaille",
+               "description": "Torréfié à la perfection"
+            },
+            "roast_poultry_serving": {
+               "display_name": "Pilon rôti"
+            }
+         },
+         "rotten_sausage_meat": {
+            "display_name": "Saucisses pourries",
+            "description": "La viande peut-elle devenir mûre ?"
+         },
+         "sausage": {
+            "display_name": "Saucisse crue",
+            "description": "Viande crue de .. partout ailleurs"
+         },
+         "roast_sausage": {
+            "roast_sausage": {
+               "display_name": "Saucisse rôtie",
+               "description": "Rôti à la perfection"
+            },
+            "roast_sausage_serving": {
+               "display_name": "Portion de saucisse rôtie"
+            }
+         },
+         "bug_meat_stew": {
+            "bug_meat_stew": {
+               "description": "Filandreux et savoureux",
+               "display_name": "Ragoût d'insecte savoureux"
+            },
+            "bug_meat_stew_serving": {
+               "display_name": "Bol de ragoût d'insecte savoureux"
+            }
+         },
+         "fried_eggs_large": {
+            "fried_eggs_large": {
+               "display_name": "Grand oeuf au plat",
+               "description": "Frit, délicieux et ÉNORME"
+            },
+            "fried_eggs_large_serving": {
+               "display_name": "Portion de gros oeufs au plat"
+            }
+         },
+         "bacon_and_eggs": {
+            "bacon_and_eggs": {
+               "display_name": "Bacon et oeufs",
+               "description": "Le meilleur petit déjeuner que vous pouvez obtenir"
+            },
+            "bacon_and_eggs_serving": {
+               "display_name": "Portion de bacon et oeufs"
+            }
+         },
+         "varanus_jerky": {
+            "display_name": "Varanus haché"
+         },
+         "zilla_jerky": {
+            "display_name": "Zilla haché"
+         },
+         "ostrich_jerky": {
+            "display_name": "Autruche haché"
+         },
+         "boar_jerky": {
+            "display_name": "Sanglier Jerky"
+         },
+         "duckduck_jerky": {
+            "display_name": "Canard Jerky"
+         },
+         "roast_venison": {
+            "roast_venison": {
+               "display_name": "Morceau de cerf rôti",
+               "description": "Rôti à la perfection"
+            },
+            "roast_venison_serving": {
+               "display_name": "Portion de rôti de chevreuil"
+            }
+         },
+         "venison": {
+            "display_name": "Chevreuil cru",
+            "description": "Viande crue d'un cerf"
+         },
+         "rotten_venison_meat": {
+            "display_name": "Viande de chevreuil pourrie",
+            "description": "Quel gâchis.."
+         },
+         "sugar": {
+            "sugarbell_basket": {
+               "display_name": "Panier de cloches de sucre",
+               "description": "Pas vraiment comestible sous cette forme, il doit être traité."
+            },
+            "display_name": "Sac de sucre",
+            "description": "Parfait pour faire des bonbons"
+         },
+         "cake": {
+            "cake": {
+               "display_name": "Gâteau sucré",
+               "description": "Doux et succulent."
+            },
+            "cake_serving": {
+               "display_name": "Morceau de gâteau sucré"
+            }
          }
       },
       "furniture": {
@@ -7782,6 +8951,27 @@
                "display_name": "Mannequin de formation",
                "description": "Il est préférable de pratiquer avec ce gars sympathique."
             }
+         },
+         "town_banner_guardian": {
+            "town_banner_guardian_ghost": {
+               "display_name": "Bannière de Ruse",
+               "description": "Comment tu sais que tu es rentré à la maison.",
+               "town_bonus_description": "<i>Cette colonie sera un centre de commerce animé.</i><ul><li>Les routes boostent de 3x la vitesse normal</li><li>Les articles se vendent 50% plus chère</li><li>Les commerçants apporteront 2x plus de marchandises et d'or</li></ul>"
+            }
+         },
+         "town_banner_might": {
+            "town_banner_might_ghost": {
+               "display_name": "Bannière de Force",
+               "description": "Comment tu sais que tu es rentré",
+               "town_bonus_description": "<i>Cette colonie deviendra fort à travers la terre et l'acier.</i><ul><li>L'exploitation minière donne 50% de plus de minerai, de pierre et d'argile</li><li>Hearthlings ne se soucient plus des espaces exigus</li></ul>"
+            }
+         },
+         "town_banner_nature": {
+            "town_banner_nature_ghost": {
+               "display_name": "Bannière de Vitalité",
+               "description": "Comment tu sais que tu es rentré",
+               "town_bonus_description": "<i>Cette colonie doit être en harmonie avec l'environnement.</i><ul><li>Les arbres produisent 25% de plus de bois</li><li>Les plantes et les cultures poussent 25% plus vite</li><li>Les plantes poussent 2x plus vite que la normal</li></ul>"
+            }
          }
       },
       "loot": {
@@ -7832,6 +9022,10 @@
             "cougar": {
                "display_name": "Puma",
                "description": "Un gros chat"
+            },
+            "jacko": {
+               "display_name": "Esprit de Jack-O",
+               "description": "Protecteur de la lumière"
             }
          },
          "goblins": {
@@ -8055,32 +9249,94 @@
             "description": "Si brave!",
             "species": "chien"
          },
-         "dragon_whelp": {
-            "display_name": "Petit dragon",
-            "description": "Un bébé dragon",
-            "species": "dragon"
-         },
          "kitten": {
             "display_name": "Chaton",
             "description": "Il est si mignon!",
-            "species": "chat"
+            "species": "chat",
+            "jacko": {
+               "display_name": "Ombre de Jack-O",
+               "description": "Marcheur des ombres"
+            },
+            "koda": {
+               "display_name": "Esprit de Koda",
+               "description": "Ami de tous"
+            }
          },
          "mammoth": {
             "display_name": "Bébé mammouth",
             "description": "Si poilu!",
             "species": "mammouth"
+         },
+         "dragon_whelp_fire": {
+            "display_name": "Dragonnet de flamme",
+            "description": "Un bébé dragon, gardez-le à l'écart des matériaux inflammables.",
+            "species": "dragon"
+         },
+         "dragon_whelp_nature": {
+            "display_name": "Dragonnet de la forêt",
+            "description": "Un bébé dragon, excellent pour entretenir un jardin fraîchement planté.",
+            "species": "dragon"
+         },
+         "dragon_whelp_ice": {
+            "display_name": "Dragonnet du froid",
+            "description": "Un bébé dragon, bon pour garder la nourriture froide.",
+            "species": "dragon"
          }
       },
       "plants": {
          "berry_bush": {
             "display_name": "Buisson à baies",
             "description": "Récoltable pour une source de nourriture frugale.",
-            "unripe_description": "Pas assez mûrs pour la récolte."
+            "unripe_description": "Pas assez mûrs pour la récolte.",
+            "seed": {
+               "berry_bush_plant_seed_ghost": {
+                  "display_name": "Graine de baies",
+                  "description": "Peut être planté pour faire pousser un maigre approvisionnement alimentaire"
+               }
+            },
+            "bud": {
+               "berry_bush_plant_bud": {
+                  "display_name": "Bourgeon de baies",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            },
+            "sprout": {
+               "berry_bush_plant_sprout": {
+                  "display_name": "Petit germe de baies",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "berry_bush_plant_stem": {
+                  "display_name": "Tige de baies",
+                  "description": "Toujours en croissance !"
+               }
+            }
          },
          "brightbell_plant": {
             "display_name": "Jacinthe sauvage",
             "description": "Une fleur sauvage récoltable.",
-            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé"
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé",
+            "seed": {
+               "brightbell_plant_seed_ghost": {
+                  "display_name": "Graine sauvage de Jacinthe",
+                  "description": "Une fois planté, il se développera en herbes médicinales"
+               },
+               "brightbell_plant_sprout": {
+                  "display_name": "Petit germe de Jacinthe",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "brightbell_plant_stem": {
+                  "display_name": "Tige de Jacinthe",
+                  "description": "Toujours en croissance !"
+               },
+               "brightbell_plant_bud": {
+                  "display_name": "Tige de Jacinthe",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            }
          },
          "carrot": {
             "carrot_basket": {
@@ -8090,28 +9346,118 @@
             "carrot_serving": {
                "display_name": "Carotte",
                "description": "Petite. Amère."
+            },
+            "display_name": "Carotte",
+            "description": "Idéal pour les soupes",
+            "bud": {
+               "carrot_plant_bud": {
+                  "display_name": "Bourgeon de carotte",
+                  "description": "C'est presque complet ! Mais alors il doit sécher !"
+               }
+            },
+            "rotten": {
+               "carrot_rotten": {
+                  "display_name": "Carotte pourrie",
+                  "description": "Pas bon pour manger, mais une bonne source de graines"
+               }
+            },
+            "sprout": {
+               "carrot_plant_sprout": {
+                  "display_name": "Petit germe de carotte",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "carrot_plant_seed": {
+                  "display_name": "Graine de carotte",
+                  "description": "Peut être planté pour faire pousser un légume croquant d'orange."
+               },
+               "carrot_plant_seed_ghost": {
+                  "display_name": "Graine de carotte",
+                  "description": "Peut être planté pour faire pousser un légume croquant d'orange."
+               }
+            },
+            "stem": {
+               "carrot_plant_stem": {
+                  "display_name": "Tige de carotte",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "carrot_ghost": {
+               "display_name": "Carotte",
+               "description": "Idéal pour les soupes"
             }
          },
          "frostsnap_plant": {
             "display_name": "Perce-neige sauvage",
             "description": "Une fleur sauvage récoltable.",
-            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussée"
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussée",
+            "seed": {
+               "frostsnap_plant_seed_ghost": {
+                  "display_name": "Graine de Perce-neige",
+                  "description": "Peut être planté pour faire pousser des herbes médicinales"
+               },
+               "frostsnap_plant_sprout": {
+                  "display_name": "Petit germe de Perce-neige",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "frostsnap_plant_stem": {
+                  "display_name": "Tige de Perce-neige",
+                  "description": "Toujours en croissance !"
+               },
+               "frostsnap_plant_bud": {
+                  "display_name": "Bourgeon de Perce-neige",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            },
+            "bud": {
+               "frostsnap_plant_bud": {
+                  "display_name": "Bourgeon de Perce-neige",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            }
          },
          "silkweed": {
             "silkweed": {
                "display_name": "Fil-de-soie sauvage",
                "description": "Les fibres de cette plante peuvent être filées.",
                "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussée."
+            },
+            "seed": {
+               "silkweed_plant_seed_ghost": {
+                  "display_name": "Graine de Fil-de-soie sauvage",
+                  "description": "Peut être planté pour faire pousser des fibres qui peuvent être filées en fil."
+               }
+            },
+            "bud": {
+               "silkweed_bud": {
+                  "display_name": "Bourgeon de Fil-de-soie sauvage",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            },
+            "sprout": {
+               "silkweed_plant_sprout": {
+                  "display_name": "Petit germe de Fil-de-soie sauvage",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "silkweed_stem": {
+                  "display_name": "Tige de Fil-de-soie sauvage",
+                  "description": "Toujours en croissance !"
+               }
             }
          },
          "tester": {
             "tester_basket": {
-               "display_name": "Basket of Testers",
-               "description": "Juicy and exciting!"
+               "display_name": "Panier de testeurs",
+               "description": "Juteux et excitant!"
             },
             "tester_serving": {
-               "display_name": "A Tester",
-               "description": "Used as shields by princesses."
+               "display_name": "Un testeur",
+               "description": "Utilisé comme bouclier par les princesses."
             }
          },
          "turnip": {
@@ -8127,49 +9473,380 @@
          "cactus_plant": {
             "display_name": "Cactus sauvage",
             "description": "Une fleur sauvage récoltable",
-            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussée."
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussée.",
+            "bud": {
+               "cactus_plant_plant_bud": {
+                  "display_name": "Bourgeon de cactus sauvage",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            },
+            "seed": {
+               "cactus_plant_seed": {
+                  "display_name": "Graine de cactus sauvage",
+                  "description": "Peut être planté pour faire pousser des herbes médicinales."
+               },
+               "cactus_plant_seed_ghost": {
+                  "display_name": "Graine de cactus sauvage",
+                  "description": "Peut être planté pour pousser quelques poires épineuses."
+               }
+            },
+            "sprout": {
+               "cactus_plant_plant_sprout": {
+                  "display_name": "Petit germe de cactus sauvage",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "cactus_plant_plant_stem": {
+                  "display_name": "Tige de cactus sauvage",
+                  "description": "Toujours en croissance !"
+               }
+            }
          },
          "tumbleweed": {
             "display_name": "Amarante",
-            "description": "Source de fibres grossières"
+            "description": "Source de fibres grossières",
+            "bud": {
+               "tumbleweed_plant_bud": {
+                  "display_name": "Bourgeon d'amarante",
+                  "description": "C'est presque complet ! Mais alors il doit sécher !"
+               }
+            },
+            "seed": {
+               "tumbleweed_plant_seed": {
+                  "display_name": "Graine d'amarante",
+                  "description": "Peut être planté pour faire pousser une fibre de qualité rugueuse."
+               },
+               "tumbleweed_plant_seed_ghost": {
+                  "display_name": "Graine d'amarante",
+                  "description": "Peut être planté pour faire pousser une fibre de qualité rugueuse."
+               }
+            },
+            "sprout": {
+               "tumbleweed_plant_sprout": {
+                  "display_name": "Petit germe d'amarante",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "tumbleweed_plant_stem": {
+                  "display_name": "Tige d'amarante",
+                  "description": "Toujours en croissance !"
+               }
+            }
          },
          "pear_cactus": {
             "display_name": "Figue de Barbarie",
             "description": "Récolte soigneusement pour les figues de Barbarie.",
-            "unripe_description": "Ce sont des épines invisibles et qui blessent beaucoup"
+            "unripe_description": "Ce sont des épines invisibles et qui blessent beaucoup",
+            "seed": {
+               "pear_cactus_plant_seed_ghost": {
+                  "display_name": "Graine de figue de Barbarie",
+                  "description": "Peut être planté pour pousser quelques poires épineuses."
+               }
+            },
+            "bud": {
+               "pear_cactus_plant_bud": {
+                  "display_name": "Bourgeon de figue de Barbarie",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            },
+            "sprout": {
+               "pear_cactus_plant_sprout": {
+                  "display_name": "Petit germe de figue de Barbarie",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "pear_cactus_plant_stem": {
+                  "display_name": "Tige de figue de Barbarie",
+                  "description": "Toujours en croissance !"
+               }
+            }
          },
          "foxlily_plant": {
             "foxlily_plant_ghost": {
                "display_name": "Lis des steppes géant",
                "description": "Lis des steppes géant sont des grandes fleurs de lis orange ayant une ressemblance à des queues de renard."
+            },
+            "bud": {
+               "foxlily_plant_plant_bud": {
+                  "display_name": "Bourgeon de Lis des steppes géant",
+                  "description": "C'est presque là ! Vous pouvez voir les fleurs en germe !"
+               }
+            },
+            "seed": {
+               "foxlily_plant_plant_seed_ghost": {
+                  "display_name": "Graine de Lis des steppes géant",
+                  "description": "Peut être planté pour faire pousser une belle fleur de Lis des steppes géant."
+               },
+               "foxlily_plant_plant_seed": {
+                  "display_name": "Graine de Lis des steppes géant",
+                  "description": "Peut être planté pour faire pousser une belle fleur de Lis des steppes géant."
+               }
+            },
+            "sprout": {
+               "foxlily_plant_plant_sprout": {
+                  "display_name": "Petit germe de Lis des steppes géant",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "foxlily_plant_plant_stem": {
+                  "display_name": "Tige de Lis des steppes géant",
+                  "description": "Toujours en croissance !"
+               }
             }
          },
          "sunflower_plant": {
             "sunflower_plant_ghost": {
                "display_name": "Tournesol",
                "description": "Lumineux et heureux comme le soleil"
+            },
+            "bud": {
+               "sunflower_plant_plant_bud": {
+                  "display_name": "Bourgeon de Tournesol",
+                  "description": "C'est presque là ! Vous pouvez voir les fleurs en germe !"
+               }
+            },
+            "stem": {
+               "sunflower_plant_plant_stem": {
+                  "display_name": "Tige de Tournesol",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "sunflower_plant_plant_sprout": {
+                  "display_name": "Petit germe de Tournesol",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "sunflower_plant_plant_seed_ghost": {
+                  "display_name": "Graine de Tournesol",
+                  "description": "Peut être planté pour faire pousser un beau tournesol."
+               },
+               "sunflower_plant_plant_seed": {
+                  "display_name": "Graine de Tournesol",
+                  "description": "Peut être planté pour faire pousser un beau tournesol."
+               }
             }
          },
-         "brightbell_seed_plant": {
-            "unripe_description": "Cette graine va devenir une vrai plante un jour",
-            "description": "Peut être planté pour faire pousser des herbes médicinales",
-            "display_name": "Graine sauvage"
+         "tumbleweed_live": {
+            "display_name": "Virevoltant (tumbleweed)",
+            "description": "Une fois qu'il aura séché, ce sera une excellente source de fibres grossières"
          },
-         "berry_bush_seed_plant": {
-            "display_name": "Graines de petits fruits",
-            "description": "Peut être planté pour faire pousser un maigre approvisionnement alimentaire"
+         "sugarbell": {
+            "unripe_description": "Pas encore mûr pour la récolte.",
+            "sugarbell_ghost": {
+               "display_name": "Cloche à sucre",
+               "description": "Récoltable pour un peu de sucre."
+            },
+            "bud": {
+               "sugarbell_plant_bud": {
+                  "display_name": "Bourgeon de Cloche à sucre",
+                  "description": "C'est presque là ! Les pétales commencent à changer !"
+               }
+            },
+            "seed": {
+               "sugarbell_plant_seed": {
+                  "display_name": "Graine de Cloche à sucre",
+                  "description": "Peut être planté pour faire pousser un peu de sucre"
+               },
+               "sugarbell_plant_seed_ghost": {
+                  "display_name": "Graine de Cloche à sucre",
+                  "description": "Peut être planté pour faire pousser un peu de sucre"
+               }
+            },
+            "sprout": {
+               "sugarbell_plant_sprout": {
+                  "display_name": "Petit germe de Cloche à sucre",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "sugarbell_plant_stem": {
+                  "display_name": "Tige de Cloche à sucre",
+                  "description": "Toujours en croissance !"
+               }
+            }
          },
-         "silkweed_seed_plant": {
-            "description": "Peut être planté pour faire pousser des fibres qui peuvent être filées en fil.",
-            "display_name": "Graine de soie sauvage"
+         "cactus_tulip_red_plant": {
+            "cactus_tulip_red_plant_ghost": {
+               "display_name": "Cactus de Tulipe rouge",
+               "description": "Peut être récolté pour donner une plante médicinales"
+            },
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé",
+            "stem": {
+               "cactus_tulip_red_plant_stem": {
+                  "display_name": "Tige de Cactus de Tulipe rouge",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "cactus_tulip_red_plant_sprout": {
+                  "display_name": "Petit germe de Cactus de Tulipe rouge",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "cactus_tulip_red_plant_seed": {
+                  "display_name": "Graine de Cactus de Tulipe rouge",
+                  "description": "Une fois planté, il deviendra une plante herbacée curative"
+               },
+               "cactus_tulip_red_plant_seed_ghost": {
+                  "display_name": "Graine de Cactus de Tulipe rouge",
+                  "description": "Une fois planté, il deviendra une plante herbacée curative"
+               }
+            },
+            "bud": {
+               "cactus_tulip_red_plant_bud": {
+                  "display_name": "Bourgeon de Cactus de Tulipe rouge",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            }
          },
-         "pear_cactus_seed_plant": {
-            "description": "Peut être planté pour pousser quelques poires épineuses.",
-            "display_name": "Graine de cactus de poire"
+         "cactus_tulip_blue_plant": {
+            "stem": {
+               "cactus_tulip_blue_plant_stem": {
+                  "display_name": "Tige de Cactus de Tulipe bleu",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "cactus_tulip_blue_plant_sprout": {
+                  "display_name": "Petit germe de Cactus de Tulipe bleu",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "cactus_tulip_blue_plant_seed": {
+                  "display_name": "Graine de Cactus de Tulipe bleu",
+                  "description": "Une fois planté, il deviendra une plante herbacée curative"
+               },
+               "cactus_tulip_blue_plant_seed_ghost": {
+                  "display_name": "Graine de Cactus de Tulipe bleu",
+                  "description": "Une fois planté, il deviendra une plante herbacée curative"
+               }
+            },
+            "bud": {
+               "cactus_tulip_blue_plant_bud": {
+                  "display_name": "Bourgeon de Cactus de Tulipe bleu",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
+               }
+            },
+            "cactus_tulip_blue_plant_ghost": {
+               "display_name": "Cactus de Tulipe bleu",
+               "description": "Peut être récolté pour donner une plante médicinales"
+            },
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé"
          },
-         "frostsnap_seed_plant": {
-            "display_name": "Graine de grenouille sauvage",
-            "description": "Peut être planté pour faire pousser des herbes médicinales"
+         "cactus_tulip_plant": {
+            "yellow": {
+               "stem": {
+                  "cactus_tulip_yellow_plant_stem": {
+                     "display_name": "Tige de Cactus de Tulipe jaune",
+                     "description": "Toujours en croissance !"
+                  }
+               },
+               "sprout": {
+                  "cactus_tulip_yellow_plant_sprout": {
+                     "display_name": "Petit germe de Cactus de Tulipe jaune",
+                     "description": "Juste besoin de temps et de soins."
+                  }
+               },
+               "seed": {
+                  "cactus_tulip_yellow_plant_seed_ghost": {
+                     "display_name": "Graine de Cactus de Tulipe jaune",
+                     "description": "Une fois planté, il deviendra une plante herbacée curative"
+                  },
+                  "cactus_tulip_yellow_plant_seed": {
+                     "display_name": "Graine de Cactus de Tulipe jaune",
+                     "description": "Une fois planté, il deviendra une plante herbacée curative"
+                  }
+               },
+               "bud": {
+                  "cactus_tulip_yellow_plant_bud": {
+                     "display_name": "Bourgeon de Cactus de Tulipe jaune",
+                     "description": "C'est presque là ! Regardez, il a des bourgeons !"
+                  }
+               },
+               "cactus_tulip_yellow_plant": {
+                  "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé"
+               },
+               "cactus_tulip_yellow_plant_ghost": {
+                  "display_name": "Cactus de Tulipe jaune",
+                  "description": "Peut être récolté pour donner une plante médicinales"
+               }
+            }
+         },
+         "wax_plant_purple": {
+            "wax_plant_purple_ghost": {
+               "display_name": "Plante de cire pourpre",
+               "description": "Juste une petite plante mignonne, peut le récolter pour les graines."
+            },
+            "bud": {
+               "wax_plant_purple_plant_bud": {
+                  "display_name": "Bourgeon de Plante de cire pourpre",
+                  "description": "C'est presque là !"
+               }
+            },
+            "seed": {
+               "wax_plant_purple_plant_seed": {
+                  "display_name": "Graine de Plante de cire pourpre",
+                  "description": "Peut être planté pour faire pousser un petit cactus."
+               },
+               "wax_plant_purple_plant_seed_ghost": {
+                  "display_name": "Graine de Plante de cire pourpre",
+                  "description": "Peut être planté pour faire pousser un petit cactus."
+               }
+            },
+            "sprout": {
+               "wax_plant_purple_plant_sprout": {
+                  "display_name": "Petit germe de Plante de cire pourpre",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "wax_plant_purple_plant_stem": {
+                  "display_name": "Tige de Plante de cire pourpre",
+                  "description": "Toujours en croissance !"
+               }
+            }
+         },
+         "wax_plant_green": {
+            "wax_plant_green_ghost": {
+               "display_name": "Plante de cire verte",
+               "description": "Juste une petite plante mignonne, peut le récolter pour les graines."
+            },
+            "bud": {
+               "wax_plant_green_plant_bud": {
+                  "display_name": "Bourgeon de Plante de cire verte",
+                  "description": "C'est presque là !"
+               }
+            },
+            "seed": {
+               "wax_plant_green_plant_seed": {
+                  "display_name": "Graine de Plante de cire verte",
+                  "description": "Peut être planté pour faire pousser un petit cactus."
+               },
+               "wax_plant_green_plant_seed_ghost": {
+                  "display_name": "Graine de Plante de cire verte",
+                  "description": "Peut être planté pour faire pousser un petit cactus."
+               }
+            },
+            "sprout": {
+               "wax_plant_green_plant_sprout": {
+                  "display_name": "Petit germe de Plante de cire verte",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "stem": {
+               "wax_plant_green_plant_stem": {
+                  "display_name": "Tige de Plante de cire verte",
+                  "description": "Toujours en croissance !"
+               }
+            }
          }
       },
       "rabbit": {
@@ -8300,11 +9977,11 @@
             },
             "deer_pelt": {
                "display_name": "Peau de cerf",
-               "description": "Soft, supple, and quite dead"
+               "description": "Doux, souple et un peu mort"
             },
             "cougar_pelt": {
                "display_name": "Peau de cougar",
-               "description": "Soft, supple, and quite dead"
+               "description": "Doux, souple et un peu mort"
             },
             "beetle_pelt": {
                "display_name": "Chitine de coléoptère",
@@ -8316,7 +9993,11 @@
             },
             "doodles_pelt": {
                "description": "Dur, brillant et un peu mort",
-               "display_name": "Doodle Chitin"
+               "display_name": "Doodle chitine"
+            },
+            "boar_pelt": {
+               "description": "Doux, souple et un peu mort",
+               "display_name": "Peau de sanglier"
             }
          },
          "silver": {
@@ -8389,8 +10070,20 @@
                "description": "Une fleur qui est froide au toucher"
             },
             "cactus_flower": {
-               "display_name": "Fleur de de cactus",
+               "display_name": "Fleur de cactus",
                "description": "Une magnifique fleur du désert avec des propriétés médicinales"
+            },
+            "cactus_tulip_red": {
+               "display_name": "Fleur de Cactus de Tulipe rouge",
+               "description": "Une herbe couramment utilisée à des fins médicinales"
+            },
+            "cactus_tulip_blue": {
+               "display_name": "Fleur de Cactus de Tulipe bleu",
+               "description": "Une herbe couramment utilisée à des fins médicinales"
+            },
+            "cactus_tulip_yellow": {
+               "display_name": "Fleur de Cactus de Tulipe jaune",
+               "description": "Une herbe couramment utilisée à des fins médicinales"
             }
          },
          "skin": {
@@ -8401,12 +10094,24 @@
             "ogre_bone": {
                "display_name": "Os d'ogre",
                "description": "Dense et solide"
+            },
+            "zilla_skin": {
+               "display_name": "Peau de Zilla",
+               "description": "Rugueux et écailleux, c'est toujours un peu chaud."
             }
          },
          "feathers": {
             "poyo_feathers": {
                "display_name": "Plumes de poyo",
                "description": "Plumes d'un oiseau dodu"
+            },
+            "ostrich_feathers": {
+               "description": "Plumes d'un grand oiseau incapable de voler haut",
+               "display_name": "Plumes d'autruche"
+            },
+            "duckduck_feathers": {
+               "description": "Plumes d'un oiseau incapable de voler haut",
+               "display_name": "Plumes de canard"
             }
          },
          "refined": {
@@ -8523,6 +10228,44 @@
             "small_juniper_tree": {
                "display_name": "Petit genévrier",
                "description": "Juste un arbrisseau."
+            },
+            "stem": {
+               "tree_juniper_plant_stem": {
+                  "display_name": "Tige d'arbre de genévrier",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "tree_juniper_sprout": {
+                  "display_name": "Petit germe d'arbre de genévrier",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "tree_juniper_seed": {
+                  "display_name": "Graine de genévrier",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               },
+               "tree_juniper_seed_ghost": {
+                  "display_name": "Graine de genévrier",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               }
+            },
+            "bud": {
+               "tree_juniper_plant_bud": {
+                  "display_name": "Bourgeon d'arbre de genévrier",
+                  "description": "C'est presque là ! Il pousse ses feuilles adultes !"
+               }
+            },
+            "sapling_juniper_tree": {
+               "sapling_juniper_tree_iconic": {
+                  "description": "Plantez-le dans la terre et regardez-le pousser."
+               },
+               "description": "Arbre de genévrier bébé",
+               "sapling_juniper_tree_ghost": {
+                  "display_name": "Arbuste de genévrier",
+                  "description": "Arbre de genévrier bébé."
+               }
             }
          },
          "palm_tree": {
@@ -8553,12 +10296,68 @@
                "sapling_acacia_tree_iconic": {
                   "description": "Plantez-le dans la terre et regardez-le grandir."
                }
+            },
+            "stem": {
+               "tree_acacia_plant_stem": {
+                  "display_name": "Tige d'Acacia",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "tree_acacia_sprout": {
+                  "display_name": "Petit germe d'Acacia",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "tree_acacia_seed": {
+                  "display_name": "Graine d'Acacia",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               },
+               "tree_acacia_seed_ghost": {
+                  "display_name": "Graine d'Acacia",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               }
+            },
+            "bud": {
+               "tree_acacia_plant_bud": {
+                  "display_name": "Bourgeon d'Acacia",
+                  "description": "C'est presque là ! Il pousse ses feuilles adultes !"
+               }
             }
          },
          "joshua_tree": {
             "large_joshua_tree": {
                "display_name": "Grand arbre de Josué",
                "description": "C'est un arbre étrange."
+            },
+            "stem": {
+               "tree_joshua_plant_stem": {
+                  "display_name": "Tige d'arbre de Josué",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "tree_joshua_sprout": {
+                  "display_name": "Petit germe d'arbre de Josué",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "tree_joshua_seed": {
+                  "display_name": "Graine d'arbre de Josué",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               },
+               "tree_joshua_seed_ghost": {
+                  "display_name": "Graine d'arbre de Josué",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               }
+            },
+            "bud": {
+               "tree_joshua_plant_bud": {
+                  "display_name": "Bourgeon d'arbre de Josué",
+                  "description": "C'est presque là ! Il pousse ses feuilles adultes !"
+               }
             }
          },
          "pine_tree": {
@@ -8573,6 +10372,34 @@
             "small_pine_tree": {
                "display_name": "Petit pin",
                "description": "Juste un arbrisseau."
+            },
+            "stem": {
+               "tree_pine_plant_stem": {
+                  "display_name": "Tige de Pin",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "tree_pine_sprout": {
+                  "display_name": "Petit germe de Pin",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "tree_pine_seed": {
+                  "display_name": "Graine de Pin",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               },
+               "tree_pine_seed_ghost": {
+                  "display_name": "Graine de Pin",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               }
+            },
+            "bud": {
+               "tree_pine_plant_bud": {
+                  "display_name": "Bourgeon de Pin",
+                  "description": "C'est presque là ! Il pousse ses feuilles adultes !"
+               }
             }
          },
          "cactus_tree": {
@@ -8583,6 +10410,44 @@
             "small_cactus_tree": {
                "display_name": "Petit cactus",
                "description": "Petit et piquant."
+            },
+            "stem": {
+               "tree_cactus_plant_stem": {
+                  "display_name": "Tige de Cactus",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "tree_cactus_sprout": {
+                  "display_name": "Petit germe de Cactus",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "tree_cactus_seed": {
+                  "display_name": "Graine de cactus géante",
+                  "description": "Peut être planté pour faire pousser un cactus géant"
+               },
+               "tree_cactus_seed_ghost": {
+                  "display_name": "Grosse graine de Cactus",
+                  "description": "Peut être planté pour faire pousser un cactus géant"
+               }
+            },
+            "bud": {
+               "tree_cactus_plant_bud": {
+                  "display_name": "Bourgeon de Cactus",
+                  "description": "C'est presque là ! Vous pouvez le voir repulpant !"
+               }
+            },
+            "sapling_cactus_tree": {
+               "description": "Bébé cactus",
+               "sapling_cactus_tree_iconic": {
+                  "description": "Plantez-le dans la terre et regardez-le pousser."
+               },
+               "sapling_cactus_tree_ghost": {
+                  "display_name": "Bébé cactus",
+                  "description": "Bébé cactus."
+               }
             }
          },
          "oak_tree": {
@@ -8610,6 +10475,34 @@
                },
                "sapling_oak_tree_iconic": {
                   "description": "Plantez le en terre et regardez le pousser."
+               }
+            },
+            "stem": {
+               "tree_oak_plant_stem": {
+                  "display_name": "Tige de Chêne",
+                  "description": "Toujours en croissance !"
+               }
+            },
+            "sprout": {
+               "tree_oak_sprout": {
+                  "display_name": "Petit germe de Chêne",
+                  "description": "Juste besoin de temps et de soins."
+               }
+            },
+            "seed": {
+               "tree_oak_seed": {
+                  "display_name": "Graine de Chêne",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               },
+               "tree_oak_seed_ghost": {
+                  "display_name": "Graine de Chêne",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
+               }
+            },
+            "bud": {
+               "tree_oak_plant_bud": {
+                  "display_name": "Bourgeon de Chêne",
+                  "description": "C'est presque là ! Il pousse ses feuilles adultes !"
                }
             }
          }
@@ -8867,6 +10760,22 @@
             "silkweed_seeds": {
                "display_name": "Graines de fil-de-soie",
                "description": "Apprenez à faire pousser du fil-de-soie."
+            },
+            "cactus_tree_seeds": {
+               "cactus_tree_seeds_ghost": {
+                  "display_name": "Graines de Cactus",
+                  "description": "Apprenez à cultiver des cactus."
+               },
+               "display_name": "Graine de Cactus",
+               "description": "Apprenez à cultiver des cactus géants."
+            },
+            "juniper_tree_seeds": {
+               "display_name": "Baies de genièvre séchées",
+               "description": "Apprenez à cultiver des genévriers.",
+               "juniper_tree_seeds_ghost": {
+                  "display_name": "Baies de genièvre séchées",
+                  "description": "Apprenez à cultiver des genévriers."
+               }
             }
          }
       },
@@ -8887,6 +10796,30 @@
          "ball_of_wax": {
             "display_name": "Boule de cire",
             "description": "Brut, n'est-ce pas ?"
+         }
+      },
+      "valor_statue": {
+         "war_horn": {
+            "war_horn_ghost": {
+               "display_name": "Cor de guerre géant",
+               "description": "Réminiscence des jours passés."
+            }
+         }
+      },
+      "npc": {
+         "herald": {
+            "female": {
+               "herald_female": {
+                  "display_name": "Heraldine Rigby",
+                  "description": "C'est un héraut de l'ascendance."
+               }
+            },
+            "male": {
+               "herald_male": {
+                  "display_name": "Herald B. le Bon",
+                  "description": "C'est un héraut de l'ascendance."
+               }
+            }
          }
       }
    },
@@ -9250,9 +11183,83 @@
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_corner_ground_iron_recipe": {
-               "recipe_name": "Iron-Framed Corner Supply Shelf",
+               "recipe_name": "Table d'approvisionnemet d'angle en fer-clouté",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "sign_blacksmith_recipe": {
+               "description": "Un panneau en fer forgé à exposer devant un atelier de forgeron",
+               "recipe_name": "Enseigne de forgeron",
+               "flavor": "Ce sont des chaînes qui claquent et chantent avec éclat à chaque coup de marteau"
+            },
+            "lantern_iron_recipe": {
+               "description": "Brille comme le coeur de la forge",
+               "recipe_name": "Lanterne murale en fer",
+               "flavor": "Renforcé, mais toujours relaxant"
+            },
+            "lamppost_rustic_recipe": {
+               "description": "Illumine humblement tout chemin ou terrasse",
+               "recipe_name": "Lampadaire rustique",
+               "flavor": "Chassez la nuit"
+            },
+            "lamppost_rustic_double_recipe": {
+               "description": "Allume le chemin plus audacieusement",
+               "recipe_name": "Poteau de lampe rustique jumeau",
+               "flavor": "Deux têtes valent mieux qu'une"
+            },
+            "gate_iron_recipe": {
+               "description": "Presque trop lourd pour bouger",
+               "recipe_name": "Porte en fer forgé",
+               "flavor": "Heureusement, si vous ne pouvez pas ouvrir les portes, vous pouvez simplement les passer à travers"
+            },
+            "candle_iron_recipe": {
+               "description": "Que la lumière soit !",
+               "recipe_name": "Bougeoir en fer",
+               "flavor": "Ne jamais allumer et laisser sans surveillance"
+            },
+            "candle_iron_double_recipe": {
+               "description": "Qu'il y ait encore plus de lumière !",
+               "recipe_name": "Candélabre en fer",
+               "flavor": "Un luminaire majestueux qui appartient aux Hearthlings"
+            },
+            "construction_name": "Construction",
+            "door_blacksmith_recipe": {
+               "description": "Convient pour un atelier de maître forgeron",
+               "recipe_name": "Porte du forgeron",
+               "flavor": "Vous pouvez sentir la chaleur passer à travers la porte"
+            },
+            "lamppost_upscale_double_recipe": {
+               "description": "Bel éclairage pour tout chemin ou promenade",
+               "recipe_name": "Lampadaire double en fer",
+               "flavor": "Plus de lumière signifie probablement plus de style. Probablement"
+            },
+            "lamppost_upscale_recipe": {
+               "description": "Bel éclairage pour tout chemin ou promenade",
+               "recipe_name": "Lampadaire en fer",
+               "flavor": "Assez élégant pour faire réfléchir le poyo le plus têtu à deux fois"
+            },
+            "lantern_poyo_recipe": {
+               "description": "Bonne lumière bronze",
+               "recipe_name": "Lanterne Poyo",
+               "flavor": "Léger comme doux et chaud comme une couverture de plume de poyo"
+            },
+            "weathervane_poyo_recipe": {
+               "description": "Une girouette ressemblant à un poyo",
+               "recipe_name": "Oiseau virevoltant",
+               "flavor": "Tourne dans les vents et n'a jamais de vertiges"
+            },
+            "valor_torch_recipe": {
+               "description": "Sa flamme apporte une chaude sensation de fierté dans tout ce que nous avons accompli.",
+               "recipe_name": "Torche en bois"
+            },
+            "valor_torch_plaque_recipe": {
+               "description": "Tout comme l'épée des Grand-Papa !",
+               "recipe_name": "Épée et bouclier en plaque"
+            },
+            "valor_war_horn_recipe": {
+               "description": "Réminiscence des jours passés.",
+               "recipe_name": "Cor de guerre géant",
+               "flavor": "Le son d'une grande corne comme celle-ci ne devrait jamais être pris à la légère ... heureusement, on n'a pas sonné à Darkmoor depuis de nombreuses années. - Cid, Chevalier des Anciens"
             }
          }
       },
@@ -9357,8 +11364,8 @@
                "flavor": "Comme celui de Papy !"
             },
             "mason_chisel_recipe": {
-               "description": "Requis pour promouvoir un hearthling en tailleur de pierre.",
-               "recipe_name": "Marteau et ciseau de tailleur de pierre"
+               "description": "Requis pour promouvoir un hearthling en maçon.",
+               "recipe_name": "Marteau et ciseau de maçon"
             },
             "not_much_of_a_bed_recipe": {
                "description": "Un poil plus confortable que de dormir sur une planche.",
@@ -9380,7 +11387,7 @@
                "recipe_name": "Clôture",
                "flavor": "Si elle n'est pas blanche, cela manquera à votre vie."
             },
-            "tools_weapons_name": "Outils et armes",
+            "tools_weapons_name": "Outils",
             "storage_name": "Rangement",
             "building_parts_name": "Éléments de construction",
             "armor_name": "Armes et armures",
@@ -9467,8 +11474,8 @@
                "flavor": "Vos affaires en bois juste ici !"
             },
             "wooden_sign_mason_recipe": {
-               "description": "Une enseigne avec la marque du tailleur de pierre à placer sur les bâtiments.",
-               "recipe_name": "Enseigne murale de tailleur de pierre",
+               "description": "Une enseigne avec la marque du maçon à placer sur les bâtiments.",
+               "recipe_name": "Enseigne murale de maçon",
                "flavor": "Produit de beaux et lourds objets. Contient parfois des choses qui brulent."
             },
             "wooden_sign_recipe": {
@@ -9701,6 +11708,26 @@
                "recipe_name": "Table d'approvisionnement en bois",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "door_carpenter_recipe": {
+               "description": "Convient pour un atelier de maître menuisier",
+               "recipe_name": "Porte de menuisier",
+               "flavor": "Il y a toujours de la sciure"
+            },
+            "sign_carpenter_recipe": {
+               "description": "Une enseigne savamment sculptée, devant être exposée à l'extérieur de l'atelier d'un menuisier",
+               "recipe_name": "Panneau de magasin de menuisier",
+               "flavor": "Se balance comme un bruissement des branches de chêne dans le vent"
+            },
+            "fence_frostsnap_recipe": {
+               "description": "Une clôture avec des perçe-neiges",
+               "recipe_name": "Clôture à fleurs bleues",
+               "flavor": "Aucune quantité de traction ne semble nuire à ces fleurs. Il est préférable d'accepter et de les apprécier."
+            },
+            "fence_brightbell_recipe": {
+               "description": "Une clôture avec des clochettes qui dépassent",
+               "recipe_name": "Clôture fleurie rose",
+               "flavor": "La fermière Peggy ne souffrirait pas d'une mauvaise herbe sur sa montre. Soit elle avait un faible pour la floraison, soit elle repoussait trop vite."
             }
          }
       },
@@ -9775,8 +11802,8 @@
                "description": "Un pain simple mais croustillant.",
                "recipe_name": "Pain paysan"
             },
-            "food_name": "Nourriture",
-            "ingredients_name": "Ingrédients",
+            "food_name": "Repas quotidiens",
+            "ingredients_name": "Raffinement des ingrédients",
             "veggie_stew_recipe": {
                "description": "Un savoureux bouillon chaud agrémenté de citrouille braisée !",
                "recipe_name": "Succulent ragoût de légumes",
@@ -9842,7 +11869,8 @@
             "decoration_name": "Décorations",
             "roast_mutton_recipe": {
                "recipe_name": "Carré d'agneau",
-               "description": "Nutritif et délicieux"
+               "description": "Nutritif et délicieux",
+               "flavor": "Le repas traditionnel, excellent avec une sauce aux baies !"
             },
             "donation_box_recipe": {
                "recipe_name": "Don à l'Église d'abondance",
@@ -9853,7 +11881,52 @@
                "recipe_name": "Recette de croquettes",
                "description": "Pour attirer des compagnons à fourrure",
                "flavor": "Il y a un trou dans mon cœur qui a la forme d'un chaton."
-            }
+            },
+            "roast_pork_recipe": {
+               "description": "Arrive bientôt ! Boeuf rôti soigneusement cuit",
+               "recipe_name": "Gigot de porc rôti",
+               "flavor": "Glacé et rôti"
+            },
+            "bacon_and_eggs_recipe": {
+               "description": "Arrive bientôt ! Du porc et des oeufs comme vous les aimez.",
+               "recipe_name": "Bacon et oeufs",
+               "flavor": "La graisse pénètre juste dans les oeufs et rendant le goût tellement bon!"
+            },
+            "fried_eggs_large_recipe": {
+               "description": "Arrive bientôt ! Un énorme oeuf frit à la commande.",
+               "recipe_name": "Grand oeuf au plat",
+               "flavor": "Le meilleur de votre côté ensoleillé!"
+            },
+            "bug_meat_stew_recipe": {
+               "description": "Arrive bientôt ! Chaud, épicé, et parfait pour manger par une chaude journée.",
+               "recipe_name": "Ragoût d'insecte savoureux",
+               "flavor": "Juste ne demandez pas, vous savez que c'est fait d'insecte."
+            },
+            "roast_varanus_recipe": {
+               "description": "Viande de lézard rôtie",
+               "recipe_name": "Tranche de rôti de Varanus",
+               "flavor": "Quelle savoureuse tranche de queue de lézard !"
+            },
+            "roast_poultry_large_recipe": {
+               "description": "Arrive bientôt ! Jambe géante d'oiseau",
+               "recipe_name": "Pilon de volaille",
+               "flavor": "Ces jambes sont bonnes pour courir ... et manger !"
+            },
+            "roast_venison_recipe": {
+               "description": "Arrive bientôt ! Bon et gras.",
+               "recipe_name": "Portion rôtie de venaison",
+               "flavor": "Pas un repas commun, mais savoureux quand vous pouvez le trouver."
+            },
+            "sugar_recipe": {
+               "description": "Un ingrédient nécessaire pour toutes sortes de bonbons.",
+               "recipe_name": "Sac de sucre"
+            },
+            "cake_recipe": {
+               "description": "Un gâteau savoureux à base de blé et de sucre.",
+               "recipe_name": "Gâteau",
+               "flavor": "Tellement délicieux avec une baie sur le dessus !"
+            },
+            "chefs_specials_name": "Les spécialités du chef"
          },
          "cook_mill": {
             "cook_mill_ghost": {
@@ -9964,6 +12037,11 @@
             "wooden_sign_engineer_recipe": {
                "description": "Un signe avec la marque de l'ingénieur.",
                "recipe_name": "Signe mural de l'ingénieur"
+            },
+            "building_parts_name": "Pièces de construction",
+            "bronze_portcullis_recipe": {
+               "description": "Utile pour fortifier les points d'entrée de la ville.",
+               "recipe_name": "Herse en Bronze"
             }
          },
          "engineer_buffs": {
@@ -10333,6 +12411,83 @@
                "recipe_name": "Table d'approvisionnement en maçonnerie",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "sign_mason_recipe": {
+               "description": "Un lourd panneau de pierre, devant être exposé devant un atelier de maçon",
+               "recipe_name": "Panneau de magasin de maçon",
+               "flavor": "Ne pourrait probablement pas se balancer dans un ouragan"
+            },
+            "statue_rabbit_flat_recipe": {
+               "description": "Oreilles baissé !",
+               "recipe_name": "Lapin plat en pierre",
+               "flavor": "Il est considéré comme chanceux d'empiler un légume de chaque récolte sur le dos de ces statues - chanceux pour les vrais lapins, de toute façon."
+            },
+            "statue_rabbit_recipe": {
+               "description": "Oreilles levé !",
+               "recipe_name": "Statue de lapin",
+               "flavor": "Tout comme les énormes lapins gardiens de pierre"
+            },
+            "fountain_tiered_recipe": {
+               "description": "Une cascade miniature",
+               "recipe_name": "Bassin de cascade",
+               "flavor": "C'est amusant de voir les feuilles dévaler les chutes. C'est moins amusant de les ramasser tous plus tard."
+            },
+            "fountain_recipe": {
+               "description": "Simple, animé et pétillant",
+               "recipe_name": "Fontaine en pierre",
+               "flavor": "Nivelé avec goût, et remarquablement exempt d'algues"
+            },
+            "fountain_garden_recipe": {
+               "description": "Un petit jardin flottant pour un coin tranquille",
+               "recipe_name": "Bassin de Lilypad",
+               "flavor": "Peu être assez petit pour se cacher dans ses fleurs pour un après-midi..."
+            },
+            "door_mason_recipe": {
+               "description": "Convient pour un atelier de maître maçon",
+               "recipe_name": "Porte de maçon",
+               "flavor": "Envie de frapper à flanc de montagne"
+            },
+            "fountain_wishing_recipe": {
+               "description": "Échange de l'or pour les voeux",
+               "recipe_name": "Bassin scintillant",
+               "flavor": "Le taux d'échange exact n'a jamais été clair, mais qui s'en soucie ?"
+            },
+            "statue_knight_recipe": {
+               "description": "Noble chevalier de pierre",
+               "recipe_name": "Garde de pierre",
+               "flavor": "\"...Maintenant, tranquillement ils gardent la terre<br>au milieu des clochettes qui résonnent.\""
+            },
+            "statue_knight_male_recipe": {
+               "description": "Noble chevalier de pierre",
+               "recipe_name": "Garde de pierre",
+               "flavor": "\"Retenant l'obscurité profonde;<br> fer secoué, anneau de lames en acier...\""
+            },
+            "portcullis_valor_recipe": {
+               "description": "Pour les moments où seule la porte la plus forte fera l'affaire.",
+               "recipe_name": "Château Portcullis",
+               "flavor": "Pierre pour la force, Fer pour la polyvalence, Charbon pour peindre la peur dans le coeur de notre ennemi."
+            },
+            "valor_window_arrow_short_recipe": {
+               "description": "Pour ceux qui aiment les petites vues compressées.",
+               "recipe_name": "Meurtrière pour flèche courte en pierre"
+            },
+            "valor_window_arrow_tall_recipe": {
+               "description": "Pour ceux qui aiment les petites vues compressées.",
+               "recipe_name": "Meurtrière pour flèche en pierre"
+            },
+            "valor_window_frame_barred_recipe": {
+               "description": "Pour ceux qui aiment regarder en toute sécurité derrière les barreaux.",
+               "recipe_name": "Cadre de fenêtre en pierre barrée"
+            },
+            "valor_window_frame_xlarge_recipe": {
+               "description": "Pour ceux qui apprécient des vues larges expansives.",
+               "recipe_name": "Cadre de fenêtre en pierre extra-large",
+               "flavor": "Je ne suis pas le genre de personne qui vous dirait quoi faire avec votre fenêtre, mais quand Riley l'a collé au premier étage comme une porte, les lapins sont rentré directement dans sa cuisine. - Andie, Berry Farmer"
+            },
+            "valor_brazier_large_recipe": {
+               "description": "Un phare de lumière pour protéger votre ville.",
+               "recipe_name": "Grand Brazier",
+               "flavor": "D'un sommet de montagne, vous pouvez voir des feux comme ceux-ci tout au long de la Sombrelande."
             }
          }
       },
@@ -11106,7 +13261,137 @@
                "recipe_name": "Livre sacré",
                "description": "Requis pour promouvoir un hearthling en clerc"
             },
-            "tools_name": "Outils"
+            "tools_name": "Outils",
+            "frostsnap_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de perçe-neiges (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "cactus_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de cactus sauvage (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "brightbell_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de jacinthe (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "berry_bush_transmute_recipe": {
+               "description": "Séparer les graines du fruit",
+               "recipe_name": "Graines de baies (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "refined_name": "Raffinement",
+            "cactus_tulip_blue_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de Fleur de Cactus de Tulipe (Bleu x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "cactus_tulip_red_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de Fleur de Cactus de Tulipe (Rouge x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "cactus_tulip_yellow_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de Fleur de Cactus de Tulipe (Jaune x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "tulip_cactus_red_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de Fleur de Cactus de Tulipe rouge (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "tulip_cactus_blue_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de Fleur de Cactus de Tulipe bleu (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "tulip_cactus_yellow_transmute_recipe": {
+               "description": "Séparez les graines des herbes",
+               "recipe_name": "Graines de Fleur de Cactus de Tulipe jaune (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+            },
+            "wax_plant_green_transmute_recipe": {
+               "description": "Séparez les graines de la plante",
+               "recipe_name": "Graines de Plante de cire (Verte x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais la plante est perdue dans le processus."
+            },
+            "wax_plant_purple_transmute_recipe": {
+               "description": "Séparez les graines de la plante",
+               "recipe_name": "Graines de Plante de cire (Pourpre x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais la plante est perdue dans le processus."
+            },
+            "foxlily_transmute_recipe": {
+               "description": "Séparez les graines de la plante",
+               "recipe_name": "Graines de Lis des steppes géantes (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais la plante est perdue dans le processus."
+            },
+            "sunflower_transmute_recipe": {
+               "description": "Séparez les graines de la plante",
+               "recipe_name": "Graines de Tournesol (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais la plante est perdue dans le processus."
+            },
+            "pear_cactus_recipe": {
+               "description": "Séparer les graines du fruit",
+               "recipe_name": "Graines de figue de Barbarie (x3)",
+               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais le fruit est perdu dans le processus."
+            },
+            "wall_hanging_berrywreath_recipe": {
+               "description": "Parfait pour toute occasion",
+               "recipe_name": "Couronne de baies",
+               "flavor": "Vous pourriez manger les baies, mais cela ruinerait la couronne."
+            },
+            "topiary_rabbit_recipe": {
+               "description": "Petit lapin en baie",
+               "recipe_name": "Art topiaire petit",
+               "flavor": "Je sais qu'il repousse, mais je déteste cueillir sa queue..."
+            },
+            "topiary_mammoth_recipe": {
+               "description": "Art topiaire massive",
+               "recipe_name": "Mammouth en baie",
+               "flavor": "Je jure que je viens de le voir cligner des yeux"
+            },
+            "topiary_fox_recipe": {
+               "description": "Art topiaire moyen",
+               "recipe_name": "Renard en baie",
+               "flavor": "baie"
+            },
+            "pot_berry_bush_recipe": {
+               "description": "Un panneau avec la marque de l'herboriste.",
+               "recipe_name": "Panneau mural de l'herboriste"
+            },
+            "pot_goldrose_recipe": {
+               "description": "Fleurs jaunes copieuses",
+               "recipe_name": "Rosier d'or",
+               "flavor": "Le thé à la rose d'or est un démodé. Il a apparemment un goût différent pour tout le monde."
+            },
+            "pot_moondrop_recipe": {
+               "description": "Argenté et serein",
+               "recipe_name": "Arbuste de Lune brousse",
+               "flavor": "Ne jamais appuyer ou sécher les fleurs. Appréciez-les maintenant et attendez avec impatience les prochaines."
+            },
+            "pot_redbloom_recipe": {
+               "description": "Un arbuste rose",
+               "recipe_name": "Arbuste de fleur rouge",
+               "flavor": "Un bouquet de fleurs rouges invite la fortune, dont la nature dépend du nombre de fleurs. Soyez très prudent."
+            },
+            "tree_goldrose_recipe": {
+               "description": "Lumineux avec des fleurs dorées",
+               "recipe_name": "Arbre de Rose d'or",
+               "flavor": "Favorisé parmi les voyageurs, les roses d'or portent la chaleur du foyer et de la maison"
+            },
+            "tree_moondrop_recipe": {
+               "description": "Éblouissant dans le moment",
+               "recipe_name": "Arbre de Lune brousse",
+               "flavor": "Les gouttes de la lune symbolisent la fin d'un voyage et les nouveaux commencements. Ils fleurissent au tournant de la page"
+            },
+            "tree_redbloom_recipe": {
+               "description": "Méticuleusement bien entretenu",
+               "recipe_name": "Arbre de fleur rouge",
+               "flavor": "Les fleurs rouges sont pour la chance. Un nombre impair de pétales est particulièrement chanceux, même si personne n'a jamais vu une telle fleur."
+            }
          },
          "herbalist_buffs": {
             "willpower_1_buff": {
@@ -11343,6 +13628,11 @@
             "egg": {
                "decay_1": {
                   "description": "Commence à être mauvais. Il vaudrait mieux les cuisiner bientôt."
+               }
+            },
+            "egg_large": {
+               "decay_1": {
+                  "description": "Commencer à être mauvais. Il vaudrait mieux les cuisiner bientôt."
                }
             }
          },
