@@ -1,4 +1,4 @@
-# startermod_locale
+# fr_language Workshop mod 1362394094 based on startermod_locale
 
 ## Summary
 
@@ -135,7 +135,7 @@ brightbell | jacinthe rose
 Diamond Star | Étoile Diamant
 Kobold | kobold
 Red Kiln | Kiln Rouge
-Poyo | poyo
+Poyo | Poyo
 Carpenter | Menuisier
-Phoenix Empire | empire Phénix
-Phoenix | empire Phénix
+Phoenix Empire | Empire Phénix
+Phoenix | Phénix
