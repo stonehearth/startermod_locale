@@ -74,7 +74,8 @@
                "stairsTool": "Placer les escaliers",
                "holeTool": "Faire des trous",
                "splitWallTool": "Fractionnement des murs",
-               "roomTool": "Placer la pièce"
+               "roomTool": "Placer la pièce",
+               "pointerTool": "Pointeur"
             },
             "place_build_banner": "Placez la bannière à un endroit accessible aux hearthlings près de votre bâtiment.",
             "new_building_confirm": {
@@ -83,11 +84,34 @@
                "yes": "Oui !",
                "no": "Non"
             },
+			"destroy_building_confirm": {
+               "title": "Détruire le bâtiment actuel",
+               "message": "Voulez-vous vraiment détruire ce bâtiment? Cette opération est irreversible !",
+               "yes": "Oui !",
+               "no": "Non"
+            },
+            "saving_building": "Enregistrement du template ...",
+            "success_saving_building": "Template sauvegardé.",
+            "error_saving_building": "Une erreur est survenue lors de l'enregistrement de votre template !",
             "plan_job_status": {
                "COMPLETE": "La construction est déjà en cours !",
                "INVALID_BLUEPRINTS": "Ce bâtiment contient des structures invalides. Assurez-vous qu'aucune structure ne soit en rouge!",
                "PLANNING_ERROR_GENERIC": "Vos Hearthlings ne peuvent pas comprendre comment construire votre bâtiment! Veuillez envoyer votre modèle de construction à l'équipe Stonehearth pour enquête."
-            }
+            },
+            "building_status": {
+               "build_button": "BÂTIR",
+               "pause_button" : "PAUSE",
+               "resume_button" : "REPRENDRE",
+               "finished_button" : "FINIR",
+               "cost_prefix": "Coût :"
+            },
+            "material_list": {
+               "wall": "Mur",
+               "column": "Colonne",
+               "floor": "Plancher",
+               "roof": "Toit",
+               "stairs": "Escaliers"
+			}
          },
          "game_speed": {
             "pause_title": "Pause",
@@ -158,7 +182,8 @@
             "host": "hôte",
             "client": "client",
             "online": "en ligne",
-            "offline": "hors ligne",
+            "offline": "hors-ligne",
+            "connecting": "connexion",
             "embarking": "embarquer",
             "player": "Joueur",
             "players": "Joueurs",
@@ -183,6 +208,10 @@
                "transfer_player": {
                   "title": "Réclamer les effets personnels du joueur",
                   "message": "Êtes-vous sûr de vouloir prendre toutes les affaires de ce joueur ? Cela supprimera également la ville de ce joueur de la partie. Vous ne pouvez pas annuler cette action."
+               },
+               "friends_overlay": {
+                  "title": "Inviter des amis",
+                  "message": "Cliquez sur 'Continuer' pour ouvrir l'Overlay Steam. Cliquez avec le bouton droit sur l'ami que vous souhaitez inviter au jeu et cliquez sur 'Inviter au jeu'. Ils recevront un lien dans le chat Steam qui leur permettra de rejoindre."
                }
             }
          },
@@ -293,7 +322,7 @@
             "game_different_version": "Version de la sauvegarde incompatible",
             "delete_incompatible_saves": "Supprimer les sauvegardes incompatibles",
             "save_time": "Sauvegardé le [str(save_time)]",
-            "save_tooltip_description": "Nom du dossier&nbsp;: [str(folder_name)]"
+            "save_tooltip_description": "Nom du dossier : [str(folder_name)]"
          },
          "common": {
             "ok": "OK",
@@ -325,6 +354,7 @@
          "multiplayer_status_text": {
             "status": {
                "connected": "connecté",
+			   "connecting": "se connecte",
                "disconnected": "déconnecter",
                "removed": "retiré du jeu",
                "placed_camp": "placé leur camp",
@@ -339,6 +369,12 @@
                "shutdown": "Le serveur a été arrêté.",
                "closed": "Le serveur refuse les connexions",
                "full": "Le serveur est plein"
+            }
+         },
+         "steam": {
+            "workshop_agreement": {
+               "notice": "En soumettant cet article au Workshop, vous acceptez ses",
+               "terms_of_service": "conditions d'utilisation"
             }
          },
          "party": {
@@ -398,9 +434,9 @@
                "trap": "Pièges"
             },
             "quality": {
-               "quality-2": "Belle qualité",
+               "quality-2": "Bonne qualité",
                "quality-3": "Excellente qualité",
-               "quality-4": "De qualité chef-d'oeuvre!"
+               "quality-4": "Chef-d'oeuvre !"
             }
          },
          "citizens": {
@@ -409,10 +445,10 @@
             "worker_details": "Détails",
             "workers_list_headers": {
                "name": "Nom",
-               "haul": "Déplace",
-               "build": "Construction",
-               "mine": "Mine",
-               "job": "Travail",
+               "haul": "Placer",
+               "build": "Bâtir",
+               "mine": "Miner",
+               "job": "Job",
                "current_activity": "Activité",
                "status": "Statut",
                "morale": "Moral"
@@ -431,11 +467,11 @@
             }
          },
          "create_camp": {
-            "new_game_place_banner": "Cliquez ici pour placer la colonie",
+            "new_game_place_banner": "Cliquez ici pour fonder la colonie",
             "click_banner_tip": "Cliquez sur la bannière pour choisir l'emplacement de votre colonie",
             "select_camp_tip": "Maintenant, cliquez n'importe où dans le monde",
             "name_camp_title": "Nommez votre colonie",
-            "name_camp_prompt": "Entrez un nom pour votre colonie!"
+            "name_camp_prompt": "Entrez un nom pour votre colonie !"
          },
          "calendar": {
             "months": {
@@ -456,12 +492,15 @@
             "date_format_long": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
             "date_format_long_ordinal": "[str(ord_day)] Day of i18n(stonehearth:ui.game.calendar.month_format) [str(date.year)]",
             "date_time_long_format": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]",
-            "date_format_short": "i18n(stonehearth:ui.game.calendar.month_format), [str(date.day)]"
+            "date_format_short": "i18n(stonehearth:ui.game.calendar.month_format), [str(date.day)]",
+            "weather_prefix_0": "Aujourd'hui : ",
+            "weather_prefix_1": "Demain : ",
+            "weather_prefix_2": "Après demain : "
          },
          "esc_menu": {
             "title": "Stonehearth",
             "resume": "Reprendre",
-            "save": "Sauvegarder ou Charger une partie",
+            "save": "Sauvegarder ou Charger",
             "settings": "Paramètres",
             "about": "À propos",
             "quit_to_menu": "Retour au menu principal",
@@ -485,26 +524,27 @@
             "unknown_name": "Inconnu",
             "item_categories": {
                "food": "Nourriture",
-               "cooking_ingredient": "Cuisiner des ingrédients",
+               "cooking_ingredient": "Ingrédients",
                "resources": "Ressources",
                "furniture": "Mobilier",
-               "armor": "Armure",
+               "armor": "Armures",
                "decoration": "Décorations",
-               "construction": "Construction",
+               "construction": "Constructions",
                "door": "Portes",
                "window": "Fenêtres",
                "plants": "Plantes",
                "weapons": "Armes",
                "tools": "Outils",
-               "wealth": "Fortune",
+               "wealth": "Richesses",
                "refined": "Raffiné",
                "uncategorized": "Non classé",
                "workshops": "Ateliers",
                "consumable": "Consommables",
-               "storage": "Réserve",
-               "defense": "Défense",
+               "storage": "Rangements",
+               "defense": "Défenses",
                "trophy": "Trophées",
                "seed": "Graines",
+               "pets": "Animaux domestiques",
                "none": "Aucune"
             },
             "tooltip_combat_base_damage": "Atq :",
@@ -565,13 +605,13 @@
                      "tip_description": "Bouton droite pour sortir de ce mode"
                   },
                   "clear_item": {
-                     "display_name": "Effacer",
+                     "display_name": "Détruire",
                      "description": "Fait disparaitre des éléments de la surface du globe",
                      "tip_title": "Cliquez et relâchez pour supprimer définitivement des éléments",
                      "tip_description": "Bouton droite pour sortir de ce mode",
-                     "confirm_title": "Êtes-vous sur d'effacer ces éléments ?",
+                     "confirm_title": "Êtes-vous sur de vouloir détruire ces éléments ?",
                      "confirm_message": "Les objets utilisables dans cette zone vont être détruit définitivement",
-                     "confirm_clear": "Oui, détruit !",
+                     "confirm_clear": "Oui, détruire !",
                      "confirm_clear_no": "Non ! J'en ai besoin !"
                   }
                }
@@ -610,7 +650,7 @@
                }
             },
             "build_menu": {
-               "display_name": "Bâtiment et design",
+               "display_name": "Bâtir",
                "description": "Construisez des structures comme des maisons et des murs de ville.",
                "items": {
                   "building_templates": {
@@ -640,6 +680,28 @@
                      "description": "Construisez une échelle pour atteindre<br>les endroits hors de portée.",
                      "tip_title": "Cliquez sur un mur pour construire une échelle",
                      "tip_description": "Cliquez pour placer manuellement une échelle pour atteindre un endroit hors de portée<br><br>Clique droit pour sortir"
+                  }
+               }
+            },
+            "place_menu": {
+               "display_name": "Placer",
+               "description": "Placer des objets comme des meubles ou des échelles.",
+               "items": {
+                  "place_item": {
+                     "display_name": "Placer un objet",
+                     "description": "Placez un objet comme un meuble<br>ou une décoration.",
+                     "tip_title": "Cliquez pour placer cet objet",
+                     "tip_description": "Tournez avec les touches [str(left_binding)] et [str(right_binding)]"
+                  },
+                  "cannot_place_item": {
+                     "tip_title": "Impossible de placer cet élément",
+                     "tip_description": "Limite de placement de l'élément [str(tag)] atteint [str(num)] / [str(max)]"
+                  },
+                  "build_ladder": {
+                     "display_name": "Construire une échelle",
+                     "description": "Construire une échelle pour accéder aux endroits difficiles d'accès",
+                     "tip_title": "Cliquez sur un mur pour construire des échelles",
+                     "tip_description": "Cliquez pour placer manuellement une échelle et accéder aux zones difficiles d'accès.<br><br>Cliquez avec le bouton droit de la souris pour quitter"
                   }
                }
             },
@@ -760,13 +822,14 @@
                "buy_tab": "Acheter",
                "sell_tab": "Vendre",
                "shop_gold_label": "Or",
-               "shopkeeper_gold_label": "Marchand d'or",
+               "shopkeeper_gold_label": "Or du Marchand<br><br><br>",
                "not_enough_gold_tooltip": "Pas assez d'or !",
                "shopkeeper_not_enough_gold_tooltip": "Le commerçant n'a pas assez d'or"
             },
             "trade": {
                "target_title": "Offre commerciale de [str(i18n_data.town_name)]",
                "source_title": "Offre commerciale pour [str(i18n_data.town_name)]",
+			   "title_without_name": "Offre commerciale",
                "offering": "Offre:",
                "exchange": "En l'échange de:",
                "request": "Demander:",
@@ -783,7 +846,7 @@
                "proclamation": "PROCLAMATION DE"
             },
             "city_tier_dialog": {
-               "build_and_place": "Construire & Placez",
+               "build_and_place": "Construire & Placer",
                "attain_net_worth": "Valeur net atteint:",
                "check_requirements": "Vérifier les exigences",
                "summon_herald": "Invoquer un héraut !"
@@ -808,6 +871,8 @@
                   "spent": "Or dépensé via le commerce",
                   "earned": "Or gagné via le commerce"
                },
+               "net_worth_label": "Valeur nette",
+               "placed_item_label": "[str(itemName)] mis",
                "quality_label": {
                   "quality_2": "Objets de qualité fine possédés",
                   "quality_3": "Objets d'excellente qualité possédés",
@@ -818,12 +883,18 @@
                "abandon": "Abandonner",
                "dispatch": "Envoi"
             },
-            "town_founding": {
-               "title": "Déclaration de fondation du règlement officiel",
+			"reembarkation": {
+               "title": "Une nouvelle aventure vous attends !",
+               "dismiss": "Peut-être plus tard",
+               "confirm": "Départ",
+               "prompt": "Choisissez un équipage pour partir dans une nouvelle aventure, et des objets à emmener !"
+            },
+            "town_upgrade_choice": {
+               "title": "Déclaration officiel du règlement",
                "name_header": "Choisissez un nom pour votre règlement !",
                "name_prompt": "Nom:",
-               "banner_prompt": "Choisissez son chemin:",
-               "complete": "Emettre une déclaration et célébrer !"
+               "banner_prompt": "Choisissez son orientation :",
+               "complete": "Emettre la déclaration et célébrer !"
             },
             "immigration_report": {
                "title": "Résumé quotidien",
@@ -847,6 +918,7 @@
          },
          "build_mode2": {
             "tooltips": {
+               "pointer_tool": "Pointeur",
                "room_tool": "Pièces",
                "wall_tool": "Murs",
                "split_wall_tool": "Murs fendus",
@@ -929,10 +1001,10 @@
                "title": "Conception - [str(building_name)]",
                "building_name": "Désignation de la construction",
                "building_cost": "Matériaux nécessaires",
-               "start_building": "Construire !",
-               "pause_building": "Suspendre la construction",
-               "continue_building": "Continuer la construction",
-               "save_building_template": "Sauvegarder",
+               "start_building": "Bâtir !",
+               "pause_building": "Suspendre",
+               "continue_building": "Continuer",
+               "save_building_template": "Sauver",
                "finished_editing": "Terminer l'édition",
                "start_editing": "Éditer",
                "build_complete_title": "Félicitations!",
@@ -1149,40 +1221,41 @@
             "craft_number_right": "tout de suite.",
             "craft_up_to_left": "Maintenir",
             "craft_up_to_right": "en inventaire.",
-            "craft_ingredients": "Ingrédients&nbsp;:",
-            "craft_requirements": "Éléments requis&nbsp;:",
+            "craft_ingredients": "Ingrédients :",
+            "craft_requirements": "Éléments requis :",
             "unlock_text": "À débloquer :",
             "crafting_status": "fabrication en cours...",
             "crafting_status_queued": "Dans la file",
             "workshop_paused_status": "en pause...",
-            "workshop_remove_confirm": "Retirer&nbsp;?",
-            "workshop_open": "Ouvert&nbsp;!",
+            "workshop_remove_confirm": "Retirer ?",
+            "workshop_open": "Ouvert !",
             "workshop_closed": "Fermé",
-            "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d'options de fabrication&nbsp;!",
-            "craft": "Fabriquer&nbsp;!",
-            "craft_queue_full": "File pleine&nbsp;!",
+            "maintain_option_disabled": "Construisez une réserve ou placez une caisse pour débloquer plus d'options de fabrication !",
+            "craft": "Fabriquer !",
+            "craft_queue_full": "File pleine !",
             "craftable_locked": "Déverrouillé au niveau [str(level)]",
             "workshop_requirement_title": "Atelier",
-            "workshop_none_required": "Aucun pré-requis&nbsp;!",
+            "workshop_none_required": "Aucun pré-requis !",
             "workshop_required": "Nécessite de placer ",
             "level_requirement_title": "Niveau requis",
-            "level_requirement_none": "Aucun pré-requis&nbsp;!",
+            "level_requirement_none": "Aucun pré-requis !",
             "level_requirement_needed": "Nécessite un ",
             "level_requirement_level": " de niveau ",
             "too_many_symbol": "trop",
-            "requirements_unmet_general": "Pré-requis non respectés&nbsp;!",
-            "queue_anyway": "Mettre en attente tout de même",
+            "requirements_unmet_general": "Pré-requis non respectés !",
+            "queue_anyway": "Mettre en attente",
             "recipe_tab": "Recettes",
             "orders_tab": "Ordres",
-            "missing_ingredients": "Ingrédients manquants&nbsp;: ",
-            "tooltip_appeal_stat": "Charme"
+            "missing_ingredients": "Ingrédients manquants : ",
+            "tooltip_appeal_stat": "Charme",
+            "tooltip_net_worth_stat": "Valeur de l'or"
          },
          "town_overview": {
             "title": "Rapport sur la ville",
             "town_morale": "Morale de la ville",
             "initial_town_name": "Expédition [str(town_number)]",
             "journal": {
-               "default_message": "Pas encore d'entrée&nbsp;!",
+               "default_message": "Pas encore d'entrée !",
                "signature": "--[name(entry.person)]",
                "today": "Aujourd'hui",
                "town_log": "Rapport de la ville ",
@@ -1223,6 +1296,7 @@
                "inventory": "Inventaire",
                "agriculture": "Agriculture",
                "edibles": "Comestibles",
+               "next_requirement": "Objectif",
                "overall_morale": "Moral général",
                "food": "Nourriture",
                "shelter": "Abris",
@@ -1235,14 +1309,15 @@
             "tab": {
                "town_overview": "Rapport",
                "inventory": "Inventaire",
-               "journal": "Journal"
+               "journal": "Journal",
+               "bonuses": "Bonus"
             }
          }
       },
       "shell": {
          "about": {
             "title": "À propos de Stonehearth",
-            "attributions": "Ce qui suit est la liste des logiciels OpenSource utilisés dans Stonehearth&nbsp;:"
+            "attributions": "Ce qui suit est la liste des logiciels OpenSource utilisés dans Stonehearth :"
          },
          "loading_screen": {
             "initial_load_game_text": "Chargement en cours",
@@ -1283,7 +1358,7 @@
             },
             "tips": {
                "000": "Si vos mineurs restent bloqués dans un puits, construisez une échelle pour les en sortir !",
-               "001": "Vos hearthlings feront de meilleures nuits si vous leurs offrez des lits.",
+               "001": "Vos hearthlings passeront de meilleures nuits si vous leurs offrez des lits.",
                "002": "Construisez un enclos autour des pâturages pour être sur que les animaux ne s'enfuient pas.",
                "003": "Les réserves peuvent être modifiées pour accueillir des objets spécifiques.",
                "004": "Vous pouvez cultiver des plantes à soie pour avoir une source régulière de fibres végétales.",
@@ -1291,25 +1366,25 @@
                "006": "Utilisez les touches < ou > pour faire tourner un objet ou un bâtiment avant de le placer.",
                "007": "Vos hearthlings se déplacent plus vite sur les routes.",
                "008": "Le tisserand peut confectionner de nouveaux uniformes qui améliorent l'efficacité de vos travailleurs.",
-               "009": "S'assoir durant un repas aide à la digestion. Construisez tables et chaises pour vos hearthlings.",
+               "009": "S'assoir durant un repas aide à la digestion. Construisez des tables et chaises pour vos hearthlings.",
                "010": "Les bergers trouveront d'eux-même les moutons ou autres animaux pour remplir les pâturages.",
                "011": "Si vous voulez augmenter vos richesses, essayez de vendre la production de vos artisans à des marchands.",
-               "012": "Les ressources et l'alimentation ne contribuent pas à la valeur nette de votre ville.",
-               "013": "L'attribut de curiosité augmente le gain d'expérience.",
-               "014": "Les beaux objets ont une valeur nette supérieure à leurs versions normales.",
+               "012": "Les ressources et la nourriture ne contribuent pas à la richesse de votre ville.",
+               "013": "L'attribut curiosité augmente le gain d'expérience.",
+               "014": "Les objets de bonne qualité ont une valeur nette supérieure à leurs versions normales.",
                "015": "La valeur nette d'un produit est sa valeur de vente.",
                "016": "Vous pouvez utiliser une porte de tunnel pour bloquer l'entrées du tunnel de vos mines.",
                "017": "Vous ne voulez pas que vos hearthlings quitte votre ville ? L'ingénieur peut faire une porte verrouillable.",
-               "018": "Les hearthlings avec un attribut d'esprit supérieure feront de bons artisans.",
-               "019": "Placez les réserves de nourriture plus près des zones de travail de sorte qu'il est plus facile pour vos hearthlings d'accéder à la nourriture.",
-               "020": "Les trappeurs peuvent définir des pièges dans les montagnes et le désert, mais il y a moins de bestioles là bas.",
-               "021": "Vous pouvez désactiver un emploi de combattant dans le panneau des citoyens pour les forcer à prendre un repos.",
-               "022": "Miné de la terre donne occasionnellement de l'argile et de la pierre.",
-               "023": "Vous pouvez voir visuellement les veines de minerai dans le côté des montagnes.",
-               "024": "Vous avez besoin d'une source de nourriture de départ ? Bougez les buissons de baie ou figuier de Barbarie plus proche de votre ville.",
-               "025": "Après la défaite du chef gobelin, vous pouvez réclamer le mouton Bluebell chez vous.",
+               "018": "Les hearthlings avec un attribut d'esprit élevé feront de meilleurs artisans.",
+               "019": "Placez les réserves de nourriture plus près des zones de travail de sorte qu'il soit plus facile pour vos hearthlings d'accéder à la nourriture.",
+               "020": "Les trappeurs peuvent déployer des pièges dans les montagnes et le désert, mais il y a moins de bestioles là bas.",
+               "021": "Vous pouvez désactiver l'emploi d'un combattant dans le panneau des citoyens pour les forcer à prendre un repos.",
+               "022": "Miner de la terre donne occasionnellement de l'argile et de la pierre.",
+               "023": "Vous pouvez distinguer les veines de minerai sur les flancs des montagnes.",
+               "024": "Vous avez besoin d'une source de nourriture de départ ? Déplacez les buissons de baie ou figuier de Barbarie plus proche de votre ville.",
+               "025": "Après la défaite du chef gobelin, vous pouvez réclamer le mouton Bluebell pour chez vous.",
                "026": "Vos hearthlings n'aiment pas être dans des espaces étroits pendant trop longtemps.",
-               "027": "Les animaux de ferme peuvent se reproduire s'il y a au moins 2 des mêmes animaux dans un enclos."
+               "027": "Les animaux de ferme peuvent se reproduire s'il y a au moins 2 membres de la même espèce dans l'enclos."
             }
          },
          "select_settlement": {
@@ -1389,6 +1464,7 @@
             "aa_slider_4": "Énormément!",
             "sound": "Audio",
             "background_music_volume": "Volume de la musique",
+            "ambient_volume": "Volume ambiant",
             "effects_volume": "Volume des effets sonores",
             "system": "Système",
             "force_32_bit": "* Forcer le mode 32-bit (redémarrage requis)",
@@ -1424,15 +1500,27 @@
             "mods_tab": {
                "title": "Modules installés",
                "note": "L'activation ou la désactivation d'un module nécessite un rechargement de jeu.",
-               "invalid_manifest": "Document Manifest invalide",
+               "invalid_manifest": "Manifest invalide",
+               "invalid_steam_file": "ID Steam non valide",
                "out_of_date": "Obsolète",
                "deferred_load": "Chargé automatiquement par d'autres Mods",
                "required": "Requis",
+               "debug": "Debug Mod",
+               "localization": "Est-ce un mod de traduction?",
+               "loading_namespace": "[ chargement... ]",
                "mods_changed_dialog": {
                   "title": "Modules Changé",
                   "message": "Le jeu a besoin d'être rechargé pour appliquer les modifications du module. Recharger maintenant ?",
                   "accept": "Ok",
                   "cancel": "Annuler"
+               },
+               "upload_error_dialog": {
+                  "title": "Téléchargement échoué",
+                  "message": "Impossible de télécharger \"[str(modname)]\": [str(error)]"
+               },
+               "create_mod_error_dialog": {
+                  "title": "Création de mod échoué",
+                  "message": "Impossible de créer le mod \"[str(modname)]\": [str(error)]"
                }
             },
             "controls_tab": {
@@ -1454,7 +1542,7 @@
                   "menus": "Menus",
                   "harvest": "Outils",
                   "zone": "Zonage",
-                  "build": "Construction",
+                  "build": "Bâtir",
                   "craft": "Artisanat",
                   "fight": "Combat",
                   "ui": "Interface utilisateur",
@@ -1501,12 +1589,15 @@
                   "zone_trapping": "Outil de zone de piégeage",
                   "zone_pasture": "Outil de pâturage",
                   "build_menu": "Menu de construction",
+                  "place_menu": "Menu de placement",
                   "build_template": "Lieu de construction",
                   "build_custom": "Bâtiment de conception",
                   "build_place": "Placez l'article",
                   "build_ladder": "Échelle de construction",
                   "build_rotate_left": "Tourner l'objet à gauche",
                   "build_rotate_right": "Tourner l'objet à droite",
+                  "build_raise_template": "Élever un Template",
+                  "build_sink_template": "Baisser un Template",
                   "craft_menu": "Menu d'artisanat",
                   "craft_carpenter": "Menu de charpentier",
                   "craft_weaver": "Menu de tisserand",
@@ -1559,6 +1650,7 @@
             "singleplayer_game": "Un joueur",
             "multiplayer_game": "Multijoueur",
             "load_game": "Charger une partie",
+            "mods": "Mods",
             "quick_start": "Démarrage rapide",
             "patch_notes": "Afficher les notes de mise à jour",
             "alpha_welcome_dialog": {
@@ -1569,8 +1661,136 @@
             },
             "mod_conflic_dialog": {
                "title": "Conflit de module détectés !",
-               "message": "Attention: Votre répertoire mods contient à la fois un .smod et un dossier plat contenant certain mod. Le dossier plat va être utilisé par le jeu. Ces mod vont devenir obsolète lorsque le .smod sera mis à jour et causer des bugs. Les mods touchés sont: <br><br>",
+               "message": "Attention: vous avez des mods en conflit qui ont le même namespace. Assurez-vous de n'avoir qu'un seul mod actif par namespace sur l'écran de mod. <br> Si vous avez un .smod et un dossier pour le mod, le dossier sera utilisé en priorité. Les mods affectés sont:<br><br>",
                "accept": "Oui, continuer."
+            }
+         },
+         "mods_menu": {
+            "title": "Mods",
+            "note": "L'activation ou la désactivation d'un module nécessite un rechargement du jeu.",
+            "apply": "Appliquer",
+            "open_folder": "Ouvrir le dossier",
+            "sections": {
+               "base_mods": {
+                  "title": "Mods de base"
+               },
+               "unmanaged_mods": {
+                  "title": "Mods locaux"
+               },
+               "workshop_mods": {
+                  "title": "Modules Workshop souscrits",
+                  "browse_workshop": "Parcourir le Steam Workshop",
+                  "unsubscribe": "Se désinscrire",
+                  "view_in_workshop": "Voir dans le Workshop",
+                  "upload": "Télécharger",
+                  "update": "Mise à jour",
+                  "cancel": "X"
+               },
+               "my_items": {
+                  "title": "Télécharger sur le Workshop",
+                  "create_new_mod": "Créer un nouveau mod"
+               }
+            },
+            "unsubscribe_dialog": {
+               "title": "Etes-vous sûr de vouloir vous désinscrire ?",
+               "message": "Ceci effacera le mod en locale, mais vous pouvez retrouver le mod dans le Steam Workshop.",
+               "accept": "Oui, désinscription",
+               "cancel": "Non, restez abonné."
+            },
+            "duplicates_dialog": {
+               "title": "Doublon de Mods Actif",
+               "message": "Vous avez actuellement plus d'un mod avec le même nom activé Assurez-vous d'avoir une seule version activée à la fois Votre doublon actuel:<br><br>",
+               "ok": "OK"
+            }
+         },
+         "mods_sync": {
+            "stop_title": "Mods manquants",
+            "continue_title": "Prêt à continuer à jouer",
+            "note": "Le jeu que vous essayez de rejoindre a les mods suivants.",
+            "missing_note": "Le jeu que vous essayez de rejoindre a les mods suivants. Vous devez avoir les mêmes mods et versions pour pouvoir rejoindre.",
+            "continue": "Continuer de jouer",
+            "loading": "Chargement en jeu...",
+            "subscribe_all": "S'abonner à tout",
+            "no_steam_cant_sync": "Il vous manque un ou plusieurs des mods ci-dessus Demandez à votre hôte de vous les envoyer, ou connectez-vous à Steam et cherchez-les dans le Workshop Steam.",
+            "not_seen_in_workshop_cant_sync": "Un ou plusieurs mods manquants ne sont pas disponibles dans Steam Workshop, ils peuvent ne pas être téléchargés, ou ne peuvent être visualisés que par l'hôte. Il vous faut leur demander ou les télécharger ou modifier leurs permissions, puis essayer de se reconnecter.",
+            "mismatched_hash_workshop_cant_sync": "L'un de vos mods Steam ne correspond pas à la version utilisée par le serveur hôte.Les fichiers du mod peuvent avoir été modifiés ou l'hôte utilise un mod qui n'est pas à jour avec la version Steam. Vous pouvez forcer la mise à jour en supprimant le mod et en vous réabonnant pour obtenir la version Workshop, ou demandez à l'hôte de mettre à jour ses mods Steam Workshop.",
+            "failed_download_workshop_update_cant_sync": "Un ou plusieurs de vos mods ne correspondent pas à la version du serveur hôte. Le jeu n'a pas pu télécharger la mise à jour du Workshop pour l'un des mods car le fichier mod steam n'est pas valide ou vous êtes déconnecté.",
+            "cancel": "Annuler",
+            "private": "Mod privé",
+            "non_workshop": "Non trouvé sur le workshop",
+            "failed_download": "Impossible de télécharger la mise à jour",
+            "mismatched_workshop_hash": "Ne correspond pas à la version Steam",
+            "size": {
+               "bytes": "[str(size)] bytes",
+               "kilobytes": "[str(size)] KB",
+               "megabytes": "[str(size)] MB"
+            }
+         },
+         "mod_upload": {
+            "title": "[str(i18n_data.action)] mod \"[str(i18n_data.modname)]\"",
+            "opt_title": "Titre du Mod Steam",
+            "opt_title_placeholder": "Titre de votre Mod sur le Steam Workshop",
+            "opt_description": "Description du Mod Steam",
+            "opt_description_placeholder": "Description de votre mod",
+            "opt_visibility": "Visibilité",
+            "opt_tags": "Tags",
+            "opt_tags_placeholder": "par exemple biome, furniture, animals",
+            "opt_tags_tooltip": "Les tags doivent être séparés par des virgules, chaque tag peut contenir au maximum 255 caractères.",
+            "opt_tags_invalid": "Les tags ne peuvent pas contenir de caractères spéciaux",
+            "opt_preview_image": "Image d'aperçu",
+            "opt_preview_image_choose_file": "Choisir un fichier",
+            "opt_preview_image_placeholder": "Aucun fichier choisi",
+            "opt_preview_image_info": "(limite de 1MB)",
+            "opt_preview_image_dialog_title": "Ouvrir l'image d'aperçu",
+            "opt_change_note": "Modifier la note",
+            "opt_change_note_placeholder": "Une brève description des modifications apportées",
+            "upload": "Télécharger",
+            "update": "Mise à jour",
+            "cancel": "Annuler",
+            "public": "Publique",
+            "friends_only": "Amis seulement",
+            "private": "Seulement vous",
+            "required": "* obligatoires",
+            "optional": "optionnel",
+            "exceeded_byte_limit": "* dépasse la limite de byte ([str(byte_limit)])",
+            "debug_mod": "Mod Debug",
+            "localization_mod": "Est-ce un mod de traduction ?",
+            "errors": {
+               "steam_not_present": "Steam ne fonctionne pas",
+               "update_handle_invalid": "Impossible de mettre à jour mod [str(modname)].Vérifiez que vous avez les permissions pour mettre à jour ce steam workshop item.",
+               "invalid_title": "Le titre ne doit pas être vide ou contenir plus de 129 bytes",
+               "invalid_description": "La description ne doit pas être vide ou contenir plus de 8000 bytes",
+               "invalid_content_path": "Le répertoire du mod [str(modname)] n'a pas été trouvé Le nom du répertoire doit correspondre au namespace dans le manifeste du mod.",
+               "invalid_param": "L'image d'aperçu est plus petite que 16 bytes ou le fichier AppID ne correspond pas à l'AppID de l'utilisateur.",
+               "access_denied": "Impossible de trouver votre licence steam pour Stonehearth",
+               "file_not_found": "Impossible d'obtenir les informations sur le workshop pour l'article, le fichier d'aperçu n'a pas pu être lu ou le dossier de contenu fourni n'est pas valide. Vérifiez que votre fichier steam_file_id est un article valide du Workshop.",
+               "locking_failed": "Impossible d'acquérir UGC Lock pour l'article du steam workshop",
+               "limit_exceeded": "L'image d'aperçu est trop grande (elle doit être inférieure à 1 Megabyte) ou il n'y a pas assez d'espace disponible sur votre Steam Cloud",
+               "generic": "Impossible de mettre à jour mod [str(modname)] sur le steam workshop"
+            }
+         },
+         "mod_create": {
+            "title": "Créer un nouveau mod sur le Steam Workshop",
+            "opt_title": "Titre du Mod",
+            "opt_title_tooltip": "Un titre pour votre mod",
+            "opt_title_placeholder": "par exemple : Au pays de Candy",
+            "opt_namespace": "Namespace du Mod",
+            "opt_namespace_tooltip": "Le namespace pour votre mod que vous utiliserez pour préfixer les références d'alias dans votre mod",
+            "opt_namespace_placeholder": "par exemple : candy_land",
+            "create": "Créer",
+            "cancel": "Annuler",
+            "invalid_characters": "* Ne peut pas contenir de caractères spéciaux ou d'espaces",
+            "errors": {
+               "steam_not_present": "Steam ne fonctionne pas",
+               "duplicate_namespace": "Votre jeu a déjà un mod avec ce namespace [str(modname)]. Veuillez essayer avec un autre nom",
+               "protected_namespace": "[str(modname)] est un namespace protégé. Veuillez essayer avec un autre nom.",
+               "missing_fields": "Titre ou namespace manquant",
+               "invalid_directory": "Impossible de créer le répertoire pour [str(modname)]",
+               "in_progress": "Impossible de créer mod [str(modname)]. Le processus de création du précédent mod est toujours en cours",
+               "insufficient_privilege": "Votre compte steam n'a pas la permission de créer des objets pour la communauté Stonehearth",
+               "timeout": "L'opération de création de l'élément a pris plus de temps que prévu. Veuillez réessayer",
+               "not_logged_on": "Vous n'êtes actuellement pas connecté àsteam",
+               "failed": "Steam n'a pas réussi à créer le mod"
             }
          },
          "select_game_story": {
@@ -1606,6 +1826,11 @@
          },
          "select_roster": {
             "reroll_citizens": "Relancer les dés",
+            "reembark_button": "Choisissez enregistré",
+            "select_crew": "Sélectionner",
+            "cancel_crew": "Annuler",
+            "reembark_title": "Choisir les citoyens enregistrés",
+            "recipes_label": "Recettes déverrouillées",
             "citizen_info": "Personnaliser votre partie",
             "accept_roster": "Accepter la liste",
             "randomize": "Apparence aléatoire",
@@ -1666,7 +1891,7 @@
                "description": "Une part de chance de ce hearthling peut créer des articles avec la qualité fine et excellente",
                "bullet_points": {
                   "000": "Un hearthling doit être au moins un compagnon pour créer des objets de qualité, et un maître pour créer d'excellents articles </ br>",
-                  "001": "Qui va de-2% à +3%, basé sur l'esprit du hearthling"
+                  "001": "Qui va de -2% à +3%, basé sur l'esprit du hearthling"
                }
             },
             "shelter": {
@@ -1982,8 +2207,8 @@
                   }
                },
                "valor_tier_2_reached": {
-                  "title": "Retour du héraut de la princesse",
-                  "speaker_name": "L'honorable Anwyn Redelm",
+                  "title": "Canton établi",
+                  "speaker_name": "L'honorable Anwyn Torresi",
                   "message": "Félicitation, [str(i18n_data.town_name)]! a propager vos prouesses martiales. Votre ville se qualifie officiellement en tant que canton ! Je vous ai apporté des matériaux de construction et des accords commerciaux, comme il est d'usage !",
                   "accept": "Woohoo !",
                   "dialog_title": "Canton atteint !",
@@ -1996,9 +2221,10 @@
                   "recipe_unlock_engineer": "Nouvelle recette de herse pour Ingénieur !",
                   "recipe_unlock_mason": "Nouvelle recette de décoration pour Maçon !",
                   "recipe_unlock_blacksmith": "Nouvelles recettes de décoration pour forgeron !",
-                  "recipe_unlock_weapons_1": "<WIP, pas encore> Nouvelle recette d'épée légendaire - collaboration entre tisserand, potier et collaboration de forgeron !",
-                  "recipe_unlock_weapons_2": "<WIP, pas encore> Nouvelle recette de bouclier légendaire - collaboration entre forgeron, charpentier, et maçon !",
-                  "recipe_unlock_weapons_3": "<WIP, pas encore> Nouvelle recette d'archer légendaire - collaboration entre ingénieur, tisserand, et charpentier !"
+                  "recipe_unlock_weapons_1": "Nouvelle recette d'épée légendaire - collaboration entre tisserand, potier et forgeron !",
+                  "recipe_unlock_weapons_2": "Nouvelle recette de bouclier légendaire - collaboration entre forgeron, charpentier et maçon !",
+                  "recipe_unlock_weapons_3": "Nouvelle recette d'archer légendaire - collaboration entre ingénieur, tisserand et charpentier !",
+				  "recipe_unlock_weapons_4": "Nouvelle recette de Diadème légendaire - collaboration entre Herboriste, Maçon et Blacksmith !"
                },
                "generosity_tier_2_reached": {
                   "reward_message_ctd": "Comme preuve d'une grande générosité envers les plus démunis. La ville est par les présentes éligible pour:",
@@ -2030,7 +2256,7 @@
                               "000": "Par ordre de la princesse Dania, Première Dame de la Ascendancy, et dont les dimensions en vous sont installé, et avec la bénédiction de l'église d'abondance, dans sa sagesse nous prospérons..."
                            },
                            "bulletin_title": "Anwyn dégage sa gorge",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Wow, une proclamation !",
                            "choice_001": "Zzz..."
                         },
@@ -2039,7 +2265,7 @@
                               "000": "Les maîtres de l'art royal honorent ceux avec un oeil pour l'excellence. Demandez à votre maçon de créer une statue avec ces spécifications rigoureuses; et vous serez l'un des rares à les impressionner."
                            },
                            "bulletin_title": "Anwyn revient sur le rouleau",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Maçons ho !",
                            "choice_001": "De quelle autre façon puis-je gagner de la renommée ?"
                         },
@@ -2048,7 +2274,7 @@
                               "000": "Tous les colonies qui obtiennent la renommée locale seront reconnues comme officielles du Cantons de Ascendancy, avec les droits, privilèges et avantages de celle-ci."
                            },
                            "bulletin_title": "Anwyn lit",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Hein ?",
                            "choice_001": "Récompenses ?"
                         },
@@ -2057,7 +2283,7 @@
                               "000": "Qu'est-ce que cela signifie réellement? Eh bien, la plupart du temps nous écrivons dans un livre quelque part, dans le cas où on ne se souvient pas de revenir et de percevoir des impôts."
                            },
                            "bulletin_title": "Anwyn grimace",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Pas de soucis alors !",
                            "choice_001": "Taxes ? Sérieux ?"
                         },
@@ -2066,7 +2292,7 @@
                               "000": "Effectivement ! Par ordre de la princesse, les villes admissibles qui ont fait leurs preuves doivent gagner l'accès à l'apprentissage architectural et les riches caravanes pour le commerce."
                            },
                            "bulletin_title": "Hochements de tête d'Anwyn",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "D'accord. Que ce passe t-il après ?"
                         },
                         "military_reqs": {
@@ -2074,7 +2300,7 @@
                               "000": "Pour gagner la renommée de l'Ordre du Cid, vous devez faire preuve de courage et de bravoure ! Je vais donner à votre maçon une recette; et une quête des ingrédients pour fabriquer un monument digne de votre bras armé."
                            },
                            "bulletin_title": "Anwyn revient sur le rouleau",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Ça m'a l'air bien !",
                            "choice_001": "De quelle autre façon puis-je gagner de la renommée?"
                         },
@@ -2083,7 +2309,7 @@
                               "000": "Excellent! Messire Burlyhands dit que vous seriez bien ici, même si c'est un peu petit, cela devrait aller dans les premiers jours. Allons-nous commencer ?"
                            },
                            "bulletin_title": "Anwyn déroule un rouleau",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Débuté avec quoi ?"
                         },
                         "requirements": {
@@ -2091,7 +2317,7 @@
                               "000": "Vous pouvez gagner une renommée suffisante pour passer à une municipalité en l'une des trois façons: la gloire militaire, la faveur de l'Eglise, ou l'approbation des maîtres artisans. Qu'est ce qui semble le plus intéressant pour vous ?"
                            },
                            "bulletin_title": "Anwyn revient sur le rouleau",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Militaire !",
                            "choice_001": "L'église !",
                            "choice_002": "Les maîtres artisans !"
@@ -2101,7 +2327,7 @@
                               "000": "Je plaisante ! Les Comptables royaux ont les mains pleines en ce moment avec le couronnement et tout. Quoi qu'il en soit, le statut Canton signifie vraiment que vous obtenez une foule de récompenses et d'avantages."
                            },
                            "bulletin_title": "Anwyn grimace",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Récompenses et avantages ?"
                         },
                         "church_reqs": {
@@ -2109,7 +2335,7 @@
                               "000": "L'Église de l'Abondance favorise ceux qui partagent leurs richesses avec ceux qui en ont besoin. Je vais donner des recettes à votre maçon et votre cuisinier; construisez une fontaine d'Abondance et je serai de retour pour célébrer vos réalisations."
                            },
                            "bulletin_title": "Anwyn revient sur le rouleau",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Nous pouvons faire ça !",
                            "choice_001": "De quelle autre façon puis-je gagner de la renommée ?"
                         },
@@ -2118,7 +2344,7 @@
                               "000": "Ho là ! Est-ce la nouvelle colonie [str(i18n_data.town_name)] ? Messire Burlyhands m'a dit que vous seriez ici, mais il est toujours mieux d'aller et voir les premiers jours. Pouvons-nous commencer avec la proclamation ?"
                            },
                            "bulletin_title": "A l'approche de héraut royal",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Bienvenue, gente dame !",
                            "choice_001": "C'est nous !"
                         },
@@ -2127,7 +2353,7 @@
                               "000": "Excellent ! En plus d'un monument approprié, votre ville devra également avoir accumulé un certain niveau de valeur. Je laisserai les exigences avec vous, si vous souhaitez les consulter à nouveau."
                            },
                            "bulletin_title": "Anwyn enroule le rouleau",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Merci à vous, gente dame !"
                         },
                         "conclusion2": {
@@ -2135,7 +2361,7 @@
                               "000": "Que la générosité de Cid soit avec vous, [str(i18n_data.town_name)]. Je vais vous laisser un oiseau, afin que vous puissiez me convoquer pour évaluer votre progrès !"
                            },
                            "bulletin_title": "Anwyn enroule le rouleau",
-                           "dialog_title": "L'honorable Anwyn Redelm",
+                           "dialog_title": "L'honorable Anwyn Torresi",
                            "choice_000": "Adieu !"
                         }
                      }
@@ -2171,13 +2397,13 @@
                         "door_shop": {
                            "shop_info": {
                               "name": "Le magasin de porte d'Edgar Planckton",
-                              "title": "Edgar Planckton est arrivé avec des portes à vendre"
+                              "title": "Edgar Planckton est arrivé avec un lot de portes et fenêtres à vendre"
                            }
                         },
                         "rugs_shop2": {
                            "shop_info": {
-                              "name": "Les beaux tapis et les vêtements de Havaad",
-                              "title": "Un marchand exotique est arrivé avec des marchandises exquises à vendre"
+                              "name": "Tapis et vêtements de qualité d'Havaad",
+                              "title": "Un marchand de tissus exotiques est arrivé avec d'exquises marchandises à vendre"
                            }
                         },
                         "woodcutter_shop2": {
@@ -2191,7 +2417,125 @@
                               "name": "Le magasin de tailleurs de pierre de Rufus Garrow",
                               "title": "Rufus Garrow est arrivé avec quelques marchandises exceptionnelles à vendre"
                            }
+                        },
+                        "stonecutter_shop_2": {
+                           "shop_info": {
+                              "name": "Magasin de Rufus Garrow, tailleurs de pierres",
+                              "title": "Rufus Garrow est arrivé avec de meilleures marchandises à vendre"
+                           }
+                        },
+                        "weapon_armor_shop_2": {
+                           "shop_info": {
+                              "name": "L'armurerie de Sark Blackhammer",
+                              "title": "Sark Blackhammer est arrivé avec de l'équipement de haute qualité à vendre"
+                           }
+                        },
+                        "door_shop_2": {
+                           "shop_info": {
+                              "name": "Le magasin de porte d'Edgar Planckton",
+                              "title": "Edgar Planckton est arrivé avec des portes et fenêtres fantaisie à vendre"
+                           }
+                        },
+                        "potter_shop_2": {
+                           "shop_info": {
+                              "name": "Le magasin de Poterie de Ferina Rayye",
+                              "title": "L'atelier de Ferina Rayye est en ville, offrant des décorations de poterie et d'argile"
+                           }
+                        },
+                        "herbalist_shop_2": {
+                           "shop_info": {
+                              "name": "Verdure verdoyante de Vert Greene",
+                              "title": "Vert Greene est en ville, vendant des plantes et des graines"
+                           }
                         }
+                     },
+                     "tier_1_shops": {
+                        "pets_shop_1": {
+                           "shop_info": {
+                              "name": "Avelyn animaux et compagnie",
+                              "title": "Un garde forestier local est en ville, offrant des animaux de compagnie à adopter"
+                           }
+                        },
+                        "pets_shop_2": {
+                           "shop_info": {
+                              "name": "La petite ménagerie de Dinali",
+                              "title": "Un dresseur d'animaux visite la ville avec sa ménagerie"
+                           }
+                        },
+                        "pets_shop_3": {
+                           "shop_info": {
+                              "name": "Ollin et Ruvel Zoo ambulant",
+                              "title": "Une caravane de zoo offre des animaux exotiques à vendre"
+                           }
+                        },
+                        "container_shop_1": {
+                           "shop_info": {
+                              "name": "Tout en boite de Jo Boxen",
+                              "title": "Jo Boxen arrive avec des conteneurs en tout genre"
+                           }
+                        },
+                        "food_shop_1": {
+                           "shop_info": {
+                              "name": "Chez Gannor, petit déjeuner à emporter",
+                              "title": "Un jeune cuisinier est arrivé avec une malle d'aliments pour le petit-déjeuner"
+                           }
+                        },
+                        "potter_shop_1": {
+                           "shop_info": {
+                              "name": "Le magasin de Poterie de Ferina Rayye",
+                              "title": "L'atelier mobile de Ferina Rayye est en ville, offrant de la poterie"
+                           }
+                        },
+                        "herbalist_shop_1": {
+                           "shop_info": {
+                              "name": "Verdure verdoyante de Vert Greene",
+                              "title": "Vert Greene est en ville, vendant des herbes"
+                           }
+                        }
+                     },
+                     "tier_3_shops": {
+                        "woodcutter_shop_3": {
+                           "shop_info": {
+                              "name": "Bûcherons Norm Windriser et fils",
+                              "title": "Norm Windriser est arrivé avec ses meilleures marchandises"
+                           }
+                        },
+                        "container_shop_3": {
+                           "shop_info": {
+                              "name": "Tout en boite de Jo Boxen",
+                              "title": "Jo Boxen arrive avec un coffre-fort"
+                           }
+                        },
+                        "weapon_armor_shop_3": {
+                           "shop_info": {
+                              "name": "L'armurerie de Sark Blackhammer",
+                              "title": "Sark Blackhammer est arrivé avec ses meilleures armes et armures"
+                           }
+                        },
+                        "door_shop_3": {
+                           "shop_info": {
+                              "name": "Le magasin de porte d'Edgar Planckton",
+                              "title": "Edgar Planckton est arrivé avec une livraison de ses meilleures portes et fenêtres"
+                           }
+                        },
+                        "food_shop_3": {
+                           "shop_info": {
+                              "name": "Viandes et tartes de Volf Hart",
+                              "title": "Un chef célèbre est en ville, proposant des plats gastronomiques à vendre"
+                           }
+                        },
+                        "potter_shop_3": {
+                           "shop_info": {
+                              "name": "Ferina Rayye's Shaped Clay",
+                              "title": "L'atelier mobile de Ferina Rayye est en ville, offrant des créations artisanaux en argile"
+                           }
+                        },
+                        "herbalist_shop_3": {
+                           "shop_info": {
+                              "name": "Le magasin de Poterie de Ferina Rayye",
+                              "title": "Vert Greene est en ville, vendant des plantes de toutes sortes"
+                           }
+						}
                      }
                   }
                },
@@ -3530,66 +3874,23 @@
                   "trigger": {
                      "town_progression": {
                         "encounters": {
-                           "hearth_choice": {
-                              "dialog_tree_info": {
-                                 "dialog_nodes": {
-                                    "msg_final": {
-                                       "bulletin_message": {
-                                          "00": "Quel foyer allez-vous poursuivre ?<br><br><font size=-1>(Note: Si une quête de foyer s'avère trop difficile, vous pouvez l'abandonner et choisir à nouveau)</font>"
-                                       },
-                                       "choice_000": "Gloire - nous sommes forts !",
-                                       "choice_001": "Gaieté - nous sommes une maison heureuse !",
-                                       "choice_002": "Les fabricants - compétence et prospérité !",
-                                       "bulletin_title": "Choisissez une mise à niveau du foyer",
-                                       "dialog_title": "Choisissez une mise à niveau du foyer"
-                                    },
-                                    "cheer": {
-                                       "bulletin_message": {
-                                          "00": "Pour construire un <i>foyer de la joie</i>, vous devrez prouver que vous avez des citoyens heureux et bien nourris, et des endroits agréables où vivre.<br><br>Une fois construit, le <i>foyer de joie</i> augmentera votre valeur de mise à jour quotidienne basée sur le moral global de vos citoyens."
-                                       },
-                                       "bulletin_title": "Foyer de joie",
-                                       "dialog_title": "Foyer de joie",
-                                       "choice_000": "Ça m'a l'air bien !",
-                                       "choice_001": "Autre foyers..."
-                                    },
-                                    "glory": {
-                                       "bulletin_message": {
-                                          "00": "Pour construire un <i>foyer de la gloire</i>, vous devrez montrer que vous avez la force militaire, et que vous êtes prêt à le garder sur ses pieds. Une fois construit, le <i>foyer de la gloire</ i> confère la capacité d'invoquer ennemis de plus en plus difficiles à prouver votre courage. Chaque rang défait augmente votre valeur de mise à jour quotidienne."
-                                       },
-                                       "bulletin_title": "Foyer de gloire",
-                                       "dialog_title": "Foyer de gloire",
-                                       "choice_000": "Ça m'a l'air bien !",
-                                       "choice_001": "Autre foyers..."
-                                    },
-                                    "makers": {
-                                       "bulletin_message": {
-                                          "00": "Pour construire un <i>foyer des fabricants</i>, vous devrez prouver que l'or a coulé dans votre colonie, et que vous avez de bons artisans (ou, au moins, de belles choses).<br><br>Une fois construit, le <i>foyer des fabricants</i> générera un intérêt quotidien de 5% sur toutes les pièces d'or que vous avez en main, et augmentera votre valeur de mise à jour quotidienne basée sur ces pièces d'or."
-                                       },
-                                       "bulletin_title": "Foyer des fabricants",
-                                       "dialog_title": "Foyer des fabricants",
-                                       "choice_000": "Ça m'a l'air bien !",
-                                       "choice_001": "Autre foyers..."
-                                    }
-                                 }
-                              }
-                           },
                            "hearth_choice_explanation": {
                               "dialog_tree_info": {
                                  "dialog_nodes": {
                                     "cheer": {
                                        "bulletin_message": {
-                                          "00": "Par ce cas, un <i>foyer de joie</i> est pour ceux qui croient que la valeur d'une ville est trouvée dans une maison heureuse pour ses citoyens."
+                                          "00": "Par ce cas, un <i>foyer de la Prospérité</i> ce destine à ceux qui croient que la valeur d'une ville est trouvée dans une maison heureuse pour ses citoyens."
                                        },
-                                       "bulletin_title": "Un choix joyeux",
-                                       "dialog_title": "Un choix joyeux",
+                                       "bulletin_title": "Un choix Prospère",
+                                       "dialog_title": "Un choix Prospère",
                                        "choice_000": "Ça semble original"
                                     },
                                     "makers": {
                                        "bulletin_message": {
-                                          "00": "D'un autre côté, un <i>foyer de fabricants</i> est pour ceux qui croient que la valeur d'une ville est son travail, et que son travail est mieux mesuré en or."
+                                          "00": "D'un autre côté, un <i>foyer des Artisants</i> ce destine à ceux qui croient que la valeur d'une ville est dans sa production, et que tout travail se mesure en or."
                                        },
-                                       "bulletin_title": "Marque du fabricant",
-                                       "dialog_title": "Marque du fabricant",
+                                       "bulletin_title": "Marque des Artisants",
+                                       "dialog_title": "Marque des Artisants",
                                        "choice_000": "Ça semble productif"
                                     },
                                     "intro": {
@@ -3602,23 +3903,23 @@
                                     },
                                     "glory": {
                                        "bulletin_message": {
-                                          "00": "Enfin, un <i>foyer de gloire</i> est pour ceux qui croient que leur destin est de rester forts dans un monde hostile, comme l'a fait le Chevalier Cid lors de la fondation de l'Ascendance."
+                                          "00": "Enfin, un <i>foyer de la Gloire</i> est pour ceux qui croient que leur destin est de rester forts dans un monde hostile, comme l'a fait le Chevalier Cid lors de la fondation de l'Ascendance."
                                        },
-                                       "bulletin_title": "Des tripes et de la gloire",
-                                       "dialog_title": "Des tripes et de la gloire",
+                                       "bulletin_title": "Des Tripes et de la Gloire",
+                                       "dialog_title": "Des Tripes et de la Gloire",
                                        "choice_000": "Ça semble héroïque"
                                     },
                                     "final": {
                                        "bulletin_message": {
-                                          "00": "Joie, gloire, ou fabricants - le choix est entièrement à vous. Imaginez ce que votre ville sera un jour, et suivez cette balise dans le futur !"
+                                          "00": "Prospérité, Gloire, ou Artisanat - C'est à vous de faire ce choix. Imaginez ce que votre ville sera un jour, et suivez cette lueur d'espoir dans le futur !"
                                        },
                                        "bulletin_title": "Un choix",
                                        "dialog_title": "Un choix",
-                                       "choice_000": "Je choisis..."
+                                       "choice_000": "Nous choisissons..."
                                     },
                                     "intro2": {
                                        "bulletin_message": {
-                                          "00": "Je suis venu personnellement pour vous aider dans votre dernière étape vers un véritable établissement de l'Ascendance !<br><br>Vous êtes devenu assez grand maintenant qu'il est temps de choisir quel foyer représentera votre ville, comme le veut la tradition."
+                                          "00": "Je suis venu personnellement pour vous aider dans votre dernière étape vers un véritable établissement de l'Ascendance !<br><br>Vous êtes devenu assez grand maintenant, il est temps de choisir quel foyer représentera votre ville, comme le veut la tradition."
                                        },
                                        "bulletin_title": "Flot continue",
                                        "dialog_title": "Burlyhands",
@@ -3626,7 +3927,7 @@
                                     },
                                     "intro3": {
                                        "bulletin_message": {
-                                          "00": "Indeed, Hearths have served as shining beacons for Towns all the way back to the Phoenix Empire.<br><br>Their glow attracts settlers and prosperity, and the particular qualities of a chosen Hearth reflect where a Town finds its value."
+                                          "00": "En effet, Hearths a servi de lueur d'espoir pour les villes durant le chemin du retour à l'Empire Phoenix.. Leur éclat attire les colons et la prospérité, et les qualités particulières d'un foyer reflètent où une ville trouve sa valeur."
                                        },
                                        "bulletin_title": "Flot continue",
                                        "dialog_title": "Burlyhands",
@@ -3649,7 +3950,7 @@
                               "title": "Avant-poste établi",
                               "dialog_title": "Avant-poste établi !",
                               "tier_title": "Avant-poste",
-                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message": "Par un accord unanime des citoyens, nous déclarons :",
                               "reward_message_ctd": "Votre avant-poste devrait avoir des routes pavé pour devenir un hub commercial.",
                               "achievements": {
                                  "001": "Les articles se vendent 50% plus chère",
@@ -3661,7 +3962,7 @@
                               "title": "Avant-poste établi",
                               "dialog_title": "Avant-poste établi !",
                               "tier_title": "Avant-poste",
-                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message": "Par un accord unanime des citoyens, nous déclarons :",
                               "reward_message_ctd": "Votre avant-poste est en voie de devenir un refuge pour tous.",
                               "achievements": {
                                  "001": "Les Hearthlings ne se soucient plus des espaces exigus",
@@ -3672,7 +3973,7 @@
                               "title": "Avant-poste établi",
                               "dialog_title": "Avant-poste établi !",
                               "tier_title": "Avant-poste",
-                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message": "Par un accord unanime des citoyens, nous déclarons :",
                               "reward_message_ctd": "Votre avant-poste s'efforçant d'être un avec l'environnement.",
                               "achievements": {
                                  "001": "Les plantes et les cultures poussent 25% plus vite",
@@ -3684,7 +3985,7 @@
                               "title": "Colonie établi",
                               "dialog_title": "Colonie établi !",
                               "tier_title": "Colonie",
-                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message": "Par un accord unanime des citoyens, nous déclarons :",
                               "reward_message_ctd": "Votre colonie devrait prouver que ses richesses et son artisanat sont inégalés.",
                               "achievements": {
                                  "001": "Augmentez votre valeur de mise à jour quotidienne basée sur l'or",
@@ -3695,21 +3996,253 @@
                               "title": "Colonie établi",
                               "dialog_title": "Colonie établi !",
                               "tier_title": "Colonie",
-                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message": "Par un accord unanime des citoyens, nous déclarons :",
                               "reward_message_ctd": "Votre colonie devrait prouver qu'il a une force militaire inégalée.",
                               "achievements": {
-                                 "001": "Augmentez votre valeur de mise à jour quotidienne en fonction des ennemis vaincus",
-                                 "000": "Capacité d'invoquer des ennemis pour prouver votre courage."
+                                 "001": "Votre Foyer invoque des ennemis à vaincre pour la gloire",
+                                 "000": "Mise à jour quotidienne boostée par le niveau de Gloire"
                               }
                            },
                            "hearth_upgrade_cheer": {
                               "title": "Colonie établi",
                               "dialog_title": "Colonie établi !",
                               "tier_title": "Colonie",
-                              "reward_message": "Par décret de la princesse Diana de l'Ascendance, nous reconnaissons:",
+                              "reward_message": "Par un accord unanime des citoyens, nous déclarons :",
                               "reward_message_ctd": "Votre colonie devrait prouver qu'il a les citoyens les plus heureux, les mieux nourris, et les endroits les plus agréables à vivre.",
                               "achievements": {
-                                 "000": "Augmentez votre valeur de mise à jour quotidienne basée sur Morale"
+                                 "000": "Mise à jour quotidienne boostée par le Morale de vos citoyens"
+                              }
+                           },
+                           "shrine_upgrade_guildmaster": {
+                              "achievements": {
+                                 "001": "Fontaines & Décorations  pour le Maçon",
+                                 "003": "Décorations pour le forgeron",
+                                 "000": "Qualité de création Maître débloqué",
+                                 "002": "Topiaire pour l'Herboriste et clôtures pour lemenuisier",
+                                 "004": "Musique de niveau 3"
+                              }
+                           },
+                           "shrine_upgrade_valor": {
+                              "achievements": {
+                                 "001": "Recette de Portcullis pour l'ingénieur",
+                                 "003": "Recettes de décoration  pour le forgeron",
+                                 "000": "Recettes d'armes légendaires",
+                                 "002": "Statues & Windows  pour le Maçon",
+                                 "004": "Musique de niveau 3"
+                              }
+                           },
+                           "shrine_upgrade_deity": {
+                              "achievements": {
+                                 "001": "Arbustes pour l'Herboriste",
+                                 "003": "Fountaine de Chance pour le Maçon",
+                                 "000": "Buffs Quotidien de Chance",
+                                 "002": "Décorations pour le forgeron",
+                                 "004": "Musique de niveau 3"
+                              }
+                           },
+                           "shrine_choice_explanation": {
+                              "dialog_tree_info": {
+                                  "dialog_nodes": {
+                                 	"clergy": {
+			                           "bulletin_message": {
+			                              "00": "Salutations, je m'appelle Ember Minton et je suis un missionnaire pour l'Église de l'Abondance, et nous serions ravis qu'un comté comme le vôtre compte parmi nos Cantons."
+			                           },
+			                           "bulletin_title": "Le Clergé",
+			                           "dialog_title": "Le Clergé",
+			                           "choice_000": "Bienvenue, Ember"
+                                 	},
+                                 	"makers": {
+			                           "bulletin_message": {
+			                              "00": "Je suis Marak Azael, ravi de vous rencontrer, qui chatouille mes moustaches pour voir une colonie comme la vôtre, assemblée à partir de rien en un rien de temps.<br><br>L'Ascendance même a été construite avec une scie et martelez par de beaux artisans comme vous, c'est pourquoi la Guilde est si importante pour moi et pourquoi je voulais vous rendre visite."
+			                           },
+			                           "bulletin_title": "Le Maître de la Guilde",
+			                           "dialog_title": "Le Maître de la Guilde",
+			                           "choice_000": "La Guilde ?"
+                                 	},
+                                 	"summary": {
+			                           "bulletin_message": {
+			                              "00": "Alors, maintenant vous avez rencontré les gens qui m'ont suivi - je suis impartial, ici, donc c'est à vous de décider qui vous voulez en tant que sponsor, je peux dire qu'ils sont tous un bons choix, cependant !<br><br>Je vais leur faire découvrir un peu la ville, mais je vais fournir les plans pour chacune de leurs fontaines, sanctuaires et autres joyeusetés à vos maçons.<br><br>Je vous verrai à la cérémonie de dédicace lorsque vous aurez pris votre décision !"
+			                           },
+			                           "bulletin_title": "Mer conclut",
+			                           "dialog_title": "Mer conclut",
+			                           "choice_000": "Ça sonne bien !"
+                                 	},
+                                 	"military_cont": {
+			                           "bulletin_message": {
+			                              "00": "Un canton dédié à l'exemple valeureux de Cid peut servir de point d'ancrage pour toute une région, et encourager de nouveaux colons à forger leurs propres nouveaux avant-postes.<br><br>Si vous choisissez de construire un mémorial à Cid, La Garde serait heureuse de partager avec vous une partie de nos connaissances sur les armes dans le cadre de la cérémonie de dédicace. <br><br><font size=-1><i>Construire la Valeur du Cid vous accordera des recettes pour de nouvelles armes de haut niveau.</i></font>"
+			                           },
+			                           "bulletin_title": "Capitaine Anwyn Torresi",
+			                           "dialog_title": "Capitaine Anwyn Torresi",
+			                           "choice_000": "Merci"
+                                 	},
+                                 	"clergy_cont": {
+			                           "bulletin_message": {
+			                              "00": "C'est l'adage de l'Église <i>'La fortune favorise le Juste'</i>, et les fontaines bénies de Plenty ont en effet été connues pour avoir des effets presque magiques sur la santé et la rusticité des citoyens d'une ville.<br><br>S'il vous plaît envisagez de montrer au monde que votre ville sera un exemple de bonté en construisant un sanctuaire conçu par l'église.<br><br><font size=-1><i>Construire une fontaine d'abondance accordera à vos citadins un buff quotidien aléatoire. Tente ta chance !</i></font>"
+			                           },
+			                           "bulletin_title": "Ember Minton",
+			                           "dialog_title": "Ember Minton",
+			                           "choice_000": "Merci"
+                                 	},
+                                 	"military": {
+			                           "bulletin_message": {
+			                              "00": "Bonjour - Je suis Anwyn Torresi, Capitaine de la Garde de Sa Majesté. Elle m'envoie avec ses remerciements pour avoir colonisé cette terre sauvage, et pour la protéger contre les animaux et monstres.<br><br>Nous, dans la Garde, suivons l'exemple du Chevalier Cid, croyant que se tenir debout et courageux contre la nature sauvage est le seul moyen pour l'Ascendance de récupérer cette terre perdue.<br><br>Vous avez rendu un grand service à l'Ascendance en plantant votre bannière ici."
+			                           },
+			                           "bulletin_title": "Le capitaine",
+			                           "dialog_title": "Le capitaine",
+			                           "choice_000": "Un plaisir, Capitaine"
+                                 	},
+                                 	"makers_cont": {
+			                           "bulletin_message": {
+			                              "00": "La guilde des artisans voyons ! Nous croyons que l'habileté d'un artisan doit être respectée et ses œuvres célébrées.<br><br>Nous, membres de la Guilde, aimerions que ce canton soit considéré comme un endroit propice à la maîtrise de l'artisanat - et, après tout, nous ne pouvons reconnaitre un chef-d'œuvre que lorsque nous le voyons !<br><br><font size=-1><i>Vouer un hommage à la Compétence du maître de guilde permettra de créer des meubles et des décorations de qualité professionnelle, qui sont considérablement meilleurs que ceux d'excellente qualité.</i></font>"
+			                           },
+			                           "bulletin_title": "Marak Azael",
+			                           "dialog_title": "Marak Azael",
+			                           "choice_000": "Une telle vigueur !"
+                                 	},
+                                 	"intro": {
+			                           "bulletin_message": {
+			                              "00": "Bonjour à nouveau, [str(i18n_data.town_name)]! Heureux de vous voir tous en pleine forme - pas que je m'attendais à quelque chose de différent !<br><br>En fait, j'ai amené des gens avec moi cette fois - je vais les laisser se présenter et vous dire pourquoi ils sont venus."
+			                           },
+			                           "bulletin_title": "Mer Burlyhands est arrivé !",
+			                           "dialog_title": "Mer revient, avec des invités !",
+			                           "choice_000": "Oh, d'accord !",
+			                           "choice_001": "Nous avons déjà décidé !"
+                                    }
+                                 }
+                              }
+                           },
+                           "guild_dialog_1": {
+                              "dialog_tree_info": {
+                                  "dialog_nodes": {
+                                 	"msg2": {
+			                           "bulletin_message": {
+			                              "00": "Comme il se doit ! Avec de bons artisans comme eux, votre ville créera des chefs-d'œuvre en un rien de temps ! Je garderai un œil sur les produits artisanaux de [str(i18n_data.town_name)] au marché de la Capitale dans quelques mois !<br/><br/>Vos maisons ont l'air toutes aussi robustes. Mes compliments à vos travailleurs, ils semblent aussi savoir comment assembler les choses !"
+			                           },
+			                           "bulletin_title": "Marak continues",
+			                           "dialog_title": "Marak Azael, Maître de Guilde",
+			                           "choice_000": "Nous ferons de notre mieux !"
+                                 	},
+                                 	"msg3": {
+			                           "bulletin_message": {
+			                              "00": "Quoi qu'il en soit, je vous laisse retourner à votre Célébration ! Je vais aller chercher une pinte de quelque chose de fort et un bol de quelque chose de copieux!<br/><br/>Rappelez-vous, les mains pleines rendent une ville heureuse !"
+			                           },
+			                           "bulletin_title": "Marak continues",
+			                           "dialog_title": "Marak vous frappe dans le dos",
+			                           "choice_000": "Au Plaisir !"
+                                 	},
+                                 	"msg1": {
+			                           "bulletin_message": {
+			                              "00": "Hahaha ! Quel beau monument vous avez construit ! Bon niveau, carré, et toutes ses touches de finition que seul un œil exercé comme le mien peux vraiment apprécier !</br></br><font size=-1>Hein, comment avez-vous réussi à le faire briller autant ?</font>"
+			                           },
+			                           "bulletin_title": "Marak Azael éclate de rire",
+			                           "dialog_title": "Marak Azael, Maître de Guilde",
+			                           "choice_000": "Je vous remercie ! Notre maçon en est assez fier."
+                                    }
+                                 }
+                              }
+                           },
+                           "valor_dialog_1": {
+                              "dialog_tree_info": {
+                                  "dialog_nodes": {
+                                 	"msg2": {
+			                           "bulletin_message": {
+			                              "00": "Oh! Je vais bien, je me rappelais juste quelque chose.<br/><br/>Tu sais, je crois vraiment en l'Ascendance, que nous avons un destin pour reprendre ces terres perdues. Chaque nouvelle ville qui jaillit sert à renforcer ma croyance.<br/><br/>Mais ce sont les villes comme la vôtre, dédiées au soutien de notre valeureuse Garde, qui me réchauffent vraiment le cœur."
+			                           },
+			                           "bulletin_title": "Anwyn continues",
+			                           "dialog_title": "Anwyn Torresi, Capitaine de la Garde",
+			                           "choice_000": "Nous sommes honorés, Capitaine"
+                                 	},
+                                 	"msg3": {
+			                           "bulletin_message": {
+			                              "00": "J'ai apporté des plans pour les meilleures armes de la Garde, car vous avez amplement gagné le droit de les forger.<br/><br/>Maintenant, si mon service m'a appris quelque chose, c'est de manger un bon repas quand on m'en donne la chance. Je vais vous laisser à votre Célébration !"
+			                           },
+			                           "bulletin_title": "Anwyn continues",
+			                           "dialog_title": "Anwyn Torresi, Capitaine de la Garde",
+			                           "choice_000": "Au Plaisir !"
+                                 	},
+                                 	"msg1": {
+			                           "bulletin_message": {
+			                              "00": "Quel monument inspirant! Cela parle vraiment de l'héroïsme du Chevalier Cid.<br/><br/>Cela me rappelle encore une fois pourquoi je suis devenu un membre de la Garde. C'était il y a si longtemps ...<br/><p align='right'><font size=-1 color='#cccccc'>(Anwyn regarde dans le lointain, les yeux brillants.)</font></p>"
+			                           },
+			                           "bulletin_title": "Anwyn s'approche, les yeux brillent",
+			                           "dialog_title": "Anwyn Torresi, Capitaine de la Garde",
+			                           "choice_000": "Anwyn? Es-tu..."
+                                    }
+                                 }
+                              }
+                           },
+                           "deity_dialog_1": {
+                              "dialog_tree_info": {
+                                  "dialog_nodes": {
+                                 	"msg2": {
+			                           "bulletin_message": {
+			                              "00": "Alors que ce sanctuaire vous accorde sa bénédiction chaque jour, prenez un moment pour réfléchir sur le monde, ses mystères et ses nombreuses richesses.<br/><br/>Que votre ville soit toujours un foyer accueillant pour ses habitants et une source pour la générosité de l'Église de l'Abondance."
+			                           },
+			                           "bulletin_title": "Ember continues",
+			                           "dialog_title": "Ember Minton, Missionnaire",
+			                           "choice_000": "Nous ferons de notre mieux !"
+                                 	},
+                                 	"msg3": {
+			                           "bulletin_message": {
+			                              "00": "Maintenant, assez de platitudes sombres - allez profiter de la fête ! Je crois que j'ai vu Mer avec un gâteau plus tôt, j'aimerais bien mettre la main dessus..."
+			                           },
+			                           "bulletin_title": "Ember continues",
+			                           "dialog_title": "Ember Minton, Missionnaire",
+			                           "choice_000": "Au Plaisir !"
+                                 	},
+                                 	"msg1": {
+			                           "bulletin_message": {
+			                              "00": "<font size=-1>...et que cette ville deumeure florissante dans la fortune et la prospérité, aussi longtemps que le soleil brillera. Umbasa.</font><br/><br/>Oh ! Mes excuses, j'étais perdu dans mes prières.<br/><br/>Vous avez une ville vraiment merveilleuse ici, et je me sens privilégié d'être le missionnaire pour bénir ce beau monument."
+			                           },
+			                           "bulletin_title": "Ember fait face au sanctuaire",
+			                           "dialog_title": "Ember Minton, Missionnaire",
+			                           "choice_000": "Merci d'être venu"
+                                    }
+                                 }
+                              }
+                           },
+                           "post_shrine_dialog": {
+                              "dialog_tree_info": {
+                                  "dialog_nodes": {
+                                 	"msg1": {
+			                           "bulletin_message": {
+			                              "00": "Eh bien, maintenant, il semble que mon petit Avant-Poste préféré soit devenu adulte ! Félicitations pour votre nouveau Canton !"
+			                           },
+			                           "bulletin_title": "C'est encore Mer !",
+			                           "dialog_title": "Mer Burlyhands, Compagnon de la Capitale",
+			                           "choice_000": "Oh merci !"
+                                 	},
+                                 	"msg2": {
+			                           "bulletin_message": {
+			                              "00": "A propos, ce monument est spécial, puisqu'il a été béni et tout - vous pouvez construire les autres si vous voulez, mais ce ne seront que de vieilles statues régulières. Ils sont fantaisistes, mais aucun n'est aussi magique.<br/><br/> Cependant, ils font une bien jolie décoration, vous ne pensez pas ?"
+			                           },
+			                           "bulletin_title": "Mer Continues",
+			                           "dialog_title": "Mer Burlyhands, Compagnon de la Capitale",
+			                           "choice_000": "Nous avons réussi !"
+                                 	},
+                                 	"msg3": {
+			                           "bulletin_message": {
+			                              "00": "Merci d'être un groupe de gens si charmants - je suis fier de servir un groupe d'individus aussi sérieux et ambitieux. Vous me rendez fier !<br/><br/>Adieu pour l'instant, et bonne chance à chacun d'entre vous !"
+			                           },
+			                           "bulletin_title": "Mer Continues",
+			                           "dialog_title": "Mer Burlyhands, Compagnon de la Capitale",
+			                           "choice_000": "Adieu, Mer ! Ça a été un plaisir !"
+                                    }
+                                 }
+                              }
+                           },
+                           "reembark_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                 		"bulletin_message": {
+                                 			"00": "Bonjour, maintenant que vous avez une petite ville animée ici, peut-être qu'il est temps de commencer à penser à votre prochaine aventure.<p>Je m'attends à ce que certains de vos citoyens soient impatients de créer une toute nouvelle ville, encore plus grande, et encore mieux, avec toutes les leçons apprises de celui-ci.</p><p><font size=-1><i>La relance vous permet de transporter jusqu'à 3 citoyens, 10 articles et toutes vos recettes débloquées lors du démarrage d'une nouvelle ville.</i></font></p>"
+                                 		},
+			                           "bulletin_title": "C'est Mer encore !",
+			                           "dialog_title": "Une dernière chose",
+			                           "choice_000": "Excitant !"
+                                    }
+                                 }
                               }
                            }
                         }
@@ -3754,20 +4287,6 @@
                      }
                   }
                },
-               "post_shrine_dialog": {
-                  "dialog_tree_info": {
-                     "dialog_nodes": {
-                        "msg1": {
-                           "bulletin_message": {
-                              "00": "Félicitations pour la construction d'un sanctuaire ! <br><br>Finalement, vous serez en mesure de construire les deux autres pour l'embellir, mais nous ne sommes pas de la partie pour de nouveau frais."
-                           },
-                           "bulletin_title": "C'est encore moi !",
-                           "dialog_title": "Une dernière chose",
-                           "choice_000": "Ah... Mais merci !"
-                        }
-                     }
-                  }
-               },
                "shrine_choice": {
                   "dialog_tree_info": {
                      "dialog_nodes": {
@@ -3779,23 +4298,21 @@
                            "dialog_title": "Choisissez un sanctuaire !",
                            "choice_000": "Fortune",
                            "choice_001": "Courage",
-                           "choice_002": "Chef-d'oeuvre"
+                           "choice_002": "Maîtrise"
                         }
                      }
-                  }
-               },
-               "shrine_choice_explanation": {
-                  "dialog_tree_info": {
-                     "dialog_nodes": {
-                        "msg1": {
-                           "bulletin_message": {
-                              "00": "Il est temps de choisir un sanctuaire! Les gens de la capitale m'ont dit de dire que c'est un 'Texte d'espace réservé,' peu importe ce que cela signifie ! <br><br>Vos options sont:<br><br>Sanctuaire de la Fortune (donne des buffs aléatoires à l'échelle de la ville!)<br><br>Sanctuaire du Courage ([WIP, pas encore disponible !] armes légendaires)<br><br>Sanctuaire du chef-d'oeuvre (Déverrouille l'artisanat de niveau Chef-d'oeuvre ! Quatre fois aussi attrayant et cher qu'excellent !)<br><br><font size=-1>J'espère avoir quelque chose de plus intéressant à dire à un moment donné !</font>"
-                           },
-                           "bulletin_title": "Sanctuaire du temps",
-                           "dialog_title": "Sanctuaire du temps",
-                           "choice_000": "Propre"
-                        }
-                     }
+                  },
+                  "guildmaster": {
+                     "name": "Compétence du maître de guilde",
+                     "description": "<i>Ce canton sera connu pour le travail acharné et le dévouement de ses artisans.</i><ul><li>Permet de créer des objets de qualité Mâitre</li><li>Débloque des objets artisanaux et recettes de décoration à thème</li></ul>"
+                  },
+                  "deity": {
+                     "name": "Fontaine d'Abondance",
+                     "description": "<i>Ce canton faira preuve de générosité et de gentillesse envers les nécessiteux.</i><ul><li>Accorde un buff quotidien aléatoire</li><li>Débloque des recettes de décoration sur le thème de la nature</li></ul>"
+                  },
+                  "valor": {
+                     "name": "La Valeur du Cid",
+                     "description": "<i>Ce canton sera dédié à l'exemple valeureux de Cid pour protéger toute la région.</i><ul><li>Débloque des recettes d'armes légendaires</li><li>Débloque des recettes de décoration de château</li></ul>"
                   }
                },
                "shrine_foreshadow_dialog": {
@@ -3803,31 +4320,31 @@
                      "dialog_nodes": {
                         "msg4": {
                            "bulletin_message": {
-                              "00": "La prochaine fois que je vous rendrai visite, une fois que tout sera en ordre ici, nous pourrons discuter de la dernière étape - construire et dédier un Sanctuaire pour prouver votre excellence au monde. Jusque-là !<br><br>Votre capital,<br>&nbsp;- Burlyhands"
+                              "00": "La prochaine fois que je vous rendrai visite, une fois que tout sera en ordre ici, nous pourrons discuter de la dernière étape - j'inviterais plusieurs personnes à plaider leur cause. Décisions, décisions. Au plaisir !<br><br>Votre capital,<br> - Burlyhands"
                            },
                            "bulletin_title": "Une lettre",
                            "dialog_title": "Une lettre",
-                           "choice_000": "Jusque là"
+                           "choice_000": "Au plaisir"
                         },
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Beaucoup de mot circule autour de la capital comme quoi de plus en plus de gens font leurs bagages pour aller à <town_name> tous les jours ! De nouvelles excitantes, qui m'a pousser à vous envoyer de la paperasserie !"
+                              "00": "Beaucoup de mot circule autour de la capital comme quoi de plus en plus de gens font leurs bagages pour aller à <town_name> tous les jours ! De nouvelles excitantes, votre foyer doit être éblouissant pour attirer autant de nouveaux colons. En fait, il attire également l'attention de quelques personnes Notable. !"
                            },
                            "bulletin_title": "Une lettre",
                            "dialog_title": "Une lettre",
-                           "choice_000": "La paperasserie, c'est excitant..."
+                           "choice_000": "Notable ?"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "Je sais, tu dois te dire 'Encore de la paperasserie, comme c'est passionnant', mais écoutez-moi - je pense qu'il est presque temps d'appeler votre petite ville une véritable ville ! Vous êtes sur le point de réaliser ce rêve que vous avez défini il y a si longtemps."
+                              "00": "Comme vous le savez probablement, une colonie a traditionnellement besoin d'un parrainage pour devenir un véritable canton - généralement issu d'une guilde, du clergé ou de l'armée.<br><br>Au cours des derniers jours, j'ai été approché par quelques personnes très intéressées de visiter votre ville par eux-mêmes, et estimer si vous seriez intéressé par un possible Parrainage."
                            },
                            "bulletin_title": "Une lettre",
                            "dialog_title": "Une lettre",
-                           "choice_000": "Oh, wow !"
+                           "choice_000": "Génial !"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "On dirait que le seigneur nous contacter à nouveau."
+                              "00": "On dirait que Mer est de nouveau entré en contact avec nous !"
                            },
                            "bulletin_title": "Cet oiseau étrange encore !",
                            "dialog_title": "Une autre lettre !",
@@ -3841,7 +4358,7 @@
                      "dialog_nodes": {
                         "read_letter3": {
                            "bulletin_message": {
-                              "00": "Gardez dans votre esprit une vision de ce que votre ville sera un jour. Votre bannière définira ce cours, mais c'est à vous de le terminer. <p>Choisissez bien, mes amis. J'attends avec impatience votre réponse.</p><br><p>Yours,</p><p>&nbsp;Burlyhands</p>"
+                              "00": "Gardez dans votre esprit une vision de ce que votre ville sera un jour. Votre bannière définira ce cours, mais c'est à vous de le terminer. <p>Choisissez bien, mes amis. J'attends avec impatience votre réponse.</p><br><p>Yours,</p><p> Burlyhands</p>"
                            },
                            "bulletin_title": "La lettre continue",
                            "dialog_title": "La lettre continue...",
@@ -3901,6 +4418,47 @@
                         }
                      }
                   }
+               },
+               "hearth_choice": {
+                  "glory": {
+                     "name": "Foyer de la Gloire",
+                     "description": "<i>Preuve que vous avez une force militaire, et que vous êtes prêt à la maintenir sur pieds.</i><ul><li>Permet d'invoquer des ennemis de plus en plus difficiles pour prouver votre courage</li><li>Chaque rang défait augmentera la valeur nette de la mise à jour quotidienne</li></ul>"
+                  },
+                  "makers": {
+                     "name": "Foyer des Artisants",
+                     "description": "<i>La preuve que l'or circule dans vos établissements et que vous avez de bons artisans.</i><ul><li>Génère un intérêt quotidien de 5% sur toutes les pièces d'or que vous avez sous la main (jusqu'à 300 par jour)</li><li>Augmente la valeur nette de votre mise à jour quotidienne en fonction des pièces d'or disponibles</li></ul>"
+                  },
+                  "cheer": {
+                     "name": "Foyer de la Prospérité",
+                     "description": "<i>La preuve que vous avez des citoyens heureux et bien nourris, et de beaux endroits où vivre.</i><ul><li>Augmente la valeur nette quotidienne des mises à jour en fonction du moral global de vos citoyens</li></ul>"
+                  }
+               },
+               "shrine_quest_deity": {
+                  "title": "Quête du canton : Fontaine d'Abondance",
+                  "dialog_title": "Quête du canton : Fontaine d'Abondance"
+               },
+               "shrine_quest_guildmaster": {
+                  "title": "Quête du canton : La compétence du Maître de Guilde",
+                  "dialog_title": "Quête du canton : La compétence du Maître de Guilde"
+               },
+               "shrine_quest_valor": {
+                  "title": "Quête du canton : La valeur de Cid",
+                  "dialog_title": "Quête du canton : La valeur de Cid"
+               },
+               "hearth_quest_cheer": {
+                  "title": "Mise à niveau du foyer : Prospérité",
+                  "dialog_title": "Mise à niveau du foyer : Prospérité"
+               },
+               "hearth_quest_glory": {
+                  "title": "Mise à niveau du foyer : Gloire",
+                  "dialog_title": "Mise à niveau du foyer : Gloire"
+               },
+               "hearth_quest_makers": {
+                  "title": "Mise à niveau du foyer : Artisanat",
+                  "dialog_title": "Mise à niveau du foyer : Artisanat"
+               },
+               "unlock_shrine_recipes": {
+                  "bulletin_title": "Recettes de sanctuaire pour le Maçon débloqué!"
                }
             }
          }
@@ -4122,6 +4680,118 @@
                "display_name": "Furieux",
                "description": "+15% Dommage. Ne fuira ou ne se recroquevillera pas pour une courte période"
             }
+         },
+         "weather": {
+            "lucky_buff": {
+               "display_name": "Jour de Chance",
+               "description": "Tout est juste un peu plus facile aujourd'hui."
+            },
+            "hot_debuff": {
+               "display_name": "Temps Chaud",
+               "description": "Trop moite pour travailler."
+            },
+            "hit_by_sandstorm_debuff": {
+               "display_name": "Frappé par une tempête de sable",
+               "description": "Je n'aime pas le sable. C'est grossier, rugueux et irritant."
+            },
+            "hit_by_lightning_debuff": {
+               "display_name": "Frappé par un éclair",
+               "description": "Oof ! Aie ! Mes os !"
+            },
+            "animal_cold_debuff": {
+               "display_name": "Température froide",
+               "description": "Bébé, il fait froid dehors."
+            },
+            "cold_debuff": {
+               "display_name": "Température froide",
+               "description": "Je gèle ici ! Je devrais avoir un toit au-dessus de ma tête."
+            }
+         },
+         "deity_town_bonus": {
+            "fast_day": {
+               "fast_day_buff": {
+                  "display_name": "Jour de Satisfaction",
+                  "description": "Tous les citoyens sautent les repas pour la journée."
+               }
+            },
+            "health_day": {
+               "health_day_buff": {
+                  "display_name": "Jour de récupération",
+                  "description": "Tous les citoyens régénèrent la santé rapidement"
+               },
+               "health_day_individual_buff": {
+                  "display_name": "Jour de récupération",
+                  "description": "Régénération de la santé : 40 par heure"
+               }
+            },
+            "hero_day": {
+               "hero_day_buff": {
+                  "display_name": "Jour de l'héroïsme",
+                  "description": "Les unités militaires se déplacent 20% plus vite, ont 30% de muscles plus forts et sont deux fois plus courageuses."
+               },
+               "hero_day_individual_buff": {
+                  "display_name": "Jour de l'héroïsme",
+                  "description": "La vitesse, le courage et le muscle sont augmenté."
+               }
+            },
+            "jungle_day": {
+               "jungle_day_buff": {
+                  "display_name": "Jour de Mousson",
+                  "description": "Toutes les plantes poussent 3 fois plus vite."
+               }
+            },
+            "muse_day": {
+               "muse_day_buff": {
+                  "display_name": "Jour d'inspiration",
+                  "description": "Les artisans gagnent + 4% de chances de créer des objets de haute qualité."
+               },
+               "muse_day_individual_buff": {
+                  "display_name": "Jour d'inspiration",
+                  "description": "Chance de créer des objets de haute qualité a augmenté."
+               }
+            },
+            "peasant_day": {
+               "peasant_day_buff": {
+                  "display_name": "Jour de motivation",
+                  "description": "Les travailleurs se déplacent 30% plus vite."
+               },
+               "peasant_day_individual_buff": {
+                  "display_name": "Jour de motivation",
+                  "description": "Vitesse augmentée de 30%."
+               }
+            },
+            "poultry_day": {
+               "poultry_day_buff": {
+                  "display_name": "Jour de la volaille",
+                  "description": "Il pleut des poyos."
+               }
+            },
+            "racing_day": {
+               "racing_day_buff": {
+                  "display_name": "Jour de la vigueur",
+                  "description": "Tous les citoyens se déplacent 10% plus vite."
+               },
+               "racing_day_individual_buff": {
+                  "display_name": "Jour de la vigueur",
+                  "description": "Vitesse augmentée de 10%."
+               }
+            },
+            "vigil_day": {
+               "vigil_day_buff": {
+                  "display_name": "Nuit de la Vigilance",
+                  "description": "Tous les citoyens veillent toute la nuit."
+               }
+            },
+            "wisdom_day": {
+               "wisdom_day_buff": {
+                  "display_name": "Jour de la Sagesse",
+                  "description": "Tous les citoyens acquièrent de l'expérience 20% plus vite."
+               },
+               "wisdom_day_individual_buff": {
+                  "display_name": "Jour de la Sagesse",
+                  "description": "Le gain d'expérience a augmenté de 20%."
+               }
+            }
          }
       },
       "build": {
@@ -4166,6 +4836,12 @@
             "stairs": {
                "display_name": "Escaliers",
                "description": "Monte ou descend"
+            },
+            "building2": {
+               "structure": {
+                  "display_name": "Structure",
+                  "description": "A part of a building"
+               }
             }
          },
          "building_brushes": {
@@ -4280,6 +4956,10 @@
             "display_name": "Feuille de personnage",
             "description": "Regardez de plus près ce hearthling"
          },
+         "open_loot": {
+            "display_name": "Butin",
+            "description": "Ouvrez ce conteneur de butin pour réclamer son contenu."
+         },
          "place_item": {
             "display_name": "Placer un objet",
             "description": "Placez cet objet dans le monde."
@@ -4334,7 +5014,8 @@
          "spawn_glory_wave": {
             "display_name": "Invocation d'une vague ennemie",
             "description": "Invoquez la prochaine vague d'ennemis pour réclamer plus de gloire.",
-            "disabled_description": "Aucun nouveau ennemis frappent à votre porte pour le moment."
+            "disabled_description": "Aucun nouveau ennemis frappent à votre porte pour le moment.",
+            "glory_level_achieved_bulletin": "Niveau de gloire [str(i18n_data.glory_level)] atteint !"
          },
          "undeploy_item": {
             "display_name": "Ranger",
@@ -4931,12 +5612,12 @@
                      "002": "Si je dois de nouveau manger [str(entry.recent_food)], je jure que ma bouche va commencé à mousser."
                   },
                   "diligent_sweetheart": {
-                     "000": "Plus de [str(entry.recent_food)] ? Nous pourrions peut-être en manger plus tard&nbsp;?",
+                     "000": "Plus de [str(entry.recent_food)] ? Nous pourrions peut-être en manger plus tard ?",
                      "001": "Je ne veux pas me plaindre, mais tout ce que j'ai mangé récemment est la nourriture comme ça [str(entry.recent_food)]. Ça commence à blesser ma bouche.",
-                     "002": "[str(entry.recent_food)] ! Doit... continuer... à mâcher...&nbsp;!"
+                     "002": "[str(entry.recent_food)] ! Doit... continuer... à mâcher... !"
                   },
                   "hopeless_optimist": {
-                     "000": "Peut-être que si je mange tout le temps de cette nourriture, je vais en devenir&nbsp;!",
+                     "000": "Peut-être que si je mange tout le temps de cette nourriture, je vais en devenir !",
                      "001": "[str(entry.recent_food)] ! Encore ? Ma bouche me fait mal.",
                      "002": "Du calme langue ! Fait semblant d'être allergique aux [str(entry.recent_food)]."
                   },
@@ -4953,7 +5634,7 @@
                   "generic": {
                      "000": "Mmm, j'aime la diversité de mon alimentation.",
                      "001": "Manger [str(entry.recent_food)] était un bon changement de rythme.",
-                     "002": "Avoir des choses différentes au moment des repas réveille les papilles&nbsp;!",
+                     "002": "Avoir des choses différentes au moment des repas réveille les papilles !",
                      "003": "[str(entry.recent_food)] a un meilleur goût quand cela fait un moment que j'en ai pas eu.",
                      "teacher": {
                         "000": "Gloire [str(entry.teacher)] ! La diversité dans la nourriture me rend heureux."
@@ -4965,29 +5646,29 @@
                "text": "Concernant la nourriture de qualité :",
                "logs": {
                   "lovable_rogue": {
-                     "000": "Wow, qui savait qu'un repas de [str(entry.recent_food)] est si incroyablement nutritifs&nbsp;?",
+                     "000": "Wow, qui savait qu'un repas de [str(entry.recent_food)] est si incroyablement nutritifs ?",
                      "001": "[str(entry.recent_food)] : c'est la meilleure nourriture que j'ai mangé depuis longtemps.",
-                     "002": "Je parie, que ça a beaucoups de valeur marchande. À moins de tout garder pour moi&nbsp;?",
+                     "002": "Je parie, que ça a beaucoups de valeur marchande. À moins de tout garder pour moi ?",
                      "teacher": {
-                        "000": "Super ces [str(entry.recent_food)] ! Ce repas m'a comblé. Louer soit [str(entry.teacher)] et l'Église d'Abondance&nbsp;!"
+                        "000": "Super ces [str(entry.recent_food)] ! Ce repas m'a comblé. Louer soit [str(entry.teacher)] et l'Église d'Abondance !"
                      }
                   },
                   "hopeless_optimist": {
-                     "000": "Wow&nbsp;! Je me sens bien&nbsp;!",
-                     "001": "Nous devons produire plus de [str(entry.recent_food)] afin que chacun puisse en manger un peu&nbsp;!",
+                     "000": "Wow ! Je me sens bien !",
+                     "001": "Nous devons produire plus de [str(entry.recent_food)] afin que chacun puisse en manger un peu !",
                      "002": "Plus plus plus toujours plus de [str(entry.recent_food)]."
                   },
                   "beleaguered_leader": {
-                     "000": "Wow. Qui aurait deviné qu'un repas de [str(entry.recent_food)] soit si réussit&nbsp;?",
+                     "000": "Wow. Qui aurait deviné qu'un repas de [str(entry.recent_food)] soit si réussit ?",
                      "001": "Ce fut une surprise satisfaisante ce [str(entry.recent_food)].",
                      "002": "Un repas de [str(entry.recent_food)] hhmmm, je devrais en faire plus.",
-                     "003": "Ahhh ! Maintenant je me sens comme un super-héros&nbsp;!"
+                     "003": "Ahhh ! Maintenant je me sens comme un super-héros !"
                   },
                   "generic": {
-                     "000": "Wow ! Après un repas de [str(entry.recent_food)] j'ai une santé de fer&nbsp;!",
-                     "001": "Un repas de [str(entry.recent_food)] quel satisfaction&nbsp;!",
-                     "002": "[str(entry.recent_food)] ? Super copieux&nbsp;!",
-                     "003": "Ce repas de [str(entry.recent_food)] va alimenter les grands travaux d'aujourd'hui&nbsp;!"
+                     "000": "Wow ! Après un repas de [str(entry.recent_food)] j'ai une santé de fer !",
+                     "001": "Un repas de [str(entry.recent_food)] quel satisfaction !",
+                     "002": "[str(entry.recent_food)] ? Super copieux !",
+                     "003": "Ce repas de [str(entry.recent_food)] va alimenter les grands travaux d'aujourd'hui !"
                   }
                }
             }
@@ -5002,14 +5683,14 @@
                      "002": "&Eacute;tre nourri est beaucoup, beaucoup, beaucoup mieux que d'avoir faim.",
                      "003": "Oh petit ! [str(entry.recent_food)]. Cette nourriture apaise mon ventre.",
                      "with_reaction": {
-                        "000": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Mmm&nbsp;!",
+                        "000": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Mmm !",
                         "001": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. La nourriture est bonne.",
-                        "002": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Wooo&nbsp;!",
+                        "002": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Wooo !",
                         "003": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Bonheur.",
                         "004": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Joie.",
-                        "005": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Oh petit&nbsp;!",
+                        "005": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Oh petit !",
                         "006": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Delicieux",
-                        "007": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Mieux que de mourir de faim&nbsp;!"
+                        "007": "Cher journal, aujourd'hui je mange : [str(entry.recent_food)]. Mieux que de mourir de faim !"
                      },
                      "teacher": {
                         "000": "[str(entry.teacher)], merci pour la nourriture de [str(entry.recent_food)]."
@@ -5620,6 +6301,18 @@
                "display_name": "Chèvre",
                "description": "[name(i18n_data.entity)] mangera essentiellement n'importe quoi. N'est pas difficile, parfois au dégoût de ceux qui l'entourent."
             }
+         },
+         "pluviophile": {
+            "pluviophile_trait": {
+               "display_name": "Pluviophile",
+               "description": "[name(i18n_data.entity)] n'aime rien de plus que le doux battement des gouttes de pluie."
+            }
+         },
+         "storm_chaser": {
+            "storm_chaser_trait": {
+               "display_name": "Chasseur de tempête",
+               "description": "Les orages, les tempêtes de sable, les blizzards, [name(i18n_data.entity)] les aime tous !"
+            }
          }
       },
       "happiness": {
@@ -5863,6 +6556,14 @@
                   "deeper_understanding": {
                      "display_name": "Une compréhension plus profonde",
                      "tooltip": "[str(target_name)] a vraiment ces ordres de priorités."
+                  },
+                  "pluviophile": {
+                     "display_name": "J'aime la pluie !",
+                     "tooltip": "It's my favorite weather today!"
+                  },
+                  "storm_chaser": {
+                     "display_name": "C'est une vrais tempête !",
+                     "tooltip": "C'est ma météo préférée aujourd'hui !"
                   }
                },
                "gregarious": {
@@ -6068,6 +6769,86 @@
                      "tooltip": "L'environnement moche fait qu'il est difficile de profiter de mon dernier repas."
                   }
                }
+            },
+            "weather": {
+               "values": {
+                  "windy_positive": {
+                     "display_name": "Profitez de la brise",
+                     "tooltip": "La brise caresse ma peau."
+                  },
+                  "blizzard_negative": {
+                     "display_name": "Salut qui frappe à ma porte",
+                     "tooltip": "Oh, le temps dehors est affreux !"
+                  },
+                  "thunderstorm_negative": {
+                     "display_name": "Effrayant tonnerre et foudre",
+                     "tooltip": "Cet éclair m'a presque touché !"
+                  },
+                  "sunny_positive": {
+                     "display_name": "Temps ensoleillé",
+                     "tooltip": "Soleil sans fin, chaleur et ciel bleu."
+                  },
+                  "cloudy_positive": {
+                     "display_name": "Nuages ​​moelleux au-dessus de ma tête",
+                     "tooltip": "Ciel couvert : parfait pour se prélasser sur le porche."
+                  },
+                  "sunny_negative": {
+                     "display_name": "Le soleil est trop brillant",
+                     "tooltip": "Je dois protéger mes yeux juste pour sortir. Et ne me lancez pas sur le coup de soleil !"
+                  },
+                  "thunderstorm_positive": {
+                     "display_name": "Temps orageux",
+                     "tooltip": "C'est tellement excitant d'entendre le tonnerre gronder !"
+                  },
+                  "windy_negative": {
+                     "display_name": "C'est horriblement venteux",
+                     "tooltip": "Le vent dehors mord ma peau."
+                  },
+                  "blizzard_positive": {
+                     "display_name": "Voilà ce que j'appelle la météo",
+                     "tooltip": "Ce blizzard féroce dehors fait de cette journée un souvenir inoubliable !"
+                  },
+                  "rain_positive": {
+                     "display_name": "Il pleut...",
+                     "tooltip": "Le goutte-à-goutte, les gouttes, les gouttes de pluie apaisent tous mes soucis !"
+                  },
+                  "cloudy_negative": {
+                     "display_name": "Nuages lugubres",
+                     "tooltip": "Le soleil me manque."
+                  },
+                  "rain_negative": {
+                     "display_name": "Bruine",
+                     "tooltip": "Je suis presque entré dans une flaque d'eau. Maintenant mes pieds sont froids."
+                  },
+                  "lucky": {
+                     "display_name": "Jour de chance",
+                     "tooltip": "Quelque chose de bon va se passer aujourd'hui. Je le sens juste !"
+                  },
+                  "snow_negative": {
+                     "display_name": "Froid, jour froid",
+                     "tooltip": "Brrr! Je peux à peine sentir mes orteils."
+                  },
+                  "sandstorm_negative": {
+                     "display_name": "Tempête de sable !",
+                     "tooltip": "Le vent souffle du sable à travers le pays. Cachez vos poyos! Cachez vos moutons !"
+                  },
+                  "snow_positive": {
+                     "display_name": "Il neige...",
+                     "tooltip": "Le monde est feutré et blanc, recouvert de neige."
+                  },
+                  "foggy_negative": {
+                     "display_name": "Brouillard effrayant",
+                     "tooltip": "Était-ce un gobelin qui traînait dans le brouillard ?"
+                  },
+                  "foggy_positive": {
+                     "display_name": "Brume mystérieuse",
+                     "tooltip": "Je me demande quelles merveilles se cachent sous cette brume mystérieuse."
+                  },
+                  "sandstorm_positive": {
+                     "display_name": "Tempête de sable",
+                     "tooltip": "Les sables viennent toujours tester notre courage ... Le mien est inébranlable."
+                  }
+               }
             }
          }
       },
@@ -6133,9 +6914,76 @@
             "ui_notification_popup": {
                "display_name": "Popup de notification ouverte"
             },
+            "ui_multiplayer_chat": {
+               "display_name": "Ouvrir le Tchat"
+            },
             "ui_undeploy_item": {
                "display_name": "Déployer l'objet"
             }
+         },
+         "data": {
+            "hotkeys": {
+               "keys": {
+                  "ui_building_redo": {
+                     "display_name": "Restorer"
+                  },
+                  "ui_building_undo": {
+                     "display_name": "Annuler"
+                  },
+                  "ui_building_move_support": {
+                     "display_name": "Déplacer les structures supportées"
+                  },
+                  "ui_toggle_selection": {
+                     "display_name": "Ajouter à la sélection"
+                  }
+               }
+            }
+         }
+      },
+      "weather": {
+         "windy": {
+            "display_name": "Venteux",
+            "description": "Des vents hurlants et des rafales rugissantes balayent les terres"
+         },
+         "thunderstorm": {
+            "display_name": "Orage",
+            "description": "Le tonnerre a roulé ... et c'est un six.<ul><li>La vitesse de croissance de la plante est légèrement augmentée.</li><li>Le rayon de vision est réduit.</li><li>Les Hearthlings sans abri sont parfois frappés par la foudre.</li><li>Le sol et les arbres sont parfois frappés par la foudre.</li></ul>"
+         },
+         "sunny": {
+            "display_name": "Ensoleillé",
+            "description": "Encore un autre jour de soleil sans fin et de ciels bleus."
+         },
+         "snow": {
+            "display_name": "Neige",
+            "description": "Froid, gel et soleil : jour d'émerveillement ! Pourquoi es-tu, mon ami, encore profondément endormi ?<ul><li>La vitesse de croissance des plantes est réduite.</li><li>Le rayon de vision est légèrement réduit.</li><li>Les Hearthlings sans abri ont trop froids pour travailler efficacement.</li><li>Les animaux de pâturage non abrités sont blessés par le froid.</li></ul>"
+         },
+         "sandstorm": {
+            "display_name": "Tempête de sable",
+            "description": "Couvrez vos yeux. Couvre vos oreilles. En fait, restez à l'intérieur.<ul><li>Les Hearthlings sans abri ont trop chauds pour travailler efficacement.</li><li>Le rayon de vision est légèrement réduit.</li><li>Des nuages de sable traversent le paysage, détruisant les récoltes et blessant tout le monde.</li></ul>"
+         },
+         "rain": {
+            "display_name": "Pluie",
+            "description": "De l'eau ! L'eau du ciel !<ul><li>La vitesse de croissance des plantes est légèrement augmentée.</li><li>Le rayon de vision est légèrement réduit.</li></ul>"
+         },
+         "lucky": {
+            "display_name": "Jour de chance",
+            "description": "Aujourd'hui, tout est juste un tout petit peu mieux.<ul><li>Les Hearthlings trouvent toutes leurs maladies guéries, comme par magie.</li><li>Les Hearthlings sont légèrement plus chanceux dans tout ce qu'ils font.</li><li>Un arc-en-ciel mystérieux apparaît parfois.</li></ul>",
+            "pot_of_gold": {
+               "display_name": "Pot d'or",
+               "description": "Aujourd'hui, c'est votre jour de chance !"
+            }
+         },
+         "foggy": {
+            "display_name": "Brumeux",
+            "description": "Une couverture de brouillard rampe à travers le paysage, cachant des mystères incalculables.<ul><li>Les monstres morts-vivants sortent de leur cachette sous la couverture du brouillard.</li><li>Le rayon de vision est grandement réduit.</li></ul>"
+         },
+         "cloudy": {
+            "display_name": "Nuageux",
+            "description": "Ciel couvert, parfait pour se prélasser sur le porche."
+         },
+         "blizzard": {
+            "display_name": "Blizzard",
+            "description": "Du vent, de la neige et de la grêle, oh mon !<ul><li>Le vent, la neige et la grêle, oh mon</li><li>Le rayon de vision est considérablement réduit.</li><li>Les Hearthlings sans abri sont trop froids pour fonctionner aussi efficacement.</li><li>Les animaux de pâturage sans abri sont blessés par le froid.</li></ul>"
          }
       }
    },
@@ -6308,6 +7156,18 @@
          "bronze_helm": {
             "display_name": "Casque en bronze",
             "description": "Jolie et protecteur"
+         },
+         "shield_valor": {
+            "display_name": "Bouclier du Géant",
+            "description": "bouclier le plus somptueux de l'Ascendance",
+            "shield_valor_iconic": {
+               "display_name": "Bouclier du Géant",
+               "description": "bouclier le plus somptueux de l'Ascendance"
+            }
+         },
+         "circlet_valor": {
+            "display_name": "Tiare Brillante",
+            "description": "La plus carré des tiares de l'ascendance"
          }
       },
       "boulders": {
@@ -6463,7 +7323,7 @@
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre en argile rouge",
+               "display_name": "Fenêtre d'argile rouge en treillis",
                "description": "Le treillis permet toujours de faire rentrer le bon air."
             }
          },
@@ -6673,15 +7533,6 @@
             },
             "stone_pile_iconic": {
                "description": "Pierres ramassables si marqués."
-            }
-         },
-         "ore_pile": {
-            "ore_pile": {
-               "description": "Conteneur pour beaucoup de gros morceaux de minerai",
-               "display_name": "Tas de minerai"
-            },
-            "ore_pile_iconic": {
-               "description": "Conteneur pour beaucoup de gros morceaux de minerai"
             }
          },
          "clay_pile": {
@@ -6959,7 +7810,7 @@
                "display_name": "Cerf séché"
             },
             "species": "cerf",
-            "description": "Om nom nom",
+            "description": "Très faisandé ... comme il faut",
             "display_name": "cerf"
          },
          "boar": {
@@ -6998,7 +7849,7 @@
          },
          "deer_horned": {
             "species": "cerf",
-            "description": "Om nom nom",
+            "description": "Méfiez-vous des cornes !",
             "display_name": "Cerf"
          }
       },
@@ -7851,7 +8702,7 @@
             },
             "fountain_wishing": {
                "fountain_wishing_ghost": {
-                  "display_name": "Bassin scintillant",
+                  "display_name": "Fontaine à voeux",
                   "description": "Échange de l'or pour les voeux"
                }
             },
@@ -8134,20 +8985,20 @@
          },
          "hearth_bunny": {
             "hearth_bunny_ghost": {
-               "display_name": "Le foyer de lapin",
-               "description": "Je suis un texte incroyable sur ce beau foyer"
+               "display_name": "Foyer de la Prospérité",
+               "description": "Fournit de la chaleur, de la lumière, du confort et des buffs quotidiens aléatoires"
             }
          },
          "hearth_fountain": {
             "hearth_fountain_ghost": {
-               "display_name": "Le foyer de la fontaine",
-               "description": "Je suis un texte incroyable sur ce beau foyer"
+               "display_name": "Foyer de la Gloire",
+               "description": "Fournit de la chaleur, de la lumière, du confort et une chance de défier les vagues de morts-vivants"
             }
          },
          "hearth_stump": {
             "hearth_stump_ghost": {
-               "display_name": "Le foyer de moignon",
-               "description": "Je suis un texte incroyable sur ce beau foyer"
+               "display_name": "Foyer des Artisants",
+               "description": "Fournit de la chaleur, de la lumière, du confort et de l'intérêt quotidien pour l'or possédé"
             }
          },
          "stall_progression": {
@@ -8297,7 +9148,7 @@
          },
          "poyo_meat": {
             "display_name": "Viande de poyo",
-            "description": "Je l'entends le prendre comme un poyo.",
+            "description": "Bien entendu ça a un goût de poyo.",
             "rotten": {
                "display_name": "Viande de Poyo pourrie",
                "description": "Ça pue"
@@ -8955,24 +9806,36 @@
          "town_banner_guardian": {
             "town_banner_guardian_ghost": {
                "display_name": "Bannière de Ruse",
-               "description": "Comment tu sais que tu es rentré à la maison.",
-               "town_bonus_description": "<i>Cette colonie sera un centre de commerce animé.</i><ul><li>Les routes boostent de 3x la vitesse normal</li><li>Les articles se vendent 50% plus chère</li><li>Les commerçants apporteront 2x plus de marchandises et d'or</li></ul>"
+               "description": "Permet de savoir que tu es rentré à la maison.",
+               "town_bonus_description": "<i>Cette colonie deviendra un carrefour commercial animé.</i><ul><li>Les routes boostent de 3x la vitesse normal</li><li>Les articles se vendent 50% plus chère</li><li>Les commerçants apporteront 2x plus de marchandises et d'or</li></ul>"
+            },
+            "town_banner_guardian_token_iconic": {
+               "display_name": "Lambeau de la bannière de Ruse",
+               "description": "Un lambeau de la bannière de Ruse, portant sa magie"
             }
-         },
+		 },
          "town_banner_might": {
             "town_banner_might_ghost": {
                "display_name": "Bannière de Force",
-               "description": "Comment tu sais que tu es rentré",
-               "town_bonus_description": "<i>Cette colonie deviendra fort à travers la terre et l'acier.</i><ul><li>L'exploitation minière donne 50% de plus de minerai, de pierre et d'argile</li><li>Hearthlings ne se soucient plus des espaces exigus</li></ul>"
+               "description": "Permet de savoir que tu es rentré",
+               "town_bonus_description": "<i>Cette colonie deviendra forte à travers la terre et l'acier.</i><ul><li>L'exploitation minière donne 50% de minerai, de pierre et d'argile supplémentaire</li><li>Les Hearthlings ne se soucient plus des espaces exigus</li></ul>"
+            },
+            "town_banner_might_token_iconic": {
+               "display_name": "Lambeau de la bannière de Force",
+               "description": "Un lambeau de la bannière de force, portant sa magie."
             }
-         },
+		 },
          "town_banner_nature": {
             "town_banner_nature_ghost": {
                "display_name": "Bannière de Vitalité",
-               "description": "Comment tu sais que tu es rentré",
-               "town_bonus_description": "<i>Cette colonie doit être en harmonie avec l'environnement.</i><ul><li>Les arbres produisent 25% de plus de bois</li><li>Les plantes et les cultures poussent 25% plus vite</li><li>Les plantes poussent 2x plus vite que la normal</li></ul>"
+               "description": "Permet de savoir que tu es rentré",
+               "town_bonus_description": "<i>Cette colonie vivra en harmonie avec la nature.</i><ul><li>Les arbres produisent 25% de plus de bois</li><li>Les plantes et les cultures poussent 25% plus vite</li><li>Les plantes poussent 2x plus vite que la normal</li></ul>"
+            },
+            "town_banner_nature_token_iconic": {
+               "display_name": "Lambeau de la bannière de Vitalité",
+               "description": "Un lambeau de la bannière de Vitalité, portant sa magie."
             }
-         }
+		 }
       },
       "loot": {
          "gold": {
@@ -9913,7 +10776,39 @@
          "iron_gear": {
             "display_name": "Engrenage en fer",
             "description": "Utilisé pour fabriquer des gadgets intermédiaires"
-         }
+                  },
+         "silver_bowstring": {
+            "display_name": "Corde d'arc en argent",
+            "description": "Une solide bobine de fil d'argent filé"
+         },
+         "woven_grip": {
+            "display_name": "Poignée tissé",
+            "description": "Bien emballé avec des cordes bleu et or"
+         },
+         "blazing_inlay": {
+            "display_name": "Incrustation flamboyante",
+            "description": "Dorure radiante pour l'Épée Emblazonnée."
+         },
+         "steel_frame": {
+            "display_name": "Le cadre du géant",
+            "description": "Renforce le Bouclier du Géant."
+         },
+         "giants_face": {
+            "display_name": "Visage de géant",
+            "description": "Protège le Bouclier du Géant."
+         },
+         "mechanism": {
+            "display_name": "Mécanisme de Phoenix",
+            "description": "Les roues de l'Arc Empire"
+         },
+         "lucid_gem": {
+            "display_name": "Gemme Lucide",
+            "description": "Un focus spirituel, essentiel pour la Tiare Brillante."
+         },
+         "shining_setting": {
+            "display_name": "Cadre de feuille d'argent",
+            "description": "Encadre délicatement et protège le Tiare Brillante"
+		 }
       },
       "resources": {
          "coal": {
@@ -10675,6 +11570,18 @@
          "fire_arrow": {
             "display_name": "flèche enflammée",
             "description": "Une flèche imprégnée de flammes"
+         },
+         "two_handed_sword_valor": {
+            "display_name": "Epée Emblazonnée",
+            "description": "Lame la plus fine de l'Ascendance",
+            "two_handed_sword_valor_iconic": {
+               "display_name": "Epée Emblazonnée",
+               "description": "Lame la plus fine de l'Ascendance."
+            }
+         },
+         "bow_valor": {
+            "display_name": "Arc Empire",
+            "description": "L'arc le plus rapide de l'Ascendance"
          }
       },
       "consumables": {
@@ -10811,19 +11718,60 @@
             "female": {
                "herald_female": {
                   "display_name": "Heraldine Rigby",
-                  "description": "C'est un héraut de l'ascendance."
+                  "description": "C'est une héroïne de l'Ascendance."
+               },
+               "herald_isabelle": {
+                  "display_name": "Isabelle Swift",
+                  "description": "C'est une héroïne de l'Ascendance"
+               },
+               "herald_ember": {
+                  "display_name": "Ember Minton",
+                  "description": "Missionnaire de l'église de l'Abondance."
+               },
+               "herald_anwyn": {
+                  "display_name": "Anwyn Torresi",
+                  "description": "Capitaine de la Garde."
+               },
+               "herald_erdene": {
+                  "display_name": "Erdene Jemkrushr",
+                  "description": "Émissaire réticent du Kiln Rouge."
                }
             },
             "male": {
                "herald_male": {
                   "display_name": "Herald B. le Bon",
                   "description": "C'est un héraut de l'ascendance."
+               },
+               "herald_mer": {
+                  "display_name": "Mer Burlyhands",
+                  "description": "Compagnon de la Capitale"
+               },
+               "herald_marak": {
+                  "display_name": "Marak Azael",
+                  "description": "Maître de guilde de l'Ascendance."
+               },
+               "herald_untz": {
+                  "display_name": "Untz the Excellent",
+                  "description": "Troupe Goblin."
+               },
+               "herald_harold": {
+                  "display_name": "Harold",
+                  "description": "Livraison spéciale Canard-Canard."
+               },
+               "herald_sasha": {
+                  "display_name": "Sasha Lightfoot",
+                  "description": "Héraut du Clan Amberstone"
                }
             }
          }
       }
    },
    "jobs": {
+      "common": {
+         "recipes": {
+            "legendary_name": "Legendary"
+         }
+      },
       "animal_trainer": {
          "animal_trainer_description": {
             "display_name": "???",
@@ -10984,8 +11932,8 @@
                "flavor": "La conception rappelle celle des légions Phénix."
             },
             "bronze_ingot_recipe": {
-               "description": "Une barre de bronze pur. Un matériel adapté à la fabrication d'objets.",
-               "recipe_name": "Lingot de bronze",
+               "description": "Deux barres de bronze pur. Un matériel adapté à la fabrication d'objets.",
+               "recipe_name": "Lingot de bronze (x2)",
                "flavor": "Les maîtres anciens considérés sa production comme preuve de notre triomphe sur la terre."
             },
             "bronze_mace_recipe": {
@@ -11025,7 +11973,7 @@
             },
             "iron_mail_recipe": {
                "description": "Un ensemble complet de lourdes et solides mailles de fer.",
-               "recipe_name": "Côte de maille en fer",
+               "recipe_name": "Cotte de mailles en fer",
                "flavor": "Mais il a caché son coeur dans une forteresse d'acier, pour qu'aucune fée ne pourrait y toucher. - Chanson de Evermarth"
             },
             "iron_pike_recipe": {
@@ -11154,7 +12102,7 @@
                "flavor": "Même les scouts sont ornés d'or"
             },
             "silver_mail_recipe": {
-               "recipe_name": "Côte de maille en argent",
+               "recipe_name": "Cotte de mailles en argent",
                "description": "La meilleur armure... pour l'instant.",
                "flavor": "Cid aimait la couleur des fraises"
             },
@@ -11252,7 +12200,7 @@
                "description": "Sa flamme apporte une chaude sensation de fierté dans tout ce que nous avons accompli.",
                "recipe_name": "Torche en bois"
             },
-            "valor_torch_plaque_recipe": {
+            "valor_wall_hanging_plaque_recipe": {
                "description": "Tout comme l'épée des Grand-Papa !",
                "recipe_name": "Épée et bouclier en plaque"
             },
@@ -11260,6 +12208,21 @@
                "description": "Réminiscence des jours passés.",
                "recipe_name": "Cor de guerre géant",
                "flavor": "Le son d'une grande corne comme celle-ci ne devrait jamais être pris à la légère ... heureusement, on n'a pas sonné à Darkmoor depuis de nombreuses années. - Cid, Chevalier des Anciens"
+            },
+            "steel_frame_recipe": {
+               "description": "Renforce le Bouclier du Géant.",
+               "recipe_name": "Le cadre du géant",
+               "flavor": "Les os du géant"
+            },
+            "two_handed_sword_valor_recipe": {
+               "description": "La plus belle lame de l'Ascendance",
+               "recipe_name": "Épée Emblazonnée",
+               "flavor": "Parfaitement équilibré pour sa taille, et égal à tous les défis qui attendent son porteur"
+            },
+            "circlet_valor_recipe": {
+               "description": "La plus carré des tiares de l'ascendance",
+               "recipe_name": "Tiare Brillante",
+               "flavor": "Canalise le coeur et l'âme en une lumière de guérison"
             }
          }
       },
@@ -11397,7 +12360,7 @@
             "shepherds_crook_recipe": {
                "description": "Requis pour promouvoir un hearthling en berger",
                "recipe_name": "Bâton de berger",
-               "flavor": "Pouvez-vous me raconter une autre histoire à propos du Berger&nbsp;?"
+               "flavor": "Pouvez-vous me raconter une autre histoire à propos du Berger ?"
             },
             "simple_wooden_chair_recipe": {
                "description": "Manger assis procure un gain de satiété de 20%.",
@@ -11728,6 +12691,16 @@
                "description": "Une clôture avec des clochettes qui dépassent",
                "recipe_name": "Clôture fleurie rose",
                "flavor": "La fermière Peggy ne souffrirait pas d'une mauvaise herbe sur sa montre. Soit elle avait un faible pour la floraison, soit elle repoussait trop vite."
+            },
+            "giants_face_recipe": {
+               "description": "Protège le bouclier du géant",
+               "recipe_name": "Le visage du géant",
+               "flavor": "Acier plaqué et solide comme le flanc de la montagne"
+            },
+            "bow_valor_recipe": {
+               "description": "L'arc le plus rapide de l'Ascendance",
+               "recipe_name": "Arc Empire",
+               "flavor": "Donne à son porteur l'aide mécanique pour tirer des flèches dans un vol aveuglant"
             }
          }
       },
@@ -12042,6 +13015,11 @@
             "bronze_portcullis_recipe": {
                "description": "Utile pour fortifier les points d'entrée de la ville.",
                "recipe_name": "Herse en Bronze"
+            },
+            "mechanism_recipe": {
+               "description": "Les roues de l'Arc Empire",
+               "recipe_name": "Mécanisme de Phoenix",
+               "flavor": "Un mécanisme de rotation intelligent qui ajoute de la vitesse, de la puissance et de la précision"
             }
          },
          "engineer_buffs": {
@@ -12488,6 +13466,16 @@
                "description": "Un phare de lumière pour protéger votre ville.",
                "recipe_name": "Grand Brazier",
                "flavor": "D'un sommet de montagne, vous pouvez voir des feux comme ceux-ci tout au long de la Sombrelande."
+            },
+            "lucid_gem_recipe": {
+               "description": "Un focus spirituel, essentiel pour la Tiare Brillante",
+               "recipe_name": "Gemme Lucide",
+               "flavor": "Quels mystères se cachent dans ce tranquil œil bleu ?"
+            },
+            "giants_shield_recipe": {
+               "description": "Le bouclier le plus somptueux de l'Ascendance",
+               "recipe_name": "Bouclier du géant",
+               "flavor": "Contre les ennemis les plus terribles et les dangers impossibles, ce bouclier ne se cassera jamais."
             }
          }
       },
@@ -12768,6 +13756,11 @@
                "recipe_name": "Bassin d'approvisionnement en céramique vert",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
+            },
+            "blazing_inlay_recipe": {
+               "description": "Dorure radiante pour l'Épée Emblazonnée.",
+               "recipe_name": "Incrustation flamboyante",
+               "flavor": "Luisant de la lumière du foyer"
             }
          },
          "potter_workbench": {
@@ -13089,6 +14082,16 @@
                "flavor": "Rien de tel qu'un atelier bien fourni !",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
                "recipe_name": "Panier d'approvisionnement tissé rouge"
+            },
+            "silver_bowstring_recipe": {
+               "description": "Une solide bobine de fil d'argent filé",
+               "recipe_name": "Chaîne à archet argenté",
+               "flavor": "Joins les extrémités de l'Arc Empire"
+            },
+            "woven_grip_recipe": {
+               "description": "Bien emballé avec des cordes bleu et or",
+               "recipe_name": "Poignée tissé",
+               "flavor": "Orne la poignée de l'Epée Emblazonnée"
             }
          },
          "weaver_loom": {
@@ -13356,11 +14359,11 @@
             "topiary_fox_recipe": {
                "description": "Art topiaire moyen",
                "recipe_name": "Renard en baie",
-               "flavor": "baie"
+               "flavor": "Ne pas planter dans votre cage à Poyo"
             },
             "pot_berry_bush_recipe": {
-               "description": "Un panneau avec la marque de l'herboriste.",
-               "recipe_name": "Panneau mural de l'herboriste"
+               "description": "Un ami soigneusement mis en caisse.",
+               "recipe_name": "Buisson de baie mis en pot"
             },
             "pot_goldrose_recipe": {
                "description": "Fleurs jaunes copieuses",
@@ -13391,6 +14394,11 @@
                "description": "Méticuleusement bien entretenu",
                "recipe_name": "Arbre de fleur rouge",
                "flavor": "Les fleurs rouges sont pour la chance. Un nombre impair de pétales est particulièrement chanceux, même si personne n'a jamais vu une telle fleur."
+            },
+            "leaf_setting_recipe": {
+               "description": "Encadre délicatement et protège la Tiare Brillante",
+               "recipe_name": "Cadre de feuille d'argent",
+               "flavor": "Moulé à partir de feuilles réelles trempé dans des couches d'argent et d'or, ils sont plus forts qu'ils ne le semblent"
             }
          },
          "herbalist_buffs": {
@@ -13484,6 +14492,10 @@
             "major_muscle_aura_effect_buff": {
                "display_name": "Force majeure",
                "description": "Muscle grandement amélioré par la présence d'un clerc"
+            },
+            "legendary_circlet_buff": {
+               "display_name": "Tiare Brillante",
+               "description": "Augmente la Volonté, le Courage et la Compassion de 10%"
             }
          }
       },
