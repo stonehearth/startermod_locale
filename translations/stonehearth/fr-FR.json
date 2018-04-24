@@ -4035,7 +4035,7 @@
                               "achievements": {
                                  "001": "Arbustes pour l'Herboriste",
                                  "003": "Fountaine de Chance pour le Maçon",
-                                 "000": "Buffs Quotidien de Chance",
+                                 "000": "Bonus quotidien de Chance",
                                  "002": "Décorations pour le forgeron",
                                  "004": "Musique de niveau 3"
                               }
@@ -4328,7 +4328,7 @@
                         },
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Beaucoup de mot circule autour de la capital comme quoi de plus en plus de gens font leurs bagages pour aller à <town_name> tous les jours ! De nouvelles excitantes, votre foyer doit être éblouissant pour attirer autant de nouveaux colons. En fait, il attire également l'attention de quelques personnes Notable. !"
+                              "00": "Beaucoup de mots circulent autour de la capital, comme quoi de plus en plus de gens font leurs bagages pour aller à <town_name> tous les jours ! De nouvelles excitantes, votre foyer doit être éblouissant pour attirer autant de nouveaux colons. En fait, il attire également l'attention de quelques personnes Notable!"
                            },
                            "bulletin_title": "Une lettre",
                            "dialog_title": "Une lettre",
@@ -4346,7 +4346,7 @@
                            "bulletin_message": {
                               "00": "On dirait que Mer est de nouveau entré en contact avec nous !"
                            },
-                           "bulletin_title": "Cet oiseau étrange encore !",
+                           "bulletin_title": "Encore cet oiseau étrange!",
                            "dialog_title": "Une autre lettre !",
                            "choice_000": "L'ouvrir"
                         }
@@ -4366,7 +4366,7 @@
                         },
                         "open_letter": {
                            "bulletin_message": {
-                              "00": "Un oiseau étrange arrive avec une lettre dans son bec, estampillé du sceau officiel de l'ascendance. <br><br><p align='right'><font size=-6 color='#cccccc'>L'oiseau porte aussi un insigne, qui se lit 'Harold' </font></p>"
+                              "00": "Un étrange oiseau arrive avec une lettre dans son bec, estampillé du sceau officiel de l'ascendance. <br><br><p align='right'><font size=-6 color='#cccccc'>L'oiseau porte aussi un insigne, qui se lit 'Harold' </font></p>"
                            },
                            "bulletin_title": "Un étrange oiseau !",
                            "dialog_title": "Un oiseau... messager ?",
@@ -4374,7 +4374,7 @@
                         },
                         "read_letter": {
                            "bulletin_message": {
-                              "00": "Chère expédition [str(i18n_data.town_serial_number)],<p>J'espère que cette lettre t'arrivera bien. À mon avis, vous avez probablement déjà installer votre campement.</p><p>À titre de liaison avec la capitale, j'ai l'honneur de présider, de loin, à la fondation officielle de votre avant-poste ! Je crois que vous avez eu amplement le temps de choisir un nom pour votre expédition.</p>"
+                              "00": "Chère expédition [str(i18n_data.town_serial_number)],<p>J'espère que cette lettre arrivera bien. À mon avis, vous avez probablement déjà installer votre campement.</p><p>À titre de liaison avec la capitale, j'ai l'honneur de présider, de loin, à la fondation officielle de votre avant-poste ! Je crois que vous avez eu amplement le temps de choisir un nom pour votre expédition.</p>"
                            },
                            "bulletin_title": "Une lettre de la capitale !",
                            "dialog_title": "Une lettre de la capitale !",
@@ -4396,7 +4396,7 @@
                      "dialog_nodes": {
                         "msg1": {
                            "bulletin_message": {
-                              "00": "L'oiseau messager étrange se précipite avec votre déclaration de fondation officielle dans son bec, le portant dans la vague direction de la capitale"
+                              "00": "L'étrange oiseau messager se précipite avec votre déclaration de fondation officielle dans son bec, le portant vaguement dans la direction de la capitale"
                            },
                            "bulletin_title": "L'oiseau part",
                            "dialog_title": "L'oiseau part",
@@ -5026,7 +5026,7 @@
             "abilities": {
                "snare_trap": {
                   "display_name": "Collet",
-                  "description": "Fixe un fil solide pour capturer des petits animaux comme les lapins ou les écureuils."
+                  "description": "Fixe un fil solide pour capturer des petits animaux, comme les lapins ou les écureuils."
                }
             },
             "move_unit": {
@@ -5074,15 +5074,15 @@
          "archer_arrows": {
             "default_arrows": {
                "display_name": "Utiliser les flèches par défaut",
-               "description": "Utilise des flèches normales. Cliquez passer à un autre type de flèche."
+               "description": "Utilise des flèches normales. Cliquez pour passer à un autre type de flèche."
             },
             "slow_arrows": {
                "display_name": "Utiliser les flèches à pointes",
-               "description": "Utilise des flèches à pointes, qui ralentit les ennemis. Cliquez passer à un autre type de flèche."
+               "description": "Utilise des flèches à pointes, qui ralentissent les ennemis. Cliquez pour passer à un autre type de flèche."
             },
             "fire_arrows": {
                "display_name": "Utiliser les flèches enflammées",
-               "description": "Utilise des flèches enflammées, qui ont une chance de mettre le feu aux ennemis, infligeant des dégâts supplémentaires au fil du temps. Cliquez passer à un autre type de flèche."
+               "description": "Utilise des flèches enflammées, qui ont une chance de mettre le feu aux ennemis, infligeant des dégâts supplémentaires au fil du temps. Cliquez pour passer à un autre type de flèche."
             }
          },
          "combat": {
@@ -5506,9 +5506,9 @@
                      "001": "Je fis un rêve où je me voyais debout dans une sorte de robes du dieu-soleil sur une pyramide. J'avais mille hearthlings en tant que sujets, mais ils étaient tous à crier et à jeter les radis sur moi.",
                      "002": "Je rêvais que moi et mes amis vivions pour construire un puissant empire à nous !",
                      "003": "Je rêvais que je poussai un immense rocher en haut d'une colline. Lorsque je suis arrivé au sommet de la colline que je regardais le rocher dégringoler vers le bas. Je me suis alors commencé à pousser le rocher pour remonter la pente. Ce qui est arrivé toute la nuit...",
-                     "004": "Je fis un rêve horrible ! Je fis un rêve, où il y avait 6 autres personnes, et nous étions tous coincé dans le- oh, attendez.... cela n'a pas été un rêve.",
+                     "004": "Je fais un rêve horrible ! J'ai fait un rêve, où il y avait 6 autres personnes, et nous étions tous coincé dans le- oh, attendez.... cela n'a pas été un rêve.",
                      "teacher_dreams": {
-                        "000": "Tout d'abord, je rêvais que les arbres avaient des grands bras et grandes jambes et a commencé à chanter. Alors, [str(entry.teacher)] m'a demandé de chanter devant un large public."
+                        "000": "Tout d'abord, je rêvais que les arbres avaient des grands bras et de grandes jambes, puis ils ont commencés à chanter. Alors, [str(entry.teacher)] m'a demandé de chanter devant un large public."
                      }
                   }
                }
@@ -6109,7 +6109,7 @@
       },
       "loadouts": {
          "food_for_days": {
-            "description": "La grande quantité de nourriture entassés à l'arrière de la caravane devrait garder les foyers actuels pendant une poignée de jours jusqu'à la finalisation de leur établissement.",
+            "description": "La grande quantité de nourriture entassés à l'arrière de la caravane devrait garder les foyers actuels nourris pendant plusieurs jours, jusqu'à la finalisation de leur établissement.",
             "display_name": "Nourriture pour plusieurs jours",
             "tooltip": "Une option sûre pour les nouveaux joueurs, mais manquant de défense."
          },
@@ -6119,7 +6119,7 @@
             "tooltip": "Une bonne collection de compétences artisanales, mais court sur la nourriture."
          },
          "money_solves_all_problems": {
-            "description": "Tout ce que la ville a besoin, ils devraient être en mesure d'acheter auprès d'un commerçant.  C'est-à-dire, en supposant que l'on les trouve et qu'il dispose des marchandises appropriées à vendre ...",
+            "description": "Tout ce que la ville a besoin, ils devraient être en mesure d'acheter auprès d'un commerçant.  C'est-à-dire, en supposant qu'on les trouve et qu'ils disposent de marchandises appropriées à vendre ...",
             "display_name": "L'argent résout tous les problèmes",
             "tooltip": "Un choix risqué mais potentiellement très bénéfique. Tout dépend de quand est ce que les commerçants arrivent."
          },
@@ -6542,7 +6542,7 @@
                      "tooltip": "Nous avons pourfendus un groupe de méchants récemment, ça ma vraiment fait battre le coeur!"
                   },
                   "loves_their_job": {
-                     "display_name": "Aime leur travail",
+                     "display_name": "Aime son travail",
                      "tooltip": "C'est le travail parfait pour moi ! J'aime ce que je fais jour après jour."
                   },
                   "inspired": {
@@ -6777,11 +6777,11 @@
                      "tooltip": "La brise caresse ma peau."
                   },
                   "blizzard_negative": {
-                     "display_name": "Salut qui frappe à ma porte",
+                     "display_name": "Salut, qui frappe à ma porte?",
                      "tooltip": "Oh, le temps dehors est affreux !"
                   },
                   "thunderstorm_negative": {
-                     "display_name": "Effrayant tonnerre et foudre",
+                     "display_name": "Tonnerre et foudre effrayant",
                      "tooltip": "Cet éclair m'a presque touché !"
                   },
                   "sunny_positive": {
@@ -6789,12 +6789,12 @@
                      "tooltip": "Soleil sans fin, chaleur et ciel bleu."
                   },
                   "cloudy_positive": {
-                     "display_name": "Nuages ​​moelleux au-dessus de ma tête",
-                     "tooltip": "Ciel couvert : parfait pour se prélasser sur le porche."
+                     "display_name": "Nuages ​​moelleux dans le ciel",
+                     "tooltip": "Un ciel couvert, c'est parfait pour se prélasser sur le porche."
                   },
                   "sunny_negative": {
                      "display_name": "Le soleil est trop brillant",
-                     "tooltip": "Je dois protéger mes yeux juste pour sortir. Et ne me lancez pas sur le coup de soleil !"
+                     "tooltip": "Je dois protéger mes yeux juste pour sortir. Et ne parlez pas des coups de soleil !"
                   },
                   "thunderstorm_positive": {
                      "display_name": "Temps orageux",
@@ -6802,11 +6802,11 @@
                   },
                   "windy_negative": {
                      "display_name": "C'est horriblement venteux",
-                     "tooltip": "Le vent dehors mord ma peau."
+                     "tooltip": "Dehors, le vent mord ma peau."
                   },
                   "blizzard_positive": {
-                     "display_name": "Voilà ce que j'appelle la météo",
-                     "tooltip": "Ce blizzard féroce dehors fait de cette journée un souvenir inoubliable !"
+                     "display_name": "Voilà ce que j'appelle de la météo",
+                     "tooltip": "Dehors, un blizzard féroce fait de cette journée un souvenir inoubliable !"
                   },
                   "rain_positive": {
                      "display_name": "Il pleut...",
@@ -6822,7 +6822,7 @@
                   },
                   "lucky": {
                      "display_name": "Jour de chance",
-                     "tooltip": "Quelque chose de bon va se passer aujourd'hui. Je le sens juste !"
+                     "tooltip": "Quelque chose de bon va se passer aujourd'hui. Je le sens!"
                   },
                   "snow_negative": {
                      "display_name": "Froid, jour froid",
@@ -6846,7 +6846,7 @@
                   },
                   "sandstorm_positive": {
                      "display_name": "Tempête de sable",
-                     "tooltip": "Les sables viennent toujours tester notre courage ... Le mien est inébranlable."
+                     "tooltip": "Les tempêtes de sable viennent toujours tester notre courage ... Le mien est inébranlable."
                   }
                }
             }
@@ -6947,7 +6947,7 @@
          },
          "thunderstorm": {
             "display_name": "Orage",
-            "description": "Le tonnerre a roulé ... et c'est un six.<ul><li>La vitesse de croissance de la plante est légèrement augmentée.</li><li>Le rayon de vision est réduit.</li><li>Les Hearthlings sans abri sont parfois frappés par la foudre.</li><li>Le sol et les arbres sont parfois frappés par la foudre.</li></ul>"
+            "description": "Le tonnerre a roulé ... et c'est un six.<ul><li>La vitesse de croissance des plantes est légèrement augmentée.</li><li>La visibilité est réduite.</li><li>Les Hearthlings sans abri peuvent parfois être frappés par la foudre.</li><li>Le sol et les arbres peuvent parfois être frappés par la foudre.</li></ul>"
          },
          "sunny": {
             "display_name": "Ensoleillé",
@@ -6955,15 +6955,15 @@
          },
          "snow": {
             "display_name": "Neige",
-            "description": "Froid, gel et soleil : jour d'émerveillement ! Pourquoi es-tu, mon ami, encore profondément endormi ?<ul><li>La vitesse de croissance des plantes est réduite.</li><li>Le rayon de vision est légèrement réduit.</li><li>Les Hearthlings sans abri ont trop froids pour travailler efficacement.</li><li>Les animaux de pâturage non abrités sont blessés par le froid.</li></ul>"
+            "description": "Froid, gel et soleil : jour d'émerveillement ! Pourquoi es-tu, mon ami, encore profondément endormi ?<ul><li>La vitesse de croissance des plantes est réduite.</li><li>La visibilité est légèrement réduite.</li><li>Les Hearthlings sans abri auront trop froids pour travailler efficacement.</li><li>Les animaux de pâturage non abrités seront blessés par le froid.</li></ul>"
          },
          "sandstorm": {
             "display_name": "Tempête de sable",
-            "description": "Couvrez vos yeux. Couvre vos oreilles. En fait, restez à l'intérieur.<ul><li>Les Hearthlings sans abri ont trop chauds pour travailler efficacement.</li><li>Le rayon de vision est légèrement réduit.</li><li>Des nuages de sable traversent le paysage, détruisant les récoltes et blessant tout le monde.</li></ul>"
+            "description": "Couvrez vos yeux. Couvrez vos oreilles. En fait, restez à l'intérieur.<ul><li>Les Hearthlings sans abri auront trop chauds pour travailler efficacement.</li><li>La visibilité est légèrement réduite.</li><li>Des nuages de sable traversent le paysage, détruisant les récoltes et blessant tout le monde.</li></ul>"
          },
          "rain": {
             "display_name": "Pluie",
-            "description": "De l'eau ! L'eau du ciel !<ul><li>La vitesse de croissance des plantes est légèrement augmentée.</li><li>Le rayon de vision est légèrement réduit.</li></ul>"
+            "description": "De l'eau ! L'eau tombe du ciel !<ul><li>La vitesse de croissance des plantes est légèrement augmentée.</li><li>La visibilité est légèrement réduite.</li></ul>"
          },
          "lucky": {
             "display_name": "Jour de chance",
@@ -6975,7 +6975,7 @@
          },
          "foggy": {
             "display_name": "Brumeux",
-            "description": "Une couverture de brouillard rampe à travers le paysage, cachant des mystères incalculables.<ul><li>Les monstres morts-vivants sortent de leur cachette sous la couverture du brouillard.</li><li>Le rayon de vision est grandement réduit.</li></ul>"
+            "description": "Une couverture de brouillard se faufile à travers le paysage, cachant des mystères inimaginable.<ul><li>Les morts-vivants sortent de leur cachette sous la couverture du brouillard.</li><li>La visibilité est grandement réduite.</li></ul>"
          },
          "cloudy": {
             "display_name": "Nuageux",
@@ -6983,7 +6983,7 @@
          },
          "blizzard": {
             "display_name": "Blizzard",
-            "description": "Du vent, de la neige et de la grêle, oh mon !<ul><li>Le vent, la neige et la grêle, oh mon</li><li>Le rayon de vision est considérablement réduit.</li><li>Les Hearthlings sans abri sont trop froids pour fonctionner aussi efficacement.</li><li>Les animaux de pâturage sans abri sont blessés par le froid.</li></ul>"
+            "description": "Du vent, de la neige et de la grêle, oh mon !<ul><li>Le vent, la neige et la grêle, oh mon</li><li>La visibilité est considérablement réduite.</li><li>Les Hearthlings sans abri auront trop froids pour fonctionner efficacement.</li><li>Les animaux de pâturage non abrités seront blessés par le froid.</li></ul>"
          }
       }
    },
@@ -7566,24 +7566,24 @@
          "ornate_leather_bound_chest": {
             "ornate_leather_bound_chest_ghost": {
                "display_name": "Coffre en cuir orné",
-               "description": "Stocke jusqu'à 64 articles. Avec style."
+               "description": "Entrepose jusqu'à 64 articles. Avec style."
             }
          },
          "output_box_wood": {
             "output_box_wood_ghost": {
                "display_name": "Plateau de travail de finition du bois",
-               "description": "Stockage temporaire pour les objets artisanaux."
+               "description": "Entrepose temporairement les objets artisanaux."
             }
          },
          "output_box_clay": {
             "output_box_clay_ghost": {
-               "description": "Stockage temporaire pour les objets artisanaux.",
+               "description": "Contenant temporaire pour les objets artisanaux.",
                "display_name": "Plateau de travail de finition de l'argile"
             }
          },
          "output_box_stone": {
             "output_box_stone_ghost": {
-               "description": "Stockage temporaire pour les objets artisanaux.",
+               "description": "Contenant temporaire pour les objets artisanaux.",
                "display_name": "Plateau de travail de finition de la pierre"
             }
          },
@@ -7802,7 +7802,7 @@
          },
          "woodchuck": {
             "display_name": "Marmotte",
-            "description": "Un mangeur vorace de presque tout, en particulier le bois.",
+            "description": "Un mangeur vorace de presque tout. Aime particulièrement le bois.",
             "species": "marmotte"
          },
          "deer": {
@@ -7831,7 +7831,7 @@
             "display_name": "Fourmi",
             "species": "fourmi",
             "bitsy_ant_jerky": {
-               "display_name": "Petite viande de fourmi"
+               "display_name": "Petite morceau de viande de fourmi"
             }
          },
          "doodles": {
@@ -7839,7 +7839,7 @@
             "description": "Mignon petit insecte",
             "species": "doodles",
             "doodles_jerky": {
-               "display_name": "Petite viande d'insecte"
+               "display_name": "Petite morceau de viande d'insecte"
             }
          },
          "red_fox_wolf": {
@@ -8846,7 +8846,7 @@
             },
             "lamppost_rustic_double": {
                "lamppost_rustic_double_ghost": {
-                  "display_name": "Poteau de lampe rustique jumeau",
+                  "display_name": "Poteau de lampe rustique double",
                   "description": "Allume le chemin plus audacieusement"
                }
             },
@@ -9289,7 +9289,7 @@
          },
          "rotten_jerky": {
             "display_name": "Viande séchée pourrie",
-            "description": "Même la viande sèche pourrie évantuellement. C'est vrai"
+            "description": "Même la viande sèche pourrie éventuellement. C'est vrai"
          },
          "mutton": {
             "display_name": "Mouton cru",
@@ -9322,10 +9322,10 @@
          },
          "pork": {
             "display_name": "Porc cru",
-            "description": "Viande crue d'un sanglier"
+            "description": "Viande crue d'un porc"
          },
          "rotten_bug_meat": {
-            "description": "La viande d'insecte est mauvaise par rapport à d'autres viandes",
+            "description": "La viande d'insecte est passé date",
             "display_name": "Viande d'insecte pourrie"
          },
          "roast_pork": {
@@ -9339,7 +9339,7 @@
          },
          "egg_large": {
             "display_name": "Gros œuf",
-            "description": "Un oeuf, ingrédient pour la cuisine"
+            "description": "Un oeuf, un ingrédient pour la cuisine"
          },
          "rotten_egg_large": {
             "description": "Répugnant",
@@ -9359,7 +9359,7 @@
                "display_name": "Plaque de varanus rôti"
             },
             "roast_varanus_serving": {
-               "display_name": "Portion de rôti Varanus"
+               "display_name": "Portion de rôti de Varanus"
             }
          },
          "roast_zilla": {
@@ -9420,7 +9420,7 @@
          },
          "fried_eggs_large": {
             "fried_eggs_large": {
-               "display_name": "Grand oeuf au plat",
+               "display_name": "Gros oeuf au plat",
                "description": "Frit, délicieux et ÉNORME"
             },
             "fried_eggs_large_serving": {
@@ -9433,7 +9433,7 @@
                "description": "Le meilleur petit déjeuner que vous pouvez obtenir"
             },
             "bacon_and_eggs_serving": {
-               "display_name": "Portion de bacon et oeufs"
+               "display_name": "Portion de bacon et d'oeufs"
             }
          },
          "varanus_jerky": {
@@ -9446,10 +9446,10 @@
             "display_name": "Autruche haché"
          },
          "boar_jerky": {
-            "display_name": "Sanglier Jerky"
+            "display_name": "Sanglier séché"
          },
          "duckduck_jerky": {
-            "display_name": "Canard Jerky"
+            "display_name": "Canard séché"
          },
          "roast_venison": {
             "roast_venison": {
@@ -9776,19 +9776,19 @@
          "small_turret": {
             "small_turret_ghost": {
                "display_name": "Tourelle",
-               "description": "Tirent sur les ennemis à une petite distance"
+               "description": "Tire sur les ennemis à une petite distance"
             }
          },
          "clamp_trap": {
             "clamp_trap_ghost": {
                "display_name": "Piège à pince",
-               "description": "Inflige des dommages et étourdit un peu les ennemis qui marchent sur elle"
+               "description": "Inflige des dommages et étourdit un peu les ennemis qui marchent dessus"
             }
          },
          "turnip_shooter": {
             "turnip_shooter_ghost": {
-               "display_name": "Navet tireur",
-               "description": "Tirent des navets sur les ennemis"
+               "display_name": "Tireur de navet",
+               "description": "Tire des navets sur les ennemis"
             }
          },
          "critter_trap": {
@@ -9807,7 +9807,7 @@
             "town_banner_guardian_ghost": {
                "display_name": "Bannière de Ruse",
                "description": "Permet de savoir que tu es rentré à la maison.",
-               "town_bonus_description": "<i>Cette colonie deviendra un carrefour commercial animé.</i><ul><li>Les routes boostent de 3x la vitesse normal</li><li>Les articles se vendent 50% plus chère</li><li>Les commerçants apporteront 2x plus de marchandises et d'or</li></ul>"
+               "town_bonus_description": "<i>Cette colonie deviendra un carrefour commercial animé.</i><ul><li>Les routes augmentent la vitesse d'un heartling par 3x</li><li>Les articles se vendent 50% plus chère</li><li>Les commerçants apporteront 2x plus de marchandises et d'or</li></ul>"
             },
             "town_banner_guardian_token_iconic": {
                "display_name": "Lambeau de la bannière de Ruse",
@@ -9829,7 +9829,7 @@
             "town_banner_nature_ghost": {
                "display_name": "Bannière de Vitalité",
                "description": "Permet de savoir que tu es rentré",
-               "town_bonus_description": "<i>Cette colonie vivra en harmonie avec la nature.</i><ul><li>Les arbres produisent 25% de plus de bois</li><li>Les plantes et les cultures poussent 25% plus vite</li><li>Les plantes poussent 2x plus vite que la normal</li></ul>"
+               "town_bonus_description": "<i>Cette colonie vivra en harmonie avec la nature.</i><ul><li>Les arbres produisent 25% de bois de plus</li><li>Les plantes et les cultures poussent 25% plus vite</li><li>Les plantes poussent 2x plus vite que la normale</li></ul>"
             },
             "town_banner_nature_token_iconic": {
                "display_name": "Lambeau de la bannière de Vitalité",
@@ -9859,7 +9859,7 @@
                "description": "Minion de la forêt"
             },
             "entling_mage": {
-               "display_name": "Mage entling",
+               "display_name": "Entling mage",
                "description": "Minion de la forêt"
             },
             "stone_golem": {
@@ -9872,7 +9872,7 @@
             },
             "alligator": {
                "display_name": "Varanus",
-               "description": "Et ça c'est l'espèce plus petite..."
+               "description": "Et ça c'est l'espèce la plus petite..."
             },
             "wolf": {
                "display_name": "Loup sauvage",
@@ -10131,18 +10131,18 @@
             "species": "mammouth"
          },
          "dragon_whelp_fire": {
-            "display_name": "Dragonnet de flamme",
-            "description": "Un bébé dragon, gardez-le à l'écart des matériaux inflammables.",
+            "display_name": "Bébé dragon de feu",
+            "description": "Un bébé dragon qu'il faut garder à l'écart des matériaux inflammables.",
             "species": "dragon"
          },
          "dragon_whelp_nature": {
-            "display_name": "Dragonnet de la forêt",
-            "description": "Un bébé dragon, excellent pour entretenir un jardin fraîchement planté.",
+            "display_name": "Bébé dragon de la forêt",
+            "description": "Un bébé dragon qui est excellent pour entretenir un jardin fraîchement planté.",
             "species": "dragon"
          },
          "dragon_whelp_ice": {
-            "display_name": "Dragonnet du froid",
-            "description": "Un bébé dragon, bon pour garder la nourriture froide.",
+            "display_name": "Bébé dragon de froid",
+            "description": "Un bébé dragon qui est bon pour garder la nourriture froide.",
             "species": "dragon"
          }
       },
