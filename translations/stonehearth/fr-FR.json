@@ -813,16 +813,16 @@
          "bulletin": {
             "bulletin_list_title": "Notifications",
             "shop": {
-               "buy_1": "Acheter 1",
-               "buy_10": "Acheter 10",
-               "buy_all": "Acheter tout",
-               "sell_1": "Vendre 1",
-               "sell_10": "Vendre 10",
-               "sell_all": "Vendre tout",
+               "buy_1": "Acheter",
+               "buy_10": "Acheter x10",
+               "buy_all": "Tout",
+               "sell_1": "Vendre",
+               "sell_10": "Vendre x10",
+               "sell_all": "Tout",
                "buy_tab": "Acheter",
                "sell_tab": "Vendre",
                "shop_gold_label": "Or",
-               "shopkeeper_gold_label": "Or du Marchand<br><br><br>",
+               "shopkeeper_gold_label": "Marchand",
                "not_enough_gold_tooltip": "Pas assez d'or !",
                "shopkeeper_not_enough_gold_tooltip": "Le commerçant n'a pas assez d'or"
             },
@@ -1678,8 +1678,8 @@
                   "title": "Mods locaux"
                },
                "workshop_mods": {
-                  "title": "Modules Workshop souscrits",
-                  "browse_workshop": "Parcourir le Steam Workshop",
+                  "title": "Mods souscrits",
+                  "browse_workshop": "Parcourir le Workshop",
                   "unsubscribe": "Se désinscrire",
                   "view_in_workshop": "Voir dans le Workshop",
                   "upload": "Télécharger",
@@ -2271,7 +2271,7 @@
                         },
                         "proc_details": {
                            "bulletin_message": {
-                              "000": "Tous les colonies qui obtiennent la renommée locale seront reconnues comme officielles du Cantons de Ascendancy, avec les droits, privilèges et avantages de celle-ci."
+                              "000": "Toutes les colonies qui obtiennent suffisament de renommée seront reconnues comme officiellement des Cantons de l'Ascendance, avec les droits, privilèges et avantages de celle-ci."
                            },
                            "bulletin_title": "Anwyn lit",
                            "dialog_title": "L'honorable Anwyn Torresi",
@@ -3895,7 +3895,7 @@
                                     },
                                     "intro": {
                                        "bulletin_message": {
-                                          "00": "Amicalement mes salutations ! Enfin, je peux voir votre établissement en personne. Vous avez développé encore plus vite que prévu, vous devez tous être très fiers !"
+                                          "00": "Mes Amicales Salutations ! Enfin, je peux voir votre Colonie en personne. Vous vous êtes développé encore plus vite que prévu, vous devez tous être très fiers !"
                                        },
                                        "bulletin_title": "Un personne à l'allure officielle approche !",
                                        "dialog_title": "Pas un oiseau cette fois",
@@ -3919,7 +3919,7 @@
                                     },
                                     "intro2": {
                                        "bulletin_message": {
-                                          "00": "Je suis venu personnellement pour vous aider dans votre dernière étape vers un véritable établissement de l'Ascendance !<br><br>Vous êtes devenu assez grand maintenant, il est temps de choisir quel foyer représentera votre ville, comme le veut la tradition."
+                                          "00": "Je suis venu personnellement pour vous aider dans votre dernière étape vers l'étblissement d'une véritable Colonie de l'Ascendance !<br><br>Vous êtes devenu assez grand maintenant, il est temps de choisir quel foyer représentera votre ville, comme le veut la tradition."
                                        },
                                        "bulletin_title": "Flot continue",
                                        "dialog_title": "Burlyhands",
@@ -3927,7 +3927,7 @@
                                     },
                                     "intro3": {
                                        "bulletin_message": {
-                                          "00": "En effet, Hearths a servi de lueur d'espoir pour les villes durant le chemin du retour à l'Empire Phoenix.. Leur éclat attire les colons et la prospérité, et les qualités particulières d'un foyer reflètent où une ville trouve sa valeur."
+                                          "00": "En effet, les Foyers servent de phare étincellant pour toutes les villes qui compose l'Empire Phoenix. Leur éclat attire les colons et la prospérité. Les qualités propre à chaque foyer reflètent où une ville trouve sa valeur."
                                        },
                                        "bulletin_title": "Flot continue",
                                        "dialog_title": "Burlyhands",
@@ -4053,7 +4053,7 @@
                                  	},
                                  	"makers": {
 			                           "bulletin_message": {
-			                              "00": "Je suis Marak Azael, ravi de vous rencontrer, qui chatouille mes moustaches pour voir une colonie comme la vôtre, assemblée à partir de rien en un rien de temps.<br><br>L'Ascendance même a été construite avec une scie et martelez par de beaux artisans comme vous, c'est pourquoi la Guilde est si importante pour moi et pourquoi je voulais vous rendre visite."
+			                              "00": "Je suis Marak Azael, ravi de vous rencontrer, mes moustaches me chatouillé, il fallait que je vois une Colonie comme la vôtre, assemblée à partir de rien en un rien de temps.<br><br>L'Ascendance même a été construite avec une scie et martelez par de beaux artisans comme vous, c'est pourquoi la Guilde est si importante pour moi et pourquoi je voulais vous rendre visite."
 			                           },
 			                           "bulletin_title": "Le Maître de la Guilde",
 			                           "dialog_title": "Le Maître de la Guilde",
@@ -4292,7 +4292,7 @@
                      "dialog_nodes": {
                         "msg_final": {
                            "bulletin_message": {
-                              "00": "Quel sanctuaire construisez-vous pour indiquer l'ascension de votre établissement dans le canton ?<br>[Ceci utilise toujours l'ancienne de la quête Tier 2 ! Nous allons l'embellir bientôt !]<br><br><font size=-1>Sanctuaire de la Fortune (donne des buffs aléatoires à l'échelle de la ville !)<br><br>Sanctuaire du Courage ([WIP, pas encore disponible !] armes légendaires)<br><br>Sanctuaire du chef-d'oeuvre (Déverrouille l'artisanat de niveau Chef-d'oeuvre ! Quatre fois aussi attrayant et cher qu'excellent !)</font>"
+                              "00": "Quel sanctuaire construisez-vous pour indiquer l'ascension de votre Colonie en Canton ?<br>[Ceci utilise toujours l'ancienne quête Tier 2 ! Nous allons l'embellir bientôt !]<br><br><font size=-1>Sanctuaire de la Fortune (donne des buffs aléatoires à l'échelle de la ville !)<br><br>Sanctuaire du Courage ([WIP, pas encore disponible !] armes légendaires)<br><br>Sanctuaire du chef-d'oeuvre (Déverrouille l'artisanat de niveau Chef-d'oeuvre ! Quatre fois plus attrayant et cher qu'excellent !)</font>"
                            },
                            "bulletin_title": "Choisissez un sanctuaire !",
                            "dialog_title": "Choisissez un sanctuaire !",
@@ -4328,7 +4328,7 @@
                         },
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Beaucoup de mots circulent autour de la capital, comme quoi de plus en plus de gens font leurs bagages pour aller à <town_name> tous les jours ! De nouvelles excitantes, votre foyer doit être éblouissant pour attirer autant de nouveaux colons. En fait, il attire également l'attention de quelques personnes Notable!"
+                              "00": "Beaucoup de rumeurs circulent à la capital, à priori de plus en plus de personnes font leurs bagages pour aller à <town_name> tous les jours ! De nouvelles excitantes, votre foyer doit être éblouissant pour attirer autant de nouveaux colons. En fait, il attire également l'attention de quelques personnes Notable!"
                            },
                            "bulletin_title": "Une lettre",
                            "dialog_title": "Une lettre",
@@ -4382,7 +4382,7 @@
                         },
                         "read_letter2": {
                            "bulletin_message": {
-                              "00": "Comme vous le savez, chaque nouveau établissement doit choisir une bannière.<p>Cette bannière reflète votre esprit et votre vision, le facteur d'union qui a réuni l'expédition !</p><p>Quel avenir aviez-vous prévu lorsque vous vous êtes lancé dans votre quête du canton ?</p> "
+                              "00": "Comme vous le savez, chaque nouvelle colonie doit choisir une bannière.<p>Cette bannière reflète votre esprit et votre vision, le facteur d'union qui a réuni l'expédition !</p><p>Quel avenir aviez-vous prévu lorsque vous vous êtes lancé dans votre quête du canton ?</p> "
                            },
                            "bulletin_title": "La lettre continue",
                            "dialog_title": "La lettre continue...",
@@ -4426,7 +4426,7 @@
                   },
                   "makers": {
                      "name": "Foyer des Artisants",
-                     "description": "<i>La preuve que l'or circule dans vos établissements et que vous avez de bons artisans.</i><ul><li>Génère un intérêt quotidien de 5% sur toutes les pièces d'or que vous avez sous la main (jusqu'à 300 par jour)</li><li>Augmente la valeur nette de votre mise à jour quotidienne en fonction des pièces d'or disponibles</li></ul>"
+                     "description": "<i>La preuve que l'or circule dans votre colonie et que vous avez de bons artisans.</i><ul><li>Génère un intérêt quotidien de 5% sur toutes les pièces d'or que vous avez sous la main (jusqu'à 300 par jour)</li><li>Augmente la valeur nette de votre mise à jour quotidienne en fonction des pièces d'or disponibles</li></ul>"
                   },
                   "cheer": {
                      "name": "Foyer de la Prospérité",
@@ -6109,12 +6109,12 @@
       },
       "loadouts": {
          "food_for_days": {
-            "description": "La grande quantité de nourriture entassés à l'arrière de la caravane devrait garder les foyers actuels nourris pendant plusieurs jours, jusqu'à la finalisation de leur établissement.",
+            "description": "La grande quantité de nourriture entassés à l'arrière de la caravane devrait garder les foyers actuels nourris pendant plusieurs jours, jusqu'à la finalisation de leur colonie.",
             "display_name": "Nourriture pour plusieurs jours",
             "tooltip": "Une option sûre pour les nouveaux joueurs, mais manquant de défense."
          },
          "merchant_caravan": {
-            "description": "Une collection d'outils commerciaux devrait donner une chance à leur établissement dans le désert.",
+            "description": "Une collection d'outils commerciaux devrait donner une chance à leur colonie dans le désert.",
             "display_name": "Caravane marchande",
             "tooltip": "Une bonne collection de compétences artisanales, mais court sur la nourriture."
          },
