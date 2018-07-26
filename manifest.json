@@ -1,8 +1,9 @@
 {
 	"info" : {
-		"name" : "[Fr] Traduction Française\/French Translation",
+		"name" : "French Translation",
 		"namespace" : "fr_language",
 		"version" : 3,
+		"default_locale" : "fr-FR",
 		"steam_file_id" : "1362394094",
 		"client_only" : true
 	},
@@ -18,7 +19,8 @@
 	},
 	"overrides" : {
 		"stonehearth/locales/fr-FR.json": "file(translations/stonehearth/fr-FR.json)",
-		"rayyas_children/locales/fr-FR.json": "file(translations/rayyas_children/fr-FR.json)"
+		"rayyas_children/locales/fr-FR.json": "file(translations/rayyas_children/fr-FR.json)",
+		"northern_alliance/locales/fr-FR.json": "file(translations/northern_alliance/fr-FR.json)"
 	},
 	"components" : {
 	},
