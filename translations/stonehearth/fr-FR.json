@@ -4657,7 +4657,7 @@
                                  "003": "Fountaine de Chance pour le Maçon",
                                  "000": "Esprit, Corps et Âme +1 !",
                                  "002": "Décorations pour le forgeron",
-                              "004": "Musique de niveau 3"
+                                 "004": "Musique de niveau 3"
                               }
                            },
                            "shrine_choice_explanation": {
@@ -5099,57 +5099,57 @@
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "With a terrifying roar and a staggering blast of energy, the apparition of the Titan disintegrates, vanishing into nothingness.<br><br>As the gloom fades, your citizens marvel at the clear sky stretching out above them, and the land itself seems to breathe a sigh of relief as the laws of nature return to normal."
+                              "00": "Dans un terrifiant rugissement suivi d'un stupéfiant souffle d'énergie, l'apparition du Titan se désagrège, disparaissant dans le néant. Alors que l'obscurité s'estompe, vos citoyens s'émerveillent du ciel clair qui s'étend au-dessus d'eux, et la terre elle-même semble pousser un soupir de soulagement tandis que les lois de la nature reviennent à la normale."
                            },
-                           "bulletin_title": "You did it!",
-                           "dialog_title": "The Titan Is Vanquishsed",
-                           "choice_000": "Whew."
+                           "bulletin_title": "Vous l'avez fait !",
+                           "dialog_title": "Le Titan est vaincu",
+                           "choice_000": "Ouf."
                         }
                      }
                   }
                },
                "alert_destroy_crops": {
-                  "title": "A blight! We've lost some crops..."
+                  "title": "Un fléau ! Nous avons perdu quelques récoltes..."
                },
                "alert_initial_spawn_roots": {
-                  "title": "The Titan has Roots everywhere, below the ghostly tentacles. Dig them up to hurt the Titan!"
+                  "title": "Le Titan a des Racines partout, au-dessous des tentacules fantomatiques.. Déblayez-les pour blesser le Titan !"
                },
                "alert_spawn_camp": {
-                  "title": "A new Portal opens, guarded by Corruptions"
+                  "title": "Un nouveau portail s'ouvre, protégé par la corruption"
                },
                "alert_spawn_roots": {
-                  "title": "More Roots of corruption burrow up. Dig down and take an axe to them!"
+                  "title": "D'autres racines de la corruption se terrent. Déblayez-les, allez prendre une hache pour vous occupez d'eux !"
                },
                "alert_wave": {
-                  "title": "A storm of pure evil erupts from the Titan! Take shelter!"
+                  "title": "Une tempête de pur mal jaillit du Titan ! Mettez-vous à l'abri!"
                },
                "spawn_raid": {
                   "mission": {
                      "sighted_bulletin": {
-                        "title": "Hostile Corruptions, and they're awfully close!"
+                        "title": "Hostile Corruptions, ils sont terriblement proches !"
                      }
                   }
                },
                "alert_destroy_building": {
-                  "title": "A tentacle threatens a structure! Kill it, quickly!"
+                  "title": "Un tentacule menace une structure ! Tuez-le, rapidement !"
                },
                "alert_building_was_destroyed": {
-                  "title": "One of our buildings was destroyed! We were too late..."
+                  "title": "Un de nos bâtiments a été détruit ! C'est trop tard ..."
                },
                "alert_tentacle_grab": {
-                  "title": "A tentacle grabs [name(i18n_data.entity)]! Free them!"
+                  "title": "Un tentacule attrape [name(i18n_data.entity)] ! Libérez-les !"
                },
                "alert_initial_camp_spawn": {
-                  "title": "Portals! They'll keep spawning crawling bugs until you destroy them, but beware their Corrupted guardians."
+                  "title": "LesPortails! Ils continueront à engendrer des insectes rampants jusqu'à ce que vous les détruisiez, mais méfiez-vous de leurs gardiens corrompus."
                },
                "alert_new_bugs": {
-                  "title": "Crawlers continue to emerge from the portals, hungry for your stockpiles"
+                  "title": "Les rampants continuent à émerger des portails, affamés par vos stocks"
                }
             },
             "amberstone": {
                "persons": {
                   "sasha": {
-                     "title": "Sasha, Envoy of Clan Amberstone"
+                     "title": "Sasha, Envoyé du Clan Amberstone"
                   }
                },
                "arcs": {
@@ -5161,19 +5161,19 @@
                                  "dialog_nodes": {
                                     "greet": {
                                        "bulletin_message": {
-                                          "00": "\"Hello again, my friends of the Monkey! I hope this day finds you at peace.<br><br>Honorable Humans, I... have a confession to make.\""
+                                          "00": "\"Bonjour à nouveau, mes amis du Singe, j'espère que cette journée vous trouvera en paix.<br><br>Honorable Humains, je... j'ai une confession à faire.\""
                                        },
-                                       "bulletin_title": "Sasha of Clan Amberstone returns!",
-                                       "dialog_title": "Sasha, Envoy of Clan Amberstone",
-                                       "choice_000": "Welcome! Confession?"
+                                       "bulletin_title": "Sasha du Clan Amberstone revient !",
+                                       "dialog_title": "Sasha, Envoyé du Clan Amberstone",
+                                       "choice_000": "Bienvenue ! Une Confession ?"
                                     },
                                     "intro": {
                                        "bulletin_message": {
-                                          "00": "\"When I originally came to you, it was in hopes that you could be... useful to us.\" he says sheepishly, with drooped ears. \"The Titan lurking beneath your town has loomed over my people for generations. I saw in your town a spark of hope that we might be free of its burden.<br><br>I apologize for not being more open about my motives before now. I hope I can be forgiven.\""
+                                          "00": "\"Quand je suis venu à l'origine vous voir, c'était dans l'espoir que... vous nous soyez utiles.\" Dit-il timidement, avec des oreilles baissées. \"Le Titan qui se cache sous votre ville a domine mon peuple depuis des générations. J'ai vu à travers votre ville une étincelle d'espoir, la possibilité d'être libérés de notre fardeau.<br><br>Je m'excuse de ne pas avoir été plus clair sur mes motivations jusqu'a maintenant. J'espère que vous pourrez me pardonné. \""
                                        },
-                                       "bulletin_title": "Sasha continues, sheepishly",
-                                       "dialog_title": "Sasha, Envoy of Clan Amberstone",
-                                       "choice_000": "Oh... don't worry about it!."
+                                       "bulletin_title": "Sasha continue, penaud",
+                                       "dialog_title": "Sasha, Envoyé du Clan Amberstone",
+                                       "choice_000": "Oh... ne t'en fais pas pour ça !"
                                     },
                                     "story1": {
                                        "bulletin_message": {
