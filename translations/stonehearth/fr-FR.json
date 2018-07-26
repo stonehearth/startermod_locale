@@ -15035,7 +15035,7 @@
          },
          "npc_animal_prod": {
             "display_name": "Wicked Animal Prod",
-            "description": "Keeps the fuzzies in line"
+            "description": "Maintient les fuzzies en ligne"
          },
          "short_sword": {
             "display_name": "Épée courte en acier",
@@ -15106,10 +15106,10 @@
             "description": "Branche pointue avec un manche, enveloppé d'un bout de tissu"
          },
          "ogos_bone_mace": {
-            "display_name": "The Bonker",
+            "display_name": "Le Bonker",
             "description": "Conçu par Ogo Cognecrâne. (À deux mains)",
             "ogos_bone_mace_iconic": {
-               "display_name": "The Bonker",
+               "display_name": "Le Bonker",
                "description": "Ex-propriété d'Ogo Cognecrâne"
             }
          },
@@ -15142,8 +15142,8 @@
             "description": "L'arc le plus rapide de l'Ascendance"
          },
          "corruption_beam": {
-            "display_name": "Corruption Beam",
-            "description": "An invisible weapon to spawn into hands of corrupted"
+            "display_name": "Faisceau de corruption",
+            "description": "Une arme invisible qui peu apparaître dans des mains corrompues"
          }
       },
       "consumables": {
@@ -15247,11 +15247,11 @@
                }
             },
             "heirbloom_seeds": {
-               "display_name": "Heirbloom Seeds",
-               "description": "Learn to grow heirblooms",
+               "display_name": "Graines d'Heirbloom",
+               "description": "Apprenez à cultiver des heirblooms",
                "heirbloom_seeds_ghost": {
-                  "display_name": "Heirbloom Seeds",
-                  "description": "Learn to grow heirblooms"
+                  "display_name": "Graines d'Heirbloom",
+                  "description": "Apprenez à cultiver des heirblooms"
                }
             }
          }
@@ -15279,57 +15279,57 @@
          "summon_stone": {
             "bounds": {
                "bounds_ghost": {
-                  "display_name": "Bounds Summon Stone",
-                  "description": "This stone is ready to encase the world!"
+                  "display_name": "Pierre d'invocation de frontières",
+                  "description": "Cette pierre est prête à enfermer le monde!"
                }
             },
             "test_small": {
                "test_small_ghost": {
-                  "display_name": "Test Small Stone",
-                  "description": "This stone encases a test, you know, for testing!"
+                  "display_name": "Testez la petite pierre",
+                  "description": "Cette pierre contient un test, vous savez, pour tester !"
                }
             },
             "chair": {
                "chair_ghost": {
-                  "display_name": "Chair Stone",
-                  "description": "This stone encases an ENOURMOUS CHAIR OF CHAIRS ready to burst out!"
+                  "display_name": "Pierre de Chaise",
+                  "description": "Cette pierre renferme une ENORME CHAISE DE CHAISES prête à éclater !"
                }
             },
             "plains_grassy_01": {
                "plains_grassy_01_ghost": {
-                  "display_name": "Plains Summon Stone",
-                  "description": "This stone encases a beautiful grassy field."
+                  "display_name": "Pierre d'invocation des plaines",
+                  "description": "Cette pierre entoure un beau champ herbeux."
                }
             },
             "plains_grassy_02": {
                "plains_grassy_02_ghost": {
-                  "display_name": "Plains Summon Stone",
-                  "description": "This stone encases a beautiful grassy field."
+                  "display_name": "Pierre d'invocation des plaines",
+                  "description": "Cette pierre entoure un beau champ herbeux."
                }
             },
             "plains_stones": {
                "plains_stones_ghost": {
-                  "display_name": "Plains Stones Summon Stone",
-                  "description": "This stone encases a pile of stones."
+                  "display_name": "Pierre d'invocation des pierres des plaines",
+                  "description": "Cette pierre entoure un tas de pierres."
                }
             },
             "plains_spring_hill": {
                "plains_spring_hill_ghost": {
-                  "display_name": "Plains Hill Spring Summon Stone",
-                  "description": "This stone encases a cute little spring!"
+                  "display_name": "Pierre d'invocation du printemps des plaines",
+                  "description": "Cette pierre renferme un joli petit ressort !"
                }
             }
          },
          "dry_stone_greater": {
             "dry_stone_greater_ghost": {
-               "display_name": "Greater Dry Stone",
-               "description": "Four times as dry as a regular dry stone."
+               "display_name": "Grande pierre sèche",
+               "description": "Quatre fois plus sec qu'une pierre sèche ordinaire."
             }
          },
          "wet_stone_greater": {
             "wet_stone_greater_ghost": {
-               "display_name": "Greater Wet Stone",
-               "description": "Four times more moist than a regular wet stone."
+               "display_name": "Pierre mouillée",
+               "description": "Quatre fois plus humide qu'une pierre humide ordinaire."
             }
          }
       },
@@ -15395,170 +15395,170 @@
       },
       "titan": {
          "corrupt_squid": {
-            "description": "Doesn't like you. Or anyone else for that matter."
+            "description": "Ne t'aime pas. Ou n'importe qui d'autre d'ailleurs."
          }
       },
       "corruption": {
          "corrupt_tentacle_notification": {
             "tentacle_notification": {
-               "display_name": "Warning Tentacle",
-               "description": "Signifies the presence of something evil."
+               "display_name": "Tentacule d'avertissement",
+               "description": "Signifie la présence de quelque chose de maléfique."
             }
          },
          "corrupt_beetle": {
-            "display_name": "Corrupt Crawler",
-            "description": "Small, but ravenous."
+            "display_name": "Rampant corrompu",
+            "description": "Petit, mais vorace."
          },
          "corrupt_tentacle_dark": {
             "tentacle_dark": {
-               "display_name": "Warning Tentacle",
-               "description": "Signifies the presence of something evil."
+               "display_name": "Tentacule d'avertissement",
+               "description": "Signifie la présence de quelque chose de maléfique."
             }
          },
          "orc_friendship_gong": {
             "orc_friendship_gong_ghost": {
-               "display_name": "Gong of Orc Respect",
-               "description": "Made of smooth, pleasing stone, cleansed of anything sinister."
+               "display_name": "Gong de respect d'Orc",
+               "description": "Fait de pierre lisse et agréable, nettoyé de tout ce qui est sinistre."
             }
          }
       },
       "landmark": {
          "summon_stone_block_dirt": {
             "summon_stone_block_dirt_ghost": {
-               "display_name": "Dirt Terrain Block Stone",
-               "description": "Summons an 8x5x8 block of dirt terrain."
+               "display_name": "Pierre de bloc de terrain de terre",
+               "description": "Invoque un bloc de terre sale de 8x5x8."
             }
          },
          "summon_stone_block_mimic": {
             "summon_stone_block_mimic_ghost": {
-               "display_name": "Mimic Terrain Block Stone",
-               "description": "Summons an 8x5x8 block of terrain that mimics whatever terrain it is placed on."
+               "display_name": "Pierre de bloc de terrain de Mimic",
+               "description": "Invoque un bloc de terrain de 8x5x8 qui imite le terrain sur lequel il est placé."
             }
          },
          "summon_stone_block_rock": {
             "summon_stone_block_rock_ghost": {
-               "display_name": "Rock Terrain Block Stone",
-               "description": "Summons an 8x5x8 block of rocky terrain."
+               "display_name": "Pierre de bloc de terrain de roche",
+               "description": "Invoque un bloc de 8x5x8 de terrain rocheux."
             }
          },
          "summon_stone_block_surface": {
             "summon_stone_block_surface_ghost": {
-               "display_name": "Surface Terrain Block Stone",
-               "description": "Summons an 8x5x8 block of surface terrain, such as grass or sand."
+               "display_name": "Pierre de bloc de terrain de surface",
+               "description": "Invoque un bloc de terrain de surface de 8x5x8, tel que de l'herbe ou du sable."
             }
          },
          "summon_stone_geyser": {
             "summon_stone_geyser_ghost": {
-               "display_name": "Geyser Stone",
-               "description": "Summons a mountain geyser."
+               "display_name": "Pierre de Geyser",
+               "description": "Invoque un geyser de montagne."
             }
          },
          "summon_stone_rune_site": {
             "summon_stone_rune_site_ghost": {
-               "display_name": "Rune Site Stone",
-               "description": "Summons a clearing with a holy rune symbol."
+               "display_name": "Pierre de site runique",
+               "description": "Invoque une clairière avec un symbole de sainte lune."
             }
          },
          "summon_stone_stump": {
             "summon_stone_stump_ghost": {
-               "display_name": "Giant Stump Stone",
-               "description": "Summons a giant stump."
+               "display_name": "Géant souche en pierre",
+               "description": "Invoque une souche géante."
             }
          },
          "summon_stone_rabbit_statue": {
             "summon_stone_rabbit_statue_ghost": {
-               "display_name": "Rabbit Statue Stone",
-               "description": "Summons an ancient rabbit statue."
+               "display_name": "Statue de lapin",
+               "description": "Invoque une ancienne statue de lapin"
             }
          },
          "summon_stone_rock_field": {
             "summon_stone_rock_field_ghost": {
-               "display_name": "Rock Field Stone",
-               "description": "Summons a pleasant field of rocks."
+               "display_name": "Pierre de champ de roche",
+               "description": "Invoque un agréable champ de roches."
             }
          },
          "summon_stone_patch_dirt": {
             "summon_stone_patch_dirt_ghost": {
-               "display_name": "Dirt Terrain Patch Stone",
-               "description": "Grows into a patch of dirt terrain, up to 12x12 units in size."
+               "display_name": "Pierre parcelle de terrain en terre",
+               "description": "Grandit dans une parcelle de terre sale, jusqu'à 12 x 12 unités"
             }
          },
          "summon_stone_patch_mimic": {
             "summon_stone_patch_mimic_ghost": {
-               "display_name": "Mimic Terrain Patch Stone",
-               "description": "Grows into a patch of terrain, up to 12x12 units in size, that mimics the terrain it's placed on."
+               "display_name": "Pierre parcelle de terrain de Mimic",
+               "description": "Grandit dans une parcelle de terrain, jusqu'à 12x12 unités, qui imite le terrain sur lequel il est placé."
             }
          },
          "summon_stone_patch_rock": {
             "summon_stone_patch_rock_ghost": {
-               "display_name": "Rock Terrain Patch Stone",
-               "description": "Grows into a patch of rocky terrain, up to 12x12 units in size."
+               "display_name": "Pierre parcelle de terrain de roche",
+               "description": "Grandit dans une parcelle de terrain rocheux, jusqu'à 12 x 12 unités"
             }
          },
          "summon_stone_patch_surface": {
             "summon_stone_patch_surface_ghost": {
-               "display_name": "Surface Terrain Patch Stone",
-               "description": "Grows into a patch of surface terrain, such as grass or sand, up to 12x12 units in size."
+               "display_name": "Pierre parcelle de terrain de surface",
+               "description": "Grandit dans une parcelle de terrain de surface, comme l'herbe ou le sable, jusqu'à 12x12 unités."
             }
          },
          "summon_stone_vein_coal": {
             "summon_stone_vein_coal_ghost": {
-               "display_name": "Coal Vein Stone",
-               "description": "Grows into a vein of coal."
+               "display_name": "Pierre de veine de charbon",
+               "description": "Grandit dans une veine de charbon"
             }
          },
          "summon_stone_vein_copper": {
             "summon_stone_vein_copper_ghost": {
-               "display_name": "Copper Vein Stone",
-               "description": "Grows into a vein of copper ore."
+               "display_name": "Pierre de veine de cuivre",
+               "description": "Grandit dans une veine de minerai de cuivre"
             }
          },
          "summon_stone_vein_gold": {
             "summon_stone_vein_gold_ghost": {
-               "display_name": "Gold Vein Stone",
-               "description": "Grows into a vein of gold ore."
+               "display_name": "Pierre de veine d'or",
+               "description": "Grandit dans une veine de minerai d'or"
             }
          },
          "summon_stone_vein_iron": {
             "summon_stone_vein_iron_ghost": {
-               "display_name": "Iron Vein Stone",
-               "description": "Grows into a vein of iron ore."
+               "display_name": "Pierre de veine de fer",
+               "description": "Grandit dans une veine de minerai de fer"
             }
          },
          "summon_stone_vein_silver": {
             "summon_stone_vein_silver_ghost": {
-               "display_name": "Silver Vein Stone",
-               "description": "Grows into a vein of silver ore."
+               "display_name": "Pierre de veine argentée",
+               "description": "Grandit dans une veine de minerai d'argent"
             }
          },
          "summon_stone_vein_tin": {
             "summon_stone_vein_tin_ghost": {
-               "display_name": "Tin Vein Stone",
-               "description": "Grows into a vein of tin ore."
+               "display_name": "Pierre de veine d'étain",
+               "description": "Grandit dans une veine de minerai d'étain"
             }
          },
          "summon_stone_riverbed_dry": {
             "summon_stone_riverbed_dry_ghost": {
-               "display_name": "Dry Riverbed Stone",
-               "description": "Summons the memory of an ancient river."
+               "display_name": "Pierre de lit de rivière sèche",
+               "description": "Invoque la mémoire d'une ancienne rivière."
             }
          },
          "summon_stone_sun": {
             "summon_stone_sun_ghost": {
-               "display_name": "Sun Stone",
-               "description": "Summons a pattern of a cute Sun."
+               "display_name": "Pierre du soleil",
+               "description": "Invoque un joli motif de Soleil."
             }
          },
          "summon_stone_moon": {
             "summon_stone_moon_ghost": {
-               "display_name": "Moon Stone",
-               "description": "Summons a pattern of a cute Moon."
+               "display_name": "Pierre de lune",
+               "description": "Invoque un joli motif de Lune."
             }
          },
          "summon_stone_sleeping_giant": {
             "summon_stone_sleeping_giant_ghost": {
-               "display_name": "Sleeping Stone",
-               "description": "Summons the memory of an ancient slumbering worker."
+               "display_name": "Pierre dormante",
+               "description": "Invoque la mémoire d'un ancien travailleur endormi."
             }
          }
       }
@@ -16510,49 +16510,49 @@
                "flavor": "Donne à son porteur l'aide mécanique pour tirer des flèches dans un vol aveuglant"
             },
             "anti_titan_ward_recipe": {
-               "description": "Hurts anything nearby that smells like titan.",
-               "recipe_name": "Anti-Titan Ward",
+               "description": "Hurts n'importe quoi à proximité qui sent le titan.",
+               "recipe_name": "Fragment Anti-Titan",
                "flavor": "Baby don't hurt me! Don't hurt me no more!"
             },
             "ornate_picket_fence_bar_double_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Ornate Picket Fence Long",
-               "flavor": "A little gold leaf goes a long way!"
+               "description": "Maintient les gens hors de votre propriété.",
+               "recipe_name": "Longue palissade ornée",
+               "flavor": "Une petite feuille d'or va loin !"
             },
             "ornate_picket_fence_bar_single_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Ornate Picket Fence Short",
-               "flavor": "A little gold leaf goes a long way!"
+               "description": "Maintient les gens hors de votre propriété.",
+               "recipe_name": "Courte palissade ornée",
+               "flavor": "Une petite feuille d'or va loin !"
             },
             "ornate_picket_fence_end_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Ornate Picket Fence Post",
-               "flavor": "A little gold leaf goes a long way!"
+               "description": "Maintient les gens hors de votre propriété.",
+               "recipe_name": "Poteau de palissade orné",
+               "flavor": "Une petite feuille d'or va loin !"
             },
             "picket_fence_end_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Picket Fence Post",
-               "flavor": "If it's not white, is our life unfulfilled?"
+               "description": "Maintient les gens hors de votre propriété.",
+               "recipe_name": "Poteau de palissade",
+               "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
             "picket_fence_bar_single_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Picket Fence Short",
-               "flavor": "If it's not white, is our life unfulfilled?"
+               "description": "Maintient les gens hors de votre propriété.",
+               "recipe_name": "Courte palissade",
+               "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
             "picket_fence_bar_double_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Picket Fence Long",
-               "flavor": "If it's not white, is our life unfulfilled?"
+               "description": "Maintient les gens hors de votre propriété.",
+               "recipe_name": "Longue palissade",
+               "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
             "picket_fence_combo_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Picket Fence Combo",
-               "flavor": "If it's not white, is our life unfulfilled?"
+               "description": "Maintient les gens hors de votre propriété.",
+               "recipe_name": "Combo palissade",
+               "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
             "ornate_picket_fence_combo_recipe": {
-               "description": "Keeps people off your property.",
-               "recipe_name": "Ornate Picket Fence Combo",
-               "flavor": "A little gold leaf goes a long way!"
+               "description": "Maintient les gens hors de votre propriété.",
+               "recipe_name": "Combo palissade ornée",
+               "flavor": "Une petite feuille d'or va loin !"
             }
          }
       },
@@ -16753,56 +16753,56 @@
             },
             "chefs_specials_name": "Les spécialités du chef",
             "bug_meat_kabob_recipe": {
-               "description": "Bug meat on a stick! Has an interesting texture",
-               "recipe_name": "Bug Meat Kabob",
-               "flavor": "For the daring food enthusiast"
+               "description": "Viande d'insecte sur un bâton! A une texture intéressante",
+               "recipe_name": "Kabob de viande d'insecte",
+               "flavor": "Pour l'amateur audacieux de nourriture"
             },
             "roasted_sweet_potato_recipe": {
-               "description": "A slow roasted sweet potato.",
-               "recipe_name": "Roasted Sweet Potato",
-               "flavor": "Warms your hands and your heart."
+               "description": "Une patate douce rôtie lentement.",
+               "recipe_name": "Patate douce rôtie",
+               "flavor": "Réchauffe tes mains et ton coeur."
             },
             "sausage_recipe": {
-               "description": "Shred up the meat, mix in some spice, stick it in a wrap, and it's good to go!",
-               "recipe_name": "Raw Sausage",
-               "flavor": "It's a good way to stretch out your food reserves a bit."
+               "description": "Détruisez la viande, mélangez-la aux épices, collez-la dans un boyau, et c'est bon !",
+               "recipe_name": "Saucisse crue",
+               "flavor": "C'est un bon moyen d'allonger un peu vos réserves alimentaires."
             },
             "roast_sausage_recipe": {
-               "description": "Tantalisingly roasted to perfection, made from any kind of meat!",
-               "recipe_name": "Roast Sausage",
-               "flavor": "It's some kind of meat, not sure which it was though..."
+               "description": "Rôti à la perfection, fait de n'importe quel type de viande !",
+               "recipe_name": "Saucisse rôtie",
+               "flavor": "C'est une sorte de viande, pas sûre de reconnaitre ce que c'était..."
             },
             "feed_fodder_recipe": {
-               "description": "For feeding any vegetarian animals.",
-               "recipe_name": "Animal Fodder",
-               "flavor": "What a great use of excess seeds!"
+               "description": "Pour nourrir tous les animaux végétariens.",
+               "recipe_name": "Fourrage animal",
+               "flavor": "Quelle bonne utilisation des graines en excès !"
             },
             "pie_berry_recipe": {
-               "description": "A scrumptious pie that is very complicated to make.",
-               "recipe_name": "Sweet Berry Pie",
-               "flavor": "The crust and the berries go so well together."
+               "description": "Une tarte succulente qui est très compliquée à réaliser.",
+               "recipe_name": "Tarte aux baies sucrées",
+               "flavor": "La pâte et les baies vont si bien ensemble."
             },
             "pie_pear_recipe": {
-               "description": "A scrumptious pie that is very complicated to make.",
-               "recipe_name": "Prickly Pear Pie",
-               "flavor": "It's called 'Prickly Pear' but all the prickles have been removed."
+               "description": "Une tarte succulente qui est très compliquée à faire.",
+               "recipe_name": "Tarte aux figues de Barbarie",
+               "flavor": "C'est ce qu'on appelle la «figue de Barbarie», mais tous les épines ont été enlevées."
             },
             "cake_layered_recipe": {
-               "description": "An extremely involved recipe but so good, and so filling...",
-               "recipe_name": "Layered Cake",
-               "flavor": "It's so beautiful!  And just covered in tasties!"
+               "description": "Une recette extrêmement compliqué mais tellement bonne, et tellement copieuse ...",
+               "recipe_name": "Gâteau en couches",
+               "flavor": "C'est si beau ! Et juste couvert de saveurs!"
             },
             "dumpling_meat_recipe": {
-               "description": "A little bread pocket with meat and spices stuffed inside.",
-               "recipe_name": "Meat Dumpling",
-               "flavor": "A little complicated to make, but fill you up pretty well."
+               "description": "Une petite poche de pain avec de la viande et des épices farcies à l'intérieur.",
+               "recipe_name": "Boulette de viande",
+               "flavor": "Un peu compliqué à faire, mais qui vous nourris plutôt bien."
             },
             "dumpling_vegetarian_recipe": {
-               "description": "A little bread pocket with veggies and spices stuffed inside.",
-               "recipe_name": "Veggie Dumpling",
-               "flavor": "A little complicated to make, but fill you up pretty well."
+               "description": "Une petite poche de pain avec des légumes et des épices farcies à l'intérieur.",
+               "recipe_name": "Boulette végétarienne",
+               "flavor": "Un peu compliqué à faire, mais qui vous nourris plutôt bien."
             },
-            "chefs_desserts_name": "Specialty Desserts"
+            "chefs_desserts_name": "Desserts spécialisés"
          },
          "cook_mill": {
             "cook_mill_ghost": {
@@ -17055,202 +17055,202 @@
             "description": "???",
             "requirements": "???",
             "level_2_data": {
-               "perk_000_name": "Matter Manipulation",
-               "perk_000_description": "The Geomancer can now craft stones that manipulate water and summon large terrain layers."
+               "perk_000_name": "Manipulation de la matière",
+               "perk_000_description": "Le géomancien peut maintenant fabriquer des pierres qui manipulent l'eau et invoquent de grandes parcelles de terrain."
             },
             "level_6_data": {
-               "perk_000_name": "Earth's Might",
-               "perk_000_description": "The Geomancer can now craft all golems, and keep up to 10 of them active simulataneously."
+               "perk_000_name": "La Force de la Terre",
+               "perk_000_description": "Le géomancien peut maintenant fabriquer tous les golems et en garder jusqu'à 10 actifs simultanément."
             },
             "level_1_data": {
-               "perk_000_name": "Summoning",
-               "perk_000_description": "The Geomancer can now craft stones that summon terrain chunks and basic features."
+               "perk_000_name": "Invocation",
+               "perk_000_description": "Le géomancien peut maintenant fabriquer des pierres qui invoquent des morceaux de terrain et des caractéristiques de base."
             },
             "level_4_data": {
-               "perk_001_name": "Summoned Wonder",
-               "perk_000_name": "Jewels of the Earth",
-               "perk_001_description": "The Geomancer can now craft stones that summon landmarks.",
-               "perk_000_description": "The Geomancer can now craft stones that summon ore veins."
+               "perk_001_name": "Merveille invoquée",
+               "perk_000_name": "Joyaux de la Terre",
+               "perk_001_description": "Le géomancien peut maintenant fabriquer des pierres qui invoquent des points de repère.",
+               "perk_000_description": "Le géomancien peut maintenant fabriquer des pierres qui invoquent des veines de minerai."
             },
             "level_5_data": {
-               "perk_000_name": "Golem Craftsmanship",
-               "perk_000_description": "The Geomancer can now craft advanced golems, and keep up to 6 of them active simulataneously."
+               "perk_000_name": "Savoir-faire Golem",
+               "perk_000_description": "Le géomancien peut désormais créer des golems avancés et en garder jusqu'à 6 actifs simultanément."
             },
             "level_3_data": {
-               "perk_000_name": "Breath of Life",
-               "perk_000_description": "The Geomancer can now craft basic golems, and keep up to 3 of them active simulataneously."
+               "perk_000_name": "Souffle de vie",
+               "perk_000_description": "Le géomancien peut maintenant fabriquer des golems de base et en garder jusqu'à 3 actifs simultanément."
             }
          },
          "geomancer_outfit": {
-            "display_name": "Geomancer's Robes",
-            "description": "The gem-studded robes of a geomancer."
+            "display_name": "Robe de géomancien",
+            "description": "Une robe de géomancien incrustées de gemmes."
          },
          "geomancer_workbench": {
             "geomancer_workbench_ghost": {
-               "display_name": "Geomancer Workbench",
-               "description": "Used by the Geomancer to craft summoning stones."
+               "display_name": "Établi de Géomancien",
+               "description": "Utilisé par le géomancien pour fabriquer des pierres d'invocation."
             }
          },
          "geomancer_starter_kit": {
-            "display_name": "Geomancer Starter Kit",
-            "description": "Loot for items needed to start up a geomancer"
+            "display_name": "Kit de démarrage Geomancer",
+            "description": "Kit d'objets nécessaires au démarrage d'un géomancien"
          },
          "geomancer_talisman": {
             "geomancer_talisman_iconic": {
-               "display_name": "Geomancer Staff",
-               "description": "Intensifies the bearer's ability to interact with the powers of Hearth."
+               "display_name": "Bâton Géomancien",
+               "description": "Intensifie la capacité du porteur à interagir avec les pouvoirs du Foyer."
             },
-            "display_name": "Geomancer Talisman",
-            "description": "Intensifies the bearer's ability to interact with the powers of Hearth."
+            "display_name": "Talisman de Géomancien",
+            "description": "Intensifie la capacité du porteur à interagir avec les pouvoirs du Foyer."
          },
          "geomancer_golem_workbench": {
             "geomancer_golem_workbench_ghost": {
-               "display_name": "Golem Workbench",
-               "description": "Used by the Geomancer to craft golems."
+               "display_name": "Établis à Golem",
+               "description": "Utilisé par le géomancien pour fabriquer des golems."
             }
          },
          "recipes": {
             "categories": {
-               "workbenches": "Workbenches",
-               "resources": "Resources",
+               "workbenches": "Établis",
+               "resources": "Ressources",
                "terrain": "Terrain",
-               "landmarks": "Landmarks",
-               "water": "Water Manipulation",
+               "landmarks": "Repères",
+               "water": "Manipulation de l'eau",
                "golems": "Golems"
             },
             "golem_restocking_recipe": {
-               "description": "Performs restocking tasks.",
-               "recipe_name": "Cricket Golem",
-               "flavor": "As they go about their tasks, you can hear their cute little calls."
+               "description": "Effectue des tâches de réapprovisionnement.",
+               "recipe_name": "Golem Criquet",
+               "flavor": "Comme ils vont à leurs tâches, vous pouvez entendre leurs petits appels mignons."
             },
             "golem_mining_recipe": {
-               "description": "Performs mining tasks.",
-               "recipe_name": "Mole Golem",
-               "flavor": "No mountain can withstand the Mole's pick."
+               "description": "Effectue des tâches de minage",
+               "recipe_name": "Golem Taupe",
+               "flavor": "Aucune montagne ne peut résister au choix de la taupe."
             },
             "golem_harvesting_recipe": {
-               "description": "Performs harvesting tasks.",
-               "recipe_name": "Ox Golem",
-               "flavor": "Gentle enough to pick a flower without disturbing the ground."
+               "description": "Effectue des tâches de récolte.",
+               "recipe_name": "Golem Bœuf",
+               "flavor": "Assez doux pour cueillir une fleur sans déranger le sol."
             },
             "geomancer_workbench_recipe": {
-               "description": "Required to craft summoning stones.",
-               "recipe_name": "Geomancer Workbench",
-               "flavor": "A workbench made to honor the ancient powers."
+               "description": "Requis pour fabriquer des pierres d'invocation.",
+               "recipe_name": "Établi de Géomancien",
+               "flavor": "Un établi fait pour honorer les puissances anciennes."
             },
             "geomancer_golem_workbench_recipe": {
-               "description": "Required to craft golems.",
-               "recipe_name": "Geomancer Golem Workbench",
-               "flavor": "Though grown from a smaller tree, this workbench allows access to much deeper powers."
+               "description": "Requis pour fabriquer des golems.",
+               "recipe_name": "Établi à Golem de Géomancien",
+               "flavor": "Bien que cultivé à partir d'un arbre plus petit, cet établi permet d'accéder à des puissances beaucoup plus profondes."
             },
             "dry_stone_recipe": {
-               "flavor": "Its thirst is unquenchable."
+               "flavor": "Sa soif est insatiable."
             },
             "dry_stone_greater_recipe": {
-               "description": "Four time as dry as a regular dry stone.",
-               "recipe_name": "Greater Dry Stone",
-               "flavor": "Its thirst is even more unquenchable."
+               "description": "Quatre fois plus sec qu'une pierre sèche ordinaire.",
+               "recipe_name": "Grande pierre sèche",
+               "flavor": "Sa soif est encore plus insatiable."
             },
             "rabbit_statue_recipe": {
-               "description": "Summons an ancient rabbit statue",
-               "recipe_name": "Rabbit Statue Stone"
+               "description": "Invoque une ancienne statue de lapin",
+               "recipe_name": "Statue de lapin"
             },
             "summon_stone_block_dirt_recipe": {
-               "description": "Summons an 8x5x8 block of dirt terrain.",
-               "recipe_name": "Dirt Terrain Block Stone"
+               "description": "Invoque un bloc de terre sale de 8x5x8.",
+               "recipe_name": "Pierre de bloc de terrain de terre"
             },
             "summon_stone_block_mimic_recipe": {
-               "description": "Summons an 8x5x8 block of terrain that mimics whatever terrain it is placed on.",
-               "recipe_name": "Mimic Terrain Block Stone"
+               "description": "Invoque un bloc de terrain de 8x5x8 qui imite le terrain sur lequel il est placé.",
+               "recipe_name": "Pierre de bloc de terrain de Mimic"
             },
             "summon_stone_block_rock_recipe": {
-               "description": "Summons an 8x5x8 block of rock terrain.",
-               "recipe_name": "Rock Terrain Block Stone"
+               "description": "Invoque un bloc de 8x5x8 de terrain rocheux.",
+               "recipe_name": "Pierre de bloc de terrain de roche"
             },
             "summon_stone_block_surface_recipe": {
-               "description": "Summons an 8x5x8 block of surface terrain, such as grass or sand.",
-               "recipe_name": "Surface Terrain Block Stone"
+               "description": "Invoque un bloc de terrain de surface de 8x5x8, tel que de l'herbe ou du sable.",
+               "recipe_name": "Pierre de bloc de terrain de surface"
             },
             "summon_stone_geyser_recipe": {
-               "description": "Summons a mountain geyser.",
-               "recipe_name": "Geyser Stone"
+               "description": "Invoque un geyser de montagne.",
+               "recipe_name": "Pierre de Geyser"
             },
             "summon_stone_patch_dirt_recipe": {
-               "description": "Grows into a patch of dirt terrain, up to 12x12 units in size",
-               "recipe_name": "Dirt Terrain Patch Stone"
+               "description": "Grandit dans une parcelle de terre sale, jusqu'à 12 x 12 unités",
+               "recipe_name": "Pierre parcelle de terrain en terre"
             },
             "summon_stone_patch_rock_recipe": {
-               "description": "Grows into a patch of rocky terrain, up to 12x12 units in size",
-               "recipe_name": "Rock Terrain Patch Stone"
+               "description": "Grandit dans une parcelle de terrain rocheux, jusqu'à 12 x 12 unités",
+               "recipe_name": "Pierre parcelle de terrain de roche"
             },
             "summon_stone_patch_mimic_recipe": {
-               "description": "Grows into a patch of terrain, up to 12x12 units in size, that mimics the terrain it's placed on.",
-               "recipe_name": "Mimic Terrain Patch Stone"
+               "description": "Grandit dans une parcelle de terrain, jusqu'à 12x12 unités, qui imite le terrain sur lequel il est placé.",
+               "recipe_name": "Pierre parcelle de terrain de Mimic"
             },
             "summon_stone_patch_surface_recipe": {
-               "description": "Grows into a patch of surface terrain, such as grass or sand, up to 12x12 units in size.",
-               "recipe_name": "Surface Terrain Patch Stone"
+               "description": "Grandit dans une parcelle de terrain de surface, comme l'herbe ou le sable, jusqu'à 12x12 unités.",
+               "recipe_name": "Pierre parcelle de terrain de surface"
             },
             "summon_stone_rock_field_recipe": {
-               "description": "Summons a pleasant field of rocks.",
-               "recipe_name": "Rock Field Stone"
+               "description": "Invoque un agréable champ de roches.",
+               "recipe_name": "Pierre de champ de roche"
             },
             "summon_stone_rune_site_recipe": {
-               "description": "Summons a clearing with a holy rune symbol.",
-               "recipe_name": "Rune Site Stone"
+               "description": "Invoque une clairière avec un symbole de sainte lune.",
+               "recipe_name": "Pierre de site runique"
             },
             "summon_stone_vein_coal_recipe": {
-               "description": "Grows into a vein of coal",
-               "recipe_name": "Coal Vein Stone"
+               "description": "Grandit dans une veine de charbon",
+               "recipe_name": "Pierre de veine de charbon"
             },
             "summon_stone_vein_copper_recipe": {
-               "description": "Grows into a vein of copper ore",
-               "recipe_name": "Copper Vein Stone"
+               "description": "Grandit dans une veine de minerai de cuivre",
+               "recipe_name": "Pierre de veine de cuivre"
             },
             "summon_stone_vein_gold_recipe": {
-               "description": "Grows into a vein of gold ore",
-               "recipe_name": "Gold Vein Stone"
+               "description": "Grandit dans une veine de minerai d'or",
+               "recipe_name": "Pierre de veine d'or"
             },
             "summon_stone_vein_iron_recipe": {
-               "description": "Grows into a vein of iron ore",
-               "recipe_name": "Iron Vein Stone"
+               "description": "Grandit dans une veine de minerai de fer",
+               "recipe_name": "Pierre de veine de fer"
             },
             "summon_stone_vein_silver_recipe": {
-               "description": "Grows into a vein of silver ore",
-               "recipe_name": "Silver Vein Stone"
+               "description": "Grandit dans une veine de minerai d'argent",
+               "recipe_name": "Pierre de veine argentée"
             },
             "summon_stone_vein_tin_recipe": {
-               "description": "Grows into a vein of tin ore",
-               "recipe_name": "Tin Vein Stone"
+               "description": "Grandit dans une veine de minerai d'étain",
+               "recipe_name": "Pierre de veine d'étain"
             },
             "wet_stone_greater_recipe": {
-               "description": "Four times more moist than a regular wet stone.",
-               "recipe_name": "Greater Wet Stone",
-               "flavor": "The tears... they are tears of happiness."
+               "description": "Quatre fois plus humide qu'une pierre humide ordinaire.",
+               "recipe_name": "Grande pierre mouillée",
+               "flavor": "Les larmes ... ce sont des larmes de bonheur."
             },
             "wet_stone_recipe": {
-               "flavor": "It weeps for the Hearth."
+               "flavor": "Il pleure pour le foyer."
             },
             "earthbud_seeds_recipe": {
-               "description": "Separate the seeds from the buds",
-               "recipe_name": "Earthbud Seeds (x3)",
-               "flavor": "Deseeded buds hold no magical power, but the seeds can be planted to grow anew."
+               "description": "Séparer les graines des bourgeons",
+               "recipe_name": "Graines Earthbound (x3)",
+               "flavor": "Les bourgeons épépiné n'ont aucun pouvoir magique, mais les graines peuvent être plantées pour repousser."
             },
             "summon_stone_sleeping_giant_recipe": {
-               "description": "Summons the memory of an ancient slumbering worker.",
-               "recipe_name": "Sleeping Stone"
+               "description": "Invoque la mémoire d'un ancien travailleur endormi.",
+               "recipe_name": "Pierre dormante"
             },
             "summon_stone_riverbed_dry_recipe": {
-               "description": "Summons the memory of an ancient river.",
-               "recipe_name": "Dry Riverbed Stone"
+               "description": "Invoque la mémoire d'une ancienne rivière.",
+               "recipe_name": "Pierre de lit de rivière sèche"
             },
             "summon_stone_moon_recipe": {
-               "description": "Summons a pattern of a cute Moon.",
-               "recipe_name": "Moon Stone"
+               "description": "Invoque un joli motif de Lune.",
+               "recipe_name": "Pierre de lune"
             },
             "summon_stone_sun_recipe": {
-               "description": "Summons a pattern of a cute Sun.",
-               "recipe_name": "Sun Stone"
+               "description": "Invoque un joli motif de Soleil.",
+               "recipe_name": "Pierre du soleil"
             }
          }
       },
@@ -17267,7 +17267,7 @@
             "requirements": "Fabriqué par un charpentier",
             "workshop": {
                "name": "Atelier de tailleur de pierre",
-               "description": "insert description here",
+               "description": "insérer une description ici",
                "long_description": "Le tailleur conçoi des matériaux de construction et des objets de décoration à partir de pierre."
             },
             "level_6_data": {
@@ -17342,29 +17342,29 @@
                "flavor": "Ce n'est pas une chaise !"
             },
             "amberstone_lantern_recipe": {
-               "description": "A warm little light",
-               "recipe_name": "Stone-cut Lantern",
-               "flavor": "Their thick walls blocked too much of their precious light underground, and so this style had all but vanished until now"
+               "description": "Une petite lumière chaude",
+               "recipe_name": "Lanterne taillée dans la pierre",
+               "flavor": "Leurs épais murs bloquaient trop de leur précieuse lumière sous terre, ainsi ce style avait presque disparu jusqu'à maintenant"
             },
             "amberstone_teapot_recipe": {
-               "description": "A rabbit's cherished teapot",
-               "recipe_name": "Stone-cut Teapot",
-               "flavor": "They are always rough at first, as if broken from the stone rather than carved. They are gradually worn smooth through generations of use."
+               "description": "La théière chérie d'un lapin",
+               "recipe_name": "Théière en pierre",
+               "flavor": "Ils sont toujours bruts au début, comme s'ils étaient araché à la pierre plutôt que sculptés. Ils sont progressivement usé en douceur grâce à des générations d'utilisation."
             },
             "amberstone_table_recipe": {
-               "description": "Chiseled in the style of clan Amberstone",
-               "recipe_name": "Polished Stone Table",
-               "flavor": "Rabbit masons will only part with work if they are proud of it"
+               "description": "Ciselé dans le style du clan Amberstone",
+               "recipe_name": "Table en pierre polie",
+               "flavor": "Les lapin maçons ne se sépare de leur travail que s'ils en sont fiers"
             },
             "amberstone_tunnel_door_recipe": {
-               "description": "Seals and protects underground dwellings",
-               "recipe_name": "Burrow Door",
-               "flavor": "One could shove with all their might and these doors would never budge, but the rabbits could open them with barely a touch"
+               "description": "Scelle et protège les habitations souterraines",
+               "recipe_name": "Porte de terrier",
+               "flavor": "On pourrait pousser de toutes leurs forces et ces portes ne bougeraient jamais, mais les lapins pourraient les ouvrir juste en l'effleurant"
             },
             "amberstone_window_recipe": {
-               "description": "Lets the fresh air in",
-               "recipe_name": "Burrow Window",
-               "flavor": "Living underground would be unbearable without excellent ventilation"
+               "description": "Laisse l'air frais entrer",
+               "recipe_name": "Fenêtre de terrier",
+               "flavor": "Vivre sous terre serait insupportable sans une excellente ventilation"
             },
             "blacksmith_hammer_recipe": {
                "description": "Requis pour promouvoir un hearthling en forgeron.",
