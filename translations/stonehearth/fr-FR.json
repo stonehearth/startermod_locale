@@ -60,7 +60,10 @@
             "recuperating": "Est en convalescence",
             "celebrating": "Célébrer",
             "shopping": "Commerce",
-            "confused": "Confus"
+            "confused": "Confus",
+            "traveler_walking": "se balade dans votre ville",
+            "traveler_looking": "admiratif [name(data.target)]",
+            "sit": "s'assoie"
          }
       }
    },
@@ -202,7 +205,9 @@
             "title": "Choisissez un Hearthling",
             "select_person": "Sélectionner",
             "ownership_current_owner_tooltip": "Propriétaire actuel",
-            "ownership_owns_another_tooltip": "Possède déjà un objet similaire"
+            "ownership_owns_another_tooltip": "Possède déjà un objet similaire",
+            "reserve_for_travelers": "Reserve for a Traveller",
+            "already_reserved_for_travelers": "Reserved"
          },
          "player_picker": {
             "title": "Choisissez un joueur"
@@ -245,7 +250,10 @@
                   "title": "Inviter des amis",
                   "message": "Cliquez sur 'Continuer' pour ouvrir l'Overlay Steam. Cliquez avec le bouton droit sur l'ami que vous souhaitez inviter au jeu et cliquez sur 'Inviter au jeu'. Ils recevront un lien dans le chat Steam qui leur permettra de rejoindre."
                }
-            }
+            },
+            "friends_list": "Click to Invite!",
+            "away": "away",
+            "busy": "busy"
          },
          "build_workshop": {
             "title": "Construire l'atelier",
@@ -473,6 +481,9 @@
                "quality-2": "Bonne qualité",
                "quality-3": "Excellente qualité",
                "quality-4": "Chef-d'oeuvre !"
+            },
+            "traveler": {
+               "gifted_by": "Gift from [str(gifter_name)]"
             }
          },
          "citizens": {
@@ -978,6 +989,17 @@
             "quest_bulletin_dialog": {
                "description": "Description",
                "rewards": "Récompenses"
+            },
+            "traveler": {
+               "first": {
+                  "title": "Your First Traveller!",
+                  "message": "[str(i18n_data.traveler_name)] came to visit!<br><br>Travellers will stop by as long as there are beds reserved for them. They'll admire your town, chat with your citizens, shop at your markets, and even leave gifts for you if they had a pleasant visit.<br><br>Happy travellers will spread word of your town, and it will become a more popular destination over time!"
+               },
+               "summary": {
+                  "title": "Traveller Summary",
+                  "text": "The travellers loved your town today! They left these gifts for you:",
+                  "gifted_by": "Gift from [str(gifter)]"
+               }
             }
          },
          "build_mode2": {
@@ -1270,7 +1292,7 @@
                "help_single_filter": "Cliquez sur une icône pour choisir le type d'élément à stocker dans ce conteneur.",
                "help_player_market_stall": "Cliquez sur une icône pour choisir le type d'article à vendre sur ce stand.",
                "clear": "Effacer la sélection",
-               "used_space": "Espace utilisé :",
+               "used_space": "     ",
                "filters": {
                   "all": "Tout",
                   "none": "Rien",
@@ -2347,17 +2369,17 @@
             }
          },
          "constants": {
-            "food_meat_raw_name": "Viande fraiche",
-            "food_veggie_raw_name": "Légumes crus",
+            "food_meat_raw_name": "Viande crue",
+            "food_veggie_raw_name": "Légumes frais",
             "food_bug_meat_raw_name": "Viande crue d'insecte",
             "stone_resource_name": "Pierre",
-            "pelt_resource_name": "Peau",
+            "pelt_resource_name": "Fourrure",
             "cloth_resource_name": "Rouleau de tissu",
             "wood_resource_name": "Bûche",
             "clay_resource_name": "Boule d'argile",
             "clay_brick_resource_name": "Briques d'argile",
             "thread_resource_name": "Fil",
-            "leather_resource_name": "Cuir enroulé",
+            "leather_resource_name": "Rouleau de cuir",
             "fiber_resource_name": "Lot de fibres",
             "ingot_resource_name": "Lingot de métal",
             "herb_resource_name": "Herbe",
@@ -9439,12 +9461,12 @@
          "all_trappable_animals": {
             "trappable_animals": {
                "bugs": {
-                  "name": "Bug",
-                  "description": "Bugs produce bug meat, used by the cook, and chitin, used in some armor recipes"
+                  "name": "Insecte",
+                  "description": "Les insectes produisent de la viande d'insectes, utilisée par le cuisinier, et de la chitine, utilisée dans certaines recettes d'armure."
                },
                "critters": {
-                  "name": "Small Animal",
-                  "description": "Small animals produce jerky and pelts"
+                  "name": "Petit animal",
+                  "description": "Les petits animaux produisent de la viande et des peaux."
                }
             }
          }
@@ -10447,6 +10469,18 @@
                "display_name": "Old Wheat Bundle",
                "description": "Harvestable for wheat when placed"
             }
+         },
+         "market_shelf_tall_ground_clay": {
+            "market_shelf_tall_ground_clay_ghost": {
+               "display_name": "Market Trading Shelf",
+               "description": "Other players and Travellers can buy the items stored here."
+            }
+         },
+         "market_shelf_tall_ground_stone": {
+            "market_shelf_tall_ground_stone_ghost": {
+               "display_name": "Market Trading Shelf",
+               "description": "Other players and Travellers can buy the items stored here."
+            }
          }
       },
       "critters": {
@@ -10473,7 +10507,7 @@
             "display_name": "Lapin",
             "description": "Om nom nom",
             "rabbit_jerky": {
-               "display_name": "Morceau de lapin séché"
+               "display_name": "Viande de de lapin séché"
             },
             "species": "lapin"
          },
@@ -10481,7 +10515,7 @@
             "display_name": "Raton laveur",
             "description": "Petite créature de la forêt, aussi appelé «panda des poubelles».",
             "racoon_jerky": {
-               "display_name": "Morceau de raton laveur séché"
+               "display_name": "Viande de raton laveur séché"
             },
             "species": "raton laveur"
          },
@@ -10489,7 +10523,7 @@
             "display_name": "Renard",
             "description": "Petite créature de la forêt",
             "red_fox_jerky": {
-               "display_name": "Renard séché"
+               "display_name": "Viande de renard séché"
             },
             "species": "renard"
          },
@@ -10508,7 +10542,7 @@
             "display_name": "Écureuil",
             "description": "Petite créature de la forêt",
             "squirrel_jerky": {
-               "display_name": "Écureuil séché"
+               "display_name": "Viande d'écureuil séché"
             },
             "species": "écureuil"
          },
@@ -10524,7 +10558,7 @@
          },
          "deer": {
             "deer_jerky": {
-               "display_name": "Cerf séché"
+               "display_name": "Viande de cerf séché"
             },
             "species": "cerf",
             "description": "Très faisandé ... comme il faut",
@@ -12234,7 +12268,7 @@
          },
          "pork": {
             "display_name": "Porc cru",
-            "description": "Viande crue d'un porc"
+            "description": "Viande crue d'un sanglier"
          },
          "rotten_bug_meat": {
             "description": "La viande d'insecte est passé date",
@@ -12250,7 +12284,7 @@
             }
          },
          "egg_large": {
-            "display_name": "Gros œuf",
+            "display_name": "Gros oeuf",
             "description": "Un oeuf, un ingrédient pour la cuisine"
          },
          "rotten_egg_large": {
@@ -12349,13 +12383,13 @@
             }
          },
          "varanus_jerky": {
-            "display_name": "Varanus haché"
+            "display_name": "Varanus séché"
          },
          "zilla_jerky": {
-            "display_name": "Zilla haché"
+            "display_name": "Zilla séché"
          },
          "ostrich_jerky": {
-            "display_name": "Autruche haché"
+            "display_name": "Autruche séché"
          },
          "boar_jerky": {
             "display_name": "Sanglier séché"
@@ -12436,7 +12470,7 @@
             }
          },
          "wolf_jerky": {
-            "display_name": "Wolf Jerky"
+            "display_name": "Viande de loup séché"
          },
          "fodder": {
             "fodder": {
@@ -14138,7 +14172,7 @@
             "description": "Une barre de fer pur."
          },
          "leather_bolt": {
-            "display_name": "Cuir en rouleau",
+            "display_name": "Rouleau de cuir",
             "description": "Souple mais solide."
          },
          "silver_ingot": {
@@ -16708,13 +16742,13 @@
                "flavor": "Il y a un trou dans mon cœur qui a la forme d'un chaton."
             },
             "roast_pork_recipe": {
-               "description": "Arrive bientôt ! Boeuf rôti soigneusement cuit",
+               "description": "Sanglier rôti soigneusement préparé",
                "recipe_name": "Gigot de porc rôti",
                "flavor": "Glacé et rôti"
             },
             "bacon_and_eggs_recipe": {
-               "description": "Arrive bientôt ! Du porc et des oeufs comme vous les aimez.",
-               "recipe_name": "Bacon et oeufs",
+               "description": "Le porc et les oeufs comme vous les aimez.",
+               "recipe_name": "Oeufs au bacon",
                "flavor": "La graisse pénètre juste dans les oeufs et rendant le goût tellement bon!"
             },
             "fried_eggs_large_recipe": {
@@ -16828,7 +16862,7 @@
                "perk_000_description": "Cet ingénieur peut placer jusqu'à douze pièges et huit tourelles"
             },
             "level_2_data": {
-               "perk_000_name": "Amélioration de l'assiduité",
+               "perk_000_name": "Concentration améliorée",
                "perk_000_description": "L'ingénieur peut réparer les portes cassées et des portes plus efficacement"
             },
             "level_1_data": {
@@ -16927,7 +16961,7 @@
          },
          "engineer_buffs": {
             "diligence_2_buff": {
-               "display_name": "Assiduité +50",
+               "display_name": "Concentration +50",
                "description": "L'ingénieur peut réparer les portes plus efficacement"
             }
          },
@@ -17736,6 +17770,11 @@
                "description": "Un bac à fleurs rempli de fleurs violettes, construit pour être placé sous les cadres de fenêtre.",
                "recipe_name": "Jardinière à fleurs violettes",
                "flavor": "La pierre angulaire d'une habitation civilisée."
+            },
+            "market_shelf_tall_ground_stone": {
+               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "recipe_name": "Market Trading Shelf",
+               "flavor": "One Hearthling's trash is another's treasure... right?"
             }
          }
       },
@@ -18057,6 +18096,11 @@
                "description": "Maintient les gens en dehors de votre propriété.",
                "recipe_name": "Clôture en argile",
                "flavor": "Plus décoratif que protecteur."
+            },
+			"market_shelf_tall_ground_clay": {
+               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "recipe_name": "Market Trading Shelf",
+               "flavor": "One Hearthling's trash is another's treasure... right?"
             }
          },
          "potter_workbench": {
@@ -18507,8 +18551,8 @@
             "level_1_data": {
                "perk_000_name": "Praticien débutant",
                "perk_001_name": "Régénération naturelle",
-               "perk_000_description": "L'herboriste canalise les esprits de la forêt et obtient une régénération naturelle. Volonté et diligence ont augmenté.",
-               "perk_001_description": "L'herboriste ouvre un canal spirituel avec la forêt et gagne de la régénération naturelle. Volonté augmentée."
+               "perk_000_description": "L'herboriste canalise les esprits de la forêt et obtient une régénération naturelle. Volonté et Concentration ont augmenté.",
+               "perk_001_description": "L'herboriste ouvre un canal spirituel avec la forêt et gagne de la régénération naturelle. Volonté et Concentration augmentée."
             },
             "level_2_data": {
                "perk_000_name": "Perspectives de collaboration",
@@ -18758,7 +18802,7 @@
          "herbalist_buffs": {
             "willpower_1_buff": {
                "display_name": "Régénération naturelle",
-               "description": "L'herboriste a amélioré la régénération de la santé et de la volonté"
+               "description": "L'herboriste a amélioré la régénération de la santé et de la Concentration"
             }
          },
          "herbalist_pestle": {
@@ -18861,7 +18905,7 @@
             },
             "wolf_helmet_buff": {
                "display_name": "Conscience du chasseur",
-               "description": "Augmente la diligence de 20%"
+               "description": "Augmente la Concentration de 20%"
             }
          }
       },
