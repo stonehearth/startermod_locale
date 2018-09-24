@@ -206,8 +206,8 @@
             "select_person": "Sélectionner",
             "ownership_current_owner_tooltip": "Propriétaire actuel",
             "ownership_owns_another_tooltip": "Possède déjà un objet similaire",
-            "reserve_for_travelers": "Reserve for a Traveller",
-            "already_reserved_for_travelers": "Reserved"
+            "reserve_for_travelers": "Réserver pour un voyageur",
+            "already_reserved_for_travelers": "Réservé"
          },
          "player_picker": {
             "title": "Choisissez un joueur"
@@ -265,7 +265,7 @@
          },
          "citizen_character_sheet": {
             "title": "Informations personnel",
-            "health": "HP",
+            "health": "PV",
             "morale": "moral",
             "experience": "expérience",
             "max_level": "Maximum",
@@ -483,7 +483,7 @@
                "quality-4": "Chef-d'oeuvre !"
             },
             "traveler": {
-               "gifted_by": "Gift from [str(gifter_name)]"
+               "gifted_by": "Cadeau de la part de [str(gifter_name)]"
             }
          },
          "citizens": {
@@ -992,13 +992,13 @@
             },
             "traveler": {
                "first": {
-                  "title": "Your First Traveller!",
-                  "message": "[str(i18n_data.traveler_name)] came to visit!<br><br>Travellers will stop by as long as there are beds reserved for them. They'll admire your town, chat with your citizens, shop at your markets, and even leave gifts for you if they had a pleasant visit.<br><br>Happy travellers will spread word of your town, and it will become a more popular destination over time!"
+                  "title": "Votre premier voyageur !",
+                  "message": "[str(i18n_data.traveler_name)] est venu nous rendre visite !<br><br>Les voyageurs se présenteront tant qu'il y aura des lits qui leur seront réservés. Ils admireront votre ville, bavarderont avec vos citoyens, feront des emplettes dans vos marchés et vous laisseront même des cadeaux s'ils ont eu une visite agréable.<br><br>Les voyageurs heureux feront connaître votre ville, et elle deviendra une destination de plus en plus populaire au fil du temps !"
                },
                "summary": {
-                  "title": "Traveller Summary",
-                  "text": "The travellers loved your town today! They left these gifts for you:",
-                  "gifted_by": "Gift from [str(gifter)]"
+                  "title": "Résumé des voyageurs",
+                  "text": "Les voyageurs ont adoré votre ville aujourd'hui ! Ils ont laissé ces cadeaux pour vous :",
+                  "gifted_by": "Cadeau de la part de [str(gifter)]"
                }
             }
          },
@@ -1043,12 +1043,12 @@
                "cycle_normal": "Cycle Normal"
             },
             "roof_tool_context": {
-               "drop_walls": "Baisser le Mur",
-               "slope": "Pente",
-               "front": "Face",
-               "back": "Arrière",
-               "left": "Gauche",
-               "right": "Droite"
+               "drop_walls": "Pignons",
+               "slope": "Pente ",
+               "front": "Nord",
+               "back": "Sud",
+               "left": "Ouest",
+               "right": "Est"
             },
             "stairs_designer": {
                "block_stairs": "Bloquer les escaliers",
@@ -2370,7 +2370,7 @@
          },
          "constants": {
             "food_meat_raw_name": "Viande crue",
-            "food_veggie_raw_name": "Légumes frais",
+            "food_veggie_raw_name": "Légume frais",
             "food_bug_meat_raw_name": "Viande crue d'insecte",
             "stone_resource_name": "Pierre",
             "pelt_resource_name": "Fourrure",
@@ -8737,7 +8737,7 @@
                "borrow_crafter": {
                   "helped_out": {
                      "display_name": "Visite avec les lapins",
-                     "tooltip": "Wow, le terrier Amberstone était incroyable ! Je me sens si honoré de les avoir aidés."
+                     "tooltip": "Wouah, le terrier Amberstone était incroyable ! Je me sens si honoré de les avoir aidés."
                   }
                }
             },
@@ -9838,7 +9838,7 @@
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
-               "display_name": "Fenêtre d'argile rouge en treillis",
+               "display_name": "Fenêtre à treillis rouge en argile",
                "description": "Le treillis permet toujours de faire rentrer le bon air."
             }
          },
@@ -9932,14 +9932,14 @@
          },
          "blue_latticed_window": {
             "blue_latticed_window_ghost": {
-               "display_name": "Fenêtre en treillis bleu",
-               "description": "Une fenêtre en treillis bleue apaisante"
+               "display_name": "Fenêtre à treillis bleue",
+               "description": "Une fenêtre à treillis d'un bleue apaisant"
             }
          },
          "green_latticed_window": {
             "green_latticed_window_ghost": {
-               "display_name": "Fenêtre en treillis vert",
-               "description": "La fenêtre en treillis que vous connaissez et aimez, maintenant en vert!"
+               "display_name": "Fenêtre à treillis verte",
+               "description": "La fenêtre à treillis que vous connaissez et aimez, maintenant en vert!"
             }
          },
          "tan_clay_window_frame": {
@@ -9950,8 +9950,8 @@
          },
          "tan_latticed_window": {
             "tan_latticed_window_ghost": {
-               "display_name": "Fenêtre en treillis brun pale",
-               "description": "La fenêtre treillis que vous connaissez et aimez, en brun pale!"
+               "display_name": "Fenêtre à treillis brun pale",
+               "description": "La fenêtre à treillis que vous connaissez et aimez, en brun pale!"
             }
          },
          "tall_clay_window": {
@@ -10266,67 +10266,67 @@
          },
          "output_box_wood": {
             "output_box_wood_ghost": {
-               "display_name": "Plateau de travail de finition du bois",
+               "display_name": "Étagère de produits fini en bois",
                "description": "Entrepose temporairement les objets artisanaux."
             }
          },
          "output_box_clay": {
             "output_box_clay_ghost": {
                "description": "Contenant temporaire pour les objets artisanaux.",
-               "display_name": "Plateau de travail de finition de l'argile"
+               "display_name": "Étagère de produits fini en l'argile"
             }
          },
          "output_box_stone": {
             "output_box_stone_ghost": {
                "description": "Contenant temporaire pour les objets artisanaux.",
-               "display_name": "Plateau de travail de finition de la pierre"
+               "display_name": "Étagère de produits fini en pierre"
             }
          },
          "output_box_amberstone": {
             "output_box_amberstone_ghost": {
                "description": "Stockage temporaire pour les objets artisanaux.",
-               "display_name": "Tablette de travail style Lapin"
+               "display_name": "Étagère de produits fini de style Lapin"
             }
          },
          "input_bin_clay": {
             "input_bin_clay_ghost": {
-               "display_name": "Bassin d'approvisionnement en céramique",
+               "display_name": "Bac en céramique",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_amberstone": {
             "input_bin_amberstone_ghost": {
-               "display_name": "Panier d'approvisionnement style Lapin",
+               "display_name": "Panier style Lapin",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_woven": {
             "input_bin_woven_ghost": {
-               "display_name": "Panier d'approvisionnement tissé",
+               "display_name": "Panier tissé",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_wood": {
             "input_bin_wood_ghost": {
-               "display_name": "Caisse d'approvisionnement en bois",
+               "display_name": "Caisse en bois",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_stone": {
             "input_bin_stone_ghost": {
-               "display_name": "Caisse d'approvisionnement en pierre",
+               "display_name": "Bac en pierre",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_iron": {
             "input_bin_iron_ghost": {
-               "display_name": "Caisse d'approvisionnement en fer-fasciée",
+               "display_name": "Bac cercler",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_shelf_wall_clay": {
             "input_shelf_wall_clay_ghost": {
-               "display_name": "Tablette d'approvisionnement murale en céramique",
+               "display_name": "Étagère murale en céramique",
                "description": "Assurez-vous que ce soit à portée de main !"
             }
          },
@@ -10338,116 +10338,116 @@
          },
          "input_shelf_ground_clay": {
             "input_shelf_ground_clay_ghost": {
-               "display_name": "Support d'approvisionnement en céramique",
+               "display_name": "Étagère en céramique",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_shelf_ground_stone": {
             "input_shelf_ground_stone_ghost": {
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
-               "display_name": "Support d'approvisionnement en pierre"
+               "display_name": "Étagère en pierre"
             }
          },
          "input_shelf_ground_wood": {
             "input_shelf_ground_wood_ghost": {
-               "display_name": "Support d'approvisionnemet en bois",
+               "display_name": "Étagère en bois",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_shelf_wall_wood": {
             "input_shelf_wall_wood_ghost": {
-               "display_name": "Tablette d'approvisionnement murale en bois",
+               "display_name": "Étagère murale en bois",
                "description": "Assurez-vous que ce soit à portée de main !"
             }
          },
          "input_table_ground_iron": {
             "input_table_ground_iron_ghost": {
-               "display_name": "Tablette d'approvisionnement en fer-clouté",
+               "display_name": "Table en fer forgé",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_corner_ground_wood": {
             "input_corner_ground_wood_ghost": {
-               "display_name": "Étagère d'approvisionnement de coin en bois",
+               "display_name": "Étagère d'angle en bois",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_corner_ground_stone": {
             "input_corner_ground_stone_ghost": {
-               "display_name": "Étagère d'approvisionnement de coin en pierre",
+               "display_name": "Étagère d'angle en pierre",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_table_ground_wood": {
             "input_table_ground_wood_ghost": {
-               "display_name": "Table d'approvisionnement en bois",
+               "display_name": "Table en bois",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_table_ground_stone": {
             "input_table_ground_stone_ghost": {
-               "display_name": "Table d'approvisionnement en pierre",
+               "display_name": "Table en pierre",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_table_ground_clay": {
             "input_table_ground_clay_ghost": {
-               "display_name": "Table d'approvisionnement céramique",
+               "display_name": "Table céramique",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_corner_ground_clay": {
             "input_corner_ground_clay_ghost": {
-               "display_name": "Étagère d'approvisionnement de coin en céramique",
+               "display_name": "Étagère d'angle en céramique",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_clay_blue": {
             "input_bin_clay_blue_ghost": {
-               "display_name": "Bassin d'approvisionnement en céramique bleue",
+               "display_name": "Bac en céramique bleue",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_clay_green": {
             "input_bin_clay_green_ghost": {
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
-               "display_name": "Bassin d'approvisionnement en céramique vert"
+               "display_name": "Bac en céramique vert"
             }
          },
          "input_bin_clay_red": {
             "input_bin_clay_red_ghost": {
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
-               "display_name": "Bassin d'approvisionnement en céramique rouge"
+               "display_name": "Bac en céramique rouge"
             }
          },
          "input_bin_woven_blue": {
             "input_bin_woven_blue_ghost": {
-               "display_name": "Panier d'approvisionnement tissé bleu",
+               "display_name": "Panier tissé bleu",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_woven_green": {
             "input_bin_woven_green_ghost": {
-               "display_name": "Panier d'approvisionnement tissé vert",
+               "display_name": "Panier tissé vert",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_woven_red": {
             "input_bin_woven_red_ghost": {
-               "display_name": "Panier d'approvisionnement tissé rouge",
+               "display_name": "Panier tissé rouge",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_corner_ground_iron": {
             "input_corner_ground_iron_ghost": {
-               "display_name": "Étagère d'approvisionnement de coin en fer",
+               "display_name": "Étagère d'angle en fer forgé",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "market_shelf_tall_ground_wood": {
             "market_shelf_tall_ground_wood_ghost": {
-               "display_name": "Tall Wooden Market Shelf",
-               "description": "Other players and Travelers can buy the items stored here."
+               "display_name": "Étagère de marché",
+               "description": "Les autres joueurs et les voyageurs peuvent acheter les objets stockés ici."
             }
          },
          "gem_chest": {
@@ -10472,14 +10472,14 @@
          },
          "market_shelf_tall_ground_clay": {
             "market_shelf_tall_ground_clay_ghost": {
-               "display_name": "Market Trading Shelf",
-               "description": "Other players and Travellers can buy the items stored here."
+               "display_name": "Étagère de marché",
+               "description": "Les autres joueurs et les voyageurs peuvent acheter les objets stockés ici."
             }
          },
          "market_shelf_tall_ground_stone": {
             "market_shelf_tall_ground_stone_ghost": {
-               "display_name": "Market Trading Shelf",
-               "description": "Other players and Travellers can buy the items stored here."
+               "display_name": "Étagère de marché",
+               "description": "Les autres joueurs et les voyageurs peuvent acheter les objets stockés ici."
             }
          }
       },
@@ -10507,7 +10507,7 @@
             "display_name": "Lapin",
             "description": "Om nom nom",
             "rabbit_jerky": {
-               "display_name": "Viande de de lapin séché"
+               "display_name": "Viande de lapin séché"
             },
             "species": "lapin"
          },
@@ -12127,8 +12127,8 @@
          },
          "fried_eggs": {
             "fried_eggs": {
-               "display_name": "Œuf frit",
-               "description": "Frits et bien sûr délicieux."
+               "display_name": "Œufs au plat",
+               "description": "Poêlé et délicieux"
             },
             "fried_eggs_serving": {
                "display_name": "Assiette d'œufs frits"
@@ -12171,7 +12171,7 @@
             },
             "prickly_pear_serving": {
                "display_name": "Portion de Figue de Barbarie",
-               "description": "Ouch! C'était une épine?"
+               "description": "Aïe ! C'était une épine?"
             }
          },
          "golden_gourd": {
@@ -12230,7 +12230,7 @@
             "description": "Si pourrie qu'elle n'a ni forme, ni utilité."
          },
          "rotten_egg": {
-            "display_name": "Oeuf pourri",
+            "display_name": "Œuf pourri",
             "description": "Dégeulasse"
          },
          "rotten_jerky": {
@@ -12238,7 +12238,7 @@
             "description": "Même la viande sèche pourrie éventuellement. C'est vrai"
          },
          "mutton": {
-            "display_name": "Mouton cru",
+            "display_name": "Mouton crue",
             "description": "Viande crue provenant d'un mouton"
          },
          "roast_mutton": {
@@ -12267,7 +12267,7 @@
             }
          },
          "pork": {
-            "display_name": "Porc cru",
+            "display_name": "Porc crue",
             "description": "Viande crue d'un sanglier"
          },
          "rotten_bug_meat": {
@@ -12280,20 +12280,20 @@
                "display_name": "Gigot de porc rôti"
             },
             "roast_pork_serving": {
-               "display_name": "Tranche de porc rôti"
+               "display_name": "Tranche de gigot rôti"
             }
          },
          "egg_large": {
-            "display_name": "Gros oeuf",
-            "description": "Un oeuf, un ingrédient pour la cuisine"
+            "display_name": "Gros œuf",
+            "description": "Un œuf, un ingrédient pour la cuisine"
          },
          "rotten_egg_large": {
             "description": "Répugnant",
-            "display_name": "Grand oeuf pourri"
+            "display_name": "Grand œuf pourri"
          },
          "varanus_meat": {
-            "display_name": "Viande de varanus",
-            "description": "Plus gouteux qu'un poyo peut l'être avec un poyo."
+            "display_name": "Varanus crue",
+            "description": "Ça a plus le goût de Poyo que le Poyo."
          },
          "rotten_varanus_meat": {
             "description": "Ça sent mieux maintenant",
@@ -12302,7 +12302,7 @@
          "roast_varanus": {
             "roast_varanus": {
                "description": "Rôti à la perfection",
-               "display_name": "Plaque de varanus rôti"
+               "display_name": "Pavé de varanus rôti"
             },
             "roast_varanus_serving": {
                "display_name": "Portion de rôti de Varanus"
@@ -12311,10 +12311,10 @@
          "roast_zilla": {
             "roast_zilla": {
                "display_name": "Morceau de Zilla rôti",
-               "description": "Transformativement torréfié à la perfection"
+               "description": "Transformativement rôtie à la perfection"
             },
             "roast_zilla_serving": {
-               "display_name": "Portion de Rôti Zilla"
+               "display_name": "Portion de Rôti de Zilla"
             }
          },
          "rotten_pork_meat": {
@@ -12366,20 +12366,20 @@
          },
          "fried_eggs_large": {
             "fried_eggs_large": {
-               "display_name": "Gros oeuf au plat",
+               "display_name": "Gros œuf au plat",
                "description": "Frit, délicieux et ÉNORME"
             },
             "fried_eggs_large_serving": {
-               "display_name": "Portion de gros oeufs au plat"
+               "display_name": "Portion de gros œufs au plat"
             }
          },
          "bacon_and_eggs": {
             "bacon_and_eggs": {
-               "display_name": "Bacon et oeufs",
+               "display_name": "Œufs au bacon",
                "description": "Le meilleur petit déjeuner que vous pouvez obtenir"
             },
             "bacon_and_eggs_serving": {
-               "display_name": "Portion de bacon et d'oeufs"
+               "display_name": "Portion de bacon et d'œufs"
             }
          },
          "varanus_jerky": {
@@ -12653,13 +12653,13 @@
          },
          "table_for_one": {
             "table_for_one_ghost": {
-               "display_name": "Petite table",
+               "display_name": "Table de célibataire",
                "description": "Mobilier dinatoire pour introvertis."
             }
          },
          "table_for_one_fine": {
             "table_for_one_fine_ghost": {
-               "display_name": "Petite table stylisé",
+               "display_name": "Table stylisé de célibataire",
                "description": "On peut frimer même seul !"
             }
          },
@@ -12750,7 +12750,7 @@
          },
          "ornate_table_for_one": {
             "ornate_table_for_one_ghost": {
-               "display_name": "Table ornée pour un",
+               "display_name": "Table ornée de célibataire",
                "description": "Meubles à manger pour les introvertis."
             }
          },
@@ -13223,7 +13223,7 @@
                "species": "Autruche",
                "egg": {
                   "ostrich_egg_fertilized": {
-                     "display_name": "Oeuf d'autruche fécondé",
+                     "display_name": "Œuf d'autruche fécondé",
                      "description": "Est-ce qu'il vas éclore ?"
                   }
                }
@@ -13234,7 +13234,7 @@
                "species": "Canard",
                "egg": {
                   "duckduck_egg_fertilized": {
-                     "display_name": "Oeuf de canard fécondé",
+                     "display_name": "Œuf de canard fécondé",
                      "description": "Est-ce qu'il vas éclore ?"
                   }
                }
@@ -13323,7 +13323,7 @@
             "species": "dragon",
             "egg": {
                "dragon_nature_egg_fertilized_ghost": {
-                  "display_name": "Oeuf de dragon naturel",
+                  "display_name": "Œuf de dragon naturel",
                   "description": "Tellement mystérieux ! Il devrait être placé dans un endroit sûr et chaud..."
                }
             }
@@ -14342,15 +14342,15 @@
             },
             "doodles_pelt": {
                "description": "Dur, brillant et un peu mort",
-               "display_name": "Doodle chitine"
+               "display_name": "Chitine de Doodle"
             },
             "boar_pelt": {
                "description": "Doux, souple et un peu mort",
                "display_name": "Peau de sanglier"
             },
             "deer_horn": {
-               "display_name": "Deer Antler",
-               "description": "Hard, sharp, and possibly useful.."
+               "display_name": "Bois de cerf",
+               "description": "Dur, tranchant, et peut-être utile..."
             }
          },
          "silver": {
@@ -15953,18 +15953,18 @@
                "recipe_name": "Clé d'ingénieur"
             },
             "input_bin_iron_recipe": {
-               "recipe_name": "Corbeille d'approvisionnement en fer-clouté",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Bac cercler",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_table_ground_iron_recipe": {
-               "recipe_name": "Table d'approvisionnement en fer-clouté",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Table en fer forgé",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_corner_ground_iron_recipe": {
-               "recipe_name": "Table d'approvisionnemet d'angle en fer-clouté",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère d'angle en fer forgé",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "sign_blacksmith_recipe": {
@@ -16368,7 +16368,7 @@
             },
             "market_shelf_tall_ground_wood_recipe": {
                "description": "D'autres joueurs et voyageurs peuvent acheter des marchandises stockées sur ces étagères.",
-               "recipe_name": "Grande étagère de marché en bois",
+               "recipe_name": "Étagère de marché",
                "flavor": "La poubelle d'un Hearthling est le trésor d'un autre ... n'est-ce pas?"
             },
             "archer_bow_recipe": {
@@ -16400,7 +16400,7 @@
                "flavor": "Comme celui que mon grand-père avait !"
             },
             "ornate_table_for_one_recipe": {
-               "recipe_name": "Table ornée pour un",
+               "recipe_name": "Table ornée de célibataire",
                "description": "Mieux que de manger debout. Sauf si vous surveillez votre poids.",
                "flavor": "Meubles à manger pour les introvertis."
             },
@@ -16484,33 +16484,33 @@
                "recipe_name": "Chaise en bois ornée"
             },
             "output_box_wood_recipe": {
-               "recipe_name": "Plateau de travail fini en bois",
+               "recipe_name": "Étagère de produits fini en bois",
                "description": "Stockage temporaire pour les articles fraîchement fabriqués.",
                "flavor": "Les artisans aiment montrer leur travail !"
             },
             "input_bin_wood_recipe": {
-               "recipe_name": "Caisse d'approvisionnement en bois",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Caisse en bois",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_ground_wood_recipe": {
-               "recipe_name": "Support d'approvisionnement en bois",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère en bois",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_wall_wood_recipe": {
-               "recipe_name": "Tablette d'approvisionnement murale en bois",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère murale en bois",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_corner_ground_wood_recipe": {
-               "recipe_name": "Support d'approvisionnement de coin en bois",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère d'angle en bois",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_table_ground_wood_recipe": {
-               "recipe_name": "Table d'approvisionnement en bois",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Table en bois",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "door_carpenter_recipe": {
@@ -16689,8 +16689,8 @@
                "flavor": "Aller hop, un autre poyo sur le barbeuc !"
             },
             "fried_eggs_recipe": {
-               "description": "Œufs frits en commande !",
-               "recipe_name": "Œufs frits",
+               "description": "Œufs au plat à la commande !",
+               "recipe_name": "Œufs au plat",
                "flavor": "Vous préférez les jaunes vers le haut?"
             },
             "animal_feed_name": "Nourriture pour animaux",
@@ -16747,23 +16747,23 @@
                "flavor": "Glacé et rôti"
             },
             "bacon_and_eggs_recipe": {
-               "description": "Le porc et les oeufs comme vous les aimez.",
-               "recipe_name": "Oeufs au bacon",
+               "description": "Le porc et les œufs comme vous les aimez.",
+               "recipe_name": "Œufs au bacon",
                "flavor": "La graisse pénètre juste dans les oeufs et rendant le goût tellement bon!"
             },
             "fried_eggs_large_recipe": {
-               "description": "Arrive bientôt ! Un énorme oeuf frit à la commande.",
-               "recipe_name": "Grand oeuf au plat",
+               "description": "Un ÉNORME œuf au plat à la commande.",
+               "recipe_name": "Grand œuf au plat",
                "flavor": "Le meilleur de votre côté ensoleillé!"
             },
             "bug_meat_stew_recipe": {
-               "description": "Arrive bientôt ! Chaud, épicé, et parfait pour manger par une chaude journée.",
-               "recipe_name": "Ragoût d'insecte savoureux",
+               "description": "Filandreux, épicé et parfait pour les chaudes journées.",
+               "recipe_name": "Savoureux ragoût d'insectes",
                "flavor": "Juste ne demandez pas, vous savez que c'est fait d'insecte."
             },
             "roast_varanus_recipe": {
                "description": "Viande de lézard rôtie",
-               "recipe_name": "Tranche de rôti de Varanus",
+               "recipe_name": "Tranche de varanus rôti",
                "flavor": "Quelle savoureuse tranche de queue de lézard !"
             },
             "roast_poultry_large_recipe": {
@@ -16797,7 +16797,7 @@
                "flavor": "Réchauffe tes mains et ton coeur."
             },
             "sausage_recipe": {
-               "description": "Détruisez la viande, mélangez-la aux épices, collez-la dans un boyau, et c'est bon !",
+               "description": "Hacher la viande, mélangez-la aux épices, collez-la dans un boyau, et c'est bon !",
                "recipe_name": "Saucisse crue",
                "flavor": "C'est un bon moyen d'allonger un peu vos réserves alimentaires."
             },
@@ -16828,12 +16828,12 @@
             },
             "dumpling_meat_recipe": {
                "description": "Une petite poche de pain avec de la viande et des épices farcies à l'intérieur.",
-               "recipe_name": "Boulette de viande",
+               "recipe_name": "Jiaozi à la viande",
                "flavor": "Un peu compliqué à faire, mais qui vous nourris plutôt bien."
             },
             "dumpling_vegetarian_recipe": {
                "description": "Une petite poche de pain avec des légumes et des épices farcies à l'intérieur.",
-               "recipe_name": "Boulette végétarienne",
+               "recipe_name": "Jiaozi végétarien",
                "flavor": "Un peu compliqué à faire, mais qui vous nourris plutôt bien."
             },
             "chefs_desserts_name": "Desserts spécialisés"
@@ -17540,38 +17540,38 @@
                "description": "Cette pierre répandra de l'eau autour d'elle-même."
             },
             "output_box_amberstone_recipe": {
-               "recipe_name": "Présentoir Lapin-sculpté",
+               "recipe_name": "Étagère de produits fini de style Lapin",
                "description": "Affiche temporairement le dur labeur d'un artisan",
                "flavor": "Ces étagères sont assez robustes. Vous pourriez sauter dessus si vous le vouliez... Merci de ne pas le faire."
             },
             "output_box_stone_recipe": {
-               "recipe_name": "Tablette de travail en pierre",
+               "recipe_name": "Étagère de produits fini en pierre",
                "description": "Stock temporaire pour les articles fraîchement fabriqués.",
                "flavor": "Les artisans aiment montrer leur travail !"
             },
             "input_bin_stone_recipe": {
-               "recipe_name": "Corbeille d'approvisionnement en pierre",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Bac en pierre",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_wall_stone_recipe": {
                "recipe_name": "Étagère murale en pierre",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_ground_stone_recipe": {
-               "recipe_name": "Support d'approvisionnement en pierre",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère en pierre",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_corner_ground_stone_recipe": {
-               "recipe_name": "Support d'approvisionnement de coin en pierre",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère d'angle en pierre",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_table_ground_stone_recipe": {
-               "recipe_name": "Table d'approvisionnement en maçonnerie",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Table en pierre",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "sign_mason_recipe": {
@@ -17772,9 +17772,9 @@
                "flavor": "La pierre angulaire d'une habitation civilisée."
             },
             "market_shelf_tall_ground_stone": {
-               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "description": "D'autres joueurs et voyageurs peuvent acheter des marchandises stockées sur ces étagères.",
                "recipe_name": "Market Trading Shelf",
-               "flavor": "One Hearthling's trash is another's treasure... right?"
+               "flavor": "La poubelle d'un Hearthling est le trésor d'un autre ... n'est-ce pas?"
             }
          }
       },
@@ -17871,17 +17871,17 @@
             "building_parts_name": "Parties de la Structure",
             "clay_bricks_recipe": {
                "description": "Une pile de briques, utilisée pour fabriquer des structures en argile.",
-               "recipe_name": "Briques d'Argile",
+               "recipe_name": "Briques d'argile",
                "flavor": "'Et quand l'argile sortie du four, elle était devenue brique, et peu importe comment le soleil a brillé, elle restait consistante.'"
             },
             "red_clay_door_recipe": {
                "description": "S'harmonise avec les murs d'argile rouges",
-               "recipe_name": "Porte d'argile Rouge",
+               "recipe_name": "Porte d'argile rouge",
                "flavor": "\"Le rouge donne du mystère. Qu'est ce qui se trouve au-delà de la porte rouge ?\" -- Ember Iskender, Département de la poésie appliquée"
             },
             "red_clay_window_frame_recipe": {
                "description": "S'harmonise avec les murs d'argile rouges",
-               "recipe_name": "Fenêtre d'Argile Rouge",
+               "recipe_name": "Fenêtre d'argile rouge",
                "flavor": "\"Norme industriel pour des raisons\" -- Jorya Iskender, maître de colorant"
             },
             "blue_clay_door_recipe": {
@@ -17891,82 +17891,82 @@
             },
             "green_clay_door_recipe": {
                "description": "Vert, comme les rares brousailles du désert.",
-               "recipe_name": "Porte d'Argile Verte",
+               "recipe_name": "Porte d'argile verte",
                "flavor": "'Pouvez-vous faire le trou un peu plus petit? Le but est de voir qui est là sans qu'on sache que je suis à la maison.' --Vara Tenter, Irate Customer"
             },
             "blue_clay_window_frame_recipe": {
                "description": "Laisse entrer l'air plus frais du désert.",
-               "recipe_name": "Fenêtre d'Argile Bleue",
+               "recipe_name": "Fenêtre d'argile bleue",
                "flavor": "La teinture est appelée Santori, pour un compagnon qui désire la vue de l'océan."
             },
             "green_clay_window_frame_recipe": {
                "description": "Laisse entrer l'air léger du désert.",
-               "recipe_name": "Fenêtre d'Argile Verte",
+               "recipe_name": "Fenêtre d'argile verte",
                "flavor": "C'est le rêve de printemps d'une fenêtre...?"
             },
             "latticed_clay_window_frame_recipe": {
                "description": "Le treillis laisse entrer le bon air.",
-               "recipe_name": "Fenêtre d'Argile Treillis",
+               "recipe_name": "Fenêtre à treillis en argile",
                "flavor": "Comme les ombres qui bouge au sol, petit, voit si tu peux trouver Singe! "
             },
             "clay_bed_recipe": {
                "description": "Inconfortable, mais il vous suréleve du sol",
-               "recipe_name": "Lit en Argile",
+               "recipe_name": "Lit en argile",
                "flavor": "\"Il est comme un pot, pour dormir !\" - Clarence, vendeur temporaire"
             },
             "clay_dining_table_recipe": {
                "description": "Suréleve la nourriture du sol !",
-               "recipe_name": "Table à Manger en Argile",
+               "recipe_name": "Table à manger en argile",
                "flavor": "\"Un environnement élevé, pour une conversation élevée\" "
             },
             "simple_clay_chair_recipe": {
                "description": "Un endroit pour s'asseoir en mangeant",
-               "recipe_name": "Chaise d'Argile Simple",
+               "recipe_name": "Chaise d'argile simple",
                "flavor": "'S'emboite avec les tables, ooooo, symbolique!' -Nestor Adya, Compagnon"
             },
             "decorative_teapot_recipe": {
                "description": "Un rappel des commencements plus humbles",
-               "recipe_name": "Théière Décorative",
+               "recipe_name": "Théière décorative",
                "flavor": "'Qu'importe où elle allait, la théière suivait; Et même lorsqu'il n'y avait que de l'eau froide à y mettre, en sortait toujours un thé fumant, parfumé d'arôme d'Ailleurs.'"
             },
             "decorative_tray_recipe": {
                "description": "Ajoute de l'hospitalité et de l'éclat",
-               "recipe_name": "Plateau Décoratif",
+               "recipe_name": "Plateau décoratif",
                "flavor": "'Sucre, épice, et le sang de la terre: c'est le plateau qui nous réunis tous ensemble' -Rayya"
             },
             "potted_cactus_recipe": {
                "description": "Plantez un cactus dans un pot en argile.",
-               "recipe_name": "Cactus en Pot",
+               "recipe_name": "Cactus en pot",
                "flavor": "OUUTCH ! --Chaque potier cactus, toujours"
             },
             "blown_glass_vase_recipe": {
                "description": "Miraculeux",
-               "recipe_name": "Vase en Verre Brun",
+               "recipe_name": "Vase en verre brun",
                "flavor": "Il es dit que Singe avait un oeil fait de verre, et qu'à travers lui, il pouvait voir directement dans le coeur des choses. - Maître Orlen"
             },
             "decorative_vase_recipe": {
                "description": "Tranforme les métaux en art",
-               "recipe_name": "Vase Décoratif",
+               "recipe_name": "Vase décoratif",
                "flavor": "C'est la richesse de la renaissance de la terre."
             },
             "sundial_recipe": {
                "description": "Décore le jardin, indique l'heure",
-               "recipe_name": "Cadran Solaire en Argile",
+               "recipe_name": "Cadran solaire en argile",
                "flavor": "Le secret de l'immortalité, c'est de faire que les meilleurs jours durent pour toujours -Rayya"
             },
             "tile_floor_mosaic_recipe": {
                "description": "Décore et rafraichi le plancher",
-               "recipe_name": "Carrelage en Mosaïque",
+               "recipe_name": "Carrelage en mosaïque",
                "flavor": "Marche par dessus les fleurs peints, et dit merci"
             },
             "tile_wall_mosaic_recipe": {
                "description": "Les motifs de décoration sont apaisant",
-               "recipe_name": "Carrelage de Mur en Mosaïque",
+               "recipe_name": "Carrelage de mur en mosaïque",
                "flavor": "La tuile refroidi l'intérieur et l'extérieur"
             },
             "golden_clay_wall_planter_recipe": {
                "description": "Illumine un mur",
-               "recipe_name": "Jardinière Murale en Argile Dorée ",
+               "recipe_name": "Jardinière murale en argile dorée ",
                "flavor": "D'où proviennent les fleurs ? Des pousses, bien sûr ! --Acolyte des mystères de Rayya"
             },
             "unfired_clay_vase_recipe": {
@@ -17990,75 +17990,75 @@
                "flavor": "Parlez avec vos amis et entrez .... oh non attendez, il n'est pas verrouillé. - Eber, apprenti potier"
             },
             "tan_latticed_window_recipe": {
-               "recipe_name": "Fenêtre Treillis Brun Pale",
-               "description": "La fenêtre treillis que vous connaissez et aimez, en brun pale",
+               "recipe_name": "Fenêtre à treillis brun pale",
+               "description": "La fenêtre à treillis que vous connaissez et aimez, en brun pale",
                "flavor": "\"Laisse les punaises entrer, mais au moins pas les très gros !\" -- Drenkar Iskender, Ex-Marketing Associate"
             },
             "tall_clay_window_recipe": {
-               "recipe_name": "Fenêtre en Argile Brune Pale ",
+               "recipe_name": "Fenêtre en argile brune pale ",
                "description": "Donne de la douceur à l'air du désert",
                "flavor": "\"Le rebord de la fenêtre peut refroidir une très grande tarte\" -Aaryn, Pragmatique"
             },
             "tan_clay_window_frame_recipe": {
                "flavor": "\"Non, je n'ai pas oublié le colorant. \" -Isfan Dorret, inventeur d'achromatisme",
-               "recipe_name": "Fenêtre en Argile Brune Pale ",
+               "recipe_name": "Fenêtre en argile brune pale ",
                "description": "Conserve le soleil à l'intérieur"
             },
             "green_latticed_window_recipe": {
-               "recipe_name": "Fenêtre en Treillis Verte",
+               "recipe_name": "Fenêtre à treillis verte",
                "flavor": "Réminiscence d'une fenêtre de maison couvert d'une vigne, fané en mémoire",
-               "description": "La fenêtre en treillis que vous connaissez et aimez, maintenant en vert!"
+               "description": "La fenêtre à treillis que vous connaissez et aimez, maintenant en vert!"
             },
             "blue_latticed_window_recipe": {
-               "recipe_name": "Fenêtre en Treillis Bleue",
-               "description": "Une fenêtre en treillis bleue apaisante",
+               "recipe_name": "Fenêtre à treillis bleue",
+               "description": "Une fenêtre à treillis d'un bleu apaisant",
                "flavor": "\"Non mais vraiment, d'ou vient ce colorant ?\" -Farah, Attrapeur d'insecte professionnel"
             },
             "wooden_sign_potter_recipe": {
                "flavor": "Moins fragile et plus facile que de traîner un vrai pot !"
             },
             "output_box_clay_recipe": {
-               "recipe_name": "Étagère de travail en argile",
+               "recipe_name": "Étagère de produits fini en argile.",
                "description": "Stockage temporaire pour les articles fraîchement fabriqués.",
                "flavor": "Les artisans aiment montrer leur travail !"
             },
             "input_bin_clay_recipe": {
-               "recipe_name": "Bassin d'approvisionnement en céramique",
+               "recipe_name": "Bac en céramique",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_ground_clay_recipe": {
-               "recipe_name": "Support d'approvisionnement en céramique",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère en céramique",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_wall_clay_recipe": {
-               "recipe_name": "Tablette d'approvisionnement murale en céramique",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère murale en céramique",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_table_ground_clay_recipe": {
-               "recipe_name": "Table d'approvisionnement en céramique",
-               "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
+               "recipe_name": "Étagère en céramique",
+               "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_bin_clay_blue_recipe": {
-               "recipe_name": "Bassin d'approvisionnement en céramique bleue",
+               "recipe_name": "Bac en céramique bleue",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_bin_clay_red_recipe": {
-               "recipe_name": "Bassin d'approvisionnement en céramique rouge",
+               "recipe_name": "Bac en céramique rouge",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_bin_clay_green_recipe": {
-               "recipe_name": "Bassin d'approvisionnement en céramique vert",
+               "recipe_name": "Bac en céramique vert",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "blazing_inlay_recipe": {
-               "description": "Dorure radiante pour l'Épée Emblazonnée.",
+               "description": "Dorure rayonnante pour l'Épée Emblazonnée.",
                "recipe_name": "Incrustation flamboyante",
                "flavor": "Luisant de la lumière du foyer"
             },
@@ -18098,9 +18098,9 @@
                "flavor": "Plus décoratif que protecteur."
             },
 			"market_shelf_tall_ground_clay": {
-               "description": "Other players and Travellers can buy goods stocked on these shelves.",
-               "recipe_name": "Market Trading Shelf",
-               "flavor": "One Hearthling's trash is another's treasure... right?"
+               "description": "D'autres joueurs et voyageurs peuvent acheter des marchandises stockées sur ces étagères.",
+               "recipe_name": "Étagère de marché",
+               "flavor": "La poubelle d'un Hearthling est le trésor d'un autre ... n'est-ce pas?"
             }
          },
          "potter_workbench": {
@@ -18396,7 +18396,7 @@
                "flavor": "Votre ville vous aime !"
             },
             "worker_outfit_winter_recipe": {
-               "description": "Un lourd manteau de laine pour les froides nuits d'hivers.<br>Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
+               "description": "Un lourd manteau de laine pour les froides nuits d'hivers. Le travailleur qui porte cet habit amélioré se déplace avec un gain de 10% en vitesse.",
                "recipe_name": "Habit d'hiver de travailleur",
                "flavor": "L'hiver arrive !"
             },
@@ -18413,7 +18413,7 @@
             },
             "weaver_workbench_recipe": {
                "description": "Utilisé pour des confections compliquées à partir de fils et de tissus.",
-               "recipe_name": "Banc de Tisserand",
+               "recipe_name": "Établi de tisserand",
                "flavor": "Au commencement, il n'y avait rien et puis il y eu l'araignée."
             },
             "leather_helmet_recipe": {
@@ -18434,29 +18434,29 @@
                "flavor": "Étaient-elles des ailes de Phénix, ou des ailes de serpent ?"
             },
             "input_bin_amberstone_recipe": {
-               "recipe_name": "Panier d'approvisionnement tisse-lapin",
+               "recipe_name": "Panier tisse-lapin",
                "description": "Stocke en toute sécurité les fournitures d'artisanat",
                "flavor": "Les futurs maçons du clan Amberstone doivent pratiquer le discernement de qualité de la pierre pendant de nombreuses années avant qu'ils ne soient autorisés près d'un ciseau. Beaucoup ne le sont d'ailleurs jamais."
             },
             "input_bin_woven_recipe": {
-               "recipe_name": "Panier d'approvisionnement tissé",
+               "recipe_name": "Panier tissé",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
                "flavor": "Rien de tel qu'un atelier bien fourni !"
             },
             "input_bin_woven_blue_recipe": {
                "flavor": "Rien de tel qu'un atelier bien fourni !",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
-               "recipe_name": "Panier d'approvisionnement tissé bleu"
+               "recipe_name": "Panier tissé bleu"
             },
             "input_bin_woven_green_recipe": {
                "flavor": "Rien de tel qu'un atelier bien fourni !",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
-               "recipe_name": "Panier d'approvisionnement tissé vert"
+               "recipe_name": "Panier tissé vert"
             },
             "input_bin_woven_red_recipe": {
                "flavor": "Rien de tel qu'un atelier bien fourni !",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
-               "recipe_name": "Panier d'approvisionnement tissé rouge"
+               "recipe_name": "Panier tissé rouge"
             },
             "silver_bowstring_recipe": {
                "description": "Une solide bobine de fil d'argent filé",
@@ -19121,7 +19121,7 @@
             "description": "Douce, souple et bien morte"
          },
          "hard_pelt": {
-            "display_name": "Peau dure",
+            "display_name": "Chitine",
             "description": "Dur, brillant, et tout à fait mort."
          }
       },
