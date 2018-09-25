@@ -1808,7 +1808,7 @@
                   "build_raise_template": "Élever un Template",
                   "build_sink_template": "Baisser un Template",
                   "craft_menu": "Menu d'artisanat",
-                  "craft_carpenter": "Menu de charpentier",
+                  "craft_carpenter": "Menu de menuisier",
                   "craft_weaver": "Menu de tisserand",
                   "craft_mason": "Menu de maçon",
                   "craft_blacksmith": "Menu de forgeron",
@@ -2596,8 +2596,8 @@
                   "recipe_unlock_mason": "Nouvelle recette de décoration pour Maçon !",
                   "recipe_unlock_blacksmith": "Nouvelles recettes de décoration pour forgeron !",
                   "recipe_unlock_weapons_1": "Nouvelle recette d'épée légendaire - collaboration entre tisserand, potier et forgeron !",
-                  "recipe_unlock_weapons_2": "Nouvelle recette de bouclier légendaire - collaboration entre forgeron, charpentier et maçon !",
-                  "recipe_unlock_weapons_3": "Nouvelle recette d'archer légendaire - collaboration entre ingénieur, tisserand et charpentier !",
+                  "recipe_unlock_weapons_2": "Nouvelle recette de bouclier légendaire - collaboration entre forgeron, menuisier et maçon !",
+                  "recipe_unlock_weapons_3": "Nouvelle recette d'archer légendaire - collaboration entre ingénieur, tisserand et menuisier !",
                   "recipe_unlock_weapons_4": "Nouvelle recette de Diadème légendaire - collaboration entre Herboriste, Maçon et Blacksmith !"
                },
                "generosity_tier_2_reached": {
@@ -2609,7 +2609,7 @@
                "crafting_tier_2_reached": {
                   "reward_message_ctd": "Pour l'excellence dans l'artisanat. La ville est par les présentes éligible pour:",
                   "recipe_unlock_mason": "Nouvelle recette de fontaine et statue pour maçon !",
-                  "recipe_unlock_carpenter": "Nouvelles décorations et clôtures pour charpentier !",
+                  "recipe_unlock_carpenter": "Nouvelles décorations et clôtures pour menuisier !",
                   "recipe_unlock_herbalist": "Nouvelle décoration d'arbustes pour herboriste !",
                   "recipe_unlock_blacksmith": "Nouvelle recette pour forgeron !"
                },
@@ -2967,7 +2967,7 @@
                            "choice_000": "Ça me va !",
                            "choice_001": "Non. Merci.",
                            "bulletin_message": {
-                              "000": "Sur ce papier, vous trouverez la berceuse pour apaiser l'âme de la montagne. Trouvez la flûte volée. Demande à ton charpentier de l'accorder a cette mélodie. Placez-la sur le chemin d'Ogo le grand, et regardez son arrogance recevoir sa juste punition."
+                              "000": "Sur ce papier, vous trouverez la berceuse pour apaiser l'âme de la montagne. Trouvez la flûte volée. Demande à ton menuisier de l'accorder a cette mélodie. Placez-la sur le chemin d'Ogo le grand, et regardez son arrogance recevoir sa juste punition."
                            },
                            "bulletin_title": "Elle offre un morceau de papier",
                            "dialog_title": "???"
@@ -8148,7 +8148,7 @@
                      "003": "Cannibalisme. C'est ce qu'il y a au menu."
                   },
                   "diligent_sweetheart": {
-                     "000": "J'ai tellement faim... Étape 1: Apprendre à être un charpentier.",
+                     "000": "J'ai tellement faim... Étape 1: Apprendre à être un menuisier.",
                      "001": "C'est correct, je n'avais pas besoin de manger aujourd'hui.",
                      "002": "Je souhaiterais pouvoir cuisiner un gâteau au fromage.",
                      "003": "Si nous nous blotissons autour du feu la nuit, c'est presque la même chose que manger, pas vrai?",
@@ -15622,7 +15622,7 @@
          "archer_description": {
             "display_name": "Archer",
             "description": "Une unité de combat à distance qui tire sur les ennemis avec des flèches",
-            "requirements": "Fabriqué par un charpentier",
+            "requirements": "Fabriqué par un menuisier",
             "level_1_data": {
                "perk_000_name": "Maîtrise de l'arc",
                "perk_001_name": "Augmente la force de tir",
@@ -16090,7 +16090,7 @@
             },
             "level_5_data": {
                "perk_000_name": "Point de vue du maître",
-               "perk_000_description": "Le charpentier peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité plus souvent."
+               "perk_000_description": "Le menuisier peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité plus souvent."
             }
          },
          "carpenter_outfit": {
@@ -16974,7 +16974,7 @@
          "farmer_description": {
             "display_name": "Agriculteur",
             "description": "Les agriculteurs travaillent la terre et cultivent les champs pour avoir une nourriture consistante et des ingrédients pour la cuisine.",
-            "requirements": "Fabriqué par un charpentier",
+            "requirements": "Fabriqué par un menuisier",
             "level_6_data": {
                "title": "Maître agriculteur"
             },
@@ -17026,7 +17026,7 @@
          "footman_description": {
             "display_name": "Fantassin",
             "description": "Le fantassin est un combattant de corps à corps. Un bon choix de base pour de la défense de votre ville.",
-            "requirements": "Fabriqué par un charpentier",
+            "requirements": "Fabriqué par un menuisier",
             "level_4_data": {
                "perk_000_name": "40% de dommages supplémentaires",
                "perk_000_description": "Le fantassin est maintenant entrainé à optimiser les effets de chaque coups."
@@ -17298,7 +17298,7 @@
          "mason_description": {
             "display_name": "Tailleur de pierre",
             "description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
-            "requirements": "Fabriqué par un charpentier",
+            "requirements": "Fabriqué par un menuisier",
             "workshop": {
                "name": "Atelier de tailleur de pierre",
                "description": "insérer une description ici",
@@ -18132,7 +18132,7 @@
          "shepherd_description": {
             "display_name": "Berger",
             "description": "Domestique les animaux sauvages pour des ressources et de la nourriture.",
-            "requirements": "Fabriqué par un charpentier",
+            "requirements": "Fabriqué par un menuisier",
             "level_4_data": {
                "perk_000_name": "Magnétisme animal",
                "perk_000_description": "Le berger a plus de chance de trouver des animaux sauvages quand il en cherche."
@@ -18267,7 +18267,7 @@
          "weaver_description": {
             "display_name": "Tisserand",
             "description": "Le tisserand fabrique du fil et des vêtements avec des fibres naturelles et des colorants.",
-            "requirements": "Fabriqué par un charpentier",
+            "requirements": "Fabriqué par un menuisier",
             "level_6_data": {
                "title": "Maître Tisserand"
             },
@@ -18542,7 +18542,7 @@
          "herbalist_description": {
             "display_name": "Herboriste",
             "description": "Soigne les unités avec des baumes et bandages artinasaux.",
-            "requirements": "Fabriqué par un charpentier",
+            "requirements": "Fabriqué par un menuisier",
             "workshop": {
                "name": "Labo. d'Herboriste",
                "description": "Permet à l'herboriste de fabriquer des baumes de guérison et des bandages.",
@@ -19192,7 +19192,7 @@
                         "description": "Utilisez ce volet pour gérer tous vos citoyens, voir leurs stats, et définir leurs commandes de tâches."
                      },
                      "step000": {
-                        "title": "Promouvoir une Hearthling en Menuisier",
+                        "title": "Promouvoir un Hearthling en Menuisier",
                         "description": "Nous avons les bûches et un endroit pour entreposer les marchandises, mais la ville est assez vide. Heureusement, j'ai apporté une scie avec nous. Nous allons promouvoir un citoyen en menuisier !"
                      },
                      "step007": {
