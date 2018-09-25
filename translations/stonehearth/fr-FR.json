@@ -17302,22 +17302,22 @@
             "workshop": {
                "name": "Atelier de tailleur de pierre",
                "description": "insérer une description ici",
-               "long_description": "Le tailleur conçoi des matériaux de construction et des objets de décoration à partir de pierre."
+               "long_description": "Le tailleur de pierre conçoi des matériaux de construction et des objets de décoration à partir de pierre."
             },
             "level_6_data": {
                "title": "Maître tailleur"
             },
             "level_2_data": {
                "perk_000_name": "Pierre de luxe",
-               "perk_000_description": "Le tailleur peut maintenant faire sortir de roche des articles plus élaborés."
+               "perk_000_description": "Le tailleur de pierre peut maintenant faire sortir de roche des articles plus élaborés."
             },
             "level_4_data": {
                "perk_000_name": "Catalogue étendu",
-               "perk_000_description": "Le tailleur s'aventure de la sphère fonctionnelle à.. l'Art."
+               "perk_000_description": "Le tailleur de pierre s'aventure de la sphère fonctionnelle à.. l'Art."
             },
             "level_1_data": {
                "perk_000_name": "Catalogue standard",
-               "perk_000_description": "Le tailleur a maintenant une gamme solide de meubles à son catalogue."
+               "perk_000_description": "Le tailleur de pierre a maintenant une gamme solide de meubles à son catalogue."
             },
             "level_3_data": {
                "perk_000_name": "Connaissance de compagnon",
@@ -17325,7 +17325,7 @@
             },
             "level_5_data": {
                "perk_000_name": "Point de vue du maître",
-               "perk_000_description": "Le tailleur peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent."
+               "perk_000_description": "Le tailleur de pierre peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent."
             }
          },
          "mason_chisel": {
