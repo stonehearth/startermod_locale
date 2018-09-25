@@ -557,7 +557,7 @@
             "title": "Stonehearth",
             "resume": "Reprendre",
             "save": "Sauvegarder ou Charger",
-            "settings": "Paramètres",
+            "settings": "Options",
             "about": "À propos",
             "quit_to_menu": "Retour au menu principal",
             "exit_game": "Quitter le jeu",
@@ -1624,7 +1624,7 @@
             }
          },
          "settings": {
-            "title": "Paramètres",
+            "title": "Options",
             "graphics": "Graphismes",
             "gameplay": "Jouabilité",
             "controls": "Contrôles",
@@ -1852,7 +1852,7 @@
          },
          "title_screen": {
             "exit": "Quitter",
-            "settings": "Préférences",
+            "settings": "Options",
             "about": "À propos",
             "kingdom_of": "La Colonie de",
             "continue_game": "Continuer",
