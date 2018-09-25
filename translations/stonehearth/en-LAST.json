@@ -60,7 +60,10 @@
             "recuperating": "recuperating",
             "celebrating": "celebrating",
             "shopping": "trading",
-            "confused": "confused"
+            "confused": "confused",
+            "traveler_walking": "roaming your town",
+            "traveler_looking": "admiring [name(data.target)]",
+            "sit": "sitting"
          }
       }
    },
@@ -202,7 +205,9 @@
             "title": "Choose a Hearthling",
             "select_person": "Select",
             "ownership_current_owner_tooltip": "Current Owner",
-            "ownership_owns_another_tooltip": "Already Owns a Similar Object"
+            "ownership_owns_another_tooltip": "Already Owns a Similar Object",
+            "reserve_for_travelers": "Reserve for a Traveller",
+            "already_reserved_for_travelers": "Reserved"
          },
          "player_picker": {
             "title": "Choose a Player"
@@ -245,7 +250,10 @@
                   "title": "Invite Friends",
                   "message": "Click 'Continue' to open the Steam overlay. Right click the friend you want to invite to the game and click 'Invite to Game.' They will get a link in Steam chat that will let them join."
                }
-            }
+            },
+            "friends_list": "Click to Invite!",
+            "away": "away",
+            "busy": "busy"
          },
          "build_workshop": {
             "title": "Build Workshop",
@@ -473,6 +481,9 @@
                "quality-2": "Fine Quality",
                "quality-3": "Excellent Quality",
                "quality-4": "Masterwork Quality!"
+            },
+            "traveler": {
+               "gifted_by": "Gift from [str(gifter_name)]"
             }
          },
          "citizens": {
@@ -978,6 +989,17 @@
             "quest_bulletin_dialog": {
                "description": "Description",
                "rewards": "Rewards"
+            },
+            "traveler": {
+               "first": {
+                  "title": "Your First Traveller!",
+                  "message": "[str(i18n_data.traveler_name)] came to visit!<br><br>Travellers will stop by as long as there are beds reserved for them. They'll admire your town, chat with your citizens, shop at your markets, and even leave gifts for you if they had a pleasant visit.<br><br>Happy travellers will spread word of your town, and it will become a more popular destination over time!"
+               },
+               "summary": {
+                  "title": "Traveller Summary",
+                  "text": "The travellers loved your town today! They left these gifts for you:",
+                  "gifted_by": "Gift from [str(gifter)]"
+               }
             }
          },
          "build_mode2": {
@@ -1462,17 +1484,17 @@
                   "stephanie": "Paladin of Wombats",
                   "albert": "0110000101110111",
                   "chris": "Professional Scaffolding Tamer",
-                  "brad": "",
+                  "brad": "The Pun is Mightier than the Sword",
                   "linda": "🤔",
                   "allie": "Parakeet",
-                  "malley": "",
+                  "malley": "Cat Whisperer",
                   "ana": "The True Hero",
                   "richard": "Foxclan Ambassador",
                   "nikki": "Fence Crusader",
                   "justin": "I, Goblin",
                   "morgan": "Destroyer of Worlds II",
                   "angelo": "Turnip Farmer",
-                  "luke": "",
+                  "luke": "Bringer of Buns",
                   "max": "Enabler",
                   "aaron": "Phonic Phoenix",
                   "raj": "Troubadour",
@@ -8867,7 +8889,7 @@
                         "tooltip": "It's been awhile since I've talked to anyone. I really need to get some stuff off my chest."
                      },
                      "enjoys_company": {
-                        "display_name": "Enjoys the company of others",
+                        "display_name": "Enjoying company",
                         "tooltip": "It's always great to spend some time with my fellow town members."
                      }
                   }
@@ -10424,8 +10446,8 @@
          },
          "market_shelf_tall_ground_wood": {
             "market_shelf_tall_ground_wood_ghost": {
-               "display_name": "Tall Wooden Market Shelf",
-               "description": "Other players and Travelers can buy the items stored here."
+               "display_name": "Market Trading Shelf",
+               "description": "Other players and Travellers can buy the items stored here."
             }
          },
          "gem_chest": {
@@ -10446,6 +10468,18 @@
             "wheat_pile_old_iconic": {
                "display_name": "Old Wheat Bundle",
                "description": "Harvestable for wheat when placed"
+            }
+         },
+         "market_shelf_tall_ground_clay": {
+            "market_shelf_tall_ground_clay_ghost": {
+               "display_name": "Market Trading Shelf",
+               "description": "Other players and Travellers can buy the items stored here."
+            }
+         },
+         "market_shelf_tall_ground_stone": {
+            "market_shelf_tall_ground_stone_ghost": {
+               "display_name": "Market Trading Shelf",
+               "description": "Other players and Travellers can buy the items stored here."
             }
          }
       },
@@ -16333,8 +16367,8 @@
                "flavor": "But who are these people? And where are they coming from?"
             },
             "market_shelf_tall_ground_wood_recipe": {
-               "description": "Other players and Travelers can buy goods stocked on these shelves.",
-               "recipe_name": "Tall Wooden Market Shelf",
+               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "recipe_name": "Market Trading Shelf",
                "flavor": "One Hearthling's trash is another's treasure... right?"
             },
             "archer_bow_recipe": {
@@ -16718,7 +16752,7 @@
                "flavor": "The grease just gets into the eggs and tastes so good!"
             },
             "fried_eggs_large_recipe": {
-               "description": "Coming Soon! One HUGE egg fried to order.",
+               "description": "One HUGE egg fried to order.",
                "recipe_name": "Large Fried Egg",
                "flavor": "Better like yours sunnyside up!"
             },
@@ -16733,7 +16767,7 @@
                "flavor": "What a tasty slice of lizard tail!"
             },
             "roast_poultry_large_recipe": {
-               "description": "Coming Soon! Giant flightless bird leg",
+               "description": "Giant flightless bird leg",
                "recipe_name": "Poultry Drumstick",
                "flavor": "Those legs are good for running.. and eating!"
             },
@@ -17736,6 +17770,11 @@
                "description": "A planter box full of Violet flowers, built to be placed below window frames.",
                "recipe_name": "Violet Window Box",
                "flavor": "The capstone of a civilized dwelling."
+            },
+            "market_shelf_tall_ground_stone": {
+               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "recipe_name": "Market Trading Shelf",
+               "flavor": "One Hearthling's trash is another's treasure... right?"
             }
          }
       },
@@ -18057,6 +18096,11 @@
                "description": "Keeps people off your property.",
                "recipe_name": "Clay Fence Combo",
                "flavor": "More decorative than protective."
+            },
+            "market_shelf_tall_ground_clay": {
+               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "recipe_name": "Market Trading Shelf",
+               "flavor": "One Hearthling's trash is another's treasure... right?"
             }
          },
          "potter_workbench": {
@@ -19115,7 +19159,7 @@
                "scenario_data": {
                   "message": "If we're going to get this town off the ground, we'll need wood, and lots of it! Chop down some nearby trees to get logs.",
                   "completed_message": "Congratulations! We've got some wood resources now. Logs and other natural resources can be used to construct buildings and craft items. They're the first building blocks for advancing your town.",
-                  "title": "[str(i18n_data.town_name)] Town: Initial Supplies",
+                  "title": "Initial Supplies",
                   "resource_display_name": "Wooden logs"
                },
                "ui_steps": {
