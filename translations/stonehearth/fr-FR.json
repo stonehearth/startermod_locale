@@ -2788,7 +2788,7 @@
                         },
                         "stonecutter_shop2": {
                            "shop_info": {
-                              "name": "Le magasin de tailleurs de pierre de Rufus Garrow",
+                              "name": "Le magasin de tailleur de pierre de Rufus Garrow",
                               "title": "Rufus Garrow est arrivé avec quelques marchandises exceptionnelles à vendre"
                            }
                         },
@@ -4669,7 +4669,7 @@
                                  "001": "Recette de Portcullis pour l'ingénieur",
                                  "003": "Recettes de décoration  pour le forgeron",
                                  "000": "Recettes d'armes légendaires",
-                                 "002": "Statues & Windows  pour le Maçon",
+                                 "002": "Statues & fenêtres  pour le tailleur de pierre",
                                  "004": "Musique de niveau 3"
                               }
                            },
@@ -9378,24 +9378,24 @@
             "display_name": "Neige",
             "description": "Froid, gel et soleil : jour d'émerveillement ! Pourquoi es-tu, mon ami, encore profondément endormi ?<ul><li>La vitesse de croissance des plantes est réduite.</li><li>La visibilité est légèrement réduite.</li><li>Les Hearthlings sans abri auront trop froids pour travailler efficacement.</li><li>Les animaux de pâturage non abrités seront blessés par le froid.</li></ul>",
             "snow_sunny": {
-               "display_name": "Sunny Snow",
-               "description": "What a beautiful winter wonderland it is today!<ul><li>Plant growth speed is reduced.</li><li>Vision radius is only slightly reduced.</li><li>Unsheltered hearthlings are too cold to work as effectively.</li><li>Unsheltered pasture animals are hurt by the cold.</li></ul>"
+               "display_name": "Neige ensoleillée",
+               "description": "Quel beau pays de merveilles hivernales c'est aujourd'hui !<ul><li>La vitesse de croissance des plantes est réduite.</li><li>Le rayon de vision n'est que légèrement réduit.</li><li>Les Hearthlings sans abri auront trop froids pour travailler efficacement.</li><li>Les animaux de pâturage non abrités seront blessés par le froid.</li></ul>"
             }
          },
          "sandstorm": {
             "display_name": "Tempête de sable",
             "description": "Couvrez vos yeux. Couvrez vos oreilles. En fait, restez à l'intérieur.<ul><li>Les Hearthlings sans abri auront trop chauds pour travailler efficacement.</li><li>La visibilité est légèrement réduite.</li><li>Des nuages de sable traversent le paysage, détruisant les récoltes et blessant tout le monde.</li></ul>",
             "sandy_day": {
-               "display_name": "Dusty",
-               "description": "There is sand and dust... everywhere!<ul><li>Unsheltered hearthlings are too hot to work as effectively.</li><li>Vision radius is only slightly reduced.</li></ul>"
+               "display_name": "Poussiéreux",
+               "description": "Il y a du sable et de la poussière... partout !<ul><li>Les Hearthlings sans abri auront trop chauds pour travailler efficacement.</li><li>Le rayon de vision n'est que légèrement réduit.</li></ul>"
             }
          },
          "rain": {
             "display_name": "Pluie",
             "description": "De l'eau ! L'eau tombe du ciel !<ul><li>La vitesse de croissance des plantes est légèrement augmentée.</li><li>La visibilité est légèrement réduite.</li></ul>",
             "rain_sunny": {
-               "display_name": "Partial Showers",
-               "description": "Its raining, but the sun is peaking out!<ul><li>Plant growth speed is increased.</li><li>Vision radius is only slightly reduced.</li></ul>"
+               "display_name": "Averses partielles",
+               "description": "Il pleut, mais le soleil pointe !<ul><li>La vitesse de croissance des plantes est augmentée.</li><li>La visibilité est légèrement réduite.</li></ul>"
             }
          },
          "lucky": {
@@ -9419,8 +9419,8 @@
             "description": "Du vent, de la neige et de la grêle, oh mon !<ul><li>Le vent, la neige et la grêle, oh mon</li><li>La visibilité est considérablement réduite.</li><li>Les Hearthlings sans abri auront trop froids pour fonctionner efficacement.</li><li>Les animaux de pâturage non abrités seront blessés par le froid.</li></ul>"
          },
          "titanstorm": {
-            "display_name": "Titan's Shadow",
-            "description": "It's garying outside, everybody! Chop tentacles on sight.",
+            "display_name": "L'ombre du Titan",
+            "description": "Il fait gris dehors, tout le monde ! Couper les tentacules à vue.",
             "titan_titles": {
                "1": "[str(self.stonehearth:unit_info.custom_name)], Destroyer of Cubes",
                "2": "[str(self.stonehearth:unit_info.custom_name)] the Not-To-Be-Trifled-With",
