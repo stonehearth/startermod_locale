@@ -251,9 +251,9 @@
                   "message": "Cliquez sur 'Continuer' pour ouvrir l'Overlay Steam. Cliquez avec le bouton droit sur l'ami que vous souhaitez inviter au jeu et cliquez sur 'Inviter au jeu'. Ils recevront un lien dans le chat Steam qui leur permettra de rejoindre."
                }
             },
-            "friends_list": "Click to Invite!",
-            "away": "away",
-            "busy": "busy"
+            "friends_list": "Cliquez pour inviter !",
+            "away": "loin",
+            "busy": "occupé"
          },
          "build_workshop": {
             "title": "Construire l'atelier",
@@ -612,7 +612,7 @@
             "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !",
             "starving_notification": "[name(i18n_data.citizen)] est affamé !",
             "health_status_normal": "Normal",
-            "health": "HP",
+            "health": "PV",
             "gender": {
                "male": "Homme",
                "female": "Femme"
@@ -1375,7 +1375,7 @@
             "tooltip_appeal_stat": "Charme",
             "tooltip_net_worth_stat": "Valeur de l'or",
             "tooltip_effort_stat": " Effort (temps de conception)",
-            "damage_stat": "ATK",
+            "damage_stat": "ATQ",
             "armor_stat": "DEF"
          },
          "town_overview": {
@@ -5221,7 +5221,7 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "<i><font size=-1>[Sélectionnez l’arbalète et appuyez sur le bouton «Réveiller le titan» lorsque vous êtes prêt. Une fois que l’arbalète a chargé, appuyez sur le bouton Feu pour endommager le Titan. Tuer ou détruire les sbires, tentacules et racines du Titan réduira également sa santé.]<br><br>[Bonne chance !]</font>"
+                                          "00": "<i><font size=-1>[Sélectionnez l'Arbalète Cristalline et appuyez sur le bouton «Réveiller le titan» lorsque vous êtes prêt. Une fois que l'Arbalète Cristalline a chargé, appuyez sur le bouton Feu pour endommager le Titan. Tuer ou détruire les sbires, tentacules et racines du Titan réduira également sa santé.]<br><br>[Bonne chance !]</font>"
                                        },
                                        "bulletin_title": "Une Entreprise Titanesque",
                                        "dialog_title": "Dernières étapes",
@@ -5229,9 +5229,9 @@
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "\"L'arbalète semble être en parfaite condition. N'est-ce pas magnifique ? La façon dont ça scintille ?\"<br><br>Il secoue la tête pour garder l'esprit clair. \"Maintenant, ce n'est pas le moment de se laisser distraire. Maintenant que tout est en place, il ne reste plus qu'à l'activer et à appeler le Titan. Une fois que c'est arrivé, c'est à nous de faire en sorte qu'il soit chargé, mais je vais vous demander de tirer.\"C'est ta ville, alors ça semble juste\"<br><br>\"N'invoquez le Titan que lorsque vous êtes prêt pour un siège. Ce ne sera pas facile, et il ne sera pas gentil.\""
+                                          "00": "\"l'Arbalète Cristalline semble être en parfaite condition. N'est-ce pas magnifique ? La façon dont ça scintille ?\"<br><br>Il secoue la tête pour garder l'esprit clair. \"Maintenant, ce n'est pas le moment de se laisser distraire. Maintenant que tout est en place, il ne reste plus qu'à l'activer et à appeler le Titan. Une fois que c'est arrivé, c'est à nous de faire en sorte qu'il soit chargé, mais je vais vous demander de tirer.\"C'est ta ville, alors ça semble juste\"<br><br>\"N'invoquez le Titan que lorsque vous êtes prêt pour un siège. Ce ne sera pas facile, et il ne sera pas gentil.\""
                                        },
-                                       "bulletin_title": "Sasha admire l'Arbalest",
+                                       "bulletin_title": "Sasha admire l'Arbalète",
                                        "dialog_title": "Sasha quelque chose TKTK ",
                                        "choice_000": "Nous survivrons."
                                     }
@@ -5285,7 +5285,7 @@
                                     },
                                     "request2": {
                                        "bulletin_message": {
-                                          "00": "\"De plus, le Géomancien qui a travaillé le plus étroitement sur l’Arbalète, qui a fait en sorte que tout fonctionne, m’a exprimé le désir de rester à vos côté, parmi les gens qui la défendent. Je pense qu’ils ont gagné leur place ici , mais ce n'est pas à moi d'en décider.<br><br>\"Qu'en dites-vous, voudriez-vous que ce Lapin Geomancer rejoigne votre ville ?\""
+                                          "00": "\"De plus, le Géomancien qui a travaillé le plus étroitement sur l'Arbalète Cristalline, qui a fait en sorte que tout fonctionne, m’a exprimé le désir de rester à vos côté, parmi les gens qui la défendent. Je pense qu’ils ont gagné leur place ici , mais ce n'est pas à moi d'en décider.<br><br>\"Qu'en dites-vous, voudriez-vous que ce Lapin Geomancer rejoigne votre ville ?\""
                                        },
                                        "bulletin_title": "Sasha continue",
                                        "dialog_title": "Sasha gestes",
@@ -5302,11 +5302,11 @@
                                     },
                                     "intro": {
                                        "bulletin_message": {
-                                          "00": "Sasha stops, holding his knees and panting slightly. \"Whew... oh... look, over at the Arbalest! It seems... its job is done, and now it's gone dormant. Let's have it serve as a monument, a memorial, to what the friendship of our two clans could achieve!\""
+                                          "00": "Sasha s'arrête, s'appuyant sur ses genoux et haletant légèrement. \"Ouf... oh... regarde, à l'Arbalète Cristalline ! It seems... its job is done, and now it's gone dormant. Let's have it serve as a monument, a memorial, to what the friendship of our two clans could achieve!\""
                                        },
-                                       "bulletin_title": "Sasha continues",
-                                       "dialog_title": "Sasha, Envoy of Clan Amberstone",
-                                       "choice_000": "I'm glad we could do some good"
+                                       "bulletin_title": "Sasha continue",
+                                       "dialog_title": "Sasha, Envoyé du clan Amberstone",
+                                       "choice_000": "Je suis content que nous puissions faire quelque chose de bien"
                                     }
                                  }
                               }
@@ -5316,21 +5316,21 @@
                                  "dialog_nodes": {
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Would you like to let this Rabbit to join your town? <br><br><i><font size=-1>[They're surprisingly fast for their low Body!]</font></i>"
+                                          "00": "Voulez-vous laisser ce lapin rejoindre votre ville ? <br><br><i><font size=-1>[Ils sont étonnamment rapides pour leur petit corps !]</font></i>"
                                        },
-                                       "bulletin_title": "A Rabbit immigrant!",
-                                       "dialog_title": "A member of Clan Amberstone wishes to join your town!",
-                                       "choice_000": "Yes",
-                                       "choice_001": "No"
+                                       "bulletin_title": "Un immigrant Lapin !",
+                                       "dialog_title": "Un membre du clan Amberstone souhaite rejoindre votre ville !",
+                                       "choice_000": "Oui",
+                                       "choice_001": "Non"
                                     }
                                  }
                               }
                            },
                            "grant_recurring_bun_citizen": {
-                              "notification_title": "A new Rabbit citizen has joined your town!"
+                              "notification_title": "Un nouveau citoyen Lapin a rejoint votre ville !"
                            },
                            "grant_bun_citizen": {
-                              "notification_title": "Sasha's disciple has joined your town!"
+                              "notification_title": "Le disciple de Sasha a rejoint votre ville !"
                            },
                            "00_sighting": {
                               "00_sighting_intro": {
@@ -5338,13 +5338,13 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "This sounds crazy, but I swear I saw an oversized pair of rabbit ears poking out from behind a bush for a second on my way here.<br><br>Reminds me of the old tales about rabbit-people. You don't think..."
+                                             "00": "Cela semble fou, mais je jure qu'en arrivant ici, j'ai vu une paire d'oreilles de lapin surdimensionnés sortir de derrière un buisson, pendant une fraction de seconde. Cela me rappelle les vieux contes sur les lapins. Vous ne pensez pas que..."
                                           },
-                                          "bulletin_title": "A confused-looking traveller",
-                                          "dialog_title": "A Confused Traveller",
-                                          "choice_000": "Huh! Maybe we should put some carrots out...",
-                                          "choice_000b": "Huh! Maybe we should put some vegetables out...",
-                                          "choice_001": "[Ignore] Nah, was just your imagination."
+                                          "bulletin_title": "Un voyageur d'apparence confus",
+                                          "dialog_title": "Un voyageur confus",
+                                          "choice_000": "Hmm ! Peut-être devrions-nous sortir des carottes...",
+                                          "choice_000b": "Hmm ! Peut-être devrions-nous sortir des légumes...",
+                                          "choice_001": "[Ignorer] Nan, c'était juste ton imagination."
                                        }
                                     }
                                  }
@@ -5354,10 +5354,10 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "We left those carrots out overnight, and in the morning they were gone... along with the baskets.<br/><br/> Strange..."
+                                             "00": "Nous avons laissé ces carottes toute la nuit et le matin elles avaient disparues... avec les paniers.<br/><br/> Étrange..."
                                           },
-                                          "bulletin_title": "Missing Carrots!",
-                                          "dialog_title": "Missing Carrots",
+                                          "bulletin_title": "Les carottes disparues !",
+                                          "dialog_title": "Les carottes disparues !",
                                           "choice_000": "OK"
                                        }
                                     }
@@ -5368,10 +5368,10 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "We left those veggies out overnight, and in the morning they were gone... along with the baskets.<br/><br/> Strange..."
+                                             "00": "Nous avons laissé ces légumes toute la nuit et le matin elles avaient disparues... avec les paniers.<br/><br/> Étrange..."
                                           },
-                                          "bulletin_title": "Missing Veggies!",
-                                          "dialog_title": "Missing Veggies",
+                                          "bulletin_title": "Les légumes disparues !",
+                                          "dialog_title": "Les légumes disparues !",
                                           "choice_000": "OK"
                                        }
                                     }
@@ -5382,10 +5382,10 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "We'll leave the veggies out past the edge of town overnight. Wonder if they'll still be there in the morning..."
+                                             "00": "Nous laisserons les légumes au bord de la ville pendant la nuit. Je me demande si ils seront toujours là le matin ..."
                                           },
-                                          "bulletin_title": "Now We Wait",
-                                          "dialog_title": "Now We Wait",
+                                          "bulletin_title": "Maintenant attendons",
+                                          "dialog_title": "Maintenant attendons",
                                           "choice_000": "OK"
                                        }
                                     }
@@ -5396,24 +5396,24 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "We'll leave the carrots out past the edge of town overnight. Wonder if they'll still be there in the morning..."
+                                             "00": " Nous laisserons les carottes au bord de la ville pendant la nuit. Je me demande si elles seront toujours là le matin ..."
                                           },
-                                          "bulletin_title": "Now We Wait",
-                                          "dialog_title": "Now We Wait",
+                                          "bulletin_title": "Maintenant attendons",
+                                          "dialog_title": "Maintenant attendons",
                                           "choice_000": "OK"
                                        }
                                     }
                                  }
                               },
                               "00b_sighting_quest": {
-                                 "title": "Veggies for a maybe-Rabbit",
-                                 "dialog_title": "Put out some vegetables!",
-                                 "text": "Let's leave some vegetables out overnight, just in case."
+                                 "title": "Des légumes pour... peut-être un lapin",
+                                 "dialog_title": "Mettez y des légumes !",
+                                 "text": "Laissons des légumes pour la nuit, au cas où."
                               },
                               "00_sighting_quest": {
-                                 "title": "Carrots for a maybe-Rabbit",
-                                 "dialog_title": "Put out some carrots!",
-                                 "text": "Let's leave some carrots out overnight, just in case."
+                                 "title": "Des carottes pour... peut-être un lapin",
+                                 "dialog_title": "Mettez y des carottes!",
+                                 "text": "Laissons des carottes pour la nuit, au cas où."
                               }
                            },
                            "14_chase_scene": {
@@ -5422,45 +5422,45 @@
                                     "dialog_nodes": {
                                        "heal": {
                                           "bulletin_message": {
-                                             "00": "\"Thank you! I think I lost them, so we should have some time.\""
+                                             "00": "\"Merci ! Je pense les avoir perdus, alors on devrait avoir du temps.\""
                                           },
-                                          "bulletin_title": "An Injured Rabbit",
-                                          "dialog_title": "An Injured Rabbit",
-                                          "choice_000": "Let us get some supplies together."
+                                          "bulletin_title": "Un Lapin blessé",
+                                          "dialog_title": "Un Lapin blessé",
+                                          "choice_000": "Laissez-nous assembler quelques fournitures."
                                        },
                                        "fight": {
                                           "bulletin_message": {
-                                             "00": "\"Thank you! I'll lead them here, make sure you're ready for them!\""
+                                             "00": "\"Merci ! Je vais les conduire ici, assurez-vous d'être prêt à les recevoir !\""
                                           },
-                                          "bulletin_title": "An Injured Rabbit",
-                                          "dialog_title": "An Injured Rabbit",
-                                          "choice_000": "We're ready!"
+                                          "bulletin_title": "Un Lapin blessé",
+                                          "dialog_title": "Un Lapin blessé",
+                                          "choice_000": "Nous sommes prêts!"
                                        },
                                        "leave": {
                                           "bulletin_message": {
-                                             "00": "\"I understand. I haven't heard any howling in a while, I think your human odors might have thrown them off. I'll make a break for it, the long way around...\""
+                                             "00": "\"Je comprends. Je n'ai pas entendu de hurlement depuis un moment, je pense que vos odeurs humaines les ont peut-être fait fuir. Je vais faire une pause, au bord du chemin...\""
                                           },
-                                          "bulletin_title": "An Injured Rabbit",
-                                          "dialog_title": "An Injured Rabbit",
-                                          "choice_000": "Good luck!"
+                                          "bulletin_title": "Un Lapin blessé",
+                                          "dialog_title": "Un Lapin blessé",
+                                          "choice_000": "Bonne chance !"
                                        },
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "\"Thank goodness, I have nowhere else to turn. I'll hide somewhere, let me know when you're ready.\""
+                                             "00": "\"Dieu merci, je n'ai nulle part où aller. Je me cacherai quelque part, laisse-moi savoir quand tu seras prêt.\""
                                           },
-                                          "bulletin_title": "Chase Scene",
-                                          "dialog_title": "A Wounded Rabbit",
+                                          "bulletin_title": "Scène de chasse",
+                                          "dialog_title": "Un Lapin blessé",
                                           "choice_000": "OK"
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "A wounded rabbit limps into town, panting. \"Help! Aid! I was scouting and was caught out by a group of kobolds. I made it this far, but I'm hurt and I think their wolves are tracking me...\""
+                                             "00": "Un Lapin blessé arrive en ville, haletant. \"À l'aide ! À l'aide ! J'étais en train de chercher et j'ai été surpris par un groupe de kobolds. Je suis arrivé jusqu'ici, mais je suis blessé et je pense que leurs loups me traquent...\""
                                           },
-                                          "bulletin_title": "Chase Scene",
-                                          "dialog_title": "A Wounded Rabbit",
-                                          "choice_000": "Stay and rest. We'll protect you.",
-                                          "choice_001": "We can patch you up so you can make it home.",
-                                          "choice_002": "I'm sorry, we can't help. Good luck"
+                                          "bulletin_title": "Scène de chasse",
+                                          "dialog_title": "Un Lapin blessé",
+                                          "choice_000": "Restez et reposez-vous. Nous vous protégerons",
+                                          "choice_001": "Nous pouvons vous rafistoler afin que vous puissiez retourner à la maison.",
+                                          "choice_002": "Je suis désolé, nous ne pouvons pas vous aider. Bonne chance"
                                        }
                                     }
                                  }
@@ -5470,19 +5470,19 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "000": "\"Thanks, you truly saved me.<br><br>...so, the Kobolds <i>may</i> have been chasing me because I <i>might</i> have stolen these from them...\" the young rabbit says, bashfully.<br><br>\"Here, you've earned them.\"<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                             "000": "\"Merci, vous m'avez vraiment sauvé.<br><br>...alors, les Kobolds <i>may</i> me poursuivent parce que je <i>pourrais</i> leur avoir volé...\" Le jeune Lapin dit, timidement.<br><br>\"Ici, vous les avez gagnés.\"<br><br><font size=-1><i>[La réputation auprès des lapins a augmenté]</i></font>"
                                           },
-                                          "bulletin_title": "A Grateful Rabbit",
-                                          "dialog_title": "A Grateful Rabbit",
-                                          "choice_000": "Thanks, and be safe!"
+                                          "bulletin_title": "Un Lapin reconnaissant",
+                                          "dialog_title": "Un Lapin reconnaissant",
+                                          "choice_000": "Merci et restez en sécurité !"
                                        }
                                     }
                                  }
                               },
                               "14_chase_scene_quest_b": {
-                                 "title": "Chase Scene: Heal the rabbit",
-                                 "dialog_title": "Heal the rabbit!",
-                                 "text": "Let's patch up the rabbit with some bandages and healing tonics."
+                                 "title": "Scène de chasse : Soigne le Lapin",
+                                 "dialog_title": "Soigne le Lapin !",
+                                 "text": "Rafistolons le Lapin avec des bandages et des toniques de guérison."
                               }
                            },
                            "23_borrow_crafter": {
@@ -5490,9 +5490,9 @@
                                  "dialog_tree_info": {
                                     "dialog_nodes": {
                                        "msg1": {
-                                          "bulletin_title": "Borrowed Time",
-                                          "choice_000": "Sure!",
-                                          "choice_001": "Sorry, but no."
+                                          "bulletin_title": "Sursis",
+                                          "choice_000": "Bien sûr !",
+                                          "choice_001": "Désolé, mais non."
                                        }
                                     }
                                  }
@@ -5502,10 +5502,10 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Here is your townsperson, back safe and sound! I think they found the change in scenery to be invigorating, and we certainly found them to be quite helpful!\"<br><br><font size=-1><i>[Rabbit reputation increased, and your citizen is in high spirits!]</i></font>"
+                                             "00": "\"Voilà votre citoyen, sains et saufs ! Je pense qu'il a trouvé le changement de décor revigorant, de plus nous l'avons trouvés très serviable !\"<br><br><font size=-1><i>[La réputation des Lapins a augmenté et votre citoyen est de bonne humeur !]</i></font>"
                                           },
-                                          "choice_000": "Welcome back!",
-                                          "bulletin_title": "Borrowed Time"
+                                          "choice_000": "Bon retour !",
+                                          "bulletin_title": "Sursis"
                                        }
                                     }
                                  }
@@ -5515,7 +5515,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"We have need of an experienced Carpenter for two days, to help with bracing a tunnel and putting up new vegetable storage.\"\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Nous avons besoin d'un menuisier expérimenté pendant deux jours, pour aider à entretenir un tunnel et mettre en place un nouveau stockage de légumes.\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et il sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
@@ -5526,7 +5526,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"We have need of an experienced Blacksmith for two days, to help us with forging some new digging equipment.\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Nous avons besoin d'un forgeron expérimenté pendant deux jours, pour nous aider à forger un nouvel équipement de creusement.\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et il sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
@@ -5537,7 +5537,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"My Herbalists would like to compare notes with one of your own for a couple of days.\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Nos herboristes aimeraient comparer leurs notes avec l’une des votres pendant quelques jours.\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et il sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
@@ -5548,7 +5548,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Dear humans, some of my clan respect the efficiency of your Trappers. Could one visit for two days, so that we might learn their methods and adapt them for our own use?\"<br><br>\"We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Chers humains, certains membres de mon clan respectent l'efficacité de vos trappeurs. L'un d'eux pourrait-il nous rendre visite pendant deux jours, afin que nous puissions apprendre leurs méthodes et les adapter pour notre propre usage?\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et il sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
@@ -5559,7 +5559,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Would you be willing to send one of your experienced Cooks as a liaison for two days? We would love to learn more about human cuisine.\"<br><br>\" We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Seriez-vous prêt à envoyer un de vos cuisiniers expérimentés comme agent de liaison pour deux jours? Nous aimerions en savoir plus sur la cuisine humaine.\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et il sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
@@ -5570,7 +5570,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"We have need of an experienced Weaver for two days, to help us understand this 'loom' contraption of theirs.\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Nous avons besoin d’un tisserand expérimenté pendant deux jours, pour nous aider à comprendre cet appareil\" à tisser \".\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et ils sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
@@ -5581,7 +5581,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Dear friends, I would like to request two days of an experienced Potter's time. My clan has focused on Masonry for so long that we would benefit from a Potter's instruction.\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Chers amis, j'aimerais demander deux jours d'expérimentation à l'un de vos Potiers. Mon clan s'est concentré sur la maçonnerie pendant si longtemps que nous pourrions bénéficier des instructions d'un Potier.\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et ils sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
@@ -5592,7 +5592,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"We have need of someone with Engineering skills for around two days to help us trap a tunnel that goblins have discovered and we cannot afford to collapse.\"<br><br>\"Would you be willing to spare someone? We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Nous avons besoin de quelqu'un avec des compétences en ingénierie pendant environ deux jours pour nous aider à piéger un tunnel que les gobelins ont découvert et nous ne pouvons pas nous permettre qu'il s\"effondre.\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et ils sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
@@ -5603,56 +5603,56 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Some of my clan are starting to experiment with aboveground farming, and would benefit greatly from consult with your expert Farmers.\"<br><br>\"Would you be willing to spare someone for a couple of days? We will provide the supplies, and they will be an honored guest of the warren.\""
+                                             "00": "\"Certains membres de mon clan commencent à expérimenter l’agriculture en surface et bénéficieraient grandement de la consultation d'un de vos experts Fermier.\"<br><br>\"Seriez-vous prêt à vous en séparer ? Nous fournirons l'équipement et ils sera l'invité d'honneur de notre Terrier\""
                                           }
                                        }
                                     }
                                  }
                               },
                               "borrow_quest_blacksmith": {
-                                 "title": "Send a Blacksmith",
-                                 "dialog_title": "Send a Blacksmith",
-                                 "text": "Select a Blacksmith (Level 3+) to help Clan Amberstone."
+                                 "title": "Envoyer un forgeron",
+                                 "dialog_title": "Envoyer un forgeron",
+                                 "text": "Sélectionnez un forgeron (niveau 3+) pour aider le clan Amberstone."
                               },
                               "borrow_quest_carpenter": {
-                                 "title": "Send a Carpenter",
-                                 "dialog_title": "Send a Carpenter",
-                                 "text": "Select a Carpenter (Level 3+) to help Clan Amberstone."
+                                 "title": "Envoyer un menuisier",
+                                 "dialog_title": "Envoyer un menuisier",
+                                 "text": "Sélectionnez un menuisier (niveau 3+) pour aider le clan Amberstone."
                               },
                               "borrow_quest_cook": {
-                                 "title": "Send a Cook",
-                                 "dialog_title": "Send a Cook",
-                                 "text": "Select a Cook (Level 3+) to help Clan Amberstone."
+                                 "title": "Envoyer un cuisinier",
+                                 "dialog_title": "Envoyer un cuisinier",
+                                 "text": "Sélectionnez un cuisinier (niveau 3+) pour aider le clan Amberstone."
                               },
                               "borrow_quest_engineer": {
-                                 "title": "Send an Engineer",
-                                 "dialog_title": "Send an Engineer",
-                                 "text": "Select an Engineer (Level 2+) to help Clan Amberstone."
+                                 "title": "Envoyer un ingénieur",
+                                 "dialog_title": "Envoyer un ingénieur",
+                                 "text": "Sélectionnez un ingénieur (niveau 2+) pour aider le clan Amberstone."
                               },
                               "borrow_quest_farmer": {
-                                 "title": "Send a Farmer",
-                                 "dialog_title": "Send a Farmer",
-                                 "text": "Select a Farmer (Level 4+) to help Clan Amberstone."
+                                 "title": "Envoyer un fermier",
+                                 "dialog_title": "Envoyer un fermier",
+                                 "text": "Sélectionnez un fermier (niveau 4+) pour aider le clan Amberstone."
                               },
                               "borrow_quest_herbalist": {
-                                 "title": "Send an Herbalist",
-                                 "dialog_title": "Send an Herbalist",
-                                 "text": "Select an Herbalist (Level 3+) to help Clan Amberstone."
+                                 "title": "Envoyer un herboriste",
+                                 "dialog_title": "Envoyer un herboriste",
+                                 "text": "Sélectionnez un herboriste (niveau 3+) pour aider le clan Amberstone."
                               },
                               "borrow_quest_potter": {
-                                 "title": "Send a Potter",
-                                 "dialog_title": "Send a Potter",
-                                 "text": "Select a Potter (Level 3+) to help Clan Amberstone."
+                                 "title": "Envoyer un potier",
+                                 "dialog_title": "Envoyer un potier",
+                                 "text": "Sélectionnez un potier (Niveau 3+) pour aider le Clan Amberstone."
                               },
                               "borrow_quest_trapper": {
-                                 "title": "Send a Trapper",
-                                 "dialog_title": "Send a Trapper",
-                                 "text": "Select a Trapper (Level 3+) to help Clan Amberstone."
+                                 "title": "Envoyer un trappeur",
+                                 "dialog_title": "Envoyer un trappeur",
+                                 "text": "Sélectionnez un trappeur (niveau 3+) pour aider le clan Amberstone."
                               },
                               "borrow_quest_weaver": {
-                                 "title": "Send a Weaver",
-                                 "dialog_title": "Send a Weaver",
-                                 "text": "Select a Weaver (Level 3+) to help Clan Amberstone."
+                                 "title": "Envoyer un tisserand",
+                                 "dialog_title": "Envoyer un tisserand",
+                                 "text": "Sélectionnez un tisserand (niveau 3+) pour aider le clan Amberstone."
                               }
                            },
                            "30_geomancy": {
@@ -5660,9 +5660,9 @@
                                  "dialog_tree_info": {
                                     "dialog_nodes": {
                                        "msg1": {
-                                          "bulletin_title": "Buried Knowledge",
-                                          "choice_000": "[Skip Story] Know all about it",
-                                          "choice_001": "Please, tell us",
+                                          "bulletin_title": "Connaissance enterrée",
+                                          "choice_000": "[Ignorer l'histoire] On est au courant.",
+                                          "choice_001": "S'il te plait dis nous",
                                           "bulletin_message": {
                                              "00": "\"My dear human friends! It has been generations since we Lapine have found an ally as trustworthy as you. We have decided to offer you a precious gift.\"<br><br>\"We would like to bring one of your own into our warren for a time, to teach them the art of Geomancy.\"<br><br>\"Do you understand how vital Geomancy is to us, of the history of my kind and of Clan Amberstone?\""
                                           }
@@ -6450,7 +6450,7 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "Sasha revient, avec un arc massif et étincelant au-dessus d'un golem trépidant. \"Je sais que vous avez précédemment refusé de nous aider à combattre le Titan, mais nous avons terminé cet Arbalète malgré votre refus \"Il a fallu des sacrifices, mais nous ne savions pas quoi faire d'autre.\"<br><br>\"Cela ne sert à rien dans notre labyrinthe, alors nous l'avons apporté ici pour vous rappeler notre demande. Si vous décidez de faire face au mal somnolent, déployez simplement l'Arbalète Cristalline et je vous instruirai davantage."
+                                             "00": "Sasha revient, avec un arc massif et étincelant au-dessus d'un golem trépidant. \"Je sais que vous avez précédemment refusé de nous aider à combattre le Titan, mais nous avons terminé cette Arbalète Cristalline malgré votre refus \"Il a fallu des sacrifices, mais nous ne savions pas quoi faire d'autre.\"<br><br>\"Cela ne sert à rien dans notre labyrinthe, alors nous l'avons apporté ici pour vous rappeler notre demande. Si vous décidez de faire face au mal somnolent, déployez simplement l'Arbalète Cristalline et je vous instruirai davantage."
                                           },
                                           "bulletin_title": "Une Entreprise Titanesque",
                                           "choice_000": "Je vois. Nous allons considérer ça..."
@@ -6463,7 +6463,7 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "Sasha revient avec un arc massif et étincelant qui tremble précairement posé sur un golem. <br><br>\"Il a fallu faire des sacrifices, mais nous avons complété l'Arbalète Crystalline selon les spécifications de mes ancêtres. J'espère que cela fonctionnera.\"<br><br>\"Si vous êtes toujours ouvert à combattre cette monstruosité, signalez votre disponibilité en déployant l'Arbalète, et je vous informerai de son utilisation.\""
+                                             "00": "Sasha revient avec un arc massif et étincelant qui tremble précairement posé sur un golem. <br><br>\"Il a fallu faire des sacrifices, mais nous avons complété l'Arbalète Cristalline selon les spécifications de mes ancêtres. J'espère que cela fonctionnera.\"<br><br>\"Si vous êtes toujours ouvert à combattre cette monstruosité, signalez votre disponibilité en déployant l'Arbalète Cristalline, et je vous informerai de son utilisation.\""
                                           },
                                           "bulletin_title": "Une Entreprise Titanesque",
                                           "choice_000": "Wow, impressionnant !"
@@ -6476,7 +6476,7 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "Sasha revient, suivi par vos citoyens envoyés et un arc massif et étincelant équilibré au sommet d'un golem qui tremble.<br><br>\"Je suis revenu, non seulement avec vos concitoyens, mais avec une Arbalète Crystalline complète, construit selon les spécifications de nos ancêtres. J'espère que cela fonctionne.<br><br>\"Signalez votre disponibilité en déployant l'Arbalète, et je vous en informerai de son utilisation.\""
+                                             "00": "Sasha revient, suivi par vos citoyens envoyés et un arc massif et étincelant équilibré au sommet d'un golem qui tremble.<br><br>\"Je suis revenu, non seulement avec vos concitoyens, mais avec une Arbalète Cristalline complète, construit selon les spécifications de nos ancêtres. J'espère que cela fonctionne.<br><br>\"Signalez votre disponibilité en déployant l'Arbalète Cristalline, et je vous en informerai de son utilisation.\""
                                           },
                                           "bulletin_title": "Une Entreprise Titanesque",
                                           "choice_000": "Wow, bon travail !"
@@ -18097,7 +18097,7 @@
                "recipe_name": "Clôture en argile",
                "flavor": "Plus décoratif que protecteur."
             },
-			"market_shelf_tall_ground_clay": {
+            "market_shelf_tall_ground_clay": {
                "description": "D'autres joueurs et voyageurs peuvent acheter des marchandises stockées sur ces étagères.",
                "recipe_name": "Étagère de marché",
                "flavor": "La poubelle d'un Hearthling est le trésor d'un autre ... n'est-ce pas?"
@@ -18413,7 +18413,7 @@
             },
             "weaver_workbench_recipe": {
                "description": "Utilisé pour des confections compliquées à partir de fils et de tissus.",
-               "recipe_name": "Établi de tisserand",
+               "recipe_name": "Banc de Tisserand",
                "flavor": "Au commencement, il n'y avait rien et puis il y eu l'araignée."
             },
             "leather_helmet_recipe": {
