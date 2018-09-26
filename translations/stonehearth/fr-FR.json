@@ -825,7 +825,7 @@
                   "potter": {
                      "display_name": "Potier",
                      "description": "Fait des briques et d'autres biens à partir d'argile.",
-                     "required_job_text": "Nécessite un Potier"
+                     "required_job_text": "Nécessite un potier"
                   },
                   "herbalist": {
                      "display_name": "Herboriste",
@@ -840,7 +840,7 @@
                   "geomancer": {
                      "display_name": "Menu du Géomancien",
                      "description": "Invoquer des pierres et des golems",
-                     "required_job_text": "Nécessite un Géomancien"
+                     "required_job_text": "Nécessite un géomancien"
                   }
                }
             },
@@ -2564,7 +2564,7 @@
                },
                "stonecutter_shop": {
                   "shop_info": {
-                     "name": "Rufus Garrow - Tailleur de pierre",
+                     "name": "Rufus Garrow - Maçon",
                      "title": "Rufus Garrow arrive pour vendre sa marchandise"
                   }
                },
@@ -2593,12 +2593,12 @@
                   "tier_2_shops": "Magasins niveau 2",
                   "tier_2_BGM": "BGM niveau 2",
                   "recipe_unlock_engineer": "Nouvelle recette de herse pour Ingénieur !",
-                  "recipe_unlock_mason": "Nouvelle recette de décoration pour Maçon !",
+                  "recipe_unlock_mason": "Nouvelle recette de décoration pour maçon !",
                   "recipe_unlock_blacksmith": "Nouvelles recettes de décoration pour forgeron !",
                   "recipe_unlock_weapons_1": "Nouvelle recette d'épée légendaire - collaboration entre tisserand, potier et forgeron !",
                   "recipe_unlock_weapons_2": "Nouvelle recette de bouclier légendaire - collaboration entre forgeron, menuisier et maçon !",
                   "recipe_unlock_weapons_3": "Nouvelle recette d'archer légendaire - collaboration entre ingénieur, tisserand et menuisier !",
-                  "recipe_unlock_weapons_4": "Nouvelle recette de Diadème légendaire - collaboration entre Herboriste, Maçon et Blacksmith !"
+                  "recipe_unlock_weapons_4": "Nouvelle recette de Diadème légendaire - collaboration entre herboriste, maçon et forgeron !"
                },
                "generosity_tier_2_reached": {
                   "reward_message_ctd": "Comme preuve d'une grande générosité envers les plus démunis. La ville est par les présentes éligible pour:",
@@ -2788,13 +2788,13 @@
                         },
                         "stonecutter_shop2": {
                            "shop_info": {
-                              "name": "Le magasin de tailleur de pierre de Rufus Garrow",
+                              "name": "Le magasin de maçon de Rufus Garrow",
                               "title": "Rufus Garrow est arrivé avec quelques marchandises exceptionnelles à vendre"
                            }
                         },
                         "stonecutter_shop_2": {
                            "shop_info": {
-                              "name": "Magasin de Rufus Garrow, tailleurs de pierres",
+                              "name": "Magasin de Rufus Garrow, maçon",
                               "title": "Rufus Garrow est arrivé avec de meilleures marchandises à vendre"
                            }
                         },
@@ -4657,7 +4657,7 @@
                            },
                            "shrine_upgrade_guildmaster": {
                               "achievements": {
-                                 "001": "Fontaines & Décorations  pour le Maçon",
+                                 "001": "Fontaines & Décorations  pour le maçon",
                                  "003": "Décorations pour le forgeron",
                                  "000": "Qualité de création Maître débloqué",
                                  "002": "Topiaire pour l'Herboriste et clôtures pour lemenuisier",
@@ -4669,14 +4669,14 @@
                                  "001": "Recette de Portcullis pour l'ingénieur",
                                  "003": "Recettes de décoration  pour le forgeron",
                                  "000": "Recettes d'armes légendaires",
-                                 "002": "Statues & fenêtres  pour le tailleur de pierre",
+                                 "002": "Statues & fenêtres  pour le maçon",
                                  "004": "Musique de niveau 3"
                               }
                            },
                            "shrine_upgrade_deity": {
                               "achievements": {
                                  "001": "Arbustes pour l'Herboriste",
-                                 "003": "Fountaine de Chance pour le Maçon",
+                                 "003": "Fountaine de Chance pour le maçon",
                                  "000": "Esprit, Corps et Âme +1 !",
                                  "002": "Décorations pour le forgeron",
                                  "004": "Musique de niveau 3"
@@ -5100,7 +5100,7 @@
                   "dialog_title": "Mise à niveau du foyer : Artisanat"
                },
                "unlock_shrine_recipes": {
-                  "bulletin_title": "Recettes de sanctuaire pour le Maçon débloqué!"
+                  "bulletin_title": "Recettes de sanctuaire pour le maçon débloqué!"
                }
             },
             "titan": {
@@ -6509,7 +6509,7 @@
                            },
                            "40_recipe_sharing": {
                               "40_grant_recipes_mason": {
-                                 "bulletin_title": "Recettes Amberstone Maçon débloqués !"
+                                 "bulletin_title": "Recettes Amberstone de maçon débloqués !"
                               },
                               "40_grant_recipes_weaver": {
                                  "bulletin_title": "Recettes Amberstone de tisserand débloqués !"
@@ -6519,7 +6519,7 @@
                                     "dialog_nodes": {
                                        "accept": {
                                           "bulletin_message": {
-                                             "00": "\"Splendide ! Je pense que même un novice, Maçon et Tisserand, irait bien, tant qu'ils seraient réceptifs à l'enseignement. Cela ne devrait pas prendre plus de deux jours.\""
+                                             "00": "\"Splendide ! Je pense que même un novice, maçon et tisserand, irait bien, tant qu'ils seraient réceptifs à l'enseignement. Cela ne devrait pas prendre plus de deux jours.\""
                                           },
                                           "bulletin_title": "Style lapin",
                                           "choice_000": "Voyons voir qui envoyer..."
@@ -6555,7 +6555,7 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "Vos artisans Maçon et Tisserand sont de retour, connaissant toutes sortes de recettes de lapin !<br><br>\"Je dois dire que vos concitoyens ont partagé avec nous des histoires sur le poh-yoh paht-pai. Je dois absoluement essayer ça un jour...\""
+                                             "00": "Vos artisans maçon et tisserand sont de retour, connaissant toutes sortes de recettes de lapin !<br><br>\"Je dois dire que vos concitoyens ont partagé avec nous des histoires sur le poh-yoh paht-pai. Je dois absoluement essayer ça un jour...\""
                                           },
                                           "bulletin_title": "Style lapin",
                                           "dialog_title": "Style lapin",
@@ -6567,7 +6567,7 @@
                               "40_recipe_sharing_quest": {
                                  "title": "Style lapin",
                                  "dialog_title": "Style lapin",
-                                 "text": "Sélectionnez un Maçon et un Tisserand (niveaux 1+) pour apprendre les recettes Amberstone"
+                                 "text": "Sélectionnez un maçon et un tisserand (niveaux 1+) pour apprendre les recettes Amberstone"
                               }
                            }
                         }
@@ -17296,69 +17296,69 @@
       },
       "mason": {
          "mason_description": {
-            "display_name": "Tailleur de pierre",
-            "description": "Le tailleur de pierre produit des éléments de construction ou décoratif à partir de la pierre brute.",
+            "display_name": "Maçon",
+            "description": "Le maçon produit des éléments de construction ou décoratif à partir de la pierre brute.",
             "requirements": "Fabriqué par un menuisier",
             "workshop": {
-               "name": "Atelier de tailleur de pierre",
+               "name": "Atelier de maçon",
                "description": "insérer une description ici",
-               "long_description": "Le tailleur de pierre conçoi des matériaux de construction et des objets de décoration à partir de pierre."
+               "long_description": "Le maçon conçois des matériaux de construction et des objets de décoration à partir de pierre."
             },
             "level_6_data": {
-               "title": "Maître tailleur"
+               "title": "Maître maçon"
             },
             "level_2_data": {
                "perk_000_name": "Pierre de luxe",
-               "perk_000_description": "Le tailleur de pierre peut maintenant faire sortir de roche des articles plus élaborés."
+               "perk_000_description": "Le maçon peut maintenant faire sortir de roche des articles plus élaborés."
             },
             "level_4_data": {
                "perk_000_name": "Catalogue étendu",
-               "perk_000_description": "Le tailleur de pierre s'aventure de la sphère fonctionnelle à.. l'Art."
+               "perk_000_description": "Le maçon s'aventure de la sphère fonctionnelle à.. l'Art."
             },
             "level_1_data": {
                "perk_000_name": "Catalogue standard",
-               "perk_000_description": "Le tailleur de pierre a maintenant une gamme solide de meubles à son catalogue."
+               "perk_000_description": "Le maçon a maintenant une gamme solide de meubles à son catalogue."
             },
             "level_3_data": {
                "perk_000_name": "Connaissance de compagnon",
-               "perk_000_description": "Quand l'inspiration frappe, le tailleur de pierre est capable de fabriquer une qualité particulièrement fine."
+               "perk_000_description": "Quand l'inspiration frappe, le maçon est capable de fabriquer une qualité particulièrement fine."
             },
             "level_5_data": {
                "perk_000_name": "Point de vue du maître",
-               "perk_000_description": "Le tailleur de pierre peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent."
+               "perk_000_description": "Le maçon peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent."
             }
          },
          "mason_chisel": {
-            "display_name": "Ciseau de tailleur de pierre",
-            "description": "L'outil maître pour un tailleur de pierre.",
+            "display_name": "Ciseau de maçon",
+            "description": "L'outil maître pour un maçon.",
             "mason_chisel_talisman": {
-               "display_name": "Ciseau de tailleur de pierre",
-               "description": "Requis pour promouvoir un hearthling en tailleur de pierre."
+               "display_name": "Ciseau de maçon",
+               "description": "Requis pour promouvoir un hearthling en maçon."
             }
          },
          "mason_hammer": {
-            "display_name": "Marteau de tailleur de pierre",
-            "description": "L'outil maître pour un tailleur de pierre."
+            "display_name": "Marteau de maçon",
+            "description": "L'outil maître pour un maçon."
          },
          "mason_outfit": {
-            "display_name": "Blouse de tailleur de pierre",
-            "description": "L'uniforme de tous les tailleurs de pierre."
+            "display_name": "Blouse de maçon",
+            "description": "L'uniforme de tous les maçon."
          },
          "mason_workbench": {
             "mason_workbench_ghost": {
-               "display_name": "Établi de tailleur de pierre",
-               "description": "Utilisé par les tailleurs de pierre pour leur artisanat."
+               "display_name": "Établi de maçon",
+               "description": "Utilisé par les maçon pour leur artisanat."
             }
          },
          "mason_pedestal_amberstone": {
             "mason_pedestal_amberstone_ghost": {
                "display_name": "Piédestal de maçon Amberstone",
-               "description": "Approuvé par le Lapin Maçon "
+               "description": "Approuvé par le Lapin maçon "
             }
          },
          "mason_pedestal": {
             "mason_pedestal_ghost": {
-               "display_name": "Piédestal de tailleur de pierre",
+               "display_name": "Piédestal de maçon",
                "description": "Créez dans un espace bien éclairé."
             }
          },
@@ -17481,18 +17481,18 @@
                "flavor": "Génial pour illuminer les allées de jardin et intimider les invités."
             },
             "mason_workbench_recipe": {
-               "description": "Indispensable à la fabrication de la plupart des produits du tailleur de pierre.",
-               "recipe_name": "Établi de tailleur de pierre",
-               "flavor": "Tappety-tap; Fait chanter la terre; Éveille le fantôme de Brelor; Regarde la montagnes prendre son envole."
+               "description": "Indispensable à la fabrication de la plupart des produits du maçon.",
+               "recipe_name": "Établi de maçon",
+               "flavor": "Tappety-tap, fait chanter la terre, éveille le fantôme de Brelor, Regarde la montagnes prendre son envole."
             },
             "mason_pedestal_amberstone_recipe": {
-               "description": "Approuvé par le Lapin Maçon ",
+               "description": "Approuvé par le Lapin maçon ",
                "recipe_name": "Piédestal de maçon Amberstone",
                "flavor": "La compétence d'un maçon peut être lue à travers la qualité de leur table de travail"
             },
             "mason_pedestal_recipe": {
                "description": "Une zone de travail bien éclairée pour créer des sculptures en pierre.",
-               "recipe_name": "Autel de tailleur de pierre",
+               "recipe_name": "Autel de maçon",
                "flavor": "Crépitements et étincelles, sifflement du charbon, éclaire la voie, transmute la terre complète."
             },
             "workbenches_name": "Ateliers",
@@ -17788,7 +17788,7 @@
       "potter": {
          "potter_description": {
             "display_name": "Potier",
-            "description": "Fabrique des objets utiles avec de l'argile. Évolution du tailleur de pierre.",
+            "description": "Fabrique des objets utiles avec de l'argile. Évolution du maçon.",
             "requirements": "Fabriqué par un maçon",
             "workshop": {
                "name": "Tour de potier",
