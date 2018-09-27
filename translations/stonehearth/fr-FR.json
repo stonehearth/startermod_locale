@@ -9666,12 +9666,12 @@
                "description": "Exploitable pour de la pierre"
             },
             "large_arctic_boulder_1": {
-               "display_name": "Huge Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Rocher énorme",
+               "description": "Exploitable pour de la pierre"
             },
             "large_arctic_boulder_2": {
-               "display_name": "Huge Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Rocher énorme",
+               "description": "Exploitable pour de la pierre"
             }
          },
          "medium_boulder": {
@@ -9688,16 +9688,16 @@
                "description": "Exploitable pour de la pierre"
             },
             "medium_arctic_boulder_1": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Rocher moyen",
+               "description": "Exploitable pour de la pierre"
             },
             "medium_arctic_boulder_2": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Rocher moyen",
+               "description": "Exploitable pour de la pierre"
             },
             "medium_arctic_boulder_3": {
-               "display_name": "Medium Boulder",
-               "description": "Harvestable for stone"
+               "display_name": "Rocher moyen",
+               "description": "Exploitable pour de la pierre"
             }
          },
          "small_boulder": {
@@ -9705,8 +9705,8 @@
             "description": "Exploitable pour de la pierre"
          },
          "small_arctic_boulder": {
-            "display_name": "Small Boulder",
-            "description": "Harvestable for stone"
+            "display_name": "Petit rocher",
+            "description": "Exploitable pour de la pierre"
          }
       },
       "construction": {
@@ -9756,7 +9756,7 @@
          },
          "wooden_door_2": {
             "wooden_door_2_ghost": {
-               "display_name": "Porte en bois renforcée",
+               "display_name": "Porte renforcée en bois",
                "description": "Plus robuste qu'une porte classique."
             }
          },
@@ -9785,7 +9785,7 @@
          "wooden_window_frame_tall": {
             "wooden_window_frame_tall_ghost": {
                "display_name": "Cadre de fenêtre haut",
-               "description": "Les hauteurs extrêmes ajoute un air d'élégance"
+               "description": "La hauteur supplémentaire ajoute un air d'élégance"
             }
          },
          "wooden_window_frame_wide": {
@@ -9796,19 +9796,19 @@
          },
          "golden_clay_doorframe": {
             "golden_clay_doorframe_ghost": {
-               "display_name": "Cadre de porte en argile doré",
+               "display_name": "Cadre de porte doré en argile",
                "description": "Correspond à un mur extérieur doré en argile"
             }
          },
          "red_clay_door": {
             "red_clay_door_ghost": {
-               "display_name": "Porte en argile rouge",
+               "display_name": "Porte rouge en argile",
                "description": "Maintient la fraicheur à l'intérieur"
             }
          },
          "red_clay_window_frame": {
             "red_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre en argile rouge",
+               "display_name": "Cadre de fenêtre rouge en argile",
                "description": "Laisse entrer le soleil."
             }
          },
@@ -9820,25 +9820,25 @@
          },
          "green_clay_door": {
             "green_clay_door_ghost": {
-               "display_name": "Porte en argile vert",
+               "display_name": "Porte verte en argile",
                "description": "Couleur qui correspond avec le désert"
             }
          },
          "blue_clay_window_frame": {
             "blue_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre en argile bleu",
+               "display_name": "Cadre de fenêtre bleu en argile",
                "description": "Laisse rentrer l'air du désert."
             }
          },
          "green_clay_window_frame": {
             "green_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre en argile vert",
+               "display_name": "Cadre de fenêtre vert en argile",
                "description": "Laisse rentrer l'air doux du désert."
             }
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
-               "display_name": "Fenêtre à treillis rouge en argile",
+               "display_name": "Fenêtre à treillis rouge",
                "description": "Le treillis permet toujours de faire rentrer le bon air."
             }
          },
@@ -9862,7 +9862,7 @@
          },
          "iron_door": {
             "iron_door_ghost": {
-               "display_name": "Porte à toute épreuve",
+               "display_name": "Porte en fer forgé",
                "description": "Plus robuste que les portes en bois ou en pierre"
             }
          },
@@ -9886,13 +9886,13 @@
          },
          "wooden_double_door_fine": {
             "wooden_double_door_fine_ghost": {
-               "display_name": "Double porte en beau bois",
+               "display_name": "Belle double porte en bois",
                "description": "Une porte plus grande avec du style supplémentaire. Tous vos amis seront envieux."
             }
          },
          "wooden_window_frame_fine": {
             "wooden_window_frame_fine_ghost": {
-               "display_name": "Bel encadrement de fenêtre en bois de qualité",
+               "display_name": "Beau cadre de fenêtre en bois",
                "description": "Et voilà pour la vie privée ..."
             }
          },
@@ -9904,13 +9904,13 @@
          },
          "wooden_window_frame_wide_fine": {
             "wooden_window_frame_wide_fine_ghost": {
-               "display_name": "Bel encadrement de fenêtre large",
+               "display_name": "Beau cadre de fenêtre large",
                "description": "C'est une vue panoramique !"
             }
          },
          "wooden_diamond_window_fine": {
             "wooden_diamond_window_fine_ghost": {
-               "display_name": "Encadrement de fenêtre très fin avec des diamants",
+               "display_name": "Beau cadre de fenêtre losange",
                "description": "Et voilà pour la vie privée ..."
             }
          },
@@ -9944,19 +9944,19 @@
          },
          "tan_clay_window_frame": {
             "tan_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre brun pale en argile",
+               "display_name": "Cadre de fenêtre beige en argile",
                "description": "Conserve le soleil à l'intérieur"
             }
          },
          "tan_latticed_window": {
             "tan_latticed_window_ghost": {
-               "display_name": "Fenêtre à treillis brun pale",
-               "description": "La fenêtre à treillis que vous connaissez et aimez, en brun pale!"
+               "display_name": "Fenêtre à treillis beige",
+               "description": "La fenêtre à treillis que vous connaissez et aimez, en beige!"
             }
          },
          "tall_clay_window": {
             "tall_clay_window_ghost": {
-               "display_name": "Fenêtre brun pale en argile",
+               "display_name": "Fenêtre en argile",
                "description": "Donne de la douceur à l'air du désert"
             }
          },
@@ -9990,98 +9990,98 @@
          },
          "cobblestone_fence_single": {
             "cobblestone_fence_single_ghost": {
-               "display_name": "Small Cobblestone Fence",
-               "description": "A rustic, sturdy wall segment."
+               "display_name": "Clôture courte en pierre",
+               "description": "Un segment de mur rustique et robuste."
             }
          },
          "cobblestone_fence_end": {
             "cobblestone_fence_end_ghost": {
-               "display_name": "Cobblestone Fence Post",
-               "description": "A rustic, sturdy wall segment."
+               "display_name": "Poteau de clôture en pierre",
+               "description": "Un segment de mur rustique et robuste."
             }
          },
          "picket_fence_bar_double": {
             "picket_fence_bar_double_ghost": {
-               "display_name": "Picket Fence Large",
-               "description": "If it's not white, is our life unfulfilled?"
+               "display_name": "Longue palissade",
+               "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
          "picket_fence_bar_single": {
             "picket_fence_bar_single_ghost": {
-               "display_name": "Picket Fence Small",
-               "description": "If it's not white, is our life unfulfilled?"
+               "display_name": "Courte palissade",
+               "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
          "picket_fence_end": {
             "picket_fence_end_ghost": {
-               "display_name": "Picket Fence Post",
-               "description": "If it's not white, is our life unfulfilled?"
+               "display_name": "Poteau de palissade",
+               "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
          "clay_fence_end": {
             "clay_fence_end_ghost": {
-               "display_name": "Clay Fence Post",
-               "description": "More decorative than protective."
+               "display_name": "Poteau de clôture en argile",
+               "description": "Plus décoratif que protecteur."
             }
          },
          "clay_fence_bar_single": {
             "clay_fence_bar_single_ghost": {
-               "display_name": "Clay Fence Small",
-               "description": "More decorative than protective."
+               "display_name": "Clôture courte en argile",
+               "description": "Plus décoratif que protecteur."
             }
          },
          "clay_fence_bar_double": {
             "clay_fence_bar_double_ghost": {
-               "display_name": "Clay Fence Large",
-               "description": "More decorative than protective."
+               "display_name": "Clôture longue en argile",
+               "description": "Plus décoratif que protecteur."
             }
          },
          "ornate_picket_fence_end": {
             "ornate_picket_fence_end_ghost": {
-               "display_name": "Ornate Picket Fence Post",
-               "description": "A little gold leaf goes a long way!"
+               "display_name": "Poteau de palissade orné",
+               "description": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          },
          "ornate_picket_fence_bar_single": {
             "ornate_picket_fence_bar_single_ghost": {
-               "display_name": "Ornate Picket Fence Small",
-               "description": "A little gold leaf goes a long way!"
+               "display_name": "Courte palissade ornée",
+               "description": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          },
          "ornate_picket_fence_bar_double": {
             "ornate_picket_fence_bar_double_ghost": {
-               "display_name": "Ornate Picket Fence Large",
-               "description": "A little gold leaf goes a long way!"
+               "display_name": "Longue palissade ornée",
+               "description": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          },
          "cobblestone_fence_bar_double": {
             "cobblestone_fence_bar_double_ghost": {
-               "display_name": "Cobblestone Fence Large",
-               "description": "A rustic, sturdy wall segment."
+               "display_name": "Clôture longue en pierre",
+               "description": "Un segment de mur rustique et robuste."
             }
          },
          "cobblestone_fence_bar_single": {
             "cobblestone_fence_bar_single_ghost": {
-               "display_name": "Cobblestone Fence Small",
-               "description": "A rustic, sturdy wall segment."
+               "display_name": "Clôture courte en pierre",
+               "description": "Un segment de mur rustique et robuste."
             }
          },
          "stone_door": {
             "stone_door_ghost": {
-               "display_name": "Stone Door",
-               "description": "Built to Last!"
+               "display_name": "Porte en pierre",
+               "description": "Conçu pour durer !"
             }
          },
          "clay_fence_gate": {
             "clay_fence_gate_ghost": {
-               "display_name": "Clay Fence Gate",
-               "description": "This decorative gate protects your fences from being broken."
+               "display_name": "Porte de clôture en argile",
+               "description": "Ce portail décoratif évite que vos clôtures ne soient cassées."
             }
          },
          "stone_window_frame": {
             "stone_window_frame_ghost": {
                "display_name": "Stone Window Frame",
-               "description": "Offers a little protection from the wind."
+               "description": "Offre une petite protection contre le vent."
             }
          },
          "stone_window_frame_wide": {
@@ -10122,38 +10122,38 @@
          },
          "stone_door_2": {
             "stone_door_2_ghost": {
-               "display_name": "Reinforced Stone Door",
-               "description": "Sturdier than your average door."
+               "display_name": "Porte renforcée en pierre",
+               "description": "Plus robuste qu'une porte ordinaire."
             }
          },
          "stone_double_door": {
             "stone_double_door_ghost": {
-               "display_name": "Stone Double Door",
-               "description": "A larger door. It makes quite an impression."
+               "display_name": "Double porte en pierre",
+               "description": "Une porte plus grande. Ça fait une sacrée impression."
             }
          },
          "picket_fence_combo": {
             "picket_fence_combo_ghost": {
-               "display_name": "Picket Fence Combo",
-               "description": "If it's not white, is our life unfulfilled?"
+               "display_name": "Combo palissade",
+               "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
          "ornate_picket_fence_combo": {
             "ornate_picket_fence_combo_ghost": {
-               "display_name": "Ornate Picket Fence Combo",
-               "description": "A little gold leaf goes a long way!"
+               "display_name": "Combo palissade ornée",
+               "description": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          },
          "cobblestone_fence_combo": {
             "cobblestone_fence_combo_ghost": {
-               "display_name": "Cobblestone Fence Combo",
-               "description": "A rustic, sturdy wall segment."
+               "display_name": "Combo de clôture en pierre",
+               "description": "Un segment de mur rustique et robuste."
             }
          },
          "clay_fence_combo": {
             "clay_fence_combo_ghost": {
-               "display_name": "Clay Fence Combo",
-               "description": "More decorative than protective."
+               "display_name": "Combo de clôture en argile",
+               "description": "Plus décoratif que protecteur."
             }
          }
       },
@@ -10161,13 +10161,13 @@
          "large_crate": {
             "large_crate_ghost": {
                "display_name": "Grande caisse",
-               "description": "Entrepose jusqu'à 32 articles"
+               "description": "Peut contenir jusqu'à 32 articles"
             }
          },
          "large_urn": {
             "large_urn_ghost": {
                "display_name": "Grande urne",
-               "description": "Entrepose jusqu'à 32 articles"
+               "description": "Peut contenir jusqu'à 32 articles"
             }
          },
          "amberstone_chest": {
@@ -10179,19 +10179,19 @@
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
                "display_name": "Coffre en cuir lié",
-               "description": "Entrepose jusqu'à 64 articles"
+               "description": "Peut contenir jusqu'à 64 articles"
             }
          },
          "small_crate": {
             "small_crate_ghost": {
                "display_name": "Petite caisse",
-               "description": "Entrepose jusqu'à 8 articles"
+               "description": "Peut contenir jusqu'à 8 articles"
             }
          },
          "stone_chest": {
             "stone_chest_ghost": {
                "display_name": "Coffre en pierre",
-               "description": "Entrepose jusqu'à 64 articles"
+               "description": "Peut contenir jusqu'à 64 articles"
             }
          },
          "barrel": {
@@ -10203,13 +10203,13 @@
          "small_urn": {
             "small_urn_ghost": {
                "display_name": "Petite urne",
-               "description": "Entrepose jusqu'à 8 articles"
+               "description": "Peut contenir jusqu'à 8 articles"
             }
          },
          "vault": {
             "vault_ghost": {
                "display_name": "L'Abris",
-               "description": "Entrepose jusqu'à 256 articles"
+               "description": "Peut contenir jusqu'à 256 articles"
             }
          },
          "log_pile": {
@@ -10249,25 +10249,25 @@
          "large_crate_fine": {
             "large_crate_fine_ghost": {
                "display_name": "Belle grande caisse",
-               "description": "Entrepose jusqu'à 32 articles, avec du style"
+               "description": "Peut contenir jusqu'à 32 articles, avec du style"
             }
          },
          "leather_bound_chest_fine": {
             "leather_bound_chest_fine_ghost": {
                "display_name": "Beau coffre en cuir lié",
-               "description": "Entrepose jusqu'à 64 articles, avec du style"
+               "description": "Peut contenir jusqu'à 64 articles, avec du style"
             }
          },
          "ornate_leather_bound_chest": {
             "ornate_leather_bound_chest_ghost": {
                "display_name": "Coffre en cuir orné",
-               "description": "Entrepose jusqu'à 64 articles. Avec style."
+               "description": "Peut contenir jusqu'à 64 articles. Avec style."
             }
          },
          "output_box_wood": {
             "output_box_wood_ghost": {
                "display_name": "Étagère de produits fini en bois",
-               "description": "Entrepose temporairement les objets artisanaux."
+               "description": "Pour entreposertemporairement les objets artisanaux."
             }
          },
          "output_box_clay": {
@@ -16123,8 +16123,8 @@
          },
          "recipes": {
             "arch_backed_chair_recipe": {
-               "description": "Comme une chaise normale, sauf qu'elle impressionne les voisins. Gain de satiété de 20%.",
-               "recipe_name": "Chaise cathédrale stylisé",
+               "description": "Comme une chaise normale, sauf qu'elle impressionne les voisins. En position assise, la nourriture est 20% plus satisfaisante.",
+               "recipe_name": "Chaise cathédrale",
                "flavor": "Conception approuvée par l'Église de l'Abondance."
             },
             "comfy_bed_recipe": {
@@ -16158,7 +16158,7 @@
                "flavor": "Est-ce que la caisse qui entrepose tout ce qui ne peut s'entreposer soi-même, se stocke-t-elle elle-même?"
             },
             "leather_bound_chest_recipe": {
-               "description": "Entreposage stylisé qui peut contenir jusqu'à 64 objets.",
+               "description": "Pour entreposer avec style jusqu'à 64 objets.",
                "recipe_name": "Coffre à lanières de cuir",
                "flavor": "Comme celui de Papy !"
             },
@@ -16199,7 +16199,7 @@
                "flavor": "Pouvez-vous me raconter une autre histoire à propos du Berger ?"
             },
             "simple_wooden_chair_recipe": {
-               "description": "Manger assis procure un gain de satiété de 20%.",
+               "description": "En position assise, la nourriture est 20% plus satisfaisante.",
                "recipe_name": "Chaise en bois",
                "flavor": "Dix mille ans de recherche ont aboutis à ce concept à quatre pieds."
             },
@@ -16234,12 +16234,12 @@
             },
             "wooden_diamond_window_recipe": {
                "description": "Une fenêtre qui a plus de style.",
-               "recipe_name": "Fenêtre de bois en losange",
+               "recipe_name": "Fenêtre losange en bois",
                "flavor": "L'inclinaison à 45 degrés donne une touche sophistiquée."
             },
             "wooden_door_2_recipe": {
                "description": "Plus solide que les portes classiques.",
-               "recipe_name": "Porte en bois renforcée",
+               "recipe_name": "Porte renforcée en bois",
                "flavor": "Ce modèle, je l'ai appris par les Squarefolk."
             },
             "wooden_door_recipe": {
@@ -16299,7 +16299,7 @@
             },
             "wooden_window_frame_recipe": {
                "description": "Laisse rentrer la lumière dans la pièce.",
-               "recipe_name": "Encadrement de fenêtre en bois",
+               "recipe_name": "Cadre de fenêtre en bois",
                "flavor": "Bien mieux pour la vie privée..."
             },
             "writing_desk_recipe": {
@@ -16400,7 +16400,7 @@
                "flavor": "Comme celui que mon grand-père avait !"
             },
             "ornate_table_for_one_recipe": {
-               "recipe_name": "Table ornée de célibataire",
+               "recipe_name": "Table de célibataire ornée",
                "description": "Mieux que de manger debout. Sauf si vous surveillez votre poids.",
                "flavor": "Meubles à manger pour les introvertis."
             },
@@ -16469,7 +16469,7 @@
                "flavor": "Certaines personnes veulent faire une entrée ... tous les jours."
             },
             "ornate_wooden_door_recipe": {
-               "recipe_name": "Porte en bois renforcée ornée",
+               "recipe_name": "Porte renforcée en bois ornée",
                "description": "Plus fort que votre porte moyenne.",
                "flavor": "Ce modèle ici, je l'ai appris de la place populaire."
             },
@@ -16551,17 +16551,17 @@
             "ornate_picket_fence_bar_double_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
                "recipe_name": "Longue palissade ornée",
-               "flavor": "Une petite feuille d'or va loin !"
+               "flavor": "Une petite feuille d'or fait beaucoup de chemin !"
             },
             "ornate_picket_fence_bar_single_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
                "recipe_name": "Courte palissade ornée",
-               "flavor": "Une petite feuille d'or va loin !"
+               "flavor": "Une petite feuille d'or fait beaucoup de chemin !"
             },
             "ornate_picket_fence_end_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
                "recipe_name": "Poteau de palissade orné",
-               "flavor": "Une petite feuille d'or va loin !"
+               "flavor": "Une petite feuille d'or fait beaucoup de chemin !"
             },
             "picket_fence_end_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
@@ -16586,7 +16586,7 @@
             "ornate_picket_fence_combo_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
                "recipe_name": "Combo palissade ornée",
-               "flavor": "Une petite feuille d'or va loin !"
+               "flavor": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          }
       },
@@ -17668,17 +17668,17 @@
             },
             "cobblestone_fence_end_recipe": {
                "description": "Un segment de mur rustique et robuste.",
-               "recipe_name": "Poteau de clôture en pavés",
+               "recipe_name": "Poteau de clôture en pierre",
                "flavor": "Utilise la terre elle-même pour former les murs du pâturage ? Du Génie!"
             },
             "cobblestone_fence_bar_single_recipe": {
                "description": "Un segment de mur rustique et robuste.",
-               "recipe_name": "Clôture courte en pavé",
+               "recipe_name": "Clôture courte en pierre",
                "flavor": "Utilise la terre elle-même pour former les murs du pâturage ? Du Génie!"
             },
             "cobblestone_fence_bar_double_recipe": {
                "description": "Un segment de mur rustique et robuste.",
-               "recipe_name": "Clôture long en pavé",
+               "recipe_name": "Clôture longue en pierre",
                "flavor": "Utilise la terre elle-même pour former les murs du pâturage ? Du Génie!"
             },
             "stone_bed_recipe": {
@@ -17697,7 +17697,7 @@
             },
             "stone_window_frame_wide_recipe": {
                "description": "Il y a une vue panoramique !",
-               "recipe_name": "Large fenêtre en pierre"
+               "recipe_name": "Cadre de fenêtre large en pierre"
             },
             "stone_window_frame_wide_wood_recipe": {
                "description": "Rustique et panoramique !",
@@ -17738,7 +17738,7 @@
             },
             "stone_door_2_recipe": {
                "description": "Plus fort que votre porte moyenne.",
-               "recipe_name": "Porte en pierre renforcée",
+               "recipe_name": "Porte renforcée en pierre",
                "flavor": "Ce modèle ci, je l'ai tiré du folklore."
             },
             "stone_double_door_recipe": {
@@ -17753,7 +17753,7 @@
             },
             "cobblestone_fence_combo_recipe": {
                "description": "Un segment de mur rustique et robuste.",
-               "recipe_name": "Combo de clôture pavé",
+               "recipe_name": "Combo de clôture en pierre",
                "flavor": "Utilise la terre elle-même pour former les murs du pâturage ? Du Génie !"
             },
             "stone_floor_candle_holder_recipe": {
@@ -17836,12 +17836,12 @@
             },
             "clay_lamp_recipe": {
                "description": "Sa flamme donne une lumière chaude la nuit.",
-               "recipe_name": "Lampe à huile d'argile",
+               "recipe_name": "Lampe à huile en argile",
                "flavor": "Et le Djinni dit à Rayya: 'J'ai un dernier souhait à accorder. Choisissez bien vos mots.'"
             },
             "clay_wall_lamp_recipe": {
                "description": "Sa flamme donne une lumière chaude la nuit.",
-               "recipe_name": "Lampe à huile murale d'argile",
+               "recipe_name": "Lampe à huile murale en argile",
                "flavor": "'Encerclez-nous, esprits et gardiens de la nuit ! Comme eux danser et balancer vous, et vos rêves seront libérés de l'obscurité.'"
             },
             "garden_gnome_recipe": {
@@ -17876,37 +17876,37 @@
             },
             "red_clay_door_recipe": {
                "description": "S'harmonise avec les murs d'argile rouges",
-               "recipe_name": "Porte d'argile rouge",
+               "recipe_name": "Porte rouge en argile",
                "flavor": "\"Le rouge donne du mystère. Qu'est ce qui se trouve au-delà de la porte rouge ?\" -- Ember Iskender, Département de la poésie appliquée"
             },
             "red_clay_window_frame_recipe": {
                "description": "S'harmonise avec les murs d'argile rouges",
-               "recipe_name": "Fenêtre d'argile rouge",
+               "recipe_name": "Fenêtre rouge en argile",
                "flavor": "\"Norme industriel pour des raisons\" -- Jorya Iskender, maître de colorant"
             },
             "blue_clay_door_recipe": {
                "description": "Bleu, comme le rêve d'un océan lointain.",
-               "recipe_name": "Porte d'argile bleue",
+               "recipe_name": "Porte bleue en argile",
                "flavor": "'C'est une porte. Que pourrions-nous dire de plus ?' --Joni Iskender, Marketing Apprentice"
             },
             "green_clay_door_recipe": {
                "description": "Vert, comme les rares brousailles du désert.",
-               "recipe_name": "Porte d'argile verte",
+               "recipe_name": "Porte verte en argile",
                "flavor": "'Pouvez-vous faire le trou un peu plus petit? Le but est de voir qui est là sans qu'on sache que je suis à la maison.' --Vara Tenter, Irate Customer"
             },
             "blue_clay_window_frame_recipe": {
                "description": "Laisse entrer l'air plus frais du désert.",
-               "recipe_name": "Fenêtre d'argile bleue",
+               "recipe_name": "Fenêtre bleue en argile",
                "flavor": "La teinture est appelée Santori, pour un compagnon qui désire la vue de l'océan."
             },
             "green_clay_window_frame_recipe": {
                "description": "Laisse entrer l'air léger du désert.",
-               "recipe_name": "Fenêtre d'argile verte",
+               "recipe_name": "Fenêtre verte en argile",
                "flavor": "C'est le rêve de printemps d'une fenêtre...?"
             },
             "latticed_clay_window_frame_recipe": {
                "description": "Le treillis laisse entrer le bon air.",
-               "recipe_name": "Fenêtre à treillis en argile",
+               "recipe_name": "Fenêtre à treillis rouge ",
                "flavor": "Comme les ombres qui bouge au sol, petit, voit si tu peux trouver Singe! "
             },
             "clay_bed_recipe": {
@@ -17921,7 +17921,7 @@
             },
             "simple_clay_chair_recipe": {
                "description": "Un endroit pour s'asseoir en mangeant",
-               "recipe_name": "Chaise d'argile simple",
+               "recipe_name": "Chaise simple en argile",
                "flavor": "'S'emboite avec les tables, ooooo, symbolique!' -Nestor Adya, Compagnon"
             },
             "decorative_teapot_recipe": {
@@ -17966,7 +17966,7 @@
             },
             "golden_clay_wall_planter_recipe": {
                "description": "Illumine un mur",
-               "recipe_name": "Jardinière murale en argile dorée ",
+               "recipe_name": "Jardinière murale dorée en argile ",
                "flavor": "D'où proviennent les fleurs ? Des pousses, bien sûr ! --Acolyte des mystères de Rayya"
             },
             "unfired_clay_vase_recipe": {
@@ -17990,18 +17990,18 @@
                "flavor": "Parlez avec vos amis et entrez .... oh non attendez, il n'est pas verrouillé. - Eber, apprenti potier"
             },
             "tan_latticed_window_recipe": {
-               "recipe_name": "Fenêtre à treillis brun pale",
-               "description": "La fenêtre à treillis que vous connaissez et aimez, en brun pale",
+               "recipe_name": "Fenêtre à treillis beige",
+               "description": "La fenêtre à treillis que vous connaissez et aimez, en beige",
                "flavor": "\"Laisse les punaises entrer, mais au moins pas les très gros !\" -- Drenkar Iskender, Ex-Marketing Associate"
             },
             "tall_clay_window_recipe": {
-               "recipe_name": "Fenêtre en argile brune pale ",
+               "recipe_name": "Fenêtre en argile",
                "description": "Donne de la douceur à l'air du désert",
                "flavor": "\"Le rebord de la fenêtre peut refroidir une très grande tarte\" -Aaryn, Pragmatique"
             },
             "tan_clay_window_frame_recipe": {
                "flavor": "\"Non, je n'ai pas oublié le colorant. \" -Isfan Dorret, inventeur d'achromatisme",
-               "recipe_name": "Fenêtre en argile brune pale ",
+               "recipe_name": "Cadre de fenêtre beige en argile",
                "description": "Conserve le soleil à l'intérieur"
             },
             "green_latticed_window_recipe": {
@@ -18053,7 +18053,7 @@
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_bin_clay_green_recipe": {
-               "recipe_name": "Bac en céramique vert",
+               "recipe_name": "Bac en céramique verte",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
@@ -18090,11 +18090,11 @@
             "clay_fence_gate_recipe": {
                "description": "Permet aux gens de traverser votre clôture.",
                "recipe_name": "Porte de clôture en argile",
-               "flavor": "Cette barrière décorative protège vos clôtures d'être cassé."
+               "flavor": "Ce portail décoratif évite que vos clôtures ne soient cassées."
             },
             "clay_fence_combo_recipe": {
                "description": "Maintient les gens en dehors de votre propriété.",
-               "recipe_name": "Clôture en argile",
+               "recipe_name": "Combo de clôture en argile",
                "flavor": "Plus décoratif que protecteur."
             },
             "market_shelf_tall_ground_clay": {
