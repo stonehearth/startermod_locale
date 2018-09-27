@@ -9744,7 +9744,7 @@
          },
          "wooden_diamond_window": {
             "wooden_diamond_window_ghost": {
-               "display_name": "Cadre de fenêtre en losange",
+               "display_name": "Fenêtre en losange",
                "description": "Bien mieux pour la vie privée..."
             }
          },
@@ -9784,13 +9784,13 @@
          },
          "wooden_window_frame_tall": {
             "wooden_window_frame_tall_ghost": {
-               "display_name": "Cadre de fenêtre haut",
+               "display_name": "Grand cadre de fenêtre",
                "description": "La hauteur supplémentaire ajoute un air d'élégance"
             }
          },
          "wooden_window_frame_wide": {
             "wooden_window_frame_wide_ghost": {
-               "display_name": "Cadre de fenêtre large",
+               "display_name": "Large cadre de fenêtre",
                "description": "C'est une vue panoramique !"
             }
          },
@@ -9838,7 +9838,7 @@
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre rouge à treillis",
+               "display_name": "Fenêtre à treillis",
                "description": "Le treillis permet toujours de faire rentrer le bon air."
             }
          },
@@ -9904,7 +9904,7 @@
          },
          "wooden_window_frame_wide_fine": {
             "wooden_window_frame_wide_fine_ghost": {
-               "display_name": "Beau cadre de fenêtre large",
+               "display_name": "Beau large cadre de fenêtre",
                "description": "C'est une vue panoramique !"
             }
          },
@@ -9932,31 +9932,31 @@
          },
          "blue_latticed_window": {
             "blue_latticed_window_ghost": {
-               "display_name": "Cadre de fenêtre bleue à treillis",
+               "display_name": "Fenêtre bleue à treillis",
                "description": "Une fenêtre à treillis d'un bleue apaisant"
             }
          },
          "green_latticed_window": {
             "green_latticed_window_ghost": {
-               "display_name": "Cadre de fenêtre vert à treillis",
+               "display_name": "Fenêtre vert à treillis",
                "description": "La fenêtre à treillis que vous connaissez et aimez, maintenant en vert!"
             }
          },
          "tan_clay_window_frame": {
             "tan_clay_window_frame_ghost": {
-               "display_name": "Cadre de fenêtre beige en argile",
+               "display_name": "Fenêtre beige en argile",
                "description": "Conserve le soleil à l'intérieur"
             }
          },
          "tan_latticed_window": {
             "tan_latticed_window_ghost": {
-               "display_name": "Cadre de fenêtre beige à treillis",
+               "display_name": "Fenêtre beige à treillis",
                "description": "La fenêtre à treillis que vous connaissez et aimez, en beige!"
             }
          },
          "tall_clay_window": {
             "tall_clay_window_ghost": {
-               "display_name": "Fenêtre en argile",
+               "display_name": "Grande fenêtre en argile",
                "description": "Donne de la douceur à l'air du désert"
             }
          },
@@ -10086,13 +10086,13 @@
          },
          "stone_window_frame_wide": {
             "stone_window_frame_wide_ghost": {
-               "display_name": "Cadre de fenêtre large en pierre",
+               "display_name": "Large cadre de fenêtre en pierre",
                "description": "Il y a une vue panoramique !"
             }
          },
          "stone_window_frame_wide_wood": {
             "stone_window_frame_wide_wood_ghost": {
-               "display_name": "Cadre de fenêtre large en bois et pierre",
+               "display_name": "Large cadre de fenêtre en bois et pierre",
                "description": "Rustique et panoramique !"
             }
          },
@@ -10104,13 +10104,13 @@
          },
          "stone_window_frame_tall": {
             "stone_window_frame_tall_ghost": {
-               "display_name": "Cadre de fenêtre haut en pierre",
+               "display_name": "Grand cadre de fenêtre en pierre",
                "description": "La hauteur supplémentaire ajoute un air d'élégance."
             }
          },
          "stone_window_frame_short": {
             "stone_window_frame_short_ghost": {
-               "display_name": "Cadre de fenêtre court en pierre",
+               "display_name": "Petit cadre fenêtre en pierre",
                "description": "Court peut être élégant aussi."
             }
          },
@@ -11518,7 +11518,7 @@
             },
             "window_arrow_short": {
                "window_arrow_short_ghost": {
-                  "display_name": "Meurtrière en pierre courte pour flèche",
+                  "display_name": "Petite meurtrière en pierre pour flèche",
                   "description": "Pour ceux qui aiment les petites vues compressées."
                }
             },
@@ -16234,7 +16234,7 @@
             },
             "wooden_diamond_window_recipe": {
                "description": "Une fenêtre qui a plus de style.",
-               "recipe_name": "Cadre de fenêtre en losange",
+               "recipe_name": "Fenêtre en losange",
                "flavor": "L'inclinaison à 45 degrés donne une touche sophistiquée."
             },
             "wooden_door_2_recipe": {
@@ -16319,11 +16319,11 @@
             },
             "wooden_window_frame_tall_recipe": {
                "description": "La hauteur supplémentaire ajoute un air d'élégance.",
-               "recipe_name": "Cadre de fenêtre haut"
+               "recipe_name": "Grand cadre de fenêtre"
             },
             "wooden_window_frame_wide_recipe": {
                "description": "C'est une vue panoramique !",
-               "recipe_name": "Cadre de fenêtre large"
+               "recipe_name": "Large cadre de fenêtre"
             },
             "herbalist_staff_recipe": {
                "description": "Nécessaire pour promouvoir un hearthling en herboriste, qui fabrique potions et bandages.",
@@ -17631,11 +17631,11 @@
             },
             "valor_window_arrow_short_recipe": {
                "description": "Pour ceux qui aiment les petites vues compressées.",
-               "recipe_name": "Meurtrière pour flèche courte en pierre"
+               "recipe_name": "Petite meurtrière en pierre pour flèche"
             },
             "valor_window_arrow_tall_recipe": {
                "description": "Pour ceux qui aiment les petites vues compressées.",
-               "recipe_name": "Meurtrière pour flèche en pierre"
+               "recipe_name": "Grande meurtrière en pierre pour flèche"
             },
             "valor_window_frame_barred_recipe": {
                "description": "Pour ceux qui aiment regarder en toute sécurité derrière les barreaux.",
@@ -17697,11 +17697,11 @@
             },
             "stone_window_frame_wide_recipe": {
                "description": "Il y a une vue panoramique !",
-               "recipe_name": "Cadre de fenêtre large en pierre"
+               "recipe_name": "Large cadre de fenêtre en pierre"
             },
             "stone_window_frame_wide_wood_recipe": {
                "description": "Rustique et panoramique !",
-               "recipe_name": "Cadre de fenêtre large en bois et pierre"
+               "recipe_name": "Large cadre de fenêtre en bois et pierre"
             },
             "stone_window_frame_wood_recipe": {
                "description": "Une fenêtre de base.",
@@ -17710,11 +17710,11 @@
             },
             "stone_window_frame_tall_recipe": {
                "description": "La hauteur supplémentaire ajoute un air d'élégance.",
-               "recipe_name": "Cadre de fenêtre haut en pierre"
+               "recipe_name": "Grand cadre de fenêtre en pierre"
             },
             "stone_window_frame_short_recipe": {
                "description": "Même court ça reste élégant.",
-               "recipe_name": "Cadre de fenêtre court en pierre"
+               "recipe_name": "Petit cadre de fenêtre en pierre"
             },
             "stone_lantern_simple_recipe": {
                "description": "Rien d'extraordinaire. S'attache à n'importe quel mur.",
@@ -17773,7 +17773,7 @@
             },
             "market_shelf_tall_ground_stone": {
                "description": "D'autres joueurs et voyageurs peuvent acheter des marchandises stockées sur ces étagères.",
-               "recipe_name": "Market Trading Shelf",
+               "recipe_name": "Étagère de marché",
                "flavor": "La poubelle d'un Hearthling est le trésor d'un autre ... n'est-ce pas?"
             }
          }
@@ -17906,7 +17906,7 @@
             },
             "latticed_clay_window_frame_recipe": {
                "description": "Le treillis laisse entrer le bon air.",
-               "recipe_name": "Cadre de fenêtre rouge à treillis",
+               "recipe_name": "Cadre de fenêtre à treillis",
                "flavor": "Comme les ombres qui bouge au sol, petit, voit si tu peux trouver Singe! "
             },
             "clay_bed_recipe": {
@@ -17990,12 +17990,12 @@
                "flavor": "Parlez avec vos amis et entrez .... oh non attendez, il n'est pas verrouillé. - Eber, apprenti potier"
             },
             "tan_latticed_window_recipe": {
-               "recipe_name": "Cadre de fenêtre beige à treillis",
+               "recipe_name": "Fenêtre beige à treillis",
                "description": "La fenêtre à treillis que vous connaissez et aimez, en beige",
                "flavor": "\"Laisse les punaises entrer, mais au moins pas les très gros !\" -- Drenkar Iskender, Ex-Marketing Associate"
             },
             "tall_clay_window_recipe": {
-               "recipe_name": "Fenêtre en argile",
+               "recipe_name": "Grande fenêtre en argile",
                "description": "Donne de la douceur à l'air du désert",
                "flavor": "\"Le rebord de la fenêtre peut refroidir une très grande tarte\" -Aaryn, Pragmatique"
             },
@@ -18005,12 +18005,12 @@
                "description": "Conserve le soleil à l'intérieur"
             },
             "green_latticed_window_recipe": {
-               "recipe_name": "Cadre de fenêtre vert à treillis",
+               "recipe_name": "Fenêtre vert à treillis",
                "flavor": "Réminiscence d'une fenêtre de maison couvert d'une vigne, fané en mémoire",
                "description": "La fenêtre à treillis que vous connaissez et aimez, maintenant en vert!"
             },
             "blue_latticed_window_recipe": {
-               "recipe_name": "Cadre de fenêtre bleue à treillis",
+               "recipe_name": "Fenêtre bleue à treillis",
                "description": "Une fenêtre à treillis d'un bleu apaisant",
                "flavor": "\"Non mais vraiment, d'ou vient ce colorant ?\" -Farah, Attrapeur d'insecte professionnel"
             },
