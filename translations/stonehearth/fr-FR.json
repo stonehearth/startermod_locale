@@ -9728,13 +9728,13 @@
          },
          "picket_fence": {
             "picket_fence_ghost": {
-               "display_name": "Palissade",
+               "display_name": "Clôture en bois",
                "description": "Si elle n'est pas blanche, c'est que notre vie est incomplète?"
             }
          },
          "picket_fence_gate": {
             "picket_fence_gate_ghost": {
-               "display_name": "Portail de palissade",
+               "display_name": "Portail de clôture en bois",
                "description": "Vous n'aimez pas vos voisins? Ne pas installer."
             }
          },
@@ -9838,7 +9838,7 @@
          },
          "latticed_clay_window_frame": {
             "latticed_clay_window_frame_ghost": {
-               "display_name": "Fenêtre à treillis rouge",
+               "display_name": "Cadre de fenêtre rouge à treillis",
                "description": "Le treillis permet toujours de faire rentrer le bon air."
             }
          },
@@ -9916,13 +9916,13 @@
          },
          "picket_fence_fine": {
             "picket_fence_fine_ghost": {
-               "display_name": "Belle palissade",
+               "display_name": "Belle clôture en bois",
                "description": "Si ce n'est pas blanc, c'est que votre vie est inassouvi ?"
             }
          },
          "picket_fence_gate_fine": {
             "picket_fence_gate_fine_ghost": {
-               "display_name": "Belle porte de palissade",
+               "display_name": "Beau portail de clôture en bois",
                "description": "Vous n'aimez pas vos voisins ? Ne l'installer alors surtout pas."
             }
          },
@@ -9932,13 +9932,13 @@
          },
          "blue_latticed_window": {
             "blue_latticed_window_ghost": {
-               "display_name": "Fenêtre à treillis bleue",
+               "display_name": "Cadre de fenêtre bleue à treillis",
                "description": "Une fenêtre à treillis d'un bleue apaisant"
             }
          },
          "green_latticed_window": {
             "green_latticed_window_ghost": {
-               "display_name": "Fenêtre à treillis verte",
+               "display_name": "Cadre de fenêtre vert à treillis",
                "description": "La fenêtre à treillis que vous connaissez et aimez, maintenant en vert!"
             }
          },
@@ -9950,7 +9950,7 @@
          },
          "tan_latticed_window": {
             "tan_latticed_window_ghost": {
-               "display_name": "Fenêtre à treillis beige",
+               "display_name": "Cadre de fenêtre beige à treillis",
                "description": "La fenêtre à treillis que vous connaissez et aimez, en beige!"
             }
          },
@@ -9962,13 +9962,13 @@
          },
          "ornate_picket_fence": {
             "ornate_picket_fence_ghost": {
-               "display_name": "Clôture ornée",
+               "display_name": "Clôture en bois ornée",
                "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
          "ornate_picket_fence_gate": {
             "ornate_picket_fence_gate_ghost": {
-               "display_name": "Porte palissade de clôture ornée",
+               "display_name": "Portail de clôture en bois ornée",
                "description": "Vous n'aimez pas vos voisins? Ne pas installer."
             }
          },
@@ -10002,19 +10002,19 @@
          },
          "picket_fence_bar_double": {
             "picket_fence_bar_double_ghost": {
-               "display_name": "Longue palissade",
+               "display_name": "Clôture longue en bois",
                "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
          "picket_fence_bar_single": {
             "picket_fence_bar_single_ghost": {
-               "display_name": "Courte palissade",
+               "display_name": "Clôture courte en bois",
                "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
          "picket_fence_end": {
             "picket_fence_end_ghost": {
-               "display_name": "Poteau de palissade",
+               "display_name": "Poteau de clôture en bois",
                "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
@@ -10038,19 +10038,19 @@
          },
          "ornate_picket_fence_end": {
             "ornate_picket_fence_end_ghost": {
-               "display_name": "Poteau de palissade orné",
+               "display_name": "Poteau de clôture en bois orné",
                "description": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          },
          "ornate_picket_fence_bar_single": {
             "ornate_picket_fence_bar_single_ghost": {
-               "display_name": "Courte palissade ornée",
+               "display_name": "Clôture courte en bois ornée",
                "description": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          },
          "ornate_picket_fence_bar_double": {
             "ornate_picket_fence_bar_double_ghost": {
-               "display_name": "Longue palissade ornée",
+               "display_name": "Clôture longue en bois ornée",
                "description": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          },
@@ -10074,50 +10074,50 @@
          },
          "clay_fence_gate": {
             "clay_fence_gate_ghost": {
-               "display_name": "Porte de clôture en argile",
+               "display_name": "Portail de clôture en argile",
                "description": "Ce portail décoratif évite que vos clôtures ne soient cassées."
             }
          },
          "stone_window_frame": {
             "stone_window_frame_ghost": {
-               "display_name": "Stone Window Frame",
+               "display_name": "Cadre de fenêtre en pierre",
                "description": "Offre une petite protection contre le vent."
             }
          },
          "stone_window_frame_wide": {
             "stone_window_frame_wide_ghost": {
-               "display_name": "Wide Stone Window Frame",
-               "description": "It's a panoramic view!"
+               "display_name": "Cadre de fenêtre large en pierre",
+               "description": "Il y a une vue panoramique !"
             }
          },
          "stone_window_frame_wide_wood": {
             "stone_window_frame_wide_wood_ghost": {
-               "display_name": "Wide Wood and Stone Window Frame",
-               "description": "Rustic and panoramic!"
+               "display_name": "Cadre de fenêtre large en bois et pierre",
+               "description": "Rustique et panoramique !"
             }
          },
          "stone_window_frame_wood": {
             "stone_window_frame_wood_ghost": {
-               "display_name": "Wood and Stone Window Frame",
-               "description": "Offers a little protection from the wind."
+               "display_name": "Cadre de fenêtre en bois et en pierre",
+               "description": "Offre une petite protection contre le vent."
             }
          },
          "stone_window_frame_tall": {
             "stone_window_frame_tall_ghost": {
-               "display_name": "Tall Stone Window Frame",
-               "description": "Extra height adds an air of elegance"
+               "display_name": "Cadre de fenêtre haut en pierre",
+               "description": "La hauteur supplémentaire ajoute un air d'élégance."
             }
          },
          "stone_window_frame_short": {
             "stone_window_frame_short_ghost": {
-               "display_name": "Short Stone Window Frame",
-               "description": "Short can be elegant too."
+               "display_name": "Cadre de fenêtre court en pierre",
+               "description": "Court peut être élégant aussi."
             }
          },
          "stone_window_frame_crossbeam": {
             "stone_window_frame_crossbeam_ghost": {
-               "display_name": "Cross Beamed Stone Window Frame",
-               "description": "Offers a little protection from random critters trying to get in."
+               "display_name": "Cadre de fenêtre en pierre à traverses",
+               "description": "Offre une petite protection contre les créatures qui essaient d'entrer par hasard."
             }
          },
          "stone_door_2": {
@@ -10134,13 +10134,13 @@
          },
          "picket_fence_combo": {
             "picket_fence_combo_ghost": {
-               "display_name": "Combo palissade",
+               "display_name": "Combo clôture de bois",
                "description": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             }
          },
          "ornate_picket_fence_combo": {
             "ornate_picket_fence_combo_ghost": {
-               "display_name": "Combo palissade ornée",
+               "display_name": "Combo clôture de bois ornée",
                "description": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          },
@@ -10267,7 +10267,7 @@
          "output_box_wood": {
             "output_box_wood_ghost": {
                "display_name": "Étagère de produits fini en bois",
-               "description": "Pour entreposertemporairement les objets artisanaux."
+               "description": "Pour entreposer temporairement les objets artisanaux."
             }
          },
          "output_box_clay": {
@@ -11512,13 +11512,13 @@
             },
             "window_arrow_tall": {
                "window_arrow_tall_ghost": {
-                  "display_name": "Grande meurtrière pour flèche en pierre",
+                  "display_name": "Grande meurtrière en pierre pour flèche",
                   "description": "Pour ceux qui aiment les petites vues compressées."
                }
             },
             "window_arrow_short": {
                "window_arrow_short_ghost": {
-                  "display_name": "Meurtrière pour flèche courte en pierre",
+                  "display_name": "Meurtrière en pierre courte pour flèche",
                   "description": "Pour ceux qui aiment les petites vues compressées."
                }
             },
@@ -11536,7 +11536,7 @@
             },
             "window_frame_barred": {
                "window_frame_barred_ghost": {
-                  "display_name": "Cadre de fenêtre en pierre barrée",
+                  "display_name": "Cadre de fenêtre barrée en pierre",
                   "description": "Pour ceux qui aiment regarder en toute sécurité derrière les barreaux."
                }
             },
@@ -13164,7 +13164,7 @@
                "description": "Où les morts-vivants naissent."
             },
             "stone_pillar_fence": {
-               "display_name": "Clôture de pilier de pierre ",
+               "display_name": "Clôture de pilier de pierre",
                "description": "Clôture solide soutenue par des pilliers."
             },
             "necromancer": {
@@ -16178,12 +16178,12 @@
             },
             "picket_fence_gate_recipe": {
                "description": "Permet aux gens de traverser votre clôture.",
-               "recipe_name": "Portail de clôture",
+               "recipe_name": "Portail de clôture en bois",
                "flavor": "Espérons que vous aimez vos voisins !"
             },
             "picket_fence_recipe": {
                "description": "Garde les gens en dehors de votre propriété.",
-               "recipe_name": "Clôture",
+               "recipe_name": "Clôture en bois",
                "flavor": "Si elle n'est pas blanche, cela manquera à votre vie."
             },
             "tools_weapons_name": "Outils",
@@ -16234,7 +16234,7 @@
             },
             "wooden_diamond_window_recipe": {
                "description": "Une fenêtre qui a plus de style.",
-               "recipe_name": "Fenêtre losange en bois",
+               "recipe_name": "Cadre de fenêtre en losange",
                "flavor": "L'inclinaison à 45 degrés donne une touche sophistiquée."
             },
             "wooden_door_2_recipe": {
@@ -16318,7 +16318,7 @@
                "flavor": "Un établi plus élégant, réalisé en des temps plus civilisé."
             },
             "wooden_window_frame_tall_recipe": {
-               "description": "Les hauteurs extrêmes ajoutent un air d'élégance.",
+               "description": "La hauteur supplémentaire ajoute un air d'élégance.",
                "recipe_name": "Cadre de fenêtre haut"
             },
             "wooden_window_frame_wide_recipe": {
@@ -16444,12 +16444,12 @@
                "description": "Utile pour bloquer les tunnels avec style."
             },
             "ornate_picket_fence_gate_recipe": {
-               "recipe_name": "Porte de clôture ornée",
+               "recipe_name": "Portail de clôture en bois ornée",
                "description": "Permet aux gens de passer à travers votre clôture.",
                "flavor": "J'espère que vous aimez vos voisins !"
             },
             "ornate_picket_fence_recipe": {
-               "recipe_name": "Clôture ornée",
+               "recipe_name": "Clôture en bois ornée",
                "description": "Maintient les gens hors de votre propriété.",
                "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
@@ -16550,42 +16550,42 @@
             },
             "ornate_picket_fence_bar_double_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
-               "recipe_name": "Longue palissade ornée",
+               "recipe_name": "Clôture longue en bois ornée",
                "flavor": "Une petite feuille d'or fait beaucoup de chemin !"
             },
             "ornate_picket_fence_bar_single_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
-               "recipe_name": "Courte palissade ornée",
+               "recipe_name": "Clôture courte en bois ornée",
                "flavor": "Une petite feuille d'or fait beaucoup de chemin !"
             },
             "ornate_picket_fence_end_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
-               "recipe_name": "Poteau de palissade orné",
+               "recipe_name": "Poteau de clôture en bois orné",
                "flavor": "Une petite feuille d'or fait beaucoup de chemin !"
             },
             "picket_fence_end_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
-               "recipe_name": "Poteau de palissade",
+               "recipe_name": "Poteau de clôture en bois",
                "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
             "picket_fence_bar_single_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
-               "recipe_name": "Courte palissade",
+               "recipe_name": "Clôture courte en bois",
                "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
             "picket_fence_bar_double_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
-               "recipe_name": "Longue palissade",
+               "recipe_name": "Clôture longue en bois",
                "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
             "picket_fence_combo_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
-               "recipe_name": "Combo palissade",
+               "recipe_name": "Combo clôture en bois",
                "flavor": "Si ce n'est pas blanc, notre vie est-elle insatisfaite ?"
             },
             "ornate_picket_fence_combo_recipe": {
                "description": "Maintient les gens hors de votre propriété.",
-               "recipe_name": "Combo palissade ornée",
+               "recipe_name": "Combo clôture en bois ornée",
                "flavor": "Une petite feuille d'or fait beaucoup de chemin !"
             }
          }
@@ -17486,7 +17486,7 @@
                "flavor": "Tappety-tap, fait chanter la terre, éveille le fantôme de Brelor, Regarde la montagnes prendre son envole."
             },
             "mason_pedestal_amberstone_recipe": {
-               "description": "Approuvé par le Lapin maçon ",
+               "description": "Approuvé par le Lapin maçon",
                "recipe_name": "Piédestal de maçon Amberstone",
                "flavor": "La compétence d'un maçon peut être lue à travers la qualité de leur table de travail"
             },
@@ -17639,7 +17639,7 @@
             },
             "valor_window_frame_barred_recipe": {
                "description": "Pour ceux qui aiment regarder en toute sécurité derrière les barreaux.",
-               "recipe_name": "Cadre de fenêtre en pierre barrée"
+               "recipe_name": "Cadre de fenêtre barrée en pierre"
             },
             "valor_window_frame_xlarge_recipe": {
                "description": "Pour ceux qui apprécient des vues larges expansives.",
@@ -17748,7 +17748,7 @@
             },
             "stone_window_frame_crossbeam_recipe": {
                "description": "Une fenêtre plus élégante.",
-               "recipe_name": "Traverse de cadre de fenêtre en pierre ",
+               "recipe_name": "Cadre de fenêtre en pierre à traverses",
                "flavor": "Est-ce ça qu'ils appellent une section transversale?"
             },
             "cobblestone_fence_combo_recipe": {
@@ -17881,7 +17881,7 @@
             },
             "red_clay_window_frame_recipe": {
                "description": "S'harmonise avec les murs d'argile rouges",
-               "recipe_name": "Fenêtre rouge en argile",
+               "recipe_name": "Cadre de fenêtre rouge en argile",
                "flavor": "\"Norme industriel pour des raisons\" -- Jorya Iskender, maître de colorant"
             },
             "blue_clay_door_recipe": {
@@ -17896,17 +17896,17 @@
             },
             "blue_clay_window_frame_recipe": {
                "description": "Laisse entrer l'air plus frais du désert.",
-               "recipe_name": "Fenêtre bleue en argile",
+               "recipe_name": "Cadre de fenêtre bleue en argile",
                "flavor": "La teinture est appelée Santori, pour un compagnon qui désire la vue de l'océan."
             },
             "green_clay_window_frame_recipe": {
                "description": "Laisse entrer l'air léger du désert.",
-               "recipe_name": "Fenêtre verte en argile",
+               "recipe_name": "Cadre de fenêtre vert en argile",
                "flavor": "C'est le rêve de printemps d'une fenêtre...?"
             },
             "latticed_clay_window_frame_recipe": {
                "description": "Le treillis laisse entrer le bon air.",
-               "recipe_name": "Fenêtre à treillis rouge ",
+               "recipe_name": "Cadre de fenêtre rouge à treillis",
                "flavor": "Comme les ombres qui bouge au sol, petit, voit si tu peux trouver Singe! "
             },
             "clay_bed_recipe": {
@@ -17966,7 +17966,7 @@
             },
             "golden_clay_wall_planter_recipe": {
                "description": "Illumine un mur",
-               "recipe_name": "Jardinière murale dorée en argile ",
+               "recipe_name": "Jardinière murale dorée en argile",
                "flavor": "D'où proviennent les fleurs ? Des pousses, bien sûr ! --Acolyte des mystères de Rayya"
             },
             "unfired_clay_vase_recipe": {
@@ -17990,7 +17990,7 @@
                "flavor": "Parlez avec vos amis et entrez .... oh non attendez, il n'est pas verrouillé. - Eber, apprenti potier"
             },
             "tan_latticed_window_recipe": {
-               "recipe_name": "Fenêtre à treillis beige",
+               "recipe_name": "Cadre de fenêtre beige à treillis",
                "description": "La fenêtre à treillis que vous connaissez et aimez, en beige",
                "flavor": "\"Laisse les punaises entrer, mais au moins pas les très gros !\" -- Drenkar Iskender, Ex-Marketing Associate"
             },
@@ -18005,12 +18005,12 @@
                "description": "Conserve le soleil à l'intérieur"
             },
             "green_latticed_window_recipe": {
-               "recipe_name": "Fenêtre à treillis verte",
+               "recipe_name": "Cadre de fenêtre vert à treillis",
                "flavor": "Réminiscence d'une fenêtre de maison couvert d'une vigne, fané en mémoire",
                "description": "La fenêtre à treillis que vous connaissez et aimez, maintenant en vert!"
             },
             "blue_latticed_window_recipe": {
-               "recipe_name": "Fenêtre à treillis bleue",
+               "recipe_name": "Cadre de fenêtre bleue à treillis",
                "description": "Une fenêtre à treillis d'un bleu apaisant",
                "flavor": "\"Non mais vraiment, d'ou vient ce colorant ?\" -Farah, Attrapeur d'insecte professionnel"
             },
@@ -18089,7 +18089,7 @@
             },
             "clay_fence_gate_recipe": {
                "description": "Permet aux gens de traverser votre clôture.",
-               "recipe_name": "Porte de clôture en argile",
+               "recipe_name": "Portail de clôture en argile",
                "flavor": "Ce portail décoratif évite que vos clôtures ne soient cassées."
             },
             "clay_fence_combo_recipe": {
