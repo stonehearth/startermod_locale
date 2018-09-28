@@ -17961,7 +17961,7 @@
             },
             "tile_wall_mosaic_recipe": {
                "description": "Les motifs de décoration sont apaisant",
-               "recipe_name": "Carrelage de mur en mosaïque",
+               "recipe_name": "Carrelage murale en mosaïque",
                "flavor": "La tuile refroidi l'intérieur et l'extérieur"
             },
             "golden_clay_wall_planter_recipe": {
