@@ -546,7 +546,7 @@
             "date_format_long": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
             "date_format_long_ordinal": "[str(ord_day)] Day of i18n(stonehearth:ui.game.calendar.month_format) [str(date.year)]",
             "date_time_long_format": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]",
-            "date_format_short": "i18n(stonehearth:ui.game.calendar.month_format), [str(date.day)]",
+            "date_format_short": "[str(date.day)] i18n(stonehearth:ui.game.calendar.month_format)",
             "weather_prefix_0": "Aujourd'hui : ",
             "weather_prefix_1": "Demain : ",
             "weather_prefix_2": "Après demain : ",
@@ -8634,11 +8634,11 @@
             "health": {
                "pain_mild": {
                   "display_name": "Douleur (bénigne)",
-                  "tooltip": "Ow ow ow!"
+                  "tooltip": "Aïe aïe aïe!"
                },
                "pain_moderate": {
                   "display_name": "Douleur (modérée)",
-                  "tooltip": "Agh, je suis en pleine forme !"
+                  "tooltip": "Argh, je suis en pleine forme !"
                },
                "pain_scratched": {
                   "display_name": "Douleur (écorchée)",
@@ -12028,11 +12028,11 @@
          },
          "peasant_bread": {
             "peasant_bread": {
-               "display_name": "Pain campagnard",
+               "display_name": "Pain de campagne",
                "description": "Un pain simple et croustillant."
             },
             "peasant_bread_serving": {
-               "display_name": "Tranche de pain campagnard"
+               "display_name": "Tranche de pain de campagne"
             }
          },
          "pumpkin": {
@@ -12085,7 +12085,7 @@
                "description": "Bien cuit et bien doré."
             },
             "corn_bread_serving": {
-               "display_name": "Morceau de pain au maïs"
+               "display_name": "Morceau de pain de maïs"
             }
          },
          "poyo_meat": {
@@ -16659,7 +16659,7 @@
             },
             "peasant_bread_recipe": {
                "description": "Un pain simple mais croustillant.",
-               "recipe_name": "Pain paysan"
+               "recipe_name": "Pain de campagne"
             },
             "food_name": "Repas quotidiens",
             "ingredients_name": "Raffinement des ingrédients",
