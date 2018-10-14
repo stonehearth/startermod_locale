@@ -544,7 +544,7 @@
             },
             "month_format": "i18n(stonehearth:ui.game.calendar.months.[str(date.month)])",
             "date_format_long": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)]",
-            "date_format_long_ordinal": "[str(ord_day)] Day of i18n(stonehearth:ui.game.calendar.month_format) [str(date.year)]",
+            "date_format_long_ordinal": "[str(ord_day)] Jour de i18n(stonehearth:ui.game.calendar.month_format) de l'An [str(date.year)]",
             "date_time_long_format": "Jour [str(date.day)] de i18n(stonehearth:ui.game.calendar.month_format), [str(date.year)], [str(date.time)]",
             "date_format_short": "[str(date.day)] i18n(stonehearth:ui.game.calendar.month_format)",
             "weather_prefix_0": "Aujourd'hui : ",
@@ -941,9 +941,9 @@
                "net_worth_label": "Valeur nette",
                "placed_item_label": "[str(itemName)] mis",
                "quality_label": {
-                  "quality_2": "Objets de qualité fine possédés",
+                  "quality_2": "Objets de qualité ouvragé possédés",
                   "quality_3": "Objets d'excellente qualité possédés",
-                  "quality_4": "Articles de qualité chef d'oeuvre détenus"
+                  "quality_4": "Articles de qualité chef d'oeuvre possédés"
                }
             },
             "dispatch_quest": {
@@ -1167,7 +1167,7 @@
                "template_default_name": "Mon dernier plan",
                "set_template_name_prompt": "Saisissez un nom pour ce plan",
                "ignore_quality": "Ignorer la qualité",
-               "ignore_quality_tooltip": "Traitez tous les éléments du modèle comme étant de qualité standard (plutôt que Fine, Excellent, etc.).",
+               "ignore_quality_tooltip": "Traitez tous les éléments du modèle comme étant de qualité standard (plutôt que ouvragé, Excellent, etc.).",
                "remove_template_confirm": {
                   "title": "Supprimer le modèle",
                   "message": "Êtes-vous sûr de vouloir supprimer ce modèle de bâtiment ?",
@@ -2209,7 +2209,7 @@
             },
             "inspiration": {
                "display_name": "Inspiration",
-               "description": "Une part de chance de ce hearthling peut créer des articles avec la qualité fine et excellente",
+               "description": "Une part de chance de ce hearthling peut créer des articles avec la qualité ouvragé et excellente",
                "bullet_points": {
                   "000": "Un hearthling doit être au moins un compagnon pour créer des objets de qualité, et un maître pour créer d'excellents articles </ br>",
                   "001": "Qui va de -2% à +3%, basé sur l'esprit du hearthling"
@@ -5297,12 +5297,12 @@
                                        },
                                        "bulletin_title": "Sasha continue",
                                        "dialog_title": "Sasha étend sa main",
-                                       "choice_000": "Welcome !",
+                                       "choice_000": "Bienvenue !",
                                        "choice_001": "Euh, non merci..."
                                     },
                                     "intro": {
                                        "bulletin_message": {
-                                          "00": "Sasha s'arrête, s'appuyant sur ses genoux et haletant légèrement. \"Ouf... oh... regarde, à l'Arbalète Cristalline ! It seems... its job is done, and now it's gone dormant. Let's have it serve as a monument, a memorial, to what the friendship of our two clans could achieve!\""
+                                          "00": "Sasha s'arrête, s'appuyant sur ses genoux et haletant légèrement. \"Ouf... oh... regarde, à l'Arbalète Cristalline ! Il semble... son travail est terminé, et maintenant elle est en sommeil. Faisons-en un monument, un mémorial, en témoignage de ce que l'amitié de nos deux clans peut accomplir !\""
                                        },
                                        "bulletin_title": "Sasha continue",
                                        "dialog_title": "Sasha, Envoyé du clan Amberstone",
@@ -5446,7 +5446,7 @@
                                        },
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "\"Dieu merci, je n'ai nulle part où aller. Je me cacherai quelque part, laisse-moi savoir quand tu seras prêt.\""
+                                             "00": "\"Dieu merci, je n'ai nulle part où aller. Je me cacherai quelque part, laisse-moi savoir quand vous serez prêt.\""
                                           },
                                           "bulletin_title": "Scène de chasse",
                                           "dialog_title": "Un Lapin blessé",
@@ -5470,7 +5470,7 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "000": "\"Merci, vous m'avez vraiment sauvé.<br><br>...alors, les Kobolds <i>may</i> me poursuivent parce que je <i>pourrais</i> leur avoir volé...\" Le jeune Lapin dit, timidement.<br><br>\"Ici, vous les avez gagnés.\"<br><br><font size=-1><i>[La réputation auprès des lapins a augmenté]</i></font>"
+                                             "000": "\"Merci, vous m'avez vraiment sauvé.<br><br>...alors, les Kobolds m'ont <i>peut-être</i> pourchassé parce que je les ai <i>peut-être</i> volés...\" Le jeune Lapin dit, timidement.<br><br>\"Tenez, vous les avez mérités.\"<br><br><font size=-1><i>[La réputation auprès des lapins a augmenté]</i></font>"
                                           },
                                           "bulletin_title": "Un Lapin reconnaissant",
                                           "dialog_title": "Un Lapin reconnaissant",
@@ -5664,52 +5664,52 @@
                                           "choice_000": "[Ignorer l'histoire] On est au courant.",
                                           "choice_001": "S'il te plait dis nous",
                                           "bulletin_message": {
-                                             "00": "\"My dear human friends! It has been generations since we Lapine have found an ally as trustworthy as you. We have decided to offer you a precious gift.\"<br><br>\"We would like to bring one of your own into our warren for a time, to teach them the art of Geomancy.\"<br><br>\"Do you understand how vital Geomancy is to us, of the history of my kind and of Clan Amberstone?\""
+                                             "00": "\"Mes chers amis humains ! Il y a des générations que nous, Lapine, n'avons pas trouvé un allié aussi digne de confiance que vous. Nous avons décidé de vous offrir un cadeau précieux.\"<br><br>\"Nous aimerions faire venir l'un des vôtres dans notre garenne pour un temps, pour lui enseigner l'art de la Géomancie.\"<br><br>\"Comprenez-vous combien la géomancie est vitale pour nous, pour l'histoire de mon espèce et du clan Amberstone ?\""
                                           }
                                        },
                                        "story1": {
-                                          "choice_000": "But you're still around?",
+                                          "choice_000": "Mais vous êtes toujours là ?",
                                           "bulletin_message": {
-                                             "00": "Sasha nods sagely. \"This world of Hearth is ruled by the Heavenly Cycles. Each eon brings a different entity to Ascendance, who raises their own kind to an evolved state.\"<br><br>\"Monkey is in Ascendance now, giving you Humans form and cleverness. Snake was before, and has waned, its Orcs slowly reverting to their lizard nature. Rabbit before that; long ago, but you can find our statues dotting the landscape even now.\""
+                                             "00": "Sasha hoche la tête sagement. \"Ce monde de Hearth est régi par les Cycles Célestes. Chaque éon amène une entité différente à l'Ascendance, qui s'élève d'elle même à un état évolué.\"<br><br>\"Singe est en Ascendance maintenant, vous donnant la forme et l'intelligence d'Humains. Serpent était avant, il décline, les Orques revenant lentement à leur nature de lézard. Lapin encore avant cela, il y a bien longtemps, mais vous pouvez trouver nos statues parsèment encore le paysage aujourd'hui.\""
                                           }
                                        },
                                        "offer": {
                                           "bulletin_message": {
-                                             "00": "\"Now then, to business - would you like to send one of your esteemed citizens with me to learn the ways of Geomancy? I estimate it will take at least a week to grant them a basic understanding.\"<br><br>\"This may be your only chance to do so - I feel the elders may change their minds again in a hare's breath.\""
+                                             "00": "\"Maintenant, passons aux affaires - voulez-vous envoyer l'un de vos estimés citoyens avec moi pour apprendre les voies de la géomancie ? J'estime qu'il faudra au moins une semaine pour lui accorder une compréhension de base.\"<br><br>\"C'est peut-être votre seule chance de le faire - j'ai l'impression que les aînés peuvent encore changer d'avis en un souffle de lièvre.\""
                                           },
-                                          "choice_000": "Okay! Sounds exciting!",
-                                          "choice_001": "[Decline] No thanks!"
+                                          "choice_000": "D'accord ! Ça a l'air excitant !",
+                                          "choice_001": "[Décliner] Non merci !"
                                        },
                                        "reject": {
                                           "bulletin_message": {
-                                             "00": "\"I see. Are you sure? As I said, this may likely be your only chance to gain such knowledge.\""
+                                             "00": "\"Je vois. Vous êtes sûr ? Comme je l'ai dit, c'est peut-être votre seule chance d'acquérir de telles connaissances.\""
                                           },
-                                          "choice_000": "I am sure, no thanks.",
-                                          "choice_001": "[Back] Wait, I changed my mind!"
+                                          "choice_000": "J'en suis sûr, non merci.",
+                                          "choice_001": "[Retour] Attends, j'ai changé d'avis !"
                                        },
                                        "story3a": {
                                           "bulletin_message": {
-                                             "00": "Sasha continues. \"Rabbit left Ascendance, and Snake uplifted the Orcs. The Orcs were unsatisfied sharing the world indefinitely, and rejected our attempts to teach them Geomancy, saying it was against the will of the Cycle and that Hearth’s magic was forbidden; dangerous and volatile.\"<br><br>\"In truth, they were not wrong.\""
+                                             "00": "Sasha continue. \"Lapin quitta Ascendance, et Serpent s'éleva en Orques. Insatisfaits de partager le monde indéfiniment, ils rejetèrent nos tentatives de leur enseigner la Géomancie, affirmant que c'était contre la volonté du Cycle et que la magie de Hearth était interdite, dangereuse et volatile.\"<br><br>\"En vérité, ils n'avaient pas tort.\""
                                           },
                                           "choice_000": "Oh..."
                                        },
                                        "reject2": {
                                           "bulletin_message": {
-                                             "00": "\"Very well, I suppose things of the Rabbit stay of the Rabbit after all.\"<br><br>\"I shall take my leave for now. I still count you as dear friends and allies, so I will be back in touch before long! Farewell!\""
+                                             "00": "\"Très bien, je suppose que les choses Lapin restent Lapin après tout.\"<br><br>\"Je vais prendre congé pour l'instant. Je vous considère toujours comme de bons amis et alliés, alors je vous recontacterai d'ici peu ! Au revoir !\""
                                           },
-                                          "choice_000": "Farewell!"
+                                          "choice_000": "Au revoir !"
                                        },
                                        "story2": {
                                           "bulletin_message": {
-                                             "00": "\"During our Cycle, we Lapine studied its magic deeply. We began to understand the nature of the magical <i>Divine Harmonics</i> produced from the Cycle and which grant our uplifted form. We also learned that Hearth exudes magic, the manipulation of which became known as <i>Geomancy</i>\".<br><br>\"We learned to harness this Hearth magic, our Geomancers attuning it through amberstones such that it keeps us from devolving back to the simple fuzzy creatures you see hopping around the surface now.\""
+                                             "00": "\"Au cours de notre Cycle, nous Lapine avons étudié sa magie en profondeur. Nous avons commencé à comprendre la nature magique des <i>Harmoniques Divines</i> produites à partir du cycle et qui donnent notre forme élevée. Nous avons aussi appris que Hearth dégage de la magie, dont la manipulation est devenue connue sous le nom de <i>Géomancie</i>\".<br><br>\"Nous avons appris à exploiter cette magie de Hearth, nos Géomanciens la syntonisant à travers les amberstones de sorte qu'elle nous empêche de redevenir les simples créatures duveteuses que vous voyez maintenant bondir à la surface.\""
                                           },
-                                          "choice_000": "But it didn't work on everyone?"
+                                          "choice_000": "Mais ça n'a pas marché sur tout le monde ?"
                                        },
                                        "story3b": {
                                           "bulletin_message": {
-                                             "00": "\"Still, our largest cities were using up magic energy faster than Hearth could produce it, forcing us to scatter. At the same time, radical factions of Orc were hostile to us, forcing us to consolidate. We were at an impasse.\"<br><br>\"So, my ancestors made the drastic choice to go underground, taking the name Amberstone and building tunnels and settlements along Leylines mapped by Lapine Geomancers. These seams of intense magic energy let them survive underground indefinitely.\""
+                                             "00": "\"Cependant, nos plus grandes villes utilisaient l'énergie magique plus vite que Hearth ne pouvait la produire, nous forçant à nous disperser. En même temps, les factions radicales orques nous étaient hostiles, nous forçant à nous regrouper. Nous étions dans une impasse.\"<br><br>\"Ainsi, mes ancêtres ont fait le choix drastique d'aller sous terre, prenant le nom d'Amberstone et construisant des tunnels et des colonies le long des lignes telluriques cartographiées par des Géomanciens Lapine. Ces filons d'énergie magique intense leur ont permis de survivre indéfiniment sous terre.\""
                                           },
-                                          "choice_000": "Sounds dull..."
+                                          "choice_000": "Cela semble ennuyeux..."
                                        },
                                        "accept": {
                                           "bulletin_message": {
@@ -5748,11 +5748,11 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "The visitor nods in thanks and bounds away, baskets in arm. <br><br>Not long after, a grove of berry bushes is discovered not far from town, a small amber ribbon tied to each.<br><br><i><font size=-1>[The visitors seem to trust you more]</font></i>"
+                                             "00": "Le visiteur hoche la tête en remerciement et s'éloigne en bondissant, les paniers dans le bras.<br><br>Peu de temps après, des buissons de baies sont découverts non loin de la ville, un petit ruban couleur ambre est attaché à chacun.<br><br><i><font size=-1>[Le visiteur semblent vous faire plus confiance]</font></i>"
                                           },
-                                          "bulletin_title": "Strange Trading",
-                                          "dialog_title": "Strange Trading",
-                                          "choice_000": "Huh."
+                                          "bulletin_title": "Étrange commerce",
+                                          "dialog_title": "Étrange commerce",
+                                          "choice_000": "Euh..."
                                        }
                                     }
                                  }
@@ -5762,11 +5762,11 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "The visitor nods in thanks and bounds away, baskets in arm.<br><br>Not long after, a grove of unusual glowing plants is discovered not far from town, a small amber ribbon tied to one.<br><br><i><font size=-1>[The visitors seem to trust you more]</font></i>"
+                                             "00": "Le visiteur hoche la tête en remerciement et s'éloigne en bondissant, les paniers dans le bras.<br><br>Peu de temps après, on découvre, non loin de la ville, un bosquet de plantes aux reflets inhabituels, un petit ruban couleur ambre attaché à l'un d'eux.<br><br><i><font size=-1>[Le visiteur semblent vous faire plus confiance]</font></i>"
                                           },
-                                          "bulletin_title": "Strange Trading",
-                                          "dialog_title": "Strange Trading",
-                                          "choice_000": "Odd."
+                                          "bulletin_title": "Étrange commerce",
+                                          "dialog_title": "Étrange commerce",
+                                          "choice_000": "bizarre."
                                        }
                                     }
                                  }
@@ -6489,7 +6489,7 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "Les géomanciens lapin ont apporté quelques fleurs de Foyer, Essence de Foyer, et des matières premières avec eux, pour aider à démarrer leur nouvelle pratique hors-sol.."
+                                             "00": "Les géomanciens lapin ont apporté quelques Hearthbloom, Essence de Hearth, et des matières premières avec eux, pour aider à démarrer leur nouvelle pratique hors-sol.."
                                           },
                                           "bulletin_title": "Les affaires d'un géomancien !",
                                           "dialog_title": "Les affaires d'un géomancien !",
@@ -8715,15 +8715,15 @@
                "item_quality": {
                   "ate_item_quality_fine": {
                      "display_name": "Repas finement préparé",
-                     "tooltip": "My recent [str(foodname)] was <font color='#6be9e7'>Finely</font> prepared, which made it extra delicious!"
+                     "tooltip": "Mon récent [str(foodname)] a été <font color='#6be9e7'>Finement</font> préparé, ce qui l'a rendu encore plus délicieux !"
                   },
                   "ate_item_quality_excellent": {
                      "display_name": "Repas parfaitement préparé",
-                     "tooltip": "My recent [str(foodname)] was <font color='#ce71d2'>Excellent!</font> It was really something!"
+                     "tooltip": "Mon récent [str(foodname)] a été <font color='#ce71d2'>Parfait !</font> C'était vraiment quelque chose !"
                   },
                   "ate_item_quality_masterwork": {
                      "display_name": "Repas magistralement préparé !",
-                     "tooltip": "I just ate a <font color='#E3AC53'>Masterfully</font> prepared [str(foodname)]! I never knew it could taste so good!"
+                     "tooltip": "Je viens de manger un [str(foodname)] <font color='#E3AC53'>Magistralement</font> préparé! Je ne savais pas que cela pouvait être aussi savoureux !"
                   }
                },
                "values": {
@@ -8736,7 +8736,7 @@
             "amberstone": {
                "borrow_crafter": {
                   "helped_out": {
-                     "display_name": "Visite avec les lapins",
+                     "display_name": "Visite chez les lapins",
                      "tooltip": "Wouah, le terrier Amberstone était incroyable ! Je me sens si honoré de les avoir aidés."
                   }
                }
@@ -9874,60 +9874,60 @@
          },
          "wooden_door_fine": {
             "wooden_door_fine_ghost": {
-               "display_name": "Belle porte en bois",
+               "display_name": "Porte ouvragée en bois",
                "description": "Enfin en privé !"
             }
          },
          "wooden_door_2_fine": {
             "wooden_door_2_fine_ghost": {
                "description": "Plus solide que les portes moyenne et avec un beau motif",
-               "display_name": "Belle porte renforcée en bois"
+               "display_name": "Porte renforcée ouvragée en bois"
             }
          },
          "wooden_double_door_fine": {
             "wooden_double_door_fine_ghost": {
-               "display_name": "Belle double porte en bois",
+               "display_name": "Double porte ouvragée en bois",
                "description": "Une porte plus grande avec du style supplémentaire. Tous vos amis seront envieux."
             }
          },
          "wooden_window_frame_fine": {
             "wooden_window_frame_fine_ghost": {
-               "display_name": "Beau cadre de fenêtre en bois",
+               "display_name": "Cadre de fenêtre ouvragé en bois",
                "description": "Et voilà pour la vie privée ..."
             }
          },
          "wooden_window_frame_tall_fine": {
             "wooden_window_frame_tall_fine_ghost": {
-               "display_name": "Beau grand cadre de fenêtre",
+               "display_name": "Grand cadre de fenêtre ouvragé",
                "description": "La hauteur supplémentaire ajoute un air d'élégance."
             }
          },
          "wooden_window_frame_wide_fine": {
             "wooden_window_frame_wide_fine_ghost": {
-               "display_name": "Beau large cadre de fenêtre",
+               "display_name": "Large cadre de fenêtre ouvragé",
                "description": "C'est une vue panoramique !"
             }
          },
          "wooden_diamond_window_fine": {
             "wooden_diamond_window_fine_ghost": {
-               "display_name": "Beau cadre de fenêtre losange",
+               "display_name": "Cadre de fenêtre losange ouvragé",
                "description": "Et voilà pour la vie privée ..."
             }
          },
          "picket_fence_fine": {
             "picket_fence_fine_ghost": {
-               "display_name": "Belle clôture en bois",
+               "display_name": "Clôture ouvragée en bois",
                "description": "Si ce n'est pas blanc, c'est que votre vie est inassouvi ?"
             }
          },
          "picket_fence_gate_fine": {
             "picket_fence_gate_fine_ghost": {
-               "display_name": "Beau portail de clôture en bois",
+               "display_name": "Portail de clôture ouvragé en bois",
                "description": "Vous n'aimez pas vos voisins ? Ne l'installer alors surtout pas."
             }
          },
          "wooden_tunnel_door_fine": {
-            "display_name": "Porte de tunnel en beau bois",
+            "display_name": "Porte de tunnel ouvragée en bois",
             "description": "Utile pour sceller les tunnels"
          },
          "blue_latticed_window": {
@@ -10116,7 +10116,7 @@
          },
          "stone_window_frame_crossbeam": {
             "stone_window_frame_crossbeam_ghost": {
-               "display_name": "Cadre de fenêtre en pierre à traverses",
+               "display_name": "Cadre de fenêtre à traverses en pierre",
                "description": "Offre une petite protection contre les créatures qui essaient d'entrer par hasard."
             }
          },
@@ -10242,19 +10242,19 @@
          },
          "small_crate_fine": {
             "small_crate_fine_ghost": {
-               "display_name": "Belle petite caisse",
+               "display_name": "Petite caisse ouvragée",
                "description": "Conteneur d'entreposage avec du style"
             }
          },
          "large_crate_fine": {
             "large_crate_fine_ghost": {
-               "display_name": "Belle grande caisse",
+               "display_name": "Grande caisse ouvragée",
                "description": "Peut contenir jusqu'à 32 articles, avec du style"
             }
          },
          "leather_bound_chest_fine": {
             "leather_bound_chest_fine_ghost": {
-               "display_name": "Beau coffre en cuir lié",
+               "display_name": "Coffre ouvragé relié en cuir",
                "description": "Peut contenir jusqu'à 64 articles, avec du style"
             }
          },
@@ -10446,7 +10446,7 @@
          },
          "market_shelf_tall_ground_wood": {
             "market_shelf_tall_ground_wood_ghost": {
-               "display_name": "Étagère de marché",
+               "display_name": "Étal de commerce",
                "description": "Les autres joueurs et les voyageurs peuvent acheter les objets stockés ici."
             }
          },
@@ -10472,13 +10472,13 @@
          },
          "market_shelf_tall_ground_clay": {
             "market_shelf_tall_ground_clay_ghost": {
-               "display_name": "Étagère de marché",
+               "display_name": "Étal de commerce",
                "description": "Les autres joueurs et les voyageurs peuvent acheter les objets stockés ici."
             }
          },
          "market_shelf_tall_ground_stone": {
             "market_shelf_tall_ground_stone_ghost": {
-               "display_name": "Étagère de marché",
+               "display_name": "Étal de commerce",
                "description": "Les autres joueurs et les voyageurs peuvent acheter les objets stockés ici."
             }
          }
@@ -11284,7 +11284,7 @@
          },
          "wooden_garden_lantern_fine": {
             "wooden_garden_lantern_fine_ghost": {
-               "display_name": "Belle lanterne d'extérieur",
+               "display_name": "Lanterne d'extérieur ouvragée",
                "description": "Une source de lumière compacte et avec un peu d'alure."
             },
             "wooden_garden_lantern_red_ghost": {
@@ -11329,7 +11329,7 @@
          },
          "wooden_wall_lantern_fine": {
             "wooden_wall_lantern_fine_ghost": {
-               "display_name": "Belle lanterne murale en bois",
+               "display_name": "Lanterne murale ouvragée en bois",
                "description": "Se fixe facilement aux murs"
             }
          },
@@ -11795,13 +11795,13 @@
          },
          "window_box_brightbell_fine": {
             "window_box_brightbell_fine_ghost": {
-               "display_name": "Belle jardinière pour Jacinthe",
+               "display_name": "Jardinière ouvragée pour Jacinthe",
                "description": "Une maison confortable pour la plante."
             }
          },
          "window_box_frostsnap_fine": {
             "window_box_frostsnap_fine_ghost": {
-               "display_name": "Belle jardinière pour Perce-neige",
+               "display_name": "Jardinière ouvragé pour Perce-neige",
                "description": "Une maison confortable pour la plante."
             }
          },
@@ -12510,14 +12510,14 @@
                "display_name": "Piece of Meat Dumpling"
             },
             "dumpling_meat": {
-               "display_name": "Meat Dumpling",
-               "description": "A little bread pocket with meat stuffed inside."
+               "display_name": "Jiaozi à la viande",
+               "description": "Une petite poche de pain avec de la viande et des épices farcies à l'intérieur."
             }
          },
          "dumpling_vegetarian": {
             "dumpling_vegetarian": {
-               "display_name": "Veggie Dumpling",
-               "description": "A little bread pocket with veggies stuffed inside."
+               "display_name": "Jiaozi végétarien",
+               "description": "Une petite poche de pain avec des légumes et des épices farcies à l'intérieur."
             },
             "dumpling_vegetarian_serving": {
                "display_name": "Piece of Veggie Dumpling"
@@ -12533,7 +12533,7 @@
          },
          "arch_backed_chair_fine": {
             "arch_backed_chair_fine_ghost": {
-               "display_name": "Chaise cathédrale stylisé",
+               "display_name": "Chaise cathédrale ouvragée",
                "description": "Aussi classe que la piété."
             }
          },
@@ -12551,7 +12551,7 @@
          },
          "comfy_bed_fine": {
             "comfy_bed_fine_ghost": {
-               "display_name": "Lit confortable stylisé",
+               "display_name": "Lit confortable ouvragé",
                "description": "J'ai rêvé... de moutons volants."
             }
          },
@@ -12563,7 +12563,7 @@
          },
          "comfy_chair_fine": {
             "comfy_chair_fine_ghost": {
-               "display_name": "Chaise confortable raffinée",
+               "display_name": "Chaise confortable ouvragée",
                "description": "Pour s'assoir luxueusement !"
             }
          },
@@ -12575,13 +12575,13 @@
          },
          "dining_table": {
             "dining_table_ghost": {
-               "display_name": "Table à manger",
+               "display_name": "Table de salle à manger",
                "description": "S'assoir pour manger est un signe de civilisation."
             }
          },
          "dining_table_fine": {
             "dining_table_fine_ghost": {
-               "display_name": "Table à manger stylisée",
+               "display_name": "Table de salle à manger ouvragée",
                "description": "S'assoir pour manger est un signe de civilisation.<br>Encore plus sur cette version !"
             }
          },
@@ -12593,7 +12593,7 @@
          },
          "dresser_fine": {
             "dresser_fine_ghost": {
-               "display_name": "Commode stylisée",
+               "display_name": "Commode ouvragée",
                "description": "Encore plus décorative en l'absence de propriétaire."
             }
          },
@@ -12611,7 +12611,7 @@
          },
          "park_bench_fine": {
             "park_bench_fine_ghost": {
-               "display_name": "Banc de parc de luxe",
+               "display_name": "Banc de parc ouvragé",
                "description": "Siège d'extérieur pour des moments de détente."
             }
          },
@@ -12623,13 +12623,13 @@
          },
          "simple_wooden_chair": {
             "simple_wooden_chair_ghost": {
-               "display_name": "Chaise en bois",
+               "display_name": "Simple chaise en bois",
                "description": "Pour s'assoir."
             }
          },
          "simple_wooden_chair_fine": {
             "simple_wooden_chair_fine_ghost": {
-               "display_name": "Chaise en bois stylisé",
+               "display_name": "Simple chaise ouvragée en bois",
                "description": "Pour s'assoir tout en frimant."
             }
          },
@@ -12659,7 +12659,7 @@
          },
          "table_for_one_fine": {
             "table_for_one_fine_ghost": {
-               "display_name": "Table stylisé de célibataire",
+               "display_name": "Table ouvragée de célibataire",
                "description": "On peut frimer même seul !"
             }
          },
@@ -12681,7 +12681,7 @@
          },
          "writing_desk_fine": {
             "writing_desk_fine_ghost": {
-               "display_name": "Bureau stylisé",
+               "display_name": "Bureau ouvragé",
                "description": "Un meuble pour écrire. Beaucoup."
             }
          },
@@ -12693,7 +12693,7 @@
          },
          "clay_dining_table": {
             "clay_dining_table_ghost": {
-               "display_name": "Table à manger en argile",
+               "display_name": "Table de salle à manger en argile",
                "description": "Enlève votre nourriture du sol"
             }
          },
@@ -12711,19 +12711,19 @@
          },
          "clay_dining_table_fine": {
             "clay_dining_table_fine_ghost": {
-               "display_name": "Belle table à manger en argile",
+               "display_name": "Table de salle à manger ouvragée en argile",
                "description": "Enlève votre nourriture du sol ... dans un style"
             }
          },
          "simple_clay_chair_fine": {
             "simple_clay_chair_fine_ghost": {
-               "display_name": "Belle chaise en argile",
+               "display_name": "Chaise ouvragée en argile",
                "description": "Moins poussiéreux et plus élégant que de rester assis sur le plancher"
             }
          },
          "clay_bed_fine": {
             "clay_bed_fine_ghost": {
-               "display_name": "Beau lit en argile",
+               "display_name": "Lit ouvragé en argile",
                "description": "Fantaisique, mais toujours inconfortable"
             }
          },
@@ -13111,7 +13111,7 @@
          "kobolds": {
             "kobold": {
                "display_name": "[str(self.stonehearth:unit_info.custom_name)]",
-               "description": "Dévot du l'Étoile Diamant"
+               "description": "Dévot de l'Étoile Diamant"
             },
             "loot": {
                "elite_bling_hat": {
@@ -16139,7 +16139,7 @@
             },
             "dining_table_recipe": {
                "description": "Permet à un groupe de personnes de manger ensemble. Comme les grands.",
-               "recipe_name": "Table à manger",
+               "recipe_name": "Table de salle à manger",
                "flavor": "S'asseoir pour manger est un signe de civilisation."
             },
             "dresser_recipe": {
@@ -16200,7 +16200,7 @@
             },
             "simple_wooden_chair_recipe": {
                "description": "En position assise, la nourriture est 20% plus satisfaisante.",
-               "recipe_name": "Chaise en bois",
+               "recipe_name": "Simple chaise en bois",
                "flavor": "Dix mille ans de recherche ont aboutis à ce concept à quatre pieds."
             },
             "small_crate_recipe": {
@@ -16368,7 +16368,7 @@
             },
             "market_shelf_tall_ground_wood_recipe": {
                "description": "D'autres joueurs et voyageurs peuvent acheter des marchandises stockées sur ces étagères.",
-               "recipe_name": "Étagère de marché",
+               "recipe_name": "Étal de commerce",
                "flavor": "La poubelle d'un Hearthling est le trésor d'un autre ... n'est-ce pas?"
             },
             "archer_bow_recipe": {
@@ -16405,7 +16405,7 @@
                "flavor": "Meubles à manger pour les introvertis."
             },
             "ornate_dining_table_recipe": {
-               "recipe_name": "Table à manger ornée",
+               "recipe_name": "Table de salle à manger ornée",
                "description": "Permet à un groupe de personnes de manger ensemble. Comme les adultes.",
                "flavor": "S'asseoir pour manger est un signe de civilisation."
             },
@@ -16877,11 +16877,11 @@
                "perk_000_name": "Défenseur de la ville",
                "perk_000_description": "Cet ingénieur peut placer jusqu'à huit pièges et quatre tourelles",
                "perk_001_name": "Connaissance de compagnon",
-               "perk_001_description": "Lorsque l'inspiration frappe, l'Ingénieur peut maintenant créer un objet de qualité particulièrement fine."
+               "perk_001_description": "Lorsque l'inspiration frappe, l'Ingénieur peut maintenant créer un objet de qualité particulièrement Ouvragé."
             },
             "level_5_data": {
                "perk_000_name": "Point de vue du maître",
-               "perk_000_description": "L'Ingénieur peut maintenant créer des articles de qualité Excellente, et fera des articles de qualité Fine plus souvent."
+               "perk_000_description": "L'Ingénieur peut maintenant créer des articles de qualité Excellente, et fera des articles de qualité Ouvragé plus souvent."
             }
          },
          "engineer_wrench": {
@@ -17085,9 +17085,9 @@
       },
       "geomancer": {
          "geomancer_description": {
-            "display_name": "???",
-            "description": "???",
-            "requirements": "???",
+            "display_name": "Géomancien",
+            "description": "Terraformes et crée de golems.",
+            "requirements": "Un talisman du clan Amberstone et la confiance en Hearth.",
             "level_2_data": {
                "perk_000_name": "Manipulation de la matière",
                "perk_000_description": "Le géomancien peut maintenant fabriquer des pierres qui manipulent l'eau et invoquent de grandes parcelles de terrain."
@@ -17132,10 +17132,10 @@
          "geomancer_talisman": {
             "geomancer_talisman_iconic": {
                "display_name": "Bâton Géomancien",
-               "description": "Intensifie la capacité du porteur à interagir avec les pouvoirs du Foyer."
+               "description": "Intensifie la capacité du porteur à interagir avec les pouvoirs de Hearth."
             },
             "display_name": "Talisman de Géomancien",
-            "description": "Intensifie la capacité du porteur à interagir avec les pouvoirs du Foyer."
+            "description": "Intensifie la capacité du porteur à interagir avec les pouvoirs de Hearth."
          },
          "geomancer_golem_workbench": {
             "geomancer_golem_workbench_ghost": {
@@ -17263,7 +17263,7 @@
                "flavor": "Les larmes ... ce sont des larmes de bonheur."
             },
             "wet_stone_recipe": {
-               "flavor": "Il pleure pour le foyer."
+               "flavor": "Elle pleure pour Hearth."
             },
             "earthbud_seeds_recipe": {
                "description": "Séparer les graines des bourgeons",
@@ -17321,11 +17321,11 @@
             },
             "level_3_data": {
                "perk_000_name": "Connaissance de compagnon",
-               "perk_000_description": "Quand l'inspiration frappe, le maçon est capable de fabriquer une qualité particulièrement fine."
+               "perk_000_description": "Quand l'inspiration frappe, le maçon est capable de fabriquer une qualité particulièrement Ouvragé."
             },
             "level_5_data": {
                "perk_000_name": "Point de vue du maître",
-               "perk_000_description": "Le maçon peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent."
+               "perk_000_description": "Le maçon peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité Ouvragé plus souvent."
             }
          },
          "mason_chisel": {
@@ -17748,7 +17748,7 @@
             },
             "stone_window_frame_crossbeam_recipe": {
                "description": "Une fenêtre plus élégante.",
-               "recipe_name": "Cadre de fenêtre en pierre à traverses",
+               "recipe_name": "Cadre de fenêtre à traverses en pierre",
                "flavor": "Est-ce ça qu'ils appellent une section transversale?"
             },
             "cobblestone_fence_combo_recipe": {
@@ -17773,7 +17773,7 @@
             },
             "market_shelf_tall_ground_stone": {
                "description": "D'autres joueurs et voyageurs peuvent acheter des marchandises stockées sur ces étagères.",
-               "recipe_name": "Étagère de marché",
+               "recipe_name": "Étal de commerce",
                "flavor": "La poubelle d'un Hearthling est le trésor d'un autre ... n'est-ce pas?"
             }
          }
@@ -17797,11 +17797,11 @@
             },
             "level_3_data": {
                "perk_000_name": "Connaissance de compagnon",
-               "perk_000_description": "Quand l'inspiration frappe, le potier peut fabriquer une qualité particulièrement fine."
+               "perk_000_description": "Quand l'inspiration frappe, le potier peut fabriquer une qualité particulièrement Ouvragé."
             },
             "level_5_data": {
                "perk_000_name": "Point de vue du maître",
-               "perk_000_description": "Le potier peut maintenant créer des articles de qualité excellente, et fera des articles de qualité fine plus souvent."
+               "perk_000_description": "Le potier peut maintenant créer des articles de qualité excellente, et fera des articles de qualité Ouvragé plus souvent."
             },
             "level_6_data": {
                "title": "Maître potier",
@@ -17916,7 +17916,7 @@
             },
             "clay_dining_table_recipe": {
                "description": "Suréleve la nourriture du sol !",
-               "recipe_name": "Table à manger en argile",
+               "recipe_name": "Table de salle à manger en argile",
                "flavor": "\"Un environnement élevé, pour une conversation élevée\" "
             },
             "simple_clay_chair_recipe": {
@@ -18060,7 +18060,7 @@
             "blazing_inlay_recipe": {
                "description": "Dorure rayonnante pour l'Épée Emblazonnée.",
                "recipe_name": "Incrustation flamboyante",
-               "flavor": "Luisant de la lumière du foyer"
+               "flavor": "Luisant de la lumière de Hearth"
             },
             "titan_ward_clay_recipe": {
                "description": "Hurts n'importe quoi à proximité qui sent le titan.",
@@ -18099,7 +18099,7 @@
             },
             "market_shelf_tall_ground_clay": {
                "description": "D'autres joueurs et voyageurs peuvent acheter des marchandises stockées sur ces étagères.",
-               "recipe_name": "Étagère de marché",
+               "recipe_name": "Étal de commerce",
                "flavor": "La poubelle d'un Hearthling est le trésor d'un autre ... n'est-ce pas?"
             }
          },
@@ -18281,11 +18281,11 @@
             },
             "level_3_data": {
                "perk_000_name": "Connaissance de compagnon",
-               "perk_000_description": "Quand l'inspiration frappe, le tisserand peut maintenant fabriquer un article de qualité particulièrement fine. (Pas encore implémenté pour les vêtements !)"
+               "perk_000_description": "Quand l'inspiration frappe, le tisserand peut maintenant fabriquer un article de qualité particulièrement Ouvragé. (Pas encore implémenté pour les vêtements !)"
             },
             "level_5_data": {
                "perk_000_name": "Point de vue du maître",
-               "perk_000_description": "Le tisserand peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité fine plus souvent. (Pas encore implémenté pour les vêtements !)"
+               "perk_000_description": "Le tisserand peut maintenant créer des articles d'excellente qualité, et fera des articles de qualité Ouvragé plus souvent. (Pas encore implémenté pour les vêtements !)"
             }
          },
          "recipes": {
