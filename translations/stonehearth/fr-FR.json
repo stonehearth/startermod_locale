@@ -10290,157 +10290,157 @@
          },
          "input_bin_clay": {
             "input_bin_clay_ghost": {
-               "display_name": "Bac en céramique",
+               "display_name": "Bac de stockage en céramique",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_amberstone": {
             "input_bin_amberstone_ghost": {
-               "display_name": "Panier style Lapin",
+               "display_name": "Panier de stockage style Lapin",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_woven": {
             "input_bin_woven_ghost": {
-               "display_name": "Panier tissé",
+               "display_name": "Panier de stockage tissé",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_wood": {
             "input_bin_wood_ghost": {
-               "display_name": "Caisse en bois",
+               "display_name": "Caisse de stockage en bois",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_stone": {
             "input_bin_stone_ghost": {
-               "display_name": "Bac en pierre",
+               "display_name": "Bac de stockage en pierre",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_iron": {
             "input_bin_iron_ghost": {
-               "display_name": "Bac cercler",
+               "display_name": "Bac cercler de stockage",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_shelf_wall_clay": {
             "input_shelf_wall_clay_ghost": {
-               "display_name": "Étagère murale en céramique",
+               "display_name": "Étagère murale de stockage en céramique",
                "description": "Assurez-vous que ce soit à portée de main !"
             }
          },
          "input_shelf_wall_stone": {
             "input_shelf_wall_stone_ghost": {
-               "display_name": "Étagère murale en pierre",
+               "display_name": "Étagère murale de stockage en pierre",
                "description": "Assurez-vous que ce soit à portée de main !"
             }
          },
          "input_shelf_ground_clay": {
             "input_shelf_ground_clay_ghost": {
-               "display_name": "Étagère en céramique",
+               "display_name": "Étagère de stockage en céramique",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_shelf_ground_stone": {
             "input_shelf_ground_stone_ghost": {
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
-               "display_name": "Étagère en pierre"
+               "display_name": "Étagère de stockage en pierre"
             }
          },
          "input_shelf_ground_wood": {
             "input_shelf_ground_wood_ghost": {
-               "display_name": "Étagère en bois",
+               "display_name": "Étagère de stockage en bois",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_shelf_wall_wood": {
             "input_shelf_wall_wood_ghost": {
-               "display_name": "Étagère murale en bois",
+               "display_name": "Étagère murale de stockage en bois",
                "description": "Assurez-vous que ce soit à portée de main !"
             }
          },
          "input_table_ground_iron": {
             "input_table_ground_iron_ghost": {
-               "display_name": "Table en fer forgé",
+               "display_name": "Table de stockage en fer forgé",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_corner_ground_wood": {
             "input_corner_ground_wood_ghost": {
-               "display_name": "Étagère d'angle en bois",
+               "display_name": "Étagère d'angle de stockage en bois",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_corner_ground_stone": {
             "input_corner_ground_stone_ghost": {
-               "display_name": "Étagère d'angle en pierre",
+               "display_name": "Étagère d'angle de stockage en pierre",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_table_ground_wood": {
             "input_table_ground_wood_ghost": {
-               "display_name": "Table en bois",
+               "display_name": "Table de stockage en bois",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_table_ground_stone": {
             "input_table_ground_stone_ghost": {
-               "display_name": "Table en pierre",
+               "display_name": "Table de stockage en pierre",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_table_ground_clay": {
             "input_table_ground_clay_ghost": {
-               "display_name": "Table céramique",
+               "display_name": "Table de stockage en céramique",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_corner_ground_clay": {
             "input_corner_ground_clay_ghost": {
-               "display_name": "Étagère d'angle en céramique",
+               "display_name": "Étagère d'angle de stockage en céramique",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_clay_blue": {
             "input_bin_clay_blue_ghost": {
-               "display_name": "Bac en céramique bleue",
+               "display_name": "Bac de stockage en céramique bleue",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_clay_green": {
             "input_bin_clay_green_ghost": {
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
-               "display_name": "Bac en céramique vert"
+               "display_name": "Bac de stockage en céramique vert"
             }
          },
          "input_bin_clay_red": {
             "input_bin_clay_red_ghost": {
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide.",
-               "display_name": "Bac en céramique rouge"
+               "display_name": "Bac de stockage en céramique rouge"
             }
          },
          "input_bin_woven_blue": {
             "input_bin_woven_blue_ghost": {
-               "display_name": "Panier tissé bleu",
+               "display_name": "Panier de stockage tissé bleu",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_woven_green": {
             "input_bin_woven_green_ghost": {
-               "display_name": "Panier tissé vert",
+               "display_name": "Panier de stockage tissé vert",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_bin_woven_red": {
             "input_bin_woven_red_ghost": {
-               "display_name": "Panier tissé rouge",
+               "display_name": "Panier de stockage tissé rouge",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
          "input_corner_ground_iron": {
             "input_corner_ground_iron_ghost": {
-               "display_name": "Étagère d'angle en fer forgé",
+               "display_name": "Étagère d'angle de stockage en fer forgé",
                "description": "Un conteneur d'approvisionnement, pour un artisanat plus rapide."
             }
          },
@@ -15953,17 +15953,17 @@
                "recipe_name": "Clé d'ingénieur"
             },
             "input_bin_iron_recipe": {
-               "recipe_name": "Bac cercler",
+               "recipe_name": "Bac cercler de stockage",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_table_ground_iron_recipe": {
-               "recipe_name": "Table en fer forgé",
+               "recipe_name": "Table de stockage en fer forgé",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_corner_ground_iron_recipe": {
-               "recipe_name": "Étagère d'angle en fer forgé",
+               "recipe_name": "Étagère d'angle de stockage en fer forgé",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
@@ -16489,27 +16489,27 @@
                "flavor": "Les artisans aiment montrer leur travail !"
             },
             "input_bin_wood_recipe": {
-               "recipe_name": "Caisse en bois",
+               "recipe_name": "Caisse de stockage en bois",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_ground_wood_recipe": {
-               "recipe_name": "Étagère en bois",
+               "recipe_name": "Étagère de stockage en bois",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_wall_wood_recipe": {
-               "recipe_name": "Étagère murale en bois",
+               "recipe_name": "Étagère murale de stockage en bois",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_corner_ground_wood_recipe": {
-               "recipe_name": "Étagère d'angle en bois",
+               "recipe_name": "Étagère d'angle de stockage en bois",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_table_ground_wood_recipe": {
-               "recipe_name": "Table en bois",
+               "recipe_name": "Table de stockage en bois",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
@@ -17550,27 +17550,27 @@
                "flavor": "Les artisans aiment montrer leur travail !"
             },
             "input_bin_stone_recipe": {
-               "recipe_name": "Bac en pierre",
+               "recipe_name": "Bac de stockage en pierre",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_wall_stone_recipe": {
-               "recipe_name": "Étagère murale en pierre",
+               "recipe_name": "Étagère murale de stockage en pierre",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_ground_stone_recipe": {
-               "recipe_name": "Étagère en pierre",
+               "recipe_name": "Étagère de stockage en pierre",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_corner_ground_stone_recipe": {
-               "recipe_name": "Étagère d'angle en pierre",
+               "recipe_name": "Étagère d'angle de stockage en pierre",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_table_ground_stone_recipe": {
-               "recipe_name": "Table en pierre",
+               "recipe_name": "Table de stockage en pierre",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
@@ -18023,37 +18023,37 @@
                "flavor": "Les artisans aiment montrer leur travail !"
             },
             "input_bin_clay_recipe": {
-               "recipe_name": "Bac en céramique",
+               "recipe_name": "Bac de stockage en céramique",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_ground_clay_recipe": {
-               "recipe_name": "Étagère en céramique",
+               "recipe_name": "Étagère de stockage en céramique",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_shelf_wall_clay_recipe": {
-               "recipe_name": "Étagère murale en céramique",
+               "recipe_name": "Étagère murale de stockage en céramique",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_table_ground_clay_recipe": {
-               "recipe_name": "Étagère en céramique",
+               "recipe_name": "Table de stockage en céramique",
                "description": "Un conteneur polyvalent pour toutes les ressources, afin d'aider les artisans à s'approvisionner.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_bin_clay_blue_recipe": {
-               "recipe_name": "Bac en céramique bleue",
+               "recipe_name": "Bac de stockage en céramique bleue",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_bin_clay_red_recipe": {
-               "recipe_name": "Bac en céramique rouge",
+               "recipe_name": "Bac de stockage en céramique rouge",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
             "input_bin_clay_green_recipe": {
-               "recipe_name": "Bac en céramique verte",
+               "recipe_name": "Bac de stockage en céramique verte",
                "description": "Un récipient polyvalent pour n'importe quelle ressource, pour aider à garder les artisans fournis.",
                "flavor": "Pensez à ce que nous pouvons accomplir lorsque Hearthlings travaillent ensemble !"
             },
@@ -18434,29 +18434,29 @@
                "flavor": "Étaient-elles des ailes de Phénix, ou des ailes de serpent ?"
             },
             "input_bin_amberstone_recipe": {
-               "recipe_name": "Panier tisse-lapin",
+               "recipe_name": "Panier de stockage tisse-lapin",
                "description": "Stocke en toute sécurité les fournitures d'artisanat",
                "flavor": "Les futurs maçons du clan Amberstone doivent pratiquer le discernement de qualité de la pierre pendant de nombreuses années avant qu'ils ne soient autorisés près d'un ciseau. Beaucoup ne le sont d'ailleurs jamais."
             },
             "input_bin_woven_recipe": {
-               "recipe_name": "Panier tissé",
+               "recipe_name": "Panier de stockage tissé",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
                "flavor": "Rien de tel qu'un atelier bien fourni !"
             },
             "input_bin_woven_blue_recipe": {
                "flavor": "Rien de tel qu'un atelier bien fourni !",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
-               "recipe_name": "Panier tissé bleu"
+               "recipe_name": "Panier de stockage tissé bleu"
             },
             "input_bin_woven_green_recipe": {
                "flavor": "Rien de tel qu'un atelier bien fourni !",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
-               "recipe_name": "Panier tissé vert"
+               "recipe_name": "Panier de stockage tissé vert"
             },
             "input_bin_woven_red_recipe": {
                "flavor": "Rien de tel qu'un atelier bien fourni !",
                "description": "Un conteneur polyvalent que vos Hearthlings vont essayer de garder plein, afin que vos artisans puissent continuer à travailler !",
-               "recipe_name": "Panier tissé rouge"
+               "recipe_name": "Panier de stockage tissé rouge"
             },
             "silver_bowstring_recipe": {
                "description": "Une solide bobine de fil d'argent filé",
