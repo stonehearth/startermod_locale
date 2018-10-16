@@ -11795,7 +11795,7 @@
          },
          "window_box_brightbell_fine": {
             "window_box_brightbell_fine_ghost": {
-               "display_name": "Jardinière ouvragée pour Jacinthe",
+               "display_name": "Jardinière ouvragée pour jacinthe",
                "description": "Une maison confortable pour la plante."
             }
          },
@@ -13388,21 +13388,21 @@
             "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé",
             "seed": {
                "brightbell_plant_seed_ghost": {
-                  "display_name": "Graine sauvage de Jacinthe",
+                  "display_name": "Graine sauvage de jacinthe",
                   "description": "Une fois planté, il se développera en herbes médicinales"
                },
                "brightbell_plant_sprout": {
-                  "display_name": "Petit germe de Jacinthe",
+                  "display_name": "Petit germe de jacinthe",
                   "description": "Juste besoin de temps et de soins."
                }
             },
             "stem": {
                "brightbell_plant_stem": {
-                  "display_name": "Tige de Jacinthe",
+                  "display_name": "Tige de jacinthe",
                   "description": "Toujours en croissance !"
                },
                "brightbell_plant_bud": {
-                  "display_name": "Tige de Jacinthe",
+                  "display_name": "Tige de jacinthe",
                   "description": "C'est presque là ! Regardez, il a des bourgeons !"
                }
             }
@@ -13605,30 +13605,30 @@
             }
          },
          "pear_cactus": {
-            "display_name": "Figue de Barbarie",
+            "display_name": "Figuier de Barbarie",
             "description": "Récolte soigneusement pour les figues de Barbarie.",
-            "unripe_description": "Ce sont des épines invisibles et qui blessent beaucoup",
+            "unripe_description": "Ce sont les épines invisibles qui font vraiment mal.",
             "seed": {
                "pear_cactus_plant_seed_ghost": {
-                  "display_name": "Graine de figue de Barbarie",
+                  "display_name": "Graine de figuier de Barbarie",
                   "description": "Peut être planté pour pousser quelques poires épineuses."
                }
             },
             "bud": {
                "pear_cactus_plant_bud": {
-                  "display_name": "Bourgeon de figue de Barbarie",
+                  "display_name": "Bourgeon de figuier de Barbarie",
                   "description": "C'est presque là ! Regardez, il a des bourgeons !"
                }
             },
             "sprout": {
                "pear_cactus_plant_sprout": {
-                  "display_name": "Petit germe de figue de Barbarie",
+                  "display_name": "Petit germe de figuier de Barbarie",
                   "description": "Juste besoin de temps et de soins."
                }
             },
             "stem": {
                "pear_cactus_plant_stem": {
-                  "display_name": "Tige de figue de Barbarie",
+                  "display_name": "Tige de figuier de Barbarie",
                   "description": "Toujours en croissance !"
                }
             }
@@ -13742,35 +13742,35 @@
          },
          "cactus_tulip_red_plant": {
             "cactus_tulip_red_plant_ghost": {
-               "display_name": "Cactus de Tulipe rouge",
+               "display_name": "Cactus à tulipe rouge",
                "description": "Peut être récolté pour donner une plante médicinales"
             },
             "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé",
             "stem": {
                "cactus_tulip_red_plant_stem": {
-                  "display_name": "Tige de Cactus de Tulipe rouge",
+                  "display_name": "Tige de cactus à tulipe rouge",
                   "description": "Toujours en croissance !"
                }
             },
             "sprout": {
                "cactus_tulip_red_plant_sprout": {
-                  "display_name": "Petit germe de Cactus de Tulipe rouge",
+                  "display_name": "Petit germe de cactus à tulipe rouge",
                   "description": "Juste besoin de temps et de soins."
                }
             },
             "seed": {
                "cactus_tulip_red_plant_seed": {
-                  "display_name": "Graine de Cactus de Tulipe rouge",
+                  "display_name": "Graine de cactus à tulipe rouge",
                   "description": "Une fois planté, il deviendra une plante herbacée curative"
                },
                "cactus_tulip_red_plant_seed_ghost": {
-                  "display_name": "Graine de Cactus de Tulipe rouge",
+                  "display_name": "Graine de cactus à tulipe rouge",
                   "description": "Une fois planté, il deviendra une plante herbacée curative"
                }
             },
             "bud": {
                "cactus_tulip_red_plant_bud": {
-                  "display_name": "Bourgeon de Cactus de Tulipe rouge",
+                  "display_name": "Bourgeon de cactus à tulipe rouge",
                   "description": "C'est presque là ! Regardez, il a des bourgeons !"
                }
             }
@@ -13778,34 +13778,34 @@
          "cactus_tulip_blue_plant": {
             "stem": {
                "cactus_tulip_blue_plant_stem": {
-                  "display_name": "Tige de Cactus de Tulipe bleu",
+                  "display_name": "Tige de cactus à tulipe bleu",
                   "description": "Toujours en croissance !"
                }
             },
             "sprout": {
                "cactus_tulip_blue_plant_sprout": {
-                  "display_name": "Petit germe de Cactus de Tulipe bleu",
+                  "display_name": "Petit germe de cactus à tulipe bleu",
                   "description": "Juste besoin de temps et de soins."
                }
             },
             "seed": {
                "cactus_tulip_blue_plant_seed": {
-                  "display_name": "Graine de Cactus de Tulipe bleu",
+                  "display_name": "Graine de cactus à tulipe bleu",
                   "description": "Une fois planté, il deviendra une plante herbacée curative"
                },
                "cactus_tulip_blue_plant_seed_ghost": {
-                  "display_name": "Graine de Cactus de Tulipe bleu",
+                  "display_name": "Graine de cactus à tulipe bleu",
                   "description": "Une fois planté, il deviendra une plante herbacée curative"
                }
             },
             "bud": {
                "cactus_tulip_blue_plant_bud": {
-                  "display_name": "Bourgeon de Cactus de Tulipe bleu",
+                  "display_name": "Bourgeon de cactus à tulipe bleu",
                   "description": "C'est presque là ! Regardez, il a des bourgeons !"
                }
             },
             "cactus_tulip_blue_plant_ghost": {
-               "display_name": "Cactus de Tulipe bleu",
+               "display_name": "Cactus à tulipe bleu",
                "description": "Peut être récolté pour donner une plante médicinales"
             },
             "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé"
@@ -13814,29 +13814,29 @@
             "yellow": {
                "stem": {
                   "cactus_tulip_yellow_plant_stem": {
-                     "display_name": "Tige de Cactus de Tulipe jaune",
+                     "display_name": "Tige de cactus à tulipe jaune",
                      "description": "Toujours en croissance !"
                   }
                },
                "sprout": {
                   "cactus_tulip_yellow_plant_sprout": {
-                     "display_name": "Petit germe de Cactus de Tulipe jaune",
+                     "display_name": "Petit germe de cactus à tulipe jaune",
                      "description": "Juste besoin de temps et de soins."
                   }
                },
                "seed": {
                   "cactus_tulip_yellow_plant_seed_ghost": {
-                     "display_name": "Graine de Cactus de Tulipe jaune",
+                     "display_name": "Graine de cactus à tulipe jaune",
                      "description": "Une fois planté, il deviendra une plante herbacée curative"
                   },
                   "cactus_tulip_yellow_plant_seed": {
-                     "display_name": "Graine de Cactus de Tulipe jaune",
+                     "display_name": "Graine de cactus à tulipe jaune",
                      "description": "Une fois planté, il deviendra une plante herbacée curative"
                   }
                },
                "bud": {
                   "cactus_tulip_yellow_plant_bud": {
-                     "display_name": "Bourgeon de Cactus de Tulipe jaune",
+                     "display_name": "Bourgeon de cactus à tulipe jaune",
                      "description": "C'est presque là ! Regardez, il a des bourgeons !"
                   }
                },
@@ -13844,75 +13844,75 @@
                   "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé"
                },
                "cactus_tulip_yellow_plant_ghost": {
-                  "display_name": "Cactus de Tulipe jaune",
+                  "display_name": "Cactus à tulipe jaune",
                   "description": "Peut être récolté pour donner une plante médicinales"
                }
             }
          },
          "wax_plant_purple": {
             "wax_plant_purple_ghost": {
-               "display_name": "Plante de cire pourpre",
+               "display_name": "Plante à cire pourpre",
                "description": "Juste une petite plante mignonne, peut le récolter pour les graines."
             },
             "bud": {
                "wax_plant_purple_plant_bud": {
-                  "display_name": "Bourgeon de Plante de cire pourpre",
+                  "display_name": "Bourgeon de Plante à cire pourpre",
                   "description": "C'est presque là !"
                }
             },
             "seed": {
                "wax_plant_purple_plant_seed": {
-                  "display_name": "Graine de Plante de cire pourpre",
+                  "display_name": "Graine de Plante à cire pourpre",
                   "description": "Peut être planté pour faire pousser un petit cactus."
                },
                "wax_plant_purple_plant_seed_ghost": {
-                  "display_name": "Graine de Plante de cire pourpre",
+                  "display_name": "Graine de Plante à cire pourpre",
                   "description": "Peut être planté pour faire pousser un petit cactus."
                }
             },
             "sprout": {
                "wax_plant_purple_plant_sprout": {
-                  "display_name": "Petit germe de Plante de cire pourpre",
+                  "display_name": "Petit germe de Plante à cire pourpre",
                   "description": "Juste besoin de temps et de soins."
                }
             },
             "stem": {
                "wax_plant_purple_plant_stem": {
-                  "display_name": "Tige de Plante de cire pourpre",
+                  "display_name": "Tige de Plante à cire pourpre",
                   "description": "Toujours en croissance !"
                }
             }
          },
          "wax_plant_green": {
             "wax_plant_green_ghost": {
-               "display_name": "Plante de cire verte",
+               "display_name": "Plante à cire verte",
                "description": "Juste une petite plante mignonne, peut le récolter pour les graines."
             },
             "bud": {
                "wax_plant_green_plant_bud": {
-                  "display_name": "Bourgeon de Plante de cire verte",
+                  "display_name": "Bourgeon de Plante à cire verte",
                   "description": "C'est presque là !"
                }
             },
             "seed": {
                "wax_plant_green_plant_seed": {
-                  "display_name": "Graine de Plante de cire verte",
+                  "display_name": "Graine de Plante à cire verte",
                   "description": "Peut être planté pour faire pousser un petit cactus."
                },
                "wax_plant_green_plant_seed_ghost": {
-                  "display_name": "Graine de Plante de cire verte",
+                  "display_name": "Graine de Plante à cire verte",
                   "description": "Peut être planté pour faire pousser un petit cactus."
                }
             },
             "sprout": {
                "wax_plant_green_plant_sprout": {
-                  "display_name": "Petit germe de Plante de cire verte",
+                  "display_name": "Petit germe de Plante à cire verte",
                   "description": "Juste besoin de temps et de soins."
                }
             },
             "stem": {
                "wax_plant_green_plant_stem": {
-                  "display_name": "Tige de Plante de cire verte",
+                  "display_name": "Tige de Plante à cire verte",
                   "description": "Toujours en croissance !"
                }
             }
@@ -14427,28 +14427,28 @@
                "description": "Une magnifique fleur du désert avec des propriétés médicinales"
             },
             "cactus_tulip_red": {
-               "display_name": "Fleur de Cactus de Tulipe rouge",
+               "display_name": "Fleur de cactus à tulipe rouge",
                "description": "Une herbe couramment utilisée à des fins médicinales"
             },
             "cactus_tulip_blue": {
-               "display_name": "Fleur de Cactus de Tulipe bleu",
+               "display_name": "Fleur de cactus à tulipe bleu",
                "description": "Une herbe couramment utilisée à des fins médicinales"
             },
             "cactus_tulip_yellow": {
-               "display_name": "Fleur de Cactus de Tulipe jaune",
+               "display_name": "Fleur de cactus à tulipe jaune",
                "description": "Une herbe couramment utilisée à des fins médicinales"
             },
             "snow_poppy": {
-               "display_name": "Snow Poppy Flowers",
-               "description": "A vibrant healing herb"
+               "display_name": "Fleurs de pavot des neiges",
+               "description": "Une vibrante plante médicinale"
             },
             "gold_snow_poppy": {
-               "display_name": "Snow Poppy Flowers",
-               "description": "A vibrant healing herb"
+               "display_name": "Fleurs de pavot des neiges",
+               "description": "Une vibrante plante médicinale"
             },
             "violet": {
-               "display_name": "Violet Flowers",
-               "description": "A vibrant healing herb"
+               "display_name": "Fleurs de violette",
+               "description": "Une vibrante plante médicinale"
             }
          },
          "skin": {
@@ -15246,7 +15246,7 @@
             },
             "oak_tree_seeds": {
                "display_name": "Glands",
-               "description": "Apprenez à faire pousser des chêniers."
+               "description": "Apprenez à faire pousser des chênes."
             },
             "brightbell_seeds": {
                "display_name": "Graines de jacinthe",
@@ -18641,78 +18641,78 @@
             "frostsnap_transmute_recipe": {
                "description": "Séparez les graines des herbes",
                "recipe_name": "Graines de perçe-neiges (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "cactus_transmute_recipe": {
                "description": "Séparez les graines des herbes",
                "recipe_name": "Graines de cactus sauvage (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "brightbell_transmute_recipe": {
                "description": "Séparez les graines des herbes",
                "recipe_name": "Graines de jacinthe (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "berry_bush_transmute_recipe": {
                "description": "Séparer les graines du fruit",
-               "recipe_name": "Graines de baies (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "recipe_name": "Graines de buisson à baies (x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais le fruit est perdu dans le processus."
             },
             "refined_name": "Raffinement",
             "cactus_tulip_blue_transmute_recipe": {
                "description": "Séparez les graines des herbes",
-               "recipe_name": "Graines de Fleur de Cactus de Tulipe (Bleu x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "recipe_name": "Graines de cactus à tulipe (Bleu x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "cactus_tulip_red_transmute_recipe": {
                "description": "Séparez les graines des herbes",
-               "recipe_name": "Graines de Fleur de Cactus de Tulipe (Rouge x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "recipe_name": "Graines de cactus à tulipe (Rouge x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "cactus_tulip_yellow_transmute_recipe": {
                "description": "Séparez les graines des herbes",
-               "recipe_name": "Graines de Fleur de Cactus de Tulipe (Jaune x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "recipe_name": "Graines de cactus à tulipe (Jaune x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "tulip_cactus_red_transmute_recipe": {
                "description": "Séparez les graines des herbes",
-               "recipe_name": "Graines de Fleur de Cactus de Tulipe rouge (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "recipe_name": "Graines de cactus à tulipe rouge (x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "tulip_cactus_blue_transmute_recipe": {
                "description": "Séparez les graines des herbes",
-               "recipe_name": "Graines de Fleur de Cactus de Tulipe bleu (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "recipe_name": "Graines de cactus à tulipe bleu (x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "tulip_cactus_yellow_transmute_recipe": {
                "description": "Séparez les graines des herbes",
-               "recipe_name": "Graines de Fleur de Cactus de Tulipe jaune (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais les herbes sont perdues dans le processus."
+               "recipe_name": "Graines de cactus à tulipe jaune (x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais les herbes sont perdues dans le processus."
             },
             "wax_plant_green_transmute_recipe": {
                "description": "Séparez les graines de la plante",
-               "recipe_name": "Graines de Plante de cire (Verte x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais la plante est perdue dans le processus."
+               "recipe_name": "Graines de Plante à cire (Verte x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais la plante est perdue dans le processus."
             },
             "wax_plant_purple_transmute_recipe": {
                "description": "Séparez les graines de la plante",
-               "recipe_name": "Graines de Plante de cire (Pourpre x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais la plante est perdue dans le processus."
+               "recipe_name": "Graines de Plante à cire (Pourpre x3)",
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais la plante est perdue dans le processus."
             },
             "foxlily_transmute_recipe": {
                "description": "Séparez les graines de la plante",
                "recipe_name": "Graines de Lis des steppes géantes (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais la plante est perdue dans le processus."
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais la plante est perdue dans le processus."
             },
             "sunflower_transmute_recipe": {
                "description": "Séparez les graines de la plante",
                "recipe_name": "Graines de Tournesol (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais la plante est perdue dans le processus."
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais la plante est perdue dans le processus."
             },
             "pear_cactus_recipe": {
                "description": "Séparer les graines du fruit",
                "recipe_name": "Graines de figue de Barbarie (x3)",
-               "flavor": "Seule une main experte peut récolter les graines les plus faibles, mais le fruit est perdu dans le processus."
+               "flavor": "Seule une main experte peut récolter les délicates graines, mais le fruit est perdu dans le processus."
             },
             "wall_hanging_berrywreath_recipe": {
                "description": "Parfait pour toute occasion",
@@ -18732,7 +18732,7 @@
             "topiary_fox_recipe": {
                "description": "Art topiaire moyen",
                "recipe_name": "Renard en baie",
-               "flavor": "Ne pas planter dans votre cage à Poyo"
+               "flavor": "Ne pas planter dans votre poulailler à Poyo"
             },
             "pot_berry_bush_recipe": {
                "description": "Un ami soigneusement mis en caisse.",
