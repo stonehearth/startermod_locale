@@ -117,7 +117,8 @@
                            },
                            "bulletin_title": "A Figure Appears",
                            "dialog_title": "A stoic scout",
-                           "choice_000": "Welcome, traveller."
+                           "choice_000": "Welcome, traveller.",
+                           "choice_001": "[skip] We know what banner we want."
                         },
                         "read_letter": {
                            "bulletin_message": {
@@ -269,7 +270,8 @@
                            },
                            "bulletin_title": "Ronia Returns Again",
                            "dialog_title": "More time for tales",
-                           "choice_000": "Yes please."
+                           "choice_000": "Yes please.",
+                           "choice_001": "[skip] We know what Hearth we want."
                         }
                      }
                   }
@@ -328,7 +330,7 @@
                            "bulletin_title": "Ronia looks towards the hearth",
                            "dialog_title": "Ronia looks towards the hearth",
                            "choice_000": "Remind us.",
-                           "choice_001": "We've already decided.",
+                           "choice_001": "[skip] We've already decided.",
                            "bulletin_message": {
                               "00": "\"It is time to create a monument, and ask for the blessings of your patron spirit. Then I will record your settlement as a star in the constellation of the Northern Alliance, and your stories will be safe in the Library of our people. Have you made your choice?\" "
                            }
@@ -552,7 +554,7 @@
                            "dialog_title": "Ronia admires the town ",
                            "choice_000": "We've grown a lot since...",
                            "bulletin_message": {
-                              "00": "She gestures at the newest additions to the town nods in approval. Her cloak is flung back, and it is clear the scars stretch around her neck in the shape of a wolf’s jaw. Today, they look a bit inflamed. <br><br>She settles by the fire and produces the birch bark and charcoal pencil again. With a nod, she invites those around her to recount their recent adventures. "
+                              "00": "She gestures at the newest additions to the town and nods in approval. Her cloak is flung back, and it is clear the scars stretch around her neck in the shape of a wolf’s jaw. Today, they look a bit inflamed. <br><br>She settles by the fire and produces the birch bark and charcoal pencil again. With a nod, she invites those around her to recount their recent adventures. "
                            }
                         },
                         "msg3": {

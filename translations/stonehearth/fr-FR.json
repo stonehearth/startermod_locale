@@ -15,6 +15,7 @@
             "heal_ranged_in_sight": "Soigne [name(data.target)]",
             "wait_at_safety_point": "Attend près d'une bannière de ralliement",
             "repair_entity": "Réparation [name(data.target)]",
+            "follow_entity": "Suivre [name(data.target)]",
             "resting_by_fire": "Se repose prêt du feu",
             "claiming_animal": "Apprivoise un animal",
             "looking_for_animals": "Cherche des animaux",
@@ -300,6 +301,12 @@
             "currently": "Actuellement:",
             "no_unhappy_thoughts": "Pas de pensées malheureuses à ce jour !",
             "no_happy_thoughts": "Pas de pensées heureuses pour le moment !",
+            "teleport": {
+               "description": "Si ce citoyen reste coincé quelque part, utilisez ce déplaceur d'urgence pour choisir un emplacement à proximité où le téléporter (tant qu'il est inactif). Recharge à minuit.",
+               "disabled_description": "Ce citoyen a déjà été téléporté aujourd'hui. Réessayez après minuit.",
+               "not_idle_description": "Le déplacement est actuellement non disponible car le citoyen n'est pas inactif.",
+               "different_player_description": "Vous ne pouvez pas  utiliser le déplacement d'urgence sur les citoyens d'un autre joueur."
+            },
             "appeal_headings": {
                "like": "Aime",
                "like_tooltip": "Un espace est considéré plus beau lorsqu'il y a plus de 3 objets aimés",
@@ -611,6 +618,8 @@
             "death_notification": "[name(i18n_data.entity)] est mort.",
             "imminent_death_notification": "[name(i18n_data.citizen)] est mourant !",
             "starving_notification": "[name(i18n_data.citizen)] est affamé !",
+            "unreachable_ingredient_notification": "[name(i18n_data.citizen)] ne peut pas atteindre certains ingrédients nécéssaire à la fabrication [str(i18n_data.crafting_order)].",
+            "where_is_food_notification": "[name(i18n_data.citizen)] ne trouve pas de nourriture.",
             "health_status_normal": "Normal",
             "health": "PV",
             "gender": {
@@ -865,7 +874,7 @@
                   "trapping": "Chasse"
                },
                "percent_full": "[str(percent)] % plein",
-               "active": "active",
+               "active": "actif",
                "paused": "en pause"
             },
             "warnings": {
@@ -985,6 +994,16 @@
             "inventory_full": {
                "title": "Objets de la ville plein",
                "message": "La capacité d'objet de votre ville est au maximum ! Les hearthlings détestent les villes encombrés et ne vont plus collecter de ressource. Les conteneurs de stockage comptent comme des objets et n'augmente pas votre limite d'objet par ville. Vendez ou détruisez les objets à l'aide de l'outil de suppression."
+            },
+            "max_citizens_cap": {
+               "early_warning": {
+                  "title": "Vous avez atteint [str(i18n_data.num_citizens)] citoyens !",
+                  "message": "Toutes nos félicitations ! Votre ville est devenue une communauté solide.<br><br>Avertissement sur les performances : plus de citoyens signifient plus d'IA à traiter. Si vous rencontrez des problèmes, essayez de réduire le nombre maximal de citoyens de votre ville dans l'onglet Gameplay du menu Paramètres. Cela empêchera l'arrivée de nouveaux colons aussi longtemps que vous aurez dépassé ce plafond."
+               },
+               "full_warning": {
+                  "message": "Vous venez d'atteindre [str(i18n_data.num_citizens)] citoyens, le nombre maximum de personnes pouvant vivre dans votre ville.<br><br>Aucuns nouveaux citoyens ne rejoindront votre ville à ce stade, à moins que vous ne retombiez sous ce nombre.<br><br><strong>Note :</strong> Vous pouvez modifier cette limite dans l'onglet Gameplay du menu Options. Petit avertissement : avoir trop de citoyens peut entraîner une augmentation du nombre de problèmes d’attelage, de retard et de ralentissement.",
+                  "title": "Citoyens max atteints!"
+               }
             },
             "quest_bulletin_dialog": {
                "description": "Description",
@@ -1502,7 +1521,8 @@
                   "doug": "",
                   "carl": "",
                   "winnie": "",
-                  "jack": ""
+                  "jack": "",
+                  "gabriel": ""
                }
             }
          },
@@ -1873,6 +1893,33 @@
                "title": "Conflit de module détectés !",
                "message": "Attention: vous avez des mods en conflit qui ont le même namespace. Assurez-vous de n'avoir qu'un seul mod actif par namespace sur l'écran de mod. <br> Si vous avez un .smod et un dossier pour le mod, le dossier sera utilisé en priorité. Les mods affectés sont:<br><br>",
                "accept": "Oui, continuer."
+            },
+            "mod_dependency_conflict": {
+               "title": "Dépendance circulaire du module détectée !",
+               "message": "Avertissement: vos mods ont des dépendances circulaires (le mod A, par exemple, dépend d’un autre mod B qui le ramène éventuellement au mod A). Les dépendances de mod spécifient dans quel ordre les mods doivent être chargés, mais s'il y a un cycle, nous ne pouvons pas déterminer dans quel ordre les charger.<br><br>Résoudre les dépendances circulaire dans les manifestes des mods affectés. Les mods affectés ont été temporairement désactivés:<br> <br>",
+               "accept": "Oui, appliquer.",
+               "dependency": ", qui dépend de :"
+            },
+            "ace": "ACE !",
+            "ace_dialog": {
+               "title": "Activer l'extension de communauté autorisée (ACE) ?",
+               "message": "ACE est un mod né du désir d'un groupe de membres impressionnants de la communauté de créer une expérience plus riche et plus complète pour Stonehearth 1.0. Il inclut des fonctionnalités destinées à améliorer l'expérience par défaut de Stonehearth, telles que les nouvelles classes, les modifications UX, les biomes, les nains et plus encore!<br><br>Souhaitez-vous activer leur mod ?<br><i>(Vous pouvez toujours l'activer ou le désactiver à partir de l'écran de titre ou menu des Mods plus tard).<i>",
+               "accept": "Oui !",
+               "cancel": "Non, merci."
+            },
+            "ace_toggle": {
+               "enable": {
+                  "title": "Activer ACE ?",
+                  "message": "Le jeu devra être relancé pour activer ACE. Voulez-vous continuer?",
+                  "tooltip": "Activez \"Stonehearth's Authorized Community Expansion.\""
+               },
+               "disable": {
+                  "title": "Désactiver ACE ?",
+                  "message": "Le jeu devra être relancé pour désactiver ACE. Voulez-vous continuer ?",
+                  "tooltip": "Désactivez \"Stonehearth's Authorized Community Expansion.\""
+               },
+               "accept": "Continuer",
+               "cancel": "Annuler"
             }
          },
          "mods_menu": {
@@ -1882,6 +1929,7 @@
             "open_folder": "Ouvrir le dossier",
             "quit_to_menu": "Enregistrer et quitter",
             "base_mod": "Mod de base",
+            "modding_guide": "Guide de Modding",
             "sections": {
                "base_mods": {
                   "title": "Mods de base"
@@ -2390,6 +2438,7 @@
             "prepared_food_resource_name": "Nourriture préparée",
             "prepared_dessert_resource_name": "Dessert preparée",
             "earth_essence_resource": "Essence de Foyer",
+            "feather_resource": "Plumes",
             "gear_resource_name": "Équipement",
             "ore_resource_name": "Minerai",
             "dirt_resource_name": "Tas de terre"
@@ -2915,6 +2964,15 @@
                },
                "shrine_unlock_recipes": {
                   "bulletin_title": "Recettes de maçon débloqué: Sanctuaires"
+               },
+               "returning_collector_encounter": {
+                  "title": "Un explorateur s'approche de votre ville.",
+                  "trade_details": "Bonjour [str(i18n_data.town_name)] ! Je suis un explorateur de très loin à l'est, je négocie tout types d'objets et collectibles. Récemment, j'ai trouvé <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)]</strong> assis à côté de la route. Je ne sais pas qui les a laissés là, mais ils sont très utiles pour nettoyer ! Je ne les utilise pas beaucoup moi-même, mais un village voisin a déclaré avoir besoin de <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong>. Je vais me reposer à proximité pendant [str(i18n_data.num_days)] jours. Seriez-vous intéressé par un échange à ce moment-là ?",
+                  "waiting_title": "L'explorateur sera de retour dans [str(i18n_data.hour_counter)] [str(i18n_data.period)] !",
+                  "waiting_text": "The explorer will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] pour vous donner <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)]</strong> si vous avez <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong> en échange !",
+                  "return_title": "L'explorateur revient !",
+                  "return_greetings_positive": "Je suis revenu ! On dirait que vous avez [str(i18n_data.want_number)] [str(i18n_data.want_item)] que j'ai demandé. Êtes-vous toujours intéressé par [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] en échange ? Je vous assure qu'ils sont plus utiles que n'importe quelle personne normale pour porter des objets !",
+                  "return_greetings_negative": "Je suis de retour, mais il ne semble pas que vous ayez le [str(i18n_data.want_number)] [str(i18n_data.want_item)] que j'ai demandé. Oh bien, peut-être que quelqu'un de mon village peut leur trouver une utilité."
                }
             },
             "goblin_war": {
@@ -4540,7 +4598,8 @@
                                        },
                                        "bulletin_title": "Un personne à l'allure officielle approche !",
                                        "dialog_title": "Pas un oiseau cette fois",
-                                       "choice_000": "Je vous remercie !"
+                                       "choice_000": "Je vous remercie !",
+                                       "choice_001": "[passer] Nous savons quel Foyer nous voulons."
                                     },
                                     "glory": {
                                        "bulletin_message": {
@@ -5012,7 +5071,8 @@
                            },
                            "bulletin_title": "Un étrange oiseau !",
                            "dialog_title": "Un oiseau... messager ?",
-                           "choice_000": "Ouvrez la lettre"
+                           "choice_000": "Ouvrez la lettre",
+                           "choice_001": "[passer] Nous savons quelle bannière nous voulons."
                         },
                         "read_letter": {
                            "bulletin_message": {
@@ -5713,15 +5773,15 @@
                                        },
                                        "accept": {
                                           "bulletin_message": {
-                                             "00": "\"Splendid! Take all the time you need in choosing, the selection is important indeed.\"<br><br>\"As I said, they will be gone for around seven days, so don't send anyone you can't bear to be without.\""
+                                             "00": "\"Splendide ! Prenez tout le temps dont vous avez besoin pour faire votre choix, la sélection est vraiment importante.\"<br><br>\"Comme je l'ai dit, ils seront absents pendant environ sept jours. N'envoyez donc personne dont vous ne pourrez vous priver.\""
                                           },
-                                          "choice_000": "Let's see..."
+                                          "choice_000": "Voyons voir..."
                                        },
                                        "story4": {
                                           "bulletin_message": {
-                                             "00": "\"You... are not wrong, friend. There is more to the story, but perhaps the time is not yet right.\""
+                                             "00": "\"Tu ... tu n'as pas tort, l'ami. L'histoire en dis plus, mais peut-être que le moment n'est pas encore venu.\""
                                           },
-                                          "choice_000": "Aw, okay"
+                                          "choice_000": "Ah, ok"
                                        }
                                     }
                                  }
@@ -5731,15 +5791,15 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "\"Your wayfaring student of Geomancy has returned as a full-fledged Geomancer! They proved themselves an able practitioner of the magic arts indeed!\"<br><br>\"Here - these precious Hearthbloom flowers coalesce traces of Hearth's magic into Hearth Essence, which Geomancers can use in their craft - be sure to plant them.\""
+                                             "00": "\"Votre étudiant passionné en géomancie est revenu en tant que géomancien à part entière! Il s'est avérés être un praticien compétent des arts magiques !\"<br><br>\"Ici- ces précieuses fleurs d'Hearthbloom fusionnent les traces de la magie de Hearth dans l'essence de Hearth, que les géomanciens peuvent utiliser dans leur art - assurez-vous de les planter.\""
                                           },
-                                          "choice_000": "Welcome back, and thank you all!"
+                                          "choice_000": "Bon retour parmi nous et merci à vous !"
                                        }
                                     }
                                  }
                               },
                               "30_geomancy_quest": {
-                                 "text": "Select a citizen to be trained as a Geomancer by Clan Amberstone."
+                                 "text": "Sélectionnez un citoyen qui sera formé en tant que géomancien par le clan Amberstone."
                               }
                            },
                            "01_strange_trading": {
@@ -6582,6 +6642,300 @@
                      }
                   }
                }
+            },
+            "hestia": {
+               "arcs": {
+                  "trigger": {
+                     "hestia": {
+                        "encounters": {
+                           "dialog_greetings": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "000": "Arrivés près de la bannière, les trois individus masqués s’arrêtent. Tout à chez eux semble étrange. Leurs visages sont complètement recouverts par leurs masques, leurs têtes sont couvertes de cagoules, leurs mains sont couvertes de gants, leurs pieds [si petits!] Sont gainés de minuscules bottes. Le tissu de leurs vêtements semble avoir une origine surnaturelle, briller au soleil et souffler dans la brise. Plus particulièrement, ils possèdent chacun un magnifique collier en or serti d’un saphir massif."
+                                       },
+                                       "bulletin_title": "Les figures s'arrêtent près de la bannière",
+                                       "dialog_title": "Les figures s'arrêtent près de la bannière",
+                                       "choice_000": "Qui êtes-vous ?",
+                                       "choice_001": "[passer] Nous nous sommes déjà rencontrés ..."
+                                    },
+                                    "msg3": {
+                                       "bulletin_message": {
+                                          "000": "Les figures masquées regardent autour d'eux, inspectant les bâtiments et les vêtements. Ils semblent tout aussi intéressés par nos vêtements que nous par les leurs. Le plus petit tend la main comme pour toucher une de nos bottes, mais la plus grande fait un sifflement rapide qui l'oblige à se redresser."
+                                       },
+                                       "bulletin_title": "Les figures regardent autour d'eux",
+                                       "dialog_title": "Les figures regardent autour d'eux",
+                                       "choice_000": "(Hehe.)"
+                                    },
+                                    "msg8": {
+                                       "bulletin_message": {
+                                          "000": "Emma fouille sous sa robe et en retire un magnifique sceptre d’or ornemé d'un feu magique :<p><i>'De Hestia, la Lumière. En cadeau, nous apportons. Rien en retour, nous demandons ... Comprendre peut-être l'amitié un jour?'</i></p>"
+                                       },
+                                       "bulletin_title": "La lumière d'Hestia",
+                                       "dialog_title": "La lumière d'Hestia",
+                                       "choice_000": "Merci pour ce cadeau merveilleux!"
+                                    },
+                                    "msg7": {
+                                       "bulletin_message": {
+                                          "000": "Dylan place un bras sur l’épaule de Lily pour la calmer et la faire taire, puis s’adresse lui-même à la foule :<p><i>'Dans le besoin, beaucoup. D'Hestia, les héritiers voyagent. Les masques, nous, en abnégation. Les ténèbres à pousser, la lumière que nous apportons. Par le sacrifice et l'oblation, nous prouvons notre valeur à diriger. Pour ceux sans pouvoir, une main de soutien que nous offrons.'</i></p>"
+                                       },
+                                       "bulletin_title": "Le prince Dylan calme Lily",
+                                       "dialog_title": "Le prince Dylan calme Lily",
+                                       "choice_000": "La lumière ?",
+                                       "choice_001": "Une main en soutien ?"
+                                    },
+                                    "greet_lily": {
+                                       "bulletin_message": {
+                                          "000": "La plus petite figure lève les mains au-dessus de la tête puis s'incline profondément. Au fur et à mesure qu’ils se déplacent, leur tissu mystérieux s’écoule et se traîne derrière en mouvement. Leur voix ressemble plus à un engrenage grinçant qu’à une voix à laquelle nous sommes habitués, et est légèrement étouffée derrière le masque :<p><i>'Lily. D'Hestia, princesse, peintre [ricane], guérisseur, archer.'</i></p>"
+                                       },
+                                       "bulletin_title": "Introductions : La plus petite",
+                                       "dialog_title": "Introductions : La plus petite",
+                                       "choice_000": "Un plaisir de vous rencontrer princesse Lily."
+                                    },
+                                    "greet_dylan": {
+                                       "bulletin_message": {
+                                          "000": "La figure de taille moyenne lève ensuite les mains de la même manière et s'incline. Les mouvements de ce personnage sont plus rapides et plus vifs, et le tissu semble essayer de rattraper le mouvement des membres qui le précède. Il y a un sentiment de force sauvage derrière ces mouvements, et encore une fois, la voix n'est pas comme prévu - cette fois encore plus strident et craquante par moment :<p><i>'Dylan. D'Hestia, Prince, Poète, Smith, Guerrier.'</i></p>"
+                                       },
+                                       "bulletin_title": "Introductions : la moyenne",
+                                       "dialog_title": "Introductions : la moyenne",
+                                       "choice_000": "Salutations Prince Dylan."
+                                    },
+                                    "rejection": {
+                                       "bulletin_message": {
+                                          "000": "Après des mouvements énergiques et le brandissement des armes, les trois individus masqués se retournent et partent dans une autre direction."
+                                       },
+                                       "bulletin_title": "Les gens s'en vont",
+                                       "dialog_title": "Les gens s'en vont",
+                                       "choice_000": "Peut-être qu'ils reviendront un jour ?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Ils semblent paisibles et saluent tous ceux qui s'approchent d'un geste étrange mais simple : ils écarquillent les mains en cercle, puis les serrent dans leurs bras alors qu'ils inclinent la tête."
+                                       },
+                                       "bulletin_title": "Un groupe de trois personnes masquées se dirige calmement vers la bannière",
+                                       "dialog_title": "3 personnages masqués arrivent",
+                                       "choice_000": "Voyageurs pacifiques ? Bienvenue !",
+                                       "choice_001": "Vous ne pouvez pas entrer !"
+                                    },
+                                    "msg4": {
+                                       "bulletin_message": {
+                                          "000": "La plus grande figure fait un pas en avant et commence à parler. Ils font un grand nombre de salutations avec leurs bras, semblant englober tous les foyers qui se trouvent à proximité, puis parlent - leur voix est douce et quelques octaves plus élevés que leur taille le suggérée.<p><i>'Disciples du singe, salutations ! D'Hestia nous voyageons. De la royauté notre lignée. Nous présentons, avec respect.'</i></p>"
+                                       },
+                                       "bulletin_title": "La plus grande figure commence à parler",
+                                       "dialog_title": "La plus grande figure commence à parler",
+                                       "choice_000": "Par tous les moyens..."
+                                    },
+                                    "msg5": {
+                                       "bulletin_message": {
+                                          "000": "Pendant qu’Emma parle, elle prend un moment pour regarder dans les yeux de chaque personne rassemblée autour d’elle :<p><i>'Pour notre grand voyage, nous marchons à la belle étoile. Nous trouvons une grande abondance, obscurité et douleur. Trouvé comme avant, déclara la famille royale d'Hestia. Dans le besoin, beaucoup de...'</i></p>"
+                                       },
+                                       "bulletin_title": "Princesse Emma continue",
+                                       "dialog_title": "Princesse Emma continue",
+                                       "choice_000": "... "
+                                    },
+                                    "msg6": {
+                                       "bulletin_message": {
+                                          "000": "Lily fait un pas en avant, incapable de contenir l’émotion qui se dégage de derrière son masque :<p><i>'Beaucoup ! Meurtri et battu, nombreux sont vos semblables ! Ainsi que Goblin, Orc ! Pansement et pommade, nombreuses blessures ! Tortue Lézard - si mignonne ! [rire] Pour garder Lily voulue, Dylan a nié. Avant sa libération, nourri en bonne santé. Dandiné, si mignon ! Pour guérir Lily trouve...'</i></p>"
+                                       },
+                                       "bulletin_title": "La princesse Lilly interrompt",
+                                       "dialog_title": "La princesse Lilly interrompt",
+                                       "choice_000": "Oh mon...",
+                                       "choice_001": "Vous êtes... une crache-feu n'est-ce pas ?"
+                                    },
+                                    "met_before": {
+                                       "bulletin_message": {
+                                          "000": "<i>Ah, aussi se souvient Emma. Dans le besoin, beaucoup encore. Les ténèbres à pousser ... la lumière allez-vous prendre ?</i>"
+                                       },
+                                       "bulletin_title": "Emma fait un pas en avant",
+                                       "dialog_title": "Emma fait un pas en avant",
+                                       "choice_000": "Oui, merci !"
+                                    },
+                                    "greet_emma": {
+                                       "bulletin_message": {
+                                          "000": "La plus haute silhouette répète le geste, s'inclinant incroyablement bas. Bien que plus grande, cette figure bouge avec le plus de grâce. Le tissu ondule doucement derrière leurs membres comme s'il coulait dans l'eau :<p><i>'Emma. D'Hestia, princesse, héritier aîné, diplomate, tisserand, lanceur.'</i></p>"
+                                       },
+                                       "bulletin_title": "Introductions : The tallest",
+                                       "dialog_title": "Introductions : The tallest",
+                                       "choice_000": "Salutations Princesse Emma.",
+                                       "choice_001": "Vous êtes tous les bienvenus dans notre ville."
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_ends": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Une fois leur tâche accomplie, les trois se dirigent ensuite vers le désert, vraisemblablement pour trouver la prochaine communauté dans le besoin. Quel peuple intéressant..."
+                                       },
+                                       "bulletin_title": "Les Hestians partent",
+                                       "dialog_title": "Les Hestians partent",
+                                       "choice_000": "Espérons qu'ils restent en sécurité dans leurs voyages."
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_continues": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "000": "Lily commence à rebondir d'excitation :<p><i>'Oui, oh! Les gens meurent-ils et sont-ils battus ?! Aidez-moi à guérir. Lily trouve une grande joie de guérir !'</i></p>Avec un grand geste d'approbation d'Emma, Lily se précipite dans le village pour soigner toutes les blessures qu'elle trouve, grandes ou petites."
+                                       },
+                                       "bulletin_title": "Lily rebondit d'excitation",
+                                       "dialog_title": "Lily rebondit d'excitation",
+                                       "choice_000": "Merci beaucoup !"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Emma pose le sceptre sur le sol et recule lentement, ses vêtements coulant derrière elle. Après un moment, elle regarde les différents visages de la foule :<p><i>'Nous sommes d'une grande curiosité. Rester un moment pour converser et apprendre, pouvons-nous ?'</i></p>"
+                                       },
+                                       "bulletin_title": "Emma pose le sceptre",
+                                       "dialog_title": "Emma pose le sceptre",
+                                       "choice_000": "Restez aussi longtemps que vous le souhaitez !",
+                                       "choice_001": "L'un de vous a dit que vous étiez un guérisseur ?"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_stickaround": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Une dernière fois, Emma se retourne pour regarder la ville en face, Dylan et Lily font de même. Le dos tourné, Lily parle :<p><i>'Notre journée, continuer nous devons [ricane]. Pour ceux qui en ont le plus besoin, la lumière que nous apportons.'</i></p>"
+                                       },
+                                       "bulletin_title": "Les trois personnages se rassemblent",
+                                       "dialog_title": "Les trois personnages se rassemblent",
+                                       "choice_000": "Bonne chance pour votre voyage !"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+            "dragonborn_king": {
+               "arcs": {
+                  "trigger": {
+                     "dragonborn_king": {
+                        "encounters": {
+                           "dialog_ask_player_for_help": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "information": {
+                                       "bulletin_message": {
+                                          "000": "Je suis un esprit, d’une époque et de peuple du passé. Je me suis attardé ici pendant des siècles, gardant ce qui était le plus précieux pour nous. Mais mon pouvoir a faibli et maintenant il est assiégé - je vous en prie, aidez-moi !"
+                                       },
+                                       "bulletin_title": "La voix se fond dans une figure",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Qu'y a-t-il pour nous ?",
+                                       "choice_001": "En état de siège ?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Aidez-moi, s'il vous plaît! Mon château a été assiégé par des serviteurs du mal mort-vivants !"
+                                       },
+                                       "bulletin_title": "Une voix murmure au bord de votre esprit",
+                                       "dialog_title": "Une voix fantomatique",
+                                       "choice_000": "Qui ? Quoi ?",
+                                       "choice_001": "Où ? Comment ?",
+                                       "choice_002": "Nous sommes en route !"
+                                    },
+                                    "theres_no_time_to_explain": {
+                                       "bulletin_message": {
+                                          "000": "Nous n'avons pas le temps ! Les morts-vivants griffent mes portes et je n'ai plus aucune force pour défendre le trésor une fois qu'ils auront réussi ! Je vous en prie, aidez-moi !"
+                                       },
+                                       "bulletin_title": "La présence du roi-dragon domine",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Ouais.. ok..",
+                                       "choice_001": "Nous enverrons de l'aide !"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_thank_player_for_help": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "information_howlong": {
+                                       "bulletin_message": {
+                                          "000": "Cela fait plusieurs cycles... de trop nombreux. Ma ligne familiale ne vit plus et mon corps m'a lâché il y a longtemps. Mon âme né du dragon à suffisament veillé pour voir naître et mourir de nombreuses races. Les vôtres ont été d'un grand intérêt, Enfants de singe, à la fin de ma veillée."
+                                       },
+                                       "bulletin_title": "Le roi drakéide soupire et s'affaisse visiblement",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Que protégiez-vous ?",
+                                       "choice_001": "Qui êtes-vous ?",
+                                       "choice_002": "Arrive a sa fin ?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Merci d'être venu à ma rescousse. J'ai longtemps gardé ce site, mais je ne peux plus lever mon épée ou mon bouclier pour le défendre."
+                                       },
+                                       "bulletin_title": "La voix parle encore une fois",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Qui êtes-vous ?",
+                                       "choice_001": "Que protégiez-vous ?",
+                                       "choice_002": "Depuis combien de temps êtes-vous ici ?"
+                                    },
+                                    "information_who": {
+                                       "bulletin_message": {
+                                          "000": "Mon nom est Flox, de la lignée Icedragon. J'étais le roi, il fût un temps, des peuples nés du dragon, qui ont gouverné ce pays il y a très longtemps."
+                                       },
+                                       "bulletin_title": "Le roi drakéide sourit",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Que fais-vous ici ?",
+                                       "choice_001": "Depuis combien de temps êtes-vous ici ?"
+                                    },
+                                    "hatch_and_attach": {
+                                       "bulletin_message": {
+                                          "000": "Je m'efface rapidement, mais j'ai donné le dernier de mon esprit à cet œuf du Grand Dragon, afin que le dragon intérieur puisse enfin éclore dans ce monde. Je te connais depuis peu de temps, enfants de singe, mais je suis persuadé que vous aiderez ce jeune loup tout comme vous m'avez aidé. Puissiez-vous vous porter avec force et compassion, comme le faisait les drakéides."
+                                       },
+                                       "bulletin_title": "Le Roi drakéides expire doucement en direction de l'œuf devant lui",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Nous vous honorerons, roi. Puissiez-vous être en paix."
+                                    },
+                                    "information_what": {
+                                       "bulletin_message": {
+                                          "000": "C'est un devoir du roi de protéger la lignée du Grand Dragon - un devoir qui dure même jusqu'à la mort. Mon esprit a gardé cet endroit caché, voilé de sens et de vue, aussi longtemps qu'il le pouvait. Je vois maintenant que je ne peux plus maintenir ma veillée et que la lignée du Dragon est en danger."
+                                       },
+                                       "bulletin_title": "Le roi drakéide se redresse le dos avec fierté",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Comment pouvons-nous aider au sujet de la lignée ?",
+                                       "choice_001": "Qui êtes-vous ?",
+                                       "choice_002": "Depuis combien de temps êtes-vous ici ?"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_player_fail": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Je ne peux plus le supporter. Le trésor est tombé et avec lui la dernière lumière de mon peuple. J'étais fou de rester silencieux si longtemps..."
+                                       },
+                                       "bulletin_title": "La voix revient, apparemment avec beaucoup d'effort",
+                                       "dialog_title": "Une voix fantomatique",
+                                       "choice_000": "Nous sommes désolés..."
+                                    }
+                                 }
+                              }
+                           },
+                           "spawn_enemy_entities": {
+                              "mission": {
+                                 "sighted_bulletin": {
+                                    "title": "Mort-vivant ! Protégez la porte !"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
             }
          }
       },
@@ -6969,6 +7323,12 @@
             "carnivore_buff": {
                "display_name": "Carnivore",
                "description": "Cet animal ne mange que de la viande."
+            }
+         },
+         "teleportation_sickness": {
+            "teleportation_sickness_buff": {
+               "display_name": "Récemment téléporté",
+               "description": "La téléportation est dure pour l'âme, il faut attendre un moment avant de recommencer."
             }
          }
       },
@@ -7992,8 +8352,8 @@
                      "001": "Ouais. Aujourd'hui je vais cueillir des [str(entry.gather_target)]! Bonne chose à avoir sous la main.",
                      "002": "Ouais. Il est temps d'avoir [str(entry.gather_target)]! C'est parti!",
                      "003": "Whoa. Un autre [str(entry.gather_target)]! Yaaay?",
-                     "004": "Uh huh. [str(entry.gather_target)].  ",
-                     "005": "Uh huh. Un autre [str(entry.gather_target)]!  ",
+                     "004": "Hu huh. [str(entry.gather_target)].  ",
+                     "005": "Hu huh. Un autre [str(entry.gather_target)]!  ",
                      "006": "Whoa. Aujourd'hui je vais cueillir des [str(entry.gather_target)]! Je vais essayer de ne pas faire de dégâts.",
                      "007": "Ok! Un autre [str(entry.gather_target)]! Je vais essayer de pas faire de dégâts.",
                      "008": "Ok! Il est temps de prendre des [str(entry.gather_target)]! C'est parti!",
@@ -8268,8 +8628,14 @@
                "description": "Peut-être un loup, à une époque..."
             },
             "zilla": {
-               "display_name": "Titan Wyrm",
+               "display_name": "Wyrm Titan",
                "description": "Mal. Affamé."
+            }
+         },
+         "undead": {
+            "skeleton_giants": {
+               "display_name": "Squelette géant",
+               "description": "Le fracas de leurs os massifs est suffisant pour faire trembler quiconque!"
             }
          }
       },
@@ -8311,6 +8677,9 @@
             },
             "blacksmith_house": {
                "display_name": "Maison de forgeron"
+            },
+            "weaver_house": {
+               "display_name": "Maison du Tisserand"
             }
          }
       },
@@ -8582,6 +8951,12 @@
             "storm_chaser_trait": {
                "display_name": "Chasseur de tempête",
                "description": "Les orages, les tempêtes de sable, les blizzards, [name(i18n_data.entity)] les aime tous !"
+            }
+         },
+         "hestian": {
+            "hestian_trait": {
+               "display_name": "Hestian",
+               "description": "Cette personne est originaire du pays lointain d'Hestia. Quels secrets connaissent-ils ?"
             }
          }
       },
@@ -9422,39 +9797,39 @@
             "display_name": "L'ombre du Titan",
             "description": "Il fait gris dehors, tout le monde ! Couper les tentacules à vue.",
             "titan_titles": {
-               "1": "[str(self.stonehearth:unit_info.custom_name)], Destroyer of Cubes",
-               "2": "[str(self.stonehearth:unit_info.custom_name)] the Not-To-Be-Trifled-With",
-               "3": "Rancorous [str(self.stonehearth:unit_info.custom_name)]",
-               "4": "[str(self.stonehearth:unit_info.custom_name)], All-Consumer",
-               "5": "[str(self.stonehearth:unit_info.custom_name)], Whisperer",
-               "6": "Unknowable [str(self.stonehearth:unit_info.custom_name)]",
-               "7": "[str(self.stonehearth:unit_info.custom_name)], the Annihilator",
-               "8": "Despoiled [str(self.stonehearth:unit_info.custom_name)]",
-               "9": "[str(self.stonehearth:unit_info.custom_name)] the Abhorrent",
-               "10": "[str(self.stonehearth:unit_info.custom_name)] the Unforgiven",
-               "11": "[str(self.stonehearth:unit_info.custom_name)], Wretched Being",
-               "12": "Sinister [str(self.stonehearth:unit_info.custom_name)]",
-               "13": "Calamity [str(self.stonehearth:unit_info.custom_name)]",
-               "14": "[str(self.stonehearth:unit_info.custom_name)], the Disastrous",
-               "15": "Malevolent [str(self.stonehearth:unit_info.custom_name)]",
-               "16": "[str(self.stonehearth:unit_info.custom_name)], Wickedness",
-               "17": "[str(self.stonehearth:unit_info.custom_name)], the Null Reference",
-               "18": "[str(self.stonehearth:unit_info.custom_name)], the Beckoned",
-               "19": "[str(self.stonehearth:unit_info.custom_name)], the Antagonist",
-               "20": "[str(self.stonehearth:unit_info.custom_name)] of the Sphere",
-               "21": "[str(self.stonehearth:unit_info.custom_name)] the Terror Horn",
-               "22": "[str(self.stonehearth:unit_info.custom_name)], Scourge of the Lone Tree",
-               "23": "[str(self.stonehearth:unit_info.custom_name)] the Cheeky",
-               "24": "[str(self.stonehearth:unit_info.custom_name)] the Demented",
-               "25": "[str(self.stonehearth:unit_info.custom_name)] the Desolator",
-               "26": "[str(self.stonehearth:unit_info.custom_name)], Lord of Fracas and Cacophony",
-               "27": "[str(self.stonehearth:unit_info.custom_name)] the Cubesmith",
-               "28": "[str(self.stonehearth:unit_info.custom_name)], Lurking Shadow"
+               "1": "[str(self.stonehearth:unit_info.custom_name)], destructeur de Cubes",
+               "2": "[str(self.stonehearth:unit_info.custom_name)] le pas-à-être-insulté-avec",
+               "3": "Rancunier [str(self.stonehearth:unit_info.custom_name)]",
+               "4": "[str(self.stonehearth:unit_info.custom_name)], tout-consommateur",
+               "5": "[str(self.stonehearth:unit_info.custom_name)], chuchoteurs",
+               "6": "Inconnaissable [str(self.stonehearth:unit_info.custom_name)]",
+               "7": "[str(self.stonehearth:unit_info.custom_name)], l'annihilateur",
+               "8": "Dépouillé [str(self.stonehearth:unit_info.custom_name)]",
+               "9": "[str(self.stonehearth:unit_info.custom_name)] l'horreur",
+               "10": "[str(self.stonehearth:unit_info.custom_name)] l'imprudent",
+               "11": "[str(self.stonehearth:unit_info.custom_name)], être misérable",
+               "12": "Sinistre [str(self.stonehearth:unit_info.custom_name)]",
+               "13": "Calamité [str(self.stonehearth:unit_info.custom_name)]",
+               "14": "[str(self.stonehearth:unit_info.custom_name)], le désastreux",
+               "15": "Malveillant [str(self.stonehearth:unit_info.custom_name)]",
+               "16": "[str(self.stonehearth:unit_info.custom_name)], la méchanceté",
+               "17": "[str(self.stonehearth:unit_info.custom_name)], la référence nulle",
+               "18": "[str(self.stonehearth:unit_info.custom_name)], l'attractif",
+               "19": "[str(self.stonehearth:unit_info.custom_name)], l'antagoniste",
+               "20": "[str(self.stonehearth:unit_info.custom_name)] de la sphère",
+               "21": "[str(self.stonehearth:unit_info.custom_name)] la corne de terreur",
+               "22": "[str(self.stonehearth:unit_info.custom_name)], fléau de l'arbre solitaire",
+               "23": "[str(self.stonehearth:unit_info.custom_name)] l'effronté",
+               "24": "[str(self.stonehearth:unit_info.custom_name)] le dément",
+               "25": "[str(self.stonehearth:unit_info.custom_name)] le désolateur",
+               "26": "[str(self.stonehearth:unit_info.custom_name)], Seigneur du fracas et de la cacophonie",
+               "27": "[str(self.stonehearth:unit_info.custom_name)] le Rubik's Cube",
+               "28": "[str(self.stonehearth:unit_info.custom_name)], tapi d'ombre"
             }
          },
          "test_weather": {
-            "display_name": "Test weather",
-            "description": "A weather that can't affect tests"
+            "display_name": "Essai Météo",
+            "description": "Une météo qui ne peut pas affecter les tests"
          }
       },
       "trapping": {
@@ -10172,8 +10547,8 @@
          },
          "amberstone_chest": {
             "amberstone_chest_ghost": {
-               "display_name": "Woven Chest",
-               "description": "Stores 64 items - that's 8-by-8, for the best of luck!"
+               "display_name": "Coffre tissé",
+               "description": "Stocke 64 articles - 8 x 8, pour la meilleur des chances !"
             }
          },
          "leather_bound_chest": {
@@ -10452,22 +10827,22 @@
          },
          "gem_chest": {
             "gem_chest_ghost": {
-               "display_name": "Ancient Gem",
-               "description": "An ancient gem hangs suspended in the air, it looks valuable!"
+               "display_name": "Gemme antique",
+               "description": "Un bijou ancien suspendu dans les airs, il a l'air précieux !"
             },
             "gem_bits": {
-               "display_name": "Nature Gem Bits",
-               "description": "Bits of the larger gem, they are probably worth a hefty sum."
+               "display_name": "Morceaux de gemme nature",
+               "description": "Morceaux d'une plus grande pierre précieuse, ils valent probablement une somme considérable."
             }
          },
          "wheat_pile_old": {
             "wheat_pile_old_ghost": {
-               "display_name": "Old Wheat Bundle",
-               "description": "It's still good, if a little mushy in places."
+               "display_name": "Vieux paquet de blé",
+               "description": "C'est toujours bon, même si un peu pâteux par endroits."
             },
             "wheat_pile_old_iconic": {
-               "display_name": "Old Wheat Bundle",
-               "description": "Harvestable for wheat when placed"
+               "display_name": "Vieux paquet de blé",
+               "description": "Récoltable pour obtenir du blé une fois placé"
             }
          },
          "market_shelf_tall_ground_clay": {
@@ -10498,8 +10873,8 @@
             "species": "poyo",
             "egg": {
                "ostrich_egg": {
-                  "display_name": "Fertilized Ostrich Egg",
-                  "description": "Is it hatching yet?"
+                  "display_name": "Œuf d'autruche fécondé",
+                  "description": "Est-il en train de naître ?"
                }
             }
          },
@@ -11074,70 +11449,70 @@
             }
          },
          "pine_tree_crop": {
-            "display_name": "Pine Sapling",
-            "description": "Out of trees? Get ready to participate in reforestation.",
+            "display_name": "Arbre de pin",
+            "description": "En manque d'arbres ? Préparez-vous à participer au reboisement.",
             "growth_stage": {
                "001": {
-                  "name": "Pine Seedling",
-                  "description": "A delicate stage of growth."
+                  "name": "Plant de pin",
+                  "description": "Une phase délicate de croissance."
                },
                "003": {
-                  "name": "Pine Sapling",
-                  "description": "Ready to be transferred to a bigger plot."
+                  "name": "Jeune arbre de pin",
+                  "description": "Prêt à être transféré sur une plus grande parcelle."
                },
                "000": {
-                  "name": "Pine Berry",
-                  "description": "A new pine tree taking root."
+                  "name": "Baie de pin",
+                  "description": "Un nouveau pin prenant racine."
                },
                "002": {
-                  "name": "Pine Sprout",
-                  "description": "A perfect tiny pine. Still growing!"
+                  "name": "Pousse de pin",
+                  "description": "Un parfait petit pin. Toujours en croissance!"
                }
             }
          },
          "sweet_potato_crop": {
-            "display_name": "Sweet Potato",
-            "description": "Sweet but not very tasty when raw",
+            "display_name": "Patate douce",
+            "description": "Doux mais pas très savoureux à l'état brut",
             "growth_stage": {
                "003": {
-                  "name": "Ripe Sweet Potato",
-                  "description": "Ready for picking!"
+                  "name": "Patate douce mûre",
+                  "description": "Prêt pour la cueillette !"
                },
                "002": {
-                  "name": "Baby Sweet Potato"
+                  "name": "Bébé patate douce"
                },
                "011": {
-                  "name": "Rotten Sweet Potato",
-                  "description": "Moldy and inedible"
+                  "name": "Patate douce pourrie",
+                  "description": "Moisi et non comestible"
                },
                "000": {
-                  "description": "Someday will grow into a tasty purple veggie."
+                  "description": "Un jour, il deviendra un délicieux légume pourpre."
                }
             }
          },
          "heirbloom_crop": {
             "display_name": "Heirbloom",
-            "description": "The woody stems are apparently an Amberstone delicacy?",
+            "description": "Les tiges ligneuses sont apparemment un délice poru les Amberstone ?",
             "growth_stage": {
                "001": {
-                  "name": "Flowering Heirbloom Stalk",
-                  "description": "Fruit follows the flowers"
+                  "name": "Tige Heirbloom en fleurs",
+                  "description": "Le fruit suit les fleurs"
                },
                "003": {
-                  "name": "Ripe Heirbloom",
-                  "description": "Ruby red!"
+                  "name": "Heirbloom Mûr ",
+                  "description": "Rouge rubis !"
                },
                "000": {
-                  "name": "Heirbloom Shoot",
-                  "description": "A hardy sprout"
+                  "name": "Pousse d'Heirbloom",
+                  "description": "Une pousse robuste"
                },
                "002": {
-                  "name": "Unripe Heirbloom",
-                  "description": "Wee, green"
+                  "name": "Heirbloom immature",
+                  "description": "Trop, vert"
                },
                "011": {
-                  "name": "Rotten Heirbloom",
-                  "description": "Inedible - the stalk might still be good, though!"
+                  "name": "Fleur Heirbloom pourrie",
+                  "description": "Non comestible - la tige pourrait quand même être bonne !"
                }
             }
          }
@@ -11896,91 +12271,91 @@
          "summon_stone": {
             "pond_01": {
                "pond_01_ghost": {
-                  "display_name": "Pond Summon Stone",
-                  "description": "This stone encases a cute little pond!"
+                  "display_name": "Pierre d'invocation d'étang",
+                  "description": "Cette pierre renferme un joli petit étang !"
                }
             },
             "cathedral_ruins": {
                "cathedral_ruins_ghost": {
-                  "display_name": "Ruined Cathedral Summon Stone",
-                  "description": "This stone encases an ancient ruin!"
+                  "display_name": "Pierre d'invocation de Cathédrale ruinée",
+                  "description": "Cette pierre renferme une ancienne ruine !"
                }
             },
             "cave_01": {
                "cave_01_ghost": {
-                  "display_name": "Cave Summon Stone",
-                  "description": "This stone encases a cave that will cut into the ground!"
+                  "display_name": "Pierre d'invocation de Cave",
+                  "description": "Cette pierre renferme une grotte qui creusera dans le sol !"
                }
             },
             "cave_02": {
                "cave_02_ghost": {
-                  "display_name": "Cave Summon Stone",
-                  "description": "This stone encases a cave that will cut into the ground!"
+                  "display_name": "Pierre d'invocation de Cave",
+                  "description": "Cette pierre renferme une grotte qui creusera dans le sol !"
                }
             },
             "pond_02": {
                "pond_02_ghost": {
-                  "display_name": "Pond Summon Stone",
-                  "description": "This stone encases a cute little pond!"
+                  "display_name": "Pierre d'invocation d'étang",
+                  "description": "Cette pierre renferme un joli petit étang !"
                }
             },
             "pond_03": {
                "pond_03_ghost": {
-                  "display_name": "Pond Summon Stone",
-                  "description": "This stone encases a cute little pond!"
+                  "display_name": "Pierre d'invocation d'étang",
+                  "description": "Cette pierre renferme un joli petit étang !"
                }
             },
             "pond_04": {
                "pond_04_ghost": {
-                  "display_name": "Pond Summon Stone",
-                  "description": "This stone encases a cute little pond!"
+                  "display_name": "Pierre d'invocation d'étang",
+                  "description": "Cette pierre renferme un joli petit étang !"
                }
             }
          },
          "firepit_titan": {
             "firepit_titan_ghost": {
-               "display_name": "Corrupted Portal",
-               "description": "You can hear chittering from beyond the threshold..."
+               "display_name": "Portail corrompu",
+               "description": "Vous pouvez entendre des cris au-delà du seuil ..."
             }
          },
          "cheat_military_chest": {
-            "display_name": "Cheat Military Chest - Debug Item",
-            "description": "Contains one of each best non-legendary weapon and armor, plus bandages and turrets."
+            "display_name": "Coffre Militaire de Triche - Elément de débogage",
+            "description": "Contient l'une des meilleures armes et armures non légendaires, ainsi que des bandages et des tourelles."
          },
          "stone_lantern_simple": {
             "stone_lantern_simple_ghost": {
-               "display_name": "Simple Stone Lantern",
-               "description": "Nothing fancy. Attach to any wall."
+               "display_name": "Lanterne en pierre simple",
+               "description": "Rien d'extraordinaire. Fixez à n'importe quel mur."
             }
          },
          "stone_garden_lantern_simple": {
             "stone_garden_lantern_simple_ghost": {
-               "display_name": "Simple Stone Garden Lantern",
-               "description": "It has a classic handle...mostly for decoration."
+               "display_name": "Lanterne De Jardin En Pierre Simple",
+               "description": "Il a une poignée classique ... surtout pour la décoration."
             }
          },
          "stone_torch": {
             "stone_torch_ghost": {
-               "display_name": "Stone Torch",
-               "description": "A wall-mounted torch with slowly burning oil."
+               "display_name": "Torche en pierre",
+               "description": "Une torche murale avec de l'huile qui brûle lentement."
             }
          },
          "stone_candle_holder": {
             "stone_candle_holder_ghost": {
-               "display_name": "Stone Candle Holder",
-               "description": "Lighting from a simplier time."
+               "display_name": "Bougeoir en pierre",
+               "description": "Éclairage d'une époque plus simple."
             }
          },
          "candle_holder_floor_iron": {
             "candle_holder_floor_iron_ghost": {
-               "display_name": "Iron Floor Candle Holder",
-               "description": "This cold metal frame holds a warm source of light."
+               "display_name": "Bougeoir de sol en fer",
+               "description": "Ce cadre en métal froid est une source de lumière chaude."
             }
          },
          "window_box_stone_violet": {
             "window_box_stone_violet_ghost": {
-               "display_name": "Violet Planter",
-               "description": "A tidy home for some lovely flowers."
+               "display_name": "Jardinière Violette",
+               "description": "Une maison bien rangée pour de belles fleurs."
             }
          }
       },
@@ -12433,40 +12808,40 @@
          },
          "bug_meat_kabob": {
             "bug_meat_kabob_serving": {
-               "display_name": "Serving of Bug Meat Kabob"
+               "display_name": "Servir de Kabob à la viande d'insecte"
             },
             "bug_meat_kabob": {
-               "display_name": "Bug Meat Kabob",
-               "description": "Slightly more edible form of bug meat"
+               "display_name": "Kabob à la viande d'insecte",
+               "description": "Légèrement plus comestible que la viande de punaise"
             }
          },
          "sweet_potato": {
             "sweet_potato_serving": {
-               "display_name": "Sweet Potato",
-               "description": "Tiny. Sweet!"
+               "display_name": "Patate douce",
+               "description": "Minuscule. Sucré!"
             },
             "sweet_potato_basket": {
-               "display_name": "Basket of Sweet Potatoes",
-               "description": "Lined up in neat rows."
+               "display_name": "Panier de patates douces",
+               "description": "Alignés en rangées soignées."
             }
          },
          "roasted_sweet_potato": {
             "roasted_sweet_potato": {
-               "display_name": "Roasted Sweet Potato",
-               "description": "Warms your hands and your heart."
+               "display_name": "Patate douce rôtie",
+               "description": "Réchauffe tes mains et ton coeur."
             },
             "roasted_sweet_potato_serving": {
-               "display_name": "Serving of Roasted Sweet Potato"
+               "display_name": "Portion de patate douce rôtie"
             }
          },
          "heirbloom": {
             "heirbloom_basket": {
-               "display_name": "Heirbloom Fruit",
-               "description": "Heirbloom Vegetable? It seems the stalks are an Amberstone delicacy."
+               "display_name": "Fruit hérisson",
+               "description": "Hérisson végétal ? Il semble que les tiges soit une délicatesse Amberstone."
             },
             "heirbloom_serving": {
-               "display_name": "Heirbloom Fruit",
-               "description": "Juicy! Those rabbits don't know what they're missing!"
+               "display_name": "Fruit hérisson",
+               "description": "Juteux ! Ces lapins ne savent pas ce qu'ils manquent!"
             }
          },
          "wolf_jerky": {
@@ -12474,40 +12849,40 @@
          },
          "fodder": {
             "fodder": {
-               "display_name": "Animal Fodder",
-               "description": "For feeding any vegetarian animals."
+               "display_name": "Fourrage pour animaux",
+               "description": "Pour nourrir tous les animaux végétariens."
             }
          },
          "pie_berry": {
             "pie_berry_serving": {
-               "display_name": "Piece of Berry Pie"
+               "display_name": "Portion de Tarte aux Baies sucrée"
             },
             "pie_berry": {
-               "display_name": "Sweet Berry Pie",
-               "description": "The crust and the berries go so well together."
+               "display_name": "Tarte aux Baies sucrée",
+               "description": "La croûte et les baies vont si bien ensemble."
             }
          },
          "pie_pear": {
             "pie_pear_serving": {
-               "display_name": "Piece of Prickly Pear Pie"
+               "display_name": "Portion de tarte à la figue de Barbarie"
             },
             "pie_pear": {
-               "display_name": "Prickly Pear Pie",
-               "description": "It's called 'Prickly Pear' but all the prickles have been removed."
+               "display_name": "Tarte à la figue de Barbarie",
+               "description": "Ça s'appelle 'figue de Barbarie' mais tous les piquants ont été enlevés."
             }
          },
          "cake_layered": {
             "cake_layered": {
-               "display_name": "Layered Cake",
-               "description": "So beautiful!  And just covered in tasty treats!"
+               "display_name": "Mille-feuille",
+               "description": "Si belle ! Et juste couvert de délicieuses friandises!"
             },
             "cake_layered_serving": {
-               "display_name": "Piece of Layered Cake"
+               "display_name": "Portion de Mille-feuille"
             }
          },
          "dumpling_meat": {
             "dumpling_meat_serving": {
-               "display_name": "Piece of Meat Dumpling"
+               "display_name": "Portion de boulette viande"
             },
             "dumpling_meat": {
                "display_name": "Jiaozi à la viande",
@@ -12520,7 +12895,7 @@
                "description": "Une petite poche de pain avec des légumes et des épices farcies à l'intérieur."
             },
             "dumpling_vegetarian_serving": {
-               "display_name": "Piece of Veggie Dumpling"
+               "display_name": "Portion de boulette de légumes"
             }
          }
       },
@@ -12900,60 +13275,60 @@
          },
          "titan_ward_stone": {
             "titan_ward_stone_ghost": {
-               "display_name": "Anti-Titan Ward",
-               "description": "Hurts anything nearby that smells like titan."
+               "display_name": "Protection Anti-Titan",
+               "description": "Fait mal à tout ce qui sent le titan."
             }
          },
          "titan_ward_clay": {
             "titan_ward_clay_ghost": {
-               "display_name": "Anti-Titan Ward",
-               "description": "Hurts anything nearby that smells like titan."
+               "display_name": "Protection Anti-Titan",
+               "description": "Fait mal à tout ce qui sent le titan."
             }
          },
          "anti_titan_ward": {
             "anti_titan_ward_ghost": {
-               "display_name": "Anti-Titan Ward",
-               "description": "Hurts anything nearby that smells like titan."
+               "display_name": "Protection Anti-Titan",
+               "description": "Fait mal à tout ce qui sent le titan."
             }
          },
          "titan_slayer": {
             "titan_slayer_ghost": {
-               "display_name": "Crystalline Arbalest",
-               "description": "A weapon to strike at evil's heart."
+               "display_name": "Arbalète Cristalline",
+               "description": "Une arme pour frapper le cœur du mal."
             },
             "titan_slayer_monument": {
-               "display_name": "Testament to the Righted Wrong",
-               "description": "A memorial to an alliance between peoples against the darkness. Its crystal radiates warmth and well-being."
+               "display_name": "Testament de l'injustice",
+               "description": "Un mémorial à l'alliance entre les peuples contre les ténèbres. Son cristal dégage chaleur et bien-être."
             }
          },
          "orc_titan_gong": {
             "orc_titan_gong_ghost": {
-               "display_name": "Gong of Sinister Beckoning",
-               "description": "Made of strange, eerily smooth stone."
+               "display_name": "Gong du sinistre appel",
+               "description": "Fait de pierre étrange et étonnament lisse."
             }
          },
          "root_of_evil": {
-            "display_name": "Root of Evil",
-            "description": "Kill it! Kill it with fire!"
+            "display_name": "Racine du mal",
+            "description": "Tue le ! Tuez-le avec du feu !"
          },
          "building_tentacle": {
-            "display_name": "Building Crusher",
-            "description": "Kill it before it wakes up and smashes your building!"
+            "display_name": "Concasseur",
+            "description": "Tuez-le avant qu'il ne se réveille et écrase votre bâtiment !"
          },
          "tentacle_trap": {
-            "display_name": "Tentacle Trap",
-            "description": "Grabs anyone who passes close by."
+            "display_name": "Piège à tentacules",
+            "description": "Attrape tous ceux qui passent à proximité."
          },
          "charging_pedestal": {
             "charging_pedestal_ghost": {
-               "display_name": "Charging Stones",
-               "description": "These stones collect light, but will also attract beasts if left out at night."
+               "display_name": "Pierres de charge",
+               "description": "Ces pierres collectent la lumière, mais attireront également les bêtes si elles sont laissées dehors la nuit."
             }
          },
          "keystone_pedestal": {
             "keystone_pedestal_ghost": {
-               "display_name": "Amberstone Pedestal",
-               "description": "A pedestal with an Amberstone on top, necessary for Amberstone homes."
+               "display_name": "Piédestal Amberstone",
+               "description": "Un piédestal avec un Amberstone sur le dessus, nécessaire pour les maisons Amberstone."
             }
          }
       },
@@ -13070,7 +13445,7 @@
             },
             "goblin_soldier": {
                "display_name": "Soldat gobelin",
-               "description": "Gobble, gobble, gobble..."
+               "description": "Gobez, gobez, gobez ..."
             },
             "goblin_soothsayer_tent": {
                "display_name": "La tente du devin",
@@ -13325,13 +13700,21 @@
                "dragon_nature_egg_fertilized_ghost": {
                   "display_name": "Œuf de dragon naturel",
                   "description": "Tellement mystérieux ! Il devrait être placé dans un endroit sûr et chaud..."
+               },
+               "dragon_copper_egg_fertilized_ghost": {
+                  "display_name": "Œuf De Dragon De Cuivre",
+                  "description": "Si mystérieux ! Peut-être le roi peut-il éclore ..."
                }
             }
          },
          "dragon_whelp_ice": {
             "display_name": "Bébé dragon de froid",
-            "description": "Un bébé dragon qui est bon pour garder la nourriture froide.",
+            "description": "Un bébé dragon efficace pour garder la nourriture au frais.",
             "species": "dragon"
+         },
+         "dragon_whelp_copper": {
+            "display_name": "Bébé dragon de cuivre",
+            "description": "Ajoute un certain éclat à la ville. Ce type de dragon préfère la viande."
          }
       },
       "plants": {
@@ -13919,221 +14302,221 @@
          },
          "sweet_potato": {
             "sweet_potato_ghost": {
-               "display_name": "Sweet Potato",
-               "description": "Hearty winter spud"
+               "display_name": "Patate douce",
+               "description": "Patate d'hiver copieuse"
             },
             "bud": {
                "sweet_potato_plant_bud": {
-                  "display_name": "Budding Sweet Potato",
-                  "description": "It's almost full grown!"
+                  "display_name": "Patate douce en herbe",
+                  "description": "C'est presque terminé !"
                }
             },
             "rotten": {
                "sweet_potato_rotten": {
-                  "display_name": "Rotten Sweet Potato",
-                  "description": "Not good for eating anymore, but a great source of seeds"
+                  "display_name": "Patate douce pourrie",
+                  "description": "Plus bon à manger, mais une excellente source de graines"
                }
             },
             "seed": {
                "sweet_potato_plant_seed": {
-                  "display_name": "Sweet Potato Slip",
-                  "description": "Can be planted to grow a tasty purple veggie."
+                  "display_name": "Bouture de patate douce",
+                  "description": "Peut être planté pour faire pousser un délicieux légume violet."
                }
             },
             "sprout": {
                "sweet_potato_plant_sprout": {
-                  "display_name": "Sweet Potato Sproutling",
-                  "description": "Just needs some time and care."
+                  "display_name": "Pousse de patate douce",
+                  "description": "Juste besoin de temps et de soins."
                }
             },
             "stem": {
                "sweet_potato_plant_stem": {
-                  "display_name": "Stemming Sweet Potato",
-                  "description": "Still growing!"
+                  "display_name": "Plantule de patate douce",
+                  "description": "Toujours en croissance !"
                }
             }
          },
          "snow_poppy_plant": {
             "stem": {
                "snow_poppy_plant_stem": {
-                  "display_name": "Stemming Snow Poppy",
-                  "description": "Still growing!"
+                  "display_name": "Plantule de pavot des neiges",
+                  "description": "Toujours en croissance !"
                }
             },
             "sprout": {
                "snow_poppy_plant_sprout": {
-                  "display_name": "Snow Poppy Sproutling",
-                  "description": "Just needs some time and care."
+                  "display_name": "Pousse de pavot des neiges",
+                  "description": "Juste besoin de temps et de soins."
                }
             },
             "seed": {
                "snow_poppy_plant_seed": {
-                  "display_name": "Snow Poppy Seed",
-                  "description": "Once planted, it will grow vibrant flowers"
+                  "display_name": "Graine de pavot des neiges",
+                  "description": "Une fois planté, se développera en fleurs éclatantes"
                },
                "snow_poppy_plant_seed_ghost": {
-                  "display_name": "Snow Poppy Seed",
-                  "description": "Once planted, it will grow vibrant flowers"
+                  "display_name": "Graine de pavot des neiges",
+                  "description": "Une fois planté, se développera en fleurs éclatantes"
                }
             },
             "bud": {
                "snow_poppy_plant_bud": {
-                  "display_name": "Budding Snow Poppy",
-                  "description": "It's almost there!  Look, it has buds!"
+                  "display_name": "Pavot des neiges en herbe",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
                }
             },
-            "unripe_description": "This plant has been harvested and has not grown back yet",
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé",
             "snow_poppy_plant_ghost": {
-               "display_name": "Snow Poppy",
-               "description": "Can be harvested for healing herbs"
+               "display_name": "Pavot des neiges",
+               "description": "Peut être récolté en tant qu'herbes médicinales"
             }
          },
          "gold_snow_poppy_plant": {
             "stem": {
                "gold_snow_poppy_plant_stem": {
-                  "display_name": "Stemming Snow Poppy",
-                  "description": "Still growing!"
+                  "display_name": "Plantule de pavot des neiges",
+                  "description": "Toujours en croissance !"
                }
             },
             "sprout": {
                "gold_snow_poppy_plant_sprout": {
-                  "display_name": "Snow Poppy Sproutling",
-                  "description": "Just needs some time and care."
+                  "display_name": "Pousse de pavot des neiges",
+                  "description": "Juste besoin de temps et de soins."
                }
             },
             "seed": {
                "gold_snow_poppy_plant_seed": {
-                  "display_name": "Snow Poppy Seed",
-                  "description": "Once planted, it will grow vibrant flowers"
+                  "display_name": "Graine de pavot des neiges",
+                  "description": "Une fois planté, se développera en fleurs éclatantes"
                },
                "gold_snow_poppy_plant_seed_ghost": {
-                  "display_name": "Snow Poppy Seed",
-                  "description": "Once planted, it will grow vibrant flowers"
+                  "display_name": "Graine de pavot des neiges",
+                  "description": "Une fois planté, se développera en fleurs éclatantes"
                }
             },
             "bud": {
                "gold_snow_poppy_plant_bud": {
-                  "display_name": "Budding Snow Poppy",
-                  "description": "It's almost there!  Look, it has buds!"
+                  "display_name": "Pavot des neiges en herbe",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
                }
             },
-            "unripe_description": "This plant has been harvested and has not grown back yet",
+            "unripe_description": "Cette plante a été récoltée et n'a pas encore poussé",
             "gold_snow_poppy_plant_ghost": {
-               "display_name": "Snow Poppy",
-               "description": "Can be harvested for healing herbs"
+               "display_name": "Pavot des neiges",
+               "description": "Peut être récolté en tant qu'herbes médicinales"
             }
          },
          "violet_plant": {
             "violet_plant": {
-               "unripe_description": "This plant has been harvested and has not grown back yet."
+               "unripe_description": "Cette plante a été récoltée et n'a pas encore repoussé."
             },
             "violet_plant_ghost": {
-               "display_name": "Violet",
-               "description": "Can be harvested for healing herbs"
+               "display_name": "Violette",
+               "description": "Peut être récolté en tant qu'herbes médicinales"
             },
             "bud": {
                "violet_plant_bud": {
-                  "display_name": "Budding Violet",
-                  "description": "It's almost there!  Look, it has buds!"
+                  "display_name": "Violette en herbe",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
                }
             },
             "seed": {
                "violet_plant_seed": {
-                  "display_name": "Violet Seed",
-                  "description": "Once planted, it will grow purple flowers"
+                  "display_name": "Graine de Violette",
+                  "description": "Une fois planté, se développera en fleurs violettes"
                },
                "violet_plant_seed_ghost": {
-                  "display_name": "Violet Seed",
-                  "description": "Once planted, it will grow purple flowers"
+                  "display_name": "Graine de Violette",
+                  "description": "Une fois planté, se développera en fleurs violettes"
                }
             },
             "sprout": {
                "violet_plant_sprout": {
-                  "display_name": "Violet Sproutling",
-                  "description": "Just needs some time and care."
+                  "display_name": "Pousse de violette",
+                  "description": "Juste besoin de temps et de soins."
                }
             },
             "stem": {
                "violet_plant_stem": {
-                  "display_name": "Stemming violet",
-                  "description": "Still growing!"
+                  "display_name": "Plantule de violette",
+                  "description": "Toujours en croissance !"
                }
             }
          },
          "wintermoss": {
             "wintermoss": {
                "wintermoss_ghost": {
-                  "display_name": "Wintermoss",
-                  "description": "This plant's fiber can be spun into thread."
+                  "display_name": "Mousse d'hiver",
+                  "description": "La fibre de cette plante peut être filée."
                }
             },
             "bud": {
                "wintermoss_bud": {
-                  "display_name": "Budding Wintermoss",
-                  "description": "It's almost there!  Look, it has buds!"
+                  "display_name": "Bourgeon de mousse d'hiver",
+                  "description": "C'est presque là ! Regardez, il a des bourgeons !"
                },
                "wintermoss_plant_bud": {
-                  "display_name": "Budding Wintermoss",
-                  "description": "It's almost full grown!"
+                  "display_name": "Bourgeon de mousse d'hiver",
+                  "description": "C'est presque terminé !"
                }
             },
-            "display_name": "Wintermoss",
-            "description": "Source of coarse fibers",
+            "display_name": "Mousse d'hiver",
+            "description": "Source de fibres grossières",
             "seed": {
                "wintermoss_plant_seed": {
-                  "display_name": "Wintermoss Seed",
-                  "description": "Can be planted to grow a scratchy fiber."
+                  "display_name": "Graine de mousse d'hiver",
+                  "description": "Peut être planté pour faire pousser une fibre rêche."
                },
                "wintermoss_plant_seed_ghost": {
-                  "display_name": "Wintermoss Seed",
-                  "description": "Can be planted to grow a scratchy fiber."
+                  "display_name": "Graine de mousse d'hiver",
+                  "description": "Peut être planté pour faire pousser une fibre rêche."
                }
             },
             "sprout": {
                "wintermoss_plant_sprout": {
-                  "display_name": "Wintermoss Sproutling",
-                  "description": "Just needs some time and care."
+                  "display_name": "Pousse de mousse d'hiver",
+                  "description": "Juste besoin de temps et de soins."
                }
             },
             "stem": {
                "wintermoss_plant_stem": {
-                  "display_name": "Stemming Wintermoss",
-                  "description": "Still growing!"
+                  "display_name": "Plantule de mousse d'hiver",
+                  "description": "Toujours en croissance !"
                }
             }
          },
          "earthbud": {
             "stem": {
                "earthbud_plant_stem": {
-                  "display_name": "Stemming Hearthbud",
-                  "description": "Still growing!"
+                  "display_name": "Plantule de mousse d'hiver",
+                  "description": "Toujours en croissance !"
                }
             },
             "sprout": {
                "earthbud_plant_sprout": {
-                  "display_name": "Hearthbud Sproutling",
-                  "description": "Just needs some time and care."
+                  "display_name": "Pousse d'Hearthbud",
+                  "description": "Juste besoin de temps et de soins."
                }
             },
             "seed": {
                "earthbud_plant_seed": {
-                  "display_name": "Hearthbud Seed",
-                  "description": "Can be planted to grow a Hearthbud flower that collects Hearth essence."
+                  "display_name": "Graine d'Hearthbud",
+                  "description": "Peut être planté pour faire pousser une fleur d'Hearthbud qui recueille l’essence de Hearth."
                },
                "earthbud_plant_seed_ghost": {
-                  "display_name": "Hearthbud Seed",
-                  "description": "Can be planted to grow a Hearthbud flower that collects Hearth essence."
+                  "display_name": "Graine d'Hearthbud",
+                  "description": "Peut être planté pour faire pousser une fleur d'Hearthbud qui recueille l’essence de Hearth."
                }
             },
             "earthbud_ghost": {
                "display_name": "Hearthbud",
-               "description": "Harvestable for concentrated Hearth Essence and more Hearthbud Seeds"
+               "description": "Peut être récolté pour obtenir une essence de Hearth concentrée et davantage de graines de Hearthbud"
             },
-            "unripe_description": "Not yet ripe for harvest.",
+            "unripe_description": "Pas encore mûr pour la récolte.",
             "bud": {
                "earthbud_plant_bud": {
-                  "display_name": "Budding Hearthbud",
-                  "description": "Still just a bud sticking out of the ground. Hang in there, bud."
+                  "display_name": "Bourgeon de Hearthbud",
+                  "description": "Encore juste un bourgeon qui sort du sol. Tiens bon, mon pote."
                }
             }
          }
@@ -14236,16 +14619,16 @@
             "description": "Encadre délicatement et protège le Tiare Brillante"
          },
          "golem_backpack": {
-            "display_name": "Golem Backpack",
-            "description": "Used by the Geomancer to craft Ox Golems"
+            "display_name": "Sac à dos Golem",
+            "description": "Utilisé par le géomancien pour fabriquer des golems bœuf"
          },
          "golem_parts": {
-            "display_name": "Golem Parts",
-            "description": "Used by the Geomancer to craft golems"
+            "display_name": "Pièces de Golem",
+            "description": "Utilisé par le géomancien pour fabriquer des golems"
          },
          "golem_pick": {
-            "display_name": "Golem Pick",
-            "description": "Used by the Geomancer to craft Mole Golems"
+            "display_name": "Pioche Golem",
+            "description": "Utilisé par le géomancien pour fabriquer des golems mole"
          }
       },
       "resources": {
@@ -14275,16 +14658,16 @@
                "description": "Rugueux et ça pique"
             },
             "wintermoss_bundle": {
-               "display_name": "Wintermoss Bundle",
-               "description": "Spinnable into thread"
+               "display_name": "Lot de mousse d'hiver",
+               "description": "Filables en fil"
             },
             "heirbloom_bundle": {
-               "display_name": "Heirbloom Stalks",
-               "description": "An Amberstone favorite. Spinnable into thread."
+               "display_name": "Tiges de Heirbloom",
+               "description": "Produit favoris des Amberstones. Filables en fil."
             },
             "coarse_fiber_bundle_winter": {
-               "display_name": "Light Coarse Fiber Bundle",
-               "description": "Rough and itchy"
+               "display_name": "Lot de fibres grossières légères",
+               "description": "Rugueux et démange"
             }
          },
          "gold": {
@@ -14293,8 +14676,8 @@
                "description": "Un bloc d'or natif"
             },
             "bone_ancient": {
-               "display_name": "Ancient Bone",
-               "description": "A piece of very old bone."
+               "display_name": "Os antique",
+               "description": "Un morceau de très vieux os."
             }
          },
          "iron": {
@@ -14486,12 +14869,12 @@
             }
          },
          "earth_essence": {
-            "display_name": "Hearth Essence",
-            "description": "The power of Hearth concentrated by the Hearthbud"
+            "display_name": "Essence Hearth",
+            "description": "La puissance de Hearth concentrée par le Hearthbud"
          },
          "gem_nature": {
-            "display_name": "Nature Gem Bits",
-            "description": "Bits of the larger gem, they are probably worth money."
+            "display_name": "Morceaux de gemme nature",
+            "description": "Morceaux d'une plus grande pierre précieuse, ils valent probablement une somme considérable."
          }
       },
       "terrain": {
@@ -14573,12 +14956,12 @@
             "description": "Tout ressemble à un clou lorsque vous avez un marteau."
          },
          "mining_pick_golem": {
-            "display_name": "Golem Mining Pick",
-            "description": "Large sized, for large hands."
+            "display_name": "Pioche minière de Golem",
+            "description": "De grande taille, pour les grandes mains."
          },
          "worker_axe_golem": {
-            "display_name": "Golem's Axe",
-            "description": "Large sized, for large hands."
+            "display_name": "Hache De Golem",
+            "description": "De grande taille, pour les grandes mains."
          }
       },
       "toys": {
@@ -14649,24 +15032,24 @@
                }
             },
             "large_snowy_juniper_tree": {
-               "display_name": "Large Juniper Tree",
-               "description": "An impressive specimen."
+               "display_name": "Grand genévrier",
+               "description": "Un spécimen impressionnant."
             },
             "medium_snowy_juniper_tree": {
-               "display_name": "Juniper Tree",
-               "description": "Strong and tall."
+               "display_name": "Genévrier",
+               "description": "Fort et grand."
             },
             "small_snowy_juniper_tree": {
-               "display_name": "Small Juniper Tree",
-               "description": "Just a sapling."
+               "display_name": "Petit genévrier",
+               "description": "Juste un jeune arbre."
             },
             "medium_gold_juniper_tree": {
-               "display_name": "Juniper Tree",
-               "description": "Strong and tall."
+               "display_name": "Genévrier",
+               "description": "Fort et grand."
             },
             "small_gold_juniper_tree": {
-               "display_name": "Small Juniper Tree",
-               "description": "Just a sapling."
+               "display_name": "Petit genévrier",
+               "description": "Juste un jeune arbre."
             }
          },
          "palm_tree": {
@@ -14804,49 +15187,49 @@
             },
             "sapling_pine_tree": {
                "sapling_pine_tree_ghost": {
-                  "display_name": "Pine Tree Sapling",
-                  "description": "Baby Pine Tree."
+                  "display_name": "Arbre de pin",
+                  "description": "Petit Pin."
                },
                "sapling_pine_tree_iconic": {
-                  "description": "Plant it in the earth and watch it grow."
+                  "description": "Plantez-le dans la terre et regardez-le grandir."
                },
-               "description": "Baby Pine Tree."
+               "description": "Bébé Pin."
             },
             "medium_snowy_pine_tree": {
-               "description": "Sturdy, in the prime of life.",
-               "display_name": "Medium Pine Tree"
+               "description": "Solide, dans la force de l'âge.",
+               "display_name": "Pin moyen"
             },
             "large_snowy_pine_tree": {
-               "description": "Looks many years old. Too bad...",
-               "display_name": "Large Pine Tree"
+               "description": "Ça fait plusieurs années. Dommage...",
+               "display_name": "Grand pin"
             },
             "small_snowy_pine_tree": {
-               "description": "Just a sapling.",
-               "display_name": "Small Pine Tree"
+               "description": "Juste un jeune arbre.",
+               "display_name": "Petit pin"
             },
             "large_gold_pine_tree": {
-               "display_name": "Large Pine Tree",
-               "description": "Looks many years old. Too bad..."
+               "display_name": "Grand pin",
+               "description": "Ça fait plusieurs années. Dommage..."
             },
             "medium_gold_pine_tree": {
-               "display_name": "Medium Pine Tree",
-               "description": "Sturdy, in the prime of life."
+               "display_name": "Pin moyen",
+               "description": "Solide, dans la force de l'âge."
             },
             "small_gold_pine_tree": {
-               "display_name": "Small Pine Tree",
-               "description": "Just a sapling."
+               "display_name": "Petit pin",
+               "description": "Juste un jeune arbre."
             },
             "large_silver_pine_tree": {
-               "display_name": "Large Pine Tree",
-               "description": "Looks many years old. Too bad..."
+               "display_name": "Grand pin",
+               "description": "Ça fait plusieurs années. Dommage..."
             },
             "small_silver_pine_tree": {
-               "display_name": "Small Pine Tree",
-               "description": "Just a sapling."
+               "display_name": "Petit pin",
+               "description": "Juste un jeune arbre."
             },
             "medium_silver_pine_tree": {
-               "display_name": "Medium Pine Tree",
-               "description": "Sturdy, in the prime of life."
+               "display_name": "Pin moyen",
+               "description": "Solide, dans la force de l'âge."
             }
          },
          "cactus_tree": {
@@ -14956,40 +15339,40 @@
          "pine_tree_gold": {
             "seed": {
                "tree_pine_seed_ghost": {
-                  "display_name": "Gold Pine Tree Seed",
-                  "description": "Can be planted to grow a giant tree"
+                  "display_name": "Graine de pin d'or",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
                }
             }
          },
          "pine_tree_silver": {
             "seed": {
                "tree_pine_seed_ghost": {
-                  "display_name": "Silver Pine Tree Seed",
-                  "description": "Can be planted to grow a giant tree"
+                  "display_name": "Graine de pin argenté",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
                }
             }
          },
          "pine_tree_snowy": {
             "seed": {
                "tree_pine_seed_ghost": {
-                  "display_name": "Snowy Pine Tree Seed",
-                  "description": "Can be planted to grow a giant tree"
+                  "display_name": "Graines de pin enneigées",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
                }
             }
          },
          "juniper_tree_gold": {
             "seed": {
                "tree_juniper_seed_ghost": {
-                  "display_name": "Gold Juniper Tree Seed",
-                  "description": "Can be planted to grow a giant tree"
+                  "display_name": "Graine de genévrier doré",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
                }
             }
          },
          "juniper_tree_snowy": {
             "seed": {
                "tree_juniper_seed_ghost": {
-                  "display_name": "Snowy Juniper Tree Seed",
-                  "description": "Can be planted to grow a giant tree"
+                  "display_name": "Semis d'arbres de genévrier enneigé",
+                  "description": "Peut être planté pour faire pousser un arbre géant"
                }
             }
          }
@@ -15178,6 +15561,12 @@
          "corruption_beam": {
             "display_name": "Faisceau de corruption",
             "description": "Une arme invisible qui peu apparaître dans des mains corrompues"
+         },
+         "maul_lantern": {
+            "maul_lantern_iconic": {
+               "display_name": "Masse lanterne",
+               "description": "Manie la Lumière sacrée d'Hestia pour la défense la ville."
+            }
          }
       },
       "consumables": {
@@ -15424,6 +15813,26 @@
                   "display_name": "Sasha Lightfoot",
                   "description": "Héraut du Clan Amberstone"
                }
+            }
+         },
+         "dragonborn": {
+            "dragonborn_king": {
+               "display_name": "Flox Icedragon",
+               "description": "Roi drakéide "
+            }
+         },
+         "hestia": {
+            "hestia_dylan": {
+               "display_name": "Prince Dylan",
+               "description": "Aimable Hestian Royal"
+            },
+            "hestia_lily": {
+               "display_name": "Princesse Lily",
+               "description": "Mystérieuse Hestian Royal"
+            },
+            "hestia_emma": {
+               "display_name": "Princesse Emma",
+               "description": "Incréable Hestian Royal"
             }
          }
       },
@@ -17076,6 +17485,18 @@
             "spear_horn_buff": {
                "display_name": "Volonté du chasseur",
                "description": "Augmente la Volonté de 20%"
+            },
+            "maul_lantern_buff": {
+               "display_name": "Cadeau d'Hestia",
+               "description": "Augmente le courage et régénère la santé"
+            },
+            "lonelyness_buff": {
+               "display_name": "Augmentation de la solitude",
+               "description": "Augmente la solitude"
+            },
+            "hestia_greetings_buff": {
+               "display_name": "Hestia Parlant",
+               "description": "Hestia Parlant"
             }
          },
          "footman_outfit": {
@@ -18364,6 +18785,7 @@
                "recipe_name": "Peluche de lapin",
                "flavor": "Il vous aime !"
             },
+            "weapons_name": "Armes",
             "clothing_armor_name": "Vêtements et armures",
             "toys_name": "Jouets",
             "storage_name": "Rangement",
