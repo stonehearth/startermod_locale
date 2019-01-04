@@ -5098,7 +5098,7 @@
                      "dialog_nodes": {
                         "msg1": {
                            "bulletin_message": {
-                              "00": "L'étrange oiseau messager se précipite avec votre déclaration de fondation officielle dans son bec, le portant vaguement dans la direction de la capitale"
+                              "00": "L'étrange oiseau messager se précipite avec votre déclaration de fondation officielle dans son bec, la portant probablement dans la direction de la capitale"
                            },
                            "bulletin_title": "L'oiseau part",
                            "dialog_title": "L'oiseau part",
@@ -5311,7 +5311,7 @@
                                     },
                                     "request1": {
                                        "bulletin_message": {
-                                          "00": "\"En fait, maintenant que le mal c'est dissipé, il devrait y avoir suffisamment d’énergie magique dans le sous-sol pour soutenir les Lapins. Tant que vous gardez ce monument debout, vous devriez vous attendre à ce que certains d'entre nous demande à immigrer ici, de temps en temps au temps \"."
+                                          "00": "\"En fait, maintenant que le mal c'est dissipé, il devrait y avoir suffisamment d’énergie magique dans le sous-sol pour soutenir les Lapines. Tant que vous gardez ce monument debout, vous devriez vous attendre à ce que certains d'entre nous demande à immigrer ici, de temps en temps au temps \"."
                                        },
                                        "bulletin_title": "Sasha offre",
                                        "dialog_title": "L'offre de Sasha",
@@ -5810,8 +5810,8 @@
                                           "bulletin_message": {
                                              "00": "Le visiteur hoche la tête en remerciement et s'éloigne en bondissant, les paniers dans le bras.<br><br>Peu de temps après, des buissons de baies sont découverts non loin de la ville, un petit ruban couleur ambre est attaché à chacun.<br><br><i><font size=-1>[Le visiteur semblent vous faire plus confiance]</font></i>"
                                           },
-                                          "bulletin_title": "Étrange commerce",
-                                          "dialog_title": "Étrange commerce",
+                                          "bulletin_title": "Commerce Étrange",
+                                          "dialog_title": "Commerce Étrange",
                                           "choice_000": "Euh..."
                                        }
                                     }
@@ -5824,8 +5824,8 @@
                                           "bulletin_message": {
                                              "00": "Le visiteur hoche la tête en remerciement et s'éloigne en bondissant, les paniers dans le bras.<br><br>Peu de temps après, on découvre, non loin de la ville, un bosquet de plantes aux reflets inhabituels, un petit ruban couleur ambre attaché à l'un d'eux.<br><br><i><font size=-1>[Le visiteur semblent vous faire plus confiance]</font></i>"
                                           },
-                                          "bulletin_title": "Étrange commerce",
-                                          "dialog_title": "Étrange commerce",
+                                          "bulletin_title": "Commerce Étrange",
+                                          "dialog_title": "Commerce Étrange",
                                           "choice_000": "bizarre."
                                        }
                                     }
@@ -5836,11 +5836,11 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "The visitor nods, dropping a few small pouches of gold dust into your hand as payment before bounding away, baskets in arm.<br><br><i><font size=-1>[The visitors seem to trust you more]</font></i>"
+                                             "00": "Le visiteur hoche la tête, déposant quelques petits sacs de poussière d'or dans votre main en guise de paiement avant de s'éloigner, paniers au bras.<br><br><i><font size=-1>[Les visiteurs semblent vous faire plus confiance]</font></i>"
                                           },
-                                          "bulletin_title": "Strange Trading",
-                                          "dialog_title": "Strange Trading",
-                                          "choice_000": "Hmm."
+                                          "bulletin_title": "Commerce Étrange",
+                                          "dialog_title": "Commerce Étrange",
+                                          "choice_000": "Hm."
                                        }
                                     }
                                  }
@@ -5850,11 +5850,11 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "The visitor nods, handing you a pouch. \"For vigor.\"<br><br>They bound away, baskets in arm.<br><br><i><font size=-1>[The visitors seem to trust you more]</font></i>"
+                                             "00": "Le visiteur hoche la tête et tend une sacoche. \"Pour la vigueur.\"<br><br>Ils se sont attachés, paniers au bras.<br><br><i><font size=-1>[Les visiteurs semblent vous faire plus confiance]</font></i>"
                                           },
-                                          "bulletin_title": "Strange Trading",
-                                          "dialog_title": "Strange Trading",
-                                          "choice_000": "Huh."
+                                          "bulletin_title": "Commerce Étrange",
+                                          "dialog_title": "Commerce Étrange",
+                                          "choice_000": "Euh."
                                        }
                                     }
                                  }
@@ -5864,11 +5864,11 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "The visitor nods and takes their leave.<br><br>Shortly after, you discover a basket brimming with flower petals and seeds by your banner.<br><br><i><font size=-1>[The visitors seem to trust you more]</font></i>"
+                                             "00": "Le visiteur hoche la tête et prend congé.<br><br>Peu de temps après, vous découvrez un panier débordant de pétales de fleurs et de graines prêt de votre bannière.<br><br><i><font size=-1>[Les visiteurs semblent vous faire plus confiance]</font></i>"
                                           },
-                                          "bulletin_title": "Strange Trading",
-                                          "dialog_title": "Strange Trading",
-                                          "choice_000": "Strange."
+                                          "bulletin_title": "Commerce Étrange",
+                                          "dialog_title": "Commerce Étrange",
+                                          "choice_000": "Étrange."
                                        }
                                     }
                                  }
@@ -5878,35 +5878,35 @@
                                     "dialog_nodes": {
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "\"I see. May your harvests be ever more bountiful.\"<br><br>The visitor takes their leave, clearly disappointed.",
-                                             "01": "\"Oh, perhaps another time then...\"<br><br>The visitor wanders carefully away.",
-                                             "02": "The visitor's shoulders droop. \"Oh. Um, okay, bye!\" they say hastily, navigating their way quickly past  the edge of town."
+                                             "00": "\"Je vois. Que vos récoltes deviennent de plus en plus abondantes.\"<br><br>Le visiteur prend congé, clairement déçu.",
+                                             "01": "\"Oh, peut-être une autre fois alors...\"<br><br>Le visiteur s'éloigne prudemment.",
+                                             "02": "Les épaules du visiteur s'affaissent. \"Oh. Euh, d'accord, au revoir !\" dit-ils en se dépéchant d'aller jusqu'à la sortie de la ville."
                                           },
-                                          "bulletin_title": "Strange Trading",
-                                          "dialog_title": "Strange Trading",
-                                          "choice_000": "Huh. That was odd..."
+                                          "bulletin_title": "Commerce Étrange",
+                                          "dialog_title": "Commerce Étrange",
+                                          "choice_000": "Euh. C'était étrange...."
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "A small, hooded figure approaches, meekly. \"I have heard of your vegetables,\" she says. \"Allow me to take some, and by my honor, it will be a worthwhile trade.\"",
-                                             "01": "\"You have vegetables, yes? Perhaps an exchange in kind?\" says a strange, small hooded figure. It seems she wants to trade for vegetables?",
-                                             "02": "A hooded figure appears, silently and seemingly out of nowhere. \"Greetings. I have taken a risk for the chance at your garden's bounty. Perhaps a trade?\" It seems she means that she wants some vegetables...",
-                                             "03": "A small, hooded figure approaches, meekly. \"I have heard of your vegetables,\" he says. \"Allow me to take some, and by my honor, it will be a worthwhile trade.\"",
-                                             "04": "\"You have vegetables, yes? Perhaps an exchange in kind?\" says a strange, small hooded figure. It seems he wants to trade for vegetables?",
-                                             "05": "A hooded figure appears, silently and seemingly out of nowhere. \"Greetings. I have taken a risk for the chance at your garden's bounty. Perhaps a trade?\" It seems he means that he wants some vegetables..."
+                                             "00": "Une petite silhouette à capuchon s'approche, doucement. \"J'ai entendu parler de vos légumes\", dit-elle. \"Permettez-moi d'en prendre un peu, et par mon honneur, ce sera un échange qui en vaudra la peine.\"",
+                                             "01": "\"Vous avez des légumes, oui ? Un échange est peut-être possible ?\" dit une étrange petite silhouette à capuchon. On dirait qu'elle veut échanger quelques légumes ?",
+                                             "02": "Une silhouette à capuchon apparaît, silencieusement, apparemment sorti de nulle part. \"Salutations. J'ai pris un risque pour avoir la chance de profiter de votre généreux jardin. Un échange est peut-être possible ?\" On dirait qu'elle veut des légumes...",
+                                             "03": "Une petite silhouette à capuchon s'approche, doucement.. \"J'ai entendu parler de vos légumes\", dit-elle. \"Permettez-moi d'en prendre un peu, et par mon honneur, ce sera un échange qui en vaudra la peine.\"",
+                                             "04": "\"Vous avez des légumes, oui ? Un échange est peut-être possible ?\" dit une étrange petite silhouette à capuchon. On dirait qu'elle veut échanger quelques légumes ?",
+                                             "05": "Une silhouette à capuchon apparaît, silencieusement, apparemment sorti de nulle part. \"Salutations. J'ai pris un risque pour avoir la chance de profiter de votre généreux jardin. Un échange est peut-être possible ?\" On dirait qu'elle veut des légumes..."
                                           },
-                                          "bulletin_title": "Strange Trading",
-                                          "dialog_title": "Strange Trading",
-                                          "choice_000": "Sure thing! Let's get some baskets...",
-                                          "choice_001": "No, Sorry, can't spare any"
+                                          "bulletin_title": "Commerce Étrange",
+                                          "dialog_title": "Commerce Étrange",
+                                          "choice_000": "Bien sûr que oui ! Allons chercher des paniers...",
+                                          "choice_001": "Non, désolé, je n'en ai pas le temps."
                                        }
                                     }
                                  }
                               },
                               "01_strange_trading_quest": {
-                                 "title": "Strange Trading",
-                                 "dialog_title": "Strange Trading",
-                                 "text": "Let's give them some vegetables."
+                                 "title": "Commerce Étrange",
+                                 "dialog_title": "Commerce Étrange",
+                                 "text": "Donnons-leur des légumes."
                               }
                            },
                            "02_hello": {
@@ -5915,36 +5915,36 @@
                                     "dialog_nodes": {
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "Your clan has proven gracious, and your gardens savory. Many of my kin mistrust the progeny of Monkey, but I feel we must extend a paw of friendship."
+                                             "00": "Votre clan s'est montré généreux, et vos légumes savoureux. Beaucoup de mes semblables se méfient de la progéniture des Singes, mais je pense que nous devons tendre la patte de l'amitié."
                                           },
-                                          "bulletin_title": "New Rabbit Friend",
-                                          "choice_000": "I see... talking rabbit... person...",
-                                          "choice_001": "Hello, and welcome!"
+                                          "bulletin_title": "Nouvel ami lapin",
+                                          "choice_000": "Je vois... un lapin qui parle... une personne...",
+                                          "choice_001": "Bonjour, et bienvenue !"
                                        },
                                        "msg3": {
                                           "bulletin_message": {
-                                             "00": "\"I leave you with a parting gift of these Stone-Cut Lanterns, may they light your path in the darker times ahead.\" <br><br>The visitor presents you with several odd, ornate stone lanterns, and then departs, disappearing into the foliage with practiced speed."
+                                             "00": "\"Je vous laisse avec un cadeau d'adieu avec ces lanternes taillées dans la pierre, qu'elles éclairent votre chemin dans les temps sombres qui vous attendent.\" <br><br>Le visiteur vous offre plusieurs lanternes en pierre étranges et ornées, puis il s'en va, disparaissant rapidement dans la végétation."
                                           },
-                                          "bulletin_title": "New Rabbit Friend",
-                                          "choice_000": "Thank you!",
-                                          "choice_001": "Darker times? Wait!"
+                                          "bulletin_title": "Nouvel ami lapin",
+                                          "choice_000": "Je vous remercie !",
+                                          "choice_001": "Des temps sombres ? Attendez !"
                                        },
                                        "msg0": {
                                           "bulletin_message": {
-                                             "00": "A hooded figure approaches, hesitating for a moment before finally removing their hood..."
+                                             "00": "Une silhouette en capuche s'approche, hésitant un moment avant de l'enlever..."
                                           },
-                                          "bulletin_title": "Another Conspicuous Hooded Figure",
-                                          "dialog_title": "Hooded Figure",
-                                          "choice_000": " ... "
+                                          "bulletin_title": "Une autre étrange silhouette encapuchonnée",
+                                          "dialog_title": "Silhouette à capuche",
+                                          "choice_000": " ..."
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "Two long ears spill out, the rabbit-person shaking their head a little as they straighten out.<br><br>\"Honorable greetings. I am Sasha Lightfoot of the twenty-third warren of Amberstone. I apologize for the deception, but it was deemed necessary.\""
+                                             "00": "Deux longues oreilles débordent, le lapin secoue un peu la tête pendant qu'il se redresse..<br><br>\"Mes salutations distinguées. Je suis Sasha Piedléger du vingt-troisième Terrier d'Amberstone. Je m'excuse pour la supercherie, mais elle a été jugé nécessaire.\""
                                           },
-                                          "bulletin_title": "Another Conspicuous Hooded Figure",
-                                          "dialog_title": "Hooded Figure",
-                                          "choice_000": "I knew it!",
-                                          "choice_001": "Guess that explains the vegetables..."
+                                          "bulletin_title": "Une autre étrange silhouette encapuchonnée",
+                                          "dialog_title": "Silhouette à capuche",
+                                          "choice_000": "Je le savais !",
+                                          "choice_001": "Je suppose que ça explique les légumes..."
                                        }
                                     }
                                  }
@@ -5954,42 +5954,42 @@
                                     "dialog_nodes": {
                                        "msg4": {
                                           "bulletin_message": {
-                                             "00": "For the present, I must return home, but I shall return in the coming days. Farewell, humans."
+                                             "00": "Pour le moment, je dois rentrer chez moi, mais je reviendrai dans les prochains jours. Adieu, humains."
                                           },
-                                          "bulletin_title": "Hello, Stranger",
-                                          "dialog_title": "Sasha Lightfoot",
-                                          "choice_000": "Farewell"
+                                          "bulletin_title": "Bonjour, Étranger",
+                                          "dialog_title": "Sasha Piedléger",
+                                          "choice_000": "Au revoir"
                                        },
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "Our burrow is hidden away, not far from here. We have been observing you for a time, and your clan seems trustworthy. Not all of my kin trust the progeny of Monkey, but I feel we should extend a paw of friendship."
+                                             "00": "Notre terrier est caché non loin d'ici. Nous vous observons depuis un certain temps, et votre clan semble digne de confiance. Tous les membres de ma tribu ne font pas confiance à la progéniture de Singe, mais je pense que nous devrions tendre la patte de l'amitié."
                                           },
-                                          "bulletin_title": "Hello, Stranger",
-                                          "choice_000": "I... see... talking rabbit... person",
-                                          "choice_001": "Welcome to our town!"
+                                          "bulletin_title": "Bonjour, Étranger",
+                                          "choice_000": "Je vois... un lapin qui parle... une personne...",
+                                          "choice_001": "Bienvenue dans notre ville !"
                                        },
                                        "msg3": {
                                           "bulletin_message": {
-                                             "00": "It has been generations since Rabbitkind could set foot on the aboveground for long - and I hope perhaps you can help us with this in the future..."
+                                             "00": "Des générations se sont écoulées depuis la dernière fois que Lapintype a pu mettre les pieds à la surface - et j'espère que vous pourrez peut-être nous aider à l'avenir..."
                                           },
-                                          "bulletin_title": "Hello, Stranger",
-                                          "choice_000": "Let us know what we can do"
+                                          "bulletin_title": "Bonjour, Étranger",
+                                          "choice_000": "Faites-nous savoir ce que nous pouvons faire"
                                        },
                                        "msg0": {
                                           "bulletin_message": {
-                                             "00": "A hooded figure approaches, hesitating for a moment before finally removing their hood..."
+                                             "00": "Une silhouette encapuchonnée s'approche, hésitant un moment avant de l'enlever..."
                                           },
-                                          "bulletin_title": "Another Conspicuous Hooded Figure",
-                                          "dialog_title": "Hooded Figure",
-                                          "choice_000": " ... "
+                                          "bulletin_title": "Une autre étrange silhouette encapuchonnée",
+                                          "dialog_title": "Silhouette à capuche",
+                                          "choice_000": " ..."
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "Two long ears spill out, the rabbit-person shaking their head a little as they straighten out.<br><br>\"Honorable greetings. I am Sasha Lightfoot of the twenty-third warren of Amberstone. I apologize for the deception, but my kind has been poorly received before, and we had to ensure our own safety.\""
+                                             "00": "Deux longues oreilles tombent, le lapin secoue un peu la tête pendant qu'il se redresse..<br><br>\"Mes salutations distinguées. Je suis Sasha Piedléger du vingt-troisième Terrier d'Amberstone. Je m'excuse pour la supercherie, mais mon espèce a déjà été mal accueillie par le passé, et nous devions assurer notre propre sécurité.\""
                                           },
-                                          "bulletin_title": "Another Conspicuous Hooded Figure",
-                                          "dialog_title": "Hooded Figure",
-                                          "choice_000": "Oh... uh... hello"
+                                          "bulletin_title": "Une autre étrange silhouette encapuchonnée",
+                                          "dialog_title": "Silhouette à capuche",
+                                          "choice_000": "Oh... euh... Bonjour"
                                        }
                                     }
                                  }
@@ -6001,14 +6001,14 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "000": "The Rabbit diplomat Sasha Lightfoot approaches.<br><br>\"Your gestures of friendship have not gone unnoticed. Somebun from the warren wanted you to have this.\"<br><br>He hands you a rough-hewn bag, containing:",
-                                             "001": "Sasha, the Amberstone Envoy pads into town.<br><br>\"I continue to be heartened by our burgeoning friendship. A gift, from my clan.\"<br><br>He hands you a rough-hewn bag, containing:",
-                                             "002": "\"I am not here on official business this time - a relative of mine heard me speak of you, and thought you might be able to use this.\"",
-                                             "003": "\"A small token of our appreciation of our friends of the Monkey.\" He smiles amicably and extends a paw to you, holding:"
+                                             "000": "Le lapin diplomate Sasha Piedléger s'approche.<br><br>\"Vos gestes d'amitiés ne sont pas passés inaperçus. Quelqu'un du Terrier voulait que je vous donne cela.\"<br><br>Il vous tend un sac rugueux, contenant :",
+                                             "001": "Sasha, l'Envoyé d'Amberstone arrive en ville.<br><br>\"Je continue d'être rassuré par notre amitié naissante. Un cadeau, de mon clan.\"<br><br>Il vous tend un sac rugueux, contenant :",
+                                             "002": "\"Je ne suis pas ici en mission officielle cette fois. - un membre de ma famille m'a entendu parler de vous et a pensé que vous pourriez en avoir l'utilité.\"",
+                                             "003": "\"Un petit gage de notre reconnaissance à nos amis du Singe.\" Il sourit amicalement et vous tend la patte pour vous tenir la main :"
                                           },
-                                          "bulletin_title": "A Grateful Rabbit",
-                                          "dialog_title": "Sasha Lightfoot",
-                                          "choice_000": "Oh, thanks!"
+                                          "bulletin_title": "Un lapin reconnaissant",
+                                          "dialog_title": "Sasha Piedléger",
+                                          "choice_000": "Oh, merci !"
                                        }
                                     }
                                  }
@@ -6020,10 +6020,10 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "\"Thank you, I'm sure the little Snake ones will find these quite satisfactory. May our friendship ever blossom!.\" He offers you glittering bags as payment.<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                             "00": "\"Je vous remercie, Je suis sûr que les petits Serpents les trouveront très satisfaisants. Que notre amitié grandisse à jamais !.\" Il vous offre des sacs scintillants comme paiement.<br><br><font size=-1><i>[La réputation avec les lapins a augmenté]</i></font>"
                                           },
-                                          "bulletin_title": "Shook Down",
-                                          "choice_000": "Thank you!"
+                                          "bulletin_title": "Secoué",
+                                          "choice_000": "Je vous remercie !"
                                        }
                                     }
                                  }
@@ -6033,10 +6033,10 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "\"Thank you. I hope we are not injured, but fortune favors the prepared. May our friendship continue to take root!\" He hands you some glittering bags as compensation.<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                             "00": "\"Je vous remercie. J'espère que nous ne sommes pas blessés, mais la chance sourit à ceux qui sont préparés. Que notre amitié continue à s'agrandir !\" Il vous tend des sacs scintillants en guise de récompense.<br><br><font size=-1><i>[La réputation avec les lapins a augmenté]</i></font>"
                                           },
-                                          "bulletin_title": "Shook Down",
-                                          "choice_000": "Best of luck"
+                                          "bulletin_title": "Secoué",
+                                          "choice_000": "Bonne chance à vous"
                                        }
                                     }
                                  }
@@ -6046,46 +6046,46 @@
                                     "dialog_nodes": {
                                        "msg2_b": {
                                           "bulletin_message": {
-                                             "00": "\"Then we shall give them a fight! Please send the health tonics as soon as they are ready.\"<br><br>\"Let's say eight of them, for good luck?\" he says, smiling, as if you had any idea what that meant."
+                                             "00": "\"Alors, nous les combattrons ! S'il vous plaît, envoyez les potions de soin dès qu'elles seront prêtes.\"<br><br>\"Disons huit d'entre eux, pour vous porter chance ?\" dit-il en souriant, comme si vous aviez une idée de ce que cela signifiait."
                                           },
-                                          "bulletin_title": "Shook Down",
-                                          "choice_000": "Will do!"
+                                          "bulletin_title": "Secoué",
+                                          "choice_000": "C'est d'accord!"
                                        },
                                        "msg2_c": {
                                           "bulletin_message": {
-                                             "00": "Sasha nods. \"A burrow must see to its own. We have faced worse, we shall persevere.\" They leave, returning to their hidden home."
+                                             "00": "Sasha hoche la tête. \"Un terrier doit s'occuper des siens. Nous avons fait face à pire, nous persévérerons.\" Ils partent, retournant dans leur maison cachée."
                                           },
-                                          "bulletin_title": "Shook Down",
-                                          "choice_000": "OK"
+                                          "bulletin_title": "Secoué",
+                                          "choice_000": "Ok"
                                        },
                                        "msg2_a": {
                                           "bulletin_message": {
-                                             "00": "\"Excellent! Please let me know as soon as the doors are ready!\""
+                                             "00": "\"Excellent! Prévenez-moi dès que les portes seront prêtes !\""
                                           },
-                                          "bulletin_title": "Shook Down",
-                                          "choice_000": "OK"
+                                          "bulletin_title": "Secoué",
+                                          "choice_000": "Ok"
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Some goblins somehow found an entrance to our hovel and are asking for... a bunch of wooden doors? We have neither wood nor carpenter on paw, so could you perhaps craft some for us?<br><br>Alternatively, we're not afraid to fight them off, but we lack the means to heal our injured afterwards.\""
+                                             "00": "\"Des gobelins ont trouvé une entrée de notre terrier et demandent à ce qu'on les aide... un tas de portes en bois ? Nous n'avons ni bois ni charpentier sur patte, alors pourriez-vous peut-être en fabriquer pour nous ?<br><br>Sinon, nous n'avons pas peur de les repousser, mais nous n'avons pas les moyens de guérir nos blessés ensuite.\""
                                           },
-                                          "bulletin_title": "Shook Down",
-                                          "choice_000": "We'll craft some doors!",
-                                          "choice_001": "We'll brew some potions",
-                                          "choice_002": "Sorry, we can't help"
+                                          "bulletin_title": "Secoué",
+                                          "choice_000": "On va fabriquer des portes !",
+                                          "choice_001": "On va fabriquer des potions.",
+                                          "choice_002": "Désolé, nous ne pouvons pas vous aider."
                                        }
                                     }
                                  }
                               },
                               "11_shook_down_quest_a": {
-                                 "title": "Shook Down: Make some Wooden Doors",
-                                 "dialog_title": "Shook Down: Make some Wooden Doors",
-                                 "text": "We must make some doors for Clan Amberstone."
+                                 "title": "Secoué : Faire quelques portes en bois",
+                                 "dialog_title": "Secoué : Faire des portes en bois",
+                                 "text": "Nous devons faire quelques portes pour le clan Amberstone."
                               },
                               "11_shook_down_quest_b": {
-                                 "title": "Shook Down: Make some Health Tonics",
-                                 "dialog_title": "Shook Down: Make Health Tonics",
-                                 "text": "We must make some healing potions for Clan Amberstone."
+                                 "title": "Secoué : Faire quelques potions de soin",
+                                 "dialog_title": "Secoué : Faire des potions de soin",
+                                 "text": "Nous devons faire quelques potions de soin pour le clan Amberstone."
                               }
                            },
                            "12_heirbloom": {
@@ -6094,11 +6094,11 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "000": "\"Wonderful! Thank you! Here, take this, as payment.\"<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                             "000": "\"Merveilleux ! Je vous remercie ! Tenez, prenez ceci, comme paiement.\"<br><br><font size=-1><i>[La réputation avec les lapins a augmenté]</i></font>"
                                           },
-                                          "bulletin_title": "Historic Growth",
-                                          "dialog_title": "The Rabbit hops in excitement",
-                                          "choice_000": "Here you go!"
+                                          "bulletin_title": "Croissance Historique",
+                                          "dialog_title": "Le lapin saute d'excitation",
+                                          "choice_000": "Voilà pour vous!"
                                        }
                                     }
                                  }
@@ -6108,18 +6108,18 @@
                                     "dialog_nodes": {
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "\"Of course the green part! We'd never eat the disgusting red fruit part, it's all... squishy. Keep those and do with them what you wish,\" says Sasha, disgusted."
+                                             "00": "Bien sûr, la partie verte ! On ne mangerait jamais la partie dégoûtante des fruits rouges, c'est tout... moelleux. Gardez-les et faites-en ce que vous voulez,\" dit Sasha, écoeuré."
                                           },
-                                          "bulletin_title": "Historic Growth ",
-                                          "choice_000": "Uh, alright then..."
+                                          "bulletin_title": "Croissance Historique",
+                                          "choice_000": "Euh, d'accord alors..."
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"I hope the Heirbloom is growing nicely. Let us know when some of their delicious, green stalks are ready for me to take back to my people!\""
+                                             "00": "\"J'espère que l'Heirbloom grandit bien. Faites-nous savoir quand leurs délicieuses tiges vertes seront prêtes pour que je les rapporte à mon peuple !\""
                                           },
-                                          "bulletin_title": "Historic Growth",
-                                          "choice_000": "Will do!",
-                                          "choice_001": "Wait, the green part?"
+                                          "bulletin_title": "Croissance Historique",
+                                          "choice_000": "C'est d'accord !",
+                                          "choice_001": "Attendez, la partie verte ?"
                                        }
                                     }
                                  }
@@ -6129,11 +6129,11 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Thank you! My respect for you humans continues to grow. Farewell for now!\"<br><br>He wanders off, mumbling to himself, \"Mmm... I can't imagine my warren will be upset if one or two are missing from the bundle...\"<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                             "00": "\"Je vous remercie ! Mon respect pour vous, humains, ne cesse de grandir. Adieu pour l'instant !\"<br><br>Il s'éloigne, murmurant à lui-même : \"Mmm.... Je ne peux pas imaginer que mon Terrier sera contrarié s'il en manque un ou deux dans le lot....\"<br><br><font size=-1><i>[La réputation avec les lapins a augmenté]</i></font>"
                                           },
-                                          "bulletin_title": "Heirbloom Donation",
-                                          "dialog_title": "Heirbloom Donation",
-                                          "choice_000": "Farewell!"
+                                          "bulletin_title": "Donation d'Heirbloom",
+                                          "dialog_title": "Donation d'Heirbloom",
+                                          "choice_000": "Aurevoir !"
                                        }
                                     }
                                  }
@@ -6143,18 +6143,18 @@
                                     "dialog_nodes": {
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "\"Fantastic! I'll show them how to plant it, at least, as far as I've been told. I shall return eagerly once it's had a chance to grow!\""
+                                             "00": "\"Greetings! I come asking a favor a long time in the making. There is a plant, known to my people as 'Heirbloom', which has not been grown for a long time. It needs the sun to flourish, and we've been unable to stay aboveground long enough to tend it for many years.\"<br><br>\"These seeds have been passed down in my warren for generations, and I would be grateful, and honored, if you could grow them for us.\""
                                           },
-                                          "bulletin_title": "Historic Growth ",
-                                          "choice_000": "Thanks!"
+                                          "bulletin_title": "Croissance Historique",
+                                          "choice_000": "Merci !"
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Greetings! I come asking a favor a long time in the making. There is a plant, known to my people as 'Heirbloom', which has not been grown for a long time. It needs the sun to flourish, and we've been unable to stay aboveground long enough to tend it for many years.\"<br><br>\"These seeds have been passed down in my warren for generations, and I would be grateful, and honored, if you could grow them for us.\""
+                                             "00": "\"Salutations ! Je viens vous demander une faveur qui prend du temps à se faire. Il y a une plante, connu de mon peuple sous le nom de 'Heirbloom', qui n'a pas été cultivé depuis longtemps. Elle a besoin du soleil pour prospérer, et nous n'avons pas pu rester en surface assez longtemps pour la cultiver.\"<br><br>\"Ces graines sont transmises dans mon Terrier depuis des générations, et je vous serais reconnaissant, et honoré, si vous pouviez les cultiver pour nous.\""
                                           },
-                                          "bulletin_title": "Historic Growth",
-                                          "choice_000": "Exciting! Our farmers would be happy to.",
-                                          "choice_001": "Sorry, not this time"
+                                          "bulletin_title": "Croissance Historique",
+                                          "choice_000": "Excitant ! Nos agriculteurs seraient honorés de le faire.",
+                                          "choice_001": "Désolé, pas cette fois."
                                        }
                                     }
                                  }
@@ -6164,34 +6164,34 @@
                                     "dialog_nodes": {
                                        "msg2": {
                                           "bulletin_message": {
-                                             "000": "\"Awww... alright, I might come back later.\" They wander off, clearly pouting.",
-                                             "001": "\"I see, sorry to bother you. Maybe send word if more sprouts up?\""
+                                             "000": "\"Ohhh... d'accord, je reviendrai peut-être plus tard. Ils s'éloignent, en faisant la tête.\"",
+                                             "001": "\"Je vois, désolé de vous déranger. Pouvez-vous nous prévenir si d'autres poussent ?\""
                                           },
-                                          "bulletin_title": "Historic Growth ",
-                                          "choice_000": "Safe travels!"
+                                          "bulletin_title": "Croissance Historique",
+                                          "choice_000": "Bon voyage !"
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "000": "A Rabbit approaches, cautious but friendly. \"Hello, um, I heard Sasha got that Heirbloom from you. Could I trade you for some?\"",
-                                             "001": "A Rabbit finds her way into town, on the lookout for anything nasty. \"Dear humans, could I perhaps trade you for some Heirbloom? It's ever so tasty, and Sasha told us we should come get to know you better...\""
+                                             "000": "Un lapin approche, prudent mais amical. \"Bonjour, euh, j'ai entendu dire que Sasha a reçu des heirblooms de toi. Je peux t'en échanger un peu ?\"",
+                                             "001": "Un lapin arrive en ville, à l'affût de tout ce qui pourrait être un danger. \"Chers humains, pourrais-je faire un échange contre des Heirblooms ? C'est tellement bon, et Sasha nous a dit qu'on devrait apprendre à mieux vous connaître...\""
                                           },
-                                          "bulletin_title": "Historic Growth",
-                                          "dialog_title": "A Rabbit from Sasha's Warren",
-                                          "choice_000": "Sure thing!",
-                                          "choice_001": "Sorry, fresh out for now"
+                                          "bulletin_title": "Croissance Historique",
+                                          "dialog_title": "Un lapin du terrier de Sasha.",
+                                          "choice_000": "Bien sûr, oui !",
+                                          "choice_001": " Désolé, on est à court pour l'instant."
                                        }
                                     }
                                  }
                               },
                               "12_heirbloom_quest": {
-                                 "title": "Heirbloom Donation",
-                                 "dialog_title": "Heirbloom Donation",
-                                 "text": "Let's harvest some Heirbloom!"
+                                 "title": "Donation d'Heirbloom",
+                                 "dialog_title": "Donation d'Heirbloom",
+                                 "text": "Récoltons un peu d'Heirbloom !"
                               },
                               "12_heirbloom_quest_2": {
-                                 "title": "Heirbloom Stalks",
-                                 "dialog_title": "Heirbloom Stalks",
-                                 "text": "Let's trade some Heirbloom!"
+                                 "title": "Tiges d'Heirbloom",
+                                 "dialog_title": "Tiges d'Heirbloom",
+                                 "text": "Échangeons quelques Heirbloom !"
                               }
                            },
                            "15_crystal_charging": {
@@ -6200,10 +6200,10 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "\"Ahh, the full brilliance of an Amberstone is a sight to behold! Thank you for your kind service, take these in thanks.\"<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                             "00": "\"Ahh, la pleine brillance d'une Amberstone est un spectacle à voir ! Merci pour votre aimable contribution, prenez ceci en remerciement.\"<br><br><font size=-1><i>[La réputation avec les lapins a augmenté]</i></font>"
                                           },
-                                          "bulletin_title": "Crystal Charged!",
-                                          "choice_000": "Safe Travels!"
+                                          "bulletin_title": "Cristal chargé !",
+                                          "choice_000": "Bon voyage !"
                                        }
                                     }
                                  }
@@ -6213,32 +6213,32 @@
                                     "dialog_nodes": {
                                        "msg4": {
                                           "bulletin_message": {
-                                             "00": "\"I understand. Perhaps next time. Farewell, humans.\""
+                                             "00": "\"Je comprends. Peut-être la prochaine fois. Adieu, humains.\""
                                           },
-                                          "bulletin_title": "Crystal Charging",
-                                          "choice_000": "Farewell"
+                                          "bulletin_title": "Cristal à charger",
+                                          "choice_000": "Aurevoir"
                                        },
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "\"Charging them is simple - just place them anywhere in sunlight or moonlight, and they will gather energy on their own.\"<br><br>\"The... only issue is that creatures tend to be attracted to the Amberstones at night. So, either prepare to defend against them, or be sure to take the crystals down before nightfall.\""
+                                             "00": "\"les charger est simple - Il suffit de les placer n'importe où au soleil ou au clair de lune, et ils accumuleront l'énergie.\"<br><br>\"Le... seul problème est que les créatures ont tendance à être attirées par les Amberstones la nuit. Alors, préparez-vous à vous défendre contre eux, ou veillez à enlever les cristaux avant la tombée de la nuit.\""
                                           },
-                                          "bulletin_title": "Crystal Charging",
-                                          "choice_000": "We can do that!",
-                                          "choice_001": "No, not this time"
+                                          "bulletin_title": "Cristal à charger",
+                                          "choice_000": "On peut le faire !",
+                                          "choice_001": "Non, pas cette fois."
                                        },
                                        "msg3": {
                                           "bulletin_message": {
-                                             "00": "\"Splendid, I'll lay the Charging Stones by your banner. I'll return for them once they've been deployed and gathering light for long enough - sunlight or moonlight, it all comes from the same place.\""
+                                             "00": "\"Splendide, je poserai les Pierres à charger près de votre bannière. Je reviendrai les chercher une fois qu'elles auront été mis en place et qu'elles auront accumulé la lumière assez longtemps - lumière du soleil ou de la lune, tout vient du même endroit.\""
                                           },
-                                          "bulletin_title": "Crystal Charging",
-                                          "choice_000": "Okay!"
+                                          "bulletin_title": "Cristal à charger",
+                                          "choice_000": "Ok !"
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"Greetings, kind humans. As you know, we live undergound, and because of that we rely on Amberstone, our namesake material, for many things.\"<br><br>\"Amberstones can absorb many kinds of energy, sunlight being one of them - and these stones here have lost their glow.\""
+                                             "00": "\"Salutations, gentils humains. Comme vous le savez, nous vivons sous terre, et c'est pourquoi nous comptons sur Amberstone, notre matériel homonyme, pour beaucoup de choses.\"<br><br>\"Les Amberstones peuvent absorber beaucoup d'énergie, la lumière du soleil étant l'une d'entre elles - et ces pierres ont perdu leur lumière.\""
                                           },
-                                          "bulletin_title": "Crystal Charging",
-                                          "choice_000": "How can we help?"
+                                          "bulletin_title": "Cristal à charger",
+                                          "choice_000": "Comment pouvons-nous vous aider ?"
                                        }
                                     }
                                  }
@@ -6250,20 +6250,20 @@
                                     "dialog_nodes": {
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "\"In Rabbit culture, when a new warren is dug, it exchanges statues with its neighbors to symbolize a mutual welcoming. We know you are unaware of this, but have come to offer this for our part\"<br><br>Sasha gestures to the beautifully chiseled statue of smooth, cool stone ornamented with intricate weavings and a golden core of what must be Amberstone.<br><br>\"This partnership somewhat unprecedented, but we think that you may represent hope for us against the coming darkness.\"<br><br>\"You shall see us again soon! Oh, and feel free to keep the cricket golem, it would slow me down on the return trip. Farewell!\""
+                                             "00": "\"Dans la culture des lapins, quand un nouveau Terrier est creusé, il donne une statue à ses voisins comme symbole d'un accueil chaleureux. Nous savons que vous n'êtes pas au courant, mais nous sommes venus vous l'offrir.\"<br><br>Sasha fait un geste à la statue magnifiquement sculptée d'une pierre douce, pierre fraîchement taillée, ornée de tissages complexes et d'un noyau d'or de ce qui doit être la Amberstone.<br><br>\"Ce partenariat est sans précédent, mais nous pensons que vous pouvez représenter un espoir pour nous contre les tenèbres à venir.\"<br><br>\"Vous nous reverrez bientôt ! Oh, et n'hésitez pas à garder le cricket, ça nous ralentirait sur le chemin du retour. Adieu !\""
                                           },
-                                          "bulletin_title": "A New Partnership!",
-                                          "choice_000": "Thank you, we are honored!",
-                                          "choice_001": "Wait! Cricket? Darkness?? Come back!"
+                                          "bulletin_title": "Un nouveau partenariat !",
+                                          "choice_000": "Merci, nous sommes honorés !",
+                                          "choice_001": "Attendez ! Le Cricket ? Les ténèbres ? Revenez !"
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "Sasha Lightfoot approaches, a small load-bearing stone insect bobbling along behind him. \"Friends! Not long ago, my kind were afraid of you kin of Monkey, but you have dissolved our purposeless trepidation! We have found in you a dependable ally in the aboveground!\""
+                                             "00": "Sasha Piedléger s'approche, un petit insecte en pierre se baladait derrière lui. \"Amis ! Il n'y a pas si longtemps, les miens avaient peur de vous, espèce de singe, mais vous avez dissipé notre peur ! Nous avons trouvé en vous un allié de confiance en surface!\""
                                           },
-                                          "bulletin_title": "A New Partnership",
-                                          "choice_000": "Trepi... uh... right",
-                                          "choice_001": "Verily! Forsooth!",
-                                          "choice_002": "It's been nice knowing you as well"
+                                          "bulletin_title": "Un nouveau partenariat",
+                                          "choice_000": "Inquié... euh... c'est vrai.",
+                                          "choice_001": "vraiment ! J'espère !",
+                                          "choice_002": "Ce fut un plaisir de vous connaître également."
                                        }
                                     }
                                  }
@@ -6275,54 +6275,54 @@
                                     "dialog_nodes": {
                                        "msg2_b": {
                                           "bulletin_message": {
-                                             "00": "\"I will leave this Amberstone Pedestal. Build or choose a nice home with two beds, and place this pedestal there. Once all is prepared, I will return with my kin!<br><br><i><font size=-1>Place the Amberstone Pedestal near two beds, with a high enough appeal - check the name of the placed item for live updates!</font></i>"
+                                             "00": "\"Je vais vous laisser ce piédestal d'Amberstone. Construisez ou choisissez une belle maison à deux lits, et placez-y ce piédestal. Une fois que tout sera prêt, je reviendrai avec les miens !\"<br><br><i><font size=-1>Placez le piédestal Amberstone près de deux lits, avec un niveau attrayant suffisant - vérifiez le nom de l'élément placé pour les mises à jour en direct!</font></i>"
                                           },
-                                          "bulletin_title": "Rabbit Residents",
-                                          "choice_000": "Okay, I will!"
+                                          "bulletin_title": "Résidants lapins",
+                                          "choice_000": "D'accord, je le ferai !"
                                        },
                                        "msg3": {
                                           "bulletin_message": {
-                                             "00": "Sasha nods. \"Very well. They will no doubt be disappointed, but it will bring me some comfort to have them settle closer to the safety of the warren.\""
+                                             "00": "Sasha acquiesce. \"Très bien. Ils seront sans doute déçus, mais cela me rassurera de les voir s'installer plus près du Terrier en sécurité.\""
                                           },
-                                          "bulletin_title": "Rabbit Residents",
-                                          "choice_000": "Farewell"
+                                          "bulletin_title": "Résidants lapins",
+                                          "choice_000": "Aurevoir"
                                        },
                                        "msg2_a": {
                                           "bulletin_message": {
-                                             "00": "\"Splendid! Some accomodations must first be made. You see, the Amberstone crystals are more than a mere light source - they are also what keeps us from reverting to the simple animals you see hopping around the surface.\"<br><br>\"Never fear, such a process takes considerable time. All the same, a Rabbit home would not be comfortable without an Amberstone at its center.\""
+                                             "00": "\"Splendide ! Certains aménagements doivent d'abord être faits. Voyez-vous, les cristaux d'Amberstone sont plus qu'une simple source de lumière - ils sont aussi ce qui nous empêche de revenir de simples lapins que vous voyez sauter à la surface.\"<br><br>\"N'ayez crainte, un tel processus prend beaucoup de temps. \"Une maison de lapins ne serait pas confortable sans une Amberstone en son centre.\""
                                           },
-                                          "bulletin_title": "Residents",
-                                          "choice_000": "Oh! Sounds important..."
+                                          "bulletin_title": "Residants",
+                                          "choice_000": "Oh ! Ça a l'air important..."
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"So, a pair of my more adventurous kin are interested in immigrating to the aboveground. In fact, they specifically asked me to ask you if you might have a place for them here.\""
+                                             "00": "\"Donc, deux de mes proches les plus aventureux sont intéressés à immigrer en surface. En fait, ils m'ont spécifiquement demandé de vous demander si vous auriez une place pour eux ici.\""
                                           },
-                                          "bulletin_title": "Rabbit Residents",
-                                          "choice_000": "Yes, we would love to have them!",
-                                          "choice_001": "No - but we wish them the best!"
+                                          "bulletin_title": "Résidants lapins",
+                                          "choice_000": "Oui, nous serions heureux de les avoir !",
+                                          "choice_001": "Non, mais nous leur souhaitons le meilleur !"
                                        }
                                     }
                                  }
                               },
                               "21_residents_reward_a_add_citizen": {
-                                 "notification_title": "A Rabbit Mason joins your town!"
+                                 "notification_title": "Un lapin Maçon rejoint votre ville!"
                               },
                               "21b_residents_reward_a_add_citizen": {
-                                 "notification_title": "A Rabbit Archer joins your town!"
+                                 "notification_title": "Un lapin Archer rejoint votre ville!"
                               },
                               "21c_residents_reward_a_add_citizen": {
-                                 "notification_title": "A Rabbit Worker joins your town!"
+                                 "notification_title": "Un lapin Ouvrier rejoint votre ville !"
                               },
                               "21_residents_outro_a": {
                                  "dialog_tree_info": {
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"What a nice home you've built for them! They will be here shortly, and I'm sure they'll be charmed!\""
+                                             "00": "\"Quelle belle maison que vous avez construite pour eux ! Ils seront bientôt là, et je suis sûr qu'ils seront ravis!\""
                                           },
-                                          "bulletin_title": "Rabbit Residents",
-                                          "choice_000": "OK"
+                                          "bulletin_title": "Résidants lapins",
+                                          "choice_000": "Ok"
                                        }
                                     }
                                  }
@@ -6334,11 +6334,11 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"It's working! The weapon is charging!!\"<br><br>\"Hold off whatever foul tricks the Titan has in store for us, and I'll let you know when it's ready to fire!\""
+                                             "00": "\"Ça marche ! Ça marche ! L'arme est en charge !!\"<br><br>\"Retenez les tours de magie que le Titan nous réserve, et je vous ferai savoir quand il sera prêt à tirer !\""
                                           },
-                                          "bulletin_title": "Sasha Looks Pleased",
-                                          "dialog_title": "Sasha Looks Pleased",
-                                          "choice_000": "We'll do our part!"
+                                          "bulletin_title": "Sasha a l'air content",
+                                          "dialog_title": "Sasha a l'air content",
+                                          "choice_000": "Nous ferons notre part !"
                                        }
                                     }
                                  }
@@ -6348,11 +6348,11 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"It's charged again! Fire at will!\""
+                                             "00": "\"Il est rechargé ! Feu à volonté !\""
                                           },
-                                          "bulletin_title": "Sasha Signals",
-                                          "dialog_title": "Sasha Signals",
-                                          "choice_000": "Okay!"
+                                          "bulletin_title": "Signaux de Sasha",
+                                          "dialog_title": "Signaux de Sasha",
+                                          "choice_000": "Ok !"
                                        }
                                     }
                                  }
@@ -6362,11 +6362,11 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "\"It's charged!!! Fire at will!\" Sasha shouts at you, covering his sensitive ears."
+                                             "00": "\"Il est chargé !!!!! Feu à volonté !\" Sasha te crie dessus, en couvrant ses oreilles sensibles."
                                           },
-                                          "bulletin_title": "Sasha Covers His Ears",
-                                          "dialog_title": "Sasha Covers His Ears",
-                                          "choice_000": "[Hit the Button on the Arbalest!]"
+                                          "bulletin_title": "Sasha couvre ses oreilles",
+                                          "dialog_title": "Sasha couvre ses oreilles",
+                                          "choice_000": "[Appuyez sur le bouton de l'Arbalète !]"
                                        }
                                     }
                                  }
@@ -6376,11 +6376,11 @@
                                     "dialog_nodes": {
                                        "msg1": {
                                           "bulletin_message": {
-                                             "00": "Sasha leaps into the air in excitement. \"Direct hit!!! Take that, you big ugly squid!\"<br><br>Calming down a little, he turns to you. \"It will take time to recharge - I'll let you know when it's ready again. Keep up the defense, we must stay standing.\""
+                                             "00": "Sasha saute en l'air d'excitation. \"Touché directement !!!!! Prends ça, gros vilain calamar!\"<br><br>En se calmant un peu, il se tourne vers vous. \"Il faudra du temps pour le recharger - je vous préviendrai quand il sera de nouveau prêt. Continuez à défendre, nous devons rester en position.\""
                                           },
-                                          "bulletin_title": "Sasha Jumps Up and Down",
-                                          "dialog_title": "Sasha Jumps Up and Down",
-                                          "choice_000": "You can count on us!"
+                                          "bulletin_title": "Sasha saute de haut en bas",
+                                          "dialog_title": "Sasha saute de haut en bas",
+                                          "choice_000": "Vous pouvez compter sur nous !"
                                        }
                                     }
                                  }
@@ -6390,29 +6390,29 @@
                                     "dialog_nodes": {
                                        "conclusion_accept": {
                                           "bulletin_message": {
-                                             "00": "Sasha's features soften and his shoulders relax, an enormous weight clearly lifted from him. He speaks, ears folded subtly back and eyes glistening:<br><br>\"Listen, I... thank you. Thank you. I have spent so much time worrying about my people's future, and you... you are proof that we can have one. That we can have a <i>good</i> one. We are forever in your debt.\"<br><br>\"Thank you, and may your future be even brighter than ours.\""
+                                             "00": "Les traits de Sasha s'adoucissent et ses épaules se détendent, un poids énorme lui a visiblement été enlevé. Il parle, les oreilles légèrement repliées vers l'arrière et les yeux brillants:<br><br>\"Ecoutez, je... merci. Je vous remercie. J'ai passé tant de temps à m'inquiéter de l'avenir de mon peuple, et vous... vous êtes la preuve que nous pouvons en avoir un. Qu'on peut avoir <i>bon</i> coeur. Nous vous sommes éternellement redevables.\"<br><br>\"Merci, et que votre futur soit encore plus beau que le nôtre.\""
                                           },
-                                          "choice_000": "We merely repaid our peoples' debt to yours.",
-                                          "choice_001": "We are honored to have helped.",
-                                          "choice_002": "Anything for a friend."
+                                          "choice_000": "Nous avons simplement remboursé la dette de notre peuple envers le vôtre.",
+                                          "choice_001": "Nous sommes honorés d’avoir aidé.",
+                                          "choice_002": "Tout pour un ami."
                                        },
                                        "request2": {
-                                          "choice_000": "Yes, of course!",
-                                          "choice_001": "No, but they have our thanks"
+                                          "choice_000": "Oui, bien sûr !",
+                                          "choice_001": "Non, mais ils ont nos remerciements"
                                        },
                                        "request1": {
-                                          "choice_000": "Oh? That's exciting!"
+                                          "choice_000": "Oh ? C'est excitant!"
                                        },
                                        "accept1": {
-                                          "choice_000": "You too!"
+                                          "choice_000": "Vous aussi!"
                                        },
                                        "reject1": {
-                                          "choice_000": "We should.",
-                                          "choice_001": "[Back] Wait!"
+                                          "choice_000": "Nous devrions.",
+                                          "choice_001": "[Retour] Attendez !"
                                        },
                                        "conclusion_decline": {
-                                          "bulletin_title": "Sasha, Grateful",
-                                          "dialog_title": "Sasha, Grateful"
+                                          "bulletin_title": "Sasha, reconnaissant",
+                                          "dialog_title": "Sasha, reconnaissant"
                                        }
                                     }
                                  }
@@ -6422,85 +6422,85 @@
                                     "dialog_nodes": {
                                        "story4": {
                                           "bulletin_message": {
-                                             "00": "Sasha nods his head. \"While Human cleverness brought the entity, human cleverness also forestalled its cataclysm. As the entity tore open the leyline, the surviving humans knew they had to act, as the great evil was bathed in magic and growing in strength by the second.\"<br><br>\"Hearth's magic is volatile. The humans, desperate, somehow catalyzed a reaction which turned the magic <i>energy</i> into pure magic <i>force</i>.\"<br><br>\"The entity was shattered into countless fragments, not killed but, rather, transformed into a miasma of aimless evil that swept over the land, emanating from the ravaged crater that was once the seat of the Phoenix Empire.\"<br><br>\"This is what we know as 'the cataclysm'.\""
+                                             "00": "Sasha hoche la tête. \"Si l'ingéniosité humaine a apporté l'entité, l'ingéniosité humaine a aussi empêché son cataclysme. Alors que l'entité déchirait les lignes ley, les humains survivants savaient qu'ils devaient agir, car le grand mal était baigné de magie et grandissait en force à chaque seconde.\"<br><br>\"La magie de Hearth est volatile. Les humains, désespérés, ont en quelque sorte déclenché une réaction qui a transformé la magie <i>energie</i> en pure magie <i>force</i>.\"L'entité a été brisée en de nombreux fragments, non pas tués, mais transformés en un miasme de mal sans but qui a balayé la terre, émanant du cratère ravagé qui était autrefois le siège de l'Empire Phoenix.\"<br><br>\"C'est ce que nous appelons 'le cataclysme'.\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "Oh..."
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "Oh ..."
                                        },
                                        "story2": {
                                           "bulletin_message": {
-                                             "00": "\"So - an eon passed; Snake declined, Monkey Ascended. Some say Monkey is a newcomer, and snatched Ascendancy from Snake early, but that’s another story. Either way, Humans built with startling speed, and the Phoenix Empire spanned the continent within three generations.\"<br><br>\"Unsatisfied with mere subsistence underground, my ancestors contacted the Phoenix, who proved amenable to us.\"<br><br>\"In fact, our teachings of Geomancy fascinated them. As is their nature, the Phoenix researchers made fast progress in utilizing Hearth’s magic, without truly understanding it. They put it to use without any concern for consequences.\""
+                                             "00": "\"Ainsi - un éon passa; Serpent déclina, Singe Ascensionné. Certains disent que Singe est un nouveau venu, et arraché l’ascendant de serpent tôt, mais cela une autre histoire. Quoi qu’il en soit, les humains construisirent à une vitesse surprenante, et l'Empire Phoenix s'étendit sur tout le continent en trois générations.\"<br>br>\"Insatisfaits de la simple subsistance souterraine, mes ancêtres contactèrent le Phoenix, qui nous fut favorable.\"<br><br>\" En fait, nos enseignements en Géomancie les passionnèrent. Comme c'est leur nature, les chercheurs de Phoenix ont fait des progrès rapides dans l'utilisation de la magie de Hearth, sans vraiment la comprendre. Ils l'utilisent sans se soucier des conséquences.\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "Consequences?"
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "Conséquences ?"
                                        },
                                        "delay": {
                                           "bulletin_message": {
-                                             "00": "Sasha nods, sighing. \"I understand; each warren has challenges of its own to face. Still, we will find a way to complete work on the Titan weapon on our own, and return with it once it is ready.\"<br><br>\"May our friendship continue to blossom,\" he says, bowing slightly and taking his leave."
+                                             "00": "Sasha hoche la tête, soupirant. \"Je comprends, chaque Terrier a ses propres défis à affronter. Néanmoins, nous trouverons un moyen de terminer le travail sur l'arme Titan par nous-mêmes, et reviendrons avec une fois qu'il sera prêt.\"<br><br>\"Puisse notre amitié continuer à se développer,\" dit-il, en s'inclinant légèrement et prenant congé."
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "Until then, Sasha.",
-                                          "choice_001": "[Back] Wait!"
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "En attendant, Sasha.",
+                                          "choice_001": "[Retour] Attendez!"
                                        },
                                        "story1": {
                                           "bulletin_message": {
-                                             "00": "\"Recall what I told you before, of my people's rise when Rabbit was in Ascendance, of the discovery of Geomancy and amberstone that allows us to keep this upright form even once Snake Ascended and Rabbit waned.\"<br><br>\"I told you, too, of how my clan took to living underground, driven by both hostility and a lack of magic on Hearth's surface. That's where I left off, correct?\""
+                                             "00": "\"Rappelez-vous ce que je vous ai dit tout à l'heure, de l'ascension de mon peuple quand Lapin était en Ascendance, de la découverte de la géomancie et de la Amberstone qui nous permet de garder cette forme droite même une fois que Serpent ascensionnés et Lapin décliné.<br><br>\"Je vous ai aussi raconté comment mon clan s'est mis à vivre sous terre, poussé par la méfiance et un manque de magie à la surface de Hearth. C'est là que je me suis arrêté, n'est-ce pas ?\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "I remember, and yes"
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "Je me souviens, oui"
                                        },
                                        "story3": {
                                           "bulletin_message": {
-                                             "00": "\"The Phoenix capital was built on the ruins of an ancient Lapine city, which was in turn built on a nexus of Leylines. This meant it was an enormously powerful wellspring of magic.\"<br><br>\"Human Geomancy researchers built devices to extract this magic; to store it and focus it beyond anything we had ever imagined possible, and well beyond the bounds of safety or sanity. And then, a portal was opened.\"<br><br>\"Nobody knows if it was intentional, or if the strain of all that channeled magic simply tore a hole in reality. What we do know is that an entity was drawn through it, ravenous for magical energy and abhorrent of all other life.\""
+                                             "00": "La capitale Phoenix a été construite sur les ruines d'une ancienne cité lapine, qui, à son tour, a été construit sur un lien des lignes Ley. Cela signifiait qu'il s'agissait d'une source de magie extrêmement puissante.<br><br>\"Les chercheurs de géomancie humaine ont construit des appareils pour extraire cette magie; pour le stocker et le canaliser au-delà de tout ce que nous avions jamais imaginé possible, et bien au-delà des limites de la sécurité ou de la santé mentale. Et puis, un portail a été ouvert.\"<br><br>\"Personne ne sait si c'était intentionnel, ou si la pression de toute cette magie canalisée a simplement déchiré un trou dans la réalité. Ce que nous savons, c'est qu'une entité a été attirée par elle, affamée d'énergie magique et dégoûtée par toute autre vie.\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "Oh... that sounds bad."
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "Oh.... ça sonne mal."
                                        },
                                        "favor1": {
                                           "bulletin_message": {
-                                             "00": "\"So now, to the favor. There is, beneath this land, a nascent Titan. This fragment of the great evil grows, seeping farther underground more each year, forcing my people farther and farther underground to not be cut off from the magic of Hearth and be doomed to have our descendants revert to mere rabbits.\"<br><br>\"But: we have found an answer. We have nearly completed construction of a weapon drawn from ancient designs, capable of manifesting the Titan, and capable of destroying it for good.\"<br><br>\"However, we require your help in finishing it, and… we require your town to protect it. We lack the strength or the numbers to withstand the wrath of a manifested Titan for long, and this weapon will take time to do its job. Will you help us?\""
+                                             "00": "\"Alors maintenant, à la faveur. Il y a, sous cette terre, un Titan naissant. Ce fragment du grand mal se développe, s’infiltrant de plus en plus sous terre chaque année, obligeant mon peuple de plus en plus souterrain à être coupé de la magie de Hearth et être condamné à voir nos descendants revenir à de simples lapins.\"<br><br>\"Mais : nous avons trouvé une solution. Nous avons presque terminé la construction d'une arme inspirée de dessins anciens, capable de faire apparaître le Titan, et capable de le détruire pour de bon.\"<br><br>\"Cependant, nous avons besoin de votre aide pour le terminer, et... nous demandons à votre ville de la protéger. Nous n'avons pas la force ni le nombre pour résister à la colère d'un Titan en colère pendant si longtemps, et cette arme mettra du temps à faire son travail. Voulez-vous nous aider ?\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "What do you need from us?"
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "Qu'attendez-vous de nous?"
                                        },
                                        "accept": {
                                           "bulletin_message": {
-                                             "00": "Sasha's eyes sparkle, full of relief and gratitude. \"I was right to have put my trust in you. Please, prepare your citizens to visit with us for a time, and I will return with the finished device in time.\"<br><br>\"Perhaps use this time to store some food, shore up your defenses, and train your military. Perhaps enlist some citizens in a town guard, or build a fortified structure? One cannot be sure in what form the Titan's ire will manifest.\""
+                                             "00": "Les yeux de Sasha brillent, pleins de soulagement et de gratitude. \"J'ai eu raison de vous faire confiance. S'il vous plaît, préparez un citoyen à nous rendre visite pendant un certain temps, et je reviendrai avec l'appareil fini à temps.\"<br><br>\"Peut-être utiliserez-vous ce temps pour stocker de la nourriture, renforcer vos défenses et entraîner vos militaires. Peut-être recruter des citoyens dans la défense de la ville, ou construire une structure fortifiée ? On ne sait pas sous quelle forme se manifestera la colère du Titan.\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "We will."
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "Nous le ferons."
                                        },
                                        "greet": {
                                           "bulletin_message": {
-                                             "00": "\"Dear friends of the Monkey, I bring greetings and well wishes from the twenty-third warren of Amberstone.\"<br><br>\"I have a… momentous favor to ask of you, but I think perhaps you lack the context to understand it. Am I right that the history of the Phoenix Empire became lost to you humans after the cataclysm?\""
+                                             "00": "\"Chers amis Singe, J'apporte les salutations et les bons voeux du vingt-troisième Terrier d'Amberstone.\"<br><br>\"J'ai un... une faveur importante à vous demander, mais je pense que vous n'avez peut-être pas le recul nécessaire pour le comprendre. Ai-je raison de dire que l'histoire de l'Empire Phoenix s'est perdue pour vous, humains, après le cataclysme ?\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "Please, tell us the tale",
-                                          "choice_001": "[Skip] Nah - what favor?"
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "S'il vous plaît, racontez-nous l'histoire",
+                                          "choice_001": "[Passer] Non, quelle faveur?"
                                        },
                                        "story5": {
                                           "bulletin_message": {
-                                             "00": "\"Humans, sensible, fled; to the coasts, to the northern mountains. Only recently have you started to build inwards again. Orcs, stubborn, stayed and fought the corruptions, fought the apparitions of a natural world brought to anger, defending the lands abandoned by the humans. And we Lapine, already underground, were content to wait.\"<br><br>\"But as the evil energies settled, they embedded in the ground, drawn downwards towards the source of Hearth’s magic. These fragments absorb that magic, slowly gaining strength over generations, congealing into malevolent aspects which your people have come to call ‘Titans’.\""
+                                             "00": "Les humains, sensés, ont fui; vers les côtes, vers les montagnes du nord. Ce n'est que récemment que vous avez recommencé à construire vers l'intérieur. Les Orques, têtus, sont restés et ont combattu la corruption, ont combattu les manifestations d'un monde sauvage mis en colère, défendu les terres désertées par les humains. Et nous Lapine, déjà sous terre, nous nous sommes contentés d'attendre.<br><br>\"Mais lorsque les mauvaises énergies se sont installées, elles se sont enfoncées dans le sol, attirées vers le bas vers la source de la magie d'Heart. Ces fragments absorbent cette magie, se renforcent lentement au fil des générations, se figent dans des facettes malveillantes que votre peuple en est venu à appeler Titans.\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
+                                          "bulletin_title": "Un engagement Titanesque",
                                           "choice_000": "Oh."
                                        },
                                        "decline": {
                                           "bulletin_message": {
-                                             "00": "Sasha nods, exhaling deeply. \"I understand. 'If a favor is not asked lightly, neither is it accepted lightly'. Our current warren will continue to serve for years yet before the darkness encroaches.<br><br>\"We will complete work on the Titan weapon on our own, and then return. Hopefully you will have a change of heart. May our friendship continue to blossom,\" he says, with both sadness and sincerity, and takes his leave."
+                                             "00": "Sasha hoche la tête, en expirant profondément. \"Je comprends. 'Si une faveur n'est pas demandée à la légère, elle n'est pas acceptée à la légère'. Notre Terrier actuel continuera à travailler pendant des années avant que les ténèbres n'empiètent sur notre territoire.\"<br><br>\"Nous finirons le travail sur l'arme Titan par nous-mêmes, puis nous reviendrons. J'espère que vous changerez d'avis. Puisse notre amitié continuer à se développer,\" dit-il, avec tristesse et sincérité, et nous quitte."
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "Goodbye for now, Sasha",
-                                          "choice_001": "[Back] Wait!"
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "Au revoir pour l'instant, Sasha.",
+                                          "choice_001": "[Retour] Attendez !"
                                        },
                                        "favor2": {
                                           "bulletin_message": {
-                                             "00": "\"First, I will need to borrow some of your citizens: One experienced Mason to double-check our work, an experienced Blacksmith to help with reinforcement, plus two other citizens of your choosing to... help reach the tall parts.\"<br><br>\"With that complete, we will return with the weapon, and once you have prepared, we will use it to summon, attack, and destroy the Titan. The attack may take some significant time, so you should prepare for a siege.\"<br><br>\"I should say... this evil is of no <i>immediate</i> threat to you. This is a task to benefit your people's children, and mine.\""
+                                             "00": "\"Premièrement, j'aurai besoin d'emprunter quelques uns de vos citoyens : Un maçon expérimenté pour revérifier notre travail, un forgeron expérimenté pour aider au renforcement, ainsi que deux autres citoyens de votre choix pour... aider à atteindre les parties hautes.<br><br>\"Avec tout ce monde, nous reviendrons avec l'arme, et une fois que vous l'aurez préparé, nous l'utiliserons pour convoquer, attaquer, et détruire le Titan. L'attaque peut prendre un certain temps, donc vous devriez vous préparer pour un siège.\"<br><br>\"Je devrais dire.... que ce mal n'est d'aucune façon une menace <i>immédiate</i> pour vous. C'est une mission pour le bien-être des enfants de votre peuple, et du mien.\""
                                           },
-                                          "bulletin_title": "A Titanic Undertaking",
-                                          "choice_000": "We'll do it!",
-                                          "choice_001": "[Delay] We can't spare anyone, but...",
-                                          "choice_002": "[Decline] We don't want a fight."
+                                          "bulletin_title": "Un engagement Titanesque",
+                                          "choice_000": "Nous le ferons !",
+                                          "choice_001": "[Retarder] Nous ne pouvons envoyer personne, mais...",
+                                          "choice_002": "[Décliner] Nous ne voulons pas de combat."
                                        }
                                     }
                                  }
@@ -6553,7 +6553,7 @@
                                           },
                                           "bulletin_title": "Les affaires d'un géomancien !",
                                           "dialog_title": "Les affaires d'un géomancien !",
-                                          "choice_000": "OK"
+                                          "choice_000": "Ok"
                                        }
                                     }
                                  }
@@ -6581,7 +6581,7 @@
                                           "bulletin_message": {
                                              "00": "\"Splendide ! Je pense que même un novice, maçon et tisserand, irait bien, tant qu'ils seraient réceptifs à l'enseignement. Cela ne devrait pas prendre plus de deux jours.\""
                                           },
-                                          "bulletin_title": "Style lapin",
+                                          "bulletin_title": "Style lapine",
                                           "choice_000": "Voyons voir qui envoyer..."
                                        },
                                        "reject2": {

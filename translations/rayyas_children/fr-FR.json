@@ -4,7 +4,7 @@
       "quote": "Meditation, mediation, medication: Order in self brings order to others brings health to all.",
       "long_description": "Les hearthlings du désert ont appris tôt  que pour survivre, ils ont besoin les uns des autres, et de préférence être le plus nombreux possible. Ils sont des hôtes généreux qui peuvent accéder à des biens du monde entier.",
       "post_selection_description": ", des commerçants rusés et rafinés.",
-	  "initial_town_name": "Caravane [str(town_number)]"
+      "initial_town_name": "Caravane [str(town_number)]"
    },
    "jobs": {
       "potter": {
@@ -22,16 +22,16 @@
                "description": "Prouve que votre ville est un comptoir commercial de bonne réputation"
             },
             "monkey_shrine_monument_recipe": {
-               "recipe_name": "Le Sanctuaire mystérieux du Singe",
-               "description": "Un endroit pour rendre hommage au singe et ces mystères"
+               "description": "Un endroit pour rendre hommage au singe et ces mystères",
+               "recipe_name": "Le Sanctuaire mystérieux du Singe"
             },
             "exotic_trade_monument_recipe": {
-               "recipe_name": "La Flamme Éternelle",
-               "description": "Un flamboyant repaire de sécurité et de protection pour toute la région"
+               "description": "Un flamboyant repaire de sécurité et de protection pour toute la région",
+               "recipe_name": "La Flamme Éternelle"
             },
             "herbalist_clay_staff_recipe": {
-               "flavor": "'Ces fleurs prennent soin du jardinier comme le jardinier prend soin d'elle' -Zale, Maître Herboriste"
-            }
+               "flavor": "'Ces fleurs prennent soin du jardinier comme le jardinier prend soin d'elle.' -Zale, Maître Herboriste"
+            },
             "jar_green_recipe": {
                "description": "Small green glass jar with accompanying small fire",
                "recipe_name": "Green Glass Jar with Candle"
@@ -152,6 +152,16 @@
                "description": "For the more aesthetically concerned Potter.",
                "recipe_name": "Upgraded Pottery Wheel",
                "flavor": "The quality of your work can only be as high as the quality of your equipment -- Khora, Master Potter"
+            },
+            "legendary_rc_face_recipe": {
+               "description": "Protects the Dragon's Shield",
+               "recipe_name": "Dragonhide",
+               "flavor": "Repeated glazing and firing makes it shine like dragon scales, and just as resilient"
+            },
+            "legendary_rc_inlay_recipe": {
+               "description": "Radiant gilding for the Desert Fang",
+               "recipe_name": "Glittering Inlay",
+               "flavor": "Gleaming with hearthlight"
             }
          },
          "potter_kiln_upgrade": {
@@ -170,6 +180,18 @@
       "herbalist": {
          "herbalist_description": {
             "requirements": "Bâton d'herboriste, conçu par le potier."
+         },
+         "recipes": {
+            "legendary_rc_cloth_recipe": {
+               "description": "Traditional material for the Crimson Circlet",
+               "recipe_name": "Sundyed Fabric",
+               "flavor": "Soaked in sunlight and healing herbs"
+            },
+            "legendary_rc_stave_recipe": {
+               "description": "The limbs of the Zephyr Bow",
+               "recipe_name": "Elder Stave",
+               "flavor": "Prepared with special resin, it would take an army to splinter this bow"
+            }
          }
       },
       "mason": {
@@ -181,6 +203,16 @@
                "description": "Le bouclier le plus somptueux  de l'Empire Phénix",
                "recipe_name": "Bouclier du Géant",
                "flavor": "Contre les ennemis les plus terribles et les dangers impossibles, ce bouclier ne se cassera jamais."
+            },
+            "legendary_rc_blade_recipe": {
+               "description": "Unbreakable blade of the Desert Fang",
+               "recipe_name": "Tempered Bone",
+               "flavor": "Sharp as the wind"
+            },
+            "legendary_rc_gem_recipe": {
+               "description": "A spiritual focus, essential for the Crimson Circlet",
+               "recipe_name": "Flame Ruby",
+               "flavor": "A healing red star to guide by"
             }
          }
       },
@@ -230,6 +262,11 @@
                "description": "The Phoenix Empire's squarest circlet",
                "recipe_name": "Shining Circlet",
                "flavor": "Channels the very heart and soul into healing light"
+            },
+            "legendary_rc_frame_recipe": {
+               "description": "Reinforces the Dragon's Shield",
+               "recipe_name": "Dragonplate",
+               "flavor": "The bones of the dragon"
             }
          }
       },
@@ -299,6 +336,16 @@
                "description": "Skillfully woven from dyed and golden threads",
                "recipe_name": "Gilded Sage Throw",
                "flavor": "Achieving a delicate green requires skill; this stain made from a pulp of potent herbs will rapidly turn anything sour"
+            },
+            "rc_legendary_circlet_recipe": {
+               "description": "Worn by the desert's finest healers",
+               "recipe_name": "Crimson Circlet",
+               "flavor": "Channels the very heart and soul into healing light"
+            },
+            "legendary_rc_bowstring_recipe": {
+               "description": "Joins the ends of the Zephyr Bow",
+               "recipe_name": "Glittering Bowstring",
+               "flavor": "Like fire spun into thread"
             }
          }
       }
@@ -674,7 +721,8 @@
                            },
                            "bulletin_title": "Naryal Approaches, Without His Caravan",
                            "dialog_title": "An Official Visit",
-                           "choice_000": "Thank you!"
+                           "choice_000": "Thank you!",
+                           "choice_001": "[skip] We know what Hearth we want."
                         }
                      }
                   }
@@ -1002,7 +1050,8 @@
                            },
                            "bulletin_title": "A Fennec Fox Approaches",
                            "dialog_title": "A Fox... Messenger?",
-                           "choice_000": "Open the satchel"
+                           "choice_000": "Open the satchel",
+                           "choice_001": "[skip] We know what banner we want."
                         },
                         "read_letter": {
                            "bulletin_message": {
@@ -1108,7 +1157,7 @@
                }
             },
             "blacksmiths_workshop": {
-               "display_name": "La forge"            
+               "display_name": "La forge"
             },
             "herbalists_workshop": {
                "display_name": "Atelier d'Herboriste"
@@ -1504,6 +1553,43 @@
             "display_name": "Emblazoned Sword",
             "description": "The Phoenix Empire's finest blade"
          }
+      },
+      "refined": {
+         "legendary_rc_bowstring": {
+            "display_name": "Glittering Bowstring",
+            "description": "Joins the ends of the Zephyr Bow"
+         },
+         "legendary_rc_stave": {
+            "display_name": "Bone Stave",
+            "description": "The arms of the Zephyr Bow"
+         },
+         "legendary_rc_face": {
+            "display_name": "Dragonhide",
+            "description": "Protects the Dragon's Shield"
+         },
+         "legendary_rc_frame": {
+            "display_name": "Dragonplate",
+            "description": "Reinforces the Dragon's Shield"
+         },
+         "legendary_rc_gem": {
+            "display_name": "Flame Ruby",
+            "description": "A spiritual focus, essential for the Crimson Band"
+         },
+         "legendary_rc_blade": {
+            "display_name": "Tempered Bone",
+            "description": "Unbreakable blade of the Desert Fang"
+         },
+         "legendary_rc_inlay": {
+            "display_name": "Glittering Inlay",
+            "description": "Radiant gilding for the Desert Fang"
+         },
+         "legendary_rc_cloth": {
+            "display_name": "Sundyed Fabric",
+            "description": "Traditionally used for the crimson band"
+         }
       }
+   },
+   "kingdoms": {
+      "rayyas_children": "Rayya's Children"
    }
 }
