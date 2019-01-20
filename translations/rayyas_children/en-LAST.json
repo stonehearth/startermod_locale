@@ -721,7 +721,8 @@
                            },
                            "bulletin_title": "Naryal Approaches, Without His Caravan",
                            "dialog_title": "An Official Visit",
-                           "choice_000": "Thank you!"
+                           "choice_000": "Thank you!",
+                           "choice_001": "[skip] We know what Hearth we want."
                         }
                      }
                   }
@@ -894,7 +895,7 @@
                            "bulletin_title": "Amyyria Iskender Has Arrived!",
                            "dialog_title": "Amyyria is Here, With Guests!",
                            "choice_000": "Oh, okay!",
-                           "choice_001": "We've already decided!"
+                           "choice_001": "[skip] We've already decided!"
                         },
                         "clergy": {
                            "bulletin_message": {
@@ -1049,7 +1050,8 @@
                            },
                            "bulletin_title": "A Fennec Fox Approaches",
                            "dialog_title": "A Fox... Messenger?",
-                           "choice_000": "Open the satchel"
+                           "choice_000": "Open the satchel",
+                           "choice_001": "[skip] We know what banner we want."
                         },
                         "read_letter": {
                            "bulletin_message": {

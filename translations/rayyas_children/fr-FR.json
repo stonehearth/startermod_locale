@@ -1,10 +1,10 @@
 {
    "kingdom": {
       "kingdom_name": "Les enfants de Rayya",
-      "quote": "Meditation, mediation, medication: Order in self brings order to others brings health to all.",
+      "quote": "Méditation, médiation, médication : L'ordre en soi met de l'ordre chez les autres et octoie la santé à tous.",
       "long_description": "Les hearthlings du désert ont appris tôt  que pour survivre, ils ont besoin les uns des autres, et de préférence être le plus nombreux possible. Ils sont des hôtes généreux qui peuvent accéder à des biens du monde entier.",
       "post_selection_description": ", des commerçants rusés et rafinés.",
-	  "initial_town_name": "Caravane [str(town_number)]"
+      "initial_town_name": "Caravane [str(town_number)]"
    },
    "jobs": {
       "potter": {
@@ -22,59 +22,59 @@
                "description": "Prouve que votre ville est un comptoir commercial de bonne réputation"
             },
             "monkey_shrine_monument_recipe": {
-               "recipe_name": "Le Sanctuaire mystérieux du Singe",
-               "description": "Un endroit pour rendre hommage au singe et ces mystères"
+               "description": "Un endroit pour rendre hommage au singe et ces mystères",
+               "recipe_name": "Le Sanctuaire mystérieux du Singe"
             },
             "exotic_trade_monument_recipe": {
-               "recipe_name": "La Flamme Éternelle",
-               "description": "Un flamboyant repaire de sécurité et de protection pour toute la région"
+               "description": "Un flamboyant repaire de sécurité et de protection pour toute la région",
+               "recipe_name": "La Flamme Éternelle"
             },
             "herbalist_clay_staff_recipe": {
-               "flavor": "'Ces fleurs prennent soin du jardinier comme le jardinier prend soin d'elle' -Zale, Maître Herboriste"
-            }
+               "flavor": "'Ces fleurs prennent soin du jardinier comme le jardinier prend soin d'elle.' -Zale, Maître Herboriste"
+            },
             "jar_green_recipe": {
-               "description": "Small green glass jar with accompanying small fire",
-               "recipe_name": "Green Glass Jar with Candle"
+               "description": "Petit bocal en verre vert accompagné d'un petit feu",
+               "recipe_name": "Bocal de verre vert avec bougie"
             },
             "jar_red_recipe": {
-               "description": "Small red glass jar with accompanying small fire",
-               "recipe_name": "Red Glass Jar with Candle"
+               "description": "Petit bocal en verre rouge accompagné d'un petit feu",
+               "recipe_name": "Bocal en verre rouge avec bougie"
             },
             "pot_oil_earthen_recipe": {
-               "description": "Small earthen pot with accompanying small fire",
-               "recipe_name": "Earthen Oil Pot"
+               "description": "Petit pot en terre accompagné d'un petit feu",
+               "recipe_name": "Pot à huile en terre"
             },
             "pot_oil_green_recipe": {
-               "description": "Small green pot with accompanying small fire",
-               "recipe_name": "Green Oil Pot"
+               "description": "Petit pot vert accompagné d'un petit feu",
+               "recipe_name": "Pot d'huile vert"
             },
             "pot_oil_halfgreen_recipe": {
-               "description": "Small half-glazed pot with accompanying small fire",
-               "recipe_name": "Half-Glazed Oil Pot"
+               "description": "Petit pot semi-vitré avec petit feu",
+               "recipe_name": "Pot d'huile semi-vitré"
             },
             "pot_sunflower_recipe": {
-               "description": "Small earthen pot with a beautiful flower.",
-               "recipe_name": "Potted Sunflower"
+               "description": "Petit pot en terre avec une belle fleur.",
+               "recipe_name": "Tournesol en pot"
             },
             "pot_fox_lily_recipe": {
-               "description": "Small earthen pot with a beautiful flower.",
-               "recipe_name": "Potted Fox Lily"
+               "description": "Petit pot en terre avec une belle fleur.",
+               "recipe_name": "Lis renard en pot"
             },
             "pot_acacia_recipe": {
-               "description": "Small earthen pot with a beautiful miniature tree.",
-               "recipe_name": "Potted Acacia Bonsai"
+               "description": "Petit pot en terre avec un bel arbre miniature.",
+               "recipe_name": "Acacia Bonsaï en pot"
             },
             "urn_large_recipe": {
-               "description": "Extra large for extra trading!",
-               "recipe_name": "Trading Goods Urn"
+               "description": "Extra large pour extra commerce !",
+               "recipe_name": "Urne à Marchandises"
             },
             "wall_hanging_sunflower_recipe": {
-               "description": "A sunflower decoration for your wall.",
-               "recipe_name": "Wall Flower"
+               "description": "Une décoration de tournesol pour votre mur.",
+               "recipe_name": "Fleur suspendue"
             },
             "wall_hanging_sunwreath_recipe": {
-               "description": "A collection of sunflowers to hang on your wall.",
-               "recipe_name": "Sunflower Wreath"
+               "description": "Une collection de tournesols à accrocher au mur.",
+               "recipe_name": "Couronne de tournesol"
             },
             "wind_chime_recipe": {
                "description": "A magnificent sight and sound to match.",
@@ -152,6 +152,16 @@
                "description": "For the more aesthetically concerned Potter.",
                "recipe_name": "Upgraded Pottery Wheel",
                "flavor": "The quality of your work can only be as high as the quality of your equipment -- Khora, Master Potter"
+            },
+            "legendary_rc_face_recipe": {
+               "description": "Protects the Dragon's Shield",
+               "recipe_name": "Dragonhide",
+               "flavor": "Repeated glazing and firing makes it shine like dragon scales, and just as resilient"
+            },
+            "legendary_rc_inlay_recipe": {
+               "description": "Radiant gilding for the Desert Fang",
+               "recipe_name": "Glittering Inlay",
+               "flavor": "Gleaming with hearthlight"
             }
          },
          "potter_kiln_upgrade": {
@@ -170,6 +180,18 @@
       "herbalist": {
          "herbalist_description": {
             "requirements": "Bâton d'herboriste, conçu par le potier."
+         },
+         "recipes": {
+            "legendary_rc_cloth_recipe": {
+               "description": "Traditional material for the Crimson Circlet",
+               "recipe_name": "Sundyed Fabric",
+               "flavor": "Soaked in sunlight and healing herbs"
+            },
+            "legendary_rc_stave_recipe": {
+               "description": "The limbs of the Zephyr Bow",
+               "recipe_name": "Elder Stave",
+               "flavor": "Prepared with special resin, it would take an army to splinter this bow"
+            }
          }
       },
       "mason": {
@@ -181,6 +203,16 @@
                "description": "Le bouclier le plus somptueux  de l'Empire Phénix",
                "recipe_name": "Bouclier du Géant",
                "flavor": "Contre les ennemis les plus terribles et les dangers impossibles, ce bouclier ne se cassera jamais."
+            },
+            "legendary_rc_blade_recipe": {
+               "description": "Unbreakable blade of the Desert Fang",
+               "recipe_name": "Tempered Bone",
+               "flavor": "Sharp as the wind"
+            },
+            "legendary_rc_gem_recipe": {
+               "description": "A spiritual focus, essential for the Crimson Circlet",
+               "recipe_name": "Flame Ruby",
+               "flavor": "A healing red star to guide by"
             }
          }
       },
@@ -198,7 +230,7 @@
             "golden_gourd_curry_recipe": {
                "description": "Les courges sont plus comestibles lorsqu'ils sont cuits ?",
                "recipe_name": "Courge jaune au curry",
-               "flavor": "TODO(flavor!)"
+               "flavor": "A FAIRE (goût !)"
             },
             "flat_bread_recipe": {
                "description": "Le pain sans levain à base de semoule de maïs",
@@ -227,9 +259,14 @@
                "flavor": "Parfaitement équilibré pour sa taille, et égal à tous les défis qui attendent son porteur"
             },
             "rc_circlet_valor_recipe": {
-               "description": "The Phoenix Empire's squarest circlet",
-               "recipe_name": "Shining Circlet",
+               "description": "La meilleure Tiare de l'Empire Phoenix",
+               "recipe_name": "Tiare Cramoisie",
                "flavor": "Channels the very heart and soul into healing light"
+            },
+            "legendary_rc_frame_recipe": {
+               "description": "Reinforces the Dragon's Shield",
+               "recipe_name": "Dragonplate",
+               "flavor": "The bones of the dragon"
             }
          }
       },
@@ -299,6 +336,16 @@
                "description": "Skillfully woven from dyed and golden threads",
                "recipe_name": "Gilded Sage Throw",
                "flavor": "Achieving a delicate green requires skill; this stain made from a pulp of potent herbs will rapidly turn anything sour"
+            },
+            "rc_legendary_circlet_recipe": {
+               "description": "Worn by the desert's finest healers",
+               "recipe_name": "Tiare Cramoisie",
+               "flavor": "Channels the very heart and soul into healing light"
+            },
+            "legendary_rc_bowstring_recipe": {
+               "description": "Joins the ends of the Zephyr Bow",
+               "recipe_name": "Glittering Bowstring",
+               "flavor": "Like fire spun into thread"
             }
          }
       }
@@ -340,7 +387,7 @@
                               "004": "Aha, un nouveau partenaire potentiel pour la Compagnie de Commerce Iskender ! Nous devons revenir demain avec le reste du magasin, mais en attendant : prenez ses semences pour investissement, et voyez ce que vous pouvez en faire pour nous, hein ?"
                            },
                            "bulletin_title": "Un agent d'Iskender approche",
-                           "dialog_title": "Naryal Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Merci beaucoup !"
                         }
                      }
@@ -377,16 +424,16 @@
                            "bulletin_message": {
                               "000": "Eh bien, en plus d'être distingué comme un canton officiel, vous gagnerez la reconnaissance de commerçants et les voyageurs de partout dans Hearth. Nous allons également vous proposer des plans d'architecture que nous avons recueillies dans le cadre de nos opérations avec les établissements des autres enfants de Rayya."
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Alors ok !"
                         },
                         "shrine_reqs": {
                            "bulletin_message": {
                               "000": "L'église de Rayya, plus communément connu sous son mystère, peut désigner un avant-poste comme un point de passage officiel de l'Église. Pour être admissible, votre ville doit fournir un sanctuaire où les voyageurs et vagabonds fatigués peuvent donner des offrandes au singe et rendre hommage à mère guilde de Rayya."
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Ça m'a l'air bien !",
                            "choice_001": "Comment puis-je gagner de la renommée ?"
                         },
@@ -394,16 +441,16 @@
                            "bulletin_message": {
                               "000": "Eh bien, arriver au point, je crois que nous pouvons à la fois bénéficier d'un accord de toutes sortes. Nous, à l'Agence Iskender efforçons de créer les cartes les plus complètes de Hearth, et nous souhaitons des détails des établissements et des avant-postes notables tels que le vôtre. Avec votre permission, bien sûr !"
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Qu'est-ce que je reçois en retour ?"
                         },
                         "requirements": {
                            "bulletin_message": {
                               "000": "Génial ! Mettons ce processus en marche alors. Tout d'abord, comment voulez-vous être connu ? Nous pouvons vous mettre sur la carte comme un lieu réputé pour son : comptoir commercial, lieu saint, ou marchandises exotiques."
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Comptoir commercial !",
                            "choice_001": "Lieu saint !",
                            "choice_002": "Marchandises exotiques !"
@@ -412,8 +459,8 @@
                            "bulletin_message": {
                               "000": "Comment voulez-vous être connu ? Nous pouvons vous mettre sur la carte comme un lieu réputé pour son : comptoir commercial, lieu saint, ou marchandises exotiques."
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Comptoir commercial !",
                            "choice_001": "Lieu saint !",
                            "choice_002": "Marchandises exotiques !"
@@ -422,16 +469,16 @@
                            "bulletin_message": {
                               "000": "Salutations, amis de [str(i18n_data.town_name)] ! Cela fait un bon moment depuis que nous avons visité la dernière fois cet avant-poste. On dirait que vous avez fait bon usage des fournitures que nous vous avions livrés."
                            },
-                           "bulletin_title": "Iskender Agent Naryal Approaches",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "L'agent d'Iskender Naryal s'approche",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Que faites-vous ici ?"
                         },
                         "exotic_goods_reqs": {
                            "bulletin_message": {
                               "000": "Afin de gagner la renommée du commerce de marchandises exotiques, votre ville doit se livrer à des métiers avec des visiteurs venus de terres lointaines et donc avoir accès à une variété de produits qui seraient autrement impossibles à obtenir dans votre région."
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Ça m'a l'air bien !",
                            "choice_001": "Comment puis-je gagner la renommée ?"
                         },
@@ -439,29 +486,29 @@
                            "bulletin_message": {
                               "000": "Singe soit avec vous, [str(i18n_data.town_name)] ! Je vais vous laisser un oiseau, afin que vous puissiez me convoquer pour évaluer votre progrès !"
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Adieu !"
                         },
                         "map_of_hearth": {
                            "bulletin_message": {
                               "000": "Pourquoi, nos cartographes font des préparatifs pour la prochaine itération d'impression de la carte Iskender de la Hearth. Bien que nous à Iskender avons une agence d'échange connus pour le commerce, nous sommes également fiers de l'exactitude et l'utilité de nos cartes. Des colonies et des routes à travers le monde sont représentés dans les moindres détails."
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender"
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender"
                         },
                         "trading_post_reqs": {
                            "bulletin_message": {
                               "000": "Afin de gagner la renommée en tant que comptoire commercial pour les masses, il est important que votre ville soit un endroit accueillant à l'échange des marchandises entre les commerçants et les voyageurs en visite. Je vais donner à votre potier une recette; afin de construire un monument qui peut agir comme un monument grandiose et accueillant au cœur de votre colonie."
                            },
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Ça m'a l'air bien !",
                            "choice_001": "Comment puis-je gagner la renommée ?"
                         },
                         "conclusion": {
-                           "bulletin_title": "Naryal Iskender",
-                           "dialog_title": "Naryal Iskender",
+                           "bulletin_title": "Naryal d'Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Merci, honorable frère !",
                            "bulletin_message": {
                               "000": "Excellent ! En plus d'un monument approprié, votre ville devra également avoir accumulé un certain niveau de valeur. Je laisserai les exigences avec vous, si vous souhaitez les consulter à nouveau, ou choisir un chemin différent plus aventageux que votre choix initial."
@@ -490,8 +537,8 @@
                   "bulletin_title": "Recette de potier déverrouillée : Le Monument du Commerçant"
                },
                "trading_post_tier_2_reached": {
-                  "title": "Retour de l'agent Naryal Iskender",
-                  "speaker_name": "Naryal Iskender",
+                  "title": "Retour de l'agent Naryal d'Iskender",
+                  "speaker_name": "Naryal d'Iskender",
                   "message": "Félicitations à vous, [str(i18n_data.town_name)] ! Votre ville est admissible à être reconnu officiellement comme un canton ! Je vous ai apporté des matériaux de construction et des accords commerciaux, comme il est d'usage.",
                   "accept": "Woohoo !",
                   "dialog_title": "Status Canton obtenu!",
@@ -549,20 +596,20 @@
                         },
                         "woodcutter_shop2": {
                            "shop_info": {
-                              "name": "Rajin's Goods of the Distant West",
-                              "title": "Rajin has brought even more rare woods this time"
+                              "name": "Les marchandises de Rajin venue de l'ouest lointain",
+                              "title": "Rajin a apporté des bois encore plus rares cette fois-ci"
                            }
                         },
                         "rugs_shop2": {
                            "shop_info": {
-                              "name": "Havaad's Fine Rugs and Garments",
-                              "title": "Havaad has arrived with some exceptional wares to sell"
+                              "name": "Tapis et vêtements raffinés de Havaad",
+                              "title": "Havaad est arrivé avec des articles exceptionnels à vendre"
                            }
                         },
                         "stonecutter_shop2": {
                            "shop_info": {
-                              "name": "Vosker Saji's Polished Earths",
-                              "title": "Master Saji's cart draws near, filled to the brim with wonderful beauties"
+                              "name": "Les terres polies de Vosker Saji",
+                              "title": "La charrette de Maître Saji approche, pleine à craquer de beautés merveilleuses"
                            }
                         }
                      }
@@ -648,7 +695,7 @@
                               "00": "As you know, Hearths have been the cornerstone of Settlements all the way back to the Phoenix Empire.<p>If not for their glow, Rayya's Children caravans would never find their way in the desert, and our society would have scattered long ago. The type of Hearth also says much about what a Settlement values."
                            },
                            "bulletin_title": "Naryal Continues",
-                           "dialog_title": "Naryal Iskender",
+                           "dialog_title": "Naryal d'Iskender",
                            "choice_000": "Values?"
                         },
                         "cheer": {
@@ -674,7 +721,8 @@
                            },
                            "bulletin_title": "Naryal Approaches, Without His Caravan",
                            "dialog_title": "An Official Visit",
-                           "choice_000": "Thank you!"
+                           "choice_000": "Thank you!",
+                           "choice_001": "[skip] We know what Hearth we want."
                         }
                      }
                   }
@@ -1002,7 +1050,8 @@
                            },
                            "bulletin_title": "A Fennec Fox Approaches",
                            "dialog_title": "A Fox... Messenger?",
-                           "choice_000": "Open the satchel"
+                           "choice_000": "Open the satchel",
+                           "choice_001": "[skip] We know what banner we want."
                         },
                         "read_letter": {
                            "bulletin_message": {
@@ -1108,7 +1157,7 @@
                }
             },
             "blacksmiths_workshop": {
-               "display_name": "La forge"            
+               "display_name": "La forge"
             },
             "herbalists_workshop": {
                "display_name": "Atelier d'Herboriste"
@@ -1121,13 +1170,13 @@
          "rc_camp_standard": {
             "rc_camp_standard_ghost": {
                "display_name": "Bannière de campement",
-               "description": "Comment savez vous que vous êtes à la maison"
+               "description": "Le meilleur moyen de savoir que vous êtes à la maison"
             }
          },
          "rc_town_banner_guardian": {
             "rc_town_banner_guardian_ghost": {
-               "display_name": "Town Banner",
-               "description": "How you know you've come home"
+               "display_name": "Bannière de Ruse",
+               "description": "Le meilleur moyen de savoir que vous êtes à la maison"
             },
             "rc_town_banner_guardian_token_iconic": {
                "display_name": "Banner of Cunning Shred",
@@ -1467,8 +1516,8 @@
                   "description": "<Unused> Herald of Rayya's Children."
                },
                "herald_naryal": {
-                  "display_name": "Naryal Iskender",
-                  "description": "Agent of the Iskender Trading Company."
+                  "display_name": "Naryal d'Iskender",
+                  "description": "Agent de la société de négoce Iskender."
                },
                "herald_nona": {
                   "display_name": "Nona Trist",
@@ -1487,23 +1536,60 @@
       },
       "armor": {
          "rc_legendary_circlet": {
-            "display_name": "Shining Circlet",
-            "description": "The Phoenix Empire's Squarest circlet"
+            "display_name": "Tiare Cramoisie",
+            "description": "La meilleure tiare de l'Empire Phoenix"
          },
          "rc_legendary_shield": {
-            "display_name": "Giant's Shield",
-            "description": "The Phoenix Empire's proudest shield"
+            "display_name": "Bouclier de géant",
+            "description": "Le plus fier bouclier de Phoenix Empire"
          }
       },
       "weapons": {
          "rc_legendary_bow": {
-            "display_name": "Empire Bow",
-            "description": "The Phoenix Empire's swiftest bow"
+            "display_name": "Arc Empire",
+            "description": "L'arc le plus rapide de Phoenix Empire"
          },
          "rc_legendary_sword": {
-            "display_name": "Emblazoned Sword",
-            "description": "The Phoenix Empire's finest blade"
+            "display_name": "Épée blasonnée",
+            "description": "La plus belle lame de l'Empire Phoenix"
+         }
+      },
+      "refined": {
+         "legendary_rc_bowstring": {
+            "display_name": "Corde Scintillante",
+            "description": "Rejoint les extrémités de l'arc de zéphyr"
+         },
+         "legendary_rc_stave": {
+            "display_name": "Os d'ossature",
+            "description": "Les bras de l'arc de Zephyr"
+         },
+         "legendary_rc_face": {
+            "display_name": "Peau de dragon",
+            "description": "Protège le bouclier du dragon"
+         },
+         "legendary_rc_frame": {
+            "display_name": "Écaille de dragon",
+            "description": "Renforce le bouclier du dragon"
+         },
+         "legendary_rc_gem": {
+            "display_name": "Rubis Flamboyant",
+            "description": "Le centre spirituel essentiel pour l'ensemble cramoisie"
+         },
+         "legendary_rc_blade": {
+            "display_name": "Os Trempé",
+            "description": "Lame incassable du Desert Fang"
+         },
+         "legendary_rc_inlay": {
+            "display_name": "Incrustation scintillante",
+            "description": "Dorure radieuse pour le croc du désert"
+         },
+         "legendary_rc_cloth": {
+            "display_name": "Tissu teint au soleil",
+            "description": "Traditionnellement utilisé pour l'ensemble cramoisie"
          }
       }
+   },
+   "kingdoms": {
+      "rayyas_children": "Les enfants de Rayya"
    }
 }

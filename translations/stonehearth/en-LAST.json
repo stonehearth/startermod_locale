@@ -15,6 +15,7 @@
             "heal_ranged_in_sight": "healing [name(data.target)]",
             "wait_at_safety_point": "waiting at safety banner",
             "repair_entity": "repairing [name(data.target)]",
+            "follow_entity": "following [name(data.target)]",
             "resting_by_fire": "resting by the fire",
             "claiming_animal": "claiming animal",
             "looking_for_animals": "looking for animals",
@@ -60,7 +61,10 @@
             "recuperating": "recuperating",
             "celebrating": "celebrating",
             "shopping": "trading",
-            "confused": "confused"
+            "confused": "confused",
+            "traveler_walking": "roaming your town",
+            "traveler_looking": "admiring [name(data.target)]",
+            "sit": "sitting"
          }
       }
    },
@@ -202,7 +206,9 @@
             "title": "Choose a Hearthling",
             "select_person": "Select",
             "ownership_current_owner_tooltip": "Current Owner",
-            "ownership_owns_another_tooltip": "Already Owns a Similar Object"
+            "ownership_owns_another_tooltip": "Already Owns a Similar Object",
+            "reserve_for_travelers": "Reserve for a Traveller",
+            "already_reserved_for_travelers": "Reserved"
          },
          "player_picker": {
             "title": "Choose a Player"
@@ -245,7 +251,10 @@
                   "title": "Invite Friends",
                   "message": "Click 'Continue' to open the Steam overlay. Right click the friend you want to invite to the game and click 'Invite to Game.' They will get a link in Steam chat that will let them join."
                }
-            }
+            },
+            "friends_list": "Click to Invite!",
+            "away": "away",
+            "busy": "busy"
          },
          "build_workshop": {
             "title": "Build Workshop",
@@ -292,6 +301,12 @@
             "currently": "Currently:",
             "no_unhappy_thoughts": "No unhappy thoughts so far!",
             "no_happy_thoughts": "No happy thoughts yet!",
+            "teleport": {
+               "description": "If this citizen becomes stuck somewhere, use this Emergency Un-stick to choose a nearby spot for them to teleport to (as long as they're idle). Recharges at midnight.",
+               "disabled_description": "This citizen has already teleported today. Try again after midnight.",
+               "not_idle_description": "Un-stick currently unavailable because citizen is not idle.",
+               "different_player_description": "You cannot Emergency Un-stick another player's citizens."
+            },
             "appeal_headings": {
                "like": "Like",
                "like_tooltip": "A space is viewed as more beautiful for every liked item present, up to three.",
@@ -473,6 +488,9 @@
                "quality-2": "Fine Quality",
                "quality-3": "Excellent Quality",
                "quality-4": "Masterwork Quality!"
+            },
+            "traveler": {
+               "gifted_by": "Gift from [str(gifter_name)]"
             }
          },
          "citizens": {
@@ -600,6 +618,8 @@
             "death_notification": "[name(i18n_data.entity)] has died.",
             "imminent_death_notification": "[name(i18n_data.citizen)] is severely low on health!",
             "starving_notification": "[name(i18n_data.citizen)] is starving!",
+            "unreachable_ingredient_notification": "[name(i18n_data.citizen)] can't reach some of the ingredients for crafting [str(i18n_data.crafting_order)].",
+            "where_is_food_notification": "[name(i18n_data.citizen)] can't find any food.",
             "health_status_normal": "Normal",
             "health": "HP",
             "gender": {
@@ -975,9 +995,30 @@
                "title": "Town Items Full",
                "message": "You've reached the maximum number of items! Each hearthling increases the total number of items your town can have. Hearthlings will not harvest resources if their town owns too many items. Storage containers count as items and do NOT increase your item limit. Sell off the extra items or destroy them using the clear item tool."
             },
+            "max_citizens_cap": {
+               "early_warning": {
+                  "title": "You've reached [str(i18n_data.num_citizens)] citizens!",
+                  "message": "Congratulations! Your town has become a solid community.<br><br>A performance-related warning: More citizens mean more AI processing. Lower-spec computers may experience increased hitching, lag, and idling citizens.<br><br>If you encounter these issues, try reducing your town's maximum citizen limit in the Gameplay tab of the Settings Menu. This will prevent new settlers from joining as long as you're over that cap."
+               },
+               "full_warning": {
+                  "message": "You've just reached [str(i18n_data.num_citizens)] citizens, the maximum number of that can live in your town.<br><br>New citizens will no longer join your town at this point, unless you drop back below this number. <br><br><strong>Note:</strong> You can change this limit in the Gameplay tab of the Settings Menu. A small warning - having too many citizens may cause increased hitching, lag, and idling citizens.",
+                  "title": "Max citizens reached!"
+               }
+            },
             "quest_bulletin_dialog": {
                "description": "Description",
                "rewards": "Rewards"
+            },
+            "traveler": {
+               "first": {
+                  "title": "Your First Traveller!",
+                  "message": "[str(i18n_data.traveler_name)] came to visit!<br><br>Travellers will stop by as long as there are beds reserved for them. They'll admire your town, chat with your citizens, shop at your markets, and even leave gifts for you if they had a pleasant visit.<br><br>Happy travellers will spread word of your town, and it will become a more popular destination over time!"
+               },
+               "summary": {
+                  "title": "Traveller Summary",
+                  "text": "The travellers loved your town today! They left these gifts for you:",
+                  "gifted_by": "Gift from [str(gifter)]"
+               }
             }
          },
          "build_mode2": {
@@ -1462,17 +1503,17 @@
                   "stephanie": "Paladin of Wombats",
                   "albert": "0110000101110111",
                   "chris": "Professional Scaffolding Tamer",
-                  "brad": "",
+                  "brad": "The Pun is Mightier than the Sword",
                   "linda": "🤔",
                   "allie": "Parakeet",
-                  "malley": "",
+                  "malley": "Cat Whisperer",
                   "ana": "The True Hero",
                   "richard": "Foxclan Ambassador",
                   "nikki": "Fence Crusader",
                   "justin": "I, Goblin",
                   "morgan": "Destroyer of Worlds II",
                   "angelo": "Turnip Farmer",
-                  "luke": "",
+                  "luke": "Bringer of Buns",
                   "max": "Enabler",
                   "aaron": "Phonic Phoenix",
                   "raj": "Troubadour",
@@ -1480,7 +1521,8 @@
                   "doug": "",
                   "carl": "",
                   "winnie": "",
-                  "jack": ""
+                  "jack": "",
+                  "gabriel": ""
                }
             }
          },
@@ -1851,6 +1893,33 @@
                "title": "Module Conflicts Detected!",
                "message": "Warning: You have conflicting mods that have the same namespace. Make sure only one mod with the namespace is enabled on the mod screen.<br>If you have both an .smod and a flat folder for the mod, the flat folder will be used. The affected mods are: <br><br>",
                "accept": "Yes, proceed."
+            },
+            "mod_dependency_conflict": {
+               "title": "Module Circular Dependency Detected!",
+               "message": "Warning: You have mods that have circular dependencies (e.g. mod A depends on another mod B that eventually leads back to mod A). Mod dependencies specify what order the mods should be loaded in, but if there is a cycle, then we cannot determine which order to load them in.<br><br>Resolve the cycle mod dependencies inside of the affected mods' manifests. The affected mods have been temporarily disabled: <br><br>",
+               "accept": "Yes, proceed.",
+               "dependency": ", which depends on:"
+            },
+            "ace": "ACE!",
+            "ace_dialog": {
+               "title": "Turn on Authorized Community Expansion (ACE)?",
+               "message": "ACE is a mod that was born out of the desire of a group of awesome community members to create a richer and more complete Stonehearth 1.0 experience. It includes features intended to enhance the default Stonehearth experience, such as new classes, UX changes, biomes, Dwarves and more!<br><br>Would you like to enable their mod?<br><i>(You can always enable or disable it from the title screen or Mods Menu later).<i>",
+               "accept": "Yes!",
+               "cancel": "No, thanks."
+            },
+            "ace_toggle": {
+               "enable": {
+                  "title": "Turn on ACE?",
+                  "message": "The game will have to reload to enable ACE. Would you like to continue?",
+                  "tooltip": "Turn on Stonehearth's Authorized Community Expansion."
+               },
+               "disable": {
+                  "title": "Turn off ACE?",
+                  "message": "The game will have to reload to disable ACE. Would you like to continue?",
+                  "tooltip": "Turn off Stonehearth's Authorized Community Expansion."
+               },
+               "accept": "Continue",
+               "cancel": "Cancel"
             }
          },
          "mods_menu": {
@@ -1860,6 +1929,7 @@
             "open_folder": "Open Folder",
             "quit_to_menu": "Save and Quit to Menu",
             "base_mod": "Base Mod",
+            "modding_guide": "Modding Guide",
             "sections": {
                "base_mods": {
                   "title": "Base Mods"
@@ -2190,7 +2260,7 @@
                "description": "A flat modifier to this hearthing's chance to create items with Fine and Excellent quality.",
                "bullet_points": {
                   "000": "A hearthling must be at least a Journeyman to create Fine quality items, and a Master to create Excellent items</br>",
-                  "001": "Ranges from -2% to +3%, based on the hearthling's Spirit"
+                  "001": "Is based on the hearthling's Spirit"
                }
             },
             "shelter": {
@@ -2368,6 +2438,7 @@
             "prepared_food_resource_name": "Prepared Food",
             "prepared_dessert_resource_name": "Prepared Dessert",
             "earth_essence_resource": "Hearth Essence",
+            "feather_resource": "Feathers",
             "gear_resource_name": "Gear",
             "ore_resource_name": "Ore",
             "dirt_resource_name": "Pile of Dirt"
@@ -2893,6 +2964,15 @@
                },
                "shrine_unlock_recipes": {
                   "bulletin_title": "Mason Recipes Unlocked: Shrines"
+               },
+               "returning_collector_encounter": {
+                  "title": "A explorer approaches your town.",
+                  "trade_details": "Hello [str(i18n_data.town_name)]! I am an explorer from far to the east who deals in various amounts of trade and collection. Recently I found <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)]</strong> just sitting next to the road. I'm not sure who left them there, but they're quite helpful at cleaning up!  I don't have much use for them myself, but a nearby village said they are in need of <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong>. I will be relaxing nearby for [str(i18n_data.num_days)] days.. would you be interested in a trade at that time?",
+                  "waiting_title": "The explorer will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)]!",
+                  "waiting_text": "The explorer will be back in [str(i18n_data.hour_counter)] [str(i18n_data.period)] to give you <strong>[str(i18n_data.reward_number)] [str(i18n_data.reward_item)]</strong> if you have <strong>[str(i18n_data.want_number)] [str(i18n_data.want_item)]</strong> ready for them!",
+                  "return_title": "The explorer returns!",
+                  "return_greetings_positive": "I'm back! It looks like you've made me the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Are you still interested in [str(i18n_data.reward_number)] [str(i18n_data.reward_item)] in exchange? I assure you, they are more useful than any normal person at carrying things!",
+                  "return_greetings_negative": "I'm back, but it doesn't look like you've got the [str(i18n_data.want_number)] [str(i18n_data.want_item)] I asked for. Oh well, maybe someone back at my village can find a use for them."
                }
             },
             "goblin_war": {
@@ -4518,7 +4598,8 @@
                                        },
                                        "bulletin_title": "An Official-Looking Fellow Approaches!",
                                        "dialog_title": "Not a Bird This Time",
-                                       "choice_000": "Thank you!"
+                                       "choice_000": "Thank you!",
+                                       "choice_001": "[skip] We know what Hearth we want."
                                     },
                                     "glory": {
                                        "bulletin_message": {
@@ -4726,7 +4807,7 @@
                                        "bulletin_title": "Mer Burlyhands Has Arrived!",
                                        "dialog_title": "Mer Returns, With Guests!",
                                        "choice_000": "Oh, okay!",
-                                       "choice_001": "We've already decided!"
+                                       "choice_001": "[skip] We've already decided!"
                                     }
                                  }
                               }
@@ -4990,7 +5071,8 @@
                            },
                            "bulletin_title": "A Strange Bird!",
                            "dialog_title": "A Bird... Messenger?",
-                           "choice_000": "Open the letter"
+                           "choice_000": "Open the letter",
+                           "choice_001": "[skip] We know what banner we want."
                         },
                         "read_letter": {
                            "bulletin_message": {
@@ -6394,7 +6476,7 @@
                                           },
                                           "bulletin_title": "A Titanic Undertaking",
                                           "choice_000": "Please, tell us the tale",
-                                          "choice_001": "[Skip] Nah - what favor?"
+                                          "choice_001": "[skip] Nah - what favor?"
                                        },
                                        "story5": {
                                           "bulletin_message": {
@@ -6557,6 +6639,300 @@
                      "amberstone_statue_ghost": {
                         "display_name": "Amberstone Rabbit Statue",
                         "description": "A beautifully carved Amberstone rabbit statue."
+                     }
+                  }
+               }
+            },
+            "hestia": {
+               "arcs": {
+                  "trigger": {
+                     "hestia": {
+                        "encounters": {
+                           "dialog_greetings": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "000": "Upon reaching a point near the banner, the three masked individuals stop.  Everything about them is strange.  Their faces are completely covered by their masks, their heads covered in hoods, their hands covered in gloves, their feet [so small!] are sheathed in the tiniest of boots.  The material of their garments seems to be of some otherworldly origin, shining in the sun and blowing in the breeze.  And - most notably - they each have a beautiful golden necklace set with a massive sapphire."
+                                       },
+                                       "bulletin_title": "The figures stop at the banner",
+                                       "dialog_title": "The figures stop at the banner",
+                                       "choice_000": "Who are you?",
+                                       "choice_001": "[skip] We have met before..."
+                                    },
+                                    "msg3": {
+                                       "bulletin_message": {
+                                          "000": "The masked figures look about them, inspecting buildings and garments.  They seem as interested in our clothing as we are of theirs.  The smallest one reaches out as though to touch one of our boots, but the tallest one makes a quick hissing noise which forces the little one to straighten back up."
+                                       },
+                                       "bulletin_title": "The figures look about them",
+                                       "dialog_title": "The figures look about them",
+                                       "choice_000": "(Hehe.)"
+                                    },
+                                    "msg8": {
+                                       "bulletin_message": {
+                                          "000": "Emma reaches under her robes and withdraws a beautiful golden scepter with a magical fire as it’s ornament:<p><i>'Of Hestia, the Light.  As gift, we bring.  Nothing in return, we request...  Understanding perhaps, friendship one day?'</i></p>"
+                                       },
+                                       "bulletin_title": "The Light of Hestia",
+                                       "dialog_title": "The Light of Hestia",
+                                       "choice_000": "Thank you for this wondrous gift!"
+                                    },
+                                    "msg7": {
+                                       "bulletin_message": {
+                                          "000": "Dylan places an arm onto Lily’s shoulder to calm and silence her, then addresses the crowd himself:<p><i>'In need, many.  Of Hestia, heirs travel.  Masks, we don, in self-abnegation. The darkness to push, the Light we bring.  Through sacrifice and oblation, our worth to lead we prove.  To those without power, a hand of support we offer.'</i></p>"
+                                       },
+                                       "bulletin_title": "Prince Dylan calms Lily down",
+                                       "dialog_title": "Prince Dylan calms Lily down",
+                                       "choice_000": "The Light?",
+                                       "choice_001": "A hand of support?"
+                                    },
+                                    "greet_lily": {
+                                       "bulletin_message": {
+                                          "000": "The smallest figure raises their hands above their head and then bows deeply.  As they move, their mysterious cloth flows and trails behind in motion.  Their voice sounds more similar to squeaking gears than that of a voice we are used to, and is slightly muffled from behind the mask:<p><i>'Lily.  Of Hestia, Princess, Painter [giggle], Healer, Archer.'</i></p>"
+                                       },
+                                       "bulletin_title": "Introductions: The smallest",
+                                       "dialog_title": "Introductions: The smallest",
+                                       "choice_000": "A pleasure to meet you Princess Lily."
+                                    },
+                                    "greet_dylan": {
+                                       "bulletin_message": {
+                                          "000": "The middle sized figure then raises their hands similarly and bows.  This figure’s movements are more quick and snappy, and the cloth appears to be trying to catch up to the limbs movement before it.  There is a sense of wild strength behind these movements, and again the voice is not as expected - this time even more shrill and cracking occasionally:<p><i>'Dylan.  Of Hestia, Prince, Poet, Smith, Warrior.'</i></p>"
+                                       },
+                                       "bulletin_title": "Introductions: The middle",
+                                       "dialog_title": "Introductions: The middle",
+                                       "choice_000": "Greetings Prince Dylan."
+                                    },
+                                    "rejection": {
+                                       "bulletin_message": {
+                                          "000": "After forceful motions and the brandishing of weapons, the three masked peoples turn and move off in another direction."
+                                       },
+                                       "bulletin_title": "The people move off",
+                                       "dialog_title": "The people move off",
+                                       "choice_000": "Maybe they will return someday?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "They seem peaceful, greeting anyone who comes close with a strange but simple motion: spreading their hands open wide in a circle, then clasping them together as they bow their heads."
+                                       },
+                                       "bulletin_title": "A group of three masked people calmly make their way towards the banner",
+                                       "dialog_title": "3 Masked figures arrive",
+                                       "choice_000": "Peaceful travelers?  Welcome!",
+                                       "choice_001": "You may not enter!"
+                                    },
+                                    "msg4": {
+                                       "bulletin_message": {
+                                          "000": "The tallest figure takes a step forward and begins to speak.  They make a large flourish of greetings with their arms, seeming to encompass all those hearthlings who are nearby, and then speaks - their voice soft and a few octaves higher than their size suggested.<p><i>'Disciples of Monkey, Greetings!  Of Hestia we travel.  From royalty our lineage.  We introduce, please.'</i></p>"
+                                       },
+                                       "bulletin_title": "The tallest figure begins to speak",
+                                       "dialog_title": "The tallest figure begins to speak",
+                                       "choice_000": "By all means..."
+                                    },
+                                    "msg5": {
+                                       "bulletin_message": {
+                                          "000": "While Emma speaks, she takes a moment to look into the eyes of each person gathered around her:<p><i>'For our great journey, we trek under the stars.  Of great abundance, darkness and pain we find.  Found as before, royals of Hestia declared.  In need, many...'</i></p>"
+                                       },
+                                       "bulletin_title": "Princess Emma continues",
+                                       "dialog_title": "Princess Emma continues",
+                                       "choice_000": " ... "
+                                    },
+                                    "msg6": {
+                                       "bulletin_message": {
+                                          "000": "Lily quickly steps forward, unable to contain the emotion bubbling out from behind her mask:<p><i>'Many!  Bruised and beaten, many your kind!  As well Goblin, Orc!  Bandage and salve, many wounds!  Of great pain also, Turtle Lizard - so cute!  [giggle] To keep Lily wanted, Dylan denied.  Before release, nursed to good health.  Waddled away, SO cute!  To heal Lily finds...'</i></p>"
+                                       },
+                                       "bulletin_title": "Princess Lilly interrupts",
+                                       "dialog_title": "Princess Lilly interrupts",
+                                       "choice_000": "Oh my...",
+                                       "choice_001": "You’re quite a spit-fire aren’t you?"
+                                    },
+                                    "met_before": {
+                                       "bulletin_message": {
+                                          "000": "<i>Ah, as well Emma remembers.  In need, many still.  The darkness to push... the Light will you take?</i>"
+                                       },
+                                       "bulletin_title": "Emma steps foward",
+                                       "dialog_title": "Emma steps foward",
+                                       "choice_000": "Yes, thank you!"
+                                    },
+                                    "greet_emma": {
+                                       "bulletin_message": {
+                                          "000": "The tallest figure repeats the gesture, bowing impossibly low.  Though largest, this figure moves with the most grace.  The cloth rippling smoothly behind their limbs as though it were flowing through water:<p><i>'Emma.  Of Hestia, Princess, Eldest Heir, Diplomat, Weaver, Lancer.'</i></p>"
+                                       },
+                                       "bulletin_title": "Introductions: The tallest",
+                                       "dialog_title": "Introductions: The tallest",
+                                       "choice_000": "Greetings Princess Emma.",
+                                       "choice_001": "All of you are welcome to our town."
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_ends": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Having completed their task the three then walk off into the wilderness, presumably to find the next community in need.  What an interesting people..."
+                                       },
+                                       "bulletin_title": "The Hestians depart",
+                                       "dialog_title": "The Hestians depart",
+                                       "choice_000": "Hopefully they remain safe in their travels."
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_continues": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "000": "Lily begins bouncing in excitement:<p><i>'Yes, oh!  Bruised and beaten are your people?!  Help I can, to heal Lily finds great joy!'</i></p>With a large flowing gesture of approval from Emma, Lily rushes around the village to tend to any wounds she finds - large or small alike."
+                                       },
+                                       "bulletin_title": "Lily bounces in excitement",
+                                       "dialog_title": "Lily bounces in excitement",
+                                       "choice_000": "Thank you very much!"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Emma places the scepter on the ground and slowly backs away, her garments flowing behind her.  After a moment she looks around at the different faces of the crowd:<p><i>'Of great curiosity, we are.  Stay for a while, to converse and learn, may we?'</i></p>"
+                                       },
+                                       "bulletin_title": "Emma sets down the scepter",
+                                       "dialog_title": "Emma sets down the scepter",
+                                       "choice_000": "Stay as long as you like!",
+                                       "choice_001": "One of you said you’re a healer?"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_stickaround": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "With one final flourish, Emma turns to face away from the town, Dylan and Lily do the same. With her back turned, Lily speaks:<p><i>'Our journey, continue we must [giggle].  To more in need, the light we bring.'</i></p>"
+                                       },
+                                       "bulletin_title": "The three figures gather",
+                                       "dialog_title": "The three figures gather",
+                                       "choice_000": "Good luck on your journey!"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+            "dragonborn_king": {
+               "arcs": {
+                  "trigger": {
+                     "dragonborn_king": {
+                        "encounters": {
+                           "dialog_ask_player_for_help": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "information": {
+                                       "bulletin_message": {
+                                          "000": "I am a spirit, from a time and people long past. I have lingered here for countless ages, guarding that which was most precious to us. But my power has waned, and now it has come under siege - please, lend me your assistance!"
+                                       },
+                                       "bulletin_title": "The voice coalesces into a figure",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "What's in it for us?",
+                                       "choice_001": "Under siege?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Please, help me!  My castle has come under siege by undead minions of evil!"
+                                       },
+                                       "bulletin_title": "A voice whispers at the edges of your mind",
+                                       "dialog_title": "A Ghostly Voice",
+                                       "choice_000": "Who? What?",
+                                       "choice_001": "Where? How?",
+                                       "choice_002": "We're on our way!"
+                                    },
+                                    "theres_no_time_to_explain": {
+                                       "bulletin_message": {
+                                          "000": "There's no time! The undead claw at my gates, and I have no strength left to defend the trove once they make it through! I beg of you, help!"
+                                       },
+                                       "bulletin_title": "The dragonborn king presence is overbearing",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Yeah.. ok..",
+                                       "choice_001": "We will send help!"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_thank_player_for_help": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "information_howlong": {
+                                       "bulletin_message": {
+                                          "000": "It has been many cycles.. too many. My family line lives no longer, and my body failed me long ago. My soul has been of the dragon's watch long enough to see many races born and die.  Yours has been of great interest, Children of Monkey, as my vigil comes to an end."
+                                       },
+                                       "bulletin_title": "The dragonborn king sighs and sags visibly",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "What were you protecting?",
+                                       "choice_001": "Who are you?",
+                                       "choice_002": "Comes to an end?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "Thank you for coming to my rescue. I have long guarded this site, but I can no longer raise my sword or shield in its defense."
+                                       },
+                                       "bulletin_title": "The voice speaks once again",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "Who are you?",
+                                       "choice_001": "What were you protecting?",
+                                       "choice_002": "How long have you been here?"
+                                    },
+                                    "information_who": {
+                                       "bulletin_message": {
+                                          "000": "My name is Flox, of the Icedragon lineage. I was King, once, of the Dragonborn peoples, who ruled this land in an age long past."
+                                       },
+                                       "bulletin_title": "The dragonborn king smiles",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "What are you doing here?",
+                                       "choice_001": "How long have you been here?"
+                                    },
+                                    "hatch_and_attach": {
+                                       "bulletin_message": {
+                                          "000": "I am fading fast, but I have given the last of my spirit to this egg of the Great Dragon, so that the dragonling inside may finally hatch out into this world. I have known you for little time, Children of Monkey, but I trust you will aid this young welp as you have aided me. May you carry yourselves with strength and compassion, as the Dragonborn once did."
+                                       },
+                                       "bulletin_title": "The Dragonborn King breathes softly into the egg in front of him",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "We will honor you, King. May you be at peace."
+                                    },
+                                    "information_what": {
+                                       "bulletin_message": {
+                                          "000": "It is a King's duty to protect the Great Dragon's lineage - a duty that endures even through death.  My spirit has kept this place hidden, veiled from sense and sight, for as long as it could.  I see now that I can maintain my vigil no longer, and that the Dragon's lineage is at risk."
+                                       },
+                                       "bulletin_title": "The dragonborn king straightens his back in pride",
+                                       "dialog_title": "Flox Icedragon",
+                                       "choice_000": "How can we help with the lineage thing?",
+                                       "choice_001": "Who are you?",
+                                       "choice_002": "How long have you been here?"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_player_fail": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "I can stand no longer. The trove has fallen, and with it the last light of my people. I was a fool to stay silent so long..."
+                                       },
+                                       "bulletin_title": "The voice returns, seemingly with great effort",
+                                       "dialog_title": "A Ghostly Voice",
+                                       "choice_000": "We're sorry..."
+                                    }
+                                 }
+                              }
+                           },
+                           "spawn_enemy_entities": {
+                              "mission": {
+                                 "sighted_bulletin": {
+                                    "title": "The Undead! Protect the gate!"
+                                 }
+                              }
+                           }
+                        }
                      }
                   }
                }
@@ -6948,6 +7324,12 @@
                "display_name": "Carnivore",
                "description": "This pet will only eat meat."
             }
+         },
+         "teleportation_sickness": {
+            "teleportation_sickness_buff": {
+               "display_name": "Recently Teleported",
+               "description": "Teleportation is harsh on the soul, need to wait a while before doing it again."
+            }
          }
       },
       "build": {
@@ -7222,7 +7604,7 @@
          },
          "slaughter": {
             "display_name": "Harvest for Meat",
-            "description": "Harvest this animal for its meat.",
+            "description": "Have your shepherd harvest this animal for its meat.",
             "disabled_description": "This animal is so malnourished that it has no meat. It's just skin and bones."
          },
          "spawn_glory_wave": {
@@ -8249,6 +8631,12 @@
                "display_name": "Titan Wyrm",
                "description": "Evil. Hungry."
             }
+         },
+         "undead": {
+            "skeleton_giants": {
+               "display_name": "Giant Skeleton",
+               "description": "The rattling of their massive bones is enough to make anyone tremble!"
+            }
          }
       },
       "saved_objects": {
@@ -8289,6 +8677,9 @@
             },
             "blacksmith_house": {
                "display_name": "Blacksmith House"
+            },
+            "weaver_house": {
+               "display_name": "Weaver House"
             }
          }
       },
@@ -8560,6 +8951,12 @@
             "storm_chaser_trait": {
                "display_name": "Storm Chaser",
                "description": "Thunderstorms, sandstorms, blizzards, [name(i18n_data.entity)] loves them all!"
+            }
+         },
+         "hestian": {
+            "hestian_trait": {
+               "display_name": "Hestian",
+               "description": "This person is from the faraway land of Hestia.  What secrets do they know?"
             }
          }
       },
@@ -8867,7 +9264,7 @@
                         "tooltip": "It's been awhile since I've talked to anyone. I really need to get some stuff off my chest."
                      },
                      "enjoys_company": {
-                        "display_name": "Enjoys the company of others",
+                        "display_name": "Enjoying company",
                         "tooltip": "It's always great to spend some time with my fellow town members."
                      }
                   }
@@ -10424,8 +10821,8 @@
          },
          "market_shelf_tall_ground_wood": {
             "market_shelf_tall_ground_wood_ghost": {
-               "display_name": "Tall Wooden Market Shelf",
-               "description": "Other players and Travelers can buy the items stored here."
+               "display_name": "Market Trading Shelf",
+               "description": "Other players and Travellers can buy the items stored here."
             }
          },
          "gem_chest": {
@@ -10446,6 +10843,18 @@
             "wheat_pile_old_iconic": {
                "display_name": "Old Wheat Bundle",
                "description": "Harvestable for wheat when placed"
+            }
+         },
+         "market_shelf_tall_ground_clay": {
+            "market_shelf_tall_ground_clay_ghost": {
+               "display_name": "Market Trading Shelf",
+               "description": "Other players and Travellers can buy the items stored here."
+            }
+         },
+         "market_shelf_tall_ground_stone": {
+            "market_shelf_tall_ground_stone_ghost": {
+               "display_name": "Market Trading Shelf",
+               "description": "Other players and Travellers can buy the items stored here."
             }
          }
       },
@@ -13291,6 +13700,10 @@
                "dragon_nature_egg_fertilized_ghost": {
                   "display_name": "Nature Dragon Egg",
                   "description": "So mysterious!  It should be placed somewhere safe and warm..."
+               },
+               "dragon_copper_egg_fertilized_ghost": {
+                  "display_name": "Copper Dragon Egg",
+                  "description": "So mysterious!  Maybe the king can hatch it..."
                }
             }
          },
@@ -13298,6 +13711,10 @@
             "display_name": "Frost Dragon Whelp",
             "description": "A baby dragon, good for keeping food cold.  This dragon type prefers chilled meats.",
             "species": "dragon"
+         },
+         "dragon_whelp_copper": {
+            "display_name": "Copper Dragon Whelp",
+            "description": "Adds a certain shine to the town.  This dragon type prefers meat."
          }
       },
       "plants": {
@@ -15144,6 +15561,12 @@
          "corruption_beam": {
             "display_name": "Corruption Beam",
             "description": "An invisible weapon to spawn into hands of corrupted"
+         },
+         "maul_lantern": {
+            "maul_lantern_iconic": {
+               "display_name": "Lantern Mace",
+               "description": "Wield the HolyLlight of Hestia in defence of your town."
+            }
          }
       },
       "consumables": {
@@ -15390,6 +15813,26 @@
                   "display_name": "Sasha Lightfoot",
                   "description": "Herald of Clan Amberstone"
                }
+            }
+         },
+         "dragonborn": {
+            "dragonborn_king": {
+               "display_name": "Flox Icedragon",
+               "description": "Dragonborn King"
+            }
+         },
+         "hestia": {
+            "hestia_dylan": {
+               "display_name": "Prince Dylan",
+               "description": "Amiable Hestian Royal"
+            },
+            "hestia_lily": {
+               "display_name": "Princess Lily",
+               "description": "Mysterious Hestian Royal"
+            },
+            "hestia_emma": {
+               "display_name": "Princess Emma",
+               "description": "Inscrutable Hestian Royal"
             }
          }
       },
@@ -16333,8 +16776,8 @@
                "flavor": "But who are these people? And where are they coming from?"
             },
             "market_shelf_tall_ground_wood_recipe": {
-               "description": "Other players and Travelers can buy goods stocked on these shelves.",
-               "recipe_name": "Tall Wooden Market Shelf",
+               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "recipe_name": "Market Trading Shelf",
                "flavor": "One Hearthling's trash is another's treasure... right?"
             },
             "archer_bow_recipe": {
@@ -16718,7 +17161,7 @@
                "flavor": "The grease just gets into the eggs and tastes so good!"
             },
             "fried_eggs_large_recipe": {
-               "description": "Coming Soon! One HUGE egg fried to order.",
+               "description": "One HUGE egg fried to order.",
                "recipe_name": "Large Fried Egg",
                "flavor": "Better like yours sunnyside up!"
             },
@@ -16733,7 +17176,7 @@
                "flavor": "What a tasty slice of lizard tail!"
             },
             "roast_poultry_large_recipe": {
-               "description": "Coming Soon! Giant flightless bird leg",
+               "description": "Giant flightless bird leg",
                "recipe_name": "Poultry Drumstick",
                "flavor": "Those legs are good for running.. and eating!"
             },
@@ -17042,6 +17485,18 @@
             "spear_horn_buff": {
                "display_name": "Hunter's Will",
                "description": "Increases Willpower by 20%"
+            },
+            "maul_lantern_buff": {
+               "display_name": "Hestia's Gift",
+               "description": "Increases Courage and Regenerates Health"
+            },
+            "lonelyness_buff": {
+               "display_name": "Loneliness Increase",
+               "description": "Increases Loneliness"
+            },
+            "hestia_greetings_buff": {
+               "display_name": "Hestia Speaking",
+               "description": "Hestia Speaking"
             }
          },
          "footman_outfit": {
@@ -17736,6 +18191,11 @@
                "description": "A planter box full of Violet flowers, built to be placed below window frames.",
                "recipe_name": "Violet Window Box",
                "flavor": "The capstone of a civilized dwelling."
+            },
+            "market_shelf_tall_ground_stone": {
+               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "recipe_name": "Market Trading Shelf",
+               "flavor": "One Hearthling's trash is another's treasure... right?"
             }
          }
       },
@@ -18057,6 +18517,11 @@
                "description": "Keeps people off your property.",
                "recipe_name": "Clay Fence Combo",
                "flavor": "More decorative than protective."
+            },
+            "market_shelf_tall_ground_clay": {
+               "description": "Other players and Travellers can buy goods stocked on these shelves.",
+               "recipe_name": "Market Trading Shelf",
+               "flavor": "One Hearthling's trash is another's treasure... right?"
             }
          },
          "potter_workbench": {
@@ -18320,6 +18785,7 @@
                "recipe_name": "Plushie Toy Rabbit",
                "flavor": "She loves you!"
             },
+            "weapons_name": "Weapons",
             "clothing_armor_name": "Clothing & Armor",
             "toys_name": "Toys",
             "storage_name": "Storage",
@@ -18475,7 +18941,7 @@
          },
          "winter_worker_outfit": {
             "display_name": "Winter Worker Outfit",
-            "description": "A heavy wool coat, for cold winter nights",
+            "description": "A heavy wool coat, for cold winter nights.  Improves speed.",
             "winter_worker_outfit_iconic": {
                "display_name": "Winter Worker Outfit",
                "description": "So warm..."
@@ -18487,7 +18953,7 @@
          },
          "worker_outfit_2": {
             "display_name": "Upgraded Worker Outfit",
-            "description": "Reinforced construction improves worker efficiency!",
+            "description": "Reinforced construction improves worker efficiency!  Improves speed.",
             "worker_outfit_2_iconic": {
                "display_name": "Upgraded Worker Outfit",
                "description": "Sturdy construction increases workers' productivity"
@@ -19115,7 +19581,7 @@
                "scenario_data": {
                   "message": "If we're going to get this town off the ground, we'll need wood, and lots of it! Chop down some nearby trees to get logs.",
                   "completed_message": "Congratulations! We've got some wood resources now. Logs and other natural resources can be used to construct buildings and craft items. They're the first building blocks for advancing your town.",
-                  "title": "[str(i18n_data.town_name)] Town: Initial Supplies",
+                  "title": "Initial Supplies",
                   "resource_display_name": "Wooden logs"
                },
                "ui_steps": {

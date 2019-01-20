@@ -1,7 +1,7 @@
 {
    "kingdom": {
       "kingdom_name": "Alliance du Nord",
-      "quote": "Mes pères ont suivi les étoiles pendant mille mille cycles.",
+      "quote": "Mes ancêtres ont suivi les étoiles pendant mille, mille cycles.",
       "long_description": "Courageux et hardis, les hommes et les femmes du nord vivent dans l'espoir d'une nouvelle aube sur un territoire inexploré. Armés de boussoles et de haches, ils sont fiers de leur adaptabilité tenace.",
       "post_selection_description": ", un clan d'explorateurs tenaces.",
       "initial_town_name": "Voyage [str(town_number)]"
@@ -52,7 +52,7 @@
                      "tier_1_shops": {
                         "food_shop": {
                            "shop_info": {
-                              "name": "Les assortiments alimentaires de Gyrd Reinhome",
+                              "name": "Les produits alimentaires de Gyrd Reinhome",
                               "title": "Le chariot de nourriture de Gyrd Reinhome arrive en ville"
                            }
                         },
@@ -98,30 +98,30 @@
                   "dialog_title": "Avant-poste établi !",
                   "tier_title": "Avant-poste",
                   "reward_message": "Par accord unanime des citoyens, nous déclarons :",
-                  "reward_message_ctd": "être un avant-poste s'efforçant de ne faire qu'un avec l'environnement."
+                  "reward_message_ctd": "être un avant-poste s'efforçant de ne faire qu'un avec la nature."
                },
                "town_founding_explanation": {
                   "dialog_tree_info": {
                      "dialog_nodes": {
                         "read_letter3": {
                            "bulletin_message": {
-                              "00": "Sa voix prend la cadence d'un récitant des mots prononcés mille fois auparavant. \"Valin a créé notre Alliance pour partager dans l'abondance, s'adapter aux difficultés et chercher ensemble de nouveaux horizons. L'Alliance du Nord ne fera qu'un avec les cycles et les étoiles de ce Foyer.\"<p>Elle inclina la tête comme pour réfléchir. \"Laquelle de nos philosophies notre Avant-poste doit-il incarner ?\"</p> "
+                              "00": "Sa voix prend le rythme d'une récitation prononcé des milliers de fois. \"Valin a créé notre Alliance pour partager dans la richesse, s'adapter aux difficultés et chercher ensemble de nouveaux horizons. L'Alliance du Nord ne fera qu'un avec les cycles et les étoiles de ce Foyer.\"<p>Elle inclina la tête comme pour réfléchir. \"Laquelle de nos philosophies, notre Avant-poste doit-il incarner ?\"</p> "
                            },
                            "bulletin_title": "Ronia Olarkson",
                            "dialog_title": "Ronia Olarkson",
-                           "choice_000": "Que choisirons-nous..."
+                           "choice_000": "Que devons-nous choisir..."
                         },
                         "open_letter": {
                            "bulletin_message": {
                               "00": "Une femme se tient au bord du camp. Elle porte le bleu de voyage d'éclaireur de la bibliothèque.<br><br><p align='right'><font size=-6 color='#cccccc'>Personne ne l'a vue arriver, mais il est clair qu'elle observe depuis un certain temps.</font></p>"
                            },
                            "bulletin_title": "Une figure apparaît",
-                           "dialog_title": "Une éclaireur stoïque",
+                           "dialog_title": "Un éclaireur stoïque",
                            "choice_000": "Bienvenue, voyageur."
                         },
                         "read_letter": {
                            "bulletin_message": {
-                              "00": "\"Ronia\" dit-elle en se montrant. Sa voix est étranglée. Comme pour s'expliquer, elle retire son collier de sa gorge, révélant un gâchis de vieilles cicatrices. Elle fait signe à son couteau. \"Je scoute.\" Puis elle tape la broche en forme d'étoile sur sa cape. \"Pour la bibliothèque de Valin.\""
+                              "00": "\"Ronia\" dit-elle en se montrant. Sa voix est étouffée. Comme pour s'expliquer, elle retire son collier de sa gorge, révélant un tas de vieilles cicatrices. Elle fait signe à son couteau. \"Je scoute.\" Puis elle tape la broche en forme d'étoile sur sa cape. \"Pour la bibliothèque de Valin.\""
                            },
                            "bulletin_title": "Ronia Olarkson",
                            "dialog_title": "Ronia Olarkson",
@@ -294,7 +294,7 @@
                         },
                         "makers": {
                            "bulletin_message": {
-                              "00": "Ronia continue : \"Knut le prompt, qui tourne la roue de la fortune : bénis cette ville par un ére de grande prospérité, et de prévoyance, celle de stocker la faveur contre les éperuves à venir. <br><i>(Construire une source de fortune donnera la possibilité de créer des meubles et des décorations de qualité, qui sont considérablement meilleurs que ceux d'excellente qualité.) </i>"
+                              "00": "Ronia continue : \"Knut le prompt, qui tourne la roue de la fortune : bénis cette ville par une ère de grande prospérité, et de prévoyance, celle de stocker la faveur contre les épreuves à venir. <br><i>(Construire une source de fortune donnera la possibilité de créer des meubles et des décorations de qualité, qui sont considérablement meilleurs que ceux d'excellente qualité.) </i>"
                            },
                            "bulletin_title": "La Source de la Fortune",
                            "dialog_title": "La Source de la Fortune",
@@ -302,7 +302,7 @@
                         },
                         "summary": {
                            "bulletin_message": {
-                              "00": "\"Par la sagesse de Valin et les conseils de la Bibliothèque, il est temps de demander la faveur de la constellation qui vous reflète le mieux, la philosophie qui guide notre peuple.\" Elle produit trois rouleaux qu'elle distribue à ceux qui l'entourent. \"Créez pensivement, et laissez les esprits entendre la sagesse dans vos actes.\""
+                              "00": "\"Par la sagesse de Valin et les conseils de la Bibliothèque, il est temps de demander la faveur de la constellation qui vous reflète le mieux, la philosophie qui guide notre peuple.\" Elle produit trois rouleaux qu'elle distribue à ceux qui l'entourent. \"Créez pensivement, et laissez les esprits entendrent la sagesse dans vos actes.\""
                            },
                            "bulletin_title": "Ronia conclut : ",
                            "dialog_title": "Ronia conclut : ",
@@ -364,9 +364,9 @@
                      "recipe_unlock_weaver": "Nouvelle recette de peau de loup pour Tisserand !"
                   },
                   "achievements": {
-                     "001": "Recettes de récipient de maçon",
+                     "001": "Recettes de récipient de Maçon",
                      "000": "Corps +2",
-                     "002": "Recette de peau de loup de tisserand"
+                     "002": "Recette de peau de loup de Tisserand"
                   },
                   "reward_message_ctd": "Pour actes de bravoure incroyable au combat. La ville est éligible pour :"
                },
@@ -376,8 +376,8 @@
                      "recipe_unlock_mason": "Nouvelle recette de statue pour Maçon !"
                   },
                   "achievements": {
-                     "001": "Recette de statue de lièvre maçon",
-                     "002": "Recettes de meubles de forgeron"
+                     "001": "Recette de statue de lièvre Maçon",
+                     "002": "Recettes de meubles de Forgeron"
                   },
                   "reward_message_ctd": "Pour la découverte de mystères du monde. La ville est éligible pour :"
                },
@@ -388,7 +388,7 @@
                   },
                   "achievements": {
                      "001": "Recette de jardinière pour Maçon !",
-                     "002": "Recettes de décoration pour tisserand"
+                     "002": "Recettes de décoration pour Tisserand"
                   }
                },
                "valor_dialog_1": {
@@ -518,7 +518,7 @@
                            "bulletin_message": {
                               "00": "Quand Ronia apparaît pour la dernière fois, c'est avec une bannière dorée dans ses mains. C'est un jumeau de celle pour lequel cette ville s'est embarquée il y a si longtemps. Elle incline la tête avec un sourire et fait des gestes à l'horizon. Elle n'a pas besoin de parler. Le foyer attend. </p><p><font size=-1><i> La relance vous permet de transporter jusqu'à 3 citoyens, 10 objets et toutes vos recettes débloquées lors du démarrage d'une nouvelle ville.</i></font></p>"
                            },
-                           "bulletin_title": "Ronia, One More Time",
+                           "bulletin_title": "Ronia, encore une fois",
                            "dialog_title": "Une dernière chose",
                            "choice_000": "Passionnant !"
                         }
@@ -560,7 +560,7 @@
                            "dialog_title": "Ronia écrit",
                            "choice_000": "Les bêtes allégoriques de Valin ?",
                            "bulletin_message": {
-                              "00": "Tandis que Ronia enregistre les contes et les jette dans le feu, elle devient réfléchie. À la fin, elle hoche la tête, et produit, à partir de sa poche, trois pierres lisses.<br><br>Ils portent chacun un marquage griffé familier: L'un est la constellation de Firnn le Cerf, souvent associée à la générosité, et l'été . L'un est la constellation de Siv le loup, qui s'assure que chaque chasse contribue au cycle du monde. Le dernier est représent les trois minuscule étoiles de Knut le Lapin, qui fait tourner la roue de la fortune."
+                              "00": "Tandis que Ronia enregistre les contes et les jette dans le feu, elle devient réfléchie. À la fin, elle hoche la tête, et produit, à partir de sa poche, trois pierres lisses.<br><br>Ils portent chacun un marquage griffé familier: L'un est la constellation de Firnn le Cerf, souvent associée à la générosité, et l'été . L'un est la constellation de Siv le loup, qui s'assure que chaque chasse contribue au cycle du monde. Le dernier représente les trois minuscule étoiles de Knut le Lapin, qui fait tourner la roue de la fortune."
                            }
                         },
                         "msg4": {
