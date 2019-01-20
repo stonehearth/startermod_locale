@@ -41,7 +41,7 @@
                "display_name": "Maison de potier"
             },
             "mason_house": {
-               "display_name": "Maison Mason"
+               "display_name": "Maison Maçon"
             }
          }
       },
@@ -65,7 +65,7 @@
             "trader": {
                "valor_tier_2_reached": {
                   "recipe_unlock_weapons_5": "Nouvelle recette légendaire de Capuche - Collaboration forgeron, géomancien et tisserand !",
-                  "recipe_unlock_weapons_6": "Nouvelle recette légendaire de Mason - Mason, Carpenter, and Engineer collaboration !",
+                  "recipe_unlock_weapons_6": "Nouvelle recette légendaire de Maçon - Maçon, Carpenter, and Engineer collaboration !",
                   "recipe_unlock_weapons_7": "Nouvelle recette légendaire de Tome - Cuisinier, herboriste et géomane en collaboration !",
                   "recipe_unlock_weapons_8": "Nouvelle recette légendaire de Courrier - collaboration entre tisserands, ingénieurs et forgerons !"
                },
@@ -283,26 +283,26 @@
       "biome": {
          "highlands": {
             "display_name": "Highlands",
-            "description": "Des vallées inégales et de hautes falaises avec de nombreux lacs et rivières. Maison par défaut du Peuple des montagnes.",
+            "description": "Des vallées inégales et de hautes falaises avec de nombreux lacs et rivières. Biôme par défaut du Peuple des montagnes.",
             "random_location_names": {
                "000": "Le plateau de Whiterock"
             },
             "seasons": {
                "spring": {
                   "display_name": "Printemps",
-                  "description": "Printemps in the Highlands is a time of renewal, usually full of windy days and a good time to start sowing. Late snow may rarely occur."
+                  "description": "Le Printemps dans les Highlands est un temps de renouveau, généralement plein de jours venteux et un bon moment pour commencer à semer. Il peut parfois y avoir de la neige tardive."
                },
                "summer": {
                   "display_name": "Été",
-                  "description": "Été in the Highlands is a warm and wet season, often with days of rain and maybe even storms. Strong winds and a cloudless sky will probably prevail, however."
+                  "description": "L'été dans les Highlands est une saison chaude et humide, souvent avec des jours de pluie et peut-être même des tempêtes. Cependant, des vents forts et un ciel sans nuages prévaudront probablement."
                },
                "autumn": {
                   "display_name": "Automne",
-                  "description": "Automne in the Highlands marks the end of the farming season, with several rainy or cloudy days and perhaps even an early snowfall."
+                  "description": "L'automne dans les Highlands marque la fin de la saison agricole, avec plusieurs jours pluvieux ou nuageux et peut-être même une chute de neige précoce."
                },
                "winter": {
                   "display_name": "Hiver",
-                  "description": "Hiver in the Highlands can be harsh and severe, lasting slightly longer than the other seasons and with an almost daily snowfall. Get your warm clothes ready!"
+                  "description": "L'hiver dans les Highlands peut être rigoureux et rude, il dure un peu plus longtemps que les autres saisons et avec des chutes de neige presque quotidiennes. Préparez vos vêtements chauds !"
                }
             }
          }
@@ -790,7 +790,7 @@
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
             "highland_pine_tree_seeds_recipe": {
-               "recipe_name": "Highland Pommes de pin",
+               "recipe_name": "Pommes de pin des Highlands",
                "description": "Domestiquer les pins des Highlands et apprendre à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
@@ -1198,17 +1198,17 @@
                "flavor": "L'entraînement avec des épées de pierre est une blague cruelle mais efficace."
             },
             "simple_bed_pet_2_recipe": {
-               "recipe_name": "Dry Le chaume Animal Lit",
+               "recipe_name": "Lit de chaume sec",
                "description": "Un endroit un peu plus propice au sommeil des animaux de compagnie des hearthlings.",
                "flavor": "Les animaux tenteront toujours de dormir sur le lit le plus proche de celui de leur propriétaire !"
             },
             "stone_comfy_bed_pet_recipe": {
-               "recipe_name": "Stone Animal Comfy Lit",
+               "recipe_name": "Lit confortable en pierre pour animaux",
                "description": "Permet aux animaux d'avoir un sommeil plus confortable.",
                "flavor": "Les animaux tenteront toujours de dormir sur le lit le plus proche de celui de leur propriétaire !"
             },
             "marble_bed_pet_recipe": {
-               "recipe_name": "Marble Animal Comfy Lit",
+               "recipe_name": "Lit confortable en marbre pour animaux",
                "description": "Les animaux passeront un merveilleux moment à dormir dans ce lit !",
                "flavor": "Les animaux tenteront toujours de dormir sur le lit le plus proche de celui de leur propriétaire !"
             }
@@ -1274,7 +1274,7 @@
                "description": "Utilisé pour chauffer et fondre le minerai en lingots de métal utilisables."
             },
             "blacksmith_forge_advanced_recipe": {
-               "recipe_name": "Enhanced Four de forgeron",
+               "recipe_name": "Four de forgeron amélioré",
                "description": "Amélioré et plus efficace que les fours ordinaires, ce four est assez chaud pour fondre les métaux précieux.",
                "flavor": "Tout ce qui est or ne brille pas ; mais s'il brille, une bonne fournaise le fondra. -Varius Lucan, Artifex Ignis"
             },
@@ -1289,9 +1289,9 @@
                "flavor": "Les experts l'appellent  pyrolyse lente . Je l'appelle BIG BONFIRE !"
             },
             "coke_recipe": {
-               "recipe_name": "Coca-Cola en plaques (x3)",
-               "description": "Heat Grumeaux de charbon sans les brûler pour produire efficacement du coke, un combustible de bonne qualité.",
-               "flavor": "Cuisiner avec du charbon ou du charbon de coke pour cuisiner avec du coke ??"
+               "recipe_name": "Plaques de Coke (x3)",
+               "description": "Chauffez des morceaux de charbon sans les brûler afin de produire efficacement du Coke, un carburant de bonne qualité",
+               "flavor": "Cuisiner avec du charbon ou du charbon de Coke pour cuisiner avec de la coke ??"
             },
             "bulk_charcoal_recipe": {
                "recipe_name": "Morceau de charbon de bois (x8)",
@@ -1299,9 +1299,9 @@
                "flavor": "C'est 5% de déchets en moins !"
             },
             "bulk_coke_recipe": {
-               "recipe_name": "Coca-Cola en plaques (x10)",
+               "recipe_name": "Plaques de Coke (x10)",
                "description": "La maîtrise du métier permet au forgeron d'atteindre une efficacité maximale dans la cokéfaction du charbon.",
-               "flavor": "Coca pour tout le monde !"
+               "flavor": "Coke pour tout le monde !"
             },
             "bulk_copper_ingot_recipe": {
                "recipe_name": "Lingot de cuivre (x2)",
@@ -1660,7 +1660,7 @@
                "flavor": "C'est un mélange très... compliqué. Ne demande pas"
             },
             "thatch_pile_recipe": {
-               "recipe_name": "Large Le chaume Bundle",
+               "recipe_name": "Large paquet de chaume",
                "description": "Conservez une grande quantité de chaume pour une utilisation ultérieure.",
                "flavor": "."
             },
@@ -1950,11 +1950,11 @@
                "description": "Apprenez à faire pousser des pins."
             },
             "arctic_pine_tree_seeds": {
-               "display_name": "Arctic Pommes de pin",
+               "display_name": "Pommes de pin artique",
                "description": "Apprenez à faire pousser des pins arctiques."
             },
             "highland_pine_tree_seeds": {
-               "display_name": "Highland Pommes de pin",
+               "display_name": "Pommes de pin des Highlands",
                "description": "Apprenez à faire pousser des pins des hautes terres."
             },
             "yew_tree_seeds": {
@@ -2309,7 +2309,7 @@
                   "description": "Comment une chose si petite peut-elle devenir si grande ??"
                },
                "001": {
-                  "name": "Graine de pin des Highlandsling",
+                  "name": "Graine de pin des Highlands",
                   "description": "Vous seriez surpris de voir à quel point il grandit chaque jour !"
                },
                "002": {
@@ -2447,32 +2447,32 @@
          },
          "stone": {
             "marble_stone": {
-               "display_name": "Hunk o' Marbre",
+               "display_name": "Bloc de Marbre",
                "description": "Utilisé par les maçons pour faire de très jolies pierres !"
             },
             "feldspar_stone": {
-               "display_name": "Hunk o' Feldspar",
+               "display_name": "Bloc de Feldspar",
                "description": "Le feldspath, une roche pas si ordinaire, peut être utilisé pour créer de la porcelaine."
             },
             "limestone_stone": {
-               "display_name": "Hunk o' Calcaire",
+               "display_name": "Bloc de Calcaire",
                "description": "Un rocher lourd et ordinaire"
             },
             "sandstone_stone": {
-               "display_name": "Hunk o' Grès",
+               "display_name": "Bloc de Grès",
                "description": "Un rocher lourd et ordinaire"
             },
             "slate_stone": {
-               "display_name": "Hunk o' Ardoise",
+               "display_name": "Bloc d'Ardoise",
                "description": "Un rocher lourd et ordinaire"
             },
             "bedrock_stone": {
-               "display_name": "Hunk o' Litrock",
+               "display_name": "Bloc de Litrock",
                "description": "Pierre très forte et vitreuse ! Seul un Magmasmith peut le faire fonctionner...."
             }
          },
          "thatch_bale": {
-            "display_name": "Bundle of Le chaume",
+            "display_name": "Paquet de chaume",
             "description": "Graminées sèches récoltées sur des plantes fibreuses ou sur des terrains enherbés creusés."
          },
          "pelt": {
@@ -2519,11 +2519,11 @@
          },
          "fiber": {
             "cotton_bundle": {
-               "display_name": "Coton Bundle",
+               "display_name": "Paquet de Coton",
                "description": "Doux au toucher. Peut être filé dans le fil"
             },
             "dwarfsbeard_bundle": {
-               "display_name": "Fagot de barbe naine",
+               "display_name": "Paquet de barbe naine",
                "description": "Très emmêlés, gras et rugueux. Peut être utilisé comme chaume ou comme fibre."
             }
          },
@@ -2541,11 +2541,11 @@
                "description": "De gros morceaux de charbon solide qui peuvent être utilisés comme combustible de bonne qualité."
             },
             "hunk_of_hard_coal": {
-               "display_name": "Hunk o' Charbon dur",
+               "display_name": "Bloc de Charbon dur",
                "description": "Un gros morceau de charbon noir, plein d'énergie pour être utilisé comme combustible de qualité supérieure."
             },
             "slab_of_coke": {
-               "display_name": "Coca-Cola en plaques",
+               "display_name": "Plaques de Coke",
                "description": "Un combustible efficace de bonne qualité, raffiné à partir de charbon ordinaire."
             },
             "chunk_of_brown_coal": {
@@ -5139,7 +5139,7 @@
       },
       "containers": {
          "thatch_pile": {
-            "display_name": "Large Le chaume Bundle",
+            "display_name": "Large paquet de chaume",
             "description": "Récolte des bottes de chaume.",
             "iconic_description": "Peut être récolté pour des bottes de chaume lorsqu'il est placé."
          },
@@ -5614,7 +5614,7 @@
             "highlands": {
                "terrain_codes": {
                   "plains": "Valée",
-                  "foothills": "Côtés de falaise",
+                  "foothills": "Flancs de falaise",
                   "mountains": "Point culminant"
                }
             },
@@ -5629,7 +5629,7 @@
                   "water": "Oasis",
                   "plains": "Arbustes arides",
                   "foothills": "Montagnes Rocheuses",
-                  "mountains": "Canyons"
+                  "mountains": "Gorges"
                }
             }
          }
@@ -5638,7 +5638,7 @@
          "constants": {
             "edible_nuts_resource_name": "Noix comestible",
             "fruits_resource_name": "Fruits",
-            "thatch_resource_name": "Le chaumeing",
+            "thatch_resource_name": "Toitures",
             "bone_resource_name": "Os",
             "fungi_resource_name": "Champignons",
             "chitin_resource_name": "Toutes les Chitins",
@@ -5683,7 +5683,7 @@
             "description": "A de multiples stades de croissance, avec un taux de croissance affecté par l'eau à proximité (ou le manque d'eau) et le temps pluvieux."
          },
          "loot_drops": {
-            "display_name": "Gouttes de butin",
+            "display_name": "Sac à butin",
             "description": "Quand il sera tué, le butin tombera !"
          },
          "renewable_resource_node": {
