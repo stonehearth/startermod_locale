@@ -460,15 +460,15 @@
          "job_equipment_roles": {
             "one_handed_footman": {
                "display_name": "Préférez l'arme et le bouclier",
-               "description": "Ce valet de pied préfère actuellement utiliser une arme de main et un bouclier. Cliquez pour changer !"
+               "description": "Ce fantassin préfère actuellement utiliser une arme de main et un bouclier. Cliquez pour changer !"
             },
             "two_handed_footman": {
                "display_name": "Préférez les armes à deux mains",
-               "description": "Ce valet de pied préfère actuellement utiliser une arme à deux mains. Cliquez pour changer !"
+               "description": "Ce fantassin préfère actuellement utiliser une arme à deux mains. Cliquez pour changer !"
             },
             "dual_wield_footman": {
                "display_name": "Préférez le double usage",
-               "description": "Ce valet de pied préfère actuellement utiliser une arme de main principale avec une arme de main gauche. Cliquez pour changer !"
+               "description": "Ce fantassin préfère actuellement utiliser une arme de main principale avec une arme de main gauche. Cliquez pour changer !"
             },
             "one_handed_knight": {
                "display_name": "Préférez l'arme et le bouclier",
@@ -587,14 +587,14 @@
       "loadouts": {
          "items": {
             "prickly_pear": "Poires",
-            "thatching": "Le chaume",
+            "thatching": "Chaume",
             "watermelon": "Pastèques",
             "winter_morel": "Morilles",
             "training_dummy": "Mannequin",
             "comfy_bed": "Lit",
             "roast_venison": "Gibier",
             "training_target": "Cibles",
-            "sleeping_bag": "Litroll"
+            "sleeping_bag": "Sac de couchage"
          },
          "military_expedition": {
             "display_name": "Expédition militaire",
@@ -623,7 +623,7 @@
          "footman_description": {
             "level_1_data": {
                "training_perk_name": "Entraînement au combat",
-               "training_perk_description": "Un valet de pied peut utiliser des mannequins d'entraînement pour s'entraîner jusqu'au niveau 3 et augmentera la limite autorisée de l'équipement d'entraînement de 2"
+               "training_perk_description": "Un fantassin peut utiliser des mannequins d'entraînement pour s'entraîner jusqu'au niveau 3 et augmentera la limite autorisée de l'équipement d'entraînement de 2"
             }
          }
       },
@@ -820,7 +820,7 @@
                "flavor": "Chaque sac peut être utilisé pour fertiliser 12 cultures"
             },
             "fertilizer_upgrade_2_recipe": {
-               "recipe_name": "Enhanced Engrais",
+               "recipe_name": "Engrais Amélioré",
                "description": "Utilisable par les agriculteurs qualifiés pour améliorer considérablement la qualité de leurs produits.",
                "flavor": "Chaque sac peut être utilisé pour fertiliser 16 cultures"
             },
@@ -917,7 +917,7 @@
                "flavor": "C'est comme un pot, pour dormir ! - Clarence, vendeur temporaire"
             },
             "clay_bed_recipe": {
-               "flavor": "Le chaume can be obtained by harvesting grass tufts, some plants like Tumbleweed or digging into grassy terrain"
+               "flavor": "Le chaume peut être obtenu en récoltant des touffes d'herbe, certaines plantes comme la Tumbleweed ou en creusant dans un terrain herbeux."
             },
             "clay_training_dummy_recipe": {
                "recipe_name": "Clay Training Mannequin",
@@ -1065,7 +1065,7 @@
                "flavor": "."
             },
             "simple_bed_pet_recipe": {
-               "recipe_name": "Le chaume Animal Lit",
+               "recipe_name": "Lit en chaume pour animeaux",
                "description": "Un endroit un peu plus propice au sommeil des animaux de compagnie des hearthlings.",
                "flavor": "Les animaux tenteront toujours de dormir sur le lit le plus proche de celui de leur propriétaire !"
             },
@@ -1132,7 +1132,7 @@
                "flavor": "Des fourrures chaudes !"
             },
             "stone_bed_recipe": {
-               "flavor": "Le chaume can be obtained by harvesting grass tufts, some plants like Hivermoss or digging into grassy terrain"
+               "flavor": "Le chaume peut être obtenu en récoltant des touffes d'herbe, certaines plantes comme le Hivermoss ou en creusant dans un terrain herbeux."
             },
             "stone_bed_crude_recipe": {
                "recipe_name": "Tache de pierre pour dormir",
@@ -1333,7 +1333,7 @@
                "description": "Encore plus de protection pour la tête."
             },
             "iron_platemail_recipe": {
-               "recipe_name": "Boîte de réception en fer",
+               "recipe_name": "Cotte de Mailles en fer",
                "description": "Un costume complet en fer conçu pour un nouveau chevalier prometteur.",
                "flavor": "Chaque chevalier commence quelque part...."
             },
@@ -1343,7 +1343,7 @@
             },
             "steel_chainmail_recipe": {
                "recipe_name": "Poste d'acier",
-               "description": "Un costume d'armure en cotte de mailles très fantaisie et très solide pour un valet de pied."
+               "description": "Un costume d'armure en cotte de mailles très fantaisie et très solide pour un fantassin."
             },
             "light_iron_shield_recipe": {
                "recipe_name": "Bouclier de fer léger",
@@ -1352,7 +1352,7 @@
             "light_steel_shield_recipe": {
                "recipe_name": "Bouclier en acier léger",
                "description": "Parfait équilibre entre protection et poids.",
-               "flavor": "La meilleure défense pour un valet de pied !"
+               "flavor": "La meilleure défense pour un fantassin !"
             },
             "silver_shield_recipe": {
                "recipe_name": "Bouclier d'argent",
@@ -1432,7 +1432,7 @@
                "flavor": "Porteur de lumière"
             },
             "silver_mail_recipe": {
-               "recipe_name": "Boîte de réception argentée",
+               "recipe_name": "Cotte de Mailles argentée",
                "description": "Devenez le vrai Chevalier en armure brillante."
             },
             "legendary_buckle_recipe": {
@@ -1441,7 +1441,7 @@
                "flavor": "Peut également être utilisé pour une bande extrêmement coûteuse"
             },
             "legendary_mail_recipe": {
-               "recipe_name": "La cotte de mailles Vanguard",
+               "recipe_name": "Cotte de Mailles Vanguard",
                "description": "Une armure en chaîne semblable à celles de l'avant-garde royale de l'Empire.",
                "flavor": "On dit que la cape était leur fin."
             },
@@ -1476,7 +1476,7 @@
          },
          "blacksmith_forge_advanced": {
             "blacksmith_forge_advanced_ghost": {
-               "display_name": "Enhanced Four de forgeron",
+               "display_name": "Four de forgeron amélioré",
                "description": "Un four amélioré et plus efficace pour la fusion des métaux."
             }
          },
@@ -1754,7 +1754,7 @@
                "flavor": "."
             },
             "wood_bed_recipe": {
-               "flavor": "Le chaume can be obtained by harvesting grass tufts, some plants like Silkweed or digging into grassy terrain"
+               "flavor": "Le chaume peut être obtenu en récoltant des touffes d'herbe, certaines plantes comme la Silkweed ou en creusant dans un terrain herbeux."
             },
             "wood_bed_crude_recipe": {
                "recipe_name": "Tache moyenne de sommeil",
@@ -1762,7 +1762,7 @@
                "flavor": "Méchant comme dans pauvre, pas cruel. Mais c'est ça aussi."
             },
             "simple_bed_pet_recipe": {
-               "recipe_name": "Le chaume Animal Lit",
+               "recipe_name": "Lit en chaume pour animaux",
                "description": "Un endroit un peu plus propice au sommeil des animaux de compagnie des hearthlings.",
                "flavor": "Les animaux tenteront toujours de dormir sur le lit le plus proche de celui de leur propriétaire !"
             },
@@ -1799,7 +1799,7 @@
                "flavor": "Les travailleurs avec des sacs à dos ne seront pas ralentis par le transport de choses et emballeront et déballeront plus rapidement."
             },
             "sleeping_bag_recipe": {
-               "recipe_name": "Litroll",
+               "recipe_name": "Sac de couchage",
                "description": "Mieux que le sol, mais pas vraiment une literie confortable. Mais très portable !",
                "flavor": "Un lit que tu peux porter. Eh bien, pour être honnête, vous pouvez porter N'IMPORTE QUEL lit...."
             },
@@ -1979,7 +1979,7 @@
             "description": "Un agriculteur compétent l'utilisera pour améliorer la qualité de ses cultures."
          },
          "fertilizer_upgrade_2": {
-            "display_name": "Enhanced Engrais",
+            "display_name": "Engrais Amélioré",
             "description": "Un agriculteur compétent l'utilisera pour améliorer considérablement la qualité de ses récoltes."
          }
       },
@@ -2967,19 +2967,19 @@
          "patrol_point": {
             "patrol_point_ghost": {
                "display_name": "Point de patrouille",
-               "description": "Laissez vos valets patrouiller !"
+               "description": "Laissez vos fantassins patrouiller !"
             }
          },
          "patrol_point_sign": {
             "patrol_point_sign_ghost": {
                "display_name": "Point de patrouille",
-               "description": "Laissez vos valets patrouiller !"
+               "description": "Laissez vos fantassins patrouiller !"
             }
          },
          "patrol_point_tower": {
             "patrol_point_tower_ghost": {
                "display_name": "Point de patrouille",
-               "description": "Laissez vos valets patrouiller !"
+               "description": "Laissez vos fantassins patrouiller !"
             }
          },
          "water_pump": {
@@ -3162,21 +3162,21 @@
          "carpenter": {
             "patrol_point_recipe": {
                "recipe_name": "Point de patrouille",
-               "description": "Laissez vos valets patrouiller !",
+               "description": "Laissez vos fantassins patrouiller !",
                "flavor": "Avec cela, vous pouvez maintenant contrôler vos footmens :D"
             }
          },
          "mason": {
             "patrol_point_tower_recipe": {
                "recipe_name": "Point de patrouille",
-               "description": "Laissez vos valets patrouiller !",
+               "description": "Laissez vos fantassins patrouiller !",
                "flavor": "Avec cela, vous pouvez maintenant contrôler vos footmens :D"
             }
          },
          "potter": {
             "patrol_point_sign_recipe": {
                "recipe_name": "Point de patrouille",
-               "description": "Laissez vos valets patrouiller !",
+               "description": "Laissez vos fantassins patrouiller !",
                "flavor": "Avec cela, vous pouvez maintenant contrôler vos footmens :D"
             }
          }
@@ -4046,15 +4046,15 @@
       "terrain": {
          "pasture_grass": {
             "display_name": "Herbe",
-            "description": "L'herbe haute peut être pâturée par les animaux ou récoltée pour le chaume."
+            "description": "L'herbe haute peut être pâturée par les animaux ou récoltée pour du chaume."
          },
          "overgrown_pasture_grass": {
             "display_name": "Overgrown Herbe",
-            "description": "L'herbe envahie peut être pâturée par les animaux ou récoltée pour le chaume."
+            "description": "L'herbe envahie peut être pâturée par les animaux ou récoltée pour du chaume."
          },
          "short_pasture_grass": {
             "display_name": "Short Herbe",
-            "description": "L'herbe courte peut être pâturée par les animaux, mais elle n'est pas assez longue pour le chaume."
+            "description": "L'herbe courte peut être pâturée par les animaux, mais elle n'est pas assez longue pour du chaume."
          },
          "sprouting_pasture_grass": {
             "display_name": "Sprouting Herbe",
@@ -4278,7 +4278,7 @@
       "armor": {
          "iron_platemail": {
             "description": "Une armure de fer chevaleresque.",
-            "display_name": "Boîte de réception en fer"
+            "display_name": "Cotte de Mailles en fer"
          },
          "iron_helmet": {
             "display_name": "Casque de fer",
@@ -4305,7 +4305,7 @@
             "description": "Un bouclier très solide et léger en argent."
          },
          "silver_mail": {
-            "display_name": "Boîte de réception argentée",
+            "display_name": "Cotte de Mailles argentée",
             "description": "Un costume d'armure brillant et fort, digne du meilleur chevalier !"
          },
          "legendary_hood": {
@@ -5484,7 +5484,7 @@
          },
          "visions": {
             "heatmap": {
-               "name": "cartes thermiques",
+               "name": "Cartes",
                "title": "Cartes thermiques du terrain",
                "description": "Modes d'affichage utiles qui vous donneront un aperçu des différents aspects de la carte"
             }
@@ -5579,20 +5579,20 @@
       "shell": {
          "settings": {
             "gameplayTab": {
-               "auto_craft_recipe_dependencies": "Auto Artisanat Recipe Dependencies",
+               "auto_craft_recipe_dependencies": "Dépendances de recettes de fabrication automatique",
                "auto_craft_recipe_dependencies_description": "Lors de la fabrication d'un article, les artisans vérifieront l'inventaire pour voir s'il y a suffisamment d'ingrédients à utiliser. Si ce n'est pas le cas, ils ajouteront d'autres commandes à la file d'attente s'ils en ont besoin pour remplir la commande originale.",
-               "default_craft_order_prefer_high_quality": "Prefer High-Quality Artisanating Ingredients",
+               "default_craft_order_prefer_high_quality": "Préfèrer des ingrédients d'artisanat de haute qualité",
                "default_craft_order_prefer_high_quality_description": "Lors de la fabrication d'un article, les artisans qui ont atteint l'avantage du savoir du compagnon préféreront fabriquer avec des ingrédients de haute qualité. Décochez cette case pour toujours préférer les ingrédients de faible qualité.",
                "auto_harvest_enabled": "Auto-récolte des ressources renouvelables",
                "auto_harvest_enabled_description": "Lorsqu'une ressource renouvelable que vous possédez devient exploitable, lancez automatiquement une commande de récolte sur cette ressource.",
                "auto_harvest_animals_enabled": "Les animaux autoproduisent des ressources renouvelables",
                "auto_harvest_animals_enabled_description": "Les animaux que vous possédez produiront automatiquement des ressources renouvelables (p. ex. vos poyos produiront des œufs).",
-               "auto_harvest_tree_stumps": "Auto-Harvest Souche d'arbres",
+               "auto_harvest_tree_stumps": "Récolte automatique des souches d'arbres",
                "auto_harvest_tree_stumps_description": "Lorsque les arbres sont abattus, il reste des souches récoltables. En activant cette option, les souches à récolter seront automatiquement mises en file d'attente.",
-               "default_to_worst_fertilizer": "Default to Worst Engrais",
+               "default_to_worst_fertilizer": "Par défaut, le pire engrais",
                "default_to_worst_fertilizer_description": "Lorsque les agriculteurs fertilisent leurs cultures, ils utilisent le meilleur engrais disponible, à moins qu'on ne leur demande d'utiliser un type particulier. Sélectionnez cette option pour qu'ils utilisent la pire des options disponibles à la place.",
-               "terrain_slice_buildings": "Terrain Slice Bâtiments",
-               "terrain_slice_buildings_description": "En mode Terrain Slice, ne rendez pas les entités supportées par des entités visibles, non-terrain.",
+               "terrain_slice_buildings": "Découpe Terrain et Bâtiments",
+               "terrain_slice_buildings_description": "En mode découpe Terrain, les entités prises en charge par des entités visibles et non-terrain ne sont pas montré.",
                "water_signal_update_frequency": "Taux de mise à jour des signaux d'eau",
                "water_signal_update_frequency_description": "Il n'y a que les signaux de mise à jour de l'eau qui signalent autant de tics du système d'eau. Augmentez cette valeur pour améliorer la performance avec beaucoup d'eau courante.",
                "show_processing_meter": "Afficher le compteur de traitement",
@@ -5600,12 +5600,12 @@
             },
             "controls_tab": {
                "key_binding_names": {
-                  "vision_wilderness_toggle": "Toggle Milieu sauvage Vision",
-                  "vision_ore_detector_toggle": "Toggle Détecteur de minerai",
-                  "harvest_harvest_and_replant": "Rassembler Rassembler Gather & Replant Replanter Replanter",
+                  "vision_wilderness_toggle": "Basculer en vision milieu sauvage",
+                  "vision_ore_detector_toggle": "Basculer en mode détecteur de minerai",
+                  "harvest_harvest_and_replant": "Récolter & Replanter",
                   "zone_underfarm": "Outil sous la ferme",
-                  "craft_grower": "Cultivateur Menu",
-                  "craft_artificer": "Artificier Menu",
+                  "craft_grower": "Menu Cultivateur",
+                  "craft_artificer": "Menu Artificier",
                   "craft_magmasmith": "Menu Magmasmith"
                }
             }
@@ -5638,18 +5638,18 @@
          "constants": {
             "edible_nuts_resource_name": "Noix comestible",
             "fruits_resource_name": "Fruits",
-            "thatch_resource_name": "Toitures",
+            "thatch_resource_name": "Chaumes",
             "bone_resource_name": "Os",
             "fungi_resource_name": "Champignons",
             "chitin_resource_name": "Toutes les Chitins",
-            "coal_resource_name": "Tout le charbon",
+            "coal_resource_name": "Tous les charbons",
             "any_fuel_resource_name": "Tous les carburants",
-            "common_fuel_resource_name": "Tous les carburants courant",
-            "weak_fuel_resource_name": "Carburant de qualité inférieure",
-            "fuel_resource_name": "Carburant de bonne qualité",
-            "high_fuel_resource_name": "Carburant de qualité supérieure",
-            "soft_metal_resource_name": "Tout le métal mou",
-            "hard_metal_resource_name": "Tout le métal dur",
+            "common_fuel_resource_name": "Carburants courant",
+            "weak_fuel_resource_name": "Carburants de qualité inférieure",
+            "fuel_resource_name": "Carburants de bonne qualité",
+            "high_fuel_resource_name": "Carburants de qualité supérieure",
+            "soft_metal_resource_name": "Tous les métaux mou",
+            "hard_metal_resource_name": "Tous les métaux dur",
             "precious_metal_resource_name": "Tous les métaux précieux",
             "algae_resource_name": "Toutes les mauvaise herbe aquatique",
             "fish_roe_resource_name": "Tous les œufs de poisson",

@@ -286,7 +286,7 @@
                      "dialog_nodes": {
                         "clergy": {
                            "bulletin_message": {
-                              "00": "Ronia adopte encore un ton poétique : \"Firnn le Cerf, dont les sabots font tomber les faveurs de l'été : bénis cette ville par la prospérité, et la sagesse de vivre en harmonie avec les cycles de la terre.\" <br><i>(Construire une source d'été donnera à tous les habitants de la ville un coup de pouce +1 aux attributs de l'esprit, du corps et de l'esprit.)</i>"
+                              "00": "Ronia adopte encore un ton poétique : \"Firnn le Cerf, dont les sabots font tomber les faveurs de l'été : bénis cette ville par la prospérité, et la sagesse de vivre en harmonie avec les cycles de la terre.\" <br><i>(Construire une source d'été donnera à tous les habitants de la ville un coup de pouce +1 aux attributs de l'esprit, du corps et de l'âme.)</i>"
                            },
                            "bulletin_title": "La Source de l'Été",
                            "dialog_title": "Le Clergé",

@@ -294,7 +294,7 @@
             "defense_abbreviation": "Déf",
             "backpack_tab_name": "Sac à dos",
             "journal_no_entries": "Aucune note",
-            "retired": "Mort le :",
+            "retired": "Retrait le :",
             "traits": "Traits",
             "above": "Au dessus",
             "below": "Au dessous de",
@@ -940,7 +940,7 @@
                "abandon": "Abandonnée",
                "happiness_requirement_label": "[str(value)] citoyens sont au moins [str(moodName)]",
                "happiness_requirement_label_all": "Tous les citoyens sont au moins [str(moodName)]",
-               "happiness_requirement_all": "[str(value)] (tous)",
+               "happiness_requirement_all": "[str(value)]",
                "gold_label": {
                   "give": "Or",
                   "have": "Or en main",
@@ -2437,7 +2437,7 @@
             "food_container_resource_name": "Nourriture",
             "prepared_food_resource_name": "Nourriture préparée",
             "prepared_dessert_resource_name": "Dessert preparée",
-            "earth_essence_resource": "Essence de Foyer",
+            "earth_essence_resource": "Essence de Hearth",
             "feather_resource": "Plumes",
             "gear_resource_name": "Équipement",
             "ore_resource_name": "Minerai",
@@ -4971,7 +4971,7 @@
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "Au fur et à mesure que votre avant-poste se développera vers le statut de règlement, vous commencerez à attirer de nouveaux immigrants.<br/><br/>Votre foyer n'est maintenant qu'une étincelle de ce qu'il deviendra un jour - J'ai la foi que ce sera un phare vu de tous à travers l'Ascendance."
+                              "00": "Au fur et à mesure que votre avant-poste se développera vers le statut de règlement, vous commencerez à attirer de nouveaux immigrants.<br/><br/>Votre foyer n'est pour l'instant qu'une étincelle de ce qu'il deviendra un jour - J'ai la foi que ce sera un phare vu de tous à travers l'Ascendance."
                            },
                            "bulletin_title": "Une vue vers l'avenir",
                            "dialog_title": "Une vue vers l'avenir",
@@ -5029,7 +5029,7 @@
                         },
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Beaucoup de rumeurs circulent à la capital, à priori de plus en plus de personnes font leurs bagages pour aller à [str(i18n_data.town_name)] tous les jours ! De nouvelles excitantes, votre foyer doit être éblouissant pour attirer autant de nouveaux colons. En fait, il attire également l'attention de quelques personnes Notable!"
+                              "00": "Beaucoup de rumeurs circulent à la capital, à priori de plus en plus de personnes font leurs bagages pour aller à [str(i18n_data.town_name)] tous les jours ! De nouvelles excitantes, votre Foyer doit être éblouissant pour attirer autant de nouveaux colons. En fait, il attire également l'attention de quelques personnes Notable!"
                            },
                            "bulletin_title": "Une lettre",
                            "dialog_title": "Une lettre",
@@ -6720,7 +6720,7 @@
                                     },
                                     "msg4": {
                                        "bulletin_message": {
-                                          "000": "La plus grande figure fait un pas en avant et commence à parler. Ils font un grand nombre de salutations avec leurs bras, semblant englober tous les foyers qui se trouvent à proximité, puis parlent - leur voix est douce et quelques octaves plus élevés que leur taille le suggérée.<p><i>'Disciples du singe, salutations ! D'Hestia nous voyageons. De la royauté notre lignée. Nous présentons, avec respect.'</i></p>"
+                                          "000": "La plus grande figure fait un pas en avant et commence à parler. Il fait de grand gestes de salutations avec les bras, semblant englober tous les hearthlings qui se trouvent à proximité, puis parle - la voix est douce et quelques octaves plus élevés que sa taille le suggérée.<p><i>'Disciples du singe, salutations ! D'Hestia nous voyageons. De la royauté notre lignée est issu. Nous nous présentons, avec respect.'</i></p>"
                                        },
                                        "bulletin_title": "La plus grande figure commence à parler",
                                        "dialog_title": "La plus grande figure commence à parler",
@@ -6755,8 +6755,8 @@
                                        "bulletin_message": {
                                           "000": "La plus haute silhouette répète le geste, s'inclinant incroyablement bas. Bien que plus grande, cette figure bouge avec le plus de grâce. Le tissu ondule doucement derrière leurs membres comme s'il coulait dans l'eau :<p><i>'Emma. D'Hestia, princesse, héritier aîné, diplomate, tisserand, lanceur.'</i></p>"
                                        },
-                                       "bulletin_title": "Introductions : The tallest",
-                                       "dialog_title": "Introductions : The tallest",
+                                       "bulletin_title": "Introductions : Le plus grand",
+                                       "dialog_title": "Introductions : Le plus grand",
                                        "choice_000": "Salutations Princesse Emma.",
                                        "choice_001": "Vous êtes tous les bienvenus dans notre ville."
                                     }

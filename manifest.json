@@ -20,7 +20,8 @@
 	"overrides" : {
 		"stonehearth/locales/fr-FR.json": "file(translations/stonehearth/fr-FR.json)",
 		"rayyas_children/locales/fr-FR.json": "file(translations/rayyas_children/fr-FR.json)",
-		"northern_alliance/locales/fr-FR.json": "file(translations/northern_alliance/fr-FR.json)"
+		"northern_alliance/locales/fr-FR.json": "file(translations/northern_alliance/fr-FR.json)",
+		"stonehearth_ace/locales/fr-FR.json": "file(translations/ace/fr-FR.json)"
 	},
 	"components" : {
 	},
