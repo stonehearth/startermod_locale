@@ -1,8 +1,8 @@
 {
    "kingdom": {
-      "kingdom_name": "Les enfants de Rayya",
+      "kingdom_name": "Enfant de Rayya",
       "quote": "Méditation, médiation, médication : L'ordre en soi met de l'ordre chez les autres et octoie la santé à tous.",
-      "long_description": "Les hearthlings du désert ont appris tôt  que pour survivre, ils ont besoin les uns des autres, et de préférence être le plus nombreux possible. Ils sont des hôtes généreux qui peuvent accéder à des biens du monde entier.",
+      "long_description": "Les hearthlings du désert ont appris tôt   que pour survivre, ils ont besoin les uns des autres, et de préférence être le plus nombreux possible. Ils sont des hôtes généreux qui peuvent accéder à des biens du monde entier.",
       "post_selection_description": ", des commerçants rusés et rafinés.",
       "initial_town_name": "Caravane [str(town_number)]"
    },
@@ -30,7 +30,7 @@
                "recipe_name": "La Flamme Éternelle"
             },
             "herbalist_clay_staff_recipe": {
-               "flavor": "'Ces fleurs prennent soin du jardinier comme le jardinier prend soin d'elle.' -Zale, Maître Herboriste"
+               "flavor": "Ces fleurs prennent soin du jardinier comme le jardinier prend soin d'elle.' -Zale, Maître Herboriste"
             },
             "jar_green_recipe": {
                "description": "Petit bocal en verre vert accompagné d'un petit feu",
@@ -77,103 +77,103 @@
                "recipe_name": "Couronne de tournesol"
             },
             "wind_chime_recipe": {
-               "description": "A magnificent sight and sound to match.",
-               "recipe_name": "Glass Wind Chime"
+               "description": "Une vue et un son magnifiques à l'avenant.",
+               "recipe_name": "Carillon de verre"
             },
             "window_tall_latticed_recipe": {
-               "description": "The lattice work stops most of the hot sun, and looks pretty too!",
-               "recipe_name": "Tall Latticed Window"
+               "description": "Le treillis arrête la plupart des rayons du soleil, et il est très beau aussi !",
+               "recipe_name": "Grande fenêtre en treillis"
             },
             "door_clay_latticed_recipe": {
-               "recipe_name": "Clay Latticed Door",
-               "description": "The lattice work stops most of the hot sun, and looks pretty too!"
+               "recipe_name": "Porte en treillis d'argile",
+               "description": "Le treillis arrête la plupart des rayons du soleil, et il est très beau aussi !"
             },
             "chest_recipe": {
-               "description": "A place to store tribute of Monkey and Her Mystery",
-               "recipe_name": "Clay Chest"
+               "description": "Un endroit pour stocker le tribut au Singe et à ses Mystères",
+               "recipe_name": "Coffre en argile"
             },
             "lamp_gold_recipe": {
-               "description": "Its flame brings a warm glow at night.",
-               "recipe_name": "Golden Oil Lamp"
+               "description": "Sa flamme apporte une lueur chaude la nuit.",
+               "recipe_name": "Lampe à huile dorée"
             },
             "lamp_wall_gold_recipe": {
-               "description": "Its flame brings a warm glow at night.",
-               "recipe_name": "Golden Oil Wall Lamp"
+               "description": "Sa flamme apporte une lueur chaude la nuit.",
+               "recipe_name": "Lampe murale à l'huile d'or"
             },
             "lightbox_recipe": {
-               "description": "Its light splashes patterns across the ground, and on things above it.",
-               "recipe_name": "Clay Lightbox"
+               "description": "Sa lumière éclabousse des motifs sur le sol et sur les choses qui se trouvent au-dessus.",
+               "recipe_name": "Boîte à lumière en argile"
             },
             "monkey_recipe": {
-               "description": "A tribute to Monkey and her many helpers.",
-               "recipe_name": "Clay Monkey Statue"
+               "description": "Un hommage au Singe et à ses nombreux assistants.",
+               "recipe_name": "Statue de singe en argile"
             },
             "teapot_recipe": {
-               "description": "A reminder of bold entrepreneurs.",
-               "recipe_name": "Finely Crafted Tea Set"
+               "description": "Un rappel des entrepreneurs audacieux.",
+               "recipe_name": "Service à thé finement ouvragé"
             },
             "wall_hanging_key_recipe": {
-               "description": "A wall ornament that reminds us of Monkey.",
-               "recipe_name": "Monkey Shrine Key"
+               "description": "Un ornement mural qui rappelle le Singe.",
+               "recipe_name": "Clé du sanctuaire du Singe"
             },
             "banner_wall_big_recipe": {
-               "description": "Show your town pride with this banner.",
-               "recipe_name": "Long Wall Banner"
+               "description": "Montrez la fierté de votre ville avec cette bannière.",
+               "recipe_name": "Longue bannière murale"
             },
             "banner_wall_small_recipe": {
-               "description": "Show your town pride with this banner.",
-               "recipe_name": "Wide Wall Banner"
+               "description": "Montrez la fierté de votre ville avec cette bannière.",
+               "recipe_name": "Large bannière murale"
             },
             "pedestal_firepit_recipe": {
-               "description": "Softly glowing coals",
-               "recipe_name": "Firebowl",
-               "flavor": "A little fire lives here"
+               "description": "Des charbons ardents",
+               "recipe_name": "Boule de feu",
+               "flavor": "Un petit feu vit ici"
             },
             "pedestal_floral_red_recipe": {
-               "description": "A decorative display of aromatic flowers and herbs",
-               "recipe_name": "Red Floral Pedestal",
-               "flavor": "Breathes flowery sweetness into dry desert breezes"
+               "description": "Une exposition décorative de fleurs et d'herbes aromatiques",
+               "recipe_name": "Piédestal fleuri rouge",
+               "flavor": "Respire la douceur fleurie dans les brises sèches du désert"
             },
             "pedestal_floral_coral_recipe": {
-               "description": "A decorative display of aromatic flowers and herbs",
-               "recipe_name": "Coral Floral Pedestal",
-               "flavor": "Breathes flowery sweetness into dry desert breezes"
+               "description": "Une exposition décorative de fleurs et d'herbes aromatiques",
+               "recipe_name": "Piédestal fleuri corail",
+               "flavor": "Respire la douceur fleurie dans les brises sèches du désert"
             },
             "pedestal_floral_blue_recipe": {
-               "description": "A decorative display of aromatic flowers and herbs",
-               "recipe_name": "Blue Floral Pedestal",
-               "flavor": "Breathes flowery sweetness into dry desert breezes"
+               "description": "Une exposition décorative de fleurs et d'herbes aromatiques",
+               "recipe_name": "Piédestal fleuri bleu",
+               "flavor": "Respire la douceur fleurie dans les brises sèches du désert"
             },
             "kiln_upgrade_recipe": {
-               "description": "Allows the Potters of your town to work in style.",
-               "recipe_name": "Upgraded Potter's Kiln"
+               "description": "Permet aux potiers de votre ville de travailler avec style.",
+               "recipe_name": "Four de potier amélioré"
             },
             "workbench_upgrade_recipe": {
-               "description": "For the more aesthetically concerned Potter.",
-               "recipe_name": "Upgraded Pottery Wheel",
-               "flavor": "The quality of your work can only be as high as the quality of your equipment -- Khora, Master Potter"
+               "description": "Pour les potiers soucieux de l'esthétique.",
+               "recipe_name": "Roue de poterie améliorée",
+               "flavor": "La qualité de votre travail ne peut être que la qualité de votre équipement -- Khora, Maître Potier"
             },
             "legendary_rc_face_recipe": {
-               "description": "Protects the Dragon's Shield",
-               "recipe_name": "Dragonhide",
-               "flavor": "Repeated glazing and firing makes it shine like dragon scales, and just as resilient"
+               "description": "Protège le bouclier du dragon",
+               "recipe_name": "Peau de dragon",
+               "flavor": "L'émaillage et la cuisson répétés le font briller comme des écailles de dragon, et tout aussi résistant"
             },
             "legendary_rc_inlay_recipe": {
-               "description": "Radiant gilding for the Desert Fang",
-               "recipe_name": "Glittering Inlay",
-               "flavor": "Gleaming with hearthlight"
+               "description": "Dorure éclatante pour le Croc du Désert",
+               "recipe_name": "Incrustation scintillante",
+               "flavor": "La lumière du foyer brille"
             }
          },
          "potter_kiln_upgrade": {
             "potter_kiln_upgrade_ghost": {
-               "display_name": "Upgraded Potter's Kiln",
-               "description": "Allows the Potters of your town to work in style."
+               "display_name": "Amélioration du four de potier",
+               "description": "Permet aux potiers de votre ville de travailler avec style."
             }
          },
          "potter_workbench_upgrade": {
             "potter_workbench_upgrade_ghost": {
-               "display_name": "Upgraded Pottery Wheel",
-               "description": "For the style concerned Potter."
+               "display_name": "Roue de poterie améliorée",
+               "description": "Pour les potier concernés par le style."
             }
          }
       },
@@ -183,14 +183,14 @@
          },
          "recipes": {
             "legendary_rc_cloth_recipe": {
-               "description": "Traditional material for the Crimson Circlet",
-               "recipe_name": "Sundyed Fabric",
-               "flavor": "Soaked in sunlight and healing herbs"
+               "description": "Matériel traditionnel pour la Tiare Cramoisie",
+               "recipe_name": "Tissu teint au soleil",
+               "flavor": "Imprégné par la lumière du soleil et les herbes médicinales"
             },
             "legendary_rc_stave_recipe": {
-               "description": "The limbs of the Zephyr Bow",
-               "recipe_name": "Elder Stave",
-               "flavor": "Prepared with special resin, it would take an army to splinter this bow"
+               "description": "Les limbes de l'arc Zéphyr",
+               "recipe_name": "Ancien rameau",
+               "flavor": "Préparé avec une résine spéciale, il faudrait une armée pour briser cet arc"
             }
          }
       },
@@ -200,19 +200,19 @@
          },
          "recipes": {
             "rc_giants_shield_recipe": {
-               "description": "Le bouclier le plus somptueux  de l'Empire Phénix",
+               "description": "Le bouclier le plus somptueux   de l'Empire Phénix",
                "recipe_name": "Bouclier du Géant",
                "flavor": "Contre les ennemis les plus terribles et les dangers impossibles, ce bouclier ne se cassera jamais."
             },
             "legendary_rc_blade_recipe": {
-               "description": "Unbreakable blade of the Desert Fang",
-               "recipe_name": "Tempered Bone",
-               "flavor": "Sharp as the wind"
+               "description": "Lame incassable du croc du désert",
+               "recipe_name": "Os durci",
+               "flavor": "Acéré comme le vent"
             },
             "legendary_rc_gem_recipe": {
-               "description": "A spiritual focus, essential for the Crimson Circlet",
-               "recipe_name": "Flame Ruby",
-               "flavor": "A healing red star to guide by"
+               "description": "Une focalisation spirituelle, essentielle pour la Tiare Cramoisie",
+               "recipe_name": "Flamme Rubis",
+               "flavor": "Une étoile rouge guérisseuse servant de guide"
             }
          }
       },
@@ -261,91 +261,91 @@
             "rc_circlet_valor_recipe": {
                "description": "La meilleure Tiare de l'Empire Phoenix",
                "recipe_name": "Tiare Cramoisie",
-               "flavor": "Channels the very heart and soul into healing light"
+               "flavor": "Canaliser le cœur et l'âme dans la lumière de la guérison"
             },
             "legendary_rc_frame_recipe": {
-               "description": "Reinforces the Dragon's Shield",
-               "recipe_name": "Dragonplate",
-               "flavor": "The bones of the dragon"
+               "description": "Renforce le bouclier du dragon",
+               "recipe_name": "Peau de dragon",
+               "flavor": "Les os du dragon"
             }
          }
       },
       "weaver": {
          "recipes": {
             "outfit_worker_goldthread_recipe": {
-               "description": "Fashionably improves worker's speed and efficiency",
-               "recipe_name": "Worker Finery",
-               "flavor": "Red simply never goes out of style"
+               "description": "La mode améliore la rapidité et l'efficacité des travailleurs",
+               "recipe_name": "Parure de travailleur",
+               "flavor": "Le rouge ne se démode jamais"
             },
             "banner_gilded_blue_recipe": {
-               "description": "Display your town's pride as an exotic trading post",
-               "recipe_name": "Gilded Blue Banner",
-               "flavor": "Color coursed through the city in streams of fabric and glimmering golden thread"
+               "description": "Affichez la fierté de votre ville comme un comptoir commercial exotique",
+               "recipe_name": "Bannière bleue dorée",
+               "flavor": "La couleur courait à travers la ville dans des flots de tissus et de fils d'or scintillants"
             },
             "banner_gilded_coral_recipe": {
-               "description": "Display your town's pride as an exotic trading post",
-               "recipe_name": "Gilded Coral Banner",
-               "flavor": "Color coursed through the city in streams of fabric and glimmering golden thread"
+               "description": "Affichez la fierté de votre ville comme un comptoir commercial exotique",
+               "recipe_name": "Bannière corail dorée",
+               "flavor": "La couleur courait à travers la ville dans des flots de tissus et de fils d'or scintillants"
             },
             "banner_gilded_red_recipe": {
-               "description": "Display your town's pride as an exotic trading post",
-               "recipe_name": "Gilded Red Banner",
-               "flavor": "Color coursed through the city in streams of fabric and glimmering golden thread"
+               "description": "Affichez la fierté de votre ville comme un comptoir commercial exotique",
+               "recipe_name": "Bannière rouge dorée",
+               "flavor": "La couleur courait à travers la ville dans des flots de tissus et de fils d'or scintillants"
             },
             "banner_gilded_sage_recipe": {
-               "description": "Display your town's pride as an exotic trading post",
-               "recipe_name": "Gilded Sage Banner",
-               "flavor": "Color coursed through the city in streams of fabric and glimmering golden thread"
+               "description": "Affichez la fierté de votre ville comme un comptoir commercial exotique",
+               "recipe_name": "Bannière sauge dorée",
+               "flavor": "La couleur courait à travers la ville dans des flots de tissus et de fils d'or scintillants"
             },
             "chair_gilded_blue_recipe": {
-               "description": "Luxuriously padded seating",
-               "recipe_name": "Gilded Blue Cushion",
-               "flavor": "It'd be an insult to the cushion to never sit on it!"
+               "description": "Sièges luxueusement rembourrés",
+               "recipe_name": "Coussin bleu doré",
+               "flavor": "Ce serait une insulte au coussin de ne jamais s'y asseoir !"
             },
             "chair_gilded_red_recipe": {
-               "description": "Luxuriously padded seating",
-               "recipe_name": "Gilded Red Cushion",
-               "flavor": "It'd be an insult to the cushion to never sit on it!"
+               "description": "Sièges luxueusement rembourrés",
+               "recipe_name": "Coussin rouge doré",
+               "flavor": "Ce serait une insulte au coussin de ne jamais s'y asseoir !"
             },
             "chair_gilded_sage_recipe": {
-               "description": "Luxuriously padded seating",
-               "recipe_name": "Gilded Sage Cushion",
-               "flavor": "It'd be an insult to the cushion to never sit on it!"
+               "description": "Sièges luxueusement rembourrés",
+               "recipe_name": "Coussin sauge doré",
+               "flavor": "Ce serait une insulte au coussin de ne jamais s'y asseoir !"
             },
             "chair_gilded_coral_recipe": {
-               "description": "Luxuriously padded seating",
-               "recipe_name": "Gilded Coral Cushion",
-               "flavor": "It'd be an insult to the cushion to never sit on it!"
+               "description": "Sièges luxueusement rembourrés",
+               "recipe_name": "Coussin corail doré",
+               "flavor": "Ce serait une insulte au coussin de ne jamais s'y asseoir !"
             },
             "rug_gilded_blue_recipe": {
-               "description": "Skillfully woven from dyed and golden threads",
-               "recipe_name": "Gilded Blue Throw",
-               "flavor": "The color is milled from precious blue stone found deep within mountains far, far to the frozen north"
+               "description": "Habilement tissé de fils teints et dorés",
+               "recipe_name": "Coussin bleu doré",
+               "flavor": "La couleur est moulue à partir de pierres bleues précieuses trouvées au cœur des montagnes, loin, très loin au nord gelé"
             },
             "rug_gilded_red_recipe": {
-               "description": "Skillfully woven from dyed and golden threads",
-               "recipe_name": "Gilded Red Throw",
-               "flavor": "The luscious, almost-purple hue comes from berries grown in the foothills surrounding a faraway kingdom"
+               "description": "Habilement tissé à partir de fils teints et dorés",
+               "recipe_name": "Coussin rouge doré",
+               "flavor": "La teinte pourpre est due à des baies cultivées dans les contreforts d'un royaume lointain"
             },
             "rug_gilded_coral_recipe": {
-               "description": "Skillfully woven from dyed and golden threads",
-               "recipe_name": "Gilded Coral Throw",
-               "flavor": "Earth from a long-dried seabed to the south is baked and ground to produce this lively red-orange"
+               "description": "Habilement tissé à partir de fils teints et dorés",
+               "recipe_name": "Coussin corail doré",
+               "flavor": "La terre provenant d'un fond marin longtemps asséché au sud est cuite et broyée pour produire ce rouge-orange vif"
             },
             "rug_gilded_sage_recipe": {
-               "description": "Skillfully woven from dyed and golden threads",
-               "recipe_name": "Gilded Sage Throw",
-               "flavor": "Achieving a delicate green requires skill; this stain made from a pulp of potent herbs will rapidly turn anything sour"
+               "description": "Habilement tissé à partir de fils teints et dorés",
+               "recipe_name": "Jeté de sauge doré",
+               "flavor": "Pour obtenir un vert délicat, il faut de l'habileté ; cette tache faite à partir d'une pulpe d'herbes puissantes transformera rapidement tout ce qui est aigre"
             },
             "rc_legendary_circlet_recipe": {
-               "description": "Worn by the desert's finest healers",
+               "description": "Porté par les meilleurs guérisseurs du désert",
                "recipe_name": "Tiare Cramoisie",
-               "flavor": "Channels the very heart and soul into healing light"
+               "flavor": "Canaliser le cœur et l'âme dans la lumière de la guérison"
             },
             "legendary_rc_bowstring_recipe": {
-               "description": "Joins the ends of the Zephyr Bow",
-               "recipe_name": "Glittering Bowstring",
-               "flavor": "Like fire spun into thread"
+               "description": "Rejoint les extrémités de l'arc Zéphyr",
+               "recipe_name": "Une corde à arc scintillante",
+               "flavor": "Comme le feu qui se transforme en fil"
             }
          }
       }
@@ -543,8 +543,8 @@
                   "accept": "Woohoo !",
                   "dialog_title": "Status Canton obtenu!",
                   "tier_title": "Canton",
-                  "reward_message": "Par décret honorifique des enfants du Rayya, nous reconnaissons : ",
-                  "reward_message_ctd": "Pour son excellence en tant que comptoir commercial de classe mondiale. La ville est par les présentes éligibles pour : ",
+                  "reward_message": "Par décret honorifique des enfants du Rayya, nous reconnaissons :",
+                  "reward_message_ctd": "Pour son excellence en tant que comptoir commercial de classe mondiale. La ville est par les présentes éligibles pour :",
                   "tier_2_bldg_template": "Niveau 2 Modèles de construction",
                   "tier_2_shops": "Niveau 2 Magasins",
                   "tier_2_BGM": "Niveau 2 BGM"
@@ -552,14 +552,14 @@
                "rayyas_children_town_tier_quest": {
                   "title": "Quête pour un canton",
                   "dialog_title": "Quête pour un canton",
-                  "text": "Satisfaire l'une des exigences suivantes pour obtenir une renommée suffisante pour prétendre au statut de canton : ",
+                  "text": "Satisfaire l'une des exigences suivantes pour obtenir une renommée suffisante pour prétendre au statut de canton :",
                   "summon_text": "Convoquer par Iskender !"
                },
                "exotic_trade_tier_2_reached": {
-                  "reward_message_ctd": "Pour l'excellence dans le commerce extérieur et exotique. La ville est par les présentes éligibles pour : "
+                  "reward_message_ctd": "Pour l'excellence dans le commerce extérieur et exotique. La ville est par les présentes éligibles pour :"
                },
                "shrine_tier_2_reached": {
-                  "reward_message_ctd": "Pour son hospitalité et son sanctuaire emblématique. La ville est par les présentes éligibles pour : "
+                  "reward_message_ctd": "Pour son hospitalité et son sanctuaire emblématique. La ville est par les présentes éligibles pour :"
                },
                "arcs": {
                   "encounters": {
@@ -618,55 +618,55 @@
             },
             "town_progression": {
                "shrine_upgrade_valor": {
-                  "reward_message": "By decree of the Iskender Trading Company, we recognize:",
-                  "reward_message_ctd": "For acts of incredible valor in combat. The town is hereby eligible for:",
+                  "reward_message": "Par décret de la société commerciale Iskender, nous reconnaissons :",
+                  "reward_message_ctd": "Pour des actes d'une incroyable bravoure au combat. La ville est ainsi éligible pour :",
                   "achievements": {
-                     "001": "Blacksmith Suncatcher Recipe",
-                     "002": "Potter Pedestals Recipe",
-                     "003": "Weaver Banners, Throws, and Cushions Recipes"
+                     "001": "Recette de l'attrape-soleil de forgeron",
+                     "002": "Recette de piédestal de potier",
+                     "003": "Recettes de bannières, de drapeaux et de coussins de tisserands"
                   },
                   "recipe_bulletins": {
-                     "recipe_unlock_blacksmith": "New suncatcher recipe for Blacksmith!",
-                     "recipe_unlock_potter": "New pedestal recipes for Potter!",
-                     "recipe_unlock_weaver": "New banner, throw, and cushion recipes for Weaver!",
-                     "recipe_unlock_weapons_1": "New Legendary Sword recipe - Weaver, Potter, and Blacksmith collaboration!",
-                     "recipe_unlock_weapons_2": "New Legendary Shield recipe - Blacksmith, Carpenter, and Mason collaboration!",
-                     "recipe_unlock_weapons_3": "New Legendary Archer recipe - Engineer, Weaver, and Carpenter collaboration!"
+                     "recipe_unlock_blacksmith": "Nouvelle recette de l'attrape soleil pour le forgeron !",
+                     "recipe_unlock_potter": "Nouvelles recettes de piédestal pour le potier !",
+                     "recipe_unlock_weaver": "Nouvelles recettes de bannières, de drapeaux et de coussins pour le Tisserand !",
+                     "recipe_unlock_weapons_1": "Nouvelle recette de sabre légendaire - Collaboration entre le tisserand, le potier et le forgeron !",
+                     "recipe_unlock_weapons_2": "Nouvelle recette de bouclier légendaire - Collaboration entre forgeron, charpentier et maçon !",
+                     "recipe_unlock_weapons_3": "Nouvelle recette d'archer légendaire - Collaboration entre un ingénieur, un tisserand et un charpentier !"
                   }
                },
                "shrine_choice": {
                   "guildmaster": {
-                     "name": "The Trader Monument",
-                     "description": "<i>This Township shall be known for its productivity, wealth, and trading connections.</i><ul><li>Allows crafting Masterwork quality items</li><li>Unlocks homely decoration recipes</li></ul>"
+                     "name": "Le Monument des Commerçants",
+                     "description": "<i>Ce Canton est connu pour sa productivité, sa richesse et ses relations commerciales.</i><ul><li> Permet de fabriquer des objets de qualité Masterwork</li><li> Débloque des recettes de décoration artisanale</li></ul>"
                   },
                   "deity": {
-                     "name": "Her Mystery's Shrine",
-                     "description": "<i>This Township shall seek to learn the secrets of the world, in service of Her Mystery.</i><ul><li>Grants a random daily buff</li><li>Unlocks Monkey-inspired decoration recipes</li></ul>"
+                     "name": "Son Sanctuaire du Mystère",
+                     "description": "<i>Ce Canton cherchera à apprendre les secrets du monde, au service de ses Mystères.</i><ul><li>Donne un coup de pouce quotidien au hasard</li><li>Débloque des recettes de décoration inspirées des Singes</li></ul>"
                   },
                   "valor": {
-                     "name": "The Ever-Burning Flame",
-                     "description": "<i>This Township shall be dedicated to the protection of the whole surrounding region.</i><ul><li>Unlocks legendary weapon recipes</li><li>Unlocks exotic decoration recipes</li></ul>"
+                     "name": "La Flamme Éternelle",
+                     "description": "<i>Ce canton est dédié à la protection de toute sa région environnante.</i><ul><li>Débloque des recettes d'armes légendaires</li><li>Débloque des recettes de décoration exotiques</li></ul>"
                   }
                },
                "banner_upgrade_cunning": {
-                  "reward_message_ctd": "to be an outpost paving the roads to become a trade hub."
+                  "reward_message_ctd": "de devenir un avant-poste ouvrant la voie à un véritable pôle commercial."
                },
                "banner_upgrade_strength": {
-                  "reward_message_ctd": "to be an outpost on its way to be a safe haven for all."
+                  "reward_message_ctd": "de devenir un avant-poste en passe de devenir un havre de paix pour tous."
                },
                "banner_upgrade_vitality": {
-                  "reward_message_ctd": "to be an outpost aiming to revive the surrounding nature."
+                  "reward_message_ctd": "de devenir un avant-poste destiné à faire renaître la nature environnante."
                },
                "bird_departs": {
                   "dialog_tree_info": {
                      "dialog_nodes": {
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Once the outpost founding forms are filled and back in their satchel, Arke picks it up and starts on her journey back to the closest Iskender Trading Agency office."
+                              "00": "Une fois que les formulaires de création de l'avant-poste sont remplis et remis dans leur sac, Arke le ramasse et commence son voyage de retour vers le bureau de l'agence commerciale d'Iskender le plus proche."
                            },
-                           "bulletin_title": "The Fox Departs",
-                           "dialog_title": "The Fox Departs",
-                           "choice_000": "Monkey keep you, fox friend"
+                           "bulletin_title": "Le départ du renard",
+                           "dialog_title": "Le départ du renard",
+                           "choice_000": "Le singe te garde, l'ami du renard"
                         }
                      }
                   }
@@ -676,53 +676,53 @@
                      "dialog_nodes": {
                         "makers": {
                            "bulletin_message": {
-                              "00": "A <i>Hearth of Makers</i>, on the other hand, is for those who believe that a town's value is its work, and that its work is best measured in gold."
+                              "00": "Le <i>Foyer du Créateur</i>, en revanche, s'adresse à ceux qui estiment que la valeur d'une ville réside dans son travail, et que son travail se mesure au mieux en or."
                            },
-                           "bulletin_title": "Mark of the Maker",
-                           "dialog_title": "Mark of the Maker",
-                           "choice_000": "Sounds productive"
+                           "bulletin_title": "Marque du Créateur",
+                           "dialog_title": "La Marque du Créateur",
+                           "choice_000": "Cela sonne productif"
                         },
                         "final": {
                            "bulletin_message": {
-                              "00": "Cheer, Glory, or Makers - the choice is entirely yours. Think of what matters most to your Settlement, and follow that beacon into the future!"
+                              "00": "Qu'il s'agisse de Joie, Gloire, ou Créateurs, le choix vous appartient. Pensez à ce qui compte le plus pour votre colonie, et suivez ce phare vers l'avenir !"
                            },
-                           "bulletin_title": "A Choice",
-                           "dialog_title": "A Choice",
-                           "choice_000": "We choose..."
+                           "bulletin_title": "Un choix",
+                           "dialog_title": "Un choix",
+                           "choice_000": "Nous choisissons..."
                         },
                         "intro2": {
                            "bulletin_message": {
-                              "00": "As you know, Hearths have been the cornerstone of Settlements all the way back to the Phoenix Empire.<p>If not for their glow, Rayya's Children caravans would never find their way in the desert, and our society would have scattered long ago. The type of Hearth also says much about what a Settlement values."
+                              "00": "Comme vous le savez, les Foyers ont été la pierre angulaire des colonies jusqu'à l'Empire du Phénix.<p>Sans leur éclat, les caravanes des Enfants de Rayya ne trouveraient jamais leur chemin dans le désert, et notre société se serait dispersée il y a bien longtemps. Le type de foyer en dit aussi long sur les valeurs d'un établissement."
                            },
-                           "bulletin_title": "Naryal Continues",
+                           "bulletin_title": "Naryal continue",
                            "dialog_title": "Naryal d'Iskender",
-                           "choice_000": "Values?"
+                           "choice_000": "Des valeurs ?"
                         },
                         "cheer": {
                            "bulletin_message": {
-                              "00": "For instance, a <i>Hearth of Cheer</i> is for those who believe that a town's value is found in being a happy home for its citizens."
+                              "00": "Par exemple, un <i>Foyer de la Joie</i> est destiné à ceux qui estiment que la valeur d'une ville réside dans le fait d'être un foyer heureux pour ses citoyens."
                            },
-                           "bulletin_title": "A Cheerful Choice",
-                           "dialog_title": "A Cheerful Choice",
-                           "choice_000": "Sounds quaint"
+                           "bulletin_title": "Un choix réjouissant",
+                           "dialog_title": "Un choix réjouissant",
+                           "choice_000": "Cela sonne pittoresque"
                         },
                         "intro3": {},
                         "glory": {
                            "bulletin_message": {
-                              "00": "Finally, a <i>Hearth of Glory</i> is for those who believe that there comes a time when negotiations no longer suffice, and the land has to be protected by force."
+                              "00": "Enfin, un <i>Foyer de Gloire</i> est destiné à ceux qui estiment qu'il arrive un moment où les négociations ne suffisent plus et où la terre doit être protégée par la force."
                            },
-                           "bulletin_title": "Guts and Glory",
-                           "dialog_title": "Guts and Glory",
-                           "choice_000": "Sounds heroic"
+                           "bulletin_title": "Du cran et de la Gloire",
+                           "dialog_title": "Du cran et de la Gloire",
+                           "choice_000": "Cela sonne héroïque"
                         },
                         "intro": {
                            "bulletin_message": {
-                              "00": "Hello, again! This time I'm visiting in a more official capacity than usual, and without my trading goods. We at the Iskender Trading Company are very impressed with your Outpost's progress, and have decided that it's time to officially update your member status to that of 'Settlement'.<p>Before we can do that, though, it is customary to choose a Hearth to represent your town.</p>"
+                              "00": "Bonjour, encore une fois ! Cette fois, je vous rends visite à titre plus officiel que d'habitude, et sans mes marchandises d'échange. Nous, à la Compagnie Commerciale d'Iskender, sommes très impressionnés par les progrès de votre Avant-poste, et avons décidé qu'il est temps de mettre officiellement à jour votre statut de membre à celui de "
                            },
-                           "bulletin_title": "Naryal Approaches, Without His Caravan",
-                           "dialog_title": "An Official Visit",
-                           "choice_000": "Thank you!",
-                           "choice_001": "[skip] We know what Hearth we want."
+                           "bulletin_title": "Naryal approche, sans sa caravane",
+                           "dialog_title": "Une visite officielle",
+                           "choice_000": "Merci !",
+                           "choice_001": "Nous savons quel foyer nous voulons."
                         }
                      }
                   }
@@ -731,36 +731,36 @@
                   "dialog_tree_info": {
                      "dialog_nodes": {
                         "msg1": {
-                           "bulletin_title": "The Fox Returns!",
-                           "dialog_title": "Another Letter!",
+                           "bulletin_title": "Le Renard revient !",
+                           "dialog_title": "Une autre lettre !",
                            "bulletin_message": {
-                              "00": "The messenger fox returns, with a reply from Amyyria Iskender."
+                              "00": "Le renard messager revient, avec une réponse d'Amyyria Iskender."
                            },
-                           "choice_000": "Open the letter"
+                           "choice_000": "Ouvrez la lettre"
                         },
                         "msg4": {
                            "bulletin_message": {
-                              "00": "Conversely, we expect you to start considering the next step in your Outpost's evolution. Although most of our partner outposts opt to focus on trade, we think other approaches to prosperity are equally valuable to Rayya's Children, and it is always up to the Outpost themselves to make that decision.<p>Monkey keep you!<br>Amyyria Iskender<br>Iskender Trading Company</p><br><font size=-1>P.S. A small gift for you, for good luck <font size=+2>✨</font></font>"
+                              "00": "En revanche, nous attendons de vous que vous commenciez à envisager la prochaine étape dans l'évolution de votre avant-poste. Bien que la plupart de nos avant-postes partenaires choisissent de se concentrer sur le commerce, nous pensons que d'autres approches en matière de prospérité sont tout aussi valables pour les enfants de Rayya, et c'est toujours à l'avant-poste lui-même de prendre cette décision.<p>Le singe vous garde !<br>Amyyria Iskender<br>Compagnie Commerciale d'Iskender</p><br><font size=-1>P.S. Un petit cadeau pour vous, pour vous souhaiter bonne chance <font size=+2>✨</font></font>"
                            },
-                           "bulletin_title": "To Be Considered",
-                           "dialog_title": "To Be Considered",
-                           "choice_000": "Gold dust! Thanks!"
+                           "bulletin_title": "À prendre en considération",
+                           "dialog_title": "À prendre en considération",
+                           "choice_000": "De la poussière d'or ! Merci !"
                         },
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Congratulations on your Founding!<p>Your Outpost is now officially in the company ledger, and I trust that you're well on your way to becoming our primary contact in the region!</p>"
+                              "00": "Félicitations pour votre création ! Votre avant-poste est maintenant officiellement inscrit au registre des entreprises et je suis sûr que vous êtes en bonne voie de devenir notre principal contact dans la région !"
                            },
-                           "bulletin_title": "A Reply",
-                           "dialog_title": "A Reply",
-                           "choice_000": "The letter continues"
+                           "bulletin_title": "Une réponse",
+                           "dialog_title": "Une réponse",
+                           "choice_000": "La lettre continue"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "To help you achieve this worthy goal, we'll be directing more of our trading partners towards your outpost in the days to come, and encouraging those leaving their caravans to head to [str(i18n_data.town_name)].</p>"
+                              "00": "Pour vous aider à atteindre ce noble objectif, nous orienterons davantage de nos partenaires commerciaux vers votre avant-poste dans les jours à venir, et nous encouragerons ceux qui quittent leur caravane à se diriger vers [str(i18n_data.town_name)].</p>"
                            },
-                           "bulletin_title": "A Relationship of Mutual Benefit",
-                           "dialog_title": "A Relationship of Mutual Benefit",
-                           "choice_000": "In conclusion..."
+                           "bulletin_title": "Une relation d'intérêt mutuel",
+                           "dialog_title": "Une relation d'intérêt mutuel",
+                           "choice_000": "En conclusion..."
                         }
                      }
                   }
@@ -770,27 +770,27 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Of course, with our backing, everyone will know that when you call something a 'Masterwork', you mean it! It's in the bylaws, after all.<br/><br/>I have no doubt that traders will soon be going out of their way to pay your Town a visit. I'd expect lots of company!"
+                              "00": "Bien sûr, avec notre soutien, tout le monde saura que lorsque vous appelez quelque chose un "
                            },
-                           "bulletin_title": "Adia continues",
-                           "dialog_title": "Adia Radie, Council Chair",
-                           "choice_000": "We'll do our best!"
+                           "bulletin_title": "Adia continue",
+                           "dialog_title": "Adia Radie, Présidente du Conseil",
+                           "choice_000": "Nous ferons de notre mieux !"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "Alright, enough with all this business talk - I'm going to find a spry young thing and get to dancing!<br/><br/>What? You're only as old as you act!"
+                              "00": "Bon, assez parlé affaires - je vais trouver une jeune fille pleine d'entrain et me mettre à danser ! Quoi ? Vous avez seulement l'âge de vos actes !"
                            },
-                           "bulletin_title": "Adia continues",
-                           "dialog_title": "Adia Radie, Council Chair",
-                           "choice_000": "Have fun! Be... careful?"
+                           "bulletin_title": "Adia continue",
+                           "dialog_title": "Adia Radie, Présidente du Conseil",
+                           "choice_000": "Amusez-vous bien ! Soyez... prudent ?"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "<font size=-1 color='#cccccc'>(Adia nods, mumbling to herself. 'Hmm... yes, I suppose this will do nicely, nicely indeed.')</font><br/><br/>Oh! Children, you have chosen well to sign on as part of the Merchant Council's network, and we are certainly glad to have you!"
+                              "00": "<font size=-1 color='#cccccc'>(Adia fait un signe de tête, en marmonnant à elle-même. Hmm... oui, je suppose que ça fera l'affaire, vraiment.')</font><br/><br/>Oh ! Les enfants, vous avez fait le bon choix en vous inscrivant au sein du Conseil des Marchands, et nous sommes très heureux de vous avoir !"
                            },
-                           "bulletin_title": "Adia Radie leans in, examining the Monument",
-                           "dialog_title": "Adia Radie, Council Chair",
-                           "choice_000": "Thank you, Chairwoman!"
+                           "bulletin_title": "Adia Radie se penche sur le Monument",
+                           "dialog_title": "Adia Radie, Présidente du Conseil",
+                           "choice_000": "Merci, Madame la Présidente !"
                         }
                      }
                   }
@@ -800,27 +800,27 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Ha! I guess that's true!<br/><br/>So, we scrounged up some weapon designs from dusty old tomes that the Rayya's Mystery folks had stashed away - I brought some copies along to give out to your crafters, so they can try and work out how to put 'em together."
+                              "00": "Ha ! Je suppose que c'est vrai ! <br/><br/> Donc, nous avons récupéré des modèles d'armes dans de vieux tomes poussiéreux que les gens de la section Mystère de Rayya avaient cachés - j'ai apporté quelques copies pour les distribuer à vos artisans, afin qu'ils puissent essayer de comprendre comment les assembler."
                            },
-                           "bulletin_title": "Emeret continues",
-                           "dialog_title": "Emeret Kaver, Painted Dog",
-                           "choice_000": "I'm sure they'll figure it out!"
+                           "bulletin_title": "Emeret continue",
+                           "dialog_title": "Emeret Kaver, Chien Peint",
+                           "choice_000": "Je suis sûr qu'ils vont trouver !"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "No doubt!<br/><br/>Alright, I've been on my feet all day, so I'm gonna go grab a bowl or a slice of something! Congratulations!"
+                              "00": "Pas de doute ! <br/><br/> Bon, j'ai été debout toute la journée, alors je vais aller prendre un bol ou une tranche de quelque chose ! Félicitations !"
                            },
-                           "bulletin_title": "Emeret continues",
-                           "dialog_title": "Emeret Kaver, Painted Dog",
-                           "choice_000": "Thanks, enjoy!"
+                           "bulletin_title": "Emeret continue",
+                           "dialog_title": "Emeret Kaver, Chien Peint",
+                           "choice_000": "Merci, profitez-en !"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Wow, I bet this can be seen from miles off! Those goblins will be running scared before long!<br/><br/>I'm so glad you decided to sign up with us - there's not too many of us Painted Dogs yet, but we're growing fast because of Towns like you!"
+                              "00": "Wow, je parie qu'on peut voir ça à des kilomètres à la ronde ! Ces gobelins vont bientôt prendre peur ! Je suis si content que vous ayez décidé de vous inscrire avec nous - nous ne sommes pas encore très nombreux, mais nous grandissons rapidement grâce à des villes comme la vôtre !"
                            },
-                           "bulletin_title": "Emeret smiles wide",
-                           "dialog_title": "Emeret Kaver, Painted Dog",
-                           "choice_000": "We started small, too!"
+                           "bulletin_title": "Emeret sourit",
+                           "dialog_title": "Emeret Kaver, Chien Peint",
+                           "choice_000": "Nous avons aussi commencé petit !"
                         }
                      }
                   }
@@ -830,27 +830,27 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Each morning, this blessed Shrine will bestow a little of Her Mystery upon each of you.<br/><br/>Ponder it. Take that curiosity out into the world with you as you trade, or explore, or welcome strangers into your Town hoping to overhear some tantalizing new bit of information."
+                              "00": "Chaque matin, ce sanctuaire béni accordera un peu de son Mystère à chacun d'entre vous.<br/><br/>Pensez-y. Emmenez cette curiosité avec vous dans le monde, en faisant du commerce, en explorant ou en accueillant des étrangers dans votre ville, dans l'espoir d'entendre de nouvelles informations intéressantes."
                            },
-                           "bulletin_title": "Nona continues",
-                           "dialog_title": "Nona Trist, High Priestess",
-                           "choice_000": "We shall!"
+                           "bulletin_title": "Nona continue",
+                           "dialog_title": "Nona Trist, Grande Prêtresse",
+                           "choice_000": "Nous le ferons !"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "Of course, we at the Temple will expect a regular report of any goings on. That can wait, though - for now, it's time for all of us to eat, drink, and be merry!"
+                              "00": "Bien sûr, au Temple, nous attendons un rapport régulier sur ce qui se passe. Mais cela peut attendre - pour l'instant, il est temps pour nous tous de manger, de boire et de nous réjouir !"
                            },
-                           "bulletin_title": "Nona continues",
-                           "dialog_title": "Nona Trist, High Priestess",
-                           "choice_000": "Hooray!"
+                           "bulletin_title": "Nona continue",
+                           "dialog_title": "Nona Trist, Grande Prêtresse",
+                           "choice_000": "Hourra !"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Monkey keep you, sisters and brothers. What a suitable shrine you've built!<br/><br/>I especially enjoy the key hanging from Monkey's tail - what lock is it meant for? What could be hidden behind that lock? Truly, a mystery!"
+                              "00": "Le singe vous garde, frères et sœurs. Quel sanctuaire approprié vous avez construit ! <br/><br/>J'aime particulièrement la clé suspendue à la queue du singe - à quelle serrure est-elle destinée ? Qu'est-ce qui pourrait être caché derrière cette serrure ? Vraiment, un mystère !"
                            },
-                           "bulletin_title": "Nona nods in approval",
-                           "dialog_title": "Nona Trist, High Priestess",
-                           "choice_000": "Thank you, High Priestess."
+                           "bulletin_title": "Nona approuve de la tête",
+                           "dialog_title": "Nona Trist, Grande Prêtresse",
+                           "choice_000": "Merci, Grande Prêtresse."
                         }
                      }
                   }
@@ -860,27 +860,27 @@
                      "dialog_nodes": {
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Wonderful, wonderful! Your Town certainly does the Iskender name proud!<br/><br/>Thank you for throwing such a nice reception for me and our guests."
+                              "00": "Merveilleux, merveilleux ! Votre ville fait certainement la fierté du nom Iskender ! <br/><br/>Merci d'avoir organisé une si belle réception pour moi et nos invités."
                            },
-                           "bulletin_title": "Amyyria approaches, clearly pleased",
+                           "bulletin_title": "L'Amyyrie approche, visiblement satisfaite",
                            "dialog_title": "Amyyria Iskender",
-                           "choice_000": "Our pleasure, Amyyria!"
+                           "choice_000": "Notre plaisir, Amyyria !"
                         },
                         "msg2": {
                            "bulletin_message": {
-                              "00": "This monument we're celebrating about is special, by the way - a Town's founding imbues a special sort magic into it.<br/><br/>Building more statues and such can serve decorative purposes, but they won't have the same sort of glow, if you know what I mean."
+                              "00": "Ce monument que nous célébrons est spécial, d'ailleurs - la fondation d'une ville lui confère une magie particulière. Construire plus de statues et autres peut servir à des fins décoratives, mais elles n'auront pas le même éclat, si vous voyez ce que je veux dire."
                            },
-                           "bulletin_title": "Mer Continues",
+                           "bulletin_title": "Mer poursuit",
                            "dialog_title": "Amyyria Iskender",
-                           "choice_000": "Got it!"
+                           "choice_000": "J'ai compris !"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "<p align='right'><font color='#E3D0AF'>(Yap! Yap!)</font></p>Yes, yes, Arke, I know, it's time to go.<br/><br/>I'd love to stay longer, but there's other, less self-sufficient Caravans out there that need my attention.<br/><br/>Congratulations on all your success, and thanks for not having ever made too much paperwork for me."
+                              "00": "<p align='right'><font color='#E3D0AF'>(Yap ! Yap !)</font></p>Oui, oui, Arke, je sais, il est temps de partir.<br/><br/>J'aimerais rester plus longtemps, mais il y a d'autres caravanes moins autonomes qui ont besoin de mon attention.<br/><br/>Félicitations pour votre succès, et merci de ne pas avoir causé plus d'ennuis administratifs pour moi."
                            },
-                           "bulletin_title": "Amyyria Continues",
+                           "bulletin_title": "L'Amyyrie continue",
                            "dialog_title": "Amyyria Iskender",
-                           "choice_000": "Farewell! And... no problem?"
+                           "choice_000": "Adieu ! Et... pas de problème ?"
                         }
                      }
                   }
@@ -890,68 +890,68 @@
                      "dialog_nodes": {
                         "intro": {
                            "bulletin_message": {
-                              "00": "Hello, [str(i18n_data.town_name)]!<p>I'm so glad to finally get to see your Settlement with my own eyes! I thought Naryal's accounts of its splendor were exaggerations, but I see now that they may actually have been understatements!<p>Well, let's move on to business. Here are the potential sponsors I mentioned in my last letter. Please take a moment to hear what they have to say.</p>"
+                              "00": "Bonjour, [str(i18n_data.town_name)]!<p>Je suis si heureux de pouvoir enfin voir votre colonie de mes propres yeux ! Je pensais que les récits de Naryal sur sa splendeur étaient exagérés, mais je vois maintenant qu'ils étaient peut-être en fait des euphémismes !<p> Bon, passons aux affaires. Voici les sponsors potentiels que j'ai mentionnés dans ma dernière lettre. Veuillez prendre un moment pour écouter ce qu'ils ont à dire.</p>"
                            },
-                           "bulletin_title": "Amyyria Iskender Has Arrived!",
-                           "dialog_title": "Amyyria is Here, With Guests!",
-                           "choice_000": "Oh, okay!",
-                           "choice_001": "We've already decided!"
+                           "bulletin_title": "Amyyria Iskender est arrivée !",
+                           "dialog_title": "Amyyria est là, avec des invités !",
+                           "choice_000": "Oh, d'accord !",
+                           "choice_001": "Nous avons déjà décidé !"
                         },
                         "clergy": {
                            "bulletin_message": {
-                              "00": "Monkey keep you, brothers and sisters! I am Nona Trist, a High Priestess of Her Mystery. Grandmother Rayya has left us a task, to explore the world and find out all its secrets. One way we work towards this is by sponsoring towns here, far from the heart of Rayya's Children territories."
+                              "00": "Les singes vous gardent, frères et soeurs ! Je suis Nona Trist, une Grande Prêtresse des Mystères. Grand-mère Rayya nous a laissé une tâche, explorer le monde et découvrir tous ses secrets. Nous y travaillons notamment en parrainant des villes ici, loin du cœur des territoires des enfants de Rayya."
                            },
-                           "bulletin_title": "The High Priestess",
-                           "dialog_title": "The High Priestess",
-                           "choice_000": "Monkey keep you, sister"
+                           "bulletin_title": "La Grande Prêtresse",
+                           "dialog_title": "La Grande Prêtresse",
+                           "choice_000": "Le singe te garde, ma soeur"
                         },
                         "clergy_cont": {
                            "bulletin_message": {
-                              "00": "In return for our sponsorship, we typically ask a Settlement to build a Shrine to Her Mystery, to serve as a constant reminder that the world is a mysterious place, rife with opportunities for exploration and learning. Once the shrine is blessed, it will spread its magical effects among your populace, empowering them in strange and mysterious ways.<br><br><font size=-1><i>Dedicating a Shrine of Her Mystery will grant your townsfolk a random daily buff. Try your luck!</i></font>"
+                              "00": "En échange de notre parrainage, nous demandons généralement à une colonie de construire un sanctuaire consacré à ses mystères, afin de rappeler constamment que le monde est un endroit mystérieux, riche en possibilités d'exploration et d'apprentissage. Une fois que le sanctuaire est béni, il répandra ses effets magiques parmi votre population, lui donnant des pouvoirs de manière étrange et mystérieuse. <br><br><font size=-1><i>Dédicacer un sanctuaire de ses mystères donnera à vos habitants un plaisir quotidien aléatoire. Tentez votre chance !"
                            },
                            "bulletin_title": "Nona Trist",
                            "dialog_title": "Nona Trist",
-                           "choice_000": "How interesting!"
+                           "choice_000": "Comme c'est intéressant !"
                         },
                         "makers": {
                            "bulletin_message": {
-                              "00": "Come here, children! I'm Adia Radie, Chair of the Merchant Council, and an admirer of this budding little Settlement of yours. So efficient! So promising! I've visited many a young Settlement in my long years, but I never tire of seeing good, hardworking Children of Rayya settling down and expanding the reach of our trading routes.<br><br><font size=-1><i>Adia produces a handful of hard candy from her robes and distributes them among the group.</i></font>"
+                              "00": "Venez ici, les enfants ! Je suis Adia Radie, présidente du Conseil des marchands, et une admiratrice de votre petite colonie naissante. Si efficace ! Si prometteur ! J'ai visité beaucoup de jeunes colonies au cours de mes longues années, mais je ne me lasse pas de voir les enfants de Rayya, bons et travailleurs, s'installer et étendre la portée de nos routes commerciales."
                            },
-                           "bulletin_title": "The Merchant",
-                           "dialog_title": "The Merchant",
-                           "choice_000": "Thank you!"
+                           "bulletin_title": "Le Marchand",
+                           "dialog_title": "Le Marchand",
+                           "choice_000": "Merci !"
                         },
                         "makers_cont": {
                            "bulletin_message": {
-                              "00": "As you know, the Merchant Council is the main sponsor of Rayya's Children Towns, so I'm sure you aren't surprised to see me here. We would love to have you join the Council - I think your Settlement can produce and export some of the finest goods Rayya's Children have to offer, and keep the tradition of excellency that we are known for.<br><br><font size=-1><i>Dedicating a Trader Monument will grant the ability to create Masterwork-quality furniture and decorations, which are considerably better than those of Excellent quality.</i></font>"
+                              "00": "Comme vous le savez, le Conseil des Marchands est le principal sponsor des Villes d'Enfants de Rayya, donc je suis sûr que vous n'êtes pas surpris de me voir ici. Nous serions ravis que vous rejoigniez le Conseil - je pense que votre village peut produire et exporter certains des meilleurs produits que les Enfants de Rayya ont à offrir, et garder la tradition d'excellence qui fait notre réputation.<br><br><font size=-1><i>Dédicacer un Monument aux Commerçants donnera la possibilité de créer des meubles et des décorations de qualité Chef-d'œuvre, qui sont considérablement meilleurs que ceux d'Excellente qualité.</i></font>"
                            },
                            "bulletin_title": "Adia Radie",
                            "dialog_title": "Adia Radie",
-                           "choice_000": "Sounds profitable!"
+                           "choice_000": "Cela sonne rentable !"
                         },
                         "military": {
                            "bulletin_message": {
-                              "00": "Hey! I am Emeret Kaver! You probably haven't heard of me yet, but I'm the leader of The Painted Dogs, a group of young people trying to make sure our peaceful ways survive the hardships of the modern world, be it goblin raids or undead infestations, by training Rayya's Children in various self defense techniques. And now we are looking for Settlements to join our numbers!"
+                              "00": "Hé ! Je suis Emeret Kaver ! Vous n'avez probablement pas encore entendu parler de moi, mais je suis le chef des Chiens Peints, un groupe de jeunes gens qui essaient de s'assurer que nos voies pacifiques survivent aux difficultés du monde moderne, qu'il s'agisse de raids de gobelins ou d'infestations de morts-vivants, en entraînant les Enfants de Rayya à diverses techniques d'autodéfense. Et maintenant, nous cherchons des colonies pour rejoindre nos rangs !"
                            },
-                           "bulletin_title": "The Youth",
-                           "dialog_title": "The Youth",
-                           "choice_000": "Welcome, Emeret"
+                           "bulletin_title": "La Jeunesse",
+                           "dialog_title": "La Jeunesse",
+                           "choice_000": "Bienvenue, Emeret"
                         },
                         "military_cont": {
                            "bulletin_message": {
-                              "00": "We think your people have shown that they have the strength needed to protect this Settlement, and even some of your neighbors, so we'd like you to build an Ever-Burning Flame to be a beacon of safety in these lands, and in return we will share some of our latest weapon and armor schematics.<br><br><font size=-1><i>Dedicating the Ever-Burning Flame will grant you recipes for new, highest-tier weapons.</i></font>"
+                              "00": "Nous pensons que votre peuple a montré qu'il avait la force nécessaire pour protéger cette colonie, et même certains de vos voisins, c'est pourquoi nous aimerions que vous construisiez une Flamme Éternelle pour être un phare de sécurité dans ces terres, et en retour nous partagerons certains de nos derniers schémas d'armes et d'armures.<br><br><font size=-1><i>Dédicacer la Flamme Ardente vous donnera des recettes pour de nouvelles armes de haut niveau.</i></font>"
                            },
                            "bulletin_title": "Emeret Kaver",
                            "dialog_title": "Emeret Kaver",
-                           "choice_000": "We'll consider it"
+                           "choice_000": "Nous allons l'examiner"
                         },
                         "summary": {
                            "bulletin_message": {
-                              "00": "So! Now you've met everyone, and my job as the facilitator is coming to a close. I don't want to influence your choice, but I can assure you they're all very powerful and can help your town achieve its full potential.<p>I'll leave the plans for each of the shrines and whatnot with your Potters.</p><p>It's been a pleasure visiting, and I'm looking forward to seeing you again at the dedication ceremony!</p>"
+                              "00": "Alors ! Maintenant que vous avez rencontré tout le monde, mon travail d'animateur touche à sa fin. Je ne veux pas influencer votre choix, mais je peux vous assurer qu'ils sont tous très puissants et qu'ils peuvent aider votre ville à atteindre son plein potentiel.<p>Je vous laisse les plans de chacun des sanctuaires et autres avec vos Potters.</p><p>Ce fut un plaisir de vous rendre visite, et je me réjouis de vous revoir à la cérémonie d'inauguration!</p>"
                            },
-                           "bulletin_title": "Amyyria Concludes",
-                           "dialog_title": "Amyyria Concludes",
-                           "choice_000": "Sounds good!"
+                           "bulletin_title": "L'Amyyrie conclut",
+                           "dialog_title": "L'Amyyrie conclut",
+                           "choice_000": "Cela sonne bien !"
                         }
                      }
                   }
@@ -961,76 +961,76 @@
                      "dialog_nodes": {
                         "msg4": {
                            "bulletin_message": {
-                              "00": "I am currently making arrangements to finally visit your Settlement myself, and when I do, I will be bringing along several individuals who have expressed interest in sponsoring up and coming Settlements like yours. These are highly regarded members of our society, so be sure to have your best teaware ready!<p>Monkey keep you!<br>Amyyria Iskender<br>Iskender Trading Company</p>"
+                              "00": "Je suis actuellement en train de prendre des dispositions pour visiter enfin votre établissement moi-même, et lorsque je le ferai, j'amènerai plusieurs personnes qui ont exprimé leur intérêt à parrainer des établissements comme le vôtre. Ces personnes sont des membres très estimés de notre société, alors assurez-vous d'avoir votre meilleur service à thé prêt !<p>Monkey keep you!<br>Amyyria Iskender<br>Iskender Trading Company</p>"
                            },
-                           "bulletin_title": "A Letter",
-                           "dialog_title": "A Letter",
-                           "choice_000": "How exciting!"
+                           "bulletin_title": "Une lettre",
+                           "dialog_title": "Une lettre",
+                           "choice_000": "Comme c'est excitant !"
                         },
                         "msg2": {
                            "bulletin_message": {
-                              "00": "Dear [str(i18n_data.town_name)]-ites,<p>I have received many reports from our trading partners singing your Settlement all kinds of praises. I am so glad that our investment in your Outpost is bearing fruit so quickly!</p>"
+                              "00": "Chers [str(i18n_data.town_name)]-ites,<p>J'ai reçu de nombreux rapports de nos partenaires commerciaux chantant toutes sortes d'éloges sur votre Colonie. Je suis très heureux que notre investissement dans votre avant-poste porte ses fruits si rapidement !"
                            },
-                           "bulletin_title": "A Letter",
-                           "dialog_title": "A Letter",
-                           "choice_000": "Notable?"
+                           "bulletin_title": "Une lettre",
+                           "dialog_title": "Une lettre",
+                           "choice_000": "Remarquable ?"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "As you may remember from our contract, the final service we offer any Outpost under our guidance is to connect them to some prominent members of Rayya's Children society, who can help them cross that final bridge to becoming a Town."
+                              "00": "Comme vous vous en souvenez peut-être de notre contrat, le dernier service que nous offrons à tout Avant-poste sous notre direction est de le mettre en contact avec certains membres éminents de la société Rayya's Children, qui peuvent l'aider à traverser ce dernier obstacle pour devenir une ville."
                            },
-                           "bulletin_title": "A Letter",
-                           "dialog_title": "A Letter",
-                           "choice_000": "Great!"
+                           "bulletin_title": "Une lettre",
+                           "dialog_title": "Une lettre",
+                           "choice_000": "Super !"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "Looks like Amyyria is getting in touch with us again!"
+                              "00": "On dirait qu'Amyyria nous contacte à nouveau !"
                            },
-                           "bulletin_title": "Arke's Here Again!",
-                           "dialog_title": "Another Letter!",
-                           "choice_000": "Open it"
+                           "bulletin_title": "Arke est de nouveau là !",
+                           "dialog_title": "Une autre lettre !",
+                           "choice_000": "Ouvre-la."
                         }
                      }
                   }
                },
                "shrine_quest_deity": {
-                  "title": "Township Quest: Her Mystery's Shrine",
-                  "dialog_title": "Township Quest: Her Mystery's Shrine"
+                  "title": "Quête de canton : Le sanctuaire de ses mystères",
+                  "dialog_title": "Quête de canton : Le sanctuaire de ses mystères"
                },
                "shrine_quest_guildmaster": {
-                  "title": "Township Quest: The Trader Monument",
-                  "dialog_title": "Township Quest: The Trader Monument"
+                  "title": "Quête de canton : Le monument des commerçants",
+                  "dialog_title": "Quête de canton : Le monument des commerçants"
                },
                "shrine_quest_valor": {
-                  "title": "Township Quest: The Ever-Burning Flame",
-                  "dialog_title": "Township Quest: The Ever-Burning Flame"
+                  "title": "Quête de canton : La flamme Éternelle",
+                  "dialog_title": "Quête de canton : La flamme Éternelle"
                },
                "shrine_upgrade_deity": {
-                  "title": "Township Established",
-                  "reward_message": "By decree of the Iskender Trading Company, we recognize:",
-                  "reward_message_ctd": "For learning the mysteries of the world. The town is hereby eligible for:",
+                  "title": "Création d'un canton",
+                  "reward_message": "Par décret de la Compagnie Commerciale Iskender, nous reconnaissons :",
+                  "reward_message_ctd": "Pour avoir appris les mystères du monde. La ville est ainsi éligible pour :",
                   "achievements": {
-                     "001": "Potter Decorations",
-                     "002": "Blacksmith Lamps",
-                     "003": "Weaver Banners"
+                     "001": "Décorations de potier",
+                     "002": "Lampes de forgeron",
+                     "003": "Bannières des tisserands"
                   },
                   "recipe_bulletins": {
-                     "recipe_unlock_potter": "New Monkey-inspired decoration recipes for Potter!",
-                     "recipe_unlock_blacksmith": "New lamp recipes for Blacksmith!",
-                     "recipe_unlock_weaver": "New banner recipes for Weaver!"
+                     "recipe_unlock_potter": "Nouvelles recettes de décoration inspirées des singes pour Potier !",
+                     "recipe_unlock_blacksmith": "Nouvelles recettes de lampes pour Forgeron !",
+                     "recipe_unlock_weaver": "Nouvelles recettes de bannières pour Tisserand !"
                   }
                },
                "shrine_upgrade_guildmaster": {
-                  "reward_message": "By decree of the Iskender Trading Company, we recognize:",
-                  "reward_message_ctd": "For excellence in craftsmanship and trade. The town is hereby eligible for:",
+                  "reward_message": "Par décret de la Compagnie Commerciale Iskender, nous reconnaissons :",
+                  "reward_message_ctd": "Pour l'excellence de son savoir-faire artisanal et commercial. La ville est ainsi éligible pour :",
                   "achievements": {
-                     "001": "Potter Pot Decorations",
-                     "002": "Potter Floral Decorations",
-                     "003": "Potter Decorated Workbenches"
+                     "001": "Décorations de potier",
+                     "002": "Décorations florales de potier",
+                     "003": "Établis décorés par un potier"
                   },
                   "recipe_bulletins": {
-                     "recipe_unlock_potter": "New pot, floral, and workbench decoration recipes for Potter!"
+                     "recipe_unlock_potter": "Nouvelles recettes de poterie, de décoration florale et d'établi pour Potier !"
                   }
                },
                "town_founding_explanation": {
@@ -1038,36 +1038,36 @@
                      "dialog_nodes": {
                         "read_letter3": {
                            "bulletin_message": {
-                              "00": "Once you have made your choice, please record them on the provided forms and send them back with Arke. And please be sure to feed her before she leaves. She prefers berries, but she'll accept prickly pears as well.<br><p>Monkey keep you,<br>Amyyria Iskender,<br>Iskender Trading Company</p>"
+                              "00": "Une fois que vous avez fait votre choix, veuillez le noter sur les formulaires prévus à cet effet et le renvoyer avec Arke. Et veillez à la nourrir avant son départ. Elle préfère les baies, mais elle acceptera aussi les figues de Barbarie.<br><p>Le singe vous garde,<br>Amyyria Iskender,<br>Compagnie Commerciale Iskender</p>"
                            },
-                           "bulletin_title": "The Letter Continues",
-                           "dialog_title": "The Letter Continues",
-                           "choice_000": "We choose..."
+                           "bulletin_title": "La lettre continue",
+                           "dialog_title": "La lettre continue",
+                           "choice_000": "Nous choisissons..."
                         },
                         "open_letter": {
                            "bulletin_message": {
-                              "00": "A determined-looking fennec fox approaches, carrying in its snout a leather satchel with <i>\"Iskender Caravan Official Mail\"</i> stitched onto it. She drops it by the town standard and settles down, looking up expectantly."
+                              "00": "Un renard à l'air déterminé s'approche, portant dans son museau une sacoche en cuir sur laquelle est cousu <i>"
                            },
-                           "bulletin_title": "A Fennec Fox Approaches",
-                           "dialog_title": "A Fox... Messenger?",
-                           "choice_000": "Open the satchel",
-                           "choice_001": "[skip] We know what banner we want."
+                           "bulletin_title": "Un renard des sables s'approche",
+                           "dialog_title": "Un renard... Un messager ?",
+                           "choice_000": "Ouvrez la sacoche",
+                           "choice_001": "[Passer] Nous savons quelle bannière nous voulons."
                         },
                         "read_letter": {
                            "bulletin_message": {
-                              "00": "Dear Caravan [str(i18n_data.town_serial_number)],<p>Thank you for volunteering to establish a new outpost so far to the West! We here at the Iskender Trading Company are delighted that you chose us to facilitate your founding.<p>Once the paperwork is in order, an official company caravan led by Agent Naryal Iskender will start a new route to your outpost.</p>"
+                              "00": "Chère Caravane [str(i18n_data.town_serial_number)],<p>Merci de vous être portée volontaire pour établir un nouvel avant-poste si loin à l'Ouest ! Nous, à la Compagnie Commerciale Iskender, sommes ravis que vous nous ayez choisis pour faciliter votre fondation. Une fois les papiers en règle, une caravane officielle de la Compagnie, dirigée par l'agent Naryal Iskender, établira un nouvel itinéraire vers votre avant-poste."
                            },
-                           "bulletin_title": "A Letter from Amyyria Iskender",
-                           "dialog_title": "A Letter from Amyyria Iskender",
-                           "choice_000": "Continue..."
+                           "bulletin_title": "Une lettre d'Amyyria Iskender",
+                           "dialog_title": "Une lettre d'Amyyria Iskender",
+                           "choice_000": "Continuer..."
                         },
                         "read_letter2": {
                            "bulletin_message": {
-                              "00": "To start, in order for us to enter your outpost into the company ledger, you must choose a name, as well as a Standard.<p>The Standard declares to the rest of Rayya's Children the purpose behind you settling down, though we have found that it is even more effective at inspiring an outpost's own people.</p>"
+                              "00": "Pour commencer, afin que nous puissions inscrire votre avant-poste dans le registre des sociétés, vous devez choisir un nom, ainsi qu'un Emblème. Cet Emblème déclare au reste de Rayya's Children le but de votre installation, bien que nous ayons constaté qu'il est encore plus efficace pour inspirer les propres gens d'un avant-poste."
                            },
-                           "bulletin_title": "The Letter Continues",
-                           "dialog_title": "The Letter Continues",
-                           "choice_000": "Standard... Hmm..."
+                           "bulletin_title": "La lettre continue",
+                           "dialog_title": "La lettre continue",
+                           "choice_000": "Emblème... Hmm..."
                         }
                      }
                   }
@@ -1077,17 +1077,17 @@
                      "dialog_nodes": {
                         "simple_message": {
                            "bulletin_message": {
-                              "00": "Apparently, in addition to the letter, Arke's satchel contains a smaller satchel full of coins, labeled <i>\"Outpost Founding Incentive\"</i>."
+                              "00": "Apparemment, en plus de la lettre, la sacoche d'Arke contient une plus petite sacoche pleine de pièces, étiquetée <i> "
                            },
-                           "bulletin_title": "Arke Prods the Satchel",
-                           "dialog_title": "More from the Satchel",
-                           "choice_000": "That should be useful!"
+                           "bulletin_title": "Arke sort la sacoche",
+                           "dialog_title": "En savoir plus sur la sacoche",
+                           "choice_000": "Cela devrait être utile !"
                         }
                      }
                   }
                },
                "unlock_shrine_recipes": {
-                  "bulletin_title": "Potter shrine recipes unlocked!"
+                  "bulletin_title": "Recettes pour le sanctuaire des potiers déverrouillées !"
                },
                "arcs": {
                   "trigger": {
@@ -1098,11 +1098,11 @@
                                  "dialog_nodes": {
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "Monkey keep you, friend! Now that our existing contract is resolved, we'd like to remind you that the Iskender Trading Company is always open for repeat business!<p>In fact, since this collaboration went so well, if you'd like to establish another town, we'd be happy to sponsor a larger caravan that can carry a few of your citizens from here, as well as some extra goods and records. Just let us know when you're ready!</p><p><font size=-1><i>Re-embarking allows you to carry over up to 3 citizens, 10 items, and all your unlocked recipes when starting a new town.</i></font></p>"
+                                          "00": "Le singe te garde, mon ami ! Maintenant que notre contrat actuel est résolu, nous aimerions vous rappeler que la Compagnie Commerciale Iskender est toujours ouverte à de nouvelles opportunités ! En fait, puisque cette collaboration s'est si bien déroulée, si vous souhaitez établir une autre ville, nous serions heureux de sponsoriser une caravane plus grande qui pourrait transporter quelques-uns de vos citoyens d'ici, ainsi que quelques marchandises et documents supplémentaires. Faites-nous savoir quand vous êtes prêts ! </p><p><font size=-1><i>Le ré-embarquement vous permet de transporter jusqu'à 3 citoyens, 10 articles et toutes vos recettes débloquées lorsque vous démarrez une nouvelle ville. </i></font></p>"
                                        },
-                                       "bulletin_title": "It's Naryal Again!",
-                                       "dialog_title": "One Last Thing",
-                                       "choice_000": "Good to know!"
+                                       "bulletin_title": "C'est encore Naryal !",
+                                       "dialog_title": "Une dernière chose",
+                                       "choice_000": "Bon à savoir !"
                                     }
                                  }
                               }
@@ -1118,7 +1118,7 @@
          "building_templates_index": {
             "template_tabs": {
                "rayyas_children": {
-                  "display_name": "Rayya's",
+                  "display_name": "Rayya est",
                   "categories": {
                      "outpost": "Modèles d'avant-poste",
                      "settlement": "Modèles de colonie"
@@ -1144,7 +1144,7 @@
                   "display_name": "Hutte du désert"
                },
                "little_red_hut": {
-                  "display_name": "Petit hutte rouge"
+                  "display_name": "Petite hutte rouge"
                },
                "rayyas_shadow": {
                   "display_name": "L'ombre de Rayya"
@@ -1170,37 +1170,37 @@
          "rc_camp_standard": {
             "rc_camp_standard_ghost": {
                "display_name": "Bannière de campement",
-               "description": "Le meilleur moyen de savoir que vous êtes à la maison"
+               "description": "Pour savoir si vous êtes rentré chez vous"
             }
          },
          "rc_town_banner_guardian": {
             "rc_town_banner_guardian_ghost": {
                "display_name": "Bannière de Ruse",
-               "description": "Le meilleur moyen de savoir que vous êtes à la maison"
+               "description": "Pour savoir si vous êtes rentré chez vous"
             },
             "rc_town_banner_guardian_token_iconic": {
-               "display_name": "Banner of Cunning Shred",
-               "description": "A shred from the Banner of Cunning, carrying along its magic."
+               "display_name": "Lambeau de la bannière de Ruse",
+               "description": "Un lambeau de la bannière de Ruse, portant sa magie"
             }
          },
          "rc_town_banner_nature": {
             "rc_town_banner_nature_ghost": {
-               "display_name": "Town Banner",
-               "description": "How you know you've come home"
+               "display_name": "Bannière de la ville",
+               "description": "Pour savoir si vous êtes rentré chez vous"
             },
             "rc_town_banner_nature_token_iconic": {
-               "display_name": "Banner of Vitality Shred",
-               "description": "A shred from the Banner of Vitality, carrying along its magic."
+               "display_name": "Lambeau de la bannière de Vitalité",
+               "description": "Un lambeau de la bannière de Vitalité, portant sa magie."
             }
          },
          "rc_town_banner_might": {
             "rc_town_banner_might_ghost": {
-               "display_name": "Town Banner",
-               "description": "How you know you've come home"
+               "display_name": "Bannière de la ville",
+               "description": "Pour savoir si vous êtes rentré chez vous"
             },
             "rc_town_banner_might_token_iconic": {
-               "display_name": "Banner of Strength Shred",
-               "description": "A shred from the Banner of Strength, carrying along its magic."
+               "display_name": "Lambeau de la bannière de Force",
+               "description": "Un fragment de la Bannière de la force, portant sa magie."
             }
          }
       },
@@ -1208,192 +1208,192 @@
          "monkey_shrine_monument": {
             "monkey_shrine_monument_ghost": {
                "display_name": "Le Sanctuaire mystérieux du Singe",
-               "description": "Un endroit pour rendre hommage au singe et ces mystères"
+               "description": "Un endroit pour rendre hommage au singe et à ses mystères"
             },
             "chest": {
                "chest_ghost": {
-                  "display_name": "Clay Chest of Monkey",
-                  "description": "A place to store tribute of Monkey and Her Mystery"
+                  "display_name": "Coffre de singe en argile",
+                  "description": "Un lieu pour stocker l'hommage au Singe et à ses mystères"
                }
             },
             "monkey": {
                "monkey_ghost": {
-                  "display_name": "Clay Monkey Statue",
-                  "description": "A tribute to Monkey and her many helpers."
+                  "display_name": "Statue de singe en argile",
+                  "description": "Un hommage au Singe et à ses nombreux collaborateurs."
                }
             },
             "key": {
                "key_ghost": {
-                  "display_name": "Monkey Shrine Key",
-                  "description": "A wall ornament that reminds us of Monkey"
+                  "display_name": "Clé du sanctuaire des singes",
+                  "description": "Un ornement mural qui rappelle le Singe"
                }
             },
             "lamp_gold": {
                "lamp_gold_ghost": {
-                  "display_name": "Golden Oil Lamp",
-                  "description": "Its flame brings a warm glow at night."
+                  "display_name": "Lampe à huile dorée",
+                  "description": "Sa flamme apporte une lueur chaude la nuit."
                }
             },
             "lamp_wall_gold": {
                "lamp_wall_gold_ghost": {
-                  "display_name": "Golden Oil Wall Lamp",
-                  "description": "Its flame brings a warm glow at night."
+                  "display_name": "Lampe murale à l'huile dorée",
+                  "description": "Sa flamme apporte une lueur chaude la nuit."
                }
             },
             "window_tall_latticed": {
                "window_tall_latticed_ghost": {
-                  "display_name": "Tall Gold-Latticed Window",
-                  "description": "The lattice work stops most of the hot sun, and looks pretty too!"
+                  "display_name": "Grande fenêtre à carreaux dorés",
+                  "description": "Le treillis arrête la plupart des rayons du soleil, et il est très beau aussi !"
                }
             },
             "door_clay_latticed": {
                "door_clay_latticed_ghost": {
-                  "display_name": "Gold-Latticed Door",
-                  "description": "The lattice work stops most of the hot sun, and looks pretty too!"
+                  "display_name": "Porte en treillis doré",
+                  "description": "Le treillis arrête la plupart des rayons du soleil, et il est très beau aussi !"
                }
             },
             "teapot": {
                "teapot_ghost": {
-                  "display_name": "Finely Crafted Tea Set",
-                  "description": "A reminder of bold entrepreneurs."
+                  "display_name": "Service à thé finement réalisé",
+                  "description": "Un rappel aux entrepreneurs audacieux."
                }
             },
             "banner_wall_small": {
                "banner_wall_small_ghost": {
-                  "display_name": "Wide Wall Banner",
-                  "description": "Show your town pride with this banner."
+                  "display_name": "Large bannière murale",
+                  "description": "Montrez la fierté de votre ville avec cette bannière."
                }
             },
             "banner_wall_big": {
                "banner_wall_big_ghost": {
-                  "display_name": "Long Wall Banner",
-                  "description": "Show your town pride with this banner."
+                  "display_name": "Longue bannière murale",
+                  "description": "Montrez la fierté de votre ville avec cette bannière."
                }
             },
             "lightbox": {
                "lightbox_ghost": {
-                  "display_name": "Clay Lightbox",
-                  "description": "Its light splashes patterns across the ground, and on things above it."
+                  "display_name": "Luminaire en argile",
+                  "description": "Sa lumière projette des motifs sur le sol et sur les choses qui se trouvent au-dessus."
                }
             }
          },
          "exotic_trade_monument": {
             "exotic_trade_monument_ghost": {
                "display_name": "La Flamme Éternelle",
-               "description": "Un flamboyant repaire de sécurité et de protection pour toute la région"
+               "description": "Un symbole de sécurité et de protection pour toute la région"
             },
             "banner_gilded_blue": {
                "banner_gilded_blue_ghost": {
-                  "display_name": "Gilded Blue Banner",
-                  "description": "Display your town's pride as an exotic trading post"
+                  "display_name": "Bannière bleue dorée",
+                  "description": "Affichez la fierté de votre ville comme un comptoir commercial exotique"
                }
             },
             "chair_gilded_blue": {
                "chair_gilded_blue_ghost": {
-                  "display_name": "Gilded Blue Cushion",
-                  "description": "Luxuriously padded seating"
+                  "display_name": "Coussin bleu doré",
+                  "description": "Sièges luxueusement rembourrés"
                }
             },
             "pedestal_firepit": {
                "pedestal_firepit_ghost": {
-                  "display_name": "Small Clay Firepit",
-                  "description": "Softly glowing coals"
+                  "display_name": "Petit foyer d'argile",
+                  "description": "Des charbons ardents"
                }
             },
             "wall_hanging_suncatcher": {
                "wall_hanging_suncatcher_ghost": {
-                  "display_name": "Suncatcher",
-                  "description": "Polished to a mirror finish"
+                  "display_name": "L'Attrape-soleil",
+                  "description": "Poli au miroir"
                }
             },
             "outfit_worker_goldthread": {
                "mixins": {
                   "worker_outfit_goldthread_iconic": {
-                     "display_name": "Worker Finery",
-                     "description": "Fashionably improves worker's speed and efficiency"
+                     "display_name": "Parure de travailleur",
+                     "description": "La mode améliore la rapidité et l'efficacité des travailleurs"
                   },
                   "worker_outfit_goldthread": {
-                     "display_name": "Worker Finery",
-                     "description": "Fashionably improves worker's speed and efficiency"
+                     "display_name": "Parure de travailleur",
+                     "description": "La mode améliore la rapidité et l'efficacité des travailleurs"
                   }
                }
             },
             "rug_gilded_blue": {
                "rug_gilded_blue_ghost": {
-                  "display_name": "Blue Gilded Throw",
-                  "description": "Skillfully woven from dyed and golden threads"
+                  "display_name": "Plaid bleu et doré",
+                  "description": "Habilement tissé à partir de fils teints et dorés"
                }
             },
             "chair_gilded_red": {
                "chair_gilded_red_ghost": {
-                  "display_name": "Gilded Red Cushion",
-                  "description": "Luxuriously padded seating"
+                  "display_name": "Coussin rouge doré",
+                  "description": "Sièges luxueusement rembourrés"
                }
             },
             "chair_gilded_coral": {
                "chair_gilded_coral_ghost": {
-                  "display_name": "Gilded Coral Cushion",
-                  "description": "Luxuriously padded seating"
+                  "display_name": "Coussin de corail doré",
+                  "description": "Sièges luxueusement rembourrés"
                }
             },
             "chair_gilded_sage": {
                "chair_gilded_sage_ghost": {
-                  "display_name": "Gilded Sage Cushion",
-                  "description": "Luxuriously padded seating"
+                  "display_name": "Coussin à la sauge dorée",
+                  "description": "Sièges luxueusement rembourrés"
                }
             },
             "banner_gilded_red": {
                "banner_gilded_red_ghost": {
-                  "display_name": "Gilded Red Banner",
-                  "description": "Display your town's pride as an exotic trading post"
+                  "display_name": "Bannière rouge dorée",
+                  "description": "Affichez la fierté de votre ville comme un comptoir commercial exotique"
                }
             },
             "banner_gilded_coral": {
                "banner_gilded_coral_ghost": {
-                  "display_name": "Gilded Coral Banner",
-                  "description": "Display your town's pride as an exotic trading post"
+                  "display_name": "Bannière en corail doré",
+                  "description": "Affichez la fierté de votre ville comme un comptoir commercial exotique"
                }
             },
             "banner_gilded_sage": {
                "banner_gilded_sage_ghost": {
-                  "display_name": "Gilded Sage Banner",
-                  "description": "Display your town's pride as an exotic trading post"
+                  "display_name": "Bannière de sauge dorée",
+                  "description": "Affichez la fierté de votre ville comme un comptoir commercial exotique"
                }
             },
             "pedestal_floral_blue": {
                "pedestal_floral_blue_ghost": {
-                  "display_name": "Blue Petal Pedestal",
-                  "description": "A decorative display of aromatic flowers and herbs"
+                  "display_name": "Piédestal à Pétale bleu",
+                  "description": "Une exposition décorative de fleurs et d'herbes aromatiques"
                }
             },
             "pedestal_floral_coral": {
                "pedestal_floral_coral_ghost": {
-                  "display_name": "Coral Petal Pedestal",
-                  "description": "A decorative display of aromatic flowers and herbs"
+                  "display_name": "Pied de pétales de corail",
+                  "description": "Une exposition décorative de fleurs et d'herbes aromatiques"
                }
             },
             "pedestal_floral_red": {
                "pedestal_floral_red_ghost": {
-                  "display_name": "Red Petal Pedestal",
-                  "description": "A decorative display of aromatic flowers and herbs"
+                  "display_name": "Piédestal à Pétale rouge",
+                  "description": "Une exposition décorative de fleurs et d'herbes aromatiques"
                }
             },
             "rug_gilded_red": {
                "rug_gilded_red_ghost": {
-                  "display_name": "Red Gilded Throw",
-                  "description": "Skillfully woven from dyed and golden threads"
+                  "display_name": "Coussin rouge et doré",
+                  "description": "Habilement tissé à partir de fils teints et dorés"
                }
             },
             "rug_gilded_coral": {
                "rug_gilded_coral_ghost": {
-                  "display_name": "Coral Gilded Throw",
-                  "description": "Skillfully woven from dyed and golden threads"
+                  "display_name": "Coussin corail doré",
+                  "description": "Habilement tissé à partir de fils teints et dorés"
                }
             },
             "rug_gilded_sage": {
                "rug_gilded_sage_ghost": {
-                  "display_name": "Sage Gilded Throw",
-                  "description": "Skillfully woven from dyed and golden threads"
+                  "display_name": "Coussin sauge doré",
+                  "description": "Habilement tissé à partir de fils teints et dorés"
                }
             }
          },
@@ -1404,93 +1404,93 @@
             },
             "urn_large": {
                "urn_large_ghost": {
-                  "display_name": "Trading Goods Urn",
-                  "description": "Extra large for extra trading!"
+                  "display_name": "Urnes d'échange de biens",
+                  "description": "Extra large pour un commerce extra !"
                }
             },
             "pot_oil_earthen": {
                "pot_oil_earthen_ghost": {
-                  "display_name": "Earthen Oil Pot",
-                  "description": "Small earthen pot with accompanying small fire"
+                  "display_name": "Pot de pétrole en terre",
+                  "description": "Petit pot en terre avec petit feu d'accompagnement"
                }
             },
             "pot_oil_green": {
                "pot_oil_green_ghost": {
-                  "display_name": "Green Oil Pot",
-                  "description": "Small green pot with accompanying small fire"
+                  "display_name": "Pot de pétrole vert",
+                  "description": "Petit pot vert avec petit feu d'accompagnement"
                }
             },
             "pot_oil_halfgreen": {
                "pot_oil_halfgreen_ghost": {
-                  "display_name": "Half-Glazed Oil Pot",
-                  "description": "Small half-glazed pot with accompanying small fire"
+                  "display_name": "Pot de pétrole à moitié vitrifié",
+                  "description": "Petite marmite à demi vitrée avec petit feu"
                }
             },
             "pot_sunflower": {
                "pot_sunflower_ghost": {
-                  "display_name": "Potted Sunflower",
-                  "description": "Small earthen pot with a beautiful flower."
+                  "display_name": "Tournesol en pot",
+                  "description": "Petit pot en terre cuite avec une belle fleur."
                }
             },
             "wall_hanging_sunflower": {
                "wall_hanging_sunflower_ghost": {
-                  "display_name": "Wall Flower",
-                  "description": "A sunflower decoration for your wall."
+                  "display_name": "Fleur murale",
+                  "description": "Une décoration de tournesol pour votre mur."
                }
             },
             "wall_hanging_sunwreath": {
                "wall_hanging_sunwreath_ghost": {
-                  "display_name": "Sunflower Wreath",
-                  "description": "A collection of sunflowers to hang on your wall."
+                  "display_name": "Couronne de tournesol",
+                  "description": "Une collection de tournesols à accrocher sur votre mur."
                }
             },
             "pot_fox_lily": {
                "pot_fox_lily_ghost": {
-                  "display_name": "Potted Fox Lily",
-                  "description": "Small earthen pot with a beautiful flower."
+                  "display_name": "Lys renard en pot",
+                  "description": "Petit pot en terre cuite avec une belle fleur."
                }
             },
             "jar_green": {
                "jar_green_ghost": {
-                  "display_name": "Green Glass Jar with Candle",
-                  "description": "Small green glass jar with accompanying small fire"
+                  "display_name": "Pot en verre vert avec bougie",
+                  "description": "Petit bocal en verre vert avec petit feu d'accompagnement"
                }
             },
             "jar_red": {
                "jar_red_ghost": {
-                  "display_name": "Glass Jar with Candle",
-                  "description": "Small red glass jar with accompanying small fire"
+                  "display_name": "Bocal en verre avec bougie",
+                  "description": "Petit bocal en verre rouge avec petit feu d'accompagnement"
                }
             },
             "pot_acacia": {
                "pot_acacia_ghost": {
-                  "display_name": "Potted Acacia Bonsai",
-                  "description": "Small earthen pot with a beautiful miniature tree."
+                  "display_name": "Bonsaïs d'acacia en pot",
+                  "description": "Petit pot en terre avec un bel arbre miniature."
                }
             },
             "wind_chime": {
                "wind_chime_ghost": {
-                  "display_name": "Glass Wind Chime",
-                  "description": "A magnificent sight and sound to match."
+                  "display_name": "Carillon en verre",
+                  "description": "Une vue et un son magnifiques à l'avenant."
                }
             }
          },
          "hearth_box": {
             "hearth_box_ghost": {
-               "display_name": "Hearth of Glory",
-               "description": "Provides warmth, light, comfort, and a chance to challenge waves of undead"
+               "display_name": "Foyer de la Gloire",
+               "description": "Fournit chaleur, lumière, confort et une chance de défier les vagues de morts-vivants"
             }
          },
          "hearth_lamp": {
             "hearth_lamp_ghost": {
-               "display_name": "Hearth of Cheer",
-               "description": "Provides warmth, light, comfort, and random daily buffs"
+               "display_name": "Foyer de la Joie",
+               "description": "Fournit chaleur, lumière, confort, et bonus quotidiens aléatoires"
             }
          },
          "hearth_urn": {
             "hearth_urn_ghost": {
-               "display_name": "Hearth of the Makers",
-               "description": "Provides warmth, light, comfort, and daily interest on owned gold"
+               "display_name": "Foyer des Créateurs",
+               "description": "Fournit chaleur, lumière, confort et bénéfices quotidien relatif à l'or détenu"
             }
          }
       },
@@ -1498,38 +1498,38 @@
          "herald": {
             "female": {
                "herald_female": {
-                  "display_name": "<Unused> Heraldine Swift",
-                  "description": "<Unused> Herald of Rayya's Children."
+                  "display_name": "<Non utilisé> Héraldine Swift",
+                  "description": "<Non utilisé> Héraut des Enfants de Rayya."
                },
                "herald_adia": {
                   "display_name": "Adia Radie",
-                  "description": "Guildmaster of Rayya's Children."
+                  "description": "Maître de la Guilde des Enfants de Rayya."
                },
                "herald_amyyria": {
                   "display_name": "Amyyria Iskender",
-                  "description": "Head of the Iskender Trading Company."
+                  "description": "Chef de la Compagnie Commerciale Iskender."
                }
             },
             "male": {
                "herald_male": {
-                  "display_name": "<Unused> Herald Holly",
-                  "description": "<Unused> Herald of Rayya's Children."
+                  "display_name": "<Non utilisé> Héraut Saint",
+                  "description": "<Non utilisé> Héraut des Enfants de Rayya."
                },
                "herald_naryal": {
                   "display_name": "Naryal d'Iskender",
-                  "description": "Agent de la société de négoce Iskender."
+                  "description": "Agent de la Compagnie Commerciale Iskender."
                },
                "herald_nona": {
                   "display_name": "Nona Trist",
-                  "description": "Priestess of Her Mystery."
+                  "description": "Prêtresse des Mystères."
                },
                "herald_emeret": {
                   "display_name": "Emeret Kaver",
-                  "description": "Leader of the Painted Dogs."
+                  "description": "Chef des Chiens Peints."
                },
                "herald_arke": {
                   "display_name": "Arke",
-                  "description": "Iskender's finest messenger."
+                  "description": "Le meilleur messager d'Iskender."
                }
             }
          }
@@ -1560,7 +1560,7 @@
             "description": "Rejoint les extrémités de l'arc de zéphyr"
          },
          "legendary_rc_stave": {
-            "display_name": "Os d'ossature",
+            "display_name": "Ossature",
             "description": "Les bras de l'arc de Zephyr"
          },
          "legendary_rc_face": {
@@ -1590,6 +1590,6 @@
       }
    },
    "kingdoms": {
-      "rayyas_children": "Les enfants de Rayya"
+      "rayyas_children": "Enfant de Rayya"
    }
 }
