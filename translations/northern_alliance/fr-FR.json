@@ -117,7 +117,8 @@
                            },
                            "bulletin_title": "Une figure apparaît",
                            "dialog_title": "Un éclaireur stoïque",
-                           "choice_000": "Bienvenue, voyageur."
+                           "choice_000": "Bienvenue, voyageur.",
+                           "choice_001": "[Passer] Nous savons quelle bannière nous voulons."
                         },
                         "read_letter": {
                            "bulletin_message": {
@@ -269,7 +270,8 @@
                            },
                            "bulletin_title": "Ronia revient à nouveau",
                            "dialog_title": "Plus de temps pour les histoires",
-                           "choice_000": "Oui s'il vous plaît."
+                           "choice_000": "Oui s'il vous plaît.",
+                           "choice_001": "[Passer] Nous savons quelle bannière nous voulons."
                         }
                      }
                   }
