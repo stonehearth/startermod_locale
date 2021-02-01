@@ -1,0 +1,159 @@
+{
+    "mixins": "/stonehearth_ace/locales/locales_mixin.json",
+    "ui": {
+        "shell": {
+            "loading_screen": {
+                "loading_map_flavor_text": {
+                    "034": "en conflit avec ACE...",
+                    "035": "tourne les poyos...",
+                    "036": "trait les moo-moos...",
+                    "037": "finition des poissons...",
+                    "038": "disperse des champignons...",
+                    "039": "contemple le marbre...",
+                    "040": "se demande où se trouve les blocs d'argile...",
+                    "041": "attend les nains...",
+                    "042": "embrasse des lapins...",
+                    "043": "recherche des bugs...",
+                    "044": "contemple les titres...",
+                    "045": "retarde les mises à jour du mod...",
+                    "046": "ajoute des questions relatives à ACE...",
+                    "047": "report de la prochaine publication de l'ACE...",
+                    "048": "réduit les frontières du monde...",
+                    "049": "casse quelque chose...",
+                    "050": "réveille les Hearthlings...",
+                    "051": "élevage de wombats...",
+                    "052": "nettoyage des établis...",
+                    "053": "recharge les cloches de lune...",
+                    "054": "refroidi les frostsnaps...",
+                    "055": "charge très lentement...",
+                    "056": "prend vraiment beaucoup de temps...",
+                    "057": "brasse l'aventure..."
+                },
+                "tips": {
+                    "004": "Vous pouvez cultiver certaines plantes comme l'herbe à soie ou le coton pour un approvisionnement régulier en fibres.",
+                    "008": "Le tisserand peut fabriquer des vêtements adaptés aux conditions climatiques ou de nouveaux uniformes qui augmentent l'efficacité de vos travailleurs.",
+                    "010": "Les bergers trouveront automatiquement les deux premiers animaux à mettre en pâturage.",
+                    "017": "Vous ne voulez pas que vos Hearthlings quittent la ville ?  L'ingénieur peut fabriquer des serrures pour les portes.",
+                    "020": "Les trappeurs peuvent poser des pièges n'importe où, mais les zones plus sauvages avec de la végétation et sans signes de civilisation seront toujours mieux.",
+                    "022": "L'extraction de la terre donne parfois de l'argile, de la pierre et des raretés comme les os.",
+                    "024": "Besoin d'une source de nourriture de départ ? Cherchez des arbustes fruitiers ou des champignons comestibles et rapprochez-les de vous !",
+                    "029": "Les animaux de pâturage iront toujours dans leurs couches lorsque le temps est mauvais pour eux. Placez-les sous un toit pour les protéger !",
+                    "030": "Avec une mangeoire, vous pouvez vous assurer que vos animaux de pâturage ont toujours suffisamment de fourrage à leur disposition.",
+                    "031": "Les compagnons essaient de dormir sur la couche la plus proche du lit de leur propriétaire. Gardez un bol de nourriture à proximité pour encore plus de confort.",
+                    "032": "Le fourrage est suffisant pour garder un animal en bonne santé, mais seuls des aliments spécifiques permettront d'améliorer la qualité des produits animaux.",
+                    "033": "Vous pouvez déterminer la quantité d'animaux qu'il est souhaitable de garder dans un pâturage. Au-delà de ce nombre, ils seront automatiquement abattus.",
+                    "034": "Vous pouvez renommer les animaux dans un pâturage et les bergers essaieront d'éviter l'abattage automatique des créatures nommées.",
+                    "035": "Les cultures des agriculteurs ont des besoins différents et spécifiques. Vous pouvez les découvrir en passant votre souris sur toutes les icônes de la fenêtre des parcelles agricoles !",
+                    "036": "Les différents temps et les différents biomes ont des valeurs dynamiques pour l'humidité et la lumière du soleil. Essayez d'optimiser vos fermes autant que possible !",
+                    "037": "La lumière du soleil est très importante pour la plupart des cultures agricoles. Les bâtiments et les obstacles qui bloquent le soleil sur l'axe est-ouest l'affecteront également !",
+                    "038": "L'humidité est très importante pour de nombreuses cultures agricoles, même si certaines d'entre elles peuvent se développer avec peu ou pas d'eau du tout !",
+                    "039": "Bien que cela soit peu fréquent, les cultures d'un agriculteur peuvent nécessiter des quantités d'eau spécifiques ou des modes de culture particuliers. Par exemple, Paddy a besoin que la parcelle agricole soit inondée.",
+                    "040": "L'absence d'eau n'est pas optimale pour les cultures des agriculteurs, mais un excès d'eau peut ne pas être bon non plus. Veillez à toujours vérifier la fenêtre des parcelles agricoles !",
+                    "041": "Les engrais peuvent être créés par l'herboriste et sont très efficaces pour améliorer la qualité des cultures des agriculteurs.",
+                    "042": "L'utilisation de ressources et de matériaux de haute qualité permet d'obtenir des produits de meilleure qualité, plus attrayants et d'une plus grande valeur.",
+                    "043": "Les nouveaux travailleurs sont équipés d'un ensemble d'outils en bronze qui peuvent être remplacés par des outils en fer et en acier plus rapides et plus efficaces fabriqués par le forgeron.",
+                    "044": "La coupe du bois de chauffage est une source de combustible facile et fiable jusqu'à ce que vous puissiez produire du charbon de bois ou du charbon de mine.",
+                    "045": "La récolte de champignons détruira la faune sauvage. Le maintien d'une production régulière de champignons nécessite l'expertise d'un cultivateur nain...",
+                    "046": "L'herboriste est en mesure de produire des semences de ferme de la plupart des plantes et des arbres de la région où vous vous installez.",
+                    "047": "Les différents climats froids auront des niveaux de fraîcheur différents. Les blizzards peuvent être très dangereux, mais les incendies et les vêtements spécifiques peuvent en atténuer les effets.",
+                    "048": "Les Hearthlings qui entrent dans l'eau par des jours froids ou glacés seront blessés par les eaux glacées.",
+                    "049": "Les Hearthlings qui entrent dans l'eau par temps chaud seront rafraîchis pendant un certain temps. C'est l'heure du bain !",
+                    "050": "Méfiez-vous des tanières d'animaux sauvages et des grottes lorsque vous vous installez. Les loups ou les ours sauvages ne sont pas très forts, mais peuvent causer des problèmes au début.",
+                    "051": "Veillez toujours à ce que vos Hearthlings aient une alimentation variée et copieuse.  Beaucoup d'entre eux peuvent avoir des préférences alimentaires, des intolérances ou des goûts spécifiques.",
+                    "052": "Les méga-cultures ont des récompenses variées et uniques pour chaque type de culture.",
+                    "053": "Les Hearthlings préféreront porter des vêtements chauds plutôt que des vêtements qui leur procurent des bonus pendant l'automne et l'hiver.",
+                    "054": "Disposer d'une bonne réserve de carburant de différentes qualités et types permettra à vos artisans d'optimiser vos chaînes de production.",
+                    "055": "Le bois de chauffage, le charbon de bois et le coke sont des exemples de combustibles artisanaux qui permettent de transformer une seule unité de combustible en plusieurs unités.",
+                    "056": "Une enclume ou un four amélioré peut remplacer vos anciens fours dans toutes leurs fonctions et vous permettra de fondre les métaux plus efficacement.",
+                    "057": "La houille se trouve dans les veines de charbon. L'exploitation minière et le commerce sont les seuls moyens de l'acquérir !",
+                    "058": "Les charpentiers peuvent sculpter de beaux meubles à partir de ces ennuyeux troncs d'arbres qui traînent !",
+                    "059": "Les maçons peuvent sculpter de superbes statues à partir de ces encombrants blocs de marbre !",
+                    "060": "Les différentes armes et armures présentent des avantages et des inconvénients supplémentaires, au-delà de leurs valeurs de dommages et de protection. Lisez toutes les astuces !",
+                    "061": "Les épées courtes sont souvent considérées comme des armes de poignet et n'offrent aucun autre avantage qu'une main libre pour un bouclier digne de confiance.",
+                    "062": "Les masses et les marteaux sont des armes de chevalier efficaces qui écraseront l'armure de leur cible, exposant les ennemis à des dommages plus importants de la part des alliés.",
+                    "063": "Les armes blanches, comme les lances et les hallebardes, sont généralement utilisées par les chevaliers et sont très efficaces pour semer la peur dans le cœur des foules ennemies au prix d'une protection moindre.",
+                    "064": "Les longues épées sont des armes de tranchant polyvalentes et peuvent être utilisées par les fantassins pour entraver la mobilité des ennemis.",
+                    "065": "Les haches et autres armes de piraterie plus légères peuvent être utilisées par les fantassins pour augmenter la pénétration des armures contre les ennemis.",
+                    "066": "Les armes à deux mains sont des pièces d'équipement extrêmement puissantes et résistantes, possédant une base de dégâts plus élevée et infligeant des blessures qui blessent les ennemis au fil du temps.",
+                    "067": "Les arcs et les arbalètes sont des armes à distance efficaces. Les arcs peuvent être plus rapides, mais les arbalètes sont souvent plus puissantes, surtout contre les armures.",
+                    "068": "Les armures légères et moyennes peuvent être portées par les fantassins tandis que les armures lourdes sont généralement réservées aux chevaliers. Plus une armure est lourde, plus ils seront courageux !",
+                    "069": "Vous pouvez changer le type d'équipement qu'un soldat préférera en utilisant le bouton de basculement dans le cadre de son unité.",
+                    "070": "Les armes peuvent obtenir des titres et une renommée au fil du temps, en fonction des exploits de leurs utilisateurs. Une arme titrée peut être librement renommée par le joueur.",
+                    "071": "Les Hearthlings peuvent obtenir différents titres au cours de leur vie, en fonction des exploits qu'ils accomplissent !",
+                    "072": "De nombreux animaux sauvages peuvent fournir certaines ressources ou avantages intéressants au joueur prudent qui explore leur environnement.",
+                    "073": "Vous pouvez parfois trouver du minerai en exploitant la roche commune, mais la source de minerai la plus fiable est l'exploitation des veines elles-mêmes.",
+                    "074": "Les algues ont quelques usages culinaires mais peuvent également être séchées et utilisées comme herbe par l'herboriste.",
+                    "075": "Vous vous demandez ce que c'est ? Si un objet ou une créature a une icône d'information à côté de son nom, cliquez dessus pour en savoir plus !",
+                    "076": "Tout combustible de moindre qualité peut être utilisé pour allumer le foyer, y compris la tourbe ou la lignite.",
+                    "077": "Il est facile de trouver du chaume si vous récoltez des plantes herbacées comme des arbustes, ou si vous creusez simplement la couche d'herbe.",
+                    "078": "Les zones de chasse au gros gibier peuvent, bien que rarement, attirer les ours et autres grands animaux sauvages.",
+                    "079": "Les supports de bois de chauffage et les remises sont des moyens très efficaces de stocker le combustible.",
+                    "080": "On trouve facilement de l'argile en blocs dans les grands dépôts miniers, ou des rochers, au fond des plans d'eau comme les lacs.",
+                    "081": "Les repas et les boissons chaudes comme le thé, les ragoûts et les soupes offrent aux Hearthlings un bonus qui les protège du froid pendant un certain temps.",
+                    "082": "Les repas et les boissons froides ou rafraîchissantes, comme les jus ou les yaourts, apportent aux Hearthlings un bonus qui les protège du temps chaud pendant un certain temps.",
+                    "083": "L'herboriste est capable de créer des semences de ferme pour la plupart des cultures connues dans votre royaume. Faites du commerce !",
+                    "084": "Vous pouvez maintenir la touche SHIFT enfoncée lorsque vous cliquez sur le bouton \"Artisanat\" pour envoyer cette recette directement en haut de la liste !",
+                    "085": "Les boissons peuvent stimuler vos citoyens avec plusieurs effets différents. N'oubliez pas de les vérifier !",
+                    "086": "Si vous ne pouvez pas encore fournir à vos Hearthlings des boissons préparées, veillez à leur construire au moins un puits d'eau.",
+                    "087": "La soif ne fera pas de mal à vos citoyens. Juste leurs sentiments !",
+                    "088": "Veillez à toujours proposer des alternatives aux boissons alcoolisées. Personne ne veut que tous ses citoyens soient excessivement joyeux toute la journée !",
+                    "089": "Les Hearthlings préféreront toujours une boisson plus appropriée au moment de la journée, sauf lorsqu'ils aiment vraiment autre chose.",
+                    "090": "Le thé renforcera considérablement les qualités de tous les produits artisanaux, bien qu'il rende également l'artisanat un peu plus lent. L'équilibre demande de la patience !",
+                    "091": "Poisons et toxines ? Les poisons durent longtemps et détruisent lentement la santé ; les toxines disparaissent rapidement mais ont des effets plus immédiats.",
+                    "092": "Les boissons comme le lait ou les jus sont considérées comme simples, tandis que les brassages plus complexes et savoureux comme les spiritueux ou la bière sont considérés comme des préparations.",
+                    "093": "L'armure de chitine peut être fabriquée par le tisserand et protégera un fantassin de niveau inférieur contre les poisons et les toxines simples.",
+                    "094": "Dormir est important !Veillez à prévoir des chambres confortables et des lits qui seront attribués à chacun de vos Hearthlings.",
+                    "095": "Vous rêvez de raves de moutons ? Cliquez sur vos Hearthlings pendant qu'ils dorment pour voir s'ils font de bons ou de mauvais rêves...",
+                    "096": "Les arbres fruitiers et à noix mettent beaucoup de temps à mûrir, mais ils portent leurs fruits même lorsqu'ils sont petits. Plus ils poussent longtemps, plus leur rendement sera élevé.",
+                    "097": "Si vous commencez à l'automne, regardez autour de vous. Il y a peut-être des sources de nourriture supplémentaires comme les arbres à noix qui croissent avant l'hiver !",
+                    "098": "Vous pouvez temporairement interrompre la file d'attente des artisans en cliquant sur le panneau \"Ouvrir\" en haut à droite de l'écran d'artisanat.",
+                    "099": "Les abeilles domestiques doivent être capturées avant de pouvoir être utilisées. Coupez quelques arbres et vous trouverez peut-être un ou deux nids dans les environs !"
+                }
+            },
+            "select_roster": {
+                "reembark_button": "Ré-embarquer"
+            }
+        }
+    },
+    "data": {
+        "hotkeys": {
+            "keys": {
+                "build_visdown": {
+                    "display_name": "Bâtiment Vis Bas"
+                }
+            }
+        }
+    },
+    "entities": {
+        "crops": {
+            "carrot_crop": {
+                "growth_stage": {
+                    "000": {
+                        "description": "Une carotte immature."
+                    }
+                }
+            },
+            "pumpkin_crop": {
+                "growth_stage": {
+                    "000": {
+                        "description": "Une citrouille immature."
+                    }
+                }
+            },
+            "watermelon_crop": {
+                "growth_stage": {
+                    "000": {
+                        "description": "Une pastèque immature."
+                    }
+                }
+            },
+            "turnip_crop": {
+                "growth_stage": {
+                    "000": {
+                        "description": "Un navet immature."
+                    }
+                }
+            }
+        }
+    }
+}

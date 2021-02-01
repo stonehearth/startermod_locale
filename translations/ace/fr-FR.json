@@ -2,9 +2,10 @@
    "ai": {
       "actions": {
          "status_text": {
-            "train": "aller à la formation",
+            "eat_from": "manger [name(data.target)]",
             "fertilize_field": "application d'engrais",
-            "perform_evolve": "transformer [name(data.target)]"
+            "transform": "transformer [name(data.target)]",
+            "train": "aller s'entrainer"
          }
       }
    },
@@ -63,12 +64,6 @@
                }
             },
             "trader": {
-               "valor_tier_2_reached": {
-                  "recipe_unlock_weapons_5": "Nouvelle recette légendaire de Capuche - Collaboration forgeron, géomancien et tisserand !",
-                  "recipe_unlock_weapons_6": "Nouvelle recette légendaire de Maçon - Maçon, Carpenter, and Engineer collaboration !",
-                  "recipe_unlock_weapons_7": "Nouvelle recette légendaire de Tome - Cuisinier, herboriste et géomane en collaboration !",
-                  "recipe_unlock_weapons_8": "Nouvelle recette légendaire de Courrier - collaboration entre tisserands, ingénieurs et forgerons !"
-               },
                "arcs": {
                   "encounters": {
                      "tier_1_shops": {
@@ -277,12 +272,23 @@
                      }
                   }
                }
+            },
+            "town_progression": {
+               "ace_guildmaster_reached": {
+                  "recipe_unlock_coins": "Le forgeron peut maintenant frapper des pièces d'or !"
+               },
+               "ace_valor_reached": {
+                  "recipe_unlock_blacksmith": "Nouvelle recette de maille légendaire - Collaboration entre tisserand, ingénieur et forgeron !",
+                  "recipe_unlock_geomancer": "Nouvelle recette de tome légendaire - Collaboration entre cuisinier, herboriste et géomancien !",
+                  "recipe_unlock_engineer": "Nouvelle recette de masse légendaire - collaboration maçon, menuisier et ingénieur !",
+                  "recipe_unlock_weaver": "Nouvelle recette de capuche légendaire - Collaboration forgeron, géomancien et tisserand !"
+               }
             }
          }
       },
       "biome": {
          "highlands": {
-            "display_name": "Highlands",
+            "display_name": "Hauts plateaux",
             "description": "Des vallées inégales et de hautes falaises avec de nombreux lacs et rivières. Biôme par défaut du Peuple des montagnes.",
             "random_location_names": {
                "000": "Le plateau de Whiterock"
@@ -290,25 +296,113 @@
             "seasons": {
                "spring": {
                   "display_name": "Printemps",
-                  "description": "Le Printemps dans les Highlands est un temps de renouveau, généralement plein de jours venteux et un bon moment pour commencer à semer. Il peut parfois y avoir de la neige tardive."
+                  "description": "Le Printemps dans les hauts plateaux est un temps de renouveau, généralement plein de jours venteux et un bon moment pour commencer à semer. Il peut parfois y avoir de la neige tardive."
                },
                "summer": {
                   "display_name": "Été",
-                  "description": "L'été dans les Highlands est une saison chaude et humide, souvent avec des jours de pluie et peut-être même des tempêtes. Cependant, des vents forts et un ciel sans nuages prévaudront probablement."
+                  "description": "L'été dans les hauts plateaux est une saison chaude et humide, souvent avec des jours de pluie et peut-être même des tempêtes. Cependant, des vents forts et un ciel sans nuages prévaudront probablement."
                },
                "autumn": {
                   "display_name": "Automne",
-                  "description": "L'automne dans les Highlands marque la fin de la saison agricole, avec plusieurs jours pluvieux ou nuageux et peut-être même une chute de neige précoce."
+                  "description": "L'automne dans les hauts plateaux marque la fin de la saison agricole, avec plusieurs jours pluvieux ou nuageux et peut-être même une chute de neige précoce."
                },
                "winter": {
                   "display_name": "Hiver",
-                  "description": "L'hiver dans les Highlands peut être rigoureux et rude, il dure un peu plus longtemps que les autres saisons et avec des chutes de neige presque quotidiennes. Préparez vos vêtements chauds !"
+                  "description": "L'hiver dans les hauts plateaux peut être rigoureux et rude, il dure un peu plus longtemps que les autres saisons et avec des chutes de neige presque quotidiennes. Préparez vos vêtements chauds !"
+               }
+            }
+         },
+         "temperate": {
+            "seasons": {
+               "spring": {
+                  "display_name": "Printemps",
+                  "description": "Le printemps dans la forêt est une saison de renaissance de trois mois. Les pluies font fondre la neige, révélant une nouvelle végétation cachée dessous, et les arbres reprennent vie, couverts de fleurs colorées.<ul><li>L'ensoleillement est bon.</li><li>L'humidité est abondante.</li></ul>"
+               },
+               "summer": {
+                  "display_name": "Été",
+                  "description": "L'été dans la forêt est la saison la plus douce, elle dure trois mois. C’est le moment de se détendre et de profiter du soleil sans se soucier des tempêtes ou de la neige.<ul><li>L'ensoleillement est excellent.</li><li>L'humidité est élevée.</li></ul>"
+               },
+               "autumn": {
+                  "display_name": "Automne",
+                  "description": "L'automne dans la forêt est la saison des récoltes, elle dure trois mois. Les arbres deviennent dorés et l'herbe se prépare à se retirer dans sa couverture d'hiver, alors que le ciel s'assombrit sous des nuages d'orage.<ul><li>L'ensoleillement est moyen.</li><li>L'humidité est très élevée.</li></ul>"
+               },
+               "winter": {
+                  "display_name": "Hiver",
+                  "description": "L’hiver en forêt est une saison froide qui dure trois mois. Les arbres perdent leurs feuilles et la neige recouvre le paysage. Les rassemblements agréables autour du foyer permettent de mieux lutter contre les vents froids et piquants.<ul><li>L'ensoleillement est médiocre.</li><li>L'humidité est élevée.</li></ul>"
+               }
+            }
+         },
+         "desert": {
+            "seasons": {
+               "spring": {
+                  "display_name": "Printemps",
+                  "description": "Le printemps dans le désert est la saison des pluies, elle dure deux mois. Il est rare de reconstituer les réserves d’eau, ce qui permet à la flore locale de fleurir.<ul><li>L'ensoleillement est excellent.</li><li>La saison est légèrement sèche.</li></ul>"
+               },
+               "summer": {
+                  "display_name": "Été",
+                  "description": "L'été dans le désert est la saison des tempêtes, elle dure quatre mois. Les tempêtes de sable ravagent le paysage presque quotidiennement et une ville sans abri suffisant, que ce soit des murs, des montagnes ou des habitations souterraines, peut avoir du mal à survivre.<ul><li>L'ensoleillement est excessifs.</li><li>La saison est incroyablement sèche.</li></ul>"
+               },
+               "autumn": {
+                  "display_name": "Automne",
+                  "description": "L'automne dans le désert est une saison tranquille qui dure quatre mois. Le temps est chaud, mais plus doux qu'en été, sans tempêtes de sable ni précipitations. C’est traditionnellement le temps de se reposer après avoir survécu aux tempêtes de sable de l’été.<ul><li>L'ensoleillement est bon.</li><li>La saison est relativement sèche.</li></ul>"
+               },
+               "winter": {
+                  "display_name": "Hiver",
+                  "description": "L'hiver dans le désert est une saison fraîche qui dure deux mois. Les brises soufflent au-dessus des dunes, entraînant avec elles le temps, et même parfois un nuage de neige.<ul><li>L'ensoleillement est moyen.</li><li>La saison est extrêmement sèche.</li></ul>"
+               }
+            }
+         },
+         "arctic": {
+            "seasons": {
+               "spring": {
+                  "display_name": "Printemps",
+                  "description": "Le printemps dans l'Arctique est une saison de changement qui ne dure qu'un mois. Tandis que les hautes terres conservent leur couverture neigeuse toute l'année, les basses terres autour des lacs commencent à fondre et les jeunes herbes commencent à germer.<ul><li>L'ensoleillement est moyen.</li><li>L'humidité est correcte.</li></ul>"
+               },
+               "summer": {
+                  "display_name": "Été",
+                  "description": "L'été dans l'Arctique est une saison de repos qui dure trois mois. Le temps est doux et les basses terres sont vertes avec de l'herbe. C’est un répit pour le froid et le moment de retrouver des forces pour le long hiver à venir.<ul><li>L'ensoleillement est bon</li><li>L'humidité est plutôt rare.</li></ul>"
+               },
+               "autumn": {
+                  "display_name": "Automne",
+                  "description": "L'automne dans l'Arctique est une saison de gel qui ne dure qu'un mois. Bien que les blizzards soient rares, la neige est un phénomène quotidien. Il s’agit de la dernière chance de se mettre à l’abri avant l’hiver qui ne pardonne pas.<ul><li>L'ensoleillement est médiocre.</li><li>L’humidité est élevée.</li></ul>"
+               },
+               "winter": {
+                  "display_name": "Hiver",
+                  "description": "L'hiver dans l'Arctique est une saison difficile, qui dure sept mois. Les conditions météorologiques sont rigoureuses, avec des vents violents et des blizzards impitoyables qui rendent l'agriculture extrêmement difficile. Même s’aventurer à l’extérieur sans tenue d’hiver peut se terminer tragiquement.<ul><li>L'ensoleillement est insuffisant.</li><li>La saison est très sèche.</li></ul>"
                }
             }
          }
       },
       "weather": {
+         "windy": {
+            "description": "Les vents hurlants et les vents violents balayent les terres.<ul><li>L'ensoleillement est normal.</li><li>L'humidité est légèrement accrue.</li></ul>",
+            "windy_chilly": {
+               "display_name": "Vents frais",
+               "description": "L’air est sec et froid lorsque les vents soufflent sur les terres.<ul><li>L'ensoleillement est normal.</li><li>L'humidité est normale.</li><li>Les Hearthlings sans abri ont trop froids pour travailler efficacement.</li></ul>"
+            }
+         },
+         "thunderstorm": {
+            "description": "Le tonnerre a roulé ... Il a roulé jusqu'à six.<ul><li>L'ensoleillement est extrêmement réduits.</li><li>L'humidité est extrêmement élevée.</li><li>Réduction du rayon de vision.</li><li>Les Hearthlings sans abri et les animaux de pâturage sont trempés.</li><li>Les Hearthlings sans abri sont parfois frappé par la foudre.</li><li>Le sol et les arbres sont parfois frappés par la foudre.</li></ul>"
+         },
+         "sunny": {
+            "description": "Encore une journée de soleil sans fin et de ciel bleu.<ul><li>L'ensoleillement est normal.</li><li>L'humidité est légèrement réduite.</li></ul>",
+            "sunny_desert": {
+               "description": "Encore une journée de soleil sans fin et de ciel bleu.<ul><li>L'ensoleillement est normal.</li><li>L'humidité est réduite.</li></ul>"
+            },
+            "sunny_chilly": {
+               "display_name": "Frais & Ensoleillé",
+               "description": "C'est une belle journée ensoleillée! Même s’il fait aussi un peu froid... <ul><li>L'ensoleillement est légèrement réduit.</li><li>Niveaux d’humidité réguliers.</li><li>Les Hearthlings sans abri ont trop froids pour travailler efficacement.</li></ul>"
+            },
+            "sunny_hot": {
+               "display_name": "Canicule",
+               "description": "Une belle et chaude journée ensoleillée! Trop ensoleillé peut-être, la chaleur est insupportable...<ul><li>L'ensoleillement est normal.</li><li>L'humidité est relativement réduite.</li><li>Les Hearthlings sans abri ont trop chauds pour travailler efficacement.</li><li>Les animaux de pâturage sans abris sont blessés par la chaleur.</li></ul>"
+            }
+         },
          "snow": {
+            "description": "Le froid, le gel et le soleil ont décidé de se cacher. Pouvons-nous seulement rester à l'intérieur?<ul><li>Fairly reduced sunlight levels.</li><li>Niveaux d'humidité réguliers.</li><li>Le rayon de vision est légèrement réduit.</li><li>Les Hearthlings sans abri ont trop froid pour travailler efficacement.</li><li>Les animaux de pâturage sans abris sont blessés par le froid.</li></ul>",
+            "snow_sunny": {
+               "description": "Quelle belle merveille hivernale aujourd’hui !<ul><li>L'ensoleillement est réduit.</li><li>Niveaux d’humidité réguliers.</li><li>Le rayon de vision n’est que légèrement réduit.</li><li>Les Hearthlings sans abri ont trop froid pour travailler efficacement.</li></ul>"
+            },
             "snow_early": {
                "display_name": "Neige précoce",
                "description": "La neige est arrivée plus tôt cette année...<ul><li>La vitesse de croissance des plantes est légèrement réduite.</li><li>Les hearthlings sans abrits ont trop froids pour travailler efficacement.</li></ul>"
@@ -317,6 +411,42 @@
                "display_name": "Neige tardive",
                "description": "Il y a encore de la neige persistante cette année ...<ul><li>La vitesse de croissance des plantes est plutôt réduite.</li><li>Les hearthlings sans abrits ont trop froids pour travailler efficacement.</li><li>Les animaux des pâturages non protégés sont blessés par le froid.</li></ul>"
             }
+         },
+         "sandstorm": {
+            "description": "Couvrez vos yeux. Couvrez vos oreilles. En fait, restez à l'intérieur.<ul><li>Des nuages ​​de sable traversent le paysage, détruisant les cultures et blessant tout le monde.</li><li>L'ensoleillement est extrêmement réduit.</li><li>L'humidité est extrêmement réduite</li><li>Le rayon de vision est légèrement réduit.</li><li>Les Hearthlings sans abri ont trop chauds pour travailler efficacement.</li><li>Les animaux de pâturage sans abris sont blessés par la chaleur.</li></ul>",
+            "sandy_day": {
+               "description": "Il y a du sable et de la poussière ... partout !<ul><li>L'ensoleillement est plutôt réduit.</li><li>L'humidité est considérablement réduite.</li><li>Le rayon de vision n'est que légèrement réduit.</li><li>Les Hearthlings sans abri ont trop chauds pour travailler efficacement.</li><li>Les animaux de pâturage sans abris sont blessés par la chaleur.</li></ul>"
+            }
+         },
+         "rain": {
+            "description": "De l'eau ! L'eau du ciel !<ul><li>L'ensoleillement est plutôt réduit.</li><li>L'humidité est excessivement accrue.</li><li> Réduction du rayon de vision.</li><li>Les hearthlings et les animaux de pâturage sans abri sont trempés.</li></ul>",
+            "rain_sunny": {
+               "description": "Il pleut, mais le soleil est au rendez-vous !<ul><li>L'ensoleillement est à peine réduit.</li><li>L'humidité est extrêmement accrue.</li><li>Le rayon de vision n’est que légèrement réduit.</li><li>Les hearthlings et les animaux de pâturage sans abri sont trempés.</li></ul>"
+            },
+            "rain_chilly": {
+               "display_name": "Pluie verglaçante",
+               "description": "C’est comme une pluie infinie de très fines aiguilles de glace !<ul><li>L'ensoleillement est réduit.</li><li>>L'humidité est considérablement accrue.</li><li>Réduction du rayon de vision.</li><li>Les Hearthlings sans abri ont trop froid pour travailler efficacement.</li><li>Les animaux de pâturage sans abri sont trempés.</li></ul>"
+            }
+         },
+         "lucky": {
+            "description": "Aujourd'hui, tout va un peu mieux.<ul><li>L'ensoleillement est normal.</li><li>>L'humidité est considérablement accrue.</li><li>Les Hearthlings voient tous leurs maux guéris, comme par magie.</li><li>Les Hearthlings ont un peu plus de chance dans tout ce qu'ils font.</li><li>Un mystérieux arc-en-ciel apparaît parfois.</li></ul>"
+         },
+         "foggy": {
+            "description": "Une nappe de brouillard se glisse à travers le paysage, dissimulant de mystérieux mystères.<ul><li>Des monstres morts-vivants sortent de leur cachette sous le couvert du brouillard.</li><li>Diminution du niveau d'ensoleillement.</li><li>L'humidité est fortement accrue.</li><li>Le rayon de vision est fortement réduit. </li></ul>"
+         },
+         "cloudy": {
+            "description": "Ciel couvert, idéal pour flâner sur le perron.<ul><li>L'ensoleillement est réduit.</li><li>Légère augmentation de l'humidité.</li></ul>",
+            "cloudy_chilly": {
+               "display_name": "Frais & Nuageux",
+               "description": "Un ciel sombre et une brise glaciale balayant le ciel.<ul><li>L'ensoleillement est plutôt réduit.</li><li>Niveaux d’humidité réguliers.</li><li>Les Hearthlings sans abri ont trop froid pour travailler efficacement.</li></ul>"
+            },
+            "cloudy_cold": {
+               "display_name": "Froid & Nuageux",
+               "description": "Les nuages sont lourds et sombres, l’air est sec et froid.<ul><li>L'ensoleillement est relativement réduit.</li><li>Niveaux d’humidité réguliers.</li><li>Les Hearthlings sans abri ont trop froid pour travailler efficacement.</li><li>Les animaux de pâturage sans abri sont blessé par le froid.</li></ul>"
+            }
+         },
+         "blizzard": {
+            "description": "Vent, neige et grêle, oh mon dieu !<ul><li>L'ensoleillement est extrêmement réduits.</li><li>L'humidité est très réduite.</li><li>Le rayon de vision est fortement réduit.</li><li>Les Hearthlings sans abri sont blessés par le froid.</li><li>Les animaux de pâturage sans abri sont blessé par le froid.</li></ul>"
          }
       },
       "happiness": {
@@ -338,7 +468,218 @@
                   "snow_late_negative": {
                      "display_name": "Il neige encore !",
                      "tooltip": "Hiver should be over already, can't believe we're getting such late snowfall..."
+                  },
+                  "cloudy_chilly_positive": {
+                     "display_name": "Frais et nuageux !",
+                     "tooltip": "Des nuages moelleux et un bel air frais ! C'est une belle journée."
+                  },
+                  "cloudy_chilly_negative": {
+                     "display_name": "Sombre et humide...",
+                     "tooltip": "Comme si le soleil couvert par ces nuages ne suffisait pas, il fait aussi très froid aujourd'hui !"
+                  },
+                  "cloudy_cold_positive": {
+                     "display_name": "Joie d'hiver !",
+                     "tooltip": "Les jours nuageux et froids sont les meilleurs ! J'adore l'hiver!"
+                  },
+                  "cloudy_cold_negative": {
+                     "display_name": "Pouah, froid et obscure...",
+                     "tooltip": "Il fait sombre, des nuages lugubre au-dessus de nous, un froid mordant ... Qu'est-ce qui pourrait être pire?"
+                  },
+                  "foggy_chilly_positive": {
+                     "display_name": "Frissons incertains...",
+                     "tooltip": "Oh ! Ce brouillard est tellement mystérieux ! Et cette sensation de fraîcheur sur la nuque... J'adore !"
+                  },
+                  "foggy_chilly_negative": {
+                     "display_name": "Des frissons dans le dos !",
+                     "tooltip": "Il fait trop froid et ce brouillard est trop épais ! Il y a quelque chose qui ne va pas, c'est moi qui vous le dis !"
+                  },
+                  "rain_chilly_positive": {
+                     "display_name": "Aiguilles froides !",
+                     "tooltip": "Cette pluie verglaçante est quelque peu rafraîchissante, je me demande si nous aurons bientôt de la neige ?"
+                  },
+                  "rain_chilly_negative": {
+                     "display_name": "Ciel irritant...",
+                     "tooltip": "Je ne supporte pas ce chatouillement ennuyeux de pluie fine et verglaçante. Outch !"
+                  },
+                  "sunny_chilly_positive": {
+                     "display_name": "Soleil et air frais!",
+                     "tooltip": "Ah ! Quelle sensation merveilleuse, rien ne vaut le soleil éclatant lors d'une belle journée d'hiver."
+                  },
+                  "sunny_chilly_negative": {
+                     "display_name": "Mon soleil était gâté !",
+                     "tooltip": "Oh, c'est bien de revoir enfin le soleil ... mais pourrions-nous au moins avoir un peu de chaleur aussi ?"
+                  },
+                  "sunny_hot_positive": {
+                     "display_name": "Sensation de chaleur...",
+                     "tooltip": "Le soleil est si fort aujourd'hui ! Cela peut être un peu gênant mais me fait me sentir si vivant!"
+                  },
+                  "sunny_hot_negative": {
+                     "display_name": "Torride !",
+                     "tooltip": "Pourquoi faut-il qu'il fasse si chaud aujourd'hui? Je ne peux plus supporter cette chaleur ..."
+                  },
+                  "windy_chilly_positive": {
+                     "display_name": "Le vent d'Hiver",
+                     "tooltip": "Rien ne semble aussi rafraîchissant que le vent doux et froid de l'Arctique qui souffle sur votre visage !"
+                  },
+                  "windy_chilly_negative": {
+                     "display_name": "Ce vent me fait mal !",
+                     "tooltip": "C'est comme un millier de petites lames froides sur mon visage ... Outch !"
                   }
+               }
+            },
+            "eating": {
+               "ate_intolerable": {
+                  "display_name": "A mangé quelque chose d'intolérable",
+                  "tooltip": "J'ai mangé récemment [str(foodname)]... Je ne me sens pas bien..."
+               },
+               "dairy_intolerant_ate_dairy": {
+                  "display_name": "Intolérance laitière",
+                  "tooltip": "Malheureusement mon estomac n'apprécie pas [str(foodname)]... Aïe ..."
+               },
+               "nuts_intolerant_ate_nuts": {
+                  "display_name": "Intolérance aux noix",
+                  "tooltip": "Ugh... Ce[str(foodname)] avait l'air sympa mais je suppose que ce n'est pas pour moi..."
+               },
+               "fish_intolerant_ate_fish": {
+                  "display_name": "Intolérance aux poissons",
+                  "tooltip": "Je ne mangerais plus jamais de [str(foodname)]. Jamais ! Aie..."
+               },
+               "ate_lovely": {
+                  "display_name": "Mangé quelque chose de bon !",
+                  "tooltip": "J'ai mangé [str(foodname)] ! J'en veux plus ! Ça me rends si heureux !"
+               },
+               "dairy_lover_ate_dairy": {
+                  "display_name": "Amateur de produits laitiers",
+                  "tooltip": "Oui ! Je suis tellement content d'avoir pu manger [str(foodname)] aujourd'hui ! C'est certainement l'une des choses que j'aime le plus !"
+               },
+               "meat_lover_ate_meat": {
+                  "display_name": "Amateur de viande",
+                  "tooltip": "Hmmm... Ce [str(foodname)] c'était délicieux. J'adore la viande, toutes les sortes de viande - mais celle-là était incroyable !"
+               },
+               "vegetable_lover_ate_vegetable": {
+                  "display_name": "Végétarien",
+                  "tooltip": "Je ne peux pas croire à quel point [str(foodname)] était bonne. Comment des choses aussi délicieuses peuvent-elles venir de la terre ?"
+               },
+               "fungi_lover_ate_fungi": {
+                  "display_name": "Amateur de champignon",
+                  "tooltip": "Miam ! J'adore manger des champignons et je dois admettre que [str(foodname)] était particulièrement bon !"
+               }
+            },
+            "traits": {
+               "values": {
+                  "heliophile": {
+                     "display_name": "Loué soit le soleil !",
+                     "tooltip": "C'est ma météo préférée aujourd'hui !"
+                  },
+                  "chionophile": {
+                     "display_name": "Frissons étonnants !",
+                     "tooltip": "C'est ma météo préférée aujourd'hui !"
+                  }
+               }
+            }
+         }
+      },
+      "population": {
+         "ascendancy": {
+            "titles": {
+               "none": {
+                  "description": "Aucun titre nécessaire."
+               },
+               "goblin_killer": {
+                  "display_name": "Tueur de Gobelin",
+                  "description": "Gagné en tuant des gobelins.",
+                  "1_display_name": " le tueur de Gobelin",
+                  "1_description": "Ils ont tué un gobelin !",
+                  "5_display_name": " le pourfendeur de Gobelin",
+                  "5_description": "Ils ont tué 5 gobelins ! Là, ils sont allés, tuer à nouveau !",
+                  "10_display_name": " le décimateur de Gobelin",
+                  "10_description": "Ils ont tué 10 gobelins ! Ils sont vraiment bons à ça !",
+                  "20_display_name": ", Fléau des Gobelins",
+                  "20_description": "Ils ont tué 20 gobelins ! C'est beaucoup !",
+                  "50_display_name": ", Destructeur de Gobelins",
+                  "50_description": "Ils ont tué 50 gobelins ! Où trouvent-ils tous ces gobelins ?!",
+                  "100_display_name": ", Dévoreur de Gobelin",
+                  "100_description": "Ils ont tué 100 gobelins ! Peut-être devraient-ils être en thérapie, réexaminer leurs priorités."
+               },
+               "goblin_killer_item": {
+                  "display_name": "Tueur de Gobelin",
+                  "description": "Gagné en tuant des gobelins.",
+                  "1_display_name": " le tueur de Gobelin",
+                  "1_description": "Il a tué un gobelin !",
+                  "5_display_name": " le pourfendeur de Gobelin",
+                  "5_description": "Il a tué 5 gobelins ! Là, il a tué à nouveau!",
+                  "10_display_name": " le décimateur de Gobelin",
+                  "10_description": "Il a tué 10 gobelins ! Ils est vraiment bons à ça !",
+                  "20_display_name": ", Fléau des Gobelins",
+                  "20_description": "Il a tué 20 gobelins ! C'est beaucoup !",
+                  "50_display_name": ", Destructeur de Gobelins",
+                  "50_description": "Il a tué 50 gobelins ! Il est inarretable, du moins par les gobelins !",
+                  "100_display_name": ", Dévoreur de Gobelin",
+                  "100_description": "Il a tué 100 gobelins ! Sa soif de sang a-t-elle finalement été rassasiée ?"
+               },
+               "defender": {
+                  "display_name": "Défenseur",
+                  "description": "Gagné en obtenant des assisstance de kill (être impliqué dans le combat directement ou près des ennemis tués).",
+                  "10_display_name": ", Défenseur",
+                  "10_description": "Ils ont défendu la ville face à 10 ennemis !",
+                  "50_display_name": ", Grand protecteur",
+                  "50_description": "Ils ont défendu la ville face à 50 ennemis !",
+                  "100_display_name": ", Héros de la ville",
+                  "100_description": "Ils ont défendu la ville face à 100 ennemis ! Est-ce enfin sûr?",
+                  "500_display_name": " la longue main flottante de la loi",
+                  "500_description": "Ils ont défendu la ville face à 500 ennemis ! Quelle ville incroyablement conflictuelle !",
+                  "1000_display_name": ", Sauveur de la civilisation",
+                  "1000_description": "Ils ont défendu la ville face à 1000 ennemis ! Une approche plus diplomatique est peut-être justifiée."
+               },
+               "prolific_crafter": {
+                  "display_name": "Artisan prolifique",
+                  "description": "Gagné en fabriquant beaucoup d'objets.",
+                  "100_display_name": ", Artisan prolifique",
+                  "100_description": "Ils ont fabriqué 100 objets !",
+                  "200_display_name": " le multi-crafter",
+                  "200_description": "Ils ont fabriqué 200 objets !",
+                  "500_display_name": ", Artisan de masse",
+                  "500_description": "Ils ont fabriqué 500 objets ! Peut-être qu'ils pourraient utiliser un assistant.",
+                  "1000_display_name": ", Émissaire de guilde",
+                  "1000_description": "Ils ont fabriqué 1000 objets ! Ils feraient mieux d'avoir une belle pension."
+               },
+               "excellent_crafter": {
+                  "display_name": "Artisant Excellent",
+                  "description": "Gagné en fabriquant des objets d'excellente qualité (bon ne suffit pas, et les chefs-d'œuvre sont suivis séparément).",
+                  "10_display_name": ", Artisant Excellent",
+                  "10_description": "Ils ont fabriqué 10 objets d'excellente qualité !",
+                  "25_display_name": ", Artisan extraordinaire",
+                  "25_description": "Ils ont fabriqué 25 objets d'excellente qualité !",
+                  "100_display_name": " l'empereur de l'excellence",
+                  "100_description": "Ils ont fabriqué 100 objets d'excellente qualité !"
+               },
+               "master_crafter": {
+                  "display_name": "Maître artisan",
+                  "description": "Gagné en fabriquant des objets de qualité supérieure.",
+                  "1_display_name": ", Maître artisan",
+                  "1_description": "Ils ont fabriqué un chef-d'oeuvre ! Incroyable !",
+                  "10_display_name": " le maître de la qualité",
+                  "10_description": "Ils ont fabriqué 10 chef-d'oeuvre ! Incroyable !"
+               },
+               "starving": {
+                  "display_name": "Affamé",
+                  "description": "Gagné en passant beaucoup de temps à avoir très faim.",
+                  "1_display_name": " la faim",
+                  "1_description": "Ils ont passé 4 heures à mourir de faim!",
+                  "2_display_name": " les affamés",
+                  "2_description": "Ils ont faim depuis 2 jours et sont toujours debout !",
+                  "3_display_name": " du jeûne incassable",
+                  "3_description": "Ils ont faim depuis 10 jours ! La collecte de nourriture devrait peut-être devenir une priorité."
+               },
+               "incapacitated": {
+                  "display_name": "Incapable",
+                  "description": "Gagné en devenant invalide plusieurs fois.",
+                  "1_display_name": " l'allongé",
+                  "1_description": "Ils ont été assommés, se sont relevés et ont été renversés.",
+                  "2_display_name": " le balafré",
+                  "2_description": "Ils ont été neutralisés 5 fois ! Est-il même possible de les tuer ?",
+                  "3_display_name": " le quasi sans tête",
+                  "3_description": "Ils ont été neutralisés 10 fois ! Apprendront-ils jamais à éviter des situations mettant leur vie en danger ?"
                }
             }
          }
@@ -410,22 +751,50 @@
          }
       },
       "commands": {
-         "request_evolve": {
+         "allow_hunting": {
+            "display_name": "Autoriser la chasse",
+            "description": "Ce Hearthling ignorera tout gibier qu'ils verront. Cliquez pour leur permettre de chasser!"
+         },
+         "avoid_hunting": {
+            "display_name": "Interdire la chasse",
+            "description": "Ce Hearthling va chasser tout gibier qu'ils voient. Cliquez pour l'interdire!"
+         },
+         "transform": {
             "prepare_mega_pumpkin_soup": {
-               "display_name": "Préparer la soupe à la citrouille",
+               "display_name": "Préparer une soupe à la citrouille",
                "description": "Avec un paquet de bois de chauffage, le cuisinier peut transformer cet énorme légume en une soupe merveilleuse !"
             },
             "stomp_mega_cotton_pet_bed": {
-               "display_name": "Frappe-le !",
-               "description": "Envoyez un ouvrier pour marteler ce méga coton duveteux jusqu'à ce qu'il devienne un lit pour animaux approprié."
+               "display_name": "Frappez-le !",
+               "description": "Envoyez un ouvrier marteler ce méga coton moelleux jusqu'à ce qu'il devienne un lit convenable pour animal."
             },
             "prepare_mega_watermelon_juice": {
-               "display_name": "Préparer le jus de pastèque",
-               "description": "En creusant un trou et en remuant à l'intérieur de la cocotte, vous pouvez transformer ce fruit énorme en beaucoup de jus merveilleux !"
+               "display_name": "Préparer un jus de pastèque",
+               "description": "En creusant un trou et en remuant à l'intérieur le cuisinier, il peut transformer cet énorme fruit en un jus merveilleux!"
             },
             "add_thatch_to_bed": {
                "display_name": "Ajouter du chaume",
-               "description": "Rendez ce lit un peu plus confortable en y ajoutant un peu de chaume !"
+               "description": "Rendez ce lit un peu plus confortable en y ajoutant de la chaume !"
+            },
+            "cheese_vat_fill": {
+               "display_name": "Remplir la cuve à fromage",
+               "description": "Ordonnez au cuisinier de verser un mélange caillé dans cette cuve à fromage pour commencer la production de fromage !"
+            },
+            "cheese_vat_drain": {
+               "display_name": "Égoutter la cuve à fromage",
+               "description": "Ordonnez au cuisinier d'enlever le reste de lactosérum et de traiter le caillé en formant du fromage frais !"
+            },
+            "carve_furniture": {
+               "display_name": "Tailler des meubles",
+               "description": "Ordonnez au menuisier de transformer ce gros morceau de vieux bois en quelque chose de nouveau et à la mode !"
+            },
+            "sculpt_block": {
+               "display_name": "Bloc de burin",
+               "description": "Ordonnez à un travailleur pour ciseler ce rocher dans un bloc agréable et utile pour être emporté à la maison et travaillé par un maçon !"
+            },
+            "sculpt_statue": {
+               "display_name": "Faire de l'art !",
+               "description": "Ordonnez au maçon de mettre ses meilleures compétences à profit et de créer quelque chose de beau à partir de ce bloc de pierre !"
             }
          },
          "slaughter": {
@@ -460,7 +829,7 @@
          "job_equipment_roles": {
             "one_handed_footman": {
                "display_name": "Préférez l'arme et le bouclier",
-               "description": "Ce fantassin préfère actuellement utiliser une arme de main et un bouclier. Cliquez pour changer !"
+               "description": "Ce fantassin préfère actuellement utiliser une arme principale et un bouclier. Cliquez pour changer !"
             },
             "two_handed_footman": {
                "display_name": "Préférez les armes à deux mains",
@@ -468,7 +837,7 @@
             },
             "dual_wield_footman": {
                "display_name": "Préférez le double usage",
-               "description": "Ce fantassin préfère actuellement utiliser une arme de main principale avec une arme de main gauche. Cliquez pour changer !"
+               "description": "Ce fantassin préfère actuellement utiliser une arme principale avec une arme secondaire. Cliquez pour changer !"
             },
             "one_handed_knight": {
                "display_name": "Préférez l'arme et le bouclier",
@@ -490,6 +859,14 @@
          "manage_parties": {
             "display_name": "Gérer la fête",
             "description": "Gérer les bannières de patrouille et les zones de garde (non encore mises en place) pour ce parti."
+         },
+         "remove_patrol_banner": {
+            "display_name": "Supprimer la bannière de patrouille",
+            "description": "Effacez complètement la bannière sélectionnée de cet itinéraire."
+         },
+         "move_patrol_banner": {
+            "display_name": "Déplacer la bannière de patrouille",
+            "description": "Placez la bannière sélectionnée ailleurs, en modifiant l'itinéraire."
          }
       },
       "buffs": {
@@ -582,6 +959,125 @@
          "thorns": {
             "display_name": "Protection contre les pointes",
             "description": "Ce hearthling infligera des dégâts aux ennemis qui l'attaquent."
+         },
+         "upset_belly": {
+            "display_name": "Upset Belly",
+            "description": "Very uncomfortable. Speed, Diligence and Willpower are reduced."
+         },
+         "lovely_meal": {
+            "display_name": "Lovely Meal",
+            "description": "Eating well is motivating! Diligence and Willpower fairly increased."
+         },
+         "armor_light": {
+            "display_name": "Lightly Geared",
+            "description": "This hearthling is lightly armored and has increased speed but reduced courage and menace."
+         },
+         "armor_medium": {
+            "display_name": "Fairly Geared",
+            "description": "This hearthling wears medium armor and has increased courage but slightly lowered speed."
+         },
+         "armor_heavy": {
+            "display_name": "Heavily Geared",
+            "description": "This hearthling is heavily armored and has increased courage and menace but reduced speed."
+         },
+         "shield_heavy": {
+            "display_name": "Heavy Shield",
+            "description": "Defense is overall increased but speed is slightly decreased."
+         },
+         "shield_light": {
+            "display_name": "Light Shield",
+            "description": "Courage and speed are slightly increased."
+         },
+         "weather": {
+            "chilly_debuff": {
+               "display_name": "Chilly Weather",
+               "description": "It's a bit cold out here... Might not work as diligently!"
+            },
+            "cold_debuff": {
+               "display_name": "Cold Weather",
+               "description": "It's really cold today! I should get a roof above my head."
+            },
+            "animal_cold_debuff": {
+               "display_name": "Cold Weather",
+               "description": "Baby, it's cold outside.<ul><li>This animal will take damage over time if unsheltered.</li></ul>"
+            },
+            "freezing_debuff": {
+               "display_name": "Freezing Weather",
+               "description": "I'm freezing out here! I need warmth and I need it fast!<ul><li>This hearthling will take damage over time down to 40% of their health if outside.</li></ul>"
+            },
+            "animal_freezing_debuff": {
+               "display_name": "Freezing Weather",
+               "description": "That animal should definitely be sheltered...<ul><li>This animal will take damage over time if unsheltered.</li></ul>"
+            },
+            "hot_debuff": {
+               "display_name": "Hot Weather",
+               "description": "Too sweaty to work. Could use some refreshment!"
+            },
+            "animal_hot_debuff": {
+               "display_name": "Hot Weather",
+               "description": "The heat is punishing, even for the animals!<ul><li>This animal will take damage over time if unsheltered.</li></ul>"
+            },
+            "soaked_debuff": {
+               "display_name": "Soaked",
+               "description": "I'm really wet, my clothes are dripping!"
+            },
+            "animal_soaked_debuff": {
+               "display_name": "Soaked",
+               "description": "Not even animals enjoy being this wet."
+            },
+            "sunstroke_debuff": {
+               "display_name": "Sunstroke",
+               "description": "So warm... Getting dizzy... Need refreshment, now!<ul><li>This hearthling will take damage over time.</li></ul>"
+            },
+            "freezing_water_debuff": {
+               "display_name": "Freezing Water",
+               "description": "Oof! This water is so cold, I shouldn't be here!<ul><li>This hearthling will take damage over time down to 10% of their health while in the water.</li></ul>"
+            },
+            "refreshing_water_buff": {
+               "display_name": "Refreshing Water",
+               "description": "The water is nice and very refreshing!"
+            },
+            "chilly_resist_buff": {
+               "display_name": "Lightly Bundled",
+               "description": "This hearthling is protected against chilly weather."
+            },
+            "cold_resist_buff": {
+               "display_name": "Bundled",
+               "description": "This hearthling is protected against cold weather."
+            },
+            "freezing_resist_buff": {
+               "display_name": "Very Bundled",
+               "description": "This hearthling is protected against freezing weather."
+            },
+            "hot_resist_buff": {
+               "display_name": "Cool Outfit",
+               "description": "Protection from the sun and a good airflow keeps this hearthling protected from hot weather."
+            },
+            "refreshed_buff": {
+               "display_name": "Refreshed",
+               "description": "This was refreshing! Should stay fresh for a while."
+            },
+            "warmed_buff": {
+               "display_name": "Feeling Warm",
+               "description": "I can feel the warmth and it is so cosy! Should feel good for a while."
+            },
+            "warmth_source_buff": {
+               "display_name": "Source of Warmth",
+               "description": "Home is where the hearth is..."
+            }
+         },
+         "shepherding": {
+            "compassionate_shepherd_buff": {
+               "description": "Taken care of by a compassionate shepherd. This animal will heal over time, produce more resources, and breed faster."
+            }
+         },
+         "warm_belly": {
+            "display_name": "Warm Belly",
+            "description": "All warm and fuzzy inside, it was delicious! Willpower is increased.<ul><li>This hearthling is protected from chilly and cold weather for some time.</li></ul>"
+         },
+         "refreshed_belly": {
+            "display_name": "Cool Belly",
+            "description": "This was refreshing, I feel renewed! Diligence is increased.<ul><li>This hearthling is protected from hot weather for some time.</li></ul>"
          }
       },
       "loadouts": {
@@ -616,6 +1112,58 @@
                "display_name": "Sous-déploiement d'éléments multiples"
             }
          }
+      },
+      "traits": {
+         "dairy_intolerance_trait": {
+            "display_name": "Dairy Intolerance",
+            "description": "[name(i18n_data.entity)] has a particular sensitivity to dairy products. These just don't get along with their belly."
+         },
+         "fish_intolerance_trait": {
+            "display_name": "Fish Intolerance",
+            "description": "[name(i18n_data.entity)] has a particular sensitivity to fish or seafood. These just don't get along with their belly."
+         },
+         "nuts_intolerance_trait": {
+            "display_name": "Nut Intolerance",
+            "description": "[name(i18n_data.entity)] has a particular sensitivity to nuts and hard seeds. These just don't get along with their belly."
+         },
+         "dairy_love_trait": {
+            "display_name": "Dairy Lover",
+            "description": "It is no secret how much [name(i18n_data.entity)] loves dairy products. They always appreciate eating them more than anything else, if possible."
+         },
+         "vegetable_love_trait": {
+            "display_name": "Veggie Lover",
+            "description": "It is no secret how much [name(i18n_data.entity)] loves vegetables. They always appreciate eating them more than anything else, if possible."
+         },
+         "meat_love_trait": {
+            "display_name": "Meat Lover",
+            "description": "It is no secret how much [name(i18n_data.entity)] loves meat. They always appreciate eating it more than anything else, if possible."
+         },
+         "fungi_love_trait": {
+            "display_name": "Mushroom Lover",
+            "description": "It is no secret how much [name(i18n_data.entity)] loves mushrooms of all kinds. They always appreciate eating them more than anything else, if possible."
+         },
+         "carnivore": {
+            "carnivore_trait": {
+               "description": "[name(i18n_data.entity)] just LOVES animals! Especially with hot sauce. However, they really dislike eating vegetables."
+            }
+         },
+         "herbivore": {
+            "herbivore_trait": {
+               "description": "[name(i18n_data.entity)] is a friend to all animals! Plants, less so. They really dislike eating meat."
+            }
+         },
+         "chionophile": {
+            "chionophile_trait": {
+               "display_name": "Chionophile",
+               "description": "No one really knows that word. What everyone knows, however, is how much [name(i18n_data.entity)] loves cold and snowy days!"
+            }
+         },
+         "heliophile": {
+            "heliophile_trait": {
+               "display_name": "Heliophile",
+               "description": "[name(i18n_data.entity)] loves praising the sun! Its light and rays are one of their favorite things and makes them really happy."
+            }
+         }
       }
    },
    "jobs": {
@@ -624,6 +1172,10 @@
             "level_1_data": {
                "training_perk_name": "Entraînement au combat",
                "training_perk_description": "Un fantassin peut utiliser des mannequins d'entraînement pour s'entraîner jusqu'au niveau 3 et augmentera la limite autorisée de l'équipement d'entraînement de 2"
+            },
+            "level_3_data": {
+               "training_complete_name": "Academy Graduate",
+               "training_complete_description": "The footman has finished their combat training and can now seek new opportunities like trying to become a Knight!"
             }
          }
       },
@@ -633,7 +1185,19 @@
                "training_perk_name": "Entraînement au tir à l'arc",
                "training_perk_description": "An archer can use Archery Cibles to train up to Level 3 and will increase the allowed limit of Matériel de formation by 1"
             },
+            "level_2_data": {
+               "xbow_proficiency_name": "Crossbow Proficiency",
+               "xbow_proficiency_description": "The archer is able to use a crossbow to shoot strong bolts at enemies"
+            },
             "description": "Un combattant d'arrière-garde capable d'utiliser des armes à distance comme des arcs, des arbalètes et divers types de flèches ou de boulons pour attaquer ses ennemis."
+         }
+      },
+      "na_archer": {
+         "archer_description": {
+            "level_1_data": {
+               "hunting_perk_name": "Hunting",
+               "hunting_perk_description": "A Northern Alliance archer is naturally adept at animal tracking, and can hunt animals for food and other resources."
+            }
          }
       },
       "cleric": {
@@ -659,6 +1223,11 @@
             "refined_fungi_name": "Raffinement fongique",
             "refined_seeds_name": "Semences agricoles locales",
             "farming_enhancements_name": "Améliorations à l'agriculture",
+            "daisy_transmute_recipe": {
+               "recipe_name": "Daisy Seeds (x3)",
+               "description": "Separate seeds from the herbs. Daisies will spread around after being planted.",
+               "flavor": "Only a skilled hand can harvest the weaker seeds, but the herbs are lost in the process."
+            },
             "moonbell_transmute_recipe": {
                "recipe_name": "Graines Moonbell (x3)",
                "description": "Séparer les graines des herbes",
@@ -734,15 +1303,30 @@
                "description": "Domestiquez les fleurs Brightbell et apprenez à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
+            "brightbell_seeds_2_recipe": {
+               "recipe_name": "Brightbell Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate brightbell flowers!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
             "silkweed_seeds_recipe": {
                "recipe_name": "Graines d'asclépiade soyeuse",
                "description": "Domestiquer les plants d'asclépiade et apprendre à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
+            "silkweed_seeds_2_recipe": {
+               "recipe_name": "Silkweed Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate silkweed!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
             "frostsnap_seeds_recipe": {
                "recipe_name": "Graines de gelée de sieste",
                "description": "Domestiquez les fleurs de Frostsnap et apprenez à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
+            },
+            "frostsnap_seeds_2_recipe": {
+               "recipe_name": "Frostsnap Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate frostsnap flowers!",
+               "flavor": "This farming crop is already known to your farmers by default"
             },
             "acacia_tree_seeds_recipe": {
                "recipe_name": "Graines d'acacia",
@@ -759,6 +1343,11 @@
                "description": "Domestiquez les fleurs de cactus et apprenez à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
+            "cactus_flower_seeds_2_recipe": {
+               "recipe_name": "Cactus Flower Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate cactus flowers!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
             "arctic_pine_tree_seeds_recipe": {
                "recipe_name": "Arctic Pommes de pin",
                "description": "Domestiquer les pins arctiques et apprendre à les cultiver.",
@@ -774,10 +1363,20 @@
                "description": "Domestiquez les fleurs de violette et apprenez à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
+            "violet_seeds_2_recipe": {
+               "recipe_name": "Violet Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate violets!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
             "snow_poppy_seeds_recipe": {
                "recipe_name": "Graines de pavot à neige",
                "description": "Domestiquez les fleurs de pavot à neige et apprenez à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
+            },
+            "snow_poppy_seeds_2_recipe": {
+               "recipe_name": "Snow Poppy Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate snow poppies!",
+               "flavor": "This farming crop is already known to your farmers by default"
             },
             "birch_tree_seeds_recipe": {
                "recipe_name": "Bouleau Catkins",
@@ -790,8 +1389,8 @@
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
             "highland_pine_tree_seeds_recipe": {
-               "recipe_name": "Pommes de pin des Highlands",
-               "description": "Domestiquer les pins des Highlands et apprendre à les cultiver.",
+               "recipe_name": "Pommes de pin des hauts plateaux",
+               "description": "Domestiquer les pins des hauts plateaux et apprendre à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
             "moonbell_seeds_recipe": {
@@ -799,15 +1398,75 @@
                "description": "Domestiquez les fleurs Moonbell et apprenez à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
+            "moonbell_seeds_2_recipe": {
+               "recipe_name": "Moonbell Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate moonbell flowers!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
             "cotton_seeds_recipe": {
                "recipe_name": "Graines de coton",
                "description": "Domestiquer les plants de coton et apprendre à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
             },
+            "cotton_seeds_2_recipe": {
+               "recipe_name": "Cotton Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate cotton!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
             "marblesprout_seeds_recipe": {
                "recipe_name": "Graines à germes de marbre",
                "description": "Domestiquez les fleurs de germes de marbre et apprenez à les cultiver.",
                "flavor": "La caisse doit être placée sur le sol avant de pouvoir être utilisée."
+            },
+            "marblesprout_seeds_2_recipe": {
+               "recipe_name": "Marblesprout Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate marble flowers!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "turnip_seeds_recipe": {
+               "recipe_name": "Turnip Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate turnips!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "carrot_seeds_recipe": {
+               "recipe_name": "Carrot Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate carrots!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "pumpkin_seeds_recipe": {
+               "recipe_name": "Pumpkin Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate pumpkins!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "corn_seeds_recipe": {
+               "recipe_name": "Corn Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate corn!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "wheat_seeds_recipe": {
+               "recipe_name": "Wheat Grain",
+               "description": "Trade or gift it to allow other cultures to cultivate wheat!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "paddy_seeds_recipe": {
+               "recipe_name": "Paddy Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate rice!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "golden_gourd_seeds_recipe": {
+               "recipe_name": "Golden Gourd Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate golden gourds!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "watermelon_seeds_recipe": {
+               "recipe_name": "Watermelon Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate watermelons!",
+               "flavor": "This farming crop is already known to your farmers by default"
+            },
+            "sweet_potato_seeds_recipe": {
+               "recipe_name": "Sweet Potato Seeds",
+               "description": "Trade or gift it to allow other cultures to cultivate sweet taters!",
+               "flavor": "This farming crop is already known to your farmers by default"
             },
             "fertilizer_recipe": {
                "recipe_name": "Engrais simple",
@@ -828,6 +1487,11 @@
                "recipe_name": "Megacrop Engrais",
                "description": "Cet engrais complexe n'offre pas les meilleures qualités, mais il augmentera considérablement les chances d'obtenir des mégacultures !",
                "flavor": "Chaque sac peut être utilisé pour fertiliser 20 cultures"
+            },
+            "plant_glass": {
+               "recipe_name": "Gentle Flower Vase",
+               "description": "A little thing to make a home feel more cozy.",
+               "flavor": "Literally handpicked flowers are going to be placed in this vase. Some blossoms might be more striking than others *wink, wink*."
             }
          },
          "herbalist_hood": {
@@ -835,7 +1499,28 @@
             "description": "Un casque protecteur pour les herboristes du désert."
          },
          "herbalist_description": {
+            "level_2_data": {
+               "taming_local_flora_name": "Botanical Studies",
+               "taming_local_flora_description": "The Herbalist has acquired sufficient knowledge of the area to learn how to cultivate the local flora",
+               "collaborative_insight_description": "The Herbalist is now skillful enough to use materials created by the other crafters and is also able to become a Cleric"
+            },
+            "level_5_data": {
+               "item_proficiency_2_name": "Item Mastery",
+               "item_proficiency_2_description": "The Herbalist's medical prowess increases the effectiveness of healing items by 100%."
+            },
+            "level_6_data": {
+               "power_medic_3_name": "Great Physician",
+               "power_medic_3_description": "The Herbalist can now attend to up to 6 hearthlings at a time."
+            },
             "description": "Interprète des pratiques de guérison, l'herboriste peut fabriquer et utiliser des toniques, des bandages et des potions, mais aussi travailler avec des plantes, des graines et d'autres produits de recherche de nourriture."
+         },
+         "herbalist_mortar_pewter": {
+            "display_name": "Herbalist's Pewter Mortar",
+            "description": "A fancy metallic mortar and pestle for increasing the Herbalist's speed."
+         },
+         "herbalist_pestle_pewter": {
+            "display_name": "Herbalist's Pewter Pestle",
+            "description": "For nicer mashing."
          }
       },
       "engineer": {
@@ -862,7 +1547,7 @@
             "water_gate_recipe": {
                "recipe_name": "Vanne d'eau en cuivre",
                "description": "Créez une petite vanne à six voies qui peut être ouverte ou fermée pour un débit de fluide contrôlé.",
-               "flavor": "."
+               "flavor": ""
             },
             "water_pump_recipe": {
                "recipe_name": "Pompe à eau en cuivre",
@@ -872,17 +1557,17 @@
             "water_gate_greater_recipe": {
                "recipe_name": "Grande porte d'eau",
                "description": "Construire une vanne plus grande et plus résistante pour contrôler le débit des fluides.",
-               "flavor": "."
+               "flavor": ""
             },
             "axle_horizontal_recipe": {
                "recipe_name": "Essieu horizontal (x3)",
                "description": "Créez un arbre rotatif qui peut faire avancer la puissance mécanique.",
-               "flavor": "."
+               "flavor": ""
             },
             "axle_vertical_recipe": {
                "recipe_name": "Essieu vertical (x3)",
                "description": "Créez un arbre rotatif qui peut prendre la puissance mécanique verticalement.",
-               "flavor": "."
+               "flavor": ""
             },
             "axle_gear_box_recipe": {
                "recipe_name": "Boîte de vitesse",
@@ -899,7 +1584,7 @@
             "bone_clay_recipe": {
                "recipe_name": "Monticule d'argile osseuse",
                "description": "Nécessaire pour créer de la porcelaine et de belles céramiques d'ornement.",
-               "flavor": "."
+               "flavor": ""
             },
             "bone_clay_x3_recipe": {
                "recipe_name": "Monticule d'argile osseuse (x3)",
@@ -937,17 +1622,17 @@
             "porcelain_fence_bar_double_recipe": {
                "recipe_name": "Clôture en porcelaine grand format",
                "description": "Réaliser une double section de mur court en porcelaine.",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_fence_bar_single_recipe": {
                "recipe_name": "Clôture en porcelaine Petite",
                "description": "Réaliser une seule section de mur court en porcelaine.",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_fence_end_recipe": {
                "recipe_name": "Poteau de clôture en porcelaine",
                "description": "Réaliser un poteau de clôture pour un mur court en porcelaine.",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_fence_gate_recipe": {
                "recipe_name": "Portail de clôture en porcelaine",
@@ -987,7 +1672,7 @@
             "porcelain_comfy_bed_recipe": {
                "recipe_name": "Porcelain Comfy Lit",
                "description": "Pour ceux qui veulent avoir l'air fantaisiste même quand ils dorment.",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_dining_table_recipe": {
                "recipe_name": "Table de repas en porcelaine",
@@ -997,7 +1682,7 @@
             "porcelain_display_cabinet_recipe": {
                "recipe_name": "Vitrine en porcelaine",
                "description": "Une armoire pour mettre en valeur toutes les poteries ennuyeuses qui ont été faites avant la porcelaine !",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_display_cupboard_recipe": {
                "recipe_name": "Vitrine en porcelaine",
@@ -1037,7 +1722,7 @@
             "porcelain_table_recipe": {
                "recipe_name": "Table en porcelaine pour une personne",
                "description": "Même dans le luxe, on peut vouloir manger seul.",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_teapot_recipe": {
                "recipe_name": "Théière en porcelaine",
@@ -1047,17 +1732,17 @@
             "porcelain_urn_short_recipe": {
                "recipe_name": "Petite Urne en porcelaine",
                "description": "Une belle pièce de décoration.",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_urn_tall_recipe": {
                "recipe_name": "Urne en porcelaine",
                "description": "Pièce de porcelaine très fantaisie et bien peinte.",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_wall_tile_blue_recipe": {
                "recipe_name": "Mur de carreaux de porcelaine",
                "description": "Assemblage mosaïque par mosaïque.",
-               "flavor": "."
+               "flavor": ""
             },
             "porcelain_wall_tile_gold_recipe": {
                "recipe_name": "Mur de carreaux de porcelaine dorée",
@@ -1078,9 +1763,56 @@
                "recipe_name": "Porcelain Animal Comfy Lit",
                "description": "Les animaux passeront un merveilleux moment à dormir dans ce lit !",
                "flavor": "Les animaux tenteront toujours de dormir sur le lit le plus proche de celui de leur propriétaire !"
+            },
+            "fuel_holder_large_clay_recipe": {
+               "recipe_name": "Clay Firewood Shed",
+               "description": "Build a reliable storage shed that will keep up to 18 Bundles O' Firewood ready to be used.",
+               "flavor": ""
+            },
+            "food_trough_clay_recipe": {
+               "recipe_name": "Clay Manger",
+               "description": "A trough for a Shepherd to serve food for animals in a pasture.",
+               "flavor": "Shepherds will always try to keep troughs full"
+            },
+            "pet_food_bowl_clay_red_recipe": {
+               "recipe_name": "Red Clay Kibble Bowl",
+               "description": "Hearthlings can put kibble in this clay bowl for their pets to eat.",
+               "flavor": "Dogs love these for some reason"
+            },
+            "pet_food_bowl_clay_blue_recipe": {
+               "recipe_name": "Blue Clay Kibble Bowl",
+               "description": "Hearthlings can put kibble in this clay bowl for their pets to eat.",
+               "flavor": "Blue goes well with the mess they'll cause"
+            },
+            "pet_food_bowl_clay_green_recipe": {
+               "recipe_name": "Green Clay Kibble Bowl",
+               "description": "Hearthlings can put kibble in this clay bowl for their pets to eat.",
+               "flavor": "Often lost by pet owners with lawns"
+            },
+            "pasture_bed_small_recipe": {
+               "recipe_name": "Small Pasture Bedding",
+               "description": "Small pasture animals will go to these during the night or bad weather, place them under shelter.",
+               "flavor": "Small animals include poyos and rabbits"
+            },
+            "pasture_bed_recipe": {
+               "recipe_name": "Pasture Bedding",
+               "description": "Large pasture animals will go to these during the night or bad weather, place them under shelter.",
+               "flavor": "Large animals include sheep, ostriches and moo-moos"
             }
          },
          "potter_description": {
+            "level_1_data": {
+               "transform_perk_name": "Professional Modeling",
+               "transform_perk_description": "The Potter can, with patience and dedication, shape some clay blocks into nice artworks."
+            },
+            "level_4_data": {
+               "ornate_perk_name": "Porcelain Wonderland",
+               "ornate_perk_description": "The Potter's studies and work with clay have rewarded them with knowledge enough to create valuable bone clay."
+            },
+            "level_6_data": {
+               "mastery_name": "Shaping the World",
+               "mastery_description": "The Potter's hands are capable of giving shape and life to clay like no other, creating beautiful works especially with porcelain."
+            },
             "description": "Le potier travaille avec des ressources d'argile pour les transformer en briques de construction et autres objets, outils et décorations utiles."
          }
       },
@@ -1110,7 +1842,7 @@
             "mason_workbench_bone_recipe": {
                "recipe_name": "Atelier de sculpture sur os",
                "description": "Requis par le maçon pour sculpter des meubles et de l'équipement en os.",
-               "flavor": "."
+               "flavor": ""
             },
             "legendary_headpiece_recipe": {
                "recipe_name": "Étoile tombée",
@@ -1152,7 +1884,82 @@
             "stone_hatchet_recipe": {
                "recipe_name": "Hachette de pierre à main levée",
                "description": "Une bonne alternative de départ pour ceux qui ne favorisent pas le bouclier. (Off-hand)",
-               "flavor": "."
+               "flavor": ""
+            },
+            "firepit_skulls_recipe": {
+               "recipe_name": "Skull Hearth",
+               "description": "Create an exotic firepit that will provide light and warmth.",
+               "flavor": "Might also cause nightmares"
+            },
+            "input_bin_bone_recipe": {
+               "recipe_name": "Bone Supply Bin",
+               "description": "Make a supply bin for quicker and weirder crafting.",
+               "flavor": ""
+            },
+            "input_table_ground_bone_recipe": {
+               "recipe_name": "Bone Supply Table",
+               "description": "Craft a supply table for stockpiling materials.",
+               "flavor": ""
+            },
+            "output_box_bone_recipe": {
+               "recipe_name": "Bone Finished Work Shelf",
+               "description": "Build an odd but efficient shelf for crafters to store finished products.",
+               "flavor": ""
+            },
+            "bone_chest_recipe": {
+               "recipe_name": "Bone Chest",
+               "description": "Creepily holds up to 64 items.",
+               "flavor": "Not a mimic. Promise."
+            },
+            "bone_bench_recipe": {
+               "recipe_name": "Bone Park Bench",
+               "description": "Create a creepy park bench out of several bones.",
+               "flavor": ""
+            },
+            "bone_comfy_bed_recipe": {
+               "recipe_name": "Bone Comfy Bed",
+               "description": "A comfortable bed for hearthlings to sleep.",
+               "flavor": "Stuff of nightmares"
+            },
+            "bone_comfy_chair_recipe": {
+               "recipe_name": "Bone Comfy Chair",
+               "description": "Build an odd yet elegant chair with bones and pillows.",
+               "flavor": ""
+            },
+            "bone_candle_holder_recipe": {
+               "recipe_name": "Skull Candle Holder",
+               "description": "Create a creepy light source that can be placed on surfaces or walls.",
+               "flavor": "If only the eye sockets would glow..."
+            },
+            "bone_floor_candle_holder_recipe": {
+               "recipe_name": "Skull Floor Candle Holder",
+               "description": "Carve a creepy light source to place on the floor.",
+               "flavor": ""
+            },
+            "bone_dining_table_recipe": {
+               "recipe_name": "Bone Dining Table",
+               "description": "Build a beautifully carved table for meals.",
+               "flavor": "Might cause some indigestion..."
+            },
+            "bone_stool_recipe": {
+               "recipe_name": "Bone Stool",
+               "description": "Craft a small and efficient seat.",
+               "flavor": ""
+            },
+            "bone_dresser_recipe": {
+               "recipe_name": "Bone Dresser",
+               "description": "Create a fancy dresser with a nice cloth out of bones.",
+               "flavor": ""
+            },
+            "bone_writing_desk_recipe": {
+               "recipe_name": "Bone Writing Desk",
+               "description": "Carve a nice bone desk for decoration.",
+               "flavor": "Improves the quality of ghost stories!"
+            },
+            "bone_table_for_one_recipe": {
+               "recipe_name": "Bone Table for One",
+               "description": "Create a small bone table for a single person.",
+               "flavor": ""
             },
             "giant_bone_axe_recipe": {
                "recipe_name": "Hache géante en os",
@@ -1162,7 +1969,7 @@
             "giant_bone_mace_recipe": {
                "recipe_name": "Masse osseuse géante",
                "description": "Créez une arme lourde en os qui donne un coup de fouet. (à deux mains)",
-               "flavor": "."
+               "flavor": ""
             },
             "giant_bone_shield_recipe": {
                "recipe_name": "Bouclier osseux géant",
@@ -1172,12 +1979,12 @@
             "light_giant_bone_shield_recipe": {
                "recipe_name": "Light Bouclier osseux géant",
                "description": "Faites un bouclier avec les os forts et légers d'une grande créature.",
-               "flavor": "."
+               "flavor": ""
             },
             "giant_bone_hatchet_recipe": {
                "recipe_name": "Hachette d'os géante à main levée",
                "description": "Fabriquez une arme pour parer et tenter des contre-attaques. (Off-hand)",
-               "flavor": "."
+               "flavor": ""
             },
             "giant_bone_pike_recipe": {
                "recipe_name": "Lance à os géante",
@@ -1192,7 +1999,7 @@
             "giant_bone_short_sword_recipe": {
                "recipe_name": "Épée géante en os courte",
                "description": "Fabriquez l'arme d'un chevalier avec les os d'une créature mythique.",
-               "flavor": "."
+               "flavor": ""
             },
             "stone_sword_recipe": {
                "flavor": "L'entraînement avec des épées de pierre est une blague cruelle mais efficace."
@@ -1211,6 +2018,31 @@
                "recipe_name": "Lit confortable en marbre pour animaux",
                "description": "Les animaux passeront un merveilleux moment à dormir dans ce lit !",
                "flavor": "Les animaux tenteront toujours de dormir sur le lit le plus proche de celui de leur propriétaire !"
+            },
+            "fuel_holder_large_stone_recipe": {
+               "recipe_name": "Stone Firewood Shed",
+               "description": "Build a reliable storage shed that will keep up to 18 Bundles O' Firewood ready to be used.",
+               "flavor": ""
+            },
+            "food_trough_stone_recipe": {
+               "recipe_name": "Stone Manger",
+               "description": "A trough for a Shepherd to serve food for animals in a pasture.",
+               "flavor": "Shepherds will always try to keep troughs full"
+            },
+            "pet_food_bowl_stone_recipe": {
+               "recipe_name": "Stone Kibble Bowl",
+               "description": "Hearthlings can put kibble in this stone bowl for their pets to eat.",
+               "flavor": "Heavy enough to not be moved around... much"
+            },
+            "pasture_bed_small_recipe": {
+               "recipe_name": "Small Pasture Bedding",
+               "description": "Small pasture animals will go to these during the night or bad weather, place them under shelter.",
+               "flavor": "Small animals include poyos and rabbits"
+            },
+            "pasture_bed_recipe": {
+               "recipe_name": "Pasture Bedding",
+               "description": "Large pasture animals will go to these during the night or bad weather, place them under shelter.",
+               "flavor": "Large animals include sheep, ostriches and moo-moos"
             }
          },
          "mason_workbench_bone": {
@@ -1218,36 +2050,98 @@
             "description": "Utilisé par le maçon pour l'artisanat avec de l'os."
          },
          "mason_description": {
+            "level_1_data": {
+               "transform_perk_name": "Sculpting",
+               "transform_perk_description": "The Mason is able to use their talent and chisel to sculpt stone blocks like marble into statues."
+            },
+            "level_2_data": {
+               "recipe_unlock_2_perk_name": "Fancy Rocks & Bones",
+               "recipe_unlock_2_perk_description": "The Mason can now make more elaborate items from stone and can also learn how to work with bone materials."
+            },
+            "level_4_data": {
+               "ornate_perk_name": "Flake Refinement",
+               "ornate_perk_description": "The Mason has enough skill to refine gold ores or ingots into beautiful and useful Gold Flakes."
+            },
+            "level_6_data": {
+               "mastery_name": "Marbleous Chisel",
+               "mastery_description": "The Mason's mastery of their trade allows them to create the most appealing stoneworks imaginable, especially with marble!"
+            },
             "description": "Le maçon est capable de façonner la pierre en différents outils, pièces de construction et décorations utiles. Ils peuvent aussi apprendre à travailler avec les os."
          }
       },
       "blacksmith": {
          "recipes": {
             "utility_name": "Utilitaire",
+            "civillian_tools_name": "Improved Tools",
+            "fuel_holder_small_recipe": {
+               "recipe_name": "Cast Iron Holder",
+               "description": "Craft a fancy holder that can store up to 4 Bundles O' Firewood.",
+               "flavor": ""
+            },
+            "cook_spoon_copper_recipe": {
+               "recipe_name": "Cook's Copper Spoon",
+               "description": "Create a lighter and cleaner spoon that will improve the Cook's efficiency.",
+               "flavor": ""
+            },
+            "herbalist_mortar_pestle_pewter_recipe": {
+               "recipe_name": "Herbalist's Pewter Mortar",
+               "description": "Craft a fancy metallic mortar and pestle to increase the Herbalist's crafting speed.",
+               "flavor": ""
+            },
+            "mason_chisel_iron_recipe": {
+               "recipe_name": "Mason's Iron Chisel",
+               "description": "Craft a set of hammer and chisel out of iron to improve the Mason's crafting speed.",
+               "flavor": ""
+            },
+            "potter_cutter_iron_recipe": {
+               "recipe_name": "Potter's Iron Cutter",
+               "description": "Create an improved, sharper cutter for the Potter so they can craft faster.",
+               "flavor": ""
+            },
+            "blacksmith_hammer_steel_recipe": {
+               "recipe_name": "Blacksmith's Steel Hammer",
+               "description": "Forge a new and stronger hammer out of steel for the Blacksmith, improving their crafting speed.",
+               "flavor": "The hammer is a blacksmith's most loyal companion, like a shield to a knight or the moon to the night. -Lucan Varius, Artifex Ignis"
+            },
+            "carpenter_saw_steel_recipe": {
+               "recipe_name": "Carpenter's Steel Saw",
+               "description": "Make an enhanced steel saw that will allow the Carpenter to be faster when crafting.",
+               "flavor": ""
+            },
+            "trapper_knife_steel_recipe": {
+               "recipe_name": "Trapper's Steel Knife",
+               "description": "This sharp and light steel knife will allow the trapper to handle animals faster.",
+               "flavor": "What do you mean with *handle* animals?"
+            },
+            "weaver_spindle_steel_recipe": {
+               "recipe_name": "Weaver's Spindle & Steel Needle",
+               "description": "Create a set of elegant, silver coated needles to improve the Weaver's crafting speed.",
+               "flavor": ""
+            },
             "farmer_hoe_iron_recipe": {
                "recipe_name": "Bineuse à ferraille",
                "description": "Concevoir un outil que les agriculteurs peuvent utiliser pour améliorer légèrement leur efficacité de travail.",
-               "flavor": "."
+               "flavor": ""
             },
             "worker_axe_iron_recipe": {
                "recipe_name": "Hache du ferrailleur",
                "description": "Fabriquez un outil que les travailleurs peuvent utiliser pour améliorer légèrement leur efficacité lorsqu'ils coupent des arbres.",
-               "flavor": "."
+               "flavor": ""
             },
             "worker_axe_steel_recipe": {
                "recipe_name": "Hache des métallurgistes",
                "description": "Concevoir un outil que les travailleurs peuvent utiliser pour améliorer considérablement leur efficacité lorsqu'ils coupent des arbres.",
-               "flavor": "."
+               "flavor": ""
             },
             "worker_hammer_iron_recipe": {
                "recipe_name": "Marteau de ferrailleur",
                "description": "Concevoir un outil que les travailleurs peuvent utiliser pour améliorer légèrement leur efficacité lors de la construction.",
-               "flavor": "."
+               "flavor": ""
             },
             "worker_hammer_steel_recipe": {
                "recipe_name": "Marteau de sidérurgiste",
                "description": "Concevoir un outil que les travailleurs peuvent utiliser pour améliorer considérablement leur efficacité dans la construction.",
-               "flavor": "."
+               "flavor": ""
             },
             "mining_pick_iron_recipe": {
                "recipe_name": "Piolet de travailleur en fer",
@@ -1258,6 +2152,31 @@
                "recipe_name": "Piolet de travailleur en acier",
                "description": "Concevoir un outil qui permettra aux travailleurs d'améliorer considérablement leur efficacité dans l'exploitation minière.",
                "flavor": "Cet outil améliorera également les chances d'obtenir des ressources de meilleure qualité."
+            },
+            "worker_tools_iron_recipe": {
+               "recipe_name": "Worker's Iron Tools",
+               "description": "Craft a set of iron tools for workers.",
+               "flavor": "Slightly increases the odds of mining better quality resources and somewhat boosts their work speed when chopping, mining and building."
+            },
+            "worker_tools_steel_recipe": {
+               "recipe_name": "Worker's Steel Tools",
+               "description": "Craft a set of steel tools for workers.",
+               "flavor": "Increases the odds of mining better quality resources and substantially boosts their work speed when chopping, mining and building."
+            },
+            "gold_ingot_from_coins_recipe": {
+               "recipe_name": "Gold Ingot",
+               "description": "Meld 100 gold coins together to form an ingot.",
+               "flavor": ""
+            },
+            "gold_coins_from_ingot_recipe": {
+               "recipe_name": "Gold Coins (x100)",
+               "description": "Melt a gold ingot to mint gold coins that can be used in trading!",
+               "flavor": ""
+            },
+            "gold_coins_from_flakes_recipe": {
+               "recipe_name": "Gold Coins (x30)",
+               "description": "Melt gold flakes into gold coins that can be used in trading!",
+               "flavor": ""
             },
             "blacksmith_fuel_oven_recipe": {
                "recipe_name": "Four de forgeron",
@@ -1306,17 +2225,17 @@
             "bulk_copper_ingot_recipe": {
                "recipe_name": "Lingot de cuivre (x2)",
                "description": "Un four amélioré permettra au forgeron d'utiliser plus efficacement le minerai de cuivre.",
-               "flavor": "."
+               "flavor": ""
             },
             "bulk_tin_ingot_recipe": {
                "recipe_name": "Lingot d'étain (x2)",
                "description": "Un four amélioré permettra au forgeron d'utiliser plus efficacement les minerais d'étain.",
-               "flavor": "."
+               "flavor": ""
             },
             "bulk_iron_ingot_recipe": {
                "recipe_name": "Lingot de fer (x2)",
                "description": "Un four amélioré permettra au forgeron d'utiliser plus efficacement le minerai de fer.",
-               "flavor": "."
+               "flavor": ""
             },
             "copper_wall_lantern_recipe": {
                "recipe_name": "Lanterne murale en cuivre",
@@ -1400,12 +2319,12 @@
             "bronze_hatchet_recipe": {
                "recipe_name": "Hachette en bronze à main levée",
                "description": "Pour avoir paré des attaques et tenté des contre-attaques. Ça déséquilibre les ennemis.",
-               "flavor": "."
+               "flavor": ""
             },
             "iron_hatchet_recipe": {
                "recipe_name": "Hachette en fer à repasser à main levée",
                "description": "Petite hache robuste utilisée pour parer et attaquer. Ça déséquilibre les ennemis.",
-               "flavor": "."
+               "flavor": ""
             },
             "steel_dagger_recipe": {
                "recipe_name": "Poignard d'acier à main levée",
@@ -1419,7 +2338,7 @@
             "silver_halberd_recipe": {
                "recipe_name": "Hallebarde argentée",
                "description": "Une arme de chevalier complexe et puissante. Ça secoue leur cœur !",
-               "flavor": "."
+               "flavor": ""
             },
             "silver_short_sword_recipe": {
                "recipe_name": "Epée courte en argent",
@@ -1492,8 +2411,8 @@
                "perk_001_description": "Le forgeron a acquis suffisamment de connaissances sur les forges pour commencer à produire ses propres combustibles et installations."
             },
             "level_4_data": {
-               "perk_000_name": "Outils améliorés et acier à froid",
-               "perk_000_description": "Les longues heures passées à la forge ont donné au forgeron des idées sur des installations nouvelles et améliorées qui permettraient de percer le secret de l'acier : des armes plus tranchantes et des armures plus légères."
+               "ornate_perk_name": "Advanced Industry",
+               "ornate_perk_description": "Experience with smelting has gave the Blacksmith ideas on new and improved facilities that will allow them to work more efficiently and with more valuable materials."
             },
             "description": "Le forgeron utilise des minerais bruts, des combustibles et de la force pour plier les métaux à sa guise, créant une vaste gamme de marchandises comme des armes, des armures, des décorations et des outils utiles."
          }
@@ -1510,10 +2429,61 @@
          "worker_holiday_hat": {
             "display_name": "Casquette Cheer Cap des Fêtes",
             "description": "Un chapeau traditionnel pour profiter des fêtes de fin d'année !"
+         },
+         "winter_worker_outfit": {
+            "description": "A heavy wool coat, for chilly winter nights. Improves speed."
+         },
+         "na_winter_worker_outfit": {
+            "description": "A heavy wool coat, for cold winter nights. Improves speed."
+         },
+         "chilly_simple_worker_outfit": {
+            "display_name": "Simple Winter Worker Outfit",
+            "description": "Wool cap and gloves. Protects from chilly weather but with no added benefits."
+         },
+         "cold_simple_worker_outfit": {
+            "display_name": "Simple Worker Leather Jacket",
+            "description": "A tepid leather outfit. Protects from cold weather but with no added benefits."
+         },
+         "freezing_simple_worker_outfit": {
+            "display_name": "Simple Worker Bear Coat",
+            "description": "A warm and fuzzy cloak. Protects from freezing weather but with no added benefits."
+         },
+         "cold_worker_outfit": {
+            "display_name": "Worker Leather Jacket",
+            "description": "A high quality leather outfit. Protects from cold weather and improves speed!"
+         },
+         "na_freezing_worker_outfit": {
+            "display_name": "Worker Bear Coat",
+            "description": "A masterfully crafted arctic outfit. Protects from freezing weather and improves speed!"
+         },
+         "rc_winter_worker_outfit": {
+            "display_name": "Winter Worker Outfit",
+            "description": "A reinforced wool outfit. Protects from chilly weather and improves speed!"
          }
       },
       "cook": {
          "recipes": {
+            "food_preparation_name": "Food Preparation",
+            "cook_cheese_vat_recipe": {
+               "recipe_name": "Cheese Vat",
+               "description": "The Cook can use this to make cheese by crafting curdling mixtures. The longer it rests the more valuable it gets.",
+               "flavor": "You can harvest the cheese at any time during the maturation process"
+            },
+            "curdling_mixture_recipe": {
+               "recipe_name": "Curdling Mixture",
+               "description": "A fermentation mixture of milk and some additives. Within a cheese vat this can be turned into cheese!",
+               "flavor": "You probably don't want to know what else goes in there..."
+            },
+            "cereals_corn_recipe": {
+               "recipe_name": "Bowl of Corn Cereal",
+               "description": "Pour milk on top of delicious baked flakes of corn.",
+               "flavor": "'Cereal first, milk afterwards. It is the natural order.' - Sir Edwin Butterfingers"
+            },
+            "butter_recipe": {
+               "recipe_name": "Slab of Butter",
+               "description": "Churn a creamy and flavorful paste that is often used as a cooking ingredient.",
+               "flavor": "With bread it goes like bread and... Eh, nevermind"
+            },
             "nutty_poultry_recipe": {
                "recipe_name": "Volaille et noix mélangées",
                "description": "Grosses tranches de volaille sautées et sautées avec épices et noix.",
@@ -1522,7 +2492,12 @@
             "cherry_tart_recipe": {
                "recipe_name": "Tarte aux cerises",
                "description": "Un dessert délicieux et frais pour les après-midi paresseux.",
-               "flavor": "."
+               "flavor": ""
+            },
+            "fruit_yogurt_recipe": {
+               "recipe_name": "Fruit Yogurt",
+               "description": "Fermented, creamy milk sweetened with sugar and fruits.",
+               "flavor": "A family favorite"
             },
             "pie_cherry_recipe": {
                "recipe_name": "Tarte aux cerises douces",
@@ -1537,12 +2512,12 @@
             "huntsman_banquet_recipe": {
                "recipe_name": "Banquet du chasseur",
                "description": "Une coupe exquise de chevreuil assaisonnée de saveurs fruitées de la forêt.",
-               "flavor": "."
+               "flavor": ""
             },
             "cooked_nuts_recipe": {
                "recipe_name": "Noix cuites",
                "description": "Graines comestibles rasées et cuites tendrement comme les pins et les glands.",
-               "flavor": "."
+               "flavor": ""
             },
             "broth_recipe": {
                "recipe_name": "Bouillon",
@@ -1557,12 +2532,12 @@
             "boiled_shrooms_recipe": {
                "recipe_name": "Champignons bouillis",
                "description": "Les champignons en ébullition enlèveront la plupart de leurs impuretés et amélioreront leur consistance.",
-               "flavor": "."
+               "flavor": ""
             },
             "shroom_omelette_recipe": {
                "recipe_name": "Omelette aux champignons",
                "description": "Un plat satisfaisant, savoureux et facile à préparer.",
-               "flavor": "."
+               "flavor": ""
             },
             "roast_steak_recipe": {
                "recipe_name": "Bifteck rôti",
@@ -1589,6 +2564,11 @@
                "description": "De délicieux grains prêts à être utilisés dans d'autres recettes.",
                "flavor": "Qui aurait cru que l'herbe pouvait être si savoureuse ??"
             },
+            "rice_flour_recipe": {
+               "recipe_name": "Sack of Rice Flour",
+               "description": "A formidable alternative for wheat flour.",
+               "flavor": ""
+            },
             "dough_recipe": {
                "recipe_name": "Portion de pâte",
                "description": "Mélangez et pétrissez une pâte malléable pour la cuisson de repas comme le pain.",
@@ -1612,7 +2592,7 @@
             "cooked_rice_recipe": {
                "recipe_name": "Riz cuit",
                "description": "Cuit à la perfection et assez collant.",
-               "flavor": "."
+               "flavor": ""
             },
             "dumpling_salmon_recipe": {
                "recipe_name": "Boulette de saumon",
@@ -1654,6 +2634,36 @@
                "description": "Préparez un repas savoureux avec de longues nouilles roulées et une sauce piquante.",
                "flavor": "Il y a des centaines de formes de pâtes, des clairières de la forêt de Darkmoor jusqu'au désert de Pal'Mum."
             },
+            "seared_meat_veggies_recipe": {
+               "recipe_name": "Seared Meat & Veggies",
+               "description": "Prepare a pleasant platter of buttered meat slices stirred with fresh veggies.",
+               "flavor": "It smells really good"
+            },
+            "butter_cookies_recipe": {
+               "recipe_name": "Butter Cookies",
+               "description": "Bake a bunch of small and tasty buttered delicacies.",
+               "flavor": "Cookies can make one's life better"
+            },
+            "buttered_bulbs_recipe": {
+               "recipe_name": "Buttered Bulbs",
+               "description": "Stir a mix of mushrooms with butter and spices.",
+               "flavor": ""
+            },
+            "cheesecake_recipe": {
+               "recipe_name": "Cheesecake",
+               "description": "Bake a very soft and flavorful cheese cream and top it with delicious fruit jelly!",
+               "flavor": "Cheese is great, cake is great, why not get them together?"
+            },
+            "imperial_salad_recipe": {
+               "recipe_name": "Imperial Salad",
+               "description": "An appetizing combination of cheese and greens.",
+               "flavor": "It is said that the old emperors of the Phoenix Empire loved eating veggies like this"
+            },
+            "melted_poyo_recipe": {
+               "recipe_name": "Melted Poyo",
+               "description": "A savory roasted poyo filled with veggies and covered in melted cheese.",
+               "flavor": "Hmm... Melted cheese."
+            },
             "legendary_ink_recipe": {
                "recipe_name": "Encre sacrée",
                "description": "Encre spéciale et dorée pour les manuscrits enluminés de'La Promenade du Cid'.",
@@ -1662,7 +2672,7 @@
             "thatch_pile_recipe": {
                "recipe_name": "Large paquet de chaume",
                "description": "Conservez une grande quantité de chaume pour une utilisation ultérieure.",
-               "flavor": "."
+               "flavor": ""
             },
             "rabbit_feed_recipe": {
                "description": "Carottes sélectionnées pour lapins. Améliore la qualité des produits d'origine animale."
@@ -1676,12 +2686,32 @@
             "fodder_recipe": {
                "recipe_name": "Fourrage pour animaux",
                "description": "Bon marché et efficace pour nourrir les animaux, même si ce n'est pas exactement leur aliment préféré....",
-               "flavor": "."
+               "flavor": ""
             },
             "ostrich_feed_recipe": {
                "recipe_name": "Aliments pour autruches",
                "description": "Supplément nutritif pour les autruches. Améliore la qualité des produits d'origine animale.",
-               "flavor": "."
+               "flavor": ""
+            },
+            "moomoo_feed_recipe": {
+               "recipe_name": "Moo-Moo Feed",
+               "description": "Tasty and hearty food appreciated by large ruminants. Improves the quality of animal produce.",
+               "flavor": ""
+            },
+            "kibble_recipe": {
+               "recipe_name": "Kibble",
+               "description": "Bake nutritious and crunchy rations for pets. Exclusively vegetarian animals will not eat this kibble.",
+               "flavor": ""
+            },
+            "kibble_fish_recipe": {
+               "recipe_name": "Fish Kibble",
+               "description": "Bake crunchy rations for pets. Exclusively vegetarian animals will not eat this kibble.",
+               "flavor": "Fish kibble is not their favorite but will do the trick"
+            },
+            "kibble_veggie_recipe": {
+               "recipe_name": "Veggie Kibble",
+               "description": "Bake delicious and healthy rations for pets. Exclusively carnivore animals will not eat this kibble.",
+               "flavor": ""
             }
          },
          "cook_mill_powered": {
@@ -1694,6 +2724,17 @@
             "display_name": "Bol de cuisinier"
          },
          "cook_description": {
+            "level_2_data": {
+               "recipe_unlock_2_description": "The Cook has learned to make slightly fancier recipes and can now build an oven, allowing them to create baked goods as well."
+            },
+            "level_4_data": {
+               "ornate_perk_name": "Healthier Diets",
+               "ornate_perk_description": "The Cook has mastered the abilities necessary to create more diverse and specific foods, particularly specific rations for different animals."
+            },
+            "level_6_data": {
+               "mastery_name": "Master Chef",
+               "mastery_description": "From burning sauces to delighting crowds, a long journey has brought the Cook to the mastery of their craft. They now can try the most exotic and amazing recipes known to hearthlings."
+            },
             "description": "L'art de cuisiner fournira un menu varié de repas copieux et de boissons fortifiantes créées avec des ressources d'origines diverses comme des légumes, de la viande et des produits fourragers."
          },
          "cook_workbench_pumpkin": {
@@ -1701,6 +2742,34 @@
                "display_name": "Chaudron de citrouille",
                "description": "Un chaudron exotique utilisé par le cuisinier pour les mets délicats."
             }
+         },
+         "cook_cheese_vat_empty": {
+            "display_name": "Empty Cheese Vat",
+            "description": "Used by the Cook to make cheese. The longer it rests, the better!"
+         },
+         "cook_cheese_vat_filled": {
+            "display_name": "Curdling Cheese Vat",
+            "description": "The milk is curdling and shall take some time before it can be drained and formed."
+         },
+         "cook_cheese_vat_curdled": {
+            "display_name": "Curdled Cheese Vat",
+            "description": "Curds have formed. Drain the leftover whey or harvest for Cottage Cheese."
+         },
+         "cook_cheese_vat_cheese_fresh": {
+            "display_name": "Fresh Cheese Vat",
+            "description": "Fresh cheese has formed! Harvest it or let it mature some more."
+         },
+         "cook_cheese_vat_cheese_mild": {
+            "display_name": "Mild Cheese Vat",
+            "description": "Mild cheese has formed! Harvest it or let it mature even more for a lot of time."
+         },
+         "cook_cheese_vat_cheese_aged": {
+            "display_name": "Aged Cheese Vat",
+            "description": "This cheese is quite mature, firm and flavorful! It is time to harvest this delicacy."
+         },
+         "cook_spoon_copper": {
+            "display_name": "Cook's Copper Spoon",
+            "description": "Lighter and cleaner, this spoon will improve the Cook's efficiency."
          }
       },
       "carpenter": {
@@ -1751,7 +2820,7 @@
             "splitting_block_recipe": {
                "recipe_name": "Billot à bois",
                "description": "Créez un bloc solide pour fendre les bûches.",
-               "flavor": "."
+               "flavor": ""
             },
             "wood_bed_recipe": {
                "flavor": "Le chaume peut être obtenu en récoltant des touffes d'herbe, certaines plantes comme la Silkweed ou en creusant dans un terrain herbeux."
@@ -1775,9 +2844,50 @@
                "recipe_name": "Ornate Animal Comfy Lit",
                "description": "Les animaux passeront un merveilleux moment à dormir dans ce lit !",
                "flavor": "Les animaux tenteront toujours de dormir sur le lit le plus proche de celui de leur propriétaire !"
+            },
+            "fuel_holder_large_wood_recipe": {
+               "recipe_name": "Wooden Firewood Shed",
+               "description": "Build a reliable storage shed that will keep up to 18 Bundles O' Firewood ready to be used.",
+               "flavor": ""
+            },
+            "food_trough_wood_recipe": {
+               "recipe_name": "Wooden Manger",
+               "description": "A trough for a Shepherd to serve food for animals in a pasture.",
+               "flavor": "Shepherds will always try to keep troughs full"
+            },
+            "pet_food_bowl_wood_recipe": {
+               "recipe_name": "Wooden Kibble Bowl",
+               "description": "Hearthlings can put kibble in this wooden bowl for their pets to eat.",
+               "flavor": "Hopefully they won't make much of a mess..."
+            },
+            "pasture_bed_small_recipe": {
+               "recipe_name": "Small Pasture Bedding",
+               "description": "Small pasture animals will go to these during the night or bad weather, place them under shelter.",
+               "flavor": "Small animals include poyos and rabbits"
+            },
+            "pasture_bed_recipe": {
+               "recipe_name": "Pasture Bedding",
+               "description": "Large pasture animals will go to these during the night or bad weather, place them under shelter.",
+               "flavor": "Large animals include sheep, ostriches and moo-moos"
+            },
+            "fish_trap_recipe": {
+               "recipe_name": "Fish Trap",
+               "description": "Used by the Trapper to safely catch and harvest or capture fish. Can only place a limited amount.",
+               "flavor": "You can toggle the catching mode when clicking the trap!"
             }
          },
          "carpenter_description": {
+            "level_1_data": {
+               "transform_perk_name": "Carving Technique",
+               "transform_perk_description": "The Carpenter is able to use their skills and their strong metal saw to carve certain wood objects like fallen tree trunks into furniture or other nice things!"
+            },
+            "level_5_data": {
+               "ornate_perk_name": "Ornate Craftsmanship",
+               "ornate_perk_description": "The Carpenter has enough skill to create valuable, intricate and extremely appealing objects by enhancing them with Gold Flakes"
+            },
+            "level_6_data": {
+               "mastery_description": "The Carpenter's mastery of their trade allows them to create all the possible goods and amazing ornate furniture one could imagine out of raw wood."
+            },
             "description": "Le charpentier peut fabriquer de nombreux biens comme des outils, des pièces de construction, des armes et des meubles en bois."
          }
       },
@@ -1787,6 +2897,36 @@
                "recipe_name": "Bonnet de fête",
                "description": "L'équipe ACE vous souhaite à tous de très joyeuses et merveilleuses fêtes !",
                "flavor": "Cette recette sera retirée après la Saint-Sylvestre.... Alors fabriquez le vôtre tant que vous le pouvez !"
+            },
+            "chilly_simple_worker_outfit_recipe": {
+               "recipe_name": "Simple Winter Worker Outfit",
+               "description": "Craft a Wool cap and gloves. Protects from chilly weather but with no added benefits.",
+               "flavor": "A family favorite for autumn days"
+            },
+            "cold_simple_worker_outfit_recipe": {
+               "recipe_name": "Simple Worker Leather Jacket",
+               "description": "Create a tepid leather outfit. Protects from cold weather but with no added benefits.",
+               "flavor": ""
+            },
+            "freezing_simple_worker_outfit_recipe": {
+               "recipe_name": "Simple Worker Bear Coat",
+               "description": "Sew a warm and fuzzy cloak. Protects from freezing weather but with no added benefits.",
+               "flavor": "Bears can be found in wild caves or caught by very lucky trappers"
+            },
+            "cold_worker_outfit_recipe": {
+               "recipe_name": "Worker Leather Jacket",
+               "description": "A sturdy and tepid leather outfit of good quality. Protects from cold weather and improves speed.",
+               "flavor": "When winter arrives, look the part!"
+            },
+            "rc_winter_worker_outfit_recipe": {
+               "recipe_name": "Winter Worker Outfit",
+               "description": "A nice and thick wool outfit for protecting oneself from chilly weather. Also improves speed.",
+               "flavor": "It can be surprisingly cold in the desert"
+            },
+            "na_freezing_worker_outfit_recipe": {
+               "recipe_name": "Worker Bear Coat",
+               "description": "The finest northern craftsmanship, a resistant and very warm outfit. Protects from freezing weather and improves speed.",
+               "flavor": "For the long winter"
             },
             "backpack_cloth_recipe": {
                "recipe_name": "Sac à dos de travailleur du textile",
@@ -1806,12 +2946,12 @@
             "curtains_wide_recipe": {
                "recipe_name": "Rideaux larges",
                "description": "Pour quand les rideaux réguliers ne suffisent pas.",
-               "flavor": "."
+               "flavor": ""
             },
             "curtains_tall_recipe": {
                "recipe_name": "Rideaux hauts",
                "description": "Parfois, une fenêtre a besoin d'une robe plus longue.",
-               "flavor": "."
+               "flavor": ""
             },
             "ornate_curtains_recipe": {
                "recipe_name": "Rideaux décoratifs",
@@ -1821,7 +2961,7 @@
             "ornate_curtains_wide_recipe": {
                "recipe_name": "Rideaux décoratifs Wide",
                "description": "Créez des rideaux pour un foyer très spécial.",
-               "flavor": "."
+               "flavor": ""
             },
             "ornate_throw_rug_recipe": {
                "recipe_name": "Tapis à lancer orné",
@@ -1851,10 +2991,28 @@
             "porcelain_curtains_small_recipe": {
                "recipe_name": "Small Rideaux en porcelaine",
                "description": "Laisse doucement entrer la lumière.",
-               "flavor": "."
-            }
+               "flavor": ""
+            },
+            "clothing_armor_name": "Clothing & Tools",
+            "weapons_name": "Combat Equipment"
          },
          "weaver_description": {
+            "level_2_data": {
+               "gear_crafting_name": "Mechanical Weaving",
+               "gear_crafting_description": "The Weaver has acquired enough knowledge and abilities to create a Loom and create accessories, combat equipment and outfits that provide bonuses or enhancements."
+            },
+            "level_3_data": {
+               "extended_catalog_name": "Extended Catalog",
+               "extended_catalog_description": "The Weaver has access to many materials and can come up with several new ways to sew, stitch and stretch textiles into wonderful things."
+            },
+            "level_5_data": {
+               "ornate_perk_name": "Strings of Gold",
+               "ornate_perk_description": "The Weaver is now able to create decorations and other goods with outstanding appeal and beauty by using exotic resources."
+            },
+            "level_6_data": {
+               "mastery_name": "The Perfect Needle",
+               "mastery_description": "The Weaver's mastery of their unique craft allows them to bend the roughest wool and the smoothest silk to their will, creating anything they desire."
+            },
             "description": "Le tisserand peut transformer les peaux en cuir et les fibres en tissu, travaillant avec eux pour créer des articles complexes, des vêtements, des armures, des accessoires utiles et des décorations."
          }
       },
@@ -1868,6 +3026,9 @@
             "description": "N'immobilise pas ses proies en toute sécurité."
          },
          "trapper_description": {
+            "level_6_data": {
+               "trapper_level_6_description": "The trapper can now use metal clamp traps to capture big game and also has a thing or two to teach the Engineer about setting traps. Increases town trap limit by 6."
+            },
             "description": "Le trappeur peut armer des collets pour capturer et (ahem) The Trapper can arm snares to capture and (ahem) &quot;harvest&quot; wild critters for a reliable source of food, pelts and bones.quot;récolterThe Trapper can arm snares to capture and (ahem) &quot;harvest&quot; wild critters for a reliable source of food, pelts and bones.quot ; des créatures sauvages pour une source fiable de nourriture, de peaux et d'os."
          }
       },
@@ -1879,6 +3040,22 @@
             }
          },
          "shepherd_description": {
+            "level_1_data": {
+               "small_animals_name": "Apprentice Animal Tamer",
+               "small_animals_description": "The shepherd has just started mastering the techniques of animal taming and can only tame small animals."
+            },
+            "level_3_data": {
+               "big_animals_name": "Adept Animal Tamer",
+               "big_animals_description": "The shepherd is now much more experienced with animals and can tame large animals."
+            },
+            "level_5_data": {
+               "exotic_animals_name": "Master Animal Tamer",
+               "exotic_animals_description": "The shepherd has mastered all there is to know about domestic animals and can even handle exotic, magical creatures."
+            },
+            "level_6_data": {
+               "level_6_name": "One With the Herd",
+               "level_6_description": "Complete mastery of the shepherd's trade allows them to form a stronger bond with any animal. The positive effects of compassion on animals will last longer and the negative effects of slaughtering will be shorter."
+            },
             "description": "Amoureux de la nature, les bergers domestiquent de doux animaux sauvages pour prendre soin d'eux et récolter leurs ressources comme les œufs, la laine et la viande."
          },
          "shepherd_crook_corn": {
@@ -1898,7 +3075,9 @@
             },
             "level_4_data": {
                "perk_000_name": "Récolte abondante (Upgrade)",
-               "perk_000_description": "L'agriculteur obtient jusqu'à 50 % plus de rendement de chaque plante."
+               "perk_000_description": "L'agriculteur obtient jusqu'à 50 % plus de rendement de chaque plante.",
+               "perk_001_name": "Job Opportunities",
+               "perk_001_description": "Spending too much time with crops and plants has made the farmer contemplate the possibilities of caring for more exciting and interactive beings."
             },
             "level_6_data": {
                "perk_000_name": "Récolte abondante (Max)",
@@ -1954,7 +3133,7 @@
                "description": "Apprenez à faire pousser des pins arctiques."
             },
             "highland_pine_tree_seeds": {
-               "display_name": "Pommes de pin des Highlands",
+               "display_name": "Pommes de pin des hauts plateaux",
                "description": "Apprenez à faire pousser des pins des hautes terres."
             },
             "yew_tree_seeds": {
@@ -1964,6 +3143,14 @@
             "birch_tree_seeds": {
                "display_name": "Bouleau Catkins",
                "description": "Apprenez à faire pousser des bouleaux."
+            },
+            "corn_seeds": {
+               "display_name": "Corn Seeds",
+               "description": "Learn to grow corn."
+            },
+            "paddy_seeds": {
+               "display_name": "Paddy Seeds",
+               "description": "Learn to grow rice."
             }
          },
          "fertilizer": {
@@ -1987,42 +3174,42 @@
          "simple_hatch_wooden": {
             "display_name": "Simple trappe en bois",
             "description": "Une trappe simple pour portes verticales.",
-            "flavor": "."
+            "flavor": ""
          },
          "simple_hatch_clay": {
             "display_name": "Simple trappe en argile",
             "description": "Une trappe simple pour portes verticales.",
-            "flavor": "."
+            "flavor": ""
          },
          "simple_hatch_stone": {
             "display_name": "Simple trappe en pierre",
             "description": "Une trappe simple pour portes verticales.",
-            "flavor": "."
+            "flavor": ""
          },
          "simple_hatch_iron": {
             "display_name": "Simple trappe en fer",
             "description": "Une trappe simple mais robuste pour les portes verticales.",
-            "flavor": "."
+            "flavor": ""
          },
          "hidden_hatch_wooden": {
             "display_name": "Trappe en bois dissimulée",
             "description": "Une trappe bien cachée. Peut être verrouillé pour le contrôle de passage.",
-            "flavor": "."
+            "flavor": ""
          },
          "hidden_hatch_clay": {
             "display_name": "Trappe en argile dissimulée",
             "description": "Une trappe bien cachée. Peut être verrouillé pour le contrôle de passage.",
-            "flavor": "."
+            "flavor": ""
          },
          "hidden_hatch_stone": {
             "display_name": "Trappe en pierre dissimulée",
             "description": "Une trappe bien cachée. Peut être verrouillé pour le contrôle de passage.",
-            "flavor": "."
+            "flavor": ""
          },
          "hidden_hatch_iron": {
             "display_name": "Trappe en fer dissimulée",
             "description": "Une trappe bien cachée. Peut être verrouillé pour le contrôle de passage.",
-            "flavor": "."
+            "flavor": ""
          },
          "diagonal_hatch_wooden": {
             "display_name": "Panneau de grange en bois",
@@ -2302,22 +3489,22 @@
          },
          "highland_pine_tree_crop": {
             "description": "Devenez grand ou rentrez chez vous avec ces immenses pins des hautes terres.",
-            "display_name": "Scion de pin des Highlands",
+            "display_name": "Scion de pin des hauts plateaux",
             "growth_stage": {
                "000": {
-                  "name": "Graine de pin des Highlands",
+                  "name": "Graine de pin des hauts plateaux",
                   "description": "Comment une chose si petite peut-elle devenir si grande ??"
                },
                "001": {
-                  "name": "Graine de pin des Highlands",
+                  "name": "Graine de pin des hauts plateaux",
                   "description": "Vous seriez surpris de voir à quel point il grandit chaque jour !"
                },
                "002": {
-                  "name": "Germes de pin des Highlands",
+                  "name": "Germes de pin des hauts plateaux",
                   "description": "Il est presque prêt à être déplacé !"
                },
                "003": {
-                  "name": "Scion de pin des Highlands",
+                  "name": "Scion de pin des hauts plateaux",
                   "description": "Prêt à être transféré sur un terrain plus grand."
                }
             }
@@ -2400,7 +3587,7 @@
             },
             "highland_pine_log": {
                "description": "Une bûche. Fabriqué en bois.",
-               "display_name": "Bûche de pin des Highlands"
+               "display_name": "Bûche de pin des hauts plateaux"
             },
             "willow_log": {
                "display_name": "Bûche de saule",
@@ -2497,6 +3684,14 @@
             },
             "skunk_pelt": {
                "display_name": "Fourrure de mouffette"
+            },
+            "moomoo_pelt": {
+               "display_name": "Moo-Moo Pelt",
+               "description": "A big hide from a tranquil, grazing creature."
+            },
+            "wild_cattle_pelt": {
+               "display_name": "Wild Cattle Pelt",
+               "description": "The furry and rough hide of a large ruminant."
             }
          },
          "bone_material": {
@@ -2586,6 +3781,10 @@
                "display_name": "Fibres d'asclépiade méga",
                "description": "Ces fibres épaisses et résistantes peuvent être utilisées directement comme fil !"
             }
+         },
+         "bone_skull": {
+            "display_name": "Skull",
+            "description": "Don't... Don't think too much about it. Can be used as bone material."
          }
       },
       "refined": {
@@ -2799,48 +3998,48 @@
             },
             "large": {
                "large_highland_pine": {
-                  "display_name": "Grand pin des Highlands",
+                  "display_name": "Grand pin des hauts plateaux",
                   "description": "Si grand que le vent le plie !"
                }
             },
             "medium": {
                "medium_highland_pine": {
-                  "display_name": "Pin des Highlands",
+                  "display_name": "Pin des hauts plateaux",
                   "description": "Grand et bel arbre de montagne."
                }
             },
             "seed": {
                "tree_highland_pine_seed_ghost": {
-                  "display_name": "Graine de pin des Highlands",
+                  "display_name": "Graine de pin des hauts plateaux",
                   "description": "Peut être planté pour faire pousser un grand arbre de montagne."
                }
             },
             "small": {
                "small_highland_pine": {
-                  "display_name": "Small Pin des Highlands",
+                  "display_name": "Small Pin des hauts plateaux",
                   "description": "Une petite pour les hauts plateaux, mais qui reste assez bavarde...."
                }
             },
             "sprout": {
                "tree_highland_pine_sprout": {
-                  "display_name": "Germes de pin des Highlandsling",
+                  "display_name": "Germes de pin des hauts plateaux",
                   "description": "Il a juste besoin de temps et d'attention."
                }
             },
             "stem": {
                "tree_highland_pine_stem": {
-                  "display_name": "Stemming Pin des Highlands",
+                  "display_name": "Stemming Pin des hauts plateaux",
                   "description": "Toujours en croissance !"
                }
             },
             "sapling_highland_pine_tree": {
-               "description": "Baby Pin des Highlands tree.",
+               "description": "Baby Pin des hauts plateaux tree.",
                "sapling_highland_pine_tree_iconic": {
                   "description": "Plantez-le dans la terre et regardez-le pousser."
                },
                "sapling_highland_pine_tree_ghost": {
-                  "description": "Baby Pin des Highlands tree.",
-                  "display_name": "Scion de pin des Highlands"
+                  "description": "Baby Pin des hauts plateaux tree.",
+                  "display_name": "Scion de pin des hauts plateaux"
                }
             }
          },
@@ -2902,7 +4101,7 @@
                "description": "Ce vieux genévrier a disparu depuis un moment.... Récoltez-le pour quelques bûches !"
             },
             "highland_pine": {
-               "display_name": "Pin des Highlands Trunk",
+               "display_name": "Pin des hauts plateaux Trunk",
                "description": "Ce grand pin des hauts plateaux a disparu depuis un certain temps.... Récoltez-le pour quelques bûches !"
             },
             "birch": {
@@ -3156,6 +4355,58 @@
          "pasture_bed": {
             "display_name": "Couchage pour pâturage",
             "description": "Les grands animaux de pâturage les recherchent pendant la nuit ou par mauvais temps."
+         },
+         "banquet_table_highland_pine": {
+            "display_name": "Highland Pine Banquet Table",
+            "description": "A beautiful and long table carved from the huge trunk of a highland pine."
+         },
+         "banquet_table_pine": {
+            "display_name": "Pine Banquet Table",
+            "description": "A handcrafted long table sawed straight onto a pine log."
+         },
+         "banquet_table_oak": {
+            "display_name": "Oak Banquet Table",
+            "description": "A fancy table carved from an oak trunk."
+         },
+         "bench_log_birch": {
+            "display_name": "Birch Carved Bench",
+            "description": "A pretty garden bench carved from a fallen birch tree."
+         },
+         "bench_log_juniper": {
+            "display_name": "Juniper Carved Bench",
+            "description": "In nature nothing is wasted and an old trunk can become a nice bench!"
+         },
+         "bench": {
+            "display_name": "Bone Park Bench",
+            "description": "Yes, it is safe to sit on it."
+         },
+         "bone_comfy_bed": {
+            "display_name": "Bone Comfy Bed",
+            "description": "A very comfortable bed. Physically, at least."
+         },
+         "bone_comfy_chair": {
+            "display_name": "Bone Comfy Chair",
+            "description": "The crimson pillows give it some charm."
+         },
+         "bone_dining_table": {
+            "display_name": "Bone Dining Table",
+            "description": "For a special and creepy time!"
+         },
+         "bone_dresser": {
+            "display_name": "Bone Dresser",
+            "description": "A fancy decoration for peculiar hearthlings."
+         },
+         "bone_stool": {
+            "display_name": "Bone Stool",
+            "description": "A simpler seat."
+         },
+         "bone_table_for_one": {
+            "display_name": "Bone Table for One",
+            "description": "For a lonely and shivering meal."
+         },
+         "bone_writing_desk": {
+            "display_name": "Bone Writing Desk",
+            "description": "Perfect for writing a horror story!"
          }
       },
       "recipes": {
@@ -3348,6 +4599,12 @@
          }
       },
       "decoration": {
+         "plant_glass": {
+            "plant_glass_ghost": {
+               "display_name": "Flowers in a vase",
+               "description": "Lovingly handpicked and smelling lovely."
+            }
+         },
          "statue": {
             "statue_anji_the_horrendous": {
                "statue_anji_the_horrendous_ghost": {
@@ -3360,6 +4617,30 @@
                   "display_name": "Statue de Sir Onep Statue of Sir Onep & Gary Gary",
                   "description": "L'éternel Chevalier de la Plante en pot aux côtés de son fidèle compagnon Gary."
                }
+            },
+            "statue_marble_poyo": {
+               "display_name": "Marble Poyo Statue",
+               "description": "A very intricate and smooth depiction of a gloriously determined poyo."
+            },
+            "statue_marble_rabbit": {
+               "display_name": "Marble Rabbit Statue",
+               "description": "A friendly looking denizen of the woods, immortalized in marble."
+            },
+            "statue_marble_dog": {
+               "display_name": "Marble Dog Statue",
+               "description": "A hearthling's best friend in shiny worked stone."
+            },
+            "statue_marble_cat": {
+               "display_name": "Stone Kitten Statue",
+               "description": "A sleek and beautiful cat finely portrayed in cold, smooth marble."
+            },
+            "statue_marble_shepherd_girl": {
+               "display_name": "Marble Shepherd Girl Statue",
+               "description": "A beautifully sculpted life-size statue of a proud shepherd watching over her herd."
+            },
+            "statue_marble_farmer_male": {
+               "display_name": "Marble Farmer Statue",
+               "description": "A very detailed and realistic depiction of an old man with a farming hoe."
             }
          },
          "wall_axe": {
@@ -3527,13 +4808,37 @@
             "mega_watermelon_juice": {
                "display_name": "Méga pastèque Juice",
                "description": "Slurp ! Si rafraîchissant et si doux ! Toute une ville peut profiter de cette boisson."
+            },
+            "mega_sweet_potato": {
+               "iconic_description": "Récoltez-le pour alimenter les moo-moo ou utilisez-le comme une chaise élégante.",
+               "display_name": "Méga patate douce",
+               "description": "Savoureux ! Récoltez-le pour alimenter les moo-moo ou utilisez-le comme une chaise élégante."
             }
+         },
+         "valor_statue": {
+            "statue_knight": {
+               "display_name_male": "Statue de chevalier (Homme)",
+               "description": "Un noble noble chevalier sculpté dans la pierre.",
+               "display_name_female": "Statue De Chevalier (Femme)"
+            }
+         },
+         "firepit_skulls": {
+            "display_name": "Foyer Crâne",
+            "description": "Ce foyer exotique fournira lumière, chaleur et peut-être des cauchemars."
+         },
+         "bone_candle_holder": {
+            "display_name": "Porte-bougie Crâne",
+            "description": "Les clients adorent ça ... parfois."
+         },
+         "bone_floor_candle_holder": {
+            "display_name": "Porte-bougie Crâne de plancher",
+            "description": "Ne le regardez pas trop."
          }
       },
       "pets": {
          "wombat": {
             "display_name": "Wombat",
-            "description": "Sa moelleux a inspiré l'école d'art connue sous le nom de plushinisme. Il ne mange que des légumes verts."
+            "description": " Son moelleux a inspiré l'école d'art connue sous le nom de plushinisme. Il ne mange que des verts."
          },
          "monkey": {
             "display_name": "Singe",
@@ -3634,18 +4939,57 @@
             "display_name": "Mouton",
             "display_name_arctic": "Longwool Mouton",
             "display_name_desert": "Dune Mouton",
-            "display_name_highlands": "Bighorn Mouton"
+            "display_name_highlands": "Bighorn Mouton",
+            "sheep_young": {
+               "display_name": "Agneau"
+            },
+            "renewable_harvest_status_text": "Tonte mouton sauvage"
          },
          "poyo": {
             "nest": {
                "display_name": "Nid de Poyo",
                "description": "Je suis sûr que ça ne les dérangerait pas s'il leur manquait un oeuf ou deux... N'est-ce pas ??"
-            }
+            },
+            "display_name": "Poyo"
          },
          "big_bird": {
             "nest": {
                "display_name": "Grand Nid d'Oiseau",
                "description": "Attrapez-le et courez !"
+            }
+         },
+         "rabbit_young": {
+            "display_name": "Lapin",
+            "description": "Si petit et mignon ! Sera un bon lapin un jour."
+         },
+         "deer_young": {
+            "display_name": "Faon",
+            "display_name_highlands": "Bébé élan",
+            "description": "Un jeune animal qui a besoin d'amour et de soins."
+         },
+         "moomoo": {
+            "renewable_harvest_status_text": "Animal de traite",
+            "unripe_description": "Cet animal n'a pas de lait pour le moment.",
+            "species": "moo-moo",
+            "display_name": "Moo-Moo",
+            "display_name_arctic": "Moo-Moo Nordique",
+            "display_name_desert": "Moo-Moo du Désert",
+            "display_name_highlands": "Moo-Moo Longue Corne",
+            "description": "Un grand ruminant qui aime manger de l'herbe et fournit du lait!",
+            "moomoo_young": {
+               "display_name": "Veau Moo",
+               "description": "Un mignon petit moo-moo."
+            }
+         },
+         "wild_moomoo": {
+            "display_name": "Aurochs des bois",
+            "display_name_arctic": "Yak de neige",
+            "display_name_desert": "Yak de sable",
+            "display_name_highlands": "Aurochs de vallée",
+            "description": "Un ruminant fort et sauvage, un parent plus âgé du doux moo-moo.",
+            "moomoo_wild_young": {
+               "display_name": "Veau sauvage",
+               "description": "Un mignon petit moo-moo sauvage."
             }
          }
       },
@@ -3666,7 +5010,7 @@
             "description": "Un panier de noix comestibles délicieuses et chaudes.",
             "cooked_nuts_serving": {
                "display_name": "Plat de Noix cuites",
-               "description": "."
+               "description": ""
             }
          },
          "cherry_tart": {
@@ -3721,7 +5065,7 @@
          },
          "broth": {
             "broth_serving": {
-               "description": ".",
+               "description": "",
                "display_name": "Bol de Bouillon"
             },
             "broth": {
@@ -3731,7 +5075,7 @@
          },
          "bone_marrow": {
             "bone_marrow_serving": {
-               "description": ".",
+               "description": "",
                "display_name": "Portion de Moelle osseuse"
             },
             "bone_marrow": {
@@ -3787,7 +5131,7 @@
             },
             "boiled_shrooms_serving": {
                "display_name": "Bol de champignons bouillis",
-               "description": "."
+               "description": ""
             }
          },
          "shroom_omelette": {
@@ -3797,7 +5141,7 @@
             },
             "shroom_omelette_serving": {
                "display_name": "Portion d'omelette aux champignons",
-               "description": "."
+               "description": ""
             }
          },
          "bear_jerky": {
@@ -3867,6 +5211,10 @@
             "raw_rice": {
                "display_name": "Sac de riz cru",
                "description": "De délicieux grains prêts à être utilisés en cuisine."
+            },
+            "rice_flour": {
+               "display_name": " Sac de farine de riz",
+               "description": " Une alternative formidable à la farine de blé."
             }
          },
          "roast_fish": {
@@ -4017,10 +5365,6 @@
             "pumpkin_soup_serving": {
                "display_name": "Portion de soupe à la citrouille",
                "description": "Chaud et savoureux !"
-            },
-            "watermelon_juice_serving": {
-               "display_name": "Tasse de jus de melon d'eau",
-               "description": "Rafraîchissant !"
             }
          },
          "pasta": {
@@ -4041,6 +5385,216 @@
                "display_name": "Aliments pour autruches",
                "description": "Très nutritif et apprécié des grands oiseaux."
             }
+         },
+         "corn_meal": {
+            "display_name": "Sack of Corn Meal",
+            "description": "Corn ground into a fine powder. Corn Meal can be used as flour."
+         },
+         "flour": {
+            "display_name": "Sack of Wheat Flour"
+         },
+         "kibble": {
+            "display_name": "Kibble",
+            "description": "Nutritious food made exclusively for pets. A kibble bowl can be used for serving."
+         },
+         "kibble_veggie": {
+            "display_name": "Veggie Kibble",
+            "description": "Vegetarian food made exclusively for pets. A kibble bowl can be used for serving."
+         },
+         "kibble_fish": {
+            "display_name": "Fish Kibble",
+            "description": "Nutritious food made exclusively for pets. A kibble bowl can be used for serving."
+         },
+         "megacrop_ostrich_feed": {
+            "megacrop_ostrich_feed": {
+               "display_name": "Mega Heirbloom Feed",
+               "description": "Yum! This juicy giant heirbloom fruit would make a delicious meal for ostriches!"
+            },
+            "megacrop_ostrich_feed_ground": {
+               "display_name": "Mega Heirbloom Feed",
+               "description": "Tasty slices of a mega heirbloom fruit. This meal will last a good while!"
+            }
+         },
+         "megacrop_moomoo_feed": {
+            "megacrop_moomoo_feed": {
+               "display_name": "Mega Sweet Potato Feed",
+               "description": "Chunky and hearty slices of sweet potato that can be given to moo-moos!"
+            },
+            "megacrop_moomoo_feed_ground": {
+               "display_name": "Mega Sweet Potato Feed",
+               "description": "Ready to be munched. This meal will last a good while!"
+            }
+         },
+         "megacrop_poyo_feed": {
+            "megacrop_poyo_feed": {
+               "display_name": "Mega Rice Feed",
+               "description": "Wow! These can be used by the Shepherd as feed for poyos!"
+            },
+            "megacrop_poyo_feed_ground": {
+               "display_name": "Mega Rice Feed",
+               "description": "Ground and delicious mega rice, poyos love it! This meal will last a good while!"
+            }
+         },
+         "megacrop_rabbit_feed": {
+            "megacrop_rabbit_feed": {
+               "display_name": "Mega Carrot Feed",
+               "description": "Huge and vitalizing carrots that would definitely be appreciated by rabbits."
+            },
+            "megacrop_rabbit_feed_ground": {
+               "display_name": "Mega Carrot Feed",
+               "description": "Cut and ready for the delight of all bunnies. This meal will last a good while!"
+            }
+         },
+         "megacrop_sheep_feed": {
+            "megacrop_sheep_feed": {
+               "display_name": "Mega Wheat Feed",
+               "description": "So golden and shiny! Can be used as a lovely feed for sheep."
+            },
+            "megacrop_sheep_feed_ground": {
+               "display_name": "Mega Wheat Feed",
+               "description": "Sheep must love this. This meal will last a good while!"
+            }
+         },
+         "moomoo_feed": {
+            "moomoo_feed": {
+               "display_name": "Moo-Moo Feed",
+               "description": "For feeding cattle"
+            },
+            "moomoo_feed_ground": {
+               "display_name": "Moo-Moo Feed",
+               "description": "Tasty and hearty food appreciated by large ruminants."
+            }
+         },
+         "dairy": {
+            "cheese_fresh": {
+               "cheese_fresh": {
+                  "display_name": "Fresh Cheese",
+                  "description": "Soft, moist and delicious! This cheese will go bad after some time if not eaten."
+               },
+               "cheese_fresh_serving": {
+                  "display_name": "Slice of Fresh Cheese"
+               }
+            },
+            "cheese_mild": {
+               "cheese_mild": {
+                  "display_name": "Mild Cheese",
+                  "description": "A nice texture and a bold flavor. This cheese lasts a good time before going bad."
+               },
+               "cheese_mild_serving": {
+                  "display_name": "Slice of Mild Cheese"
+               }
+            },
+            "cheese_aged": {
+               "cheese_aged_serving": {
+                  "display_name": "Slice of Aged Cheese"
+               },
+               "cheese_aged": {
+                  "display_name": "Aged Cheese",
+                  "description": "Firm, strong, and full of flavor! This cheese won't go bad."
+               }
+            },
+            "curdling_mixture": {
+               "display_name": "Curdling Mixture",
+               "description": "Milk and some other things. The Cook needs to pour it inside a cheese vat!"
+            },
+            "cheese_cottage": {
+               "cheese_cottage": {
+                  "display_name": "Cottage Cheese",
+                  "description": "Salty and sour cheese curds with a peculiar taste."
+               },
+               "cheese_cottage_serving": {
+                  "display_name": "Serving of Cottage Cheese"
+               }
+            },
+            "butter": {
+               "display_name": "Slab of Butter",
+               "description": "A creamy and flavorful paste churned from milk and used as an ingredient."
+            },
+            "bog_butter": {
+               "display_name": "Bog Butter",
+               "description": "A sophisticated type of butter preserved in peat bogs for a long time."
+            },
+            "whey_butter": {
+               "display_name": "Whey Butter",
+               "description": "A by-product of cheese making, whey butter has less fat and is saltier."
+            }
+         },
+         "beef_jerky": {
+            "display_name": "Beef Jerky"
+         },
+         "fruit_yogurt": {
+            "fruit_yogurt": {
+               "display_name": "Fruit Yogurt",
+               "description": "Creamy, fermented milk sweetened with sugar and fruits."
+            },
+            "fruit_yogurt_serving": {
+               "display_name": "Serving of Fruit Yogurt",
+               "description": "Best served cold."
+            }
+         },
+         "cereals_corn": {
+            "cereals_corn": {
+               "display_name": "Bowl of Corn Cereal",
+               "description": "Delicious, crispy flakes of corn soaked in milk."
+            },
+            "cereals_corn_serving": {
+               "display_name": "Serving of Corn Cereal",
+               "description": "Is it morning yet?"
+            }
+         },
+         "butter_cookies": {
+            "butter_cookies": {
+               "display_name": "Butter Cookies",
+               "description": "A portion of small and tasty buttered delicacies."
+            },
+            "butter_cookies_serving": {
+               "display_name": "Handful of Butter Cookies"
+            }
+         },
+         "buttered_bulbs": {
+            "buttered_bulbs": {
+               "display_name": "Buttered Bulbs",
+               "description": "A nice mix of mushrooms stirred with butter and spices."
+            },
+            "buttered_bulbs_serving": {
+               "display_name": "Serving of Buttered Bulbs"
+            }
+         },
+         "cheesecake": {
+            "cheesecake": {
+               "display_name": "Cheesecake",
+               "description": "Not really cheese nor cake but as delicious as both."
+            },
+            "cheesecake_serving": {
+               "display_name": "Slice of Cheesecake"
+            }
+         },
+         "imperial_salad": {
+            "imperial_salad": {
+               "display_name": "Imperial Salad",
+               "description": "An appetizing combination of cheese and greens as old as the Phoenix Empire."
+            },
+            "imperial_salad_serving": {
+               "display_name": "Serving of Imperial Salad"
+            }
+         },
+         "melted_poyo": {
+            "melted_poyo": {
+               "display_name": "Melted Poyo",
+               "description": "A savory roasted poyo filled with veggies and covered in cheese."
+            },
+            "melted_poyo_serving": {
+               "display_name": "Serving of Melted Poyo"
+            }
+         },
+         "seared_meat_veggies": {
+            "seared_meat_veggies": {
+               "display_name": "Seared Meat & Veggies",
+               "description": "A pleasant portion of sliced meat sealed with butter and stirred with fresh veggies."
+            },
+            "seared_meat_veggies_serving": {
+               "display_name": "Serving of Seared Meat & Veggies"
+            }
          }
       },
       "terrain": {
@@ -4049,20 +5603,28 @@
             "description": "L'herbe haute peut être pâturée par les animaux ou récoltée pour du chaume."
          },
          "overgrown_pasture_grass": {
-            "display_name": "Overgrown Herbe",
-            "description": "L'herbe envahie peut être pâturée par les animaux ou récoltée pour du chaume."
+            "display_name": "Mauvaise herbe",
+            "description": "La mauvaise herbe peut être pâturée par les animaux ou récoltée pour du chaume."
          },
          "short_pasture_grass": {
-            "display_name": "Short Herbe",
+            "display_name": "Herbe courte",
             "description": "L'herbe courte peut être pâturée par les animaux, mais elle n'est pas assez longue pour du chaume."
          },
          "sprouting_pasture_grass": {
-            "display_name": "Sprouting Herbe",
-            "description": "Herbe has just started germinating here, not yet as efficient for grazing."
+            "display_name": "Pousse d'herbe",
+            "description": "L'herbe vient de commencer à germer ici, pas encore prête pour le pâturage."
          },
          "daisies": {
             "display_name": "Marguerites",
             "description": "Une couverture florale délicate qui s'étale dans le temps. Récoltez-les pour les herbes."
+         },
+         "water_spring": {
+            "display_name": "Source d'eau",
+            "description": "Une source constante et naturelle d'eau douce. Elle peut être enlevée."
+         },
+         "water_hole": {
+            "display_name": "Crevasse",
+            "description": "Cette grande fissure va aspirer toute l'eau qui s'y rend. Elle peut être enlevée."
          }
       },
       "fungi": {
@@ -4225,7 +5787,7 @@
                "description": "Awww."
             },
             "cougar": {
-               "display_name": "Cougar",
+               "display_name": "Cougar ",
                "display_name_arctic": "Léopard des neiges",
                "display_name_desert": "Panthère",
                "display_name_highlands": "Tigre",
@@ -4237,12 +5799,12 @@
             },
             "wolf": {
                "display_name": "Loup",
-               "display_name_arctic": "Arctic Loup",
-               "display_name_desert": "Desert Loup",
-               "display_name_highlands": "Warg"
+               "display_name_arctic": "Loup Arctic",
+               "display_name_desert": "Loup du désert",
+               "display_name_highlands": "Warg "
             },
             "wolf_cub": {
-               "display_name": "Loup Cub",
+               "display_name": "Petit loup",
                "description": "Comme un petit chien qui veut te manger !"
             },
             "entling": {
@@ -4256,14 +5818,14 @@
             "duckduck": {
                "display_name": "DuckDuck",
                "display_name_arctic": "PengDuck",
-               "display_name_desert": "Oasis DuckDuck",
-               "display_name_highlands": "Ciel Oasis DuckDuck"
+               "display_name_desert": "DuckDuck Oasis ",
+               "display_name_highlands": "DuckDuck Oasis du Ciel"
             },
             "ostrich": {
                "display_name": "Autruche",
-               "display_name_arctic": "Spotted Autruche",
-               "display_name_desert": "Red Autruche",
-               "display_name_highlands": "Race Autruche"
+               "display_name_arctic": "Autruche à pois",
+               "display_name_desert": "Autruche rouge",
+               "display_name_highlands": "Autruche de course"
             }
          },
          "goblins": {
@@ -4477,6 +6039,9 @@
          "mega_cactus_flower_helm": {
             "display_name": "Casque en fleurs de cactus",
             "description": "Aïe ! Attention aux pics, ils endommageront les ennemis qui attaquent."
+         },
+         "shield_hare": {
+            "description": "Imprègne le porteur du pouvoir guérisseur de Knut afin qu'il puisse mieux se battre."
          }
       },
       "weapons": {
@@ -4967,15 +6532,15 @@
             "placed_description": "Les œufs de gros poissons peuvent être récoltés sous forme de caviar ou laissés tranquilles pour éclore."
          },
          "fish_trout": {
-            "display_name": "Truite des Highlands",
+            "display_name": "Truite des hauts plateaux",
             "description": "Un poisson d'eau froide coloré, unique dans les hautes terres.",
             "iconic": {
                "description": "Ne durera pas plus de quelques jours. Mieux vaut le libérer quelque part!",
-               "display_name": "Truite des Highlands captive"
+               "display_name": "Truite des hauts plateaux captive"
             }
          },
          "fish_trout_fry": {
-            "display_name": "Truite des Highlands",
+            "display_name": "Truite des hauts plateaux",
             "description": "Toujours en quête des couleurs de l'arc-en-ciel."
          }
       },
@@ -5103,22 +6668,48 @@
          "large_forest_boulder": {
             "display_name": "Gros blocs rocheux",
             "description": "Récoltable pour la pierre"
+         },
+         "block_marble": {
+            "small": {
+               "display_name": "Petit bloc de marbre",
+               "description": "Un bloc de marbre soigneusement ciselé. Récoltez-le pour la pierre ou laissez le maçon le sculpter.",
+               "work": {
+                  "display_name": "Petit bloc de marbre",
+                  "description": "Un maçon travaille sur ce bloc, il ne peut pas être déplacé avant qu'il soit fini."
+               }
+            },
+            "medium": {
+               "description": "Un bloc de marbre soigneusement ciselé. Récoltez-le pour la pierre ou laissez le maçon le sculpter.",
+               "display_name": "Bloc de marbre moyen",
+               "work": {
+                  "display_name": "Bloc de marbre moyen",
+                  "description": "Un maçon travaille sur ce bloc, il ne peut pas être déplacé avant qu'il soit fini."
+               }
+            },
+            "large": {
+               "description": "Un bloc de marbre soigneusement ciselé. Récoltez-le pour la pierre ou laissez le maçon le sculpter.",
+               "display_name": "Énorme bloc de marbre",
+               "work": {
+                  "display_name": "Énorme bloc de marbre",
+                  "description": "Un maçon travaille sur ce bloc, il ne peut pas être déplacé avant qu'il soit fini."
+               }
+            }
          }
       },
       "vines": {
          "highland_vine": {
-            "display_name": "Vigne des Highlands",
+            "display_name": "Vigne des hauts plateaux",
             "description": "Cette vigne grimpante pousse et s'étend sur les murs et les bâtiments.",
             "seed": {
-               "display_name": "Vigne des Highlands Seed",
+               "display_name": "Vigne des hauts plateaux Seed",
                "description": "Peut être planté pour faire pousser une vigne qui poussera le long des murs."
             },
             "bud": {
-               "display_name": "Budding Vigne des Highlands",
+               "display_name": "Budding Vigne des hauts plateaux",
                "description": "Cette vigne commence à pousser. Qui sait la taille qu'il prendra ??"
             },
             "sprout": {
-               "display_name": "Sprouting Vigne des Highlands",
+               "display_name": "Sprouting Vigne des hauts plateaux",
                "description": "Si petit.... pour l'instant."
             }
          },
@@ -5162,6 +6753,58 @@
          "food_trough_clay": {
             "display_name": "Mangeoire en argile",
             "description": "Utilisé par les bergers pour servir de la nourriture aux animaux dans un pâturage."
+         },
+         "pet_food_bowl_wood": {
+            "display_name": "Wooden Kibble Bowl",
+            "description": "Hearthlings can put kibble in this wooden bowl for their pets to eat."
+         },
+         "pet_food_bowl_stone": {
+            "display_name": "Stone Kibble Bowl",
+            "description": "Hearthlings can put kibble in this stone bowl for their pets to eat."
+         },
+         "pet_food_bowl_clay_red": {
+            "display_name": "Red Clay Kibble Bowl",
+            "description": "Hearthlings can put kibble in this clay bowl for their pets to eat."
+         },
+         "pet_food_bowl_clay_green": {
+            "display_name": "Green Clay Kibble Bowl",
+            "description": "Hearthlings can put kibble in this clay bowl for their pets to eat."
+         },
+         "pet_food_bowl_clay_blue": {
+            "display_name": "Blue Clay Kibble Bowl",
+            "description": "Hearthlings can put kibble in this clay bowl for their pets to eat."
+         },
+         "fuel_holder_large_wood": {
+            "display_name": "Wooden Firewood Shed",
+            "description": "This reliable storage will keep a lot of firewood dry and ready to be used!"
+         },
+         "fuel_holder_large_clay": {
+            "display_name": "Clay Firewood Shed",
+            "description": "This reliable storage will keep a lot of firewood dry and ready to be used!"
+         },
+         "fuel_holder_large_stone": {
+            "display_name": "Stone Firewood Shed",
+            "description": "This reliable storage will keep a lot of firewood dry and ready to be used!"
+         },
+         "bog_butter_keg": {
+            "display_name": "Bog Butter Keg",
+            "description": "Someone buried this a long time ago... Peat lands give butter an unique flavor!"
+         },
+         "bone_chest": {
+            "display_name": "Bone Chest",
+            "description": "Creepily holds up to 64 items."
+         },
+         "input_bin_bone": {
+            "display_name": "Bone Supply Bin",
+            "description": "For quicker and weirder crafting."
+         },
+         "input_table_ground_bone": {
+            "display_name": "Bone Supply Table",
+            "description": "Sometimes a normal supply table just won't cut it."
+         },
+         "output_box_bone": {
+            "display_name": "Bone Finished Work Shelf",
+            "description": "The crimson cloth gives it some contrast."
          }
       },
       "tools": {
@@ -5212,6 +6855,92 @@
          "backpack_cloth": {
             "display_name": "Sac à dos du travailleur du textile",
             "description": "Permet aux travailleurs d'être un peu plus efficaces lors du transport et du réapprovisionnement."
+         },
+         "worker_tools_iron": {
+            "display_name": "Bag of Worker's Iron Tools",
+            "description": "Used by Workers to increase their efficiency and speed when working."
+         },
+         "worker_tools_steel": {
+            "display_name": "Bag of Worker's Steel Tools",
+            "description": "Used by Workers to greatly increase their efficiency and speed when working."
+         },
+         "blacksmith_hammer_steel": {
+            "display_name": "Blacksmith's Steel Hammer",
+            "description": "Improves the blacksmith's efficiency allowing them to craft faster."
+         },
+         "carpenter_saw_steel": {
+            "display_name": "Carpenter's Steel Saw",
+            "description": "An improved version of the carpenter's tool, provides faster crafting."
+         },
+         "mason_chisel_iron": {
+            "display_name": "Mason's Iron Chisel",
+            "description": "This enhanced tool will allow the Mason to be faster when creating things."
+         },
+         "potter_cutter_iron": {
+            "display_name": "Potter's Iron Cutter",
+            "description": "This versatile tool can improve the efficiency of the Potter when crafting."
+         },
+         "trapper_knife_steel": {
+            "display_name": "Trapper's Steel Knife",
+            "description": "An improved and stronger knife that will increase the Trapper's efficiency."
+         },
+         "weaver_steel_needle": {
+            "display_name": "Weaver's Spindle & Steel Needle",
+            "description": "A silver-coated needle will allow the Weaver to be much more efficient!"
+         },
+         "mason_hammer_iron": {
+            "display_name": "Mason's Iron Hammer",
+            "description": "Hammers more nicely."
+         }
+      },
+      "tile": {
+         "carpet": {
+            "simple_yellow": {
+               "display_name": "Simple Yellow Carpet",
+               "description": "They will automatically connect to nearby bits!"
+            }
+         }
+      },
+      "fence": {
+         "simple_wooden": {
+            "display_name": "Simple Wooden Fence",
+            "description": "A fence that automatically snaps to nearby fence parts!"
+         }
+      },
+      "drink": {
+         "moomoo_milk": {
+            "moomoo_milk": {
+               "display_name": "Moo-Moo Milk",
+               "description": "Warm and smooth, straight from a healthy moo-moo!"
+            },
+            "moomoo_milk_serving": {
+               "display_name": "Cup of Moo-Moo Milk",
+               "description": ""
+            }
+         },
+         "megacrop": {
+            "watermelon_juice_serving": {
+               "display_name": "Cup of Watermelon Juice",
+               "description": "Refreshing!"
+            }
+         },
+         "sheep_milk": {
+            "sheep_milk_serving": {
+               "display_name": "Cup of Sheep Milk"
+            },
+            "sheep_milk": {
+               "display_name": "Sheep Milk",
+               "description": "Buttery and sweet, this tasty milk came from a sheep!"
+            }
+         },
+         "wild_cattle_milk": {
+            "wild_cattle_milk": {
+               "display_name": "Wild Cattle Milk",
+               "description": "Slightly sour and rugged, this milk comes from a wild animal."
+            },
+            "wild_cattle_milk_serving": {
+               "display_name": "Cup of Wild Cattle Milk"
+            }
          }
       }
    },
@@ -5300,7 +7029,7 @@
                "sweet_varanus_recipe": {
                   "recipe_name": "Varanus sucré",
                   "description": "Un repas nain très traditionnel à base de viande de varanus et de cerises locales.",
-                  "flavor": "."
+                  "flavor": ""
                },
                "highland_trout_recipe": {
                   "recipe_name": "Truite Highlander",
@@ -5319,7 +7048,7 @@
                "steel_plate_recipe": {
                   "recipe_name": "Tôle d'acier (x4)",
                   "description": "Créez des feuilles de métal solide et de valeur pour les meubles et les constructions décorés.",
-                  "flavor": "."
+                  "flavor": ""
                },
                "artificer_staff_recipe": {
                   "recipe_name": "Artificier Staff",
@@ -5334,7 +7063,7 @@
                "grower_trowel_recipe": {
                   "description": "Nécessaire pour promouvoir un hearthling en Cultivateur.",
                   "recipe_name": "Cultivateur's Trowel",
-                  "flavor": "."
+                  "flavor": ""
                },
                "brass_training_dummy_recipe": {
                   "recipe_name": "Brass Training Mannequin",
@@ -5414,14 +7143,17 @@
    "ui": {
       "game": {
          "entities": {
+            "custom_name_with_title": "[str(self.stonehearth:unit_info.custom_name)][str(self.stonehearth:unit_info.custom_data.current_title.display_name)]",
             "item_categories": {
                "undefined": "Divers",
                "aquatic": "Vie aquatique",
                "fluid_control": "Contrôle des fluides",
                "mechanism": "Mécanismes",
                "training_equipment": "Matériel de formation",
-               "gizmos": "Gizmos",
-               "fungi": "Champignons"
+               "gizmos": "Gadgets",
+               "fungi": "Champignons",
+               "drink": "Boissons",
+               "boulder": "Maçonnerie"
             }
          },
          "custom_tooltips": {
@@ -5478,6 +7210,12 @@
                      "description": "Désactivez la collecte automatique des ressources renouvelables que vous possédez.",
                      "tip_title": "Cliquez et faites glisser pour sélectionner les ressources renouvelables que vous possédez pour désactiver la récolte automatique.",
                      "tip_description": "Clic droit pour quitter ce mode"
+                  },
+                  "box_hunt": {
+                     "display_name": "Hunt",
+                     "description": "Mark specific animals for hunting.",
+                     "tip_title": "Click and drag to mark them.",
+                     "tip_description": "Right click to exit this mode"
                   }
                }
             }
@@ -5512,12 +7250,73 @@
          },
          "zones_mode": {
             "farm": {
-               "water_affinity_range": "Irrigation</br>Cette culture poussera un peu plus vite que la normale avec <span class='water'><span class='value'>[str(i18n_data.min)] - [str(i18n_data.max)]</span></span>d'<span class='water'>eau</span> à l'intérieur de la région délimitée en bleue.",
-               "water_affinity_min_only": "Irrigation</br>Cette culture poussera un peu plus vite avec au moins d'<span class='water'><span class='value'>[str(i18n_data.min)] - [str(i18n_data.max)]</span>eau</span> à l'intérieur de la région délimitée en bleue.",
-               "current_water_level": "Niveau d'<span class='water'>eau</span> actuel : <span class='water value'>[str(i18n_data.level)]</span>.",
-               "requires_flooding": "Cette culture doit être recouverte d'eau pour pousser.",
-               "prefers_flooding": "Cette culture pousse plus rapidement lorsque l'eau la recouvre et plus lentement lorsqu'elle ne l'est pas.",
-               "prefers_no_flooding": "Cette culture pousse plus lentement lorsque l'eau la recouvre."
+               "properties": "Crop Properties",
+               "statuses": "Current Statuses",
+               "fertilizer_settings": {
+                  "title": "Fertilizer",
+                  "none": "None",
+                  "none_description": "Do not fertilize this field (save your fertilizer for more valuable crops).",
+                  "high_quality": "High Quality",
+                  "high_quality_description": "Prefer higher quality fertilizers for this field.",
+                  "low_quality": "Low Quality",
+                  "low_quality_description": "Prefer lower quality fertilizers for this field.",
+                  "specific": "Specific Fertilizer",
+                  "specific_description": "Select a fertilizer below to only use that specific fertilizer for this field."
+               },
+               "season": {
+                  "property_name": "Preferred Seasons",
+                  "property_description": "This crop prefers the <span class='text-value'>[str(i18n_data.season)]</span> season and will grow more slowly outside of preferred seasons.",
+                  "status_name": "Current Season: <span class='text-value'>[str(i18n_data.season)]</span>",
+                  "in_season": "This crop is currently in season, so will grow at a normal rate.",
+                  "out_of_season": "This crop is currently out of season and will grow more slowly.",
+                  "no_season_title": "No Preferred Seasons",
+                  "no_season_description": "This crop does not have any preferred seasons and will grow normally throughout the year."
+               },
+               "growth_time": {
+                  "property_name": "Growth Time",
+                  "status_name": "Relative Growth Time",
+                  "days_only": "[str(i18n_data.day)] day(s)",
+                  "days_and_hours": "[str(i18n_data.day)] day(s) and [str(i18n_data.hour)] hour(s)",
+                  "hours_only": "[str(i18n_data.hour)] hour(s)",
+                  "short": "This crop matures quickly (<span class='text-value'>[str(i18n_data.total_growth_time)]</span> before modifiers).",
+                  "fair": "This crop matures at a moderate rate (<span class='text-value'>[str(i18n_data.total_growth_time)]</span> before modifiers).",
+                  "long": "This crop takes a long time to mature (<span class='text-value'>[str(i18n_data.total_growth_time)]</span> before modifiers).",
+                  "shorter": "Environmental factors make this crop take <span class='text-value text-optimal'>[str(i18n_data.growth_time_percent)]</span> of normal time to grow.",
+                  "normal": "Environmental factors make this crop grow at a normal rate.",
+                  "longer": "Environmental factors make this crop take <span class='text-value text-poor'>[str(i18n_data.growth_time_percent)]</span> of normal time to grow.",
+                  "too_long": "This crop is growing <span class='text-bad'>immeasurably slowly</span> due to environmental factors!",
+                  "stopped": "This crop's growth is currently <span class='text-bad'>stopped</span>."
+               },
+               "water_affinity": {
+                  "property_name": "Water Needs",
+                  "status_name": "Current Water Level",
+                  "range": "This crop will grow a little faster than normal with <span class='water'><span class='text-value'>[str(i18n_data.min_water_level)] - [str(i18n_data.max_water_level)]</span> water</span>, through its general environment or irrigation within its blue outlined region.",
+                  "min_only": "This crop will grow a little faster with at least <span class='water'><span class='text-value'>[str(i18n_data.min_water_level)]</span> water</span>, through its general environment or irrigation within its blue outlined region.",
+                  "current_level": "This crop currently has <span class='water'><span class='text-value'>[str(i18n_data.current_water_level)]</span> water</span> through its general environment and irrigation within its blue outlined region."
+               },
+               "light_affinity": {
+                  "property_name": "Sunlight Needs",
+                  "status_name": "Current Sunlight",
+                  "range": "This crop will grow a little faster than normal with <span class='light'><span class='text-value'>[str(i18n_data.min_light_level)] - [str(i18n_data.max_light_level)]</span> daytime sunlight</span>.",
+                  "min_only": "This crop will grow a little faster with at least <span class='light'><span class='text-value'>[str(i18n_data.min_light_level)]</span> daytime sunlight</span>.",
+                  "current_level": "This crop currently experiences <span class='light'><span class='text-value'>[str(i18n_data.current_light_level)]</span> daytime sunlight</span>. This considers both shade and current weather state."
+               },
+               "flooded": {
+                  "property_name": "Covering",
+                  "status_name": "Covering",
+                  "requires": "This crop must have water covering it to grow.",
+                  "prefers": "This crop grows more quickly when water is covering it and slower when it isn't.",
+                  "prefers_not": "This crop grows more slowly when water or snow is covering it.",
+                  "current_flooded": "This field <span class='[str(i18n_data.flooded_status)]'>is</span> currently flooded.",
+                  "current_not_flooded": "This field <span class='[str(i18n_data.flooded_status)]'>is not</span> currently flooded."
+               },
+               "frozen": {
+                  "current_frozen": "This field is currently <span class='[str(i18n_data.flooded_status)]'>frozen</span>!"
+               },
+               "fertilized": {
+                  "status_name": "Fertilized Crops",
+                  "current_amount": "<span class='text-value [str(i18n_data.fertilized_status)]'>[str(i18n_data.num_fertilized)] / [str(i18n_data.num_crops)]</span> crops in this field are currently fertilized."
+               }
             },
             "underfarm": {
                "substrate_name": "Substrat",
@@ -5544,22 +7343,56 @@
                   "tooltip_consumables": "Articles de guérison",
                   "tooltip_consumables_other": "Autres consommables",
                   "tooltip_bulk_resources": "Ressources en vrac",
-                  "tooltip_civillian_equipment": "Vêtements et outils",
-                  "tooltip_gizmos_equipment": "Gizmos Gizmos & Utilities Utilitaires"
+                  "tooltip_civillian_equipment": "Vêtements & outils",
+                  "tooltip_gizmos_equipment": "Gadgets & Utilitaires",
+                  "tooltip_plant": "Toutes les plantes",
+                  "nature_landscaping": "Nature & paysages",
+                  "tooltip_saplings": "Pousses d'arbre",
+                  "tooltip_other_plants": "Autres plantes",
+                  "tooltip_seeds": "Graines",
+                  "tooltip_fish": "Poisson captif",
+                  "tooltip_herbs": "Herbes",
+                  "tooltip_fiber": "Fibre",
+                  "tooltip_algae": "Algues",
+                  "tooltip_essences": "Huiles",
+                  "tooltip_fertilizer": "Engrais"
                }
+            },
+            "pasture": {
+               "maintain_animals": "Maintenir :",
+               "maintain_animals_description": "Abattre automatiquement tous les animaux au-delà de ce nombre.",
+               "harvest_animals_renewable": "Récolte Automatique",
+               "harvest_animals_renewable_description": "Récolte auto des ressources de ces animaux, comme la laine ou les œufs.",
+               "harvest_grass": "Récolte d'herbe",
+               "harvest_grass_description": "Récoltez automatiquement toute herbe qui pousse dans les pâturages.",
+               "ostrich_pasture_name": "Enclos d'autruche",
+               "moomoo_pasture_name": "Troupeau Moo-Moo",
+               "ostrich_pasture_description": "Ces oiseaux exotiques produisent de délicieux œufs volumineux et peuvent être abattus pour obtenir de grand morceaux de volaille, de la viande séchée, des plumes et des os.",
+               "sheep_pasture_description": "Les moutons produisent de la laine et, rarement, du lait. L'abattage des moutons produira du mouton cru, de la viande séchée et des os",
+               "moomoo_pasture_description": "Les moo-moos mangent beaucoup mais produiront de belles quantités de lait. En les abattant, on obtient des peaux, du steak, de la viande séchée et des os",
+               "rabbit_pasture_description": "Les lapins se reproduisent rapidement et peuvent être abattus pour la viande séchée, les peaux et parfois les os",
+               "poyo_pasture_description": "Les poyos pondent des œufs, un ingrédient de cuisine raffiné. L'abattage du poyo donnera de la viande et, souvent, des plumes et des os"
             }
          },
          "military_mode": {
             "patrol_banners": {
-               "window_title": "Military Mode: Bannière de patrouilles",
+               "window_title": "Mode militaire : Bannière de patrouilles",
                "list_headers": {
                   "name": "Bannière de patrouille",
                   "distance": "Distance jusqu'au suivant"
                },
-               "party_1": "Partie 1",
-               "party_2": "Partie 2",
-               "party_3": "Partie 3",
-               "party_4": "Partie 4"
+               "party_1": "Groupe 1",
+               "party_2": "Groupe 2",
+               "party_3": "Groupe 3",
+               "party_4": "Groupe 4",
+               "move_banner_up": "Monter",
+               "move_banner_up_description": "Déplacer la bannière sélectionnée vers le haut dans l'ordre de patrouille.",
+               "move_banner_down": "Descendre",
+               "move_banner_down_description": "Déplacez la bannière sélectionnée vers le bas dans l'ordre de patrouille",
+               "create_banner": "Créer",
+               "create_banner_description": "Créez une bannière pour ce groupe, à la fin de la liste ou immédiatement après la bannière actuellement sélectionnée.",
+               "clear_banners": "Enlever tout",
+               "clear_banners_description": "Enlevez toutes les bannières pour ce groupe. Pour supprimer la bannière sélectionnée, utilisez la commande de la fenêtre de l'entité sélectionnée."
             }
          },
          "unit_frame": {
@@ -5570,33 +7403,110 @@
             "toggle_component_info": {
                "tooltip_title": "Basculer l'information sur l'entité",
                "tooltip_description": "Cliquez pour afficher ou masquer des informations supplémentaires sur cette entité."
-            }
+            },
+            "equipment_types_description": "Type : [str(i18n_data.types)]",
+            "equipment_types": {
+               "bow": "Arc",
+               "crossbow": "Arbalète",
+               "mainhand": "Main directrice",
+               "twohanded": "À deux mains",
+               "offhand": "Main secondaire",
+               "shield": "Bouclier",
+               "light_shield": "Bouclier léger",
+               "heavy_shield": "Bouclier lourd",
+               "torso": "Tenue",
+               "helmet": "Coiffures",
+               "circlet": "Coiffe",
+               "hood": "Capuche",
+               "light_armor": "Armure légère",
+               "medium_armor": "Armure moyenne",
+               "heavy_armor": "Armure lourde",
+               "tool": "Outil",
+               "accessory": "Accessoire",
+               "backpack": "Sac à dos",
+               "quiver_arrows": "Carquois à flèche",
+               "quiver_bolts": "Carquois à carreau",
+               "cleric_tome": "Tome Sacré"
+            },
+            "injected_buff": "Statut des subventions :",
+            "inflictable_debuff": "Inflige le statut : "
+         },
+         "save_view": {
+            "auto_save_name": "Auto save ([str(i18n_data.date_time)])"
          },
          "componentInfo": {
             "title": "Informations sur l'entité"
+         },
+         "bulletin": {
+            "achievement_acquired_bulletin": {
+               "new_title": {
+                  "title": "[str(i18n_data.entity.stonehearth:unit_info.custom_name)] a obtenu un nouveau titre !",
+                  "header": "<h2>[str(i18n_data.entity.stonehearth:unit_info.custom_name)]...</h2><h3>est maintenant [str(i18n_data.entity.stonehearth:unit_info.custom_name)][str(i18n_data.new_title.display_name)]!</h3>",
+                  "message": "[str(i18n_data.new_title.description)]<p>Ce titre ne sonne-t-il pas bien? Vous pouvez sélectionner le titre utilisé par l'un de vos citoyens en cliquant avec le bouton droit de la souris sur son nom dans la feuille de personnage ou dans la fenêtre de l'unité sélectionnée.</p>",
+                  "item_message": "[str(i18n_data.new_title.description)]<p>Ce titre ne sonne-t-il pas bien? Vous pouvez sélectionner le titre utilisé par cet élément en cliquant avec le bouton droit de la souris sur son nom dans la fenêtre de l'unité sélectionnée.</p><p><i>Vous pouvez également envisager de donner à [str(i18n_data.entity.stonehearth:unit_info.custom_name)] un nom plus sophistiqué pour accompagner son nouveau titre en cliquant avec le bouton gauche de la souris sur son nom dans la fenêtre de l'unité sélectionnée.</i></p>"
+               }
+            }
+         },
+         "promotion_tree": {
+            "requirements": {
+               "one_of_job": "Un des :"
+            }
          }
       },
       "shell": {
          "settings": {
             "gameplayTab": {
-               "auto_craft_recipe_dependencies": "Dépendances de recettes de fabrication automatique",
+               "auto_craft_recipe_dependencies": "Fabrication automatique des recettes dépendantes",
                "auto_craft_recipe_dependencies_description": "Lors de la fabrication d'un article, les artisans vérifieront l'inventaire pour voir s'il y a suffisamment d'ingrédients à utiliser. Si ce n'est pas le cas, ils ajouteront d'autres commandes à la file d'attente s'ils en ont besoin pour remplir la commande originale.",
+               "auto_craft_killed_items": "Fabrication automatique des objets détruit",
+               "auto_craft_killed_items_description": "Lorsqu'un objet que vous possédez est détruit, comme une porte, un mannequin d'entraînement ou une arme de siège, un nouvel objet est ajouté dans la liste de fabrication des artisants.",
                "default_craft_order_prefer_high_quality": "Préfèrer des ingrédients d'artisanat de haute qualité",
                "default_craft_order_prefer_high_quality_description": "Lors de la fabrication d'un article, les artisans qui ont atteint l'avantage du savoir du compagnon préféreront fabriquer avec des ingrédients de haute qualité. Décochez cette case pour toujours préférer les ingrédients de faible qualité.",
+               "show_unreachable_ingredients_notification": "Alerte pour les ingrédients d'artisanat inaccessibles",
+               "show_unreachable_ingredients_notification_description": "Afficher une alerte lorsqu'un artisan ne peut pas trouver d'ingrédients pour sa recette.<span class='warn'>ATTENTION : </span>Cela peut entraîner de nombreuses alertes !",
                "auto_harvest_enabled": "Auto-récolte des ressources renouvelables",
                "auto_harvest_enabled_description": "Lorsqu'une ressource renouvelable que vous possédez devient exploitable, lancez automatiquement une commande de récolte sur cette ressource.",
-               "auto_harvest_animals_enabled": "Les animaux autoproduisent des ressources renouvelables",
-               "auto_harvest_animals_enabled_description": "Les animaux que vous possédez produiront automatiquement des ressources renouvelables (p. ex. vos poyos produiront des œufs).",
                "auto_harvest_tree_stumps": "Récolte automatique des souches d'arbres",
                "auto_harvest_tree_stumps_description": "Lorsque les arbres sont abattus, il reste des souches récoltables. En activant cette option, les souches à récolter seront automatiquement mises en file d'attente.",
                "default_to_worst_fertilizer": "Par défaut, le pire engrais",
                "default_to_worst_fertilizer_description": "Lorsque les agriculteurs fertilisent leurs cultures, ils utilisent le meilleur engrais disponible, à moins qu'on ne leur demande d'utiliser un type particulier. Sélectionnez cette option pour qu'ils utilisent la pire des options disponibles à la place.",
+               "default_fertilizer": "Engrais par défaut :",
+               "default_fertilizer_description": "Lors de la création d'une nouvelle ferme, définissez sa préférence d'engrais sur celui-ci.",
+               "auto_select_new_titles": "Sélection automatique des titres nouvellement obtenus",
+               "auto_select_new_titles_description": "Lorsqu'un de vos citoyens (ou d'autres éléments) obtient un titre, le sélectionne automatiquement comme titre actif.",
                "terrain_slice_buildings": "Découpe Terrain et Bâtiments",
                "terrain_slice_buildings_description": "En mode découpe Terrain, les entités prises en charge par des entités visibles et non-terrain ne sont pas montré.",
                "water_signal_update_frequency": "Taux de mise à jour des signaux d'eau",
                "water_signal_update_frequency_description": "Il n'y a que les signaux de mise à jour de l'eau qui signalent autant de tics du système d'eau. Augmentez cette valeur pour améliorer la performance avec beaucoup d'eau courante.",
                "show_processing_meter": "Afficher le compteur de traitement",
-               "show_processing_meter_description": "Affichez le compteur de traitement, utile pour comprendre les problèmes de performance, dans le coin inférieur droit de l'écran, à gauche des boutons de vitesse du jeu."
+               "show_processing_meter_description": "Affichez le compteur de traitement, utile pour comprendre les problèmes de performance, dans le coin inférieur droit de l'écran, à gauche des boutons de vitesse du jeu.",
+               "show_component_info": "Afficher les informations détaillées sur l'entité",
+               "show_component_info_description": "Afficher un bouton d'informations cliquable dans la fenêtre de l'unité sélectionnée lorsque l'entité sélectionnée dispose d'informations supplémentaires détaillées.",
+               "auto_save_max_files": "Fichiers maximum de sauvegardes auto",
+               "auto_save_max_files_description": "Quand la sauvegarde auto et la sauvegarde auto sur fichier unique sont actif, commencer à écraser les anciennes sauvegardes auto une fois cette limite atteinte.<span class='warn'>ATTENTION :</span>La prochaine fois que vous enregistrez, après avoir défini cette valeur sur un nombre inférieur, de nombreuses sauvegardes automatiques plus anciennes peuvent être supprimées.",
+               "max_files": {
+                  "5_files": "5 sauvegardes auto",
+                  "10_files": "10 sauvegardes auto",
+                  "20_files": "20 sauvegardes auto",
+                  "40_files": "40 sauvegardes auto",
+                  "no_limit": "Sans limites"
+               },
+               "auto_save_interval": "Interval de sauvegarde :",
+               "auto_save_interval_description": "Lorsque la sauvegarde automatique est activée, sauvegarde automatiquement à cette fréquence.",
+               "intervals": {
+                  "5_minutes": "5 minutes ",
+                  "6_minutes": "6 minutes ",
+                  "7_minutes": "7 minutes ",
+                  "8_minutes": "8 minutes ",
+                  "9_minutes": "9 minutes ",
+                  "10_minutes": "10 minutes ",
+                  "15_minutes": "15 minutes ",
+                  "20_minutes": "20 minutes ",
+                  "25_minutes": "25 minutes ",
+                  "30_minutes": "30 minutes "
+               },
+               "auto_save_unique_files": "Fichier unique de sauvegarde auto",
+               "auto_save_unique_files_description": "Lorsque vous enregistrez automatiquement, créez une sauvegarde distincte avec la date et l'heure.<span class='warn'>ATTENTION : </span>La sauvegarde automatique fréquente nécessite beaucoup d'espace de stockage !"
             },
             "controls_tab": {
                "key_binding_names": {
@@ -5626,7 +7536,7 @@
             },
             "desert": {
                "terrain_codes": {
-                  "water": "Oasis",
+                  "water": "Oasis ",
                   "plains": "Arbustes arides",
                   "foothills": "Montagnes Rocheuses",
                   "mountains": "Gorges"
@@ -5656,7 +7566,11 @@
             "fish_meat_resource_name": "Toutes les viandes de poisson",
             "wool_resource_name": "Toutes les laines",
             "grain_resource_name": "Tous les grains",
-            "grain_flour_resource_name": "Toutes les farines"
+            "grain_flour_resource_name": "Toutes les farines",
+            "any_pet_food_resource_name": "Toutes la nourriture pour animaux",
+            "milk_resource_name": "Tous les Lait",
+            "butter_resource_name": "Tous les Beurres",
+            "strong_bone_resource_name": "Os Fort"
          }
       },
       "hotkeys": {
@@ -5710,15 +7624,31 @@
          },
          "mechanical": {
             "display_name": "Mécanique",
-            "description": "Peut être utilisé dans la construction de systèmes connectés pour transférer l'énergie mécanique."
+            "description": "Peut être utilisé dans la construction de systèmes connectés pour transférer l'énergie mécanique.",
+            "produces": "Ce dispositif mécanique produit actuellement une énergie  de <span class='textValue'>[str(produces)] / [str(def_produces)]</span>.",
+            "consumes": "Ce dispositif mécanique consomme actuellement une énergie de <span class='textValue'>[str(consumes)] / [str(def_consumes)]</span>.",
+            "resistance": "Ce dispositif mécanique provoque une résistance de <span class='textValue'>[str(resistance)] / [str(def_resistance)]</span>.",
+            "power_percentage": "Le réseau de ce dispositif mécanique fonctionne actuellement  avec une efficacité de <span class='textValue'>[str(power_percentage)] %</span>."
          },
-         "water_signal": {
-            "display_name": "Signal d'eau",
-            "description": "Détecte les changements dans l'eau à proximité."
+         "pile": {
+            "display_name": "Pile ",
+            "description": "Contient des ressources qui peuvent être récoltées après l'avoir placé sur le sol.",
+            "harvest_rate": "Taux de récolte : <span class='textValue'>[str(harvest_rate)]</span>",
+            "item_list_header": "Cette pile contient actuellement les éléments suivants <span class='textValue'>[str(item_count)]</span> objets :"
          },
          "tile": {
             "display_name": "Tuile",
-            "description": "Tuile-able item that will automatically connect adjacently and update its model."
+            "description": "Élément de mosaïque capable de se connecter automatiquement de manière adjacente et de mettre à jour son modèle."
+         },
+         "titles": {
+            "display_name": "Titres",
+            "description": "On peut donner à cette entité un titre qui apparaîtra après son nom. Cliquez avec le bouton droit de la souris sur leur nom dans la fenêtre de l'unité sélectionnée ou sur leur feuille de personnage (le cas échéant) pour sélectionner un titre différent.",
+            "all_earned_titles": "Les titres suivants ont été mérités :",
+            "unattained": "C'est le prochain rang qui n'a pas encore été atteint."
+         },
+         "transform": {
+            "display_name": "Transformer",
+            "description": "Se transformera en autre chose lorsqu'une commande ou une action spécifique sera exécutée."
          },
          "vine": {
             "display_name": "Vigne",
@@ -5727,6 +7657,20 @@
          "water_pump": {
             "display_name": "Pompe à eau",
             "description": "Lorsqu'elle est activée, elle pompe l'eau par le bas et l'évacue par le haut."
+         },
+         "water_signal": {
+            "display_name": "Signal d'eau",
+            "description": "Détecte les changements dans l'eau à proximité."
+         }
+      }
+   },
+   "food": {
+      "food_decay": {
+         "cheese": {
+            "description": "Ce fromage commence à ... sentir le fromage. Mieux vaut le manger bientôt."
+         },
+         "curdling": {
+            "description": "Ça va mal, mieux vaut le verser dans une cuve à fromage bientôt !"
          }
       }
    }
