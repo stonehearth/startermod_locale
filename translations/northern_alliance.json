@@ -1,0 +1,934 @@
+{
+   "kingdom": {
+      "kingdom_name": "Northern Alliance",
+      "quote": "My fathers have followed the stars for a thousand, thousand cycles.",
+      "long_description": "Brave and hardy, the men and women of the north live for the sight of a new dawn over unexplored territory. Armed with compass and hatchet, they pride themselves on their tenacious adaptability.",
+      "post_selection_description": ", a clan of tenacious explorers.",
+      "initial_town_name": "Voyage [str(town_number)]"
+   },
+   "data": {
+      "northern_alliance_population": {
+         "display_name": "Northern Alliance"
+      },
+      "saved_objects": {
+         "building_templates_index": {
+            "template_tabs": {
+               "northern_alliance": {
+                  "display_name": "Alliance",
+                  "categories": {
+                     "outpost": "Explorer's Templates",
+                     "settlement": "Fort Templates"
+                  }
+               }
+            }
+         },
+         "building_templates": {
+            "pottery_studio": {
+               "display_name": "Pottery Studio"
+            },
+            "weavers_hut": {
+               "display_name": "Weaver's Hut"
+            }
+         }
+      },
+      "buffs": {
+         "valor_town_bonus_strength_buff": {
+            "display_name": "Spirit of Siv",
+            "description": "Body stat increased by 2."
+         }
+      },
+      "gm": {
+         "campaigns": {
+            "hunting": {
+               "wild_game": "Wild game has been sighted!",
+               "hungry_caribou_raid": "A herd of caribou is headed for your farms!",
+               "hungry_deer_raid": "A parcel of deer is headed for your farms!",
+               "hungry_racoon_raid": "A gaze of raccoons is headed for your farms!",
+               "hungry_rabbit_raid": "A colony of rabbits is headed for your farms!"
+            },
+            "trader": {
+               "arcs": {
+                  "encounters": {
+                     "tier_1_shops": {
+                        "food_shop": {
+                           "shop_info": {
+                              "name": "Gyrd Reinhome's Food Assortments",
+                              "title": "Gyrd Reinhome's food wagon rolls into town"
+                           }
+                        },
+                        "woodcutter_shop": {
+                           "shop_info": {
+                              "name": "Arglod Highlander's Woodcutter Shop",
+                              "title": "Arglod Highlander has arrived with wares to sell"
+                           }
+                        },
+                        "stonecutter_shop": {
+                           "shop_info": {
+                              "name": "Bjaen Swiftstone's Stonecutter Shop",
+                              "title": "Bjaen Swiftstone has arrived with wares to sell"
+                           }
+                        },
+                        "tannery_shop": {
+                           "shop_info": {
+                              "name": "Gretin Flayer's Tannery and Wilderness Supplies",
+                              "title": "A rugged survivalist stops by with her wares"
+                           }
+                        }
+                     },
+                     "tier_2_shops": {
+                        "door_shop": {
+                           "shop_info": {
+                              "name": "Nielkir Oakenvrus's Door Supply",
+                              "title": "Nielkir Oakenvrus has arrived with doors for sale"
+                           }
+                        },
+                        "container_shop": {
+                           "shop_info": {
+                              "name": "Olfta Helmbog's Container Shop",
+                              "title": "Olfta Helmbog has arrived with a caravan of containers"
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+            "town_progression": {
+               "banner_upgrade": {
+                  "title": "Outpost Established",
+                  "dialog_title": "Outpost Established!",
+                  "tier_title": "Outpost",
+                  "reward_message": "By unanimous agreement of the citizens, we declare:",
+                  "reward_message_ctd": "to be an outpost striving to be at one with the environment."
+               },
+               "town_founding_explanation": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "read_letter3": {
+                           "bulletin_message": {
+                              "00": "Her voice takes on the cadence of one reciting words spoken a thousand times before. \"Valin created our Alliance to share in plenty, adapt in hardship, and seek the horizon. The Northern Alliance will become one with the cycles and stars of Hearth.\"<p>She tilts her head in inquiry. \"Which of our philosophies does your outpost most aspire to embody?\"</p> "
+                           },
+                           "bulletin_title": "Ronia Olarkson",
+                           "dialog_title": "Ronia Olarkson",
+                           "choice_000": "What shall we choose..."
+                        },
+                        "open_letter": {
+                           "bulletin_message": {
+                              "00": "A woman stands at the edge of camp. She wears the travel-worn blues of a Scout of the Library. <br><br><p align='right'><font size=-6 color='#cccccc'>Nobody saw her arrive, but it is clear she has been watching for some time.</font></p>"
+                           },
+                           "bulletin_title": "A Figure Appears",
+                           "dialog_title": "A stoic scout",
+                           "choice_000": "Welcome, traveller.",
+                           "choice_001": "[skip] We know what banner we want."
+                        },
+                        "read_letter": {
+                           "bulletin_message": {
+                              "00": "\"Ronia\" she says, pointing at herself. Her voice is strangled. As if to explain, she pulls her collar away from her throat, revealing a mess of old scars. She gestures at her knife. \"I scout.\" Then she taps the star-shaped brooch on her cloak. \"For Valin\"s Library.\" "
+                           },
+                           "bulletin_title": "Ronia Olarkson",
+                           "dialog_title": "Ronia Olarkson",
+                           "choice_000": "Ah."
+                        },
+                        "read_letter2": {
+                           "bulletin_message": {
+                              "00": "She speaks as much with her hands and eyes as with her voice: \"I am glad you have come to study, and settle. Now that I know you are here, I will send tales of your learnings to the scholars at home.\" <p>She steps over to the banner and touches its blank center. \"First, though, you must choose your symbol. What future did you foresee when you began this voyage?\"</p>"
+                           },
+                           "bulletin_title": "The lady gestures eloquently",
+                           "dialog_title": "The lady gestures eloquently",
+                           "choice_000": "Banner... Hmm..."
+                        }
+                     }
+                  }
+               },
+               "bird_departs": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Ronia is now standing by the edge of the fire. She's written the town name and a brief account of its inhabitants in the white flesh of a birchbark shaving. Methodically, she commits it to the flames, which burn paler for a moment.<p>\"[str(i18n_data.town_name)]\" she intones. \"By Valin's wisdom and under the watchful eyes of the stars above, be committed to the records of The Library.\" </p>"
+                           },
+                           "bulletin_title": "Ronia Rises",
+                           "dialog_title": "The fire sparkles",
+                           "choice_000": "That... works?"
+                        },
+                        "msg2": {
+                           "bulletin_title": "She smiles with her eyes only",
+                           "dialog_title": "She smiles with her eyes only",
+                           "choice_000": "Travel under the stars.",
+                           "bulletin_message": {
+                              "00": "\"Those that matter, will hear.\" She bows, and makes to fade back into the edges of the wilderness. \"Farewell,\" she gestures. \"I will return for your stories.\" "
+                           }
+                        }
+                     }
+                  }
+               },
+               "town_founding_food_donation": {
+                  "donation_dialog_info": {
+                     "dialog_nodes": {
+                        "simple_message": {
+                           "bulletin_message": {
+                              "00": "\"Thank you,\" Ronia whispers, and from her gesture, it is clear she means \"for your hospitality, and presence.\" <p>She places a small pouch beside the banner. On its side is an emblem of the nearest large town, some days distant. \"Our towns are stars in the constellation of our people,\" she says. \"For you, from them, so that one day, you will join those ranks.\"</p><p>The bag contains:</p>"
+                           },
+                           "bulletin_title": "A Gift",
+                           "dialog_title": "Ronia produces a small pouch",
+                           "choice_000": "Delicious!"
+                        }
+                     }
+                  }
+               },
+               "hearth_foreshadow_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg4": {
+                           "bulletin_message": {
+                              "00": "\"What wisdom has your settlement gleaned, that it wishes to pass on to the rest of our people? That wealth should be shared? That it is possible to build bastions that stand strong against the cold? That we hunt, even while knowing that we in turn may become the hunted?\"<br><br>She tilts her head. \"I look forward to your wisdom. In the meantime… a gift, to remind you of spring.\" She places a small packet by the banner. "
+                           },
+                           "bulletin_title": "Ronia gestures at the hearth",
+                           "dialog_title": "Ronia gestures at the hearth",
+                           "choice_000": "Brightbell seeds! Thanks!"
+                        },
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Ronia gestures at the camp, smiling approval. \"I have come again to pass your stories to the Library,\" she indicates. She sits by the fire, produces another birch shaving, and waits."
+                           },
+                           "bulletin_title": "Ronia Olarkson",
+                           "dialog_title": "Ronia Olarkson",
+                           "choice_000": "Well, since you were last here..."
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "Ronia meticulously notes everyone’s adventures in runes on the birchbark, and again commits them to the flames. \"Your fleck of light is growing. Soon, your hearth will draw others, and someday, it too will be a star in the constellation of our people.\"  "
+                           },
+                           "bulletin_title": "Ronia stands",
+                           "dialog_title": "Ronia stands",
+                           "choice_000": "Is it time?"
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": " Ronia appears again at the edge of camp. <br><br><p align='right'><font size=-6 color='#cccccc'>How long has she been standing there, observing?</font></p>"
+                           },
+                           "bulletin_title": "Ronia Returns ",
+                           "dialog_title": "The Philosopher Scout",
+                           "choice_000": "You return!"
+                        }
+                     }
+                  }
+               },
+               "hearth_choice_explanation": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "makers": {
+                           "bulletin_message": {
+                              "00": "\"A Hearth of the Makers is for those who believe that a house is a place of learning and creation, and that the things we build are best traded so we may all grow wise together.\" "
+                           },
+                           "bulletin_title": "Learning in doing ",
+                           "dialog_title": "Learning in doing ",
+                           "choice_000": "Wisdom in creation."
+                        },
+                        "final": {
+                           "bulletin_message": {
+                              "00": "Ronia concludes: \"Cheer, Makers, and Glory, the choice of your path lights the way for all who follow you. In Valin's wisdom and under the auspices of Firnn, Knut, and Siv…\" "
+                           },
+                           "bulletin_title": "A choice",
+                           "dialog_title": "A choice",
+                           "choice_000": "We choose..."
+                        },
+                        "intro2": {
+                           "bulletin_message": {
+                              "00": "She taps her brooch. \"The Library is pleased with your progress.\" She bends, and touches the stones of your hearth. \"Now it is time to choose the beacon that will represent your settlement.\" "
+                           },
+                           "bulletin_title": "Ronia Olarkson",
+                           "dialog_title": "Ronia Olarkson",
+                           "choice_000": "As is tradition."
+                        },
+                        "cheer": {
+                           "bulletin_message": {
+                              "00": "\"Valin teaches that a home is a bulwark against the elements; a place to find succor and friendship. The Hearth of Cheer draws together all who seek to create a warmth that no blizzard can dissipate.\" "
+                           },
+                           "bulletin_title": "Warmth in the cold ",
+                           "dialog_title": "Warmth in the cold ",
+                           "choice_000": "Strength in unity."
+                        },
+                        "intro3": {
+                           "bulletin_message": {
+                              "00": "Her voice takes on a gravely cadence: \"Teacher Cid saw the hearths as earthly stars, lighting our knowledge of the world. Since the time we turned our backs on the Phoenix, they have burned to show the heavens we know our place in the cycle of Hearth.\" <br><br>She waits for the appropriate response."
+                           },
+                           "bulletin_title": " Ronia Olarkson",
+                           "dialog_title": " Ronia Olarkson",
+                           "choice_000": "Wisdom guide us."
+                        },
+                        "glory": {
+                           "bulletin_message": {
+                              "00": "\"At last, the Hearth of Glory reminds us that to survive in the farthest reaches, we must hone our bodies and minds to their utmost, for anything less is to fall prematurely into the cold.\"  "
+                           },
+                           "bulletin_title": "The hunt is everywhere",
+                           "dialog_title": "The hunt is everywhere",
+                           "choice_000": "Resilience in winter."
+                        },
+                        "intro": {
+                           "bulletin_message": {
+                              "00": "Ronia appears at the edge of camp, smiling, arms spread to encompass all that has been built since her last appearance. \"Stars bless your learnings,\" she whispers. \"Shall I hear your tales?\" "
+                           },
+                           "bulletin_title": "Ronia Returns Again",
+                           "dialog_title": "More time for tales",
+                           "choice_000": "Yes please.",
+                           "choice_001": "[skip] We know what Hearth we want."
+                        }
+                     }
+                  }
+               },
+               "hearth_upgrade": {
+                  "title": "Settlement Established",
+                  "dialog_title": "Settlement Established!",
+                  "tier_title": "Settlement",
+                  "reward_message": "By unanimous agreement of the citizens, we declare:",
+                  "reward_message_ctd": "to be a settlement out to prove that its riches and craftsmanship is unmatched."
+               },
+               "shrine_choice_explanation": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "clergy": {
+                           "bulletin_message": {
+                              "00": "Ronia dips again into a poetic cadence: \"Firnn the Stag, from whose hooves fall the favors of summer: bless this town with prosperity, and the wisdom to live in harmony with the cycles of the land.\" <br><i>(Building a Font of Summer will grant all your townsfolk a +1 boost to the mind, body, and spirit attributes.)</i>"
+                           },
+                           "bulletin_title": "The Font of Summer",
+                           "dialog_title": "The Clergy",
+                           "choice_000": " By Firnn's Blessing."
+                        },
+                        "makers": {
+                           "bulletin_message": {
+                              "00": "Ronia continues: \"Knut the Swift, who turns the wheel of fortune: bless this town with a moment of great prosperity, and the foresight to store favor against the reversals to come. <br><i>(Building a Font of Fortune will grant the ability to create masterwork quality furniture and decorations, which are considerably better than those of excellent quality.) </i>"
+                           },
+                           "bulletin_title": "The Font of Fortune",
+                           "dialog_title": "The Font of Fortune",
+                           "choice_000": "By Knut's Cunning."
+                        },
+                        "summary": {
+                           "bulletin_message": {
+                              "00": "\"By the wisdom of Valin and the guidance of the Library, it is time to request the favor of the constellation that best reflects for you, the philosophy that guides our people.\" She produces three scrolls, which she distributes to those gathered around her. \"Create thoughtfully, and let the spirits hear the wisdom in your deeds.\" "
+                           },
+                           "bulletin_title": "Ronia concludes: ",
+                           "dialog_title": "Ronia concludes: ",
+                           "choice_000": "Thank you."
+                        },
+                        "military": {
+                           "bulletin_message": {
+                              "00": "Ronia finishes: \"And Siv the Wolf, whose breath steams the icy winter as he chases fleeting prey: bless this town with resilience, so that we stand against the cold in our time of strength, and accept our return to the earth when that time is over.\"<br><i>(Building a Font of Fire will grant you additional strength in combat and a +2 to the body attribute.)</i> "
+                           },
+                           "bulletin_title": "The Font of Fire",
+                           "dialog_title": "The Font of Fire",
+                           "choice_000": "By Siv’s Grace."
+                        },
+                        "intro": {
+                           "bulletin_message": {
+                              "00": "Ronia shakes her head fondly. \"Did you expect the stars to come visit you on earth? They are spirits, not beasts. They are Valin's allegories, committed to the heavens so we do not forget his teachings.\""
+                           },
+                           "bulletin_title": "Ronia Appears Once More",
+                           "dialog_title": "Ronia returns alone",
+                           "choice_000": "I've heard stories..."
+                        },
+                        "intro2": {
+                           "bulletin_title": "Ronia looks towards the hearth",
+                           "dialog_title": "Ronia looks towards the hearth",
+                           "choice_000": "Remind us.",
+                           "choice_001": "[skip] We've already decided.",
+                           "bulletin_message": {
+                              "00": "\"It is time to create a monument, and ask for the blessings of your patron spirit. Then I will record your settlement as a star in the constellation of the Northern Alliance, and your stories will be safe in the Library of our people. Have you made your choice?\" "
+                           }
+                        }
+                     }
+                  }
+               },
+               "unlock_shrine_recipes": {
+                  "bulletin_title": "Mason shrine recipes unlocked!"
+               },
+               "shrine_quest_valor": {
+                  "title": "Township Quest: Font of Fire",
+                  "dialog_title": "Township Quest: Font of Fire"
+               },
+               "shrine_quest_guildmaster": {
+                  "title": "Township Quest: Font of Fortune",
+                  "dialog_title": "Township Quest: Font of Fortune"
+               },
+               "shrine_quest_deity": {
+                  "title": "Township Quest: Font of Summer",
+                  "dialog_title": "Township Quest: Font of Summer"
+               },
+               "shrine_upgrade": {
+                  "title": "Township Established",
+                  "dialog_title": "Township Achieved!",
+                  "tier_title": "Township",
+                  "reward_message": "By the will of the spirits, we recognize:",
+                  "reward_message_ctd": "For learning the mysteries of the world. The town is hereby eligible for:"
+               },
+               "shrine_upgrade_valor": {
+                  "recipe_bulletins": {
+                     "recipe_unlock_mason": "New container recipes for Mason!",
+                     "recipe_unlock_weaver": "New wolf pelt recipe for Weaver!"
+                  },
+                  "achievements": {
+                     "001": "Mason Container Recipes",
+                     "000": "Body +2",
+                     "002": "Weaver Wolf Pelt Recipe"
+                  },
+                  "reward_message_ctd": "For acts of incredible valor in combat. The town is hereby eligible for:"
+               },
+               "shrine_upgrade_guildmaster": {
+                  "recipe_bulletins": {
+                     "recipe_unlock_blacksmith": "New furniture recipes for Blacksmith!",
+                     "recipe_unlock_mason": "New statue recipe for Mason!"
+                  },
+                  "achievements": {
+                     "001": "Mason Hare Statue Recipe",
+                     "002": "Blacksmith Furniture Recipes"
+                  },
+                  "reward_message_ctd": "For learning the mysteries of the world. The town is hereby eligible for:"
+               },
+               "shrine_upgrade_deity": {
+                  "recipe_bulletins": {
+                     "recipe_unlock_mason": "New window box recipe for Mason!",
+                     "recipe_unlock_weaver": "New decoration recipes for Weaver!"
+                  },
+                  "achievements": {
+                     "001": "Mason Window Box Recipe",
+                     "002": "Weaver Decoration Recipes"
+                  }
+               },
+               "valor_dialog_1": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Ronia falls into a hunter's crouch and bares her teeth. The wolf bares its fangs back. Then as one, they both raise their chins, exposing their throats. Ronia's hand touches the wolf's ruff, and it sniffs once at the scars on her neck. "
+                           },
+                           "bulletin_title": "Siv, Spirit of the Hunt",
+                           "dialog_title": "Siv, Spirit of the Hunt",
+                           "choice_000": "Is that… Siv?"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "The wolf slowly turns its head and the people around it pause, overtaken by a vision: a flash of wind in the face as they bound across a snowy plain, the scent of their prey connecting them like a thread. Each hunter will eat tonight or die, their bodies returning to the earth. The simplicity of it straightens each spine. Tonight, all know their place in the world. A moment later, the wolf is gone.  "
+                           },
+                           "bulletin_title": "Siv, Spirit of the Hunt",
+                           "dialog_title": "Siv, Spirit of the Hunt",
+                           "choice_000": "Thank you, Siv."
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "A low growl saturates the air around the campfire. Around two sparks of the hearth, a wolf forms, white like winter, save for its brilliant yellow eyes.  "
+                           },
+                           "bulletin_title": "A Wolf of Fire",
+                           "dialog_title": " A wolf with eyes like embers",
+                           "choice_000": "Your heart pounds."
+                        }
+                     }
+                  }
+               },
+               "guild_dialog_1": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Ronia kneels before the rabbit and cups her hands so it might hop into them. She walks it slowly towards the celebration. The rabbit's ears swivel in every direction, taking in the festivities. "
+                           },
+                           "bulletin_title": "Knut, Spirit of Fortune",
+                           "dialog_title": "Knut, Spirit of Fortune",
+                           "choice_000": "Is that… Knut?"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "The rabbit turns to sniff in the direction of the fire, and amidst the embers a vision appears: a constellation of towns emblazoned across a map, and dozens, hundreds, thousands of stories collected of their learnings. Visions of finely crafted goods waft through the smoke, creating kinship between those who have created, and those who will learn from their advancements and create anew. Then the creature leaps from Ronia's hands, and into the crowd. "
+                           },
+                           "bulletin_title": "Knut, Spirit of Fortune",
+                           "dialog_title": "Knut, Spirit of Fortune",
+                           "choice_000": "Thank you, Knut."
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": " At the edge of the new monument, a rabbit appears. It wears the purple shadows around it like a cloak. Its ears are the color of the sky between stars and its eyes pierce like the sun on snow. "
+                           },
+                           "bulletin_title": "An Uncanny Rabbit",
+                           "dialog_title": "A rabbit with fur like the night sky",
+                           "choice_000": "You grow still."
+                        }
+                     }
+                  }
+               },
+               "deity_dialog_1": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Ronia approaches the stag with a low bow, so low her hair scrapes the ground, and gestures it towards the hearth. The music seems to entice it closer. "
+                           },
+                           "bulletin_title": " Firnn, Spirit of Summer",
+                           "dialog_title": " Firnn, Spirit of Summer",
+                           "choice_000": "Is that... Firnn?"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "The stag turns, a light flashes through each person standing nearby. Everyone seems energized: stronger, wiser, braver. Then the creature turns its head from the fire, and seems to melt into the air, becoming one with the festivities as the town has become one with the Alliance. "
+                           },
+                           "bulletin_title": "Firnn, Spirit of Summer",
+                           "dialog_title": "Firnn, Spirit of Summer",
+                           "choice_000": "Thank you, Firnn."
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "At the edge of the celebration, a creature emerges from the shadows. It looks like a particularly fine stag, but its horns shine crystal in moonlight, and its spots glitter like tiny stars. A glowing wreath appears around its neck. "
+                           },
+                           "bulletin_title": "A Glowing Stag",
+                           "dialog_title": "A stag adorned with stars",
+                           "choice_000": "You stare."
+                        }
+                     }
+                  }
+               },
+               "post_shrine_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Ronia considers the fountain. \"What learnings will you pursue next? The other monuments would look good beside this one, though they will not have the power to call the constellations.\" She smiles. \"Your town has all it needs, does it not?\"  "
+                           },
+                           "bulletin_title": "Ronia Olarkson, Scout & Sage",
+                           "dialog_title": "Ronia Olarkson, Scout & Sage",
+                           "choice_000": "Indeed."
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "Ronia touches her breast. \"You warm my heart.\" She takes a step backwards, and makes an all-encompassing gesture of farewell. Her eyes blaze, a reminder that the Scouts of Valin travel forever away from civilization, to places even more wild and dangerous than these.<br><br>\"As Valin teaches, each precious moment must be held dear against the inevitable change of the weather.\" "
+                           },
+                           "bulletin_title": "Ronia Olarkson, Scout & Sage",
+                           "dialog_title": "Ronia Olarkson, Scout & Sage",
+                           "choice_000": "Farewell, Ronia! Follow the stars!"
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Ronia watches as the party quiets. \"That was well done,\" she whispers. \"Your township is officially entered into the annals of The Library, and the spirits grace your steps.\" "
+                           },
+                           "bulletin_title": "Ronia Makes to Leave",
+                           "dialog_title": "Ronia Olarkson, Scout & Sage",
+                           "choice_000": "Valin’s Blessings."
+                        }
+                     }
+                  }
+               },
+               "reembark_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "When Ronia appears for the last time, it is with a golden banner in her hands. It is a twin to the one this town embarked with, so long ago. She tilts her head with a smile and gestures at the horizon. She doesn't need to speak. Hearth is waiting. </p><p><font size=-1><i>Re-embarking allows you to carry over up to 3 citizens, 10 items, and all your unlocked recipes when starting a new town.</i></font></p>"
+                           },
+                           "bulletin_title": " Ronia, One More Time",
+                           "dialog_title": "One Last Thing",
+                           "choice_000": "Exciting!"
+                        }
+                     }
+                  }
+               },
+               "shrine_choice": {
+                  "guildmaster": {
+                     "description": "<i>This town will be known for its resourceful crafts, refined from the materials nearby.</i><ul><li>Allows crafting Masterwork quality items</li></ul>"
+                  },
+                  "deity": {
+                     "description": "<i>This town shall share the bounty of the land with those still suffering from winter.</i><ul><li>Blesses all citizens with +1 to Mind, Body, and Spirit</li></ul>"
+                  },
+                  "valor": {
+                     "description": "<i>This town will be known by the foes it has defeated, and stand in defiance of those who would extinguish its flame. </i><ul><li>Blesses all citizens with a +2 to Body</li></ul>"
+                  }
+               },
+               "shrine_foreshadow_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_title": "Ronia Materializes",
+                           "dialog_title": "Scouts are seriously quiet!",
+                           "choice_000": "Good to see you again.",
+                           "bulletin_message": {
+                              "00": " She offers a tiny smile as she cocks her head. \"Surprised?\" her expression seems to say. Two fingers of one hand mime a person tiptoeing through the grass. Her blue cloak seems to take on the color of the sky around her."
+                           }
+                        },
+                        "msg2": {
+                           "bulletin_title": "Ronia admires the town ",
+                           "dialog_title": "Ronia admires the town ",
+                           "choice_000": "We've grown a lot since...",
+                           "bulletin_message": {
+                              "00": "She gestures at the newest additions to the town and nods in approval. Her cloak is flung back, and it is clear the scars stretch around her neck in the shape of a wolf’s jaw. Today, they look a bit inflamed. <br><br>She settles by the fire and produces the birch bark and charcoal pencil again. With a nod, she invites those around her to recount their recent adventures. "
+                           }
+                        },
+                        "msg3": {
+                           "bulletin_title": "Ronia writes",
+                           "dialog_title": "Ronia writes",
+                           "choice_000": "Valin's allegorical beasts?",
+                           "bulletin_message": {
+                              "00": "As Ronia records the tales and casts them into the fire, she grows thoughtful. In the end, she nods to herself, and produces, from her pouch, three smooth stones.<br><br>They each bear a familiar scratched marking: One is the constellation of Firnn the Stag, often associated with bounty, and summer. One is the constellation of Siv the Wolf, who ensures each hunt contributes to the cycle of the world. The last is the tiny three stars of Knut the Rabbit, who spins the wheel of fortune. "
+                           }
+                        },
+                        "msg4": {
+                           "bulletin_title": "Ronia kneels",
+                           "dialog_title": "Ronia kneels",
+                           "choice_000": "We will be ready.",
+                           "bulletin_message": {
+                              "00": "As she does so, she places the stones by the fire, and bows her head in prayer. \"It is time,\" she whispers. \"When I next return, I will bring the spirits and we will create the monument to ask for their blessing.\" "
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   },
+   "entities": {
+      "gizmos": {
+         "na_camp_standard": {
+            "na_camp_standard_ghost": {
+               "display_name": "Camp Standard",
+               "description": "How you know you've come home"
+            }
+         },
+         "na_town_banner_guardian": {
+            "na_town_banner_guardian_ghost": {
+               "display_name": "Banner of Cunning",
+               "description": "How you know you've come home.",
+               "town_bonus_description": "<i>This settlement will be a bustling hub of trade.</i><ul><li>Roads give 3x their normal speed boost</li><li>Your items sell for 50% more</li><li>Traders will bring 2x the goods and Gold</li></ul>"
+            },
+            "na_town_banner_guardian_token": {
+               "display_name": "Banner of Cunning Shred",
+               "description": "A shred from the Banner of Cunning, carrying along its blessing."
+            }
+         },
+         "na_town_banner_might": {
+            "na_town_banner_might_ghost": {
+               "display_name": "Banner of Strength",
+               "description": "How you know you've come home",
+               "town_bonus_description": "<i>This settlement will grow strong through earth and steel.</i><ul><li>Mining gives 50% more Ore, Stone, and Clay</li><li>Hearthlings no longer mind cramped spaces</li></ul>"
+            },
+            "na_town_banner_might_token": {
+               "display_name": "Banner of Strength Shred",
+               "description": "A shred from the Banner of Strength, carrying along its blessing."
+            }
+         },
+         "na_town_banner_nature": {
+            "na_town_banner_nature_ghost": {
+               "display_name": "Banner of Vitality",
+               "description": "How you know you've come home",
+               "town_bonus_description": "<i>This settlement shall be at one with the environment.</i><ul><li>Trees produce 25% more Wood</li><li>Plants and Crops both grow 25% faster</li><li>Plants have 2x their normal Appeal</li></ul>"
+            },
+            "na_town_banner_nature_token": {
+               "display_name": "Banner of Vitality Shred",
+               "description": "A shred from the Banner of Vitality, carrying along its blessing."
+            }
+         }
+      },
+      "decoration": {
+         "hearth_wolf": {
+            "hearth_wolf": {
+               "display_name": "Hearth of the Makers",
+               "description": "Proof that your crafters have learned the land and produced goods worthy to send into the vast unknown"
+            }
+         },
+         "hearth_magma": {
+            "hearth_magma": {
+               "display_name": "Hearth of Glory",
+               "description": "Proof that you have military strength and that you're prepared to meet all comers."
+            }
+         },
+         "hearth_ice": {
+            "hearth_ice": {
+               "display_name": "Hearth of Cheer",
+               "description": "Provides warmth, light, comfort, and random daily buffs"
+            }
+         },
+         "shrine_wolf": {
+            "shrine_wolf": {
+               "display_name": "Font of Fire",
+               "description": "Crafted to honor Siv, spirit of the hunt"
+            }
+         },
+         "shrine_stag": {
+            "shrine_stag": {
+               "display_name": "Font of Summer",
+               "description": "Crafted to honor Firnn, spirit of the earth"
+            }
+         },
+         "shrine_hare": {
+            "shrine_hare": {
+               "display_name": "Font of Fortune",
+               "description": "Crafted to honor Knut, the spirit of the wheel"
+            }
+         },
+         "banner_wall_small_stag": {
+            "banner_wall_small_stag_ghost": {
+               "display_name": "Small Stag Banner",
+               "description": "Show your devotion to Firnn with this banner."
+            }
+         },
+         "banner_wall_big_stag": {
+            "banner_wall_big_stag_ghost": {
+               "display_name": "Long Stag Banner",
+               "description": "Show your devotion to Firnn with this banner."
+            }
+         },
+         "window_box_stone_snow_poppy": {
+            "window_box_stone_snow_poppy_ghost": {
+               "display_name": "Snow Poppy Planter",
+               "description": "A tidy home for some lovely flowers."
+            }
+         },
+         "rug_moss": {
+            "rug_moss_ghost": {
+               "display_name": "Moss Rug",
+               "description": "Made of plant matter in honor of Firnn."
+            }
+         },
+         "wall_mounted_candle": {
+            "wall_mounted_candle_ghost": {
+               "display_name": "Golden Candle Decoration",
+               "description": "A decoration in recognition of Knut's glory."
+            }
+         },
+         "rug_pelt_wolf": {
+            "rug_pelt_wolf_ghost": {
+               "display_name": "Wolf Pelt Rug",
+               "description": "In Siv's honor, nothing is wasted from a kill."
+            }
+         },
+         "wall_mounted_paw": {
+            "wall_mounted_paw_ghost": {
+               "display_name": "Siv's Paw",
+               "description": "Mark of the hunter, never seen or heard.. until its too late."
+            }
+         },
+         "wall_mounted_antlers": {
+            "wall_mounted_antlers_ghost": {
+               "display_name": "Antler Wall Fixture",
+               "description": "Firnn's kindred bless our halls with their antlers."
+            }
+         },
+         "statue_hare": {
+            "statue_hare_ghost": {
+               "display_name": "Statue of Knut",
+               "description": "Knut's likeness, as told in the stories of old."
+            }
+         },
+         "window_box_stone_violet": {
+            "window_box_stone_violet_ghost": {
+               "display_name": "Violet Planter",
+               "description": "A tidy home for some lovely flowers."
+            }
+         }
+      },
+      "npc": {
+         "herald": {
+            "female": {
+               "herald_siv": {
+                  "display_name": "Siv",
+                  "description": "Spirit of the Hunt"
+               },
+               "herald_ronia": {
+                  "display_name": "Ronia Olarkson",
+                  "description": "A Scout of the Library"
+               }
+            },
+            "male": {
+               "herald_knut": {
+                  "display_name": "Knut",
+                  "description": "Spirit of the Wheel"
+               },
+               "herald_firnn": {
+                  "display_name": "Firnn",
+                  "description": "Spirit of the Wood"
+               }
+            }
+         }
+      },
+      "furniture": {
+         "chair_golden": {
+            "chair_golden_ghost": {
+               "display_name": "Golden Chair",
+               "description": "A throne befitting of Knut, but they will share with others."
+            }
+         },
+         "table_stone_gold": {
+            "table_stone_gold_ghost": {
+               "display_name": "Gold Plated Stone Table",
+               "description": "A table which Knut would be proud to eat off of."
+            }
+         }
+      },
+      "container": {
+         "input_shelf_wall_stone_gold": {
+            "input_shelf_wall_stone_gold_ghost": {
+               "display_name": "Golden Wall Supply Shelf",
+               "description": "A set of shelves befitting of Knut's glory."
+            }
+         },
+         "input_bin_stone_wolf": {
+            "input_bin_stone_wolf_ghost": {
+               "display_name": "Siv's Stone Bowl",
+               "description": "A supply container, as Siv supplies our bellies."
+            }
+         },
+         "output_box_stone_wolf": {
+            "output_box_stone_wolf_ghost": {
+               "display_name": "Siv's Work Shelves",
+               "description": "A temporary storage shelf, as Siv readies for the hunt."
+            }
+         },
+         "chest_stone_wolf": {
+            "chest_stone_wolf_ghost": {
+               "display_name": "Stone Chest of Siv",
+               "description": "Stores up to 128 items, as Siv gathers resources for the long winter."
+            }
+         }
+      },
+      "weapons": {
+         "spear_horn": {
+            "spear_horn_iconic": {
+               "display_name": "Spear Horn",
+               "description": "Imbues the wearer with the healing power of Firnn, allowing them to more quickly overcome their wounds."
+            }
+         }
+      },
+      "armor": {
+         "shield_hare": {
+            "display_name": "Rabbit Hair Shield",
+            "description": "Imbues the wearer with the healing power of Knut, allowing them to better stand in battle."
+         },
+         "helmet_wolf": {
+            "helmet_wolf_iconic": {
+               "display_name": "Wolf Helm",
+               "description": "Crafted with the blessing of Siv, to protect our community."
+            },
+            "display_name": "Wolf Helm",
+            "description": "Imbues the wearer with the healing power of Siv, allowing them to sleep less."
+         }
+      }
+   },
+   "jobs": {
+      "mason": {
+         "recipes": {
+            "shrine_stag": {
+               "recipe_name": "Font of Summer",
+               "description": "Crafted to honor Firnn, spirit of the wood"
+            },
+            "shrine_hare": {
+               "description": "Crafted to honor Knut, spirit of the wheel",
+               "recipe_name": "Font of Fortune"
+            },
+            "shrine_wolf": {
+               "description": "Crafted to honor Siv, spirit of the hunt",
+               "recipe_name": "Font of Fire"
+            },
+            "crude_weaver_spindle_recipe": {
+               "recipe_name": "Crude Spindle"
+            },
+            "stone_sword_recipe": {
+               "recipe_name": "Stone Practice Sword"
+            },
+            "window_box_stone_snow_poppy_recipe": {
+               "description": "A planter box full of snow poppy flowers, built to be placed below window frames.",
+               "recipe_name": "Snow Poppy Window Box",
+               "flavor": "A dark arctic morning is always made brighter with a poppy."
+            },
+            "statue_hare": {
+               "description": "Crafted to honor Knut, spirit of the wheel.",
+               "recipe_name": "Statue of Knut"
+            },
+            "chair_golden": {
+               "description": "A throne befitting of Knut, but they will share with others.",
+               "recipe_name": "Golden Chair"
+            },
+            "wall_mounted_antlers_recipe": {
+               "description": "Firnn's kindred bless our halls with their antlers.",
+               "recipe_name": "Antler Wall Fixture"
+            },
+            "wall_mounted_paw_recipe": {
+               "description": "Mark of the hunter, never seen or heard.. until its too late.",
+               "recipe_name": "Siv's Paw"
+            },
+            "output_box_stone_wolf_recipe": {
+               "description": "A temporary storage shelf, as Siv readies for the hunt.",
+               "recipe_name": "Siv's Work Shelves"
+            },
+            "input_bin_stone_wolf_recipe": {
+               "description": "A supply container, as Siv supplies our bellies.",
+               "recipe_name": "Siv's Stone Bowl"
+            },
+            "chest_stone_wolf_recipe": {
+               "description": "Stores up to 128 items, as Siv gathers resources for the long winter.",
+               "recipe_name": "Stone Chest of Siv"
+            }
+         }
+      },
+      "weaver": {
+         "recipes": {
+            "banner_wall_big_stag_recipe": {
+               "description": "Show your devotion to Firnn with this banner.",
+               "recipe_name": "Long Stag Banner",
+               "flavor": "Also a sign of a nature lover."
+            },
+            "banner_wall_small_stag_recipe": {
+               "description": "Show your devotion to Firnn with this banner.",
+               "recipe_name": "Short Stag Banner",
+               "flavor": "Also a sign of a nature lover."
+            },
+            "rug_moss_recipe": {
+               "description": "Made of plant matter in honor of Firnn.",
+               "recipe_name": "Moss Rug"
+            },
+            "rug_pelt_wolf_recipe": {
+               "description": "In Siv's honor, nothing is wasted from a kill.",
+               "recipe_name": "Wolf Pelt Rug"
+            },
+            "spear_horn_recipe": {
+               "description": "Imbues the wearer with the healing power of Firnn, allowing them to more quickly overcome their wounds.",
+               "recipe_name": "Spear Horn",
+               "flavor": "Crafted with the blessing of Firnn, to protect our community."
+            },
+            "helmet_wolf_recipe": {
+               "description": "Imbues the wearer with the healing power of Siv, allowing them to sleep less.",
+               "recipe_name": "Wolf Helm",
+               "flavor": "Crafted with the blessing of Siv, to protect our community."
+            },
+            "shield_hare_recipe": {
+               "description": "Imbues the wearer with the healing power of Knut, allowing them to better stand in battle.",
+               "recipe_name": "Rabbit Hair Shield",
+               "flavor": "Crafted with the blessing of Knut, to protect our community."
+            }
+         }
+      },
+      "blacksmith": {
+         "recipes": {
+            "chair_golden": {
+               "description": "A throne befitting of Knut, but they will share with others.",
+               "recipe_name": "Golden Chair"
+            },
+            "input_shelf_wall_stone_gold": {
+               "description": "A container that is as gorgeous as it is useful.",
+               "recipe_name": "Golden Wall Supply Shelf"
+            },
+            "table_stone_gold": {
+               "description": "A table which Knut would be proud to eat off of.",
+               "recipe_name": "Gold Plated Stone Table"
+            },
+            "wall_mounted_candle": {
+               "description": "A decoration in recognition of Knut's glory.",
+               "recipe_name": "Golden Candle Decoration"
+            }
+         }
+      }
+   },
+   "loadouts": {
+      "hunting_party": {
+         "display_name": "Hunting Party",
+         "description": "The land is full of animals. Tasty, tasty animals. The archers can hunt them, and the cook can turn them into delicious morsels.",
+         "tooltip": "Hunting is a less reliable food source, but the archers can do double duty as town guards."
+      }
+   },
+   "kingdoms": {
+      "northern_alliance": "Northern Alliance"
+   }
+}

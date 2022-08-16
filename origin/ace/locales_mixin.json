@@ -1,0 +1,157 @@
+{
+	"data": {
+		"biome": {
+			"temperate": {
+				"seasons": {
+					"spring": {
+						"description":	"i18n(stonehearth_ace:data.biome.temperate.seasons.spring.description)"
+					},
+					"summer": {
+						"description":	"i18n(stonehearth_ace:data.biome.temperate.seasons.summer.description)"
+					},
+					"autumn": {
+						"description":	"i18n(stonehearth_ace:data.biome.temperate.seasons.autumn.description)"
+					},
+					"winter": {
+						"description":	"i18n(stonehearth_ace:data.biome.temperate.seasons.winter.description)"
+					}
+				}
+			},
+			"desert": {
+				"seasons": {
+					"spring": {
+						"description":	"i18n(stonehearth_ace:data.biome.desert.seasons.spring.description)"
+					},
+					"summer": {
+						"description":	"i18n(stonehearth_ace:data.biome.desert.seasons.summer.description)"
+					},
+					"autumn": {
+						"description":	"i18n(stonehearth_ace:data.biome.desert.seasons.autumn.description)"
+					},
+					"winter": {
+						"description":	"i18n(stonehearth_ace:data.biome.desert.seasons.winter.description)"
+					}
+				}
+			},
+			"arctic": {
+				"seasons": {
+					"spring": {
+						"description":	"i18n(stonehearth_ace:data.biome.arctic.seasons.spring.description)"
+					},
+					"summer": {
+						"description":	"i18n(stonehearth_ace:data.biome.arctic.seasons.summer.description)"
+					},
+					"autumn": {
+						"description":	"i18n(stonehearth_ace:data.biome.arctic.seasons.autumn.description)"
+					},
+					"winter": {
+						"description":	"i18n(stonehearth_ace:data.biome.arctic.seasons.winter.description)"
+					}
+				}
+			}
+		},
+		"gm": {
+			"campaigns": {
+				"trader": {
+					"returning_collector_encounter": {
+						"title": "i18n(stonehearth_ace:data.gm.campaigns.trader.returning_collector_encounter.title)"
+					}
+				},
+            "amberstone": {
+               "arcs": {
+                  "trigger": {
+                     "discovery": {
+                        "encounters": {
+                           "30_geomancy": {
+                              "30_geomancy_outro": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "i18n(stonehearth_ace:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.30_geomancy.30_geomancy_outro.donation_dialog_info.dialog_nodes.simple_message.bulletin_message.00)"
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "50_titan": {
+                              "57_bun_geomancer_starter_kit": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "i18n(stonehearth_ace:data.gm.campaigns.amberstone.arcs.trigger.discovery.encounters.50_titan.57_bun_geomancer_starter_kit.donation_dialog_info.dialog_nodes.simple_message.bulletin_message.00)"
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+				"dragonborn_king": {
+               "arcs": {
+                  "trigger": {
+                     "dragonborn_king": {
+                        "encounters": {
+                           "dialog_thank_player_for_help": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "hatch_and_attach": {
+                                       "bulletin_message": {
+                                          "000": "i18n(stonehearth_ace:data.gm.campaigns.dragonborn_king.arcs.trigger.dragonborn_king.encounters.dialog_thank_player_for_help.dialog_tree_info.dialog_nodes.hatch_and_attach.bulletin_message.000)"
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+			}
+		}
+	},
+	"ui": {
+		"data": {
+			"tooltips": {
+				"curiosity": {
+               "bullet_points": {
+                  "000": "i18n(stonehearth_ace:ui.data.tooltips.curiosity.bullet_points.000)"
+               }
+            }
+			}
+		},
+		"game": {
+			"unit_frame": {
+				"placement_tags": {
+					"training": "i18n(stonehearth_ace:entities.gizmos.dummy_training.dummy_training_ghost.training_limit_tag)",
+					"game_trap": "i18n(stonehearth_ace:entities.gizmos.animal_traps.game_trap_limit_tag)",
+					"fish_trap": "i18n(stonehearth_ace:entities.gizmos.animal_traps.fish_trap_limit_tag)"
+				}
+			},
+			"entities": {
+				"item_categories": {
+					"undefined": "i18n(stonehearth_ace:ui.game.entities.item_categories.undefined)",
+					"aquatic": "i18n(stonehearth_ace:ui.game.entities.item_categories.aquatic)",
+					"fluid_control": "i18n(stonehearth_ace:ui.game.entities.item_categories.fluid_control)",
+					"mechanism": "i18n(stonehearth_ace:ui.game.entities.item_categories.mechanism)",
+					"training_equipment": "i18n(stonehearth_ace:ui.game.entities.item_categories.training_equipment)",
+					"gizmos": "i18n(stonehearth_ace:ui.game.entities.item_categories.gizmos)",
+					"fungi": "i18n(stonehearth_ace:ui.game.entities.item_categories.fungi)",
+					"drink": "i18n(stonehearth_ace:ui.game.entities.item_categories.drink)",
+					"brewing_ingredient": "i18n(stonehearth_ace:ui.game.entities.item_categories.brewing_ingredient)",
+					"boulder": "i18n(stonehearth_ace:ui.game.entities.item_categories.boulder)",
+               "automatons_and_golems": "i18n(stonehearth_ace:ui.game.entities.item_categories.automatons_and_golems)",
+					"herbalist_planter": "i18n(stonehearth_ace:ui.game.entities.item_categories.herbalist_planter)",
+					"creature_egg": "i18n(stonehearth_ace:ui.game.entities.item_categories.creature_egg)"
+				}
+			}
+		}
+   }
+}

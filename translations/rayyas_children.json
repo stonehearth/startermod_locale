@@ -1,0 +1,1595 @@
+{
+   "kingdom": {
+      "kingdom_name": "Rayya's Children",
+      "quote": "Meditation, mediation, medication: Order in self brings order to others brings health to all.",
+      "long_description": "The people of the desert learned early that to survive, they needed each other, and preferably as many others as they could reach. Now, visitors find them generous hosts with access to goods from all over the world.",
+      "post_selection_description": ", a society of charming, wily traders.",
+      "initial_town_name": "Caravan [str(town_number)]"
+   },
+   "jobs": {
+      "potter": {
+         "potter_description": {
+            "requirements": "Requires a Potter's Cutter."
+         },
+         "recipes": {
+            "mason_clay_chisel_recipe": {
+               "description": "Required to promote a hearthling into a Mason",
+               "recipe_name": "Mason's Clay Chisel",
+               "flavor": "\"A tool used to make big rocks into smaller, prettier, more functional rocks.\" "
+            },
+            "trading_post_monument_recipe": {
+               "recipe_name": "The Trader Monument",
+               "description": "Signifies your town as a reputable trading post"
+            },
+            "monkey_shrine_monument_recipe": {
+               "description": "A place to pay tribute to Monkey and Her Mystery",
+               "recipe_name": "Her Mystery's Shrine"
+            },
+            "exotic_trade_monument_recipe": {
+               "description": "A beacon of safety and protection for the whole region",
+               "recipe_name": "The Ever-Burning Flame"
+            },
+            "herbalist_clay_staff_recipe": {
+               "flavor": "'These flowers care for their gardener as their gardener cares for them.' -Zale, Master Herbalist"
+            },
+            "jar_green_recipe": {
+               "description": "Small green glass jar with accompanying small fire",
+               "recipe_name": "Green Glass Jar with Candle"
+            },
+            "jar_red_recipe": {
+               "description": "Small red glass jar with accompanying small fire",
+               "recipe_name": "Red Glass Jar with Candle"
+            },
+            "pot_oil_earthen_recipe": {
+               "description": "Small earthen pot with accompanying small fire",
+               "recipe_name": "Earthen Oil Pot"
+            },
+            "pot_oil_green_recipe": {
+               "description": "Small green pot with accompanying small fire",
+               "recipe_name": "Green Oil Pot"
+            },
+            "pot_oil_halfgreen_recipe": {
+               "description": "Small half-glazed pot with accompanying small fire",
+               "recipe_name": "Half-Glazed Oil Pot"
+            },
+            "pot_sunflower_recipe": {
+               "description": "Small earthen pot with a beautiful flower.",
+               "recipe_name": "Potted Sunflower"
+            },
+            "pot_fox_lily_recipe": {
+               "description": "Small earthen pot with a beautiful flower.",
+               "recipe_name": "Potted Fox Lily"
+            },
+            "pot_acacia_recipe": {
+               "description": "Small earthen pot with a beautiful miniature tree.",
+               "recipe_name": "Potted Acacia Bonsai"
+            },
+            "urn_large_recipe": {
+               "description": "Extra large for extra trading!",
+               "recipe_name": "Trading Goods Urn"
+            },
+            "wall_hanging_sunflower_recipe": {
+               "description": "A sunflower decoration for your wall.",
+               "recipe_name": "Wall Flower"
+            },
+            "wall_hanging_sunwreath_recipe": {
+               "description": "A collection of sunflowers to hang on your wall.",
+               "recipe_name": "Sunflower Wreath"
+            },
+            "wind_chime_recipe": {
+               "description": "A magnificent sight and sound to match.",
+               "recipe_name": "Glass Wind Chime"
+            },
+            "window_tall_latticed_recipe": {
+               "description": "The lattice work stops most of the hot sun, and looks pretty too!",
+               "recipe_name": "Tall Latticed Window"
+            },
+            "door_clay_latticed_recipe": {
+               "recipe_name": "Clay Latticed Door",
+               "description": "The lattice work stops most of the hot sun, and looks pretty too!"
+            },
+            "chest_recipe": {
+               "description": "A place to store tribute of Monkey and Her Mystery",
+               "recipe_name": "Clay Chest"
+            },
+            "lamp_gold_recipe": {
+               "description": "Its flame brings a warm glow at night.",
+               "recipe_name": "Golden Oil Lamp"
+            },
+            "lamp_wall_gold_recipe": {
+               "description": "Its flame brings a warm glow at night.",
+               "recipe_name": "Golden Oil Wall Lamp"
+            },
+            "lightbox_recipe": {
+               "description": "Its light splashes patterns across the ground, and on things above it.",
+               "recipe_name": "Clay Lightbox"
+            },
+            "monkey_recipe": {
+               "description": "A tribute to Monkey and her many helpers.",
+               "recipe_name": "Clay Monkey Statue"
+            },
+            "teapot_recipe": {
+               "description": "A reminder of bold entrepreneurs.",
+               "recipe_name": "Finely Crafted Tea Set"
+            },
+            "wall_hanging_key_recipe": {
+               "description": "A wall ornament that reminds us of Monkey.",
+               "recipe_name": "Monkey Shrine Key"
+            },
+            "banner_wall_big_recipe": {
+               "description": "Show your town pride with this banner.",
+               "recipe_name": "Long Wall Banner"
+            },
+            "banner_wall_small_recipe": {
+               "description": "Show your town pride with this banner.",
+               "recipe_name": "Wide Wall Banner"
+            },
+            "pedestal_firepit_recipe": {
+               "description": "Softly glowing coals",
+               "recipe_name": "Firebowl",
+               "flavor": "A little fire lives here"
+            },
+            "pedestal_floral_red_recipe": {
+               "description": "A decorative display of aromatic flowers and herbs",
+               "recipe_name": "Red Floral Pedestal",
+               "flavor": "Breathes flowery sweetness into dry desert breezes"
+            },
+            "pedestal_floral_coral_recipe": {
+               "description": "A decorative display of aromatic flowers and herbs",
+               "recipe_name": "Coral Floral Pedestal",
+               "flavor": "Breathes flowery sweetness into dry desert breezes"
+            },
+            "pedestal_floral_blue_recipe": {
+               "description": "A decorative display of aromatic flowers and herbs",
+               "recipe_name": "Blue Floral Pedestal",
+               "flavor": "Breathes flowery sweetness into dry desert breezes"
+            },
+            "kiln_upgrade_recipe": {
+               "description": "Allows the Potters of your town to work in style.",
+               "recipe_name": "Upgraded Potter's Kiln"
+            },
+            "workbench_upgrade_recipe": {
+               "description": "For the more aesthetically concerned Potter.",
+               "recipe_name": "Upgraded Pottery Wheel",
+               "flavor": "The quality of your work can only be as high as the quality of your equipment -- Khora, Master Potter"
+            },
+            "legendary_rc_face_recipe": {
+               "description": "Protects the Dragon's Shield",
+               "recipe_name": "Dragonhide",
+               "flavor": "Repeated glazing and firing makes it shine like dragon scales, and just as resilient"
+            },
+            "legendary_rc_inlay_recipe": {
+               "description": "Radiant gilding for the Desert Fang",
+               "recipe_name": "Glittering Inlay",
+               "flavor": "Gleaming with hearthlight"
+            }
+         },
+         "potter_kiln_upgrade": {
+            "potter_kiln_upgrade_ghost": {
+               "display_name": "Upgraded Potter's Kiln",
+               "description": "Allows the Potters of your town to work in style."
+            }
+         },
+         "potter_workbench_upgrade": {
+            "potter_workbench_upgrade_ghost": {
+               "display_name": "Upgraded Pottery Wheel",
+               "description": "For the style concerned Potter."
+            }
+         }
+      },
+      "herbalist": {
+         "herbalist_description": {
+            "requirements": "Herbalist's Staff, crafted by the Potter"
+         },
+         "recipes": {
+            "legendary_rc_cloth_recipe": {
+               "description": "Traditional material for the Crimson Circlet",
+               "recipe_name": "Sundyed Fabric",
+               "flavor": "Soaked in sunlight and healing herbs"
+            },
+            "legendary_rc_stave_recipe": {
+               "description": "The limbs of the Zephyr Bow",
+               "recipe_name": "Elder Stave",
+               "flavor": "Prepared with special resin, it would take an army to splinter this bow"
+            }
+         }
+      },
+      "mason": {
+         "mason_description": {
+            "requirements": "Requires a level 2 Potter and a Mason's Chisel, crafted by the Potter."
+         },
+         "recipes": {
+            "rc_giants_shield_recipe": {
+               "description": "The desert's proudest shield",
+               "recipe_name": "Dragon's Shield",
+               "flavor": "Against even the most terrible foes and impossible dangers, this shield will never break."
+            },
+            "legendary_rc_blade_recipe": {
+               "description": "Unbreakable blade of the Desert Fang",
+               "recipe_name": "Tempered Bone",
+               "flavor": "Sharp as the wind"
+            },
+            "legendary_rc_gem_recipe": {
+               "description": "A spiritual focus, essential for the Crimson Circlet",
+               "recipe_name": "Flame Ruby",
+               "flavor": "A healing red star to guide by"
+            }
+         }
+      },
+      "carpenter": {
+         "recipes": {
+            "rc_bow_valor_recipe": {
+               "description": "The swiftest bow in the desert",
+               "recipe_name": "Zephyr Bow",
+               "flavor": "A bow that demands skill of it's weilder, but returns it in gales of arrows over their foes"
+            }
+         }
+      },
+      "cook": {
+         "recipes": {
+            "golden_gourd_curry_recipe": {
+               "description": "Are gourds are more edible when cooked?",
+               "recipe_name": "Golden Gourd Curry",
+               "flavor": "TODO(flavor!)"
+            },
+            "flat_bread_recipe": {
+               "description": "Unleavened bread made from corn meal",
+               "recipe_name": "Flat Bread"
+            },
+            "meat_tagine_recipe": {
+               "description": "Meat and veggies simmered in a clay pot",
+               "recipe_name": "Meat Stew Tagine"
+            },
+            "vegetable_tagine_recipe": {
+               "description": "Veggies simmered in a clay pot",
+               "recipe_name": "Vegetable Stew Tagine"
+            }
+         }
+      },
+      "blacksmith": {
+         "recipes": {
+            "wall_hanging_suncatcher_recipe": {
+               "description": "Polished to a mirror finish",
+               "recipe_name": "Suncatcher",
+               "flavor": "It doesn't neccessarily catch the sun as well as it hurls the beams directly into your eyeballs, ow..."
+            },
+            "rc_two_handed_sword_valor_recipe": {
+               "description": "Finest blade in the desert",
+               "recipe_name": "Desert Fang",
+               "flavor": "Perfectly balanced for its size, and equal to any challenge its wielder takes on"
+            },
+            "rc_circlet_valor_recipe": {
+               "description": "The Phoenix Empire's squarest circlet",
+               "recipe_name": "Crimson Circlet",
+               "flavor": "Channels the very heart and soul into healing light"
+            },
+            "legendary_rc_frame_recipe": {
+               "description": "Reinforces the Dragon's Shield",
+               "recipe_name": "Dragonplate",
+               "flavor": "The bones of the dragon"
+            }
+         }
+      },
+      "weaver": {
+         "recipes": {
+            "outfit_worker_goldthread_recipe": {
+               "description": "Fashionably improves worker's speed and efficiency",
+               "recipe_name": "Worker Finery",
+               "flavor": "Red simply never goes out of style"
+            },
+            "banner_gilded_blue_recipe": {
+               "description": "Display your town's pride as an exotic trading post",
+               "recipe_name": "Gilded Blue Banner",
+               "flavor": "Color coursed through the city in streams of fabric and glimmering golden thread"
+            },
+            "banner_gilded_coral_recipe": {
+               "description": "Display your town's pride as an exotic trading post",
+               "recipe_name": "Gilded Coral Banner",
+               "flavor": "Color coursed through the city in streams of fabric and glimmering golden thread"
+            },
+            "banner_gilded_red_recipe": {
+               "description": "Display your town's pride as an exotic trading post",
+               "recipe_name": "Gilded Red Banner",
+               "flavor": "Color coursed through the city in streams of fabric and glimmering golden thread"
+            },
+            "banner_gilded_sage_recipe": {
+               "description": "Display your town's pride as an exotic trading post",
+               "recipe_name": "Gilded Sage Banner",
+               "flavor": "Color coursed through the city in streams of fabric and glimmering golden thread"
+            },
+            "chair_gilded_blue_recipe": {
+               "description": "Luxuriously padded seating",
+               "recipe_name": "Gilded Blue Cushion",
+               "flavor": "It'd be an insult to the cushion to never sit on it!"
+            },
+            "chair_gilded_red_recipe": {
+               "description": "Luxuriously padded seating",
+               "recipe_name": "Gilded Red Cushion",
+               "flavor": "It'd be an insult to the cushion to never sit on it!"
+            },
+            "chair_gilded_sage_recipe": {
+               "description": "Luxuriously padded seating",
+               "recipe_name": "Gilded Sage Cushion",
+               "flavor": "It'd be an insult to the cushion to never sit on it!"
+            },
+            "chair_gilded_coral_recipe": {
+               "description": "Luxuriously padded seating",
+               "recipe_name": "Gilded Coral Cushion",
+               "flavor": "It'd be an insult to the cushion to never sit on it!"
+            },
+            "rug_gilded_blue_recipe": {
+               "description": "Skillfully woven from dyed and golden threads",
+               "recipe_name": "Gilded Blue Throw",
+               "flavor": "The color is milled from precious blue stone found deep within mountains far, far to the frozen north"
+            },
+            "rug_gilded_red_recipe": {
+               "description": "Skillfully woven from dyed and golden threads",
+               "recipe_name": "Gilded Red Throw",
+               "flavor": "The luscious, almost-purple hue comes from berries grown in the foothills surrounding a faraway kingdom"
+            },
+            "rug_gilded_coral_recipe": {
+               "description": "Skillfully woven from dyed and golden threads",
+               "recipe_name": "Gilded Coral Throw",
+               "flavor": "Earth from a long-dried seabed to the south is baked and ground to produce this lively red-orange"
+            },
+            "rug_gilded_sage_recipe": {
+               "description": "Skillfully woven from dyed and golden threads",
+               "recipe_name": "Gilded Sage Throw",
+               "flavor": "Achieving a delicate green requires skill; this stain made from a pulp of potent herbs will rapidly turn anything sour"
+            },
+            "rc_legendary_circlet_recipe": {
+               "description": "Worn by the desert's finest healers",
+               "recipe_name": "Crimson Circlet",
+               "flavor": "Channels the very heart and soul into healing light"
+            },
+            "legendary_rc_bowstring_recipe": {
+               "description": "Joins the ends of the Zephyr Bow",
+               "recipe_name": "Glittering Bowstring",
+               "flavor": "Like fire spun into thread"
+            }
+         }
+      }
+   },
+   "data": {
+      "rayyas_children_population": {
+         "display_name": "Rayya's Children"
+      },
+      "gm": {
+         "campaigns": {
+            "trader": {
+               "iskender_caravan_1": {
+                  "shop_info": {
+                     "name": "Iskender Trading Caravan",
+                     "title": "The Iskender Trading Caravan returns!"
+                  }
+               },
+               "iskender_caravan_2": {
+                  "shop_info": {
+                     "name": "Iskender Trading Caravan",
+                     "title": "The Iskender Trading Caravan returns with more things!"
+                  }
+               },
+               "iskender_caravan_3": {
+                  "shop_info": {
+                     "name": "Iskender Trading Caravan",
+                     "title": "The Iskender Trading Caravan returns!"
+                  }
+               },
+               "starting_food_donation": {
+                  "donation_dialog_info": {
+                     "dialog_nodes": {
+                        "simple_message": {
+                           "bulletin_message": {
+                              "000": "Haha, there's nothing like the sight of a brand new outpost, eh? With your hard work, this desolate land will soon be a nexus of wealth and prosperity! We'll be back tomorrow with the whole store, but in the meantime, here's the starting stake the Company provided:",
+                              "001": "Monkey keep you, friends! It's always a pleasure to see a party make it to their designated tradepoint. As per your contract, we'll be back with the whole store tomorrow. In the meantime, here are the starting supplies the Company provides for new outposts:",
+                              "002": "The Iskender Trading Company is always looking for a new place to rest between routes. We're pleased to see you out here, friends! We'll be back with the store tomorrow, but in the meantime, have a sample of our goods, to get you started:",
+                              "003": "All ready to start a new outpost, eh! My friends, the desert welcomes all its children. We'll be back tomorrow to check on you, but in the meantime, the Company sent these supplies to get you started:",
+                              "004": "Aha, a new potential partner for the Iskender Trading Company! We must return tomorrow with the whole store, but tell you what: take this seed investment, and see what you can turn it into for us, eh?"
+                           },
+                           "bulletin_title": "An Iskender Agent Approaches",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Many thanks!"
+                        }
+                     }
+                  }
+               },
+               "stonecutter_shop": {
+                  "shop_info": {
+                     "name": "Vosker Saji's Polished Earths",
+                     "title": "A master mason's cart draws near"
+                  }
+               },
+               "tannery_shop": {
+                  "shop_info": {
+                     "name": "Rin's Fine Pelts and Rugs",
+                     "title": "A wagon of fine animal goods approaches"
+                  }
+               },
+               "woodcutter_shop": {
+                  "shop_info": {
+                     "name": "Rajin's Goods of the Distant West",
+                     "title": "An exotic shop of rare woods arrives"
+                  }
+               },
+               "food_shop": {
+                  "shop_info": {
+                     "name": "Farmer Gem's Farm Supplies",
+                     "title": "Farmer Gem's supply cart rolls into town"
+                  }
+               },
+               "naryal_tier_2_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "rewards": {
+                           "bulletin_message": {
+                              "000": "Well, in addition to being distinguished as an official township, you will gain recognition from traders and travelers from all over Hearth. We shall also offer you architectural blueprints we've collected through our trades with other Rayya's Children settlements."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Ok then!"
+                        },
+                        "shrine_reqs": {
+                           "bulletin_message": {
+                              "000": "The Church of Rayya, more commonly known as Her Mystery, can designate an outpost as an official Church waypoint. In order to be eligible, your town must provide a shrine where travelers and weary wanderers can give offerings to Monkey and pay homage to Guildmother Rayya."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Sounds good!",
+                           "choice_001": "How else can I gain renown?"
+                        },
+                        "details": {
+                           "bulletin_message": {
+                              "000": "Well, getting to the point, I believe we can both benefit from an agreement of sorts. We at the Iskender Agency strive to create the most comprehensive maps of Hearth, and so we wish to detail any notable establishments and outposts such as yours. With your permission, of course!"
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "What do I get in return?"
+                        },
+                        "requirements": {
+                           "bulletin_message": {
+                              "000": "Great! Let us get this process rolling then. First of all, how would you like to be known? We can put you on the map as a place renowned for its: Trading Post, Shrine of Her Mystery, or Exotic Goods."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Trading Post!",
+                           "choice_001": "Shrine!",
+                           "choice_002": "Exotic Goods!"
+                        },
+                        "repeat_reqs": {
+                           "bulletin_message": {
+                              "000": "How would you like to be known? We can put you on the map as a place renowned for its: Trading Post, Shrine of Her Mystery, or Exotic Goods."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Trading Post!",
+                           "choice_001": "Shrine!",
+                           "choice_002": "Exotic Goods!"
+                        },
+                        "naryal_approaches": {
+                           "bulletin_message": {
+                              "000": "Greetings, friends of [str(i18n_data.town_name)]! It's been some time since we've last visited this outpost. Looks like you've been making good use of the starting supplies we delivered."
+                           },
+                           "bulletin_title": "Iskender Agent Naryal Approaches",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "What are you doing here?"
+                        },
+                        "exotic_goods_reqs": {
+                           "bulletin_message": {
+                              "000": "In order to gain renown in Exotic Trade, your town must engage in trades with visitors from faraway lands and thus gain access to a variety of goods that would be otherwise unobtainable in your area."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Sounds good!",
+                           "choice_001": "How else can I gain renown?"
+                        },
+                        "conclusion2": {
+                           "bulletin_message": {
+                              "000": "Monkey be with you, [str(i18n_data.town_name)]! I shall leave you a bird, so you may summon me to evaluate your progress!"
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Farewell!"
+                        },
+                        "map_of_hearth": {
+                           "bulletin_message": {
+                              "000": "Why, our cartographers are making preparations for the next printing iteration of the Iskender Map of Hearth. While we at Iskender Trading Agency are known for trade, we also pride ourselves for the accuracy and utility of our maps. Settlements and routes from across the world are depicted in the finest detail."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender"
+                        },
+                        "trading_post_reqs": {
+                           "bulletin_message": {
+                              "000": "In order to gain renown as a Trading Post for the Masses, it is important that your city be a welcoming place for traders and travelers to visit and trade goods amongst each other. I shall give your potter a recipe; build a monument which can act as a grand and inviting display at the heart of your settlement."
+                           },
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Sounds good!",
+                           "choice_001": "How else can I gain renown?"
+                        },
+                        "conclusion": {
+                           "bulletin_title": "Naryal Iskender",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Thank you, Honored Elder!",
+                           "bulletin_message": {
+                              "000": "Excellent! In addition to an appropriate monument, your town will also need to have accumulated a certain level of worth. I shall leave the requirements with you, should you wish to consult with them again, or should a different path come to appeal more than your initial chosen road."
+                           }
+                        },
+                        "shrine_reqs_ctd": {
+                           "bulletin_message": {
+                              "000": "I will give your potter a sacred shrine recipe, passed down from Her Mystery's most Elite Officers. They say the ingredients are found in ancient structures and loot chests; build the monument and I shall return to verify if it meets the specifications of the Church Elders."
+                           }
+                        },
+                        "exotic_goods_reqs_ctd": {
+                           "bulletin_message": {
+                              "000": "I will give your potter a recipe. You can obtain the ingredients from traveling merchants and trading caravans, but note that not many travelers carry them. Build a monument that incorporates these ingredients to demonstrate your excellence in trading exotic goods."
+                           }
+                        }
+                     }
+                  }
+               },
+               "unlock_exotic_trade_monument": {
+                  "bulletin_title": "Potter Recipe Unlocked: The Ever-Burning Flame"
+               },
+               "unlock_monkey_shrine_monument": {
+                  "bulletin_title": "Potter Recipe Unlocked: Her Mystery's Shrine"
+               },
+               "unlock_trading_post_monument": {
+                  "bulletin_title": "Potter Recipe Unlocked: The Trader Monument"
+               },
+               "trading_post_tier_2_reached": {
+                  "title": "Iskender Agent Naryal Returns",
+                  "speaker_name": "Naryal Iskender",
+                  "message": "Congratulations, [str(i18n_data.town_name)]! Your town is eligible to be officially recognized as a township! I have brought building materials and trade agreements, as is customary.",
+                  "accept": "Woohoo!",
+                  "dialog_title": "Township Achieved!",
+                  "tier_title": "Township",
+                  "reward_message": "By honorary decree of Rayya's Children, we recognize:",
+                  "reward_message_ctd": "For its excellence as a world-class trading post. The town is hereby eligible for:",
+                  "tier_2_bldg_template": "Tier 2 Building Templates",
+                  "tier_2_shops": "Tier 2 Shops",
+                  "tier_2_BGM": "Tier 2 BGM"
+               },
+               "rayyas_children_town_tier_quest": {
+                  "title": "Quest for a township",
+                  "dialog_title": "Quest for a township",
+                  "text": "Satisfy any of the following requirements to gain sufficient renown to qualify for township status:",
+                  "summon_text": "Summon Iskender!"
+               },
+               "exotic_trade_tier_2_reached": {
+                  "reward_message_ctd": "For excellence in foreign and exotic trade. The town is hereby eligible for:"
+               },
+               "shrine_tier_2_reached": {
+                  "reward_message_ctd": "For its hospitality and iconic shrine to Her Mystery. The town is hereby eligible for:"
+               },
+               "arcs": {
+                  "encounters": {
+                     "tier_2_shops": {
+                        "bakery_shop": {
+                           "shop_info": {
+                              "name": "Areff Tigri's Breads and Stews",
+                              "title": "A chef's cart of breads and stews rolls into town"
+                           }
+                        },
+                        "container_shop": {
+                           "shop_info": {
+                              "name": "Elia Boxen's Container Hut",
+                              "title": "Elia Boxen arrives with a box of crates"
+                           }
+                        },
+                        "door_shop": {
+                           "shop_info": {
+                              "name": "Radien's Exotic Doors and Signs",
+                              "title": "Radien has arrived with exotic doors and signs for sale"
+                           }
+                        },
+                        "farming_supplies_shop": {
+                           "shop_info": {
+                              "name": "Farmer Makabi's Farm Supplies",
+                              "title": "Farmer Makabi's supply cart rolls into town"
+                           }
+                        },
+                        "weapon_armor_shop": {
+                           "shop_info": {
+                              "name": "Zadok's Armory Shop",
+                              "title": "A wagon carrying an assortment of armor approaches"
+                           }
+                        },
+                        "woodcutter_shop2": {
+                           "shop_info": {
+                              "name": "Rajin's Goods of the Distant West",
+                              "title": "Rajin has brought even more rare woods this time"
+                           }
+                        },
+                        "rugs_shop2": {
+                           "shop_info": {
+                              "name": "Havaad's Fine Rugs and Garments",
+                              "title": "Havaad has arrived with some exceptional wares to sell"
+                           }
+                        },
+                        "stonecutter_shop2": {
+                           "shop_info": {
+                              "name": "Vosker Saji's Polished Earths",
+                              "title": "Master Saji's cart draws near, filled to the brim with wonderful beauties"
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+            "town_progression": {
+               "shrine_upgrade_valor": {
+                  "reward_message": "By decree of the Iskender Trading Company, we recognize:",
+                  "reward_message_ctd": "For acts of incredible valor in combat. The town is hereby eligible for:",
+                  "achievements": {
+                     "001": "Blacksmith Suncatcher Recipe",
+                     "002": "Potter Pedestals Recipe",
+                     "003": "Weaver Banners, Throws, and Cushions Recipes"
+                  },
+                  "recipe_bulletins": {
+                     "recipe_unlock_blacksmith": "New suncatcher recipe for Blacksmith!",
+                     "recipe_unlock_potter": "New pedestal recipes for Potter!",
+                     "recipe_unlock_weaver": "New banner, throw, and cushion recipes for Weaver!",
+                     "recipe_unlock_weapons_1": "New Legendary Sword recipe - Weaver, Potter, and Blacksmith collaboration!",
+                     "recipe_unlock_weapons_2": "New Legendary Shield recipe - Blacksmith, Carpenter, and Mason collaboration!",
+                     "recipe_unlock_weapons_3": "New Legendary Archer recipe - Engineer, Weaver, and Carpenter collaboration!"
+                  }
+               },
+               "shrine_choice": {
+                  "guildmaster": {
+                     "name": "The Trader Monument",
+                     "description": "<i>This Township shall be known for its productivity, wealth, and trading connections.</i><ul><li>Allows crafting Masterwork quality items</li><li>Unlocks homely decoration recipes</li></ul>"
+                  },
+                  "deity": {
+                     "name": "Her Mystery's Shrine",
+                     "description": "<i>This Township shall seek to learn the secrets of the world, in service of Her Mystery.</i><ul><li>Blesses all citizens with +1 to Mind, Body, and Spirit</li><li>Unlocks Monkey-inspired decoration recipes</li></ul>"
+                  },
+                  "valor": {
+                     "name": "The Ever-Burning Flame",
+                     "description": "<i>This Township shall be dedicated to the protection of the whole surrounding region.</i><ul><li>Unlocks legendary weapon recipes</li><li>Unlocks exotic decoration recipes</li></ul>"
+                  }
+               },
+               "banner_upgrade_cunning": {
+                  "reward_message_ctd": "to be an outpost paving the roads to become a trade hub."
+               },
+               "banner_upgrade_strength": {
+                  "reward_message_ctd": "to be an outpost on its way to be a safe haven for all."
+               },
+               "banner_upgrade_vitality": {
+                  "reward_message_ctd": "to be an outpost aiming to revive the surrounding nature."
+               },
+               "bird_departs": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Once the outpost founding forms are filled and back in their satchel, Arke picks it up and starts on her journey back to the closest Iskender Trading Agency office."
+                           },
+                           "bulletin_title": "The Fox Departs",
+                           "dialog_title": "The Fox Departs",
+                           "choice_000": "Monkey keep you, fox friend"
+                        }
+                     }
+                  }
+               },
+               "hearth_choice_explanation": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "makers": {
+                           "bulletin_message": {
+                              "00": "A <i>Hearth of Makers</i>, on the other hand, is for those who believe that a town's value is its work, and that its work is best measured in gold."
+                           },
+                           "bulletin_title": "Mark of the Maker",
+                           "dialog_title": "Mark of the Maker",
+                           "choice_000": "Sounds productive"
+                        },
+                        "final": {
+                           "bulletin_message": {
+                              "00": "Cheer, Glory, or Makers - the choice is entirely yours. Think of what matters most to your Settlement, and follow that beacon into the future!"
+                           },
+                           "bulletin_title": "A Choice",
+                           "dialog_title": "A Choice",
+                           "choice_000": "We choose..."
+                        },
+                        "intro2": {
+                           "bulletin_message": {
+                              "00": "As you know, Hearths have been the cornerstone of Settlements all the way back to the Phoenix Empire.<p>If not for their glow, Rayya's Children caravans would never find their way in the desert, and our society would have scattered long ago. The type of Hearth also says much about what a Settlement values."
+                           },
+                           "bulletin_title": "Naryal Continues",
+                           "dialog_title": "Naryal Iskender",
+                           "choice_000": "Values?"
+                        },
+                        "cheer": {
+                           "bulletin_message": {
+                              "00": "For instance, a <i>Hearth of Cheer</i> is for those who believe that a town's value is found in being a happy home for its citizens."
+                           },
+                           "bulletin_title": "A Cheerful Choice",
+                           "dialog_title": "A Cheerful Choice",
+                           "choice_000": "Sounds quaint"
+                        },
+                        "intro3": {},
+                        "glory": {
+                           "bulletin_message": {
+                              "00": "Finally, a <i>Hearth of Glory</i> is for those who believe that there comes a time when negotiations no longer suffice, and the land has to be protected by force."
+                           },
+                           "bulletin_title": "Guts and Glory",
+                           "dialog_title": "Guts and Glory",
+                           "choice_000": "Sounds heroic"
+                        },
+                        "intro": {
+                           "bulletin_message": {
+                              "00": "Hello, again! This time I'm visiting in a more official capacity than usual, and without my trading goods. We at the Iskender Trading Company are very impressed with your Outpost's progress, and have decided that it's time to officially update your member status to that of 'Settlement'.<p>Before we can do that, though, it is customary to choose a Hearth to represent your town.</p>"
+                           },
+                           "bulletin_title": "Naryal Approaches, Without His Caravan",
+                           "dialog_title": "An Official Visit",
+                           "choice_000": "Thank you!",
+                           "choice_001": "[skip] We know what Hearth we want."
+                        }
+                     }
+                  }
+               },
+               "hearth_foreshadow_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_title": "The Fox Returns!",
+                           "dialog_title": "Another Letter!",
+                           "bulletin_message": {
+                              "00": "The messenger fox returns, with a reply from Amyyria Iskender."
+                           },
+                           "choice_000": "Open the letter"
+                        },
+                        "msg4": {
+                           "bulletin_message": {
+                              "00": "Conversely, we expect you to start considering the next step in your Outpost's evolution. Although most of our partner outposts opt to focus on trade, we think other approaches to prosperity are equally valuable to Rayya's Children, and it is always up to the Outpost themselves to make that decision.<p>Monkey keep you!<br>Amyyria Iskender<br>Iskender Trading Company</p><br><font size=-1>P.S. A small gift for you, for good luck <font size=+2>✨</font></font>"
+                           },
+                           "bulletin_title": "To Be Considered",
+                           "dialog_title": "To Be Considered",
+                           "choice_000": "Gold dust! Thanks!"
+                        },
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Congratulations on your Founding!<p>Your Outpost is now officially in the company ledger, and I trust that you're well on your way to becoming our primary contact in the region!</p>"
+                           },
+                           "bulletin_title": "A Reply",
+                           "dialog_title": "A Reply",
+                           "choice_000": "The letter continues"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "To help you achieve this worthy goal, we'll be directing more of our trading partners towards your outpost in the days to come, and encouraging those leaving their caravans to head to [str(i18n_data.town_name)].</p>"
+                           },
+                           "bulletin_title": "A Relationship of Mutual Benefit",
+                           "dialog_title": "A Relationship of Mutual Benefit",
+                           "choice_000": "In conclusion..."
+                        }
+                     }
+                  }
+               },
+               "guild_dialog_1": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Of course, with our backing, everyone will know that when you call something a 'Masterwork', you mean it! It's in the bylaws, after all.<br/><br/>I have no doubt that traders will soon be going out of their way to pay your Town a visit. I'd expect lots of company!"
+                           },
+                           "bulletin_title": "Adia continues",
+                           "dialog_title": "Adia Radie, Council Chair",
+                           "choice_000": "We'll do our best!"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "Alright, enough with all this business talk - I'm going to find a spry young thing and get to dancing!<br/><br/>What? You're only as old as you act!"
+                           },
+                           "bulletin_title": "Adia continues",
+                           "dialog_title": "Adia Radie, Council Chair",
+                           "choice_000": "Have fun! Be... careful?"
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "<font size=-1 color='#cccccc'>(Adia nods, mumbling to herself. 'Hmm... yes, I suppose this will do nicely, nicely indeed.')</font><br/><br/>Oh! Children, you have chosen well to sign on as part of the Merchant Council's network, and we are certainly glad to have you!"
+                           },
+                           "bulletin_title": "Adia Radie leans in, examining the Monument",
+                           "dialog_title": "Adia Radie, Council Chair",
+                           "choice_000": "Thank you, Chairwoman!"
+                        }
+                     }
+                  }
+               },
+               "valor_dialog_1": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Ha! I guess that's true!<br/><br/>So, we scrounged up some weapon designs from dusty old tomes that the Rayya's Mystery folks had stashed away - I brought some copies along to give out to your crafters, so they can try and work out how to put 'em together."
+                           },
+                           "bulletin_title": "Emeret continues",
+                           "dialog_title": "Emeret Kaver, Painted Dog",
+                           "choice_000": "I'm sure they'll figure it out!"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "No doubt!<br/><br/>Alright, I've been on my feet all day, so I'm gonna go grab a bowl or a slice of something! Congratulations!"
+                           },
+                           "bulletin_title": "Emeret continues",
+                           "dialog_title": "Emeret Kaver, Painted Dog",
+                           "choice_000": "Thanks, enjoy!"
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Wow, I bet this can be seen from miles off! Those goblins will be running scared before long!<br/><br/>I'm so glad you decided to sign up with us - there's not too many of us Painted Dogs yet, but we're growing fast because of Towns like you!"
+                           },
+                           "bulletin_title": "Emeret smiles wide",
+                           "dialog_title": "Emeret Kaver, Painted Dog",
+                           "choice_000": "We started small, too!"
+                        }
+                     }
+                  }
+               },
+               "deity_dialog_1": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Henceforth, this blessed Shrine will bestow a little of Her Mystery upon each of you.<br/><br/>Ponder it. Take that curiosity out into the world with you as you trade, or explore, or welcome strangers into your Town hoping to overhear some tantalizing new bit of information."
+                           },
+                           "bulletin_title": "Nona continues",
+                           "dialog_title": "Nona Trist, High Priestess",
+                           "choice_000": "We shall!"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "Of course, we at the Temple will expect a regular report of any goings on. That can wait, though - for now, it's time for all of us to eat, drink, and be merry!"
+                           },
+                           "bulletin_title": "Nona continues",
+                           "dialog_title": "Nona Trist, High Priestess",
+                           "choice_000": "Hooray!"
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Monkey keep you, sisters and brothers. What a suitable shrine you've built!<br/><br/>I especially enjoy the key hanging from Monkey's tail - what lock is it meant for? What could be hidden behind that lock? Truly, a mystery!"
+                           },
+                           "bulletin_title": "Nona nods in approval",
+                           "dialog_title": "Nona Trist, High Priestess",
+                           "choice_000": "Thank you, High Priestess."
+                        }
+                     }
+                  }
+               },
+               "post_shrine_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Wonderful, wonderful! Your Town certainly does the Iskender name proud!<br/><br/>Thank you for throwing such a nice reception for me and our guests."
+                           },
+                           "bulletin_title": "Amyyria approaches, clearly pleased",
+                           "dialog_title": "Amyyria Iskender",
+                           "choice_000": "Our pleasure, Amyyria!"
+                        },
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "This monument we're celebrating about is special, by the way - a Town's founding imbues a special sort magic into it.<br/><br/>Building more statues and such can serve decorative purposes, but they won't have the same sort of glow, if you know what I mean."
+                           },
+                           "bulletin_title": "Mer Continues",
+                           "dialog_title": "Amyyria Iskender",
+                           "choice_000": "Got it!"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "<p align='right'><font color='#E3D0AF'>(Yap! Yap!)</font></p>Yes, yes, Arke, I know, it's time to go.<br/><br/>I'd love to stay longer, but there's other, less self-sufficient Caravans out there that need my attention.<br/><br/>Congratulations on all your success, and thanks for not having ever made too much paperwork for me."
+                           },
+                           "bulletin_title": "Amyyria Continues",
+                           "dialog_title": "Amyyria Iskender",
+                           "choice_000": "Farewell! And... no problem?"
+                        }
+                     }
+                  }
+               },
+               "shrine_choice_explanation": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "intro": {
+                           "bulletin_message": {
+                              "00": "Hello, [str(i18n_data.town_name)]!<p>I'm so glad to finally get to see your Settlement with my own eyes! I thought Naryal's accounts of its splendor were exaggerations, but I see now that they may actually have been understatements!<p>Well, let's move on to business. Here are the potential sponsors I mentioned in my last letter. Please take a moment to hear what they have to say.</p>"
+                           },
+                           "bulletin_title": "Amyyria Iskender Has Arrived!",
+                           "dialog_title": "Amyyria is Here, With Guests!",
+                           "choice_000": "Oh, okay!",
+                           "choice_001": "[skip] We've already decided!"
+                        },
+                        "clergy": {
+                           "bulletin_message": {
+                              "00": "Monkey keep you, brothers and sisters! I am Nona Trist, a High Priestess of Her Mystery. Grandmother Rayya has left us a task, to explore the world and find out all its secrets. One way we work towards this is by sponsoring towns here, far from the heart of Rayya's Children territories."
+                           },
+                           "bulletin_title": "The High Priestess",
+                           "dialog_title": "The High Priestess",
+                           "choice_000": "Monkey keep you, sister"
+                        },
+                        "clergy_cont": {
+                           "bulletin_message": {
+                              "00": "In return for our sponsorship, we typically ask a Settlement to build a Shrine to Her Mystery, to serve as a constant reminder that the world is a mysterious place, rife with opportunities for exploration and learning. Once the shrine is blessed, it will spread its magical effects among your populace, empowering them in strange and mysterious ways.<br><br><font size=-1><i>Dedicating a Shrine of Her Mystery will grant all of your townsfolk a +1 boost to the Mind, Body, and Spirit attributes.</i></font>"
+                           },
+                           "bulletin_title": "Nona Trist",
+                           "dialog_title": "Nona Trist",
+                           "choice_000": "How interesting!"
+                        },
+                        "makers": {
+                           "bulletin_message": {
+                              "00": "Come here, children! I'm Adia Radie, Chair of the Merchant Council, and an admirer of this budding little Settlement of yours. So efficient! So promising! I've visited many a young Settlement in my long years, but I never tire of seeing good, hardworking Children of Rayya settling down and expanding the reach of our trading routes.<br><br><font size=-1><i>Adia produces a handful of hard candy from her robes and distributes them among the group.</i></font>"
+                           },
+                           "bulletin_title": "The Merchant",
+                           "dialog_title": "The Merchant",
+                           "choice_000": "Thank you!"
+                        },
+                        "makers_cont": {
+                           "bulletin_message": {
+                              "00": "As you know, the Merchant Council is the main sponsor of Rayya's Children Towns, so I'm sure you aren't surprised to see me here. We would love to have you join the Council - I think your Settlement can produce and export some of the finest goods Rayya's Children have to offer, and keep the tradition of excellency that we are known for.<br><br><font size=-1><i>Dedicating a Trader Monument will grant the ability to create Masterwork-quality furniture and decorations, which are considerably better than those of Excellent quality.</i></font>"
+                           },
+                           "bulletin_title": "Adia Radie",
+                           "dialog_title": "Adia Radie",
+                           "choice_000": "Sounds profitable!"
+                        },
+                        "military": {
+                           "bulletin_message": {
+                              "00": "Hey! I am Emeret Kaver! You probably haven't heard of me yet, but I'm the leader of The Painted Dogs, a group of young people trying to make sure our peaceful ways survive the hardships of the modern world, be it goblin raids or undead infestations, by training Rayya's Children in various self defense techniques. And now we are looking for Settlements to join our numbers!"
+                           },
+                           "bulletin_title": "The Youth",
+                           "dialog_title": "The Youth",
+                           "choice_000": "Welcome, Emeret"
+                        },
+                        "military_cont": {
+                           "bulletin_message": {
+                              "00": "We think your people have shown that they have the strength needed to protect this Settlement, and even some of your neighbors, so we'd like you to build an Ever-Burning Flame to be a beacon of safety in these lands, and in return we will share some of our latest weapon and armor schematics.<br><br><font size=-1><i>Dedicating the Ever-Burning Flame will grant you recipes for new, highest-tier weapons.</i></font>"
+                           },
+                           "bulletin_title": "Emeret Kaver",
+                           "dialog_title": "Emeret Kaver",
+                           "choice_000": "We'll consider it"
+                        },
+                        "summary": {
+                           "bulletin_message": {
+                              "00": "So! Now you've met everyone, and my job as the facilitator is coming to a close. I don't want to influence your choice, but I can assure you they're all very powerful and can help your town achieve its full potential.<p>I'll leave the plans for each of the shrines and whatnot with your Potters.</p><p>It's been a pleasure visiting, and I'm looking forward to seeing you again at the dedication ceremony!</p>"
+                           },
+                           "bulletin_title": "Amyyria Concludes",
+                           "dialog_title": "Amyyria Concludes",
+                           "choice_000": "Sounds good!"
+                        }
+                     }
+                  }
+               },
+               "shrine_foreshadow_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg4": {
+                           "bulletin_message": {
+                              "00": "I am currently making arrangements to finally visit your Settlement myself, and when I do, I will be bringing along several individuals who have expressed interest in sponsoring up and coming Settlements like yours. These are highly regarded members of our society, so be sure to have your best teaware ready!<p>Monkey keep you!<br>Amyyria Iskender<br>Iskender Trading Company</p>"
+                           },
+                           "bulletin_title": "A Letter",
+                           "dialog_title": "A Letter",
+                           "choice_000": "How exciting!"
+                        },
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "Dear [str(i18n_data.town_name)]-ites,<p>I have received many reports from our trading partners singing your Settlement all kinds of praises. I am so glad that our investment in your Outpost is bearing fruit so quickly!</p>"
+                           },
+                           "bulletin_title": "A Letter",
+                           "dialog_title": "A Letter",
+                           "choice_000": "Notable?"
+                        },
+                        "msg3": {
+                           "bulletin_message": {
+                              "00": "As you may remember from our contract, the final service we offer any Outpost under our guidance is to connect them to some prominent members of Rayya's Children society, who can help them cross that final bridge to becoming a Town."
+                           },
+                           "bulletin_title": "A Letter",
+                           "dialog_title": "A Letter",
+                           "choice_000": "Great!"
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "Looks like Amyyria is getting in touch with us again!"
+                           },
+                           "bulletin_title": "Arke's Here Again!",
+                           "dialog_title": "Another Letter!",
+                           "choice_000": "Open it"
+                        }
+                     }
+                  }
+               },
+               "shrine_quest_deity": {
+                  "title": "Township Quest: Her Mystery's Shrine",
+                  "dialog_title": "Township Quest: Her Mystery's Shrine"
+               },
+               "shrine_quest_guildmaster": {
+                  "title": "Township Quest: The Trader Monument",
+                  "dialog_title": "Township Quest: The Trader Monument"
+               },
+               "shrine_quest_valor": {
+                  "title": "Township Quest: The Ever-Burning Flame",
+                  "dialog_title": "Township Quest: The Ever-Burning Flame"
+               },
+               "shrine_upgrade_deity": {
+                  "title": "Township Established",
+                  "reward_message": "By decree of the Iskender Trading Company, we recognize:",
+                  "reward_message_ctd": "For learning the mysteries of the world. The town is hereby eligible for:",
+                  "achievements": {
+                     "001": "Potter Decorations",
+                     "002": "Blacksmith Lamps",
+                     "003": "Weaver Banners"
+                  },
+                  "recipe_bulletins": {
+                     "recipe_unlock_potter": "New Monkey-inspired decoration recipes for Potter!",
+                     "recipe_unlock_blacksmith": "New lamp recipes for Blacksmith!",
+                     "recipe_unlock_weaver": "New banner recipes for Weaver!"
+                  }
+               },
+               "shrine_upgrade_guildmaster": {
+                  "reward_message": "By decree of the Iskender Trading Company, we recognize:",
+                  "reward_message_ctd": "For excellence in craftsmanship and trade. The town is hereby eligible for:",
+                  "achievements": {
+                     "001": "Potter Pot Decorations",
+                     "002": "Potter Floral Decorations",
+                     "003": "Potter Decorated Workbenches"
+                  },
+                  "recipe_bulletins": {
+                     "recipe_unlock_potter": "New pot, floral, and workbench decoration recipes for Potter!"
+                  }
+               },
+               "town_founding_explanation": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "read_letter3": {
+                           "bulletin_message": {
+                              "00": "Once you have made your choice, please record them on the provided forms and send them back with Arke. And please be sure to feed her before she leaves. She prefers berries, but she'll accept prickly pears as well.<br><p>Monkey keep you,<br>Amyyria Iskender,<br>Iskender Trading Company</p>"
+                           },
+                           "bulletin_title": "The Letter Continues",
+                           "dialog_title": "The Letter Continues",
+                           "choice_000": "We choose..."
+                        },
+                        "open_letter": {
+                           "bulletin_message": {
+                              "00": "A determined-looking fennec fox approaches, carrying in its snout a leather satchel with <i>\"Iskender Caravan Official Mail\"</i> stitched onto it. She drops it by the town standard and settles down, looking up expectantly."
+                           },
+                           "bulletin_title": "A Fennec Fox Approaches",
+                           "dialog_title": "A Fox... Messenger?",
+                           "choice_000": "Open the satchel",
+                           "choice_001": "[skip] We know what banner we want."
+                        },
+                        "read_letter": {
+                           "bulletin_message": {
+                              "00": "Dear Caravan [str(i18n_data.town_serial_number)],<p>Thank you for volunteering to establish a new outpost so far to the West! We here at the Iskender Trading Company are delighted that you chose us to facilitate your founding.<p>Once the paperwork is in order, an official company caravan led by Agent Naryal Iskender will start a new route to your outpost.</p>"
+                           },
+                           "bulletin_title": "A Letter from Amyyria Iskender",
+                           "dialog_title": "A Letter from Amyyria Iskender",
+                           "choice_000": "Continue..."
+                        },
+                        "read_letter2": {
+                           "bulletin_message": {
+                              "00": "To start, in order for us to enter your outpost into the company ledger, you must choose a name, as well as a Standard.<p>The Standard declares to the rest of Rayya's Children the purpose behind you settling down, though we have found that it is even more effective at inspiring an outpost's own people.</p>"
+                           },
+                           "bulletin_title": "The Letter Continues",
+                           "dialog_title": "The Letter Continues",
+                           "choice_000": "Standard... Hmm..."
+                        }
+                     }
+                  }
+               },
+               "town_founding_food_donation": {
+                  "donation_dialog_info": {
+                     "dialog_nodes": {
+                        "simple_message": {
+                           "bulletin_message": {
+                              "00": "Apparently, in addition to the letter, Arke's satchel contains a smaller satchel full of coins, labeled <i>\"Outpost Founding Incentive\"</i>."
+                           },
+                           "bulletin_title": "Arke Prods the Satchel",
+                           "dialog_title": "More from the Satchel",
+                           "choice_000": "That should be useful!"
+                        }
+                     }
+                  }
+               },
+               "unlock_shrine_recipes": {
+                  "bulletin_title": "Potter shrine recipes unlocked!"
+               },
+               "arcs": {
+                  "trigger": {
+                     "town_progression": {
+                        "encounters": {
+                           "reembark_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "Monkey keep you, friend! Now that our existing contract is resolved, we'd like to remind you that the Iskender Trading Company is always open for repeat business!<p>In fact, since this collaboration went so well, if you'd like to establish another town, we'd be happy to sponsor a larger caravan that can carry a few of your citizens from here, as well as some extra goods and records. Just let us know when you're ready!</p><p><font size=-1><i>Re-embarking allows you to carry over up to 3 citizens, 10 items, and all your unlocked recipes when starting a new town.</i></font></p>"
+                                       },
+                                       "bulletin_title": "It's Naryal Again!",
+                                       "dialog_title": "One Last Thing",
+                                       "choice_000": "Good to know!"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      },
+      "saved_objects": {
+         "building_templates_index": {
+            "template_tabs": {
+               "rayyas_children": {
+                  "display_name": "Rayya's",
+                  "categories": {
+                     "outpost": "Outpost Templates",
+                     "settlement": "Settlement Templates"
+                  }
+               }
+            }
+         },
+         "building_templates": {
+            "pottery_studio": {
+               "display_name": "Pottery Studio"
+            },
+            "weavers_hut": {
+               "display_name": "Weaver's Hut"
+            },
+            "communal_kitchen": {
+               "display_name": "Communal Kitchen"
+            },
+            "masons_workshop": {
+               "display_name": "Mason's Workshop"
+            },
+            "tier2": {
+               "desert_lodge": {
+                  "display_name": "Desert Lodge"
+               },
+               "little_red_hut": {
+                  "display_name": "Little Red Hut"
+               },
+               "rayyas_shadow": {
+                  "display_name": "Rayya's Shadow"
+               },
+               "red_clay_homes": {
+                  "display_name": "Red Clay Homes"
+               },
+               "engineers_workshop": {
+                  "display_name": "Engineer's Workshop"
+               }
+            },
+            "blacksmiths_workshop": {
+               "display_name": "The Forge"
+            },
+            "herbalists_workshop": {
+               "display_name": "Herbalist's Workshop"
+            }
+         }
+      }
+   },
+   "entities": {
+      "gizmos": {
+         "rc_camp_standard": {
+            "rc_camp_standard_ghost": {
+               "display_name": "Camp Banner",
+               "description": "How you know you've come home"
+            }
+         },
+         "rc_town_banner_guardian": {
+            "rc_town_banner_guardian_ghost": {
+               "display_name": "Banner of Cunning",
+               "description": "How you know you've come home"
+            },
+            "rc_town_banner_guardian_token_iconic": {
+               "display_name": "Banner of Cunning Shred",
+               "description": "A shred from the Banner of Cunning, carrying along its blessing."
+            }
+         },
+         "rc_town_banner_nature": {
+            "rc_town_banner_nature_ghost": {
+               "display_name": "Banner of Vitality",
+               "description": "How you know you've come home"
+            },
+            "rc_town_banner_nature_token_iconic": {
+               "display_name": "Banner of Vitality Shred",
+               "description": "A shred from the Banner of Vitality, carrying along its blessing."
+            }
+         },
+         "rc_town_banner_might": {
+            "rc_town_banner_might_ghost": {
+               "display_name": "Banner of Strength",
+               "description": "How you know you've come home"
+            },
+            "rc_town_banner_might_token_iconic": {
+               "display_name": "Banner of Strength Shred",
+               "description": "A shred from the Banner of Strength, carrying along its blessing."
+            }
+         }
+      },
+      "decoration": {
+         "monkey_shrine_monument": {
+            "monkey_shrine_monument_ghost": {
+               "display_name": "Her Mystery's Shrine",
+               "description": "Place to pay tribute to Monkey and Her Mystery"
+            },
+            "chest": {
+               "chest_ghost": {
+                  "display_name": "Clay Chest of Monkey",
+                  "description": "A place to store tribute of Monkey and Her Mystery"
+               }
+            },
+            "monkey": {
+               "monkey_ghost": {
+                  "display_name": "Clay Monkey Statue",
+                  "description": "A tribute to Monkey and her many helpers."
+               }
+            },
+            "key": {
+               "key_ghost": {
+                  "display_name": "Monkey Shrine Key",
+                  "description": "A wall ornament that reminds us of Monkey"
+               }
+            },
+            "lamp_gold": {
+               "lamp_gold_ghost": {
+                  "display_name": "Golden Oil Lamp",
+                  "description": "Its flame brings a warm glow at night."
+               }
+            },
+            "lamp_wall_gold": {
+               "lamp_wall_gold_ghost": {
+                  "display_name": "Golden Oil Wall Lamp",
+                  "description": "Its flame brings a warm glow at night."
+               }
+            },
+            "window_tall_latticed": {
+               "window_tall_latticed_ghost": {
+                  "display_name": "Tall Gold-Latticed Window",
+                  "description": "The lattice work stops most of the hot sun, and looks pretty too!"
+               }
+            },
+            "door_clay_latticed": {
+               "door_clay_latticed_ghost": {
+                  "display_name": "Gold-Latticed Door",
+                  "description": "The lattice work stops most of the hot sun, and looks pretty too!"
+               }
+            },
+            "teapot": {
+               "teapot_ghost": {
+                  "display_name": "Finely Crafted Tea Set",
+                  "description": "A reminder of bold entrepreneurs."
+               }
+            },
+            "banner_wall_small": {
+               "banner_wall_small_ghost": {
+                  "display_name": "Wide Wall Banner",
+                  "description": "Show your town pride with this banner."
+               }
+            },
+            "banner_wall_big": {
+               "banner_wall_big_ghost": {
+                  "display_name": "Long Wall Banner",
+                  "description": "Show your town pride with this banner."
+               }
+            },
+            "lightbox": {
+               "lightbox_ghost": {
+                  "display_name": "Clay Lightbox",
+                  "description": "Its light splashes patterns across the ground, and on things above it."
+               }
+            }
+         },
+         "exotic_trade_monument": {
+            "exotic_trade_monument_ghost": {
+               "display_name": "The Ever-Burning Flame",
+               "description": "A beacon of safety and protection for the whole region"
+            },
+            "banner_gilded_blue": {
+               "banner_gilded_blue_ghost": {
+                  "display_name": "Gilded Blue Banner",
+                  "description": "Display your town's pride as an exotic trading post"
+               }
+            },
+            "chair_gilded_blue": {
+               "chair_gilded_blue_ghost": {
+                  "display_name": "Gilded Blue Cushion",
+                  "description": "Luxuriously padded seating"
+               }
+            },
+            "pedestal_firepit": {
+               "pedestal_firepit_ghost": {
+                  "display_name": "Small Clay Firepit",
+                  "description": "Softly glowing coals"
+               }
+            },
+            "wall_hanging_suncatcher": {
+               "wall_hanging_suncatcher_ghost": {
+                  "display_name": "Suncatcher",
+                  "description": "Polished to a mirror finish"
+               }
+            },
+            "outfit_worker_goldthread": {
+               "mixins": {
+                  "worker_outfit_goldthread_iconic": {
+                     "display_name": "Worker Finery",
+                     "description": "Fashionably improves worker's speed and efficiency"
+                  },
+                  "worker_outfit_goldthread": {
+                     "display_name": "Worker Finery",
+                     "description": "Fashionably improves worker's speed and efficiency"
+                  }
+               }
+            },
+            "rug_gilded_blue": {
+               "rug_gilded_blue_ghost": {
+                  "display_name": "Blue Gilded Throw",
+                  "description": "Skillfully woven from dyed and golden threads"
+               }
+            },
+            "chair_gilded_red": {
+               "chair_gilded_red_ghost": {
+                  "display_name": "Gilded Red Cushion",
+                  "description": "Luxuriously padded seating"
+               }
+            },
+            "chair_gilded_coral": {
+               "chair_gilded_coral_ghost": {
+                  "display_name": "Gilded Coral Cushion",
+                  "description": "Luxuriously padded seating"
+               }
+            },
+            "chair_gilded_sage": {
+               "chair_gilded_sage_ghost": {
+                  "display_name": "Gilded Sage Cushion",
+                  "description": "Luxuriously padded seating"
+               }
+            },
+            "banner_gilded_red": {
+               "banner_gilded_red_ghost": {
+                  "display_name": "Gilded Red Banner",
+                  "description": "Display your town's pride as an exotic trading post"
+               }
+            },
+            "banner_gilded_coral": {
+               "banner_gilded_coral_ghost": {
+                  "display_name": "Gilded Coral Banner",
+                  "description": "Display your town's pride as an exotic trading post"
+               }
+            },
+            "banner_gilded_sage": {
+               "banner_gilded_sage_ghost": {
+                  "display_name": "Gilded Sage Banner",
+                  "description": "Display your town's pride as an exotic trading post"
+               }
+            },
+            "pedestal_floral_blue": {
+               "pedestal_floral_blue_ghost": {
+                  "display_name": "Blue Petal Pedestal",
+                  "description": "A decorative display of aromatic flowers and herbs"
+               }
+            },
+            "pedestal_floral_coral": {
+               "pedestal_floral_coral_ghost": {
+                  "display_name": "Coral Petal Pedestal",
+                  "description": "A decorative display of aromatic flowers and herbs"
+               }
+            },
+            "pedestal_floral_red": {
+               "pedestal_floral_red_ghost": {
+                  "display_name": "Red Petal Pedestal",
+                  "description": "A decorative display of aromatic flowers and herbs"
+               }
+            },
+            "rug_gilded_red": {
+               "rug_gilded_red_ghost": {
+                  "display_name": "Red Gilded Throw",
+                  "description": "Skillfully woven from dyed and golden threads"
+               }
+            },
+            "rug_gilded_coral": {
+               "rug_gilded_coral_ghost": {
+                  "display_name": "Coral Gilded Throw",
+                  "description": "Skillfully woven from dyed and golden threads"
+               }
+            },
+            "rug_gilded_sage": {
+               "rug_gilded_sage_ghost": {
+                  "display_name": "Sage Gilded Throw",
+                  "description": "Skillfully woven from dyed and golden threads"
+               }
+            }
+         },
+         "trading_post_monument": {
+            "trading_post_monument_ghost": {
+               "display_name": "The Trader Monument",
+               "description": "Signifies your town' productivity, wealth, and trading connections"
+            },
+            "urn_large": {
+               "urn_large_ghost": {
+                  "display_name": "Trading Goods Urn",
+                  "description": "Extra large for extra trading!"
+               }
+            },
+            "pot_oil_earthen": {
+               "pot_oil_earthen_ghost": {
+                  "display_name": "Earthen Oil Pot",
+                  "description": "Small earthen pot with accompanying small fire"
+               }
+            },
+            "pot_oil_green": {
+               "pot_oil_green_ghost": {
+                  "display_name": "Green Oil Pot",
+                  "description": "Small green pot with accompanying small fire"
+               }
+            },
+            "pot_oil_halfgreen": {
+               "pot_oil_halfgreen_ghost": {
+                  "display_name": "Half-Glazed Oil Pot",
+                  "description": "Small half-glazed pot with accompanying small fire"
+               }
+            },
+            "pot_sunflower": {
+               "pot_sunflower_ghost": {
+                  "display_name": "Potted Sunflower",
+                  "description": "Small earthen pot with a beautiful flower."
+               }
+            },
+            "wall_hanging_sunflower": {
+               "wall_hanging_sunflower_ghost": {
+                  "display_name": "Wall Flower",
+                  "description": "A sunflower decoration for your wall."
+               }
+            },
+            "wall_hanging_sunwreath": {
+               "wall_hanging_sunwreath_ghost": {
+                  "display_name": "Sunflower Wreath",
+                  "description": "A collection of sunflowers to hang on your wall."
+               }
+            },
+            "pot_fox_lily": {
+               "pot_fox_lily_ghost": {
+                  "display_name": "Potted Fox Lily",
+                  "description": "Small earthen pot with a beautiful flower."
+               }
+            },
+            "jar_green": {
+               "jar_green_ghost": {
+                  "display_name": "Green Glass Jar with Candle",
+                  "description": "Small green glass jar with accompanying small fire"
+               }
+            },
+            "jar_red": {
+               "jar_red_ghost": {
+                  "display_name": "Glass Jar with Candle",
+                  "description": "Small red glass jar with accompanying small fire"
+               }
+            },
+            "pot_acacia": {
+               "pot_acacia_ghost": {
+                  "display_name": "Potted Acacia Bonsai",
+                  "description": "Small earthen pot with a beautiful miniature tree."
+               }
+            },
+            "wind_chime": {
+               "wind_chime_ghost": {
+                  "display_name": "Glass Wind Chime",
+                  "description": "A magnificent sight and sound to match."
+               }
+            }
+         },
+         "hearth_box": {
+            "hearth_box_ghost": {
+               "display_name": "Hearth of Glory",
+               "description": "Provides warmth, light, comfort, and a chance to challenge waves of undead"
+            }
+         },
+         "hearth_lamp": {
+            "hearth_lamp_ghost": {
+               "display_name": "Hearth of Cheer",
+               "description": "Provides warmth, light, comfort, and random daily buffs"
+            }
+         },
+         "hearth_urn": {
+            "hearth_urn_ghost": {
+               "display_name": "Hearth of the Makers",
+               "description": "Provides warmth, light, comfort, and daily interest on owned gold"
+            }
+         }
+      },
+      "npc": {
+         "herald": {
+            "female": {
+               "herald_female": {
+                  "display_name": "<Unused> Heraldine Swift",
+                  "description": "<Unused> Herald of Rayya's Children."
+               },
+               "herald_adia": {
+                  "display_name": "Adia Radie",
+                  "description": "Guildmaster of Rayya's Children."
+               },
+               "herald_amyyria": {
+                  "display_name": "Amyyria Iskender",
+                  "description": "Head of the Iskender Trading Company."
+               }
+            },
+            "male": {
+               "herald_male": {
+                  "display_name": "<Unused> Herald Holly",
+                  "description": "<Unused> Herald of Rayya's Children."
+               },
+               "herald_naryal": {
+                  "display_name": "Naryal Iskender",
+                  "description": "Agent of the Iskender Trading Company."
+               },
+               "herald_nona": {
+                  "display_name": "Nona Trist",
+                  "description": "Priestess of Her Mystery."
+               },
+               "herald_emeret": {
+                  "display_name": "Emeret Kaver",
+                  "description": "Leader of the Painted Dogs."
+               },
+               "herald_arke": {
+                  "display_name": "Arke",
+                  "description": "Iskender's finest messenger."
+               }
+            }
+         }
+      },
+      "armor": {
+         "rc_legendary_circlet": {
+            "display_name": "Crimson Circlet",
+            "description": "The Phoenix Empire's Squarest circlet"
+         },
+         "rc_legendary_shield": {
+            "display_name": "Dragon's Shield",
+            "description": "The Phoenix Empire's proudest shield"
+         }
+      },
+      "weapons": {
+         "rc_legendary_bow": {
+            "display_name": "Empire Bow",
+            "description": "The Phoenix Empire's swiftest bow"
+         },
+         "rc_legendary_sword": {
+            "display_name": "Emblazoned Sword",
+            "description": "The Phoenix Empire's finest blade"
+         }
+      },
+      "refined": {
+         "legendary_rc_bowstring": {
+            "display_name": "Glittering Bowstring",
+            "description": "Joins the ends of the Zephyr Bow"
+         },
+         "legendary_rc_stave": {
+            "display_name": "Bone Stave",
+            "description": "The arms of the Zephyr Bow"
+         },
+         "legendary_rc_face": {
+            "display_name": "Dragonhide",
+            "description": "Protects the Dragon's Shield"
+         },
+         "legendary_rc_frame": {
+            "display_name": "Dragonplate",
+            "description": "Reinforces the Dragon's Shield"
+         },
+         "legendary_rc_gem": {
+            "display_name": "Flame Ruby",
+            "description": "A spiritual focus, essential for the Crimson Band"
+         },
+         "legendary_rc_blade": {
+            "display_name": "Tempered Bone",
+            "description": "Unbreakable blade of the Desert Fang"
+         },
+         "legendary_rc_inlay": {
+            "display_name": "Glittering Inlay",
+            "description": "Radiant gilding for the Desert Fang"
+         },
+         "legendary_rc_cloth": {
+            "display_name": "Sundyed Fabric",
+            "description": "Traditionally used for the crimson band"
+         }
+      }
+   },
+   "kingdoms": {
+      "rayyas_children": "Rayya's Children"
+   }
+}
